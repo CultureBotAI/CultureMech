@@ -1,0 +1,3092 @@
+# Review Desulfatirhabdium medium and its DSMZ/KOMODO contributors
+
+- Review: 20261028T175341Z-batch073-record09-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T17:17:11.351880Z
+- Finished UTC: 2026-10-28T17:53:41.022268Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1086 supports the identity and twelve provider-calculated basal rates, but 23 stock-derived rows are flattened into the main medium. Separate stock compositions, the dimensionally invalid NaOH sum, source-scoped preparation, nickel/resazurin chemical forms and claim-level evidence require curation. The exact live KOMODO pages remain inaccessible; no record was changed.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch073 native selection index 09.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003738 | data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml | generated | desulfatirhabdium_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003738 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:003738 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:003738 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:003738 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact source and owner boundaries
+
+identity: supported. Targets: CultureMech:003738.
+
+The generated target resolves to the KOMODO 1086 and DSMZ 1086 maintained contributors by exact merged_from stems. Reciprocal SOURCE_DUPLICATE links resolve to their current path/ID; their ingredient arrays agree. Current preparation and provenance differ, so source-duplicate identity does not establish complete formulation equality. DSMZ PDF/API authenticate 1086; current KOMODO403 limits live mapping confirmation.
+
+### Historical report and source reconciliation
+
+provenance: supported. Targets: CultureMech:003738.
+
+Both selected parent plans contain 85 claims: 35 held concentration rows, one held relationship, and 49 source objects (45 recipe rows and four preparation steps). All 49 quoted objects match the present raw API bytes, whose digest also equals the historical source digest. This establishes present byte identity, not historical retrieval/execution. Old blanket conflicts do not prove twelve basal provider values wrong. The selected mapping plan retains three boolean cells; the rendered report shows only two, a display omission preserved without assuming a different recipe. Unrelated plan records and withholding claims are not endorsed.
+
+### Classification and evidentiary limits
+
+scope: supported. Targets: CultureMech:003738.
+
+The source identifies a bacterial complex liquid medium with completed-medium pH 7.0–7.2; yeast extract supports retaining the semidefined/complex characterization. A generic cultivation application and the provider associated-strain widget do not establish a curated target_organisms growth claim. No new species, growth temperature, strain-specific variant or experiment is inferred.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:003738.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "Na2HPO4 x 2 H2O — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 1, "compound": "Na2HPO4 x 2 H2O", "compound_id": 181, "amount": 0.53, "unit": "g", "g_l": 0.528415, "mmol_l": 3.72231, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.528415", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.528415", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.528415", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q2", "topic": "KH2PO4 — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.41, "unit": "g", "g_l": 0.408774, "mmol_l": 3.00381, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.408774", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.408774", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.408774", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q3", "topic": "NH4Cl — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 3, "compound": "NH4Cl", "compound_id": 42, "amount": 0.3, "unit": "g", "g_l": 0.299103, "mmol_l": 5.59175, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q4", "topic": "CaCl2 x 2 H2O — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 4, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.11, "unit": "g", "g_l": 0.109671, "mmol_l": 0.745985, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.109671", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.109671", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.109671", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q5", "topic": "MgCl2 x 6 H2O — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 5, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.1, "unit": "g", "g_l": 0.0997009, "mmol_l": 0.490405, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q6", "topic": "NaCl — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 6, "compound": "NaCl", "compound_id": 43, "amount": 0.3, "unit": "g", "g_l": 0.299103, "mmol_l": 5.11812, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q7", "topic": "Na2SO4 — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 7, "compound": "Na2SO4", "compound_id": 110, "amount": 2.8, "unit": "g", "g_l": 2.79163, "mmol_l": 19.6538, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.79163", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.79163", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.79163", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q8", "topic": "Yeast extract — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount": 0.02, "unit": "g", "g_l": 0.0199402, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.0199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.0199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.0199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q9", "topic": "Sodium resazurin — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 11, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504, "mmol_l": 0.00198473, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing. The primary dose is 0.5 ml of 0.1% w/v sodium resazurin, giving 0.5 mg per source batch; retain that stock strength and dose. Chemical identity is a separate finding.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing. The primary dose is 0.5 ml of 0.1% w/v sodium resazurin, giving 0.5 mg per source batch; retain that stock strength and dose. Chemical identity is a separate finding."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing. The primary dose is 0.5 ml of 0.1% w/v sodium resazurin, giving 0.5 mg per source batch; retain that stock strength and dose. Chemical identity is a separate finding."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing. The primary dose is 0.5 ml of 0.1% w/v sodium resazurin, giving 0.5 mg per source batch; retain that stock strength and dose. Chemical identity is a separate finding."}]}, {"quantity_id": "q10", "topic": "Na2CO3 — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 12, "compound": "Na2CO3", "compound_id": 32, "amount": 1.5, "unit": "g", "g_l": 1.49551, "mmol_l": 14.1102, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "1.49551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "1.49551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "1.49551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q11", "topic": "Na-benzoate — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 13, "compound": "Na-benzoate", "compound_id": 295, "amount": 0.43, "unit": "g", "g_l": 0.428714, "mmol_l": 2.97505, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.428714", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.428714", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.428714", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q12", "topic": "Na2S x 9 H2O — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[15]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 16, "compound": "Na2S x 9 H2O", "compound_id": 54, "amount": 0.5, "unit": "g", "g_l": 0.498504, "mmol_l": 2.07553, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis. Preserve the source batch amount and provider denominator explicitly; the PDF lists 980 ml water but does not state a measured final main volume. Add exact claim-level evidence rather than silently renormalizing."}]}, {"quantity_id": "q13", "topic": "HCl — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 1, "compound": "HCl", "compound_id": 68, "attribute": "25%", "amount": 10, "unit": "ml", "g_l": 2.5, "mmol_l": 68.5683, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. The primary source specifies 10 ml of 25% HCl in SL-10, then makeup to 1000 ml. It does not specify the percent basis or density; the API value 2.5 g/L is not independently justified as a stock mass concentration.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. The primary source specifies 10 ml of 25% HCl in SL-10, then makeup to 1000 ml. It does not specify the percent basis or density; the API value 2.5 g/L is not independently justified as a stock mass concentration."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. The primary source specifies 10 ml of 25% HCl in SL-10, then makeup to 1000 ml. It does not specify the percent basis or density; the API value 2.5 g/L is not independently justified as a stock mass concentration."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. The primary source specifies 10 ml of 25% HCl in SL-10, then makeup to 1000 ml. It does not specify the percent basis or density; the API value 2.5 g/L is not independently justified as a stock mass concentration."}]}, {"quantity_id": "q14", "topic": "FeCl2 x 4 H2O — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 2, "compound": "FeCl2 x 4 H2O", "compound_id": 260, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.54482, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q15", "topic": "ZnCl2 — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 3, "compound": "ZnCl2", "compound_id": 64, "amount": 70, "unit": "mg", "g_l": 0.07, "mmol_l": 0.513573, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q16", "topic": "MnCl2 x 4 H2O — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 4, "compound": "MnCl2 x 4 H2O", "compound_id": 36, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.505293, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q17", "topic": "H3BO3 — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 5, "compound": "H3BO3", "compound_id": 37, "amount": 6, "unit": "mg", "g_l": 0.006, "mmol_l": 0.0970246, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q18", "topic": "CoCl2 x 6 H2O — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 6, "compound": "CoCl2 x 6 H2O", "compound_id": 38, "amount": 190, "unit": "mg", "g_l": 0.19, "mmol_l": 1.46335, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q19", "topic": "CuCl2 x 2 H2O — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 7, "compound": "CuCl2 x 2 H2O", "compound_id": 39, "amount": 2, "unit": "mg", "g_l": 0.002, "mmol_l": 0.0117314, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q20", "topic": "NiCl2 x 6 H2O — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 8, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 24, "unit": "mg", "g_l": 0.024, "mmol_l": 0.185187, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q21", "topic": "Na2MoO4 x 2 H2O — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 9, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 36, "unit": "mg", "g_l": 0.036, "mmol_l": 0.148791, "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Trace element solution SL-10, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q22", "topic": "NaOH — Selenite-tungstate solution", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 1, "compound": "NaOH", "compound_id": 256, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 12.5009, "optional": 0}, "solution_context": {"id": 777, "name": "Selenite-tungstate solution", "volume": 1000}, "second_source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 2, "compound": "NaOH", "compound_id": 256, "attribute": "10 N", "amount": 100, "unit": "ml", "optional": 0}, "solution_context": {"id": 1799, "name": "Na-crotonate solution (1 M)", "volume": 1000}}, "neutralization_preparation": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"step": "Dissolve crotonic acid in 800 ml distilled water, add around 100 ml of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under 100% N2 gas atmosphere."}}}, "decision": "correct", "rationale": "The stored 100.5 G_PER_L and duplicate note combine 0.5 g NaOH in the selenite-tungstate stock with approximately 100 ml of 10 N NaOH used to neutralize crotonic acid in a different stock. Amounts from these distinct stocks and units cannot be summed. Separate both source stages; free NaOH in the finished crotonate stock is not established by the reagent addition.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "100.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The stored 100.5 G_PER_L and duplicate note combine 0.5 g NaOH in the selenite-tungstate stock with approximately 100 ml of 10 N NaOH used to neutralize crotonic acid in a different stock. Amounts from these distinct stocks and units cannot be summed. Separate both source stages; free NaOH in the finished crotonate stock is not established by the reagent addition."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "100.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The stored 100.5 G_PER_L and duplicate note combine 0.5 g NaOH in the selenite-tungstate stock with approximately 100 ml of 10 N NaOH used to neutralize crotonic acid in a different stock. Amounts from these distinct stocks and units cannot be summed. Separate both source stages; free NaOH in the finished crotonate stock is not established by the reagent addition."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "100.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The stored 100.5 G_PER_L and duplicate note combine 0.5 g NaOH in the selenite-tungstate stock with approximately 100 ml of 10 N NaOH used to neutralize crotonic acid in a different stock. Amounts from these distinct stocks and units cannot be summed. Separate both source stages; free NaOH in the finished crotonate stock is not established by the reagent addition."}]}, {"quantity_id": "q23", "topic": "Na2SeO3 x 5 H2O — Selenite-tungstate solution", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 2, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 3, "unit": "mg", "g_l": 0.003, "mmol_l": 0.0114062, "optional": 0}, "solution_context": {"id": 777, "name": "Selenite-tungstate solution", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q24", "topic": "Na2WO4 x 2 H2O — Selenite-tungstate solution", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 3, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 4, "unit": "mg", "g_l": 0.004, "mmol_l": 0.0121267, "optional": 0}, "solution_context": {"id": 777, "name": "Selenite-tungstate solution", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate solution, not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q25", "topic": "Crotonic acid — Na-crotonate solution (1 M)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 1, "compound": "Crotonic acid", "compound_id": 255, "attribute": "ALDRICH 113018", "amount": 86, "unit": "g", "g_l": 86, "mmol_l": 998.955, "optional": 0}, "solution_context": {"id": 1799, "name": "Na-crotonate solution (1 M)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Na-crotonate solution (1 M), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. Crotonic acid is the stock reagent; neutralization yields the named Na-crotonate stock. Preserve the 1 M stock name and 20 ml addition separately from its 86 g reagent per litre stock.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "86", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Na-crotonate solution (1 M), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. Crotonic acid is the stock reagent; neutralization yields the named Na-crotonate stock. Preserve the 1 M stock name and 20 ml addition separately from its 86 g reagent per litre stock."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "86", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Na-crotonate solution (1 M), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. Crotonic acid is the stock reagent; neutralization yields the named Na-crotonate stock. Preserve the 1 M stock name and 20 ml addition separately from its 86 g reagent per litre stock."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "86", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Na-crotonate solution (1 M), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value. Crotonic acid is the stock reagent; neutralization yields the named Na-crotonate stock. Preserve the 1 M stock name and 20 ml addition separately from its 86 g reagent per litre stock."}]}, {"quantity_id": "q26", "topic": "Biotin — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 1, "compound": "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0818632, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q27", "topic": "Folic acid — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 2, "compound": "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0453104, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q28", "topic": "Pyridoxine hydrochloride — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 3, "compound": "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.486287, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q29", "topic": "Thiamine HCl — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 4, "compound": "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.148236, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q30", "topic": "Riboflavin — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[4]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 5, "compound": "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.132837, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q31", "topic": "Nicotinic acid — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[5]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 6, "compound": "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.406141, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q32", "topic": "Calcium D-(+)-pantothenate — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[6]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 7, "compound": "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q33", "topic": "Vitamin B12 — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[7]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 8, "compound": "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l": 0.00073779, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[32].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[32].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[32].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q34", "topic": "p-Aminobenzoic acid — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[8]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 9, "compound": "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.364591, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[33].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[33].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[33].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q35", "topic": "(DL)-alpha-Lipoic acid — Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[9]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 10, "compound": "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.24233, "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[34].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "ingredients[34].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "ingredients[34].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of Wolin's vitamin solution (10x), not a direct main-medium concentration. Restore this stock composition and its separate main-recipe dose; preserve source amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium value."}]}, {"quantity_id": "q36", "topic": "Trace element solution SL-10 — missing main addition", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 8, "solution": "Trace element solution SL-10", "solution_id": 595, "amount": 1, "unit": "ml", "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}]}, {"quantity_id": "q37", "topic": "Selenite-tungstate solution — missing main addition", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 9, "solution": "Selenite-tungstate solution", "solution_id": 777, "amount": 1, "unit": "ml", "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}]}, {"quantity_id": "q38", "topic": "Na-crotonate solution (1 M) — missing main addition", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[13]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 14, "solution": "Na-crotonate solution (1 M)", "solution_id": 1799, "attribute": "", "amount": 20, "unit": "ml", "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 20 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 20 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 20 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 20 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}]}, {"quantity_id": "q39", "topic": "Wolin's vitamin solution (10x) — missing main addition", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[14]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 15, "solution": "Wolin's vitamin solution (10x)", "solution_id": 5980, "amount": 1, "unit": "ml", "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the explicitly named stock addition with its source-batch dose 1 ml. Preserve stock strength where stated and resolve composition in its own stock scope; the API main 1003 ml denominator is not a measured final litre.", "missing": true}]}, {"quantity_id": "q40", "topic": "Indicator stock dose and strength", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 11, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504, "mmol_l": 0.00198473, "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "0.5 ml at 1 mg/ml gives 0.5 mg for this batch. The provider divides that mass by 1.003 L; do not count a stock descriptor and its derived mass as two additions.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Retain 0.5 ml of the explicit 0.1% w/v sodium-resazurin stock independently of the derived mass rate.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Retain 0.5 ml of the explicit 0.1% w/v sodium-resazurin stock independently of the derived mass rate.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Retain 0.5 ml of the explicit 0.1% w/v sodium-resazurin stock independently of the derived mass rate.", "missing": true}]}, {"quantity_id": "q41", "topic": "Main sol. 1086 — solvent and volume", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].recipe[16]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 17, "compound": "Distilled water", "compound_id": 4, "amount": 980, "unit": "ml", "optional": 0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "Main water is 980 ml. Four named stock additions sum to 23 ml, matching the provider 1003 ml denominator; including the 0.5 ml indicator yields 1003.5 ml of listed liquids. Neither sum proves a measured final medium volume.", "layer_assessments": []}, {"quantity_id": "q42", "topic": "Trace element solution SL-10 — solvent and volume", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 10, "compound": "Distilled water", "compound_id": 4, "amount": 990, "unit": "ml", "optional": 0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "add", "rationale": "Retain solvent amount within this stock; do not flatten or add stock solvent again to the main formulation. SL-10 specifies 990 ml water in the table and explicitly makes up to 1000 ml after acid and salts.", "layer_assessments": []}, {"quantity_id": "q43", "topic": "Selenite-tungstate solution — solvent and volume", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 4, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "solution_context": {"id": 777, "name": "Selenite-tungstate solution", "volume": 1000}}, "decision": "add", "rationale": "Retain solvent amount within this stock; do not flatten or add stock solvent again to the main formulation.", "layer_assessments": []}, {"quantity_id": "q44", "topic": "Na-crotonate solution (1 M) — solvent and volume", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 3, "compound": "Distilled water", "compound_id": 4, "amount": 900, "unit": "ml", "optional": 0}, "solution_context": {"id": 1799, "name": "Na-crotonate solution (1 M)", "volume": 1000}}, "decision": "add", "rationale": "Retain solvent amount within this stock; do not flatten or add stock solvent again to the main formulation. The table gives 900 ml water, while preparation begins with 800 ml, adds approximately 100 ml of 10 N NaOH, then water to 1000 ml. These are stages of one stock, not cumulative independent water doses.", "layer_assessments": []}, {"quantity_id": "q45", "topic": "Wolin's vitamin solution (10x) — solvent and volume", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[4].recipe[10]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"recipe_order": 11, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin's vitamin solution (10x)", "volume": 1000}}, "decision": "add", "rationale": "Retain solvent amount within this stock; do not flatten or add stock solvent again to the main formulation.", "layer_assessments": []}, {"quantity_id": "q46", "topic": "Main sol. 1086 — preparation step 1", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"step": "Dissolve ingredients (except carbonate, benzoate, crotonate, vitamins and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add benzoate, crotonate, vitamins and sulfide form sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The crotonate and vitamin solutions should be sterilized by filtration. Adjust pH of the complete medium to 7.0 - 7.2."}}, "decision": "mixed", "rationale": "Main preparation specifies separate anoxic late additions, 80% N2/20% CO2 sparging for 30–45 minutes, appropriate stock gas atmospheres, filter sterilization of crotonate/vitamins and complete-medium pH 7.0–7.2; it gives no autoclave temperature or duration.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients (except carbonate, benzoate, crotonate, vitamins and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add benzoate, crotonate, vitamins and sulfide form sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The crotonate and vitamin solutions should be sterilized by filtration. Adjust pH of the complete medium to 7.0 - 7.2.", "decision": "evidence_only", "rationale": "Already retained verbatim in this owner; attach source evidence and preserve main-stage scope."}]}, {"quantity_id": "q47", "topic": "Main sol. 1086 — preparation step 2", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[0].steps[1]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"step": "After inoculation pressurize the vessels with sterile 80% N2 and 20% CO2 gas mixture to 0.7 bar overpressure."}}, "decision": "mixed", "rationale": "After inoculation, 0.7 bar is explicitly overpressure, under 80% N2/20% CO2; do not substitute absolute pressure.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "preparation_steps[1].description", "stored_value": "After inoculation pressurize the vessels with sterile 80% N2 and 20% CO2 gas mixture to 0.7 bar overpressure.", "decision": "evidence_only", "rationale": "Already retained verbatim in this owner; attach source evidence and preserve main-stage scope."}]}, {"quantity_id": "q48", "topic": "Trace element solution SL-10 — preparation step 1", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"step": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}}, "decision": "mixed", "rationale": "SL-10 preparation dissolves iron in acid before other salts and makes up to 1000 ml; scope is this stock only.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "preparation_steps[2].description", "stored_value": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.", "decision": "correct", "rationale": "Already retained verbatim, but label this explicitly as stock preparation and move it to the appropriate stock scope rather than an unqualified main-medium step."}]}, {"quantity_id": "q49", "topic": "Na-crotonate solution (1 M) — preparation step 1", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1", "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z", "source_object": {"step": "Dissolve crotonic acid in 800 ml distilled water, add around 100 ml of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under 100% N2 gas atmosphere."}}, "decision": "mixed", "rationale": "Crotonate stock begins with 800 ml water, uses approximately 100 ml 10 N NaOH to reach pH around 7, makes up to 1000 ml and is filter-sterilized under 100% N2. This stock pH differs in scope from completed-medium pH 7.0–7.2.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "This layer omits the source procedure. Restore source-scoped stages through maintained contributors and regenerate only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path": "preparation_steps[3].description", "stored_value": "Dissolve crotonic acid in 800 ml distilled water, add around 100 ml of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under 100% N2 gas atmosphere.", "decision": "correct", "rationale": "Already retained verbatim, but label this explicitly as stock preparation and move it to the appropriate stock scope rather than an unqualified main-medium step."}]}]
+
+### Current ontology and MIM correspondence
+
+grounding: concern. Targets: CultureMech:003738.
+
+Every asserted current ontology slot is checked against its exact OLS object and the packaged MIM index. Labels agree with current asserted IDs; nickel hydration and sodium-resazurin form are separate source-identity defects. Mixed mapped/rejected catalog rows are retained. Yeast extract remains an ungrounded complex component; it is not forced to a pure compound.
+
+### History and evidence scope
+
+provenance: concern. Targets: CultureMech:003738.
+
+All three complete histories and five historical report bodies were read. Exact selected rows from two full pinned parent plans were reconciled to current source bytes. Source-byte identity does not authenticate past retrieval, writer execution or historical grounding validity. The missing attached evidence and malformed timestamp limits remain explicit.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:003738.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:003738.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Stock compositions are flattened and NaOH quantities are incommensurate
+
+major / open / confirmed; issue key: culturemech-003738-stock-compositions-are-flattened-and-naoh-quantities-are-incommensurate.
+
+All three layers contain 23 stock-derived concentrations as main ingredients. Nine SL-10 components, two selenite/tungstate salts, crotonic acid and ten vitamins retain stock-strength rates; one NaOH row additionally sums separate 0.5 g and approximately 100 ml reagent amounts as 100.5 G_PER_L. Restore four named stocks plus the explicit indicator stock and their batch doses. Preserve 25% HCl without inventing a percent basis, and distinguish stock waters/final makeups from main water and the provider 1003 ml denominator. Twelve basal rates match the current provider calculation and need evidence/volume qualification, not automatic numerical replacement.
+
+### f2: Preparation is lost from the generated and KOMODO records
+
+major / open / confirmed; issue key: culturemech-003738-preparation-is-lost-from-the-generated-and-komodo-records.
+
+The DSMZ owner already retains both main source steps, including anoxic late additions, stock-specific atmospheres, final pH and post-inoculation overpressure. The KOMODO owner and generated record omit preparation. The DSMZ owner also places SL-10 and crotonate stock instructions in its unqualified root step list. Preserve the valid main steps, scope the two stock procedures correctly, and restore the missing layers through owner curation and compatible regeneration.
+
+### f3: Nickel hydrate and sodium resazurin require form-specific grounding
+
+major / open / confirmed; issue key: culturemech-003738-nickel-hydrate-and-sodium-resazurin-require-form-specific-grounding.
+
+Source NiCl2·6H2O is asserted as anhydrous nickel dichloride CHEBI:34887 in both primary and MIM-linked slots. CHEBI:53542 is the verified hexahydrate candidate; consult mapped versus rejected lexical rows when applying it. Sodium resazurin is asserted as neutral Resazurin CHEBI:8806, whose formula lacks sodium. Resolve an exact sodium-form term or document a deliberately broader mapping; no replacement sodium identifier is proposed here. All existing labels match their current asserted OLS IDs, so the defects concern source-form correspondence. Calcium D-pantothenate CHEBI:31345 is supported by the D stereochemistry and is not flagged.
+
+### f4: Recipe claims lack attached source evidence
+
+minor / open / confirmed; issue key: culturemech-003738-recipe-claims-lack-attached-source-evidence.
+
+The current target and both owners have no attached evidence for amounts or preparation. Historical reports and source notes do not supply claim-level linkage. Attach exact source references, short excerpts and locators to the supported basal concentrations, corrected stock compositions/doses and source-scoped preparation using schema-supported placements. Use ingredient evidence for supported concentrations and stock constituents; place preparation and stock-dose claims in root evidence with explicit field and stage scopes. Preserve limits on final main volume, percent basis and live KOMODO access.
+
+### f5: Historical timestamps require append-only clarification
+
+minor / open / confirmed; issue key: culturemech-003738-historical-timestamps-require-append-only-clarification.
+
+KOMODO import history contains literal .fZ and its composition-resolver event omits a timezone. These stored strings are not exact UTC timestamps. Preserve existing history and append an explanatory curation event when fixing the records; update future writer formatting separately rather than inventing historical subsecond/timezone values.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Reconstruct source-scoped stock compositions and doses in both maintained contributors, separate the two NaOH uses and preserve source units/strengths. Retain supported basal provider rates with explicit calculation basis; regenerate only compatible formulations after curation.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+The DSMZ owner already retains both main source steps, including anoxic late additions, stock-specific atmospheres, final pH and post-inoculation overpressure. The KOMODO owner and generated record omit preparation. The DSMZ owner also places SL-10 and crotonate stock instructions in its unqualified root step list. Preserve the valid main steps, scope the two stock procedures correctly, and restore the missing layers through owner curation and compatible regeneration.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+Source NiCl2·6H2O is asserted as anhydrous nickel dichloride CHEBI:34887 in both primary and MIM-linked slots. CHEBI:53542 is the verified hexahydrate candidate; consult mapped versus rejected lexical rows when applying it. Sodium resazurin is asserted as neutral Resazurin CHEBI:8806, whose formula lacks sodium. Resolve an exact sodium-form term or document a deliberately broader mapping; no replacement sodium identifier is proposed here. All existing labels match their current asserted OLS IDs, so the defects concern source-form correspondence. Calcium D-pantothenate CHEBI:31345 is supported by the D stereochemistry and is not flagged.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+The current target and both owners have no attached evidence for amounts or preparation. Historical reports and source notes do not supply claim-level linkage. Attach exact source references, short excerpts and locators to the supported basal concentrations, corrected stock compositions/doses and source-scoped preparation using schema-supported placements. Use ingredient evidence for supported concentrations and stock constituents; place preparation and stock-dose claims in root evidence with explicit field and stage scopes. Preserve limits on final main volume, percent basis and live KOMODO access.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action5
+
+KOMODO import history contains literal .fZ and its composition-resolver event omits a timezone. These stored strings are not exact UTC timestamps. Preserve existing history and append an explanatory curation event when fixing the records; update future writer formatting separately rather than inventing historical subsecond/timezone values.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+- Verify future KOMODO importer and DSMZ resolver events use actual UTC timestamps with an explicit timezone; preserve every original malformed or timezone-naive historical string unchanged.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-2 | data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| identity-search | REVIEW_WORK/batch073/record09/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| dsm1086 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1086.pdf; Pages 1–2, medium 1086 and four stock sections | supports | Both primary PDF pages visually examined with their extracted text: exact medium 1086, main amounts, four named stock definitions, indicator stock and preparation stages. |
+| api1086 | https://mediadive.dsmz.de/rest/medium/1086; Exact source identity and scoped formulation/preparation | supports | Complete live JSON read. Main declared volume 1003 ml is the provider calculation basis, not an independently measured final volume; all five solution objects and their 45 recipe rows/four steps were read. |
+| html1086 | https://mediadive.dsmz.de/medium/1086; Exact source identity and scoped formulation/preparation | context_only | Exact standard-medium page confirms the recipe and four stocks. Its molecular-composition calculation and associated-strain widgets are separate from authenticated organism-growth evidence. |
+| komodo1086 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1086; HTTP status and challenge response | context_only | Current HTTP 403 challenge body; no recipe or live mapping authenticated. Historical selected mapping is retained separately. |
+| komodoList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; HTTP status and challenge response | context_only | Current HTTP 403 challenge body; no recipe or live mapping authenticated. Historical selected mapping is retained separately. |
+| lpsn | https://lpsn.dsmz.de/genus/desulfatirhabdium; Genus name, type species and nomenclature record | context_only | Current genus nomenclature and type species Desulfatirhabdium butyrativorans establish taxonomic context only. This is not strain-level growth evidence for this recipe. |
+| ols53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542; Exact CHEBI:53542 object; formula/label/obsolete flag | supports | Current nickel chloride hexahydrate candidate: formula Cl2.6H2O.Ni and mass 237.689 support the source hydrate; the packaged catalog also has mapped and rejected lexical rows. |
+| historical-report-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfatirhabdium_medium.yaml.md; Complete document | context_only | Full report body read using lossless table-cell reconstruction. The October 5 reports performed zero external source checks; October 7/8 guarded reports left records unchanged. Neither is a successful source-level quantity endorsement. |
+| historical-report-2 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml.md; Complete document | context_only | Full report body read using lossless table-cell reconstruction. The October 5 reports performed zero external source checks; October 7/8 guarded reports left records unchanged. Neither is a successful source-level quantity endorsement. |
+| historical-report-3 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.md; Complete document | context_only | Full report body read using lossless table-cell reconstruction. The October 5 reports performed zero external source checks; October 7/8 guarded reports left records unchanged. Neither is a successful source-level quantity endorsement. |
+| historical-report-4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.md; Complete document | context_only | Full report body read using lossless table-cell reconstruction. The October 5 reports performed zero external source checks; October 7/8 guarded reports left records unchanged. Neither is a successful source-level quantity endorsement. |
+| historical-report-5 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfatirhabdium_medium.md; Complete document | context_only | Full report body read using lossless table-cell reconstruction. The October 5 reports performed zero external source checks; October 7/8 guarded reports left records unchanged. Neither is a successful source-level quantity endorsement. |
+| historical-plan-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json; records[path=data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml] and applicable metadata | context_only | Exact selected record and enclosing source metadata read; unrelated record rows and unrelated withholding text are outside this review. |
+| historical-plan-2 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json; records[path=data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml] and applicable metadata | context_only | Exact selected record and enclosing source metadata read; unrelated record rows and unrelated withholding text are outside this review. |
+| writer-1 | src/culturemech/import/mediadive_importer.py; Scoped writer functions read; exact file pinned | context_only | Current API composition preserves the primary solution and separately references stocks; preparation still concatenates all solution steps. This is current behavior, not proof of historical execution. |
+| writer-2 | src/culturemech/enrich/dsmz_resolver.py; Scoped writer functions read; exact file pinned | context_only | Current merge_composition copies ingredients, solutions, pH/type/state; it does not copy preparation steps. |
+| writer-3 | src/culturemech/import/komodo_web_importer.py; Scoped writer functions read; exact file pinned | context_only | Current converter retains DSMZ/source flags and uses time.strftime with literal percent-f timestamp formatting, consistent with the malformed stored event; not execution authentication. |
+| writer-4 | src/culturemech/merge/formulation.py; Scoped writer functions read; exact file pinned | context_only | Current formulation grouping requires complete scientific-field equality, including preparation/notes; it rejects incompatible formulations and only unions compatible evidence. |
+| writer-5 | src/culturemech/merge/merger.py; Scoped writer functions read; exact file pinned | context_only | Current merger delegates to formulation compatibility. Existing generated content and the two current contributors differ; a source-name match does not authorize a blind merge. |
+| writer-6 | scripts/cleanup_media_quality.py; Scoped writer functions read; exact file pinned | context_only | Current duplicate handler refuses to sum disagreeing values. The historical 100.5 note remains a record fact and is not justified by current code. |
+| writer-7 | scripts/cleanup_recipe_ingredients.py; Scoped writer functions read; exact file pinned | context_only | Current duplicate handler retains a first value, flags inconsistent concentration dictionaries and preserves notes; no historical run inferred. |
+| writer-8 | scripts/review_medium_concentration_evidence.py; Scoped writer functions read; exact file pinned | context_only | Current guard withholds stock-bearing recipes before individual claims, explaining why the old reports blanket-classified all 35 rows as conflicts; the fresh per-row assessment supersedes that blanket interpretation. |
+| writer-9 | scripts/migrate_legacy_mim_to_chebi.py; Scoped writer functions read; exact file pinned | context_only | Current migration derives CHEBI-keyed links while preserving existing primary groundings; present catalog matching does not authenticate earlier curation. |
+| writer-10 | scripts/fix_primary_term_grounding.py; Scoped writer functions read; exact file pinned | context_only | Current classifier distinguishes unrelated IDs from hydrate/form variants and can flag those variants; current code does not independently prove every historical event. |
+| writer-11 | scripts/migrate_chebi_regrounding.py; Scoped writer functions read; exact file pinned | context_only | Current writer creates change-specific appended notes and revises eligible term fields; historical notes alone are not chemical-form evidence. |
+| ols91258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91258; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols113455 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_113455; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols41131 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_41131; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch073/record09/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch073/record09/grounding-inventory.json | context_only | All selected target/owner recursive asserted identifier/label slots and explicitly scoped dependency slots; current OLS scientific objects and packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch073/record09/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch073/record09/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch073/record09/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch073/record09/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch073/record09/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch073/record09/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch073/record09/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- Exact current KOMODO record and list requests returned HTTP403; historical selected mapping and independently accessible DSMZ evidence do not make this a completed live KOMODO check.
+- The main PDF does not state a measured final volume; the API denominator is a provider calculation. HCl 25% lacks a stated percent basis. No density or unreported sterilization temperature/duration is inferred.
+- Primary PDF, current API/HTML and OLS scientific properties were assessed. Linked bibliography, unrelated ontology cross-reference papers, unrelated parent-plan records and vendor product identity were not independently reviewed.
+- No YAML recipe, generated data page, identifier registry or implementation was edited.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation or publication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T175341Z-batch073-record09-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: Review Desulfatirhabdium medium and its DSMZ/KOMODO contributors
+started_at: '2026-10-28T17:17:11.351880Z'
+finished_at: '2026-10-28T17:53:41.022268Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1086 supports the identity and twelve provider-calculated basal rates,
+  but 23 stock-derived rows are flattened into the main medium. Separate stock compositions,
+  the dimensionally invalid NaOH sum, source-scoped preparation, nickel/resazurin
+  chemical forms and claim-level evidence require curation. The exact live KOMODO
+  pages remain inaccessible; no record was changed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml
+    sha256: b9fb4bf043a2da1964fcb9457d8fe8631d972c72f1ebfcad0f358164b4a9acc5
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    sha256: 3c6ac46a9bff9e3cd480a09d694f7def0894289dd37aaafbbd4d24bd444a98c7
+    role: context
+  - path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    sha256: c4f8ec967c8c1b2342f8ed2866190fc6ea483b9dbd1a7b34b97e98931ebda6b4
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfatirhabdium_medium.yaml.md
+    sha256: efa6b216fea333dbe75b39ad951c728ac5ab35da5c895231440cf544c659ff2a
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json
+    sha256: 0fc7158ec48d1b0c75efa149070b46b677bb3389d969a1440267f43e21b3d3c8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml.md
+    sha256: 04e8b1065bd17ee9149626660c8a732f6516cb536c95633ba27c21c093e078ac
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.md
+    sha256: 87f278ff3d0e10efe0fa6fc85a446762212b355218afbb12ebfd87e4d3e87164
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.md
+    sha256: b5f2c01e790aa966478c6d0701370b571969efc7a7e1d26df6cc824315f65a11
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfatirhabdium_medium.md
+    sha256: 30421cab8e03b795d3f6fff7b6f7315dc229d9f4bf9790a5615cd17a6bff69c5
+    role: context
+  - path: reports/label_plausibility_2026-07-19.tsv
+    sha256: eda647ffbb87d5ea90db812858b2d1d9388393c4d1abc8dec78672324c1509d9
+    role: context
+  - path: reports/media_content_review_manifest.tsv
+    sha256: e5ff2f1241ba046ae7a5dc0d543d340bdba10d31fa1fdc3e36203600cf1ec0ce
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch073 native selection index 09.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003738
+targets:
+- target_id: CultureMech:003738
+  path: data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml
+  label: desulfatirhabdium_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003738
+  command: just validate-schema data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003738
+  command: just validate-strict data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml
+    --out REVIEW_WORK/batch073/record09/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003738
+  command: just validate-terms data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:003738
+  command: just validate-references data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: b9fb4bf043a2da1964fcb9457d8fe8631d972c72f1ebfcad0f358164b4a9acc5
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 3c6ac46a9bff9e3cd480a09d694f7def0894289dd37aaafbbd4d24bd444a98c7
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: c4f8ec967c8c1b2342f8ed2866190fc6ea483b9dbd1a7b34b97e98931ebda6b4
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch073/record09/identity-search.json
+  accessed_at: '2026-10-28T17:30:46.483894Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    only exact resolved owner matches are retained in this result. Similar names and
+    source accessions are not promoted to owners.
+  snapshot_sha256: 6b46164203638ca686266e80352d1d4c5a5e0a0eb5c830e908fe097387ca1ea3
+- evidence_id: dsm1086
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1086.pdf
+  locator: Pages 1–2, medium 1086 and four stock sections
+  accessed_at: '2026-10-28T17:18:22.698200Z'
+  support: supports
+  summary: 'Both primary PDF pages visually examined with their extracted text: exact
+    medium 1086, main amounts, four named stock definitions, indicator stock and preparation
+    stages.'
+  snapshot_sha256: 866372dc85b871a4c9afd6af01a8fba52a1b1054a87a5548582011723b2e068c
+- evidence_id: api1086
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1086
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T17:18:22.537619Z'
+  support: supports
+  summary: Complete live JSON read. Main declared volume 1003 ml is the provider calculation
+    basis, not an independently measured final volume; all five solution objects and
+    their 45 recipe rows/four steps were read.
+  snapshot_sha256: 21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1
+- evidence_id: html1086
+  kind: database
+  reference: https://mediadive.dsmz.de/medium/1086
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T17:18:22.894553Z'
+  support: context_only
+  summary: Exact standard-medium page confirms the recipe and four stocks. Its molecular-composition
+    calculation and associated-strain widgets are separate from authenticated organism-growth
+    evidence.
+  snapshot_sha256: 537c49c7927e98043b3b82ae977508a3cad4c58a9f920f8ccbe3d859acbe3e20
+- evidence_id: komodo1086
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1086
+  locator: HTTP status and challenge response
+  accessed_at: '2026-10-28T17:18:21.895872Z'
+  support: context_only
+  summary: Current HTTP 403 challenge body; no recipe or live mapping authenticated.
+    Historical selected mapping is retained separately.
+  snapshot_sha256: 27c5add5461d8c97dc4c2c1bc1042fd8cba9daf0f03df12c15edcea4398a59b6
+- evidence_id: komodoList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: HTTP status and challenge response
+  accessed_at: '2026-10-28T17:18:21.893542Z'
+  support: context_only
+  summary: Current HTTP 403 challenge body; no recipe or live mapping authenticated.
+    Historical selected mapping is retained separately.
+  snapshot_sha256: 90f32ee7971622fdfbb815d5a0c3898e413f4b24cd89ad0d2cb830860d0de3a3
+- evidence_id: lpsn
+  kind: database
+  reference: https://lpsn.dsmz.de/genus/desulfatirhabdium
+  locator: Genus name, type species and nomenclature record
+  accessed_at: '2026-10-28T17:18:22.544457Z'
+  support: context_only
+  summary: Current genus nomenclature and type species Desulfatirhabdium butyrativorans
+    establish taxonomic context only. This is not strain-level growth evidence for
+    this recipe.
+  snapshot_sha256: ea6d6c07a57c8e4155e2c7ca90a5b0f628e9eb8dba75d332da801188bff57442
+- evidence_id: ols53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  locator: Exact CHEBI:53542 object; formula/label/obsolete flag
+  accessed_at: '2026-10-28T17:18:25.601834Z'
+  support: supports
+  summary: 'Current nickel chloride hexahydrate candidate: formula Cl2.6H2O.Ni and
+    mass 237.689 support the source hydrate; the packaged catalog also has mapped
+    and rejected lexical rows.'
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: historical-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfatirhabdium_medium.yaml.md
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Full report body read using lossless table-cell reconstruction. The October
+    5 reports performed zero external source checks; October 7/8 guarded reports left
+    records unchanged. Neither is a successful source-level quantity endorsement.
+  snapshot_sha256: efa6b216fea333dbe75b39ad951c728ac5ab35da5c895231440cf544c659ff2a
+- evidence_id: historical-report-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml.md
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Full report body read using lossless table-cell reconstruction. The October
+    5 reports performed zero external source checks; October 7/8 guarded reports left
+    records unchanged. Neither is a successful source-level quantity endorsement.
+  snapshot_sha256: 04e8b1065bd17ee9149626660c8a732f6516cb536c95633ba27c21c093e078ac
+- evidence_id: historical-report-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.md
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Full report body read using lossless table-cell reconstruction. The October
+    5 reports performed zero external source checks; October 7/8 guarded reports left
+    records unchanged. Neither is a successful source-level quantity endorsement.
+  snapshot_sha256: 87f278ff3d0e10efe0fa6fc85a446762212b355218afbb12ebfd87e4d3e87164
+- evidence_id: historical-report-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.md
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Full report body read using lossless table-cell reconstruction. The October
+    5 reports performed zero external source checks; October 7/8 guarded reports left
+    records unchanged. Neither is a successful source-level quantity endorsement.
+  snapshot_sha256: b5f2c01e790aa966478c6d0701370b571969efc7a7e1d26df6cc824315f65a11
+- evidence_id: historical-report-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfatirhabdium_medium.md
+  locator: Complete document
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Full report body read using lossless table-cell reconstruction. The October
+    5 reports performed zero external source checks; October 7/8 guarded reports left
+    records unchanged. Neither is a successful source-level quantity endorsement.
+  snapshot_sha256: 30421cab8e03b795d3f6fff7b6f7315dc229d9f4bf9790a5615cd17a6bff69c5
+- evidence_id: historical-plan-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+  locator: records[path=data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml]
+    and applicable metadata
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Exact selected record and enclosing source metadata read; unrelated record
+    rows and unrelated withholding text are outside this review.
+  snapshot_sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+- evidence_id: historical-plan-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json
+  locator: records[path=data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml]
+    and applicable metadata
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Exact selected record and enclosing source metadata read; unrelated record
+    rows and unrelated withholding text are outside this review.
+  snapshot_sha256: 0fc7158ec48d1b0c75efa149070b46b677bb3389d969a1440267f43e21b3d3c8
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current API composition preserves the primary solution and separately references
+    stocks; preparation still concatenates all solution steps. This is current behavior,
+    not proof of historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current merge_composition copies ingredients, solutions, pH/type/state;
+    it does not copy preparation steps.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current converter retains DSMZ/source flags and uses time.strftime with
+    literal percent-f timestamp formatting, consistent with the malformed stored event;
+    not execution authentication.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer-4
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current formulation grouping requires complete scientific-field equality,
+    including preparation/notes; it rejects incompatible formulations and only unions
+    compatible evidence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-5
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current merger delegates to formulation compatibility. Existing generated
+    content and the two current contributors differ; a source-name match does not
+    authorize a blind merge.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-6
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current duplicate handler refuses to sum disagreeing values. The historical
+    100.5 note remains a record fact and is not justified by current code.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-7
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current duplicate handler retains a first value, flags inconsistent concentration
+    dictionaries and preserves notes; no historical run inferred.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer-8
+  kind: record_content
+  reference: scripts/review_medium_concentration_evidence.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current guard withholds stock-bearing recipes before individual claims,
+    explaining why the old reports blanket-classified all 35 rows as conflicts; the
+    fresh per-row assessment supersedes that blanket interpretation.
+  snapshot_sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+- evidence_id: writer-9
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current migration derives CHEBI-keyed links while preserving existing primary
+    groundings; present catalog matching does not authenticate earlier curation.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: writer-10
+  kind: record_content
+  reference: scripts/fix_primary_term_grounding.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current classifier distinguishes unrelated IDs from hydrate/form variants
+    and can flag those variants; current code does not independently prove every historical
+    event.
+  snapshot_sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+- evidence_id: writer-11
+  kind: record_content
+  reference: scripts/migrate_chebi_regrounding.py
+  locator: Scoped writer functions read; exact file pinned
+  accessed_at: '2026-10-28T17:30:46.419932Z'
+  support: context_only
+  summary: Current writer creates change-specific appended notes and revises eligible
+    term fields; historical notes alone are not chemical-form evidence.
+  snapshot_sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+- evidence_id: ols91258
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91258
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.633365Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f6c74e6e0b876aadf2fe47494521d320abb79244773bf4c44da7b288b1e27319
+- evidence_id: ols63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.672891Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: ols31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:24.398154Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: ols86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.013744Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: ols86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.320537Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: ols26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.769693Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: ols32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:24.599244Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: ols8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.594423Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: ols29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.841704Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: ols113455
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_113455
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:22.600881Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: ae57ed1c4e8ffdd7909332b3bbe6dcc356a0f03ae779de5a761626ccb6cebfba
+- evidence_id: ols76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.042896Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: ols17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.769738Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: ols86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.312364Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: ols49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.196487Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: ols86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.417915Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: ols33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:24.825535Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: ols53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.423504Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: ols86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:26.277757Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: ols34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:24.996203Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: ols75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.812060Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: ols32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:24.445504Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: ols131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:22.487447Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: ols63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.666842Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: ols41131
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_41131
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.060346Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f08c868d7d90142bc455feb86662dc662640c84681a90b7e8486691b0147cb4a
+- evidence_id: ols15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.219693Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: ols27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.855220Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: ols30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.370868Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: ols49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:25.064158Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: ols17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.324620Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: ols15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.228320Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: ols31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:24.442995Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: ols176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.535736Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: ols30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:24.168937Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: ols16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T17:18:23.164719Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch073/record09/quantity-inventory.json
+  accessed_at: '2026-10-28T17:30:46.564276Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 79f66219f8f23c05ff0d4f976515745e04edbe3a32ad7463577c049c97c82d14
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch073/record09/grounding-inventory.json
+  accessed_at: '2026-10-28T17:30:46.564356Z'
+  support: context_only
+  summary: All selected target/owner recursive asserted identifier/label slots and
+    explicitly scoped dependency slots; current OLS scientific objects and packaged
+    MIM preferred-row joins.
+  snapshot_sha256: 257bd25f6e43fb8a2b1b1afa463d0ce2ae3c328827b27b7948b6fe80d3a05d60
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch073/record09/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T17:30:46.564571Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: 930214a5660ca36f794e66c3406f95ee1b3f4b0f2befa7a92d944661ff7432fb
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch073/record09/scalar-census.json
+  accessed_at: '2026-10-28T17:30:46.564594Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 13d1530f467c8bc22aa648fd19bf05d4bf5a8e546572b13dcd0cbf81a04dd7f8
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch073/record09/validate-schema.json
+  accessed_at: '2026-10-28T17:17:12.627425Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: af1e3ce4e0c8816cfa1c4ddebd41616bc862494c616af627c9105896fb58d1df
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch073/record09/validate-strict.json
+  accessed_at: '2026-10-28T17:17:13.555163Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch073/record09/strict.tsv\n"
+  snapshot_sha256: 101e260afc465800453a002112870616771508b4902a32aa9f4801f6c57a9e7b
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch073/record09/validate-terms.json
+  accessed_at: '2026-10-28T17:17:14.972475Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 7142196143cd95af7d2679c04291eadafb2eeb97d320db9ac42212b86becae7a
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch073/record09/validate-references.json
+  accessed_at: '2026-10-28T17:17:15.816532Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 8ac2685fa3546272732ca7a06ec14cf902d08c6b020b3122926f45f27f6d29a3
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact source and owner boundaries
+  outcome: supported
+  summary: The generated target resolves to the KOMODO 1086 and DSMZ 1086 maintained
+    contributors by exact merged_from stems. Reciprocal SOURCE_DUPLICATE links resolve
+    to their current path/ID; their ingredient arrays agree. Current preparation and
+    provenance differ, so source-duplicate identity does not establish complete formulation
+    equality. DSMZ PDF/API authenticate 1086; current KOMODO403 limits live mapping
+    confirmation.
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - identity-search
+  - dsm1086
+  - api1086
+  - historical-plan-2
+- assessment_id: a2
+  area: provenance
+  topic: Historical report and source reconciliation
+  outcome: supported
+  summary: 'Both selected parent plans contain 85 claims: 35 held concentration rows,
+    one held relationship, and 49 source objects (45 recipe rows and four preparation
+    steps). All 49 quoted objects match the present raw API bytes, whose digest also
+    equals the historical source digest. This establishes present byte identity, not
+    historical retrieval/execution. Old blanket conflicts do not prove twelve basal
+    provider values wrong. The selected mapping plan retains three boolean cells;
+    the rendered report shows only two, a display omission preserved without assuming
+    a different recipe. Unrelated plan records and withholding claims are not endorsed.'
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - historical-plan-1
+  - historical-plan-2
+  - historical-report-1
+  - historical-report-2
+  - api1086
+- assessment_id: a3
+  area: scope
+  topic: Classification and evidentiary limits
+  outcome: supported
+  summary: The source identifies a bacterial complex liquid medium with completed-medium
+    pH 7.0–7.2; yeast extract supports retaining the semidefined/complex characterization.
+    A generic cultivation application and the provider associated-strain widget do
+    not establish a curated target_organisms growth claim. No new species, growth
+    temperature, strain-specific variant or experiment is inferred.
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - dsm1086
+  - api1086
+  - lpsn
+- assessment_id: a4
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Na2HPO4 x 2 H2O — main recipe", "source":
+    {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 1, "compound": "Na2HPO4 x 2 H2O", "compound_id":
+    181, "amount": 0.53, "unit": "g", "g_l": 0.528415, "mmol_l": 3.72231, "optional":
+    0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}},
+    "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current
+    provider g_l on its declared 1003 ml basis. Preserve the source batch amount and
+    provider denominator explicitly; the PDF lists 980 ml water but does not state
+    a measured final main volume. Add exact claim-level evidence rather than silently
+    renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.528415",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.528415",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.528415",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q2", "topic": "KH2PO4 — main
+    recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11,
+    "amount": 0.41, "unit": "g", "g_l": 0.408774, "mmol_l": 3.00381, "optional": 0},
+    "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision":
+    "evidence_only", "rationale": "The stored G_PER_L matches the current provider
+    g_l on its declared 1003 ml basis. Preserve the source batch amount and provider
+    denominator explicitly; the PDF lists 980 ml water but does not state a measured
+    final main volume. Add exact claim-level evidence rather than silently renormalizing.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.408774",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.408774",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.408774",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q3", "topic": "NH4Cl — main
+    recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 3, "compound": "NH4Cl", "compound_id": 42, "amount":
+    0.3, "unit": "g", "g_l": 0.299103, "mmol_l": 5.59175, "optional": 0}, "solution_context":
+    {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only",
+    "rationale": "The stored G_PER_L matches the current provider g_l on its declared
+    1003 ml basis. Preserve the source batch amount and provider denominator explicitly;
+    the PDF lists 980 ml water but does not state a measured final main volume. Add
+    exact claim-level evidence rather than silently renormalizing.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "stored_value": {"value": "0.299103", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches
+    the current provider g_l on its declared 1003 ml basis. Preserve the source batch
+    amount and provider denominator explicitly; the PDF lists 980 ml water but does
+    not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.299103",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.299103",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q4", "topic": "CaCl2 x 2 H2O
+    — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 4, "compound": "CaCl2 x 2 H2O", "compound_id":
+    7, "amount": 0.11, "unit": "g", "g_l": 0.109671, "mmol_l": 0.745985, "optional":
+    0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}},
+    "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current
+    provider g_l on its declared 1003 ml basis. Preserve the source batch amount and
+    provider denominator explicitly; the PDF lists 980 ml water but does not state
+    a measured final main volume. Add exact claim-level evidence rather than silently
+    renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.109671",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.109671",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.109671",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q5", "topic": "MgCl2 x 6 H2O
+    — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 5, "compound": "MgCl2 x 6 H2O", "compound_id":
+    79, "amount": 0.1, "unit": "g", "g_l": 0.0997009, "mmol_l": 0.490405, "optional":
+    0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}},
+    "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current
+    provider g_l on its declared 1003 ml basis. Preserve the source batch amount and
+    provider denominator explicitly; the PDF lists 980 ml water but does not state
+    a measured final main volume. Add exact claim-level evidence rather than silently
+    renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q6", "topic": "NaCl — main
+    recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 6, "compound": "NaCl", "compound_id": 43, "amount":
+    0.3, "unit": "g", "g_l": 0.299103, "mmol_l": 5.11812, "optional": 0}, "solution_context":
+    {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only",
+    "rationale": "The stored G_PER_L matches the current provider g_l on its declared
+    1003 ml basis. Preserve the source batch amount and provider denominator explicitly;
+    the PDF lists 980 ml water but does not state a measured final main volume. Add
+    exact claim-level evidence rather than silently renormalizing.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "stored_value": {"value": "0.299103", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches
+    the current provider g_l on its declared 1003 ml basis. Preserve the source batch
+    amount and provider denominator explicitly; the PDF lists 980 ml water but does
+    not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.299103",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.299103",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q7", "topic": "Na2SO4 — main
+    recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 7, "compound": "Na2SO4", "compound_id": 110,
+    "amount": 2.8, "unit": "g", "g_l": 2.79163, "mmol_l": 19.6538, "optional": 0},
+    "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision":
+    "evidence_only", "rationale": "The stored G_PER_L matches the current provider
+    g_l on its declared 1003 ml basis. Preserve the source batch amount and provider
+    denominator explicitly; the PDF lists 980 ml water but does not state a measured
+    final main volume. Add exact claim-level evidence rather than silently renormalizing.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.79163",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.79163",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "2.79163",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q8", "topic": "Yeast extract
+    — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 10, "compound": "Yeast extract", "compound_id":
+    16, "amount": 0.02, "unit": "g", "g_l": 0.0199402, "optional": 0}, "solution_context":
+    {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only",
+    "rationale": "The stored G_PER_L matches the current provider g_l on its declared
+    1003 ml basis. Preserve the source batch amount and provider denominator explicitly;
+    the PDF lists 980 ml water but does not state a measured final main volume. Add
+    exact claim-level evidence rather than silently renormalizing.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "0.0199402", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches
+    the current provider g_l on its declared 1003 ml basis. Preserve the source batch
+    amount and provider denominator explicitly; the PDF lists 980 ml water but does
+    not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.0199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.0199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q9", "topic": "Sodium resazurin
+    — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 11, "compound": "Sodium resazurin", "compound_id":
+    1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504,
+    "mmol_l": 0.00198473, "optional": 0}, "solution_context": {"id": 2195, "name":
+    "Main sol. 1086", "volume": 1003}}, "decision": "evidence_only", "rationale":
+    "The stored G_PER_L matches the current provider g_l on its declared 1003 ml basis.
+    Preserve the source batch amount and provider denominator explicitly; the PDF
+    lists 980 ml water but does not state a measured final main volume. Add exact
+    claim-level evidence rather than silently renormalizing. The primary dose is 0.5
+    ml of 0.1% w/v sodium resazurin, giving 0.5 mg per source batch; retain that stock
+    strength and dose. Chemical identity is a separate finding.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "ingredients[8].concentration", "stored_value": {"value": "0.000498504", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L matches
+    the current provider g_l on its declared 1003 ml basis. Preserve the source batch
+    amount and provider denominator explicitly; the PDF lists 980 ml water but does
+    not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing. The primary dose is 0.5 ml of 0.1% w/v sodium resazurin,
+    giving 0.5 mg per source batch; retain that stock strength and dose. Chemical
+    identity is a separate finding."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.000498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing. The primary dose is 0.5 ml of 0.1% w/v sodium resazurin,
+    giving 0.5 mg per source batch; retain that stock strength and dose. Chemical
+    identity is a separate finding."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.000498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing. The primary dose is 0.5 ml of 0.1% w/v sodium resazurin,
+    giving 0.5 mg per source batch; retain that stock strength and dose. Chemical
+    identity is a separate finding."}]}, {"quantity_id": "q10", "topic": "Na2CO3 —
+    main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 12, "compound": "Na2CO3", "compound_id": 32,
+    "amount": 1.5, "unit": "g", "g_l": 1.49551, "mmol_l": 14.1102, "optional": 0},
+    "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision":
+    "evidence_only", "rationale": "The stored G_PER_L matches the current provider
+    g_l on its declared 1003 ml basis. Preserve the source batch amount and provider
+    denominator explicitly; the PDF lists 980 ml water but does not state a measured
+    final main volume. Add exact claim-level evidence rather than silently renormalizing.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "1.49551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "1.49551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "1.49551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q11", "topic": "Na-benzoate
+    — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 13, "compound": "Na-benzoate", "compound_id":
+    295, "amount": 0.43, "unit": "g", "g_l": 0.428714, "mmol_l": 2.97505, "optional":
+    0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}},
+    "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current
+    provider g_l on its declared 1003 ml basis. Preserve the source batch amount and
+    provider denominator explicitly; the PDF lists 980 ml water but does not state
+    a measured final main volume. Add exact claim-level evidence rather than silently
+    renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.428714",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.428714",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.428714",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q12", "topic": "Na2S x 9 H2O
+    — main recipe", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[15]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 16, "compound": "Na2S x 9 H2O", "compound_id":
+    54, "amount": 0.5, "unit": "g", "g_l": 0.498504, "mmol_l": 2.07553, "optional":
+    0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}},
+    "decision": "evidence_only", "rationale": "The stored G_PER_L matches the current
+    provider g_l on its declared 1003 ml basis. Preserve the source batch amount and
+    provider denominator explicitly; the PDF lists 980 ml water but does not state
+    a measured final main volume. Add exact claim-level evidence rather than silently
+    renormalizing.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The stored G_PER_L
+    matches the current provider g_l on its declared 1003 ml basis. Preserve the source
+    batch amount and provider denominator explicitly; the PDF lists 980 ml water but
+    does not state a measured final main volume. Add exact claim-level evidence rather
+    than silently renormalizing."}]}, {"quantity_id": "q13", "topic": "HCl — Trace
+    element solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 1, "compound": "HCl", "compound_id": 68, "attribute":
+    "25%", "amount": 10, "unit": "ml", "g_l": 2.5, "mmol_l": 68.5683, "optional":
+    0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Trace element
+    solution SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value. The primary source specifies 10 ml of 25% HCl in SL-10, then makeup to
+    1000 ml. It does not specify the percent basis or density; the API value 2.5 g/L
+    is not independently justified as a stock mass concentration.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This is a component of Trace element solution
+    SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value. The primary source specifies 10 ml of 25% HCl in SL-10, then makeup to
+    1000 ml. It does not specify the percent basis or density; the API value 2.5 g/L
+    is not independently justified as a stock mass concentration."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value. The primary source specifies 10 ml of 25% HCl in SL-10,
+    then makeup to 1000 ml. It does not specify the percent basis or density; the
+    API value 2.5 g/L is not independently justified as a stock mass concentration."},
+    {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "ingredients[12].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This is a component of Trace element solution
+    SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value. The primary source specifies 10 ml of 25% HCl in SL-10, then makeup to
+    1000 ml. It does not specify the percent basis or density; the API value 2.5 g/L
+    is not independently justified as a stock mass concentration."}]}, {"quantity_id":
+    "q14", "topic": "FeCl2 x 4 H2O — Trace element solution SL-10", "source": {"evidence_id":
+    "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path":
+    "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 2, "compound": "FeCl2 x 4 H2O", "compound_id":
+    260, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.54482, "optional": 0},
+    "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Trace element
+    solution SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q15", "topic": "ZnCl2 — Trace element
+    solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 3, "compound": "ZnCl2", "compound_id": 64, "amount":
+    70, "unit": "mg", "g_l": 0.07, "mmol_l": 0.513573, "optional": 0}, "solution_context":
+    {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision":
+    "correct", "rationale": "This is a component of Trace element solution SL-10,
+    not a direct main-medium concentration. Restore this stock composition and its
+    separate main-recipe dose; preserve source amount, unit, stock volume and chemical
+    form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q16", "topic": "MnCl2 x 4 H2O —
+    Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 4, "compound": "MnCl2 x 4 H2O", "compound_id":
+    36, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.505293, "optional": 0},
+    "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Trace element
+    solution SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q17", "topic": "H3BO3 — Trace element
+    solution SL-10", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 5, "compound": "H3BO3", "compound_id": 37, "amount":
+    6, "unit": "mg", "g_l": 0.006, "mmol_l": 0.0970246, "optional": 0}, "solution_context":
+    {"id": 595, "name": "Trace element solution SL-10", "volume": 1000}}, "decision":
+    "correct", "rationale": "This is a component of Trace element solution SL-10,
+    not a direct main-medium concentration. Restore this stock composition and its
+    separate main-recipe dose; preserve source amount, unit, stock volume and chemical
+    form. Do not simply relabel a stock-strength G_PER_L as a final-medium value.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q18", "topic": "CoCl2 x 6 H2O —
+    Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 6, "compound": "CoCl2 x 6 H2O", "compound_id":
+    38, "amount": 190, "unit": "mg", "g_l": 0.19, "mmol_l": 1.46335, "optional": 0},
+    "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Trace element
+    solution SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q19", "topic": "CuCl2 x 2 H2O —
+    Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 7, "compound": "CuCl2 x 2 H2O", "compound_id":
+    39, "amount": 2, "unit": "mg", "g_l": 0.002, "mmol_l": 0.0117314, "optional":
+    0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Trace element
+    solution SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q20", "topic": "NiCl2 x 6 H2O —
+    Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 8, "compound": "NiCl2 x 6 H2O", "compound_id":
+    40, "amount": 24, "unit": "mg", "g_l": 0.024, "mmol_l": 0.185187, "optional":
+    0}, "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Trace element
+    solution SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q21", "topic": "Na2MoO4 x 2 H2O
+    — Trace element solution SL-10", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 9, "compound": "Na2MoO4 x 2 H2O", "compound_id":
+    9, "amount": 36, "unit": "mg", "g_l": 0.036, "mmol_l": 0.148791, "optional": 0},
+    "solution_context": {"id": 595, "name": "Trace element solution SL-10", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Trace element
+    solution SL-10, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Trace element solution SL-10, not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q22", "topic": "NaOH — Selenite-tungstate
+    solution", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 1, "compound": "NaOH", "compound_id": 256, "amount":
+    0.5, "unit": "g", "g_l": 0.5, "mmol_l": 12.5009, "optional": 0}, "solution_context":
+    {"id": 777, "name": "Selenite-tungstate solution", "volume": 1000}, "second_source":
+    {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 2, "compound": "NaOH", "compound_id": 256, "attribute":
+    "10 N", "amount": 100, "unit": "ml", "optional": 0}, "solution_context": {"id":
+    1799, "name": "Na-crotonate solution (1 M)", "volume": 1000}}, "neutralization_preparation":
+    {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"step": "Dissolve crotonic acid in 800 ml distilled water, add
+    around 100 ml of 10 N NaOH and adjust pH to around 7. Then add water to reach
+    a volume of 1000 ml. Sterilize by filtration under 100% N2 gas atmosphere."}}},
+    "decision": "correct", "rationale": "The stored 100.5 G_PER_L and duplicate note
+    combine 0.5 g NaOH in the selenite-tungstate stock with approximately 100 ml of
+    10 N NaOH used to neutralize crotonic acid in a different stock. Amounts from
+    these distinct stocks and units cannot be summed. Separate both source stages;
+    free NaOH in the finished crotonate stock is not established by the reagent addition.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "100.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The stored 100.5 G_PER_L
+    and duplicate note combine 0.5 g NaOH in the selenite-tungstate stock with approximately
+    100 ml of 10 N NaOH used to neutralize crotonic acid in a different stock. Amounts
+    from these distinct stocks and units cannot be summed. Separate both source stages;
+    free NaOH in the finished crotonate stock is not established by the reagent addition."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "100.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The stored 100.5 G_PER_L
+    and duplicate note combine 0.5 g NaOH in the selenite-tungstate stock with approximately
+    100 ml of 10 N NaOH used to neutralize crotonic acid in a different stock. Amounts
+    from these distinct stocks and units cannot be summed. Separate both source stages;
+    free NaOH in the finished crotonate stock is not established by the reagent addition."},
+    {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "ingredients[21].concentration", "stored_value": {"value": "100.5", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The stored 100.5 G_PER_L and duplicate note
+    combine 0.5 g NaOH in the selenite-tungstate stock with approximately 100 ml of
+    10 N NaOH used to neutralize crotonic acid in a different stock. Amounts from
+    these distinct stocks and units cannot be summed. Separate both source stages;
+    free NaOH in the finished crotonate stock is not established by the reagent addition."}]},
+    {"quantity_id": "q23", "topic": "Na2SeO3 x 5 H2O — Selenite-tungstate solution",
+    "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 2, "compound": "Na2SeO3 x 5 H2O", "compound_id":
+    107, "amount": 3, "unit": "mg", "g_l": 0.003, "mmol_l": 0.0114062, "optional":
+    0}, "solution_context": {"id": 777, "name": "Selenite-tungstate solution", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate
+    solution, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Selenite-tungstate solution, not a direct main-medium concentration. Restore this
+    stock composition and its separate main-recipe dose; preserve source amount, unit,
+    stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Selenite-tungstate solution, not a direct main-medium concentration. Restore this
+    stock composition and its separate main-recipe dose; preserve source amount, unit,
+    stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Selenite-tungstate solution, not a direct main-medium concentration. Restore this
+    stock composition and its separate main-recipe dose; preserve source amount, unit,
+    stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q24", "topic": "Na2WO4 x 2 H2O
+    — Selenite-tungstate solution", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 3, "compound": "Na2WO4 x 2 H2O", "compound_id":
+    249, "amount": 4, "unit": "mg", "g_l": 0.004, "mmol_l": 0.0121267, "optional":
+    0}, "solution_context": {"id": 777, "name": "Selenite-tungstate solution", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Selenite-tungstate
+    solution, not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Selenite-tungstate solution, not a direct main-medium concentration. Restore this
+    stock composition and its separate main-recipe dose; preserve source amount, unit,
+    stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Selenite-tungstate solution, not a direct main-medium concentration. Restore this
+    stock composition and its separate main-recipe dose; preserve source amount, unit,
+    stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Selenite-tungstate solution, not a direct main-medium concentration. Restore this
+    stock composition and its separate main-recipe dose; preserve source amount, unit,
+    stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q25", "topic": "Crotonic acid —
+    Na-crotonate solution (1 M)", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 1, "compound": "Crotonic acid", "compound_id":
+    255, "attribute": "ALDRICH 113018", "amount": 86, "unit": "g", "g_l": 86, "mmol_l":
+    998.955, "optional": 0}, "solution_context": {"id": 1799, "name": "Na-crotonate
+    solution (1 M)", "volume": 1000}}, "decision": "correct", "rationale": "This is
+    a component of Na-crotonate solution (1 M), not a direct main-medium concentration.
+    Restore this stock composition and its separate main-recipe dose; preserve source
+    amount, unit, stock volume and chemical form. Do not simply relabel a stock-strength
+    G_PER_L as a final-medium value. Crotonic acid is the stock reagent; neutralization
+    yields the named Na-crotonate stock. Preserve the 1 M stock name and 20 ml addition
+    separately from its 86 g reagent per litre stock.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "ingredients[24].concentration",
+    "stored_value": {"value": "86", "unit": "G_PER_L"}, "decision": "correct", "rationale":
+    "This is a component of Na-crotonate solution (1 M), not a direct main-medium
+    concentration. Restore this stock composition and its separate main-recipe dose;
+    preserve source amount, unit, stock volume and chemical form. Do not simply relabel
+    a stock-strength G_PER_L as a final-medium value. Crotonic acid is the stock reagent;
+    neutralization yields the named Na-crotonate stock. Preserve the 1 M stock name
+    and 20 ml addition separately from its 86 g reagent per litre stock."}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path":
+    "ingredients[24].concentration", "stored_value": {"value": "86", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This is a component of Na-crotonate solution
+    (1 M), not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value. Crotonic acid is the stock reagent; neutralization yields the named Na-crotonate
+    stock. Preserve the 1 M stock name and 20 ml addition separately from its 86 g
+    reagent per litre stock."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "86",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Na-crotonate solution (1 M), not a direct main-medium concentration. Restore this
+    stock composition and its separate main-recipe dose; preserve source amount, unit,
+    stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value. Crotonic acid is the stock reagent; neutralization yields
+    the named Na-crotonate stock. Preserve the 1 M stock name and 20 ml addition separately
+    from its 86 g reagent per litre stock."}]}, {"quantity_id": "q26", "topic": "Biotin
+    — Wolin''s vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 1, "compound": "Biotin", "compound_id": 46,
+    "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0818632, "optional": 0},
+    "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Wolin''s vitamin
+    solution (10x), not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q27", "topic": "Folic acid — Wolin''s
+    vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[1]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 2, "compound": "Folic acid", "compound_id":
+    138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0453104, "optional":
+    0}, "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)",
+    "volume": 1000}}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q28", "topic": "Pyridoxine hydrochloride
+    — Wolin''s vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 3, "compound": "Pyridoxine hydrochloride", "compound_id":
+    519, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.486287, "optional":
+    0}, "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)",
+    "volume": 1000}}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q29", "topic": "Thiamine HCl —
+    Wolin''s vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 4, "compound": "Thiamine HCl", "compound_id":
+    1207, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.148236, "optional":
+    0}, "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)",
+    "volume": 1000}}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q30", "topic": "Riboflavin — Wolin''s
+    vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[4]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 5, "compound": "Riboflavin", "compound_id":
+    136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.132837, "optional":
+    0}, "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)",
+    "volume": 1000}}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q31", "topic": "Nicotinic acid
+    — Wolin''s vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[5]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 6, "compound": "Nicotinic acid", "compound_id":
+    139, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.406141, "optional":
+    0}, "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)",
+    "volume": 1000}}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q32", "topic": "Calcium D-(+)-pantothenate
+    — Wolin''s vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[6]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 7, "compound": "Calcium D-(+)-pantothenate",
+    "compound_id": 1512, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.209846,
+    "optional": 0}, "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution
+    (10x)", "volume": 1000}}, "decision": "correct", "rationale": "This is a component
+    of Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q33", "topic": "Vitamin B12 — Wolin''s
+    vitamin solution (10x)", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[7]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 8, "compound": "Vitamin B12", "compound_id":
+    18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l": 0.00073779, "optional":
+    0}, "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)",
+    "volume": 1000}}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[32].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[32].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[32].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q34", "topic": "p-Aminobenzoic
+    acid — Wolin''s vitamin solution (10x)", "source": {"evidence_id": "api1086",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[8]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 9, "compound": "p-Aminobenzoic acid", "compound_id":
+    47, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.364591, "optional": 0},
+    "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Wolin''s vitamin
+    solution (10x), not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[33].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[33].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[33].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q35", "topic": "(DL)-alpha-Lipoic
+    acid — Wolin''s vitamin solution (10x)", "source": {"evidence_id": "api1086",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[9]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 10, "compound": "(DL)-alpha-Lipoic acid", "compound_id":
+    252, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.24233, "optional": 0},
+    "solution_context": {"id": 5980, "name": "Wolin''s vitamin solution (10x)", "volume":
+    1000}}, "decision": "correct", "rationale": "This is a component of Wolin''s vitamin
+    solution (10x), not a direct main-medium concentration. Restore this stock composition
+    and its separate main-recipe dose; preserve source amount, unit, stock volume
+    and chemical form. Do not simply relabel a stock-strength G_PER_L as a final-medium
+    value.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "ingredients[34].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "ingredients[34].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "ingredients[34].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This is a component of
+    Wolin''s vitamin solution (10x), not a direct main-medium concentration. Restore
+    this stock composition and its separate main-recipe dose; preserve source amount,
+    unit, stock volume and chemical form. Do not simply relabel a stock-strength G_PER_L
+    as a final-medium value."}]}, {"quantity_id": "q36", "topic": "Trace element solution
+    SL-10 — missing main addition", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 8, "solution": "Trace element solution SL-10",
+    "solution_id": 595, "amount": 1, "unit": "ml", "optional": 0}, "solution_context":
+    {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale":
+    "Restore the explicitly named stock addition with its source-batch dose 1 ml.
+    Preserve stock strength where stated and resolve composition in its own stock
+    scope; the API main 1003 ml denominator is not a measured final litre.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path":
+    "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}]},
+    {"quantity_id": "q37", "topic": "Selenite-tungstate solution — missing main addition",
+    "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 9, "solution": "Selenite-tungstate solution",
+    "solution_id": 777, "amount": 1, "unit": "ml", "optional": 0}, "solution_context":
+    {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale":
+    "Restore the explicitly named stock addition with its source-batch dose 1 ml.
+    Preserve stock strength where stated and resolve composition in its own stock
+    scope; the API main 1003 ml denominator is not a measured final litre.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path":
+    "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}]},
+    {"quantity_id": "q38", "topic": "Na-crotonate solution (1 M) — missing main addition",
+    "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[13]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 14, "solution": "Na-crotonate solution (1 M)",
+    "solution_id": 1799, "attribute": "", "amount": 20, "unit": "ml", "optional":
+    0}, "solution_context": {"id": 2195, "name": "Main sol. 1086", "volume": 1003}},
+    "decision": "add", "rationale": "Restore the explicitly named stock addition with
+    its source-batch dose 20 ml. Preserve stock strength where stated and resolve
+    composition in its own stock scope; the API main 1003 ml denominator is not a
+    measured final litre.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Restore the explicitly named stock addition with its source-batch dose 20 ml.
+    Preserve stock strength where stated and resolve composition in its own stock
+    scope; the API main 1003 ml denominator is not a measured final litre.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Restore the explicitly named stock addition with its source-batch dose 20 ml.
+    Preserve stock strength where stated and resolve composition in its own stock
+    scope; the API main 1003 ml denominator is not a measured final litre.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Restore the explicitly named stock addition with its source-batch dose 20 ml.
+    Preserve stock strength where stated and resolve composition in its own stock
+    scope; the API main 1003 ml denominator is not a measured final litre.", "missing":
+    true}]}, {"quantity_id": "q39", "topic": "Wolin''s vitamin solution (10x) — missing
+    main addition", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[14]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 15, "solution": "Wolin''s vitamin solution (10x)",
+    "solution_id": 5980, "amount": 1, "unit": "ml", "optional": 0}, "solution_context":
+    {"id": 2195, "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale":
+    "Restore the explicitly named stock addition with its source-batch dose 1 ml.
+    Preserve stock strength where stated and resolve composition in its own stock
+    scope; the API main 1003 ml denominator is not a measured final litre.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path":
+    "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}, {"path":
+    "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Restore the
+    explicitly named stock addition with its source-batch dose 1 ml. Preserve stock
+    strength where stated and resolve composition in its own stock scope; the API
+    main 1003 ml denominator is not a measured final litre.", "missing": true}]},
+    {"quantity_id": "q40", "topic": "Indicator stock dose and strength", "source":
+    {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 11, "compound": "Sodium resazurin", "compound_id":
+    1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504,
+    "mmol_l": 0.00198473, "optional": 0}, "solution_context": {"id": 2195, "name":
+    "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "0.5 ml at
+    1 mg/ml gives 0.5 mg for this batch. The provider divides that mass by 1.003 L;
+    do not count a stock descriptor and its derived mass as two additions.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Retain 0.5
+    ml of the explicit 0.1% w/v sodium-resazurin stock independently of the derived
+    mass rate.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Retain 0.5 ml of the explicit 0.1% w/v sodium-resazurin stock independently of
+    the derived mass rate.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Retain 0.5 ml of the explicit 0.1% w/v sodium-resazurin stock independently of
+    the derived mass rate.", "missing": true}]}, {"quantity_id": "q41", "topic": "Main
+    sol. 1086 — solvent and volume", "source": {"evidence_id": "api1086", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1086", "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw",
+    "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].recipe[16]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 17, "compound": "Distilled water", "compound_id":
+    4, "amount": 980, "unit": "ml", "optional": 0}, "solution_context": {"id": 2195,
+    "name": "Main sol. 1086", "volume": 1003}}, "decision": "add", "rationale": "Main
+    water is 980 ml. Four named stock additions sum to 23 ml, matching the provider
+    1003 ml denominator; including the 0.5 ml indicator yields 1003.5 ml of listed
+    liquids. Neither sum proves a measured final medium volume.", "layer_assessments":
+    []}, {"quantity_id": "q42", "topic": "Trace element solution SL-10 — solvent and
+    volume", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 10, "compound": "Distilled water", "compound_id":
+    4, "amount": 990, "unit": "ml", "optional": 0}, "solution_context": {"id": 595,
+    "name": "Trace element solution SL-10", "volume": 1000}}, "decision": "add", "rationale":
+    "Retain solvent amount within this stock; do not flatten or add stock solvent
+    again to the main formulation. SL-10 specifies 990 ml water in the table and explicitly
+    makes up to 1000 ml after acid and salts.", "layer_assessments": []}, {"quantity_id":
+    "q43", "topic": "Selenite-tungstate solution — solvent and volume", "source":
+    {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 4, "compound": "Distilled water", "compound_id":
+    4, "amount": 1000, "unit": "ml", "optional": 0}, "solution_context": {"id": 777,
+    "name": "Selenite-tungstate solution", "volume": 1000}}, "decision": "add", "rationale":
+    "Retain solvent amount within this stock; do not flatten or add stock solvent
+    again to the main formulation.", "layer_assessments": []}, {"quantity_id": "q44",
+    "topic": "Na-crotonate solution (1 M) — solvent and volume", "source": {"evidence_id":
+    "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path":
+    "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 3, "compound": "Distilled water", "compound_id":
+    4, "amount": 900, "unit": "ml", "optional": 0}, "solution_context": {"id": 1799,
+    "name": "Na-crotonate solution (1 M)", "volume": 1000}}, "decision": "add", "rationale":
+    "Retain solvent amount within this stock; do not flatten or add stock solvent
+    again to the main formulation. The table gives 900 ml water, while preparation
+    begins with 800 ml, adds approximately 100 ml of 10 N NaOH, then water to 1000
+    ml. These are stages of one stock, not cumulative independent water doses.", "layer_assessments":
+    []}, {"quantity_id": "q45", "topic": "Wolin''s vitamin solution (10x) — solvent
+    and volume", "source": {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[4].recipe[10]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"recipe_order": 11, "compound": "Distilled water", "compound_id":
+    4, "amount": 1000, "unit": "ml", "optional": 0}, "solution_context": {"id": 5980,
+    "name": "Wolin''s vitamin solution (10x)", "volume": 1000}}, "decision": "add",
+    "rationale": "Retain solvent amount within this stock; do not flatten or add stock
+    solvent again to the main formulation.", "layer_assessments": []}, {"quantity_id":
+    "q46", "topic": "Main sol. 1086 — preparation step 1", "source": {"evidence_id":
+    "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path":
+    "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"step": "Dissolve ingredients (except carbonate, benzoate, crotonate,
+    vitamins and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for
+    30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add benzoate, crotonate,
+    vitamins and sulfide form sterile anoxic stock solutions prepared under 100% N2
+    gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and
+    20% CO2 gas mixture. The crotonate and vitamin solutions should be sterilized
+    by filtration. Adjust pH of the complete medium to 7.0 - 7.2."}}, "decision":
+    "mixed", "rationale": "Main preparation specifies separate anoxic late additions,
+    80% N2/20% CO2 sparging for 30–45 minutes, appropriate stock gas atmospheres,
+    filter sterilization of crotonate/vitamins and complete-medium pH 7.0–7.2; it
+    gives no autoclave temperature or duration.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "This layer omits the source procedure. Restore source-scoped stages through maintained
+    contributors and regenerate only compatible formulations.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "This layer omits the source procedure. Restore source-scoped stages through maintained
+    contributors and regenerate only compatible formulations.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "preparation_steps[0].description", "stored_value": "Dissolve ingredients (except
+    carbonate, benzoate, crotonate, vitamins and sulfide) and sparge medium with 80%
+    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add benzoate, crotonate, vitamins and sulfide form sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. The crotonate and vitamin solutions
+    should be sterilized by filtration. Adjust pH of the complete medium to 7.0 -
+    7.2.", "decision": "evidence_only", "rationale": "Already retained verbatim in
+    this owner; attach source evidence and preserve main-stage scope."}]}, {"quantity_id":
+    "q47", "topic": "Main sol. 1086 — preparation step 2", "source": {"evidence_id":
+    "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path":
+    "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[0].steps[1]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"step": "After inoculation pressurize the vessels with sterile
+    80% N2 and 20% CO2 gas mixture to 0.7 bar overpressure."}}, "decision": "mixed",
+    "rationale": "After inoculation, 0.7 bar is explicitly overpressure, under 80%
+    N2/20% CO2; do not substitute absolute pressure.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "preparation_steps",
+    "stored_value": null, "decision": "add", "rationale": "This layer omits the source
+    procedure. Restore source-scoped stages through maintained contributors and regenerate
+    only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "This layer omits the source procedure. Restore source-scoped stages through maintained
+    contributors and regenerate only compatible formulations.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "preparation_steps[1].description", "stored_value": "After inoculation pressurize
+    the vessels with sterile 80% N2 and 20% CO2 gas mixture to 0.7 bar overpressure.",
+    "decision": "evidence_only", "rationale": "Already retained verbatim in this owner;
+    attach source evidence and preserve main-stage scope."}]}, {"quantity_id": "q48",
+    "topic": "Trace element solution SL-10 — preparation step 1", "source": {"evidence_id":
+    "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086", "raw_path":
+    "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"step": "First dissolve FeCl2 in the HCl, then dilute in water,
+    add and dissolve the other salts. Finally make up to 1000.00 ml."}}, "decision":
+    "mixed", "rationale": "SL-10 preparation dissolves iron in acid before other salts
+    and makes up to 1000 ml; scope is this stock only.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml", "field_path": "preparation_steps",
+    "stored_value": null, "decision": "add", "rationale": "This layer omits the source
+    procedure. Restore source-scoped stages through maintained contributors and regenerate
+    only compatible formulations.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "This layer omits the source procedure. Restore source-scoped stages through maintained
+    contributors and regenerate only compatible formulations.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "preparation_steps[2].description", "stored_value": "First dissolve FeCl2 in the
+    HCl, then dilute in water, add and dissolve the other salts. Finally make up to
+    1000.00 ml.", "decision": "correct", "rationale": "Already retained verbatim,
+    but label this explicitly as stock preparation and move it to the appropriate
+    stock scope rather than an unqualified main-medium step."}]}, {"quantity_id":
+    "q49", "topic": "Na-crotonate solution (1 M) — preparation step 1", "source":
+    {"evidence_id": "api1086", "reference": "https://mediadive.dsmz.de/rest/medium/1086",
+    "raw_path": "REVIEW_WORK/batch073/source09/api1086.raw", "raw_sha256": "21e8bbb4825258c5c7aa3de509d59039d45455bb4390e9f8430f6e4d8919b1b1",
+    "locator": "$.data.solutions[3].steps[0]", "accessed_at": "2026-10-28T17:18:22.537619Z",
+    "source_object": {"step": "Dissolve crotonic acid in 800 ml distilled water, add
+    around 100 ml of 10 N NaOH and adjust pH to around 7. Then add water to reach
+    a volume of 1000 ml. Sterilize by filtration under 100% N2 gas atmosphere."}},
+    "decision": "mixed", "rationale": "Crotonate stock begins with 800 ml water, uses
+    approximately 100 ml 10 N NaOH to reach pH around 7, makes up to 1000 ml and is
+    filter-sterilized under 100% N2. This stock pH differs in scope from completed-medium
+    pH 7.0–7.2.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFATIRHABDIUM_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "This layer omits the source procedure. Restore source-scoped stages through maintained
+    contributors and regenerate only compatible formulations.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "This layer omits the source procedure. Restore source-scoped stages through maintained
+    contributors and regenerate only compatible formulations.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml", "field_path":
+    "preparation_steps[3].description", "stored_value": "Dissolve crotonic acid in
+    800 ml distilled water, add around 100 ml of 10 N NaOH and adjust pH to around
+    7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under
+    100% N2 gas atmosphere.", "decision": "correct", "rationale": "Already retained
+    verbatim, but label this explicitly as stock preparation and move it to the appropriate
+    stock scope rather than an unqualified main-medium step."}]}]'
+- assessment_id: a5
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: Every asserted current ontology slot is checked against its exact OLS object
+    and the packaged MIM index. Labels agree with current asserted IDs; nickel hydration
+    and sodium-resazurin form are separate source-identity defects. Mixed mapped/rejected
+    catalog rows are retained. Yeast extract remains an ungrounded complex component;
+    it is not forced to a pure compound.
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: All three complete histories and five historical report bodies were read.
+    Exact selected rows from two full pinned parent plans were reconciled to current
+    source bytes. Source-byte identity does not authenticate past retrieval, writer
+    execution or historical grounding validity. The missing attached evidence and
+    malformed timestamp limits remain explicit.
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a7
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - local-target
+- assessment_id: a8
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:003738
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-003738-stock-compositions-are-flattened-and-naoh-quantities-are-incommensurate
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock compositions are flattened and NaOH quantities are incommensurate
+  description: All three layers contain 23 stock-derived concentrations as main ingredients.
+    Nine SL-10 components, two selenite/tungstate salts, crotonic acid and ten vitamins
+    retain stock-strength rates; one NaOH row additionally sums separate 0.5 g and
+    approximately 100 ml reagent amounts as 100.5 G_PER_L. Restore four named stocks
+    plus the explicit indicator stock and their batch doses. Preserve 25% HCl without
+    inventing a percent basis, and distinguish stock waters/final makeups from main
+    water and the provider 1003 ml denominator. Twelve basal rates match the current
+    provider calculation and need evidence/volume qualification, not automatic numerical
+    replacement.
+  target_ids:
+  - CultureMech:003738
+  field_paths:
+  - ingredients[12:35].concentration
+  - ingredients[21].notes
+  - solutions
+  evidence_ids:
+  - dsm1086
+  - api1086
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-003738-preparation-is-lost-from-the-generated-and-komodo-records
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation is lost from the generated and KOMODO records
+  description: The DSMZ owner already retains both main source steps, including anoxic
+    late additions, stock-specific atmospheres, final pH and post-inoculation overpressure.
+    The KOMODO owner and generated record omit preparation. The DSMZ owner also places
+    SL-10 and crotonate stock instructions in its unqualified root step list. Preserve
+    the valid main steps, scope the two stock procedures correctly, and restore the
+    missing layers through owner curation and compatible regeneration.
+  target_ids:
+  - CultureMech:003738
+  field_paths:
+  - preparation_steps
+  - data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml::preparation_steps[2:4]
+  evidence_ids:
+  - owner-1
+  - owner-2
+  - api1086
+  - dsm1086
+  - writer-1
+  - writer-2
+  - writer-4
+  - writer-5
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-003738-nickel-hydrate-and-sodium-resazurin-require-form-specific-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium resazurin require form-specific grounding
+  description: Source NiCl2·6H2O is asserted as anhydrous nickel dichloride CHEBI:34887
+    in both primary and MIM-linked slots. CHEBI:53542 is the verified hexahydrate
+    candidate; consult mapped versus rejected lexical rows when applying it. Sodium
+    resazurin is asserted as neutral Resazurin CHEBI:8806, whose formula lacks sodium.
+    Resolve an exact sodium-form term or document a deliberately broader mapping;
+    no replacement sodium identifier is proposed here. All existing labels match their
+    current asserted OLS IDs, so the defects concern source-form correspondence. Calcium
+    D-pantothenate CHEBI:31345 is supported by the D stereochemistry and is not flagged.
+  target_ids:
+  - CultureMech:003738
+  field_paths:
+  - ingredients[19].term
+  - ingredients[19].mediaingredientmech_chebi_term
+  - ingredients[8].term
+  evidence_ids:
+  - dsm1086
+  - api1086
+  - ols34887
+  - ols53542
+  - ols8806
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-003738-recipe-claims-lack-attached-source-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Recipe claims lack attached source evidence
+  description: The current target and both owners have no attached evidence for amounts
+    or preparation. Historical reports and source notes do not supply claim-level
+    linkage. Attach exact source references, short excerpts and locators to the supported
+    basal concentrations, corrected stock compositions/doses and source-scoped preparation
+    using schema-supported placements. Use ingredient evidence for supported concentrations
+    and stock constituents; place preparation and stock-dose claims in root evidence
+    with explicit field and stage scopes. Preserve limits on final main volume, percent
+    basis and live KOMODO access.
+  target_ids:
+  - CultureMech:003738
+  field_paths:
+  - evidence
+  - ingredients[*].evidence
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - api1086
+  - historical-plan-1
+  - historical-plan-2
+  rule_id: source-stage-or-identity
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f5
+  issue_key: culturemech-003738-historical-timestamps-require-append-only-clarification
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical timestamps require append-only clarification
+  description: KOMODO import history contains literal .fZ and its composition-resolver
+    event omits a timezone. These stored strings are not exact UTC timestamps. Preserve
+    existing history and append an explanatory curation event when fixing the records;
+    update future writer formatting separately rather than inventing historical subsecond/timezone
+    values.
+  target_ids:
+  - CultureMech:003738
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - local-target
+  - owner-1
+  - writer-2
+  - writer-3
+  rule_id: source-stage-or-identity
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: current import timestamp writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: current enrichment timestamp writer
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Reconstruct source-scoped stock compositions and doses in both maintained
+    contributors, separate the two NaOH uses and preserve source units/strengths.
+    Retain supported basal provider rates with explicit calculation basis; regenerate
+    only compatible formulations after curation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003738
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: The DSMZ owner already retains both main source steps, including anoxic
+    late additions, stock-specific atmospheres, final pH and post-inoculation overpressure.
+    The KOMODO owner and generated record omit preparation. The DSMZ owner also places
+    SL-10 and crotonate stock instructions in its unqualified root step list. Preserve
+    the valid main steps, scope the two stock procedures correctly, and restore the
+    missing layers through owner curation and compatible regeneration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003738
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Source NiCl2·6H2O is asserted as anhydrous nickel dichloride CHEBI:34887
+    in both primary and MIM-linked slots. CHEBI:53542 is the verified hexahydrate
+    candidate; consult mapped versus rejected lexical rows when applying it. Sodium
+    resazurin is asserted as neutral Resazurin CHEBI:8806, whose formula lacks sodium.
+    Resolve an exact sodium-form term or document a deliberately broader mapping;
+    no replacement sodium identifier is proposed here. All existing labels match their
+    current asserted OLS IDs, so the defects concern source-form correspondence. Calcium
+    D-pantothenate CHEBI:31345 is supported by the D stereochemistry and is not flagged.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003738
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: The current target and both owners have no attached evidence for amounts
+    or preparation. Historical reports and source notes do not supply claim-level
+    linkage. Attach exact source references, short excerpts and locators to the supported
+    basal concentrations, corrected stock compositions/doses and source-scoped preparation
+    using schema-supported placements. Use ingredient evidence for supported concentrations
+    and stock constituents; place preparation and stock-dose claims in root evidence
+    with explicit field and stage scopes. Preserve limits on final main volume, percent
+    basis and live KOMODO access.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003738
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfatirhabdium_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action5
+  description: KOMODO import history contains literal .fZ and its composition-resolver
+    event omits a timezone. These stored strings are not exact UTC timestamps. Preserve
+    existing history and append an explanatory curation event when fixing the records;
+    update future writer formatting separately rather than inventing historical subsecond/timezone
+    values.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:003738
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: current import timestamp writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: current enrichment timestamp writer
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  - Verify future KOMODO importer and DSMZ resolver events use actual UTC timestamps
+    with an explicit timezone; preserve every original malformed or timezone-naive
+    historical string unchanged.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Exact current KOMODO record and list requests returned HTTP403; historical selected
+  mapping and independently accessible DSMZ evidence do not make this a completed
+  live KOMODO check.
+- The main PDF does not state a measured final volume; the API denominator is a provider
+  calculation. HCl 25% lacks a stated percent basis. No density or unreported sterilization
+  temperature/duration is inferred.
+- Primary PDF, current API/HTML and OLS scientific properties were assessed. Linked
+  bibliography, unrelated ontology cross-reference papers, unrelated parent-plan records
+  and vendor product identity were not independently reviewed.
+- No YAML recipe, generated data page, identifier registry or implementation was edited.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation
+  or publication.
+```
