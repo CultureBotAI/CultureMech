@@ -1,0 +1,3169 @@
+# Calditerrivibrio: separate primary batch, provider rates and stock formulation
+
+- Review: 20261028T062008Z-batch058-record03-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T06:09:00.904708Z
+- Finished UTC: 2026-10-28T06:20:08.300069Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated record and both maintained contributors flatten source stocks into main ingredients. Current explicit provider main rates are credited without assuming that listed water is final volume. Nickel hydrate and sodium-indicator identity need repair; existing DSMZ preparation is credited while its absence from the generated record is identified.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch058 native selection index 03.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003814 | data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml | generated | calditerrivibrio_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003814 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:003814 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:003814 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:003814 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact maintained lineage and source identity
+
+identity: supported. Targets: CultureMech:003814.
+
+The generated record resolves to exactly the KOMODO 1112 and DSMZ 1112 maintained contributors. Their ingredient signatures match, but current preparation content differs. The parent/source-duplicate links establish the recorded source relationship, not complete scientific interchangeability of all fields.
+
+### Classification and unsupported growth transfer
+
+scope: supported. Targets: CultureMech:003814.
+
+The defined liquid classification agrees with the provider classification and listed non-complex constituents. It does not independently resolve every supplied vitamin form or establish organism/strain growth.
+
+### Provider rates and primary denominator
+
+quantity: supported. Targets: CultureMech:003814.
+
+The explicit current API g_l values support their named source-stage assertions. Main volume 1003 mL is a provider declaration; primary water 1000 mL is a solvent input. The API declaration does not include every liquid row in an independently verified volume balance. Older recommendations to replace main rates with the PDF gram numbers as g/L are therefore not adopted. Only the trace stock has an explicit primary final makeup.
+
+### Hydrate, salt and current catalog boundaries
+
+grounding: concern. Targets: CultureMech:003814.
+
+Exact OLS objects distinguish CHEBI:34887 nickel dichloride from the source nickel chloride hexahydrate (verified candidate CHEBI:53542). CHEBI:8806 is neutral resazurin, while the source says sodium resazurin; the primary indicator has no secondary MIM slot in these records. Other asserted source-compatible forms and canonical labels are retained. Source calcium D-(+)-pantothenate explicitly supports the D-specific synonyms in CHEBI:31345, unlike a generic pantothenate source. Vitamin B12 is not resolved to an invented vitamer. Exact MIM preferred-row statuses, including REJECTED rows beside other accepted labels, are preserved; current catalog membership is not historical validity.
+
+### Current code and historical claims
+
+provenance: supported. Targets: CultureMech:003814.
+
+Current MediaDive parsing is primary-solution-only and preserves stock references; current cleanup does not sum concentrations. The merger requires full scientific compatibility, so matching ingredient fingerprints do not justify dropping richer preparation. These current safeguards are credited without claiming that they generated the old flattened rows. Historical reports are fully read with exact raw/row joins; their unsupported final-liter assumptions and blanket identity endorsements are not adopted.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:003814.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "NH4Cl", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.54,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.538385,\n                        \"mmol_l\": 10.0651,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 0.54, "unit": "g", "g_l": 0.538385, "mmol_l": 10.0651, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.538385 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.54 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.538385", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.538385 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.54 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.538385", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.538385 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.54 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.538385", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.538385 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.54 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q2", "topic": "KH2PO4", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.14,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.139581,\n                        \"mmol_l\": 1.02569,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.14, "unit": "g", "g_l": 0.139581, "mmol_l": 1.02569, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.139581 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.14 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.139581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.139581 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.14 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.139581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.139581 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.14 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.139581", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.139581 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.14 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q3", "topic": "MgCl2 x 6 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199402,\n                        \"mmol_l\": 0.980811,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.2, "unit": "g", "g_l": 0.199402, "mmol_l": 0.980811, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.199402 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.2 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.199402 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.2 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.199402 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.2 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.199402 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.2 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q4", "topic": "CaCl2 x 2 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.149551,\n                        \"mmol_l\": 1.01725,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.15, "unit": "g", "g_l": 0.149551, "mmol_l": 1.01725, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.149551 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.15 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.149551 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.15 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.149551 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.15 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.149551 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.15 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q5", "topic": "Na-acetate", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\": 23,\n                        \"amount\": 0.82,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.817547,\n                        \"mmol_l\": 9.96598,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "Na-acetate", "compound_id": 23, "amount": 0.82, "unit": "g", "g_l": 0.817547, "mmol_l": 9.96598, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.817547 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.82 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.817547", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.817547 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.82 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.817547", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.817547 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.82 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.817547", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.817547 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.82 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q6", "topic": "NaNO3", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NaNO3\",\n                        \"compound_id\": 187,\n                        \"amount\": 0.85,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.847458,\n                        \"mmol_l\": 9.97068,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 0.85, "unit": "g", "g_l": 0.847458, "mmol_l": 9.97068, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.847458 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.85 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.847458", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.847458 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.85 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.847458", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.847458 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.85 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.847458", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.847458 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.85 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q7", "topic": "Sodium resazurin", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\": 0.00198473,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504, "mmol_l": 0.00198473, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.000498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 ml at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume. The source is 0.50 mL of 0.1% w/v sodium resazurin, not 0.50 g of free resazurin. Its stock strength gives 0.50 mg added per batch; the quoted provider rate remains separately attributed. Identity correction is separate from this supported provider amount.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.000498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 ml at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume. The source is 0.50 mL of 0.1% w/v sodium resazurin, not 0.50 g of free resazurin. Its stock strength gives 0.50 mg added per batch; the quoted provider rate remains separately attributed. Identity correction is separate from this supported provider amount."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.000498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 ml at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume. The source is 0.50 mL of 0.1% w/v sodium resazurin, not 0.50 g of free resazurin. Its stock strength gives 0.50 mg added per batch; the quoted provider rate remains separately attributed. Identity correction is separate from this supported provider amount."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.000498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 ml at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume. The source is 0.50 mL of 0.1% w/v sodium resazurin, not 0.50 g of free resazurin. Its stock strength gives 0.50 mg added per batch; the quoted provider rate remains separately attributed. Identity correction is separate from this supported provider amount."}]}, {"quantity_id": "q8", "topic": "Na2CO3", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.997009,\n                        \"mmol_l\": 9.40681,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit": "g", "g_l": 0.997009, "mmol_l": 9.40681, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.997009 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 1 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.997009 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 1 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.997009 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 1 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.997009 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 1 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q9", "topic": "Na2S x 9 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.498504,\n                        \"mmol_l\": 2.07553,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound": "Na2S x 9 H2O", "compound_id": 54, "amount": 0.5, "unit": "g", "g_l": 0.498504, "mmol_l": 2.07553, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only", "rationale": "The current 0.498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.498504 g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 g at this main-batch stage. Retain the reported provider basis with exact evidence; neither the primary water input nor a sum of additions independently establishes the finished medium volume."}]}, {"quantity_id": "q10", "topic": "HCl", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "HCl", "compound_id": 68, "attribute": "25%", "amount": 10, "unit": "ml", "g_l": 2.5, "mmol_l": 68.5683, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 2.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified from the bare percentage; preserve the original volume/label and mark that conversion unresolved.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 2.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified from the bare percentage; preserve the original volume/label and mark that conversion unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 2.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified from the bare percentage; preserve the original volume/label and mark that conversion unresolved."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 2.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified from the bare percentage; preserve the original volume/label and mark that conversion unresolved."}]}, {"quantity_id": "q11", "topic": "FeCl2 x 4 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "FeCl2 x 4 H2O", "compound_id": 260, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.54482, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 1.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 1.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 1.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 1.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 1.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 1.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 1.5 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 1.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q12", "topic": "ZnCl2", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "ZnCl2", "compound_id": 64, "amount": 70, "unit": "mg", "g_l": 0.07, "mmol_l": 0.513573, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.07 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 70 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.07 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 70 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.07 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 70 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.07 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 70 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q13", "topic": "MnCl2 x 4 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "MnCl2 x 4 H2O", "compound_id": 36, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.505293, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q14", "topic": "H3BO3", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "H3BO3", "compound_id": 37, "amount": 6, "unit": "mg", "g_l": 0.006, "mmol_l": 0.0970246, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.006 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 6 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.006 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 6 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.006 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 6 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.006 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 6 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q15", "topic": "CoCl2 x 6 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "CoCl2 x 6 H2O", "compound_id": 38, "amount": 190, "unit": "mg", "g_l": 0.19, "mmol_l": 1.46335, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.19 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 190 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.19 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 190 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.19 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 190 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.19 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 190 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q16", "topic": "CuCl2 x 2 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "CuCl2 x 2 H2O", "compound_id": 39, "amount": 2, "unit": "mg", "g_l": 0.002, "mmol_l": 0.0117314, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.002 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 2 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.002 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 2 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.002 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 2 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.002 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 2 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q17", "topic": "NiCl2 x 6 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 24, "unit": "mg", "g_l": 0.024, "mmol_l": 0.185187, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.024 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 24 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.024 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 24 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.024 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 24 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.024 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 24 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q18", "topic": "Na2MoO4 x 2 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 36, "unit": "mg", "g_l": 0.036, "mmol_l": 0.148791, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.036 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 36 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.036 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 36 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.036 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 36 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.036 g/L is reported only for Trace element solution SL-10, not for the main medium. Preserve the exact 36 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration is independently supported."}]}, {"quantity_id": "q19", "topic": "NaOH", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "NaOH", "compound_id": 256, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 12.5009, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.5 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 0.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.5 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 0.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.5 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 0.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.5 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 0.5 g stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q20", "topic": "Na2SeO3 x 5 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 3, "unit": "mg", "g_l": 0.003, "mmol_l": 0.0114062, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.003 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 3 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.003 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 3 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.003 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 3 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.003 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 3 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q21", "topic": "Na2WO4 x 2 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 4, "unit": "mg", "g_l": 0.004, "mmol_l": 0.0121267, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.004 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 4 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.004 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 4 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.004 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 4 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.004 g/L is reported only for Selenite-tungstate solution, not for the main medium. Preserve the exact 4 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q22", "topic": "Biotin", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0818632, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q23", "topic": "Folic acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0453104, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q24", "topic": "Pyridoxine hydrochloride", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.486287, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 100 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q25", "topic": "Thiamine HCl", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.148236, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q26", "topic": "Riboflavin", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[4]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.132837, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q27", "topic": "Nicotinic acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[5]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.406141, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q28", "topic": "Calcium D-(+)-pantothenate", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[6]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q29", "topic": "Vitamin B12", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[7]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l": 0.00073779, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.001 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 1 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.001 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 1 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.001 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 1 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.001 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 1 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q30", "topic": "p-Aminobenzoic acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[8]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.364591, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q31", "topic": "(DL)-alpha-Lipoic acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[9]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.24233, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin's vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or link the row within that stock, and retain the separately supplied receiving dose. No final-medium conversion is inferred. The primary lists stock water input without an explicit final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume calculation."}]}, {"quantity_id": "q32", "topic": "Trace element solution SL-10 receiving dose and absent topology", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "solution": "Trace element solution SL-10", "solution_id": 595, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Create the missing stock object for Trace element solution SL-10 with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Trace element solution SL-10 with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Trace element solution SL-10 with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Trace element solution SL-10 with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}]}, {"quantity_id": "q33", "topic": "Selenite-tungstate solution receiving dose and absent topology", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "solution": "Selenite-tungstate solution", "solution_id": 777, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Create the missing stock object for Selenite-tungstate solution with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Selenite-tungstate solution with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Selenite-tungstate solution with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Selenite-tungstate solution with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}]}, {"quantity_id": "q34", "topic": "Wolin's vitamin solution (10x) receiving dose and absent topology", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 11, "solution": "Wolin's vitamin solution (10x)", "solution_id": 5980, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Create the missing stock object for Wolin's vitamin solution (10x) with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Wolin's vitamin solution (10x) with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Wolin's vitamin solution (10x) with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing stock object for Wolin's vitamin solution (10x) with its source composition and 1 mL addition to the main recipe batch. This addition is not explicitly stated per final liter in the primary. Preserve the API solution identifier and exact source stage; do not leave stock composition duplicated as direct main ingredients.", "missing": true}]}, {"quantity_id": "q35", "topic": "Main sol. 1112 water", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 13, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 1000 mL water as the listed main-batch solvent input. It is not an explicit final medium makeup.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL water as the listed main-batch solvent input. It is not an explicit final medium makeup.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL water as the listed main-batch solvent input. It is not an explicit final medium makeup.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE", "description": "Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary."}, {"step_number": 2, "action": "DISSOLVE", "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}], "decision": "add", "rationale": "Preserve 1000 mL water as the listed main-batch solvent input. It is not an explicit final medium makeup."}]}, {"quantity_id": "q36", "topic": "Trace element solution SL-10 water", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "Distilled water", "compound_id": 4, "amount": 990, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 990 mL stock water at the named Trace element solution SL-10 stage. The separate trace preparation explicitly makes the completed stock up to 1000 mL; distinguish this final makeup from its initial water input.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 990 mL stock water at the named Trace element solution SL-10 stage. The separate trace preparation explicitly makes the completed stock up to 1000 mL; distinguish this final makeup from its initial water input.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 990 mL stock water at the named Trace element solution SL-10 stage. The separate trace preparation explicitly makes the completed stock up to 1000 mL; distinguish this final makeup from its initial water input.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 990 mL stock water at the named Trace element solution SL-10 stage. The separate trace preparation explicitly makes the completed stock up to 1000 mL; distinguish this final makeup from its initial water input.", "missing": true}]}, {"quantity_id": "q37", "topic": "Selenite-tungstate solution water", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Selenite-tungstate solution stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Selenite-tungstate solution stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Selenite-tungstate solution stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Selenite-tungstate solution stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "missing": true}]}, {"quantity_id": "q38", "topic": "Wolin's vitamin solution (10x) water", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[3].recipe[10]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Wolin's vitamin solution (10x) stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Wolin's vitamin solution (10x) stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Wolin's vitamin solution (10x) stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 1000 mL stock water at the named Wolin's vitamin solution (10x) stage. No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.", "missing": true}]}, {"quantity_id": "q39", "topic": "Main sol. 1112 preparation", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "mixed", "rationale": "The current DSMZ owner already retains this exact main process, including 80% N2/20% CO2, 30–45 min sparging, anoxic dispensing, excluded ingredients, distinct late-stock atmospheres and completed-medium pH. The target and KOMODO owner omit it. Preserve this evidence and encode stages without treating a compound or stock dose as gas concentration. No numeric autoclave temperature/time is supplied.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The current DSMZ owner already retains this exact main process, including 80% N2/20% CO2, 30–45 min sparging, anoxic dispensing, excluded ingredients, distinct late-stock atmospheres and completed-medium pH. The target and KOMODO owner omit it. Preserve this evidence and encode stages without treating a compound or stock dose as gas concentration. No numeric autoclave temperature/time is supplied.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "The current DSMZ owner already retains this exact main process, including 80% N2/20% CO2, 30–45 min sparging, anoxic dispensing, excluded ingredients, distinct late-stock atmospheres and completed-medium pH. The target and KOMODO owner omit it. Preserve this evidence and encode stages without treating a compound or stock dose as gas concentration. No numeric autoclave temperature/time is supplied.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary.", "decision": "evidence_only", "rationale": "The current DSMZ owner already retains this exact main process, including 80% N2/20% CO2, 30–45 min sparging, anoxic dispensing, excluded ingredients, distinct late-stock atmospheres and completed-medium pH. The target and KOMODO owner omit it. Preserve this evidence and encode stages without treating a compound or stock dose as gas concentration. No numeric autoclave temperature/time is supplied."}]}, {"quantity_id": "q40", "topic": "Trace element solution SL-10 preparation", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }", "exact_decoded_object": {"step": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "mixed", "rationale": "The DSMZ owner already retains SL-10 preparation: dissolve iron chloride in the acid, dilute/add other compounds and make up to 1000 mL. This is stock preparation, not a final-medium makeup. The source FeCl2 tetrahydrate amount is already 1.50 g; it is not an mg-to-g conversion.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing named stock and scope this retained preparation to it. The DSMZ owner already retains SL-10 preparation: dissolve iron chloride in the acid, dilute/add other compounds and make up to 1000 mL. This is stock preparation, not a final-medium makeup. The source FeCl2 tetrahydrate amount is already 1.50 g; it is not an mg-to-g conversion.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing named stock and scope this retained preparation to it. The DSMZ owner already retains SL-10 preparation: dissolve iron chloride in the acid, dilute/add other compounds and make up to 1000 mL. This is stock preparation, not a final-medium makeup. The source FeCl2 tetrahydrate amount is already 1.50 g; it is not an mg-to-g conversion.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Create the missing named stock and scope this retained preparation to it. The DSMZ owner already retains SL-10 preparation: dissolve iron chloride in the acid, dilute/add other compounds and make up to 1000 mL. This is stock preparation, not a final-medium makeup. The source FeCl2 tetrahydrate amount is already 1.50 g; it is not an mg-to-g conversion.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "preparation_steps[1].description", "stored_value": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.", "decision": "evidence_only", "rationale": "The DSMZ owner already retains SL-10 preparation: dissolve iron chloride in the acid, dilute/add other compounds and make up to 1000 mL. This is stock preparation, not a final-medium makeup. The source FeCl2 tetrahydrate amount is already 1.50 g; it is not an mg-to-g conversion."}]}, {"quantity_id": "q41", "topic": "Main medium pH", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The existing pH 7.0 is explicitly supported for the complete main medium. Credit it separately from stock pH and unquantified adjustment reagents.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale": "The existing pH 7.0 is explicitly supported for the complete main medium. Credit it separately from stock pH and unquantified adjustment reagents."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale": "The existing pH 7.0 is explicitly supported for the complete main medium. Credit it separately from stock pH and unquantified adjustment reagents."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale": "The existing pH 7.0 is explicitly supported for the complete main medium. Credit it separately from stock pH and unquantified adjustment reagents."}]}, {"quantity_id": "q42", "topic": "Unquantified late-stock and treatment details", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, "decision": "not_quantified", "rationale": "Late carbonate and sulfide stock strengths and stock addition volumes are not separately quantified; their main-batch masses and all three named receiving doses are supplied and retained. The 100% N2 versus 80% N2/20% CO2 stock atmospheres and vitamin filtration are explicit, but numeric autoclave settings and filtration pore size are not supplied by this primary recipe.", "layer_assessments": []}]
+
+### Current ontology and MIM correspondence
+
+grounding: supported. Targets: CultureMech:003814.
+
+The grounding inventory enumerates every asserted identifier and exact preferred label. Exact identifier rows and ontology-linked rows are recorded separately, including mapping_status. Present catalog membership does not validate supplied hydrate form or historical identity; specific limits are assessed separately.
+
+### History and evidence scope
+
+provenance: supported. Targets: CultureMech:003814.
+
+Complete owner and target histories were read. Current source bytes and inspected code are independent evidence; historical timestamps remain historical claims unless an exact cited raw digest is recovered.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:003814.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:003814.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Stock composition is flattened into main ingredients
+
+major / open / confirmed; issue key: culturemech-003814-stock-composition-is-flattened-into-main-ingredients.
+
+The target and both owners lack solutions while 22 direct ingredient rows carry concentrations for separate source stocks. The SL-10 acid conversion has an additional unresolved bare-percentage basis. The primary supplies named stock additions per recipe batch; it does not authorize treating undiluted stock concentrations as final-medium rates.
+
+### f2: Nickel hydrate and sodium indicator identities differ from the source
+
+major / open / confirmed; issue key: culturemech-003814-nickel-hydrate-and-sodium-indicator-identities-differ-from-the-source.
+
+The source nickel chloride hexahydrate is linked to anhydrous CHEBI:34887 in both primary and secondary slots. Sodium resazurin is linked only through its primary term to neutral CHEBI:8806. These supplied forms are not interchangeable merely because related labels resolve.
+
+### f3: Source preparation is absent or lacks stock scope
+
+major / open / confirmed; issue key: culturemech-003814-source-preparation-is-absent-or-lacks-stock-scope.
+
+The target and KOMODO owner omit the main anoxic preparation, while the DSMZ owner already retains it and the trace-stock preparation. Credit these existing instructions. The stock-level steps still need explicit stock placement/evidence, and omitted main water must be preserved as a solvent input. The vitamin filtration and late-stock atmospheres must remain scoped to the source stages.
+
+### f4: Sodium nitrate retains a legacy catalog identifier
+
+minor / open / confirmed; issue key: culturemech-003814-sodium-nitrate-retains-a-legacy-catalog-identifier.
+
+CHEBI:63005 correctly identifies source sodium nitrate, but MediaIngredientMech:000171 has no exact current packaged catalog row. This establishes a present resolution limitation, not a claim about its validity when first imported.
+
+### f5: Historical timestamp syntax and claim support need traceable context
+
+minor / open / confirmed; issue key: culturemech-003814-historical-timestamp-syntax-and-claim-support-need-traceable-context.
+
+The KOMODO-derived first timestamp contains a literal fZ suffix and the next lacks a timezone. These are historical provenance limitations; canonical validation and successful reference checks with zero checked references do not authenticate the events. Current source evidence should be linked to the exact claims without rewriting the old event.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Model or link the exact named source stocks and their batch receiving doses; move stock-only rows to the correct stock stage, preserving every supplied amount, form and source quote. Keep main provider g_l separate. Add root evidence for solution/preparation claims and regenerate only after owner reconciliation.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+Use the verified nickel hexahydrate identity only after reconciling the current catalog row statuses. Resolve sodium resazurin as the actual sodium form or retain an explicit unresolved supplied-form assertion; do not invent a sodium-term accession or convert quantities using neutral-species mass.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+Preserve and source-link the DSMZ owner’s existing main and stock instructions; add only genuinely missing process fields to the KOMODO owner. Keep stock preparation within its named stock, retain the main water input, and reconcile differing owner assertions before regeneration. Do not infer sterilization temperature/time or a final-medium denominator from water volume.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+Resolve the legacy secondary slot against the exact current catalog while preserving sodium nitrate identity, original source and append-only historical provenance. Do not replace it solely from label similarity.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action5
+
+Retain the malformed or timezone-unspecified original events. If authoritative original provenance is recovered, append a verified correction/context event; never invent or silently rewrite the original timestamps. Attach current root evidence to the specific source-stage claims.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-2 | data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| dsm1112 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1112.pdf; Exact source identity and scoped formulation/preparation | supports | Complete two-page primary recipe, every main and stock row and preparation paragraph read, with both rendered pages viewed. Main water is an input; only the trace-stock makeup is explicitly final. |
+| api1112 | https://mediadive.dsmz.de/rest/medium/1112; Exact source identity and scoped formulation/preparation | supports | Complete current official response read. Each explicit g_l value remains attributed to its own named solution and declared volume, without promoting stock rates to main-medium rates or treating provider mmol_l as independently verified. |
+| komodo1112 | https://komodo.modelseed.org/servlet/Komodo?Mediumnumber=1112; HTTP response/status; no usable current recipe | context_only | The exact current KOMODO request failed with HTTP 404. The retained response is an access outcome, not recipe evidence. Historical excerpts are derivative unless independently authenticated. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53542; _embedded.terms exact CHEBI:53542 object | supports | Current exact nickel(II) chloride hexahydrate object read as a source-form correspondence candidate; current preferred/synonym MIM row statuses remain distinct, not an automatic endorsement. |
+| identity-search | REVIEW_WORK/batch058/record03/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _parse_api_solutions, _parse_preparation_steps | context_only | Current composition parser restricts ingredients to the primary solution, excludes solvent and recognized stock additions, and retains explicit g_l. The solution parser preserves referenced or percent-defined stocks and source attributes. Preparation parsing still concatenates all solution steps into root preparation_steps; source-stage annotation remains important. These present functions do not prove the historical execution that produced this record. |
+| writer-merge | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group copies a sole contributor with merge metadata. For multiple contributors it passes records to merge_formulation_evidence, which checks compatibility; it does not authorize merging different preparation assertions. |
+| writer-formulation | src/culturemech/merge/formulation.py; formulation_content, merge_formulation_evidence | context_only | Current compatibility preserves scientific fields and list order and rejects unequal formulations; only specified provenance/evidence lists are unioned. It performs no concentration conversion or stock expansion and does not authenticate historical merges. |
+| writer-cleanup | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients, merge_ingredient_group | context_only | Current cleanup groups identical normalized names, keeps the first entry as a base, flags differing concentrations and combines a warning note; it does not sum concentrations. It can still discard distinctions when names repeat, so source stage must be retained. The current code is not proof of the earlier summed value. |
+| historical-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/calditerrivibrio_medium.yaml.md; Entire exact Record-header report, every claim row and narrative | context_only | Current independently captured API response has exactly the cited historical raw SHA256; all 40 literal JSON snippets and locators match. This authenticates those response bytes, not the historical access time or recommendations. |
+| historical-2 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml.md; Entire exact Record-header report, every claim row and narrative | context_only | Current independently captured API response has exactly the cited historical raw SHA256; all 40 literal JSON snippets and locators match. This authenticates those response bytes, not the historical access time or recommendations. |
+| historical-3 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.md; Entire exact Record-header report, every claim row and narrative | context_only | Full historical report read as derivative context. Its old validation/access claims are not independently authenticated; unsupported fixed-final-liter assumptions are not adopted. |
+| historical-4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.md; Entire exact Record-header report, every claim row and narrative | context_only | Full historical report read as derivative context. Its old validation/access claims are not independently authenticated; unsupported fixed-final-liter assumptions are not adopted. |
+| historical-5 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/calditerrivibrio_medium.md; Entire exact Record-header report, every claim row and narrative | context_only | Full historical report read as derivative context. Its old validation/access claims are not independently authenticated; unsupported fixed-final-liter assumptions are not adopted. |
+| historical-6 | reports/yaml_record_review/20260922T023201Z-CALDITERRIVIBRIO_MEDIUM.md; Entire exact Record-header report, every claim row and narrative | context_only | Full historical report read as derivative context. Its old validation/access claims are not independently authenticated; unsupported fixed-final-liter assumptions are not adopted. |
+| historical-reader | REVIEW_WORK/batch058/record03/historical-reader.json | context_only | All exact target/owner historical report texts and current raw/literal/locator joins; historical recommendations remain subject to current stage and volume evidence. |
+| source-rows | REVIEW_WORK/batch058/record03/source-row-inventory.json | context_only | Every primary/provider main and stock recipe row with exact literal raw JSON and named-stage locator. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31206; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86345; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32954; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63005; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17883; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86249; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49976; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86368; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86318; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_34887; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32145; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131361; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63939; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_27470; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30961; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17015; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15940; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31345; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_176843; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30753; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16494; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch058/record03/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch058/record03/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch058/record03/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch058/record03/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch058/record03/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch058/record03/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch058/record03/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch058/record03/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch058/record03/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- The exact current KOMODO request returned HTTP 404; its recipe and old catalog capture event were not independently reacquired. Current DSMZ primary and official API evidence support the separately stated source claims.
+- The primary lists 1000 mL main water without final makeup. Explicit API g_l and volume 1003 mL are provider assertions; no independent physical final-volume or stock-to-main conversion is claimed.
+- The trace-stock explicit 1000 mL makeup is stage-specific. Other stock water inputs and declared provider stock volumes are not silently promoted to primary final-volume statements.
+- No molecule-weight, density or provider mmol_l calculation is independently endorsed. Supplied sodium-indicator identity, generic B12 vitamer, and current mapping-status limitations remain explicit.
+- Historical source-byte equality and exact quoted-object matches authenticate matching bytes, not historical retrieval time, execution or scientific correctness of all older report conclusions. Existing DSMZ preparation and present importer/merger/cleanup safeguards are credited.
+- SL-10 HCl is labelled 25% without percentage basis; neither w/v nor w/w is inferred. API 2.5 g/L remains reported-only for that stock, not independently derived or transferred to the main medium.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T062008Z-batch058-record03-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Calditerrivibrio: separate primary batch, provider rates and stock formulation'
+started_at: '2026-10-28T06:09:00.904708Z'
+finished_at: '2026-10-28T06:20:08.300069Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The generated record and both maintained contributors flatten source stocks
+  into main ingredients. Current explicit provider main rates are credited without
+  assuming that listed water is final volume. Nickel hydrate and sodium-indicator
+  identity need repair; existing DSMZ preparation is credited while its absence from
+  the generated record is identified.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml
+    sha256: eb046d6d4acec58597fb508f2c0a4fc91de580b0df8ed9ed1eaa9536c295a6b4
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    sha256: e5ef3f46f74baa7abcba0c37d41906ddbbeaab1766f58b988e6373dc7a2f3ce7
+    role: context
+  - path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    sha256: 1869541e6d61f3dc940f1253755b229884249bf4258e9459f43249fac2d5a37c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/calditerrivibrio_medium.yaml.md
+    sha256: 465c76e4f855abf359997acdb55edfff4a90c8d98ef2a7d4c8470247747a7617
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml.md
+    sha256: 665955aa110d541aaa417b370adba57f6a33103c7bc28fa96f19cb772b155e2a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.md
+    sha256: 8276f00f149cab51c90ebfd208dc76addd7d5750f097edc6e90797e3b890d868
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.md
+    sha256: 9ad049c1c39447e55bcd08f3e8b5df52262abaff67cc75870a65b9d954a21991
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/calditerrivibrio_medium.md
+    sha256: 4fd34f2d01878e47120018cb651ce5904a2aa29d9ddc893d96b57a9499d6e988
+    role: context
+  - path: reports/yaml_record_review/20260922T023201Z-CALDITERRIVIBRIO_MEDIUM.md
+    sha256: bf9463965f05db6e3b5a37726fd190d35f7159d058c7c539ca5b70eea6ed1e7b
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch058 native selection index 03.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003814
+targets:
+- target_id: CultureMech:003814
+  path: data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml
+  label: calditerrivibrio_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003814
+  command: just validate-schema data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003814
+  command: just validate-strict data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml
+    --out REVIEW_WORK/batch058/record03/strict.tsv --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003814
+  command: just validate-terms data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:003814
+  command: just validate-references data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: eb046d6d4acec58597fb508f2c0a4fc91de580b0df8ed9ed1eaa9536c295a6b4
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: e5ef3f46f74baa7abcba0c37d41906ddbbeaab1766f58b988e6373dc7a2f3ce7
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 1869541e6d61f3dc940f1253755b229884249bf4258e9459f43249fac2d5a37c
+- evidence_id: dsm1112
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1112.pdf
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T06:09:01.980611Z'
+  support: supports
+  summary: Complete two-page primary recipe, every main and stock row and preparation
+    paragraph read, with both rendered pages viewed. Main water is an input; only
+    the trace-stock makeup is explicitly final.
+  snapshot_sha256: 15ac5b5ce3a2b06f8ecd815952e4673972e4ce13a11e6ab9f421abdb7a94ee7b
+- evidence_id: api1112
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1112
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T06:09:01.840438Z'
+  support: supports
+  summary: Complete current official response read. Each explicit g_l value remains
+    attributed to its own named solution and declared volume, without promoting stock
+    rates to main-medium rates or treating provider mmol_l as independently verified.
+  snapshot_sha256: e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4
+- evidence_id: komodo1112
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/Komodo?Mediumnumber=1112
+  locator: HTTP response/status; no usable current recipe
+  accessed_at: '2026-10-28T06:09:02.185673Z'
+  support: context_only
+  summary: The exact current KOMODO request failed with HTTP 404. The retained response
+    is an access outcome, not recipe evidence. Historical excerpts are derivative
+    unless independently authenticated.
+  snapshot_sha256: 14fb7be7b7127b2f95422f68c60d4947bca356a592268de057ee9d6bf297ae7a
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53542
+  locator: _embedded.terms exact CHEBI:53542 object
+  accessed_at: '2026-10-28T06:09:08.764660Z'
+  support: supports
+  summary: Current exact nickel(II) chloride hexahydrate object read as a source-form
+    correspondence candidate; current preferred/synonym MIM row statuses remain distinct,
+    not an automatic endorsement.
+  snapshot_sha256: 1e444345efd33c02d5050deadd66637cc6dae004c55e6962c62abd172291e526
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch058/record03/identity-search.json
+  accessed_at: '2026-10-28T06:20:08.215666Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems resolved uniquely. Similar names and
+    source accessions are not promoted to owners.
+  snapshot_sha256: b98895aeb4104d85a84f45138f512d9a38b1862dbfc5b1d67e423df4e7c93813
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. The current code is not proof of the earlier summed
+    value.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/calditerrivibrio_medium.yaml.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Current independently captured API response has exactly the cited historical
+    raw SHA256; all 40 literal JSON snippets and locators match. This authenticates
+    those response bytes, not the historical access time or recommendations.
+  snapshot_sha256: 465c76e4f855abf359997acdb55edfff4a90c8d98ef2a7d4c8470247747a7617
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Current independently captured API response has exactly the cited historical
+    raw SHA256; all 40 literal JSON snippets and locators match. This authenticates
+    those response bytes, not the historical access time or recommendations.
+  snapshot_sha256: 665955aa110d541aaa417b370adba57f6a33103c7bc28fa96f19cb772b155e2a
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 8276f00f149cab51c90ebfd208dc76addd7d5750f097edc6e90797e3b890d868
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 9ad049c1c39447e55bcd08f3e8b5df52262abaff67cc75870a65b9d954a21991
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/calditerrivibrio_medium.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 4fd34f2d01878e47120018cb651ce5904a2aa29d9ddc893d96b57a9499d6e988
+- evidence_id: historical-6
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T023201Z-CALDITERRIVIBRIO_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:20:08.149569Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: bf9463965f05db6e3b5a37726fd190d35f7159d058c7c539ca5b70eea6ed1e7b
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record03/historical-reader.json
+  accessed_at: '2026-10-28T06:20:08.221523Z'
+  support: context_only
+  summary: All exact target/owner historical report texts and current raw/literal/locator
+    joins; historical recommendations remain subject to current stage and volume evidence.
+  snapshot_sha256: 7fbbd4338821c36604decc351c1c103ad50246e085370b4493fb9c5946658005
+- evidence_id: source-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record03/source-row-inventory.json
+  accessed_at: '2026-10-28T06:20:08.247569Z'
+  support: context_only
+  summary: Every primary/provider main and stock recipe row with exact literal raw
+    JSON and named-stage locator.
+  snapshot_sha256: 1b1dd8fa843d3624704ee9635be7eebe9d32c97f907572e982fad5d23026d484
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31206
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:05.827954Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: c70055293606f21dcdfb72325a4677661b51efb723ba9357efab43f8ec9b03f7
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:08.868167Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 913baf38abc38dd61f05c5d636fd6532b70a668673a1f5762f290d2b67270164
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:10.594154Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 015a33a158257cc5cba8a8e62de382053399be060366af5d95074883bb22b86e
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:09.947533Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: df8f702eb5b9d3e50209bfa2b0c4b6f1db30c116e56a58e348cbd4bf3bc0ebc1
+- evidence_id: chebi32954
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32954
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:07.497944Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 34c7d0dea7bc001a0a3b3b388138837cb1aba3b252017bc1ff8625b7a3ff655d
+- evidence_id: chebi63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63005
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:08.832359Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 989f7dba2ab0bc556056f2d79a2f53fae9ce391393fc7ba373cbfe5afc25ae03
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:11.211390Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: ceb05e9dd7fba3802d28b34c50bbb604ded87951e4ea3a812739824a84648d72
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_29377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:05.231004Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: dee64859233d0b0898eba91901a001f1faaa5eaab37f7beb7e98318ab8c19569
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:09.562776Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 3eece7d96d2433ff020ece90db55323d138c5c828b78198f91d26b3eafa91f9f
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17883
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:04.648246Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 5f7b2f292559b9033f3c62c8403ed552842a28535010d6af5daa018a0977c28d
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86249
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:10.038894Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 69797bf2582679b3f621fa4f982077ed90f48f3a5e1293c7444a3aaacbb25ba2
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49976
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:08.266032Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2d2305ca671adbbd3b0cc07b2331373a768bb44d41f32f61ba894594ae470eff
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86368
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:10.689178Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2bb4588e6734285b5536bdac78701f9800fdb8d17236d12cf5a1c30490f1614d
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:07.629317Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f23e1405347fa9d8a0826d4dd1279b7cdec8361390d20e439154dcbbd386a2d4
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:08.353502Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 31dc996638b0cc1341ed24fcb38ec344af726c99d376ac94e952210fcb9ed583
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86318
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:10.085554Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 8ba4e0a242571ae9a62ca7ba5c0f4af765962a02f5119a96d47dda9df7c9d593
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_34887
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:07.658636Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: a43b8268f70ae50c4cfbc53e12bbd195618c521619cfab8f71d3704b338af95b
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:09.443282Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0271a149a298ff837ad8f690ce8cb0acf111f5d25c5efaf6fa828401ab951d56
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32145
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:06.468673Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1f39a220b091088af20782dd27577fb7ca89e037d2b0ea83e76075fb8d77b797
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131361
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:03.302761Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 345cb9c46670b2812cacd12098169f03ea94fe064710e06a7aa545a2717706b0
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63939
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:09.349654Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f2fb7b5c3e7fec44d19e40f18cfbfa699c6010ad22cb76a9d2acd2b60950d98e
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:03.978100Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0d2e75e0bd98dbffff14d85a41dfd0af8aae2a8d65a945d34a4126a17091c2b8
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:05.281650Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: dcee85bb585d3a73341ab66eff772dc6361330b3c899c4daecbda49d5e84e590
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:05.839302Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 491af523ba70d13857fcb828561d0556e46382fa0591011a06693d7db24ad91f
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:08.167647Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: fc6b8e9d8657914ed8fd568c69d8a5b2cf41b26767bd6361a5e2d258883be97d
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:04.640025Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f8bec809c7ba5a36faea58b8fe1b5110f0d75dbd4ac1929a121cd352bce63309
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:03.891221Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2890ef915cd546e70c1e638af285a3cc19b8299ae7722d00b43a40170a57ab8a
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:05.875771Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: d2a04309eb6976fd395f9684ec4c3f5192362e2b6b75464b0af128a28e188d25
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:04.597628Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 5c42e2236866d0314bc8d45947ddf9eb2fdf6364d08e802b0fb271011cbfe563
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:05.840155Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 42ea4022bd68e8fa28962bc496ca757174da7bbd18ce06b7f3d521885609a50c
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:09:04.041134Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: db6824ffab0d71efc11d1e64b505ae583949e9d5837086a4b0e7b364b2933a22
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record03/quantity-inventory.json
+  accessed_at: '2026-10-28T06:20:08.298634Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 0edfb2a98d8c284afa44559813e60c7b51fdae16f95beab8b7e12424a4060fc4
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record03/grounding-inventory.json
+  accessed_at: '2026-10-28T06:20:08.298728Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 7794510994e6e84d9e1cfb24c3d7ad58db5e9bbb588e35de31c1434418bcc89e
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record03/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T06:20:08.298948Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: ecb7862f3260d48caaf1975f381a59614eb54ad08284762c040cda6d3d81072d
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record03/scalar-census.json
+  accessed_at: '2026-10-28T06:20:08.298974Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 7445c57a4df21d109c4ea2d73e595817feb1e498c0ec4bdcedb95e6a168e5cd0
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch058/record03/validate-schema.json
+  accessed_at: '2026-10-28T06:09:02.102612Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 7e841ee08c470624e91ca54adca02d6a8b8314bc1db2172d02cd6fd01d2f2880
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch058/record03/validate-strict.json
+  accessed_at: '2026-10-28T06:09:03.199399Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch058/record03/strict.tsv\n"
+  snapshot_sha256: 3847b13a1ab17129de4d0c5e099f35b64ffc2e503e380a932e7b8a7ec0019691
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch058/record03/validate-terms.json
+  accessed_at: '2026-10-28T06:09:04.379621Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 3238ca02c2d85faecfd59af99fe38f91ada0922129bfa812cc2d358eb39b7549
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch058/record03/validate-references.json
+  accessed_at: '2026-10-28T06:09:05.238116Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: fba8c0dd5428526f95ef56252af1b187948230b61b932d105724abc89e62a788
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact maintained lineage and source identity
+  outcome: supported
+  summary: The generated record resolves to exactly the KOMODO 1112 and DSMZ 1112
+    maintained contributors. Their ingredient signatures match, but current preparation
+    content differs. The parent/source-duplicate links establish the recorded source
+    relationship, not complete scientific interchangeability of all fields.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - identity-search
+  - local-target
+  - owner-1
+  - owner-2
+  - api1112
+  - dsm1112
+- assessment_id: a2
+  area: scope
+  topic: Classification and unsupported growth transfer
+  outcome: supported
+  summary: The defined liquid classification agrees with the provider classification
+    and listed non-complex constituents. It does not independently resolve every supplied
+    vitamin form or establish organism/strain growth.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - local-target
+  - api1112
+  - dsm1112
+- assessment_id: a3
+  area: quantity
+  topic: Provider rates and primary denominator
+  outcome: supported
+  summary: The explicit current API g_l values support their named source-stage assertions.
+    Main volume 1003 mL is a provider declaration; primary water 1000 mL is a solvent
+    input. The API declaration does not include every liquid row in an independently
+    verified volume balance. Older recommendations to replace main rates with the
+    PDF gram numbers as g/L are therefore not adopted. Only the trace stock has an
+    explicit primary final makeup.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - quantities
+  - api1112
+  - dsm1112
+  - historical-reader
+- assessment_id: a4
+  area: grounding
+  topic: Hydrate, salt and current catalog boundaries
+  outcome: concern
+  summary: Exact OLS objects distinguish CHEBI:34887 nickel dichloride from the source
+    nickel chloride hexahydrate (verified candidate CHEBI:53542). CHEBI:8806 is neutral
+    resazurin, while the source says sodium resazurin; the primary indicator has no
+    secondary MIM slot in these records. Other asserted source-compatible forms and
+    canonical labels are retained. Source calcium D-(+)-pantothenate explicitly supports
+    the D-specific synonyms in CHEBI:31345, unlike a generic pantothenate source.
+    Vitamin B12 is not resolved to an invented vitamer. Exact MIM preferred-row statuses,
+    including REJECTED rows beside other accepted labels, are preserved; current catalog
+    membership is not historical validity.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - grounding
+  - chebi34887
+  - chebi53542
+  - chebi8806
+  - chebi31345
+  - dsm1112
+- assessment_id: a5
+  area: provenance
+  topic: Current code and historical claims
+  outcome: supported
+  summary: Current MediaDive parsing is primary-solution-only and preserves stock
+    references; current cleanup does not sum concentrations. The merger requires full
+    scientific compatibility, so matching ingredient fingerprints do not justify dropping
+    richer preparation. These current safeguards are credited without claiming that
+    they generated the old flattened rows. Historical reports are fully read with
+    exact raw/row joins; their unsupported final-liter assumptions and blanket identity
+    endorsements are not adopted.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - writer-mediadive
+  - writer-merge
+  - writer-formulation
+  - writer-cleanup
+  - historical-reader
+- assessment_id: a6
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "NH4Cl", "source": {"sources": [{"evidence_id":
+    "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path":
+    "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.54,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.538385,\n                        \"mmol_l\": 10.0651,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "NH4Cl", "compound_id": 42, "amount": 0.54, "unit": "g", "g_l": 0.538385, "mmol_l":
+    10.0651, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only",
+    "rationale": "The current 0.538385 g/L matches the official API g_l for Main sol.
+    1112 (declared volume 1003 mL). The primary supports 0.54 g at this main-batch
+    stage. Retain the reported provider basis with exact evidence; neither the primary
+    water input nor a sum of additions independently establishes the finished medium
+    volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.538385",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.538385
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.54 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.538385",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.538385
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.54 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "0.538385",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.538385
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.54 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q2",
+    "topic": "KH2PO4", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.14,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.139581,\n                        \"mmol_l\": 1.02569,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "KH2PO4", "compound_id": 11, "amount": 0.14, "unit": "g", "g_l": 0.139581, "mmol_l":
+    1.02569, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only",
+    "rationale": "The current 0.139581 g/L matches the official API g_l for Main sol.
+    1112 (declared volume 1003 mL). The primary supports 0.14 g at this main-batch
+    stage. Retain the reported provider basis with exact evidence; neither the primary
+    water input nor a sum of additions independently establishes the finished medium
+    volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.139581",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.139581
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.14 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.139581",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.139581
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.14 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.139581",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.139581
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.14 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q3",
+    "topic": "MgCl2 x 6 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.199402,\n                        \"mmol_l\": 0.980811,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.2, "unit": "g", "g_l": 0.199402,
+    "mmol_l": 0.980811, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "evidence_only", "rationale": "The current 0.199402 g/L matches the official API
+    g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.2 g at
+    this main-batch stage. Retain the reported provider basis with exact evidence;
+    neither the primary water input nor a sum of additions independently establishes
+    the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.199402
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.2 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.199402
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.2 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.199402
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.2 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q4",
+    "topic": "CaCl2 x 2 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    0.15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.149551,\n                        \"mmol_l\": 1.01725,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.15, "unit": "g", "g_l": 0.149551,
+    "mmol_l": 1.01725, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "evidence_only", "rationale": "The current 0.149551 g/L matches the official API
+    g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.15 g
+    at this main-batch stage. Retain the reported provider basis with exact evidence;
+    neither the primary water input nor a sum of additions independently establishes
+    the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.149551
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.15 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.149551
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.15 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.149551",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.149551
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.15 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q5",
+    "topic": "Na-acetate", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Na-acetate\",\n                        \"compound_id\": 23,\n                        \"amount\":
+    0.82,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.817547,\n                        \"mmol_l\": 9.96598,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "Na-acetate", "compound_id": 23, "amount": 0.82, "unit": "g", "g_l": 0.817547,
+    "mmol_l": 9.96598, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "evidence_only", "rationale": "The current 0.817547 g/L matches the official API
+    g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.82 g
+    at this main-batch stage. Retain the reported provider basis with exact evidence;
+    neither the primary water input nor a sum of additions independently establishes
+    the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.817547",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.817547
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.82 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.817547",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.817547
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.82 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.817547",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.817547
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.82 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q6",
+    "topic": "NaNO3", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"NaNO3\",\n                        \"compound_id\": 187,\n                        \"amount\":
+    0.85,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.847458,\n                        \"mmol_l\": 9.97068,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "NaNO3", "compound_id": 187, "amount": 0.85, "unit": "g", "g_l": 0.847458, "mmol_l":
+    9.97068, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only",
+    "rationale": "The current 0.847458 g/L matches the official API g_l for Main sol.
+    1112 (declared volume 1003 mL). The primary supports 0.85 g at this main-batch
+    stage. Retain the reported provider basis with exact evidence; neither the primary
+    water input nor a sum of additions independently establishes the finished medium
+    volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.847458",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.847458
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.85 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.847458",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.847458
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.85 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.847458",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.847458
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.85 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q7",
+    "topic": "Sodium resazurin", "source": {"sources": [{"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\":
+    0.00198473,\n                        \"optional\": 0\n                    }",
+    "exact_decoded_object": {"recipe_order": 9, "compound": "Sodium resazurin", "compound_id":
+    1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504,
+    "mmol_l": 0.00198473, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "evidence_only", "rationale": "The current 0.000498504 g/L matches the official
+    API g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5
+    ml at this main-batch stage. Retain the reported provider basis with exact evidence;
+    neither the primary water input nor a sum of additions independently establishes
+    the finished medium volume. The source is 0.50 mL of 0.1% w/v sodium resazurin,
+    not 0.50 g of free resazurin. Its stock strength gives 0.50 mg added per batch;
+    the quoted provider rate remains separately attributed. Identity correction is
+    separate from this supported provider amount.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ingredients[6].concentration",
+    "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The current 0.000498504 g/L matches the official API g_l for Main
+    sol. 1112 (declared volume 1003 mL). The primary supports 0.5 ml at this main-batch
+    stage. Retain the reported provider basis with exact evidence; neither the primary
+    water input nor a sum of additions independently establishes the finished medium
+    volume. The source is 0.50 mL of 0.1% w/v sodium resazurin, not 0.50 g of free
+    resazurin. Its stock strength gives 0.50 mg added per batch; the quoted provider
+    rate remains separately attributed. Identity correction is separate from this
+    supported provider amount."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.000498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.000498504
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.5 ml at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume. The source is 0.50 mL of
+    0.1% w/v sodium resazurin, not 0.50 g of free resazurin. Its stock strength gives
+    0.50 mg added per batch; the quoted provider rate remains separately attributed.
+    Identity correction is separate from this supported provider amount."}, {"path":
+    "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ingredients[6].concentration",
+    "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The current 0.000498504 g/L matches the official API g_l for Main
+    sol. 1112 (declared volume 1003 mL). The primary supports 0.5 ml at this main-batch
+    stage. Retain the reported provider basis with exact evidence; neither the primary
+    water input nor a sum of additions independently establishes the finished medium
+    volume. The source is 0.50 mL of 0.1% w/v sodium resazurin, not 0.50 g of free
+    resazurin. Its stock strength gives 0.50 mg added per batch; the quoted provider
+    rate remains separately attributed. Identity correction is separate from this
+    supported provider amount."}]}, {"quantity_id": "q8", "topic": "Na2CO3", "source":
+    {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.997009,\n                        \"mmol_l\": 9.40681,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "Na2CO3", "compound_id": 32, "amount": 1, "unit": "g", "g_l": 0.997009, "mmol_l":
+    9.40681, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "evidence_only",
+    "rationale": "The current 0.997009 g/L matches the official API g_l for Main sol.
+    1112 (declared volume 1003 mL). The primary supports 1 g at this main-batch stage.
+    Retain the reported provider basis with exact evidence; neither the primary water
+    input nor a sum of additions independently establishes the finished medium volume.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.997009
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 1 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.997009
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 1 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.997009
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 1 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q9",
+    "topic": "Na2S x 9 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.498504,\n                        \"mmol_l\": 2.07553,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound":
+    "Na2S x 9 H2O", "compound_id": 54, "amount": 0.5, "unit": "g", "g_l": 0.498504,
+    "mmol_l": 2.07553, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "evidence_only", "rationale": "The current 0.498504 g/L matches the official API
+    g_l for Main sol. 1112 (declared volume 1003 mL). The primary supports 0.5 g at
+    this main-batch stage. Retain the reported provider basis with exact evidence;
+    neither the primary water input nor a sum of additions independently establishes
+    the finished medium volume.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.498504
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.5 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.498504
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.5 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The current 0.498504
+    g/L matches the official API g_l for Main sol. 1112 (declared volume 1003 mL).
+    The primary supports 0.5 g at this main-batch stage. Retain the reported provider
+    basis with exact evidence; neither the primary water input nor a sum of additions
+    independently establishes the finished medium volume."}]}, {"quantity_id": "q10",
+    "topic": "HCl", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\":
+    \"25%\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    68.5683,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 1, "compound": "HCl", "compound_id": 68, "attribute": "25%",
+    "amount": 10, "unit": "ml", "g_l": 2.5, "mmol_l": 68.5683, "optional": 0}, "quote_basis":
+    "Literal UTF-8 raw-response substring; decoded object independently equals exact
+    JSON locator."}]}, "decision": "correct", "rationale": "The unchanged local 2.5
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives
+    no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified
+    from the bare percentage; preserve the original volume/label and mark that conversion
+    unresolved.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 2.5
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives
+    no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified
+    from the bare percentage; preserve the original volume/label and mark that conversion
+    unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 2.5
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives
+    no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified
+    from the bare percentage; preserve the original volume/label and mark that conversion
+    unresolved."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 2.5
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 10 ml stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The source says 10 mL of 25% HCl but gives
+    no w/v, w/w or v/v basis. API 2.5 g/L is a reported value, not independently justified
+    from the bare percentage; preserve the original volume/label and mark that conversion
+    unresolved."}]}, {"quantity_id": "q11", "topic": "FeCl2 x 4 H2O", "source": {"sources":
+    [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "FeCl2 x 4 H2O", "compound_id": 260, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l":
+    7.54482, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 1.5 g/L is reported only for Trace element solution
+    SL-10, not for the main medium. Preserve the exact 1.5 g stock-batch amount and
+    supplied chemical form, move or link the row within that stock, and retain the
+    separately supplied receiving dose. No final-medium conversion is inferred. The
+    primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 1.5
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 1.5 g stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 1.5
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 1.5 g stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[10].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 1.5 g/L is reported only
+    for Trace element solution SL-10, not for the main medium. Preserve the exact
+    1.5 g stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q12", "topic": "ZnCl2", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\":
+    70,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "ZnCl2", "compound_id": 64, "amount": 70, "unit": "mg", "g_l": 0.07, "mmol_l":
+    0.513573, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.07 g/L is reported only for Trace element
+    solution SL-10, not for the main medium. Preserve the exact 70 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.07
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 70 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.07
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 70 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[11].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 0.07 g/L is reported
+    only for Trace element solution SL-10, not for the main medium. Preserve the exact
+    70 mg stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q13", "topic": "MnCl2 x 4 H2O", "source": {"sources": [{"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "MnCl2 x 4 H2O", "compound_id": 36, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l":
+    0.505293, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.1 g/L is reported only for Trace element solution
+    SL-10, not for the main medium. Preserve the exact 100 mg stock-batch amount and
+    supplied chemical form, move or link the row within that stock, and retain the
+    separately supplied receiving dose. No final-medium conversion is inferred. The
+    primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 100 mg stock-batch amount and supplied chemical form, move
+    or link the row within that stock, and retain the separately supplied receiving
+    dose. No final-medium conversion is inferred. The primary explicitly makes this
+    trace stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 100 mg stock-batch amount and supplied chemical form, move
+    or link the row within that stock, and retain the separately supplied receiving
+    dose. No final-medium conversion is inferred. The primary explicitly makes this
+    trace stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 0.1 g/L is reported only
+    for Trace element solution SL-10, not for the main medium. Preserve the exact
+    100 mg stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q14", "topic": "H3BO3", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\":
+    6,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "H3BO3", "compound_id": 37, "amount": 6, "unit": "mg", "g_l": 0.006, "mmol_l":
+    0.0970246, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.006 g/L is reported only for Trace element
+    solution SL-10, not for the main medium. Preserve the exact 6 mg stock-batch amount
+    and supplied chemical form, move or link the row within that stock, and retain
+    the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.006
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 6 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.006
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 6 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[13].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 0.006 g/L is reported
+    only for Trace element solution SL-10, not for the main medium. Preserve the exact
+    6 mg stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q15", "topic": "CoCl2 x 6 H2O", "source": {"sources": [{"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\":
+    190,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "CoCl2 x 6 H2O", "compound_id": 38, "amount": 190, "unit": "mg", "g_l": 0.19,
+    "mmol_l": 1.46335, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.19 g/L is reported only for Trace
+    element solution SL-10, not for the main medium. Preserve the exact 190 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.19
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 190 mg stock-batch amount and supplied chemical form, move
+    or link the row within that stock, and retain the separately supplied receiving
+    dose. No final-medium conversion is inferred. The primary explicitly makes this
+    trace stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.19
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 190 mg stock-batch amount and supplied chemical form, move
+    or link the row within that stock, and retain the separately supplied receiving
+    dose. No final-medium conversion is inferred. The primary explicitly makes this
+    trace stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[14].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 0.19 g/L is reported
+    only for Trace element solution SL-10, not for the main medium. Preserve the exact
+    190 mg stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q16", "topic": "CuCl2 x 2 H2O", "source": {"sources": [{"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\":
+    2,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "CuCl2 x 2 H2O", "compound_id": 39, "amount": 2, "unit": "mg", "g_l": 0.002, "mmol_l":
+    0.0117314, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.002 g/L is reported only for Trace element
+    solution SL-10, not for the main medium. Preserve the exact 2 mg stock-batch amount
+    and supplied chemical form, move or link the row within that stock, and retain
+    the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.002
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 2 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.002
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 2 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[15].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 0.002 g/L is reported
+    only for Trace element solution SL-10, not for the main medium. Preserve the exact
+    2 mg stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q17", "topic": "NiCl2 x 6 H2O", "source": {"sources": [{"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\":
+    24,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "NiCl2 x 6 H2O", "compound_id": 40, "amount": 24, "unit": "mg", "g_l": 0.024,
+    "mmol_l": 0.185187, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.024 g/L is reported only for Trace
+    element solution SL-10, not for the main medium. Preserve the exact 24 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.024
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 24 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.024
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 24 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[16].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 0.024 g/L is reported
+    only for Trace element solution SL-10, not for the main medium. Preserve the exact
+    24 mg stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q18", "topic": "Na2MoO4 x 2 H2O", "source": {"sources": [{"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\":
+    36,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 36, "unit": "mg", "g_l": 0.036,
+    "mmol_l": 0.148791, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.036 g/L is reported only for Trace
+    element solution SL-10, not for the main medium. Preserve the exact 36 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary explicitly makes this trace stock up to 1000 mL; its stock mass concentration
+    is independently supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.036
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 36 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.036
+    g/L is reported only for Trace element solution SL-10, not for the main medium.
+    Preserve the exact 36 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary explicitly makes this trace
+    stock up to 1000 mL; its stock mass concentration is independently supported."},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "ingredients[17].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The unchanged local 0.036 g/L is reported
+    only for Trace element solution SL-10, not for the main medium. Preserve the exact
+    36 mg stock-batch amount and supplied chemical form, move or link the row within
+    that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary explicitly makes this trace stock up to 1000
+    mL; its stock mass concentration is independently supported."}]}, {"quantity_id":
+    "q19", "topic": "NaOH", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "NaOH", "compound_id": 256, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l":
+    12.5009, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.5 g/L is reported only for Selenite-tungstate
+    solution, not for the main medium. Preserve the exact 0.5 g stock-batch amount
+    and supplied chemical form, move or link the row within that stock, and retain
+    the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.5
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 0.5 g stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.5
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 0.5 g stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.5
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 0.5 g stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q20", "topic": "Na2SeO3
+    x 5 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\":
+    3,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 3, "unit": "mg", "g_l": 0.003,
+    "mmol_l": 0.0114062, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.003 g/L is reported only for Selenite-tungstate
+    solution, not for the main medium. Preserve the exact 3 mg stock-batch amount
+    and supplied chemical form, move or link the row within that stock, and retain
+    the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.003
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 3 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.003
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 3 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.003
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 3 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q21", "topic": "Na2WO4
+    x 2 H2O", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\":
+    4,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 4, "unit": "mg", "g_l": 0.004,
+    "mmol_l": 0.0121267, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.004 g/L is reported only for Selenite-tungstate
+    solution, not for the main medium. Preserve the exact 4 mg stock-batch amount
+    and supplied chemical form, move or link the row within that stock, and retain
+    the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.004
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 4 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.004
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 4 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.004
+    g/L is reported only for Selenite-tungstate solution, not for the main medium.
+    Preserve the exact 4 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q22", "topic": "Biotin",
+    "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0818632, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.02 g/L is reported only for Wolin''s vitamin
+    solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q23", "topic": "Folic
+    acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0453104, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.02 g/L is reported only for Wolin''s vitamin
+    solution (10x), not for the main medium. Preserve the exact 20 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.02
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 20 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q24", "topic": "Pyridoxine
+    hydrochloride", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l":
+    0.1, "mmol_l": 0.486287, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.1 g/L is reported only for Wolin''s
+    vitamin solution (10x), not for the main medium. Preserve the exact 100 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 100 mg stock-batch amount and supplied chemical form, move
+    or link the row within that stock, and retain the separately supplied receiving
+    dose. No final-medium conversion is inferred. The primary lists stock water input
+    without an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 100 mg stock-batch amount and supplied chemical form, move
+    or link the row within that stock, and retain the separately supplied receiving
+    dose. No final-medium conversion is inferred. The primary lists stock water input
+    without an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.1
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 100 mg stock-batch amount and supplied chemical form, move
+    or link the row within that stock, and retain the separately supplied receiving
+    dose. No final-medium conversion is inferred. The primary lists stock water input
+    without an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q25", "topic": "Thiamine
+    HCl", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.148236, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin''s
+    vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q26", "topic": "Riboflavin",
+    "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[4]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l":
+    0.132837, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.05 g/L is reported only for Wolin''s vitamin
+    solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q27", "topic": "Nicotinic
+    acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[5]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.406141, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin''s
+    vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q28", "topic": "Calcium
+    D-(+)-pantothenate", "source": {"sources": [{"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[6]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg",
+    "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."}]},
+    "decision": "correct", "rationale": "The unchanged local 0.05 g/L is reported
+    only for Wolin''s vitamin solution (10x), not for the main medium. Preserve the
+    exact 50 mg stock-batch amount and supplied chemical form, move or link the row
+    within that stock, and retain the separately supplied receiving dose. No final-medium
+    conversion is inferred. The primary lists stock water input without an explicit
+    final-volume makeup; the API stock g_l remains a source assertion, not a new final-volume
+    calculation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q29", "topic": "Vitamin
+    B12", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[7]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l":
+    0.00073779, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}]}, "decision": "correct",
+    "rationale": "The unchanged local 0.001 g/L is reported only for Wolin''s vitamin
+    solution (10x), not for the main medium. Preserve the exact 1 mg stock-batch amount
+    and supplied chemical form, move or link the row within that stock, and retain
+    the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.001
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 1 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.001
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 1 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.001
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 1 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q30", "topic": "p-Aminobenzoic
+    acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[8]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.364591, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin''s
+    vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q31", "topic": "(DL)-alpha-Lipoic
+    acid", "source": {"sources": [{"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[9]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l":
+    0.05, "mmol_l": 0.24233, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}]}, "decision":
+    "correct", "rationale": "The unchanged local 0.05 g/L is reported only for Wolin''s
+    vitamin solution (10x), not for the main medium. Preserve the exact 50 mg stock-batch
+    amount and supplied chemical form, move or link the row within that stock, and
+    retain the separately supplied receiving dose. No final-medium conversion is inferred.
+    The primary lists stock water input without an explicit final-volume makeup; the
+    API stock g_l remains a source assertion, not a new final-volume calculation.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The unchanged local 0.05
+    g/L is reported only for Wolin''s vitamin solution (10x), not for the main medium.
+    Preserve the exact 50 mg stock-batch amount and supplied chemical form, move or
+    link the row within that stock, and retain the separately supplied receiving dose.
+    No final-medium conversion is inferred. The primary lists stock water input without
+    an explicit final-volume makeup; the API stock g_l remains a source assertion,
+    not a new final-volume calculation."}]}, {"quantity_id": "q32", "topic": "Trace
+    element solution SL-10 receiving dose and absent topology", "source": {"evidence_id":
+    "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path":
+    "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\":
+    \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "solution":
+    "Trace element solution SL-10", "solution_id": 595, "amount": 1, "unit": "ml",
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, "decision": "add", "rationale":
+    "Create the missing stock object for Trace element solution SL-10 with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Trace element solution SL-10 with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Trace element solution SL-10 with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Trace element solution SL-10 with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "missing": true}]}, {"quantity_id": "q33", "topic": "Selenite-tungstate solution
+    receiving dose and absent topology", "source": {"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\":
+    \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "solution":
+    "Selenite-tungstate solution", "solution_id": 777, "amount": 1, "unit": "ml",
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, "decision": "add", "rationale":
+    "Create the missing stock object for Selenite-tungstate solution with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Selenite-tungstate solution with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Selenite-tungstate solution with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Selenite-tungstate solution with its source
+    composition and 1 mL addition to the main recipe batch. This addition is not explicitly
+    stated per final liter in the primary. Preserve the API solution identifier and
+    exact source stage; do not leave stock composition duplicated as direct main ingredients.",
+    "missing": true}]}, {"quantity_id": "q34", "topic": "Wolin''s vitamin solution
+    (10x) receiving dose and absent topology", "source": {"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"solution\":
+    \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 11, "solution": "Wolin''s vitamin solution (10x)", "solution_id":
+    5980, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    "decision": "add", "rationale": "Create the missing stock object for Wolin''s
+    vitamin solution (10x) with its source composition and 1 mL addition to the main
+    recipe batch. This addition is not explicitly stated per final liter in the primary.
+    Preserve the API solution identifier and exact source stage; do not leave stock
+    composition duplicated as direct main ingredients.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "solutions",
+    "stored_value": null, "decision": "add", "rationale": "Create the missing stock
+    object for Wolin''s vitamin solution (10x) with its source composition and 1 mL
+    addition to the main recipe batch. This addition is not explicitly stated per
+    final liter in the primary. Preserve the API solution identifier and exact source
+    stage; do not leave stock composition duplicated as direct main ingredients.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Wolin''s vitamin solution (10x) with its
+    source composition and 1 mL addition to the main recipe batch. This addition is
+    not explicitly stated per final liter in the primary. Preserve the API solution
+    identifier and exact source stage; do not leave stock composition duplicated as
+    direct main ingredients.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing stock object for Wolin''s vitamin solution (10x) with its
+    source composition and 1 mL addition to the main recipe batch. This addition is
+    not explicitly stated per final liter in the primary. Preserve the API solution
+    identifier and exact source stage; do not leave stock composition duplicated as
+    direct main ingredients.", "missing": true}]}, {"quantity_id": "q35", "topic":
+    "Main sol. 1112 water", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 13, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 1000 mL
+    water as the listed main-batch solvent input. It is not an explicit final medium
+    makeup.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL water as the listed main-batch solvent input. It is not an explicit
+    final medium makeup.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL water as the listed main-batch solvent input. It is not an explicit
+    final medium makeup.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients (except carbonate, vitamins
+    and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -
+    45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a
+    sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The
+    vitamin solution should be sterilized by filtration. Adjust pH of the complete
+    medium to 7.0, if necessary."}, {"step_number": 2, "action": "DISSOLVE", "description":
+    "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other
+    salts. Finally make up to 1000.00 ml."}], "decision": "add", "rationale": "Preserve
+    1000 mL water as the listed main-batch solvent input. It is not an explicit final
+    medium makeup."}]}, {"quantity_id": "q36", "topic": "Trace element solution SL-10
+    water", "source": {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    990,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "Distilled water", "compound_id": 4, "amount": 990, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 990 mL
+    stock water at the named Trace element solution SL-10 stage. The separate trace
+    preparation explicitly makes the completed stock up to 1000 mL; distinguish this
+    final makeup from its initial water input.", "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 990 mL stock water at the named Trace element solution SL-10 stage.
+    The separate trace preparation explicitly makes the completed stock up to 1000
+    mL; distinguish this final makeup from its initial water input.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 990 mL stock water at the named Trace element solution SL-10 stage.
+    The separate trace preparation explicitly makes the completed stock up to 1000
+    mL; distinguish this final makeup from its initial water input.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Preserve 990
+    mL stock water at the named Trace element solution SL-10 stage. The separate trace
+    preparation explicitly makes the completed stock up to 1000 mL; distinguish this
+    final makeup from its initial water input.", "missing": true}]}, {"quantity_id":
+    "q37", "topic": "Selenite-tungstate solution water", "source": {"evidence_id":
+    "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path":
+    "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 1000 mL
+    stock water at the named Selenite-tungstate solution stage. No primary final-volume
+    makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL stock water at the named Selenite-tungstate solution stage.
+    No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l
+    are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL stock water at the named Selenite-tungstate solution stage.
+    No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l
+    are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL stock water at the named Selenite-tungstate solution stage.
+    No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l
+    are separately attributed.", "missing": true}]}, {"quantity_id": "q38", "topic":
+    "Wolin''s vitamin solution (10x) water", "source": {"evidence_id": "api1112",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[3].recipe[10]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "add", "rationale": "Preserve 1000 mL
+    stock water at the named Wolin''s vitamin solution (10x) stage. No primary final-volume
+    makeup is stated; the provider-declared 1000 mL and g_l are separately attributed.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL stock water at the named Wolin''s vitamin solution (10x) stage.
+    No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l
+    are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL stock water at the named Wolin''s vitamin solution (10x) stage.
+    No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l
+    are separately attributed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Preserve 1000 mL stock water at the named Wolin''s vitamin solution (10x) stage.
+    No primary final-volume makeup is stated; the provider-declared 1000 mL and g_l
+    are separately attributed.", "missing": true}]}, {"quantity_id": "q39", "topic":
+    "Main sol. 1112 preparation", "source": {"evidence_id": "api1112", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1112", "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin",
+    "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    The vitamin solution should be sterilized by filtration. Adjust pH of the complete
+    medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object":
+    {"step": "Dissolve ingredients (except carbonate, vitamins and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be
+    sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "mixed", "rationale": "The current DSMZ
+    owner already retains this exact main process, including 80% N2/20% CO2, 30–45
+    min sparging, anoxic dispensing, excluded ingredients, distinct late-stock atmospheres
+    and completed-medium pH. The target and KOMODO owner omit it. Preserve this evidence
+    and encode stages without treating a compound or stock dose as gas concentration.
+    No numeric autoclave temperature/time is supplied.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "preparation_steps",
+    "stored_value": null, "decision": "add", "rationale": "The current DSMZ owner
+    already retains this exact main process, including 80% N2/20% CO2, 30–45 min sparging,
+    anoxic dispensing, excluded ingredients, distinct late-stock atmospheres and completed-medium
+    pH. The target and KOMODO owner omit it. Preserve this evidence and encode stages
+    without treating a compound or stock dose as gas concentration. No numeric autoclave
+    temperature/time is supplied.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The current DSMZ owner already retains this exact main process, including 80%
+    N2/20% CO2, 30–45 min sparging, anoxic dispensing, excluded ingredients, distinct
+    late-stock atmospheres and completed-medium pH. The target and KOMODO owner omit
+    it. Preserve this evidence and encode stages without treating a compound or stock
+    dose as gas concentration. No numeric autoclave temperature/time is supplied.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients
+    (except carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20%
+    CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2
+    gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and
+    20% CO2 gas mixture. The vitamin solution should be sterilized by filtration.
+    Adjust pH of the complete medium to 7.0, if necessary.", "decision": "evidence_only",
+    "rationale": "The current DSMZ owner already retains this exact main process,
+    including 80% N2/20% CO2, 30–45 min sparging, anoxic dispensing, excluded ingredients,
+    distinct late-stock atmospheres and completed-medium pH. The target and KOMODO
+    owner omit it. Preserve this evidence and encode stages without treating a compound
+    or stock dose as gas concentration. No numeric autoclave temperature/time is supplied."}]},
+    {"quantity_id": "q40", "topic": "Trace element solution SL-10 preparation", "source":
+    {"evidence_id": "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112",
+    "raw_path": "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml.\"\n                    }", "exact_decoded_object": {"step": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml."}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, "decision": "mixed",
+    "rationale": "The DSMZ owner already retains SL-10 preparation: dissolve iron
+    chloride in the acid, dilute/add other compounds and make up to 1000 mL. This
+    is stock preparation, not a final-medium makeup. The source FeCl2 tetrahydrate
+    amount is already 1.50 g; it is not an mg-to-g conversion.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Create the
+    missing named stock and scope this retained preparation to it. The DSMZ owner
+    already retains SL-10 preparation: dissolve iron chloride in the acid, dilute/add
+    other compounds and make up to 1000 mL. This is stock preparation, not a final-medium
+    makeup. The source FeCl2 tetrahydrate amount is already 1.50 g; it is not an mg-to-g
+    conversion.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing named stock and scope this retained preparation to it. The
+    DSMZ owner already retains SL-10 preparation: dissolve iron chloride in the acid,
+    dilute/add other compounds and make up to 1000 mL. This is stock preparation,
+    not a final-medium makeup. The source FeCl2 tetrahydrate amount is already 1.50
+    g; it is not an mg-to-g conversion.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create the missing named stock and scope this retained preparation to it. The
+    DSMZ owner already retains SL-10 preparation: dissolve iron chloride in the acid,
+    dilute/add other compounds and make up to 1000 mL. This is stock preparation,
+    not a final-medium makeup. The source FeCl2 tetrahydrate amount is already 1.50
+    g; it is not an mg-to-g conversion.", "missing": true}, {"path": "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml",
+    "field_path": "preparation_steps[1].description", "stored_value": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml.", "decision": "evidence_only", "rationale": "The DSMZ owner
+    already retains SL-10 preparation: dissolve iron chloride in the acid, dilute/add
+    other compounds and make up to 1000 mL. This is stock preparation, not a final-medium
+    makeup. The source FeCl2 tetrahydrate amount is already 1.50 g; it is not an mg-to-g
+    conversion."}]}, {"quantity_id": "q41", "topic": "Main medium pH", "source": {"evidence_id":
+    "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path":
+    "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    The vitamin solution should be sterilized by filtration. Adjust pH of the complete
+    medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object":
+    {"step": "Dissolve ingredients (except carbonate, vitamins and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be
+    sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "evidence_only", "rationale": "The existing
+    pH 7.0 is explicitly supported for the complete main medium. Credit it separately
+    from stock pH and unquantified adjustment reagents.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CALDITERRIVIBRIO_MEDIUM.yaml", "field_path": "ph_value",
+    "stored_value": 7.0, "decision": "evidence_only", "rationale": "The existing pH
+    7.0 is explicitly supported for the complete main medium. Credit it separately
+    from stock pH and unquantified adjustment reagents."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml",
+    "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale":
+    "The existing pH 7.0 is explicitly supported for the complete main medium. Credit
+    it separately from stock pH and unquantified adjustment reagents."}, {"path":
+    "data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml", "field_path": "ph_value",
+    "stored_value": 7.0, "decision": "evidence_only", "rationale": "The existing pH
+    7.0 is explicitly supported for the complete main medium. Credit it separately
+    from stock pH and unquantified adjustment reagents."}]}, {"quantity_id": "q42",
+    "topic": "Unquantified late-stock and treatment details", "source": {"evidence_id":
+    "api1112", "reference": "https://mediadive.dsmz.de/rest/medium/1112", "raw_path":
+    "REVIEW_WORK/batch058/source01-03/api1112.bin", "raw_sha256": "e28e02b4dea450f07700aff9fc228ec3c6f29bd7c9d19f9162c7b7fa6a2cccb4",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T06:09:01.840438Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    carbonate, vitamins and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    The vitamin solution should be sterilized by filtration. Adjust pH of the complete
+    medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object":
+    {"step": "Dissolve ingredients (except carbonate, vitamins and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should be
+    sterilized by filtration. Adjust pH of the complete medium to 7.0, if necessary."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, "decision": "not_quantified", "rationale": "Late
+    carbonate and sulfide stock strengths and stock addition volumes are not separately
+    quantified; their main-batch masses and all three named receiving doses are supplied
+    and retained. The 100% N2 versus 80% N2/20% CO2 stock atmospheres and vitamin
+    filtration are explicit, but numeric autoclave settings and filtration pore size
+    are not supplied by this primary recipe.", "layer_assessments": []}]'
+- assessment_id: a7
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: supported
+  summary: The grounding inventory enumerates every asserted identifier and exact
+    preferred label. Exact identifier rows and ontology-linked rows are recorded separately,
+    including mapping_status. Present catalog membership does not validate supplied
+    hydrate form or historical identity; specific limits are assessed separately.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - grounding
+- assessment_id: a8
+  area: provenance
+  topic: History and evidence scope
+  outcome: supported
+  summary: Complete owner and target histories were read. Current source bytes and
+    inspected code are independent evidence; historical timestamps remain historical
+    claims unless an exact cited raw digest is recovered.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a9
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - local-target
+- assessment_id: a10
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:003814
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-003814-stock-composition-is-flattened-into-main-ingredients
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock composition is flattened into main ingredients
+  description: The target and both owners lack solutions while 22 direct ingredient
+    rows carry concentrations for separate source stocks. The SL-10 acid conversion
+    has an additional unresolved bare-percentage basis. The primary supplies named
+    stock additions per recipe batch; it does not authorize treating undiluted stock
+    concentrations as final-medium rates.
+  target_ids:
+  - CultureMech:003814
+  field_paths:
+  - solutions
+  - ingredients[9].concentration
+  - ingredients[10].concentration
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  - ingredients[13].concentration
+  - ingredients[14].concentration
+  - ingredients[15].concentration
+  - ingredients[16].concentration
+  - ingredients[17].concentration
+  - ingredients[18].concentration
+  - ingredients[19].concentration
+  - ingredients[20].concentration
+  - ingredients[21].concentration
+  - ingredients[22].concentration
+  - ingredients[23].concentration
+  - ingredients[24].concentration
+  - ingredients[25].concentration
+  - ingredients[26].concentration
+  - ingredients[27].concentration
+  - ingredients[28].concentration
+  - ingredients[29].concentration
+  - ingredients[30].concentration
+  evidence_ids:
+  - dsm1112
+  - api1112
+  - quantities
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-003814-nickel-hydrate-and-sodium-indicator-identities-differ-from-the-source
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium indicator identities differ from the source
+  description: The source nickel chloride hexahydrate is linked to anhydrous CHEBI:34887
+    in both primary and secondary slots. Sodium resazurin is linked only through its
+    primary term to neutral CHEBI:8806. These supplied forms are not interchangeable
+    merely because related labels resolve.
+  target_ids:
+  - CultureMech:003814
+  field_paths:
+  - ingredients[16].term
+  - ingredients[16].mediaingredientmech_chebi_term
+  - ingredients[6].term
+  evidence_ids:
+  - dsm1112
+  - chebi34887
+  - chebi53542
+  - chebi8806
+  - grounding
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-003814-source-preparation-is-absent-or-lacks-stock-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation is absent or lacks stock scope
+  description: The target and KOMODO owner omit the main anoxic preparation, while
+    the DSMZ owner already retains it and the trace-stock preparation. Credit these
+    existing instructions. The stock-level steps still need explicit stock placement/evidence,
+    and omitted main water must be preserved as a solvent input. The vitamin filtration
+    and late-stock atmospheres must remain scoped to the source stages.
+  target_ids:
+  - CultureMech:003814
+  field_paths:
+  - preparation_steps
+  - solutions
+  - evidence
+  evidence_ids:
+  - dsm1112
+  - api1112
+  - owner-2
+  - quantities
+  - writer-mediadive
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-003814-sodium-nitrate-retains-a-legacy-catalog-identifier
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Sodium nitrate retains a legacy catalog identifier
+  description: CHEBI:63005 correctly identifies source sodium nitrate, but MediaIngredientMech:000171
+    has no exact current packaged catalog row. This establishes a present resolution
+    limitation, not a claim about its validity when first imported.
+  target_ids:
+  - CultureMech:003814
+  field_paths:
+  - ingredients[5].mediaingredientmech_term
+  evidence_ids:
+  - grounding
+  - chebi63005
+  rule_id: current-legacy-link-resolution
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f5
+  issue_key: culturemech-003814-historical-timestamp-syntax-and-claim-support-need-traceable-context
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical timestamp syntax and claim support need traceable context
+  description: The KOMODO-derived first timestamp contains a literal fZ suffix and
+    the next lacks a timezone. These are historical provenance limitations; canonical
+    validation and successful reference checks with zero checked references do not
+    authenticate the events. Current source evidence should be linked to the exact
+    claims without rewriting the old event.
+  target_ids:
+  - CultureMech:003814
+  field_paths:
+  - data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml::curation_history[1].timestamp
+  - evidence
+  evidence_ids:
+  - history
+  - historical-reader
+  - validate-references
+  rule_id: append-only-history-traceability
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Model or link the exact named source stocks and their batch receiving
+    doses; move stock-only rows to the correct stock stage, preserving every supplied
+    amount, form and source quote. Keep main provider g_l separate. Add root evidence
+    for solution/preparation claims and regenerate only after owner reconciliation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Use the verified nickel hexahydrate identity only after reconciling
+    the current catalog row statuses. Resolve sodium resazurin as the actual sodium
+    form or retain an explicit unresolved supplied-form assertion; do not invent a
+    sodium-term accession or convert quantities using neutral-species mass.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Preserve and source-link the DSMZ owner’s existing main and stock instructions;
+    add only genuinely missing process fields to the KOMODO owner. Keep stock preparation
+    within its named stock, retain the main water input, and reconcile differing owner
+    assertions before regeneration. Do not infer sterilization temperature/time or
+    a final-medium denominator from water volume.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Resolve the legacy secondary slot against the exact current catalog
+    while preserving sodium nitrate identity, original source and append-only historical
+    provenance. Do not replace it solely from label similarity.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action5
+  description: Retain the malformed or timezone-unspecified original events. If authoritative
+    original provenance is recovered, append a verified correction/context event;
+    never invent or silently rewrite the original timestamps. Attach current root
+    evidence to the specific source-stage claims.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:003814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1112_CALDITERRIVIBRIO_MEDIUM.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/calditerrivibrio_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- The exact current KOMODO request returned HTTP 404; its recipe and old catalog capture
+  event were not independently reacquired. Current DSMZ primary and official API evidence
+  support the separately stated source claims.
+- The primary lists 1000 mL main water without final makeup. Explicit API g_l and
+  volume 1003 mL are provider assertions; no independent physical final-volume or
+  stock-to-main conversion is claimed.
+- The trace-stock explicit 1000 mL makeup is stage-specific. Other stock water inputs
+  and declared provider stock volumes are not silently promoted to primary final-volume
+  statements.
+- No molecule-weight, density or provider mmol_l calculation is independently endorsed.
+  Supplied sodium-indicator identity, generic B12 vitamer, and current mapping-status
+  limitations remain explicit.
+- Historical source-byte equality and exact quoted-object matches authenticate matching
+  bytes, not historical retrieval time, execution or scientific correctness of all
+  older report conclusions. Existing DSMZ preparation and present importer/merger/cleanup
+  safeguards are credited.
+- SL-10 HCl is labelled 25% without percentage basis; neither w/v nor w/w is inferred.
+  API 2.5 g/L remains reported-only for that stock, not independently derived or transferred
+  to the main medium.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
+```
