@@ -1,0 +1,1523 @@
+# Scientific review: Chopped Meat Carbohydrate Medium w/Tween 80
+
+- Review: 20261028T145939Z-culturemech-009272-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T14:32:36.742166Z
+- Finished UTC: 2026-10-28T14:59:39.626818Z
+- Reviewer: Codex batch006_validation (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+ATCC 1102 identity and source masses are recoverable, but liquid units, meat-filtrate stages and exact preparation are lost in both maintained and generated records. Every concentration is inventoried; source batch support is separated from unverified final-volume claims. Optional solid scope and correct ontology identities are retained.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch070 index 03
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009272 | data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml | generated | chopped_meat_carbohydrate_medium_w_tween_80 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:009272 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:009272 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:009272 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:009272 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact source/variant and maintained ownership
+
+identity: supported. Targets: CultureMech:009272.
+
+The target and sole maintained owner identify TOGO M2721 / ATCC 1102. This recipe prepares a meat filtrate, restores it to 1 L, then adds Tween 80 and later supplements. It does not prescribe the ATCC 1016 850 ml broth plus 150 ml rumen-fluid branch.
+
+### Complexity and physical-state scope
+
+representation: supported. Targets: CultureMech:009272.
+
+The peptone, yeast extract and meat-derived filtrate support COMPLEX/UNDEFINED. Optional source agar supports the selected solid branch when documented; no organism-growth assertion is created from the generic medium title.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:009272.
+
+30 current concentration fields are covered by 25 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b070-quantity-inventory-v1","target":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","quantity_field_count":30,"decisions":[{"quantity_id":"q1","label":"NaOH (1N)","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[0].concentration","stored":{"value":"25","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[0].concentration","stored":{"value":"25","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source specifies 25 ml of 1 N NaOH in the meat-filtrate preparation, not 25 g/L as a direct medium ingredient. The normality specifies stock strength; it is not the stock addition volume or a final-medium mass concentration.","source_stage":"separate meat-filtrate preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\": \"NaOH (1N)\",\n          \"volume\": 25,\n          \"unit\": \"ml\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"N\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\": \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 5-5","quote":"NaOH (1N)                            25.0       ml","quote_basis":"derivative text"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 10-10","quote":"medium or not. To the filtrate, add sufficient water to restore volume to 1.0 L. To the","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[0].concentration","decision":"conflict","rationale":"The source specifies 25 ml of 1 N NaOH in the meat-filtrate preparation, not 25 g/L as a direct medium ingredient. The normality specifies stock strength; it is not the stock addition volume or a final-medium mass concentration."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[0].concentration","decision":"conflict","rationale":"The source specifies 25 ml of 1 N NaOH in the meat-filtrate preparation, not 25 g/L as a direct medium ingredient. The normality specifies stock strength; it is not the stock addition volume or a final-medium mass concentration."}]},{"quantity_id":"q2","label":"DI Water","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[1].concentration","stored":{"value":"1000","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[1].concentration","stored":{"value":"1000","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source specifies 1000 ml water in the meat-filtrate preparation and later restores the retained filtrate to 1.0 L. The local 1000 G_PER_L is a volume-to-mass error and loses the filtration/make-up stage.","source_stage":"separate meat-filtrate preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\": \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\": \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 4-4","quote":"DI Water                           1000         ml","quote_basis":"derivative text"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 10-10","quote":"medium or not. To the filtrate, add sufficient water to restore volume to 1.0 L. To the","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[1].concentration","decision":"conflict","rationale":"The source specifies 1000 ml water in the meat-filtrate preparation and later restores the retained filtrate to 1.0 L. The local 1000 G_PER_L is a volume-to-mass error and loses the filtration/make-up stage."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[1].concentration","decision":"conflict","rationale":"The source specifies 1000 ml water in the meat-filtrate preparation and later restores the retained filtrate to 1.0 L. The local 1000 G_PER_L is a volume-to-mass error and loses the filtration/make-up stage."}]},{"quantity_id":"q3","label":"Ground Beef (fat-free)","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[2].concentration","stored":{"value":"500","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[2].concentration","stored":{"value":"500","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source uses 500 g fat-free ground beef to prepare a filtrate restored to 1.0 L after boiling and separation. This supports the source loading, not 500 g/L of dissolved beef in the final medium. Optional retained particles are separately prescribed; do not double count the input meat and receiving filtrate.","source_stage":"separate meat-filtrate preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\": \"Ground Beef (fat-free)\",\n          \"volume\": 500,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001388\",\n          \"gmo_id\": \"GMO_001388\",\n          \"label\": \"Ground beef (fat free)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 3-3","quote":"Ground Beef (fat-free)              500.0       g","quote_basis":"derivative text"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 10-10","quote":"medium or not. To the filtrate, add sufficient water to restore volume to 1.0 L. To the","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The source uses 500 g fat-free ground beef to prepare a filtrate restored to 1.0 L after boiling and separation. This supports the source loading, not 500 g/L of dissolved beef in the final medium. Optional retained particles are separately prescribed; do not double count the input meat and receiving filtrate."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The source uses 500 g fat-free ground beef to prepare a filtrate restored to 1.0 L after boiling and separation. This supports the source loading, not 500 g/L of dissolved beef in the final medium. Optional retained particles are separately prescribed; do not double count the input meat and receiving filtrate."}]},{"quantity_id":"q4","label":"Resazurin Soln (0.025%)","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[3].concentration","stored":{"value":"4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[3].concentration","stored":{"value":"4","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source amount for Resazurin Soln (0.025%) is 4 ml, not the same numeral G_PER_L. Preserve the exact liquid addition and stage; final-medium volume is not explicitly made up after the later additions. The stock is labeled 0.025%, but its percent basis is unspecified; do not infer w/v or a final resazurin mass.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"Resazurin Soln (0.025%)\",\n          \"volume\": 4,\n          \"unit\": \"ml\",\n          \"conc_value\": 0.025,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001403\",\n          \"gmo_id\": \"GMO_001403\",\n          \"label\": \"Resazurin solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 21-21","quote":"Resazurin Soln (0.025%) 4.0         ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[3].concentration","decision":"conflict","rationale":"The source amount for Resazurin Soln (0.025%) is 4 ml, not the same numeral G_PER_L. Preserve the exact liquid addition and stage; final-medium volume is not explicitly made up after the later additions. The stock is labeled 0.025%, but its percent basis is unspecified; do not infer w/v or a final resazurin mass."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[3].concentration","decision":"conflict","rationale":"The source amount for Resazurin Soln (0.025%) is 4 ml, not the same numeral G_PER_L. Preserve the exact liquid addition and stage; final-medium volume is not explicitly made up after the later additions. The stock is labeled 0.025%, but its percent basis is unspecified; do not infer w/v or a final resazurin mass."}]},{"quantity_id":"q5","label":"Yeast Extract","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[4].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[4].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Yeast Extract agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\": \"Yeast Extract\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 14-14","quote":"Yeast Extract              5.0      g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The exact source mass for Yeast Extract agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The exact source mass for Yeast Extract agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q6","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[5].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[5].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for K2HPO4 agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\": \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 16-16","quote":"K2HPO4                     5.0      g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The exact source mass for K2HPO4 agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The exact source mass for K2HPO4 agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q7","label":"Starch","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[6].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[6].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Starch agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\": \"Starch\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001054\",\n          \"gmo_id\": \"GMO_001054\",\n          \"label\": \"Starch\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 20-20","quote":"Starch                     1.0      g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The exact source mass for Starch agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The exact source mass for Starch agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q8","label":"Tween 80","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The source amount for Tween 80 is 1 ml, not the same numeral G_PER_L. Preserve the exact liquid addition and stage; final-medium volume is not explicitly made up after the later additions.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\": \"Tween 80\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001060\",\n          \"gmo_id\": \"GMO_001060\",\n          \"label\": \"Polysorbate 80\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000075\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000075\",\n              \"label\": \"Surfactant\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 15-15","quote":"Tween 80                   1.0      ml","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[7].concentration","decision":"conflict","rationale":"The source amount for Tween 80 is 1 ml, not the same numeral G_PER_L. Preserve the exact liquid addition and stage; final-medium volume is not explicitly made up after the later additions."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[7].concentration","decision":"conflict","rationale":"The source amount for Tween 80 is 1 ml, not the same numeral G_PER_L. Preserve the exact liquid addition and stage; final-medium volume is not explicitly made up after the later additions."}]},{"quantity_id":"q9","label":"Cellobiose","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Cellobiose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\": \"Cellobiose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001137\",\n          \"gmo_id\": \"GMO_001137\",\n          \"label\": \"Cellobiose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 18-18","quote":"Cellobiose                 1.0      g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The exact source mass for Cellobiose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The exact source mass for Cellobiose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q10","label":"Maltose","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[9].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[9].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Maltose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. The source does not specify the alpha anomer; local CHEBI18167 is more specific than the inspected source.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\": \"Maltose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001195\",\n          \"gmo_id\": \"GMO_001195\",\n          \"label\": \"Maltose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 19-19","quote":"Maltose                    1.0      g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The exact source mass for Maltose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. The source does not specify the alpha anomer; local CHEBI18167 is more specific than the inspected source."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The exact source mass for Maltose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. The source does not specify the alpha anomer; local CHEBI18167 is more specific than the inspected source."}]},{"quantity_id":"q11","label":"Glucose","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[10].concentration","stored":{"value":"4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[10].concentration","stored":{"value":"4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Glucose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\": \"Glucose\",\n          \"volume\": 4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 17-17","quote":"Glucose                    4.0      g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The exact source mass for Glucose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The exact source mass for Glucose agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q12","label":"Agar","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[11].concentration","stored":{"value":"15","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[11].concentration","stored":{"value":"15","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Agar agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. Agar is explicitly optional. The selected SOLID_AGAR representation is a defensible chosen branch if its conditional scope is documented; this is not an automatic physical-state error.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\": \"Agar\",\n          \"volume\": 15,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 22-22","quote":"Agar (if required)         15.0     g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The exact source mass for Agar agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. Agar is explicitly optional. The selected SOLID_AGAR representation is a defensible chosen branch if its conditional scope is documented; this is not an automatic physical-state error."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The exact source mass for Agar agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. Agar is explicitly optional. The selected SOLID_AGAR representation is a defensible chosen branch if its conditional scope is documented; this is not an automatic physical-state error."}]},{"quantity_id":"q13","label":"Peptone","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[12].concentration","stored":{"value":"30","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[12].concentration","stored":{"value":"30","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Peptone agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\": \"Peptone\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_000012\",\n          \"gmo_id\": \"GMO_000012\",\n          \"label\": \"Peptone\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 13-13","quote":"Peptone                    30.0     g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The exact source mass for Peptone agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The exact source mass for Peptone agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q14","label":"Cysteine","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The exact source mass for Cysteine agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. Cysteine is added after boiling and cooling; its 0.5 g is supported at that later stage.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\": \"Cysteine\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001318\",\n          \"gmo_id\": \"GMO_001318\",\n          \"label\": \"Cysteine\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 23-23","quote":"Boil, cool, and add 0.5 grams of Cysteine. Set pH to 7.0.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The exact source mass for Cysteine agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. Cysteine is added after boiling and cooling; its 0.5 g is supported at that later stage."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The exact source mass for Cysteine agrees with the local numeral, but the stored G_PER_L does not declare the source batch basis and no final-medium volume after all additions is given. Preserve the reported mass and input/filtrate stage; do not label this unresolved concentration as evidence_only. Cysteine is added after boiling and cooling; its 0.5 g is supported at that later stage."}]},{"quantity_id":"q15","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"The source permits anaerobic nitrogen or nitrogen:hydrogen dispensing. No gas quantity or dissolved concentration is given. Retain the conditional gas identity and source-only instruction; VARIABLE is not a measured amount or a license to invent a gas ratio.","source_stage":"headspace/dispensing","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[3].items[0]","quote":"{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"Gas\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 24-24","quote":"Dispense anaerobically under nitrogen or nitrogen:hydrogen gas.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[14].concentration","decision":"not_quantified","rationale":"The source permits anaerobic nitrogen or nitrogen:hydrogen dispensing. No gas quantity or dissolved concentration is given. Retain the conditional gas identity and source-only instruction; VARIABLE is not a measured amount or a license to invent a gas ratio."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[14].concentration","decision":"not_quantified","rationale":"The source permits anaerobic nitrogen or nitrogen:hydrogen dispensing. No gas quantity or dissolved concentration is given. Retain the conditional gas identity and source-only instruction; VARIABLE is not a measured amount or a license to invent a gas ratio."}]},{"quantity_id":"q16","label":"Source-only preparation paragraph 2","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\": 2,\n      \"comment\": \"Mix ingredients well. Bring to boil for 5 minutes with stirring. Allow to cool to room temperature and skim fat.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q17","label":"Source-only preparation paragraph 3","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\": 3,\n      \"comment\": \"Alternatively, you may cool in a refrigerator and remove hardened fat from surface. Filter through cheese cloth and retain both meat particles and the filtrate.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q18","label":"Source-only preparation paragraph 4","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\": 4,\n      \"comment\": \"Bacteriology should specify whether they want the meat particles in the final medium or not. To the filtrate, add sufficient water to restore volume to 1.0 L.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q19","label":"Source-only preparation paragraph 6","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[4]","quote":"{\n      \"paragraph_index\": 6,\n      \"comment\": \"To the retained filtrate, add:\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q20","label":"Source-only preparation paragraph 8","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[5]","quote":"{\n      \"paragraph_index\": 8,\n      \"comment\": \"Boil, cool, and add 0.5 grams of Cysteine.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q21","label":"Source-only preparation paragraph 10","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[6]","quote":"{\n      \"paragraph_index\": 10,\n      \"comment\": \"Set pH to 7.0.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q22","label":"Source-only preparation paragraph 12","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[7]","quote":"{\n      \"paragraph_index\": 12,\n      \"comment\": \"Dispense anaerobically under nitrogen or nitrogen:hydrogen gas. Dispense in 7 ml volumes.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q23","label":"Source-only preparation paragraph 13","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[8]","quote":"{\n      \"paragraph_index\": 13,\n      \"comment\": \"Cap with rubber stoppers and autoclave at 121 C for 15 minutes.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q24","label":"Source-only preparation paragraph 14","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific preparation is not represented locally. Retain only this variant, stage and any stated range or optional branch. In particular, ordinary cheesecloth separation does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[9]","quote":"{\n      \"paragraph_index\": 14,\n      \"comment\": \"If meat particles are required, use one part meat per 4-5 parts broth.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q25","label":"Conditional solid-agar branch","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"physical_state","stored":"SOLID_AGAR"},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"physical_state","stored":"SOLID_AGAR"}],"decision":"evidence_only","rationale":"The source permits optional agar, and the current target selects SOLID_AGAR. This is supportable as a documented selected branch; the source also permits a broth branch. No automatic replacement of physical_state is required.","source_stage":"conditional selected variant","sources":[{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt lines 22-22","quote":"Agar (if required)         15.0     g","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"physical_state","decision":"evidence_only","rationale":"The source permits optional agar, and the current target selects SOLID_AGAR. This is supportable as a documented selected branch; the source also permits a broth branch. No automatic replacement of physical_state is required."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"physical_state","decision":"evidence_only","rationale":"The source permits optional agar, and the current target selects SOLID_AGAR. This is supportable as a documented selected branch; the source also permits a broth branch. No automatic replacement of physical_state is required."}]}],"document_scopes":{"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml":null,"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:009272.
+
+Every asserted stable ontology ID was independently captured and is nonobsolete; canonical label correspondence is exact. Cysteine remains generic and the source does not require an HCl salt. The phosphate, glucose, starch, cellobiose, nitrogen and agar identities agree with the named source components. Alpha-maltose is more specific than the source and is not silently endorsed. Tween80 agrees with polysorbate80 at the named-mixture level, without a density-based conversion. Current packaged MIM rows are inventoried separately from historical validity; absent secondary links on undefined ingredients do not authorize guessed mappings.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:009272.
+
+All three exact historical reports and their selected parent rows were read. October 5 amount rows were explicitly source-unchecked; the September single-record review recognized staged broth/filtrate and liquid-unit loss, which current sources confirm. Historical reported command outcomes were not replayed. Current TOGO separates named stocks and preserves comments but unnamed primary paragraphs in ATCC 1102 remain insufficient to encode the filtrate process automatically. Current unit mappings improve ml/mg handling but do not prove final-volume or bare-percent bases. The one-owner generated record follows current singleton-copy semantics; current code is not claimed to have run historically.
+
+## Findings
+
+### f1: Preserve liquid units and unresolved final-volume basis
+
+major / open / confirmed; issue key: culturemech-009272-liquid-units-and-basis.
+
+NaOH 25 ml, water 1000 ml, resazurin stock 4 ml and Tween 80 (1 ml) are stored as mass concentrations. Correct these as source-stage liquid amounts and preserve the 1 N and 0.025% stock labels without guessing percent basis. The source supports the other batch masses, but restoring the meat filtrate to 1 L does not establish a final-medium volume after later additions. Attach exact concentration evidence on ingredient evidence or root evidence for stock doses.
+
+### f2: Separate the meat-filtrate preparation from final additions
+
+major / open / confirmed; issue key: culturemech-009272-meat-filtrate-stage.
+
+The source first prepares and separates a meat filtrate, restores it to 1 L, then adds the named supplements. A flat list loses which ingredients create the filtrate and which are added afterward. Preserve fat removal, ordinary cheesecloth separation and the optional meat-particle 1:4–5 branch; do not reinterpret them as sterile filtration or an analytical final beef concentration.
+
+### f3: Restore exact pH and variant-specific preparation
+
+major / open / confirmed; issue key: culturemech-009272-missing-source-preparation.
+
+Both target and owner omit pH 7.0 and the source preparation. Restore boiling/cooling, later cysteine, staged fat removal and filtration/make-up, conditional agar/particles, anaerobic 7 ml dispensing and stoppering. ATCC 1102 specifies 121°C for 15 min. Do not import the rumen-fluid receiving formulation from ATCC 1016. Current TOGO comment retention is improved, but its generic filter classifier would overstate cheesecloth separation; review actions semantically.
+
+### f4: Attach source claims and qualify unsupported specificity
+
+minor / open / confirmed; issue key: culturemech-009272-claim-evidence-and-specificity.
+
+No ingredient amount has attached evidence. Retain supported source digits and known chemical identities, attach exact stage-specific claims, and qualify alpha-maltose specificity because the primary source says only maltose. Do not force chemical IDs for undefined meat, yeast extract or peptone from name similarity alone. Preserve original history and append any new verified curation event.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+NaOH 25 ml, water 1000 ml, resazurin stock 4 ml and Tween 80 (1 ml) are stored as mass concentrations. Correct these as source-stage liquid amounts and preserve the 1 N and 0.025% stock labels without guessing percent basis. The source supports the other batch masses, but restoring the meat filtrate to 1 L does not establish a final-medium volume after later additions. Attach exact concentration evidence on ingredient evidence or root evidence for stock doses.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The source first prepares and separates a meat filtrate, restores it to 1 L, then adds the named supplements. A flat list loses which ingredients create the filtrate and which are added afterward. Preserve fat removal, ordinary cheesecloth separation and the optional meat-particle 1:4–5 branch; do not reinterpret them as sterile filtration or an analytical final beef concentration.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+Both target and owner omit pH 7.0 and the source preparation. Restore boiling/cooling, later cysteine, staged fat removal and filtration/make-up, conditional agar/particles, anaerobic 7 ml dispensing and stoppering. ATCC 1102 specifies 121°C for 15 min. Do not import the rumen-fluid receiving formulation from ATCC 1016. Current TOGO comment retention is improved, but its generic filter classifier would overstate cheesecloth separation; review actions semantically.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+No ingredient amount has attached evidence. Retain supported source digits and known chemical identities, attach exact stage-specific claims, and qualify alpha-maltose specificity because the primary source says only maltose. Do not force chemical IDs for undefined meat, yeast extract or peptone from name similarity alone. Preserve original history and append any new verified curation event.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| togo2721 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721; REVIEW_WORK/batch070/source01-03-preflight/togo2721.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Exact selected-source identity preflight. Organism/source context screened before any operational assessment; no source transfer between variants. |
+| atcc1102 | https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx; REVIEW_WORK/batch070/source01-03-preflight/atcc1102.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Exact selected-source identity preflight. Organism/source context screened before any operational assessment; no source transfer between variants. |
+| target | data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-16 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-17 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-18 | reports/yaml_record_review/20260922T075216Z-Chopped_Meat_Carbohydrate_Medium_w_Tween_80.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| historical-reading | REVIEW_WORK/batch070/record03/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch070/record03/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch070/record03/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| writer-togo | src/culturemech/import/togo_importer.py; _extract_primary_components; _solution_from_item; _local_batch_volume_ml; _parse_unit; _extract_ph; _extract_preparation_steps | context_only | Current _extract_primary_components separates named local stocks; _solution_from_item retains a local stock without composition if its basis is insufficient. _parse_unit now maps mg to MG_PER_L and ml to ML_PER_L, but bare g still becomes G_PER_L and bare percent becomes PERCENT_W_V without independently proving final volume or percent basis. _extract_ph reads root ph, while these API payloads provide meta.ph. _extract_preparation_steps retains comments but labels any filter sentence FILTER_STERILIZE, which overstates ordinary cheesecloth filtration. These are current behaviors, not proof of historical execution. |
+| writer-cleanup | scripts/cleanup_media_quality.py; MediaQualityFixer._merge_ingredient_group | context_only | Current _merge_ingredient_group keeps identical duplicate amounts and flags disagreements; it no longer sums duplicate quantities. It cannot establish compatible stock/main bases or repair a historical flattened sum. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527; REVIEW_WORK/batch070/source01-03-supplement/chebi131527.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi28017 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:28017; REVIEW_WORK/batch070/source01-03-supplement/chebi28017.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi53426 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53426; REVIEW_WORK/batch070/source01-03-supplement/chebi53426.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17057 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17057; REVIEW_WORK/batch070/source01-03-supplement/chebi17057.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi18167 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:18167; REVIEW_WORK/batch070/source01-03-supplement/chebi18167.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17234; REVIEW_WORK/batch070/source01-03-supplement/chebi17234.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:2509; REVIEW_WORK/batch070/source01-03-supplement/chebi2509.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi15356 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15356; REVIEW_WORK/batch070/source01-03-supplement/chebi15356.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997; REVIEW_WORK/batch070/source01-03-supplement/chebi17997.json; exact original raw/text/hash/time metadata | context_only | Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence after ordinary identity preflight; no variant transfer or growth inference. |
+| quantities | REVIEW_WORK/batch070/record03/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch070/record03/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch070/record03/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch070/record03/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch070/record03/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch070/record03/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch070/record03/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch070/record03/validate-schema.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch070/record03/validate-strict.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch070/record03/validate-terms.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch070/record03/validate-references.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- The primary document gives no explicit final-medium volume after all supplements. Only the retained meat filtrate has an explicit restoration to 1 L; source batch masses are preserved without unsupported final concentration arithmetic.
+- The resazurin stock percent basis, nitrogen:hydrogen ratio, beef extraction yield and optional-particle basis are not fully quantified. No missing typical values are supplied.
+- The source says maltose without anomeric specification; exact canonical labels alone cannot establish the alpha-specific material.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T145939Z-culturemech-009272-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: Chopped Meat Carbohydrate Medium w/Tween 80'
+started_at: '2026-10-28T14:32:36.742166Z'
+finished_at: '2026-10-28T14:59:39.626818Z'
+reviewer:
+  identity: Codex batch006_validation
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, exact
+    captured sources, fresh scoped primary sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: ATCC 1102 identity and source masses are recoverable, but liquid units, meat-filtrate
+  stages and exact preparation are lost in both maintained and generated records.
+  Every concentration is inventoried; source batch support is separated from unverified
+  final-volume claims. Optional solid scope and correct ontology identities are retained.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml
+    sha256: 7321358fd2b21d0b306b64fc6511707c1202ae62c4a26c5b694953a5280c2410
+    role: target
+  - path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    sha256: d08fe368fd06fe9a3d0712727f84caff59b7944a57005b8da64b1a7c672bea04
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.md
+    sha256: 4ce57a4ba8bd7f4e042121250235a3999ccf5bad6326eed16999a247f3aa8e2c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.md
+    sha256: cd5325e609f51ff625d693f160b38df1aa33ff252eb95c41426175f7990c6f7c
+    role: context
+  - path: reports/yaml_record_review/20260922T075216Z-Chopped_Meat_Carbohydrate_Medium_w_Tween_80.md
+    sha256: fa173e62877ec9b535f05ca62705587e5594c3c056bde7c9588830ee9f070c52
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch070 index 03
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009272
+targets:
+- target_id: CultureMech:009272
+  path: data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml
+  label: chopped_meat_carbohydrate_medium_w_tween_80
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009272
+  command: just validate-schema data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009272
+  command: just validate-strict data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml
+    --out REVIEW_WORK/batch070/record03/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009272
+  command: just validate-terms data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:009272
+  command: just validate-references data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: togo2721
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721
+  accessed_at: '2026-10-28T14:31:12.710125Z'
+  locator: REVIEW_WORK/batch070/source01-03-preflight/togo2721.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Exact selected-source identity preflight. Organism/source
+    context screened before any operational assessment; no source transfer between
+    variants.
+  snapshot_sha256: 90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99
+- evidence_id: atcc1102
+  kind: primary_source
+  reference: https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx
+  accessed_at: '2026-10-28T14:31:12.620927Z'
+  locator: REVIEW_WORK/batch070/source01-03-preflight/atcc1102.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Exact selected-source identity preflight. Organism/source
+    context screened before any operational assessment; no source transfer between
+    variants.
+  snapshot_sha256: 63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T14:45:37.359559Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 7321358fd2b21d0b306b64fc6511707c1202ae62c4a26c5b694953a5280c2410
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T14:45:37.359739Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: d08fe368fd06fe9a3d0712727f84caff59b7944a57005b8da64b1a7c672bea04
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T14:45:37.359771Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T14:45:37.360083Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T14:45:37.360109Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T14:45:37.360130Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-16
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.md
+  locator: Complete report
+  accessed_at: '2026-10-28T14:45:37.360157Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 4ce57a4ba8bd7f4e042121250235a3999ccf5bad6326eed16999a247f3aa8e2c
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.md
+  locator: Complete report
+  accessed_at: '2026-10-28T14:45:37.360183Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: cd5325e609f51ff625d693f160b38df1aa33ff252eb95c41426175f7990c6f7c
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T075216Z-Chopped_Meat_Carbohydrate_Medium_w_Tween_80.md
+  locator: Complete report
+  accessed_at: '2026-10-28T14:45:37.360210Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: fa173e62877ec9b535f05ca62705587e5594c3c056bde7c9588830ee9f070c52
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/historical-reading.json
+  accessed_at: '2026-10-28T14:45:37.360236Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: 2e00173273faa5e79e7ac0afe87ad13ed14565a6312bb11854a4bfb847f6eced
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T14:45:37.360476Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: e42b69224b153eee8f72263e1526c2c072cd96f2b896ae296bdcc3fffbd233d7
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/complete-document-reader.json
+  accessed_at: '2026-10-28T14:45:37.360632Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: cf9b82b0bea0e2153a68f602de94f22af44ec347093d3a755ecbeead0f9c3176
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T14:45:37.360833Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _local_batch_volume_ml;
+    _parse_unit; _extract_ph; _extract_preparation_steps
+  accessed_at: '2026-10-28T14:45:37.360856Z'
+  support: context_only
+  summary: Current _extract_primary_components separates named local stocks; _solution_from_item
+    retains a local stock without composition if its basis is insufficient. _parse_unit
+    now maps mg to MG_PER_L and ml to ML_PER_L, but bare g still becomes G_PER_L and
+    bare percent becomes PERCENT_W_V without independently proving final volume or
+    percent basis. _extract_ph reads root ph, while these API payloads provide meta.ph.
+    _extract_preparation_steps retains comments but labels any filter sentence FILTER_STERILIZE,
+    which overstates ordinary cheesecloth filtration. These are current behaviors,
+    not proof of historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: MediaQualityFixer._merge_ingredient_group
+  accessed_at: '2026-10-28T14:45:37.360887Z'
+  support: context_only
+  summary: Current _merge_ingredient_group keeps identical duplicate amounts and flags
+    disagreements; it no longer sums duplicate quantities. It cannot establish compatible
+    stock/main bases or repair a historical flattened sum.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527
+  accessed_at: '2026-10-28T14:35:53.182014Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi131527.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 0a5297c84ea9dd82508960482211f6b3c993fd8e2b83fe755dd2b23316cc4068
+- evidence_id: chebi28017
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:28017
+  accessed_at: '2026-10-28T14:35:57.679993Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi28017.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 8d5cfcf42eb1f0d584069e65aa21275d1863248742e38cef6b0bbe3853db7084
+- evidence_id: chebi53426
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53426
+  accessed_at: '2026-10-28T14:36:01.066261Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi53426.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: a682cda6ada1352a65e4e17c601928bf148bc836d26ef791b7a99a0f99b2040f
+- evidence_id: chebi17057
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17057
+  accessed_at: '2026-10-28T14:35:55.484773Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi17057.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 03ea2942b3265db31bb09a757a07c860ed78ce663b1e868d1900ccb9ef2aad93
+- evidence_id: chebi18167
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:18167
+  accessed_at: '2026-10-28T14:35:57.172720Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi18167.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: a4e4ed8007101a8c9d493491595b691179b0eb826f627cfb9c45ccc912c8a4e3
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17234
+  accessed_at: '2026-10-28T14:35:55.617572Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi17234.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 91e3580b7a2c3718d25272b7ac62fe34badfa75bf58b16dd6ba08dfca987b859
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:2509
+  accessed_at: '2026-10-28T14:35:57.346291Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi2509.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: e3f17ac3223021a957a5e3fffb5b118a0854f9ddbc537f51f70dd61ae23ff7a7
+- evidence_id: chebi15356
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15356
+  accessed_at: '2026-10-28T14:35:53.488895Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi15356.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: 8cd0d0af1142afa634f05988c067f693a626fe9edefa80fd40c62bf2e660af2c
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997
+  accessed_at: '2026-10-28T14:35:56.729626Z'
+  locator: REVIEW_WORK/batch070/source01-03-supplement/chebi17997.json; exact original
+    raw/text/hash/time metadata
+  support: context_only
+  summary: Fresh batch070 capture. Fresh exact scoped primary/provider/ontology evidence
+    after ordinary identity preflight; no variant transfer or growth inference.
+  snapshot_sha256: c4f240d59927c0f5c6c8d29c14830d0f278cfeabc4ed924be5c2b6bbe1039c05
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:45:37.405703Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: e49c414262f711132d541a343b9733bb7f6eeeafb41ba42e3be037a2d4123212
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:45:37.405761Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 2e1eb4fdb403ba646d7fbc21cfe3705ee29632d2939c04cffd4eaa6e95d4b513
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:45:37.405810Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: a8aaa182ef6b58b38e0997faef140113637112fbb98a304e029b97514d65b16d
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:45:37.405848Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 3e8c2600f14becbb6955af718a785cb1cf84b9f942938b225697333bed2e6c88
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:45:37.405879Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: ab063faea1ec3ca7e6a68a0186ee6efe1134bc88695b084614257289f45c6214
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:45:37.405899Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 7bb0ff93b4215688ca72ffbdd506ee975b4b6aaf07278d8cf96b25535d245a31
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record03/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T14:45:37.405917Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch070/record03/validate-schema.json
+  accessed_at: '2026-10-28T14:32:37.743852Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 8dcf79b7c1507c146319053d3cf708c4fafcd7f12f5c416e65f4c079c33d3bd1
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch070/record03/validate-strict.json
+  accessed_at: '2026-10-28T14:32:38.671110Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 0294a68e4eac6f790ab753fac5b6bc89bb6319f468dfd986dc28e6b0e80dab2f
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch070/record03/validate-terms.json
+  accessed_at: '2026-10-28T14:32:39.671245Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 2b83e8603bd421d4cac169d59337b2143c416f43c543ce0c14b8b06e04859df2
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch070/record03/validate-references.json
+  accessed_at: '2026-10-28T14:32:40.344245Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 2397502bfa57c5decc1a3daa27ffe850e6786df5d35bfc58a37144c58cc4b975
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact source/variant and maintained ownership
+  outcome: supported
+  summary: The target and sole maintained owner identify TOGO M2721 / ATCC 1102. This
+    recipe prepares a meat filtrate, restores it to 1 L, then adds Tween 80 and later
+    supplements. It does not prescribe the ATCC 1016 850 ml broth plus 150 ml rumen-fluid
+    branch.
+  target_ids:
+  - CultureMech:009272
+  evidence_ids:
+  - target
+  - owner
+  - togo2721
+  - atcc1102
+- assessment_id: classification
+  area: representation
+  topic: Complexity and physical-state scope
+  outcome: supported
+  summary: The peptone, yeast extract and meat-derived filtrate support COMPLEX/UNDEFINED.
+    Optional source agar supports the selected solid branch when documented; no organism-growth
+    assertion is created from the generic medium title.
+  target_ids:
+  - CultureMech:009272
+  evidence_ids:
+  - target
+  - togo2721
+  - atcc1102
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 30 current concentration fields are covered by 25 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:009272
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b070-quantity-inventory-v1","target":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","quantity_field_count":30,"decisions":[{"quantity_id":"q1","label":"NaOH
+    (1N)","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[0].concentration","stored":{"value":"25","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[0].concentration","stored":{"value":"25","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source specifies 25 ml of 1 N NaOH in the meat-filtrate preparation, not 25 g/L
+    as a direct medium ingredient. The normality specifies stock strength; it is not
+    the stock addition volume or a final-medium mass concentration.","source_stage":"separate
+    meat-filtrate preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\":
+    \"NaOH (1N)\",\n          \"volume\": 25,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    1,\n          \"conc_unit\": \"N\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\":
+    \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 5-5","quote":"NaOH (1N)                            25.0       ml","quote_basis":"derivative
+    text"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 10-10","quote":"medium or not. To the filtrate, add sufficient water to
+    restore volume to 1.0 L. To the","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[0].concentration","decision":"conflict","rationale":"The
+    source specifies 25 ml of 1 N NaOH in the meat-filtrate preparation, not 25 g/L
+    as a direct medium ingredient. The normality specifies stock strength; it is not
+    the stock addition volume or a final-medium mass concentration."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[0].concentration","decision":"conflict","rationale":"The
+    source specifies 25 ml of 1 N NaOH in the meat-filtrate preparation, not 25 g/L
+    as a direct medium ingredient. The normality specifies stock strength; it is not
+    the stock addition volume or a final-medium mass concentration."}]},{"quantity_id":"q2","label":"DI
+    Water","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[1].concentration","stored":{"value":"1000","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[1].concentration","stored":{"value":"1000","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source specifies 1000 ml water in the meat-filtrate preparation and later restores
+    the retained filtrate to 1.0 L. The local 1000 G_PER_L is a volume-to-mass error
+    and loses the filtration/make-up stage.","source_stage":"separate meat-filtrate
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\":
+    \"DI Water\",\n          \"volume\": 1000,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001695\",\n          \"gmo_id\": \"GMO_001695\",\n          \"label\":
+    \"Deionized water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 4-4","quote":"DI Water                           1000         ml","quote_basis":"derivative
+    text"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 10-10","quote":"medium or not. To the filtrate, add sufficient water to
+    restore volume to 1.0 L. To the","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[1].concentration","decision":"conflict","rationale":"The
+    source specifies 1000 ml water in the meat-filtrate preparation and later restores
+    the retained filtrate to 1.0 L. The local 1000 G_PER_L is a volume-to-mass error
+    and loses the filtration/make-up stage."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[1].concentration","decision":"conflict","rationale":"The
+    source specifies 1000 ml water in the meat-filtrate preparation and later restores
+    the retained filtrate to 1.0 L. The local 1000 G_PER_L is a volume-to-mass error
+    and loses the filtration/make-up stage."}]},{"quantity_id":"q3","label":"Ground
+    Beef (fat-free)","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[2].concentration","stored":{"value":"500","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[2].concentration","stored":{"value":"500","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source uses 500 g fat-free ground beef to prepare a filtrate restored to 1.0 L
+    after boiling and separation. This supports the source loading, not 500 g/L of
+    dissolved beef in the final medium. Optional retained particles are separately
+    prescribed; do not double count the input meat and receiving filtrate.","source_stage":"separate
+    meat-filtrate preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\":
+    \"Ground Beef (fat-free)\",\n          \"volume\": 500,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001388\",\n          \"gmo_id\": \"GMO_001388\",\n          \"label\":
+    \"Ground beef (fat free)\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 3-3","quote":"Ground Beef (fat-free)              500.0       g","quote_basis":"derivative
+    text"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 10-10","quote":"medium or not. To the filtrate, add sufficient water to
+    restore volume to 1.0 L. To the","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The
+    source uses 500 g fat-free ground beef to prepare a filtrate restored to 1.0 L
+    after boiling and separation. This supports the source loading, not 500 g/L of
+    dissolved beef in the final medium. Optional retained particles are separately
+    prescribed; do not double count the input meat and receiving filtrate."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[2].concentration","decision":"conflict","rationale":"The
+    source uses 500 g fat-free ground beef to prepare a filtrate restored to 1.0 L
+    after boiling and separation. This supports the source loading, not 500 g/L of
+    dissolved beef in the final medium. Optional retained particles are separately
+    prescribed; do not double count the input meat and receiving filtrate."}]},{"quantity_id":"q4","label":"Resazurin
+    Soln (0.025%)","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[3].concentration","stored":{"value":"4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[3].concentration","stored":{"value":"4","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source amount for Resazurin Soln (0.025%) is 4 ml, not the same numeral G_PER_L.
+    Preserve the exact liquid addition and stage; final-medium volume is not explicitly
+    made up after the later additions. The stock is labeled 0.025%, but its percent
+    basis is unspecified; do not infer w/v or a final resazurin mass.","source_stage":"main
+    recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"Resazurin Soln (0.025%)\",\n          \"volume\": 4,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    0.025,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001403\",\n          \"gmo_id\":
+    \"GMO_001403\",\n          \"label\": \"Resazurin solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent
+    redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 21-21","quote":"Resazurin Soln (0.025%) 4.0         ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[3].concentration","decision":"conflict","rationale":"The
+    source amount for Resazurin Soln (0.025%) is 4 ml, not the same numeral G_PER_L.
+    Preserve the exact liquid addition and stage; final-medium volume is not explicitly
+    made up after the later additions. The stock is labeled 0.025%, but its percent
+    basis is unspecified; do not infer w/v or a final resazurin mass."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[3].concentration","decision":"conflict","rationale":"The
+    source amount for Resazurin Soln (0.025%) is 4 ml, not the same numeral G_PER_L.
+    Preserve the exact liquid addition and stage; final-medium volume is not explicitly
+    made up after the later additions. The stock is labeled 0.025%, but its percent
+    basis is unspecified; do not infer w/v or a final resazurin mass."}]},{"quantity_id":"q5","label":"Yeast
+    Extract","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[4].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[4].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Yeast Extract agrees with the local numeral, but the stored
+    G_PER_L does not declare the source batch basis and no final-medium volume after
+    all additions is given. Preserve the reported mass and input/filtrate stage; do
+    not label this unresolved concentration as evidence_only.","source_stage":"main
+    recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\":
+    \"Yeast Extract\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\":
+    \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 14-14","quote":"Yeast Extract              5.0      g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Yeast Extract agrees with the local numeral, but the stored
+    G_PER_L does not declare the source batch basis and no final-medium volume after
+    all additions is given. Preserve the reported mass and input/filtrate stage; do
+    not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[4].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Yeast Extract agrees with the local numeral, but the stored
+    G_PER_L does not declare the source batch basis and no final-medium volume after
+    all additions is given. Preserve the reported mass and input/filtrate stage; do
+    not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q6","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[5].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[5].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for K2HPO4 agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\":
+    \"K2HPO4\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\":
+    \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 16-16","quote":"K2HPO4                     5.0      g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The
+    exact source mass for K2HPO4 agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[5].concentration","decision":"unsupported","rationale":"The
+    exact source mass for K2HPO4 agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."}]},{"quantity_id":"q7","label":"Starch","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[6].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[6].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Starch agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\":
+    \"Starch\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001054\",\n          \"gmo_id\": \"GMO_001054\",\n          \"label\":
+    \"Starch\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 20-20","quote":"Starch                     1.0      g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Starch agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[6].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Starch agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."}]},{"quantity_id":"q8","label":"Tween
+    80","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"conflict","rationale":"The
+    source amount for Tween 80 is 1 ml, not the same numeral G_PER_L. Preserve the
+    exact liquid addition and stage; final-medium volume is not explicitly made up
+    after the later additions.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\":
+    \"Tween 80\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001060\",\n          \"gmo_id\": \"GMO_001060\",\n          \"label\":
+    \"Polysorbate 80\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000075\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000075\",\n              \"label\": \"Surfactant\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 15-15","quote":"Tween 80                   1.0      ml","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[7].concentration","decision":"conflict","rationale":"The
+    source amount for Tween 80 is 1 ml, not the same numeral G_PER_L. Preserve the
+    exact liquid addition and stage; final-medium volume is not explicitly made up
+    after the later additions."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[7].concentration","decision":"conflict","rationale":"The
+    source amount for Tween 80 is 1 ml, not the same numeral G_PER_L. Preserve the
+    exact liquid addition and stage; final-medium volume is not explicitly made up
+    after the later additions."}]},{"quantity_id":"q9","label":"Cellobiose","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[8].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Cellobiose agrees with the local numeral, but the stored
+    G_PER_L does not declare the source batch basis and no final-medium volume after
+    all additions is given. Preserve the reported mass and input/filtrate stage; do
+    not label this unresolved concentration as evidence_only.","source_stage":"main
+    recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\":
+    \"Cellobiose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001137\",\n          \"gmo_id\": \"GMO_001137\",\n          \"label\":
+    \"Cellobiose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 18-18","quote":"Cellobiose                 1.0      g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Cellobiose agrees with the local numeral, but the stored
+    G_PER_L does not declare the source batch basis and no final-medium volume after
+    all additions is given. Preserve the reported mass and input/filtrate stage; do
+    not label this unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[8].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Cellobiose agrees with the local numeral, but the stored
+    G_PER_L does not declare the source batch basis and no final-medium volume after
+    all additions is given. Preserve the reported mass and input/filtrate stage; do
+    not label this unresolved concentration as evidence_only."}]},{"quantity_id":"q10","label":"Maltose","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[9].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[9].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Maltose agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. The source does not specify the alpha
+    anomer; local CHEBI18167 is more specific than the inspected source.","source_stage":"main
+    recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\":
+    \"Maltose\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001195\",\n          \"gmo_id\": \"GMO_001195\",\n          \"label\":
+    \"Maltose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 19-19","quote":"Maltose                    1.0      g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Maltose agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. The source does not specify the alpha
+    anomer; local CHEBI18167 is more specific than the inspected source."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[9].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Maltose agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. The source does not specify the alpha
+    anomer; local CHEBI18167 is more specific than the inspected source."}]},{"quantity_id":"q11","label":"Glucose","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[10].concentration","stored":{"value":"4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[10].concentration","stored":{"value":"4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Glucose agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\":
+    \"Glucose\",\n          \"volume\": 4,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\":
+    \"Glucose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 17-17","quote":"Glucose                    4.0      g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Glucose agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[10].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Glucose agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."}]},{"quantity_id":"q12","label":"Agar","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[11].concentration","stored":{"value":"15","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[11].concentration","stored":{"value":"15","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Agar agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. Agar is explicitly optional. The selected
+    SOLID_AGAR representation is a defensible chosen branch if its conditional scope
+    is documented; this is not an automatic physical-state error.","source_stage":"main
+    recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\":
+    \"Agar\",\n          \"volume\": 15,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\":
+    \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 22-22","quote":"Agar (if required)         15.0     g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Agar agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. Agar is explicitly optional. The selected
+    SOLID_AGAR representation is a defensible chosen branch if its conditional scope
+    is documented; this is not an automatic physical-state error."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[11].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Agar agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. Agar is explicitly optional. The selected
+    SOLID_AGAR representation is a defensible chosen branch if its conditional scope
+    is documented; this is not an automatic physical-state error."}]},{"quantity_id":"q13","label":"Peptone","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[12].concentration","stored":{"value":"30","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[12].concentration","stored":{"value":"30","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Peptone agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only.","source_stage":"main recipe batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\":
+    \"Peptone\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_000012\",\n          \"gmo_id\": \"GMO_000012\",\n          \"label\":
+    \"Peptone\",\n          \"properties\": [],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 13-13","quote":"Peptone                    30.0     g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Peptone agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[12].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Peptone agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only."}]},{"quantity_id":"q14","label":"Cysteine","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    exact source mass for Cysteine agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. Cysteine is added after boiling and
+    cooling; its 0.5 g is supported at that later stage.","source_stage":"main recipe
+    batch","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[2].items[0]","quote":"{\n          \"component_name\":
+    \"Cysteine\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001318\",\n          \"gmo_id\": \"GMO_001318\",\n          \"label\":
+    \"Cysteine\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 23-23","quote":"Boil, cool, and add 0.5 grams of Cysteine. Set pH to 7.0.","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Cysteine agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. Cysteine is added after boiling and
+    cooling; its 0.5 g is supported at that later stage."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[13].concentration","decision":"unsupported","rationale":"The
+    exact source mass for Cysteine agrees with the local numeral, but the stored G_PER_L
+    does not declare the source batch basis and no final-medium volume after all additions
+    is given. Preserve the reported mass and input/filtrate stage; do not label this
+    unresolved concentration as evidence_only. Cysteine is added after boiling and
+    cooling; its 0.5 g is supported at that later stage."}]},{"quantity_id":"q15","label":"Nitrogen
+    gas","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[14].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"The
+    source permits anaerobic nitrogen or nitrogen:hydrogen dispensing. No gas quantity
+    or dissolved concentration is given. Retain the conditional gas identity and source-only
+    instruction; VARIABLE is not a measured amount or a license to invent a gas ratio.","source_stage":"headspace/dispensing","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"components[3].items[0]","quote":"{\n          \"component_name\":
+    \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\":
+    \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"Gas\"\n            }\n          ],\n          \"roles\":
+    []\n        }","quote_basis":"raw UTF-8"},{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 24-24","quote":"Dispense anaerobically under nitrogen or nitrogen:hydrogen
+    gas.","quote_basis":"derivative text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"ingredients[14].concentration","decision":"not_quantified","rationale":"The
+    source permits anaerobic nitrogen or nitrogen:hydrogen dispensing. No gas quantity
+    or dissolved concentration is given. Retain the conditional gas identity and source-only
+    instruction; VARIABLE is not a measured amount or a license to invent a gas ratio."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"ingredients[14].concentration","decision":"not_quantified","rationale":"The
+    source permits anaerobic nitrogen or nitrogen:hydrogen dispensing. No gas quantity
+    or dissolved concentration is given. Retain the conditional gas identity and source-only
+    instruction; VARIABLE is not a measured amount or a license to invent a gas ratio."}]},{"quantity_id":"q16","label":"Source-only
+    preparation paragraph 2","local_fields":[],"decision":"evidence_only","rationale":"Exact
+    source-specific preparation is not represented locally. Retain only this variant,
+    stage and any stated range or optional branch. In particular, ordinary cheesecloth
+    separation does not establish sterile filtration.","source_stage":"source-only
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[0]","quote":"{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Mix ingredients well. Bring to boil for 5 minutes with
+    stirring. Allow to cool to room temperature and skim fat.\"\n    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q17","label":"Source-only preparation
+    paragraph 3","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific
+    preparation is not represented locally. Retain only this variant, stage and any
+    stated range or optional branch. In particular, ordinary cheesecloth separation
+    does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[1]","quote":"{\n      \"paragraph_index\":
+    3,\n      \"comment\": \"Alternatively, you may cool in a refrigerator and remove
+    hardened fat from surface. Filter through cheese cloth and retain both meat particles
+    and the filtrate.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q18","label":"Source-only
+    preparation paragraph 4","local_fields":[],"decision":"evidence_only","rationale":"Exact
+    source-specific preparation is not represented locally. Retain only this variant,
+    stage and any stated range or optional branch. In particular, ordinary cheesecloth
+    separation does not establish sterile filtration.","source_stage":"source-only
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[2]","quote":"{\n      \"paragraph_index\":
+    4,\n      \"comment\": \"Bacteriology should specify whether they want the meat
+    particles in the final medium or not. To the filtrate, add sufficient water to
+    restore volume to 1.0 L.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q19","label":"Source-only
+    preparation paragraph 6","local_fields":[],"decision":"evidence_only","rationale":"Exact
+    source-specific preparation is not represented locally. Retain only this variant,
+    stage and any stated range or optional branch. In particular, ordinary cheesecloth
+    separation does not establish sterile filtration.","source_stage":"source-only
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[4]","quote":"{\n      \"paragraph_index\":
+    6,\n      \"comment\": \"To the retained filtrate, add:\"\n    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q20","label":"Source-only preparation
+    paragraph 8","local_fields":[],"decision":"evidence_only","rationale":"Exact source-specific
+    preparation is not represented locally. Retain only this variant, stage and any
+    stated range or optional branch. In particular, ordinary cheesecloth separation
+    does not establish sterile filtration.","source_stage":"source-only preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[5]","quote":"{\n      \"paragraph_index\":
+    8,\n      \"comment\": \"Boil, cool, and add 0.5 grams of Cysteine.\"\n    }","quote_basis":"raw
+    UTF-8"}],"layer_assessments":[]},{"quantity_id":"q21","label":"Source-only preparation
+    paragraph 10","local_fields":[],"decision":"evidence_only","rationale":"Exact
+    source-specific preparation is not represented locally. Retain only this variant,
+    stage and any stated range or optional branch. In particular, ordinary cheesecloth
+    separation does not establish sterile filtration.","source_stage":"source-only
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[6]","quote":"{\n      \"paragraph_index\":
+    10,\n      \"comment\": \"Set pH to 7.0.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q22","label":"Source-only
+    preparation paragraph 12","local_fields":[],"decision":"evidence_only","rationale":"Exact
+    source-specific preparation is not represented locally. Retain only this variant,
+    stage and any stated range or optional branch. In particular, ordinary cheesecloth
+    separation does not establish sterile filtration.","source_stage":"source-only
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[7]","quote":"{\n      \"paragraph_index\":
+    12,\n      \"comment\": \"Dispense anaerobically under nitrogen or nitrogen:hydrogen
+    gas. Dispense in 7 ml volumes.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q23","label":"Source-only
+    preparation paragraph 13","local_fields":[],"decision":"evidence_only","rationale":"Exact
+    source-specific preparation is not represented locally. Retain only this variant,
+    stage and any stated range or optional branch. In particular, ordinary cheesecloth
+    separation does not establish sterile filtration.","source_stage":"source-only
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[8]","quote":"{\n      \"paragraph_index\":
+    13,\n      \"comment\": \"Cap with rubber stoppers and autoclave at 121 C for
+    15 minutes.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q24","label":"Source-only
+    preparation paragraph 14","local_fields":[],"decision":"evidence_only","rationale":"Exact
+    source-specific preparation is not represented locally. Retain only this variant,
+    stage and any stated range or optional branch. In particular, ordinary cheesecloth
+    separation does not establish sterile filtration.","source_stage":"source-only
+    preparation","sources":[{"evidence_id":"togo2721","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2721","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/togo2721.bin","raw_sha256":"90d9760942990b430483900ab0683d85eec5edc911ca611f0b28e76e13462b99","text_sha256":"6fbd82500f31beae7bb30179cffd8fe451f398abe315ac9c6e27c894c35e472a","accessed_at":"2026-10-28T14:31:12.710125Z","locator":"comments[9]","quote":"{\n      \"paragraph_index\":
+    14,\n      \"comment\": \"If meat particles are required, use one part meat per
+    4-5 parts broth.\"\n    }","quote_basis":"raw UTF-8"}],"layer_assessments":[]},{"quantity_id":"q25","label":"Conditional
+    solid-agar branch","local_fields":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"physical_state","stored":"SOLID_AGAR"},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"physical_state","stored":"SOLID_AGAR"}],"decision":"evidence_only","rationale":"The
+    source permits optional agar, and the current target selects SOLID_AGAR. This
+    is supportable as a documented selected branch; the source also permits a broth
+    branch. No automatic replacement of physical_state is required.","source_stage":"conditional
+    selected variant","sources":[{"evidence_id":"atcc1102","reference":"https://www.atcc.org/~/media/D1EF22ABE8034FE5B83EFF9D1BC65E18.ashx","raw_path":"REVIEW_WORK/batch070/source01-03-preflight/atcc1102.bin","raw_sha256":"63ff0d7864c0c87286c6f6b790cf45462d75a609c754356f24b99ecbf2557407","text_sha256":"82f161ce8dfe2ce50e98e67ed387be32ef86d23538a74086787bb570e7c66587","accessed_at":"2026-10-28T14:31:12.620927Z","locator":"atcc1102.txt
+    lines 22-22","quote":"Agar (if required)         15.0     g","quote_basis":"derivative
+    text"}],"layer_assessments":[{"path":"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml","field_path":"physical_state","decision":"evidence_only","rationale":"The
+    source permits optional agar, and the current target selects SOLID_AGAR. This
+    is supportable as a documented selected branch; the source also permits a broth
+    branch. No automatic replacement of physical_state is required."},{"path":"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml","field_path":"physical_state","decision":"evidence_only","rationale":"The
+    source permits optional agar, and the current target selects SOLID_AGAR. This
+    is supportable as a documented selected branch; the source also permits a broth
+    branch. No automatic replacement of physical_state is required."}]}],"document_scopes":{"data/merge_yaml/merged/Chopped_Meat_Carbohydrate_Medium_w_Tween_80.yaml":null,"data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: Every asserted stable ontology ID was independently captured and is nonobsolete;
+    canonical label correspondence is exact. Cysteine remains generic and the source
+    does not require an HCl salt. The phosphate, glucose, starch, cellobiose, nitrogen
+    and agar identities agree with the named source components. Alpha-maltose is more
+    specific than the source and is not silently endorsed. Tween80 agrees with polysorbate80
+    at the named-mixture level, without a density-based conversion. Current packaged
+    MIM rows are inventoried separately from historical validity; absent secondary
+    links on undefined ingredients do not authorize guessed mappings.
+  target_ids:
+  - CultureMech:009272
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: All three exact historical reports and their selected parent rows were
+    read. October 5 amount rows were explicitly source-unchecked; the September single-record
+    review recognized staged broth/filtrate and liquid-unit loss, which current sources
+    confirm. Historical reported command outcomes were not replayed. Current TOGO
+    separates named stocks and preserves comments but unnamed primary paragraphs in
+    ATCC 1102 remain insufficient to encode the filtrate process automatically. Current
+    unit mappings improve ml/mg handling but do not prove final-volume or bare-percent
+    bases. The one-owner generated record follows current singleton-copy semantics;
+    current code is not claimed to have run historically.
+  target_ids:
+  - CultureMech:009272
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-009272-liquid-units-and-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preserve liquid units and unresolved final-volume basis
+  description: NaOH 25 ml, water 1000 ml, resazurin stock 4 ml and Tween 80 (1 ml)
+    are stored as mass concentrations. Correct these as source-stage liquid amounts
+    and preserve the 1 N and 0.025% stock labels without guessing percent basis. The
+    source supports the other batch masses, but restoring the meat filtrate to 1 L
+    does not establish a final-medium volume after later additions. Attach exact concentration
+    evidence on ingredient evidence or root evidence for stock doses.
+  target_ids:
+  - CultureMech:009272
+  field_paths:
+  - ingredients
+  evidence_ids:
+  - togo2721
+  - atcc1102
+  - writer-togo
+  rule_id: review-yaml-record/quantity-unit-and-stock-stage
+  native_severity: P2
+  normalization_reason: 'Custom quantity and solution-stage rule: the documented unit
+    and stock/main-stage discrepancies materially change the represented formulation,
+    so severity is major. This does not redefine native P2.3, which addresses physical-state
+    mismatch.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-009272-meat-filtrate-stage
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate the meat-filtrate preparation from final additions
+  description: The source first prepares and separates a meat filtrate, restores it
+    to 1 L, then adds the named supplements. A flat list loses which ingredients create
+    the filtrate and which are added afterward. Preserve fat removal, ordinary cheesecloth
+    separation and the optional meat-particle 1:4–5 branch; do not reinterpret them
+    as sterile filtration or an analytical final beef concentration.
+  target_ids:
+  - CultureMech:009272
+  field_paths:
+  - ingredients[0]
+  - ingredients[1]
+  - ingredients[2]
+  evidence_ids:
+  - togo2721
+  - atcc1102
+  - writer-togo
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-009272-missing-source-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore exact pH and variant-specific preparation
+  description: Both target and owner omit pH 7.0 and the source preparation. Restore
+    boiling/cooling, later cysteine, staged fat removal and filtration/make-up, conditional
+    agar/particles, anaerobic 7 ml dispensing and stoppering. ATCC 1102 specifies
+    121°C for 15 min. Do not import the rumen-fluid receiving formulation from ATCC
+    1016. Current TOGO comment retention is improved, but its generic filter classifier
+    would overstate cheesecloth separation; review actions semantically.
+  target_ids:
+  - CultureMech:009272
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - evidence
+  evidence_ids:
+  - togo2721
+  - atcc1102
+  - writer-togo
+  rule_id: review-yaml-record/source-preparation-context
+  native_severity: P3
+  normalization_reason: Native P3.4 preparation omission is normalized to major because
+    the full staged filtration and receiving-medium process is missing, with consequences
+    beyond an optional pH annotation.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-009272-claim-evidence-and-specificity
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Attach source claims and qualify unsupported specificity
+  description: No ingredient amount has attached evidence. Retain supported source
+    digits and known chemical identities, attach exact stage-specific claims, and
+    qualify alpha-maltose specificity because the primary source says only maltose.
+    Do not force chemical IDs for undefined meat, yeast extract or peptone from name
+    similarity alone. Preserve original history and append any new verified curation
+    event.
+  target_ids:
+  - CultureMech:009272
+  field_paths:
+  - references
+  - evidence
+  - ingredients[9].term
+  - ingredients[9].mediaingredientmech_chebi_term
+  evidence_ids:
+  - togo2721
+  - atcc1102
+  - chebi18167
+  rule_id: review-yaml-record/claim-evidence-specificity
+  native_severity: P4
+  normalization_reason: Missing references correspond to native P4.3; normalized minor
+    because source identity is recoverable. The generic maltose versus alpha-specific
+    ID is unresolved specificity, not a demonstrated different supplied chemical.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: a1
+  description: NaOH 25 ml, water 1000 ml, resazurin stock 4 ml and Tween 80 (1 ml)
+    are stored as mass concentrations. Correct these as source-stage liquid amounts
+    and preserve the 1 N and 0.025% stock labels without guessing percent basis. The
+    source supports the other batch masses, but restoring the meat filtrate to 1 L
+    does not establish a final-medium volume after later additions. Attach exact concentration
+    evidence on ingredient evidence or root evidence for stock doses.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009272
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The source first prepares and separates a meat filtrate, restores it
+    to 1 L, then adds the named supplements. A flat list loses which ingredients create
+    the filtrate and which are added afterward. Preserve fat removal, ordinary cheesecloth
+    separation and the optional meat-particle 1:4–5 branch; do not reinterpret them
+    as sterile filtration or an analytical final beef concentration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009272
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: Both target and owner omit pH 7.0 and the source preparation. Restore
+    boiling/cooling, later cysteine, staged fat removal and filtration/make-up, conditional
+    agar/particles, anaerobic 7 ml dispensing and stoppering. ATCC 1102 specifies
+    121°C for 15 min. Do not import the rumen-fluid receiving formulation from ATCC
+    1016. Current TOGO comment retention is improved, but its generic filter classifier
+    would overstate cheesecloth separation; review actions semantically.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009272
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: No ingredient amount has attached evidence. Retain supported source
+    digits and known chemical identities, attach exact stage-specific claims, and
+    qualify alpha-maltose specificity because the primary source says only maltose.
+    Do not force chemical IDs for undefined meat, yeast extract or peptone from name
+    similarity alone. Preserve original history and append any new verified curation
+    event.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009272
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrate_medium_w_tween_80.yaml
+    role: maintained normalized contributor
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- The primary document gives no explicit final-medium volume after all supplements.
+  Only the retained meat filtrate has an explicit restoration to 1 L; source batch
+  masses are preserved without unsupported final concentration arithmetic.
+- The resazurin stock percent basis, nitrogen:hydrogen ratio, beef extraction yield
+  and optional-particle basis are not fully quantified. No missing typical values
+  are supplied.
+- The source says maltose without anomeric specification; exact canonical labels alone
+  cannot establish the alpha-specific material.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
