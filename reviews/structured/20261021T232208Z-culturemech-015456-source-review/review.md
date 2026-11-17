@@ -1,0 +1,8993 @@
+# Source and formulation review: BG11R (CultureMech:015456)
+
+- Review: 20261021T232208Z-culturemech-015456-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T23:07:35Z
+- Finished UTC: 2026-10-21T23:22:08Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact named FEBA formulation supports every listed numerical rate, including the A5 dilution. Citric acid is grounded to sodium citrate, EDTA source metadata does not settle hydration, and the merged projection loses pH and separately scoped owner evidence. Eight inherited growth claims require claim-specific interpretation; a per-hour unit is unsupported by the current abstract. Historical CultureBotHT byte equivalence remains unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 406; batch 041 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty task batches contain 400 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 403 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:015456 | data/merge_yaml/merged/BG11R.yaml | generated | BG11R |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:015456 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:015456 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch041/406/strict.tsv |
+| validate-terms | passed | True | CultureMech:015456 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:015456 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:015456 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: culturebothtRepository | unavailable | True | CultureMech:015456 | The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual access time. The March import bytes and their historical equivalence to the later FEBA recipe remain unverified. Current named FEBA amounts are independently assessable; the missing historical source is a partial-completion limit. |
+| Exact source content access: culturebothtExactBG11 | unavailable | True | CultureMech:015456 | The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual access time. The March import bytes and their historical equivalence to the later FEBA recipe remain unverified. Current named FEBA amounts are independently assessable; the missing historical source is a partial-completion limit. |
+| Exact source content access: culturebothtExactBG11R | unavailable | True | CultureMech:015456 | The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual access time. The March import bytes and their historical equivalence to the later FEBA recipe remain unverified. Current named FEBA amounts are independently assessable; the missing historical source is a partial-completion limit. |
+| Exact source content access: bg11ContextTaxonomy92942 | unavailable | True | CultureMech:015456 | The current NCBI taxonomy request for 92942 returned HTTP 429. The exact Nostoc name/ID correspondence cannot be independently confirmed from that response. The separate current paper abstract is available and supports the paper-scoped growth comparison. |
+| Exact paper formulations and growth-rate dimensional basis | unavailable | True | CultureMech:015456 | Current abstracts support the cited strains and stated conditions, but full paper methods and exact BG11-to-FEBA formula equivalence were not recovered in this bound source set. The UCP002 growth-rate abstract prints mu without an explicit per-hour unit. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:015456.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:015456.
+
+14 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 14/14 primary and 0/14 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 14: primary 100.00%; secondary 0.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:015456.
+
+110 source-scoped decisions, including every local concentration and explicit source-only quantities. Evidence-only marks source-supported numerals whose scoped evidence must be attached; verified is reserved for an existing value, unit and basis with matching attached evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "name": "Sodium nitrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Sodium nitrate",
+        "exact_source_quote": "Sodium nitrate\t1.5\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q2",
+    "name": "Sodium nitrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Sodium nitrate",
+        "exact_source_quote": "Sodium nitrate\t1.5\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q3",
+    "name": "Sodium nitrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Sodium nitrate",
+        "exact_source_quote": "Sodium nitrate\t1.5\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q4",
+    "name": "Potassium phosphate dibasic",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.04",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.04",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Potassium phosphate dibasic",
+        "exact_source_quote": "Potassium phosphate dibasic\t0.04\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q5",
+    "name": "Potassium phosphate dibasic",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.04",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.04",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Potassium phosphate dibasic",
+        "exact_source_quote": "Potassium phosphate dibasic\t0.04\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q6",
+    "name": "Potassium phosphate dibasic",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.04",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.04",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Potassium phosphate dibasic",
+        "exact_source_quote": "Potassium phosphate dibasic\t0.04\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q7",
+    "name": "Magnesium Sulfate Heptahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.075",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.075",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Magnesium Sulfate Heptahydrate",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t0.075\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q8",
+    "name": "Magnesium Sulfate Heptahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.075",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.075",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Magnesium Sulfate Heptahydrate",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t0.075\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q9",
+    "name": "Magnesium Sulfate Heptahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.075",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.075",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Magnesium Sulfate Heptahydrate",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t0.075\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q10",
+    "name": "Calcium chloride dihydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.036",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Calcium chloride dihydrate",
+        "exact_source_quote": "Calcium chloride dihydrate\t0.036\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q11",
+    "name": "Calcium chloride dihydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.036",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Calcium chloride dihydrate",
+        "exact_source_quote": "Calcium chloride dihydrate\t0.036\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q12",
+    "name": "Calcium chloride dihydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.036",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Calcium chloride dihydrate",
+        "exact_source_quote": "Calcium chloride dihydrate\t0.036\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q13",
+    "name": "Citric Acid",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Citric Acid",
+        "exact_source_quote": "Citric Acid\t0.006\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion. This does not validate the sodium-citrate identifier assigned to source citric acid."
+  },
+  {
+    "decision_id": "q14",
+    "name": "Citric Acid",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Citric Acid",
+        "exact_source_quote": "Citric Acid\t0.006\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion. This does not validate the sodium-citrate identifier assigned to source citric acid."
+  },
+  {
+    "decision_id": "q15",
+    "name": "Citric Acid",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Citric Acid",
+        "exact_source_quote": "Citric Acid\t0.006\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion. This does not validate the sodium-citrate identifier assigned to source citric acid."
+  },
+  {
+    "decision_id": "q16",
+    "name": "Ferric ammonium citrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Ferric ammonium citrate",
+        "exact_source_quote": "Ferric ammonium citrate\t0.006\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q17",
+    "name": "Ferric ammonium citrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Ferric ammonium citrate",
+        "exact_source_quote": "Ferric ammonium citrate\t0.006\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q18",
+    "name": "Ferric ammonium citrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.006",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Ferric ammonium citrate",
+        "exact_source_quote": "Ferric ammonium citrate\t0.006\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q19",
+    "name": "EDTA (disodium salt)",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.001",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row EDTA (disodium salt)",
+        "exact_source_quote": "EDTA (disodium salt)\t0.001\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion. Hydration remains unresolved independently of the verified source numeral."
+  },
+  {
+    "decision_id": "q20",
+    "name": "EDTA (disodium salt)",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.001",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row EDTA (disodium salt)",
+        "exact_source_quote": "EDTA (disodium salt)\t0.001\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion. Hydration remains unresolved independently of the verified source numeral."
+  },
+  {
+    "decision_id": "q21",
+    "name": "EDTA (disodium salt)",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.001",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row EDTA (disodium salt)",
+        "exact_source_quote": "EDTA (disodium salt)\t0.001\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion. Hydration remains unresolved independently of the verified source numeral."
+  },
+  {
+    "decision_id": "q22",
+    "name": "Sodium carbonate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Sodium carbonate",
+        "exact_source_quote": "Sodium carbonate\t0.02\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q23",
+    "name": "Sodium carbonate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Sodium carbonate",
+        "exact_source_quote": "Sodium carbonate\t0.02\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q24",
+    "name": "Sodium carbonate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R direct row Sodium carbonate",
+        "exact_source_quote": "Sodium carbonate\t0.02\tg/L\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. Direct source concentration, without batch-volume or mass-to-molar conversion."
+  },
+  {
+    "decision_id": "q25",
+    "name": "Boric Acid",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.00286",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00286",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Boric Acid",
+        "exact_source_quote": "Boric Acid\t2.86\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q26",
+    "name": "Boric Acid",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.00286",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00286",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Boric Acid",
+        "exact_source_quote": "Boric Acid\t2.86\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q27",
+    "name": "Boric Acid",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.00286",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00286",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Boric Acid",
+        "exact_source_quote": "Boric Acid\t2.86\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q28",
+    "name": "Manganese (II) chloride tetrahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0018100000000000002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00181",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Manganese (II) chloride tetrahydrate",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t1.81\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q29",
+    "name": "Manganese (II) chloride tetrahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0018100000000000002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00181",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Manganese (II) chloride tetrahydrate",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t1.81\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q30",
+    "name": "Manganese (II) chloride tetrahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.0018100000000000002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00181",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Manganese (II) chloride tetrahydrate",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t1.81\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q31",
+    "name": "Zinc sulfate heptahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000222",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.000222",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Zinc sulfate heptahydrate",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t0.222\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q32",
+    "name": "Zinc sulfate heptahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000222",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.000222",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Zinc sulfate heptahydrate",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t0.222\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q33",
+    "name": "Zinc sulfate heptahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.000222",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.000222",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Zinc sulfate heptahydrate",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t0.222\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q34",
+    "name": "Sodium Molybdate Dihydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.00039000000000000005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00039",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Sodium Molybdate Dihydrate",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t0.39\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q35",
+    "name": "Sodium Molybdate Dihydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.00039000000000000005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00039",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Sodium Molybdate Dihydrate",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t0.39\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q36",
+    "name": "Sodium Molybdate Dihydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.00039000000000000005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.00039",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Sodium Molybdate Dihydrate",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t0.39\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q37",
+    "name": "Copper (II) sulfate pentahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "7.9e-05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.000079",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Copper (II) sulfate pentahydrate",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t0.079\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q38",
+    "name": "Copper (II) sulfate pentahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "7.9e-05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.000079",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Copper (II) sulfate pentahydrate",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t0.079\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q39",
+    "name": "Copper (II) sulfate pentahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "7.9e-05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.000079",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Copper (II) sulfate pentahydrate",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t0.079\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q40",
+    "name": "Cobalt(II) nitrate hexahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.0494",
+          "unit": "MG_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.0494",
+      "unit": "MG_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Cobalt(II) nitrate hexahydrate",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t49.4\tmg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q41",
+    "name": "Cobalt(II) nitrate hexahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.0494",
+          "unit": "MG_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.0494",
+      "unit": "MG_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Cobalt(II) nitrate hexahydrate",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t49.4\tmg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q42",
+    "name": "Cobalt(II) nitrate hexahydrate",
+    "stage": "Main medium rate, exact named FEBA variant",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.0494",
+          "unit": "MG_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": "0.0494",
+      "unit": "MG_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock row Cobalt(II) nitrate hexahydrate",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t49.4\tmg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R A5 receiving-strength row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock-strength declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Numerical value and unit are supported for the named ingredient. The stock rate is divided by 1000 for 1 X in the receiving medium; decimal floating serialization is not a substantive discrepancy. No ml dose or measured final volume is inferred."
+  },
+  {
+    "decision_id": "q43",
+    "name": "Boric Acid",
+    "stage": "Source-only A5 stock concentration",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "stock_value": "2.86",
+      "stock_unit": "g/L",
+      "stock_strength_X": 1000
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 exact constituent row",
+        "exact_source_quote": "Boric Acid\t2.86\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock strength",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Retain the stock stage in attached dilution evidence or a separately curated stock; never substitute this undiluted value into the main medium."
+  },
+  {
+    "decision_id": "q44",
+    "name": "Manganese (II) chloride tetrahydrate",
+    "stage": "Source-only A5 stock concentration",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "stock_value": "1.81",
+      "stock_unit": "g/L",
+      "stock_strength_X": 1000
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 exact constituent row",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t1.81\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock strength",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Retain the stock stage in attached dilution evidence or a separately curated stock; never substitute this undiluted value into the main medium."
+  },
+  {
+    "decision_id": "q45",
+    "name": "Zinc sulfate heptahydrate",
+    "stage": "Source-only A5 stock concentration",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "stock_value": "0.222",
+      "stock_unit": "g/L",
+      "stock_strength_X": 1000
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 exact constituent row",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t0.222\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock strength",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Retain the stock stage in attached dilution evidence or a separately curated stock; never substitute this undiluted value into the main medium."
+  },
+  {
+    "decision_id": "q46",
+    "name": "Sodium Molybdate Dihydrate",
+    "stage": "Source-only A5 stock concentration",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "stock_value": "0.39",
+      "stock_unit": "g/L",
+      "stock_strength_X": 1000
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 exact constituent row",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t0.39\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock strength",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Retain the stock stage in attached dilution evidence or a separately curated stock; never substitute this undiluted value into the main medium."
+  },
+  {
+    "decision_id": "q47",
+    "name": "Copper (II) sulfate pentahydrate",
+    "stage": "Source-only A5 stock concentration",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "stock_value": "0.079",
+      "stock_unit": "g/L",
+      "stock_strength_X": 1000
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 exact constituent row",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t0.079\tg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock strength",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Retain the stock stage in attached dilution evidence or a separately curated stock; never substitute this undiluted value into the main medium."
+  },
+  {
+    "decision_id": "q48",
+    "name": "Cobalt(II) nitrate hexahydrate",
+    "stage": "Source-only A5 stock concentration",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "stock_value": "49.4",
+      "stock_unit": "mg/L",
+      "stock_strength_X": 1000
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 exact constituent row",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t49.4\tmg/L\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "A5 stock strength",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Retain the stock stage in attached dilution evidence or a separately curated stock; never substitute this undiluted value into the main medium."
+  },
+  {
+    "decision_id": "q49",
+    "name": "A5 receiving dose",
+    "stage": "Source relative stock strength",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "receiving_strength_X": 1,
+      "stock_strength_X": 1000,
+      "liquid_dose_ml": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Exact main A5 row",
+        "exact_source_quote": "Trace metal mix A5\t1\tX\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Exact stock X declaration",
+        "exact_source_quote": "X\t1000\t\n",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Explicit relative strengths justify the ratio only. No liquid addition volume is printed, and no extra final-volume claim is made."
+  },
+  {
+    "decision_id": "q50",
+    "name": "Sodium nitrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[0].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7631-99-4; MW: 84.99"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium nitrate",
+        "CAS": "7631-99-4",
+        "Company": "Sigma",
+        "CatalogNumber": "S8170",
+        "FW": "84.99",
+        "Synonyms": "NaNO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "yes",
+        "FEBA_stress": "yes",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 400",
+        "exact_source_quote": "Sodium nitrate\t7631-99-4\tSigma\tS8170\t84.99\tNaNO3\t\t\tyes\t\tyes\tyes\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q51",
+    "name": "Potassium phosphate dibasic",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[1].notes",
+        "stored": "CAS: 7758-11-4; MW: 174.18"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Potassium phosphate dibasic",
+        "CAS": "7758-11-4",
+        "Company": "Sigma",
+        "CatalogNumber": "P3786",
+        "FW": "174.18",
+        "Synonyms": "K2HPO4, dibasic anhydrous sodium phosphate",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 337",
+        "exact_source_quote": "Potassium phosphate dibasic\t7758-11-4\tSigma\tP3786\t174.18\tK2HPO4, dibasic anhydrous sodium phosphate\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source preferred name, K2HPO4, CAS 7758-11-4 and FW 174.18 support dipotassium hydrogen phosphate. Source synonym dibasic anhydrous sodium phosphate is internally inconsistent. OLS has a trihydrate synonym but its formula/mass encode the unhydrated salt; neither stray synonym establishes an actual source hydrate or sodium salt. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q52",
+    "name": "Magnesium Sulfate Heptahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[2].notes",
+        "stored": "CAS: 10034-99-8; MW: 246.47"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Magnesium Sulfate Heptahydrate",
+        "CAS": "10034-99-8",
+        "Company": "Sigma",
+        "CatalogNumber": "M1880",
+        "FW": "246.47",
+        "Synonyms": "Epsom salts, MgSO4 7H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 277",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t10034-99-8\tSigma\tM1880\t246.47\tEpsom salts, MgSO4 7H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q53",
+    "name": "Calcium chloride dihydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[3].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW: 147.01"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Calcium chloride dihydrate",
+        "CAS": "10035-04-8",
+        "Company": "Sigma",
+        "CatalogNumber": "C5080",
+        "FW": "147.01",
+        "Synonyms": "Calcium Chloride Dihydrate, CaCl2*2H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 90",
+        "exact_source_quote": "Calcium chloride dihydrate\t10035-04-8\tSigma\tC5080\t147.01\tCalcium Chloride Dihydrate, CaCl2*2H2O\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q54",
+    "name": "Citric Acid",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[4].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-92-9; MW: 192.12"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Citric Acid",
+        "CAS": "77-92-9",
+        "Company": "Sigma",
+        "CatalogNumber": "251275",
+        "FW": "192.12",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "no",
+        "FEBA_carbon": "yes",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 119",
+        "exact_source_quote": "Citric Acid\t77-92-9\tSigma\t251275\t192.12\t\t\t\tno\tyes\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source citric acid and CAS 77-92-9 differ from CHEBI:53258, the trisodium citrate salt. CHEBI:30769 is the supported acid candidate; retain the source amount. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q55",
+    "name": "Ferric ammonium citrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[5].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Ferric ammonium citrate",
+        "CAS": "1185-57-5",
+        "Company": "Sigma",
+        "CatalogNumber": "F5879",
+        "FW": "",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 186",
+        "exact_source_quote": "Ferric ammonium citrate\t1185-57-5\tSigma\tF5879\t\t\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source ferric ammonium citrate matches the asserted mixture identity. OLS describes indefinite composition; no fixed molar mass or molecular concentration is inferred. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q56",
+    "name": "EDTA (disodium salt)",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[6].notes",
+        "stored": "CAS: 6381-92-6; MW: 336.206"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "EDTA (disodium salt)",
+        "CAS": "6381-92-6",
+        "Company": "Sigma",
+        "CatalogNumber": "E6635",
+        "FW": "336.206",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 178",
+        "exact_source_quote": "EDTA (disodium salt)\t6381-92-6\tSigma\tE6635\t336.206\t\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source EDTA disodium name does not specify hydration. CAS 6381-92-6 conflicts with the anhydrous term CAS 139-33-3, while source FW 336.206 is consistent with the anhydrous term mass 336.208. Supplier-specific hydration remains unresolved; do not silently choose a hydrate or recalculate the amount. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q57",
+    "name": "Sodium carbonate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[7].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 497-19-8; MW: 105.9888"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium carbonate",
+        "CAS": "497-19-8",
+        "Company": "",
+        "CatalogNumber": "",
+        "FW": "105.9888",
+        "Synonyms": "Na2CO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 373",
+        "exact_source_quote": "Sodium carbonate\t497-19-8\t\t\t105.9888\tNa2CO3\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q58",
+    "name": "Boric Acid",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "CAS: 10043-35-3; MW: 61.83; From Trace metal mix A5"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Boric Acid",
+        "CAS": "10043-35-3",
+        "Company": "",
+        "CatalogNumber": "0084-01 (JT*)",
+        "FW": "61.83",
+        "Synonyms": "H3BO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "no",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 84",
+        "exact_source_quote": "Boric Acid\t10043-35-3\t\t0084-01 (JT*)\t61.83\tH3BO3\t\t\tno\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q59",
+    "name": "Manganese (II) chloride tetrahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[9].notes",
+        "stored": "CAS: 13446-34-9; MW: 197.91; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Manganese (II) chloride tetrahydrate",
+        "CAS": "13446-34-9",
+        "Company": "Sigma",
+        "CatalogNumber": "M3634",
+        "FW": "197.91",
+        "Synonyms": "MnCl2, manganese chloride, MnCl2 4H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 278",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t13446-34-9\tSigma\tM3634\t197.91\tMnCl2, manganese chloride, MnCl2 4H2O\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q60",
+    "name": "Zinc sulfate heptahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[10].notes",
+        "stored": "CAS: 7446-20-0; MW: 287.56; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Zinc sulfate heptahydrate",
+        "CAS": "7446-20-0",
+        "Company": "Sigma",
+        "CatalogNumber": "Z0251",
+        "FW": "287.56",
+        "Synonyms": "zinc sulfate, ZnSO4 7H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "yes",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 474",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t7446-20-0\tSigma\tZ0251\t287.56\tzinc sulfate, ZnSO4 7H2O\t\t\t\t\t\tyes\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q61",
+    "name": "Sodium Molybdate Dihydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[11].notes",
+        "stored": "CAS: 10102-40-6; MW: 241.95; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium Molybdate Dihydrate",
+        "CAS": "10102-40-6",
+        "Company": "Sigma",
+        "CatalogNumber": "331058",
+        "FW": "241.95",
+        "Synonyms": "Na2MoO4 2H2O, Na2MoO4-2H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 399",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t10102-40-6\tSigma\t331058\t241.95\tNa2MoO4 2H2O, Na2MoO4-2H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q62",
+    "name": "Copper (II) sulfate pentahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[12].notes",
+        "stored": "CAS: 7758-99-8; MW: 249.69; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Copper (II) sulfate pentahydrate",
+        "CAS": "7758-99-8",
+        "Company": "Sigma",
+        "CatalogNumber": "C8027",
+        "FW": "249.69",
+        "Synonyms": "Blue Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate, CuSO4 5H2O, Cupric Sulfate",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 129",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t7758-99-8\tSigma\tC8027\t249.69\tBlue Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate, CuSO4 5H2O, Cupric Sulfate\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q63",
+    "name": "Cobalt(II) nitrate hexahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BG11R.yaml",
+        "field_path": "ingredients[13].notes",
+        "stored": "CAS: 10026-22-9; MW: 291.03; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Cobalt(II) nitrate hexahydrate",
+        "CAS": "10026-22-9",
+        "Company": "",
+        "CatalogNumber": "",
+        "FW": "291.03",
+        "Synonyms": "Co(NO3)2 6H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 124",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t10026-22-9\t\t\t291.03\tCo(NO3)2 6H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q64",
+    "name": "Sodium nitrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[0].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7631-99-4; MW: 84.99"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium nitrate",
+        "CAS": "7631-99-4",
+        "Company": "Sigma",
+        "CatalogNumber": "S8170",
+        "FW": "84.99",
+        "Synonyms": "NaNO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "yes",
+        "FEBA_stress": "yes",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 400",
+        "exact_source_quote": "Sodium nitrate\t7631-99-4\tSigma\tS8170\t84.99\tNaNO3\t\t\tyes\t\tyes\tyes\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q65",
+    "name": "Potassium phosphate dibasic",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[1].notes",
+        "stored": "CAS: 7758-11-4; MW: 174.18"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Potassium phosphate dibasic",
+        "CAS": "7758-11-4",
+        "Company": "Sigma",
+        "CatalogNumber": "P3786",
+        "FW": "174.18",
+        "Synonyms": "K2HPO4, dibasic anhydrous sodium phosphate",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 337",
+        "exact_source_quote": "Potassium phosphate dibasic\t7758-11-4\tSigma\tP3786\t174.18\tK2HPO4, dibasic anhydrous sodium phosphate\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source preferred name, K2HPO4, CAS 7758-11-4 and FW 174.18 support dipotassium hydrogen phosphate. Source synonym dibasic anhydrous sodium phosphate is internally inconsistent. OLS has a trihydrate synonym but its formula/mass encode the unhydrated salt; neither stray synonym establishes an actual source hydrate or sodium salt. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q66",
+    "name": "Magnesium Sulfate Heptahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[2].notes",
+        "stored": "CAS: 10034-99-8; MW: 246.47"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Magnesium Sulfate Heptahydrate",
+        "CAS": "10034-99-8",
+        "Company": "Sigma",
+        "CatalogNumber": "M1880",
+        "FW": "246.47",
+        "Synonyms": "Epsom salts, MgSO4 7H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 277",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t10034-99-8\tSigma\tM1880\t246.47\tEpsom salts, MgSO4 7H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q67",
+    "name": "Calcium chloride dihydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[3].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW: 147.01"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Calcium chloride dihydrate",
+        "CAS": "10035-04-8",
+        "Company": "Sigma",
+        "CatalogNumber": "C5080",
+        "FW": "147.01",
+        "Synonyms": "Calcium Chloride Dihydrate, CaCl2*2H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 90",
+        "exact_source_quote": "Calcium chloride dihydrate\t10035-04-8\tSigma\tC5080\t147.01\tCalcium Chloride Dihydrate, CaCl2*2H2O\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q68",
+    "name": "Citric Acid",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[4].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-92-9; MW: 192.12"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Citric Acid",
+        "CAS": "77-92-9",
+        "Company": "Sigma",
+        "CatalogNumber": "251275",
+        "FW": "192.12",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "no",
+        "FEBA_carbon": "yes",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 119",
+        "exact_source_quote": "Citric Acid\t77-92-9\tSigma\t251275\t192.12\t\t\t\tno\tyes\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source citric acid and CAS 77-92-9 differ from CHEBI:53258, the trisodium citrate salt. CHEBI:30769 is the supported acid candidate; retain the source amount. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q69",
+    "name": "Ferric ammonium citrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[5].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Ferric ammonium citrate",
+        "CAS": "1185-57-5",
+        "Company": "Sigma",
+        "CatalogNumber": "F5879",
+        "FW": "",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 186",
+        "exact_source_quote": "Ferric ammonium citrate\t1185-57-5\tSigma\tF5879\t\t\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source ferric ammonium citrate matches the asserted mixture identity. OLS describes indefinite composition; no fixed molar mass or molecular concentration is inferred. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q70",
+    "name": "EDTA (disodium salt)",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[6].notes",
+        "stored": "CAS: 6381-92-6; MW: 336.206"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "EDTA (disodium salt)",
+        "CAS": "6381-92-6",
+        "Company": "Sigma",
+        "CatalogNumber": "E6635",
+        "FW": "336.206",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 178",
+        "exact_source_quote": "EDTA (disodium salt)\t6381-92-6\tSigma\tE6635\t336.206\t\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source EDTA disodium name does not specify hydration. CAS 6381-92-6 conflicts with the anhydrous term CAS 139-33-3, while source FW 336.206 is consistent with the anhydrous term mass 336.208. Supplier-specific hydration remains unresolved; do not silently choose a hydrate or recalculate the amount. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q71",
+    "name": "Sodium carbonate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[7].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 497-19-8; MW: 105.9888"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium carbonate",
+        "CAS": "497-19-8",
+        "Company": "",
+        "CatalogNumber": "",
+        "FW": "105.9888",
+        "Synonyms": "Na2CO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 373",
+        "exact_source_quote": "Sodium carbonate\t497-19-8\t\t\t105.9888\tNa2CO3\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q72",
+    "name": "Boric Acid",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "CAS: 10043-35-3; MW: 61.83; From Trace metal mix A5"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Boric Acid",
+        "CAS": "10043-35-3",
+        "Company": "",
+        "CatalogNumber": "0084-01 (JT*)",
+        "FW": "61.83",
+        "Synonyms": "H3BO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "no",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 84",
+        "exact_source_quote": "Boric Acid\t10043-35-3\t\t0084-01 (JT*)\t61.83\tH3BO3\t\t\tno\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q73",
+    "name": "Manganese (II) chloride tetrahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[9].notes",
+        "stored": "CAS: 13446-34-9; MW: 197.91; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Manganese (II) chloride tetrahydrate",
+        "CAS": "13446-34-9",
+        "Company": "Sigma",
+        "CatalogNumber": "M3634",
+        "FW": "197.91",
+        "Synonyms": "MnCl2, manganese chloride, MnCl2 4H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 278",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t13446-34-9\tSigma\tM3634\t197.91\tMnCl2, manganese chloride, MnCl2 4H2O\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q74",
+    "name": "Zinc sulfate heptahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[10].notes",
+        "stored": "CAS: 7446-20-0; MW: 287.56; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Zinc sulfate heptahydrate",
+        "CAS": "7446-20-0",
+        "Company": "Sigma",
+        "CatalogNumber": "Z0251",
+        "FW": "287.56",
+        "Synonyms": "zinc sulfate, ZnSO4 7H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "yes",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 474",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t7446-20-0\tSigma\tZ0251\t287.56\tzinc sulfate, ZnSO4 7H2O\t\t\t\t\t\tyes\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q75",
+    "name": "Sodium Molybdate Dihydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[11].notes",
+        "stored": "CAS: 10102-40-6; MW: 241.95; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium Molybdate Dihydrate",
+        "CAS": "10102-40-6",
+        "Company": "Sigma",
+        "CatalogNumber": "331058",
+        "FW": "241.95",
+        "Synonyms": "Na2MoO4 2H2O, Na2MoO4-2H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 399",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t10102-40-6\tSigma\t331058\t241.95\tNa2MoO4 2H2O, Na2MoO4-2H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q76",
+    "name": "Copper (II) sulfate pentahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[12].notes",
+        "stored": "CAS: 7758-99-8; MW: 249.69; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Copper (II) sulfate pentahydrate",
+        "CAS": "7758-99-8",
+        "Company": "Sigma",
+        "CatalogNumber": "C8027",
+        "FW": "249.69",
+        "Synonyms": "Blue Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate, CuSO4 5H2O, Cupric Sulfate",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 129",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t7758-99-8\tSigma\tC8027\t249.69\tBlue Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate, CuSO4 5H2O, Cupric Sulfate\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q77",
+    "name": "Cobalt(II) nitrate hexahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ingredients[13].notes",
+        "stored": "CAS: 10026-22-9; MW: 291.03; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Cobalt(II) nitrate hexahydrate",
+        "CAS": "10026-22-9",
+        "Company": "",
+        "CatalogNumber": "",
+        "FW": "291.03",
+        "Synonyms": "Co(NO3)2 6H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 124",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t10026-22-9\t\t\t291.03\tCo(NO3)2 6H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q78",
+    "name": "Sodium nitrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[0].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7631-99-4; MW: 84.99"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium nitrate",
+        "CAS": "7631-99-4",
+        "Company": "Sigma",
+        "CatalogNumber": "S8170",
+        "FW": "84.99",
+        "Synonyms": "NaNO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "yes",
+        "FEBA_stress": "yes",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 400",
+        "exact_source_quote": "Sodium nitrate\t7631-99-4\tSigma\tS8170\t84.99\tNaNO3\t\t\tyes\t\tyes\tyes\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q79",
+    "name": "Potassium phosphate dibasic",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[1].notes",
+        "stored": "CAS: 7758-11-4; MW: 174.18"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Potassium phosphate dibasic",
+        "CAS": "7758-11-4",
+        "Company": "Sigma",
+        "CatalogNumber": "P3786",
+        "FW": "174.18",
+        "Synonyms": "K2HPO4, dibasic anhydrous sodium phosphate",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 337",
+        "exact_source_quote": "Potassium phosphate dibasic\t7758-11-4\tSigma\tP3786\t174.18\tK2HPO4, dibasic anhydrous sodium phosphate\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source preferred name, K2HPO4, CAS 7758-11-4 and FW 174.18 support dipotassium hydrogen phosphate. Source synonym dibasic anhydrous sodium phosphate is internally inconsistent. OLS has a trihydrate synonym but its formula/mass encode the unhydrated salt; neither stray synonym establishes an actual source hydrate or sodium salt. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q80",
+    "name": "Magnesium Sulfate Heptahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[2].notes",
+        "stored": "CAS: 10034-99-8; MW: 246.47"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Magnesium Sulfate Heptahydrate",
+        "CAS": "10034-99-8",
+        "Company": "Sigma",
+        "CatalogNumber": "M1880",
+        "FW": "246.47",
+        "Synonyms": "Epsom salts, MgSO4 7H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 277",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t10034-99-8\tSigma\tM1880\t246.47\tEpsom salts, MgSO4 7H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q81",
+    "name": "Calcium chloride dihydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[3].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW: 147.01"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Calcium chloride dihydrate",
+        "CAS": "10035-04-8",
+        "Company": "Sigma",
+        "CatalogNumber": "C5080",
+        "FW": "147.01",
+        "Synonyms": "Calcium Chloride Dihydrate, CaCl2*2H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 90",
+        "exact_source_quote": "Calcium chloride dihydrate\t10035-04-8\tSigma\tC5080\t147.01\tCalcium Chloride Dihydrate, CaCl2*2H2O\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q82",
+    "name": "Citric Acid",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[4].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-92-9; MW: 192.12"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Citric Acid",
+        "CAS": "77-92-9",
+        "Company": "Sigma",
+        "CatalogNumber": "251275",
+        "FW": "192.12",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "no",
+        "FEBA_carbon": "yes",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 119",
+        "exact_source_quote": "Citric Acid\t77-92-9\tSigma\t251275\t192.12\t\t\t\tno\tyes\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source citric acid and CAS 77-92-9 differ from CHEBI:53258, the trisodium citrate salt. CHEBI:30769 is the supported acid candidate; retain the source amount. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q83",
+    "name": "Ferric ammonium citrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[5].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Ferric ammonium citrate",
+        "CAS": "1185-57-5",
+        "Company": "Sigma",
+        "CatalogNumber": "F5879",
+        "FW": "",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 186",
+        "exact_source_quote": "Ferric ammonium citrate\t1185-57-5\tSigma\tF5879\t\t\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source ferric ammonium citrate matches the asserted mixture identity. OLS describes indefinite composition; no fixed molar mass or molecular concentration is inferred. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q84",
+    "name": "EDTA (disodium salt)",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[6].notes",
+        "stored": "CAS: 6381-92-6; MW: 336.206"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "EDTA (disodium salt)",
+        "CAS": "6381-92-6",
+        "Company": "Sigma",
+        "CatalogNumber": "E6635",
+        "FW": "336.206",
+        "Synonyms": "",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 178",
+        "exact_source_quote": "EDTA (disodium salt)\t6381-92-6\tSigma\tE6635\t336.206\t\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source EDTA disodium name does not specify hydration. CAS 6381-92-6 conflicts with the anhydrous term CAS 139-33-3, while source FW 336.206 is consistent with the anhydrous term mass 336.208. Supplier-specific hydration remains unresolved; do not silently choose a hydrate or recalculate the amount. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q85",
+    "name": "Sodium carbonate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[7].notes",
+        "stored": "Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 497-19-8; MW: 105.9888"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium carbonate",
+        "CAS": "497-19-8",
+        "Company": "",
+        "CatalogNumber": "",
+        "FW": "105.9888",
+        "Synonyms": "Na2CO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 373",
+        "exact_source_quote": "Sodium carbonate\t497-19-8\t\t\t105.9888\tNa2CO3\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q86",
+    "name": "Boric Acid",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": "CAS: 10043-35-3; MW: 61.83; From Trace metal mix A5"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Boric Acid",
+        "CAS": "10043-35-3",
+        "Company": "",
+        "CatalogNumber": "0084-01 (JT*)",
+        "FW": "61.83",
+        "Synonyms": "H3BO3",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "no",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 84",
+        "exact_source_quote": "Boric Acid\t10043-35-3\t\t0084-01 (JT*)\t61.83\tH3BO3\t\t\tno\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q87",
+    "name": "Manganese (II) chloride tetrahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[9].notes",
+        "stored": "CAS: 13446-34-9; MW: 197.91; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Manganese (II) chloride tetrahydrate",
+        "CAS": "13446-34-9",
+        "Company": "Sigma",
+        "CatalogNumber": "M3634",
+        "FW": "197.91",
+        "Synonyms": "MnCl2, manganese chloride, MnCl2 4H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "yes",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 278",
+        "exact_source_quote": "Manganese (II) chloride tetrahydrate\t13446-34-9\tSigma\tM3634\t197.91\tMnCl2, manganese chloride, MnCl2 4H2O\t\t\tyes\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q88",
+    "name": "Zinc sulfate heptahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[10].notes",
+        "stored": "CAS: 7446-20-0; MW: 287.56; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Zinc sulfate heptahydrate",
+        "CAS": "7446-20-0",
+        "Company": "Sigma",
+        "CatalogNumber": "Z0251",
+        "FW": "287.56",
+        "Synonyms": "zinc sulfate, ZnSO4 7H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "yes",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 474",
+        "exact_source_quote": "Zinc sulfate heptahydrate\t7446-20-0\tSigma\tZ0251\t287.56\tzinc sulfate, ZnSO4 7H2O\t\t\t\t\t\tyes\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q89",
+    "name": "Sodium Molybdate Dihydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[11].notes",
+        "stored": "CAS: 10102-40-6; MW: 241.95; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Sodium Molybdate Dihydrate",
+        "CAS": "10102-40-6",
+        "Company": "Sigma",
+        "CatalogNumber": "331058",
+        "FW": "241.95",
+        "Synonyms": "Na2MoO4 2H2O, Na2MoO4-2H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 399",
+        "exact_source_quote": "Sodium Molybdate Dihydrate\t10102-40-6\tSigma\t331058\t241.95\tNa2MoO4 2H2O, Na2MoO4-2H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q90",
+    "name": "Copper (II) sulfate pentahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[12].notes",
+        "stored": "CAS: 7758-99-8; MW: 249.69; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Copper (II) sulfate pentahydrate",
+        "CAS": "7758-99-8",
+        "Company": "Sigma",
+        "CatalogNumber": "C8027",
+        "FW": "249.69",
+        "Synonyms": "Blue Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate, CuSO4 5H2O, Cupric Sulfate",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 129",
+        "exact_source_quote": "Copper (II) sulfate pentahydrate\t7758-99-8\tSigma\tC8027\t249.69\tBlue Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate, CuSO4 5H2O, Cupric Sulfate\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q91",
+    "name": "Cobalt(II) nitrate hexahydrate",
+    "stage": "Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ingredients[13].notes",
+        "stored": "CAS: 10026-22-9; MW: 291.03; From Trace metal mix A5; Ontology enriched via CAS-RN lookup"
+      }
+    ],
+    "desired": {
+      "source_compound_fields": {
+        "Compound": "Cobalt(II) nitrate hexahydrate",
+        "CAS": "10026-22-9",
+        "Company": "",
+        "CatalogNumber": "",
+        "FW": "291.03",
+        "Synonyms": "Co(NO3)2 6H2O",
+        "Notes": "",
+        "Hans80Anti": "",
+        "Hans80metals": "",
+        "FEBA_carbon": "",
+        "FEBA_nitrogen": "",
+        "FEBA_stress": "",
+        "All_star": ""
+      }
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_compounds",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv",
+        "source_locator": "Compound row 124",
+        "exact_source_quote": "Cobalt(II) nitrate hexahydrate\t10026-22-9\t\t\t291.03\tCo(NO3)2 6H2O\t\t\t\t\t\t\t\n",
+        "snapshot_sha256": "25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Source named salt, hydrate or buffer agrees with the asserted chemical identity. Explicit hydration is retained; source compound identifiers and formula metadata do not supply new preparation conditions. Historical mapping confidence 0.90, where present, is a local algorithm assertion, not externally verified probability."
+  },
+  {
+    "decision_id": "q92",
+    "name": "Unspecified preparation and cultivation conditions",
+    "stage": "Exact named FEBA recipe only",
+    "decision": "not_quantified",
+    "local_fields": [],
+    "desired": {
+      "water_or_final_batch_volume": null,
+      "ph_value": 7.1,
+      "temperature_value": null,
+      "sterilization_cycle": null,
+      "light_intensity": null,
+      "light_cycle": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Complete named recipe and description",
+        "exact_source_quote": "Media\tBG11R\t\nDescription\tFor growing Synechococcus elongatus PCC 7942, pH should be 7.1\t\nMinimal\tTRUE\t\nControlled vocabulary\tConcentration\tUnits\nSodium nitrate\t1.5\tg/L\nPotassium phosphate dibasic\t0.04\tg/L\nMagnesium Sulfate Heptahydrate\t0.075\tg/L\nCalcium chloride dihydrate\t0.036\tg/L\nCitric Acid\t0.006\tg/L\nFerric ammonium citrate\t0.006\tg/L\nEDTA (disodium salt)\t0.001\tg/L\nSodium carbonate\t0.02\tg/L\nTrace metal mix A5\t1\tX\n\t\t\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "The inspected block supplies concentrations and intended cyanobacterial use, not measured final volume, water make-up, light, temperature or sterilization. The description does state pH 7.1, inventoried separately. Preparation is absent in both target and owner, so no documented preparation loss is inferred. Do not borrow preparation from the excluded bacterial CCAP C17 namesake."
+  },
+  {
+    "decision_id": "q93",
+    "name": "pH",
+    "stage": "Exact FEBA description; missing generated structured value",
+    "decision": "add",
+    "local_fields": [],
+    "desired": {
+      "input": "data/merge_yaml/merged/BG11R.yaml",
+      "field_path": "ph_value",
+      "value": 7.1
+    },
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R description",
+        "exact_source_quote": "Description\tFor growing Synechococcus elongatus PCC 7942, pH should be 7.1\t\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "pH 7.1 is retained in target prose and both owners but absent as target ph_value; reconcile the structured field without adding a titrant, dose or adjustment method."
+  },
+  {
+    "decision_id": "q94",
+    "name": "pH",
+    "stage": "Maintained owner structured pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "ph_value",
+        "stored": 7.1
+      }
+    ],
+    "desired": 7.1,
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R description",
+        "exact_source_quote": "Description\tFor growing Synechococcus elongatus PCC 7942, pH should be 7.1\t\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "The owner pH agrees with the source description. No pH adjustment reagent, method or quantity is supplied."
+  },
+  {
+    "decision_id": "q95",
+    "name": "pH",
+    "stage": "Maintained owner structured pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11r.yaml",
+        "field_path": "ph_value",
+        "stored": 7.1
+      }
+    ],
+    "desired": 7.1,
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "BG11R description",
+        "exact_source_quote": "Description\tFor growing Synechococcus elongatus PCC 7942, pH should be 7.1\t\n",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "The owner pH agrees with the source description. No pH adjustment reagent, method or quantity is supplied."
+  },
+  {
+    "decision_id": "q96",
+    "name": "Inherited claim 1",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "variants[0].evidence[0]",
+        "stored": {
+          "reference": "PMID:36550226",
+          "supports": "SUPPORT",
+          "snippet": "Cultures grown in BG11 accumulated more cell biomass reaching a dry weight of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h of culture.",
+          "explanation": "Literature evidence reports higher biomass and productivity of Nostoc linckia in BG11 than nitrate-free BG110."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "Nostoc paper compares nitrate-replete BG11 with nitrate-free BG110 after 240 h. Current abstract supports the biomass values, with whitespace differences from the inherited excerpt. Current taxonomy 92942 remains unavailable; this does not invalidate the paper observation."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36550226",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36550226&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;The biotechnological potential of Nostoc linckia as a biofertilizer and source of bioactive compounds makes it important to study its growth physiology and productivity. Since nitrogen is a fundamental component of N. linckia biomass, we compared the growth and biochemical composition of cultures grown in BG11 (i.e., in the presence of nitrate) and BG11&lt;sub&gt;0&lt;/sub&gt; (in the absence of nitrate). Cultures grown in BG11 accumulated more cell biomass reaching a dry weight of 1.65&amp;#x2009;&amp;#xb1;&amp;#x2009;0.06&amp;#xa0;g&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;, compared to 0.92&amp;#x2009;&amp;#xb1;&amp;#x2009;0.01&amp;#xa0;g&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt; in BG11&lt;sub&gt;0&lt;/sub&gt; after 240&amp;#xa0;h of culture. Biomass productivity was higher in culture grown in BG11 medium (average 317&amp;#x2009;&amp;#xb1;&amp;#x2009;38&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;&amp;#xa0;day&lt;sup&gt;-1&lt;/sup&gt;) compared to that attained in BG11&lt;sub&gt;0&lt;/sub&gt; (average 262&amp;#x2009;&amp;#xb1;&amp;#x2009;37&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;&amp;#xa0;day&lt;sup&gt;-1&lt;/sup&gt;). The chlorophyll content of cells grown in BG11 increased continuously up to (39.0&amp;#x2009;&amp;#xb1;&amp;#x2009;1.3&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;), while in BG11&lt;sub&gt;0&lt;/sub&gt; it increased much more slowly (13.6&amp;#x2009;&amp;#xb1;&amp;#x2009;0.8&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;). Biomass grown in BG11 had higher protein and phycobilin contents. However, despite the differences in biochemical composition and pigment concentration, between BG11 and BG11&lt;sub&gt;0&lt;/sub&gt; cultures, both their net photosynthetic rates and maximum quantum yields of the photosystem II resulted in similar.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;&amp;#xa9; 2022. The Author(s).&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8028b6651b9830c4270af7190cabaeb1a38fd693ee7efc39e5a97724a0d2d024",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Nostoc paper compares nitrate-replete BG11 with nitrate-free BG110 after 240 h. Current abstract supports the biomass values, with whitespace differences from the inherited excerpt. Current taxonomy 92942 remains unavailable; this does not invalidate the paper observation. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q97",
+    "name": "Inherited claim 2",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "variants[1].evidence[0]",
+        "stored": {
+          "reference": "PMID:36437912",
+          "supports": "SUPPORT",
+          "snippet": "The cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium.",
+          "explanation": "Literature evidence directly states that Synechococcus sp. UCP002 was cultured in BG-11 medium."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "UCP002 is explicitly unaxenic and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports a complete genome, whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession is established by these captures."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36437912",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36437912&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;Cyanobacteria are diverse photosynthetic microorganisms able to produce a myriad of bioactive chemicals. To make possible the rational exploitation of these microorganisms, it is fundamental to know their metabolic capabilities and to have genomic resources. In this context, the main objective of this research was to determine the genome features and the biochemical profile of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002. The cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium. Growth parameters, genome features, and the biochemical profile of the cyanobacterium were determined using standardized methods. &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a specific growth rate of 0.086 &amp;#xb1; 0.008&amp;#xa0;&amp;#x3bc; and a doubling time of 8.08 &amp;#xb1; 0.78&amp;#xa0;h. The complete genome of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a size of &amp;#x223c;3.53&amp;#xa0;Mb with a high coverage (&amp;#x223c;200x), and its quality parameters were acceptable (completeness = 99.29%, complete and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the cyanobacterium had six plasmids ranging from 24 to 200&amp;#xa0;kbp. The annotated genome revealed &amp;#x223c;3,422 genes, &amp;#x223c; 3,374 protein-coding genes (with &amp;#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic defense systems. Additionally, the genome had genes coding the transcription factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy metal pollution. The biochemical profile showed primary nutrients, essential amino acids, some essential fatty acids, pigments (e.g., all-trans-&amp;#x3b2;-carotene, chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 shows biotechnological potential to produce human and animal nutrients and raw materials for biofuels and could be a new source of genes for synthetic biological applications.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;Copyright &amp;#xa9; 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&amp;#xed;guez, Vargas, Tresierra, Barriga, Marapara, Adrianz&amp;#xe9;n, Ruiz and Castro.&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "UCP002 is explicitly unaxenic and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports a complete genome, whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession is established by these captures. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q98",
+    "name": "Inherited claim 3",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "variants[2].evidence[0]",
+        "stored": {
+          "reference": "PMID:34584038",
+          "supports": "SUPPORT",
+          "snippet": "photoautotrophic mode using BG-11 medium with air or 2% CO2 and heterotrophic mode using YM medium.",
+          "explanation": "Literature evidence directly states that strain ABC-009 was evaluated under photoautotrophic BG-11 cultivation conditions."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "ABC-009 photoautotrophic BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1 supports the accepted name and strain marker only; BATCH cultivation mode is not explicitly established by the abstract."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed34584038",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;&lt;i&gt;Scenedesmus obliquus&lt;/i&gt; ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions. Here, the performance of this strain was evaluated for the simultaneous production of lutein and biofuels under three different modes of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO&lt;sub&gt;2&lt;/sub&gt; and heterotrophic mode using YM medium. While it was found that the highest fatty acid methyl ester (FAME) level and lutein content per biomass (%) were achieved in BG-11 medium with CO&lt;sub&gt;2&lt;/sub&gt; and air, respectively, heterotrophic cultivation resulted in much higher biomass productivity. While the cell concentrations of the cultures grown under BG-11 and CO&lt;sub&gt;2&lt;/sub&gt; were largely similar to those grown in YM medium, the disparity in the biomass yield was largely attributed to the larger cell volume in heterotrophically cultivated cells. Post-cultivation light treatment was found to further enhance the biomass productivity in all three cases and lutein content in heterotrophic conditions. Consequently, the maximum biomass (757.14 &amp;#xb1; 20.20 mg/l/d), FAME (92.78 &amp;#xb1; 0.08 mg/l/d), and lutein (1.006 &amp;#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation. Next, large-scale lutein production using microalgae was demonstrated using a 1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were similar in both media, while slightly higher lutein content was obtained using the fertilizer owing to the higher nitrogen content.&lt;/AbstractText&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "ABC-009 photoautotrophic BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1 supports the accepted name and strain marker only; BATCH cultivation mode is not explicitly established by the abstract. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q99",
+    "name": "Inherited claim 4",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[0].growth_metrics[0].evidence[0]",
+        "stored": {
+          "reference": "PMID:36550226",
+          "supports": "SUPPORT",
+          "snippet": "Cultures grown in BG11 accumulated more cell biomass reaching a dry weight of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h of culture.",
+          "explanation": "Literature evidence reports biomass accumulation of Nostoc linckia in BG11."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "Nostoc paper compares nitrate-replete BG11 with nitrate-free BG110 after 240 h. Current abstract supports the biomass values, with whitespace differences from the inherited excerpt. Current taxonomy 92942 remains unavailable; this does not invalidate the paper observation."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36550226",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36550226&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;The biotechnological potential of Nostoc linckia as a biofertilizer and source of bioactive compounds makes it important to study its growth physiology and productivity. Since nitrogen is a fundamental component of N. linckia biomass, we compared the growth and biochemical composition of cultures grown in BG11 (i.e., in the presence of nitrate) and BG11&lt;sub&gt;0&lt;/sub&gt; (in the absence of nitrate). Cultures grown in BG11 accumulated more cell biomass reaching a dry weight of 1.65&amp;#x2009;&amp;#xb1;&amp;#x2009;0.06&amp;#xa0;g&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;, compared to 0.92&amp;#x2009;&amp;#xb1;&amp;#x2009;0.01&amp;#xa0;g&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt; in BG11&lt;sub&gt;0&lt;/sub&gt; after 240&amp;#xa0;h of culture. Biomass productivity was higher in culture grown in BG11 medium (average 317&amp;#x2009;&amp;#xb1;&amp;#x2009;38&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;&amp;#xa0;day&lt;sup&gt;-1&lt;/sup&gt;) compared to that attained in BG11&lt;sub&gt;0&lt;/sub&gt; (average 262&amp;#x2009;&amp;#xb1;&amp;#x2009;37&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;&amp;#xa0;day&lt;sup&gt;-1&lt;/sup&gt;). The chlorophyll content of cells grown in BG11 increased continuously up to (39.0&amp;#x2009;&amp;#xb1;&amp;#x2009;1.3&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;), while in BG11&lt;sub&gt;0&lt;/sub&gt; it increased much more slowly (13.6&amp;#x2009;&amp;#xb1;&amp;#x2009;0.8&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;). Biomass grown in BG11 had higher protein and phycobilin contents. However, despite the differences in biochemical composition and pigment concentration, between BG11 and BG11&lt;sub&gt;0&lt;/sub&gt; cultures, both their net photosynthetic rates and maximum quantum yields of the photosystem II resulted in similar.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;&amp;#xa9; 2022. The Author(s).&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8028b6651b9830c4270af7190cabaeb1a38fd693ee7efc39e5a97724a0d2d024",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Nostoc paper compares nitrate-replete BG11 with nitrate-free BG110 after 240 h. Current abstract supports the biomass values, with whitespace differences from the inherited excerpt. Current taxonomy 92942 remains unavailable; this does not invalidate the paper observation. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q100",
+    "name": "Inherited claim 5",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[1].growth_metrics[0].evidence[0]",
+        "stored": {
+          "reference": "PMID:36437912",
+          "supports": "SUPPORT",
+          "snippet": "Synechococcus sp. UCP002 had a specific growth rate of 0.086 ± 0.008 μ and a doubling time of 8.08 ± 0.78 h.",
+          "explanation": "Literature evidence reports growth rate and doubling time for Synechococcus sp. UCP002 cultured in BG-11 medium."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "UCP002 is explicitly unaxenic and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports a complete genome, whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession is established by these captures."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36437912",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36437912&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;Cyanobacteria are diverse photosynthetic microorganisms able to produce a myriad of bioactive chemicals. To make possible the rational exploitation of these microorganisms, it is fundamental to know their metabolic capabilities and to have genomic resources. In this context, the main objective of this research was to determine the genome features and the biochemical profile of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002. The cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium. Growth parameters, genome features, and the biochemical profile of the cyanobacterium were determined using standardized methods. &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a specific growth rate of 0.086 &amp;#xb1; 0.008&amp;#xa0;&amp;#x3bc; and a doubling time of 8.08 &amp;#xb1; 0.78&amp;#xa0;h. The complete genome of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a size of &amp;#x223c;3.53&amp;#xa0;Mb with a high coverage (&amp;#x223c;200x), and its quality parameters were acceptable (completeness = 99.29%, complete and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the cyanobacterium had six plasmids ranging from 24 to 200&amp;#xa0;kbp. The annotated genome revealed &amp;#x223c;3,422 genes, &amp;#x223c; 3,374 protein-coding genes (with &amp;#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic defense systems. Additionally, the genome had genes coding the transcription factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy metal pollution. The biochemical profile showed primary nutrients, essential amino acids, some essential fatty acids, pigments (e.g., all-trans-&amp;#x3b2;-carotene, chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 shows biotechnological potential to produce human and animal nutrients and raw materials for biofuels and could be a new source of genes for synthetic biological applications.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;Copyright &amp;#xa9; 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&amp;#xed;guez, Vargas, Tresierra, Barriga, Marapara, Adrianz&amp;#xe9;n, Ruiz and Castro.&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "UCP002 is explicitly unaxenic and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports a complete genome, whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession is established by these captures. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q101",
+    "name": "Inherited claim 6",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[1].evidence[0]",
+        "stored": {
+          "reference": "PMID:36437912",
+          "supports": "SUPPORT",
+          "snippet": "Growth parameters, genome features, and the biochemical profile of the cyanobacterium were determined using standardized methods.",
+          "explanation": "Literature evidence reports a complete genome for UCP002, but no NCBI GCA/GCF/SAMN accession was resolved from NCBI assembly or nuccore search."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "UCP002 is explicitly unaxenic and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports a complete genome, whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession is established by these captures."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36437912",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36437912&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;Cyanobacteria are diverse photosynthetic microorganisms able to produce a myriad of bioactive chemicals. To make possible the rational exploitation of these microorganisms, it is fundamental to know their metabolic capabilities and to have genomic resources. In this context, the main objective of this research was to determine the genome features and the biochemical profile of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002. The cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium. Growth parameters, genome features, and the biochemical profile of the cyanobacterium were determined using standardized methods. &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a specific growth rate of 0.086 &amp;#xb1; 0.008&amp;#xa0;&amp;#x3bc; and a doubling time of 8.08 &amp;#xb1; 0.78&amp;#xa0;h. The complete genome of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a size of &amp;#x223c;3.53&amp;#xa0;Mb with a high coverage (&amp;#x223c;200x), and its quality parameters were acceptable (completeness = 99.29%, complete and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the cyanobacterium had six plasmids ranging from 24 to 200&amp;#xa0;kbp. The annotated genome revealed &amp;#x223c;3,422 genes, &amp;#x223c; 3,374 protein-coding genes (with &amp;#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic defense systems. Additionally, the genome had genes coding the transcription factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy metal pollution. The biochemical profile showed primary nutrients, essential amino acids, some essential fatty acids, pigments (e.g., all-trans-&amp;#x3b2;-carotene, chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 shows biotechnological potential to produce human and animal nutrients and raw materials for biofuels and could be a new source of genes for synthetic biological applications.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;Copyright &amp;#xa9; 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&amp;#xed;guez, Vargas, Tresierra, Barriga, Marapara, Adrianz&amp;#xe9;n, Ruiz and Castro.&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "UCP002 is explicitly unaxenic and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports a complete genome, whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession is established by these captures. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q102",
+    "name": "Inherited claim 7",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[2].growth_metrics[0].evidence[0]",
+        "stored": {
+          "reference": "PMID:34584038",
+          "supports": "SUPPORT",
+          "snippet": "Scenedesmus obliquus ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions.",
+          "explanation": "Literature evidence identifies the strain studied under BG-11 photoautotrophic cultivation; NCBI nuccore record MG971386.1 links strain ABC-009 to the accepted taxonomy Tetradesmus obliquus, but it is a partial marker sequence rather than a genome assembly."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "ABC-009 photoautotrophic BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1 supports the accepted name and strain marker only; BATCH cultivation mode is not explicitly established by the abstract."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed34584038",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;&lt;i&gt;Scenedesmus obliquus&lt;/i&gt; ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions. Here, the performance of this strain was evaluated for the simultaneous production of lutein and biofuels under three different modes of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO&lt;sub&gt;2&lt;/sub&gt; and heterotrophic mode using YM medium. While it was found that the highest fatty acid methyl ester (FAME) level and lutein content per biomass (%) were achieved in BG-11 medium with CO&lt;sub&gt;2&lt;/sub&gt; and air, respectively, heterotrophic cultivation resulted in much higher biomass productivity. While the cell concentrations of the cultures grown under BG-11 and CO&lt;sub&gt;2&lt;/sub&gt; were largely similar to those grown in YM medium, the disparity in the biomass yield was largely attributed to the larger cell volume in heterotrophically cultivated cells. Post-cultivation light treatment was found to further enhance the biomass productivity in all three cases and lutein content in heterotrophic conditions. Consequently, the maximum biomass (757.14 &amp;#xb1; 20.20 mg/l/d), FAME (92.78 &amp;#xb1; 0.08 mg/l/d), and lutein (1.006 &amp;#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation. Next, large-scale lutein production using microalgae was demonstrated using a 1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were similar in both media, while slightly higher lutein content was obtained using the fertilizer owing to the higher nitrogen content.&lt;/AbstractText&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "ABC-009 photoautotrophic BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1 supports the accepted name and strain marker only; BATCH cultivation mode is not explicitly established by the abstract. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q103",
+    "name": "Inherited claim 8",
+    "stage": "Algae BG11 owner only; current paper support separate from historical capture",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[2].growth_metrics[0].evidence[1]",
+        "stored": {
+          "reference": "PMID:34584038",
+          "supports": "SUPPORT",
+          "snippet": "While the cell concentrations of the cultures grown under BG-11 and CO2 were largely similar to those grown in YM medium",
+          "explanation": "Literature evidence reports cell concentrations for the BG-11 plus CO2 condition relative to YM medium."
+        }
+      }
+    ],
+    "desired": {
+      "preserve_claim_scope": "ABC-009 photoautotrophic BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1 supports the accepted name and strain marker only; BATCH cultivation mode is not explicitly established by the abstract."
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed34584038",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml",
+        "source_locator": "Exact PMID Abstract XML block",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;&lt;i&gt;Scenedesmus obliquus&lt;/i&gt; ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions. Here, the performance of this strain was evaluated for the simultaneous production of lutein and biofuels under three different modes of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO&lt;sub&gt;2&lt;/sub&gt; and heterotrophic mode using YM medium. While it was found that the highest fatty acid methyl ester (FAME) level and lutein content per biomass (%) were achieved in BG-11 medium with CO&lt;sub&gt;2&lt;/sub&gt; and air, respectively, heterotrophic cultivation resulted in much higher biomass productivity. While the cell concentrations of the cultures grown under BG-11 and CO&lt;sub&gt;2&lt;/sub&gt; were largely similar to those grown in YM medium, the disparity in the biomass yield was largely attributed to the larger cell volume in heterotrophically cultivated cells. Post-cultivation light treatment was found to further enhance the biomass productivity in all three cases and lutein content in heterotrophic conditions. Consequently, the maximum biomass (757.14 &amp;#xb1; 20.20 mg/l/d), FAME (92.78 &amp;#xb1; 0.08 mg/l/d), and lutein (1.006 &amp;#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation. Next, large-scale lutein production using microalgae was demonstrated using a 1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were similar in both media, while slightly higher lutein content was obtained using the fertilizer owing to the higher nitrogen content.&lt;/AbstractText&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "ABC-009 photoautotrophic BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1 supports the accepted name and strain marker only; BATCH cultivation mode is not explicitly established by the abstract. Do not transfer the entire claim to BG11R or neighboring variants from a formulation fingerprint."
+  },
+  {
+    "decision_id": "q104",
+    "name": "UCP002 specific growth rate",
+    "stage": "Algae BG11 owner growth metric",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[1].growth_metrics[0].growth_rate_per_hour",
+        "stored": 0.086
+      }
+    ],
+    "desired": {
+      "printed_rate": 0.086,
+      "printed_uncertainty": 0.008,
+      "per_hour_unit": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36437912",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36437912&amp;retmode=xml",
+        "source_locator": "UCP002 Abstract, growth-parameter sentence",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;Cyanobacteria are diverse photosynthetic microorganisms able to produce a myriad of bioactive chemicals. To make possible the rational exploitation of these microorganisms, it is fundamental to know their metabolic capabilities and to have genomic resources. In this context, the main objective of this research was to determine the genome features and the biochemical profile of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002. The cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium. Growth parameters, genome features, and the biochemical profile of the cyanobacterium were determined using standardized methods. &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a specific growth rate of 0.086 &amp;#xb1; 0.008&amp;#xa0;&amp;#x3bc; and a doubling time of 8.08 &amp;#xb1; 0.78&amp;#xa0;h. The complete genome of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a size of &amp;#x223c;3.53&amp;#xa0;Mb with a high coverage (&amp;#x223c;200x), and its quality parameters were acceptable (completeness = 99.29%, complete and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the cyanobacterium had six plasmids ranging from 24 to 200&amp;#xa0;kbp. The annotated genome revealed &amp;#x223c;3,422 genes, &amp;#x223c; 3,374 protein-coding genes (with &amp;#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic defense systems. Additionally, the genome had genes coding the transcription factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy metal pollution. The biochemical profile showed primary nutrients, essential amino acids, some essential fatty acids, pigments (e.g., all-trans-&amp;#x3b2;-carotene, chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 shows biotechnological potential to produce human and animal nutrients and raw materials for biofuels and could be a new source of genes for synthetic biological applications.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;Copyright &amp;#xa9; 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&amp;#xed;guez, Vargas, Tresierra, Barriga, Marapara, Adrianz&amp;#xe9;n, Ruiz and Castro.&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "The abstract gives 0.086 ± 0.008 mu without an explicit hour-inverse unit. Do not validate growth_rate_per_hour by dimensional convention or reverse inference from doubling time; recover full methods or qualify/remove the unverified dimension."
+  },
+  {
+    "decision_id": "q105",
+    "name": "UCP002 doubling time",
+    "stage": "Algae BG11 owner growth metric",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[1].growth_metrics[0].doubling_time_minutes",
+        "stored": 484.8
+      }
+    ],
+    "desired": {
+      "minutes": 484.8,
+      "source_hours": 8.08,
+      "source_uncertainty_hours": 0.78
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36437912",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36437912&amp;retmode=xml",
+        "source_locator": "UCP002 Abstract, growth-parameter sentence",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;Cyanobacteria are diverse photosynthetic microorganisms able to produce a myriad of bioactive chemicals. To make possible the rational exploitation of these microorganisms, it is fundamental to know their metabolic capabilities and to have genomic resources. In this context, the main objective of this research was to determine the genome features and the biochemical profile of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002. The cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium. Growth parameters, genome features, and the biochemical profile of the cyanobacterium were determined using standardized methods. &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a specific growth rate of 0.086 &amp;#xb1; 0.008&amp;#xa0;&amp;#x3bc; and a doubling time of 8.08 &amp;#xb1; 0.78&amp;#xa0;h. The complete genome of &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 had a size of &amp;#x223c;3.53&amp;#xa0;Mb with a high coverage (&amp;#x223c;200x), and its quality parameters were acceptable (completeness = 99.29%, complete and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the cyanobacterium had six plasmids ranging from 24 to 200&amp;#xa0;kbp. The annotated genome revealed &amp;#x223c;3,422 genes, &amp;#x223c; 3,374 protein-coding genes (with &amp;#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic defense systems. Additionally, the genome had genes coding the transcription factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy metal pollution. The biochemical profile showed primary nutrients, essential amino acids, some essential fatty acids, pigments (e.g., all-trans-&amp;#x3b2;-carotene, chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, &lt;i&gt;Synechococcus&lt;/i&gt; sp. UCP002 shows biotechnological potential to produce human and animal nutrients and raw materials for biofuels and could be a new source of genes for synthetic biological applications.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;Copyright &amp;#xa9; 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&amp;#xed;guez, Vargas, Tresierra, Barriga, Marapara, Adrianz&amp;#xe9;n, Ruiz and Castro.&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "8.08 h × 60 = 484.8 min. Preserve source uncertainty 0.78 h (46.8 min) in evidence. This arithmetic verifies the named paper metric, not a generic BG11R growth claim."
+  },
+  {
+    "decision_id": "q106",
+    "name": "Nostoc growth comparison",
+    "stage": "Algae BG11 owner measurement conditions and source-only outcome",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[0].growth_metrics[0].measurement_conditions",
+        "stored": "BG11 nitrate-replete medium after 240 h of culture; compared with nitrate-free BG110."
+      }
+    ],
+    "desired": {
+      "elapsed_hours": 240,
+      "BG11_biomass_g_per_l": "1.65 ± 0.06",
+      "BG110_biomass_g_per_l": "0.92 ± 0.01",
+      "BG11_productivity_mg_per_l_per_day": "317 ± 38",
+      "BG110_productivity_mg_per_l_per_day": "262 ± 37"
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed36550226",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36550226&amp;retmode=xml",
+        "source_locator": "Nostoc Abstract, explicit medium comparison",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;The biotechnological potential of Nostoc linckia as a biofertilizer and source of bioactive compounds makes it important to study its growth physiology and productivity. Since nitrogen is a fundamental component of N. linckia biomass, we compared the growth and biochemical composition of cultures grown in BG11 (i.e., in the presence of nitrate) and BG11&lt;sub&gt;0&lt;/sub&gt; (in the absence of nitrate). Cultures grown in BG11 accumulated more cell biomass reaching a dry weight of 1.65&amp;#x2009;&amp;#xb1;&amp;#x2009;0.06&amp;#xa0;g&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;, compared to 0.92&amp;#x2009;&amp;#xb1;&amp;#x2009;0.01&amp;#xa0;g&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt; in BG11&lt;sub&gt;0&lt;/sub&gt; after 240&amp;#xa0;h of culture. Biomass productivity was higher in culture grown in BG11 medium (average 317&amp;#x2009;&amp;#xb1;&amp;#x2009;38&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;&amp;#xa0;day&lt;sup&gt;-1&lt;/sup&gt;) compared to that attained in BG11&lt;sub&gt;0&lt;/sub&gt; (average 262&amp;#x2009;&amp;#xb1;&amp;#x2009;37&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;&amp;#xa0;day&lt;sup&gt;-1&lt;/sup&gt;). The chlorophyll content of cells grown in BG11 increased continuously up to (39.0&amp;#x2009;&amp;#xb1;&amp;#x2009;1.3&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;), while in BG11&lt;sub&gt;0&lt;/sub&gt; it increased much more slowly (13.6&amp;#x2009;&amp;#xb1;&amp;#x2009;0.8&amp;#xa0;mg&amp;#xa0;L&lt;sup&gt;-1&lt;/sup&gt;). Biomass grown in BG11 had higher protein and phycobilin contents. However, despite the differences in biochemical composition and pigment concentration, between BG11 and BG11&lt;sub&gt;0&lt;/sub&gt; cultures, both their net photosynthetic rates and maximum quantum yields of the photosystem II resulted in similar.&lt;/AbstractText&gt;&lt;CopyrightInformation&gt;&amp;#xa9; 2022. The Author(s).&lt;/CopyrightInformation&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "8028b6651b9830c4270af7190cabaeb1a38fd693ee7efc39e5a97724a0d2d024",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "Keep nitrate-replete BG11 and nitrate-free BG110 outcomes separate. Current abstract supports these results but does not establish this exact FEBA formula or a measured final recipe volume."
+  },
+  {
+    "decision_id": "q107",
+    "name": "ABC-009 air or 2% CO2",
+    "stage": "Algae BG11 owner photoautotrophic comparison",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "variants[2].modifications[1]",
+        "stored": "Compare air and 2% CO2 gas conditions."
+      }
+    ],
+    "desired": {
+      "source_CO2_percent": 2,
+      "percent_basis": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed34584038",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml",
+        "source_locator": "ABC-009 Abstract cultivation comparison",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;&lt;i&gt;Scenedesmus obliquus&lt;/i&gt; ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions. Here, the performance of this strain was evaluated for the simultaneous production of lutein and biofuels under three different modes of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO&lt;sub&gt;2&lt;/sub&gt; and heterotrophic mode using YM medium. While it was found that the highest fatty acid methyl ester (FAME) level and lutein content per biomass (%) were achieved in BG-11 medium with CO&lt;sub&gt;2&lt;/sub&gt; and air, respectively, heterotrophic cultivation resulted in much higher biomass productivity. While the cell concentrations of the cultures grown under BG-11 and CO&lt;sub&gt;2&lt;/sub&gt; were largely similar to those grown in YM medium, the disparity in the biomass yield was largely attributed to the larger cell volume in heterotrophically cultivated cells. Post-cultivation light treatment was found to further enhance the biomass productivity in all three cases and lutein content in heterotrophic conditions. Consequently, the maximum biomass (757.14 &amp;#xb1; 20.20 mg/l/d), FAME (92.78 &amp;#xb1; 0.08 mg/l/d), and lutein (1.006 &amp;#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation. Next, large-scale lutein production using microalgae was demonstrated using a 1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were similar in both media, while slightly higher lutein content was obtained using the fertilizer owing to the higher nitrogen content.&lt;/AbstractText&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "The abstract says 2% CO2 without a stated volume/mass basis; preserve that literal scope. No generic PERCENT enum or inferred v/v quantity is proposed. Air and CO2 conditions are separate from heterotrophic YM."
+  },
+  {
+    "decision_id": "q108",
+    "name": "ABC-009 air or 2% CO2",
+    "stage": "Algae BG11 owner photoautotrophic comparison",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[2].growth_metrics[0].measurement_conditions",
+        "stored": "Photoautotrophic BG-11 medium cultivation with air or 2% CO2 for the strain reported in the source as Scenedesmus obliquus ABC-009."
+      }
+    ],
+    "desired": {
+      "source_CO2_percent": 2,
+      "percent_basis": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed34584038",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml",
+        "source_locator": "ABC-009 Abstract cultivation comparison",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;&lt;i&gt;Scenedesmus obliquus&lt;/i&gt; ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions. Here, the performance of this strain was evaluated for the simultaneous production of lutein and biofuels under three different modes of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO&lt;sub&gt;2&lt;/sub&gt; and heterotrophic mode using YM medium. While it was found that the highest fatty acid methyl ester (FAME) level and lutein content per biomass (%) were achieved in BG-11 medium with CO&lt;sub&gt;2&lt;/sub&gt; and air, respectively, heterotrophic cultivation resulted in much higher biomass productivity. While the cell concentrations of the cultures grown under BG-11 and CO&lt;sub&gt;2&lt;/sub&gt; were largely similar to those grown in YM medium, the disparity in the biomass yield was largely attributed to the larger cell volume in heterotrophically cultivated cells. Post-cultivation light treatment was found to further enhance the biomass productivity in all three cases and lutein content in heterotrophic conditions. Consequently, the maximum biomass (757.14 &amp;#xb1; 20.20 mg/l/d), FAME (92.78 &amp;#xb1; 0.08 mg/l/d), and lutein (1.006 &amp;#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation. Next, large-scale lutein production using microalgae was demonstrated using a 1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were similar in both media, while slightly higher lutein content was obtained using the fertilizer owing to the higher nitrogen content.&lt;/AbstractText&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "The abstract says 2% CO2 without a stated volume/mass basis; preserve that literal scope. No generic PERCENT enum or inferred v/v quantity is proposed. Air and CO2 conditions are separate from heterotrophic YM."
+  },
+  {
+    "decision_id": "q109",
+    "name": "ABC-009 cultivation mode",
+    "stage": "Algae BG11 owner growth mode",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/bg11.yaml",
+        "field_path": "target_organisms[2].growth_metrics[0].growth_mode",
+        "stored": "BATCH"
+      }
+    ],
+    "desired": {
+      "growth_mode": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed34584038",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml",
+        "source_locator": "ABC-009 Abstract cultivation modes",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;&lt;i&gt;Scenedesmus obliquus&lt;/i&gt; ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions. Here, the performance of this strain was evaluated for the simultaneous production of lutein and biofuels under three different modes of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO&lt;sub&gt;2&lt;/sub&gt; and heterotrophic mode using YM medium. While it was found that the highest fatty acid methyl ester (FAME) level and lutein content per biomass (%) were achieved in BG-11 medium with CO&lt;sub&gt;2&lt;/sub&gt; and air, respectively, heterotrophic cultivation resulted in much higher biomass productivity. While the cell concentrations of the cultures grown under BG-11 and CO&lt;sub&gt;2&lt;/sub&gt; were largely similar to those grown in YM medium, the disparity in the biomass yield was largely attributed to the larger cell volume in heterotrophically cultivated cells. Post-cultivation light treatment was found to further enhance the biomass productivity in all three cases and lutein content in heterotrophic conditions. Consequently, the maximum biomass (757.14 &amp;#xb1; 20.20 mg/l/d), FAME (92.78 &amp;#xb1; 0.08 mg/l/d), and lutein (1.006 &amp;#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation. Next, large-scale lutein production using microalgae was demonstrated using a 1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were similar in both media, while slightly higher lutein content was obtained using the fertilizer owing to the higher nitrogen content.&lt;/AbstractText&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "The inspected abstract distinguishes trophic modes, but does not explicitly establish the structured BATCH assertion. Retain as unverified pending exact methods; no alternate mode is inferred."
+  },
+  {
+    "decision_id": "q110",
+    "name": "YM maximum productivities",
+    "stage": "Source-only excluded comparator outcomes",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "desired": {
+      "heterotrophic_YM_biomass_mg_per_l_per_day": "757.14 ± 20.20",
+      "heterotrophic_YM_FAME_mg_per_l_per_day": "92.78 ± 0.08",
+      "heterotrophic_YM_lutein_mg_per_l_per_day": "1.006 ± 0.23",
+      "transfer_to_BG11": false
+    },
+    "source_snippets": [
+      {
+        "source_key": "bg11ContextPubmed34584038",
+        "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml",
+        "source_locator": "ABC-009 Abstract highest-productivity sentence",
+        "exact_source_quote": "&lt;Abstract&gt;&lt;AbstractText&gt;&lt;i&gt;Scenedesmus obliquus&lt;/i&gt; ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly when subjected to growth-limiting conditions. Here, the performance of this strain was evaluated for the simultaneous production of lutein and biofuels under three different modes of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO&lt;sub&gt;2&lt;/sub&gt; and heterotrophic mode using YM medium. While it was found that the highest fatty acid methyl ester (FAME) level and lutein content per biomass (%) were achieved in BG-11 medium with CO&lt;sub&gt;2&lt;/sub&gt; and air, respectively, heterotrophic cultivation resulted in much higher biomass productivity. While the cell concentrations of the cultures grown under BG-11 and CO&lt;sub&gt;2&lt;/sub&gt; were largely similar to those grown in YM medium, the disparity in the biomass yield was largely attributed to the larger cell volume in heterotrophically cultivated cells. Post-cultivation light treatment was found to further enhance the biomass productivity in all three cases and lutein content in heterotrophic conditions. Consequently, the maximum biomass (757.14 &amp;#xb1; 20.20 mg/l/d), FAME (92.78 &amp;#xb1; 0.08 mg/l/d), and lutein (1.006 &amp;#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation. Next, large-scale lutein production using microalgae was demonstrated using a 1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were similar in both media, while slightly higher lutein content was obtained using the fertilizer owing to the higher nitrogen content.&lt;/AbstractText&gt;&lt;/Abstract&gt;",
+        "snapshot_sha256": "2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c",
+        "quote_representation": "UTF-8 source decoded with universal newlines; tabs and all other characters retained. Raw external evidence preserves original CRLF."
+      }
+    ],
+    "interpretation": "These maxima belong to heterotrophic cultivation. The separate 1-ton Eco-Sol raceway demonstration is likewise not the selected BG11R recipe. No comparator quantity becomes a target growth metric."
+  }
+]
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:015456.
+
+13 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact named variant and contribution membership
+
+identity: supported. Targets: CultureMech:015456.
+
+BG11R is resolved to both exact algae owners and the two native inspected merge contributions. All 14 ingredient amounts match the named FEBA block plus the correctly diluted A5 stock. Neighboring BG11, BG11R, nitrogen-free, carbonate-free and TES variants remain distinct.
+
+### Source identity versus canonical ontology metadata
+
+grounding: concern. Targets: CultureMech:015456.
+
+Citric acid is incorrectly mapped to sodium citrate. EDTA hydration is unresolved by conflicting source CAS and formula-weight metadata. All other named forms, including the explicit trace hydrates, agree at the supported source level; misleading potassium-phosphate synonyms do not override its name, CAS and formula.
+
+### Source versions and current repair scope
+
+provenance: concern. Targets: CultureMech:015456.
+
+The September FEBA revision supports the exact current numerical recipe but does not authenticate the March CultureBotHT import. Current owner has later repair metadata and two broad references; target lacks these later fields. An ingredients_curated flag is not proof that chemical forms or evidence have been checked. No universal historical-merger causal claim is made.
+
+### Protocol, culture conditions and source-only information
+
+completeness: unknown. Targets: CultureMech:015456.
+
+The FEBA block states pH 7.1 but has no water make-up, sterilization procedure, temperature or light. These required protocol details remain unknown, rather than being imported from another BG11 recipe. There is no local solution reference to validate and no existing nested stock; the A5 source ratio is retained in the inventory.
+
+### Eight inherited owner claims and exact source/variant boundaries
+
+evidence: concern. Targets: CultureMech:015456.
+
+Only algae/bg11.yaml carries three experimental variants, three target organisms and eight evidence objects. Current abstracts support their narrow observations; historical capture authentication is not claimed. UCP002 rate dimensional basis and ABC-009 BATCH mode remain unsupported by the inspected abstracts. Complete-genome existence is explicitly stated in a separate current UCP002 abstract sentence; no assembly accession is resolved. None of these observations transfers automatically to the merged BG11R recipe.
+
+### Exact current strain/name and marker correspondence
+
+grounding: concern. Targets: CultureMech:015456.
+
+NCBI taxonomy 2885151 matches Synechococcus sp. UCP002; taxonomy 3088 is Tetradesmus obliquus with Scenedesmus obliquus as a synonym. GenBank MG971386.1 links ABC-009 to taxon 3088 and is a partial small-subunit rRNA marker. Taxonomy 92942 access failed with HTTP 429, so its local Nostoc linckia name/ID match remains unconfirmed. Taxonomy resolution is separate from medium growth and recipe equivalence.
+
+### Existing physical and organizational classifications
+
+scope: unknown. Targets: CultureMech:015456.
+
+The named formulation supports a liquid mineral-medium representation and cyanobacterial intended use. FEBA Minimal TRUE is not a complete chemical-definition proof, particularly for ferric ammonium citrate of indefinite composition. Preserve category context without inferring cultivation oxygen, strain taxonomy or a replacement classification solely from the name.
+
+### Reference placement, identity and historical correspondence
+
+evidence: concern. Targets: CultureMech:015456.
+
+The BG11 and BG11R owners have distinct CultureBotHT identifiers; algae BG11 additionally has eight PMID-linked evidence objects, three taxonomy IDs and the MG971386.1 marker mentioned in an explanation. Those paper and marker roles are individually reviewed. The generated target retains neither the owner experimental structures nor structured pH. No KG match, GCA/GCF/SAMN accession, nested solution reference, legacy MIM identifier or secondary MIM slot is asserted by these selected layers. The bacterial CCAP C17 namesake and its six literature claims are excluded.
+
+## Findings
+
+### f1: Citric acid is represented by a sodium-citrate identifier
+
+major / open / confirmed; issue key: culturemech.015456.citric-acid-salt.
+
+Both target and maintained owner name Citric Acid and retain acid CAS 77-92-9/FW 192.12, but their primary term is CHEBI:53258 sodium citrate. This is a chemical-form mismatch despite canonical label validity.
+
+### f2: EDTA hydration is asserted more specifically than the reconciled source metadata
+
+major / open / confirmed; issue key: culturemech.015456.edta-hydration.
+
+CHEBI:64734 explicitly asserts anhydrous disodium EDTA. The source name is unqualified; its CAS differs from the anhydrous OLS CAS while its formula weight agrees closely with the anhydrous form. The unresolved source metadata conflict must not be presented as verified hydration.
+
+### f3: Correct numerical amounts lack attached source and stock-dilution evidence
+
+minor / open / confirmed; issue key: culturemech.015456.amount-evidence.
+
+Every selected ingredient concentration is numerically supported by the exact FEBA variant or the explicit A5 1000 X to 1 X dilution, but neither target nor maintained owner carries claim-level concentration evidence. Broad source links and the curated flag omit the verified version, exact rows and arithmetic.
+
+### f4: Generated projection omits later owner source metadata
+
+minor / open / confirmed; issue key: culturemech.015456.stale-owner-metadata.
+
+The generated record predates the maintained owner repairs and lacks their media_term and references, together with structured ph_value and the separately scoped algae BG11 experimental structures. Reconciliation must retain append-only chronology and qualify curated status against the actual evidence, rather than assuming the current generator caused every historical difference.
+
+### f5: Merged BG11R omits supported pH and distinct contributor context
+
+major / open / confirmed; issue key: culturemech.015456.owner-context-omission.
+
+The target description retains pH 7.1, but its structured ph_value is missing although both exact algae owners retain it. Only algae/bg11.yaml carries three variants, three organisms and eight claims; those structures are absent from the target. Their current scientific scope must be reconciled explicitly before any merge projection, because equal ingredient fingerprints do not establish experimental recipe identity.
+
+### f6: Owner growth annotations exceed the available abstract support
+
+major / open / confirmed; issue key: culturemech.015456.growth-dimensional-scope.
+
+The algae BG11 owner records UCP002 growth_rate_per_hour=0.086 although the current abstract prints mu without an explicit per-hour unit, and records ABC-009 growth_mode=BATCH without an explicit batch statement in the inspected abstract. The doubling-time conversion is valid separately. A complete UCP002 genome is stated in the current abstract, but its inherited genome-features excerpt should be replaced or supplemented with that precise sentence; no assembly accession is established.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct the maintained owner to the supported acid identity with source evidence, preserve its concentration and provenance, then regenerate only under separately authorized workflow.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Resolve the exact supplier/source form or record the hydration uncertainty explicitly without guessing a replacement ID, quantity or molar conversion.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach exact versioned source evidence and explicit A5 stock-to-medium arithmetic in the owner, preserving direct units and uncertainty. Do not replace these correct rates with undiluted stock values.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+After owner scientific corrections, reconcile generated metadata using the authorized generator and preserve the existing historical events.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve source-supported structured pH; assess each owner variant and exact paper formulation before projecting scoped evidence or deciding a split. Do not bulk-copy growth claims or infer equivalence from the fingerprint.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a6
+
+Recover exact paper methods for the rate dimension and cultivation mode, or qualify/remove the unsupported structured specificity. Attach the exact genome-supporting sentence, preserve correct doubling arithmetic and do not transfer comparator maxima or unverified growth to BG11R.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BG11R.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/algae/bg11.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/algae/bg11r.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BG11R.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BG11R.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch041/406/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch041/406/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BG11R.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BG11R.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/algae/bg11r.yaml:1:id: CultureMech:015456<br>./data/merge_yaml/merged/BG11R.yaml:1:id: CultureMech:015456<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch041/source-preflight-bound/406/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 35 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| feba-main | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media; Named block BG11R, starting line 95 | supports | Exact variant-specific main recipe; later FEBA revision is independent formula evidence, not an authenticated historical CultureBotHT copy. |
+| feba-a5 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes; Trace metal mix A5, complete 1000 X block | supports | Six stock rows and explicit 1000 X strength; the main recipe requests 1 X. |
+| feba-version | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commit/803273865ea9e83fab770ec4f13670db80e1180b; $.hash and $.date | supports | Exact FEBA revision 803273865ea9e83fab770ec4f13670db80e1180b dated 2026-09-10T16:27:42+00:00 postdates the March import. |
+| compound-0 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 400 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-1 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 337 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-2 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 277 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-3 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 90 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-4 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 119 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-5 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 186 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-6 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 178 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-7 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 373 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-8 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 84 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-9 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 278 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-10 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 474 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-11 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 399 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-12 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 129 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| compound-13 | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv; Exact named compound row 124 | supports | Source compound metadata; internal synonym and hydration tensions remain explicit. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31604 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31604; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31604 resolves to ferric ammonium citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53258 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53258 resolves to sodium citrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63005 resolves to sodium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86214 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86214 resolves to cobalt dinitrate hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {}} |
+| citric-acid-candidate | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30769; Exact OLS CHEBI:30769 scientific properties | supports | Citric acid is a distinct nonobsolete acid entity, CAS 77-92-9, formula C6H8O7; candidate correction is separate from this read-only review. |
+| culturebothtRepository-attempt | https://api.github.com/repos/CultureBotAI/CultureBotHT; Preserved exact public retrieval result | context_only | The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual access time. The March import bytes and their historical equivalence to the later FEBA recipe remain unverified. Current named FEBA amounts are independently assessable; the missing historical source is a partial-completion limit. |
+| culturebothtExactBG11-attempt | https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/BG11.yaml; Preserved exact public retrieval result | context_only | The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual access time. The March import bytes and their historical equivalence to the later FEBA recipe remain unverified. Current named FEBA amounts are independently assessable; the missing historical source is a partial-completion limit. |
+| culturebothtExactBG11R-attempt | https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/BG11R.yaml; Preserved exact public retrieval result | context_only | The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual access time. The March import bytes and their historical equivalence to the later FEBA recipe remain unverified. Current named FEBA amounts are independently assessable; the missing historical source is a partial-completion limit. |
+| forms | /private/tmp/culturemech-review-work-batch041/406/chemical-form-inventory.json; Every target and maintained-owner ingredient form, exact source compound fields and OLS scientific properties | context_only | All supplied-form decisions are explicit; exact identifier/label validity is separate from source correspondence. |
+| pubmed-36550226 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36550226&amp;retmode=xml; Exact PMID and complete Abstract XML block | supports | Current abstract evidence for its own strain and cultivation condition; not a historical response authentication or proof of exact FEBA variant equivalence. |
+| pubmed-36437912 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=36437912&amp;retmode=xml; Exact PMID and complete Abstract XML block | supports | Current abstract evidence for its own strain and cultivation condition; not a historical response authentication or proof of exact FEBA variant equivalence. |
+| pubmed-34584038 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=34584038&amp;retmode=xml; Exact PMID and complete Abstract XML block | supports | Current abstract evidence for its own strain and cultivation condition; not a historical response authentication or proof of exact FEBA variant equivalence. |
+| taxon-2885151 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=2885151&amp;retmode=xml; TaxaSet/Taxon exact primary TaxId and ScientificName | supports | Current exact taxonomy identity; neither strain-medium growth nor a genome accession follows from taxonomy. |
+| taxon-3088 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=3088&amp;retmode=xml; TaxaSet/Taxon exact primary TaxId and ScientificName | supports | Current exact taxonomy identity; neither strain-medium growth nor a genome accession follows from taxonomy. |
+| marker-abc009 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=MG971386.1&amp;rettype=gb&amp;retmode=text; GenBank VERSION MG971386.1, definition and source qualifiers | supports | ABC-009 is linked to Tetradesmus obliquus/taxon 3088 by a partial small-subunit rRNA marker. It is not a genome assembly or a medium growth test. |
+| bg11ContextTaxonomy92942-attempt | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=92942&amp;retmode=xml; Preserved exact public retrieval result | context_only | The current NCBI taxonomy request for 92942 returned HTTP 429. The exact Nostoc name/ID correspondence cannot be independently confirmed from that response. The separate current paper abstract is available and supports the paper-scoped growth comparison. |
+| claim-scope | /private/tmp/culturemech-review-work-batch041/406/historical-evidence-inventory.json; All eight inherited algae BG11 owner evidence objects and exact current abstract checks | context_only | Eight owner claims assessed individually; six bacterial namesake claims and all other BG11 comparison claims are excluded from transfer. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch041/406/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| history-metadata | data/merge_yaml/merged/BG11R.yaml; data/normalized_yaml/algae/bg11.yaml; data/normalized_yaml/algae/bg11r.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 5, "timestamp_issues": []}, {"input": "data/normalized_yaml/algae/bg11.yaml", "events": 4, "timestamp_issues": []}, {"input": "data/normalized_yaml/algae/bg11r.yaml", "events": 4, "timestamp_issues": []}] |
+| writer-0 | scripts/repair_culturebotht_bg11_score15.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Full current repair inspected: exact ID/source/name signature guards, media_term/references/flags/history updates; it does not validate amounts, chemical forms, historical source availability or attached claim evidence. No execution or inferred past causation. |
+| historical-report-0 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/bg11.md; Exact matching historical report header and all ingredient decision rows | context_only | Derivative diagnostic reports missing attached source evidence and not-performed source checks. Current FEBA comparison supersedes that absence of assessment, not the immutable report bytes. |
+| historical-report-1 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/bg11r.md; Exact matching historical report header and all ingredient decision rows | context_only | Derivative diagnostic reports missing attached source evidence and not-performed source checks. Current FEBA comparison supersedes that absence of assessment, not the immutable report bytes. |
+| historical-report-6 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BG11R.md; Exact matching historical report header and all ingredient decision rows | context_only | Derivative diagnostic reports missing attached source evidence and not-performed source checks. Current FEBA comparison supersedes that absence of assessment, not the immutable report bytes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual access time. The March import bytes and their historical equivalence to the later FEBA recipe remain unverified. Current named FEBA amounts are independently assessable; the missing historical source is a partial-completion limit.
+- The current NCBI taxonomy request for 92942 returned HTTP 429. The exact Nostoc name/ID correspondence cannot be independently confirmed from that response. The separate current paper abstract is available and supports the paper-scoped growth comparison.
+- Coverage is partial because historical CultureBotHT source identity and complete preparation conditions remain unresolved. All current target/owner concentrations and supplied-form assertions were nevertheless assessed. Excluded comparison-only source failures do not become extra required checks; actual owner taxonomy and method limits remain required.
+- Required remaining limits include exact historical CultureBotHT files, the full paper methods needed for strain-specific recipe identity/rate units/cultivation mode, and failed current taxonomy 92942. The eight owner excerpts agree with current abstracts after explicitly documented whitespace normalization; original historical response bytes were not asserted or recovered. Excluded bacterial BG11 and other comparison records are not contributors.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T232208Z-culturemech-015456-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: BG11R (CultureMech:015456)'
+started_at: '2026-10-21T23:07:35Z'
+finished_at: '2026-10-21T23:22:08Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact named FEBA formulation supports every listed numerical rate, including
+  the A5 dilution. Citric acid is grounded to sodium citrate, EDTA source metadata
+  does not settle hydration, and the merged projection loses pH and separately scoped
+  owner evidence. Eight inherited growth claims require claim-specific interpretation;
+  a per-hour unit is unsupported by the current abstract. Historical CultureBotHT
+  byte equivalence remains unavailable.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BG11R.yaml
+    sha256: 2958d5a0ca8d41fc8d808379e20a4c024c14a8c4e259a345f173d368f9852e98
+    role: target
+  - path: data/normalized_yaml/algae/bg11.yaml
+    sha256: 50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468
+    role: context
+  - path: data/normalized_yaml/algae/bg11_no_bicarb.yaml
+    sha256: d22f6c303cef0440c5182310528655bc1bdb7b9d5d8a6aeb1d62010b232ce47f
+    role: context
+  - path: data/normalized_yaml/algae/bg11_nonitrogen.yaml
+    sha256: 70c0b3756ed421754ff565455b8ad742a0131b86cb84f2531fa710951fbedb21
+    role: context
+  - path: data/normalized_yaml/algae/bg11_tes_no_bicarb.yaml
+    sha256: 8b47248a8605be05777c32a1034484710f0962dd91350dc66b994ee97656d815
+    role: context
+  - path: data/normalized_yaml/algae/bg11c.yaml
+    sha256: ea5ea6408a4783f757081d74d318df4c084936509cc2e549ab5bed5e774b864f
+    role: context
+  - path: data/normalized_yaml/algae/bg11c_tes.yaml
+    sha256: c401a2ac26be5861818f429ae6edf4a2de4d45052298f22e5c23f56d0eb797ac
+    role: context
+  - path: data/normalized_yaml/algae/bg11r.yaml
+    sha256: e0e7da1e0ffeea246c52a38eff9a18a5fbb95208d85e2e409743ac5e7ccd3807
+    role: context
+  - path: data/normalized_yaml/bacterial/CCAP_C18_BG11₀.yaml
+    sha256: 35323936b16e681de153b059fe9fc7aba19935c5b39c98cd7f273776963bef59
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M3120_BG11_medium.yaml
+    sha256: 7be6bd727b51c11cc3e54373c18393fb10f93008a3eed744b42a7f06abcc6a35
+    role: context
+  - path: data/normalized_yaml/bacterial/bg11.yaml
+    sha256: 8bdcb2736d5e786086ddce316a057ab341dd4ffe17598fc0f6f733343b972453
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/bg11.yaml.md
+    sha256: 2bb25d048729024a93e9e4560f8089a9ebf09f3efd05309391f91ba633fd9c0f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/cyanobacteria_medium_bg11.yaml.md
+    sha256: a1c481e6f9e01187da8480fded538f22f3eb9fa6b8e78de1a9b3f2983db228c7
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BG11R.md
+    sha256: 7b93873dc2159fcb0b8d94daf2cf487c1773dd0904dd58dd803e19088662a69c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/bg11__f771062f.md
+    sha256: f7650e27f2afd1aa144229d41a9e7f040e87364edf8b518e5ec337064025805b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cyanobacteria_medium_bg11.md
+    sha256: 3cc71e8862ac52d999d7ba179a76205893bdbf072d6f0c4f7c119f27ec85a38d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/cyanobacteria_medium_bg11__e6d564be.md
+    sha256: d6b995cdf5fcb38efd221d395baff5730a559f2360913dd6e79be250cb8f8ddf
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/labarre_modified_bg11.md
+    sha256: 9e21bff1c3cdc59080f125518ec36dee29c020ebed40b605963da8c6cec4d7aa
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/bg11.md
+    sha256: ad2042c416bcda85c35533d97a76f10f634dfcbc5eb7779a8f28d990e8c8c6bc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/bg11r.md
+    sha256: 7da677a7eea9e9f314e0fed9f3165abafe9702d997700829caa8f3c15572a6bb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/bg11.md
+    sha256: d19d06bf4f8e1e486385b8fc85d4fb7dba9d372c42fd9e4993c67d6b91e456e3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cyanobacteria_medium_bg11.md
+    sha256: ea4f0a74a3c71d5555409ca92ea7ab8a05771944dabbe14e02acc678c35f78eb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/labarre_modified_bg11.md
+    sha256: b04de12efb834dd5a50a4ca1a1ad906ffaa7d9fa3ca3ff8b812c2e8f1681cadf
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/curate_organism_culture_type.py
+    sha256: 8686de3d3736eaaf3702e2009a299a53819a5ba321966ab2ea01104538ca6a65
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_culturebotht_bg11_score15.py
+    sha256: dd0fdb7eeb89759865c968f788c900aa2d6b2f42c60dc2aef93afc14b33c4f36
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 406; batch 041 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty task batches contain
+    400 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 403 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015456
+targets:
+- target_id: CultureMech:015456
+  path: data/merge_yaml/merged/BG11R.yaml
+  label: BG11R
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BG11R.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BG11R.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch041/406/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch041/406/strict.tsv"
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BG11R.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BG11R.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015456
+- check_id: culturebothtRepository-source-access
+  name: 'Exact source content access: culturebothtRepository'
+  required: true
+  status: unavailable
+  summary: The exact public CultureBotHT endpoint returned HTTP 404 at its retained
+    actual access time. The March import bytes and their historical equivalence to
+    the later FEBA recipe remain unverified. Current named FEBA amounts are independently
+    assessable; the missing historical source is a partial-completion limit.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - culturebothtRepository-attempt
+- check_id: culturebothtExactBG11-source-access
+  name: 'Exact source content access: culturebothtExactBG11'
+  required: true
+  status: unavailable
+  summary: The exact public CultureBotHT endpoint returned HTTP 404 at its retained
+    actual access time. The March import bytes and their historical equivalence to
+    the later FEBA recipe remain unverified. Current named FEBA amounts are independently
+    assessable; the missing historical source is a partial-completion limit.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - culturebothtExactBG11-attempt
+- check_id: culturebothtExactBG11R-source-access
+  name: 'Exact source content access: culturebothtExactBG11R'
+  required: true
+  status: unavailable
+  summary: The exact public CultureBotHT endpoint returned HTTP 404 at its retained
+    actual access time. The March import bytes and their historical equivalence to
+    the later FEBA recipe remain unverified. Current named FEBA amounts are independently
+    assessable; the missing historical source is a partial-completion limit.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - culturebothtExactBG11R-attempt
+- check_id: bg11ContextTaxonomy92942-source-access
+  name: 'Exact source content access: bg11ContextTaxonomy92942'
+  required: true
+  status: unavailable
+  summary: The current NCBI taxonomy request for 92942 returned HTTP 429. The exact
+    Nostoc name/ID correspondence cannot be independently confirmed from that response.
+    The separate current paper abstract is available and supports the paper-scoped
+    growth comparison.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - bg11ContextTaxonomy92942-attempt
+- check_id: strain-specific-full-methods
+  name: Exact paper formulations and growth-rate dimensional basis
+  required: true
+  status: unavailable
+  summary: Current abstracts support the cited strains and stated conditions, but
+    full paper methods and exact BG11-to-FEBA formula equivalence were not recovered
+    in this bound source set. The UCP002 growth-rate abstract prints mu without an
+    explicit per-hour unit.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - pubmed-36550226
+  - pubmed-36437912
+  - pubmed-34584038
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BG11R.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/algae/bg11.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/algae/bg11r.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BG11R.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:00.120127Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BG11R.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch041/406/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:01.164152Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-041/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch041/406/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BG11R.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:02.347488Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BG11R.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:08:03.123581Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: supports
+  summary: './data/normalized_yaml/algae/bg11r.yaml:1:id: CultureMech:015456
+
+    ./data/merge_yaml/merged/BG11R.yaml:1:id: CultureMech:015456
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/source-preflight-bound/406/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: supports
+  summary: 35 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 3b85bd4c6d454f3a959446ba09b10ef0635dd606531f630b1daf55a9ba285109
+- evidence_id: feba-main
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media
+  locator: Named block BG11R, starting line 95
+  accessed_at: '2026-10-21T07:58:53.930003Z'
+  support: supports
+  summary: Exact variant-specific main recipe; later FEBA revision is independent
+    formula evidence, not an authenticated historical CultureBotHT copy.
+  quote: "Media\tBG11R\t\r\nDescription\tFor growing Synechococcus elongatus PCC 7942,\
+    \ pH should be 7.1\t\r\nMinimal\tTRUE\t\r\nControlled vocabulary\tConcentration\t\
+    Units\r\nSodium nitrate\t1.5\tg/L\r\nPotassium phosphate dibasic\t0.04\tg/L\r\n\
+    Magnesium Sulfate Heptahydrate\t0.075\tg/L\r\nCalcium chloride dihydrate\t0.036\t\
+    g/L\r\nCitric Acid\t0.006\tg/L\r\nFerric ammonium citrate\t0.006\tg/L\r\nEDTA\
+    \ (disodium salt)\t0.001\tg/L\r\nSodium carbonate\t0.02\tg/L\r\nTrace metal mix\
+    \ A5\t1\tX\r\n\t\t\r\n"
+  snapshot_sha256: a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848
+- evidence_id: feba-a5
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes
+  locator: Trace metal mix A5, complete 1000 X block
+  accessed_at: '2026-10-21T07:58:53.930648Z'
+  support: supports
+  summary: Six stock rows and explicit 1000 X strength; the main recipe requests 1
+    X.
+  quote: "Media\tTrace metal mix A5\t\r\nDescription\t1000X trace metal solution for\
+    \ Synechococcus elongatus PCC 7942\t\r\nX\t1000\t\r\nControlled vocabulary\tConcentration\t\
+    Units\r\nBoric Acid\t2.86\tg/L\r\nManganese (II) chloride tetrahydrate\t1.81\t\
+    g/L\r\nZinc sulfate heptahydrate\t0.222\tg/L\r\nSodium Molybdate Dihydrate\t0.39\t\
+    g/L\r\nCopper (II) sulfate pentahydrate\t0.079\tg/L\r\nCobalt(II) nitrate hexahydrate\t\
+    49.4\tmg/L\r\n\t\t\r\n"
+  snapshot_sha256: b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4
+- evidence_id: feba-version
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commit/803273865ea9e83fab770ec4f13670db80e1180b
+  locator: $.hash and $.date
+  accessed_at: '2026-10-21T07:59:41.378955Z'
+  support: supports
+  summary: Exact FEBA revision 803273865ea9e83fab770ec4f13670db80e1180b dated 2026-09-10T16:27:42+00:00
+    postdates the March import.
+  snapshot_sha256: 0a4998d61b96db10c549512e2fe06718e04b687e6bbc6b2c1ea121c3c11a53ca
+- evidence_id: compound-0
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 400
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Sodium nitrate\t7631-99-4\tSigma\tS8170\t84.99\tNaNO3\t\t\tyes\t\tyes\t\
+    yes\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-1
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 337
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Potassium phosphate dibasic\t7758-11-4\tSigma\tP3786\t174.18\tK2HPO4, dibasic\
+    \ anhydrous sodium phosphate\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-2
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 277
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Magnesium Sulfate Heptahydrate\t10034-99-8\tSigma\tM1880\t246.47\tEpsom\
+    \ salts, MgSO4 7H2O\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-3
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 90
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Calcium chloride dihydrate\t10035-04-8\tSigma\tC5080\t147.01\tCalcium Chloride\
+    \ Dihydrate, CaCl2*2H2O\t\t\tyes\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-4
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 119
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Citric Acid\t77-92-9\tSigma\t251275\t192.12\t\t\t\tno\tyes\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-5
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 186
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Ferric ammonium citrate\t1185-57-5\tSigma\tF5879\t\t\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-6
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 178
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "EDTA (disodium salt)\t6381-92-6\tSigma\tE6635\t336.206\t\t\t\t\t\t\t\t\r\
+    \n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-7
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 373
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Sodium carbonate\t497-19-8\t\t\t105.9888\tNa2CO3\t\t\tyes\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-8
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 84
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Boric Acid\t10043-35-3\t\t0084-01 (JT*)\t61.83\tH3BO3\t\t\tno\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-9
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 278
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Manganese (II) chloride tetrahydrate\t13446-34-9\tSigma\tM3634\t197.91\t\
+    MnCl2, manganese chloride, MnCl2 4H2O\t\t\tyes\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-10
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 474
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Zinc sulfate heptahydrate\t7446-20-0\tSigma\tZ0251\t287.56\tzinc sulfate,\
+    \ ZnSO4 7H2O\t\t\t\t\t\tyes\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-11
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 399
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Sodium Molybdate Dihydrate\t10102-40-6\tSigma\t331058\t241.95\tNa2MoO4 2H2O,\
+    \ Na2MoO4-2H2O\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-12
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 129
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Copper (II) sulfate pentahydrate\t7758-99-8\tSigma\tC8027\t249.69\tBlue\
+    \ Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate,\
+    \ CuSO4 5H2O, Cupric Sulfate\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-13
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Exact named compound row 124
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Source compound metadata; internal synonym and hydration tensions remain
+    explicit.
+  quote: "Cobalt(II) nitrate hexahydrate\t10026-22-9\t\t\t291.03\tCo(NO3)2 6H2O\t\t\
+    \t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31604
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31604
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.987529Z'
+  support: supports
+  summary: CHEBI:31604 resolves to ferric ammonium citrate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 31acf125b469ffd64e2de503550d29336a7a0f99c8a3ea24b80b53bdb715e7f8
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi53258
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:54.823692Z'
+  support: supports
+  summary: CHEBI:53258 resolves to sodium citrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2a35c6dc3532c2276c6b19aef0992260e14b1fc36423fa3eb812bb94f63c4371
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86214
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.123051Z'
+  support: supports
+  summary: CHEBI:86214 resolves to cobalt dinitrate hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 90cf3337643bc22bd3940bfbdee70a144b13af549ea12534184385f036b4633c
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: citric-acid-candidate
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30769
+  locator: Exact OLS CHEBI:30769 scientific properties
+  accessed_at: '2026-10-21T11:01:47.015892Z'
+  support: supports
+  summary: Citric acid is a distinct nonobsolete acid entity, CAS 77-92-9, formula
+    C6H8O7; candidate correction is separate from this read-only review.
+  snapshot_sha256: caa0ca256c3120bc99d649d132215c88d06cdff463dffac90dcecef930e7c429
+- evidence_id: culturebothtRepository-attempt
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/CultureBotHT
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:53:13.557900Z'
+  support: context_only
+  summary: The exact public CultureBotHT endpoint returned HTTP 404 at its retained
+    actual access time. The March import bytes and their historical equivalence to
+    the later FEBA recipe remain unverified. Current named FEBA amounts are independently
+    assessable; the missing historical source is a partial-completion limit.
+  snapshot_sha256: 4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9
+- evidence_id: culturebothtExactBG11-attempt
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/BG11.yaml
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:53:13.992884Z'
+  support: context_only
+  summary: The exact public CultureBotHT endpoint returned HTTP 404 at its retained
+    actual access time. The March import bytes and their historical equivalence to
+    the later FEBA recipe remain unverified. Current named FEBA amounts are independently
+    assessable; the missing historical source is a partial-completion limit.
+  snapshot_sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+- evidence_id: culturebothtExactBG11R-attempt
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/BG11R.yaml
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:53:14.090846Z'
+  support: context_only
+  summary: The exact public CultureBotHT endpoint returned HTTP 404 at its retained
+    actual access time. The March import bytes and their historical equivalence to
+    the later FEBA recipe remain unverified. Current named FEBA amounts are independently
+    assessable; the missing historical source is a partial-completion limit.
+  snapshot_sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+- evidence_id: forms
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/406/chemical-form-inventory.json
+  locator: Every target and maintained-owner ingredient form, exact source compound
+    fields and OLS scientific properties
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: All supplied-form decisions are explicit; exact identifier/label validity
+    is separate from source correspondence.
+  snapshot_sha256: 042703526cd2a6ea84e71e2abcf03c770ebf82103ffd18b938be5a39da8874bc
+- evidence_id: pubmed-36550226
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36550226&retmode=xml
+  locator: Exact PMID and complete Abstract XML block
+  accessed_at: '2026-10-21T22:53:13.558275Z'
+  support: supports
+  summary: Current abstract evidence for its own strain and cultivation condition;
+    not a historical response authentication or proof of exact FEBA variant equivalence.
+  quote: <Abstract><AbstractText>The biotechnological potential of Nostoc linckia
+    as a biofertilizer and source of bioactive compounds makes it important to study
+    its growth physiology and productivity. Since nitrogen is a fundamental component
+    of N. linckia biomass, we compared the growth and biochemical composition of cultures
+    grown in BG11 (i.e., in the presence of nitrate) and BG11<sub>0</sub> (in the
+    absence of nitrate). Cultures grown in BG11 accumulated more cell biomass reaching
+    a dry weight of 1.65&#x2009;&#xb1;&#x2009;0.06&#xa0;g&#xa0;L<sup>-1</sup>, compared
+    to 0.92&#x2009;&#xb1;&#x2009;0.01&#xa0;g&#xa0;L<sup>-1</sup> in BG11<sub>0</sub>
+    after 240&#xa0;h of culture. Biomass productivity was higher in culture grown
+    in BG11 medium (average 317&#x2009;&#xb1;&#x2009;38&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>)
+    compared to that attained in BG11<sub>0</sub> (average 262&#x2009;&#xb1;&#x2009;37&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>).
+    The chlorophyll content of cells grown in BG11 increased continuously up to (39.0&#x2009;&#xb1;&#x2009;1.3&#xa0;mg&#xa0;L<sup>-1</sup>),
+    while in BG11<sub>0</sub> it increased much more slowly (13.6&#x2009;&#xb1;&#x2009;0.8&#xa0;mg&#xa0;L<sup>-1</sup>).
+    Biomass grown in BG11 had higher protein and phycobilin contents. However, despite
+    the differences in biochemical composition and pigment concentration, between
+    BG11 and BG11<sub>0</sub> cultures, both their net photosynthetic rates and maximum
+    quantum yields of the photosystem II resulted in similar.</AbstractText><CopyrightInformation>&#xa9;
+    2022. The Author(s).</CopyrightInformation></Abstract>
+  snapshot_sha256: 8028b6651b9830c4270af7190cabaeb1a38fd693ee7efc39e5a97724a0d2d024
+- evidence_id: pubmed-36437912
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36437912&retmode=xml
+  locator: Exact PMID and complete Abstract XML block
+  accessed_at: '2026-10-21T22:43:52.664155Z'
+  support: supports
+  summary: Current abstract evidence for its own strain and cultivation condition;
+    not a historical response authentication or proof of exact FEBA variant equivalence.
+  quote: <Abstract><AbstractText>Cyanobacteria are diverse photosynthetic microorganisms
+    able to produce a myriad of bioactive chemicals. To make possible the rational
+    exploitation of these microorganisms, it is fundamental to know their metabolic
+    capabilities and to have genomic resources. In this context, the main objective
+    of this research was to determine the genome features and the biochemical profile
+    of <i>Synechococcus</i> sp. UCP002. The cyanobacterium was isolated from the Peruvian
+    Amazon Basin region and cultured in BG-11 medium. Growth parameters, genome features,
+    and the biochemical profile of the cyanobacterium were determined using standardized
+    methods. <i>Synechococcus</i> sp. UCP002 had a specific growth rate of 0.086 &#xb1;
+    0.008&#xa0;&#x3bc; and a doubling time of 8.08 &#xb1; 0.78&#xa0;h. The complete
+    genome of <i>Synechococcus</i> sp. UCP002 had a size of &#x223c;3.53&#xa0;Mb with
+    a high coverage (&#x223c;200x), and its quality parameters were acceptable (completeness
+    = 99.29%, complete and single-copy genes = 97.5%, and contamination = 0.35%).
+    Additionally, the cyanobacterium had six plasmids ranging from 24 to 200&#xa0;kbp.
+    The annotated genome revealed &#x223c;3,422 genes, &#x223c; 3,374 protein-coding
+    genes (with &#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas
+    systems, and 61 non-coding RNAs. Both the genome and plasmids had the genes for
+    prokaryotic defense systems. Additionally, the genome had genes coding the transcription
+    factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy metal
+    pollution. The biochemical profile showed primary nutrients, essential amino acids,
+    some essential fatty acids, pigments (e.g., all-trans-&#x3b2;-carotene, chlorophyll
+    a, and phycocyanin), and phenolic compounds. In conclusion, <i>Synechococcus</i>
+    sp. UCP002 shows biotechnological potential to produce human and animal nutrients
+    and raw materials for biofuels and could be a new source of genes for synthetic
+    biological applications.</AbstractText><CopyrightInformation>Copyright &#xa9;
+    2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&#xed;guez, Vargas,
+    Tresierra, Barriga, Marapara, Adrianz&#xe9;n, Ruiz and Castro.</CopyrightInformation></Abstract>
+  snapshot_sha256: 8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8
+- evidence_id: pubmed-34584038
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml
+  locator: Exact PMID and complete Abstract XML block
+  accessed_at: '2026-10-21T22:43:52.663967Z'
+  support: supports
+  summary: Current abstract evidence for its own strain and cultivation condition;
+    not a historical response authentication or proof of exact FEBA variant equivalence.
+  quote: <Abstract><AbstractText><i>Scenedesmus obliquus</i> ABC-009 is a microalgal
+    strain that accumulates large amounts of lutein, particularly when subjected to
+    growth-limiting conditions. Here, the performance of this strain was evaluated
+    for the simultaneous production of lutein and biofuels under three different modes
+    of cultivation - photoautotrophic mode using BG-11 medium with air or 2% CO<sub>2</sub>
+    and heterotrophic mode using YM medium. While it was found that the highest fatty
+    acid methyl ester (FAME) level and lutein content per biomass (%) were achieved
+    in BG-11 medium with CO<sub>2</sub> and air, respectively, heterotrophic cultivation
+    resulted in much higher biomass productivity. While the cell concentrations of
+    the cultures grown under BG-11 and CO<sub>2</sub> were largely similar to those
+    grown in YM medium, the disparity in the biomass yield was largely attributed
+    to the larger cell volume in heterotrophically cultivated cells. Post-cultivation
+    light treatment was found to further enhance the biomass productivity in all three
+    cases and lutein content in heterotrophic conditions. Consequently, the maximum
+    biomass (757.14 &#xb1; 20.20 mg/l/d), FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein
+    (1.006 &#xb1; 0.23 mg/l/d) productivities were obtained under heterotrophic cultivation.
+    Next, large-scale lutein production using microalgae was demonstrated using a
+    1-ton open raceway pond cultivation system and a low-cost fertilizer (Eco-Sol).
+    The overall biomass yields were similar in both media, while slightly higher lutein
+    content was obtained using the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>
+  snapshot_sha256: 2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c
+- evidence_id: taxon-2885151
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=2885151&retmode=xml
+  locator: TaxaSet/Taxon exact primary TaxId and ScientificName
+  accessed_at: '2026-10-21T22:53:13.558217Z'
+  support: supports
+  summary: Current exact taxonomy identity; neither strain-medium growth nor a genome
+    accession follows from taxonomy.
+  quote: "<TaxId>2885151</TaxId>\n    <ScientificName>Synechococcus sp. UCP002</ScientificName>"
+  snapshot_sha256: 5197f61e7a0d62deb51681416bda9c774e0933c9954e61027ba4ce2851ed449b
+- evidence_id: taxon-3088
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=3088&retmode=xml
+  locator: TaxaSet/Taxon exact primary TaxId and ScientificName
+  accessed_at: '2026-10-21T22:53:13.558253Z'
+  support: supports
+  summary: Current exact taxonomy identity; neither strain-medium growth nor a genome
+    accession follows from taxonomy.
+  quote: "<TaxId>3088</TaxId>\n    <ScientificName>Tetradesmus obliquus</ScientificName>"
+  snapshot_sha256: e7c5023b1466ff13755fb30d640c08641a6c8fcce296fb1ae86036453afe071d
+- evidence_id: marker-abc009
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MG971386.1&rettype=gb&retmode=text
+  locator: GenBank VERSION MG971386.1, definition and source qualifiers
+  accessed_at: '2026-10-21T22:43:52.664001Z'
+  support: supports
+  summary: ABC-009 is linked to Tetradesmus obliquus/taxon 3088 by a partial small-subunit
+    rRNA marker. It is not a genome assembly or a medium growth test.
+  quote: "LOCUS       MG971386                1791 bp    DNA     linear   PLN 26-FEB-2018\n\
+    DEFINITION  Tetradesmus obliquus strain ABC-009 small subunit ribosomal RNA\n\
+    \            gene, partial sequence.\nACCESSION   MG971386\nVERSION     MG971386.1\n\
+    KEYWORDS    .\nSOURCE      Tetradesmus obliquus\n  ORGANISM  Tetradesmus obliquus\n\
+    \            Eukaryota; Viridiplantae; Chlorophyta; core chlorophytes;\n     \
+    \       Chlorophyceae; CS clade; Sphaeropleales; Scenedesmaceae;\n           \
+    \ Tetradesmus.\nREFERENCE   1  (bases 1 to 1791)\n  AUTHORS   Koh,H.G., Kim,E.K.,\
+    \ Lee,B. and Chang,Y.K.\n  TITLE     Direct Submission\n  JOURNAL   Submitted\
+    \ (21-FEB-2018) Chemical & Biomolecular Engineering, Korea\n            Advanced\
+    \ Institute of Science and Technology, 291 Daehak-ro\n            Yuseong-ku,\
+    \ Daejeon, Choong-nam 34141, South Korea\nCOMMENT     ##Assembly-Data-START##\n\
+    \            Sequencing Technology :: Sanger dideoxy sequencing\n            ##Assembly-Data-END##\n\
+    FEATURES             Location/Qualifiers\n     source          1..1791\n     \
+    \                /organism=\"Tetradesmus obliquus\"\n                     /mol_type=\"\
+    genomic DNA\"\n                     /strain=\"ABC-009\"\n                    \
+    \ /db_xref=\"taxon:3088\"\n                     /geo_loc_name=\"South Korea\"\n\
+    \     rRNA            <1..>1791\n                     /product=\"small subunit\
+    \ ribosomal RNA\"\n"
+  snapshot_sha256: 64f89e74ff3146233b82d65ff76604665cbf873a1ce359a5f824d4dd7c0e9012
+- evidence_id: bg11ContextTaxonomy92942-attempt
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=92942&retmode=xml
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:53:13.986808Z'
+  support: context_only
+  summary: The current NCBI taxonomy request for 92942 returned HTTP 429. The exact
+    Nostoc name/ID correspondence cannot be independently confirmed from that response.
+    The separate current paper abstract is available and supports the paper-scoped
+    growth comparison.
+  snapshot_sha256: 01ec4cdfa0073304c3db8986e458b8be2ba034ee6b4bdb07218fd6f2e2a7fa8c
+- evidence_id: claim-scope
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/406/historical-evidence-inventory.json
+  locator: All eight inherited algae BG11 owner evidence objects and exact current
+    abstract checks
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Eight owner claims assessed individually; six bacterial namesake claims
+    and all other BG11 comparison claims are excluded from transfer.
+  snapshot_sha256: c4e7537efd59f24d2e6a6ccc0d655cd0339990eb794718d07ba363361639f8c7
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch041/406/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: c40dbd07b91776fba625e4fca45938de92530321ad79083957e4163226ee36d0
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BG11R.yaml; data/normalized_yaml/algae/bg11.yaml;
+    data/normalized_yaml/algae/bg11r.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 5, "timestamp_issues": []}, {"input": "data/normalized_yaml/algae/bg11.yaml",
+    "events": 4, "timestamp_issues": []}, {"input": "data/normalized_yaml/algae/bg11r.yaml",
+    "events": 4, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_culturebotht_bg11_score15.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: 'Full current repair inspected: exact ID/source/name signature guards,
+    media_term/references/flags/history updates; it does not validate amounts, chemical
+    forms, historical source availability or attached claim evidence. No execution
+    or inferred past causation.'
+  snapshot_sha256: dd0fdb7eeb89759865c968f788c900aa2d6b2f42c60dc2aef93afc14b33c4f36
+- evidence_id: historical-report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/bg11.md
+  locator: Exact matching historical report header and all ingredient decision rows
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Derivative diagnostic reports missing attached source evidence and not-performed
+    source checks. Current FEBA comparison supersedes that absence of assessment,
+    not the immutable report bytes.
+  snapshot_sha256: ad2042c416bcda85c35533d97a76f10f634dfcbc5eb7779a8f28d990e8c8c6bc
+- evidence_id: historical-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/bg11r.md
+  locator: Exact matching historical report header and all ingredient decision rows
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Derivative diagnostic reports missing attached source evidence and not-performed
+    source checks. Current FEBA comparison supersedes that absence of assessment,
+    not the immutable report bytes.
+  snapshot_sha256: 7da677a7eea9e9f314e0fed9f3165abafe9702d997700829caa8f3c15572a6bb
+- evidence_id: historical-report-6
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BG11R.md
+  locator: Exact matching historical report header and all ingredient decision rows
+  accessed_at: '2026-10-21T23:13:55Z'
+  support: context_only
+  summary: Derivative diagnostic reports missing attached source evidence and not-performed
+    source checks. Current FEBA comparison supersedes that absence of assessment,
+    not the immutable report bytes.
+  snapshot_sha256: 7b93873dc2159fcb0b8d94daf2cf487c1773dd0904dd58dd803e19088662a69c
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '14 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 14/14
+    primary and 0/14 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131527
+  - chebi29377
+  - chebi31440
+  - chebi31604
+  - chebi31795
+  - chebi32312
+  - chebi33118
+  - chebi53258
+  - chebi63005
+  - chebi64734
+  - chebi75213
+  - chebi86158
+  - chebi86214
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 14: primary 100.00%;
+    secondary 0.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 110 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Evidence-only marks source-supported numerals whose scoped
+    evidence must be attached; verified is reserved for an existing value, unit and
+    basis with matching attached evidence.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"Sodium nitrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"\
+    1.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Sodium nitrate\",\n        \"\
+    exact_source_quote\": \"Sodium nitrate\\t1.5\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q2\",\n    \"name\": \"Sodium nitrate\",\n    \"stage\": \"Main medium rate,\
+    \ exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"1.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Sodium nitrate\",\n        \"\
+    exact_source_quote\": \"Sodium nitrate\\t1.5\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q3\",\n    \"name\": \"Sodium nitrate\",\n    \"stage\": \"Main medium rate,\
+    \ exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"1.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Sodium nitrate\",\n        \"\
+    exact_source_quote\": \"Sodium nitrate\\t1.5\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q4\",\n    \"name\": \"Potassium phosphate dibasic\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.04\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Potassium phosphate dibasic\"\
+    ,\n        \"exact_source_quote\": \"Potassium phosphate dibasic\\t0.04\\tg/L\\\
+    n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q5\",\n    \"name\": \"Potassium phosphate dibasic\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.04\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Potassium phosphate dibasic\"\
+    ,\n        \"exact_source_quote\": \"Potassium phosphate dibasic\\t0.04\\tg/L\\\
+    n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q6\",\n    \"name\": \"Potassium phosphate dibasic\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.04\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.04\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Potassium phosphate dibasic\"\
+    ,\n        \"exact_source_quote\": \"Potassium phosphate dibasic\\t0.04\\tg/L\\\
+    n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q7\",\n    \"name\": \"Magnesium Sulfate Heptahydrate\",\n    \"stage\": \"\
+    Main medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.075\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.075\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Magnesium Sulfate Heptahydrate\"\
+    ,\n        \"exact_source_quote\": \"Magnesium Sulfate Heptahydrate\\t0.075\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q8\",\n    \"name\": \"Magnesium Sulfate Heptahydrate\",\n    \"stage\": \"\
+    Main medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.075\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.075\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Magnesium Sulfate Heptahydrate\"\
+    ,\n        \"exact_source_quote\": \"Magnesium Sulfate Heptahydrate\\t0.075\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q9\",\n    \"name\": \"Magnesium Sulfate Heptahydrate\",\n    \"stage\": \"\
+    Main medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.075\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.075\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Magnesium Sulfate Heptahydrate\"\
+    ,\n        \"exact_source_quote\": \"Magnesium Sulfate Heptahydrate\\t0.075\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q10\",\n    \"name\": \"Calcium chloride dihydrate\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.036\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Calcium chloride dihydrate\"\
+    ,\n        \"exact_source_quote\": \"Calcium chloride dihydrate\\t0.036\\tg/L\\\
+    n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q11\",\n    \"name\": \"Calcium chloride dihydrate\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.036\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Calcium chloride dihydrate\"\
+    ,\n        \"exact_source_quote\": \"Calcium chloride dihydrate\\t0.036\\tg/L\\\
+    n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q12\",\n    \"name\": \"Calcium chloride dihydrate\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.036\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Calcium chloride dihydrate\"\
+    ,\n        \"exact_source_quote\": \"Calcium chloride dihydrate\\t0.036\\tg/L\\\
+    n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"name\": \"Citric Acid\",\n    \"stage\": \"Main medium rate,\
+    \ exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.006\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Citric Acid\",\n        \"exact_source_quote\"\
+    : \"Citric Acid\\t0.006\\tg/L\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion. This does not validate the sodium-citrate\
+    \ identifier assigned to source citric acid.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q14\",\n    \"name\": \"Citric Acid\",\n    \"stage\": \"Main medium rate,\
+    \ exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.006\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Citric Acid\",\n        \"exact_source_quote\"\
+    : \"Citric Acid\\t0.006\\tg/L\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion. This does not validate the sodium-citrate\
+    \ identifier assigned to source citric acid.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q15\",\n    \"name\": \"Citric Acid\",\n    \"stage\": \"Main medium rate,\
+    \ exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.006\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Citric Acid\",\n        \"exact_source_quote\"\
+    : \"Citric Acid\\t0.006\\tg/L\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion. This does not validate the sodium-citrate\
+    \ identifier assigned to source citric acid.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q16\",\n    \"name\": \"Ferric ammonium citrate\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.006\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Ferric ammonium citrate\",\n\
+    \        \"exact_source_quote\": \"Ferric ammonium citrate\\t0.006\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q17\",\n    \"name\": \"Ferric ammonium citrate\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.006\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Ferric ammonium citrate\",\n\
+    \        \"exact_source_quote\": \"Ferric ammonium citrate\\t0.006\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q18\",\n    \"name\": \"Ferric ammonium citrate\",\n    \"stage\": \"Main\
+    \ medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.006\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Ferric ammonium citrate\",\n\
+    \        \"exact_source_quote\": \"Ferric ammonium citrate\\t0.006\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q19\",\n    \"name\": \"EDTA (disodium salt)\",\n    \"stage\": \"Main medium\
+    \ rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.001\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row EDTA (disodium salt)\",\n  \
+    \      \"exact_source_quote\": \"EDTA (disodium salt)\\t0.001\\tg/L\\n\",\n  \
+    \      \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion. Hydration remains unresolved independently\
+    \ of the verified source numeral.\"\n  },\n  {\n    \"decision_id\": \"q20\",\n\
+    \    \"name\": \"EDTA (disodium salt)\",\n    \"stage\": \"Main medium rate, exact\
+    \ named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.001\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row EDTA (disodium salt)\",\n  \
+    \      \"exact_source_quote\": \"EDTA (disodium salt)\\t0.001\\tg/L\\n\",\n  \
+    \      \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion. Hydration remains unresolved independently\
+    \ of the verified source numeral.\"\n  },\n  {\n    \"decision_id\": \"q21\",\n\
+    \    \"name\": \"EDTA (disodium salt)\",\n    \"stage\": \"Main medium rate, exact\
+    \ named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.001\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row EDTA (disodium salt)\",\n  \
+    \      \"exact_source_quote\": \"EDTA (disodium salt)\\t0.001\\tg/L\\n\",\n  \
+    \      \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion. Hydration remains unresolved independently\
+    \ of the verified source numeral.\"\n  },\n  {\n    \"decision_id\": \"q22\",\n\
+    \    \"name\": \"Sodium carbonate\",\n    \"stage\": \"Main medium rate, exact\
+    \ named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.02\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Sodium carbonate\",\n      \
+    \  \"exact_source_quote\": \"Sodium carbonate\\t0.02\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q23\",\n    \"name\": \"Sodium carbonate\",\n    \"stage\": \"Main medium\
+    \ rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.02\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Sodium carbonate\",\n      \
+    \  \"exact_source_quote\": \"Sodium carbonate\\t0.02\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q24\",\n    \"name\": \"Sodium carbonate\",\n    \"stage\": \"Main medium\
+    \ rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.02\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R direct row Sodium carbonate\",\n      \
+    \  \"exact_source_quote\": \"Sodium carbonate\\t0.02\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. Direct source concentration, without\
+    \ batch-volume or mass-to-molar conversion.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q25\",\n    \"name\": \"Boric Acid\",\n    \"stage\": \"Main medium rate,\
+    \ exact named FEBA variant\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.00286\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.00286\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Boric Acid\",\n        \"exact_source_quote\"\
+    : \"Boric Acid\\t2.86\\tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q26\",\n    \"name\": \"Boric Acid\",\n    \"stage\":\
+    \ \"Main medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00286\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.00286\",\n \
+    \     \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Boric Acid\",\n        \"exact_source_quote\"\
+    : \"Boric Acid\\t2.86\\tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q27\",\n    \"name\": \"Boric Acid\",\n    \"stage\":\
+    \ \"Main medium rate, exact named FEBA variant\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00286\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.00286\",\n \
+    \     \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Boric Acid\",\n        \"exact_source_quote\"\
+    : \"Boric Acid\\t2.86\\tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q28\",\n    \"name\": \"Manganese (II) chloride tetrahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0018100000000000002\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n\
+    \      \"value\": \"0.00181\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Manganese (II) chloride tetrahydrate\"\
+    ,\n        \"exact_source_quote\": \"Manganese (II) chloride tetrahydrate\\t1.81\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q29\",\n    \"name\": \"Manganese (II) chloride tetrahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0018100000000000002\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n\
+    \      \"value\": \"0.00181\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Manganese (II) chloride tetrahydrate\"\
+    ,\n        \"exact_source_quote\": \"Manganese (II) chloride tetrahydrate\\t1.81\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q30\",\n    \"name\": \"Manganese (II) chloride tetrahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11r.yaml\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0018100000000000002\",\n  \
+    \        \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n\
+    \      \"value\": \"0.00181\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Manganese (II) chloride tetrahydrate\"\
+    ,\n        \"exact_source_quote\": \"Manganese (II) chloride tetrahydrate\\t1.81\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q31\",\n    \"name\": \"Zinc sulfate heptahydrate\",\n\
+    \    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.000222\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.000222\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Zinc sulfate heptahydrate\",\n \
+    \       \"exact_source_quote\": \"Zinc sulfate heptahydrate\\t0.222\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q32\",\n    \"name\": \"Zinc sulfate heptahydrate\",\n\
+    \    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.000222\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.000222\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Zinc sulfate heptahydrate\",\n \
+    \       \"exact_source_quote\": \"Zinc sulfate heptahydrate\\t0.222\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q33\",\n    \"name\": \"Zinc sulfate heptahydrate\",\n\
+    \    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11r.yaml\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.000222\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.000222\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Zinc sulfate heptahydrate\",\n \
+    \       \"exact_source_quote\": \"Zinc sulfate heptahydrate\\t0.222\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q34\",\n    \"name\": \"Sodium Molybdate Dihydrate\",\n\
+    \    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.00039000000000000005\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\":\
+    \ {\n      \"value\": \"0.00039\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"feba_mixes\",\n     \
+    \   \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Sodium Molybdate Dihydrate\",\n\
+    \        \"exact_source_quote\": \"Sodium Molybdate Dihydrate\\t0.39\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q35\",\n    \"name\": \"Sodium Molybdate Dihydrate\",\n\
+    \    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.00039000000000000005\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\":\
+    \ {\n      \"value\": \"0.00039\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"feba_mixes\",\n     \
+    \   \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Sodium Molybdate Dihydrate\",\n\
+    \        \"exact_source_quote\": \"Sodium Molybdate Dihydrate\\t0.39\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q36\",\n    \"name\": \"Sodium Molybdate Dihydrate\",\n\
+    \    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11r.yaml\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.00039000000000000005\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\":\
+    \ {\n      \"value\": \"0.00039\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"feba_mixes\",\n     \
+    \   \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Sodium Molybdate Dihydrate\",\n\
+    \        \"exact_source_quote\": \"Sodium Molybdate Dihydrate\\t0.39\\tg/L\\n\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q37\",\n    \"name\": \"Copper (II) sulfate pentahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"7.9e-05\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.000079\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Copper (II) sulfate pentahydrate\"\
+    ,\n        \"exact_source_quote\": \"Copper (II) sulfate pentahydrate\\t0.079\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q38\",\n    \"name\": \"Copper (II) sulfate pentahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"7.9e-05\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.000079\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Copper (II) sulfate pentahydrate\"\
+    ,\n        \"exact_source_quote\": \"Copper (II) sulfate pentahydrate\\t0.079\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q39\",\n    \"name\": \"Copper (II) sulfate pentahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11r.yaml\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"7.9e-05\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.000079\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Copper (II) sulfate pentahydrate\"\
+    ,\n        \"exact_source_quote\": \"Copper (II) sulfate pentahydrate\\t0.079\\\
+    tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q40\",\n    \"name\": \"Cobalt(II) nitrate hexahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0494\",\n          \"unit\"\
+    : \"MG_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.0494\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Cobalt(II) nitrate hexahydrate\"\
+    ,\n        \"exact_source_quote\": \"Cobalt(II) nitrate hexahydrate\\t49.4\\tmg/L\\\
+    n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q41\",\n    \"name\": \"Cobalt(II) nitrate hexahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0494\",\n          \"unit\"\
+    : \"MG_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.0494\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Cobalt(II) nitrate hexahydrate\"\
+    ,\n        \"exact_source_quote\": \"Cobalt(II) nitrate hexahydrate\\t49.4\\tmg/L\\\
+    n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q42\",\n    \"name\": \"Cobalt(II) nitrate hexahydrate\"\
+    ,\n    \"stage\": \"Main medium rate, exact named FEBA variant\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/algae/bg11r.yaml\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0494\",\n          \"unit\"\
+    : \"MG_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\"\
+    : \"0.0494\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock row Cobalt(II) nitrate hexahydrate\"\
+    ,\n        \"exact_source_quote\": \"Cobalt(II) nitrate hexahydrate\\t49.4\\tmg/L\\\
+    n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_media\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R A5 receiving-strength row\",\n        \"\
+    exact_source_quote\": \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock-strength declaration\",\n        \"\
+    exact_source_quote\": \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Numerical value and unit\
+    \ are supported for the named ingredient. The stock rate is divided by 1000 for\
+    \ 1 X in the receiving medium; decimal floating serialization is not a substantive\
+    \ discrepancy. No ml dose or measured final volume is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q43\",\n    \"name\": \"Boric Acid\",\n    \"stage\":\
+    \ \"Source-only A5 stock concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [],\n    \"desired\": {\n      \"stock_value\": \"2.86\"\
+    ,\n      \"stock_unit\": \"g/L\",\n      \"stock_strength_X\": 1000\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_mixes\",\n\
+    \        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 exact constituent row\",\n        \"exact_source_quote\"\
+    : \"Boric Acid\\t2.86\\tg/L\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock strength\",\n        \"exact_source_quote\"\
+    : \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Retain the stock stage in\
+    \ attached dilution evidence or a separately curated stock; never substitute this\
+    \ undiluted value into the main medium.\"\n  },\n  {\n    \"decision_id\": \"\
+    q44\",\n    \"name\": \"Manganese (II) chloride tetrahydrate\",\n    \"stage\"\
+    : \"Source-only A5 stock concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [],\n    \"desired\": {\n      \"stock_value\": \"1.81\"\
+    ,\n      \"stock_unit\": \"g/L\",\n      \"stock_strength_X\": 1000\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_mixes\",\n\
+    \        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 exact constituent row\",\n        \"exact_source_quote\"\
+    : \"Manganese (II) chloride tetrahydrate\\t1.81\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock strength\",\n        \"exact_source_quote\"\
+    : \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Retain the stock stage in\
+    \ attached dilution evidence or a separately curated stock; never substitute this\
+    \ undiluted value into the main medium.\"\n  },\n  {\n    \"decision_id\": \"\
+    q45\",\n    \"name\": \"Zinc sulfate heptahydrate\",\n    \"stage\": \"Source-only\
+    \ A5 stock concentration\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [],\n    \"desired\": {\n      \"stock_value\": \"0.222\",\n      \"stock_unit\"\
+    : \"g/L\",\n      \"stock_strength_X\": 1000\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 exact constituent row\",\n        \"exact_source_quote\"\
+    : \"Zinc sulfate heptahydrate\\t0.222\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock strength\",\n        \"exact_source_quote\"\
+    : \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Retain the stock stage in\
+    \ attached dilution evidence or a separately curated stock; never substitute this\
+    \ undiluted value into the main medium.\"\n  },\n  {\n    \"decision_id\": \"\
+    q46\",\n    \"name\": \"Sodium Molybdate Dihydrate\",\n    \"stage\": \"Source-only\
+    \ A5 stock concentration\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [],\n    \"desired\": {\n      \"stock_value\": \"0.39\",\n      \"stock_unit\"\
+    : \"g/L\",\n      \"stock_strength_X\": 1000\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 exact constituent row\",\n        \"exact_source_quote\"\
+    : \"Sodium Molybdate Dihydrate\\t0.39\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock strength\",\n        \"exact_source_quote\"\
+    : \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Retain the stock stage in\
+    \ attached dilution evidence or a separately curated stock; never substitute this\
+    \ undiluted value into the main medium.\"\n  },\n  {\n    \"decision_id\": \"\
+    q47\",\n    \"name\": \"Copper (II) sulfate pentahydrate\",\n    \"stage\": \"\
+    Source-only A5 stock concentration\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [],\n    \"desired\": {\n      \"stock_value\": \"0.079\"\
+    ,\n      \"stock_unit\": \"g/L\",\n      \"stock_strength_X\": 1000\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_mixes\",\n\
+    \        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 exact constituent row\",\n        \"exact_source_quote\"\
+    : \"Copper (II) sulfate pentahydrate\\t0.079\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock strength\",\n        \"exact_source_quote\"\
+    : \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Retain the stock stage in\
+    \ attached dilution evidence or a separately curated stock; never substitute this\
+    \ undiluted value into the main medium.\"\n  },\n  {\n    \"decision_id\": \"\
+    q48\",\n    \"name\": \"Cobalt(II) nitrate hexahydrate\",\n    \"stage\": \"Source-only\
+    \ A5 stock concentration\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [],\n    \"desired\": {\n      \"stock_value\": \"49.4\",\n      \"stock_unit\"\
+    : \"mg/L\",\n      \"stock_strength_X\": 1000\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 exact constituent row\",\n        \"exact_source_quote\"\
+    : \"Cobalt(II) nitrate hexahydrate\\t49.4\\tmg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"A5 stock strength\",\n        \"exact_source_quote\"\
+    : \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Retain the stock stage in\
+    \ attached dilution evidence or a separately curated stock; never substitute this\
+    \ undiluted value into the main medium.\"\n  },\n  {\n    \"decision_id\": \"\
+    q49\",\n    \"name\": \"A5 receiving dose\",\n    \"stage\": \"Source relative\
+    \ stock strength\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [],\n    \"desired\": {\n      \"receiving_strength_X\": 1,\n      \"stock_strength_X\"\
+    : 1000,\n      \"liquid_dose_ml\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"feba_media\",\n        \"source_url\": \"\
+    https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Exact main A5 row\",\n        \"exact_source_quote\"\
+    : \"Trace metal mix A5\\t1\\tX\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      },\n      {\n        \"source_key\": \"feba_mixes\",\n      \
+    \  \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Exact stock X declaration\",\n        \"exact_source_quote\"\
+    : \"X\\t1000\\t\\n\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Explicit relative strengths\
+    \ justify the ratio only. No liquid addition volume is printed, and no extra final-volume\
+    \ claim is made.\"\n  },\n  {\n    \"decision_id\": \"q50\",\n    \"name\": \"\
+    Sodium nitrate\",\n    \"stage\": \"Stored ingredient identity metadata; numerical\
+    \ CAS/MW and mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 7631-99-4; MW: 84.99\"\n   \
+    \   }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n     \
+    \   \"Compound\": \"Sodium nitrate\",\n        \"CAS\": \"7631-99-4\",\n     \
+    \   \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"S8170\",\n        \"\
+    FW\": \"84.99\",\n        \"Synonyms\": \"NaNO3\",\n        \"Notes\": \"\",\n\
+    \        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"yes\",\n        \"\
+    FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"yes\",\n        \"FEBA_stress\"\
+    : \"yes\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 400\",\n        \"exact_source_quote\"\
+    : \"Sodium nitrate\\t7631-99-4\\tSigma\\tS8170\\t84.99\\tNaNO3\\t\\t\\tyes\\t\\\
+    tyes\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q51\",\n    \"name\": \"Potassium phosphate dibasic\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[1].notes\",\n        \"stored\": \"CAS: 7758-11-4;\
+    \ MW: 174.18\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Potassium phosphate dibasic\",\n        \"CAS\":\
+    \ \"7758-11-4\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\":\
+    \ \"P3786\",\n        \"FW\": \"174.18\",\n        \"Synonyms\": \"K2HPO4, dibasic\
+    \ anhydrous sodium phosphate\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 337\",\n        \"exact_source_quote\"\
+    : \"Potassium phosphate dibasic\\t7758-11-4\\tSigma\\tP3786\\t174.18\\tK2HPO4,\
+    \ dibasic anhydrous sodium phosphate\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source preferred name, K2HPO4,\
+    \ CAS 7758-11-4 and FW 174.18 support dipotassium hydrogen phosphate. Source synonym\
+    \ dibasic anhydrous sodium phosphate is internally inconsistent. OLS has a trihydrate\
+    \ synonym but its formula/mass encode the unhydrated salt; neither stray synonym\
+    \ establishes an actual source hydrate or sodium salt. Historical mapping confidence\
+    \ 0.90, where present, is a local algorithm assertion, not externally verified\
+    \ probability.\"\n  },\n  {\n    \"decision_id\": \"q52\",\n    \"name\": \"Magnesium\
+    \ Sulfate Heptahydrate\",\n    \"stage\": \"Stored ingredient identity metadata;\
+    \ numerical CAS/MW and mapping-confidence text\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].notes\",\n        \"stored\": \"CAS:\
+    \ 10034-99-8; MW: 246.47\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Magnesium Sulfate Heptahydrate\",\n        \"CAS\"\
+    : \"10034-99-8\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\"\
+    : \"M1880\",\n        \"FW\": \"246.47\",\n        \"Synonyms\": \"Epsom salts,\
+    \ MgSO4 7H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n   \
+    \     \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 277\",\n        \"exact_source_quote\"\
+    : \"Magnesium Sulfate Heptahydrate\\t10034-99-8\\tSigma\\tM1880\\t246.47\\tEpsom\
+    \ salts, MgSO4 7H2O\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"\
+    25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n        \"\
+    quote_representation\": \"UTF-8 source decoded with universal newlines; tabs and\
+    \ all other characters retained. Raw external evidence preserves original CRLF.\"\
+    \n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate or buffer\
+    \ agrees with the asserted chemical identity. Explicit hydration is retained;\
+    \ source compound identifiers and formula metadata do not supply new preparation\
+    \ conditions. Historical mapping confidence 0.90, where present, is a local algorithm\
+    \ assertion, not externally verified probability.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q53\",\n    \"name\": \"Calcium chloride dihydrate\",\n    \"stage\": \"Stored\
+    \ ingredient identity metadata; numerical CAS/MW and mapping-confidence text\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 10035-04-8; MW: 147.01\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Calcium chloride\
+    \ dihydrate\",\n        \"CAS\": \"10035-04-8\",\n        \"Company\": \"Sigma\"\
+    ,\n        \"CatalogNumber\": \"C5080\",\n        \"FW\": \"147.01\",\n      \
+    \  \"Synonyms\": \"Calcium Chloride Dihydrate, CaCl2*2H2O\",\n        \"Notes\"\
+    : \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"yes\",\n \
+    \       \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\"\
+    : \"\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 90\",\n        \"exact_source_quote\"\
+    : \"Calcium chloride dihydrate\\t10035-04-8\\tSigma\\tC5080\\t147.01\\tCalcium\
+    \ Chloride Dihydrate, CaCl2*2H2O\\t\\t\\tyes\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q54\",\n    \"name\": \"Citric Acid\",\n    \"stage\"\
+    : \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 77-92-9; MW: 192.12\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Citric Acid\"\
+    ,\n        \"CAS\": \"77-92-9\",\n        \"Company\": \"Sigma\",\n        \"\
+    CatalogNumber\": \"251275\",\n        \"FW\": \"192.12\",\n        \"Synonyms\"\
+    : \"\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"no\",\n        \"FEBA_carbon\": \"yes\",\n        \"FEBA_nitrogen\": \"\"\
+    ,\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 119\",\n        \"exact_source_quote\"\
+    : \"Citric Acid\\t77-92-9\\tSigma\\t251275\\t192.12\\t\\t\\t\\tno\\tyes\\t\\t\\\
+    t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source citric acid and CAS\
+    \ 77-92-9 differ from CHEBI:53258, the trisodium citrate salt. CHEBI:30769 is\
+    \ the supported acid candidate; retain the source amount. Historical mapping confidence\
+    \ 0.90, where present, is a local algorithm assertion, not externally verified\
+    \ probability.\"\n  },\n  {\n    \"decision_id\": \"q55\",\n    \"name\": \"Ferric\
+    \ ammonium citrate\",\n    \"stage\": \"Stored ingredient identity metadata; numerical\
+    \ CAS/MW and mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5\"\n      }\n    ],\n\
+    \    \"desired\": {\n      \"source_compound_fields\": {\n        \"Compound\"\
+    : \"Ferric ammonium citrate\",\n        \"CAS\": \"1185-57-5\",\n        \"Company\"\
+    : \"Sigma\",\n        \"CatalogNumber\": \"F5879\",\n        \"FW\": \"\",\n \
+    \       \"Synonyms\": \"\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 186\",\n        \"exact_source_quote\"\
+    : \"Ferric ammonium citrate\\t1185-57-5\\tSigma\\tF5879\\t\\t\\t\\t\\t\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source ferric ammonium citrate\
+    \ matches the asserted mixture identity. OLS describes indefinite composition;\
+    \ no fixed molar mass or molecular concentration is inferred. Historical mapping\
+    \ confidence 0.90, where present, is a local algorithm assertion, not externally\
+    \ verified probability.\"\n  },\n  {\n    \"decision_id\": \"q56\",\n    \"name\"\
+    : \"EDTA (disodium salt)\",\n    \"stage\": \"Stored ingredient identity metadata;\
+    \ numerical CAS/MW and mapping-confidence text\",\n    \"decision\": \"conflict\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"CAS:\
+    \ 6381-92-6; MW: 336.206\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"EDTA (disodium salt)\",\n        \"CAS\": \"6381-92-6\"\
+    ,\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"E6635\",\n  \
+    \      \"FW\": \"336.206\",\n        \"Synonyms\": \"\",\n        \"Notes\": \"\
+    \",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"\",\n        \"\
+    FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\"\
+    : \"\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 178\",\n        \"exact_source_quote\"\
+    : \"EDTA (disodium salt)\\t6381-92-6\\tSigma\\tE6635\\t336.206\\t\\t\\t\\t\\t\\\
+    t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source EDTA disodium name\
+    \ does not specify hydration. CAS 6381-92-6 conflicts with the anhydrous term\
+    \ CAS 139-33-3, while source FW 336.206 is consistent with the anhydrous term\
+    \ mass 336.208. Supplier-specific hydration remains unresolved; do not silently\
+    \ choose a hydrate or recalculate the amount. Historical mapping confidence 0.90,\
+    \ where present, is a local algorithm assertion, not externally verified probability.\"\
+    \n  },\n  {\n    \"decision_id\": \"q57\",\n    \"name\": \"Sodium carbonate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[7].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 497-19-8; MW: 105.9888\"\n \
+    \     }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n   \
+    \     \"Compound\": \"Sodium carbonate\",\n        \"CAS\": \"497-19-8\",\n  \
+    \      \"Company\": \"\",\n        \"CatalogNumber\": \"\",\n        \"FW\": \"\
+    105.9888\",\n        \"Synonyms\": \"Na2CO3\",\n        \"Notes\": \"\",\n   \
+    \     \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\"\
+    : \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n  \
+    \      \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 373\",\n        \"exact_source_quote\"\
+    : \"Sodium carbonate\\t497-19-8\\t\\t\\t105.9888\\tNa2CO3\\t\\t\\tyes\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q58\",\n    \"name\": \"Boric Acid\",\n    \"stage\"\
+    : \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].notes\",\n        \"stored\": \"CAS: 10043-35-3; MW: 61.83;\
+    \ From Trace metal mix A5\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Boric Acid\",\n        \"CAS\": \"10043-35-3\",\n\
+    \        \"Company\": \"\",\n        \"CatalogNumber\": \"0084-01 (JT*)\",\n \
+    \       \"FW\": \"61.83\",\n        \"Synonyms\": \"H3BO3\",\n        \"Notes\"\
+    : \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"no\",\n  \
+    \      \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\"\
+    : \"\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 84\",\n        \"exact_source_quote\"\
+    : \"Boric Acid\\t10043-35-3\\t\\t0084-01 (JT*)\\t61.83\\tH3BO3\\t\\t\\tno\\t\\\
+    t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q59\",\n    \"name\": \"Manganese (II) chloride tetrahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[9].notes\",\n        \"stored\": \"CAS: 13446-34-9;\
+    \ MW: 197.91; From Trace metal mix A5; Ontology enriched via CAS-RN lookup\"\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n  \
+    \      \"Compound\": \"Manganese (II) chloride tetrahydrate\",\n        \"CAS\"\
+    : \"13446-34-9\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\"\
+    : \"M3634\",\n        \"FW\": \"197.91\",\n        \"Synonyms\": \"MnCl2, manganese\
+    \ chloride, MnCl2 4H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\
+    \",\n        \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\": \"\",\n    \
+    \    \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 278\",\n        \"exact_source_quote\"\
+    : \"Manganese (II) chloride tetrahydrate\\t13446-34-9\\tSigma\\tM3634\\t197.91\\\
+    tMnCl2, manganese chloride, MnCl2 4H2O\\t\\t\\tyes\\t\\t\\t\\t\\n\",\n       \
+    \ \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q60\",\n    \"name\": \"Zinc sulfate heptahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[10].notes\",\n        \"stored\": \"CAS: 7446-20-0;\
+    \ MW: 287.56; From Trace metal mix A5; Ontology enriched via CAS-RN lookup\"\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n  \
+    \      \"Compound\": \"Zinc sulfate heptahydrate\",\n        \"CAS\": \"7446-20-0\"\
+    ,\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"Z0251\",\n  \
+    \      \"FW\": \"287.56\",\n        \"Synonyms\": \"zinc sulfate, ZnSO4 7H2O\"\
+    ,\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n  \
+    \      \"FEBA_stress\": \"yes\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 474\",\n        \"exact_source_quote\"\
+    : \"Zinc sulfate heptahydrate\\t7446-20-0\\tSigma\\tZ0251\\t287.56\\tzinc sulfate,\
+    \ ZnSO4 7H2O\\t\\t\\t\\t\\t\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q61\",\n    \"name\": \"Sodium Molybdate Dihydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[11].notes\",\n        \"stored\": \"CAS: 10102-40-6;\
+    \ MW: 241.95; From Trace metal mix A5; Ontology enriched via CAS-RN lookup\"\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n  \
+    \      \"Compound\": \"Sodium Molybdate Dihydrate\",\n        \"CAS\": \"10102-40-6\"\
+    ,\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"331058\",\n \
+    \       \"FW\": \"241.95\",\n        \"Synonyms\": \"Na2MoO4 2H2O, Na2MoO4-2H2O\"\
+    ,\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n  \
+    \      \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 399\",\n        \"exact_source_quote\"\
+    : \"Sodium Molybdate Dihydrate\\t10102-40-6\\tSigma\\t331058\\t241.95\\tNa2MoO4\
+    \ 2H2O, Na2MoO4-2H2O\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\":\
+    \ \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q62\",\n    \"name\": \"Copper (II) sulfate pentahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[12].notes\",\n        \"stored\": \"CAS: 7758-99-8;\
+    \ MW: 249.69; From Trace metal mix A5; Ontology enriched via CAS-RN lookup\"\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n  \
+    \      \"Compound\": \"Copper (II) sulfate pentahydrate\",\n        \"CAS\": \"\
+    7758-99-8\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"C8027\"\
+    ,\n        \"FW\": \"249.69\",\n        \"Synonyms\": \"Blue Vitriol, Cupric sulfate\
+    \ pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate, CuSO4 5H2O,\
+    \ Cupric Sulfate\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n\
+    \        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 129\",\n        \"exact_source_quote\"\
+    : \"Copper (II) sulfate pentahydrate\\t7758-99-8\\tSigma\\tC8027\\t249.69\\tBlue\
+    \ Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate,\
+    \ CuSO4 5H2O, Cupric Sulfate\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q63\",\n    \"name\": \"Cobalt(II) nitrate hexahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BG11R.yaml\",\n    \
+    \    \"field_path\": \"ingredients[13].notes\",\n        \"stored\": \"CAS: 10026-22-9;\
+    \ MW: 291.03; From Trace metal mix A5; Ontology enriched via CAS-RN lookup\"\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n  \
+    \      \"Compound\": \"Cobalt(II) nitrate hexahydrate\",\n        \"CAS\": \"\
+    10026-22-9\",\n        \"Company\": \"\",\n        \"CatalogNumber\": \"\",\n\
+    \        \"FW\": \"291.03\",\n        \"Synonyms\": \"Co(NO3)2 6H2O\",\n     \
+    \   \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n  \
+    \      \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 124\",\n        \"exact_source_quote\"\
+    : \"Cobalt(II) nitrate hexahydrate\\t10026-22-9\\t\\t\\t291.03\\tCo(NO3)2 6H2O\\\
+    t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q64\",\n    \"name\": \"Sodium nitrate\",\n    \"\
+    stage\": \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n        \"\
+    field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 7631-99-4; MW: 84.99\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Sodium nitrate\"\
+    ,\n        \"CAS\": \"7631-99-4\",\n        \"Company\": \"Sigma\",\n        \"\
+    CatalogNumber\": \"S8170\",\n        \"FW\": \"84.99\",\n        \"Synonyms\"\
+    : \"NaNO3\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n      \
+    \  \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"yes\",\n        \"FEBA_stress\": \"yes\",\n        \"All_star\": \"\"\n  \
+    \    }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 400\",\n        \"exact_source_quote\"\
+    : \"Sodium nitrate\\t7631-99-4\\tSigma\\tS8170\\t84.99\\tNaNO3\\t\\t\\tyes\\t\\\
+    tyes\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q65\",\n    \"name\": \"Potassium phosphate dibasic\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[1].notes\",\n        \"stored\": \"CAS:\
+    \ 7758-11-4; MW: 174.18\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Potassium phosphate dibasic\",\n        \"CAS\":\
+    \ \"7758-11-4\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\":\
+    \ \"P3786\",\n        \"FW\": \"174.18\",\n        \"Synonyms\": \"K2HPO4, dibasic\
+    \ anhydrous sodium phosphate\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 337\",\n        \"exact_source_quote\"\
+    : \"Potassium phosphate dibasic\\t7758-11-4\\tSigma\\tP3786\\t174.18\\tK2HPO4,\
+    \ dibasic anhydrous sodium phosphate\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source preferred name, K2HPO4,\
+    \ CAS 7758-11-4 and FW 174.18 support dipotassium hydrogen phosphate. Source synonym\
+    \ dibasic anhydrous sodium phosphate is internally inconsistent. OLS has a trihydrate\
+    \ synonym but its formula/mass encode the unhydrated salt; neither stray synonym\
+    \ establishes an actual source hydrate or sodium salt. Historical mapping confidence\
+    \ 0.90, where present, is a local algorithm assertion, not externally verified\
+    \ probability.\"\n  },\n  {\n    \"decision_id\": \"q66\",\n    \"name\": \"Magnesium\
+    \ Sulfate Heptahydrate\",\n    \"stage\": \"Stored ingredient identity metadata;\
+    \ numerical CAS/MW and mapping-confidence text\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].notes\",\n        \"stored\": \"CAS:\
+    \ 10034-99-8; MW: 246.47\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Magnesium Sulfate Heptahydrate\",\n        \"CAS\"\
+    : \"10034-99-8\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\"\
+    : \"M1880\",\n        \"FW\": \"246.47\",\n        \"Synonyms\": \"Epsom salts,\
+    \ MgSO4 7H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n   \
+    \     \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 277\",\n        \"exact_source_quote\"\
+    : \"Magnesium Sulfate Heptahydrate\\t10034-99-8\\tSigma\\tM1880\\t246.47\\tEpsom\
+    \ salts, MgSO4 7H2O\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"\
+    25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n        \"\
+    quote_representation\": \"UTF-8 source decoded with universal newlines; tabs and\
+    \ all other characters retained. Raw external evidence preserves original CRLF.\"\
+    \n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate or buffer\
+    \ agrees with the asserted chemical identity. Explicit hydration is retained;\
+    \ source compound identifiers and formula metadata do not supply new preparation\
+    \ conditions. Historical mapping confidence 0.90, where present, is a local algorithm\
+    \ assertion, not externally verified probability.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q67\",\n    \"name\": \"Calcium chloride dihydrate\",\n    \"stage\": \"Stored\
+    \ ingredient identity metadata; numerical CAS/MW and mapping-confidence text\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 10035-04-8; MW: 147.01\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Calcium chloride\
+    \ dihydrate\",\n        \"CAS\": \"10035-04-8\",\n        \"Company\": \"Sigma\"\
+    ,\n        \"CatalogNumber\": \"C5080\",\n        \"FW\": \"147.01\",\n      \
+    \  \"Synonyms\": \"Calcium Chloride Dihydrate, CaCl2*2H2O\",\n        \"Notes\"\
+    : \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"yes\",\n \
+    \       \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\"\
+    : \"\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 90\",\n        \"exact_source_quote\"\
+    : \"Calcium chloride dihydrate\\t10035-04-8\\tSigma\\tC5080\\t147.01\\tCalcium\
+    \ Chloride Dihydrate, CaCl2*2H2O\\t\\t\\tyes\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q68\",\n    \"name\": \"Citric Acid\",\n    \"stage\"\
+    : \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 77-92-9; MW: 192.12\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Citric Acid\"\
+    ,\n        \"CAS\": \"77-92-9\",\n        \"Company\": \"Sigma\",\n        \"\
+    CatalogNumber\": \"251275\",\n        \"FW\": \"192.12\",\n        \"Synonyms\"\
+    : \"\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"no\",\n        \"FEBA_carbon\": \"yes\",\n        \"FEBA_nitrogen\": \"\"\
+    ,\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 119\",\n        \"exact_source_quote\"\
+    : \"Citric Acid\\t77-92-9\\tSigma\\t251275\\t192.12\\t\\t\\t\\tno\\tyes\\t\\t\\\
+    t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source citric acid and CAS\
+    \ 77-92-9 differ from CHEBI:53258, the trisodium citrate salt. CHEBI:30769 is\
+    \ the supported acid candidate; retain the source amount. Historical mapping confidence\
+    \ 0.90, where present, is a local algorithm assertion, not externally verified\
+    \ probability.\"\n  },\n  {\n    \"decision_id\": \"q69\",\n    \"name\": \"Ferric\
+    \ ammonium citrate\",\n    \"stage\": \"Stored ingredient identity metadata; numerical\
+    \ CAS/MW and mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5\"\n      }\n    ],\n\
+    \    \"desired\": {\n      \"source_compound_fields\": {\n        \"Compound\"\
+    : \"Ferric ammonium citrate\",\n        \"CAS\": \"1185-57-5\",\n        \"Company\"\
+    : \"Sigma\",\n        \"CatalogNumber\": \"F5879\",\n        \"FW\": \"\",\n \
+    \       \"Synonyms\": \"\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 186\",\n        \"exact_source_quote\"\
+    : \"Ferric ammonium citrate\\t1185-57-5\\tSigma\\tF5879\\t\\t\\t\\t\\t\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source ferric ammonium citrate\
+    \ matches the asserted mixture identity. OLS describes indefinite composition;\
+    \ no fixed molar mass or molecular concentration is inferred. Historical mapping\
+    \ confidence 0.90, where present, is a local algorithm assertion, not externally\
+    \ verified probability.\"\n  },\n  {\n    \"decision_id\": \"q70\",\n    \"name\"\
+    : \"EDTA (disodium salt)\",\n    \"stage\": \"Stored ingredient identity metadata;\
+    \ numerical CAS/MW and mapping-confidence text\",\n    \"decision\": \"conflict\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"CAS:\
+    \ 6381-92-6; MW: 336.206\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"EDTA (disodium salt)\",\n        \"CAS\": \"6381-92-6\"\
+    ,\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"E6635\",\n  \
+    \      \"FW\": \"336.206\",\n        \"Synonyms\": \"\",\n        \"Notes\": \"\
+    \",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"\",\n        \"\
+    FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\"\
+    : \"\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 178\",\n        \"exact_source_quote\"\
+    : \"EDTA (disodium salt)\\t6381-92-6\\tSigma\\tE6635\\t336.206\\t\\t\\t\\t\\t\\\
+    t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source EDTA disodium name\
+    \ does not specify hydration. CAS 6381-92-6 conflicts with the anhydrous term\
+    \ CAS 139-33-3, while source FW 336.206 is consistent with the anhydrous term\
+    \ mass 336.208. Supplier-specific hydration remains unresolved; do not silently\
+    \ choose a hydrate or recalculate the amount. Historical mapping confidence 0.90,\
+    \ where present, is a local algorithm assertion, not externally verified probability.\"\
+    \n  },\n  {\n    \"decision_id\": \"q71\",\n    \"name\": \"Sodium carbonate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[7].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 497-19-8; MW: 105.9888\"\n \
+    \     }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n   \
+    \     \"Compound\": \"Sodium carbonate\",\n        \"CAS\": \"497-19-8\",\n  \
+    \      \"Company\": \"\",\n        \"CatalogNumber\": \"\",\n        \"FW\": \"\
+    105.9888\",\n        \"Synonyms\": \"Na2CO3\",\n        \"Notes\": \"\",\n   \
+    \     \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\"\
+    : \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n  \
+    \      \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 373\",\n        \"exact_source_quote\"\
+    : \"Sodium carbonate\\t497-19-8\\t\\t\\t105.9888\\tNa2CO3\\t\\t\\tyes\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q72\",\n    \"name\": \"Boric Acid\",\n    \"stage\"\
+    : \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n        \"\
+    field_path\": \"ingredients[8].notes\",\n        \"stored\": \"CAS: 10043-35-3;\
+    \ MW: 61.83; From Trace metal mix A5\"\n      }\n    ],\n    \"desired\": {\n\
+    \      \"source_compound_fields\": {\n        \"Compound\": \"Boric Acid\",\n\
+    \        \"CAS\": \"10043-35-3\",\n        \"Company\": \"\",\n        \"CatalogNumber\"\
+    : \"0084-01 (JT*)\",\n        \"FW\": \"61.83\",\n        \"Synonyms\": \"H3BO3\"\
+    ,\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"no\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n\
+    \        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 84\",\n        \"exact_source_quote\"\
+    : \"Boric Acid\\t10043-35-3\\t\\t0084-01 (JT*)\\t61.83\\tH3BO3\\t\\t\\tno\\t\\\
+    t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q73\",\n    \"name\": \"Manganese (II) chloride tetrahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[9].notes\",\n        \"stored\": \"CAS:\
+    \ 13446-34-9; MW: 197.91; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Manganese (II) chloride tetrahydrate\",\n       \
+    \ \"CAS\": \"13446-34-9\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\"\
+    : \"M3634\",\n        \"FW\": \"197.91\",\n        \"Synonyms\": \"MnCl2, manganese\
+    \ chloride, MnCl2 4H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\
+    \",\n        \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\": \"\",\n    \
+    \    \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 278\",\n        \"exact_source_quote\"\
+    : \"Manganese (II) chloride tetrahydrate\\t13446-34-9\\tSigma\\tM3634\\t197.91\\\
+    tMnCl2, manganese chloride, MnCl2 4H2O\\t\\t\\tyes\\t\\t\\t\\t\\n\",\n       \
+    \ \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q74\",\n    \"name\": \"Zinc sulfate heptahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[10].notes\",\n        \"stored\": \"CAS:\
+    \ 7446-20-0; MW: 287.56; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Zinc sulfate heptahydrate\",\n        \"CAS\": \"\
+    7446-20-0\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"Z0251\"\
+    ,\n        \"FW\": \"287.56\",\n        \"Synonyms\": \"zinc sulfate, ZnSO4 7H2O\"\
+    ,\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n  \
+    \      \"FEBA_stress\": \"yes\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 474\",\n        \"exact_source_quote\"\
+    : \"Zinc sulfate heptahydrate\\t7446-20-0\\tSigma\\tZ0251\\t287.56\\tzinc sulfate,\
+    \ ZnSO4 7H2O\\t\\t\\t\\t\\t\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q75\",\n    \"name\": \"Sodium Molybdate Dihydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[11].notes\",\n        \"stored\": \"CAS:\
+    \ 10102-40-6; MW: 241.95; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Sodium Molybdate Dihydrate\",\n        \"CAS\": \"\
+    10102-40-6\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"\
+    331058\",\n        \"FW\": \"241.95\",\n        \"Synonyms\": \"Na2MoO4 2H2O,\
+    \ Na2MoO4-2H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n \
+    \       \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 399\",\n        \"exact_source_quote\"\
+    : \"Sodium Molybdate Dihydrate\\t10102-40-6\\tSigma\\t331058\\t241.95\\tNa2MoO4\
+    \ 2H2O, Na2MoO4-2H2O\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\":\
+    \ \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q76\",\n    \"name\": \"Copper (II) sulfate pentahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[12].notes\",\n        \"stored\": \"CAS:\
+    \ 7758-99-8; MW: 249.69; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Copper (II) sulfate pentahydrate\",\n        \"CAS\"\
+    : \"7758-99-8\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\":\
+    \ \"C8027\",\n        \"FW\": \"249.69\",\n        \"Synonyms\": \"Blue Vitriol,\
+    \ Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate,\
+    \ CuSO4 5H2O, Cupric Sulfate\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 129\",\n        \"exact_source_quote\"\
+    : \"Copper (II) sulfate pentahydrate\\t7758-99-8\\tSigma\\tC8027\\t249.69\\tBlue\
+    \ Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate,\
+    \ CuSO4 5H2O, Cupric Sulfate\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q77\",\n    \"name\": \"Cobalt(II) nitrate hexahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ingredients[13].notes\",\n        \"stored\": \"CAS:\
+    \ 10026-22-9; MW: 291.03; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Cobalt(II) nitrate hexahydrate\",\n        \"CAS\"\
+    : \"10026-22-9\",\n        \"Company\": \"\",\n        \"CatalogNumber\": \"\"\
+    ,\n        \"FW\": \"291.03\",\n        \"Synonyms\": \"Co(NO3)2 6H2O\",\n   \
+    \     \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n  \
+    \      \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 124\",\n        \"exact_source_quote\"\
+    : \"Cobalt(II) nitrate hexahydrate\\t10026-22-9\\t\\t\\t291.03\\tCo(NO3)2 6H2O\\\
+    t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q78\",\n    \"name\": \"Sodium nitrate\",\n    \"\
+    stage\": \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n       \
+    \ \"field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 7631-99-4; MW: 84.99\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Sodium nitrate\"\
+    ,\n        \"CAS\": \"7631-99-4\",\n        \"Company\": \"Sigma\",\n        \"\
+    CatalogNumber\": \"S8170\",\n        \"FW\": \"84.99\",\n        \"Synonyms\"\
+    : \"NaNO3\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n      \
+    \  \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"yes\",\n        \"FEBA_stress\": \"yes\",\n        \"All_star\": \"\"\n  \
+    \    }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 400\",\n        \"exact_source_quote\"\
+    : \"Sodium nitrate\\t7631-99-4\\tSigma\\tS8170\\t84.99\\tNaNO3\\t\\t\\tyes\\t\\\
+    tyes\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q79\",\n    \"name\": \"Potassium phosphate dibasic\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].notes\",\n        \"stored\": \"CAS:\
+    \ 7758-11-4; MW: 174.18\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Potassium phosphate dibasic\",\n        \"CAS\":\
+    \ \"7758-11-4\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\":\
+    \ \"P3786\",\n        \"FW\": \"174.18\",\n        \"Synonyms\": \"K2HPO4, dibasic\
+    \ anhydrous sodium phosphate\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 337\",\n        \"exact_source_quote\"\
+    : \"Potassium phosphate dibasic\\t7758-11-4\\tSigma\\tP3786\\t174.18\\tK2HPO4,\
+    \ dibasic anhydrous sodium phosphate\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source preferred name, K2HPO4,\
+    \ CAS 7758-11-4 and FW 174.18 support dipotassium hydrogen phosphate. Source synonym\
+    \ dibasic anhydrous sodium phosphate is internally inconsistent. OLS has a trihydrate\
+    \ synonym but its formula/mass encode the unhydrated salt; neither stray synonym\
+    \ establishes an actual source hydrate or sodium salt. Historical mapping confidence\
+    \ 0.90, where present, is a local algorithm assertion, not externally verified\
+    \ probability.\"\n  },\n  {\n    \"decision_id\": \"q80\",\n    \"name\": \"Magnesium\
+    \ Sulfate Heptahydrate\",\n    \"stage\": \"Stored ingredient identity metadata;\
+    \ numerical CAS/MW and mapping-confidence text\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].notes\",\n        \"stored\": \"CAS:\
+    \ 10034-99-8; MW: 246.47\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Magnesium Sulfate Heptahydrate\",\n        \"CAS\"\
+    : \"10034-99-8\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\"\
+    : \"M1880\",\n        \"FW\": \"246.47\",\n        \"Synonyms\": \"Epsom salts,\
+    \ MgSO4 7H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n   \
+    \     \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 277\",\n        \"exact_source_quote\"\
+    : \"Magnesium Sulfate Heptahydrate\\t10034-99-8\\tSigma\\tM1880\\t246.47\\tEpsom\
+    \ salts, MgSO4 7H2O\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"\
+    25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n        \"\
+    quote_representation\": \"UTF-8 source decoded with universal newlines; tabs and\
+    \ all other characters retained. Raw external evidence preserves original CRLF.\"\
+    \n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate or buffer\
+    \ agrees with the asserted chemical identity. Explicit hydration is retained;\
+    \ source compound identifiers and formula metadata do not supply new preparation\
+    \ conditions. Historical mapping confidence 0.90, where present, is a local algorithm\
+    \ assertion, not externally verified probability.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q81\",\n    \"name\": \"Calcium chloride dihydrate\",\n    \"stage\": \"Stored\
+    \ ingredient identity metadata; numerical CAS/MW and mapping-confidence text\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 10035-04-8; MW: 147.01\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Calcium chloride\
+    \ dihydrate\",\n        \"CAS\": \"10035-04-8\",\n        \"Company\": \"Sigma\"\
+    ,\n        \"CatalogNumber\": \"C5080\",\n        \"FW\": \"147.01\",\n      \
+    \  \"Synonyms\": \"Calcium Chloride Dihydrate, CaCl2*2H2O\",\n        \"Notes\"\
+    : \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"yes\",\n \
+    \       \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\"\
+    : \"\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 90\",\n        \"exact_source_quote\"\
+    : \"Calcium chloride dihydrate\\t10035-04-8\\tSigma\\tC5080\\t147.01\\tCalcium\
+    \ Chloride Dihydrate, CaCl2*2H2O\\t\\t\\tyes\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q82\",\n    \"name\": \"Citric Acid\",\n    \"stage\"\
+    : \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 77-92-9; MW: 192.12\"\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_compound_fields\": {\n        \"Compound\": \"Citric Acid\"\
+    ,\n        \"CAS\": \"77-92-9\",\n        \"Company\": \"Sigma\",\n        \"\
+    CatalogNumber\": \"251275\",\n        \"FW\": \"192.12\",\n        \"Synonyms\"\
+    : \"\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"no\",\n        \"FEBA_carbon\": \"yes\",\n        \"FEBA_nitrogen\": \"\"\
+    ,\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 119\",\n        \"exact_source_quote\"\
+    : \"Citric Acid\\t77-92-9\\tSigma\\t251275\\t192.12\\t\\t\\t\\tno\\tyes\\t\\t\\\
+    t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source citric acid and CAS\
+    \ 77-92-9 differ from CHEBI:53258, the trisodium citrate salt. CHEBI:30769 is\
+    \ the supported acid candidate; retain the source amount. Historical mapping confidence\
+    \ 0.90, where present, is a local algorithm assertion, not externally verified\
+    \ probability.\"\n  },\n  {\n    \"decision_id\": \"q83\",\n    \"name\": \"Ferric\
+    \ ammonium citrate\",\n    \"stage\": \"Stored ingredient identity metadata; numerical\
+    \ CAS/MW and mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5\"\n      }\n    ],\n\
+    \    \"desired\": {\n      \"source_compound_fields\": {\n        \"Compound\"\
+    : \"Ferric ammonium citrate\",\n        \"CAS\": \"1185-57-5\",\n        \"Company\"\
+    : \"Sigma\",\n        \"CatalogNumber\": \"F5879\",\n        \"FW\": \"\",\n \
+    \       \"Synonyms\": \"\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 186\",\n        \"exact_source_quote\"\
+    : \"Ferric ammonium citrate\\t1185-57-5\\tSigma\\tF5879\\t\\t\\t\\t\\t\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source ferric ammonium citrate\
+    \ matches the asserted mixture identity. OLS describes indefinite composition;\
+    \ no fixed molar mass or molecular concentration is inferred. Historical mapping\
+    \ confidence 0.90, where present, is a local algorithm assertion, not externally\
+    \ verified probability.\"\n  },\n  {\n    \"decision_id\": \"q84\",\n    \"name\"\
+    : \"EDTA (disodium salt)\",\n    \"stage\": \"Stored ingredient identity metadata;\
+    \ numerical CAS/MW and mapping-confidence text\",\n    \"decision\": \"conflict\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"CAS:\
+    \ 6381-92-6; MW: 336.206\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"EDTA (disodium salt)\",\n        \"CAS\": \"6381-92-6\"\
+    ,\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"E6635\",\n  \
+    \      \"FW\": \"336.206\",\n        \"Synonyms\": \"\",\n        \"Notes\": \"\
+    \",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"\",\n        \"\
+    FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\"\
+    : \"\",\n        \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 178\",\n        \"exact_source_quote\"\
+    : \"EDTA (disodium salt)\\t6381-92-6\\tSigma\\tE6635\\t336.206\\t\\t\\t\\t\\t\\\
+    t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source EDTA disodium name\
+    \ does not specify hydration. CAS 6381-92-6 conflicts with the anhydrous term\
+    \ CAS 139-33-3, while source FW 336.206 is consistent with the anhydrous term\
+    \ mass 336.208. Supplier-specific hydration remains unresolved; do not silently\
+    \ choose a hydrate or recalculate the amount. Historical mapping confidence 0.90,\
+    \ where present, is a local algorithm assertion, not externally verified probability.\"\
+    \n  },\n  {\n    \"decision_id\": \"q85\",\n    \"name\": \"Sodium carbonate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 497-19-8; MW: 105.9888\"\n \
+    \     }\n    ],\n    \"desired\": {\n      \"source_compound_fields\": {\n   \
+    \     \"Compound\": \"Sodium carbonate\",\n        \"CAS\": \"497-19-8\",\n  \
+    \      \"Company\": \"\",\n        \"CatalogNumber\": \"\",\n        \"FW\": \"\
+    105.9888\",\n        \"Synonyms\": \"Na2CO3\",\n        \"Notes\": \"\",\n   \
+    \     \"Hans80Anti\": \"\",\n        \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\"\
+    : \"\",\n        \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n  \
+    \      \"All_star\": \"\"\n      }\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 373\",\n        \"exact_source_quote\"\
+    : \"Sodium carbonate\\t497-19-8\\t\\t\\t105.9888\\tNa2CO3\\t\\t\\tyes\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q86\",\n    \"name\": \"Boric Acid\",\n    \"stage\"\
+    : \"Stored ingredient identity metadata; numerical CAS/MW and mapping-confidence\
+    \ text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n       \
+    \ \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"CAS: 10043-35-3;\
+    \ MW: 61.83; From Trace metal mix A5\"\n      }\n    ],\n    \"desired\": {\n\
+    \      \"source_compound_fields\": {\n        \"Compound\": \"Boric Acid\",\n\
+    \        \"CAS\": \"10043-35-3\",\n        \"Company\": \"\",\n        \"CatalogNumber\"\
+    : \"0084-01 (JT*)\",\n        \"FW\": \"61.83\",\n        \"Synonyms\": \"H3BO3\"\
+    ,\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"no\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n\
+    \        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 84\",\n        \"exact_source_quote\"\
+    : \"Boric Acid\\t10043-35-3\\t\\t0084-01 (JT*)\\t61.83\\tH3BO3\\t\\t\\tno\\t\\\
+    t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q87\",\n    \"name\": \"Manganese (II) chloride tetrahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[9].notes\",\n        \"stored\": \"CAS:\
+    \ 13446-34-9; MW: 197.91; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Manganese (II) chloride tetrahydrate\",\n       \
+    \ \"CAS\": \"13446-34-9\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\"\
+    : \"M3634\",\n        \"FW\": \"197.91\",\n        \"Synonyms\": \"MnCl2, manganese\
+    \ chloride, MnCl2 4H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\
+    \",\n        \"Hans80metals\": \"yes\",\n        \"FEBA_carbon\": \"\",\n    \
+    \    \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 278\",\n        \"exact_source_quote\"\
+    : \"Manganese (II) chloride tetrahydrate\\t13446-34-9\\tSigma\\tM3634\\t197.91\\\
+    tMnCl2, manganese chloride, MnCl2 4H2O\\t\\t\\tyes\\t\\t\\t\\t\\n\",\n       \
+    \ \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q88\",\n    \"name\": \"Zinc sulfate heptahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[10].notes\",\n        \"stored\": \"CAS:\
+    \ 7446-20-0; MW: 287.56; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Zinc sulfate heptahydrate\",\n        \"CAS\": \"\
+    7446-20-0\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"Z0251\"\
+    ,\n        \"FW\": \"287.56\",\n        \"Synonyms\": \"zinc sulfate, ZnSO4 7H2O\"\
+    ,\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n  \
+    \      \"FEBA_stress\": \"yes\",\n        \"All_star\": \"\"\n      }\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 474\",\n        \"exact_source_quote\"\
+    : \"Zinc sulfate heptahydrate\\t7446-20-0\\tSigma\\tZ0251\\t287.56\\tzinc sulfate,\
+    \ ZnSO4 7H2O\\t\\t\\t\\t\\t\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q89\",\n    \"name\": \"Sodium Molybdate Dihydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[11].notes\",\n        \"stored\": \"CAS:\
+    \ 10102-40-6; MW: 241.95; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Sodium Molybdate Dihydrate\",\n        \"CAS\": \"\
+    10102-40-6\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\": \"\
+    331058\",\n        \"FW\": \"241.95\",\n        \"Synonyms\": \"Na2MoO4 2H2O,\
+    \ Na2MoO4-2H2O\",\n        \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n \
+    \       \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\"\
+    : \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 399\",\n        \"exact_source_quote\"\
+    : \"Sodium Molybdate Dihydrate\\t10102-40-6\\tSigma\\t331058\\t241.95\\tNa2MoO4\
+    \ 2H2O, Na2MoO4-2H2O\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\":\
+    \ \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q90\",\n    \"name\": \"Copper (II) sulfate pentahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[12].notes\",\n        \"stored\": \"CAS:\
+    \ 7758-99-8; MW: 249.69; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Copper (II) sulfate pentahydrate\",\n        \"CAS\"\
+    : \"7758-99-8\",\n        \"Company\": \"Sigma\",\n        \"CatalogNumber\":\
+    \ \"C8027\",\n        \"FW\": \"249.69\",\n        \"Synonyms\": \"Blue Vitriol,\
+    \ Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate,\
+    \ CuSO4 5H2O, Cupric Sulfate\",\n        \"Notes\": \"\",\n        \"Hans80Anti\"\
+    : \"\",\n        \"Hans80metals\": \"\",\n        \"FEBA_carbon\": \"\",\n   \
+    \     \"FEBA_nitrogen\": \"\",\n        \"FEBA_stress\": \"\",\n        \"All_star\"\
+    : \"\"\n      }\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 129\",\n        \"exact_source_quote\"\
+    : \"Copper (II) sulfate pentahydrate\\t7758-99-8\\tSigma\\tC8027\\t249.69\\tBlue\
+    \ Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate,\
+    \ CuSO4 5H2O, Cupric Sulfate\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\"\
+    : \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q91\",\n    \"name\": \"Cobalt(II) nitrate hexahydrate\"\
+    ,\n    \"stage\": \"Stored ingredient identity metadata; numerical CAS/MW and\
+    \ mapping-confidence text\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].notes\",\n        \"stored\": \"CAS:\
+    \ 10026-22-9; MW: 291.03; From Trace metal mix A5; Ontology enriched via CAS-RN\
+    \ lookup\"\n      }\n    ],\n    \"desired\": {\n      \"source_compound_fields\"\
+    : {\n        \"Compound\": \"Cobalt(II) nitrate hexahydrate\",\n        \"CAS\"\
+    : \"10026-22-9\",\n        \"Company\": \"\",\n        \"CatalogNumber\": \"\"\
+    ,\n        \"FW\": \"291.03\",\n        \"Synonyms\": \"Co(NO3)2 6H2O\",\n   \
+    \     \"Notes\": \"\",\n        \"Hans80Anti\": \"\",\n        \"Hans80metals\"\
+    : \"\",\n        \"FEBA_carbon\": \"\",\n        \"FEBA_nitrogen\": \"\",\n  \
+    \      \"FEBA_stress\": \"\",\n        \"All_star\": \"\"\n      }\n    },\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compound row 124\",\n        \"exact_source_quote\"\
+    : \"Cobalt(II) nitrate hexahydrate\\t10026-22-9\\t\\t\\t291.03\\tCo(NO3)2 6H2O\\\
+    t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Source named salt, hydrate\
+    \ or buffer agrees with the asserted chemical identity. Explicit hydration is\
+    \ retained; source compound identifiers and formula metadata do not supply new\
+    \ preparation conditions. Historical mapping confidence 0.90, where present, is\
+    \ a local algorithm assertion, not externally verified probability.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q92\",\n    \"name\": \"Unspecified preparation and\
+    \ cultivation conditions\",\n    \"stage\": \"Exact named FEBA recipe only\",\n\
+    \    \"decision\": \"not_quantified\",\n    \"local_fields\": [],\n    \"desired\"\
+    : {\n      \"water_or_final_batch_volume\": null,\n      \"ph_value\": 7.1,\n\
+    \      \"temperature_value\": null,\n      \"sterilization_cycle\": null,\n  \
+    \    \"light_intensity\": null,\n      \"light_cycle\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Complete named recipe and description\",\n  \
+    \      \"exact_source_quote\": \"Media\\tBG11R\\t\\nDescription\\tFor growing\
+    \ Synechococcus elongatus PCC 7942, pH should be 7.1\\t\\nMinimal\\tTRUE\\t\\\
+    nControlled vocabulary\\tConcentration\\tUnits\\nSodium nitrate\\t1.5\\tg/L\\\
+    nPotassium phosphate dibasic\\t0.04\\tg/L\\nMagnesium Sulfate Heptahydrate\\t0.075\\\
+    tg/L\\nCalcium chloride dihydrate\\t0.036\\tg/L\\nCitric Acid\\t0.006\\tg/L\\\
+    nFerric ammonium citrate\\t0.006\\tg/L\\nEDTA (disodium salt)\\t0.001\\tg/L\\\
+    nSodium carbonate\\t0.02\\tg/L\\nTrace metal mix A5\\t1\\tX\\n\\t\\t\\n\",\n \
+    \       \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"The inspected block supplies\
+    \ concentrations and intended cyanobacterial use, not measured final volume, water\
+    \ make-up, light, temperature or sterilization. The description does state pH\
+    \ 7.1, inventoried separately. Preparation is absent in both target and owner,\
+    \ so no documented preparation loss is inferred. Do not borrow preparation from\
+    \ the excluded bacterial CCAP C17 namesake.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q93\",\n    \"name\": \"pH\",\n    \"stage\": \"Exact FEBA description; missing\
+    \ generated structured value\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [],\n    \"desired\": {\n      \"input\": \"data/merge_yaml/merged/BG11R.yaml\"\
+    ,\n      \"field_path\": \"ph_value\",\n      \"value\": 7.1\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R description\",\n        \"exact_source_quote\"\
+    : \"Description\\tFor growing Synechococcus elongatus PCC 7942, pH should be 7.1\\\
+    t\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"pH 7.1 is retained in target\
+    \ prose and both owners but absent as target ph_value; reconcile the structured\
+    \ field without adding a titrant, dose or adjustment method.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q94\",\n    \"name\": \"pH\",\n    \"stage\": \"Maintained\
+    \ owner structured pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"ph_value\",\n        \"stored\": 7.1\n      }\n    ],\n\
+    \    \"desired\": 7.1,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R description\",\n        \"exact_source_quote\"\
+    : \"Description\\tFor growing Synechococcus elongatus PCC 7942, pH should be 7.1\\\
+    t\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"The owner pH agrees with\
+    \ the source description. No pH adjustment reagent, method or quantity is supplied.\"\
+    \n  },\n  {\n    \"decision_id\": \"q95\",\n    \"name\": \"pH\",\n    \"stage\"\
+    : \"Maintained owner structured pH\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11r.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.1\n      }\n \
+    \   ],\n    \"desired\": 7.1,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"BG11R description\",\n        \"exact_source_quote\"\
+    : \"Description\\tFor growing Synechococcus elongatus PCC 7942, pH should be 7.1\\\
+    t\\n\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"The owner pH agrees with\
+    \ the source description. No pH adjustment reagent, method or quantity is supplied.\"\
+    \n  },\n  {\n    \"decision_id\": \"q96\",\n    \"name\": \"Inherited claim 1\"\
+    ,\n    \"stage\": \"Algae BG11 owner only; current paper support separate from\
+    \ historical capture\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"variants[0].evidence[0]\",\n        \"stored\": {\n\
+    \          \"reference\": \"PMID:36550226\",\n          \"supports\": \"SUPPORT\"\
+    ,\n          \"snippet\": \"Cultures grown in BG11 accumulated more cell biomass\
+    \ reaching a dry weight of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in\
+    \ BG110 after 240 h of culture.\",\n          \"explanation\": \"Literature evidence\
+    \ reports higher biomass and productivity of Nostoc linckia in BG11 than nitrate-free\
+    \ BG110.\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"preserve_claim_scope\"\
+    : \"Nostoc paper compares nitrate-replete BG11 with nitrate-free BG110 after 240\
+    \ h. Current abstract supports the biomass values, with whitespace differences\
+    \ from the inherited excerpt. Current taxonomy 92942 remains unavailable; this\
+    \ does not invalidate the paper observation.\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"bg11ContextPubmed36550226\",\n       \
+    \ \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36550226&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText>The biotechnological potential\
+    \ of Nostoc linckia as a biofertilizer and source of bioactive compounds makes\
+    \ it important to study its growth physiology and productivity. Since nitrogen\
+    \ is a fundamental component of N. linckia biomass, we compared the growth and\
+    \ biochemical composition of cultures grown in BG11 (i.e., in the presence of\
+    \ nitrate) and BG11<sub>0</sub> (in the absence of nitrate). Cultures grown in\
+    \ BG11 accumulated more cell biomass reaching a dry weight of 1.65&#x2009;&#xb1;&#x2009;0.06&#xa0;g&#xa0;L<sup>-1</sup>,\
+    \ compared to 0.92&#x2009;&#xb1;&#x2009;0.01&#xa0;g&#xa0;L<sup>-1</sup> in BG11<sub>0</sub>\
+    \ after 240&#xa0;h of culture. Biomass productivity was higher in culture grown\
+    \ in BG11 medium (average 317&#x2009;&#xb1;&#x2009;38&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>)\
+    \ compared to that attained in BG11<sub>0</sub> (average 262&#x2009;&#xb1;&#x2009;37&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>).\
+    \ The chlorophyll content of cells grown in BG11 increased continuously up to\
+    \ (39.0&#x2009;&#xb1;&#x2009;1.3&#xa0;mg&#xa0;L<sup>-1</sup>), while in BG11<sub>0</sub>\
+    \ it increased much more slowly (13.6&#x2009;&#xb1;&#x2009;0.8&#xa0;mg&#xa0;L<sup>-1</sup>).\
+    \ Biomass grown in BG11 had higher protein and phycobilin contents. However, despite\
+    \ the differences in biochemical composition and pigment concentration, between\
+    \ BG11 and BG11<sub>0</sub> cultures, both their net photosynthetic rates and\
+    \ maximum quantum yields of the photosystem II resulted in similar.</AbstractText><CopyrightInformation>&#xa9;\
+    \ 2022. The Author(s).</CopyrightInformation></Abstract>\",\n        \"snapshot_sha256\"\
+    : \"8028b6651b9830c4270af7190cabaeb1a38fd693ee7efc39e5a97724a0d2d024\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Nostoc paper compares nitrate-replete\
+    \ BG11 with nitrate-free BG110 after 240 h. Current abstract supports the biomass\
+    \ values, with whitespace differences from the inherited excerpt. Current taxonomy\
+    \ 92942 remains unavailable; this does not invalidate the paper observation. Do\
+    \ not transfer the entire claim to BG11R or neighboring variants from a formulation\
+    \ fingerprint.\"\n  },\n  {\n    \"decision_id\": \"q97\",\n    \"name\": \"Inherited\
+    \ claim 2\",\n    \"stage\": \"Algae BG11 owner only; current paper support separate\
+    \ from historical capture\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"variants[1].evidence[0]\",\n        \"stored\": {\n\
+    \          \"reference\": \"PMID:36437912\",\n          \"supports\": \"SUPPORT\"\
+    ,\n          \"snippet\": \"The cyanobacterium was isolated from the Peruvian\
+    \ Amazon Basin region and cultured in BG-11 medium.\",\n          \"explanation\"\
+    : \"Literature evidence directly states that Synechococcus sp. UCP002 was cultured\
+    \ in BG-11 medium.\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"\
+    preserve_claim_scope\": \"UCP002 is explicitly unaxenic and cultured in BG-11.\
+    \ The rate numeral is printed with mu but no per-hour dimension in the abstract;\
+    \ 8.08 h converts to 484.8 min. The abstract separately reports a complete genome,\
+    \ whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession\
+    \ is established by these captures.\"\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"bg11ContextPubmed36437912\",\n        \"source_url\"\
+    : \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36437912&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText>Cyanobacteria are diverse photosynthetic\
+    \ microorganisms able to produce a myriad of bioactive chemicals. To make possible\
+    \ the rational exploitation of these microorganisms, it is fundamental to know\
+    \ their metabolic capabilities and to have genomic resources. In this context,\
+    \ the main objective of this research was to determine the genome features and\
+    \ the biochemical profile of <i>Synechococcus</i> sp. UCP002. The cyanobacterium\
+    \ was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium.\
+    \ Growth parameters, genome features, and the biochemical profile of the cyanobacterium\
+    \ were determined using standardized methods. <i>Synechococcus</i> sp. UCP002\
+    \ had a specific growth rate of 0.086 &#xb1; 0.008&#xa0;&#x3bc; and a doubling\
+    \ time of 8.08 &#xb1; 0.78&#xa0;h. The complete genome of <i>Synechococcus</i>\
+    \ sp. UCP002 had a size of &#x223c;3.53&#xa0;Mb with a high coverage (&#x223c;200x),\
+    \ and its quality parameters were acceptable (completeness = 99.29%, complete\
+    \ and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the\
+    \ cyanobacterium had six plasmids ranging from 24 to 200&#xa0;kbp. The annotated\
+    \ genome revealed &#x223c;3,422 genes, &#x223c; 3,374 protein-coding genes (with\
+    \ &#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and\
+    \ 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic\
+    \ defense systems. Additionally, the genome had genes coding the transcription\
+    \ factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy\
+    \ metal pollution. The biochemical profile showed primary nutrients, essential\
+    \ amino acids, some essential fatty acids, pigments (e.g., all-trans-&#x3b2;-carotene,\
+    \ chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, <i>Synechococcus</i>\
+    \ sp. UCP002 shows biotechnological potential to produce human and animal nutrients\
+    \ and raw materials for biofuels and could be a new source of genes for synthetic\
+    \ biological applications.</AbstractText><CopyrightInformation>Copyright &#xa9;\
+    \ 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&#xed;guez, Vargas,\
+    \ Tresierra, Barriga, Marapara, Adrianz&#xe9;n, Ruiz and Castro.</CopyrightInformation></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"UCP002 is explicitly unaxenic\
+    \ and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension\
+    \ in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports\
+    \ a complete genome, whereas the attached genome-features excerpt is narrower.\
+    \ No GCA/GCF/SAMN accession is established by these captures. Do not transfer\
+    \ the entire claim to BG11R or neighboring variants from a formulation fingerprint.\"\
+    \n  },\n  {\n    \"decision_id\": \"q98\",\n    \"name\": \"Inherited claim 3\"\
+    ,\n    \"stage\": \"Algae BG11 owner only; current paper support separate from\
+    \ historical capture\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"variants[2].evidence[0]\",\n        \"stored\": {\n\
+    \          \"reference\": \"PMID:34584038\",\n          \"supports\": \"SUPPORT\"\
+    ,\n          \"snippet\": \"photoautotrophic mode using BG-11 medium with air\
+    \ or 2% CO2 and heterotrophic mode using YM medium.\",\n          \"explanation\"\
+    : \"Literature evidence directly states that strain ABC-009 was evaluated under\
+    \ photoautotrophic BG-11 cultivation conditions.\"\n        }\n      }\n    ],\n\
+    \    \"desired\": {\n      \"preserve_claim_scope\": \"ABC-009 photoautotrophic\
+    \ BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute\
+    \ productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1\
+    \ supports the accepted name and strain marker only; BATCH cultivation mode is\
+    \ not explicitly established by the abstract.\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"bg11ContextPubmed34584038\",\n       \
+    \ \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText><i>Scenedesmus obliquus</i> ABC-009\
+    \ is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions. Here, the performance of this\
+    \ strain was evaluated for the simultaneous production of lutein and biofuels\
+    \ under three different modes of cultivation - photoautotrophic mode using BG-11\
+    \ medium with air or 2% CO<sub>2</sub> and heterotrophic mode using YM medium.\
+    \ While it was found that the highest fatty acid methyl ester (FAME) level and\
+    \ lutein content per biomass (%) were achieved in BG-11 medium with CO<sub>2</sub>\
+    \ and air, respectively, heterotrophic cultivation resulted in much higher biomass\
+    \ productivity. While the cell concentrations of the cultures grown under BG-11\
+    \ and CO<sub>2</sub> were largely similar to those grown in YM medium, the disparity\
+    \ in the biomass yield was largely attributed to the larger cell volume in heterotrophically\
+    \ cultivated cells. Post-cultivation light treatment was found to further enhance\
+    \ the biomass productivity in all three cases and lutein content in heterotrophic\
+    \ conditions. Consequently, the maximum biomass (757.14 &#xb1; 20.20 mg/l/d),\
+    \ FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein (1.006 &#xb1; 0.23 mg/l/d) productivities\
+    \ were obtained under heterotrophic cultivation. Next, large-scale lutein production\
+    \ using microalgae was demonstrated using a 1-ton open raceway pond cultivation\
+    \ system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were\
+    \ similar in both media, while slightly higher lutein content was obtained using\
+    \ the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"ABC-009 photoautotrophic\
+    \ BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute\
+    \ productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1\
+    \ supports the accepted name and strain marker only; BATCH cultivation mode is\
+    \ not explicitly established by the abstract. Do not transfer the entire claim\
+    \ to BG11R or neighboring variants from a formulation fingerprint.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q99\",\n    \"name\": \"Inherited claim 4\",\n   \
+    \ \"stage\": \"Algae BG11 owner only; current paper support separate from historical\
+    \ capture\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n     \
+    \   \"field_path\": \"target_organisms[0].growth_metrics[0].evidence[0]\",\n \
+    \       \"stored\": {\n          \"reference\": \"PMID:36550226\",\n         \
+    \ \"supports\": \"SUPPORT\",\n          \"snippet\": \"Cultures grown in BG11\
+    \ accumulated more cell biomass reaching a dry weight of 1.65 ± 0.06 g L-1, compared\
+    \ to 0.92 ± 0.01 g L-1 in BG110 after 240 h of culture.\",\n          \"explanation\"\
+    : \"Literature evidence reports biomass accumulation of Nostoc linckia in BG11.\"\
+    \n        }\n      }\n    ],\n    \"desired\": {\n      \"preserve_claim_scope\"\
+    : \"Nostoc paper compares nitrate-replete BG11 with nitrate-free BG110 after 240\
+    \ h. Current abstract supports the biomass values, with whitespace differences\
+    \ from the inherited excerpt. Current taxonomy 92942 remains unavailable; this\
+    \ does not invalidate the paper observation.\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"bg11ContextPubmed36550226\",\n       \
+    \ \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36550226&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText>The biotechnological potential\
+    \ of Nostoc linckia as a biofertilizer and source of bioactive compounds makes\
+    \ it important to study its growth physiology and productivity. Since nitrogen\
+    \ is a fundamental component of N. linckia biomass, we compared the growth and\
+    \ biochemical composition of cultures grown in BG11 (i.e., in the presence of\
+    \ nitrate) and BG11<sub>0</sub> (in the absence of nitrate). Cultures grown in\
+    \ BG11 accumulated more cell biomass reaching a dry weight of 1.65&#x2009;&#xb1;&#x2009;0.06&#xa0;g&#xa0;L<sup>-1</sup>,\
+    \ compared to 0.92&#x2009;&#xb1;&#x2009;0.01&#xa0;g&#xa0;L<sup>-1</sup> in BG11<sub>0</sub>\
+    \ after 240&#xa0;h of culture. Biomass productivity was higher in culture grown\
+    \ in BG11 medium (average 317&#x2009;&#xb1;&#x2009;38&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>)\
+    \ compared to that attained in BG11<sub>0</sub> (average 262&#x2009;&#xb1;&#x2009;37&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>).\
+    \ The chlorophyll content of cells grown in BG11 increased continuously up to\
+    \ (39.0&#x2009;&#xb1;&#x2009;1.3&#xa0;mg&#xa0;L<sup>-1</sup>), while in BG11<sub>0</sub>\
+    \ it increased much more slowly (13.6&#x2009;&#xb1;&#x2009;0.8&#xa0;mg&#xa0;L<sup>-1</sup>).\
+    \ Biomass grown in BG11 had higher protein and phycobilin contents. However, despite\
+    \ the differences in biochemical composition and pigment concentration, between\
+    \ BG11 and BG11<sub>0</sub> cultures, both their net photosynthetic rates and\
+    \ maximum quantum yields of the photosystem II resulted in similar.</AbstractText><CopyrightInformation>&#xa9;\
+    \ 2022. The Author(s).</CopyrightInformation></Abstract>\",\n        \"snapshot_sha256\"\
+    : \"8028b6651b9830c4270af7190cabaeb1a38fd693ee7efc39e5a97724a0d2d024\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Nostoc paper compares nitrate-replete\
+    \ BG11 with nitrate-free BG110 after 240 h. Current abstract supports the biomass\
+    \ values, with whitespace differences from the inherited excerpt. Current taxonomy\
+    \ 92942 remains unavailable; this does not invalidate the paper observation. Do\
+    \ not transfer the entire claim to BG11R or neighboring variants from a formulation\
+    \ fingerprint.\"\n  },\n  {\n    \"decision_id\": \"q100\",\n    \"name\": \"\
+    Inherited claim 5\",\n    \"stage\": \"Algae BG11 owner only; current paper support\
+    \ separate from historical capture\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[1].growth_metrics[0].evidence[0]\"\
+    ,\n        \"stored\": {\n          \"reference\": \"PMID:36437912\",\n      \
+    \    \"supports\": \"SUPPORT\",\n          \"snippet\": \"Synechococcus sp. UCP002\
+    \ had a specific growth rate of 0.086 ± 0.008 μ and a doubling time of 8.08 ±\
+    \ 0.78 h.\",\n          \"explanation\": \"Literature evidence reports growth\
+    \ rate and doubling time for Synechococcus sp. UCP002 cultured in BG-11 medium.\"\
+    \n        }\n      }\n    ],\n    \"desired\": {\n      \"preserve_claim_scope\"\
+    : \"UCP002 is explicitly unaxenic and cultured in BG-11. The rate numeral is printed\
+    \ with mu but no per-hour dimension in the abstract; 8.08 h converts to 484.8\
+    \ min. The abstract separately reports a complete genome, whereas the attached\
+    \ genome-features excerpt is narrower. No GCA/GCF/SAMN accession is established\
+    \ by these captures.\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"bg11ContextPubmed36437912\",\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36437912&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText>Cyanobacteria are diverse photosynthetic\
+    \ microorganisms able to produce a myriad of bioactive chemicals. To make possible\
+    \ the rational exploitation of these microorganisms, it is fundamental to know\
+    \ their metabolic capabilities and to have genomic resources. In this context,\
+    \ the main objective of this research was to determine the genome features and\
+    \ the biochemical profile of <i>Synechococcus</i> sp. UCP002. The cyanobacterium\
+    \ was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium.\
+    \ Growth parameters, genome features, and the biochemical profile of the cyanobacterium\
+    \ were determined using standardized methods. <i>Synechococcus</i> sp. UCP002\
+    \ had a specific growth rate of 0.086 &#xb1; 0.008&#xa0;&#x3bc; and a doubling\
+    \ time of 8.08 &#xb1; 0.78&#xa0;h. The complete genome of <i>Synechococcus</i>\
+    \ sp. UCP002 had a size of &#x223c;3.53&#xa0;Mb with a high coverage (&#x223c;200x),\
+    \ and its quality parameters were acceptable (completeness = 99.29%, complete\
+    \ and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the\
+    \ cyanobacterium had six plasmids ranging from 24 to 200&#xa0;kbp. The annotated\
+    \ genome revealed &#x223c;3,422 genes, &#x223c; 3,374 protein-coding genes (with\
+    \ &#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and\
+    \ 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic\
+    \ defense systems. Additionally, the genome had genes coding the transcription\
+    \ factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy\
+    \ metal pollution. The biochemical profile showed primary nutrients, essential\
+    \ amino acids, some essential fatty acids, pigments (e.g., all-trans-&#x3b2;-carotene,\
+    \ chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, <i>Synechococcus</i>\
+    \ sp. UCP002 shows biotechnological potential to produce human and animal nutrients\
+    \ and raw materials for biofuels and could be a new source of genes for synthetic\
+    \ biological applications.</AbstractText><CopyrightInformation>Copyright &#xa9;\
+    \ 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&#xed;guez, Vargas,\
+    \ Tresierra, Barriga, Marapara, Adrianz&#xe9;n, Ruiz and Castro.</CopyrightInformation></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"UCP002 is explicitly unaxenic\
+    \ and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension\
+    \ in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports\
+    \ a complete genome, whereas the attached genome-features excerpt is narrower.\
+    \ No GCA/GCF/SAMN accession is established by these captures. Do not transfer\
+    \ the entire claim to BG11R or neighboring variants from a formulation fingerprint.\"\
+    \n  },\n  {\n    \"decision_id\": \"q101\",\n    \"name\": \"Inherited claim 6\"\
+    ,\n    \"stage\": \"Algae BG11 owner only; current paper support separate from\
+    \ historical capture\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"target_organisms[1].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"PMID:36437912\",\n          \"supports\": \"SUPPORT\"\
+    ,\n          \"snippet\": \"Growth parameters, genome features, and the biochemical\
+    \ profile of the cyanobacterium were determined using standardized methods.\"\
+    ,\n          \"explanation\": \"Literature evidence reports a complete genome\
+    \ for UCP002, but no NCBI GCA/GCF/SAMN accession was resolved from NCBI assembly\
+    \ or nuccore search.\"\n        }\n      }\n    ],\n    \"desired\": {\n     \
+    \ \"preserve_claim_scope\": \"UCP002 is explicitly unaxenic and cultured in BG-11.\
+    \ The rate numeral is printed with mu but no per-hour dimension in the abstract;\
+    \ 8.08 h converts to 484.8 min. The abstract separately reports a complete genome,\
+    \ whereas the attached genome-features excerpt is narrower. No GCA/GCF/SAMN accession\
+    \ is established by these captures.\"\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"bg11ContextPubmed36437912\",\n        \"source_url\"\
+    : \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36437912&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText>Cyanobacteria are diverse photosynthetic\
+    \ microorganisms able to produce a myriad of bioactive chemicals. To make possible\
+    \ the rational exploitation of these microorganisms, it is fundamental to know\
+    \ their metabolic capabilities and to have genomic resources. In this context,\
+    \ the main objective of this research was to determine the genome features and\
+    \ the biochemical profile of <i>Synechococcus</i> sp. UCP002. The cyanobacterium\
+    \ was isolated from the Peruvian Amazon Basin region and cultured in BG-11 medium.\
+    \ Growth parameters, genome features, and the biochemical profile of the cyanobacterium\
+    \ were determined using standardized methods. <i>Synechococcus</i> sp. UCP002\
+    \ had a specific growth rate of 0.086 &#xb1; 0.008&#xa0;&#x3bc; and a doubling\
+    \ time of 8.08 &#xb1; 0.78&#xa0;h. The complete genome of <i>Synechococcus</i>\
+    \ sp. UCP002 had a size of &#x223c;3.53&#xa0;Mb with a high coverage (&#x223c;200x),\
+    \ and its quality parameters were acceptable (completeness = 99.29%, complete\
+    \ and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the\
+    \ cyanobacterium had six plasmids ranging from 24 to 200&#xa0;kbp. The annotated\
+    \ genome revealed &#x223c;3,422 genes, &#x223c; 3,374 protein-coding genes (with\
+    \ &#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and\
+    \ 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic\
+    \ defense systems. Additionally, the genome had genes coding the transcription\
+    \ factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy\
+    \ metal pollution. The biochemical profile showed primary nutrients, essential\
+    \ amino acids, some essential fatty acids, pigments (e.g., all-trans-&#x3b2;-carotene,\
+    \ chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, <i>Synechococcus</i>\
+    \ sp. UCP002 shows biotechnological potential to produce human and animal nutrients\
+    \ and raw materials for biofuels and could be a new source of genes for synthetic\
+    \ biological applications.</AbstractText><CopyrightInformation>Copyright &#xa9;\
+    \ 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&#xed;guez, Vargas,\
+    \ Tresierra, Barriga, Marapara, Adrianz&#xe9;n, Ruiz and Castro.</CopyrightInformation></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"UCP002 is explicitly unaxenic\
+    \ and cultured in BG-11. The rate numeral is printed with mu but no per-hour dimension\
+    \ in the abstract; 8.08 h converts to 484.8 min. The abstract separately reports\
+    \ a complete genome, whereas the attached genome-features excerpt is narrower.\
+    \ No GCA/GCF/SAMN accession is established by these captures. Do not transfer\
+    \ the entire claim to BG11R or neighboring variants from a formulation fingerprint.\"\
+    \n  },\n  {\n    \"decision_id\": \"q102\",\n    \"name\": \"Inherited claim 7\"\
+    ,\n    \"stage\": \"Algae BG11 owner only; current paper support separate from\
+    \ historical capture\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"target_organisms[2].growth_metrics[0].evidence[0]\"\
+    ,\n        \"stored\": {\n          \"reference\": \"PMID:34584038\",\n      \
+    \    \"supports\": \"SUPPORT\",\n          \"snippet\": \"Scenedesmus obliquus\
+    \ ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions.\",\n          \"explanation\"\
+    : \"Literature evidence identifies the strain studied under BG-11 photoautotrophic\
+    \ cultivation; NCBI nuccore record MG971386.1 links strain ABC-009 to the accepted\
+    \ taxonomy Tetradesmus obliquus, but it is a partial marker sequence rather than\
+    \ a genome assembly.\"\n        }\n      }\n    ],\n    \"desired\": {\n     \
+    \ \"preserve_claim_scope\": \"ABC-009 photoautotrophic BG-11 air/2% CO2 conditions\
+    \ are distinct from heterotrophic YM. Highest absolute productivities are YM results,\
+    \ not BG11 rates. Current taxonomy plus MG971386.1 supports the accepted name\
+    \ and strain marker only; BATCH cultivation mode is not explicitly established\
+    \ by the abstract.\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"bg11ContextPubmed34584038\",\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText><i>Scenedesmus obliquus</i> ABC-009\
+    \ is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions. Here, the performance of this\
+    \ strain was evaluated for the simultaneous production of lutein and biofuels\
+    \ under three different modes of cultivation - photoautotrophic mode using BG-11\
+    \ medium with air or 2% CO<sub>2</sub> and heterotrophic mode using YM medium.\
+    \ While it was found that the highest fatty acid methyl ester (FAME) level and\
+    \ lutein content per biomass (%) were achieved in BG-11 medium with CO<sub>2</sub>\
+    \ and air, respectively, heterotrophic cultivation resulted in much higher biomass\
+    \ productivity. While the cell concentrations of the cultures grown under BG-11\
+    \ and CO<sub>2</sub> were largely similar to those grown in YM medium, the disparity\
+    \ in the biomass yield was largely attributed to the larger cell volume in heterotrophically\
+    \ cultivated cells. Post-cultivation light treatment was found to further enhance\
+    \ the biomass productivity in all three cases and lutein content in heterotrophic\
+    \ conditions. Consequently, the maximum biomass (757.14 &#xb1; 20.20 mg/l/d),\
+    \ FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein (1.006 &#xb1; 0.23 mg/l/d) productivities\
+    \ were obtained under heterotrophic cultivation. Next, large-scale lutein production\
+    \ using microalgae was demonstrated using a 1-ton open raceway pond cultivation\
+    \ system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were\
+    \ similar in both media, while slightly higher lutein content was obtained using\
+    \ the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"ABC-009 photoautotrophic\
+    \ BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute\
+    \ productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1\
+    \ supports the accepted name and strain marker only; BATCH cultivation mode is\
+    \ not explicitly established by the abstract. Do not transfer the entire claim\
+    \ to BG11R or neighboring variants from a formulation fingerprint.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q103\",\n    \"name\": \"Inherited claim 8\",\n  \
+    \  \"stage\": \"Algae BG11 owner only; current paper support separate from historical\
+    \ capture\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n     \
+    \   \"field_path\": \"target_organisms[2].growth_metrics[0].evidence[1]\",\n \
+    \       \"stored\": {\n          \"reference\": \"PMID:34584038\",\n         \
+    \ \"supports\": \"SUPPORT\",\n          \"snippet\": \"While the cell concentrations\
+    \ of the cultures grown under BG-11 and CO2 were largely similar to those grown\
+    \ in YM medium\",\n          \"explanation\": \"Literature evidence reports cell\
+    \ concentrations for the BG-11 plus CO2 condition relative to YM medium.\"\n \
+    \       }\n      }\n    ],\n    \"desired\": {\n      \"preserve_claim_scope\"\
+    : \"ABC-009 photoautotrophic BG-11 air/2% CO2 conditions are distinct from heterotrophic\
+    \ YM. Highest absolute productivities are YM results, not BG11 rates. Current\
+    \ taxonomy plus MG971386.1 supports the accepted name and strain marker only;\
+    \ BATCH cultivation mode is not explicitly established by the abstract.\"\n  \
+    \  },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"bg11ContextPubmed34584038\"\
+    ,\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml\"\
+    ,\n        \"source_locator\": \"Exact PMID Abstract XML block\",\n        \"\
+    exact_source_quote\": \"<Abstract><AbstractText><i>Scenedesmus obliquus</i> ABC-009\
+    \ is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions. Here, the performance of this\
+    \ strain was evaluated for the simultaneous production of lutein and biofuels\
+    \ under three different modes of cultivation - photoautotrophic mode using BG-11\
+    \ medium with air or 2% CO<sub>2</sub> and heterotrophic mode using YM medium.\
+    \ While it was found that the highest fatty acid methyl ester (FAME) level and\
+    \ lutein content per biomass (%) were achieved in BG-11 medium with CO<sub>2</sub>\
+    \ and air, respectively, heterotrophic cultivation resulted in much higher biomass\
+    \ productivity. While the cell concentrations of the cultures grown under BG-11\
+    \ and CO<sub>2</sub> were largely similar to those grown in YM medium, the disparity\
+    \ in the biomass yield was largely attributed to the larger cell volume in heterotrophically\
+    \ cultivated cells. Post-cultivation light treatment was found to further enhance\
+    \ the biomass productivity in all three cases and lutein content in heterotrophic\
+    \ conditions. Consequently, the maximum biomass (757.14 &#xb1; 20.20 mg/l/d),\
+    \ FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein (1.006 &#xb1; 0.23 mg/l/d) productivities\
+    \ were obtained under heterotrophic cultivation. Next, large-scale lutein production\
+    \ using microalgae was demonstrated using a 1-ton open raceway pond cultivation\
+    \ system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were\
+    \ similar in both media, while slightly higher lutein content was obtained using\
+    \ the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"ABC-009 photoautotrophic\
+    \ BG-11 air/2% CO2 conditions are distinct from heterotrophic YM. Highest absolute\
+    \ productivities are YM results, not BG11 rates. Current taxonomy plus MG971386.1\
+    \ supports the accepted name and strain marker only; BATCH cultivation mode is\
+    \ not explicitly established by the abstract. Do not transfer the entire claim\
+    \ to BG11R or neighboring variants from a formulation fingerprint.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q104\",\n    \"name\": \"UCP002 specific growth rate\"\
+    ,\n    \"stage\": \"Algae BG11 owner growth metric\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[1].growth_metrics[0].growth_rate_per_hour\"\
+    ,\n        \"stored\": 0.086\n      }\n    ],\n    \"desired\": {\n      \"printed_rate\"\
+    : 0.086,\n      \"printed_uncertainty\": 0.008,\n      \"per_hour_unit\": null\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"bg11ContextPubmed36437912\"\
+    ,\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36437912&retmode=xml\"\
+    ,\n        \"source_locator\": \"UCP002 Abstract, growth-parameter sentence\"\
+    ,\n        \"exact_source_quote\": \"<Abstract><AbstractText>Cyanobacteria are\
+    \ diverse photosynthetic microorganisms able to produce a myriad of bioactive\
+    \ chemicals. To make possible the rational exploitation of these microorganisms,\
+    \ it is fundamental to know their metabolic capabilities and to have genomic resources.\
+    \ In this context, the main objective of this research was to determine the genome\
+    \ features and the biochemical profile of <i>Synechococcus</i> sp. UCP002. The\
+    \ cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured\
+    \ in BG-11 medium. Growth parameters, genome features, and the biochemical profile\
+    \ of the cyanobacterium were determined using standardized methods. <i>Synechococcus</i>\
+    \ sp. UCP002 had a specific growth rate of 0.086 &#xb1; 0.008&#xa0;&#x3bc; and\
+    \ a doubling time of 8.08 &#xb1; 0.78&#xa0;h. The complete genome of <i>Synechococcus</i>\
+    \ sp. UCP002 had a size of &#x223c;3.53&#xa0;Mb with a high coverage (&#x223c;200x),\
+    \ and its quality parameters were acceptable (completeness = 99.29%, complete\
+    \ and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the\
+    \ cyanobacterium had six plasmids ranging from 24 to 200&#xa0;kbp. The annotated\
+    \ genome revealed &#x223c;3,422 genes, &#x223c; 3,374 protein-coding genes (with\
+    \ &#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and\
+    \ 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic\
+    \ defense systems. Additionally, the genome had genes coding the transcription\
+    \ factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy\
+    \ metal pollution. The biochemical profile showed primary nutrients, essential\
+    \ amino acids, some essential fatty acids, pigments (e.g., all-trans-&#x3b2;-carotene,\
+    \ chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, <i>Synechococcus</i>\
+    \ sp. UCP002 shows biotechnological potential to produce human and animal nutrients\
+    \ and raw materials for biofuels and could be a new source of genes for synthetic\
+    \ biological applications.</AbstractText><CopyrightInformation>Copyright &#xa9;\
+    \ 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&#xed;guez, Vargas,\
+    \ Tresierra, Barriga, Marapara, Adrianz&#xe9;n, Ruiz and Castro.</CopyrightInformation></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"The abstract gives 0.086\
+    \ ± 0.008 mu without an explicit hour-inverse unit. Do not validate growth_rate_per_hour\
+    \ by dimensional convention or reverse inference from doubling time; recover full\
+    \ methods or qualify/remove the unverified dimension.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q105\",\n    \"name\": \"UCP002 doubling time\",\n    \"stage\": \"Algae BG11\
+    \ owner growth metric\",\n    \"decision\": \"verified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n \
+    \       \"field_path\": \"target_organisms[1].growth_metrics[0].doubling_time_minutes\"\
+    ,\n        \"stored\": 484.8\n      }\n    ],\n    \"desired\": {\n      \"minutes\"\
+    : 484.8,\n      \"source_hours\": 8.08,\n      \"source_uncertainty_hours\": 0.78\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"bg11ContextPubmed36437912\"\
+    ,\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36437912&retmode=xml\"\
+    ,\n        \"source_locator\": \"UCP002 Abstract, growth-parameter sentence\"\
+    ,\n        \"exact_source_quote\": \"<Abstract><AbstractText>Cyanobacteria are\
+    \ diverse photosynthetic microorganisms able to produce a myriad of bioactive\
+    \ chemicals. To make possible the rational exploitation of these microorganisms,\
+    \ it is fundamental to know their metabolic capabilities and to have genomic resources.\
+    \ In this context, the main objective of this research was to determine the genome\
+    \ features and the biochemical profile of <i>Synechococcus</i> sp. UCP002. The\
+    \ cyanobacterium was isolated from the Peruvian Amazon Basin region and cultured\
+    \ in BG-11 medium. Growth parameters, genome features, and the biochemical profile\
+    \ of the cyanobacterium were determined using standardized methods. <i>Synechococcus</i>\
+    \ sp. UCP002 had a specific growth rate of 0.086 &#xb1; 0.008&#xa0;&#x3bc; and\
+    \ a doubling time of 8.08 &#xb1; 0.78&#xa0;h. The complete genome of <i>Synechococcus</i>\
+    \ sp. UCP002 had a size of &#x223c;3.53&#xa0;Mb with a high coverage (&#x223c;200x),\
+    \ and its quality parameters were acceptable (completeness = 99.29%, complete\
+    \ and single-copy genes = 97.5%, and contamination = 0.35%). Additionally, the\
+    \ cyanobacterium had six plasmids ranging from 24 to 200&#xa0;kbp. The annotated\
+    \ genome revealed &#x223c;3,422 genes, &#x223c; 3,374 protein-coding genes (with\
+    \ &#x223c;41.31% hypothetical protein-coding genes), two CRISPR Cas systems, and\
+    \ 61 non-coding RNAs. Both the genome and plasmids had the genes for prokaryotic\
+    \ defense systems. Additionally, the genome had genes coding the transcription\
+    \ factors of the metalloregulator ArsR/SmtB family, involved in sensing heavy\
+    \ metal pollution. The biochemical profile showed primary nutrients, essential\
+    \ amino acids, some essential fatty acids, pigments (e.g., all-trans-&#x3b2;-carotene,\
+    \ chlorophyll a, and phycocyanin), and phenolic compounds. In conclusion, <i>Synechococcus</i>\
+    \ sp. UCP002 shows biotechnological potential to produce human and animal nutrients\
+    \ and raw materials for biofuels and could be a new source of genes for synthetic\
+    \ biological applications.</AbstractText><CopyrightInformation>Copyright &#xa9;\
+    \ 2022 Cobos, Condori, Grandez, Estela, Del Aguila, Castro, Rodr&#xed;guez, Vargas,\
+    \ Tresierra, Barriga, Marapara, Adrianz&#xe9;n, Ruiz and Castro.</CopyrightInformation></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"8b036a4f43725bc1c198fdd720e89661466f221dd6a64f4a80880f7e9daa06c8\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"8.08 h × 60 = 484.8 min.\
+    \ Preserve source uncertainty 0.78 h (46.8 min) in evidence. This arithmetic verifies\
+    \ the named paper metric, not a generic BG11R growth claim.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q106\",\n    \"name\": \"Nostoc growth comparison\",\n  \
+    \  \"stage\": \"Algae BG11 owner measurement conditions and source-only outcome\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\"\
+    : \"target_organisms[0].growth_metrics[0].measurement_conditions\",\n        \"\
+    stored\": \"BG11 nitrate-replete medium after 240 h of culture; compared with\
+    \ nitrate-free BG110.\"\n      }\n    ],\n    \"desired\": {\n      \"elapsed_hours\"\
+    : 240,\n      \"BG11_biomass_g_per_l\": \"1.65 ± 0.06\",\n      \"BG110_biomass_g_per_l\"\
+    : \"0.92 ± 0.01\",\n      \"BG11_productivity_mg_per_l_per_day\": \"317 ± 38\"\
+    ,\n      \"BG110_productivity_mg_per_l_per_day\": \"262 ± 37\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"bg11ContextPubmed36550226\"\
+    ,\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36550226&retmode=xml\"\
+    ,\n        \"source_locator\": \"Nostoc Abstract, explicit medium comparison\"\
+    ,\n        \"exact_source_quote\": \"<Abstract><AbstractText>The biotechnological\
+    \ potential of Nostoc linckia as a biofertilizer and source of bioactive compounds\
+    \ makes it important to study its growth physiology and productivity. Since nitrogen\
+    \ is a fundamental component of N. linckia biomass, we compared the growth and\
+    \ biochemical composition of cultures grown in BG11 (i.e., in the presence of\
+    \ nitrate) and BG11<sub>0</sub> (in the absence of nitrate). Cultures grown in\
+    \ BG11 accumulated more cell biomass reaching a dry weight of 1.65&#x2009;&#xb1;&#x2009;0.06&#xa0;g&#xa0;L<sup>-1</sup>,\
+    \ compared to 0.92&#x2009;&#xb1;&#x2009;0.01&#xa0;g&#xa0;L<sup>-1</sup> in BG11<sub>0</sub>\
+    \ after 240&#xa0;h of culture. Biomass productivity was higher in culture grown\
+    \ in BG11 medium (average 317&#x2009;&#xb1;&#x2009;38&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>)\
+    \ compared to that attained in BG11<sub>0</sub> (average 262&#x2009;&#xb1;&#x2009;37&#xa0;mg&#xa0;L<sup>-1</sup>&#xa0;day<sup>-1</sup>).\
+    \ The chlorophyll content of cells grown in BG11 increased continuously up to\
+    \ (39.0&#x2009;&#xb1;&#x2009;1.3&#xa0;mg&#xa0;L<sup>-1</sup>), while in BG11<sub>0</sub>\
+    \ it increased much more slowly (13.6&#x2009;&#xb1;&#x2009;0.8&#xa0;mg&#xa0;L<sup>-1</sup>).\
+    \ Biomass grown in BG11 had higher protein and phycobilin contents. However, despite\
+    \ the differences in biochemical composition and pigment concentration, between\
+    \ BG11 and BG11<sub>0</sub> cultures, both their net photosynthetic rates and\
+    \ maximum quantum yields of the photosystem II resulted in similar.</AbstractText><CopyrightInformation>&#xa9;\
+    \ 2022. The Author(s).</CopyrightInformation></Abstract>\",\n        \"snapshot_sha256\"\
+    : \"8028b6651b9830c4270af7190cabaeb1a38fd693ee7efc39e5a97724a0d2d024\",\n    \
+    \    \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"Keep nitrate-replete BG11\
+    \ and nitrate-free BG110 outcomes separate. Current abstract supports these results\
+    \ but does not establish this exact FEBA formula or a measured final recipe volume.\"\
+    \n  },\n  {\n    \"decision_id\": \"q107\",\n    \"name\": \"ABC-009 air or 2%\
+    \ CO2\",\n    \"stage\": \"Algae BG11 owner photoautotrophic comparison\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n        \"field_path\"\
+    : \"variants[2].modifications[1]\",\n        \"stored\": \"Compare air and 2%\
+    \ CO2 gas conditions.\"\n      }\n    ],\n    \"desired\": {\n      \"source_CO2_percent\"\
+    : 2,\n      \"percent_basis\": null\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"bg11ContextPubmed34584038\",\n        \"source_url\"\
+    : \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml\"\
+    ,\n        \"source_locator\": \"ABC-009 Abstract cultivation comparison\",\n\
+    \        \"exact_source_quote\": \"<Abstract><AbstractText><i>Scenedesmus obliquus</i>\
+    \ ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions. Here, the performance of this\
+    \ strain was evaluated for the simultaneous production of lutein and biofuels\
+    \ under three different modes of cultivation - photoautotrophic mode using BG-11\
+    \ medium with air or 2% CO<sub>2</sub> and heterotrophic mode using YM medium.\
+    \ While it was found that the highest fatty acid methyl ester (FAME) level and\
+    \ lutein content per biomass (%) were achieved in BG-11 medium with CO<sub>2</sub>\
+    \ and air, respectively, heterotrophic cultivation resulted in much higher biomass\
+    \ productivity. While the cell concentrations of the cultures grown under BG-11\
+    \ and CO<sub>2</sub> were largely similar to those grown in YM medium, the disparity\
+    \ in the biomass yield was largely attributed to the larger cell volume in heterotrophically\
+    \ cultivated cells. Post-cultivation light treatment was found to further enhance\
+    \ the biomass productivity in all three cases and lutein content in heterotrophic\
+    \ conditions. Consequently, the maximum biomass (757.14 &#xb1; 20.20 mg/l/d),\
+    \ FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein (1.006 &#xb1; 0.23 mg/l/d) productivities\
+    \ were obtained under heterotrophic cultivation. Next, large-scale lutein production\
+    \ using microalgae was demonstrated using a 1-ton open raceway pond cultivation\
+    \ system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were\
+    \ similar in both media, while slightly higher lutein content was obtained using\
+    \ the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"The abstract says 2% CO2\
+    \ without a stated volume/mass basis; preserve that literal scope. No generic\
+    \ PERCENT enum or inferred v/v quantity is proposed. Air and CO2 conditions are\
+    \ separate from heterotrophic YM.\"\n  },\n  {\n    \"decision_id\": \"q108\"\
+    ,\n    \"name\": \"ABC-009 air or 2% CO2\",\n    \"stage\": \"Algae BG11 owner\
+    \ photoautotrophic comparison\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\"\
+    ,\n        \"field_path\": \"target_organisms[2].growth_metrics[0].measurement_conditions\"\
+    ,\n        \"stored\": \"Photoautotrophic BG-11 medium cultivation with air or\
+    \ 2% CO2 for the strain reported in the source as Scenedesmus obliquus ABC-009.\"\
+    \n      }\n    ],\n    \"desired\": {\n      \"source_CO2_percent\": 2,\n    \
+    \  \"percent_basis\": null\n    },\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"bg11ContextPubmed34584038\",\n        \"source_url\": \"\
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml\"\
+    ,\n        \"source_locator\": \"ABC-009 Abstract cultivation comparison\",\n\
+    \        \"exact_source_quote\": \"<Abstract><AbstractText><i>Scenedesmus obliquus</i>\
+    \ ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions. Here, the performance of this\
+    \ strain was evaluated for the simultaneous production of lutein and biofuels\
+    \ under three different modes of cultivation - photoautotrophic mode using BG-11\
+    \ medium with air or 2% CO<sub>2</sub> and heterotrophic mode using YM medium.\
+    \ While it was found that the highest fatty acid methyl ester (FAME) level and\
+    \ lutein content per biomass (%) were achieved in BG-11 medium with CO<sub>2</sub>\
+    \ and air, respectively, heterotrophic cultivation resulted in much higher biomass\
+    \ productivity. While the cell concentrations of the cultures grown under BG-11\
+    \ and CO<sub>2</sub> were largely similar to those grown in YM medium, the disparity\
+    \ in the biomass yield was largely attributed to the larger cell volume in heterotrophically\
+    \ cultivated cells. Post-cultivation light treatment was found to further enhance\
+    \ the biomass productivity in all three cases and lutein content in heterotrophic\
+    \ conditions. Consequently, the maximum biomass (757.14 &#xb1; 20.20 mg/l/d),\
+    \ FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein (1.006 &#xb1; 0.23 mg/l/d) productivities\
+    \ were obtained under heterotrophic cultivation. Next, large-scale lutein production\
+    \ using microalgae was demonstrated using a 1-ton open raceway pond cultivation\
+    \ system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were\
+    \ similar in both media, while slightly higher lutein content was obtained using\
+    \ the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"The abstract says 2% CO2\
+    \ without a stated volume/mass basis; preserve that literal scope. No generic\
+    \ PERCENT enum or inferred v/v quantity is proposed. Air and CO2 conditions are\
+    \ separate from heterotrophic YM.\"\n  },\n  {\n    \"decision_id\": \"q109\"\
+    ,\n    \"name\": \"ABC-009 cultivation mode\",\n    \"stage\": \"Algae BG11 owner\
+    \ growth mode\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/algae/bg11.yaml\",\n     \
+    \   \"field_path\": \"target_organisms[2].growth_metrics[0].growth_mode\",\n \
+    \       \"stored\": \"BATCH\"\n      }\n    ],\n    \"desired\": {\n      \"growth_mode\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    bg11ContextPubmed34584038\",\n        \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml\"\
+    ,\n        \"source_locator\": \"ABC-009 Abstract cultivation modes\",\n     \
+    \   \"exact_source_quote\": \"<Abstract><AbstractText><i>Scenedesmus obliquus</i>\
+    \ ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions. Here, the performance of this\
+    \ strain was evaluated for the simultaneous production of lutein and biofuels\
+    \ under three different modes of cultivation - photoautotrophic mode using BG-11\
+    \ medium with air or 2% CO<sub>2</sub> and heterotrophic mode using YM medium.\
+    \ While it was found that the highest fatty acid methyl ester (FAME) level and\
+    \ lutein content per biomass (%) were achieved in BG-11 medium with CO<sub>2</sub>\
+    \ and air, respectively, heterotrophic cultivation resulted in much higher biomass\
+    \ productivity. While the cell concentrations of the cultures grown under BG-11\
+    \ and CO<sub>2</sub> were largely similar to those grown in YM medium, the disparity\
+    \ in the biomass yield was largely attributed to the larger cell volume in heterotrophically\
+    \ cultivated cells. Post-cultivation light treatment was found to further enhance\
+    \ the biomass productivity in all three cases and lutein content in heterotrophic\
+    \ conditions. Consequently, the maximum biomass (757.14 &#xb1; 20.20 mg/l/d),\
+    \ FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein (1.006 &#xb1; 0.23 mg/l/d) productivities\
+    \ were obtained under heterotrophic cultivation. Next, large-scale lutein production\
+    \ using microalgae was demonstrated using a 1-ton open raceway pond cultivation\
+    \ system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were\
+    \ similar in both media, while slightly higher lutein content was obtained using\
+    \ the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"The inspected abstract distinguishes\
+    \ trophic modes, but does not explicitly establish the structured BATCH assertion.\
+    \ Retain as unverified pending exact methods; no alternate mode is inferred.\"\
+    \n  },\n  {\n    \"decision_id\": \"q110\",\n    \"name\": \"YM maximum productivities\"\
+    ,\n    \"stage\": \"Source-only excluded comparator outcomes\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [],\n    \"desired\": {\n      \"\
+    heterotrophic_YM_biomass_mg_per_l_per_day\": \"757.14 ± 20.20\",\n      \"heterotrophic_YM_FAME_mg_per_l_per_day\"\
+    : \"92.78 ± 0.08\",\n      \"heterotrophic_YM_lutein_mg_per_l_per_day\": \"1.006\
+    \ ± 0.23\",\n      \"transfer_to_BG11\": false\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"bg11ContextPubmed34584038\",\n       \
+    \ \"source_url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34584038&retmode=xml\"\
+    ,\n        \"source_locator\": \"ABC-009 Abstract highest-productivity sentence\"\
+    ,\n        \"exact_source_quote\": \"<Abstract><AbstractText><i>Scenedesmus obliquus</i>\
+    \ ABC-009 is a microalgal strain that accumulates large amounts of lutein, particularly\
+    \ when subjected to growth-limiting conditions. Here, the performance of this\
+    \ strain was evaluated for the simultaneous production of lutein and biofuels\
+    \ under three different modes of cultivation - photoautotrophic mode using BG-11\
+    \ medium with air or 2% CO<sub>2</sub> and heterotrophic mode using YM medium.\
+    \ While it was found that the highest fatty acid methyl ester (FAME) level and\
+    \ lutein content per biomass (%) were achieved in BG-11 medium with CO<sub>2</sub>\
+    \ and air, respectively, heterotrophic cultivation resulted in much higher biomass\
+    \ productivity. While the cell concentrations of the cultures grown under BG-11\
+    \ and CO<sub>2</sub> were largely similar to those grown in YM medium, the disparity\
+    \ in the biomass yield was largely attributed to the larger cell volume in heterotrophically\
+    \ cultivated cells. Post-cultivation light treatment was found to further enhance\
+    \ the biomass productivity in all three cases and lutein content in heterotrophic\
+    \ conditions. Consequently, the maximum biomass (757.14 &#xb1; 20.20 mg/l/d),\
+    \ FAME (92.78 &#xb1; 0.08 mg/l/d), and lutein (1.006 &#xb1; 0.23 mg/l/d) productivities\
+    \ were obtained under heterotrophic cultivation. Next, large-scale lutein production\
+    \ using microalgae was demonstrated using a 1-ton open raceway pond cultivation\
+    \ system and a low-cost fertilizer (Eco-Sol). The overall biomass yields were\
+    \ similar in both media, while slightly higher lutein content was obtained using\
+    \ the fertilizer owing to the higher nitrogen content.</AbstractText></Abstract>\"\
+    ,\n        \"snapshot_sha256\": \"2f79ef92ed9f5e8affa74e021ac1b23edc5289eea927e883ab87b947710b158c\"\
+    ,\n        \"quote_representation\": \"UTF-8 source decoded with universal newlines;\
+    \ tabs and all other characters retained. Raw external evidence preserves original\
+    \ CRLF.\"\n      }\n    ],\n    \"interpretation\": \"These maxima belong to heterotrophic\
+    \ cultivation. The separate 1-ton Eco-Sol raceway demonstration is likewise not\
+    \ the selected BG11R recipe. No comparator quantity becomes a target growth metric.\"\
+    \n  }\n]"
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact named variant and contribution membership
+  outcome: supported
+  summary: BG11R is resolved to both exact algae owners and the two native inspected
+    merge contributions. All 14 ingredient amounts match the named FEBA block plus
+    the correctly diluted A5 stock. Neighboring BG11, BG11R, nitrogen-free, carbonate-free
+    and TES variants remain distinct.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - record
+  - feba-main
+  - feba-a5
+  - owner-0
+  - owner-1
+- assessment_id: chemical-forms
+  area: grounding
+  topic: Source identity versus canonical ontology metadata
+  outcome: concern
+  summary: Citric acid is incorrectly mapped to sodium citrate. EDTA hydration is
+    unresolved by conflicting source CAS and formula-weight metadata. All other named
+    forms, including the explicit trace hydrates, agree at the supported source level;
+    misleading potassium-phosphate synonyms do not override its name, CAS and formula.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - forms
+  - citric-acid-candidate
+  - chebi53258
+  - chebi64734
+  - chebi131527
+  - compound-0
+  - compound-1
+  - compound-2
+  - compound-3
+  - compound-4
+  - compound-5
+  - compound-6
+  - compound-7
+  - compound-8
+  - compound-9
+  - compound-10
+  - compound-11
+  - compound-12
+  - compound-13
+- assessment_id: provenance-scope
+  area: provenance
+  topic: Source versions and current repair scope
+  outcome: concern
+  summary: The September FEBA revision supports the exact current numerical recipe
+    but does not authenticate the March CultureBotHT import. Current owner has later
+    repair metadata and two broad references; target lacks these later fields. An
+    ingredients_curated flag is not proof that chemical forms or evidence have been
+    checked. No universal historical-merger causal claim is made.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - record
+  - feba-version
+  - writer-0
+  - owner-0
+  - owner-1
+- assessment_id: preparation
+  area: completeness
+  topic: Protocol, culture conditions and source-only information
+  outcome: unknown
+  summary: The FEBA block states pH 7.1 but has no water make-up, sterilization procedure,
+    temperature or light. These required protocol details remain unknown, rather than
+    being imported from another BG11 recipe. There is no local solution reference
+    to validate and no existing nested stock; the A5 source ratio is retained in the
+    inventory.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - feba-main
+  - feba-a5
+  - quantity-inventory
+- assessment_id: growth
+  area: evidence
+  topic: Eight inherited owner claims and exact source/variant boundaries
+  outcome: concern
+  summary: Only algae/bg11.yaml carries three experimental variants, three target
+    organisms and eight evidence objects. Current abstracts support their narrow observations;
+    historical capture authentication is not claimed. UCP002 rate dimensional basis
+    and ABC-009 BATCH mode remain unsupported by the inspected abstracts. Complete-genome
+    existence is explicitly stated in a separate current UCP002 abstract sentence;
+    no assembly accession is resolved. None of these observations transfers automatically
+    to the merged BG11R recipe.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - record
+  - claim-scope
+  - pubmed-36550226
+  - pubmed-36437912
+  - pubmed-34584038
+  - marker-abc009
+- assessment_id: taxonomy
+  area: grounding
+  topic: Exact current strain/name and marker correspondence
+  outcome: concern
+  summary: NCBI taxonomy 2885151 matches Synechococcus sp. UCP002; taxonomy 3088 is
+    Tetradesmus obliquus with Scenedesmus obliquus as a synonym. GenBank MG971386.1
+    links ABC-009 to taxon 3088 and is a partial small-subunit rRNA marker. Taxonomy
+    92942 access failed with HTTP 429, so its local Nostoc linckia name/ID match remains
+    unconfirmed. Taxonomy resolution is separate from medium growth and recipe equivalence.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - taxon-2885151
+  - taxon-3088
+  - marker-abc009
+  - bg11ContextTaxonomy92942-attempt
+- assessment_id: classification
+  area: scope
+  topic: Existing physical and organizational classifications
+  outcome: unknown
+  summary: The named formulation supports a liquid mineral-medium representation and
+    cyanobacterial intended use. FEBA Minimal TRUE is not a complete chemical-definition
+    proof, particularly for ferric ammonium citrate of indefinite composition. Preserve
+    category context without inferring cultivation oxygen, strain taxonomy or a replacement
+    classification solely from the name.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - feba-main
+  - chebi31604
+  - record
+- assessment_id: links
+  area: evidence
+  topic: Reference placement, identity and historical correspondence
+  outcome: concern
+  summary: The BG11 and BG11R owners have distinct CultureBotHT identifiers; algae
+    BG11 additionally has eight PMID-linked evidence objects, three taxonomy IDs and
+    the MG971386.1 marker mentioned in an explanation. Those paper and marker roles
+    are individually reviewed. The generated target retains neither the owner experimental
+    structures nor structured pH. No KG match, GCA/GCF/SAMN accession, nested solution
+    reference, legacy MIM identifier or secondary MIM slot is asserted by these selected
+    layers. The bacterial CCAP C17 namesake and its six literature claims are excluded.
+  target_ids:
+  - CultureMech:015456
+  evidence_ids:
+  - record
+  - claim-scope
+  - mim
+  - marker-abc009
+  - owner-0
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: culturemech.015456.citric-acid-salt
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Citric acid is represented by a sodium-citrate identifier
+  description: Both target and maintained owner name Citric Acid and retain acid CAS
+    77-92-9/FW 192.12, but their primary term is CHEBI:53258 sodium citrate. This
+    is a chemical-form mismatch despite canonical label validity.
+  target_ids:
+  - CultureMech:015456
+  field_paths:
+  - ingredients[4].term
+  - ingredients[4].notes
+  evidence_ids:
+  - feba-main
+  - forms
+  - chebi53258
+  - citric-acid-candidate
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.015456.edta-hydration
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: EDTA hydration is asserted more specifically than the reconciled source metadata
+  description: CHEBI:64734 explicitly asserts anhydrous disodium EDTA. The source
+    name is unqualified; its CAS differs from the anhydrous OLS CAS while its formula
+    weight agrees closely with the anhydrous form. The unresolved source metadata
+    conflict must not be presented as verified hydration.
+  target_ids:
+  - CultureMech:015456
+  field_paths:
+  - ingredients[6].term
+  - ingredients[6].notes
+  evidence_ids:
+  - forms
+  - chebi64734
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.015456.amount-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Correct numerical amounts lack attached source and stock-dilution evidence
+  description: Every selected ingredient concentration is numerically supported by
+    the exact FEBA variant or the explicit A5 1000 X to 1 X dilution, but neither
+    target nor maintained owner carries claim-level concentration evidence. Broad
+    source links and the curated flag omit the verified version, exact rows and arithmetic.
+  target_ids:
+  - CultureMech:015456
+  field_paths:
+  - ingredients
+  - references
+  - data_quality_flags
+  evidence_ids:
+  - feba-main
+  - feba-a5
+  - quantity-inventory
+  - writer-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: 'P4.3 is normalized to minor as a concrete traceability exception:
+    the exact named formulation and dilution support all numerical rates, so no wrong
+    amount is alleged, but every selected concentration lacks attached claim-level
+    evidence needed to reproduce those source and stock-stage decisions.'
+- finding_id: f4
+  issue_key: culturemech.015456.stale-owner-metadata
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated projection omits later owner source metadata
+  description: The generated record predates the maintained owner repairs and lacks
+    their media_term and references, together with structured ph_value and the separately
+    scoped algae BG11 experimental structures. Reconciliation must retain append-only
+    chronology and qualify curated status against the actual evidence, rather than
+    assuming the current generator caused every historical difference.
+  target_ids:
+  - CultureMech:015456
+  field_paths:
+  - media_term
+  - references
+  - curation_history
+  - data_quality_flags
+  evidence_ids:
+  - record
+  - writer-0
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.4
+  native_severity: P4
+  normalization_reason: P4.4 is normalized to minor because the generated projection
+    omits actual later owner media identity, references and append-only repair context.
+    This is a bounded metadata-reconciliation defect; it does not establish a wrong
+    numerical formulation or prove historical generator causation.
+- finding_id: f5
+  issue_key: culturemech.015456.owner-context-omission
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Merged BG11R omits supported pH and distinct contributor context
+  description: The target description retains pH 7.1, but its structured ph_value
+    is missing although both exact algae owners retain it. Only algae/bg11.yaml carries
+    three variants, three organisms and eight claims; those structures are absent
+    from the target. Their current scientific scope must be reconciled explicitly
+    before any merge projection, because equal ingredient fingerprints do not establish
+    experimental recipe identity.
+  target_ids:
+  - CultureMech:015456
+  field_paths:
+  - ph_value
+  - variants
+  - target_organisms
+  - source_data
+  - synonyms
+  evidence_ids:
+  - record
+  - feba-main
+  - claim-scope
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.2
+  native_severity: P4
+  normalization_reason: P4.2 is normalized to major because structured pH and the
+    separate contributor context for three variants, three organisms and eight claims
+    are absent from the merged target; unqualified projection or omission changes
+    the scientific identity and evidence scope, beyond an optional organism enrichment.
+- finding_id: f6
+  issue_key: culturemech.015456.growth-dimensional-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Owner growth annotations exceed the available abstract support
+  description: The algae BG11 owner records UCP002 growth_rate_per_hour=0.086 although
+    the current abstract prints mu without an explicit per-hour unit, and records
+    ABC-009 growth_mode=BATCH without an explicit batch statement in the inspected
+    abstract. The doubling-time conversion is valid separately. A complete UCP002
+    genome is stated in the current abstract, but its inherited genome-features excerpt
+    should be replaced or supplemented with that precise sentence; no assembly accession
+    is established.
+  target_ids:
+  - CultureMech:015456
+  field_paths:
+  - data/normalized_yaml/algae/bg11.yaml::target_organisms[1].growth_metrics[0].growth_rate_per_hour
+  - data/normalized_yaml/algae/bg11.yaml::target_organisms[1].evidence[0]
+  - data/normalized_yaml/algae/bg11.yaml::target_organisms[2].growth_metrics[0].growth_mode
+  evidence_ids:
+  - claim-scope
+  - pubmed-36437912
+  - pubmed-34584038
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is normalized to major because the owner asserts a quantitative
+    per-hour dimension and BATCH mode beyond the inspected source support. These are
+    existing scientific assertions with material interpretive impact, distinct from
+    merely missing citation linkage.
+actions:
+- action_id: a1
+  description: Correct the maintained owner to the supported acid identity with source
+    evidence, preserve its concentration and provenance, then regenerate only under
+    separately authorized workflow.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015456
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve the exact supplier/source form or record the hydration uncertainty
+    explicitly without guessing a replacement ID, quantity or molar conversion.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015456
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach exact versioned source evidence and explicit A5 stock-to-medium
+    arithmetic in the owner, preserving direct units and uncertainty. Do not replace
+    these correct rates with undiluted stock values.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015456
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: After owner scientific corrections, reconcile generated metadata using
+    the authorized generator and preserve the existing historical events.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:015456
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve source-supported structured pH; assess each owner variant
+    and exact paper formulation before projecting scoped evidence or deciding a split.
+    Do not bulk-copy growth claims or infer equivalence from the fingerprint.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:015456
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11r.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Recover exact paper methods for the rate dimension and cultivation
+    mode, or qualify/remove the unsupported structured specificity. Attach the exact
+    genome-supporting sentence, preserve correct doubling arithmetic and do not transfer
+    comparator maxima or unverified growth to BG11R.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:015456
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized source
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact public CultureBotHT endpoint returned HTTP 404 at its retained actual
+  access time. The March import bytes and their historical equivalence to the later
+  FEBA recipe remain unverified. Current named FEBA amounts are independently assessable;
+  the missing historical source is a partial-completion limit.
+- The current NCBI taxonomy request for 92942 returned HTTP 429. The exact Nostoc
+  name/ID correspondence cannot be independently confirmed from that response. The
+  separate current paper abstract is available and supports the paper-scoped growth
+  comparison.
+- Coverage is partial because historical CultureBotHT source identity and complete
+  preparation conditions remain unresolved. All current target/owner concentrations
+  and supplied-form assertions were nevertheless assessed. Excluded comparison-only
+  source failures do not become extra required checks; actual owner taxonomy and method
+  limits remain required.
+- Required remaining limits include exact historical CultureBotHT files, the full
+  paper methods needed for strain-specific recipe identity/rate units/cultivation
+  mode, and failed current taxonomy 92942. The eight owner excerpts agree with current
+  abstracts after explicitly documented whitespace normalization; original historical
+  response bytes were not asserted or recovered. Excluded bacterial BG11 and other
+  comparison records are not contributors.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-041
+- generated-medium
+```
