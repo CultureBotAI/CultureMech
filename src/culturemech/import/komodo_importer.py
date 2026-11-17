@@ -15,21 +15,20 @@ Key Features:
 - Organism-media associations
 
 Reference:
-- Zarecki et al. (2015) Nature Communications
+- Oberhardt et al. (2015), Nature Communications 6:8493 (doi:10.1038/ncomms9493; PMID:26460590)
 - https://komodo.modelseed.org/
 """
 
 import json
-import yaml
-import re
-from pathlib import Path
-from typing import Any, Dict, List, Optional
-from datetime import datetime
 import logging
+from datetime import datetime, timezone
 from importlib import import_module
+from pathlib import Path
+
+import yaml
 
 # Import from module with reserved keyword name
-ChemicalMapper = import_module('culturemech.import.chemical_mappings').ChemicalMapper
+ChemicalMapper = import_module("culturemech.import.chemical_mappings").ChemicalMapper
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -43,7 +42,7 @@ class KOMODOImporter:
         komodo_data_dir: Path,
         output_dir: Path,
         curator: str = "komodo-import",
-        chemical_mapper: Optional[ChemicalMapper] = None,
+        chemical_mapper: ChemicalMapper | None = None,
     ):
         """
         Initialize importer.
@@ -64,14 +63,12 @@ class KOMODOImporter:
         self.organisms_data = self._load_json("komodo_organisms.json")
 
         # Extract lists from data structure
-        self.media = self.media_data.get('data', [])
-        self.compounds = self.compounds_data.get('data', [])
-        self.organisms = self.organisms_data.get('data', [])
+        self.media = self.media_data.get("data", [])
+        self.compounds = self.compounds_data.get("data", [])
+        self.organisms = self.organisms_data.get("data", [])
 
         # Index compounds by SEED ID for quick lookup
-        self.seed_to_compound = {
-            comp['id']: comp for comp in self.compounds
-        }
+        self.seed_to_compound = {comp["id"]: comp for comp in self.compounds}
 
         # Initialize chemical mapper
         self.chemical_mapper = chemical_mapper
@@ -80,17 +77,17 @@ class KOMODOImporter:
         logger.info(f"Loaded {len(self.compounds)} SEED compounds")
         logger.info(f"Loaded {len(self.organisms)} organism associations")
 
-    def _load_json(self, filename: str) -> Dict:
+    def _load_json(self, filename: str) -> dict:
         """Load JSON file from KOMODO data directory."""
         path = self.komodo_dir / filename
         if not path.exists():
             logger.warning(f"File not found: {path}")
-            return {'count': 0, 'data': []}
+            return {"count": 0, "data": []}
 
-        with open(path, encoding='utf-8') as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
 
-    def import_all(self, limit: Optional[int] = None) -> List[Path]:
+    def import_all(self, limit: int | None = None) -> list[Path]:
         """
         Import all KOMODO media to CultureMech format.
 
@@ -120,15 +117,13 @@ class KOMODOImporter:
                     generated.append(yaml_path)
                     logger.info(f"✓ Imported {yaml_path.name}")
             except Exception as e:
-                logger.error(
-                    f"✗ Error importing {medium.get('name', 'Unknown')}: {e}"
-                )
+                logger.error(f"✗ Error importing {medium.get('name', 'Unknown')}: {e}")
 
         logger.info(f"\n✓ Imported {len(generated)}/{len(media_list)} media")
         logger.info(f"⊘ Skipped {duplicates} duplicates")
         return generated
 
-    def import_medium(self, medium: Dict) -> Optional[Path]:
+    def import_medium(self, medium: dict) -> Path | None:
         """
         Convert a single KOMODO medium to CultureMech YAML.
 
@@ -144,8 +139,8 @@ class KOMODOImporter:
             return None
 
         # Generate unique filename
-        medium_id = medium.get('id', 'unknown')
-        name = recipe['name']
+        medium_id = medium.get("id", "unknown")
+        name = recipe["name"]
 
         # Sanitize name for filename
         clean_name = self._sanitize_filename(name)
@@ -159,12 +154,12 @@ class KOMODOImporter:
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Write YAML
-        with open(output_path, 'w', encoding='utf-8') as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             yaml.dump(recipe, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
 
         return output_path
 
-    def _convert_to_culturemech(self, medium: Dict) -> Optional[Dict]:
+    def _convert_to_culturemech(self, medium: dict) -> dict | None:
         """
         Convert KOMODO medium to CultureMech schema.
 
@@ -174,41 +169,38 @@ class KOMODOImporter:
         Returns:
             CultureMech recipe dictionary
         """
-        if not medium.get('name'):
+        if not medium.get("name"):
             return None
 
         recipe = {
-            'name': medium['name'],
-            'original_name': medium['name'],
-            'category': 'imported',
-            'medium_type': self._infer_medium_type(medium),
-            'physical_state': self._infer_physical_state(medium),
-            'ingredients': self._map_ingredients(medium),
-            'preparation_steps': self._create_preparation_steps(medium),
-            'curation_history': self._create_curation_history(medium)
+            "name": medium["name"],
+            "original_name": medium["name"],
+            "category": "imported",
+            "medium_type": self._infer_medium_type(medium),
+            "physical_state": self._infer_physical_state(medium),
+            "ingredients": self._map_ingredients(medium),
+            "preparation_steps": self._create_preparation_steps(medium),
+            "curation_history": self._create_curation_history(medium),
         }
 
         # Add media term
-        if medium.get('id'):
-            recipe['media_term'] = {
-                'preferred_term': f"KOMODO Medium {medium['id']}",
-                'term': {
-                    'id': f"KOMODO:{medium['id']}",
-                    'label': medium['name']
-                }
+        if medium.get("id"):
+            recipe["media_term"] = {
+                "preferred_term": f"KOMODO Medium {medium['id']}",
+                "term": {"id": f"KOMODO:{medium['id']}", "label": medium["name"]},
             }
 
         # Add notes
         notes = []
-        notes.append(f"Source: KOMODO (Known Media Database)")
-        notes.append(f"Reference: https://komodo.modelseed.org/")
-        notes.append(f"Standardized molar concentrations from SEED compound database")
+        notes.append("Source: KOMODO (Known Media Database)")
+        notes.append("Reference: https://komodo.modelseed.org/")
+        notes.append("Standardized molar concentrations from SEED compound database")
 
-        recipe['notes'] = ' '.join(notes)
+        recipe["notes"] = " ".join(notes)
 
         return recipe
 
-    def _map_ingredients(self, medium: Dict) -> List[Dict]:
+    def _map_ingredients(self, medium: dict) -> list[dict]:
         """
         Map KOMODO ingredients to CultureMech format.
 
@@ -220,8 +212,8 @@ class KOMODOImporter:
         """
         ingredients = []
 
-        for comp in medium.get('composition', []):
-            seed_id = comp.get('seed_id') or comp.get('compound_id')
+        for comp in medium.get("composition", []):
+            seed_id = comp.get("seed_id") or comp.get("compound_id")
             if not seed_id:
                 continue
 
@@ -231,60 +223,54 @@ class KOMODOImporter:
                 logger.debug(f"Compound not found for SEED ID: {seed_id}")
                 continue
 
-            compound_name = compound.get('name', seed_id)
+            compound_name = compound.get("name", seed_id)
 
-            ingredient = {
-                'preferred_term': compound_name
-            }
+            ingredient = {"preferred_term": compound_name}
 
             # Try to map to ChEBI via chemical mapper
             if self.chemical_mapper:
                 mapping = self.chemical_mapper.lookup(compound_name)
-                if mapping and mapping.get('chebi_id'):
-                    chebi_id = mapping['chebi_id']
-                    if not chebi_id.startswith('CHEBI:'):
+                if mapping and mapping.get("chebi_id"):
+                    chebi_id = mapping["chebi_id"]
+                    if not chebi_id.startswith("CHEBI:"):
                         chebi_id = f"CHEBI:{chebi_id}"
 
-                    ingredient['term'] = {
-                        'id': chebi_id,
-                        'label': mapping.get('chebi_label', compound_name)
+                    ingredient["term"] = {
+                        "id": chebi_id,
+                        "label": mapping.get("chebi_label", compound_name),
                     }
 
             # Add molar concentration if available
-            concentration = comp.get('concentration')
-            concentration_mm = comp.get('concentration_mM')
+            concentration = comp.get("concentration")
+            concentration_mm = comp.get("concentration_mM")
 
             if concentration_mm is not None:
-                ingredient['concentration'] = {
-                    'value': str(concentration_mm),
-                    'unit': 'MM'  # Millimolar
+                ingredient["concentration"] = {
+                    "value": str(concentration_mm),
+                    "unit": "MM",  # Millimolar
                 }
             elif concentration is not None:
                 # Assume mM if no unit specified
-                ingredient['concentration'] = {
-                    'value': str(concentration),
-                    'unit': 'MM'
-                }
+                ingredient["concentration"] = {"value": str(concentration), "unit": "MM"}
 
             # Add SEED compound ID as note
-            ingredient['notes'] = f"SEED ID: {seed_id}"
+            ingredient["notes"] = f"SEED ID: {seed_id}"
 
             ingredients.append(ingredient)
 
         # Fallback if no ingredients found
         if not ingredients:
-            ingredients = [{
-                'preferred_term': 'See source for composition',
-                'concentration': {
-                    'value': 'variable',
-                    'unit': 'G_PER_L'
-                },
-                'notes': 'Full composition available at KOMODO database'
-            }]
+            ingredients = [
+                {
+                    "preferred_term": "See source for composition",
+                    "concentration": {"value": "variable", "unit": "G_PER_L"},
+                    "notes": "Full composition available at KOMODO database",
+                }
+            ]
 
         return ingredients
 
-    def _create_preparation_steps(self, medium: Dict) -> List[Dict]:
+    def _create_preparation_steps(self, medium: dict) -> list[dict]:
         """
         Create preparation steps from KOMODO data.
 
@@ -296,25 +282,25 @@ class KOMODOImporter:
         """
         steps = [
             {
-                'step_number': 1,
-                'action': 'DISSOLVE',
-                'description': 'Dissolve all ingredients in distilled water to achieve specified molar concentrations'
+                "step_number": 1,
+                "action": "DISSOLVE",
+                "description": "Dissolve all ingredients in distilled water to achieve specified molar concentrations",
             },
             {
-                'step_number': 2,
-                'action': 'ADJUST_PH',
-                'description': 'Adjust pH if specified in original formulation'
+                "step_number": 2,
+                "action": "ADJUST_PH",
+                "description": "Adjust pH if specified in original formulation",
             },
             {
-                'step_number': 3,
-                'action': 'AUTOCLAVE',
-                'description': 'Sterilize by autoclaving at 121°C for 15-20 minutes'
-            }
+                "step_number": 3,
+                "action": "AUTOCLAVE",
+                "description": "Sterilize by autoclaving at 121°C for 15-20 minutes",
+            },
         ]
 
         return steps
 
-    def _infer_medium_type(self, medium: Dict) -> str:
+    def _infer_medium_type(self, medium: dict) -> str:
         """
         Infer medium type from name and composition.
 
@@ -324,23 +310,23 @@ class KOMODOImporter:
         Returns:
             Medium type (DEFINED, COMPLEX, MINIMAL)
         """
-        name = medium.get('name', '').lower()
+        name = medium.get("name", "").lower()
 
         # Check for complex media indicators
-        complex_terms = ['agar', 'broth', 'extract', 'peptone', 'yeast']
+        complex_terms = ["agar", "broth", "extract", "peptone", "yeast"]
         if any(term in name for term in complex_terms):
-            return 'COMPLEX'
+            return "COMPLEX"
 
         # Check for minimal media indicators
-        minimal_terms = ['minimal', 'defined', 'synthetic']
+        minimal_terms = ["minimal", "defined", "synthetic"]
         if any(term in name for term in minimal_terms):
-            return 'DEFINED'
+            return "DEFINED"
 
         # KOMODO media are typically well-defined with molar concentrations
         # Default to DEFINED
-        return 'DEFINED'
+        return "DEFINED"
 
-    def _infer_physical_state(self, medium: Dict) -> str:
+    def _infer_physical_state(self, medium: dict) -> str:
         """
         Infer physical state from name.
 
@@ -350,16 +336,16 @@ class KOMODOImporter:
         Returns:
             Physical state (LIQUID, SOLID_AGAR)
         """
-        name = medium.get('name', '').lower()
+        name = medium.get("name", "").lower()
 
         # Check for agar
-        if 'agar' in name:
-            return 'SOLID_AGAR'
+        if "agar" in name:
+            return "SOLID_AGAR"
 
         # Default to liquid
-        return 'LIQUID'
+        return "LIQUID"
 
-    def _infer_category(self, medium: Dict) -> str:
+    def _infer_category(self, medium: dict) -> str:
         """
         Determine media category for file organization.
 
@@ -369,19 +355,19 @@ class KOMODOImporter:
         Returns:
             Category name (bacterial, fungal, archaea, specialized)
         """
-        name = medium.get('name', '').lower()
+        name = medium.get("name", "").lower()
 
         # Category keywords
-        if any(term in name for term in ['fungi', 'fungal', 'yeast', 'mold', 'mould']):
-            return 'fungal'
-        elif any(term in name for term in ['archaea', 'archaeal', 'halophil', 'methanogen']):
-            return 'archaea'
-        elif any(term in name for term in ['marine', 'seawater', 'extreme', 'anaerobic']):
-            return 'specialized'
+        if any(term in name for term in ["fungi", "fungal", "yeast", "mold", "mould"]):
+            return "fungal"
+        elif any(term in name for term in ["archaea", "archaeal", "halophil", "methanogen"]):
+            return "archaea"
+        elif any(term in name for term in ["marine", "seawater", "extreme", "anaerobic"]):
+            return "specialized"
         else:
-            return 'bacterial'  # Default
+            return "bacterial"  # Default
 
-    def _create_curation_history(self, medium: Dict) -> List[Dict]:
+    def _create_curation_history(self, medium: dict) -> list[dict]:
         """
         Create curation history record.
 
@@ -393,14 +379,14 @@ class KOMODOImporter:
         """
         return [
             {
-                'timestamp': datetime.utcnow().isoformat() + 'Z',
-                'curator': self.curator,
-                'action': 'Imported from KOMODO',
-                'notes': (
+                "timestamp": datetime.now(timezone.utc).replace(tzinfo=None).isoformat() + "Z",
+                "curator": self.curator,
+                "action": "Imported from KOMODO",
+                "notes": (
                     f"Source: KOMODO (Known Media Database), "
                     f"Medium ID: {medium.get('id', 'unknown')}, "
-                    f"Reference: Zarecki et al. (2015) Nature Communications"
-                )
+                    f"Reference: Oberhardt et al. (2015), Nature Communications 6:8493 (doi:10.1038/ncomms9493; PMID:26460590)"
+                ),
             }
         ]
 
@@ -415,19 +401,19 @@ class KOMODOImporter:
             Sanitized filename-safe string
         """
         # Replace non-alphanumeric characters with underscore
-        clean_name = ''
+        clean_name = ""
         for char in name:
-            if char.isalnum() or char in ['-', '.']:
+            if char.isalnum() or char in ["-", "."]:
                 clean_name += char
             else:
-                clean_name += '_'
+                clean_name += "_"
 
         # Collapse multiple underscores
-        while '__' in clean_name:
-            clean_name = clean_name.replace('__', '_')
+        while "__" in clean_name:
+            clean_name = clean_name.replace("__", "_")
 
         # Remove leading/trailing underscores
-        clean_name = clean_name.strip('_')
+        clean_name = clean_name.strip("_")
 
         # Limit length
         if len(clean_name) > 50:
@@ -435,7 +421,7 @@ class KOMODOImporter:
 
         return clean_name
 
-    def _check_duplicate(self, medium: Dict) -> bool:
+    def _check_duplicate(self, medium: dict) -> bool:
         """
         Check if medium already exists in knowledge base.
 
@@ -445,24 +431,24 @@ class KOMODOImporter:
         Returns:
             True if duplicate found, False otherwise
         """
-        name = medium.get('name', '').lower()
+        name = medium.get("name", "").lower()
 
         # Check for exact name matches in existing files
-        for category in ['bacterial', 'fungal', 'archaea', 'specialized', 'algae']:
+        for category in ["bacterial", "fungal", "archaea", "specialized", "algae"]:
             kb_dir = self.output_dir / category
             if not kb_dir.exists():
                 continue
 
-            for yaml_file in kb_dir.glob('*.yaml'):
+            for yaml_file in kb_dir.glob("*.yaml"):
                 # Skip KOMODO files (we're importing KOMODO)
-                if 'KOMODO' in yaml_file.name:
+                if "KOMODO" in yaml_file.name:
                     continue
 
                 try:
-                    with open(yaml_file, encoding='utf-8') as f:
+                    with open(yaml_file, encoding="utf-8") as f:
                         existing = yaml.safe_load(f)
 
-                    existing_name = existing.get('name', '').lower()
+                    existing_name = existing.get("name", "").lower()
 
                     # Simple name matching
                     if name == existing_name:
@@ -472,7 +458,9 @@ class KOMODOImporter:
                     # Fuzzy matching (>90% similarity)
                     similarity = self._name_similarity(name, existing_name)
                     if similarity > 0.9:
-                        logger.debug(f"Similar media found: {name} ≈ {existing_name} ({similarity:.2%})")
+                        logger.debug(
+                            f"Similar media found: {name} ≈ {existing_name} ({similarity:.2%})"
+                        )
                         return True
 
                 except Exception as e:
@@ -504,25 +492,25 @@ class KOMODOImporter:
 
         return len(intersection) / len(union)
 
-    def get_statistics(self) -> Dict:
+    def get_statistics(self) -> dict:
         """Get statistics about KOMODO import."""
         stats = {
-            'total_media': len(self.media),
-            'total_compounds': len(self.compounds),
-            'total_organisms': len(self.organisms),
-            'media_by_type': {},
-            'media_by_category': {}
+            "total_media": len(self.media),
+            "total_compounds": len(self.compounds),
+            "total_organisms": len(self.organisms),
+            "media_by_type": {},
+            "media_by_category": {},
         }
 
         # Count by type
         for medium in self.media:
             medium_type = self._infer_medium_type(medium)
-            stats['media_by_type'][medium_type] = stats['media_by_type'].get(medium_type, 0) + 1
+            stats["media_by_type"][medium_type] = stats["media_by_type"].get(medium_type, 0) + 1
 
         # Count by category
         for medium in self.media:
             category = self._infer_category(medium)
-            stats['media_by_category'][category] = stats['media_by_category'].get(category, 0) + 1
+            stats["media_by_category"][category] = stats["media_by_category"].get(category, 0) + 1
 
         return stats
 
@@ -531,41 +519,29 @@ def main():
     """CLI entry point."""
     import argparse
 
-    parser = argparse.ArgumentParser(
-        description="Import KOMODO media to CultureMech"
-    )
+    parser = argparse.ArgumentParser(description="Import KOMODO media to CultureMech")
     parser.add_argument(
-        "-i", "--input",
+        "-i",
+        "--input",
         type=Path,
         default="data/raw/komodo",
-        help="Input directory with KOMODO raw JSON files (Layer 1: data/raw/komodo/)"
+        help="Input directory with KOMODO raw JSON files (Layer 1: data/raw/komodo/)",
     )
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=Path,
         default="data/normalized_yaml",
-        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)"
+        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)",
     )
-    parser.add_argument(
-        "-l", "--limit",
-        type=int,
-        help="Limit number of media to import"
-    )
-    parser.add_argument(
-        "--stats",
-        action="store_true",
-        help="Print statistics only (no import)"
-    )
+    parser.add_argument("-l", "--limit", type=int, help="Limit number of media to import")
+    parser.add_argument("--stats", action="store_true", help="Print statistics only (no import)")
     parser.add_argument(
         "--microbe-media-param",
         type=Path,
-        help="Path to MicrobeMediaParam mappings for ChEBI lookup"
+        help="Path to MicrobeMediaParam mappings for ChEBI lookup",
     )
-    parser.add_argument(
-        "--mediadive",
-        type=Path,
-        help="Path to MediaDive data for ChEBI lookup"
-    )
+    parser.add_argument("--mediadive", type=Path, help="Path to MediaDive data for ChEBI lookup")
 
     args = parser.parse_args()
 
@@ -573,14 +549,11 @@ def main():
     chemical_mapper = None
     if args.microbe_media_param or args.mediadive:
         chemical_mapper = ChemicalMapper(
-            microbe_media_param_dir=args.microbe_media_param,
-            mediadive_data_dir=args.mediadive
+            microbe_media_param_dir=args.microbe_media_param, mediadive_data_dir=args.mediadive
         )
 
     importer = KOMODOImporter(
-        komodo_data_dir=args.input,
-        output_dir=args.output,
-        chemical_mapper=chemical_mapper
+        komodo_data_dir=args.input, output_dir=args.output, chemical_mapper=chemical_mapper
     )
 
     if args.stats:

@@ -278,7 +278,7 @@ If >95% of media are duplicates:
 ## License & Attribution
 
 **KOMODO License**: Check with maintainers for current license terms
-**Citation**: Zarecki et al. (2015) Nature Communications
+**Citation**: Oberhardt et al. (2015), Nature Communications 6:8493 (doi:10.1038/ncomms9493; PMID:26460590)
 **Integration**: CultureMech (CC0-1.0)
 
 When using KOMODO data, please cite the original publication.

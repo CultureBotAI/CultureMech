@@ -1,9 +1,9 @@
 """
 KOMODO (Known Media Database) Fetcher
 
-Fetches media data from KOMODO - a standardized media database from DSMZ.
-KOMODO contains 3,335 media with standardized molar concentrations integrated
-with the SEED compound database.
+Fetches media data from KOMODO (Known Media Database), built by Oberhardt et al. (2015)
+from the Leibniz Institute DSMZ media catalogue. KOMODO contains 3,335 media with
+standardized molar concentrations integrated with the SEED compound database.
 
 Data Sources:
 - SQL database dump (preferred)
@@ -11,19 +11,17 @@ Data Sources:
 - Web scraping fallback (https://komodo.modelseed.org/)
 
 Reference:
-- Zarecki et al. (2015) Nature Communications
+- Oberhardt et al. (2015), Nature Communications 6:8493 (doi:10.1038/ncomms9493; PMID:26460590)
 - https://komodo.modelseed.org/
 """
 
 import argparse
 import json
-import re
-import time
-from pathlib import Path
-from typing import Any, Dict, List, Optional
-from datetime import datetime
 import logging
+import re
 import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -31,6 +29,7 @@ logger = logging.getLogger(__name__)
 # Optional dependencies for Excel parsing
 try:
     import openpyxl
+
     HAS_OPENPYXL = True
 except ImportError:
     HAS_OPENPYXL = False
@@ -38,6 +37,7 @@ except ImportError:
 
 try:
     import pandas as pd
+
     HAS_PANDAS = True
 except ImportError:
     HAS_PANDAS = False
@@ -91,7 +91,7 @@ class KOMODOFetcher:
             logger.error("sqlparse not installed. Install with: pip install sqlparse")
             return False
 
-        with open(sql_file, 'r', encoding='utf-8', errors='ignore') as f:
+        with open(sql_file, encoding="utf-8", errors="ignore") as f:
             sql_content = f.read()
 
         # Parse SQL statements
@@ -105,10 +105,10 @@ class KOMODOFetcher:
                 continue
 
             # Look for INSERT statements
-            if stmt.upper().startswith('INSERT INTO'):
+            if stmt.upper().startswith("INSERT INTO"):
                 self._parse_insert_statement(stmt)
 
-        logger.info(f"✓ Parsed SQL dump:")
+        logger.info("✓ Parsed SQL dump:")
         logger.info(f"  Media: {len(self.media)}")
         logger.info(f"  Compounds: {len(self.compounds)}")
         logger.info(f"  Organisms: {len(self.organisms)}")
@@ -118,25 +118,25 @@ class KOMODOFetcher:
     def _parse_insert_statement(self, stmt: str):
         """Parse INSERT statement to extract data."""
         # Extract table name
-        table_match = re.match(r'INSERT INTO\s+`?(\w+)`?', stmt, re.IGNORECASE)
+        table_match = re.match(r"INSERT INTO\s+`?(\w+)`?", stmt, re.IGNORECASE)
         if not table_match:
             return
 
         table_name = table_match.group(1).lower()
 
         # Extract values
-        values_match = re.search(r'VALUES\s*(\(.*\));?$', stmt, re.IGNORECASE | re.DOTALL)
+        values_match = re.search(r"VALUES\s*(\(.*\));?$", stmt, re.IGNORECASE | re.DOTALL)
         if not values_match:
             return
 
         values_str = values_match.group(1)
 
         # Parse based on table type
-        if 'media' in table_name or 'medium' in table_name:
+        if "media" in table_name or "medium" in table_name:
             self._parse_media_insert(values_str)
-        elif 'compound' in table_name or 'chemical' in table_name:
+        elif "compound" in table_name or "chemical" in table_name:
             self._parse_compound_insert(values_str)
-        elif 'organism' in table_name or 'species' in table_name:
+        elif "organism" in table_name or "species" in table_name:
             self._parse_organism_insert(values_str)
 
     def _parse_media_insert(self, values_str: str):
@@ -145,15 +145,15 @@ class KOMODOFetcher:
         # This is a simplified parser; adjust based on actual SQL structure
         try:
             # Extract individual records
-            records = re.findall(r'\(([^)]+)\)', values_str)
+            records = re.findall(r"\(([^)]+)\)", values_str)
             for record in records:
                 # Split by comma (handle quoted strings)
                 parts = self._split_sql_values(record)
                 if len(parts) >= 2:
                     medium = {
-                        'id': self._clean_sql_value(parts[0]),
-                        'name': self._clean_sql_value(parts[1]) if len(parts) > 1 else '',
-                        'composition': []
+                        "id": self._clean_sql_value(parts[0]),
+                        "name": self._clean_sql_value(parts[1]) if len(parts) > 1 else "",
+                        "composition": [],
                     }
                     self.media.append(medium)
         except Exception as e:
@@ -162,16 +162,16 @@ class KOMODOFetcher:
     def _parse_compound_insert(self, values_str: str):
         """Parse compound table INSERT values."""
         try:
-            records = re.findall(r'\(([^)]+)\)', values_str)
+            records = re.findall(r"\(([^)]+)\)", values_str)
             for record in records:
                 parts = self._split_sql_values(record)
                 if len(parts) >= 2:
                     compound_id = self._clean_sql_value(parts[0])
                     compound_name = self._clean_sql_value(parts[1])
                     self.compounds[compound_id] = {
-                        'id': compound_id,
-                        'name': compound_name,
-                        'seed_id': compound_id
+                        "id": compound_id,
+                        "name": compound_name,
+                        "seed_id": compound_id,
                     }
         except Exception as e:
             logger.debug(f"Error parsing compound insert: {e}")
@@ -179,23 +179,20 @@ class KOMODOFetcher:
     def _parse_organism_insert(self, values_str: str):
         """Parse organism table INSERT values."""
         try:
-            records = re.findall(r'\(([^)]+)\)', values_str)
+            records = re.findall(r"\(([^)]+)\)", values_str)
             for record in records:
                 parts = self._split_sql_values(record)
                 if len(parts) >= 2:
                     organism_id = self._clean_sql_value(parts[0])
                     organism_name = self._clean_sql_value(parts[1])
-                    self.organisms[organism_id] = {
-                        'id': organism_id,
-                        'name': organism_name
-                    }
+                    self.organisms[organism_id] = {"id": organism_id, "name": organism_name}
         except Exception as e:
             logger.debug(f"Error parsing organism insert: {e}")
 
-    def _split_sql_values(self, values: str) -> List[str]:
+    def _split_sql_values(self, values: str) -> list[str]:
         """Split SQL values by comma, respecting quoted strings."""
         parts = []
-        current = ''
+        current = ""
         in_quotes = False
         quote_char = None
 
@@ -203,9 +200,9 @@ class KOMODOFetcher:
             if char in ('"', "'") and (not in_quotes or char == quote_char):
                 in_quotes = not in_quotes
                 quote_char = char if in_quotes else None
-            elif char == ',' and not in_quotes:
+            elif char == "," and not in_quotes:
                 parts.append(current.strip())
-                current = ''
+                current = ""
                 continue
             current += char
 
@@ -219,12 +216,13 @@ class KOMODOFetcher:
         value = value.strip()
 
         # Handle NULL
-        if value.upper() == 'NULL':
-            return ''
+        if value.upper() == "NULL":
+            return ""
 
         # Remove quotes
-        if (value.startswith("'") and value.endswith("'")) or \
-           (value.startswith('"') and value.endswith('"')):
+        if (value.startswith("'") and value.endswith("'")) or (
+            value.startswith('"') and value.endswith('"')
+        ):
             value = value[1:-1]
 
         # Unescape
@@ -298,17 +296,17 @@ class KOMODOFetcher:
         try:
             if HAS_PANDAS:
                 # Use pandas for easier parsing
-                sheets = pd.read_excel(excel_path, sheet_name=None, engine='openpyxl')
+                sheets = pd.read_excel(excel_path, sheet_name=None, engine="openpyxl")
 
                 for sheet_name, df in sheets.items():
                     logger.info(f"  Sheet: {sheet_name} ({len(df)} rows)")
 
                     # Check if this is a compounds sheet
-                    if 'SEED' in sheet_name.upper() or 'COMPOUND' in sheet_name.upper():
+                    if "SEED" in sheet_name.upper() or "COMPOUND" in sheet_name.upper():
                         self._parse_compounds_from_dataframe(df)
 
                     # Check if this is a media sheet
-                    elif 'MEDIA' in sheet_name.upper() or 'MEDIUM' in sheet_name.upper():
+                    elif "MEDIA" in sheet_name.upper() or "MEDIUM" in sheet_name.upper():
                         self._parse_media_from_dataframe(df)
 
             elif HAS_OPENPYXL:
@@ -326,8 +324,11 @@ class KOMODOFetcher:
                         data_rows = rows[1:]
 
                         # Check if this looks like compounds data
-                        if any('SEED' in str(col).upper() or 'COMPOUND' in str(col).upper()
-                               for col in header if col):
+                        if any(
+                            "SEED" in str(col).upper() or "COMPOUND" in str(col).upper()
+                            for col in header
+                            if col
+                        ):
                             self._parse_compounds_from_rows(header, data_rows)
 
         except Exception as e:
@@ -341,9 +342,9 @@ class KOMODOFetcher:
 
         for col in df.columns:
             col_str = str(col).upper()
-            if 'SEED' in col_str and 'ID' in col_str:
+            if "SEED" in col_str and "ID" in col_str:
                 seed_col = col
-            elif 'NAME' in col_str or 'COMPOUND' in col_str:
+            elif "NAME" in col_str or "COMPOUND" in col_str:
                 name_col = col
 
         if seed_col is None:
@@ -351,7 +352,7 @@ class KOMODOFetcher:
             return
 
         # Extract compounds
-        for idx, row in df.iterrows():
+        for _idx, row in df.iterrows():
             seed_id = row.get(seed_col)
             if pd.isna(seed_id):
                 continue
@@ -365,9 +366,9 @@ class KOMODOFetcher:
                 compound_name = seed_id
 
             self.compounds[seed_id] = {
-                'id': seed_id,
-                'name': str(compound_name).strip(),
-                'seed_id': seed_id
+                "id": seed_id,
+                "name": str(compound_name).strip(),
+                "seed_id": seed_id,
             }
 
         logger.info(f"  Extracted {len(self.compounds)} compounds")
@@ -382,9 +383,9 @@ class KOMODOFetcher:
             if col is None:
                 continue
             col_str = str(col).upper()
-            if 'SEED' in col_str and 'ID' in col_str:
+            if "SEED" in col_str and "ID" in col_str:
                 seed_idx = idx
-            elif 'NAME' in col_str or 'COMPOUND' in col_str:
+            elif "NAME" in col_str or "COMPOUND" in col_str:
                 name_idx = idx
 
         if seed_idx is None:
@@ -404,14 +405,16 @@ class KOMODOFetcher:
             if not seed_id:
                 continue
 
-            compound_name = row[name_idx] if (name_idx is not None and len(row) > name_idx) else seed_id
+            compound_name = (
+                row[name_idx] if (name_idx is not None and len(row) > name_idx) else seed_id
+            )
             if compound_name is None:
                 compound_name = seed_id
 
             self.compounds[seed_id] = {
-                'id': seed_id,
-                'name': str(compound_name).strip(),
-                'seed_id': seed_id
+                "id": seed_id,
+                "name": str(compound_name).strip(),
+                "seed_id": seed_id,
             }
 
         logger.info(f"  Extracted {len(self.compounds)} compounds")
@@ -438,7 +441,7 @@ class KOMODOFetcher:
 
         return False
 
-    def scrape_web(self, limit: Optional[int] = None) -> bool:
+    def scrape_web(self, limit: int | None = None) -> bool:
         """
         Scrape KOMODO website as fallback.
 
@@ -460,52 +463,55 @@ class KOMODOFetcher:
 
         # Export media
         media_file = self.output_dir / "komodo_media.json"
-        with open(media_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                'count': len(self.media),
-                'data': self.media
-            }, f, indent=2, ensure_ascii=False)
+        with open(media_file, "w", encoding="utf-8") as f:
+            json.dump(
+                {"count": len(self.media), "data": self.media}, f, indent=2, ensure_ascii=False
+            )
         logger.info(f"✓ Saved {len(self.media)} media to {media_file}")
 
         # Export compounds
         compounds_file = self.output_dir / "komodo_compounds.json"
-        with open(compounds_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                'count': len(self.compounds),
-                'data': list(self.compounds.values())
-            }, f, indent=2, ensure_ascii=False)
+        with open(compounds_file, "w", encoding="utf-8") as f:
+            json.dump(
+                {"count": len(self.compounds), "data": list(self.compounds.values())},
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
         logger.info(f"✓ Saved {len(self.compounds)} compounds to {compounds_file}")
 
         # Export organisms
         organisms_file = self.output_dir / "komodo_organisms.json"
-        with open(organisms_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                'count': len(self.organisms),
-                'data': list(self.organisms.values())
-            }, f, indent=2, ensure_ascii=False)
+        with open(organisms_file, "w", encoding="utf-8") as f:
+            json.dump(
+                {"count": len(self.organisms), "data": list(self.organisms.values())},
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
         logger.info(f"✓ Saved {len(self.organisms)} organisms to {organisms_file}")
 
         # Export statistics
         stats = {
-            'fetch_date': datetime.utcnow().isoformat() + 'Z',
-            'source': 'KOMODO',
-            'total_media': len(self.media),
-            'total_compounds': len(self.compounds),
-            'total_organisms': len(self.organisms),
-            'url': 'https://komodo.modelseed.org/'
+            "fetch_date": datetime.now(timezone.utc).replace(tzinfo=None).isoformat() + "Z",
+            "source": "KOMODO",
+            "total_media": len(self.media),
+            "total_compounds": len(self.compounds),
+            "total_organisms": len(self.organisms),
+            "url": "https://komodo.modelseed.org/",
         }
 
         stats_file = self.output_dir / "fetch_stats.json"
-        with open(stats_file, 'w', encoding='utf-8') as f:
+        with open(stats_file, "w", encoding="utf-8") as f:
             json.dump(stats, f, indent=2)
         logger.info(f"✓ Saved statistics to {stats_file}")
 
     def fetch_all(
         self,
-        sql_file: Optional[Path] = None,
+        sql_file: Path | None = None,
         use_pmc: bool = False,
         use_github: bool = False,
-        scrape: bool = False
+        scrape: bool = False,
     ):
         """
         Fetch all KOMODO data using specified method.
@@ -591,43 +597,35 @@ Data sources:
 
   --scrape     Web scraping from komodo.modelseed.org
                Not recommended - incomplete data
-"""
+""",
     )
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=Path,
         default="data/raw/komodo",
-        help="Output directory for fetched data"
+        help="Output directory for fetched data",
     )
     parser.add_argument(
         "--pmc",
         action="store_true",
-        help="Fetch from PubMed Central supplementary files (RECOMMENDED)"
+        help="Fetch from PubMed Central supplementary files (RECOMMENDED)",
     )
-    parser.add_argument(
-        "--sql",
-        type=Path,
-        help="Path to KOMODO SQL dump file"
-    )
+    parser.add_argument("--sql", type=Path, help="Path to KOMODO SQL dump file")
     parser.add_argument(
         "--github",
         action="store_true",
-        help="Fetch from ModelSEED GitHub repository (biochemistry only)"
+        help="Fetch from ModelSEED GitHub repository (biochemistry only)",
     )
     parser.add_argument(
-        "--scrape",
-        action="store_true",
-        help="Web scraping fallback (not recommended)"
+        "--scrape", action="store_true", help="Web scraping fallback (not recommended)"
     )
 
     args = parser.parse_args()
 
     fetcher = KOMODOFetcher(output_dir=args.output)
     fetcher.fetch_all(
-        sql_file=args.sql,
-        use_pmc=args.pmc,
-        use_github=args.github,
-        scrape=args.scrape
+        sql_file=args.sql, use_pmc=args.pmc, use_github=args.github, scrape=args.scrape
     )
 
 

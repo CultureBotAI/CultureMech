@@ -503,7 +503,7 @@ grep "medium_type: DEFINED" kb/media/bacterial/MEDIADB_*.yaml | wc -l
 
 ## Acknowledgments
 
-- **DSMZ** for KOMODO database development
+- **Ruppin lab & ModelSEED collaboration** for KOMODO (Known Media Database) development (Oberhardt et al., 2015, *Nature Communications* 6:8493, doi:10.1038/ncomms9493; PMID:26460590), and **Leibniz Institute DSMZ** for the underlying media catalogue
 - **Institute for Systems Biology** for MediaDB curation
 - **ModelSEED** project for SEED compound database
 - **CultureMech Contributors** for schema and infrastructure

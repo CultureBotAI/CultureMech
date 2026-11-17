@@ -10,7 +10,7 @@
 
 ## Database Information
 
-**Database**: KOMODO (Knowledge base Of Microbial and Mammalian cells Defined and Optimized media)
+**Database**: KOMODO (Known Media Database)
 **Type**: Web table scraping
 **Purpose**: Media metadata extraction with DSMZ recipe mappings
 
@@ -121,6 +121,6 @@ uv run python -m culturemech.fetch.komodo_web_fetcher \
 
 ## Citations
 
-> KOMODO - Knowledge base Of Microbial and Mammalian cells Defined and Optimized media
-> ModelSEED Project
+> Oberhardt et al. (2015), Nature Communications 6:8493 (doi:10.1038/ncomms9493; PMID:26460590)
+> KOMODO (Known Media Database) — ModelSEED Project
 > https://komodo.modelseed.org
