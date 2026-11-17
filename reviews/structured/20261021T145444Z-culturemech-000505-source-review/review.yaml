@@ -1,0 +1,2383 @@
+schema_version: 1.0.0
+review_id: 20261021T145444Z-culturemech-000505-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: aml60_medium (CultureMech:000505)'
+started_at: '2026-10-21T14:47:40Z'
+finished_at: '2026-10-21T14:54:44Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: AML60 retains the source identity and preparation wording, but its 19 direct
+  concentrations flatten Solution 1, Solution 2 and their trace stocks. Restore the
+  nested formulation and resolve the source’s unquantified late additions before use;
+  nickel hydrate grounding also needs correction.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AML60_MEDIUM.yaml
+    sha256: 0d10601ce3303706dcf6eaf2ce0bf9ac90943b88e3bf06efc63d0f3e658caa4c
+    role: target
+  - path: data/normalized_yaml/bacterial/aml60_medium.yaml
+    sha256: 29c9a9b1e84bf3a9ae0dc2965da05ae621e71b7263d759951fd5c1d937141c34
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 251; batch 026 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-five task batches
+    contain 250 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 253 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000505
+targets:
+- target_id: CultureMech:000505
+  path: data/merge_yaml/merged/AML60_MEDIUM.yaml
+  label: aml60_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aml60_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AML60_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AML60_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch026/251/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch026/251/strict.tsv"
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AML60_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AML60_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000505
+- check_id: dsmz1073-source-access
+  name: 'Exact source content access: dsmz1073'
+  required: false
+  status: unavailable
+  summary: The original DSMZ_Medium1073.pdf URL returned HTTP 404. The exact DSMZ
+    1073 document was recovered successfully at the collection’s MediaDive PDF URL;
+    the failed attempt is retained and does not make the required primary comparison
+    unavailable.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - dsmz1073-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AML60_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/aml60_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AML60_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:29.048003Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AML60_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch026/251/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:30.596135Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch026/251/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AML60_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:32.904173Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AML60_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:34.108304Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: supports
+  summary: './data/merge_yaml/merged/AML60_MEDIUM.yaml:1:id: CultureMech:000505
+
+    ./data/normalized_yaml/bacterial/aml60_medium.yaml:1:id: CultureMech:000505
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/source-preflight-bound/251/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: supports
+  summary: 26 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 5d4d0a38813bb77c55990c88fb46fe4e90b021882aed55fa54037ddb130bf45d
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/source-preflight-bound/251/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: 5507fcb0426b4b88f3a1183923a32a6c54ca2c43a01f84a8e84ba5bcf55de38a
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: primary
+  kind: primary_source
+  reference: https://mediadive.dsmz.de/pdf/1073
+  locator: 'DSMZ 1073 PDF pages 1–2: main formulation, Solutions 1/2, SL-10, selenite-tungstate
+    and all preparation paragraphs'
+  accessed_at: '2026-10-21T14:18:59.886322Z'
+  support: supports
+  summary: Complete exact collection recipe read, including both page images. The
+    declared main final volume is 1000 mL; stock quantities and aliquots remain distinct.
+  quote: 'Final pH: 9.8
+
+    Final volume: 1000 ml'
+  snapshot_sha256: 16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1073
+  locator: $.data.medium; $.data.solutions[0:5].recipe, volume and steps
+  accessed_at: '2026-10-21T14:16:58.254414Z'
+  support: supports
+  summary: Exact medium 1073 and all five solution objects read. Provider g_l values
+    are solution-specific and are not final-medium concentrations.
+  snapshot_sha256: 716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a
+- evidence_id: solution2166
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/2166
+  locator: '$.data: exact solution identity, recipe, volume and preparation'
+  accessed_at: '2026-10-21T14:19:01.080985Z'
+  support: supports
+  summary: Independently captured stock endpoint agrees with its exact medium-1073
+    recipe rows; no unrelated medium formulation is transferred.
+  snapshot_sha256: 693ea1e6efe5d0309f668615e61bbfeced8411384f0c1b81cb584f2fb13447e2
+- evidence_id: solution2167
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/2167
+  locator: '$.data: exact solution identity, recipe, volume and preparation'
+  accessed_at: '2026-10-21T14:19:01.256781Z'
+  support: supports
+  summary: Independently captured stock endpoint agrees with its exact medium-1073
+    recipe rows; no unrelated medium formulation is transferred.
+  snapshot_sha256: 643d1dec334ff724a793b42e3da50368c9fcf87dc2a3fd0228b62b4ebf595279
+- evidence_id: solution595
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/595
+  locator: '$.data: exact solution identity, recipe, volume and preparation'
+  accessed_at: '2026-10-21T11:03:05.357684Z'
+  support: supports
+  summary: Independently captured stock endpoint agrees with its exact medium-1073
+    recipe rows; no unrelated medium formulation is transferred.
+  snapshot_sha256: 5dd4cef59e15c0ab7d35e8a89039c7f7133ff8cd08ab6c414cf52d5e48c9aeab
+- evidence_id: solution777
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/777
+  locator: '$.data: exact solution identity, recipe, volume and preparation'
+  accessed_at: '2026-10-21T13:20:07.510517Z'
+  support: supports
+  summary: Independently captured stock endpoint agrees with its exact medium-1073
+    recipe rows; no unrelated medium formulation is transferred.
+  snapshot_sha256: 3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2
+- evidence_id: dsmz1073-attempt
+  kind: database
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1073.pdf
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:16:59.435867Z'
+  support: context_only
+  summary: The original DSMZ_Medium1073.pdf URL returned HTTP 404. The exact DSMZ
+    1073 document was recovered successfully at the collection’s MediaDive PDF URL;
+    the failed attempt is retained and does not make the required primary comparison
+    unavailable.
+  snapshot_sha256: 6f85ee8bc1bbc9ac59a2f923e568632237d4edae5f3bca4c98866736f713a66b
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17883":
+    [{"label": "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883",
+    "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label":
+    "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139":
+    [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139",
+    "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term",
+    "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label":
+    "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599",
+    "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887":
+    [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label":
+    "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label":
+    "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label":
+    "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id":
+    "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318":
+    [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318",
+    "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term":
+    "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/AML60_MEDIUM.yaml; data/normalized_yaml/bacterial/aml60_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/aml60_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/251/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 66f96a0212b1d47c04e768fac21b5d3c5f37a59aa48b209c0dabe0c2d07818db
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/251/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T14:54:42Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 0924c8dfd2124796385dc0f0b99e6bbeb1f5f249a5b7ad2d0e1cb5505b444987
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '19 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 19/19
+    primary and 19/19 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131361
+  - chebi131527
+  - chebi17883
+  - chebi26710
+  - chebi29377
+  - chebi32139
+  - chebi32145
+  - chebi32599
+  - chebi33118
+  - chebi34887
+  - chebi49976
+  - chebi53503
+  - chebi62946
+  - chebi63036
+  - chebi63939
+  - chebi75213
+  - chebi86249
+  - chebi86318
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 19: primary 100.00%;
+    secondary 100.00%. These are linkage metrics, not correctness scores. Missing
+    optional links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact source and maintained ownership
+  outcome: supported
+  summary: CultureMech:000505, DSMZ/MediaDive 1073 and the sole maintained AML60 owner
+    agree in identity. The target’s 19 ingredients and preparation match its owner;
+    the generated merge adds provenance rather than repairing the stock flattening.
+    The source’s DSM 17814 microscopy note is reproduced as a collection statement,
+    not expanded to another strain or a newly inferred taxonomy/growth claim.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - id-search
+- assessment_id: formulation
+  area: consistency
+  topic: Nested quantities and volume declarations
+  outcome: concern
+  summary: The main recipe doses 500 mL each of Solutions 1 and 2. Solution 1 itself
+    includes 5 mL SL-10 and 0.30 mL selenite-tungstate. All 19 local g/L values instead
+    equal provider concentrations of these separate stock objects. Solution 1 declares
+    505 mL although its listed liquid additions total 505.3 mL; the primary lists
+    500 mL water without an explicit final stock makeup. Preserve that discrepancy.
+    Conditional calculations may use the provider’s declared stock basis, but cannot
+    establish a measured final concentration.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+- assessment_id: preparation
+  area: completeness
+  topic: Stock-specific preparation and source omissions
+  outcome: concern
+  summary: The one-minute boil, nitrogen handling, pH 9.8, pre-inoculation additions,
+    vitamin filtration and DSM 17814 microscopy qualification survive in both layers.
+    SL-10’s iron/HCl dissolution and 1000 mL makeup instruction is misplaced as a
+    main-medium step. Vitamins, arsenate and sulfide are named in the primary procedure
+    but their composition, strength and dose are not supplied in this exact document.
+    No stock identity, dose, autoclave temperature or duration is inferred.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+- assessment_id: classification
+  area: scope
+  topic: Physical and compositional categories
+  outcome: supported
+  summary: The collection identifies this as a noncomplex medium and supplies a liquid
+    formulation without agar. DEFINED/DEFINED and LIQUID are compatible with the named
+    chemical recipe, while the incomplete late additions still prevent a complete
+    reproducible formulation. Bacterial category and generic microbial-cultivation
+    application are catalog scope, not broad demonstrated growth evidence.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - primary
+  - provider
+- assessment_id: forms
+  area: grounding
+  topic: Source-specific chemical forms
+  outcome: concern
+  summary: The source and local preferred name specify nickel chloride hexahydrate,
+    but both primary and current CHEBI-based secondary slots use CHEBI:34887, whose
+    captured formula is Cl2Ni and mass 129.599. Preserve the 24 mg stock mass and
+    resolve the hydrate identity without substituting anhydrous molarity or inventing
+    a replacement ID. Other explicitly named source forms were compared to the captured
+    chemical metadata; generic MgSO4 and K2HPO4 do not justify adding an unmentioned
+    hydrate. The unqualified 25% HCl stock does not establish a density or percent
+    basis.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - primary
+  - chebi34887
+  - provider
+- assessment_id: implementation
+  area: provenance
+  topic: Current writers and historical generated content
+  outcome: concern
+  summary: The current MediaDive parser separates primary stock additions from direct
+    ingredients, whereas this captured owner still has flattened stock concentrations.
+    Its preparation parser still combines steps from all solution objects. Current
+    formulation merging checks complete formulation compatibility. These inspected
+    code paths explain the maintained correction route, not a claim that today’s code
+    produced the historical bytes. Reconcile the owner and source structure before
+    regeneration.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 36 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000505
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Main sol. 1073: Solution 1\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"decision\": \"add\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"solution\\\": \\\"Solution 1\\\",\\n                        \\\"solution_id\\\
+    \": 2166,\\n                        \\\"amount\\\": 500,\\n                  \
+    \      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Main sol. 1073 table; Solution 1 row\",\n        \"exact_source_quote\"\
+    : \"Solution 1                                                      500.00   \
+    \      ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 500 ml addition belongs to Main sol.\
+    \ 1073; preserve it as a source batch/dose or water quantity. The intended local\
+    \ container does not currently represent this addition.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n      \
+    \  \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Main sol.\
+    \ 1073: Solution 2\",\n    \"field_path\": \"solutions\",\n    \"decision\": \"\
+    add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"solution\\\": \\\"Solution 2\\\",\\n            \
+    \            \\\"solution_id\\\": 2167,\\n                        \\\"amount\\\
+    \": 500,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Main sol. 1073 table; Solution 2 row\",\n        \"exact_source_quote\"\
+    : \"Solution 2                                                      500.00   \
+    \      ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 500 ml addition belongs to Main sol.\
+    \ 1073; preserve it as a source batch/dose or water quantity. The intended local\
+    \ container does not currently represent this addition.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n      \
+    \  \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Solution\
+    \ 1: (NH4)2SO4\",\n    \"field_path\": \"ingredients[0].concentration\",\n   \
+    \ \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.19802\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"(NH4)2SO4\\\",\\n             \
+    \           \\\"compound_id\\\": 27,\\n                        \\\"amount\\\"\
+    : 0.1,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 0.19802,\\n                        \\\"mmol_l\\\": 1.49856,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Solution 1 table; (NH4)2SO4 row\",\n        \"exact_source_quote\"\
+    : \"(NH4)2SO4                                                          0.10  \
+    \        g\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 2166 contains 0.1 g\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.19802\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19802\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"On the provider’s nominal 505 mL stock basis, stock g/L = source grams / 0.505;\
+    \ the main 500 mL aliquot would contain source grams × 500/505. Printed g_l values\
+    \ are rounded and are not silently replaced by greater precision. Listed stock\
+    \ liquids total 505.3 mL; the actual final stock volume remains unresolved.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Solution 1: MgSO4\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"0.049505\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"MgSO4\\\",\\n                        \\\"compound_id\\\
+    \": 325,\\n                        \\\"amount\\\": 25,\\n                    \
+    \    \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.049505,\\\
+    n                        \\\"mmol_l\\\": 0.411273,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Solution 1 table; MgSO4 row\",\n        \"exact_source_quote\": \"MgSO4\
+    \                                                            25.00        mg\"\
+    ,\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 2166 contains 25 mg\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.049505\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.049505\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"On the provider’s nominal 505 mL stock basis, stock g/L = source grams / 0.505;\
+    \ the main 500 mL aliquot would contain source grams × 500/505. Printed g_l values\
+    \ are rounded and are not silently replaced by greater precision. Listed stock\
+    \ liquids total 505.3 mL; the actual final stock volume remains unresolved.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Solution 1: NaCl\",\n    \"field_path\"\
+    : \"ingredients[2].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"118.812\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n   \
+    \     \"source_locator\": \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\
+    \": 43,\\n                        \\\"amount\\\": 60,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 118.812,\\\
+    n                        \\\"mmol_l\\\": 2033.06,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Solution 1 table; NaCl row\",\n        \"exact_source_quote\": \"NaCl \
+    \                                                            60.00           g\"\
+    ,\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 2166 contains 60 g of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"118.812\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"118.812\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"On the provider’s nominal 505 mL stock basis, stock g/L = source grams / 0.505;\
+    \ the main 500 mL aliquot would contain source grams × 500/505. Printed g_l values\
+    \ are rounded and are not silently replaced by greater precision. Listed stock\
+    \ liquids total 505.3 mL; the actual final stock volume remains unresolved.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Solution 1: K2HPO4\",\n    \"field_path\"\
+    : \"ingredients[3].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"0.29703\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n   \
+    \     \"source_locator\": \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\
+    \": 10,\\n                        \\\"amount\\\": 0.15,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.29703,\\\
+    n                        \\\"mmol_l\\\": 1.70534,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Solution 1 table; K2HPO4 row\",\n        \"exact_source_quote\": \"K2HPO4\
+    \                                                             0.15          g\"\
+    ,\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 2166 contains 0.15 g\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.29703\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.29703\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"On the provider’s nominal 505 mL stock basis, stock g/L = source grams / 0.505;\
+    \ the main 500 mL aliquot would contain source grams × 500/505. Printed g_l values\
+    \ are rounded and are not silently replaced by greater precision. Listed stock\
+    \ liquids total 505.3 mL; the actual final stock volume remains unresolved.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Solution 1: KH2PO4\",\n    \"field_path\"\
+    : \"ingredients[4].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"0.158416\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\
+    \": 11,\\n                        \\\"amount\\\": 0.08,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.158416,\\\
+    n                        \\\"mmol_l\\\": 1.16409,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Solution 1 table; KH2PO4 row\",\n        \"exact_source_quote\": \"KH2PO4\
+    \                                                             0.08          g\"\
+    ,\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 2166 contains 0.08 g\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.158416\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.158416\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"On the provider’s nominal 505 mL stock basis, stock g/L = source grams / 0.505;\
+    \ the main 500 mL aliquot would contain source grams × 500/505. Printed g_l values\
+    \ are rounded and are not silently replaced by greater precision. Listed stock\
+    \ liquids total 505.3 mL; the actual final stock volume remains unresolved.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Solution 1: Trace element solution\
+    \ SL-10\",\n    \"field_path\": \"solutions\",\n    \"decision\": \"add\",\n \
+    \   \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"solution\\\": \\\"Trace element solution SL-10\\\"\
+    ,\\n                        \\\"solution_id\\\": 595,\\n                     \
+    \   \\\"amount\\\": 5,\\n                        \\\"unit\\\": \\\"ml\\\",\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Solution 1 table; Trace element solution SL-10 row\",\n   \
+    \     \"exact_source_quote\": \"Trace element solution SL-10                 \
+    \                      5.00        ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 5 ml addition belongs to Solution\
+    \ 1; preserve it as a source batch/dose or water quantity. The intended local\
+    \ container does not currently represent this addition.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n      \
+    \  \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Solution\
+    \ 1: Selenite-tungstate solution\",\n    \"field_path\": \"solutions\",\n    \"\
+    decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/1073\",\n        \"source_locator\": \"\
+    $.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 7,\\n                        \\\"solution\\\
+    \": \\\"Selenite-tungstate solution\\\",\\n                        \\\"solution_id\\\
+    \": 777,\\n                        \\\"amount\\\": 0.3,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Solution 1 table; Selenite-tungstate solution row\",\n    \
+    \    \"exact_source_quote\": \"Selenite-tungstate solution                   \
+    \                     0.30        ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 0.3 ml addition belongs to Solution\
+    \ 1; preserve it as a source batch/dose or water quantity. The intended local\
+    \ container does not currently represent this addition.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n      \
+    \  \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Solution\
+    \ 1: Distilled water\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\"\
+    : \"add\",\n    \"local\": [\n      {\n        \"step_number\": 1,\n        \"\
+    action\": \"AUTOCLAVE\",\n        \"description\": \"Dissolve ingredients (except\
+    \ carbonates, vitamins, arsenate and sulfide), boil medium for 1 min., then cool\
+    \ to room temperature under N2 gas atmosphere. Add solid carbonates and adjust\
+    \ pH to 9.8, then dispense under same gas atmosphere in culture vessels and autoclave.\"\
+    \n      },\n      {\n        \"step_number\": 2,\n        \"action\": \"MIX\"\
+    ,\n        \"description\": \"Prior to inoculation, add vitamins, arsenate and\
+    \ sulfide from sterile, anaerobic stock solutions prepared under N2 and check\
+    \ pH of the completed medium. The vitamin solution should be sterilized by filtration.\"\
+    \n      },\n      {\n        \"step_number\": 3,\n        \"action\": \"MIX\"\
+    ,\n        \"description\": \"Growth of strain DSM 17814 takes place without visible\
+    \ increase in turbidity, hence proliferation of cells has to be checked using\
+    \ phase contrast microscopy.\"\n      },\n      {\n        \"step_number\": 4,\n\
+    \        \"action\": \"DISSOLVE\",\n        \"description\": \"First dissolve\
+    \ FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\
+    \ make up to 1000.00 ml.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/1073\",\n        \"source_locator\": \"\
+    $.data.solutions[1].recipe[7]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 8,\\n                        \\\"compound\\\
+    \": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\": 4,\\\
+    n                        \\\"amount\\\": 500,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n             \
+    \       }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Solution 1 table; Distilled water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                                 500.00   \
+    \      ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 500 ml addition belongs to Solution\
+    \ 1; preserve it as a source batch/dose or water quantity. The intended local\
+    \ container does not currently represent this addition.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"AUTOCLAVE\",\n            \"description\": \"Dissolve ingredients\
+    \ (except carbonates, vitamins, arsenate and sulfide), boil medium for 1 min.,\
+    \ then cool to room temperature under N2 gas atmosphere. Add solid carbonates\
+    \ and adjust pH to 9.8, then dispense under same gas atmosphere in culture vessels\
+    \ and autoclave.\"\n          },\n          {\n            \"step_number\": 2,\n\
+    \            \"action\": \"MIX\",\n            \"description\": \"Prior to inoculation,\
+    \ add vitamins, arsenate and sulfide from sterile, anaerobic stock solutions prepared\
+    \ under N2 and check pH of the completed medium. The vitamin solution should be\
+    \ sterilized by filtration.\"\n          },\n          {\n            \"step_number\"\
+    : 3,\n            \"action\": \"MIX\",\n            \"description\": \"Growth\
+    \ of strain DSM 17814 takes place without visible increase in turbidity, hence\
+    \ proliferation of cells has to be checked using phase contrast microscopy.\"\n\
+    \          },\n          {\n            \"step_number\": 4,\n            \"action\"\
+    : \"DISSOLVE\",\n            \"description\": \"First dissolve FeCl2 in the HCl,\
+    \ then dilute in water, add and dissolve the other salts. Finally make up to 1000.00\
+    \ ml.\"\n          }\n        ],\n        \"decision\": \"add\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Dissolve ingredients (except carbonates, vitamins,\
+    \ arsenate and sulfide), boil medium for 1 min., then cool to room temperature\
+    \ under N2 gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense\
+    \ under same gas atmosphere in culture vessels and autoclave.\"\n          },\n\
+    \          {\n            \"step_number\": 2,\n            \"action\": \"MIX\"\
+    ,\n            \"description\": \"Prior to inoculation, add vitamins, arsenate\
+    \ and sulfide from sterile, anaerobic stock solutions prepared under N2 and check\
+    \ pH of the completed medium. The vitamin solution should be sterilized by filtration.\"\
+    \n          },\n          {\n            \"step_number\": 3,\n            \"action\"\
+    : \"MIX\",\n            \"description\": \"Growth of strain DSM 17814 takes place\
+    \ without visible increase in turbidity, hence proliferation of cells has to be\
+    \ checked using phase contrast microscopy.\"\n          },\n          {\n    \
+    \        \"step_number\": 4,\n            \"action\": \"DISSOLVE\",\n        \
+    \    \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   }\n        ],\n        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Solution 2: Na2CO3\",\n    \"field_path\": \"\
+    ingredients[5].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"21.2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1073api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1073\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Na2CO3\\\",\\n                        \\\"compound_id\\\": 32,\\\
+    n                        \\\"amount\\\": 10.6,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 21.2,\\n         \
+    \               \\\"mmol_l\\\": 200.023,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Solution 2 table; Na2CO3 row\",\n        \"exact_source_quote\"\
+    : \"Na2CO3                                                           10.60   \
+    \        g\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 2167 contains 10.6 g\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"21.2\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"21.2\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"On the provider’s nominal 500 mL Solution 2 basis, source grams / 0.5 gives\
+    \ stock g/L. Its 500 mL main aliquot would supply the listed source grams, not\
+    \ twice those grams. A final main concentration still depends on the stated main\
+    \ volume and unresolved later additions.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Solution 2: NaHCO3\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"8.4\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"NaHCO3\\\",\\n                \
+    \        \\\"compound_id\\\": 55,\\n                        \\\"amount\\\": 4.2,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 8.4,\\n                        \\\"mmol_l\\\": 99.9917,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Solution 2 table; NaHCO3 row\",\n        \"exact_source_quote\": \"NaHCO3\
+    \                                                             4.20          g\"\
+    ,\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 2167 contains 4.2 g\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"8.4\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[6].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"8.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"On\
+    \ the provider’s nominal 500 mL Solution 2 basis, source grams / 0.5 gives stock\
+    \ g/L. Its 500 mL main aliquot would supply the listed source grams, not twice\
+    \ those grams. A final main concentration still depends on the stated main volume\
+    \ and unresolved later additions.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Solution 2: Distilled water\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": [\n      {\n        \"step_number\"\
+    : 1,\n        \"action\": \"AUTOCLAVE\",\n        \"description\": \"Dissolve\
+    \ ingredients (except carbonates, vitamins, arsenate and sulfide), boil medium\
+    \ for 1 min., then cool to room temperature under N2 gas atmosphere. Add solid\
+    \ carbonates and adjust pH to 9.8, then dispense under same gas atmosphere in\
+    \ culture vessels and autoclave.\"\n      },\n      {\n        \"step_number\"\
+    : 2,\n        \"action\": \"MIX\",\n        \"description\": \"Prior to inoculation,\
+    \ add vitamins, arsenate and sulfide from sterile, anaerobic stock solutions prepared\
+    \ under N2 and check pH of the completed medium. The vitamin solution should be\
+    \ sterilized by filtration.\"\n      },\n      {\n        \"step_number\": 3,\n\
+    \        \"action\": \"MIX\",\n        \"description\": \"Growth of strain DSM\
+    \ 17814 takes place without visible increase in turbidity, hence proliferation\
+    \ of cells has to be checked using phase contrast microscopy.\"\n      },\n  \
+    \    {\n        \"step_number\": 4,\n        \"action\": \"DISSOLVE\",\n     \
+    \   \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[2].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 500,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Solution 2 table; Distilled water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                                 500.00   \
+    \      ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 500 ml addition belongs to Solution\
+    \ 2; preserve it as a source batch/dose or water quantity. The intended local\
+    \ container does not currently represent this addition.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"AUTOCLAVE\",\n            \"description\": \"Dissolve ingredients\
+    \ (except carbonates, vitamins, arsenate and sulfide), boil medium for 1 min.,\
+    \ then cool to room temperature under N2 gas atmosphere. Add solid carbonates\
+    \ and adjust pH to 9.8, then dispense under same gas atmosphere in culture vessels\
+    \ and autoclave.\"\n          },\n          {\n            \"step_number\": 2,\n\
+    \            \"action\": \"MIX\",\n            \"description\": \"Prior to inoculation,\
+    \ add vitamins, arsenate and sulfide from sterile, anaerobic stock solutions prepared\
+    \ under N2 and check pH of the completed medium. The vitamin solution should be\
+    \ sterilized by filtration.\"\n          },\n          {\n            \"step_number\"\
+    : 3,\n            \"action\": \"MIX\",\n            \"description\": \"Growth\
+    \ of strain DSM 17814 takes place without visible increase in turbidity, hence\
+    \ proliferation of cells has to be checked using phase contrast microscopy.\"\n\
+    \          },\n          {\n            \"step_number\": 4,\n            \"action\"\
+    : \"DISSOLVE\",\n            \"description\": \"First dissolve FeCl2 in the HCl,\
+    \ then dilute in water, add and dissolve the other salts. Finally make up to 1000.00\
+    \ ml.\"\n          }\n        ],\n        \"decision\": \"add\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Dissolve ingredients (except carbonates, vitamins,\
+    \ arsenate and sulfide), boil medium for 1 min., then cool to room temperature\
+    \ under N2 gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense\
+    \ under same gas atmosphere in culture vessels and autoclave.\"\n          },\n\
+    \          {\n            \"step_number\": 2,\n            \"action\": \"MIX\"\
+    ,\n            \"description\": \"Prior to inoculation, add vitamins, arsenate\
+    \ and sulfide from sterile, anaerobic stock solutions prepared under N2 and check\
+    \ pH of the completed medium. The vitamin solution should be sterilized by filtration.\"\
+    \n          },\n          {\n            \"step_number\": 3,\n            \"action\"\
+    : \"MIX\",\n            \"description\": \"Growth of strain DSM 17814 takes place\
+    \ without visible increase in turbidity, hence proliferation of cells has to be\
+    \ checked using phase contrast microscopy.\"\n          },\n          {\n    \
+    \        \"step_number\": 4,\n            \"action\": \"DISSOLVE\",\n        \
+    \    \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   }\n        ],\n        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Trace element solution SL-10: HCl\",\n    \"\
+    field_path\": \"ingredients[7].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"2.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[3].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"HCl\\\",\\n                        \\\"compound_id\\\
+    \": 68,\\n                        \\\"attribute\\\": \\\"25%\\\",\\n         \
+    \               \\\"amount\\\": 10,\\n                        \\\"unit\\\": \\\
+    \"ml\\\",\\n                        \\\"g_l\\\": 2.5,\\n                     \
+    \   \\\"mmol_l\\\": 68.5683,\\n                        \\\"optional\\\": 0\\n\
+    \                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; HCl (25%) row\",\n    \
+    \    \"exact_source_quote\": \"HCl (25%)                                     \
+    \                   10.00         ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 10 ml of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[7].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"SL-10\
+    \ is made up to 1000 mL, then 5 mL is added within Solution 1, of which 500 mL\
+    \ is used. On the nominal 505 mL Solution 1 basis, the main aliquot would receive\
+    \ stock mass × 5/1000 × 500/505. HCl mass conversion is not established by an\
+    \ unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: FeCl2 x 4 H2O\",\n    \"field_path\": \"ingredients[8].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"1.5\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"FeCl2 x 4 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 260,\\n                        \\\"amount\\\
+    \": 1.5,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 1.5,\\n                        \\\"mmol_l\\\": 7.54482,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; FeCl2 x 4 H2O row\",\n\
+    \        \"exact_source_quote\": \"FeCl2 x 4 H2O                             \
+    \                         1.50          g\",\n        \"snapshot_sha256\": \"\
+    16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\",\n        \"\
+    parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 1.5 g of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[8].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"SL-10\
+    \ is made up to 1000 mL, then 5 mL is added within Solution 1, of which 500 mL\
+    \ is used. On the nominal 505 mL Solution 1 basis, the main aliquot would receive\
+    \ stock mass × 5/1000 × 500/505. HCl mass conversion is not established by an\
+    \ unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: ZnCl2\",\n    \"field_path\": \"ingredients[9].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.07\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"ZnCl2\\\",\\n                 \
+    \       \\\"compound_id\\\": 64,\\n                        \\\"amount\\\": 70,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.07,\\n                        \\\"mmol_l\\\": 0.513573,\\n      \
+    \                  \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; ZnCl2 row\",\n        \"\
+    exact_source_quote\": \"ZnCl2                                                \
+    \            70.00        mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 70 mg of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.07\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"SL-10 is made up to 1000 mL, then 5 mL is added within Solution 1, of which\
+    \ 500 mL is used. On the nominal 505 mL Solution 1 basis, the main aliquot would\
+    \ receive stock mass × 5/1000 × 500/505. HCl mass conversion is not established\
+    \ by an unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: MnCl2 x 4 H2O\",\n    \"field_path\": \"ingredients[10].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.1\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 36,\\n                        \\\"amount\\\
+    \": 100,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.1,\\n                        \\\"mmol_l\\\": 0.505293,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; MnCl2 x 4 H2O row\",\n\
+    \        \"exact_source_quote\": \"MnCl2 x 4 H2O                             \
+    \                      100.00        mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 100 mg\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"SL-10\
+    \ is made up to 1000 mL, then 5 mL is added within Solution 1, of which 500 mL\
+    \ is used. On the nominal 505 mL Solution 1 basis, the main aliquot would receive\
+    \ stock mass × 5/1000 × 500/505. HCl mass conversion is not established by an\
+    \ unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: H3BO3\",\n    \"field_path\": \"ingredients[11].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.006\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"H3BO3\\\",\\n                 \
+    \       \\\"compound_id\\\": 37,\\n                        \\\"amount\\\": 6,\\\
+    n                        \\\"unit\\\": \\\"mg\\\",\\n                        \\\
+    \"g_l\\\": 0.006,\\n                        \\\"mmol_l\\\": 0.0970246,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; H3BO3 row\",\n        \"\
+    exact_source_quote\": \"H3BO3                                                \
+    \              6.00       mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 6 mg of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.006\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"SL-10 is made up to 1000 mL, then 5 mL is added within Solution 1, of which\
+    \ 500 mL is used. On the nominal 505 mL Solution 1 basis, the main aliquot would\
+    \ receive stock mass × 5/1000 × 500/505. HCl mass conversion is not established\
+    \ by an unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: CoCl2 x 6 H2O\",\n    \"field_path\": \"ingredients[12].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.19\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 38,\\n                        \\\"amount\\\
+    \": 190,\\n                        \\\"unit\\\": \\\"mg\\\",\\n              \
+    \          \\\"g_l\\\": 0.19,\\n                        \\\"mmol_l\\\": 1.46335,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; CoCl2 x 6 H2O row\",\n\
+    \        \"exact_source_quote\": \"CoCl2 x 6 H2O                             \
+    \                      190.00        mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 190 mg\
+    \ of this material; local g/L is its stock-strength value, not the main medium\
+    \ contribution. Restore the source stage and attach claim evidence.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.19\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"SL-10 is made up to 1000 mL, then 5 mL is added within Solution 1, of which\
+    \ 500 mL is used. On the nominal 505 mL Solution 1 basis, the main aliquot would\
+    \ receive stock mass × 5/1000 × 500/505. HCl mass conversion is not established\
+    \ by an unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: CuCl2 x 2 H2O\",\n    \"field_path\": \"ingredients[13].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.002\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[6]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 7,\\\
+    n                        \\\"compound\\\": \\\"CuCl2 x 2 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 39,\\n                        \\\"amount\\\
+    \": 2,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                \
+    \        \\\"g_l\\\": 0.002,\\n                        \\\"mmol_l\\\": 0.0117314,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; CuCl2 x 2 H2O row\",\n\
+    \        \"exact_source_quote\": \"CuCl2 x 2 H2O                             \
+    \                         2.00       mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 2 mg of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.002\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"SL-10 is made up to 1000 mL, then 5 mL is added within Solution 1, of which\
+    \ 500 mL is used. On the nominal 505 mL Solution 1 basis, the main aliquot would\
+    \ receive stock mass × 5/1000 × 500/505. HCl mass conversion is not established\
+    \ by an unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: NiCl2 x 6 H2O\",\n    \"field_path\": \"ingredients[14].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.024\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 40,\\n                        \\\"amount\\\
+    \": 24,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.024,\\n                        \\\"mmol_l\\\": 0.185187,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; NiCl2 x 6 H2O row\",\n\
+    \        \"exact_source_quote\": \"NiCl2 x 6 H2O                             \
+    \                       24.00        mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 24 mg of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[14].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.024\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"SL-10 is made up to 1000 mL, then 5 mL is added within Solution 1, of which\
+    \ 500 mL is used. On the nominal 505 mL Solution 1 basis, the main aliquot would\
+    \ receive stock mass × 5/1000 × 500/505. HCl mass conversion is not established\
+    \ by an unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: Na2MoO4 x 2 H2O\",\n    \"field_path\": \"ingredients[15].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.036\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[3].recipe[8]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 9,\\\
+    n                        \\\"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n       \
+    \                 \\\"compound_id\\\": 9,\\n                        \\\"amount\\\
+    \": 36,\\n                        \\\"unit\\\": \\\"mg\\\",\\n               \
+    \         \\\"g_l\\\": 0.036,\\n                        \\\"mmol_l\\\": 0.148791,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; Na2MoO4 x 2 H2O row\",\n\
+    \        \"exact_source_quote\": \"Na2MoO4 x 2 H2O                           \
+    \                       36.00        mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 595 contains 36 mg of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[15].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.036\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"SL-10 is made up to 1000 mL, then 5 mL is added within Solution 1, of which\
+    \ 500 mL is used. On the nominal 505 mL Solution 1 basis, the main aliquot would\
+    \ receive stock mass × 5/1000 × 500/505. HCl mass conversion is not established\
+    \ by an unspecified 25% basis or density.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace element solution SL-10: Distilled water\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": [\n      {\n        \"step_number\"\
+    : 1,\n        \"action\": \"AUTOCLAVE\",\n        \"description\": \"Dissolve\
+    \ ingredients (except carbonates, vitamins, arsenate and sulfide), boil medium\
+    \ for 1 min., then cool to room temperature under N2 gas atmosphere. Add solid\
+    \ carbonates and adjust pH to 9.8, then dispense under same gas atmosphere in\
+    \ culture vessels and autoclave.\"\n      },\n      {\n        \"step_number\"\
+    : 2,\n        \"action\": \"MIX\",\n        \"description\": \"Prior to inoculation,\
+    \ add vitamins, arsenate and sulfide from sterile, anaerobic stock solutions prepared\
+    \ under N2 and check pH of the completed medium. The vitamin solution should be\
+    \ sterilized by filtration.\"\n      },\n      {\n        \"step_number\": 3,\n\
+    \        \"action\": \"MIX\",\n        \"description\": \"Growth of strain DSM\
+    \ 17814 takes place without visible increase in turbidity, hence proliferation\
+    \ of cells has to be checked using phase contrast microscopy.\"\n      },\n  \
+    \    {\n        \"step_number\": 4,\n        \"action\": \"DISSOLVE\",\n     \
+    \   \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[3].recipe[9]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 10,\\n                 \
+    \       \\\"compound\\\": \\\"Distilled water\\\",\\n                        \\\
+    \"compound_id\\\": 4,\\n                        \\\"amount\\\": 990,\\n      \
+    \                  \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Trace element solution SL-10 table; Distilled water row\",\n\
+    \        \"exact_source_quote\": \"Distilled water                           \
+    \                      990.00         ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 990 ml addition belongs to Trace\
+    \ element solution SL-10; preserve it as a source batch/dose or water quantity.\
+    \ The intended local container does not currently represent this addition.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"AUTOCLAVE\",\n            \"description\": \"Dissolve ingredients\
+    \ (except carbonates, vitamins, arsenate and sulfide), boil medium for 1 min.,\
+    \ then cool to room temperature under N2 gas atmosphere. Add solid carbonates\
+    \ and adjust pH to 9.8, then dispense under same gas atmosphere in culture vessels\
+    \ and autoclave.\"\n          },\n          {\n            \"step_number\": 2,\n\
+    \            \"action\": \"MIX\",\n            \"description\": \"Prior to inoculation,\
+    \ add vitamins, arsenate and sulfide from sterile, anaerobic stock solutions prepared\
+    \ under N2 and check pH of the completed medium. The vitamin solution should be\
+    \ sterilized by filtration.\"\n          },\n          {\n            \"step_number\"\
+    : 3,\n            \"action\": \"MIX\",\n            \"description\": \"Growth\
+    \ of strain DSM 17814 takes place without visible increase in turbidity, hence\
+    \ proliferation of cells has to be checked using phase contrast microscopy.\"\n\
+    \          },\n          {\n            \"step_number\": 4,\n            \"action\"\
+    : \"DISSOLVE\",\n            \"description\": \"First dissolve FeCl2 in the HCl,\
+    \ then dilute in water, add and dissolve the other salts. Finally make up to 1000.00\
+    \ ml.\"\n          }\n        ],\n        \"decision\": \"add\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Dissolve ingredients (except carbonates, vitamins,\
+    \ arsenate and sulfide), boil medium for 1 min., then cool to room temperature\
+    \ under N2 gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense\
+    \ under same gas atmosphere in culture vessels and autoclave.\"\n          },\n\
+    \          {\n            \"step_number\": 2,\n            \"action\": \"MIX\"\
+    ,\n            \"description\": \"Prior to inoculation, add vitamins, arsenate\
+    \ and sulfide from sterile, anaerobic stock solutions prepared under N2 and check\
+    \ pH of the completed medium. The vitamin solution should be sterilized by filtration.\"\
+    \n          },\n          {\n            \"step_number\": 3,\n            \"action\"\
+    : \"MIX\",\n            \"description\": \"Growth of strain DSM 17814 takes place\
+    \ without visible increase in turbidity, hence proliferation of cells has to be\
+    \ checked using phase contrast microscopy.\"\n          },\n          {\n    \
+    \        \"step_number\": 4,\n            \"action\": \"DISSOLVE\",\n        \
+    \    \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   }\n        ],\n        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Selenite-tungstate solution: NaOH\",\n    \"\
+    field_path\": \"ingredients[16].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[4].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"NaOH\\\",\\n                        \\\"compound_id\\\
+    \": 256,\\n                        \\\"amount\\\": 0.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n\
+    \                        \\\"mmol_l\\\": 12.5009,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Selenite-tungstate solution table; NaOH row\",\n        \"exact_source_quote\"\
+    : \"NaOH                                                               0.50  \
+    \       g\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 777 contains 0.5 g of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[16].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"On\
+    \ the provider’s nominal 1000 mL stock basis and 505 mL Solution 1 basis, the\
+    \ main aliquot would receive stock mass × 0.30/1000 × 500/505. These nominal volume\
+    \ declarations are not measurements of final stock volume.\"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Selenite-tungstate solution: Na2SeO3 x 5 H2O\",\n \
+    \   \"field_path\": \"ingredients[17].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"0.003\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n \
+    \       \"source_locator\": \"$.data.solutions[4].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Na2SeO3 x 5 H2O\\\",\\n                        \\\
+    \"compound_id\\\": 107,\\n                        \\\"amount\\\": 3,\\n      \
+    \                  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\
+    \": 0.003,\\n                        \\\"mmol_l\\\": 0.0114062,\\n           \
+    \             \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Selenite-tungstate solution table; Na2SeO3 x 5 H2O row\",\n        \"exact_source_quote\"\
+    : \"Na2SeO3 x 5 H2O                                                    3.00  \
+    \     mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 777 contains 3 mg of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[17].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.003\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"On the provider’s nominal 1000 mL stock basis and 505 mL Solution 1 basis,\
+    \ the main aliquot would receive stock mass × 0.30/1000 × 500/505. These nominal\
+    \ volume declarations are not measurements of final stock volume.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Selenite-tungstate solution: Na2WO4 x 2 H2O\"\
+    ,\n    \"field_path\": \"ingredients[18].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.004\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[4].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"Na2WO4 x 2 H2O\\\",\\n        \
+    \                \\\"compound_id\\\": 249,\\n                        \\\"amount\\\
+    \": 4,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                \
+    \        \\\"g_l\\\": 0.004,\\n                        \\\"mmol_l\\\": 0.0121267,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n     \
+    \   \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\"\
+    : \"PDF pages 1–2; Selenite-tungstate solution table; Na2WO4 x 2 H2O row\",\n\
+    \        \"exact_source_quote\": \"Na2WO4 x 2 H2O                            \
+    \                         4.00       mg\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider solution 777 contains 4 mg of\
+    \ this material; local g/L is its stock-strength value, not the main medium contribution.\
+    \ Restore the source stage and attach claim evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[18].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.004\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"On the provider’s nominal 1000 mL stock basis and 505 mL Solution 1 basis,\
+    \ the main aliquot would receive stock mass × 0.30/1000 × 500/505. These nominal\
+    \ volume declarations are not measurements of final stock volume.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Selenite-tungstate solution: Distilled water\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": [\n      {\n        \"step_number\": 1,\n        \"action\": \"\
+    AUTOCLAVE\",\n        \"description\": \"Dissolve ingredients (except carbonates,\
+    \ vitamins, arsenate and sulfide), boil medium for 1 min., then cool to room temperature\
+    \ under N2 gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense\
+    \ under same gas atmosphere in culture vessels and autoclave.\"\n      },\n  \
+    \    {\n        \"step_number\": 2,\n        \"action\": \"MIX\",\n        \"\
+    description\": \"Prior to inoculation, add vitamins, arsenate and sulfide from\
+    \ sterile, anaerobic stock solutions prepared under N2 and check pH of the completed\
+    \ medium. The vitamin solution should be sterilized by filtration.\"\n      },\n\
+    \      {\n        \"step_number\": 3,\n        \"action\": \"MIX\",\n        \"\
+    description\": \"Growth of strain DSM 17814 takes place without visible increase\
+    \ in turbidity, hence proliferation of cells has to be checked using phase contrast\
+    \ microscopy.\"\n      },\n      {\n        \"step_number\": 4,\n        \"action\"\
+    : \"DISSOLVE\",\n        \"description\": \"First dissolve FeCl2 in the HCl, then\
+    \ dilute in water, add and dissolve the other salts. Finally make up to 1000.00\
+    \ ml.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1073api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\"\
+    ,\n        \"source_locator\": \"$.data.solutions[4].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF pages\
+    \ 1–2; Selenite-tungstate solution table; Distilled water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                               1000.00    \
+    \      ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This 1000 ml addition belongs to Selenite-tungstate\
+    \ solution; preserve it as a source batch/dose or water quantity. The intended\
+    \ local container does not currently represent this addition.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"AUTOCLAVE\",\n            \"description\": \"Dissolve ingredients\
+    \ (except carbonates, vitamins, arsenate and sulfide), boil medium for 1 min.,\
+    \ then cool to room temperature under N2 gas atmosphere. Add solid carbonates\
+    \ and adjust pH to 9.8, then dispense under same gas atmosphere in culture vessels\
+    \ and autoclave.\"\n          },\n          {\n            \"step_number\": 2,\n\
+    \            \"action\": \"MIX\",\n            \"description\": \"Prior to inoculation,\
+    \ add vitamins, arsenate and sulfide from sterile, anaerobic stock solutions prepared\
+    \ under N2 and check pH of the completed medium. The vitamin solution should be\
+    \ sterilized by filtration.\"\n          },\n          {\n            \"step_number\"\
+    : 3,\n            \"action\": \"MIX\",\n            \"description\": \"Growth\
+    \ of strain DSM 17814 takes place without visible increase in turbidity, hence\
+    \ proliferation of cells has to be checked using phase contrast microscopy.\"\n\
+    \          },\n          {\n            \"step_number\": 4,\n            \"action\"\
+    : \"DISSOLVE\",\n            \"description\": \"First dissolve FeCl2 in the HCl,\
+    \ then dilute in water, add and dissolve the other salts. Finally make up to 1000.00\
+    \ ml.\"\n          }\n        ],\n        \"decision\": \"add\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Dissolve ingredients (except carbonates, vitamins,\
+    \ arsenate and sulfide), boil medium for 1 min., then cool to room temperature\
+    \ under N2 gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense\
+    \ under same gas atmosphere in culture vessels and autoclave.\"\n          },\n\
+    \          {\n            \"step_number\": 2,\n            \"action\": \"MIX\"\
+    ,\n            \"description\": \"Prior to inoculation, add vitamins, arsenate\
+    \ and sulfide from sterile, anaerobic stock solutions prepared under N2 and check\
+    \ pH of the completed medium. The vitamin solution should be sterilized by filtration.\"\
+    \n          },\n          {\n            \"step_number\": 3,\n            \"action\"\
+    : \"MIX\",\n            \"description\": \"Growth of strain DSM 17814 takes place\
+    \ without visible increase in turbidity, hence proliferation of cells has to be\
+    \ checked using phase contrast microscopy.\"\n          },\n          {\n    \
+    \        \"step_number\": 4,\n            \"action\": \"DISSOLVE\",\n        \
+    \    \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   }\n        ],\n        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Main pH\",\n    \"field_path\": \"ph_value\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": 9.8,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/pdf/1073\",\n        \"source_locator\": \"PDF page\
+    \ 1 heading\",\n        \"exact_source_quote\": \"Final pH: 9.8\",\n        \"\
+    snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"The value is supported but neither layer\
+    \ attaches matching claim evidence.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.8,\n \
+    \       \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n        \"field_path\"\
+    : \"ph_value\",\n        \"stored\": 9.8,\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Main declared final\
+    \ volume\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"\
+    add\",\n    \"local\": [\n      {\n        \"step_number\": 1,\n        \"action\"\
+    : \"AUTOCLAVE\",\n        \"description\": \"Dissolve ingredients (except carbonates,\
+    \ vitamins, arsenate and sulfide), boil medium for 1 min., then cool to room temperature\
+    \ under N2 gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense\
+    \ under same gas atmosphere in culture vessels and autoclave.\"\n      },\n  \
+    \    {\n        \"step_number\": 2,\n        \"action\": \"MIX\",\n        \"\
+    description\": \"Prior to inoculation, add vitamins, arsenate and sulfide from\
+    \ sterile, anaerobic stock solutions prepared under N2 and check pH of the completed\
+    \ medium. The vitamin solution should be sterilized by filtration.\"\n      },\n\
+    \      {\n        \"step_number\": 3,\n        \"action\": \"MIX\",\n        \"\
+    description\": \"Growth of strain DSM 17814 takes place without visible increase\
+    \ in turbidity, hence proliferation of cells has to be checked using phase contrast\
+    \ microscopy.\"\n      },\n      {\n        \"step_number\": 4,\n        \"action\"\
+    : \"DISSOLVE\",\n        \"description\": \"First dissolve FeCl2 in the HCl, then\
+    \ dilute in water, add and dissolve the other salts. Finally make up to 1000.00\
+    \ ml.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1073_current_pdf\",\n        \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\"\
+    ,\n        \"source_locator\": \"PDF page 1 heading\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1000 ml\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Record the source declaration separately\
+    \ from individual stock water quantities and unquantified later additions; do\
+    \ not infer measured completion volume.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : [\n          {\n            \"step_number\": 1,\n            \"action\": \"\
+    AUTOCLAVE\",\n            \"description\": \"Dissolve ingredients (except carbonates,\
+    \ vitamins, arsenate and sulfide), boil medium for 1 min., then cool to room temperature\
+    \ under N2 gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense\
+    \ under same gas atmosphere in culture vessels and autoclave.\"\n          },\n\
+    \          {\n            \"step_number\": 2,\n            \"action\": \"MIX\"\
+    ,\n            \"description\": \"Prior to inoculation, add vitamins, arsenate\
+    \ and sulfide from sterile, anaerobic stock solutions prepared under N2 and check\
+    \ pH of the completed medium. The vitamin solution should be sterilized by filtration.\"\
+    \n          },\n          {\n            \"step_number\": 3,\n            \"action\"\
+    : \"MIX\",\n            \"description\": \"Growth of strain DSM 17814 takes place\
+    \ without visible increase in turbidity, hence proliferation of cells has to be\
+    \ checked using phase contrast microscopy.\"\n          },\n          {\n    \
+    \        \"step_number\": 4,\n            \"action\": \"DISSOLVE\",\n        \
+    \    \"description\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n       \
+    \   }\n        ],\n        \"decision\": \"add\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": [\n          {\n            \"step_number\"\
+    : 1,\n            \"action\": \"AUTOCLAVE\",\n            \"description\": \"\
+    Dissolve ingredients (except carbonates, vitamins, arsenate and sulfide), boil\
+    \ medium for 1 min., then cool to room temperature under N2 gas atmosphere. Add\
+    \ solid carbonates and adjust pH to 9.8, then dispense under same gas atmosphere\
+    \ in culture vessels and autoclave.\"\n          },\n          {\n           \
+    \ \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock solutions prepared under N2 and check pH of the completed medium. The\
+    \ vitamin solution should be sterilized by filtration.\"\n          },\n     \
+    \     {\n            \"step_number\": 3,\n            \"action\": \"MIX\",\n \
+    \           \"description\": \"Growth of strain DSM 17814 takes place without\
+    \ visible increase in turbidity, hence proliferation of cells has to be checked\
+    \ using phase contrast microscopy.\"\n          },\n          {\n            \"\
+    step_number\": 4,\n            \"action\": \"DISSOLVE\",\n            \"description\"\
+    : \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the\
+    \ other salts. Finally make up to 1000.00 ml.\"\n          }\n        ],\n   \
+    \     \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Boiling duration and pH endpoint\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": \"Dissolve ingredients\
+    \ (except carbonates, vitamins, arsenate and sulfide), boil medium for 1 min.,\
+    \ then cool to room temperature under N2 gas atmosphere. Add solid carbonates\
+    \ and adjust pH to 9.8, then dispense under same gas atmosphere in culture vessels\
+    \ and autoclave.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1073_current_pdf\",\n        \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\"\
+    ,\n        \"source_locator\": \"PDF page 1 preparation paragraph 1\",\n     \
+    \   \"exact_source_quote\": \"for 1 min., then cool to room temperature under\
+    \ N2 gas atmosphere. Add solid carbonates\\nand adjust pH to 9.8\",\n        \"\
+    snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact quantitative procedure survives\
+    \ in the local text without attached source evidence.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients (except carbonates, vitamins, arsenate\
+    \ and sulfide), boil medium for 1 min., then cool to room temperature under N2\
+    \ gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense under\
+    \ same gas atmosphere in culture vessels and autoclave.\",\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonates, vitamins, arsenate and sulfide),\
+    \ boil medium for 1 min., then cool to room temperature under N2 gas atmosphere.\
+    \ Add solid carbonates and adjust pH to 9.8, then dispense under same gas atmosphere\
+    \ in culture vessels and autoclave.\",\n        \"decision\": \"evidence_only\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"SL-10 final makeup\"\
+    ,\n    \"field_path\": \"preparation_steps[3].description\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": \"First dissolve FeCl2 in the HCl, then dilute\
+    \ in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1073_current_pdf\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"\
+    source_locator\": \"PDF page 2 SL-10 preparation\",\n        \"exact_source_quote\"\
+    : \"make up to 1000.00 ml.\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the exact 1000 mL endpoint but\
+    \ restore its SL-10 stock scope; the existing main-medium placement is wrong.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[3].description\"\
+    ,\n        \"stored\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.00 ml.\",\n      \
+    \  \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[3].description\",\n        \"stored\"\
+    : \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the\
+    \ other salts. Finally make up to 1000.00 ml.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Autoclave cycle\
+    \ not specified\",\n    \"field_path\": \"preparation_steps[0].description\",\n\
+    \    \"decision\": \"not_quantified\",\n    \"local\": \"Dissolve ingredients\
+    \ (except carbonates, vitamins, arsenate and sulfide), boil medium for 1 min.,\
+    \ then cool to room temperature under N2 gas atmosphere. Add solid carbonates\
+    \ and adjust pH to 9.8, then dispense under same gas atmosphere in culture vessels\
+    \ and autoclave.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1073_current_pdf\",\n        \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\"\
+    ,\n        \"source_locator\": \"PDF page 1 preparation paragraph 1\",\n     \
+    \   \"exact_source_quote\": \"autoclave.\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact source supplies no fixed autoclave\
+    \ temperature or duration. Do not invent a generic cycle.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients (except carbonates, vitamins, arsenate\
+    \ and sulfide), boil medium for 1 min., then cool to room temperature under N2\
+    \ gas atmosphere. Add solid carbonates and adjust pH to 9.8, then dispense under\
+    \ same gas atmosphere in culture vessels and autoclave.\",\n        \"decision\"\
+    : \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except carbonates, vitamins, arsenate and sulfide),\
+    \ boil medium for 1 min., then cool to room temperature under N2 gas atmosphere.\
+    \ Add solid carbonates and adjust pH to 9.8, then dispense under same gas atmosphere\
+    \ in culture vessels and autoclave.\",\n        \"decision\": \"not_quantified\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"vitamins stock identity/strength/dose\
+    \ unresolved\",\n    \"field_path\": \"preparation_steps[1].description\",\n \
+    \   \"decision\": \"not_quantified\",\n    \"local\": \"Prior to inoculation,\
+    \ add vitamins, arsenate and sulfide from sterile, anaerobic stock solutions prepared\
+    \ under N2 and check pH of the completed medium. The vitamin solution should be\
+    \ sterilized by filtration.\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1073_current_pdf\",\n        \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\"\
+    ,\n        \"source_locator\": \"PDF page 1 preparation paragraph 2\",\n     \
+    \   \"exact_source_quote\": \"Prior to inoculation, add vitamins, arsenate and\
+    \ sulfide from sterile, anaerobic stock\\nsolutions prepared under N2 and check\
+    \ pH of the completed medium.\",\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This named late addition has no fixed\
+    \ quantity, exact stock composition or strength in the inspected primary. Preserve\
+    \ the requirement and unresolved amount; do not invent a source stock or final\
+    \ concentration.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock solutions prepared under N2 and check pH of the completed medium. The\
+    \ vitamin solution should be sterilized by filtration.\",\n        \"decision\"\
+    : \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock solutions prepared under N2 and check pH of the completed medium. The\
+    \ vitamin solution should be sterilized by filtration.\",\n        \"decision\"\
+    : \"not_quantified\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"arsenate stock identity/strength/dose unresolved\",\n    \"field_path\": \"\
+    preparation_steps[1].description\",\n    \"decision\": \"not_quantified\",\n \
+    \   \"local\": \"Prior to inoculation, add vitamins, arsenate and sulfide from\
+    \ sterile, anaerobic stock solutions prepared under N2 and check pH of the completed\
+    \ medium. The vitamin solution should be sterilized by filtration.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz1073_current_pdf\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"\
+    source_locator\": \"PDF page 1 preparation paragraph 2\",\n        \"exact_source_quote\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock\\nsolutions prepared under N2 and check pH of the completed medium.\"\
+    ,\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This named late addition has no fixed\
+    \ quantity, exact stock composition or strength in the inspected primary. Preserve\
+    \ the requirement and unresolved amount; do not invent a source stock or final\
+    \ concentration.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock solutions prepared under N2 and check pH of the completed medium. The\
+    \ vitamin solution should be sterilized by filtration.\",\n        \"decision\"\
+    : \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock solutions prepared under N2 and check pH of the completed medium. The\
+    \ vitamin solution should be sterilized by filtration.\",\n        \"decision\"\
+    : \"not_quantified\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"sulfide stock identity/strength/dose unresolved\",\n    \"field_path\": \"\
+    preparation_steps[1].description\",\n    \"decision\": \"not_quantified\",\n \
+    \   \"local\": \"Prior to inoculation, add vitamins, arsenate and sulfide from\
+    \ sterile, anaerobic stock solutions prepared under N2 and check pH of the completed\
+    \ medium. The vitamin solution should be sterilized by filtration.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz1073_current_pdf\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/pdf/1073\",\n        \"\
+    source_locator\": \"PDF page 1 preparation paragraph 2\",\n        \"exact_source_quote\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock\\nsolutions prepared under N2 and check pH of the completed medium.\"\
+    ,\n        \"snapshot_sha256\": \"16012e96786959169b73920580260a378e4e1e1690c65e2de68746bc9ccc68a5\"\
+    ,\n        \"parsed_text_sha256\": \"42c2b2024fbe62479d24ca04829af793b3391392b1dc8670da199fa908e23030\"\
+    \n      }\n    ],\n    \"rationale\": \"This named late addition has no fixed\
+    \ quantity, exact stock composition or strength in the inspected primary. Preserve\
+    \ the requirement and unresolved amount; do not invent a source stock or final\
+    \ concentration.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock solutions prepared under N2 and check pH of the completed medium. The\
+    \ vitamin solution should be sterilized by filtration.\",\n        \"decision\"\
+    : \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prior to inoculation, add vitamins, arsenate and sulfide from sterile, anaerobic\
+    \ stock solutions prepared under N2 and check pH of the completed medium. The\
+    \ vitamin solution should be sterilized by filtration.\",\n        \"decision\"\
+    : \"not_quantified\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Solution 1 nominal provider volume versus listed liquids\",\n    \"field_path\"\
+    : \"solutions\",\n    \"decision\": \"conflict\",\n    \"local\": null,\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadive1073api\",\n\
+    \        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n   \
+    \     \"source_locator\": \"$.data.solutions[1].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 505\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1073api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace element solution SL-10\\\",\\n                       \
+    \ \\\"solution_id\\\": 595,\\n                        \\\"amount\\\": 5,\\n  \
+    \                      \\\"unit\\\": \\\"ml\\\",\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1073api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    solution\\\": \\\"Selenite-tungstate solution\\\",\\n                        \\\
+    \"solution_id\\\": 777,\\n                        \\\"amount\\\": 0.3,\\n    \
+    \                    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1073api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1073\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 500,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"716ad8dc10e07add50b9cbc2bd7b92794fa963faa3bab8c91a180e343873e68a\"\
+    \n      }\n    ],\n    \"rationale\": \"Provider declares 505 mL; listed water\
+    \ and two stock additions sum 500 + 5 + 0.30 = 505.3 mL. The primary gives these\
+    \ additions without a final stock makeup. Preserve the conflict and do not select\
+    \ a measured denominator.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aml60_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"500 + 5 + 0.30\
+    \ = 505.30 mL, versus the provider volume field 505 mL.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: aml60-nested-formulation-flattened
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock strengths are represented as the medium formulation
+  description: All 19 local g/L concentrations describe separate source stock objects,
+    while the main 500 mL + 500 mL combination and the nested 5 mL SL-10 / 0.30 mL
+    selenite-tungstate doses are absent. HCl’s 2.5 g/L additionally assumes a conversion
+    not established by the primary’s unqualified 25% stock. This changes the denoted
+    formulation, not merely its documentation. Source volume inconsistencies and unquantified
+    late additions prevent an unconditional replacement final-concentration table.
+  target_ids:
+  - CultureMech:000505
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[3]
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aml60_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: aml60-nickel-hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is grounded to the anhydrous compound
+  description: The exact source calls for 24 mg NiCl2 x 6 H2O in SL-10. Both local
+    CHEBI slots assert CHEBI:34887, whose formula Cl2Ni lacks the six waters. Correct
+    labels and a mapped secondary key do not preserve this source form.
+  target_ids:
+  - CultureMech:000505
+  field_paths:
+  - ingredients[14].term
+  - ingredients[14].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aml60_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct the maintained owner’s source-specific stock hierarchy
+    and original amounts/units, retain the 505 versus 505.3 mL discrepancy, and relocate
+    SL-10 preparation. Resolve the late additions with exact source evidence before
+    proposing complete final concentrations; regenerate only after that reconciliation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000505
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aml60_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve an exact supported hydrate identity in the maintained owner,
+    retaining the source’s 24 mg stock amount and its stage. Do not replace the mass
+    using anhydrous molarity or guess a new CURIE.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000505
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aml60_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The original DSMZ_Medium1073.pdf URL returned HTTP 404. The exact DSMZ 1073 document
+  was recovered successfully at the collection’s MediaDive PDF URL; the failed attempt
+  is retained and does not make the required primary comparison unavailable.
+- All primary and provider comparisons use the exact captured versions and their original
+  timestamps. The successful current collection PDF does not authenticate the historical
+  import date.
+- The source’s microscopy instruction identifies DSM 17814 but does not supply a new
+  taxonomic equivalence or evidence for other organisms. No growth claim is inferred
+  from the generic application.
+- No measured stock volumes, density, percent basis for 25% HCl, or absent vitamin/arsenate/sulfide
+  quantities were supplied. Conditional arithmetic remains explicitly nominal.
+- This scientific assessment preceded formal review validation and saving; their results
+  are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-026
+- generated-medium

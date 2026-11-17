@@ -1,0 +1,4578 @@
+# Source and formulation review: amoebobacter_medium (CultureMech:005247)
+
+- Review: 20261021T145457Z-culturemech-005247-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T14:47:44Z
+- Finished UTC: 2026-10-21T14:54:57Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSMZ 422/KOMODO 422 identity resolves, but all three local layers omit the required medium 28 basal formulation and expose a later sulfide feed-stock strength as a direct ingredient. The DSMZ owner retains preparation that the generated target drops. Primary/provider differences and the thiosulfate ester-class grounding are preserved as curation issues.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 254; batch 026 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-five task batches contain 250 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 253 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005247 | data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml | generated | amoebobacter_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005247 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:005247 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch026/254/strict.tsv |
+| validate-terms | passed | True | CultureMech:005247 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:005247 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:005247 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodoDetail422 | unavailable | False | CultureMech:005247 | The current KOMODO 422 detail request is HTTP 403. Exact catalogue accession/link and the full DSMZ 422/28 formulation resolve the current base recipe; the failed historical-detail attempt is retained as an optional provenance limit, without claiming historical byte equivalence. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:005247.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:005247.
+
+60 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "quantity": "Acetate",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.118088",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.118088",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.118088",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz422",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf",
+        "source_locator": "Complete instruction",
+        "exact_source_quote": "Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.",
+        "snapshot_sha256": "86c23b99fad7894cd059cc73a64889d78d1ef0e0c1650c22112a61d5cb5a100f",
+        "parsed_text_sha256": "689097eeb7a07a7a27ab717d322cbdb9a177dd428ee3357a98e52337eb58fd5b"
+      },
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Acetate\",\n                        \"compound_id\": 1861,\n                        \"amount\": 2,\n                        \"unit\": \"mM\",\n                        \"g_l\": 0.118088,\n                        \"mmol_l\": 2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Existing value matches the provider representation on its declared 1000 mL basis, but has no attached amount evidence in any local layer. Preserve primary 2 mmol acetate / 1 mmol thiosulfate as batch supplements separately from provider 2 mM / 1 mM. Acetate 0.118088 g/L is provider-derived; do not infer a counterion or measured final-volume correction. Chemical grounding is assessed separately."
+  },
+  {
+    "quantity_id": "q2",
+    "quantity": "Thiosulfate",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "MILLIMOLAR"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "MILLIMOLAR"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "MILLIMOLAR"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz422",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf",
+        "source_locator": "Complete instruction",
+        "exact_source_quote": "Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.",
+        "snapshot_sha256": "86c23b99fad7894cd059cc73a64889d78d1ef0e0c1650c22112a61d5cb5a100f",
+        "parsed_text_sha256": "689097eeb7a07a7a27ab717d322cbdb9a177dd428ee3357a98e52337eb58fd5b"
+      },
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Thiosulfate\",\n                        \"compound_id\": 1862,\n                        \"amount\": 1,\n                        \"unit\": \"mM\",\n                        \"mmol_l\": 1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Existing value matches the provider representation on its declared 1000 mL basis, but has no attached amount evidence in any local layer. Preserve primary 2 mmol acetate / 1 mmol thiosulfate as batch supplements separately from provider 2 mM / 1 mM. Acetate 0.118088 g/L is provider-derived; do not infer a counterion or measured final-volume correction. Chemical grounding is assessed separately."
+  },
+  {
+    "quantity_id": "q3",
+    "quantity": "Later neutralized sulfide feed stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 30,\n                        \"mmol_l\": 124.905,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "30 g/L belongs to the separately prepared 3 g sodium sulfide nonahydrate in 100 mL water feed stock. It is not a direct 30 g/L ingredient in the receiving medium. Primary periodic feeding has no fixed dose; the provider specifies a separate range."
+  },
+  {
+    "quantity_id": "q4",
+    "quantity": "Solution A: CaCl2 x 2 H2O                                                                  0.25          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution A exact named table row",
+        "exact_source_quote": "CaCl2 x 2 H2O                                                                  0.25          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q5",
+    "quantity": "Solution A: Yeast extrakt                                                                  0.25          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution A exact named table row",
+        "exact_source_quote": "Yeast extrakt                                                                  0.25          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q6",
+    "quantity": "Solution A: Distilled water                                                             460.00         ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution A exact named table row",
+        "exact_source_quote": "Distilled water                                                             460.00         ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q7",
+    "quantity": "Solution B: Na2S x 9 H2O                                                                   2.00          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution B exact named table row",
+        "exact_source_quote": "Na2S x 9 H2O                                                                   2.00          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q8",
+    "quantity": "Solution B: Distilled water                                                             135.00         ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution B exact named table row",
+        "exact_source_quote": "Distilled water                                                             135.00         ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q9",
+    "quantity": "Solution C: NaHCO3                                                                         1.50          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution C exact named table row",
+        "exact_source_quote": "NaHCO3                                                                         1.50          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q10",
+    "quantity": "Solution C: H2O                                                                          50.00         ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution C exact named table row",
+        "exact_source_quote": "H2O                                                                          50.00         ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q11",
+    "quantity": "Solution D: Resazurin (0,1%)                                                                 0.5       ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution D exact named table row",
+        "exact_source_quote": "Resazurin (0,1%)                                                                 0.5       ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q12",
+    "quantity": "Solution D: Distilled water                                                             450.00         ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution D exact named table row",
+        "exact_source_quote": "Distilled water                                                             450.00         ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q13",
+    "quantity": "Solution E: Ammonium chloride                                                              0.35          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "Ammonium chloride                                                              0.35          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q14",
+    "quantity": "Solution E: Ammonium acetate                                                               0.25          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "Ammonium acetate                                                               0.25          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q15",
+    "quantity": "Solution E: Pyruvic acid sodium salt                                                       0.25          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "Pyruvic acid sodium salt                                                       0.25          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q16",
+    "quantity": "Solution E: Dextrose                                                                       0.25          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "Dextrose                                                                       0.25          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q17",
+    "quantity": "Solution E: MgSO4x7H2O                                                                     0.50          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "MgSO4x7H2O                                                                     0.50          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q18",
+    "quantity": "Solution E: KCL                                                                            0.35          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "KCL                                                                            0.35          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q19",
+    "quantity": "Solution E: KH2PO4                                                                         0.35          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "KH2PO4                                                                         0.35          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q20",
+    "quantity": "Solution E: Trace element solution SL-12 B                                                 1.00        ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "Trace element solution SL-12 B                                                 1.00        ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q21",
+    "quantity": "Solution E: Distilled water                                                                  25        ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution E exact named table row",
+        "exact_source_quote": "Distilled water                                                                  25        ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q22",
+    "quantity": "Solution F: Vitamin B12                                                                     0.01          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution F exact named table row",
+        "exact_source_quote": "Vitamin B12                                                                     0.01          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q23",
+    "quantity": "Solution F: Distilled water                                                              100.00          ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Solution F exact named table row",
+        "exact_source_quote": "Distilled water                                                              100.00          ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q24",
+    "quantity": "SL-12 B: Distilled water                                                            1000.00          ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "Distilled water                                                            1000.00          ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q25",
+    "quantity": "SL-12 B: Na2-EDTA                                                                       3.00          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "Na2-EDTA                                                                       3.00          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q26",
+    "quantity": "SL-12 B: FeSO4 x 7 H2O                                                                  1.10          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "FeSO4 x 7 H2O                                                                  1.10          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q27",
+    "quantity": "SL-12 B: CoCl2 x 6 H2O                                                               190.00         mg",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "CoCl2 x 6 H2O                                                               190.00         mg",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q28",
+    "quantity": "SL-12 B: MnCl2 x 2 H2O                                                                 50.00        mg",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "MnCl2 x 2 H2O                                                                 50.00        mg",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q29",
+    "quantity": "SL-12 B: ZnCl2                                                                         42.00        mg",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "ZnCl2                                                                         42.00        mg",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q30",
+    "quantity": "SL-12 B: NiCl2 x 6 H2O                                                                 24.00        mg",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "NiCl2 x 6 H2O                                                                 24.00        mg",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q31",
+    "quantity": "SL-12 B: Na2MoO4 x 2 H2O                                                               18.00        mg",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "Na2MoO4 x 2 H2O                                                               18.00        mg",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q32",
+    "quantity": "SL-12 B: H3BO3                                                                       300.00         mg",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "H3BO3                                                                       300.00         mg",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q33",
+    "quantity": "SL-12 B: CuCl2 x 2 H2O                                                                  2.00        mg",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; SL-12 B exact named table row",
+        "exact_source_quote": "CuCl2 x 2 H2O                                                                  2.00        mg",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q34",
+    "quantity": "Neutralized feed stock: Distilled water                                                             100.00          ml",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Neutralized feed stock exact named table row",
+        "exact_source_quote": "Distilled water                                                             100.00          ml",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q35",
+    "quantity": "Neutralized feed stock: Na2S x 9 H2O                                                                   3.00          g",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Page 1 or 2; Neutralized feed stock exact named table row",
+        "exact_source_quote": "Na2S x 9 H2O                                                                   3.00          g",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source-only stock/batch input at the named stage, preserving literal g, mg or mL and supplied chemical form. Keep water as the stated input and avoid assuming final volume. Solution D includes an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis is not stated. These complete stock preparations are not all poured into one bottle."
+  },
+  {
+    "quantity_id": "q36",
+    "quantity": "A aliquoting and sterilization",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[4].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[4].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[4].description",
+        "stored": "Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL each. Bubble with N2/CO2 and autoclave at 121°C for 15 min (as decribed below)."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: A aliquoting and sterilization",
+        "exact_source_quote": "Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO2 and autoclave 121°C\n15 min.",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "A: ten 46 mL portions in 100 mL vessels; 121 C/15 min and unquantified gas mixture. The DSMZ owner preserves 46 mL/bottle and cycle, but not tenfold count; target/KOMODO lack preparation. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q37",
+    "quantity": "Conditional marine sodium chloride",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Conditional marine sodium chloride",
+        "exact_source_quote": "(For marine or estuarine isolates add 100.0 g NaCl to this solution and increase the\nMgSO4 x 7 H2O to 15.0 g).",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Conditional parent branch only, not universal DSMZ 422 ingredients. Keep 100 g NaCl and 15 g magnesium sulfate heptahydrate in their stated source stage, without converting to the different provider marine branch. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q38",
+    "quantity": "Bicarbonate vessel capacity",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Bicarbonate vessel capacity",
+        "exact_source_quote": "Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Solution C: 100 mL is vessel capacity, not its 50 mL water input or final-medium volume. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q39",
+    "quantity": "Salts vessel capacity",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Salts vessel capacity",
+        "exact_source_quote": "Filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Solution E: 100 mL vessel capacity is separate from 25 mL water and 1 mL trace addition. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q40",
+    "quantity": "Trace-stock pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Trace-stock pH",
+        "exact_source_quote": "Adjust pH to 6.0.",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "SL-12 B pH only; not the receiving-medium pH. Acid/base quantity is not supplied. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q41",
+    "quantity": "Assembly aliquot",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[7].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[7].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[7].description",
+        "stored": "Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50 mL)."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Assembly aliquot",
+        "exact_source_quote": "Fill 50 ml in each bottle of solution A. Before using add 4 ml solution B and 0.1 ml\nsolution F.",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Mix D/C/E then add a 50 mL aliquot to each A bottle, followed by 4 mL B and 0.1 mL F. Preserve the stage; never sum entire stock preparations. Existing DSMZ owner divides this between steps 8 and 9; the target and KOMODO owner omit it. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q42",
+    "quantity": "Before-use B/F additions",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[8].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[8].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[8].description",
+        "stored": "Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12 solution to each 100 mL bottle."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Before-use B/F additions",
+        "exact_source_quote": "Fill 50 ml in each bottle of solution A. Before using add 4 ml solution B and 0.1 ml\nsolution F.",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "The DSMZ owner retains 4 mL sulfide stock and 0.1 mL B12 per receiving bottle. Their stock concentrations and source preparation volumes are separate. No measured final volume is inferred. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q43",
+    "quantity": "Receiving pH and carbonate reagent",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust the pH with filter-sterilised 1M Na2CO3 to 7.1-7.3."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Receiving pH and carbonate reagent",
+        "exact_source_quote": "Adjust the pH with filter-sterilised 1M Na2CO3 to 7.1-7.3.",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Receiving pH range 7.1–7.3 and 1 M reagent strength; carbonate addition volume is not quantified. Present in DSMZ owner only, without attached evidence. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q44",
+    "quantity": "Initial appearance interval",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[3].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[3].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[3].description",
+        "stored": "During the first 24 h, the iron of the medium precipitates in the form of black flocks. No other sediment should arise in the otherwise clear medium."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Initial appearance interval",
+        "exact_source_quote": "During the first 24 h, the iron of the medium precipitates in the form of black flocks. No",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "24 h describes the source appearance observation, not a growth/incubation recommendation. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q45",
+    "quantity": "Periodic feed strength",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[9].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[9].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[9].description",
+        "stored": "Feed the actively growing culture periodically with neutralized 3% solution of sodium sulfide (use 1 -3 mL/100 mL depending on strain and cultivation stage) to replenish sulfide and with other supplement solutions (see Ref. 3365)."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Periodic feed strength",
+        "exact_source_quote": "neutralized 3% solution of sodium sulfide to replenish sulfide and with other",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Later feed stock, not basal sulfide. Primary gives periodic use with no fixed dose; the displayed feed recipe is 3 g in 100 mL water. Source-local Ref. 3365 is not a verified DOI or new growth citation. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q46",
+    "quantity": "Feed preparation vessel",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Feed preparation vessel",
+        "exact_source_quote": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "250 mL vessel capacity belongs to feed preparation, not stock or receiving final volume. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q47",
+    "quantity": "Feed autoclave cycle",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Feed autoclave cycle",
+        "exact_source_quote": "autoclaved for 15 min. at 121C. After cooling to room temperature the pH is adjusted",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Feed-stock 121 C/15 min is separately scoped; source glyph is preserved in quotation. DSMZ owner retains this cycle. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q48",
+    "quantity": "Feed pH and acid strength",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[10].description",
+        "stored": "The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening the bottle."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Feed pH and acid strength",
+        "exact_source_quote": "to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with a syringe without opening",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Feed-stock approximate pH 7.0 and 2 M sulfuric acid strength; dropwise dose is not quantified. No arbitrary acid volume or main-medium pH inference. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q49",
+    "quantity": "Feed color indicator pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz28",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf",
+        "source_locator": "Named parent preparation sentence: Feed color indicator pH",
+        "exact_source_quote": "Appearance of a yellow colour indicates the drop of pH to about 8. The solution should",
+        "snapshot_sha256": "442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d",
+        "parsed_text_sha256": "dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158"
+      }
+    ],
+    "source_stage_and_basis": "Source observation about approximately pH 8 in the feed procedure; preserve alongside source target about pH 7 rather than choosing a new endpoint. Absent layers require addition; evidence_only applies only to the explicitly named existing DSMZ-owner text."
+  },
+  {
+    "quantity_id": "q50",
+    "quantity": "Provider assembly: Solution A",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\": 27,\n                        \"amount\": 460,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-only declared 1000 mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a universal initial addition. The primary is not replaced by summing these rows."
+  },
+  {
+    "quantity_id": "q51",
+    "quantity": "Provider assembly: Resazurin solution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"solution\": \"Resazurin solution\",\n                        \"solution_id\": 30,\n                        \"amount\": 450,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-only declared 1000 mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a universal initial addition. The primary is not replaced by summing these rows."
+  },
+  {
+    "quantity_id": "q52",
+    "quantity": "Provider assembly: Bicarbonate solution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Bicarbonate solution\",\n                        \"solution_id\": 29,\n                        \"amount\": 50,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-only declared 1000 mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a universal initial addition. The primary is not replaced by summing these rows."
+  },
+  {
+    "quantity_id": "q53",
+    "quantity": "Provider assembly: Pfennig's heterotrophic salts solution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"solution\": \"Pfennig's heterotrophic salts solution\",\n                        \"solution_id\": 31,\n                        \"amount\": 26,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-only declared 1000 mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a universal initial addition. The primary is not replaced by summing these rows."
+  },
+  {
+    "quantity_id": "q54",
+    "quantity": "Provider assembly: Sulfide solution, 1.5%",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Sulfide solution, 1.5%\",\n                        \"solution_id\": 28,\n                        \"amount\": 40,\n                        \"unit\": \"ml/l\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-only declared 1000 mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a universal initial addition. The primary is not replaced by summing these rows."
+  },
+  {
+    "quantity_id": "q55",
+    "quantity": "Provider assembly: Vitamin B12 solution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Vitamin B12 solution\",\n                        \"solution_id\": 32,\n                        \"amount\": 1,\n                        \"unit\": \"ml/l\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-only declared 1000 mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a universal initial addition. The primary is not replaced by summing these rows."
+  },
+  {
+    "quantity_id": "q56",
+    "quantity": "Provider assembly: Neutralized sulfide solution 3% (w/v)",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Neutralized sulfide solution 3% (w/v)\",\n                        \"solution_id\": 34,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-only declared 1000 mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a universal initial addition. The primary is not replaced by summing these rows."
+  },
+  {
+    "quantity_id": "q57",
+    "quantity": "Provider later feed range",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[9].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[9].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[9].description",
+        "stored": "Feed the actively growing culture periodically with neutralized 3% solution of sodium sulfide (use 1 -3 mL/100 mL depending on strain and cultivation stage) to replenish sulfide and with other supplement solutions (see Ref. 3365)."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].steps: exact named sentence",
+        "exact_source_quote": "use 1 -3 mL/100 mL depending on strain and cultivation stage",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-specific later-feed elaboration, not a literal primary fixed dose. Preserve 1–3 mL per 100 mL, periodic replenishment, strain and cultivation-stage qualifiers; this is not an initial basal addition."
+  },
+  {
+    "quantity_id": "q58",
+    "quantity": "Provider marine salt range",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].steps: exact named sentence",
+        "exact_source_quote": "for marine species use 1-3% NaCl and increase the amount of MgSO4 7*H2O to 2,8g/L",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "Provider-specific elaboration, not a literal primary instruction. Preserve range, stage and undefined NaCl percentage basis. The marine branch differs from primary 100 g NaCl/15 g MgSO4 heptahydrate and must remain separately versioned."
+  },
+  {
+    "quantity_id": "q59",
+    "quantity": "Provider resazurin conversion",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive28api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/28",
+        "source_locator": "$.data.solutions[4].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"attribute\": \"0,1%\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.0111111,\n                        \"mmol_l\": 0.0484799,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "bf66cb46a4809306d36ae5bb5710648fbddb70b888441b427c3e3906599141f3"
+      }
+    ],
+    "source_stage_and_basis": "Provider g_l=0.0111111 does not resolve primary 0.5 mL of unqualified 0.1% resazurin in 450 mL water. No final concentration is adopted; preserve both source dose/strength and provider conversion as a discrepancy."
+  },
+  {
+    "quantity_id": "q60",
+    "quantity": "Whole-stock mixing before the 50 mL receiving aliquot",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[6].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+        "field_path": "preparation_steps[6].description",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+        "field_path": "preparation_steps[6].description",
+        "stored": "Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin (complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic salts solution). Bubble with CO2 in an ice bath under sterile conditions."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive422api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/422",
+        "source_locator": "$.data.solutions[1].steps[5].step",
+        "exact_source_quote": "complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic salts solution",
+        "snapshot_sha256": "885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678"
+      }
+    ],
+    "source_stage_and_basis": "The DSMZ owner retains mixing the complete 50 mL bicarbonate and 26 mL salts preparations into the resazurin preparation; target and KOMODO owner lack this step. The subsequent receiving dose is only a 50 mL aliquot of that mixture into each 46 mL A bottle, not the entire combined stock preparation. Existing owner text needs narrow attached evidence; absent layers need addition."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:005247.
+
+3 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 3/3 primary and 3/3 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 3: primary 100.00%; secondary 100.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:005247.
+
+19 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact source identity and owner relationships
+
+identity: supported. Targets: CultureMech:005247.
+
+Both explicit normalized owners and their reciprocal stable-ID paths resolve. Catalogue 422 links the exact DSMZ 422 primary, which explicitly requires parent 28. Current local ingredient equality is not proof that preparation is interchangeable or that historical source bytes were identical.
+
+### Thiosulfate source meaning versus asserted ester class
+
+grounding: concern. Targets: CultureMech:005247.
+
+CHEBI:26977 has the exact label thiosulfate but defines an ester of thiosulfuric acid, not the inorganic thiosulfate intended in this medium. No substitute identifier or counterion is guessed. CHEBI:30089 is the acetate anion; CHEBI:76209 retains the source nonahydrate form.
+
+### Complete parent formulation and per-layer preparation
+
+completeness: concern. Targets: CultureMech:005247.
+
+All local layers lack nested parent A–F and SL-12 B composition. The generated target and KOMODO owner omit preparation entirely; the DSMZ owner retains eleven provider-derived steps, including specific later-feed dosing absent from primary text. Exact primary E pyruvate/dextrose must not disappear merely because current API stock 31 omits them.
+
+### Bacterial medium classification and limited biological claims
+
+scope: supported. Targets: CultureMech:005247.
+
+The full referenced yeast-containing formulation supports complex/undefined liquid classification and the broad cultivation application. The KOMODO Is Complex=false flag differs from the complete recipe; its Is Aerobic=false is metadata only. No taxon-specific growth, DOI, PMID or KG-match assertion is present. Conditional marine formulation and later feed are not universal variants of every receiving culture.
+
+## Findings
+
+### f1: Required basal formulation is absent and later feed is flattened
+
+blocker / open / confirmed; issue key: cm005247-parent-and-feed-scope.
+
+The three stored ingredients omit the explicitly required medium 28. Sodium sulfide 30 g/L is a later neutralized feed-stock strength, not a direct basal concentration. Every A–F/SL-12 B ingredient and receiving dose must retain its source stage; primary Solution E pyruvate and dextrose are absent even from the current provider endpoint.
+
+### f2: The thiosulfate label resolves to an ester class
+
+major / open / confirmed; issue key: cm005247-thiosulfate-ester.
+
+All three layers use CHEBI:26977 and its current MIM link. The canonical label matches, but the definition denotes thiosulfuric-acid esters and does not ground the source inorganic ingredient.
+
+### f3: Preparation and narrow source evidence are not retained across layers
+
+major / open / confirmed; issue key: cm005247-preparation-provenance.
+
+The DSMZ owner has eleven preparation steps; the selected merged record and KOMODO owner have none. Neither owner attaches claim-level amount evidence. A shared ingredient fingerprint cannot justify dropping preparation, parent formulation or source-version distinctions.
+
+### f4: Imported timestamps include malformed and timezone-naive values
+
+minor / open / confirmed; issue key: cm005247-history-timestamps.
+
+The target and KOMODO owner repeat the malformed 2026-01-27T01:15:02.fZ import and timezone-naive enrichment timestamp. They are historical provenance defects, not evidence of incorrect present source retrieval.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconcile both maintained owners with exact DSMZ 422 plus scoped parent 28, retaining stocks, aliquots, primary/provider differences and periodic feeds. Regenerate only after formulation-compatible ownership is established.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- All parent components and stage-specific quantities are represented without inventing a final volume or copying the whole stock preparation into one bottle.
+
+### a2
+
+Resolve the exact source chemical form against ontology definition/structure before selecting any replacement; preserve unresolved counterion and then align primary/secondary grounding.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- Source chemical identity, rather than label equality alone, supports the chosen term.
+
+### a3
+
+Preserve each maintained owner and attach source evidence to the exact quantity/stock/preparation fields. Resolve differences before authorized regeneration; do not backfill historical source equivalence from current signatures.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- Source preparation, version boundaries and scoped evidence survive regenerated output.
+
+### a4
+
+Preserve immutable history and append an authorized clarification or repair the responsible importer for future output; do not invent historical UTC times.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- Any time clarification is source-backed and leaves earlier history traceable.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/amoebobacter_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch026/254/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch026/254/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml:1:id: CultureMech:005247<br>./data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml:1:id: CultureMech:005247<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch026/source-preflight-bound/254/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 18 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf; Complete primary instruction | supports | DSMZ 422 explicitly supplements medium 28; it is not a self-contained three-ingredient formulation. |
+| parent | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf; Both pages: A–F, SL-12 B, bottle assembly, conditional marine branch and later feeding | supports | The entire explicitly referenced parent is relevant, while batch stocks, receiving aliquots and subsequent feeds remain separate. |
+| api | https://mediadive.dsmz.de/rest/medium/422; Entire medium metadata, all solutions and steps | supports | Provider 422 links main solution 28 and distinguishes the later neutralized sulfide stock. Its 1000 mL bookkeeping and mM supplement representation do not establish a measured final volume. |
+| parent-api | https://mediadive.dsmz.de/rest/medium/28; All nine solution definitions and preparation steps | supports | The API omits primary Solution E pyruvate and dextrose, and adds its own feeding/marine details; these versions cannot silently replace each other. |
+| solution26 | https://mediadive.dsmz.de/rest/solution/26; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution27 | https://mediadive.dsmz.de/rest/solution/27; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution28 | https://mediadive.dsmz.de/rest/solution/28; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution29 | https://mediadive.dsmz.de/rest/solution/29; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution30 | https://mediadive.dsmz.de/rest/solution/30; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution31 | https://mediadive.dsmz.de/rest/solution/31; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution32 | https://mediadive.dsmz.de/rest/solution/32; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution33 | https://mediadive.dsmz.de/rest/solution/33; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| solution34 | https://mediadive.dsmz.de/rest/solution/34; Entire exact solution endpoint: identity, recipe and steps | supports | Verified dependency identity and stage-specific composition; a stock concentration is not a final-medium concentration. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw MediaInfo=422 table row | supports | This row resolves KOMODO 422 to DSMZ 422. Flags are catalogue metadata, not independently established physiology. |
+| catalog-header | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact table header | supports | The false aerobic flag is read under Is Aerobic; the catalogue also has Is Complex=false, whereas the complete yeast-containing source supports a complex formulation. |
+| komodoDetail422-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=422; Preserved exact public retrieval result | context_only | The current KOMODO 422 detail request is HTTP 403. Exact catalogue accession/link and the full DSMZ 422/28 formulation resolve the current base recipe; the failed historical-detail attempt is retained as an optional provenance limit, without claiming historical byte equivalence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch026/254/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi26977 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26977; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26977 resolves to thiosulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30089 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30089; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30089 resolves to acetate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:26977": [{"label": "Thiosulfate", "match_type": "preferred_term", "identifier": "CHEBI:26977", "preferred_term": "Thiosulfate", "ontology_id": "CHEBI:26977", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30089": [{"label": "Acetate", "match_type": "preferred_term", "identifier": "CHEBI:30089", "preferred_term": "Acetate", "ontology_id": "CHEBI:30089", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml; data/normalized_yaml/bacterial/amoebobacter_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:13.937759"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:13.937759"}]}, {"input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml", "events": 5, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current primary/stock parsing, preparation collection, non-summing cleanup and formulation-compatibility guard inspected. These are current context, not a reconstruction of historical writer execution. |
+| writer-1 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current primary/stock parsing, preparation collection, non-summing cleanup and formulation-compatibility guard inspected. These are current context, not a reconstruction of historical writer execution. |
+| writer-2 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current primary/stock parsing, preparation collection, non-summing cleanup and formulation-compatibility guard inspected. These are current context, not a reconstruction of historical writer execution. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The current KOMODO 422 detail request is HTTP 403. Exact catalogue accession/link and the full DSMZ 422/28 formulation resolve the current base recipe; the failed historical-detail attempt is retained as an optional provenance limit, without claiming historical byte equivalence.
+- Primary Ref. 3365 remains a source-local bibliography pointer; no paper identity or growth claim is invented from it. Source-defined formulation is reviewed without claiming independent experimental validation.
+- The primary supplement uses mmol; current provider uses mM on a declared 1000 mL basis. Parent stock volumes, mixed aliquots, later feed and conditional marine composition remain distinct; no measured final concentration is synthesized.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T145457Z-culturemech-005247-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: amoebobacter_medium (CultureMech:005247)'
+started_at: '2026-10-21T14:47:44Z'
+finished_at: '2026-10-21T14:54:57Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ 422/KOMODO 422 identity resolves, but all three local layers
+  omit the required medium 28 basal formulation and expose a later sulfide feed-stock
+  strength as a direct ingredient. The DSMZ owner retains preparation that the generated
+  target drops. Primary/provider differences and the thiosulfate ester-class grounding
+  are preserved as curation issues.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+    sha256: 70f57088a4e0ebeec5265b8a1963f15bc38894f209fc6bd802f94cdcf3285931
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    sha256: 7cfa497934fb092bf888efd3d72a27baae0518ce84d3654d5a8b019b452e4a1a
+    role: context
+  - path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    sha256: 6cbbfd3fa012c917abf34d14bbf47e0eb976da48269f8aabf1691c0b38e24a6c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/recipe_references.py
+    sha256: 5d49d3db2f043a82b253e5a0bed03239004043922e1daab43c399a84d64fc237
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 254; batch 026 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-five task batches
+    contain 250 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 253 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005247
+targets:
+- target_id: CultureMech:005247
+  path: data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  label: amoebobacter_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch026/254/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch026/254/strict.tsv"
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005247
+- check_id: komodoDetail422-source-access
+  name: 'Exact source content access: komodoDetail422'
+  required: false
+  status: unavailable
+  summary: The current KOMODO 422 detail request is HTTP 403. Exact catalogue accession/link
+    and the full DSMZ 422/28 formulation resolve the current base recipe; the failed
+    historical-detail attempt is retained as an optional provenance limit, without
+    claiming historical byte equivalence.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - komodoDetail422-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:45.770792Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch026/254/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:47.202322Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-026/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch026/254/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:48.763443Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:49:49.794384Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: supports
+  summary: './data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml:1:id: CultureMech:005247
+
+    ./data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml:1:id: CultureMech:005247
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/source-preflight-bound/254/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: supports
+  summary: 18 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 9374d5ad41575d66d96807b4381b3463c0b3e44c05c9e013c6e1536532f2893b
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf
+  locator: Complete primary instruction
+  accessed_at: '2026-10-21T14:16:59.449331Z'
+  support: supports
+  summary: DSMZ 422 explicitly supplements medium 28; it is not a self-contained three-ingredient
+    formulation.
+  quote: Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.
+  snapshot_sha256: 86c23b99fad7894cd059cc73a64889d78d1ef0e0c1650c22112a61d5cb5a100f
+- evidence_id: parent
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf
+  locator: 'Both pages: A–F, SL-12 B, bottle assembly, conditional marine branch and
+    later feeding'
+  accessed_at: '2026-10-21T11:03:05.362642Z'
+  support: supports
+  summary: The entire explicitly referenced parent is relevant, while batch stocks,
+    receiving aliquots and subsequent feeds remain separate.
+  quote: Mix solution D, C and E. Bubble with CO2 in an ice bath under sterile conditions.
+  snapshot_sha256: 442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/422
+  locator: Entire medium metadata, all solutions and steps
+  accessed_at: '2026-10-21T14:16:58.254845Z'
+  support: supports
+  summary: Provider 422 links main solution 28 and distinguishes the later neutralized
+    sulfide stock. Its 1000 mL bookkeeping and mM supplement representation do not
+    establish a measured final volume.
+  snapshot_sha256: 885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678
+- evidence_id: parent-api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/28
+  locator: All nine solution definitions and preparation steps
+  accessed_at: '2026-10-21T14:18:59.886182Z'
+  support: supports
+  summary: The API omits primary Solution E pyruvate and dextrose, and adds its own
+    feeding/marine details; these versions cannot silently replace each other.
+  snapshot_sha256: bf66cb46a4809306d36ae5bb5710648fbddb70b888441b427c3e3906599141f3
+- evidence_id: solution26
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/26
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:01.632053Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: 9835b854a3e7f97032c591e3041cc1c767dbc509edda43b540142146d4c8465a
+- evidence_id: solution27
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/27
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:51.400453Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: ddb5a1e3b1c720859d06c5e7128f33c04249470a7aa5418eff950da99a640b9d
+- evidence_id: solution28
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/28
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:51.400775Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: b9c6438866b5338809a2217fca28ebfa5c9d7a4d7b61c543d4b5ed41db653595
+- evidence_id: solution29
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/29
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:51.400961Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: 6369b3c92b23f4d17e5031db3ec8246a6ec60d1c9ad40e6c4e9673670409619e
+- evidence_id: solution30
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/30
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:51.401025Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: a5b10394ea360f924a138cc73b5cbeeeed5f99139f8477f161473529b245a3a8
+- evidence_id: solution31
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/31
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:52.033169Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: 8e1ea438988ea13a9b741f6425004f1bb232dac6673fb84f93f0047c2bdaa89c
+- evidence_id: solution32
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/32
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:52.034351Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: 75c1e86b5ec9e1cf04f7b936543c43f613db9f4bffc633ea613acef4e9c74aa8
+- evidence_id: solution33
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/33
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T14:19:52.034425Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: 00943ba24b7945caa7b4d9ce1748a3fb5bf9e52ac2b2a2790633784f30b1bfb3
+- evidence_id: solution34
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/34
+  locator: 'Entire exact solution endpoint: identity, recipe and steps'
+  accessed_at: '2026-10-21T11:03:04.630158Z'
+  support: supports
+  summary: Verified dependency identity and stage-specific composition; a stock concentration
+    is not a final-medium concentration.
+  snapshot_sha256: 33aab3917e55872514b7dd527ff05bfa4cb65d4b77da12b8118bcf69f285cd93
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw MediaInfo=422 table row
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: This row resolves KOMODO 422 to DSMZ 422. Flags are catalogue metadata,
+    not independently established physiology.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=422'\
+    \ >422</a></TD>\n\t\t\t\t\t<TD>AMOEBOBACTER MEDIUM</TD>\n\t\t\t\t\t<TD>null</TD>\n\
+    \t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: catalog-header
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact table header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The false aerobic flag is read under Is Aerobic; the catalogue also has
+    Is Complex=false, whereas the complete yeast-containing source supports a complex
+    formulation.
+  quote: "<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\" width=\"50\">ID</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Name</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">PH Info</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"\
+    >Is Complex</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\">Is Aerobic</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Is SubMedium</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">Instructions</TD>\n\t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodoDetail422-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=422
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:16:58.251600Z'
+  support: context_only
+  summary: The current KOMODO 422 detail request is HTTP 403. Exact catalogue accession/link
+    and the full DSMZ 422/28 formulation resolve the current base recipe; the failed
+    historical-detail attempt is retained as an optional provenance limit, without
+    claiming historical byte equivalence.
+  snapshot_sha256: f4124d99585dde539da726c10ba87ddc50108dce0f210a2900d079f0b0099f6f
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch026/254/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: ee66018da83c62958a736e7ea20a251b0cbc878c300dcee10c5af3f47c1bff40
+- evidence_id: chebi26977
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26977
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T14:17:00.336648Z'
+  support: supports
+  summary: CHEBI:26977 resolves to thiosulfate. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: a990ebf9eb6a4ce57b8fa38f22d27790338a651ec0dfa07ef5564cdd952019c8
+- evidence_id: chebi30089
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30089
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T14:17:00.648549Z'
+  support: supports
+  summary: CHEBI:30089 resolves to acetate. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e24b2513600aad53a1d105e416535ec6378e90a91c9af211764eacdfefa3c772
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:26977":
+    [{"label": "Thiosulfate", "match_type": "preferred_term", "identifier": "CHEBI:26977",
+    "preferred_term": "Thiosulfate", "ontology_id": "CHEBI:26977", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:30089": [{"label": "Acetate", "match_type":
+    "preferred_term", "identifier": "CHEBI:30089", "preferred_term": "Acetate", "ontology_id":
+    "CHEBI:30089", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209":
+    [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209",
+    "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml;
+    data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:13.937759"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:13.937759"}]}, {"input": "data/normalized_yaml/bacterial/amoebobacter_medium.yaml",
+    "events": 5, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: Current primary/stock parsing, preparation collection, non-summing cleanup
+    and formulation-compatibility guard inspected. These are current context, not
+    a reconstruction of historical writer execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: Current primary/stock parsing, preparation collection, non-summing cleanup
+    and formulation-compatibility guard inspected. These are current context, not
+    a reconstruction of historical writer execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T14:54:55Z'
+  support: context_only
+  summary: Current primary/stock parsing, preparation collection, non-summing cleanup
+    and formulation-compatibility guard inspected. These are current context, not
+    a reconstruction of historical writer execution.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 60 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"quantity\": \"Acetate\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n       \
+    \ \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.118088\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.118088\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.118088\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz422\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf\"\
+    ,\n        \"source_locator\": \"Complete instruction\",\n        \"exact_source_quote\"\
+    : \"Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.\",\n    \
+    \    \"snapshot_sha256\": \"86c23b99fad7894cd059cc73a64889d78d1ef0e0c1650c22112a61d5cb5a100f\"\
+    ,\n        \"parsed_text_sha256\": \"689097eeb7a07a7a27ab717d322cbdb9a177dd428ee3357a98e52337eb58fd5b\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive422api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Acetate\\\",\\n                        \\\"compound_id\\\":\
+    \ 1861,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"mM\\\",\\n                        \\\"g_l\\\": 0.118088,\\\
+    n                        \\\"mmol_l\\\": 2,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Existing value matches the\
+    \ provider representation on its declared 1000 mL basis, but has no attached amount\
+    \ evidence in any local layer. Preserve primary 2 mmol acetate / 1 mmol thiosulfate\
+    \ as batch supplements separately from provider 2 mM / 1 mM. Acetate 0.118088\
+    \ g/L is provider-derived; do not infer a counterion or measured final-volume\
+    \ correction. Chemical grounding is assessed separately.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q2\",\n    \"quantity\": \"Thiosulfate\",\n    \"decision\":\
+    \ \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"field_path\": \"\
+    ingredients[1].concentration\",\n        \"stored\": {\n          \"value\": \"\
+    1\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"MILLIMOLAR\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"MILLIMOLAR\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz422\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium422.pdf\"\
+    ,\n        \"source_locator\": \"Complete instruction\",\n        \"exact_source_quote\"\
+    : \"Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.\",\n    \
+    \    \"snapshot_sha256\": \"86c23b99fad7894cd059cc73a64889d78d1ef0e0c1650c22112a61d5cb5a100f\"\
+    ,\n        \"parsed_text_sha256\": \"689097eeb7a07a7a27ab717d322cbdb9a177dd428ee3357a98e52337eb58fd5b\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive422api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Thiosulfate\\\",\\n                        \\\"compound_id\\\
+    \": 1862,\\n                        \\\"amount\\\": 1,\\n                    \
+    \    \\\"unit\\\": \\\"mM\\\",\\n                        \\\"mmol_l\\\": 1,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Existing value matches the\
+    \ provider representation on its declared 1000 mL basis, but has no attached amount\
+    \ evidence in any local layer. Preserve primary 2 mmol acetate / 1 mmol thiosulfate\
+    \ as batch supplements separately from provider 2 mM / 1 mM. Acetate 0.118088\
+    \ g/L is provider-derived; do not infer a counterion or measured final-volume\
+    \ correction. Chemical grounding is assessed separately.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q3\",\n    \"quantity\": \"Later neutralized sulfide feed stock\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive422api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\"\
+    ,\n        \"source_locator\": \"$.data.solutions[2].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"Na2S x 9 H2O\\\",\\n          \
+    \              \\\"compound_id\\\": 54,\\n                        \\\"amount\\\
+    \": 3,\\n                        \\\"unit\\\": \\\"g\\\",\\n                 \
+    \       \\\"g_l\\\": 30,\\n                        \\\"mmol_l\\\": 124.905,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"30 g/L belongs to the separately\
+    \ prepared 3 g sodium sulfide nonahydrate in 100 mL water feed stock. It is not\
+    \ a direct 30 g/L ingredient in the receiving medium. Primary periodic feeding\
+    \ has no fixed dose; the provider specifies a separate range.\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q4\",\n    \"quantity\": \"Solution A: CaCl2 x 2 H2O  \
+    \                                                                0.25        \
+    \  g\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution A exact named table row\"\
+    ,\n        \"exact_source_quote\": \"CaCl2 x 2 H2O                           \
+    \                                       0.25          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"quantity\": \"Solution\
+    \ A: Yeast extrakt                                                           \
+    \       0.25          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution A exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Yeast extrakt                           \
+    \                                       0.25          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"quantity\": \"Solution\
+    \ A: Distilled water                                                         \
+    \    460.00         ml\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution A exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                                    460.00         ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"quantity\": \"Solution\
+    \ B: Na2S x 9 H2O                                                            \
+    \       2.00          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Na2S x 9 H2O                            \
+    \                                       2.00          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"quantity\": \"Solution\
+    \ B: Distilled water                                                         \
+    \    135.00         ml\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                                    135.00         ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"quantity\": \"Solution\
+    \ C: NaHCO3                                                                  \
+    \       1.50          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution C exact named table row\"\
+    ,\n        \"exact_source_quote\": \"NaHCO3                                  \
+    \                                       1.50          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"quantity\": \"Solution\
+    \ C: H2O                                                                     \
+    \     50.00         ml\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution C exact named table row\"\
+    ,\n        \"exact_source_quote\": \"H2O                                     \
+    \                                     50.00         ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"quantity\": \"Solution\
+    \ D: Resazurin (0,1%)                                                        \
+    \         0.5       ml\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution D exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Resazurin (0,1%)                        \
+    \                                         0.5       ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"quantity\": \"Solution\
+    \ D: Distilled water                                                         \
+    \    450.00         ml\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution D exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                                    450.00         ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"quantity\": \"Solution\
+    \ E: Ammonium chloride                                                       \
+    \       0.35          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Ammonium chloride                       \
+    \                                       0.35          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"quantity\": \"Solution\
+    \ E: Ammonium acetate                                                        \
+    \       0.25          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Ammonium acetate                        \
+    \                                       0.25          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"quantity\": \"Solution\
+    \ E: Pyruvic acid sodium salt                                                \
+    \       0.25          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Pyruvic acid sodium salt                \
+    \                                       0.25          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"quantity\": \"Solution\
+    \ E: Dextrose                                                                \
+    \       0.25          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Dextrose                                \
+    \                                       0.25          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"quantity\": \"Solution\
+    \ E: MgSO4x7H2O                                                              \
+    \       0.50          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"MgSO4x7H2O                              \
+    \                                       0.50          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"quantity\": \"Solution\
+    \ E: KCL                                                                     \
+    \       0.35          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"KCL                                     \
+    \                                       0.35          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"quantity\": \"Solution\
+    \ E: KH2PO4                                                                  \
+    \       0.35          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"KH2PO4                                  \
+    \                                       0.35          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"quantity\": \"Solution\
+    \ E: Trace element solution SL-12 B                                          \
+    \       1.00        ml\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Trace element solution SL-12 B          \
+    \                                       1.00        ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"quantity\": \"Solution\
+    \ E: Distilled water                                                         \
+    \         25        ml\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution E exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                                         25        ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"quantity\": \"Solution\
+    \ F: Vitamin B12                                                             \
+    \        0.01          g\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution F exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Vitamin B12                             \
+    \                                        0.01          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"quantity\": \"Solution\
+    \ F: Distilled water                                                         \
+    \     100.00          ml\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Solution F exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                                     100.00          ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"quantity\": \"SL-12\
+    \ B: Distilled water                                                         \
+    \   1000.00          ml\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                                   1000.00          ml\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"quantity\": \"SL-12\
+    \ B: Na2-EDTA                                                                \
+    \       3.00          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Na2-EDTA                                \
+    \                                       3.00          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"quantity\": \"SL-12\
+    \ B: FeSO4 x 7 H2O                                                           \
+    \       1.10          g\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"FeSO4 x 7 H2O                           \
+    \                                       1.10          g\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"quantity\": \"SL-12\
+    \ B: CoCl2 x 6 H2O                                                           \
+    \    190.00         mg\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"CoCl2 x 6 H2O                           \
+    \                                    190.00         mg\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"quantity\": \"SL-12\
+    \ B: MnCl2 x 2 H2O                                                           \
+    \      50.00        mg\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"MnCl2 x 2 H2O                           \
+    \                                      50.00        mg\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"quantity\": \"SL-12\
+    \ B: ZnCl2                                                                   \
+    \      42.00        mg\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"ZnCl2                                   \
+    \                                      42.00        mg\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"quantity\": \"SL-12\
+    \ B: NiCl2 x 6 H2O                                                           \
+    \      24.00        mg\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"NiCl2 x 6 H2O                           \
+    \                                      24.00        mg\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"quantity\": \"SL-12\
+    \ B: Na2MoO4 x 2 H2O                                                         \
+    \      18.00        mg\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"Na2MoO4 x 2 H2O                         \
+    \                                      18.00        mg\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"quantity\": \"SL-12\
+    \ B: H3BO3                                                                   \
+    \    300.00         mg\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"H3BO3                                   \
+    \                                    300.00         mg\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"quantity\": \"SL-12\
+    \ B: CuCl2 x 2 H2O                                                           \
+    \       2.00        mg\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; SL-12 B exact named table row\"\
+    ,\n        \"exact_source_quote\": \"CuCl2 x 2 H2O                           \
+    \                                       2.00        mg\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"quantity\": \"Neutralized\
+    \ feed stock: Distilled water                                                \
+    \             100.00          ml\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Neutralized feed stock exact named\
+    \ table row\",\n        \"exact_source_quote\": \"Distilled water            \
+    \                                                 100.00          ml\",\n    \
+    \    \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"quantity\": \"Neutralized\
+    \ feed stock: Na2S x 9 H2O                                                   \
+    \                3.00          g\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 or 2; Neutralized feed stock exact named\
+    \ table row\",\n        \"exact_source_quote\": \"Na2S x 9 H2O               \
+    \                                                    3.00          g\",\n    \
+    \    \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source-only stock/batch input\
+    \ at the named stage, preserving literal g, mg or mL and supplied chemical form.\
+    \ Keep water as the stated input and avoid assuming final volume. Solution D includes\
+    \ an unqualified 0.1% resazurin reagent and a 0.5 mL dose; its percentage basis\
+    \ is not stated. These complete stock preparations are not all poured into one\
+    \ bottle.\"\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"quantity\": \"A aliquoting\
+    \ and sterilization\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[4].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[4].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[4].description\",\n        \"stored\"\
+    : \"Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL each.\
+    \ Bubble with N2/CO2 and autoclave at 121°C for 15 min (as decribed below).\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz28\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: A aliquoting\
+    \ and sterilization\",\n        \"exact_source_quote\": \"Fill 10x 46ml in 100\
+    \ ml screw-cap bottles. Bubble with N2/CO2 and autoclave 121°C\\n15 min.\",\n\
+    \        \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"A: ten 46 mL portions in\
+    \ 100 mL vessels; 121 C/15 min and unquantified gas mixture. The DSMZ owner preserves\
+    \ 46 mL/bottle and cycle, but not tenfold count; target/KOMODO lack preparation.\
+    \ Absent layers require addition; evidence_only applies only to the explicitly\
+    \ named existing DSMZ-owner text.\"\n  },\n  {\n    \"quantity_id\": \"q37\",\n\
+    \    \"quantity\": \"Conditional marine sodium chloride\",\n    \"decision\":\
+    \ \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Conditional\
+    \ marine sodium chloride\",\n        \"exact_source_quote\": \"(For marine or\
+    \ estuarine isolates add 100.0 g NaCl to this solution and increase the\\nMgSO4\
+    \ x 7 H2O to 15.0 g).\",\n        \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Conditional parent branch\
+    \ only, not universal DSMZ 422 ingredients. Keep 100 g NaCl and 15 g magnesium\
+    \ sulfate heptahydrate in their stated source stage, without converting to the\
+    \ different provider marine branch. Absent layers require addition; evidence_only\
+    \ applies only to the explicitly named existing DSMZ-owner text.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q38\",\n    \"quantity\": \"Bicarbonate vessel capacity\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Bicarbonate\
+    \ vessel capacity\",\n        \"exact_source_quote\": \"Bubble with CO2 and filter\
+    \ sterilize into sterile, gas-tight, 100 ml screw-cap bottle.\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Solution C: 100 mL is vessel\
+    \ capacity, not its 50 mL water input or final-medium volume. Absent layers require\
+    \ addition; evidence_only applies only to the explicitly named existing DSMZ-owner\
+    \ text.\"\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"quantity\": \"Salts\
+    \ vessel capacity\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Salts vessel\
+    \ capacity\",\n        \"exact_source_quote\": \"Filter sterilize into sterile,\
+    \ gas-tight, 100 ml screw-cap bottle.\",\n        \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Solution E: 100 mL vessel\
+    \ capacity is separate from 25 mL water and 1 mL trace addition. Absent layers\
+    \ require addition; evidence_only applies only to the explicitly named existing\
+    \ DSMZ-owner text.\"\n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"quantity\"\
+    : \"Trace-stock pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Trace-stock\
+    \ pH\",\n        \"exact_source_quote\": \"Adjust pH to 6.0.\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"SL-12 B pH only; not the\
+    \ receiving-medium pH. Acid/base quantity is not supplied. Absent layers require\
+    \ addition; evidence_only applies only to the explicitly named existing DSMZ-owner\
+    \ text.\"\n  },\n  {\n    \"quantity_id\": \"q41\",\n    \"quantity\": \"Assembly\
+    \ aliquot\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[7].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[7].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[7].description\",\n        \"stored\"\
+    : \"Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50 mL).\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz28\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Assembly aliquot\"\
+    ,\n        \"exact_source_quote\": \"Fill 50 ml in each bottle of solution A.\
+    \ Before using add 4 ml solution B and 0.1 ml\\nsolution F.\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Mix D/C/E then add a 50 mL\
+    \ aliquot to each A bottle, followed by 4 mL B and 0.1 mL F. Preserve the stage;\
+    \ never sum entire stock preparations. Existing DSMZ owner divides this between\
+    \ steps 8 and 9; the target and KOMODO owner omit it. Absent layers require addition;\
+    \ evidence_only applies only to the explicitly named existing DSMZ-owner text.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"quantity\": \"Before-use B/F\
+    \ additions\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[8].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[8].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[8].description\",\n        \"stored\"\
+    : \"Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12 solution\
+    \ to each 100 mL bottle.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz28\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Before-use\
+    \ B/F additions\",\n        \"exact_source_quote\": \"Fill 50 ml in each bottle\
+    \ of solution A. Before using add 4 ml solution B and 0.1 ml\\nsolution F.\",\n\
+    \        \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"The DSMZ owner retains 4\
+    \ mL sulfide stock and 0.1 mL B12 per receiving bottle. Their stock concentrations\
+    \ and source preparation volumes are separate. No measured final volume is inferred.\
+    \ Absent layers require addition; evidence_only applies only to the explicitly\
+    \ named existing DSMZ-owner text.\"\n  },\n  {\n    \"quantity_id\": \"q43\",\n\
+    \    \"quantity\": \"Receiving pH and carbonate reagent\",\n    \"decision\":\
+    \ \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"field_path\": \"\
+    preparation_steps[1].description\",\n        \"stored\": null\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust the pH with filter-sterilised 1M Na2CO3 to 7.1-7.3.\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Receiving\
+    \ pH and carbonate reagent\",\n        \"exact_source_quote\": \"Adjust the pH\
+    \ with filter-sterilised 1M Na2CO3 to 7.1-7.3.\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Receiving pH range 7.1–7.3\
+    \ and 1 M reagent strength; carbonate addition volume is not quantified. Present\
+    \ in DSMZ owner only, without attached evidence. Absent layers require addition;\
+    \ evidence_only applies only to the explicitly named existing DSMZ-owner text.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q44\",\n    \"quantity\": \"Initial appearance\
+    \ interval\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[3].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[3].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[3].description\",\n        \"stored\"\
+    : \"During the first 24 h, the iron of the medium precipitates in the form of\
+    \ black flocks. No other sediment should arise in the otherwise clear medium.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz28\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Initial appearance\
+    \ interval\",\n        \"exact_source_quote\": \"During the first 24 h, the iron\
+    \ of the medium precipitates in the form of black flocks. No\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"24 h describes the source\
+    \ appearance observation, not a growth/incubation recommendation. Absent layers\
+    \ require addition; evidence_only applies only to the explicitly named existing\
+    \ DSMZ-owner text.\"\n  },\n  {\n    \"quantity_id\": \"q45\",\n    \"quantity\"\
+    : \"Periodic feed strength\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[9].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[9].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[9].description\",\n        \"stored\"\
+    : \"Feed the actively growing culture periodically with neutralized 3% solution\
+    \ of sodium sulfide (use 1 -3 mL/100 mL depending on strain and cultivation stage)\
+    \ to replenish sulfide and with other supplement solutions (see Ref. 3365).\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz28\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Periodic feed\
+    \ strength\",\n        \"exact_source_quote\": \"neutralized 3% solution of sodium\
+    \ sulfide to replenish sulfide and with other\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Later feed stock, not basal\
+    \ sulfide. Primary gives periodic use with no fixed dose; the displayed feed recipe\
+    \ is 3 g in 100 mL water. Source-local Ref. 3365 is not a verified DOI or new\
+    \ growth citation. Absent layers require addition; evidence_only applies only\
+    \ to the explicitly named existing DSMZ-owner text.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q46\",\n    \"quantity\": \"Feed preparation vessel\",\n    \"decision\":\
+    \ \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"field_path\": \"\
+    preparation_steps[10].description\",\n        \"stored\": null\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[10].description\",\n        \"\
+    stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[10].description\",\n        \"\
+    stored\": \"The sulfide solution is prepared in a 250 ml screw-capped bottle with\
+    \ a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen\
+    \ gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature\
+    \ the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with\
+    \ a syringe without opening the bottle.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz28\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\",\n        \"\
+    source_locator\": \"Named parent preparation sentence: Feed preparation vessel\"\
+    ,\n        \"exact_source_quote\": \"The sulfide solution is prepared in a 250\
+    \ ml screw-capped bottle with a butyl rubber\",\n        \"snapshot_sha256\":\
+    \ \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"250 mL vessel capacity belongs\
+    \ to feed preparation, not stock or receiving final volume. Absent layers require\
+    \ addition; evidence_only applies only to the explicitly named existing DSMZ-owner\
+    \ text.\"\n  },\n  {\n    \"quantity_id\": \"q47\",\n    \"quantity\": \"Feed\
+    \ autoclave cycle\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[10].description\",\n        \"\
+    stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[10].description\",\n        \"\
+    stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[10].description\",\n        \"\
+    stored\": \"The sulfide solution is prepared in a 250 ml screw-capped bottle with\
+    \ a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen\
+    \ gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature\
+    \ the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with\
+    \ a syringe without opening the bottle.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz28\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\",\n        \"\
+    source_locator\": \"Named parent preparation sentence: Feed autoclave cycle\"\
+    ,\n        \"exact_source_quote\": \"autoclaved for 15 min. at 121C. After cooling\
+    \ to room temperature the pH is adjusted\",\n        \"snapshot_sha256\": \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\"\
+    ,\n        \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Feed-stock 121 C/15 min is\
+    \ separately scoped; source glyph is preserved in quotation. DSMZ owner retains\
+    \ this cycle. Absent layers require addition; evidence_only applies only to the\
+    \ explicitly named existing DSMZ-owner text.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q48\",\n    \"quantity\": \"Feed pH and acid strength\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"field_path\": \"\
+    preparation_steps[10].description\",\n        \"stored\": null\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[10].description\",\n        \"\
+    stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[10].description\",\n        \"\
+    stored\": \"The sulfide solution is prepared in a 250 ml screw-capped bottle with\
+    \ a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen\
+    \ gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature\
+    \ the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with\
+    \ a syringe without opening the bottle.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz28\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\",\n        \"\
+    source_locator\": \"Named parent preparation sentence: Feed pH and acid strength\"\
+    ,\n        \"exact_source_quote\": \"to about 7.0 by adding of sterile 2 M H2SO4\
+    \ drop-wise with a syringe without opening\",\n        \"snapshot_sha256\": \"\
+    442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n        \"\
+    parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Feed-stock approximate pH\
+    \ 7.0 and 2 M sulfuric acid strength; dropwise dose is not quantified. No arbitrary\
+    \ acid volume or main-medium pH inference. Absent layers require addition; evidence_only\
+    \ applies only to the explicitly named existing DSMZ-owner text.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q49\",\n    \"quantity\": \"Feed color indicator pH\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz28\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf\"\
+    ,\n        \"source_locator\": \"Named parent preparation sentence: Feed color\
+    \ indicator pH\",\n        \"exact_source_quote\": \"Appearance of a yellow colour\
+    \ indicates the drop of pH to about 8. The solution should\",\n        \"snapshot_sha256\"\
+    : \"442636c7b32c8f6de4a54fd8acaaa22f8e1a130f3d4b45af59d5782fe77a6c3d\",\n    \
+    \    \"parsed_text_sha256\": \"dbc7bfba23d1229ac711aa1c810009bbf41a90163bf3fc282df5e60d763a9158\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Source observation about\
+    \ approximately pH 8 in the feed procedure; preserve alongside source target about\
+    \ pH 7 rather than choosing a new endpoint. Absent layers require addition; evidence_only\
+    \ applies only to the explicitly named existing DSMZ-owner text.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q50\",\n    \"quantity\": \"Provider assembly: Solution\
+    \ A\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"solution\\\": \\\"Solution A\\\",\\n                        \\\"solution_id\\\
+    \": 27,\\n                        \\\"amount\\\": 460,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Provider-only declared 1000\
+    \ mL parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL\
+    \ per liter dosing distinct from primary per-bottle aliquots; 10 mL later feed\
+    \ is not a universal initial addition. The primary is not replaced by summing\
+    \ these rows.\"\n  },\n  {\n    \"quantity_id\": \"q51\",\n    \"quantity\": \"\
+    Provider assembly: Resazurin solution\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"solution\\\": \\\"Resazurin solution\\\",\\n                      \
+    \  \\\"solution_id\\\": 30,\\n                        \\\"amount\\\": 450,\\n\
+    \                        \\\"unit\\\": \\\"ml\\\",\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\n      }\n\
+    \    ],\n    \"source_stage_and_basis\": \"Provider-only declared 1000 mL parent\
+    \ bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter\
+    \ dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a\
+    \ universal initial addition. The primary is not replaced by summing these rows.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q52\",\n    \"quantity\": \"Provider assembly:\
+    \ Bicarbonate solution\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"solution\\\": \\\"Bicarbonate solution\\\",\\n                    \
+    \    \\\"solution_id\\\": 29,\\n                        \\\"amount\\\": 50,\\\
+    n                        \\\"unit\\\": \\\"ml\\\",\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\n      }\n\
+    \    ],\n    \"source_stage_and_basis\": \"Provider-only declared 1000 mL parent\
+    \ bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per liter\
+    \ dosing distinct from primary per-bottle aliquots; 10 mL later feed is not a\
+    \ universal initial addition. The primary is not replaced by summing these rows.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q53\",\n    \"quantity\": \"Provider assembly:\
+    \ Pfennig's heterotrophic salts solution\",\n    \"decision\": \"add\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"solution\\\": \\\"Pfennig's heterotrophic salts solution\\\",\\n  \
+    \                      \\\"solution_id\\\": 31,\\n                        \\\"\
+    amount\\\": 26,\\n                        \\\"unit\\\": \\\"ml\\\",\\n       \
+    \                 \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\n     \
+    \ }\n    ],\n    \"source_stage_and_basis\": \"Provider-only declared 1000 mL\
+    \ parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per\
+    \ liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is\
+    \ not a universal initial addition. The primary is not replaced by summing these\
+    \ rows.\"\n  },\n  {\n    \"quantity_id\": \"q54\",\n    \"quantity\": \"Provider\
+    \ assembly: Sulfide solution, 1.5%\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"solution\\\": \\\"Sulfide solution, 1.5%\\\",\\n                  \
+    \      \\\"solution_id\\\": 28,\\n                        \\\"amount\\\": 40,\\\
+    n                        \\\"unit\\\": \\\"ml/l\\\",\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\n     \
+    \ }\n    ],\n    \"source_stage_and_basis\": \"Provider-only declared 1000 mL\
+    \ parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per\
+    \ liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is\
+    \ not a universal initial addition. The primary is not replaced by summing these\
+    \ rows.\"\n  },\n  {\n    \"quantity_id\": \"q55\",\n    \"quantity\": \"Provider\
+    \ assembly: Vitamin B12 solution\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"solution\\\": \\\"Vitamin B12 solution\\\",\\n                    \
+    \    \\\"solution_id\\\": 32,\\n                        \\\"amount\\\": 1,\\n\
+    \                        \\\"unit\\\": \\\"ml/l\\\",\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\n     \
+    \ }\n    ],\n    \"source_stage_and_basis\": \"Provider-only declared 1000 mL\
+    \ parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per\
+    \ liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is\
+    \ not a universal initial addition. The primary is not replaced by summing these\
+    \ rows.\"\n  },\n  {\n    \"quantity_id\": \"q56\",\n    \"quantity\": \"Provider\
+    \ assembly: Neutralized sulfide solution 3% (w/v)\",\n    \"decision\": \"conflict\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 7,\\n                  \
+    \      \\\"solution\\\": \\\"Neutralized sulfide solution 3% (w/v)\\\",\\n   \
+    \                     \\\"solution_id\\\": 34,\\n                        \\\"\
+    amount\\\": 10,\\n                        \\\"unit\\\": \\\"ml\\\",\\n       \
+    \                 \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\n     \
+    \ }\n    ],\n    \"source_stage_and_basis\": \"Provider-only declared 1000 mL\
+    \ parent bookkeeping. Keep the original 460/450/50/26 mL stocks and 40/1 mL per\
+    \ liter dosing distinct from primary per-bottle aliquots; 10 mL later feed is\
+    \ not a universal initial addition. The primary is not replaced by summing these\
+    \ rows.\"\n  },\n  {\n    \"quantity_id\": \"q57\",\n    \"quantity\": \"Provider\
+    \ later feed range\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[9].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[9].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[9].description\",\n        \"stored\"\
+    : \"Feed the actively growing culture periodically with neutralized 3% solution\
+    \ of sodium sulfide (use 1 -3 mL/100 mL depending on strain and cultivation stage)\
+    \ to replenish sulfide and with other supplement solutions (see Ref. 3365).\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive422api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].steps: exact named sentence\"\
+    ,\n        \"exact_source_quote\": \"use 1 -3 mL/100 mL depending on strain and\
+    \ cultivation stage\",\n        \"snapshot_sha256\": \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Provider-specific later-feed\
+    \ elaboration, not a literal primary fixed dose. Preserve 1–3 mL per 100 mL, periodic\
+    \ replenishment, strain and cultivation-stage qualifiers; this is not an initial\
+    \ basal addition.\"\n  },\n  {\n    \"quantity_id\": \"q58\",\n    \"quantity\"\
+    : \"Provider marine salt range\",\n    \"decision\": \"conflict\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive422api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\",\n  \
+    \      \"source_locator\": \"$.data.solutions[1].steps: exact named sentence\"\
+    ,\n        \"exact_source_quote\": \"for marine species use 1-3% NaCl and increase\
+    \ the amount of MgSO4 7*H2O to 2,8g/L\",\n        \"snapshot_sha256\": \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Provider-specific elaboration,\
+    \ not a literal primary instruction. Preserve range, stage and undefined NaCl\
+    \ percentage basis. The marine branch differs from primary 100 g NaCl/15 g MgSO4\
+    \ heptahydrate and must remain separately versioned.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q59\",\n    \"quantity\": \"Provider resazurin conversion\",\n    \"decision\"\
+    : \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive28api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/28\",\n   \
+    \     \"source_locator\": \"$.data.solutions[4].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 25,\\n                        \\\"attribute\\\": \\\"0,1%\\\",\\n        \
+    \                \\\"amount\\\": 0.5,\\n                        \\\"unit\\\":\
+    \ \\\"ml\\\",\\n                        \\\"g_l\\\": 0.0111111,\\n           \
+    \             \\\"mmol_l\\\": 0.0484799,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"bf66cb46a4809306d36ae5bb5710648fbddb70b888441b427c3e3906599141f3\"\
+    \n      }\n    ],\n    \"source_stage_and_basis\": \"Provider g_l=0.0111111 does\
+    \ not resolve primary 0.5 mL of unqualified 0.1% resazurin in 450 mL water. No\
+    \ final concentration is adopted; preserve both source dose/strength and provider\
+    \ conversion as a discrepancy.\"\n  },\n  {\n    \"quantity_id\": \"q60\",\n \
+    \   \"quantity\": \"Whole-stock mixing before the 50 mL receiving aliquot\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/AMOEBOBACTER_MEDIUM.yaml\",\n       \
+    \ \"field_path\": \"preparation_steps[6].description\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[6].description\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/amoebobacter_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[6].description\",\n        \"stored\"\
+    : \"Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin\
+    \ (complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic\
+    \ salts solution). Bubble with CO2 in an ice bath under sterile conditions.\"\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive422api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/422\"\
+    ,\n        \"source_locator\": \"$.data.solutions[1].steps[5].step\",\n      \
+    \  \"exact_source_quote\": \"complete volumina, i.e. 50 mL bicarbonate solution\
+    \ and 26 mL Pfennig's heterotrophic salts solution\",\n        \"snapshot_sha256\"\
+    : \"885bf38f2847045d2cac5805db574e7cd7133a7071d42fb4dffdeb861e103678\"\n     \
+    \ }\n    ],\n    \"source_stage_and_basis\": \"The DSMZ owner retains mixing the\
+    \ complete 50 mL bicarbonate and 26 mL salts preparations into the resazurin preparation;\
+    \ target and KOMODO owner lack this step. The subsequent receiving dose is only\
+    \ a 50 mL aliquot of that mixture into each 46 mL A bottle, not the entire combined\
+    \ stock preparation. Existing owner text needs narrow attached evidence; absent\
+    \ layers need addition.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '3 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 3/3 primary
+    and 3/3 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi26977
+  - chebi30089
+  - chebi76209
+  details: 'Instance coverage on a 0–100 percent scale, denominator 3: primary 100.00%;
+    secondary 100.00%. These are linkage metrics, not correctness scores. Missing
+    optional links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 19 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact source identity and owner relationships
+  outcome: supported
+  summary: Both explicit normalized owners and their reciprocal stable-ID paths resolve.
+    Catalogue 422 links the exact DSMZ 422 primary, which explicitly requires parent
+    28. Current local ingredient equality is not proof that preparation is interchangeable
+    or that historical source bytes were identical.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - catalog
+  - catalog-header
+  - parent
+- assessment_id: forms
+  area: grounding
+  topic: Thiosulfate source meaning versus asserted ester class
+  outcome: concern
+  summary: CHEBI:26977 has the exact label thiosulfate but defines an ester of thiosulfuric
+    acid, not the inorganic thiosulfate intended in this medium. No substitute identifier
+    or counterion is guessed. CHEBI:30089 is the acetate anion; CHEBI:76209 retains
+    the source nonahydrate form.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - primary
+  - parent
+  - chebi26977
+  - chebi30089
+  - chebi76209
+- assessment_id: preparation
+  area: completeness
+  topic: Complete parent formulation and per-layer preparation
+  outcome: concern
+  summary: All local layers lack nested parent A–F and SL-12 B composition. The generated
+    target and KOMODO owner omit preparation entirely; the DSMZ owner retains eleven
+    provider-derived steps, including specific later-feed dosing absent from primary
+    text. Exact primary E pyruvate/dextrose must not disappear merely because current
+    API stock 31 omits them.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - parent
+  - api
+  - parent-api
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Bacterial medium classification and limited biological claims
+  outcome: supported
+  summary: The full referenced yeast-containing formulation supports complex/undefined
+    liquid classification and the broad cultivation application. The KOMODO Is Complex=false
+    flag differs from the complete recipe; its Is Aerobic=false is metadata only.
+    No taxon-specific growth, DOI, PMID or KG-match assertion is present. Conditional
+    marine formulation and later feed are not universal variants of every receiving
+    culture.
+  target_ids:
+  - CultureMech:005247
+  evidence_ids:
+  - record
+  - parent
+  - api
+  - catalog
+  - catalog-header
+findings:
+- finding_id: f1
+  issue_key: cm005247-parent-and-feed-scope
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Required basal formulation is absent and later feed is flattened
+  description: The three stored ingredients omit the explicitly required medium 28.
+    Sodium sulfide 30 g/L is a later neutralized feed-stock strength, not a direct
+    basal concentration. Every A–F/SL-12 B ingredient and receiving dose must retain
+    its source stage; primary Solution E pyruvate and dextrose are absent even from
+    the current provider endpoint.
+  target_ids:
+  - CultureMech:005247
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - parent
+  - api
+  - parent-api
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm005247-thiosulfate-ester
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The thiosulfate label resolves to an ester class
+  description: All three layers use CHEBI:26977 and its current MIM link. The canonical
+    label matches, but the definition denotes thiosulfuric-acid esters and does not
+    ground the source inorganic ingredient.
+  target_ids:
+  - CultureMech:005247
+  field_paths:
+  - ingredients[1].term
+  - ingredients[1].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi26977
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm005247-preparation-provenance
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation and narrow source evidence are not retained across layers
+  description: The DSMZ owner has eleven preparation steps; the selected merged record
+    and KOMODO owner have none. Neither owner attaches claim-level amount evidence.
+    A shared ingredient fingerprint cannot justify dropping preparation, parent formulation
+    or source-version distinctions.
+  target_ids:
+  - CultureMech:005247
+  field_paths:
+  - preparation_steps
+  - ingredients
+  - references
+  - evidence
+  - parent_media
+  - variant_children
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - parent
+  - api
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm005247-history-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Imported timestamps include malformed and timezone-naive values
+  description: The target and KOMODO owner repeat the malformed 2026-01-27T01:15:02.fZ
+    import and timezone-naive enrichment timestamp. They are historical provenance
+    defects, not evidence of incorrect present source retrieval.
+  target_ids:
+  - CultureMech:005247
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconcile both maintained owners with exact DSMZ 422 plus scoped parent
+    28, retaining stocks, aliquots, primary/provider differences and periodic feeds.
+    Regenerate only after formulation-compatible ownership is established.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005247
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+  - All parent components and stage-specific quantities are represented without inventing
+    a final volume or copying the whole stock preparation into one bottle.
+- action_id: a2
+  description: Resolve the exact source chemical form against ontology definition/structure
+    before selecting any replacement; preserve unresolved counterion and then align
+    primary/secondary grounding.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005247
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+  - Source chemical identity, rather than label equality alone, supports the chosen
+    term.
+- action_id: a3
+  description: Preserve each maintained owner and attach source evidence to the exact
+    quantity/stock/preparation fields. Resolve differences before authorized regeneration;
+    do not backfill historical source equivalence from current signatures.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005247
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+  - Source preparation, version boundaries and scoped evidence survive regenerated
+    output.
+- action_id: a4
+  description: Preserve immutable history and append an authorized clarification or
+    repair the responsible importer for future output; do not invent historical UTC
+    times.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005247
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_422_AMOEBOBACTER_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/amoebobacter_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+  - Any time clarification is source-backed and leaves earlier history traceable.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The current KOMODO 422 detail request is HTTP 403. Exact catalogue accession/link
+  and the full DSMZ 422/28 formulation resolve the current base recipe; the failed
+  historical-detail attempt is retained as an optional provenance limit, without claiming
+  historical byte equivalence.
+- Primary Ref. 3365 remains a source-local bibliography pointer; no paper identity
+  or growth claim is invented from it. Source-defined formulation is reviewed without
+  claiming independent experimental validation.
+- The primary supplement uses mmol; current provider uses mM on a declared 1000 mL
+  basis. Parent stock volumes, mixed aliquots, later feed and conditional marine composition
+  remain distinct; no measured final concentration is synthesized.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-026
+- generated-medium
+```
