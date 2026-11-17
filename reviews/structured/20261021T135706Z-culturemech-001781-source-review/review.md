@@ -1,0 +1,5468 @@
+# Source and formulation review: allocatenococcus_medium (CultureMech:001781)
+
+- Review: 20261021T135706Z-culturemech-001781-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T13:52:37Z
+- Finished UTC: 2026-10-21T13:57:06Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSMZ 644 base formulation and both maintained contributors resolve. Nine trace-stock concentrations have been flattened into the medium, trace pH lost its stock scope, and nickel hexahydrate has an anhydrous ontology identity. The primary 1001 mL batch and provider g/L values require explicit provenance rather than silent normalization.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 234; batch 024 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-three task batches contain 230 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 233 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001781 | data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml | generated | allocatenococcus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001781 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001781 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-024/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch024/234/strict.tsv |
+| validate-terms | passed | True | CultureMech:001781 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001781 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001781 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodoDetail644 | unavailable | False | CultureMech:001781 | The exact KOMODO 644 detail request remains HTTP 403. Its historical bytes are not authenticated. Current base identity and formulation are resolved independently by the exact catalog link and DSMZ 644; no modified accession is asserted, so this optional historical access limit does not make the scientific review partial. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001781.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:001781.
+
+18 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 18/19 primary and 18/19 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 19: primary 94.74%; secondary 94.74%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Exact source identities and all contributor relationships
+
+identity: supported. Targets: CultureMech:001781.
+
+Both accession identities and both normalized source contributors resolve. Every parent/child path is present with its asserted stable ID. Identical ingredient signatures alone do not establish source equivalence; current DSMZ and exact KOMODO catalog identity supply the base-source correspondence. Preparation differs between owners and must remain explicit.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001781.
+
+31 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "claim": "NaCl in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact NaCl row",
+        "exact_source_quote": "   NaCl                                                            15.00          g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 256.674,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q2",
+    "claim": "K2HPO4 in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact K2HPO4 row",
+        "exact_source_quote": "   K2HPO4                                                            1.00         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.74132,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q3",
+    "claim": "KH2PO4 in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact KH2PO4 row",
+        "exact_source_quote": "   KH2PO4                                                            0.15         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\": 1.10225,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q4",
+    "claim": "NH4Cl in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact NH4Cl row",
+        "exact_source_quote": "   NH4Cl                                                             0.50         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 9.34754,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q5",
+    "claim": "Na-acetate in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.82",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.82",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.82",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact Na-acetate row",
+        "exact_source_quote": "   Na-acetate                                                        0.82         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na-acetate\",\n                        \"compound_id\": 23,\n                        \"amount\": 0.82,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.82,\n                        \"mmol_l\": 9.99588,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q6",
+    "claim": "MgSO4 x 7 H2O in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact MgSO4 x 7 H2O row",
+        "exact_source_quote": "   MgSO4 x 7 H2O                                                     1.00         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 4.05719,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q7",
+    "claim": "CaCl2 x 2 H2O in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact CaCl2 x 2 H2O row",
+        "exact_source_quote": "   CaCl2 x 2 H2O                                                     0.10         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q8",
+    "claim": "Yeast extract in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact Yeast extract row",
+        "exact_source_quote": "   Yeast extract                                                     0.20         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q9",
+    "claim": "D-Glucose in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact D-Glucose row",
+        "exact_source_quote": "   D-Glucose                                                         1.00         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.55062,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion."
+  },
+  {
+    "decision_id": "q10",
+    "claim": "Agar, for solid medium in the main batch",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "conflict",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact Agar, for solid medium row",
+        "exact_source_quote": "   Agar, for solid medium                                          15.00          g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume header",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All three local values match the provider g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve amount, original unit and source-specific denominator; do not present the unchanged numeral as an independently verified final g/L or silently choose a conversion. Agar is explicitly conditional for the solid version; the existing notes preserve that condition."
+  },
+  {
+    "decision_id": "q11",
+    "claim": "EDTA in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact EDTA row",
+        "exact_source_quote": "   EDTA                                                              5.00         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"EDTA\",\n                        \"compound_id\": 271,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 17.1092,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q12",
+    "claim": "FeSO4 x 7 H2O in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "2.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "2.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "2.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact FeSO4 x 7 H2O row",
+        "exact_source_quote": "   FeSO4 x 7 H2O                                                     2.20         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.2,\n                        \"mmol_l\": 7.91324,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q13",
+    "claim": "ZnSO4 x 7 H2O in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact ZnSO4 x 7 H2O row",
+        "exact_source_quote": "   ZnSO4 x 7 H2O                                                     0.10         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q14",
+    "claim": "MnCl2 x 4 H2O in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact MnCl2 x 4 H2O row",
+        "exact_source_quote": "   MnCl2 x 4 H2O                                                     0.03         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.151588,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q15",
+    "claim": "H3BO3 in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact H3BO3 row",
+        "exact_source_quote": "   H3BO3                                                             0.03         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.485123,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q16",
+    "claim": "CoCl2 x 6 H2O in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact CoCl2 x 6 H2O row",
+        "exact_source_quote": "   CoCl2 x 6 H2O                                                     0.20         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q17",
+    "claim": "CuCl2 x 2 H2O in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact CuCl2 x 2 H2O row",
+        "exact_source_quote": "   CuCl2 x 2 H2O                                                     0.03         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.175971,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q18",
+    "claim": "NiCl2 x 6 H2O in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact NiCl2 x 6 H2O row",
+        "exact_source_quote": "   NiCl2 x 6 H2O                                                     0.03         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.231483,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q19",
+    "claim": "Na2MoO4 x 2 H2O in the separate trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact Na2MoO4 x 2 H2O row",
+        "exact_source_quote": "   Na2MoO4 x 2 H2O                                                   0.03         g",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.123993,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "The local g/L numeral describes the 1000 mL stock recipe, not the receiving medium. Preserve this stock composition and its separate 1 mL addition. No replacement final concentration is asserted; the main-batch basis must remain explicit."
+  },
+  {
+    "decision_id": "q20",
+    "claim": "Trace stock addition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact Trace elements solution (Pfennig, 1965) row",
+        "exact_source_quote": "   Trace elements solution (Pfennig, 1965)                           1.00        ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "Represent the exact 1 mL stock dose into the main source batch, separately from the stock strengths."
+  },
+  {
+    "decision_id": "q21",
+    "claim": "Main distilled water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "NH4Cl",
+            "term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            }
+          },
+          {
+            "preferred_term": "Na-acetate",
+            "term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            },
+            "concentration": {
+              "value": "0.82",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "D-Glucose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "notes": " (for solid medium)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "EDTA",
+            "term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "2.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "MnCl2 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            }
+          },
+          {
+            "preferred_term": "H3BO3",
+            "term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            }
+          },
+          {
+            "preferred_term": "CoCl2 x 6 H2O",
+            "term": {
+              "id": "CHEBI:53503",
+              "label": "cobalt chloride hexahydrate"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:53503",
+              "label": "cobalt chloride hexahydrate"
+            }
+          },
+          {
+            "preferred_term": "CuCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "NiCl2 x 6 H2O",
+            "term": {
+              "id": "CHEBI:34887",
+              "label": "nickel dichloride"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:34887",
+              "label": "nickel dichloride"
+            }
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            }
+          }
+        ],
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "NH4Cl",
+            "term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            }
+          },
+          {
+            "preferred_term": "Na-acetate",
+            "term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            },
+            "concentration": {
+              "value": "0.82",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "D-Glucose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "notes": " (for solid medium)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "EDTA",
+            "term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "2.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "MnCl2 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            }
+          },
+          {
+            "preferred_term": "H3BO3",
+            "term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            }
+          },
+          {
+            "preferred_term": "CoCl2 x 6 H2O",
+            "term": {
+              "id": "CHEBI:53503",
+              "label": "cobalt chloride hexahydrate"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:53503",
+              "label": "cobalt chloride hexahydrate"
+            }
+          },
+          {
+            "preferred_term": "CuCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "NiCl2 x 6 H2O",
+            "term": {
+              "id": "CHEBI:34887",
+              "label": "nickel dichloride"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:34887",
+              "label": "nickel dichloride"
+            }
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            }
+          }
+        ],
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "NaCl",
+            "term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:26710",
+              "label": "sodium chloride"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "KH2PO4",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "NH4Cl",
+            "term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            }
+          },
+          {
+            "preferred_term": "Na-acetate",
+            "term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            },
+            "concentration": {
+              "value": "0.82",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "CaCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86158",
+              "label": "calcium chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "D-Glucose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "notes": " (for solid medium)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "EDTA",
+            "term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "2.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "MnCl2 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86368",
+              "label": "manganese(II) chloride tetrahydrate"
+            }
+          },
+          {
+            "preferred_term": "H3BO3",
+            "term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            }
+          },
+          {
+            "preferred_term": "CoCl2 x 6 H2O",
+            "term": {
+              "id": "CHEBI:53503",
+              "label": "cobalt chloride hexahydrate"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:53503",
+              "label": "cobalt chloride hexahydrate"
+            }
+          },
+          {
+            "preferred_term": "CuCl2 x 2 H2O",
+            "term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86318",
+              "label": "copper(II) chloride dihydrate"
+            }
+          },
+          {
+            "preferred_term": "NiCl2 x 6 H2O",
+            "term": {
+              "id": "CHEBI:34887",
+              "label": "nickel dichloride"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:34887",
+              "label": "nickel dichloride"
+            }
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "0.03",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            }
+          }
+        ],
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; main recipe; exact Distilled water row",
+        "exact_source_quote": "   Distilled water                                              1000.00          ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "Preserve 1000 mL of main-recipe water as source input, not a mass and not a demonstrated measured final volume."
+  },
+  {
+    "decision_id": "q22",
+    "claim": "Trace-stock distilled water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1; embedded Pfennig (1965) stock; exact Distilled water row",
+        "exact_source_quote": "   Distilled water                                              1000.00          ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "mediadive644api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/644",
+        "source_locator": "$.data.solutions[1].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed"
+      }
+    ],
+    "conclusion": "Preserve 1000 mL as the stock recipe water; do not sum it into the receiving medium."
+  },
+  {
+    "decision_id": "q23",
+    "claim": "Main source final-volume declaration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "notes",
+        "stored": "Source: DSMZ &#124; Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "notes",
+        "stored": "Source: DSMZ &#124; Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "decision": "add",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "notes",
+        "stored": "Source: KOMODO ModelSEED &#124; ID: 644 &#124; DSMZ Medium: 644 (mediadive.medium:644) &#124; Aerobic: No",
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-volume declaration",
+        "exact_source_quote": "Final volume: 1001 ml",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "Retain the source-declared 1001 mL batch alongside provider conventions; this review does not measure solution volume."
+  },
+  {
+    "decision_id": "q24",
+    "claim": "Final pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 final-pH header",
+        "exact_source_quote": "Final pH: 7.0",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      },
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 complete-medium pH adjustment",
+        "exact_source_quote": "solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "All layers already state 7.0, without attached claim evidence. Preserve this target, distinct from the stock pH."
+  },
+  {
+    "decision_id": "q25",
+    "claim": "Basal solution pH before autoclaving",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "evidence_only",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "evidence_only",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 basal preparation sentence",
+        "exact_source_quote": "pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements,",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "The target and DSMZ owner already retain the exact 7.0–7.2 stage. The KOMODO owner lacks preparation and needs the source-scoped statement if harmonized."
+  },
+  {
+    "decision_id": "q26",
+    "claim": "Trace-stock pH",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "pH 3.0-4.0",
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "pH 3.0-4.0",
+        "decision": "correct",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 embedded Pfennig stock, below its water row",
+        "exact_source_quote": "pH 3.0-4.0",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "Relocate the existing bare 3.0–4.0 step under the trace stock, leaving main pH 7.0 unchanged. The KOMODO owner has no such preparation step."
+  },
+  {
+    "decision_id": "q27",
+    "claim": "magnesium sulfate separate sterile-stock strength/dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 post-autoclave stock-addition sentence",
+        "exact_source_quote": "After autoclaving add trace elements,\nmagnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock\nsolutions.",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "The source specifies addition from a sterile stock and its main-batch mass, but gives no separate stock strength or aliquot for this component. Preserve the existing target/DSMZ instruction; do not invent a concentration or volume. The KOMODO owner lacks the instruction."
+  },
+  {
+    "decision_id": "q28",
+    "claim": "calcium chloride separate sterile-stock strength/dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 post-autoclave stock-addition sentence",
+        "exact_source_quote": "After autoclaving add trace elements,\nmagnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock\nsolutions.",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "The source specifies addition from a sterile stock and its main-batch mass, but gives no separate stock strength or aliquot for this component. Preserve the existing target/DSMZ instruction; do not invent a concentration or volume. The KOMODO owner lacks the instruction."
+  },
+  {
+    "decision_id": "q29",
+    "claim": "yeast extract separate sterile-stock strength/dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 post-autoclave stock-addition sentence",
+        "exact_source_quote": "After autoclaving add trace elements,\nmagnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock\nsolutions.",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "The source specifies addition from a sterile stock and its main-batch mass, but gives no separate stock strength or aliquot for this component. Preserve the existing target/DSMZ instruction; do not invent a concentration or volume. The KOMODO owner lacks the instruction."
+  },
+  {
+    "decision_id": "q30",
+    "claim": "glucose separate sterile-stock strength/dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 post-autoclave stock-addition sentence",
+        "exact_source_quote": "After autoclaving add trace elements,\nmagnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock\nsolutions.",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "The source specifies addition from a sterile stock and its main-batch mass, but gives no separate stock strength or aliquot for this component. Preserve the existing target/DSMZ instruction; do not invent a concentration or volume. The KOMODO owner lacks the instruction."
+  },
+  {
+    "decision_id": "q31",
+    "claim": "Autoclave temperature and time",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.",
+        "decision": "not_quantified",
+        "attached_matching_evidence": false
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": null,
+        "decision": "add",
+        "attached_matching_evidence": false
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz644",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf",
+        "source_locator": "Page 1 basal preparation",
+        "exact_source_quote": "pH of solution to 7.0 - 7.2 and autoclave.",
+        "snapshot_sha256": "63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7",
+        "parsed_text_sha256": "91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e"
+      }
+    ],
+    "conclusion": "Autoclaving is explicit, but no cycle temperature or duration is provided. Do not import a generic collection default."
+  }
+]
+
+### Preparation and conditional physical state
+
+completeness: concern. Targets: CultureMech:001781.
+
+The target and DSMZ owner retain basal sterilization, post-autoclave sterile additions and final pH adjustment, but flatten the trace-stock pH into a main step. The KOMODO owner lacks preparation. Agar is explicitly optional in notes; SOLID_AGAR is suitable for the agar branch only. COMPLEX/SEMI_DEFINED is consistent with yeast extract; the source also permits a liquid branch. No temperature, time, incubation or gas requirement is inferred.
+
+### Source-specific hydrate and mixture identity
+
+grounding: concern. Targets: CultureMech:001781.
+
+Nickel hexahydrate is explicitly supplied, whereas CHEBI:34887 denotes Cl2Ni without waters. Other explicit hydrate identities agree with the asserted forms. Sodium acetate lacks a printed hydrate qualifier, so an unspecified source form is not independently established as anhydrous. Yeast extract remains an ungrounded complex mixture; no pure-compound replacement is invented. Both primary and secondary nickel links need coordinated attention.
+
+### Identity and claim-level evidence
+
+evidence: concern. Targets: CultureMech:001781.
+
+No local concentration has attached source evidence in any of the three layers. Collection links, importer history and valid identifiers do not support the individual stock or batch claims. The exact source snippets in the inventory supply a curation plan, without modifying any record.
+
+### Applications and source-organism scope
+
+scope: supported. Targets: CultureMech:001781.
+
+The generic microbial-cultivation application and bacterial category do not assert a named experimental growth result. No target organism or external paper is asserted, and no growth claim is inferred from an accession or the KOMODO aerobic metadata.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:001781.
+
+21 timestamp instances inspected; 2 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+## Findings
+
+### f1: Nine stock strengths are represented as medium concentrations
+
+blocker / open / confirmed; issue key: trace-stock-flattened.
+
+All three local layers flatten the nine constituents of the 1000 mL Pfennig stock into direct medium G_PER_L entries, omitting the 1 mL stock addition and stock boundary. The trace pH is also unscoped in the target and DSMZ owner. This materially changes the represented formulation.
+
+### f2: Main batch and provider concentration bases are conflated
+
+major / open / confirmed; issue key: main-batch-denominator.
+
+The primary labels a 1001 mL batch while the provider g_l fields repeat its gram amounts. The current G_PER_L representation hides that difference, and neither source water nor the explicit batch volume is represented. Conditional agar must retain its branch scope.
+
+### f3: Nickel hexahydrate is linked to an anhydrous chemical
+
+major / open / confirmed; issue key: nickel-hydrate-grounding.
+
+The source and preferred term specify NiCl2 x 6 H2O. Both term and current secondary key use CHEBI:34887, whose captured formula is Cl2Ni. Exact canonical labels therefore pass while source-form correspondence fails.
+
+### f4: Source support and preparation are uneven across owners
+
+major / open / confirmed; issue key: claim-evidence-and-preparation.
+
+No layer carries claim-level amount evidence; the KOMODO contributor lacks the preparation retained in the DSMZ contributor. Signature equality and source links do not preserve these source-stage claims or prove historical byte equivalence.
+
+### f5: KOMODO history has malformed and timezone-naive timestamps
+
+minor / open / confirmed; issue key: history-timestamp-shape.
+
+The KOMODO owner retains 2026-01-27T01:15:03.fZ and 2026-02-03T11:18:55.033828. Their exact times cannot be reconstructed from this review.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the source-defined stock and receiving dose in both maintained owners; scope the pH under that stock and regenerate only after source and compatibility checks.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Represent the original batch amounts and volume with precise source evidence; retain the provider convention as a distinct claim until its normalization is resolved. Do not silently replace values.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Verify and ground the exact supplied hydrate in the maintained inputs, separately checking the live primary identity and the pinned secondary mapping. Preserve the original stock mass.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach exact stage-specific evidence to the maintained claims, preserve owner-specific provenance and complete source-supported preparation before considering regenerated equivalence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Append a provenance clarification identifying malformed or timezone-unspecified historical timestamps; do not invent an offset or silently rewrite old events.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/allocatenococcus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/catenococcus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch024/234/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-024/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch024/234/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/allocatenococcus_medium.yaml:1:id: CultureMech:001781<br>./data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml:1:id: CultureMech:001781<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch024/source-preflight-bound/234/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 25 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf; Page 1: complete main recipe, preparation and the embedded Pfennig (1965) stock | supports | Exact current DSMZ 644 defines all amounts, the 1001 mL main batch, conditional agar and the separate 1000 mL trace stock. Medium 1369 is mentioned only as the origin of that stock; no other 1369 formulation is transferred. |
+| provider | https://mediadive.dsmz.de/rest/medium/644; $.data.medium and both solutions 1368/2762, complete recipes and steps | supports | Provider retains main volume 1001 mL but its g_l entries equal the original gram amounts; trace solution 2762 retains its separate 1000 mL volume and 1 mL receiving dose. |
+| stock-endpoint | https://mediadive.dsmz.de/rest/solution/2762; Exact solution 2762, full recipe and pH step | supports | This separately captured stock endpoint agrees with the corresponding embedded provider stock; it establishes this stock only. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw table row with first cell 644 and exact MediaInfo=644 href | supports | CATENOCOCCUS is the exact KOMODO 644 name, linked directly to DSMZ 644. The false Is Aerobic cell authenticates the imported annotation only, not experimental oxygen physiology. |
+| komodoDetail644-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=644; Preserved exact public retrieval result | context_only | The exact KOMODO 644 detail request remains HTTP 403. Its historical bytes are not authenticated. Current base identity and formulation are resolved independently by the exact catalog link and DSMZ 644; no modified accession is asserted, so this optional historical access limit does not make the scientific review partial. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32954 resolves to sodium acetate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi4735 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17634": [{"label": "D-Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17634", "preferred_term": "D-Glucose", "ontology_id": "CHEBI:17634", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| relations | data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml; All parent_media/variant_children and SOURCE_DUPLICATE fields | supports | [{"input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/catenococcus_medium.yaml", "asserted_id": "CultureMech:006184", "actual_id": "CultureMech:006184", "sha256": "594708d176457f6e390eada245155c17990c980433bab58147c777736892060b"}, {"input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/catenococcus_medium.yaml", "asserted_id": "CultureMech:006184", "actual_id": "CultureMech:006184", "sha256": "594708d176457f6e390eada245155c17990c980433bab58147c777736892060b"}, {"input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml", "field": "variant_children[0]", "path": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml", "asserted_id": "CultureMech:001781", "actual_id": "CultureMech:001781", "sha256": "4d3bb577272f01a63f9782665fde033ef7cedd492577ea1e9384e844c931a34d"}] |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch024/234/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| history-metadata | data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml; data/normalized_yaml/bacterial/allocatenococcus_medium.yaml; data/normalized_yaml/bacterial/catenococcus_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml", "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.033828"}]}] |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, cleanup and formulation-compatibility code was read from the bound context. Preparation extraction spans solution steps; current merge guards require compatible formulation content. These current functions are not proof of the historical execution that produced these bytes. |
+| writer-1 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, cleanup and formulation-compatibility code was read from the bound context. Preparation extraction spans solution steps; current merge guards require compatible formulation content. These current functions are not proof of the historical execution that produced these bytes. |
+| writer-2 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, cleanup and formulation-compatibility code was read from the bound context. Preparation extraction spans solution steps; current merge guards require compatible formulation content. These current functions are not proof of the historical execution that produced these bytes. |
+| catalog-headers | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw Table0 column-header row | supports | Column order is ID, Name, PH Info, Is Complex, Is Aerobic, Is SubMedium, Instructions; the fifth cell of the exact 644 row is false. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact KOMODO 644 detail request remains HTTP 403. Its historical bytes are not authenticated. Current base identity and formulation are resolved independently by the exact catalog link and DSMZ 644; no modified accession is asserted, so this optional historical access limit does not make the scientific review partial.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T135706Z-culturemech-001781-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: allocatenococcus_medium (CultureMech:001781)'
+started_at: '2026-10-21T13:52:37Z'
+finished_at: '2026-10-21T13:57:06Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ 644 base formulation and both maintained contributors resolve.
+  Nine trace-stock concentrations have been flattened into the medium, trace pH lost
+  its stock scope, and nickel hexahydrate has an anhydrous ontology identity. The
+  primary 1001 mL batch and provider g/L values require explicit provenance rather
+  than silent normalization.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+    sha256: 38199d85cb2e2c5a4c4ba26e10c88a3f5879c5281fd248346f6579e491381d80
+    role: target
+  - path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    sha256: 4d3bb577272f01a63f9782665fde033ef7cedd492577ea1e9384e844c931a34d
+    role: context
+  - path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    sha256: 594708d176457f6e390eada245155c17990c980433bab58147c777736892060b
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 234; batch 024 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-three task batches
+    contain 230 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 233 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001781
+targets:
+- target_id: CultureMech:001781
+  path: data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  label: allocatenococcus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch024/234/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-024/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch024/234/strict.tsv"
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001781
+- check_id: komodoDetail644-source-access
+  name: 'Exact source content access: komodoDetail644'
+  required: false
+  status: unavailable
+  summary: The exact KOMODO 644 detail request remains HTTP 403. Its historical bytes
+    are not authenticated. Current base identity and formulation are resolved independently
+    by the exact catalog link and DSMZ 644; no modified accession is asserted, so
+    this optional historical access limit does not make the scientific review partial.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - komodoDetail644-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:10.537609Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch024/234/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:12.091416Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-024/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch024/234/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:15.420126Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:16.718008Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/allocatenococcus_medium.yaml:1:id: CultureMech:001781
+
+    ./data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml:1:id: CultureMech:001781
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch024/source-preflight-bound/234/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: supports
+  summary: 25 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 8e59af309de54248ce0ca60d677629ca7601f2da7dc918f7cc656cf03142cd9d
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf
+  locator: 'Page 1: complete main recipe, preparation and the embedded Pfennig (1965)
+    stock'
+  accessed_at: '2026-10-21T13:41:00.652723Z'
+  support: supports
+  summary: Exact current DSMZ 644 defines all amounts, the 1001 mL main batch, conditional
+    agar and the separate 1000 mL trace stock. Medium 1369 is mentioned only as the
+    origin of that stock; no other 1369 formulation is transferred.
+  quote: 'Final volume: 1001 ml'
+  snapshot_sha256: 63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/644
+  locator: $.data.medium and both solutions 1368/2762, complete recipes and steps
+  accessed_at: '2026-10-21T13:40:59.821158Z'
+  support: supports
+  summary: Provider retains main volume 1001 mL but its g_l entries equal the original
+    gram amounts; trace solution 2762 retains its separate 1000 mL volume and 1 mL
+    receiving dose.
+  snapshot_sha256: 2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed
+- evidence_id: stock-endpoint
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/2762
+  locator: Exact solution 2762, full recipe and pH step
+  accessed_at: '2026-10-21T13:42:26.109883Z'
+  support: supports
+  summary: This separately captured stock endpoint agrees with the corresponding embedded
+    provider stock; it establishes this stock only.
+  snapshot_sha256: 405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw table row with first cell 644 and exact MediaInfo=644 href
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: CATENOCOCCUS is the exact KOMODO 644 name, linked directly to DSMZ 644.
+    The false Is Aerobic cell authenticates the imported annotation only, not experimental
+    oxygen physiology.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=644'\
+    \ >644</a></TD>\n\t\t\t\t\t<TD>CATENOCOCCUS MEDIUM</TD>\n\t\t\t\t\t<TD> 7.0</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodoDetail644-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=644
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T13:42:25.901031Z'
+  support: context_only
+  summary: The exact KOMODO 644 detail request remains HTTP 403. Its historical bytes
+    are not authenticated. Current base identity and formulation are resolved independently
+    by the exact catalog link and DSMZ 644; no modified accession is asserted, so
+    this optional historical access limit does not make the scientific review partial.
+  snapshot_sha256: e186b9bdcc51e114c375af6add380a5e9366194f12c7ac46d153024b6524f89b
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: CHEBI:32954 resolves to sodium acetate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi4735
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.659368Z'
+  support: supports
+  summary: CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17634": [{"label": "D-Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17634", "preferred_term": "D-Glucose",
+    "ontology_id": "CHEBI:17634", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}],
+    "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id":
+    "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206":
+    [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206",
+    "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term",
+    "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label":
+    "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:4735": [{"label":
+    "EDTA", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term":
+    "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type":
+    "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride
+    hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label":
+    "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318":
+    [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318",
+    "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term":
+    "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: relations
+  kind: record_content
+  reference: data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml
+  locator: All parent_media/variant_children and SOURCE_DUPLICATE fields
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: supports
+  summary: '[{"input": "data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml", "field":
+    "parent_media", "path": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+    "asserted_id": "CultureMech:006184", "actual_id": "CultureMech:006184", "sha256":
+    "594708d176457f6e390eada245155c17990c980433bab58147c777736892060b"}, {"input":
+    "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml", "field": "parent_media",
+    "path": "data/normalized_yaml/bacterial/catenococcus_medium.yaml", "asserted_id":
+    "CultureMech:006184", "actual_id": "CultureMech:006184", "sha256": "594708d176457f6e390eada245155c17990c980433bab58147c777736892060b"},
+    {"input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml", "field":
+    "variant_children[0]", "path": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+    "asserted_id": "CultureMech:001781", "actual_id": "CultureMech:001781", "sha256":
+    "4d3bb577272f01a63f9782665fde033ef7cedd492577ea1e9384e844c931a34d"}]'
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch024/234/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 3f904aec42267b6ce91d6e2c4a7b3261dfa6b648720f65ddaadeb767a8ce1f06
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml; data/normalized_yaml/bacterial/allocatenococcus_medium.yaml;
+    data/normalized_yaml/bacterial/catenococcus_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/allocatenococcus_medium.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/catenococcus_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:55.033828"}]}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: Current importer, cleanup and formulation-compatibility code was read from
+    the bound context. Preparation extraction spans solution steps; current merge
+    guards require compatible formulation content. These current functions are not
+    proof of the historical execution that produced these bytes.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: Current importer, cleanup and formulation-compatibility code was read from
+    the bound context. Preparation extraction spans solution steps; current merge
+    guards require compatible formulation content. These current functions are not
+    proof of the historical execution that produced these bytes.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:57:04Z'
+  support: context_only
+  summary: Current importer, cleanup and formulation-compatibility code was read from
+    the bound context. Preparation extraction spans solution steps; current merge
+    guards require compatible formulation content. These current functions are not
+    proof of the historical execution that produced these bytes.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: catalog-headers
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw Table0 column-header row
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Column order is ID, Name, PH Info, Is Complex, Is Aerobic, Is SubMedium,
+    Instructions; the fifth cell of the exact 644 row is false.
+  quote: "<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\" width=\"50\">ID</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Name</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">PH Info</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"\
+    >Is Complex</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\">Is Aerobic</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Is SubMedium</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">Instructions</TD>\n\t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '18 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 18/19
+    primary and 18/19 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131527
+  - chebi17634
+  - chebi2509
+  - chebi26710
+  - chebi31206
+  - chebi31795
+  - chebi32312
+  - chebi32954
+  - chebi33118
+  - chebi34887
+  - chebi4735
+  - chebi53503
+  - chebi63036
+  - chebi75213
+  - chebi75836
+  - chebi86158
+  - chebi86318
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 19: primary 94.74%;
+    secondary 94.74%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: identity
+  area: identity
+  topic: Exact source identities and all contributor relationships
+  outcome: supported
+  summary: Both accession identities and both normalized source contributors resolve.
+    Every parent/child path is present with its asserted stable ID. Identical ingredient
+    signatures alone do not establish source equivalence; current DSMZ and exact KOMODO
+    catalog identity supply the base-source correspondence. Preparation differs between
+    owners and must remain explicit.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - record
+  - catalog
+  - primary
+  - provider
+  - id-search
+  - owner-0
+  - owner-1
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 31 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"claim\": \"NaCl in the main\
+    \ batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact NaCl row\",\n    \
+    \    \"exact_source_quote\": \"   NaCl                                       \
+    \                     15.00          g\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 15,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                 \
+    \       \\\"mmol_l\\\": 256.674,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q2\",\n    \"claim\": \"K2HPO4 in the main\
+    \ batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact K2HPO4 row\",\n  \
+    \      \"exact_source_quote\": \"   K2HPO4                                   \
+    \                         1.00         g\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 5.74132,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q3\",\n    \"claim\": \"KH2PO4 in the main\
+    \ batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"conflict\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"conflict\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"conflict\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact KH2PO4 row\",\n  \
+    \      \"exact_source_quote\": \"   KH2PO4                                   \
+    \                         0.15         g\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.15,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.15,\\n         \
+    \               \\\"mmol_l\\\": 1.10225,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q4\",\n    \"claim\": \"NH4Cl in the main\
+    \ batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact NH4Cl row\",\n   \
+    \     \"exact_source_quote\": \"   NH4Cl                                     \
+    \                        0.50         g\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\": 42,\\\
+    n                        \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n                \
+    \        \\\"mmol_l\\\": 9.34754,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q5\",\n    \"claim\": \"Na-acetate in the\
+    \ main batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.82\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"conflict\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.82\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"conflict\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.82\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"conflict\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact Na-acetate row\",\n\
+    \        \"exact_source_quote\": \"   Na-acetate                             \
+    \                           0.82         g\",\n        \"snapshot_sha256\": \"\
+    63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n        \"\
+    parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Na-acetate\\\",\\n                        \\\"compound_id\\\"\
+    : 23,\\n                        \\\"amount\\\": 0.82,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.82,\\n \
+    \                       \\\"mmol_l\\\": 9.99588,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q6\",\n    \"claim\": \"MgSO4 x 7 H2O in the\
+    \ main batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact MgSO4 x 7 H2O row\"\
+    ,\n        \"exact_source_quote\": \"   MgSO4 x 7 H2O                        \
+    \                             1.00         g\",\n        \"snapshot_sha256\":\
+    \ \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 1,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n      \
+    \                  \\\"mmol_l\\\": 4.05719,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q7\",\n    \"claim\": \"CaCl2 x 2 H2O in the\
+    \ main batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact CaCl2 x 2 H2O row\"\
+    ,\n        \"exact_source_quote\": \"   CaCl2 x 2 H2O                        \
+    \                             0.10         g\",\n        \"snapshot_sha256\":\
+    \ \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.1,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n  \
+    \                      \\\"mmol_l\\\": 0.680203,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q8\",\n    \"claim\": \"Yeast extract in the\
+    \ main batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact Yeast extract row\"\
+    ,\n        \"exact_source_quote\": \"   Yeast extract                        \
+    \                             0.20         g\",\n        \"snapshot_sha256\":\
+    \ \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q9\",\n    \"claim\": \"D-Glucose in the main\
+    \ batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact D-Glucose row\",\n\
+    \        \"exact_source_quote\": \"   D-Glucose                              \
+    \                           1.00         g\",\n        \"snapshot_sha256\": \"\
+    63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n        \"\
+    parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"D-Glucose\\\",\\n                        \\\"compound_id\\\
+    \": 211,\\n                        \\\"amount\\\": 1,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n    \
+    \                    \\\"mmol_l\\\": 5.55062,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\"\
+    \n  },\n  {\n    \"decision_id\": \"q10\",\n    \"claim\": \"Agar, for solid medium\
+    \ in the main batch\",\n    \"decision\": \"conflict\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"conflict\",\n        \"attached_matching_evidence\":\
+    \ false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact Agar, for solid medium\
+    \ row\",\n        \"exact_source_quote\": \"   Agar, for solid medium        \
+    \                                  15.00          g\",\n        \"snapshot_sha256\"\
+    : \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"condition\\\": \\\"for solid medium\\\",\\n     \
+    \                   \\\"amount\\\": 15,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                   \
+    \     \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 final-volume header\",\n        \"exact_source_quote\"\
+    : \"Final volume: 1001 ml\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All three local values match the provider\
+    \ g_l field, but the primary states this gram amount in its 1001 mL batch. Preserve\
+    \ amount, original unit and source-specific denominator; do not present the unchanged\
+    \ numeral as an independently verified final g/L or silently choose a conversion.\
+    \ Agar is explicitly conditional for the solid version; the existing notes preserve\
+    \ that condition.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"claim\":\
+    \ \"EDTA in the separate trace stock\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ EDTA row\",\n        \"exact_source_quote\": \"   EDTA                     \
+    \                                         5.00         g\",\n        \"snapshot_sha256\"\
+    : \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"EDTA\\\",\\n                        \\\"compound_id\\\": 271,\\\
+    n                        \\\"amount\\\": 5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n                  \
+    \      \\\"mmol_l\\\": 17.1092,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q12\",\n    \"claim\": \"FeSO4 x 7 H2O in the separate trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"attached_matching_evidence\": false\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ FeSO4 x 7 H2O row\",\n        \"exact_source_quote\": \"   FeSO4 x 7 H2O   \
+    \                                                  2.20         g\",\n       \
+    \ \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 2.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.2,\\n \
+    \                       \\\"mmol_l\\\": 7.91324,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"claim\": \"ZnSO4 x 7 H2O in the separate trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"attached_matching_evidence\": false\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ ZnSO4 x 7 H2O row\",\n        \"exact_source_quote\": \"   ZnSO4 x 7 H2O   \
+    \                                                  0.10         g\",\n       \
+    \ \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadive644api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q14\",\n    \"claim\": \"MnCl2 x 4 H2O in the separate trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[13].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.03\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"attached_matching_evidence\": false\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ MnCl2 x 4 H2O row\",\n        \"exact_source_quote\": \"   MnCl2 x 4 H2O   \
+    \                                                  0.03         g\",\n       \
+    \ \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 36,\\n                        \\\"amount\\\": 0.03,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\\
+    n                        \\\"mmol_l\\\": 0.151588,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadive644api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q15\",\n    \"claim\": \"H3BO3 in the separate trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ H3BO3 row\",\n        \"exact_source_quote\": \"   H3BO3                   \
+    \                                          0.03         g\",\n        \"snapshot_sha256\"\
+    : \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\": 37,\\\
+    n                        \\\"amount\\\": 0.03,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\n         \
+    \               \\\"mmol_l\\\": 0.485123,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q16\",\n    \"claim\": \"CoCl2 x 6 H2O in the separate trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[15].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"attached_matching_evidence\": false\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ CoCl2 x 6 H2O row\",\n        \"exact_source_quote\": \"   CoCl2 x 6 H2O   \
+    \                                                  0.20         g\",\n       \
+    \ \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 38,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"mmol_l\\\": 1.54037,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q17\",\n    \"claim\": \"CuCl2 x 2 H2O in the separate trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[16].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.03\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"attached_matching_evidence\": false\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ CuCl2 x 2 H2O row\",\n        \"exact_source_quote\": \"   CuCl2 x 2 H2O   \
+    \                                                  0.03         g\",\n       \
+    \ \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"CuCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 39,\\n                        \\\"amount\\\": 0.03,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\\
+    n                        \\\"mmol_l\\\": 0.175971,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadive644api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q18\",\n    \"claim\": \"NiCl2 x 6 H2O in the separate trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[17].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.03\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"attached_matching_evidence\": false\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ NiCl2 x 6 H2O row\",\n        \"exact_source_quote\": \"   NiCl2 x 6 H2O   \
+    \                                                  0.03         g\",\n       \
+    \ \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 0.03,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\\
+    n                        \\\"mmol_l\\\": 0.231483,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadive644api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q19\",\n    \"claim\": \"Na2MoO4 x 2 H2O in the separate trace stock\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[18].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"correct\",\n        \"attached_matching_evidence\": false\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ Na2MoO4 x 2 H2O row\",\n        \"exact_source_quote\": \"   Na2MoO4 x 2 H2O\
+    \                                                   0.03         g\",\n      \
+    \  \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 0.03,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\n\
+    \                        \\\"mmol_l\\\": 0.123993,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n      },\n\
+    \      {\n        \"source_key\": \"mediadive644api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"The local g/L numeral describes the 1000 mL\
+    \ stock recipe, not the receiving medium. Preserve this stock composition and\
+    \ its separate 1 mL addition. No replacement final concentration is asserted;\
+    \ the main-batch basis must remain explicit.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q20\",\n    \"claim\": \"Trace stock addition\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n    \
+    \  }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact Trace elements solution\
+    \ (Pfennig, 1965) row\",\n        \"exact_source_quote\": \"   Trace elements\
+    \ solution (Pfennig, 1965)                           1.00        ml\",\n     \
+    \   \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    solution\\\": \\\"Trace elements solution (Pfennig, 1965)\\\",\\n            \
+    \            \\\"solution_id\\\": 2762,\\n                        \\\"amount\\\
+    \": 1,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\n     \
+    \ }\n    ],\n    \"conclusion\": \"Represent the exact 1 mL stock dose into the\
+    \ main source batch, separately from the stock strengths.\"\n  },\n  {\n    \"\
+    decision_id\": \"q21\",\n    \"claim\": \"Main distilled water\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"NaCl\",\n            \"term\": {\n    \
+    \          \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium chloride\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    15\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"K2HPO4\",\n            \"term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"1\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"KH2PO4\",\n            \"term\": {\n              \"id\"\
+    : \"CHEBI:63036\",\n              \"label\": \"potassium dihydrogen phosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.15\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium\
+    \ dihydrogen phosphate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"NH4Cl\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:31206\",\n              \"label\": \"ammonium chloride\"\n     \
+    \       },\n            \"concentration\": {\n              \"value\": \"0.5\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31206\",\n              \"label\": \"ammonium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Na-acetate\",\n            \"term\": {\n              \"id\": \"CHEBI:32954\"\
+    ,\n              \"label\": \"sodium acetate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.82\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32954\",\n              \"label\": \"sodium\
+    \ acetate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MgSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31795\"\
+    ,\n              \"label\": \"magnesium sulfate heptahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"1\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CaCl2 x 2 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium chloride dihydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"Yeast extract\",\n            \"concentration\": {\n \
+    \             \"value\": \"0.2\",\n              \"unit\": \"G_PER_L\"\n     \
+    \       }\n          },\n          {\n            \"preferred_term\": \"D-Glucose\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:17634\",\n         \
+    \     \"label\": \"D-glucose\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\n       \
+    \     }\n          },\n          {\n            \"preferred_term\": \"Agar\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:2509\",\n            \
+    \  \"label\": \"agar\"\n            },\n            \"concentration\": {\n   \
+    \           \"value\": \"15\",\n              \"unit\": \"G_PER_L\"\n        \
+    \    },\n            \"notes\": \" (for solid medium)\",\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    EDTA\",\n            \"term\": {\n              \"id\": \"CHEBI:4735\",\n    \
+    \          \"label\": \"ethylenediaminetetraacetic acid\"\n            },\n  \
+    \          \"concentration\": {\n              \"value\": \"5\",\n           \
+    \   \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:4735\",\n              \"label\": \"ethylenediaminetetraacetic\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75836\"\
+    ,\n              \"label\": \"iron(2+) sulfate heptahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"2.2\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75836\",\n              \"label\": \"iron(2+)\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"ZnSO4 x 7 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate\
+    \ heptahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MnCl2 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86368\"\
+    ,\n              \"label\": \"manganese(II) chloride tetrahydrate\"\n        \
+    \    },\n            \"concentration\": {\n              \"value\": \"0.03\",\n\
+    \              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86368\",\n              \"label\": \"manganese(II)\
+    \ chloride tetrahydrate\"\n            }\n          },\n          {\n        \
+    \    \"preferred_term\": \"H3BO3\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:33118\",\n              \"label\": \"boric acid\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.03\",\n      \
+    \        \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:33118\",\n              \"label\": \"boric\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CoCl2 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:53503\"\
+    ,\n              \"label\": \"cobalt chloride hexahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.2\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:53503\",\n              \"label\": \"cobalt\
+    \ chloride hexahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CuCl2 x 2 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:86318\",\n              \"label\": \"copper(II) chloride\
+    \ dihydrate\"\n            },\n            \"concentration\": {\n            \
+    \  \"value\": \"0.03\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:86318\"\
+    ,\n              \"label\": \"copper(II) chloride dihydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"NiCl2 x 6 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:34887\",\n         \
+    \     \"label\": \"nickel dichloride\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.03\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:34887\",\n              \"label\": \"nickel dichloride\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    Na2MoO4 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75213\"\
+    ,\n              \"label\": \"sodium molybdate dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.03\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75213\",\n              \"label\": \"sodium\
+    \ molybdate dihydrate\"\n            }\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"attached_matching_evidence\": false\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"NaCl\",\n            \"term\": {\n    \
+    \          \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium chloride\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    15\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"K2HPO4\",\n            \"term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"1\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"KH2PO4\",\n            \"term\": {\n              \"id\"\
+    : \"CHEBI:63036\",\n              \"label\": \"potassium dihydrogen phosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.15\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium\
+    \ dihydrogen phosphate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"NH4Cl\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:31206\",\n              \"label\": \"ammonium chloride\"\n     \
+    \       },\n            \"concentration\": {\n              \"value\": \"0.5\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31206\",\n              \"label\": \"ammonium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Na-acetate\",\n            \"term\": {\n              \"id\": \"CHEBI:32954\"\
+    ,\n              \"label\": \"sodium acetate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.82\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32954\",\n              \"label\": \"sodium\
+    \ acetate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MgSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31795\"\
+    ,\n              \"label\": \"magnesium sulfate heptahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"1\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CaCl2 x 2 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium chloride dihydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"Yeast extract\",\n            \"concentration\": {\n \
+    \             \"value\": \"0.2\",\n              \"unit\": \"G_PER_L\"\n     \
+    \       }\n          },\n          {\n            \"preferred_term\": \"D-Glucose\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:17634\",\n         \
+    \     \"label\": \"D-glucose\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\n       \
+    \     }\n          },\n          {\n            \"preferred_term\": \"Agar\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:2509\",\n            \
+    \  \"label\": \"agar\"\n            },\n            \"concentration\": {\n   \
+    \           \"value\": \"15\",\n              \"unit\": \"G_PER_L\"\n        \
+    \    },\n            \"notes\": \" (for solid medium)\",\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    EDTA\",\n            \"term\": {\n              \"id\": \"CHEBI:4735\",\n    \
+    \          \"label\": \"ethylenediaminetetraacetic acid\"\n            },\n  \
+    \          \"concentration\": {\n              \"value\": \"5\",\n           \
+    \   \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:4735\",\n              \"label\": \"ethylenediaminetetraacetic\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75836\"\
+    ,\n              \"label\": \"iron(2+) sulfate heptahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"2.2\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75836\",\n              \"label\": \"iron(2+)\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"ZnSO4 x 7 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate\
+    \ heptahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MnCl2 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86368\"\
+    ,\n              \"label\": \"manganese(II) chloride tetrahydrate\"\n        \
+    \    },\n            \"concentration\": {\n              \"value\": \"0.03\",\n\
+    \              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86368\",\n              \"label\": \"manganese(II)\
+    \ chloride tetrahydrate\"\n            }\n          },\n          {\n        \
+    \    \"preferred_term\": \"H3BO3\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:33118\",\n              \"label\": \"boric acid\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.03\",\n      \
+    \        \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:33118\",\n              \"label\": \"boric\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CoCl2 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:53503\"\
+    ,\n              \"label\": \"cobalt chloride hexahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.2\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:53503\",\n              \"label\": \"cobalt\
+    \ chloride hexahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CuCl2 x 2 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:86318\",\n              \"label\": \"copper(II) chloride\
+    \ dihydrate\"\n            },\n            \"concentration\": {\n            \
+    \  \"value\": \"0.03\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:86318\"\
+    ,\n              \"label\": \"copper(II) chloride dihydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"NiCl2 x 6 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:34887\",\n         \
+    \     \"label\": \"nickel dichloride\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.03\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:34887\",\n              \"label\": \"nickel dichloride\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    Na2MoO4 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75213\"\
+    ,\n              \"label\": \"sodium molybdate dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.03\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75213\",\n              \"label\": \"sodium\
+    \ molybdate dihydrate\"\n            }\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"attached_matching_evidence\": false\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"NaCl\",\n            \"term\": {\n    \
+    \          \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium chloride\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    15\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"sodium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"K2HPO4\",\n            \"term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"1\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"KH2PO4\",\n            \"term\": {\n              \"id\"\
+    : \"CHEBI:63036\",\n              \"label\": \"potassium dihydrogen phosphate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.15\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium\
+    \ dihydrogen phosphate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"NH4Cl\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:31206\",\n              \"label\": \"ammonium chloride\"\n     \
+    \       },\n            \"concentration\": {\n              \"value\": \"0.5\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31206\",\n              \"label\": \"ammonium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Na-acetate\",\n            \"term\": {\n              \"id\": \"CHEBI:32954\"\
+    ,\n              \"label\": \"sodium acetate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.82\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32954\",\n              \"label\": \"sodium\
+    \ acetate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MgSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:31795\"\
+    ,\n              \"label\": \"magnesium sulfate heptahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"1\",\n         \
+    \     \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CaCl2 x 2 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium chloride dihydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86158\",\n              \"label\": \"calcium\
+    \ chloride dihydrate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"Yeast extract\",\n            \"concentration\": {\n \
+    \             \"value\": \"0.2\",\n              \"unit\": \"G_PER_L\"\n     \
+    \       }\n          },\n          {\n            \"preferred_term\": \"D-Glucose\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:17634\",\n         \
+    \     \"label\": \"D-glucose\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"1\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          },\n            \"mediaingredientmech_chebi_term\": {\n           \
+    \   \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\n       \
+    \     }\n          },\n          {\n            \"preferred_term\": \"Agar\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:2509\",\n            \
+    \  \"label\": \"agar\"\n            },\n            \"concentration\": {\n   \
+    \           \"value\": \"15\",\n              \"unit\": \"G_PER_L\"\n        \
+    \    },\n            \"notes\": \" (for solid medium)\",\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    EDTA\",\n            \"term\": {\n              \"id\": \"CHEBI:4735\",\n    \
+    \          \"label\": \"ethylenediaminetetraacetic acid\"\n            },\n  \
+    \          \"concentration\": {\n              \"value\": \"5\",\n           \
+    \   \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:4735\",\n              \"label\": \"ethylenediaminetetraacetic\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"FeSO4 x 7 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75836\"\
+    ,\n              \"label\": \"iron(2+) sulfate heptahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"2.2\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75836\",\n              \"label\": \"iron(2+)\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"ZnSO4 x 7 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate\
+    \ heptahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MnCl2 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86368\"\
+    ,\n              \"label\": \"manganese(II) chloride tetrahydrate\"\n        \
+    \    },\n            \"concentration\": {\n              \"value\": \"0.03\",\n\
+    \              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86368\",\n              \"label\": \"manganese(II)\
+    \ chloride tetrahydrate\"\n            }\n          },\n          {\n        \
+    \    \"preferred_term\": \"H3BO3\",\n            \"term\": {\n              \"\
+    id\": \"CHEBI:33118\",\n              \"label\": \"boric acid\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.03\",\n      \
+    \        \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:33118\",\n              \"label\": \"boric\
+    \ acid\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"CoCl2 x 6 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:53503\"\
+    ,\n              \"label\": \"cobalt chloride hexahydrate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.2\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:53503\",\n              \"label\": \"cobalt\
+    \ chloride hexahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CuCl2 x 2 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:86318\",\n              \"label\": \"copper(II) chloride\
+    \ dihydrate\"\n            },\n            \"concentration\": {\n            \
+    \  \"value\": \"0.03\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:86318\"\
+    ,\n              \"label\": \"copper(II) chloride dihydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"NiCl2 x 6 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:34887\",\n         \
+    \     \"label\": \"nickel dichloride\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.03\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:34887\",\n              \"label\": \"nickel dichloride\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    Na2MoO4 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75213\"\
+    ,\n              \"label\": \"sodium molybdate dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.03\",\n       \
+    \       \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75213\",\n              \"label\": \"sodium\
+    \ molybdate dihydrate\"\n            }\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"attached_matching_evidence\": false\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz644\",\n  \
+    \      \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; main recipe; exact Distilled water row\"\
+    ,\n        \"exact_source_quote\": \"   Distilled water                      \
+    \                        1000.00          ml\",\n        \"snapshot_sha256\":\
+    \ \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      }\n    ],\n    \"conclusion\": \"Preserve 1000 mL of main-recipe water\
+    \ as source input, not a mass and not a demonstrated measured final volume.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q22\",\n    \"claim\": \"Trace-stock distilled\
+    \ water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n   \
+    \     \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"attached_matching_evidence\": false\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n    \
+    \  }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1; embedded Pfennig (1965) stock; exact\
+    \ Distilled water row\",\n        \"exact_source_quote\": \"   Distilled water\
+    \                                              1000.00          ml\",\n      \
+    \  \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive644api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/644\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2c29ce8b59bdc6f4ca18c26ad7b258d9eda8aadfc4e10fd6eb002ae101d990ed\"\
+    \n      }\n    ],\n    \"conclusion\": \"Preserve 1000 mL as the stock recipe\
+    \ water; do not sum it into the receiving medium.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q23\",\n    \"claim\": \"Main source final-volume declaration\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: DSMZ | Link:\
+    \ https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n      \
+    \  \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: DSMZ | Link:\
+    \ https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n      \
+    \  \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"notes\",\n        \"stored\": \"Source: KOMODO ModelSEED\
+    \ | ID: 644 | DSMZ Medium: 644 (mediadive.medium:644) | Aerobic: No\",\n     \
+    \   \"decision\": \"add\",\n        \"attached_matching_evidence\": false\n  \
+    \    }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final-volume declaration\",\n        \"\
+    exact_source_quote\": \"Final volume: 1001 ml\",\n        \"snapshot_sha256\"\
+    : \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"Retain the source-declared 1001 mL batch\
+    \ alongside provider conventions; this review does not measure solution volume.\"\
+    \n  },\n  {\n    \"decision_id\": \"q24\",\n    \"claim\": \"Final pH\",\n   \
+    \ \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n      \
+    \  \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"decision\"\
+    : \"evidence_only\",\n        \"attached_matching_evidence\": false\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\",\n        \"attached_matching_evidence\": false\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\",\n        \"attached_matching_evidence\": false\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final-pH header\",\n        \"exact_source_quote\"\
+    : \"Final pH: 7.0\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz644\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\",\n    \
+    \    \"source_locator\": \"Page 1 complete-medium pH adjustment\",\n        \"\
+    exact_source_quote\": \"solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"All layers already state 7.0, without\
+    \ attached claim evidence. Preserve this target, distinct from the stock pH.\"\
+    \n  },\n  {\n    \"decision_id\": \"q25\",\n    \"claim\": \"Basal solution pH\
+    \ before autoclaving\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"evidence_only\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"evidence_only\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"pH of solution to 7.0 - 7.2 and autoclave. After\
+    \ autoclaving add trace elements,\",\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"The target and DSMZ owner already retain\
+    \ the exact 7.0–7.2 stage. The KOMODO owner lacks preparation and needs the source-scoped\
+    \ statement if harmonized.\"\n  },\n  {\n    \"decision_id\": \"q26\",\n    \"\
+    claim\": \"Trace-stock pH\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"pH 3.0-4.0\",\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"pH 3.0-4.0\",\n        \"decision\": \"correct\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 embedded Pfennig stock, below its water\
+    \ row\",\n        \"exact_source_quote\": \"pH 3.0-4.0\",\n        \"snapshot_sha256\"\
+    : \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"Relocate the existing bare 3.0–4.0 step\
+    \ under the trace stock, leaving main pH 7.0 unchanged. The KOMODO owner has no\
+    \ such preparation step.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n    \"claim\"\
+    : \"magnesium sulfate separate sterile-stock strength/dose\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve sodium\
+    \ chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH of solution\
+    \ to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium\
+    \ sulfate, calcium chloride, yeast extract and glucose from sterile stock solutions.\
+    \ Adjust pH of complete medium to 7.0, if necessary.\",\n        \"decision\"\
+    : \"not_quantified\",\n        \"attached_matching_evidence\": false\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 post-autoclave stock-addition sentence\"\
+    ,\n        \"exact_source_quote\": \"After autoclaving add trace elements,\\nmagnesium\
+    \ sulfate, calcium chloride, yeast extract and glucose from sterile stock\\nsolutions.\"\
+    ,\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"The source specifies addition from a\
+    \ sterile stock and its main-batch mass, but gives no separate stock strength\
+    \ or aliquot for this component. Preserve the existing target/DSMZ instruction;\
+    \ do not invent a concentration or volume. The KOMODO owner lacks the instruction.\"\
+    \n  },\n  {\n    \"decision_id\": \"q28\",\n    \"claim\": \"calcium chloride\
+    \ separate sterile-stock strength/dose\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 post-autoclave stock-addition sentence\"\
+    ,\n        \"exact_source_quote\": \"After autoclaving add trace elements,\\nmagnesium\
+    \ sulfate, calcium chloride, yeast extract and glucose from sterile stock\\nsolutions.\"\
+    ,\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"The source specifies addition from a\
+    \ sterile stock and its main-batch mass, but gives no separate stock strength\
+    \ or aliquot for this component. Preserve the existing target/DSMZ instruction;\
+    \ do not invent a concentration or volume. The KOMODO owner lacks the instruction.\"\
+    \n  },\n  {\n    \"decision_id\": \"q29\",\n    \"claim\": \"yeast extract separate\
+    \ sterile-stock strength/dose\",\n    \"decision\": \"not_quantified\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 post-autoclave stock-addition sentence\"\
+    ,\n        \"exact_source_quote\": \"After autoclaving add trace elements,\\nmagnesium\
+    \ sulfate, calcium chloride, yeast extract and glucose from sterile stock\\nsolutions.\"\
+    ,\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"The source specifies addition from a\
+    \ sterile stock and its main-batch mass, but gives no separate stock strength\
+    \ or aliquot for this component. Preserve the existing target/DSMZ instruction;\
+    \ do not invent a concentration or volume. The KOMODO owner lacks the instruction.\"\
+    \n  },\n  {\n    \"decision_id\": \"q30\",\n    \"claim\": \"glucose separate\
+    \ sterile-stock strength/dose\",\n    \"decision\": \"not_quantified\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 post-autoclave stock-addition sentence\"\
+    ,\n        \"exact_source_quote\": \"After autoclaving add trace elements,\\nmagnesium\
+    \ sulfate, calcium chloride, yeast extract and glucose from sterile stock\\nsolutions.\"\
+    ,\n        \"snapshot_sha256\": \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\"\
+    ,\n        \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"The source specifies addition from a\
+    \ sterile stock and its main-batch mass, but gives no separate stock strength\
+    \ or aliquot for this component. Preserve the existing target/DSMZ instruction;\
+    \ do not invent a concentration or volume. The KOMODO owner lacks the instruction.\"\
+    \n  },\n  {\n    \"decision_id\": \"q31\",\n    \"claim\": \"Autoclave temperature\
+    \ and time\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALLOCATENOCOCCUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allocatenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate,\
+    \ adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace\
+    \ elements, magnesium sulfate, calcium chloride, yeast extract and glucose from\
+    \ sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.\"\
+    ,\n        \"decision\": \"not_quantified\",\n        \"attached_matching_evidence\"\
+    : false\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/catenococcus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"attached_matching_evidence\"\
+    : false\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz644\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium644.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal preparation\",\n        \"exact_source_quote\"\
+    : \"pH of solution to 7.0 - 7.2 and autoclave.\",\n        \"snapshot_sha256\"\
+    : \"63b5d2d91065d0cc568213a2f9c83d20d943ceea36e81b23b38a7b92377b1ac7\",\n    \
+    \    \"parsed_text_sha256\": \"91363daf6738e7a11cb45981cd500f4deb02c66a3e4ed7e41035139d80fd745e\"\
+    \n      }\n    ],\n    \"conclusion\": \"Autoclaving is explicit, but no cycle\
+    \ temperature or duration is provided. Do not import a generic collection default.\"\
+    \n  }\n]"
+- assessment_id: preparation
+  area: completeness
+  topic: Preparation and conditional physical state
+  outcome: concern
+  summary: The target and DSMZ owner retain basal sterilization, post-autoclave sterile
+    additions and final pH adjustment, but flatten the trace-stock pH into a main
+    step. The KOMODO owner lacks preparation. Agar is explicitly optional in notes;
+    SOLID_AGAR is suitable for the agar branch only. COMPLEX/SEMI_DEFINED is consistent
+    with yeast extract; the source also permits a liquid branch. No temperature, time,
+    incubation or gas requirement is inferred.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  - record
+- assessment_id: forms
+  area: grounding
+  topic: Source-specific hydrate and mixture identity
+  outcome: concern
+  summary: Nickel hexahydrate is explicitly supplied, whereas CHEBI:34887 denotes
+    Cl2Ni without waters. Other explicit hydrate identities agree with the asserted
+    forms. Sodium acetate lacks a printed hydrate qualifier, so an unspecified source
+    form is not independently established as anhydrous. Yeast extract remains an ungrounded
+    complex mixture; no pure-compound replacement is invented. Both primary and secondary
+    nickel links need coordinated attention.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - primary
+  - chebi34887
+  - chebi32954
+  - mim
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Identity and claim-level evidence
+  outcome: concern
+  summary: No local concentration has attached source evidence in any of the three
+    layers. Collection links, importer history and valid identifiers do not support
+    the individual stock or batch claims. The exact source snippets in the inventory
+    supply a curation plan, without modifying any record.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - quantity-inventory
+- assessment_id: growth
+  area: scope
+  topic: Applications and source-organism scope
+  outcome: supported
+  summary: The generic microbial-cultivation application and bacterial category do
+    not assert a named experimental growth result. No target organism or external
+    paper is asserted, and no growth claim is inferred from an accession or the KOMODO
+    aerobic metadata.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - record
+  - catalog
+  - primary
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 21 timestamp instances inspected; 2 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001781
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: trace-stock-flattened
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Nine stock strengths are represented as medium concentrations
+  description: All three local layers flatten the nine constituents of the 1000 mL
+    Pfennig stock into direct medium G_PER_L entries, omitting the 1 mL stock addition
+    and stock boundary. The trace pH is also unscoped in the target and DSMZ owner.
+    This materially changes the represented formulation.
+  target_ids:
+  - CultureMech:001781
+  field_paths:
+  - ingredients[10:19]
+  - solutions
+  - preparation_steps[1]
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: main-batch-denominator
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Main batch and provider concentration bases are conflated
+  description: The primary labels a 1001 mL batch while the provider g_l fields repeat
+    its gram amounts. The current G_PER_L representation hides that difference, and
+    neither source water nor the explicit batch volume is represented. Conditional
+    agar must retain its branch scope.
+  target_ids:
+  - CultureMech:001781
+  field_paths:
+  - ingredients[0:10].concentration
+  - notes
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: nickel-hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is linked to an anhydrous chemical
+  description: The source and preferred term specify NiCl2 x 6 H2O. Both term and
+    current secondary key use CHEBI:34887, whose captured formula is Cl2Ni. Exact
+    canonical labels therefore pass while source-form correspondence fails.
+  target_ids:
+  - CultureMech:001781
+  field_paths:
+  - ingredients[17].term
+  - ingredients[17].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - chebi34887
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: claim-evidence-and-preparation
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source support and preparation are uneven across owners
+  description: No layer carries claim-level amount evidence; the KOMODO contributor
+    lacks the preparation retained in the DSMZ contributor. Signature equality and
+    source links do not preserve these source-stage claims or prove historical byte
+    equivalence.
+  target_ids:
+  - CultureMech:001781
+  field_paths:
+  - ingredients
+  - preparation_steps
+  - parent_media
+  - variant_children
+  evidence_ids:
+  - primary
+  - catalog
+  - quantity-inventory
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: history-timestamp-shape
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO history has malformed and timezone-naive timestamps
+  description: The KOMODO owner retains 2026-01-27T01:15:03.fZ and 2026-02-03T11:18:55.033828.
+    Their exact times cannot be reconstructed from this review.
+  target_ids:
+  - CultureMech:001781
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the source-defined stock and receiving dose in both maintained
+    owners; scope the pH under that stock and regenerate only after source and compatibility
+    checks.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001781
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Represent the original batch amounts and volume with precise source
+    evidence; retain the provider convention as a distinct claim until its normalization
+    is resolved. Do not silently replace values.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001781
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Verify and ground the exact supplied hydrate in the maintained inputs,
+    separately checking the live primary identity and the pinned secondary mapping.
+    Preserve the original stock mass.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001781
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach exact stage-specific evidence to the maintained claims, preserve
+    owner-specific provenance and complete source-supported preparation before considering
+    regenerated equivalence.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001781
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Append a provenance clarification identifying malformed or timezone-unspecified
+    historical timestamps; do not invent an offset or silently rewrite old events.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:001781
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact KOMODO 644 detail request remains HTTP 403. Its historical bytes are not
+  authenticated. Current base identity and formulation are resolved independently
+  by the exact catalog link and DSMZ 644; no modified accession is asserted, so this
+  optional historical access limit does not make the scientific review partial.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-024
+- generated-medium
+```
