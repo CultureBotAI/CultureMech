@@ -1,0 +1,1676 @@
+schema_version: 1.0.0
+review_id: 20261028T052215Z-culturemech-003192-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: C5BEL MEDIUM'
+started_at: '2026-10-28T05:13:01.367500Z'
+finished_at: '2026-10-28T05:22:15.937046Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: C5BEL retains supported provider-normalized main rates and useful existing
+  stock evidence, but mixes stock stages, liquid doses and duplicate bases. Complete
+  quantity and scoped dependency reviews identify precise maintained-input repairs;
+  all four canonical checks passed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/C5BEL_MEDIUM.yaml
+    sha256: 8f92f19ff2f4e6a867ae2b028d0e02243f2f89fd7692404ef4f62002c7915f24
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml
+    sha256: 290433e6204999b98296f516fb77589d6df2c07e922d780683ae0ed53353844d
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M883_C5BEL_Medium.yaml
+    sha256: 28ebac4e5e2667174e26a2a99af3762cec23c125f9e67729d4dbacbf1a26e853
+    role: context
+  - path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    sha256: bafd960fa3f501a8f1caa1d49bfd9036e93d1a11c8cede8217464d3e80faea47
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+    sha256: edf6198bdd9a6507d1892bac8f5de2eeac7e66ca388fb4a40bc0b73daf49dfe8
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml
+    sha256: 4277ef54950d1b0f3f98d4672729849151eed913c58868b5c74a130b196d74e0
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/bacterial/c5bel_medium.yaml.md
+    sha256: 8a9b70607ca64de9f3e73d72047976e5c277b9807e71376089b8c3a11d58dcce
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/C5BEL_MEDIUM.md
+    sha256: 63ff2b96e8626ff3b923880225370874500fd6ae73e0ca77dbb63540636ffe4d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/c5bel_medium.md
+    sha256: 5b7cf42fb77b682ffe2b5757d4d8899d2155a714c6492d0c8dcf48ac23555d97
+    role: context
+  - path: reports/yaml_record_review/20260922T013322Z-C5BEL_MEDIUM.md
+    sha256: 6cd327a7cfc9eb165d27f154855bd8fc0ca576a27b44c7d38b380cc3ef7b1116
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch056 index 07
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003192
+targets:
+- target_id: CultureMech:003192
+  path: data/merge_yaml/merged/C5BEL_MEDIUM.yaml
+  label: c5bel_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  ownership_note: Exact maintained contributor identified from merged_from and current
+    record identity. Additional sources and stocks are scoped comparisons, not silently
+    added merge owners.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003192
+  command: just validate-schema data/merge_yaml/merged/C5BEL_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003192
+  command: just validate-strict data/merge_yaml/merged/C5BEL_MEDIUM.yaml --out REVIEW_WORK/batch056/record07/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003192
+  command: just validate-terms data/merge_yaml/merged/C5BEL_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:003192
+  command: just validate-references data/merge_yaml/merged/C5BEL_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: jcm847
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847
+  accessed_at: '2026-10-28T05:13:33.299154Z'
+  locator: REVIEW_WORK/batch056/source07-09/jcm847.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact C5BEL primary recipe and its own trace reference; no organism-growth
+    inference
+  snapshot_sha256: 388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210
+- evidence_id: jcm151
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+  accessed_at: '2026-10-28T05:13:33.302033Z'
+  locator: REVIEW_WORK/batch056/source07-09/jcm151.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: C5BEL referenced trace-minerals subsection only; exclude parent medium
+  snapshot_sha256: 6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7
+- evidence_id: togo883
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M883
+  accessed_at: '2026-10-28T05:13:34.013559Z'
+  locator: REVIEW_WORK/batch056/source07-09/togo883.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: JCM847 cross-list identity comparison only
+  snapshot_sha256: 86ccac763c9cfc5d8b1761e43b5b9959dd88ad7c0ce387b7d7395ab66a6ff969
+- evidence_id: togo142
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+  accessed_at: '2026-10-28T05:13:34.060321Z'
+  locator: REVIEW_WORK/batch056/source07-09/togo142.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Referenced trace-mineral subsection only
+  snapshot_sha256: 610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33
+- evidence_id: apiJ847
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J847
+  accessed_at: '2026-10-28T05:13:34.535685Z'
+  locator: REVIEW_WORK/batch056/source07-09/apiJ847.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Current provider-declared normalization and source-stage structure; not
+    independent primary final-volume proof
+  snapshot_sha256: 1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6
+- evidence_id: solution3804
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3804
+  accessed_at: '2026-10-28T05:13:34.613957Z'
+  locator: REVIEW_WORK/batch056/source07-09/solution3804.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Explicit linked provider stock identity/composition and declared stock
+    basis only
+  snapshot_sha256: aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c
+- evidence_id: solution4813
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/4813
+  accessed_at: '2026-10-28T05:13:34.651753Z'
+  locator: REVIEW_WORK/batch056/source07-09/solution4813.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Explicit linked provider stock identity/composition and declared stock
+    basis only
+  snapshot_sha256: 7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa
+- evidence_id: c5belIdentity
+  kind: database
+  reference: https://bacdive.dsmz.de/strain/2874
+  accessed_at: '2026-10-28T05:13:35.569083Z'
+  locator: REVIEW_WORK/batch056/source07-09/c5belIdentity.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Identity and source organism context only; no growth or recipe transfer
+  snapshot_sha256: 130dc19d9e8d05d05979045b0f7b992f7f58457f4da09ece8a9006698abee57b
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/C5BEL_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:22:15.809536Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 8f92f19ff2f4e6a867ae2b028d0e02243f2f89fd7692404ef4f62002c7915f24
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/c5bel_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:22:15.809707Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: bafd960fa3f501a8f1caa1d49bfd9036e93d1a11c8cede8217464d3e80faea47
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T05:22:15.809733Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T05:22:15.810050Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T05:22:15.810073Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T05:22:15.810096Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2500-3000/records/bacterial/c5bel_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:22:15.810120Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 8a9b70607ca64de9f3e73d72047976e5c277b9807e71376089b8c3a11d58dcce
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/C5BEL_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:22:15.810154Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 63ff2b96e8626ff3b923880225370874500fd6ae73e0ca77dbb63540636ffe4d
+- evidence_id: report-22
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/c5bel_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:22:15.810178Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 5b7cf42fb77b682ffe2b5757d4d8899d2155a714c6492d0c8dcf48ac23555d97
+- evidence_id: report-23
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T013322Z-C5BEL_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:22:15.810200Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 6cd327a7cfc9eb165d27f154855bd8fc0ca576a27b44c7d38b380cc3ef7b1116
+- evidence_id: dep-mediadive_3804_Trace_minerals
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+  locator: Whole document
+  accessed_at: '2026-10-28T05:22:15.817731Z'
+  support: context_only
+  summary: Exact provider solution, including attached amount claims, placeholder
+    and current history.
+  snapshot_sha256: edf6198bdd9a6507d1892bac8f5de2eeac7e66ca388fb4a40bc0b73daf49dfe8
+- evidence_id: dep-mediadive_4813_Main_sol_J847
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml
+  locator: Whole document
+  accessed_at: '2026-10-28T05:22:15.824365Z'
+  support: context_only
+  summary: Exact provider solution, including attached amount claims, placeholder
+    and current history.
+  snapshot_sha256: 4277ef54950d1b0f3f98d4672729849151eed913c58868b5c74a130b196d74e0
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit
+  accessed_at: '2026-10-28T05:22:15.824449Z'
+  support: context_only
+  summary: Current primary-only parser avoids flattening later stocks and recognizes
+    solution_id or percent/ml additions. Its percent-only test does not recognize
+    the exact molar glucose stock row without solution_id; unit fallback can still
+    imply per-litre basis. This is current code evidence, not historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T05:22:15.824494Z'
+  support: context_only
+  summary: 'Current duplicate cleanup no longer sums conflicting amounts: it collapses
+    identical values or flags disagreements while retaining the first. Existing summed
+    values require curation rather than blaming unchanged current code.'
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T05:13:40.106651Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi63036.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527
+  accessed_at: '2026-10-28T05:13:35.175502Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi131527.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 0a5297c84ea9dd82508960482211f6b3c993fd8e2b83fe755dd2b23316cc4068
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T05:13:37.529051Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi31206.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T05:13:36.931704Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi26710.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588
+  accessed_at: '2026-10-28T05:13:38.570322Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32588.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 9494b26ad5d3ce43942c3e859cdefe4114e111b1d45328c0cd5faf3b75faec00
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T05:13:40.737026Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86158.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T05:13:41.329230Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86345.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T05:13:41.933593Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi8806.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17234
+  accessed_at: '2026-10-28T05:13:36.421707Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi17234.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 91e3580b7a2c3718d25272b7ac62fe34badfa75bf58b16dd6ba08dfca987b859
+- evidence_id: chebi32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32139
+  accessed_at: '2026-10-28T05:13:38.153981Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32139.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 51709e2510736d0b63369147b10ec6ffe80d5d5c3a40605381de9b3ed78634c3
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  accessed_at: '2026-10-28T05:13:40.607418Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi76209.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:44557
+  accessed_at: '2026-10-28T05:13:39.375785Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi44557.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 25e8fb689e4dfc294e2823ca36290cdce6d21ad174238e0e958ebe09d4c1262b
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  accessed_at: '2026-10-28T05:13:37.977351Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi31795.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: ceb0c93d1964844e99454d74730971855710441d92eec74aff5c873c833e324a
+- evidence_id: chebi86360
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86360
+  accessed_at: '2026-10-28T05:13:41.410876Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86360.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 857672fb1b6a33f508924cdc2e4dfcbdf365a0e54d96fc8379d6ee61aa16cb31
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75836
+  accessed_at: '2026-10-28T05:13:40.436284Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi75836.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: ab9922083bab0fb07df977855094d11fe3a5ca1f14bc6bddd10dc80ad9055569
+- evidence_id: chebi91244
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91244
+  accessed_at: '2026-10-28T05:13:42.021574Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi91244.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: c8bf30f1c2b4e9c2bcc10bd256b68a090795c083c207baf2d9d9ebb201d0d3c5
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32312
+  accessed_at: '2026-10-28T05:13:38.323854Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32312.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 19bbc18dfc582e76457c6f08d51bb777a2f7a2cbd2f810cb3b58bdb0004b4d60
+- evidence_id: chebi31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31440
+  accessed_at: '2026-10-28T05:13:37.721366Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi31440.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: a0af950191bab322f858a701486e40e51a4780a18d9d03913d351b383f05cb7d
+- evidence_id: chebi86463
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86463
+  accessed_at: '2026-10-28T05:13:41.834208Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86463.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 91404565e2e06d67ce730bbc5ffd65f23cb842ca9a4d0acf602b199ba180bc68
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T05:13:38.760181Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi33118.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T05:13:40.422752Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi75213.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377
+  accessed_at: '2026-10-28T05:13:35.239341Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi15377.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: a5ab66402b598c137daa8e5c8ba95811f1619db3e0f8b4f9bd0214161bafa0fe
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record07/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:22:15.935236Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 9604b61b1c0dcf5caa5ed7b903c0ce996493fdf97393199df08285f805b37059
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record07/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:22:15.935311Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: ff30d6b16456d89310cc0b1d28aee96e9bb42a4fe4cd72115c74007734ca79cb
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record07/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:22:15.935433Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: 19e232d16d33cebf75cd6a6e65f41910623cf4cb609b9c2434a204658ce37bba
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record07/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:22:15.935514Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: b5228856ca2a57a7dea63778d972291449e61f3e740b1571392cec19d701b0c4
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record07/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:22:15.935591Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: da839cf1c4748bfd4da7f52300b3d5ab92c7a41dd3b046648c9103c2a1635e6b
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record07/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:22:15.935621Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 46fb39a424e2ab63524ea8fb4003a90ca69a1196947848d01d32471be96507cb
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record07/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:22:15.935644Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: a8e95b67a2503d76d7b68407e07cbbdd280220ee8dfc60b4fcb59742980faa75
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch056/record07/schema-result.json
+  accessed_at: '2026-10-28T05:13:02.708453Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 2bb7357ade3bfad6d1972dc90663ba20d0331376abef200d7ccf6254f845fe9d
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch056/record07/strict-result.json
+  accessed_at: '2026-10-28T05:13:03.742037Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: f3fd183acfeb582efd7d426d07bf7623ec4a7592ca9803a27210a6a97b3829d0
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch056/record07/terms-result.json
+  accessed_at: '2026-10-28T05:13:05.266082Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 6a0e5162a74f0c602491c4f147c22a01d16c338b7e4b38f0d964a34f826d87c5
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch056/record07/references-result.json
+  accessed_at: '2026-10-28T05:13:06.122602Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 17d9073664fc97244fe437855816092150a42b4ce4cbea799cf8498da655b2ff
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact JCM847 and scoped cross-listing
+  outcome: supported
+  summary: JCM847 and API J847 identify C5BEL. TOGO M883 is a cross-listing comparison,
+    not an additional merge owner. BacDive strain information is identity context
+    only; no growth or applicability assertion is transferred.
+  target_ids:
+  - CultureMech:003192
+  evidence_ids:
+  - jcm847
+  - apiJ847
+  - togo883
+  - c5belIdentity
+- assessment_id: classification
+  area: representation
+  topic: Classification and terminology
+  outcome: supported
+  summary: Yeast extract supports retaining COMPLEX/UNDEFINED; liquid state is consistent
+    with the source. No pure-compound identity is invented for yeast extract.
+  target_ids:
+  - CultureMech:003192
+  evidence_ids:
+  - jcm847
+  - owner
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 72 current concentration fields are covered by 57 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:003192
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b056-quantity-inventory-v1","target":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","quantity_field_count":72,"decisions":[{"quantity_id":"q1","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.28222","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.28222","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    exact current API explicitly declares this g_l rate, matching the local value/unit.
+    This supports its provider-normalized basis, separately from the primary batch
+    mass and listed water. No measured final volume or attached local claim is established.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 6-11","quote":"KH\n2\nPO\n4\n0.3\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.28222,\n                        \"mmol_l\":
+    2.07384,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.28222","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.28222","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    exact current API explicitly declares this g_l rate, matching the local value/unit.
+    This supports its provider-normalized basis, separately from the primary batch
+    mass and listed water. No measured final volume or attached local claim is established.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 12-17","quote":"K\n2\nHPO\n4\n0.3\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.28222,\n                        \"mmol_l\":
+    1.62032,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.470367","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.470367","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    exact current API explicitly declares this g_l rate, matching the local value/unit.
+    This supports its provider-normalized basis, separately from the primary batch
+    mass and listed water. No measured final volume or attached local claim is established.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 18-22","quote":"NH\n4\nCl\n0.5\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.470367,\n                        \"mmol_l\":
+    8.79355,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q4","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.940734","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"1.940734","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    local sum mixes a receiving-main amount with an undiluted trace-stock amount.
+    Preserve the separate source additions; equal chemical identity does not permit
+    adding values from different preparation stages.","source_stage":"receiving main
+    / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 23-25","quote":"NaCl\n1.0\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.940734,\n                        \"mmol_l\":
+    16.0974,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.0940734","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.0940734","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    exact current API explicitly declares this g_l rate, matching the local value/unit.
+    This supports its provider-normalized basis, separately from the primary batch
+    mass and listed water. No measured final volume or attached local claim is established.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 26-28","quote":"KCl\n0.1\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0940734,\n                        \"mmol_l\":
+    1.26188,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q6","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.1940734","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.1940734","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    local sum mixes a receiving-main amount with an undiluted trace-stock amount.
+    Preserve the separate source additions; equal chemical identity does not permit
+    adding values from different preparation stages.","source_stage":"receiving main
+    / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 29-35","quote":"CaCl\n2\n·2H\n2\nO\n0.1\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0940734,\n                        \"mmol_l\":
+    0.63989,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q7","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.056444","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.056444","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    exact current API explicitly declares this g_l rate, matching the local value/unit.
+    This supports its provider-normalized basis, separately from the primary batch
+    mass and listed water. No measured final volume or attached local claim is established.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 36-42","quote":"MgCl\n2\n·6H\n2\nO\n0.06\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.06,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.056444,\n                        \"mmol_l\":
+    0.277635,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q8","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.940734","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.940734","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    exact current API explicitly declares this g_l rate, matching the local value/unit.
+    This supports its provider-normalized basis, separately from the primary batch
+    mass and listed water. No measured final volume or attached local claim is established.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 48-50","quote":"Yeast extract\n1.0\ng","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.940734,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"Resazurin","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.000940734","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.000940734","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    exact current API explicitly declares this g_l rate, matching the local value/unit.
+    This supports its provider-normalized basis, separately from the primary batch
+    mass and listed water. No measured final volume or attached local claim is established.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 51-53","quote":"Resazurin\n1.0\nmg","quote_basis":"derivative text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\":
+    25,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.000940734,\n                        \"mmol_l\":
+    0.0041046,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"Glucose","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"20","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"20","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary explicitly adds this volume of a named stock per litre after cooling.
+    Local G_PER_L treats the stock dose as solute mass and loses its strength/stage.
+    Preserve 1.0 M glucose or the literal unspecified-basis percent label; do not
+    infer percent w/v or a post-addition final volume.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 62-64","quote":"1.0 M Glucose solution\n20.0\nml","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[11]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"attribute\": \"1.0 M\",\n                        \"amount\":
+    20,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"NaHCO3","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"25","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"25","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary explicitly adds this volume of a named stock per litre after cooling.
+    Local G_PER_L treats the stock dose as solute mass and loses its strength/stage.
+    Preserve 1.0 M glucose or the literal unspecified-basis percent label; do not
+    infer percent w/v or a post-addition final volume.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 65-69","quote":"8% NaHCO\n3\nsolution*\n25.0\nml","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[12]","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\":
+    55,\n                        \"attribute\": \"*, 8%\",\n                        \"amount\":
+    25,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q12","label":"Na2S
+    x 9 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"8","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary explicitly adds this volume of a named stock per litre after cooling.
+    Local G_PER_L treats the stock dose as solute mass and loses its strength/stage.
+    Preserve 1.0 M glucose or the literal unspecified-basis percent label; do not
+    infer percent w/v or a post-addition final volume.","source_stage":"receiving
+    main / post-cooling stock additions","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 70-76","quote":"5% Na\n2\nS·9H\n2\nO solution\n8.0\nml","quote_basis":"derivative
+    text"},{"evidence_id":"apiJ847","reference":"https://mediadive.dsmz.de/rest/medium/J847","raw_path":"REVIEW_WORK/batch056/source07-09/apiJ847.raw","raw_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","text_sha256":"1da59ed6ade98aa6294d68a4e7558a15073fd76420c1bafa33786c7303732ba6","accessed_at":"2026-10-28T05:13:34.535685Z","locator":"data.solutions[0].recipe[13]","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"attribute\": \"5%\",\n                        \"amount\":
+    8,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q13","label":"Nitrilotriacetic
+    acid","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"1.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Nitrilotriacetic acid\",\n                \"compound_id\":
+    189,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.84765,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q14","label":"MgSO4
+    x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"3","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\":
+    2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\":
+    8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 12.1716,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q15","label":"MnSO4
+    x n H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[2]","quote":"{\n                \"recipe_order\":
+    3,\n                \"compound\": \"MnSO4 x n H2O\",\n                \"compound_id\":
+    1000,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q16","label":"FeSO4
+    x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[4]","quote":"{\n                \"recipe_order\":
+    5,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\":
+    12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.359693,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q17","label":"CoSO4
+    x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[5]","quote":"{\n                \"recipe_order\":
+    6,\n                \"compound\": \"CoSO4 x 7 H2O\",\n                \"compound_id\":
+    198,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.645178,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q18","label":"ZnSO4
+    x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[7]","quote":"{\n                \"recipe_order\":
+    8,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\":
+    35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.347752,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q19","label":"CuSO4
+    x 5 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[8]","quote":"{\n                \"recipe_order\":
+    9,\n                \"compound\": \"CuSO4 x 5 H2O\",\n                \"compound_id\":
+    121,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0400503,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q20","label":"AlK(SO4)2","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[9]","quote":"{\n                \"recipe_order\":
+    10,\n                \"compound\": \"AlK(SO4)2\",\n                \"compound_id\":
+    1015,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0387289,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q21","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[10]","quote":"{\n                \"recipe_order\":
+    11,\n                \"compound\": \"H3BO3\",\n                \"compound_id\":
+    37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.161708,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q22","label":"Na2MoO4
+    x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    provider-declared rate belongs inside trace stock 3804. The main source adds 10
+    mL of that stock; the undiluted stock value cannot remain a direct main-medium
+    concentration. Keep the unspecified Mn hydration number unresolved.","source_stage":"trace-stock
+    composition, currently flattened","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[11]","quote":"{\n                \"recipe_order\":
+    12,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\":
+    9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0413309,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q23","label":"Missing
+    receiving trace dose and water","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    the source 10 mL trace addition and 1 L input water at their own stages; neither
+    proves a measured receiving final volume.","source_stage":"source-only receiving
+    inputs","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 43-47","quote":"Trace minerals (see Medium No.\n151\n)\n10.0\nml","quote_basis":"derivative
+    text"},{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 54-56","quote":"Distilled water\n1.0\nL","quote_basis":"derivative text"}]},{"quantity_id":"q24","label":"solution3804
+    Nitrilotriacetic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[0].concentration","stored":{"value":"1.5","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Nitrilotriacetic acid\",\n                \"compound_id\":
+    189,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.84765,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q25","label":"solution3804
+    MgSO4 x 7 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[1].concentration","stored":{"value":"3","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\":
+    2,\n                \"compound\": \"MgSO4 x 7 H2O\",\n                \"compound_id\":
+    8,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 3,\n                \"mmol_l\": 12.1716,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q26","label":"solution3804
+    MnSO4 x n H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[2].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[2]","quote":"{\n                \"recipe_order\":
+    3,\n                \"compound\": \"MnSO4 x n H2O\",\n                \"compound_id\":
+    1000,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q27","label":"solution3804
+    NaCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[3].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[3]","quote":"{\n                \"recipe_order\":
+    4,\n                \"compound\": \"NaCl\",\n                \"compound_id\":
+    43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 1,\n                \"mmol_l\": 17.1116,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q28","label":"solution3804
+    FeSO4 x 7 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[4].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[4]","quote":"{\n                \"recipe_order\":
+    5,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\":
+    12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.359693,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q29","label":"solution3804
+    CoSO4 x 7 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[5].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[5]","quote":"{\n                \"recipe_order\":
+    6,\n                \"compound\": \"CoSO4 x 7 H2O\",\n                \"compound_id\":
+    198,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.645178,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q30","label":"solution3804
+    CaCl2 x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[6].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[6]","quote":"{\n                \"recipe_order\":
+    7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\":
+    7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.680203,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q31","label":"solution3804
+    ZnSO4 x 7 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[7].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[7]","quote":"{\n                \"recipe_order\":
+    8,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\":
+    35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.347752,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q32","label":"solution3804
+    CuSO4 x 5 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[8].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[8]","quote":"{\n                \"recipe_order\":
+    9,\n                \"compound\": \"CuSO4 x 5 H2O\",\n                \"compound_id\":
+    121,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0400503,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q33","label":"solution3804
+    AlK(SO4)2","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[9].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[9]","quote":"{\n                \"recipe_order\":
+    10,\n                \"compound\": \"AlK(SO4)2\",\n                \"compound_id\":
+    1015,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0387289,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q34","label":"solution3804
+    H3BO3","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[10].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[10]","quote":"{\n                \"recipe_order\":
+    11,\n                \"compound\": \"H3BO3\",\n                \"compound_id\":
+    37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.161708,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"solution3804
+    Na2MoO4 x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[11].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[11]","quote":"{\n                \"recipe_order\":
+    12,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\":
+    9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.01,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0413309,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"solution3804
+    Distilled water","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"composition[12].concentration","stored":{"value":"1000","unit":"PERCENT_V_V"}}],"decision":"correct","rationale":"PERCENT_V_V
+    is not the source input volume. Preserve water as batch input, or the distinct
+    stock-addition volume/strength and receiving stage. Provider-normalized mL/L values
+    are not percent v/v.","source_stage":"standalone provider stock","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[12]","quote":"{\n                \"recipe_order\":
+    13,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q37","label":"solution3804
+    placeholder","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The
+    variable placeholder is not an additional scientific ingredient: this record already
+    supplies a composition array. Reconcile placeholder and incomplete_composition
+    flag without deleting the existing authenticated composition.","source_stage":"standalone
+    representation","sources":[{"evidence_id":"solution3804","reference":"https://mediadive.dsmz.de/rest/solution/3804","raw_path":"REVIEW_WORK/batch056/source07-09/solution3804.raw","raw_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","text_sha256":"aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c","accessed_at":"2026-10-28T05:13:34.613957Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Nitrilotriacetic acid\",\n                \"compound_id\":
+    189,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 1.5,\n                \"mmol_l\": 7.84765,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"solution4813
+    KH2PO4","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[0].concentration","stored":{"value":"0.28222","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.28222,\n                \"mmol_l\": 2.07384,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"solution4813
+    K2HPO4","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[1].concentration","stored":{"value":"0.28222","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[1]","quote":"{\n                \"recipe_order\":
+    2,\n                \"compound\": \"K2HPO4\",\n                \"compound_id\":
+    10,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.28222,\n                \"mmol_l\": 1.62032,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"solution4813
+    NH4Cl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[2].concentration","stored":{"value":"0.470367","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[2]","quote":"{\n                \"recipe_order\":
+    3,\n                \"compound\": \"NH4Cl\",\n                \"compound_id\":
+    42,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.470367,\n                \"mmol_l\": 8.79355,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q41","label":"solution4813
+    NaCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[3].concentration","stored":{"value":"0.940734","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[3]","quote":"{\n                \"recipe_order\":
+    4,\n                \"compound\": \"NaCl\",\n                \"compound_id\":
+    43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.940734,\n                \"mmol_l\": 16.0974,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"solution4813
+    KCl","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[4].concentration","stored":{"value":"0.0940734","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[4]","quote":"{\n                \"recipe_order\":
+    5,\n                \"compound\": \"KCl\",\n                \"compound_id\": 61,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0940734,\n                \"mmol_l\": 1.26188,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q43","label":"solution4813
+    CaCl2 x 2 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[5].concentration","stored":{"value":"0.0940734","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[5]","quote":"{\n                \"recipe_order\":
+    6,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\":
+    7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.0940734,\n                \"mmol_l\": 0.63989,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q44","label":"solution4813
+    MgCl2 x 6 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[6].concentration","stored":{"value":"0.056444","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[6]","quote":"{\n                \"recipe_order\":
+    7,\n                \"compound\": \"MgCl2 x 6 H2O\",\n                \"compound_id\":
+    79,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.06,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.056444,\n                \"mmol_l\": 0.277635,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q45","label":"solution4813
+    Yeast extract","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[7].concentration","stored":{"value":"0.940734","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[8]","quote":"{\n                \"recipe_order\":
+    9,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\":
+    16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.940734,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q46","label":"solution4813
+    Resazurin","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[8].concentration","stored":{"value":"0.000940734","unit":"G_PER_L"}}],"decision":"verified","rationale":"Existing
+    attached literal source evidence and current exact raw bytes authenticate the
+    provider-declared stock g_l value and its own stock basis; this does not prove
+    original retrieval time or transfer it to the receiving medium.","source_stage":"standalone
+    provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[9]","quote":"{\n                \"recipe_order\":
+    10,\n                \"compound\": \"Resazurin\",\n                \"compound_id\":
+    25,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.000940734,\n                \"mmol_l\": 0.0041046,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q47","label":"solution4813
+    Distilled water","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[9].concentration","stored":{"value":"940.7337723424271","unit":"PERCENT_V_V"}}],"decision":"correct","rationale":"PERCENT_V_V
+    is not the source input volume. Preserve water as batch input, or the distinct
+    stock-addition volume/strength and receiving stage. Provider-normalized mL/L values
+    are not percent v/v.","source_stage":"standalone provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[10]","quote":"{\n                \"recipe_order\":
+    11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q48","label":"solution4813
+    Glucose","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[10].concentration","stored":{"value":"18.81467544684854","unit":"PERCENT_V_V"}}],"decision":"correct","rationale":"PERCENT_V_V
+    is not the source input volume. Preserve water as batch input, or the distinct
+    stock-addition volume/strength and receiving stage. Provider-normalized mL/L values
+    are not percent v/v.","source_stage":"standalone provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[11]","quote":"{\n                \"recipe_order\":
+    12,\n                \"compound\": \"Glucose\",\n                \"compound_id\":
+    5,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"1.0 M\",\n                \"amount\":
+    20,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q49","label":"solution4813
+    NaHCO3","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[11].concentration","stored":{"value":"23.518344308560675","unit":"PERCENT_V_V"}}],"decision":"correct","rationale":"PERCENT_V_V
+    is not the source input volume. Preserve water as batch input, or the distinct
+    stock-addition volume/strength and receiving stage. Provider-normalized mL/L values
+    are not percent v/v.","source_stage":"standalone provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[12]","quote":"{\n                \"recipe_order\":
+    13,\n                \"compound\": \"NaHCO3\",\n                \"compound_id\":
+    55,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"*, 8%\",\n                \"amount\":
+    25,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q50","label":"solution4813
+    Na2S x 9 H2O","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"composition[12].concentration","stored":{"value":"7.525870178739416","unit":"PERCENT_V_V"}}],"decision":"correct","rationale":"PERCENT_V_V
+    is not the source input volume. Preserve water as batch input, or the distinct
+    stock-addition volume/strength and receiving stage. Provider-normalized mL/L values
+    are not percent v/v.","source_stage":"standalone provider stock","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[13]","quote":"{\n                \"recipe_order\":
+    14,\n                \"compound\": \"Na2S x 9 H2O\",\n                \"compound_id\":
+    54,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"5%\",\n                \"amount\": 8,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q51","label":"solution4813
+    placeholder","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"ingredients[0].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The
+    variable placeholder is not an additional scientific ingredient: this record already
+    supplies a composition array. Reconcile placeholder and incomplete_composition
+    flag without deleting the existing authenticated composition.","source_stage":"standalone
+    representation","sources":[{"evidence_id":"solution4813","reference":"https://mediadive.dsmz.de/rest/solution/4813","raw_path":"REVIEW_WORK/batch056/source07-09/solution4813.raw","raw_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","text_sha256":"7cae6f65deae52ea9e09d62dfee271c4f9d5d54a9bf3c449ad6eaf4d54a757aa","accessed_at":"2026-10-28T05:13:34.651753Z","locator":"data.recipe[0]","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.28222,\n                \"mmol_l\": 2.07384,\n                \"optional\":
+    0\n            }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q52","label":"Current
+    main pH","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"ph_value","stored":7.5},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"ph_value","stored":7.5}],"decision":"evidence_only","rationale":"The
+    current 7.5 value matches main-medium preparation, not trace-stock pH.","source_stage":"main
+    pH","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 57-61","quote":"Mix components thoroughly and adjust pH to 7.5 with KOH.
+    Distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate
+    tubes) under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture, seal with butyl rubber stoppers
+    and autoclave.  After cooling, add per liter the following solutions from anaerobic
+    stocks (autoclaved or *filter-sterilized):","quote_basis":"derivative text"}]},{"quantity_id":"q53","label":"Existing
+    preparation step 1","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Mix
+    components thoroughly and adjust pH to 7.5 with KOH. Distribute the medium into
+    culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under a N2-CO2
+    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
+    add per liter the following solutions from anaerobic stocks (autoclaved or *filter-sterilized):"},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"preparation_steps[0].description","stored":"Mix
+    components thoroughly and adjust pH to 7.5 with KOH. Distribute the medium into
+    culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under a N2-CO2
+    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
+    add per liter the following solutions from anaerobic stocks (autoclaved or *filter-sterilized):"}],"decision":"evidence_only","rationale":"Retain
+    the supported main preparation values and complete the truncated stock-addition
+    list.","source_stage":"main / trace preparation","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 57-76","quote":"Mix components thoroughly and adjust pH to 7.5 with KOH.
+    Distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate
+    tubes) under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture, seal with butyl rubber stoppers
+    and autoclave.  After cooling, add per liter the following solutions from anaerobic
+    stocks (autoclaved or *filter-sterilized):\n1.0 M Glucose solution\n20.0\nml\n8%
+    NaHCO\n3\nsolution*\n25.0\nml\n5% Na\n2\nS·9H\n2\nO solution\n8.0\nml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q54","label":"Existing preparation step 2","local_fields":[{"path":"data/merge_yaml/merged/C5BEL_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"Dissolve
+    nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0."},{"path":"data/normalized_yaml/bacterial/c5bel_medium.yaml","field_path":"preparation_steps[1].description","stored":"Dissolve
+    nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0."}],"decision":"correct","rationale":"This
+    pH 6.5 then 7.0 sequence belongs to the trace-stock recipe, not a second receiving-medium
+    pH instruction.","source_stage":"main / trace preparation","sources":[{"evidence_id":"jcm151","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151","raw_path":"REVIEW_WORK/batch056/source07-09/jcm151.raw","raw_sha256":"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7","text_sha256":"3365c558faa5ecbd13048774769862f1bdbcae3d9d8925d147bd81ce66c38aa6","accessed_at":"2026-10-28T05:13:33.302033Z","locator":"jcm151.txt
+    lines 203-203","quote":"Dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH solution.      Then proceed to add minerals.   Adjust final pH to 7.0.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q55","label":"solution3804 existing preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml","field_path":"preparation_notes","stored":"Dissolve
+    nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0."}],"decision":"evidence_only","rationale":"Preparation
+    prose is source-supported at its own stage. Original volume 1063 mL is provider
+    normalization, not an independently measured final volume.","source_stage":"standalone
+    preparation","sources":[{"evidence_id":"jcm151","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151","raw_path":"REVIEW_WORK/batch056/source07-09/jcm151.raw","raw_sha256":"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7","text_sha256":"3365c558faa5ecbd13048774769862f1bdbcae3d9d8925d147bd81ce66c38aa6","accessed_at":"2026-10-28T05:13:33.302033Z","locator":"jcm151.txt
+    lines 203-203","quote":"Dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH solution.      Then proceed to add minerals.   Adjust final pH to 7.0.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q56","label":"solution4813 existing preparation","local_fields":[{"path":"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml","field_path":"preparation_notes","stored":"Mix
+    components thoroughly and adjust pH to 7.5 with KOH. Distribute the medium into
+    culture vessels (e.g., 5 ml of the medium in the Hungate tubes) under a N2-CO2
+    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
+    add per liter the following solutions from anaerobic stocks (autoclaved or *filter-sterilized):
+    \n\nOriginal volume: 1063 mL"}],"decision":"evidence_only","rationale":"Preparation
+    prose is source-supported at its own stage. Original volume 1063 mL is provider
+    normalization, not an independently measured final volume.","source_stage":"standalone
+    preparation","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 57-76","quote":"Mix components thoroughly and adjust pH to 7.5 with KOH.
+    Distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate
+    tubes) under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture, seal with butyl rubber stoppers
+    and autoclave.  After cooling, add per liter the following solutions from anaerobic
+    stocks (autoclaved or *filter-sterilized):\n1.0 M Glucose solution\n20.0\nml\n8%
+    NaHCO\n3\nsolution*\n25.0\nml\n5% Na\n2\nS·9H\n2\nO solution\n8.0\nml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q57","label":"JCM generic sterilization default","local_fields":[],"decision":"evidence_only","rationale":"The
+    site states 121°C for 15 minutes unless otherwise specified. Keep this generic
+    default separate from the explicitly filter-sterilized addition; no incubation
+    or growth condition is inferred.","source_stage":"source-only sterilization default","sources":[{"evidence_id":"jcm847","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=847","raw_path":"REVIEW_WORK/batch056/source07-09/jcm847.raw","raw_sha256":"388074f7c376c4d0d9db9e07613d2268eea7365ff4a07f6664cc3c449e278210","text_sha256":"6e7232c150469acf89f23bbe78a7f316c65a79a1bb37f357cc5118cab1cc93f7","accessed_at":"2026-10-28T05:13:33.299154Z","locator":"jcm847.txt
+    lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at
+    121°C for 15 min.","quote_basis":"derivative text"}]}],"document_scopes":{"data/merge_yaml/merged/C5BEL_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/c5bel_medium.yaml":null,"data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml":null,"data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All asserted in-scope CHEBI IDs, labels and current MIM rows are inventoried,
+    including provider-stock chebi_term slots. MnSO4·nH2O does not specify a hydrate;
+    canonical label agreement cannot resolve it. Other source-specific hydrate names
+    are retained. Provider compound IDs are joined to their exact recipe objects,
+    not treated as ontology chemical proof.
+  target_ids:
+  - CultureMech:003192
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: Current main histories and all four selected reports were read. October
+    5 rows were explicitly not source checked; the October 7 report retained the main
+    record unchanged and is derivative. Fresh API bytes authenticate 21 attached standalone-solution
+    claims, separately from historical timestamps. Current MediaDive stage separation,
+    conservative merger and no-sum cleanup are credited; current code is not proof
+    of old execution.
+  target_ids:
+  - CultureMech:003192
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-003192-flattened-stock-stages
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock components and liquid doses are represented as direct solute concentrations
+  description: Restore the trace-stock boundary and its 10 mL receiving dose. Glucose
+    20 mL of 1.0 M stock, bicarbonate 25 mL of 8% stock and sulfide 8 mL of 5% stock
+    are explicit post-cooling per-litre additions, not 20/25/8 g/L neat solutes. Preserve
+    source percentages without inventing their basis. The current importer already
+    separates later stock recipes, but its percent-only stock detector misses the
+    molar glucose row.
+  target_ids:
+  - CultureMech:003192
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - jcm847
+  - apiJ847
+  - solution3804
+  - writer-mediadive
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-003192-mixed-stage-duplicate-sums
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: NaCl and calcium combine incompatible preparation bases
+  description: 'The 1.940734 and 0.1940734 g/L values combine normalized main rows
+    with undiluted trace-stock rows. Restore both stages independently and preserve
+    current cleanup credit: it no longer sums conflicting duplicates. Do not resolve
+    this by a blind cleanup rerun.'
+  target_ids:
+  - CultureMech:003192
+  field_paths:
+  - ingredients[3]
+  - ingredients[5]
+  evidence_ids:
+  - apiJ847
+  - solution3804
+  - writer-cleanup
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-003192-stock-liquid-units
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Standalone stock water and addition volumes have percent units
+  description: The existing provider-solution records retain 21 authenticated amount
+    claims, which should be preserved. Their water/addition fields use PERCENT_V_V
+    for source volumes and both retain a variable placeholder despite composition
+    arrays. Correct these exact scoped representation fields and recover the missing
+    3804 edge in 4813 before reuse. No density or inferred final-volume conversion
+    is justified.
+  target_ids:
+  - CultureMech:003192
+  field_paths:
+  - data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml::composition[12].concentration
+  - data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml::composition[9].concentration
+  - data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml::composition[10].concentration
+  - data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml::composition[11].concentration
+  - data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml::composition[12].concentration
+  - data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml::ingredients[0]
+  - data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml::ingredients[0]
+  evidence_ids:
+  - solution3804
+  - solution4813
+  - old-claims
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml
+    role: scoped dependency
+- finding_id: f4
+  issue_key: culturemech-003192-preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The trace-stock pH sequence is attached to the main medium
+  description: Keep the main pH 7.5, gas ratio and example dispensing scope. Move
+    the NTA pH 6.5 then stock pH 7.0 instruction to its trace-stock context and complete
+    the truncated post-cooling stock list. The 5 mL example is a dispensing example,
+    not a final-volume denominator or strain-growth claim.
+  target_ids:
+  - CultureMech:003192
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - jcm847
+  - jcm151
+  rule_id: review-yaml-record/completeness
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+- finding_id: f5
+  issue_key: culturemech-003192-hydrate-uncertainty
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The manganese sulfate hydration number remains unspecified
+  description: The source explicitly writes MnSO4·nH2O. CHEBI:86360 describes manganese(II)
+    sulfate without that uncertain hydration state; label correspondence alone must
+    not certify exact supplied form or a molar conversion. Retain the source ambiguity
+    and seek a form-specific identifier only if the hydration is established.
+  target_ids:
+  - CultureMech:003192
+  field_paths:
+  - ingredients[14].term
+  - data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml::composition[2].chebi_term
+  evidence_ids:
+  - jcm151
+  - chebi86360
+  rule_id: review-yaml-record/grounding
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+    role: scoped dependency
+actions:
+- action_id: a1
+  description: Restore the trace-stock boundary and its 10 mL receiving dose. Glucose
+    20 mL of 1.0 M stock, bicarbonate 25 mL of 8% stock and sulfide 8 mL of 5% stock
+    are explicit post-cooling per-litre additions, not 20/25/8 g/L neat solutes. Preserve
+    source percentages without inventing their basis. The current importer already
+    separates later stock recipes, but its percent-only stock detector misses the
+    molar glucose row.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003192
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: 'The 1.940734 and 0.1940734 g/L values combine normalized main rows
+    with undiluted trace-stock rows. Restore both stages independently and preserve
+    current cleanup credit: it no longer sums conflicting duplicates. Do not resolve
+    this by a blind cleanup rerun.'
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003192
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The existing provider-solution records retain 21 authenticated amount
+    claims, which should be preserved. Their water/addition fields use PERCENT_V_V
+    for source volumes and both retain a variable placeholder despite composition
+    arrays. Correct these exact scoped representation fields and recover the missing
+    3804 edge in 4813 before reuse. No density or inferred final-volume conversion
+    is justified.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003192
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_4813_Main_sol_J847.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Keep the main pH 7.5, gas ratio and example dispensing scope. Move
+    the NTA pH 6.5 then stock pH 7.0 instruction to its trace-stock context and complete
+    the truncated post-cooling stock list. The 5 mL example is a dispensing example,
+    not a final-volume denominator or strain-growth claim.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003192
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: The source explicitly writes MnSO4·nH2O. CHEBI:86360 describes manganese(II)
+    sulfate without that uncertain hydration state; label correspondence alone must
+    not certify exact supplied form or a molar conversion. Retain the source ambiguity
+    and seek a form-specific identifier only if the hydration is established.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:003192
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/c5bel_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_3804_Trace_minerals.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- JCM151 is used only for its trace-mineral subsection; its parent medium, organism
+  context and receiving doses do not transfer.
+- 'Provider Co sulfate mmol values are not relied on: the named hydrate must govern
+  any independently justified calculation.'
+- Fresh JCM browser opens were inaccessible; the preserved successful direct public
+  captures are the scientific source basis.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.

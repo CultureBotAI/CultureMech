@@ -1,0 +1,1186 @@
+schema_version: 1.0.0
+review_id: 20261028T052611Z-culturemech-015500-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: CAAc'
+started_at: '2026-10-28T05:13:06.127595Z'
+finished_at: '2026-10-28T05:26:11.553874Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Versioned FEBA evidence supports all 18 CAAc rates, including the explicit
+  UW dilution. Curation should add precise provenance, correct the inherited yeast
+  identifier namespace and preserve the unresolved molybdate form. All four canonical
+  checks passed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CAAc.yaml
+    sha256: e63079d098c3b5756914ae696b5f70f882c343ed69a5c2b7e270fa7eaaf69039
+    role: target
+  - path: data/normalized_yaml/specialized/caac.yaml
+    sha256: a99aa7dd3337e660b6a9020c869f6fe556bbda4a8ce4a660fd611713c63d8964
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAAc.md
+    sha256: d8faef3bdad9afd39d41f2e640fd8807665d2a17758ec202367379142084aab8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/specialized/caac.md
+    sha256: 2544de034777f59a66328d1562ac718d27ac7e385a70b176dc0cadd2ac2667b4
+    role: context
+  - path: reports/yaml_record_review/20260922T014402Z-CAAc.md
+    sha256: 0709bdaa2afa39f24a11d2b504606d758a6ae4f47e2cfa77c2d5c6ea6da5ac9a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch056 index 08
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015500
+targets:
+- target_id: CultureMech:015500
+  path: data/merge_yaml/merged/CAAc.yaml
+  label: CAAc
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/caac.yaml
+    role: maintained source
+  ownership_note: Exact maintained contributor identified from merged_from and current
+    record identity. Additional sources and stocks are scoped comparisons, not silently
+    added merge owners.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:015500
+  command: just validate-schema data/merge_yaml/merged/CAAc.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:015500
+  command: just validate-strict data/merge_yaml/merged/CAAc.yaml --out REVIEW_WORK/batch056/record08/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:015500
+  command: just validate-terms data/merge_yaml/merged/CAAc.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:015500
+  command: just validate-references data/merge_yaml/merged/CAAc.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: febaMedia
+  kind: primary_source
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media
+  accessed_at: '2026-10-28T05:12:08.334028Z'
+  locator: REVIEW_WORK/batch056/source01-03-supplement/febaMedia.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Versioned FEBA upstream febaMedia; exact CAAc/UW and compound rows only,
+    no experiment/strain-growth inference.
+  snapshot_sha256: a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848
+- evidence_id: febaMixes
+  kind: primary_source
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes
+  accessed_at: '2026-10-28T05:12:08.208633Z'
+  locator: REVIEW_WORK/batch056/source01-03-supplement/febaMixes.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Versioned FEBA upstream febaMixes; exact CAAc/UW and compound rows only,
+    no experiment/strain-growth inference.
+  snapshot_sha256: b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4
+- evidence_id: febaCompounds
+  kind: primary_source
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  accessed_at: '2026-10-28T05:12:08.363539Z'
+  locator: REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Versioned FEBA upstream febaCompounds; exact CAAc/UW and compound rows
+    only, no experiment/strain-growth inference.
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: febaCommit
+  kind: primary_source
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commits/master?pagelen=1
+  accessed_at: '2026-10-28T05:11:33.526642Z'
+  locator: REVIEW_WORK/batch056/source01-03/febaCommit.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Versioned FEBA upstream febaCommit; exact CAAc/UW and compound rows only,
+    no experiment/strain-growth inference.
+  snapshot_sha256: e802ea5aee4c66aa42d5425b9aac40af420f9072365b3963288985afa771a498
+- evidence_id: culturebothtCAAc
+  kind: search
+  reference: https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/CAAc.yaml
+  accessed_at: '2026-10-28T05:13:34.282341Z'
+  locator: REVIEW_WORK/batch056/source07-09/culturebothtCAAc.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact currently named upstream path; retain failure if absent, not an exhaustive
+    historical search
+  snapshot_sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+  search_scope: One exact public GET of https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/CAAc.yaml;
+    retained status 404. No exhaustive repository or literature absence claim.
+- evidence_id: culturebothtTree
+  kind: search
+  reference: https://api.github.com/repos/CultureBotAI/CultureBotHT/git/trees/main?recursive=1
+  accessed_at: '2026-10-28T05:13:34.461567Z'
+  locator: REVIEW_WORK/batch056/source07-09/culturebothtTree.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Current recursive repository tree bounded filename/path search for imported
+    CAAc; not historical absence
+  snapshot_sha256: 8c177a38af7c68d455e9554231def022cc2bcf62c1d3dab3626aaf5c319a5e04
+  search_scope: One exact public GET of https://api.github.com/repos/CultureBotAI/CultureBotHT/git/trees/main?recursive=1;
+    retained status 404. No exhaustive repository or literature absence claim.
+- evidence_id: chebi91249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91249
+  accessed_at: '2026-10-28T05:13:42.286087Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi91249.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: d3467507cd859066153a7fe667e2a73c627569bb275cc360729d9a8b15704e99
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CAAc.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:23:46.800208Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: e63079d098c3b5756914ae696b5f70f882c343ed69a5c2b7e270fa7eaaf69039
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/specialized/caac.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:23:46.800383Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: a99aa7dd3337e660b6a9020c869f6fe556bbda4a8ce4a660fd611713c63d8964
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T05:23:46.800415Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T05:23:46.800765Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T05:23:46.800790Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T05:23:46.800812Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-16
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAAc.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:23:46.800837Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: d8faef3bdad9afd39d41f2e640fd8807665d2a17758ec202367379142084aab8
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/specialized/caac.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:23:46.800864Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 2544de034777f59a66328d1562ac718d27ac7e385a70b176dc0cadd2ac2667b4
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T014402Z-CAAc.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:23:46.800887Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 0709bdaa2afa39f24a11d2b504606d758a6ae4f47e2cfa77c2d5c6ea6da5ac9a
+- evidence_id: writer-culturebotht
+  kind: record_content
+  reference: scripts/import_from_culturebotht.py
+  locator: Complete importer
+  accessed_at: '2026-10-28T05:23:46.800909Z'
+  support: context_only
+  summary: Current importer reads already prepared compound concentrations, adds CAS/MW
+    provenance and mapping annotations and uses category fallbacks. It does not authenticate
+    the old imported upstream version or reconstruct this FEBA dilution as historical
+    execution.
+  snapshot_sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+- evidence_id: chebi34683
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34683
+  accessed_at: '2026-10-28T05:13:38.879548Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi34683.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 77f17276e9ef67f5b284232543dcfb3c01546658eb9e93fad4cbd1a5374bfb56
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T05:13:40.106651Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi63036.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:62946
+  accessed_at: '2026-10-28T05:13:39.995363Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi62946.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: e035a92736c0b968363e9db17da9a4a81390ab174a65e689f6ae45c326324b44
+- evidence_id: chebi44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:44557
+  accessed_at: '2026-10-28T05:13:39.375785Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi44557.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 25e8fb689e4dfc294e2823ca36290cdce6d21ad174238e0e958ebe09d4c1262b
+- evidence_id: chebi32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32599
+  accessed_at: '2026-10-28T05:13:38.606968Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32599.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: c8381bae86c49daf20fe2a395973680caf47e14623523c0b3c8695aff7dd8f1c
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T05:13:40.737026Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86158.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75836
+  accessed_at: '2026-10-28T05:13:40.436284Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi75836.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: ab9922083bab0fb07df977855094d11fe3a5ca1f14bc6bddd10dc80ad9055569
+- evidence_id: chebi4735
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:4735
+  accessed_at: '2026-10-28T05:13:39.504147Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi4735.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: cbb8a2d2fd80b7e771711746d09aee7aaf9a8ac2dabc853617c1c08b49db4908
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32312
+  accessed_at: '2026-10-28T05:13:38.323854Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32312.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 19bbc18dfc582e76457c6f08d51bb777a2f7a2cbd2f810cb3b58bdb0004b4d60
+- evidence_id: chebi86364
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86364
+  accessed_at: '2026-10-28T05:13:41.625279Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86364.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 6e685ea7654bc1f4e16b3e3a05d73d8541e84cddcc28de59c4ae57ac288a1505
+- evidence_id: chebi31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31440
+  accessed_at: '2026-10-28T05:13:37.721366Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi31440.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: a0af950191bab322f858a701486e40e51a4780a18d9d03913d351b383f05cb7d
+- evidence_id: chebi86214
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86214
+  accessed_at: '2026-10-28T05:13:40.822089Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86214.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 9523f9163575dfb800448b401eb6eb5e75e892c56ff33c1134894e2b5d58779c
+- evidence_id: chebi86222
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86222
+  accessed_at: '2026-10-28T05:13:41.024431Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86222.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 7dbe9d183142fdeb7baf988df17f5da8f0d1d6c1e66b4dd007f23a9759d8ceed
+- evidence_id: chebi32150
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32150
+  accessed_at: '2026-10-28T05:13:38.280241Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32150.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: de317b7c2a67b08783f4123e1f5b67de75d34e2090c25525f45fe2c45f3dcbb2
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T05:13:37.365210Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi30753.json;
+    exact original raw/text/hash/time metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record08/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:23:46.860790Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: a164a1b7745c7e7c1ba01de336525db3d5c9fe3d979eea0744693212f0765661
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record08/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:23:46.860851Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 015a12f44ae1c9342c96605d15ab53d2217bda076ec1b07d9afe7d5c86814fd5
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record08/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:23:46.860921Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: a02a5f1a3b92b4069cc2bd4afcebd1b68db5cd5fcee6bf07dc96b81d56fdd5c2
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record08/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:23:46.860957Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: aaa5b6b7378587587cf20e42281946c5724fa71f40f8249a8c24927e7ce1e237
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record08/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:23:46.860991Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 2e3b3317351cd830e56a1f2f775a7d24a56afc5ce5a718709afaae1247b90ccc
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record08/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:23:46.861012Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: ba0cffd209a86ccc0c592285f1177f9c90e619877e7985f1ee25bae5fda9114a
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record08/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:23:46.861031Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch056/record08/schema-result.json
+  accessed_at: '2026-10-28T05:13:07.323351Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: d67222dc909dc6146439df9ad9f02abc709459040769233dec4a4a1e6b2b8258
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch056/record08/strict-result.json
+  accessed_at: '2026-10-28T05:13:08.383051Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 599939e972e9a9d72ec48d4bc0d4f41ca2e61c051f29b1067c07b294a1077d47
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch056/record08/terms-result.json
+  accessed_at: '2026-10-28T05:13:09.548635Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: d45b3444fb082916164c17873e4382044a178c7647cee9c3b1adf9c7b913267b
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch056/record08/references-result.json
+  accessed_at: '2026-10-28T05:13:10.405136Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 1b0d7fb8e0c251185fffe693014ab17adfeec8d4e818fbddfb40f06014a6352b
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: CAAc source identity and version
+  outcome: supported
+  summary: The versioned FEBA CAAc block reproduces the local description and full
+    formula. RPal is source shorthand, not an independently verified strain-growth
+    assertion. Failed exact CultureBotHT requests do not prove exhaustive repository
+    absence.
+  target_ids:
+  - CultureMech:015500
+  evidence_ids:
+  - febaMedia
+  - febaCommit
+  - culturebothtCAAc
+  - culturebothtTree
+- assessment_id: classification
+  area: representation
+  topic: Undefined complex ingredients and category
+  outcome: supported
+  summary: Yeast extract and casamino acids justify retaining COMPLEX/UNDEFINED despite
+    the upstream Minimal TRUE flag. The specialized category is not a verified organism
+    taxonomy claim. Preserve the existing casamino-acid degrounding rather than inventing
+    a pure amino-acid term.
+  target_ids:
+  - CultureMech:015500
+  evidence_ids:
+  - febaMedia
+  - febaCompounds
+  - owner
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 36 current concentration fields are covered by 33 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:015500
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b056-quantity-inventory-v1","target":"data/merge_yaml/merged/CAAc.yaml","quantity_field_count":36,"decisions":[{"quantity_id":"q1","label":"Na2HPO4","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[0].concentration","stored":{"value":"12.5","unit":"MILLIMOLAR"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[0].concentration","stored":{"value":"12.5","unit":"MILLIMOLAR"}}],"decision":"evidence_only","rationale":"The
+    versioned FEBA source explicitly declares this final rate and unit; the local
+    number is supported but lacks attached scoped evidence.","source_stage":"final
+    recipe rate","sources":[{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5104-5104","quote":"Na2HPO4\t12.5\tmM","quote_basis":"derivative text"}]},{"quantity_id":"q2","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[1].concentration","stored":{"value":"12.5","unit":"MILLIMOLAR"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[1].concentration","stored":{"value":"12.5","unit":"MILLIMOLAR"}}],"decision":"evidence_only","rationale":"The
+    versioned FEBA source explicitly declares this final rate and unit; the local
+    number is supported but lacks attached scoped evidence.","source_stage":"final
+    recipe rate","sources":[{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5105-5105","quote":"KH2PO4\t12.5\tmM","quote_basis":"derivative text"}]},{"quantity_id":"q3","label":"Ammonium
+    Sulfate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[2].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[2].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned FEBA source explicitly declares this final rate and unit; the local
+    number is supported but lacks attached scoped evidence.","source_stage":"final
+    recipe rate","sources":[{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5106-5106","quote":"Ammonium Sulfate\t1\tg/L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q4","label":"Nitrilotriacetic acid","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1602-1602","quote":"Nitrilotriacetic acid\t20\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q5","label":"MgSO4","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.0289","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.0289","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1603-1603","quote":"MgSO4\t28.9\tg/L","quote_basis":"derivative text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q6","label":"Calcium Chloride Dihydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.00667","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.00667","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1604-1604","quote":"Calcium Chloride Dihydrate\t6.67\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q7","label":"ammonium molybdate tetrahydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[6].concentration","stored":{"value":"1.85e-05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[6].concentration","stored":{"value":"1.85e-05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1605-1605","quote":"ammonium molybdate tetrahydrate\t0.0185\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q8","label":"Iron (II) sulfate heptahydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.0006979999999999999","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.0006979999999999999","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume. The long floating-point spelling is equivalent within
+    serialization rounding to 0.000698 g/L; it is not a separate formulation discrepancy.","source_stage":"final
+    recipe rate from explicit UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1606-1606","quote":"Iron (II) sulfate heptahydrate\t0.698\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q9","label":"EDTA","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.00025","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.00025","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1607-1607","quote":"EDTA\t0.25\tg/L","quote_basis":"derivative text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q10","label":"Zinc sulfate heptahydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.001095","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.001095","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1608-1608","quote":"Zinc sulfate heptahydrate\t1.095\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q11","label":"Manganese (II) sulfate monohydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.000154","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.000154","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1609-1609","quote":"Manganese (II) sulfate monohydrate\t0.154\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q12","label":"Copper (II) sulfate pentahydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[11].concentration","stored":{"value":"3.92e-05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[11].concentration","stored":{"value":"3.92e-05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1610-1610","quote":"Copper (II) sulfate pentahydrate\t0.0392\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q13","label":"Cobalt(II) nitrate hexahydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5e-05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[12].concentration","stored":{"value":"2.5e-05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1611-1611","quote":"Cobalt(II) nitrate hexahydrate\t0.025\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q14","label":"sodium tetraborate decahydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.77e-05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[13].concentration","stored":{"value":"1.77e-05","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned mix declares X=1000 and the CAAc recipe adds that mix at 1 X. Dividing
+    the printed stock g/L value by 1000 reproduces the existing final rate. This is
+    an explicit concentration-factor calculation, not a guessed water denominator
+    or an invented stock volume.","source_stage":"final recipe rate from explicit
+    UW dilution","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1612-1612","quote":"sodium tetraborate decahydrate\t0.0177\tg/L","quote_basis":"derivative
+    text"},{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]},{"quantity_id":"q15","label":"Sodium thiosulfate pentahydrate","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"MILLIMOLAR"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.1","unit":"MILLIMOLAR"}}],"decision":"evidence_only","rationale":"The
+    versioned FEBA source explicitly declares this final rate and unit; the local
+    number is supported but lacks attached scoped evidence.","source_stage":"final
+    recipe rate","sources":[{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5108-5108","quote":"Sodium thiosulfate pentahydrate\t0.1\tmM","quote_basis":"derivative
+    text"}]},{"quantity_id":"q16","label":"4-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.002","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned FEBA source explicitly declares this final rate and unit; the local
+    number is supported but lacks attached scoped evidence.","source_stage":"final
+    recipe rate","sources":[{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5109-5109","quote":"4-Aminobenzoic acid\t0.002\tg/L","quote_basis":"derivative
+    text"}]},{"quantity_id":"q17","label":"Yeast Extract","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[16].concentration","stored":{"value":"2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[16].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned FEBA source explicitly declares this final rate and unit; the local
+    number is supported but lacks attached scoped evidence.","source_stage":"final
+    recipe rate","sources":[{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5110-5110","quote":"Yeast Extract\t2\tg/L","quote_basis":"derivative text"}]},{"quantity_id":"q18","label":"casamino
+    acids","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[17].concentration","stored":{"value":"5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[17].concentration","stored":{"value":"5","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    versioned FEBA source explicitly declares this final rate and unit; the local
+    number is supported but lacks attached scoped evidence.","source_stage":"final
+    recipe rate","sources":[{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5111-5111","quote":"casamino acids\t5\tg/L","quote_basis":"derivative text"}]},{"quantity_id":"q19","label":"Ammonium
+    Sulfate existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[2].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW: 132.14"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[2].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW: 132.14"}],"decision":"evidence_only","rationale":"The
+    existing CAS and formula-weight text matches the exact versioned upstream compound
+    row. This is provenance support, not a molar-conversion instruction or independent
+    certification of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 62-62","quote":"Ammonium Sulfate\t7783-20-2\tSigma\tA4418\t132.14\tMascagnite\t\t\tno","quote_basis":"derivative
+    text"}]},{"quantity_id":"q20","label":"Nitrilotriacetic acid existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[3].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14; From UW
+    concentrated base"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[3].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14; From UW
+    concentrated base"}],"decision":"evidence_only","rationale":"The existing CAS
+    and formula-weight text matches the exact versioned upstream compound row. This
+    is provenance support, not a molar-conversion instruction or independent certification
+    of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 301-301","quote":"Nitrilotriacetic acid\t139-13-9\tSigma\tN9877\t191.14\tN,N-Bis(carboxymethyl)glycine,
+    NTA, Tris(carboxymethyl)amine\t\t\tyes","quote_basis":"derivative text"}]},{"quantity_id":"q21","label":"ammonium
+    molybdate tetrahydrate existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[6].notes","stored":"CAS:
+    12054-85-2; MW: 1235.86; From UW concentrated base"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[6].notes","stored":"CAS:
+    12054-85-2; MW: 1235.86; From UW concentrated base"}],"decision":"evidence_only","rationale":"The
+    existing CAS and formula-weight text matches the exact versioned upstream compound
+    row. This is provenance support, not a molar-conversion instruction or independent
+    certification of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 1308-1308","quote":"ammonium molybdate tetrahydrate\t12054-85-2\t\t\t1235.86","quote_basis":"derivative
+    text"}]},{"quantity_id":"q22","label":"Iron (II) sulfate heptahydrate existing
+    CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[7].notes","stored":"CAS:
+    7782-63-0; MW: 278.01; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[7].notes","stored":"CAS:
+    7782-63-0; MW: 278.01; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"}],"decision":"evidence_only","rationale":"The existing CAS and formula-weight
+    text matches the exact versioned upstream compound row. This is provenance support,
+    not a molar-conversion instruction or independent certification of every supplier
+    annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 231-231","quote":"Iron (II) sulfate heptahydrate\t7782-63-0\tSigma\tF2387\t278.01\tFerrous
+    sulfate heptahydrate, FeSO4 7H2O, Iron sulfate","quote_basis":"derivative text"}]},{"quantity_id":"q23","label":"EDTA
+    existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[8].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24; From UW concentrated
+    base"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[8].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24; From UW concentrated
+    base"}],"decision":"evidence_only","rationale":"The existing CAS and formula-weight
+    text matches the exact versioned upstream compound row. This is provenance support,
+    not a molar-conversion instruction or independent certification of every supplier
+    annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 177-177","quote":"EDTA\t60-00-4\tSigma\tBP121\t292.24","quote_basis":"derivative
+    text"}]},{"quantity_id":"q24","label":"Zinc sulfate heptahydrate existing CAS/MW
+    notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[9].notes","stored":"CAS:
+    7446-20-0; MW: 287.56; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[9].notes","stored":"CAS:
+    7446-20-0; MW: 287.56; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"}],"decision":"evidence_only","rationale":"The existing CAS and formula-weight
+    text matches the exact versioned upstream compound row. This is provenance support,
+    not a molar-conversion instruction or independent certification of every supplier
+    annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 474-474","quote":"Zinc sulfate heptahydrate\t7446-20-0\tSigma\tZ0251\t287.56\tzinc
+    sulfate, ZnSO4 7H2O\t\t\t\t\t\tyes","quote_basis":"derivative text"}]},{"quantity_id":"q25","label":"Manganese
+    (II) sulfate monohydrate existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[10].notes","stored":"CAS:
+    10034-96-5; MW: 169.02; From UW concentrated base"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[10].notes","stored":"CAS:
+    10034-96-5; MW: 169.02; From UW concentrated base"}],"decision":"evidence_only","rationale":"The
+    existing CAS and formula-weight text matches the exact versioned upstream compound
+    row. This is provenance support, not a molar-conversion instruction or independent
+    certification of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 279-279","quote":"Manganese (II) sulfate monohydrate\t10034-96-5\tSigma\tM7634\t169.02\tMnSO4
+    H2O","quote_basis":"derivative text"}]},{"quantity_id":"q26","label":"Copper (II)
+    sulfate pentahydrate existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[11].notes","stored":"CAS:
+    7758-99-8; MW: 249.69; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[11].notes","stored":"CAS:
+    7758-99-8; MW: 249.69; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"}],"decision":"evidence_only","rationale":"The existing CAS and formula-weight
+    text matches the exact versioned upstream compound row. This is provenance support,
+    not a molar-conversion instruction or independent certification of every supplier
+    annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 129-129","quote":"Copper (II) sulfate pentahydrate\t7758-99-8\tSigma\tC8027\t249.69\tBlue
+    Vitriol, Cupric sulfate pentahydrate, Sulfuric acid, copper(II) salt (1:1) pentahydrate,
+    CuSO4 5H2O, Cupric Sulfate","quote_basis":"derivative text"}]},{"quantity_id":"q27","label":"Cobalt(II)
+    nitrate hexahydrate existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[12].notes","stored":"CAS:
+    10026-22-9; MW: 291.03; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[12].notes","stored":"CAS:
+    10026-22-9; MW: 291.03; From UW concentrated base; Ontology enriched via CAS-RN
+    lookup"}],"decision":"evidence_only","rationale":"The existing CAS and formula-weight
+    text matches the exact versioned upstream compound row. This is provenance support,
+    not a molar-conversion instruction or independent certification of every supplier
+    annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 124-124","quote":"Cobalt(II) nitrate hexahydrate\t10026-22-9\t\t\t291.03\tCo(NO3)2
+    6H2O","quote_basis":"derivative text"}]},{"quantity_id":"q28","label":"sodium
+    tetraborate decahydrate existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[13].notes","stored":"CAS:
+    1303-96-4; From UW concentrated base"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[13].notes","stored":"CAS:
+    1303-96-4; From UW concentrated base"}],"decision":"evidence_only","rationale":"The
+    existing CAS and formula-weight text matches the exact versioned upstream compound
+    row. This is provenance support, not a molar-conversion instruction or independent
+    certification of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 496-496","quote":"sodium tetraborate decahydrate\t1303-96-4","quote_basis":"derivative
+    text"}]},{"quantity_id":"q29","label":"Sodium thiosulfate pentahydrate existing
+    CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[14].notes","stored":"CAS:
+    10102-17-7; MW: 248.18; Ontology enriched via CAS-RN lookup"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[14].notes","stored":"CAS:
+    10102-17-7; MW: 248.18; Ontology enriched via CAS-RN lookup"}],"decision":"evidence_only","rationale":"The
+    existing CAS and formula-weight text matches the exact versioned upstream compound
+    row. This is provenance support, not a molar-conversion instruction or independent
+    certification of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 419-419","quote":"Sodium thiosulfate pentahydrate\t10102-17-7\tSigma\tS8503\t248.18\t\t\t\tyes","quote_basis":"derivative
+    text"}]},{"quantity_id":"q30","label":"4-Aminobenzoic acid existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[15].notes","stored":"CAS:
+    150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[15].notes","stored":"CAS:
+    150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup"}],"decision":"evidence_only","rationale":"The
+    existing CAS and formula-weight text matches the exact versioned upstream compound
+    row. This is provenance support, not a molar-conversion instruction or independent
+    certification of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 28-28","quote":"4-Aminobenzoic acid\t150-13-0\tSigma\tA9878\t137.14\tp-Aminobenzoic
+    acid, para-aminobenzoic acid","quote_basis":"derivative text"}]},{"quantity_id":"q31","label":"Yeast
+    Extract existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[16].notes","stored":"CAS:
+    232-387-9"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[16].notes","stored":"CAS:
+    232-387-9"}],"decision":"correct","rationale":"The printed 232-387-9 has three
+    digits in the middle group and is not valid CAS registry-number syntax. It is
+    inherited from FEBA CAS column; do not silently certify it or relabel it as an
+    authoritative EC identity without an exact authority check.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 471-471","quote":"Yeast Extract\t232-387-9","quote_basis":"derivative text"}]},{"quantity_id":"q32","label":"casamino
+    acids existing CAS/MW notes","local_fields":[{"path":"data/merge_yaml/merged/CAAc.yaml","field_path":"ingredients[17].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6"},{"path":"data/normalized_yaml/specialized/caac.yaml","field_path":"ingredients[17].notes","stored":"Mapping:
+    micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6"}],"decision":"evidence_only","rationale":"The
+    existing CAS and formula-weight text matches the exact versioned upstream compound
+    row. This is provenance support, not a molar-conversion instruction or independent
+    certification of every supplier annotation. OLS supplied forms are checked separately.","source_stage":"compound
+    metadata; not additional formulation amount","sources":[{"evidence_id":"febaCompounds","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaCompounds.bin","raw_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","text_sha256":"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774","accessed_at":"2026-10-28T05:12:08.363539Z","locator":"febaCompounds.txt
+    lines 97-97","quote":"casamino acids\t65072-00-6\tBD\t223120\t\tCAS amino acids\t\t\tno\tyes\tyes","quote_basis":"derivative
+    text"}]},{"quantity_id":"q33","label":"Explicit stock factor","local_fields":[],"decision":"evidence_only","rationale":"Keep
+    UW X=1000 separately from the CAAc 1 X receiving concentration factor. Neither
+    source line provides a measured volumetric stock dose or preparation protocol.","source_stage":"source-only
+    stock provenance","sources":[{"evidence_id":"febaMixes","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMixes.bin","raw_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","text_sha256":"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4","accessed_at":"2026-10-28T05:12:08.208633Z","locator":"febaMixes.txt
+    lines 1598-1601","quote":"Media\tUW concentrated base\t\nDescription\tUsed in
+    UW PM media\t\nX\t1000\t\nControlled vocabulary\tConcentration\tUnits","quote_basis":"derivative
+    text"},{"evidence_id":"febaMedia","reference":"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media","raw_path":"REVIEW_WORK/batch056/source01-03-supplement/febaMedia.bin","raw_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","text_sha256":"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848","accessed_at":"2026-10-28T05:12:08.334028Z","locator":"febaMedia.txt
+    lines 5107-5107","quote":"UW concentrated base\t1\tX","quote_basis":"derivative
+    text"}]}],"document_scopes":{"data/merge_yaml/merged/CAAc.yaml":null,"data/normalized_yaml/specialized/caac.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: Fifteen of eighteen direct ingredient descriptors have primary CHEBI links;
+    secondary-link presence is 0/18 direct ingredient instances. No secondary MIM
+    slots are asserted, so agreement/validity among existing secondary slots has an
+    empty population and no percentage is reported. All asserted primary IDs/labels
+    and exact current CSV joins are checked. Unmapped yeast extract and casamino acids
+    remain mixtures. Ammonium molybdate tetrahydrate remains unresolved; CHEBI:91249
+    is not a supplied-form match. Borax is retained by its exact source name/CAS and
+    canonical label; no conversion is inferred from inconsistent ancillary formula
+    conventions.
+  target_ids:
+  - CultureMech:015500
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: The complete current histories, both October 5 reports and the September
+    review were read. Their source-unavailable/zero-source-check conclusions are historical
+    and superseded for the numbers by the fresh versioned FEBA rows. The imported
+    CultureBotHT bytes are not recovered. Current importer and conservative merger
+    are evidence of current behavior only; existing casamino-acid degrounding is credited.
+  target_ids:
+  - CultureMech:015500
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-015500-upstream-evidence-chain
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The upstream recipe and dilution provenance need exact evidence
+  description: The current CultureBotHT URL is only a repository citation, and the
+    two exact attempted routes returned 404. Fresh versioned FEBA media/mixes rows
+    independently support all 18 current rates, including the 1000X-to-1X UW calculation.
+    Attach those precise source/version/row claims and retain the source stock relationship
+    without changing the supported numbers. This does not authenticate the original
+    CultureBotHT import bytes or date.
+  target_ids:
+  - CultureMech:015500
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  evidence_ids:
+  - febaMedia
+  - febaMixes
+  - febaCommit
+  - culturebothtCAAc
+  - culturebothtTree
+  - writer-culturebotht
+  rule_id: review-yaml-record/evidence
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/caac.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-015500-yeast-identifier-namespace
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Yeast-extract metadata labels a non-CAS-shaped identifier as CAS
+  description: The local note and FEBA compounds column both call 232-387-9 a CAS
+    number. Its middle group has three digits, unlike CAS registry syntax. Preserve
+    the inherited provenance, flag the namespace issue, and verify the exact authority
+    before assigning an EC or other identifier. This is not evidence that the yeast-extract
+    amount is wrong.
+  target_ids:
+  - CultureMech:015500
+  field_paths:
+  - ingredients[16].notes
+  evidence_ids:
+  - febaCompounds
+  - owner
+  rule_id: review-yaml-record/provenance
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/caac.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-015500-molybdate-grounding-limit
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The unmapped molybdate must not inherit the prior unsafe candidate
+  description: The source specifies ammonium molybdate tetrahydrate, CAS 12054-85-2,
+    formula weight 1235.86. The current local field is ungrounded. The earlier proposed
+    CHEBI:91249 denotes ammonium orthomolybdate with a different formula/mass, so
+    it is not an authenticated exact supplied-form replacement. Retain the honest
+    gap and establish a hydrate-specific identifier before linking it; do not turn
+    a current MIM preferred-name hit into chemical proof.
+  target_ids:
+  - CultureMech:015500
+  field_paths:
+  - ingredients[6]
+  evidence_ids:
+  - febaCompounds
+  - chebi91249
+  - groundings
+  rule_id: review-yaml-record/grounding
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/caac.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: The current CultureBotHT URL is only a repository citation, and the
+    two exact attempted routes returned 404. Fresh versioned FEBA media/mixes rows
+    independently support all 18 current rates, including the 1000X-to-1X UW calculation.
+    Attach those precise source/version/row claims and retain the source stock relationship
+    without changing the supported numbers. This does not authenticate the original
+    CultureBotHT import bytes or date.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015500
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/caac.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The local note and FEBA compounds column both call 232-387-9 a CAS
+    number. Its middle group has three digits, unlike CAS registry syntax. Preserve
+    the inherited provenance, flag the namespace issue, and verify the exact authority
+    before assigning an EC or other identifier. This is not evidence that the yeast-extract
+    amount is wrong.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015500
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/caac.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The source specifies ammonium molybdate tetrahydrate, CAS 12054-85-2,
+    formula weight 1235.86. The current local field is ungrounded. The earlier proposed
+    CHEBI:91249 denotes ammonium orthomolybdate with a different formula/mass, so
+    it is not an authenticated exact supplied-form replacement. Retain the honest
+    gap and establish a hydrate-specific identifier before linking it; do not turn
+    a current MIM preferred-name hit into chemical proof.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015500
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/caac.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- No stock preparation, pH, sterilization or incubation parameters are supplied by
+  the inspected CAAc/UW source blocks; none is invented.
+- The source compound metadata is not treated as an independent registry certification;
+  the yeast-extract namespace defect remains explicit.
+- Original FEBA capture metadata/timestamps are reused exactly from the companion
+  author; this reviewer independently checked the CAAc/UW rows and did not repeat
+  GETs.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.

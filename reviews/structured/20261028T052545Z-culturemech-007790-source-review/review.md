@@ -1,0 +1,2294 @@
+# Scientific review: Caenicola Mobile Medium
+
+- Review: 20261028T052545Z-culturemech-007790-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T05:13:10.412038Z
+- Finished UTC: 2026-10-28T05:25:45.610764Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Caenicola’s source identity is supported, but water/resazurin units, main denominator claims, stock stubs and missing preparation require curation. Existing vitamin-stock repairs are preserved, while scoped trace-definition and supplied-form errors remain explicit. All four canonical checks passed.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch056 index 09
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007790 | data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml | generated | caenicola_mobile_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:007790 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:007790 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:007790 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:007790 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact TOGO M1259 / JCM1175 identity
+
+identity: supported. Targets: CultureMech:007790.
+
+The current TOGO metadata points to JCM1175 and matches its title/formula. The MediaDive namesake is a separate comparison record, not an additional merged owner. Its October 7 source report cannot transfer ownership or assert strain growth.
+
+### Complex undefined liquid formulation
+
+representation: supported. Targets: CultureMech:007790.
+
+Yeast extract, tryptone and casamino acids support retaining COMPLEX/UNDEFINED and liquid state. Current source identity does not establish a specific taxon-growth statement.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:007790.
+
+57 current concentration fields are covered by 47 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b056-quantity-inventory-v1","target":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","quantity_field_count":57,"decisions":[{"quantity_id":"q1","label":"Distilled water","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"975","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"975","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source gives 975 mL water input, not 975 g/L and not final makeup. Preserve dimensionality without density inference.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 69-71","quote":"Distilled water\n975.0\nml","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 975,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q2","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 43-45","quote":"Yeast extract\n2.0\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q3","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 23-25","quote":"NaCl\n0.4\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\": \"NaCl\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\": \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"CaCl2・2H2O","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 33-39","quote":"CaCl\n2\n·2H\n2\nO\n0.05\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\": \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q5","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 6-11","quote":"KH\n2\nPO\n4\n0.5\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\": \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q6","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 18-22","quote":"NH\n4\nCl\n0.5\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[5]","quote":"{\n          \"component_name\": \"NH4Cl\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001008\",\n          \"gmo_id\": \"GMO_001008\",\n          \"label\": \"Ammonium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q7","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 12-17","quote":"K\n2\nHPO\n4\n0.5\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[6]","quote":"{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\": \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q8","label":"Resazurin","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The primary and TOGO give 1 mg resazurin, not 1 g/L. Correct the mass scale while retaining the unresolved receiving final-volume basis; do not silently replace it with an assumed 1 mg/L.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 66-68","quote":"Resazurin\n1.0\nmg","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[7]","quote":"{\n          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001012\",\n          \"gmo_id\": \"GMO_001012\",\n          \"label\": \"Resazurin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"MgCl2・6H2O","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 26-32","quote":"MgCl\n2\n·6H\n2\nO\n0.3\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[8]","quote":"{\n          \"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.3,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\": \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q10","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 40-42","quote":"KCl\n0.4\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[9]","quote":"{\n          \"component_name\": \"KCl\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\": \"GMO_001017\",\n          \"label\": \"Potassium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"L-Cysteine","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 52-54","quote":"L-Cysteine\n2.4\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[10]","quote":"{\n          \"component_name\": \"L-Cysteine\",\n          \"volume\": 2.4,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001318\",\n          \"gmo_id\": \"GMO_001318\",\n          \"label\": \"Cysteine\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q12","label":"L-Arginine","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"4.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"4.2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 55-57","quote":"L-Arginine\n4.2\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[11]","quote":"{\n          \"component_name\": \"L-Arginine\",\n          \"volume\": 4.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001767\",\n          \"gmo_id\": \"GMO_001767\",\n          \"label\": \"L-Arginine\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q13","label":"L-Histidine","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"4.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"4.2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 58-60","quote":"L-Histidine\n4.2\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[12]","quote":"{\n          \"component_name\": \"L-Histidine\",\n          \"volume\": 4.2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001872\",\n          \"gmo_id\": \"GMO_001872\",\n          \"label\": \"L-Histidine\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q14","label":"Tryptone (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 46-48","quote":"Tryptone (BD-Difco)\n2.0\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[13]","quote":"{\n          \"component_name\": \"Tryptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\": \"Bacto &amp;trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q15","label":"Casamino acids (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The source gives this gram amount per listed preparation batch. Its 975 mL water and subsequent additions do not certify the stored G_PER_L denominator. API J1175 separately normalizes to a declared 1010 mL volume and different g_l values, so it does not authenticate this exact local rate. Preserve the batch amount without guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 49-51","quote":"Casamino acids (BD-Difco)\n2.0\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[14]","quote":"{\n          \"component_name\": \"Casamino acids (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001705\",\n          \"gmo_id\": \"GMO_001705\",\n          \"label\": \"Bacto &amp;trade; Casamino acids\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q16","label":"KOH","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"KOH is an unquantified pH-adjustment reagent, so retain an honest unknown dose with the source pH endpoint.","source_stage":"adjustment / gas preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 72-76","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the following solutions (filter-sterilized):","quote_basis":"derivative text"}]},{"quantity_id":"q17","label":"Carbon dioxide gas","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The source specifies the gas atmosphere as N2/CO2 4:1; these variable ingredient amounts do not capture the ratio or its preparation role. Do not invent a liquid concentration.","source_stage":"adjustment / gas preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 72-76","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the following solutions (filter-sterilized):","quote_basis":"derivative text"}]},{"quantity_id":"q18","label":"Nitrogen gas","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The source specifies the gas atmosphere as N2/CO2 4:1; these variable ingredient amounts do not capture the ratio or its preparation role. Do not invent a liquid concentration.","source_stage":"adjustment / gas preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 72-76","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the following solutions (filter-sterilized):","quote_basis":"derivative text"}]},{"quantity_id":"q19","label":"Trace metal solution (see Medium [M288])","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is a liquid stock dose, not a solute mass. Retain exact stock identity, source strength and addition stage. The sulfide instruction explicitly says per litre; the other table doses retain their batch basis. Percent basis is unstated and must not become assumed w/v. Empty Unknown stubs need scoped definitions, not whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 61-65","quote":"Trace metal solution (see Medium No.\n294\n)\n1.0\nml","quote_basis":"derivative text"}]},{"quantity_id":"q20","label":"8% NaHCO3 solution","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[1].concentration","stored":{"value":"25","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"25","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is a liquid stock dose, not a solute mass. Retain exact stock identity, source strength and addition stage. The sulfide instruction explicitly says per litre; the other table doses retain their batch basis. Percent basis is unstated and must not become assumed w/v. Empty Unknown stubs need scoped definitions, not whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 77-81","quote":"8% NaHCO\n3\nsolution\n25.0\nml","quote_basis":"derivative text"}]},{"quantity_id":"q21","label":"Trace vitamins (see Medium [M190])","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[2].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is a liquid stock dose, not a solute mass. Retain exact stock identity, source strength and addition stage. The sulfide instruction explicitly says per litre; the other table doses retain their batch basis. Percent basis is unstated and must not become assumed w/v. Empty Unknown stubs need scoped definitions, not whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 82-86","quote":"Trace vitamins (see Medium No.\n197\n)\n1.0\nml","quote_basis":"derivative text"}]},{"quantity_id":"q22","label":"5% Na2S・9H2O solution","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[3].concentration","stored":{"value":"8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"8","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is a liquid stock dose, not a solute mass. Retain exact stock identity, source strength and addition stage. The sulfide instruction explicitly says per litre; the other table doses retain their batch basis. Percent basis is unstated and must not become assumed w/v. Empty Unknown stubs need scoped definitions, not whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 94-100","quote":"5% Na\n2\nS·9H\n2\nO solution\n8.0\nml","quote_basis":"derivative text"}]},{"quantity_id":"q23","label":"M190 vitamin Distilled water","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"1","unit":"L"}}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q24","label":"M190 vitamin Biotin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[1].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\",\n          \"gmo_id\": \"GMO_001025\",\n          \"label\": \"Biotin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q25","label":"M190 vitamin p--Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[2].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\",\n          \"gmo_id\": \"GMO_001026\",\n          \"label\": \"4-Aminobenzoic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q26","label":"M190 vitamin Thiamine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[3].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\",\n          \"gmo_id\": \"GMO_001027\",\n          \"label\": \"Thiamine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q27","label":"M190 vitamin Calcium pantothenate","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[4].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\",\n          \"gmo_id\": \"GMO_001028\",\n          \"label\": \"Calcium pantothenate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q28","label":"M190 vitamin Pyridoxine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[5].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\",\n          \"gmo_id\": \"GMO_001029\",\n          \"label\": \"Pyridoxine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q29","label":"M190 vitamin Folic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[6].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\",\n          \"gmo_id\": \"GMO_001033\",\n          \"label\": \"Folic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q30","label":"M190 vitamin Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[7].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\",\n          \"gmo_id\": \"GMO_001034\",\n          \"label\": \"Cobalamin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q31","label":"M190 vitamin Riboflavin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[8].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\",\n          \"gmo_id\": \"GMO_001037\",\n          \"label\": \"Riboflavin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q32","label":"M190 vitamin Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[9].notes","stored":"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\",\n          \"gmo_id\": \"GMO_001038\",\n          \"label\": \"Nicotinic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q33","label":"M190 vitamin Lipoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[10].notes","stored":"Role: Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],"decision":"verified","rationale":"The existing source evidence and current exact TOGO raw digest authenticate this stock water input or batch-mass note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition transfers as a definition; its parent 10 mL dose, pH and other ingredients remain excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001699\",\n          \"gmo_id\": \"GMO_001699\",\n          \"label\": \"Lipoic acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000067\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000067\",\n              \"label\": \"Growth factor\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q34","label":"M288 trace Distilled water","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1.0","unit":"G_PER_L"}}],"decision":"correct","rationale":"The shared local value collapses distinct parent/trace stages; preserve the trace source water input separately.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"M288 trace MnCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"5.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The local number combines a parent-milligram row and a trace-stock gram row. Keep the exact trace batch amount independent; do not transfer or sum the parent contribution.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001020\",\n          \"gmo_id\": \"GMO_001020\",\n          \"label\": \"Manganese chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"M288 trace FeCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"7.0","unit":"G_PER_L"}}],"decision":"correct","rationale":"The local number combines a parent-milligram row and a trace-stock gram row. Keep the exact trace batch amount independent; do not transfer or sum the parent contribution.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[11]","quote":"{\n          \"component_name\": \"FeCl2・4H2O\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001548\",\n          \"gmo_id\": \"GMO_001548\",\n          \"label\": \"Iron(II) chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q37","label":"M288 trace HCl (32%)","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The source gives 10 mL of 32% hydrochloric acid, not 10 g/L. Percent basis and density are not independently established.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\": \"HCl (32%)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 32,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\",\n          \"gmo_id\": \"GMO_001499\",\n          \"label\": \"Hydrochloric acid solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"M288 trace Na2MoO4・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.04","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 0.04,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\": \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"M288 trace H3BO3","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\": \"H3BO3\",\n          \"volume\": 0.006,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\": \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"M288 trace CoCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.25","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\": \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q41","label":"M288 trace NiCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 0.07,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001022\",\n          \"gmo_id\": \"GMO_001022\",\n          \"label\": \"Nickel chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"M288 trace CuCl2・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 0.002,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001024\",\n          \"gmo_id\": \"GMO_001024\",\n          \"label\": \"Copper(II) chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q43","label":"M288 trace ZnCl2","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\": \"ZnCl2\",\n          \"volume\": 0.07,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001035\",\n          \"gmo_id\": \"GMO_001035\",\n          \"label\": \"Zinc chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q44","label":"M288 trace Na2WO4・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\": \"Na2WO4・2H2O\",\n          \"volume\": 0.006,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001057\",\n          \"gmo_id\": \"GMO_001057\",\n          \"label\": \"Sodium tungstate dihydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q45","label":"M288 trace AlCl3","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.025","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit final makeup; the local G_PER_L field remains unsupported. API J1175 declares a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\": \"AlCl3\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001255\",\n          \"gmo_id\": \"GMO_001255\",\n          \"label\": \"Aluminum chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q46","label":"Main preparation and final adjustment","local_fields":[],"decision":"evidence_only","rationale":"Retain pH 7.5, KOH adjustment, N2/CO2 4:1 atmosphere, base autoclaving and separate filtered additions. The post-addition pH readjustment is explicit. These are source preparation instructions, not strain growth conditions.","source_stage":"source-only preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 72-101","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the following solutions (filter-sterilized):\n8% NaHCO\n3\nsolution\n25.0\nml\nTrace vitamins (see Medium No.\n197\n)\n1.0\nml\nAseptically and anaerobically distribute the medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottles) under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture and seal with butyl rubber stoppers.  Then, add per liter the following solution (autoclaved and stored under N\n2\n):\n5% Na\n2\nS·9H\n2\nO solution\n8.0\nml\nReadjust pH to 7.5, if necessary.","quote_basis":"derivative text"}]},{"quantity_id":"q47","label":"Dispensing example and generic sterilization","local_fields":[],"decision":"evidence_only","rationale":"The example is 20 mL medium in 60 mL bottles; it is not the recipe final-volume denominator. The generic JCM default is 121°C for 15 minutes unless otherwise specified, and does not override filter-sterilized additions.","source_stage":"source-only dispensing / sterilization","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt lines 87-93","quote":"Aseptically and anaerobically distribute the medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottles) under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture and seal with butyl rubber stoppers.  Then, add per liter the following solution (autoclaved and stored under N\n2\n):","quote_basis":"derivative text"}]}],"document_scopes":{"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml":null,"data/normalized_yaml/bacterial/togo_medium_m190.yaml":["solutions[1].composition"],"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml":["ingredients[0]","ingredients[7]","ingredients[9]","ingredients[14]","ingredients[15]","ingredients[16]","ingredients[17]","ingredients[18]","ingredients[19]","ingredients[20]","ingredients[21]","ingredients[22]"]},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:007790.
+
+All current target/owner and declared dependency CHEBI slots are joined to fresh exact OLS objects and current MIM rows. The trace cobalt/nickel primary IDs are anhydrous despite source hexahydrates. Generic calcium-pantothenate source wording leaves the term’s D stereochemistry unverified; vitamin B12 and lipoic-acid generic source forms do not justify finer substitutions. Main named hydrates and free resazurin are retained; no sodium resazurin is invented.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:007790.
+
+The full current main histories, September review, two October 5 reports and the separate MediaDive namesake October 7 report were read. The latter names a different maintained record and retained its quantities unchanged; its raw digest equals the current API bytes, which authenticates content but not independently the old timestamp. M190 already restored vitamin containment and batch-mass notes: all 11 existing scoped claims match the current exact raw digest and are credited. Current importer, migration, no-sum cleanup and conservative merge behavior are distinguished from historical execution.
+
+## Findings
+
+### f1: Water volume and resazurin mass have incorrect units
+
+major / open / confirmed; issue key: culturemech-007790-water-and-resazurin-units.
+
+Both layers encode 975 g/L water and 1 g/L resazurin where JCM1175/TOGO M1259 give 975 mL water and 1 mg resazurin. Restore the literal input dimensions and mass scale without inventing density or a measured final litre. Current TOGO mg/litre unit handling and l→L mapping should be credited, not described as unchanged historical behavior.
+
+### f2: The remaining main masses have an unproved final-volume denominator
+
+major / open / confirmed; issue key: culturemech-007790-main-denominator.
+
+The source lists gram inputs plus 975 mL water and staged additions. Those batch masses do not establish the identical G_PER_L assertions. API J1175 has explicit but different provider-normalized rates based on its declared 1010 mL; do not silently treat that declaration as the primary measured final volume or equate the two value sets.
+
+### f3: Four receiving stocks are empty stubs with mass units
+
+major / open / confirmed; issue key: culturemech-007790-stock-doses-and-links.
+
+Restore liquid doses and exact stock identities at their source stages. Keep the 1 mL trace-metal and 1 mL vitamin definitions separate from their parent media; preserve 8% bicarbonate and 5% sulfide labels without invented percent basis. The sulfide dose alone is explicitly per litre in this passage. Credit current importer stage preservation and the older migration preserving quantity bytes; neither makes the existing wrong units scientifically valid.
+
+### f4: The source preparation sequence and gas ratio are absent
+
+major / open / confirmed; issue key: culturemech-007790-preparation-and-gases.
+
+The current record lacks the source pH adjustment, sterilization/addition sequence, dispensing example and final readjustment. Variable KOH remains an honest unquantified dose, but separate variable N2 and CO2 ingredients do not encode the explicit 4:1 atmosphere. Preserve these as preparation assertions with exact scope, without adding organism growth or incubation claims.
+
+### f5: The referenced trace definition still mixes parent and stock fields
+
+major / open / confirmed; issue key: culturemech-007790-trace-definition-corruption.
+
+Only M288’s trace-metal subsection is relevant. Its shared water and 5.1/7.0 g/L Mn/Fe values combine distinct parent and stock stages, and HCl volume is stored as mass. Reconcile the exact scoped definition before using it in this medium; exclude the parent 2 mL dose and parent final-makeup instruction. Current no-sum cleanup and the earlier equal-water collapse do not repair unequal source-stage sums.
+
+### f6: Two trace-source hexahydrates carry anhydrous identifiers
+
+major / open / confirmed; issue key: culturemech-007790-trace-hydrate-identifiers.
+
+The scoped M288 cobalt and nickel rows name CoCl2·6H2O and NiCl2·6H2O, but CHEBI:35696 and CHEBI:34887 describe anhydrous salts. Correct exact supplied forms after authority verification; CHEBI:53503 confirms cobalt hexahydrate, while a replacement nickel identifier is not asserted here. These are primary term slots only. Calcium pantothenate CHEBI:31345 in the vitamin definition encodes D stereochemistry despite a generic label, so generic source wording alone does not certify that stereochemical specificity.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Both layers encode 975 g/L water and 1 g/L resazurin where JCM1175/TOGO M1259 give 975 mL water and 1 mg resazurin. Restore the literal input dimensions and mass scale without inventing density or a measured final litre. Current TOGO mg/litre unit handling and l→L mapping should be credited, not described as unchanged historical behavior.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The source lists gram inputs plus 975 mL water and staged additions. Those batch masses do not establish the identical G_PER_L assertions. API J1175 has explicit but different provider-normalized rates based on its declared 1010 mL; do not silently treat that declaration as the primary measured final volume or equate the two value sets.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+Restore liquid doses and exact stock identities at their source stages. Keep the 1 mL trace-metal and 1 mL vitamin definitions separate from their parent media; preserve 8% bicarbonate and 5% sulfide labels without invented percent basis. The sulfide dose alone is explicitly per litre in this passage. Credit current importer stage preservation and the older migration preserving quantity bytes; neither makes the existing wrong units scientifically valid.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+The current record lacks the source pH adjustment, sterilization/addition sequence, dispensing example and final readjustment. Variable KOH remains an honest unquantified dose, but separate variable N2 and CO2 ingredients do not encode the explicit 4:1 atmosphere. Preserve these as preparation assertions with exact scope, without adding organism growth or incubation claims.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a5
+
+Only M288’s trace-metal subsection is relevant. Its shared water and 5.1/7.0 g/L Mn/Fe values combine distinct parent and stock stages, and HCl volume is stored as mass. Reconcile the exact scoped definition before using it in this medium; exclude the parent 2 mL dose and parent final-makeup instruction. Current no-sum cleanup and the earlier equal-water collapse do not repair unequal source-stage sums.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a6
+
+The scoped M288 cobalt and nickel rows name CoCl2·6H2O and NiCl2·6H2O, but CHEBI:35696 and CHEBI:34887 describe anhydrous salts. Correct exact supplied forms after authority verification; CHEBI:53503 confirms cobalt hexahydrate, while a replacement nickel identifier is not asserted here. These are primary term slots only. Calcium pantothenate CHEBI:31345 in the vitamin definition encodes D stereochemistry despite a generic label, so generic source wording alone does not certify that stereochemical specificity.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| jcm1175 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175; REVIEW_WORK/batch056/source07-09/jcm1175.json; exact original raw/text/hash/time metadata | context_only | Exact Caenicola mobile primary recipe and stock references |
+| jcm294 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=294; REVIEW_WORK/batch056/source07-09/jcm294.json; exact original raw/text/hash/time metadata | context_only | Caenicola trace-metal stock subsection only; exclude parent Halorhabdus basal composition |
+| jcm197 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; REVIEW_WORK/batch056/source07-09/jcm197.json; exact original raw/text/hash/time metadata | context_only | Caenicola trace-vitamin subsection only; exclude parent basal amounts/dose/preparation |
+| togo1259 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259; REVIEW_WORK/batch056/source07-09/togo1259.json; exact original raw/text/hash/time metadata | context_only | Exact selected provider recipe, source JCM1175 |
+| togo288 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288; REVIEW_WORK/batch056/source07-09/togo288.json; exact original raw/text/hash/time metadata | context_only | Referenced trace-metal subsection only; shared/merged parent values do not establish stock quantities |
+| togo190 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190; REVIEW_WORK/batch056/source07-09/togo190.json; exact original raw/text/hash/time metadata | context_only | Referenced trace-vitamin subsection only; no parent dose or basal transfer |
+| apiJ1175 | https://mediadive.dsmz.de/rest/medium/J1175; REVIEW_WORK/batch056/source07-09/apiJ1175.json; exact original raw/text/hash/time metadata | context_only | Current provider-declared normalization and source-stage structure; not independent primary final-volume proof |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; REVIEW_WORK/batch056/source07-09/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| target | data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-19 | reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/caenicola_mobile_medium.yaml.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| report-20 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| report-21 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| report-22 | reports/yaml_record_review/20260922T014735Z-CAENICOLA_MOBILE_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; its old source/check claims are not newly executed. Exact scope retained in history-report inventory. |
+| vitamin-dependency | data/normalized_yaml/bacterial/togo_medium_m190.yaml; solutions[1].composition; history provenance only | context_only | Only solutions[1].composition is a reusable vitamin definition. Its own receiving dose, other stocks, basal recipe and pH are excluded. Existing repair and 11 attached claims are retained. |
+| trace-dependency | data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml; ingredients[0,7,9,14..22]; source trace subsection only | context_only | Only trace-metal source correspondence is assessed, including mixed shared water/Mn/Fe fields. Parent basal fields, its 2 mL receiving dose and parent final-volume statement do not transfer. |
+| writer-togo | src/culturemech/import/togo_importer.py; _extract_primary_components, _solution_from_item, _parse_unit | context_only | Current importer separates primary sections and inline/reference stock definitions. It maps l to L, ml to ML_PER_L and mg to MG_PER_L; this already improves older flattened/unit-default records but can still imply an unproved per-litre denominator. Current behavior is not proof of old execution. |
+| writer-solution-migration | scripts/migrate_solutions_from_ingredients.py; _resolve_solution, _migrate_media_file | context_only | Current migrator preserves the original concentration while moving matched stock rows; unresolved references become empty stubs and name lookup uses one entry per lower-case name. It does not independently validate source dose units or recipe equivalence. |
+| writer-cleanup | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current duplicate cleanup avoids summing conflicting values and flags disagreements. Earlier unequal mixed-stage sums remain source-curation work. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377; REVIEW_WORK/batch056/source07-09/chebi15377.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710; REVIEW_WORK/batch056/source07-09/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch056/source07-09/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch056/source07-09/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; REVIEW_WORK/batch056/source07-09/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527; REVIEW_WORK/batch056/source07-09/chebi131527.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806; REVIEW_WORK/batch056/source07-09/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; REVIEW_WORK/batch056/source07-09/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588; REVIEW_WORK/batch056/source07-09/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi17561 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17561; REVIEW_WORK/batch056/source07-09/chebi17561.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi16467 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16467; REVIEW_WORK/batch056/source07-09/chebi16467.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi15971 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15971; REVIEW_WORK/batch056/source07-09/chebi15971.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi32035 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32035; REVIEW_WORK/batch056/source07-09/chebi32035.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16526; REVIEW_WORK/batch056/source07-09/chebi16526.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997; REVIEW_WORK/batch056/source07-09/chebi17997.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; REVIEW_WORK/batch056/source07-09/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; REVIEW_WORK/batch056/source07-09/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105; REVIEW_WORK/batch056/source07-09/chebi49105.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; REVIEW_WORK/batch056/source07-09/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; REVIEW_WORK/batch056/source07-09/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470; REVIEW_WORK/batch056/source07-09/chebi27470.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; REVIEW_WORK/batch056/source07-09/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015; REVIEW_WORK/batch056/source07-09/chebi17015.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; REVIEW_WORK/batch056/source07-09/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494; REVIEW_WORK/batch056/source07-09/chebi16494.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch056/source07-09/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249; REVIEW_WORK/batch056/source07-09/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch056/source07-09/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch056/source07-09/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:35696; REVIEW_WORK/batch056/source07-09/chebi35696.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch056/source07-09/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; REVIEW_WORK/batch056/source07-09/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976; REVIEW_WORK/batch056/source07-09/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939; REVIEW_WORK/batch056/source07-09/chebi63939.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| chebi30114 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30114; REVIEW_WORK/batch056/source07-09/chebi30114.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula only; no amount, preparation or growth support |
+| quantities | REVIEW_WORK/batch056/record09/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch056/record09/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch056/record09/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch056/record09/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch056/record09/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch056/record09/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch056/record09/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch056/record09/schema-result.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch056/record09/strict-result.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch056/record09/terms-result.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch056/record09/references-result.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- M190 receiving dose, basal recipe, other stocks and pH are excluded. M288 parent formulation/dose/final-volume instructions are excluded; only exact trace-source correspondence is assessed.
+- Provider mmol values and source percentage bases are not used to infer extra molar doses, density or a measured final volume.
+- No new standalone nickel-hydrate ID is proposed without exact authority verification.
+- Fresh JCM browser opens were inaccessible; successful direct public captures remain the evidence basis.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T052545Z-culturemech-007790-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: Caenicola Mobile Medium'
+started_at: '2026-10-28T05:13:10.412038Z'
+finished_at: '2026-10-28T05:25:45.610764Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Caenicola’s source identity is supported, but water/resazurin units, main
+  denominator claims, stock stubs and missing preparation require curation. Existing
+  vitamin-stock repairs are preserved, while scoped trace-definition and supplied-form
+  errors remain explicit. All four canonical checks passed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml
+    sha256: 396790f431d9b6f1811d9d01546e8875efd935b97442534fe608bf3cdc66f248
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+    sha256: 1644f9fe1de7dee1a18f97905de5fad8e6ae6425ba376ce1afa4424844322653
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    sha256: 1845c76948ce0cb71a9c32da821fe683112aa52c12bd3b32473b3ae3a0541ad1
+    role: context
+  - path: data/normalized_yaml/bacterial/caenicola_mobile_medium.yaml
+    sha256: 8863566d4d2e613c7d48ef217e3cdb9e0892c1afde6ac91dda36e39e4051432a
+    role: context
+  - path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/caenicola_mobile_medium.yaml.md
+    sha256: 3c11bf2527b807db397f84455921db8d5d4f87580078b9e3821603416a8d8250
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.md
+    sha256: 7093ef56ae5f21d2e5f05000f7af56f028760f0b38a3b721259552b243e05bf6
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.md
+    sha256: a129ec60a465ce1c8d3450f1857de79fa33014d203704545b557d364dcfd7b43
+    role: context
+  - path: reports/yaml_record_review/20260922T014735Z-CAENICOLA_MOBILE_MEDIUM.md
+    sha256: 4248128afb22529d381d83a5654a02f76990582ad8415550d6106545b8fb2f9e
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch056 index 09
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007790
+targets:
+- target_id: CultureMech:007790
+  path: data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml
+  label: caenicola_mobile_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  ownership_note: Exact maintained contributor identified from merged_from and current
+    record identity. Additional sources and stocks are scoped comparisons, not silently
+    added merge owners.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:007790
+  command: just validate-schema data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:007790
+  command: just validate-strict data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml
+    --out REVIEW_WORK/batch056/record09/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:007790
+  command: just validate-terms data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:007790
+  command: just validate-references data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: jcm1175
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175
+  accessed_at: '2026-10-28T05:13:33.307761Z'
+  locator: REVIEW_WORK/batch056/source07-09/jcm1175.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact Caenicola mobile primary recipe and stock references
+  snapshot_sha256: 1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b
+- evidence_id: jcm294
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=294
+  accessed_at: '2026-10-28T05:13:33.307717Z'
+  locator: REVIEW_WORK/batch056/source07-09/jcm294.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Caenicola trace-metal stock subsection only; exclude parent Halorhabdus
+    basal composition
+  snapshot_sha256: 49d3a7121dd8bcc72b3cd797e406cb3f5fb1dba6a7400e1e98a046a02d1bcecd
+- evidence_id: jcm197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  accessed_at: '2026-10-28T05:13:33.293620Z'
+  locator: REVIEW_WORK/batch056/source07-09/jcm197.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Caenicola trace-vitamin subsection only; exclude parent basal amounts/dose/preparation
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: togo1259
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259
+  accessed_at: '2026-10-28T05:13:34.092507Z'
+  locator: REVIEW_WORK/batch056/source07-09/togo1259.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact selected provider recipe, source JCM1175
+  snapshot_sha256: 2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f
+- evidence_id: togo288
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288
+  accessed_at: '2026-10-28T05:13:34.125469Z'
+  locator: REVIEW_WORK/batch056/source07-09/togo288.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Referenced trace-metal subsection only; shared/merged parent values do
+    not establish stock quantities
+  snapshot_sha256: ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca
+- evidence_id: togo190
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  accessed_at: '2026-10-28T05:13:34.125590Z'
+  locator: REVIEW_WORK/batch056/source07-09/togo190.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Referenced trace-vitamin subsection only; no parent dose or basal transfer
+  snapshot_sha256: 61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528
+- evidence_id: apiJ1175
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1175
+  accessed_at: '2026-10-28T05:13:34.752970Z'
+  locator: REVIEW_WORK/batch056/source07-09/apiJ1175.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Current provider-declared normalization and source-stage structure; not
+    independent primary final-volume proof
+  snapshot_sha256: 715642df19cdc62d3ed69581d663ebb71bd75a8ea438fad737efe668dc25c811
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  accessed_at: '2026-10-28T05:13:39.826932Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi53503.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:25:45.302969Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 396790f431d9b6f1811d9d01546e8875efd935b97442534fe608bf3cdc66f248
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T05:25:45.303496Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 1845c76948ce0cb71a9c32da821fe683112aa52c12bd3b32473b3ae3a0541ad1
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T05:25:45.303583Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T05:25:45.304139Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T05:25:45.304229Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T05:25:45.304269Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/bacterial/caenicola_mobile_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:25:45.304307Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 3c11bf2527b807db397f84455921db8d5d4f87580078b9e3821603416a8d8250
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:25:45.304458Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 7093ef56ae5f21d2e5f05000f7af56f028760f0b38a3b721259552b243e05bf6
+- evidence_id: report-21
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:25:45.304535Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: a129ec60a465ce1c8d3450f1857de79fa33014d203704545b557d364dcfd7b43
+- evidence_id: report-22
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T014735Z-CAENICOLA_MOBILE_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T05:25:45.304577Z'
+  support: context_only
+  summary: Prior exact-header assessment; its old source/check claims are not newly
+    executed. Exact scope retained in history-report inventory.
+  snapshot_sha256: 4248128afb22529d381d83a5654a02f76990582ad8415550d6106545b8fb2f9e
+- evidence_id: vitamin-dependency
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+  locator: solutions[1].composition; history provenance only
+  accessed_at: '2026-10-28T05:25:45.350966Z'
+  support: context_only
+  summary: Only solutions[1].composition is a reusable vitamin definition. Its own
+    receiving dose, other stocks, basal recipe and pH are excluded. Existing repair
+    and 11 attached claims are retained.
+  snapshot_sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+- evidence_id: trace-dependency
+  kind: record_content
+  reference: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+  locator: ingredients[0,7,9,14..22]; source trace subsection only
+  accessed_at: '2026-10-28T05:25:45.351149Z'
+  support: context_only
+  summary: Only trace-metal source correspondence is assessed, including mixed shared
+    water/Mn/Fe fields. Parent basal fields, its 2 mL receiving dose and parent final-volume
+    statement do not transfer.
+  snapshot_sha256: 1644f9fe1de7dee1a18f97905de5fad8e6ae6425ba376ce1afa4424844322653
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components, _solution_from_item, _parse_unit
+  accessed_at: '2026-10-28T05:25:45.351302Z'
+  support: context_only
+  summary: Current importer separates primary sections and inline/reference stock
+    definitions. It maps l to L, ml to ML_PER_L and mg to MG_PER_L; this already improves
+    older flattened/unit-default records but can still imply an unproved per-litre
+    denominator. Current behavior is not proof of old execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-solution-migration
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _resolve_solution, _migrate_media_file
+  accessed_at: '2026-10-28T05:25:45.351403Z'
+  support: context_only
+  summary: Current migrator preserves the original concentration while moving matched
+    stock rows; unresolved references become empty stubs and name lookup uses one
+    entry per lower-case name. It does not independently validate source dose units
+    or recipe equivalence.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T05:25:45.351479Z'
+  support: context_only
+  summary: Current duplicate cleanup avoids summing conflicting values and flags disagreements.
+    Earlier unequal mixed-stage sums remain source-curation work.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377
+  accessed_at: '2026-10-28T05:13:35.239341Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi15377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: a5ab66402b598c137daa8e5c8ba95811f1619db3e0f8b4f9bd0214161bafa0fe
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  accessed_at: '2026-10-28T05:13:36.931704Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi26710.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T05:13:40.737026Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86158.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T05:13:40.106651Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T05:13:37.529051Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi31206.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:131527
+  accessed_at: '2026-10-28T05:13:35.175502Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi131527.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 0a5297c84ea9dd82508960482211f6b3c993fd8e2b83fe755dd2b23316cc4068
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  accessed_at: '2026-10-28T05:13:41.933593Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi8806.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T05:13:41.329230Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588
+  accessed_at: '2026-10-28T05:13:38.570322Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32588.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 9494b26ad5d3ce43942c3e859cdefe4114e111b1d45328c0cd5faf3b75faec00
+- evidence_id: chebi17561
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17561
+  accessed_at: '2026-10-28T05:13:36.508928Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi17561.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 61779aad45069bf6a26607fb4a7d9ee4223af7ad79d5f81dfd4c1942e1dcebef
+- evidence_id: chebi16467
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16467
+  accessed_at: '2026-10-28T05:13:35.868864Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi16467.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 76908484d78aee98b267be10f7160931b1675dd26bdfed5e6077ddf8930138cd
+- evidence_id: chebi15971
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15971
+  accessed_at: '2026-10-28T05:13:35.797880Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi15971.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: ebcb473c527636f5cc516f1e27ee48a8c951472d315103c7f8522edd949a86fa
+- evidence_id: chebi32035
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32035
+  accessed_at: '2026-10-28T05:13:37.992585Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi32035.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: d0537d7c65cf63693a87f126d0f0f13501f6519f98fe7ca64fb07d469079571c
+- evidence_id: chebi16526
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16526
+  accessed_at: '2026-10-28T05:13:36.153805Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi16526.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 1fc9ed85cc20ea796dc5884bab2961c0cb13288fec88089767d5ca0349e6ab66
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17997
+  accessed_at: '2026-10-28T05:13:36.765036Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi17997.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: c4f240d59927c0f5c6c8d29c14830d0f278cfeabc4ed924be5c2b6bbe1039c05
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T05:13:35.484470Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi15956.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T05:13:37.365210Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi30753.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  accessed_at: '2026-10-28T05:13:39.597100Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi49105.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T05:13:37.679759Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi31345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T05:13:37.395459Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi30961.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  accessed_at: '2026-10-28T05:13:37.080805Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi27470.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T05:13:36.729227Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi176843.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  accessed_at: '2026-10-28T05:13:36.294720Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi17015.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T05:13:35.411785Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi15940.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  accessed_at: '2026-10-28T05:13:36.122242Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi16494.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T05:13:41.628354Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86368.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  accessed_at: '2026-10-28T05:13:41.032808Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86249.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T05:13:40.422752Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi75213.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T05:13:38.760181Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi33118.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi35696
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:35696
+  accessed_at: '2026-10-28T05:13:39.223311Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi35696.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 22f49067d1405baa8e2bbd7c4405035d8663c69aa045b7bbacf363bb30729244
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T05:13:38.957534Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi34887.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T05:13:41.219496Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi86318.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  accessed_at: '2026-10-28T05:13:39.812777Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi49976.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63939
+  accessed_at: '2026-10-28T05:13:40.211471Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi63939.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: 01f41117ab89dbd1d514a894850dc06afd5d95c0bee7fd89f7dfdb54c309c514
+- evidence_id: chebi30114
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30114
+  accessed_at: '2026-10-28T05:13:37.117119Z'
+  locator: REVIEW_WORK/batch056/source07-09/chebi30114.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula only; no amount, preparation
+    or growth support
+  snapshot_sha256: a58ccc808c2c34cd95c9a07761f2b3bdada765d0a323d3e5b296b5cf65ff0167
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record09/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:25:45.605643Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 2e29b78071009a67f1a68749ee024a9a00b7dca65d51ccba2da293c83a9ec90f
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record09/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:25:45.605799Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 64aa2c47f71aff711a4e05bbb8e50e74d32c73ddf83511b90e8917504a4723f6
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record09/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:25:45.606037Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: dd0f5f7dbf4beb4fc40a1dbb6fd0a082e7bfb79d86d4d2bdaff1dcd0745d91ec
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record09/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:25:45.606323Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 0cbbf7a0635d8c58e5bdf04db1db659da8fb36c55cf10d43673dd41a0c254ff6
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record09/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:25:45.606489Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 0191b7a20777e5a23047213a42c971ca3c87e80ae9ff806b20b6f445d7ee2058
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record09/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:25:45.606645Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 7178b781fda4a89aa6d08f45be60c0a086908718884ef3f4d7259697bd454bff
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record09/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T05:25:45.606713Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 54e0a0c699fa4b62d4ec37abcb05aa79fe30391ca6db8c8a9c1a76c9cbd44a5d
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch056/record09/schema-result.json
+  accessed_at: '2026-10-28T05:13:11.633720Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 257cd865384cc5505442cb5df9909d955b667d2948cec221a4b6f6ad7a4679b0
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch056/record09/strict-result.json
+  accessed_at: '2026-10-28T05:13:12.755525Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: ed7efc614e82b0d5ede54d490317a5024ee84b44008e01fc9dc5efa9637b4834
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch056/record09/terms-result.json
+  accessed_at: '2026-10-28T05:13:14.022946Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: c1be2461cc395a5c24538275537ddb385b8813605769ede615f3fa3f1e27aaa3
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch056/record09/references-result.json
+  accessed_at: '2026-10-28T05:13:14.848592Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: c4511d4b12e03cfd7edeccaeb495f0a962c3a94a705eb91c8731e26d58714498
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact TOGO M1259 / JCM1175 identity
+  outcome: supported
+  summary: The current TOGO metadata points to JCM1175 and matches its title/formula.
+    The MediaDive namesake is a separate comparison record, not an additional merged
+    owner. Its October 7 source report cannot transfer ownership or assert strain
+    growth.
+  target_ids:
+  - CultureMech:007790
+  evidence_ids:
+  - togo1259
+  - jcm1175
+  - apiJ1175
+  - owner
+- assessment_id: classification
+  area: representation
+  topic: Complex undefined liquid formulation
+  outcome: supported
+  summary: Yeast extract, tryptone and casamino acids support retaining COMPLEX/UNDEFINED
+    and liquid state. Current source identity does not establish a specific taxon-growth
+    statement.
+  target_ids:
+  - CultureMech:007790
+  evidence_ids:
+  - jcm1175
+  - owner
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 57 current concentration fields are covered by 47 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:007790
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b056-quantity-inventory-v1","target":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","quantity_field_count":57,"decisions":[{"quantity_id":"q1","label":"Distilled
+    water","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"975","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"975","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source gives 975 mL water input, not 975 g/L and not final makeup. Preserve dimensionality
+    without density inference.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 69-71","quote":"Distilled water\n975.0\nml","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 975,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\":
+    \"Solvating media\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 43-45","quote":"Yeast extract\n2.0\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[1]","quote":"{\n          \"component_name\":
+    \"Yeast extract\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\":
+    \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"NaCl","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 23-25","quote":"NaCl\n0.4\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[2]","quote":"{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"CaCl2・2H2O","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 33-39","quote":"CaCl\n2\n·2H\n2\nO\n0.05\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[3]","quote":"{\n          \"component_name\":
+    \"CaCl2・2H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q5","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 6-11","quote":"KH\n2\nPO\n4\n0.5\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[4]","quote":"{\n          \"component_name\":
+    \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\":
+    \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q6","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 18-22","quote":"NH\n4\nCl\n0.5\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[5]","quote":"{\n          \"component_name\":
+    \"NH4Cl\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001008\",\n          \"gmo_id\": \"GMO_001008\",\n          \"label\":
+    \"Ammonium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q7","label":"K2HPO4","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 12-17","quote":"K\n2\nHPO\n4\n0.5\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[6]","quote":"{\n          \"component_name\":
+    \"K2HPO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\":
+    \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q8","label":"Resazurin","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    primary and TOGO give 1 mg resazurin, not 1 g/L. Correct the mass scale while
+    retaining the unresolved receiving final-volume basis; do not silently replace
+    it with an assumed 1 mg/L.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 66-68","quote":"Resazurin\n1.0\nmg","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[7]","quote":"{\n          \"component_name\":
+    \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001012\",\n          \"gmo_id\": \"GMO_001012\",\n          \"label\":
+    \"Resazurin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\":
+    \"pH dependent redox indicator\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q9","label":"MgCl2・6H2O","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 26-32","quote":"MgCl\n2\n·6H\n2\nO\n0.3\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[8]","quote":"{\n          \"component_name\":
+    \"MgCl2・6H2O\",\n          \"volume\": 0.3,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001013\",\n          \"gmo_id\": \"GMO_001013\",\n          \"label\":
+    \"Magnesium chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 40-42","quote":"KCl\n0.4\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[9]","quote":"{\n          \"component_name\":
+    \"KCl\",\n          \"volume\": 0.4,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\": \"GMO_001017\",\n          \"label\":
+    \"Potassium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"L-Cysteine","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.4","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"2.4","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 52-54","quote":"L-Cysteine\n2.4\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[10]","quote":"{\n          \"component_name\":
+    \"L-Cysteine\",\n          \"volume\": 2.4,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001318\",\n          \"gmo_id\": \"GMO_001318\",\n          \"label\":
+    \"Cysteine\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\":
+    \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q12","label":"L-Arginine","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"4.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"4.2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 55-57","quote":"L-Arginine\n4.2\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[11]","quote":"{\n          \"component_name\":
+    \"L-Arginine\",\n          \"volume\": 4.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001767\",\n          \"gmo_id\": \"GMO_001767\",\n          \"label\":
+    \"L-Arginine\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\":
+    \"Nitrogen source\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q13","label":"L-Histidine","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"4.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"4.2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 58-60","quote":"L-Histidine\n4.2\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[12]","quote":"{\n          \"component_name\":
+    \"L-Histidine\",\n          \"volume\": 4.2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001872\",\n          \"gmo_id\": \"GMO_001872\",\n          \"label\":
+    \"L-Histidine\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q14","label":"Tryptone
+    (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 46-48","quote":"Tryptone (BD-Difco)\n2.0\ng","quote_basis":"derivative text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[13]","quote":"{\n          \"component_name\":
+    \"Tryptone (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001043\",\n          \"gmo_id\": \"GMO_001043\",\n          \"label\":
+    \"Bacto &trade; Tryptone\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q15","label":"Casamino acids (BD-Difco)","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"2","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"The
+    source gives this gram amount per listed preparation batch. Its 975 mL water and
+    subsequent additions do not certify the stored G_PER_L denominator. API J1175
+    separately normalizes to a declared 1010 mL volume and different g_l values, so
+    it does not authenticate this exact local rate. Preserve the batch amount without
+    guessing final volume.","source_stage":"main preparation batch","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 49-51","quote":"Casamino acids (BD-Difco)\n2.0\ng","quote_basis":"derivative
+    text"},{"evidence_id":"togo1259","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1259","raw_path":"REVIEW_WORK/batch056/source07-09/togo1259.raw","raw_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","text_sha256":"2c1e3647a92ee9976acb312a8295b8f484fe374f51d0b3b4b7727d0279f5795f","accessed_at":"2026-10-28T05:13:34.092507Z","locator":"components[0].items[14]","quote":"{\n          \"component_name\":
+    \"Casamino acids (BD-Difco)\",\n          \"volume\": 2,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001705\",\n          \"gmo_id\":
+    \"GMO_001705\",\n          \"label\": \"Bacto &trade; Casamino acids\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": []\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q16","label":"KOH","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"not_quantified","rationale":"KOH
+    is an unquantified pH-adjustment reagent, so retain an honest unknown dose with
+    the source pH endpoint.","source_stage":"adjustment / gas preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 72-76","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and
+    autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the
+    following solutions (filter-sterilized):","quote_basis":"derivative text"}]},{"quantity_id":"q17","label":"Carbon
+    dioxide gas","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The
+    source specifies the gas atmosphere as N2/CO2 4:1; these variable ingredient amounts
+    do not capture the ratio or its preparation role. Do not invent a liquid concentration.","source_stage":"adjustment
+    / gas preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 72-76","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and
+    autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the
+    following solutions (filter-sterilized):","quote_basis":"derivative text"}]},{"quantity_id":"q18","label":"Nitrogen
+    gas","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"variable","unit":"VARIABLE"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"variable","unit":"VARIABLE"}}],"decision":"correct","rationale":"The
+    source specifies the gas atmosphere as N2/CO2 4:1; these variable ingredient amounts
+    do not capture the ratio or its preparation role. Do not invent a liquid concentration.","source_stage":"adjustment
+    / gas preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 72-76","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and
+    autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the
+    following solutions (filter-sterilized):","quote_basis":"derivative text"}]},{"quantity_id":"q19","label":"Trace
+    metal solution (see Medium [M288])","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[0].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is a liquid stock dose, not a solute mass. Retain exact stock identity, source
+    strength and addition stage. The sulfide instruction explicitly says per litre;
+    the other table doses retain their batch basis. Percent basis is unstated and
+    must not become assumed w/v. Empty Unknown stubs need scoped definitions, not
+    whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 61-65","quote":"Trace metal solution (see Medium No.\n294\n)\n1.0\nml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q20","label":"8% NaHCO3 solution","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[1].concentration","stored":{"value":"25","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[1].concentration","stored":{"value":"25","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is a liquid stock dose, not a solute mass. Retain exact stock identity, source
+    strength and addition stage. The sulfide instruction explicitly says per litre;
+    the other table doses retain their batch basis. Percent basis is unstated and
+    must not become assumed w/v. Empty Unknown stubs need scoped definitions, not
+    whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 77-81","quote":"8% NaHCO\n3\nsolution\n25.0\nml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q21","label":"Trace vitamins (see Medium [M190])","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[2].concentration","stored":{"value":"1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[2].concentration","stored":{"value":"1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is a liquid stock dose, not a solute mass. Retain exact stock identity, source
+    strength and addition stage. The sulfide instruction explicitly says per litre;
+    the other table doses retain their batch basis. Percent basis is unstated and
+    must not become assumed w/v. Empty Unknown stubs need scoped definitions, not
+    whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 82-86","quote":"Trace vitamins (see Medium No.\n197\n)\n1.0\nml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q22","label":"5% Na2S・9H2O solution","local_fields":[{"path":"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml","field_path":"solutions[3].concentration","stored":{"value":"8","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml","field_path":"solutions[3].concentration","stored":{"value":"8","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is a liquid stock dose, not a solute mass. Retain exact stock identity, source
+    strength and addition stage. The sulfide instruction explicitly says per litre;
+    the other table doses retain their batch basis. Percent basis is unstated and
+    must not become assumed w/v. Empty Unknown stubs need scoped definitions, not
+    whole parent-medium transfer.","source_stage":"receiving stock addition","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 94-100","quote":"5% Na\n2\nS·9H\n2\nO solution\n8.0\nml","quote_basis":"derivative
+    text"}]},{"quantity_id":"q23","label":"M190 vitamin Distilled water","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[0].concentration","stored":{"value":"1","unit":"L"}}],"decision":"verified","rationale":"The
+    existing source evidence and current exact TOGO raw digest authenticate this stock
+    water input or batch-mass note. Credit the prior removal of unsupported g/L fields.
+    Only the vitamin composition transfers as a definition; its parent 10 mL dose,
+    pH and other ingredients remain excluded.","source_stage":"vitamin stock definition
+    only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q24","label":"M190
+    vitamin Biotin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[1].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 2 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\":
+    \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001025\",\n          \"gmo_id\": \"GMO_001025\",\n          \"label\":
+    \"Biotin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q25","label":"M190 vitamin p--Aminobenzoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[2].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\":
+    \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001026\",\n          \"gmo_id\": \"GMO_001026\",\n          \"label\":
+    \"4-Aminobenzoic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q26","label":"M190 vitamin Thiamine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[3].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\":
+    \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001027\",\n          \"gmo_id\": \"GMO_001027\",\n          \"label\":
+    \"Thiamine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q27","label":"M190 vitamin Calcium pantothenate","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[4].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\":
+    \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001028\",\n          \"gmo_id\": \"GMO_001028\",\n          \"label\":
+    \"Calcium pantothenate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q28","label":"M190 vitamin Pyridoxine・HCl","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[5].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 10 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\":
+    \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001029\",\n          \"gmo_id\": \"GMO_001029\",\n          \"label\":
+    \"Pyridoxine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q29","label":"M190 vitamin Folic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[6].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 2 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\":
+    \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001033\",\n          \"gmo_id\": \"GMO_001033\",\n          \"label\":
+    \"Folic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q30","label":"M190 vitamin Vitamin B12","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[7].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 0.1 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\":
+    \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001034\",\n          \"gmo_id\": \"GMO_001034\",\n          \"label\":
+    \"Cobalamin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q31","label":"M190 vitamin Riboflavin","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[8].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\":
+    \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001037\",\n          \"gmo_id\": \"GMO_001037\",\n          \"label\":
+    \"Riboflavin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q32","label":"M190 vitamin Nicotinic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[9].notes","stored":"Role:
+    Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\":
+    \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001038\",\n          \"gmo_id\": \"GMO_001038\",\n          \"label\":
+    \"Nicotinic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q33","label":"M190 vitamin Lipoic acid","local_fields":[{"path":"data/normalized_yaml/bacterial/togo_medium_m190.yaml","field_path":"solutions[1].composition[10].notes","stored":"Role:
+    Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}],"decision":"verified","rationale":"The existing source evidence
+    and current exact TOGO raw digest authenticate this stock water input or batch-mass
+    note. Credit the prior removal of unsupported g/L fields. Only the vitamin composition
+    transfers as a definition; its parent 10 mL dose, pH and other ingredients remain
+    excluded.","source_stage":"vitamin stock definition only","sources":[{"evidence_id":"togo190","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190","raw_path":"REVIEW_WORK/batch056/source07-09/togo190.raw","raw_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","text_sha256":"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528","accessed_at":"2026-10-28T05:13:34.125590Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\":
+    \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001699\",\n          \"gmo_id\": \"GMO_001699\",\n          \"label\":
+    \"Lipoic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000067\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000067\",\n              \"label\": \"Growth factor\"\n            }\n          ]\n        }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q34","label":"M288 trace Distilled water","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"1.0","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    shared local value collapses distinct parent/trace stages; preserve the trace
+    source water input separately.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[1]","quote":"{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"M288
+    trace MnCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"5.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    local number combines a parent-milligram row and a trace-stock gram row. Keep
+    the exact trace batch amount independent; do not transfer or sum the parent contribution.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[4]","quote":"{\n          \"component_name\":
+    \"MnCl2・4H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001020\",\n          \"gmo_id\": \"GMO_001020\",\n          \"label\":
+    \"Manganese chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"M288
+    trace FeCl2・4H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"7.0","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    local number combines a parent-milligram row and a trace-stock gram row. Keep
+    the exact trace batch amount independent; do not transfer or sum the parent contribution.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[11]","quote":"{\n          \"component_name\":
+    \"FeCl2・4H2O\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001548\",\n          \"gmo_id\": \"GMO_001548\",\n          \"label\":
+    \"Iron(II) chloride tetrahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q37","label":"M288
+    trace HCl (32%)","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"10","unit":"G_PER_L"}}],"decision":"correct","rationale":"The
+    source gives 10 mL of 32% hydrochloric acid, not 10 g/L. Percent basis and density
+    are not independently established.","source_stage":"trace stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[0]","quote":"{\n          \"component_name\":
+    \"HCl (32%)\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    32,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001499\",\n          \"gmo_id\":
+    \"GMO_001499\",\n          \"label\": \"Hydrochloric acid solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q38","label":"M288
+    trace Na2MoO4・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.04","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[2]","quote":"{\n          \"component_name\":
+    \"Na2MoO4・2H2O\",\n          \"volume\": 0.04,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\":
+    \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q39","label":"M288
+    trace H3BO3","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[3]","quote":"{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 0.006,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q40","label":"M288
+    trace CoCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.25","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[5]","quote":"{\n          \"component_name\":
+    \"CoCl2・6H2O\",\n          \"volume\": 0.25,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001021\",\n          \"gmo_id\": \"GMO_001021\",\n          \"label\":
+    \"Cobalt dichloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q41","label":"M288
+    trace NiCl2・6H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[6]","quote":"{\n          \"component_name\":
+    \"NiCl2・6H2O\",\n          \"volume\": 0.07,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001022\",\n          \"gmo_id\": \"GMO_001022\",\n          \"label\":
+    \"Nickel chloride hexahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q42","label":"M288
+    trace CuCl2・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.002","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[7]","quote":"{\n          \"component_name\":
+    \"CuCl2・2H2O\",\n          \"volume\": 0.002,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001024\",\n          \"gmo_id\": \"GMO_001024\",\n          \"label\":
+    \"Copper(II) chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q43","label":"M288
+    trace ZnCl2","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.07","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[8]","quote":"{\n          \"component_name\":
+    \"ZnCl2\",\n          \"volume\": 0.07,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001035\",\n          \"gmo_id\": \"GMO_001035\",\n          \"label\":
+    \"Zinc chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q44","label":"M288
+    trace Na2WO4・2H2O","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.006","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[9]","quote":"{\n          \"component_name\":
+    \"Na2WO4・2H2O\",\n          \"volume\": 0.006,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001057\",\n          \"gmo_id\": \"GMO_001057\",\n          \"label\":
+    \"Sodium tungstate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q45","label":"M288
+    trace AlCl3","local_fields":[{"path":"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.025","unit":"G_PER_L"}}],"decision":"unsupported","rationale":"This
+    gram amount belongs to the trace-stock batch. Listed 1 L input water is not explicit
+    final makeup; the local G_PER_L field remains unsupported. API J1175 declares
+    a different stock normalization, which cannot authenticate this exact value.","source_stage":"trace
+    stock only; parent excluded","sources":[{"evidence_id":"togo288","reference":"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M288","raw_path":"REVIEW_WORK/batch056/source07-09/togo288.raw","raw_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","text_sha256":"ae927522fd51535da56357e38e22c128231b0645866c2a1545469ce94d91b3ca","accessed_at":"2026-10-28T05:13:34.125469Z","locator":"components[1].items[10]","quote":"{\n          \"component_name\":
+    \"AlCl3\",\n          \"volume\": 0.025,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001255\",\n          \"gmo_id\": \"GMO_001255\",\n          \"label\":
+    \"Aluminum chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q46","label":"Main
+    preparation and final adjustment","local_fields":[],"decision":"evidence_only","rationale":"Retain
+    pH 7.5, KOH adjustment, N2/CO2 4:1 atmosphere, base autoclaving and separate filtered
+    additions. The post-addition pH readjustment is explicit. These are source preparation
+    instructions, not strain growth conditions.","source_stage":"source-only preparation","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 72-101","quote":"Mix components thoroughly, adjust pH to 7.5 with KOH and
+    autoclave under a N\n2\n-CO\n2\n(4:1, v/v) gas mixture.  After cooling, add the
+    following solutions (filter-sterilized):\n8% NaHCO\n3\nsolution\n25.0\nml\nTrace
+    vitamins (see Medium No.\n197\n)\n1.0\nml\nAseptically and anaerobically distribute
+    the medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottles) under
+    a N\n2\n-CO\n2\n(4:1, v/v) gas mixture and seal with butyl rubber stoppers.  Then,
+    add per liter the following solution (autoclaved and stored under N\n2\n):\n5%
+    Na\n2\nS·9H\n2\nO solution\n8.0\nml\nReadjust pH to 7.5, if necessary.","quote_basis":"derivative
+    text"}]},{"quantity_id":"q47","label":"Dispensing example and generic sterilization","local_fields":[],"decision":"evidence_only","rationale":"The
+    example is 20 mL medium in 60 mL bottles; it is not the recipe final-volume denominator.
+    The generic JCM default is 121°C for 15 minutes unless otherwise specified, and
+    does not override filter-sterilized additions.","source_stage":"source-only dispensing
+    / sterilization","sources":[{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 4-4","quote":"Unless otherwise stated, sterilize media by autoclaving at
+    121°C for 15 min.","quote_basis":"derivative text"},{"evidence_id":"jcm1175","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1175","raw_path":"REVIEW_WORK/batch056/source07-09/jcm1175.raw","raw_sha256":"1eca6beaaab53680eedefcee3fc2a2e1579e2f094be68c5540f977d58382bb9b","text_sha256":"40fcafc6ca2115cf38395cae17e743ef83b05651331dd0cb9537d7dbdb6f19c2","accessed_at":"2026-10-28T05:13:33.307761Z","locator":"jcm1175.txt
+    lines 87-93","quote":"Aseptically and anaerobically distribute the medium into
+    culture vessels (e.g., 20 ml medium in 60 ml serum bottles) under a N\n2\n-CO\n2\n(4:1,
+    v/v) gas mixture and seal with butyl rubber stoppers.  Then, add per liter the
+    following solution (autoclaved and stored under N\n2\n):","quote_basis":"derivative
+    text"}]}],"document_scopes":{"data/merge_yaml/merged/CAENICOLA_MOBILE_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml":null,"data/normalized_yaml/bacterial/togo_medium_m190.yaml":["solutions[1].composition"],"data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml":["ingredients[0]","ingredients[7]","ingredients[9]","ingredients[14]","ingredients[15]","ingredients[16]","ingredients[17]","ingredients[18]","ingredients[19]","ingredients[20]","ingredients[21]","ingredients[22]"]},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All current target/owner and declared dependency CHEBI slots are joined
+    to fresh exact OLS objects and current MIM rows. The trace cobalt/nickel primary
+    IDs are anhydrous despite source hexahydrates. Generic calcium-pantothenate source
+    wording leaves the term’s D stereochemistry unverified; vitamin B12 and lipoic-acid
+    generic source forms do not justify finer substitutions. Main named hydrates and
+    free resazurin are retained; no sodium resazurin is invented.
+  target_ids:
+  - CultureMech:007790
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: 'The full current main histories, September review, two October 5 reports
+    and the separate MediaDive namesake October 7 report were read. The latter names
+    a different maintained record and retained its quantities unchanged; its raw digest
+    equals the current API bytes, which authenticates content but not independently
+    the old timestamp. M190 already restored vitamin containment and batch-mass notes:
+    all 11 existing scoped claims match the current exact raw digest and are credited.
+    Current importer, migration, no-sum cleanup and conservative merge behavior are
+    distinguished from historical execution.'
+  target_ids:
+  - CultureMech:007790
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-007790-water-and-resazurin-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water volume and resazurin mass have incorrect units
+  description: Both layers encode 975 g/L water and 1 g/L resazurin where JCM1175/TOGO
+    M1259 give 975 mL water and 1 mg resazurin. Restore the literal input dimensions
+    and mass scale without inventing density or a measured final litre. Current TOGO
+    mg/litre unit handling and l→L mapping should be credited, not described as unchanged
+    historical behavior.
+  target_ids:
+  - CultureMech:007790
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[7].concentration
+  evidence_ids:
+  - jcm1175
+  - togo1259
+  - writer-togo
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-007790-main-denominator
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The remaining main masses have an unproved final-volume denominator
+  description: The source lists gram inputs plus 975 mL water and staged additions.
+    Those batch masses do not establish the identical G_PER_L assertions. API J1175
+    has explicit but different provider-normalized rates based on its declared 1010
+    mL; do not silently treat that declaration as the primary measured final volume
+    or equate the two value sets.
+  target_ids:
+  - CultureMech:007790
+  field_paths:
+  - ingredients
+  evidence_ids:
+  - jcm1175
+  - togo1259
+  - apiJ1175
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-007790-stock-doses-and-links
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Four receiving stocks are empty stubs with mass units
+  description: Restore liquid doses and exact stock identities at their source stages.
+    Keep the 1 mL trace-metal and 1 mL vitamin definitions separate from their parent
+    media; preserve 8% bicarbonate and 5% sulfide labels without invented percent
+    basis. The sulfide dose alone is explicitly per litre in this passage. Credit
+    current importer stage preservation and the older migration preserving quantity
+    bytes; neither makes the existing wrong units scientifically valid.
+  target_ids:
+  - CultureMech:007790
+  field_paths:
+  - solutions
+  evidence_ids:
+  - jcm1175
+  - togo1259
+  - writer-togo
+  - writer-solution-migration
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+    role: scoped dependency
+- finding_id: f4
+  issue_key: culturemech-007790-preparation-and-gases
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The source preparation sequence and gas ratio are absent
+  description: The current record lacks the source pH adjustment, sterilization/addition
+    sequence, dispensing example and final readjustment. Variable KOH remains an honest
+    unquantified dose, but separate variable N2 and CO2 ingredients do not encode
+    the explicit 4:1 atmosphere. Preserve these as preparation assertions with exact
+    scope, without adding organism growth or incubation claims.
+  target_ids:
+  - CultureMech:007790
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - ingredients[15]
+  - ingredients[16]
+  - ingredients[17]
+  evidence_ids:
+  - jcm1175
+  - togo1259
+  rule_id: review-yaml-record/completeness
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+- finding_id: f5
+  issue_key: culturemech-007790-trace-definition-corruption
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The referenced trace definition still mixes parent and stock fields
+  description: Only M288’s trace-metal subsection is relevant. Its shared water and
+    5.1/7.0 g/L Mn/Fe values combine distinct parent and stock stages, and HCl volume
+    is stored as mass. Reconcile the exact scoped definition before using it in this
+    medium; exclude the parent 2 mL dose and parent final-makeup instruction. Current
+    no-sum cleanup and the earlier equal-water collapse do not repair unequal source-stage
+    sums.
+  target_ids:
+  - CultureMech:007790
+  field_paths:
+  - data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml::ingredients[0]
+  - data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml::ingredients[7]
+  - data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml::ingredients[9]
+  - data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml::ingredients[14]
+  evidence_ids:
+  - trace-dependency
+  - togo288
+  - jcm294
+  - writer-cleanup
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+    role: scoped dependency
+- finding_id: f6
+  issue_key: culturemech-007790-trace-hydrate-identifiers
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two trace-source hexahydrates carry anhydrous identifiers
+  description: The scoped M288 cobalt and nickel rows name CoCl2·6H2O and NiCl2·6H2O,
+    but CHEBI:35696 and CHEBI:34887 describe anhydrous salts. Correct exact supplied
+    forms after authority verification; CHEBI:53503 confirms cobalt hexahydrate, while
+    a replacement nickel identifier is not asserted here. These are primary term slots
+    only. Calcium pantothenate CHEBI:31345 in the vitamin definition encodes D stereochemistry
+    despite a generic label, so generic source wording alone does not certify that
+    stereochemical specificity.
+  target_ids:
+  - CultureMech:007790
+  field_paths:
+  - data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml::ingredients[17].term
+  - data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml::ingredients[18].term
+  - data/normalized_yaml/bacterial/togo_medium_m190.yaml::solutions[1].composition[4].term
+  evidence_ids:
+  - jcm294
+  - togo288
+  - chebi35696
+  - chebi34887
+  - chebi53503
+  - chebi31345
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped dependency
+actions:
+- action_id: a1
+  description: Both layers encode 975 g/L water and 1 g/L resazurin where JCM1175/TOGO
+    M1259 give 975 mL water and 1 mg resazurin. Restore the literal input dimensions
+    and mass scale without inventing density or a measured final litre. Current TOGO
+    mg/litre unit handling and l→L mapping should be credited, not described as unchanged
+    historical behavior.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007790
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The source lists gram inputs plus 975 mL water and staged additions.
+    Those batch masses do not establish the identical G_PER_L assertions. API J1175
+    has explicit but different provider-normalized rates based on its declared 1010
+    mL; do not silently treat that declaration as the primary measured final volume
+    or equate the two value sets.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007790
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: Restore liquid doses and exact stock identities at their source stages.
+    Keep the 1 mL trace-metal and 1 mL vitamin definitions separate from their parent
+    media; preserve 8% bicarbonate and 5% sulfide labels without invented percent
+    basis. The sulfide dose alone is explicitly per litre in this passage. Credit
+    current importer stage preservation and the older migration preserving quantity
+    bytes; neither makes the existing wrong units scientifically valid.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007790
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: The current record lacks the source pH adjustment, sterilization/addition
+    sequence, dispensing example and final readjustment. Variable KOH remains an honest
+    unquantified dose, but separate variable N2 and CO2 ingredients do not encode
+    the explicit 4:1 atmosphere. Preserve these as preparation assertions with exact
+    scope, without adding organism growth or incubation claims.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007790
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a5
+  description: Only M288’s trace-metal subsection is relevant. Its shared water and
+    5.1/7.0 g/L Mn/Fe values combine distinct parent and stock stages, and HCl volume
+    is stored as mass. Reconcile the exact scoped definition before using it in this
+    medium; exclude the parent 2 mL dose and parent final-makeup instruction. Current
+    no-sum cleanup and the earlier equal-water collapse do not repair unequal source-stage
+    sums.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:007790
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a6
+  description: The scoped M288 cobalt and nickel rows name CoCl2·6H2O and NiCl2·6H2O,
+    but CHEBI:35696 and CHEBI:34887 describe anhydrous salts. Correct exact supplied
+    forms after authority verification; CHEBI:53503 confirms cobalt hexahydrate, while
+    a replacement nickel identifier is not asserted here. These are primary term slots
+    only. Calcium pantothenate CHEBI:31345 in the vitamin definition encodes D stereochemistry
+    despite a generic label, so generic source wording alone does not certify that
+    stereochemical specificity.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:007790
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1259_Caenicola_Mobile_Medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M288_Halorhabdus_Medium.yaml
+    role: scoped dependency
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped dependency
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- M190 receiving dose, basal recipe, other stocks and pH are excluded. M288 parent
+  formulation/dose/final-volume instructions are excluded; only exact trace-source
+  correspondence is assessed.
+- Provider mmol values and source percentage bases are not used to infer extra molar
+  doses, density or a measured final volume.
+- No new standalone nickel-hydrate ID is proposed without exact authority verification.
+- Fresh JCM browser opens were inaccessible; successful direct public captures remain
+  the evidence basis.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```

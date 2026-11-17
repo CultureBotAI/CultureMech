@@ -1,0 +1,856 @@
+# Brucella agar M2694: limited bibliography and provenance review
+
+- Review: 20261028T052400Z-batch056-record03-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T05:11:08.738259Z
+- Finished UTC: 2026-10-28T05:24:00.936998Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: false
+
+## Summary
+
+The selected TOGO record and its maintained contributor are structurally consistent, but the upstream source URL is blank and no primary citation is recorded. A matching excerpt points to a paper on a clinical Acidaminococcus intestini isolate. This review is deliberately partial and non-operational: existing quantities are retained unchanged in a private census and are not scientifically assessed.
+
+## Scope And Provenance
+
+Non-operational identity, bibliography, provenance and schema review; existing operational claims are unassessed.
+
+Selection: Actual batch056 native selection index 03.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009246 | data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml | generated | brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009246 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:009246 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:009246 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:009246 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact record and contributor identity
+
+identity: supported. Targets: CultureMech:009246.
+
+The stable CultureMech ID, TOGO M2694 identity, original title and one maintained contributor agree. The title alone does not establish cultivation of a Brucella species. No organism or strain target is inferred from the medium name.
+
+### Bibliographic correspondence has a limited scope
+
+provenance: concern. Targets: CultureMech:009246.
+
+PMID22123762 and DOI10.1128/JB.06301-11 identify the primary genome paper and its clinical isolate. Textual correspondence is a useful attribution lead, but the TOGO source URL is blank and the record contains no primary citation or documented import lineage. The paper is not treated as authentication of every component in the TOGO table.
+
+### Restricted clinical-source review
+
+scope: not_applicable. Targets: CultureMech:009246.
+
+The primary paper explicitly concerns a clinical isolate. This review is limited to identity, bibliography, provenance, taxonomy scope and schema. It neither validates nor repairs any formulation, concentration, stock, preparation, incubation or growth claim. No target-organism assertion is transferred from the paper.
+
+### Structural identifier census only
+
+grounding: supported. Targets: CultureMech:009246.
+
+Existing primary and secondary identifier/label slots are recorded with current OLS/catalog metadata. This is a structural identity inventory, not a recommendation for recipe chemistry or a judgment that an ingredient, form or amount is appropriate for a clinical isolate. Current catalog membership is not historical authentication.
+
+### Quantity scope and inventory
+
+quantity: not_applicable. Targets: CultureMech:009246.
+
+Existing quantities are privately inventoried unchanged and not assessed. No source-derived formulation, concentration, stock or condition correction is proposed.
+
+Private inventory records existing fields without scientific validation or operational recommendations.
+
+### Current ontology and MIM correspondence
+
+grounding: supported. Targets: CultureMech:009246.
+
+The grounding inventory enumerates every asserted identifier and exact preferred label. Exact identifier rows and ontology-linked rows are recorded separately, including mapping_status. Present catalog membership does not validate supplied hydrate form or historical identity; specific limits are assessed separately.
+
+### History and evidence scope
+
+provenance: supported. Targets: CultureMech:009246.
+
+Complete owner and target histories were read. Current source bytes and inspected code are independent evidence; historical timestamps remain historical claims unless an exact cited raw digest is recovered.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:009246.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:009246.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: The primary bibliographic attribution is missing
+
+major / open / confirmed; issue key: culturemech-009246-the-primary-bibliographic-attribution-is-missing.
+
+The selected record and its owner point only to TOGO M2694; current TOGO src_url is blank. An excerpt corresponds to the D'Auria clinical-isolate paper, whose DOI and PMID are verified, but neither a primary citation nor a documented source-to-import chain is stored. This is an attribution gap; it does not establish that the paper authenticates the entire TOGO composition.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Document the verified bibliographic identity and the limited excerpt correspondence, clearly separating that lead from an unverified import chain. Preserve the original source history and leave all operational content unchanged and unassessed.
+
+- The primary citation identifiers and bibliographic identity are exact, and attribution uncertainty is explicit.
+- Existing operational fields remain unchanged and unassessed; no recipe or cultivation correction is introduced.
+- The generated target preserves the maintained contributor identity and passes the canonical structural diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| togo2694 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2694; $.meta.gm/name/src_url; comments considered only for provenance correspondence | supports | Current TOGO metadata identifies M2694 and its exact title; src_url is empty. The unreferenced excerpt has bibliographic correspondence to the paper identified separately. Operational recipe content was excluded from this review. |
+| togo2694page | https://togomedium.org/medium/M2694; Current page text; title/application shell | context_only | The current public page is a JavaScript shell and provides no additional independently readable bibliographic attribution. |
+| pmid22123762 | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:22123762%20AND%20SRC:MED&amp;format=json; $.resultList.result[0]: id/pmid/pmcid/doi/title/authors/journal/year/pages | supports | The bibliographic service joins PMID22123762, PMC3232847 and DOI10.1128/JB.06301-11 to the 2011 genome paper by D'Auria and colleagues, pages7008–7009. This verifies citation identity, not the TOGO import path or its full composition. |
+| paperClinicalIdentity | https://www.uv.es/symbiosis/pdfs/2011_DAuria_2011.pdf; Title, DOI, author block and non-operational clinical-isolate context on printed page7008 | supports | The primary university-hosted paper identifies a clinical Acidaminococcus intestini RYC-MR95 isolate and discusses its clinical context. It supports the bibliographic and scope boundary only. No formulation, supplement, preparation or cultivation correction is derived here. |
+| pmc3232847 | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3232847/fullTextXML; Actual failed HTTP response | unknown | The attempted Europe PMC full-text XML route returned HTTP500. That failed response is retained separately from the readable university-hosted primary PDF. |
+| writer-togo | src/culturemech/import/togo_importer.py; Metadata/reference/comment handling; historical execution not authenticated | context_only | Current importer retains source identity and comments and structures source references where available. This code inspection does not establish which historical response was imported or identify a missing primary citation retrospectively. |
+| writer-merge | src/culturemech/merge/merger.py; merge_group, single-contributor path | context_only | Current single-owner merge copies its contributor and adds generated metadata. Agreement of these two records therefore does not independently authenticate the upstream bibliography. |
+| historical-1 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.md; Entire report; exact Record header and all claim rows | context_only | Full exact selected-path historical report read. Its past source-access statements and snippets are derivative evidence; the cited raw response is not automatically authenticated. |
+| historical-2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.md; Entire report; exact Record header and all claim rows | context_only | Full exact selected-path historical report read. Its past source-access statements and snippets are derivative evidence; the cited raw response is not automatically authenticated. |
+| historical-3 | reports/yaml_record_review/20260922T003403Z-Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.md; Entire report; exact Record header and all claim rows | context_only | Full exact selected-path historical report read. Its past source-access statements and snippets are derivative evidence; the cited raw response is not automatically authenticated. |
+| historical-reader | REVIEW_WORK/batch056/record03/historical-reader.json | context_only | Complete selected target/owner historical reports and exact report hashes, preserving derivative-only limits. |
+| identity-search | REVIEW_WORK/batch056/record03/identity-search.json | supports | Exact stable ID resolves the selected generated record and its declared maintained contributor. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15377; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi50385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_50385; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17234; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi18067 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_18067; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_2509; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi26709 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26709; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch056/record03/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch056/record03/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch056/record03/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch056/record03/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch056/record03/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch056/record03/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch056/record03/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch056/record03/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch056/record03/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- This is a partial non-operational review. Existing formulation, amount, unit, stock, preparation, pH, conditions and growth claims are not assessed or corrected. The private quantity census is not published as source-supported recipe detail.
+- The primary paper concerns a clinical isolate. Its organism identity is bibliographic scope only and is not transferred into target_organisms or a strain-specific growth assertion.
+- TOGO src_url is empty. Exact excerpt correspondence and a verified DOI/PMID do not recover the historical import response or authenticate the whole provider formulation.
+- The Europe PMC XML request failed with HTTP500; the separate primary PDF was available for bibliography and clinical context. Historical repository reports remain derivative evidence, not recovered original source responses.
+- All four canonical diagnostics passed, including zero reference checks; those results do not establish scientific completeness or validate the excluded operational claims.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T052400Z-batch056-record03-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Brucella agar M2694: limited bibliography and provenance review'
+started_at: '2026-10-28T05:11:08.738259Z'
+finished_at: '2026-10-28T05:24:00.936998Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: false
+summary: 'The selected TOGO record and its maintained contributor are structurally
+  consistent, but the upstream source URL is blank and no primary citation is recorded.
+  A matching excerpt points to a paper on a clinical Acidaminococcus intestini isolate.
+  This review is deliberately partial and non-operational: existing quantities are
+  retained unchanged in a private census and are not scientifically assessed.'
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml
+    sha256: df1994f4015c480687c8064fcf60b44e3b51dccfeb465f436036120ef0d12371
+    role: target
+  - path: data/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml
+    sha256: 077edc3866055dc5a27dcd6a7404d4c22755096ad806f56919b6775952283a56
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.md
+    sha256: 8812b7426f2274b9a6b0a4be4a5f63fa39fb2916a520b77cdd6c0a824b530faa
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.md
+    sha256: 704ab9aba6ff281972732c5bfa9736c800d0109f87d699f991030eacb4227524
+    role: context
+  - path: reports/yaml_record_review/20260922T003403Z-Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.md
+    sha256: 19ebaa664a9d59af09ec74307c852d305c3f5d1a83522d555c72c86d2da9cc83
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Non-operational identity, bibliography, provenance and schema review;
+    existing operational claims are unassessed.
+  selection: Actual batch056 native selection index 03.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009246
+targets:
+- target_id: CultureMech:009246
+  path: data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml
+  label: brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:009246
+  command: just validate-schema data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:009246
+  command: just validate-strict data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml
+    --out REVIEW_WORK/batch056/record03/strict.tsv --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:009246
+  command: just validate-terms data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:009246
+  command: just validate-references data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T05:24:00.604311Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: df1994f4015c480687c8064fcf60b44e3b51dccfeb465f436036120ef0d12371
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T05:24:00.604311Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 077edc3866055dc5a27dcd6a7404d4c22755096ad806f56919b6775952283a56
+- evidence_id: togo2694
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2694
+  locator: $.meta.gm/name/src_url; comments considered only for provenance correspondence
+  accessed_at: '2026-10-28T05:11:33.459980Z'
+  support: supports
+  summary: Current TOGO metadata identifies M2694 and its exact title; src_url is
+    empty. The unreferenced excerpt has bibliographic correspondence to the paper
+    identified separately. Operational recipe content was excluded from this review.
+  snapshot_sha256: bde5e2626ab697ab20fd1b36072426beeecb7786a11d6e5dfb245487b605887e
+- evidence_id: togo2694page
+  kind: database
+  reference: https://togomedium.org/medium/M2694
+  locator: Current page text; title/application shell
+  accessed_at: '2026-10-28T05:12:08.710193Z'
+  support: context_only
+  summary: The current public page is a JavaScript shell and provides no additional
+    independently readable bibliographic attribution.
+  snapshot_sha256: 78669d85db93e40276577aaf5073aa0bc2420fe5b7be6212de5619e445da93aa
+- evidence_id: pmid22123762
+  kind: database
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:22123762%20AND%20SRC:MED&format=json
+  locator: '$.resultList.result[0]: id/pmid/pmcid/doi/title/authors/journal/year/pages'
+  accessed_at: '2026-10-28T05:12:09.059637Z'
+  support: supports
+  summary: The bibliographic service joins PMID22123762, PMC3232847 and DOI10.1128/JB.06301-11
+    to the 2011 genome paper by D'Auria and colleagues, pages7008–7009. This verifies
+    citation identity, not the TOGO import path or its full composition.
+  snapshot_sha256: df2297d515329334b8bc6bd6e31a92c4adb8b84451f4d4aced6ec692c5fb67c7
+- evidence_id: paperClinicalIdentity
+  kind: primary_source
+  reference: https://www.uv.es/symbiosis/pdfs/2011_DAuria_2011.pdf
+  locator: Title, DOI, author block and non-operational clinical-isolate context on
+    printed page7008
+  accessed_at: '2026-10-28T05:15:04.379622Z'
+  support: supports
+  summary: The primary university-hosted paper identifies a clinical Acidaminococcus
+    intestini RYC-MR95 isolate and discusses its clinical context. It supports the
+    bibliographic and scope boundary only. No formulation, supplement, preparation
+    or cultivation correction is derived here.
+  snapshot_sha256: 7c7291f7f8abd291926ffbde0a9db26b5293cb3347d14ceac120401fb52ceddd
+- evidence_id: pmc3232847
+  kind: database
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3232847/fullTextXML
+  locator: Actual failed HTTP response
+  accessed_at: '2026-10-28T05:12:09.706844Z'
+  support: unknown
+  summary: The attempted Europe PMC full-text XML route returned HTTP500. That failed
+    response is retained separately from the readable university-hosted primary PDF.
+  snapshot_sha256: c1e0bdc5c7acc2e280192e0f8937628c87ecfbb355a0f280e8ff509e7963e983
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Metadata/reference/comment handling; historical execution not authenticated
+  accessed_at: '2026-10-28T05:24:00.604311Z'
+  support: context_only
+  summary: Current importer retains source identity and comments and structures source
+    references where available. This code inspection does not establish which historical
+    response was imported or identify a missing primary citation retrospectively.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group, single-contributor path
+  accessed_at: '2026-10-28T05:24:00.604311Z'
+  support: context_only
+  summary: Current single-owner merge copies its contributor and adds generated metadata.
+    Agreement of these two records therefore does not independently authenticate the
+    upstream bibliography.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.md
+  locator: Entire report; exact Record header and all claim rows
+  accessed_at: '2026-10-28T05:24:00.604311Z'
+  support: context_only
+  summary: Full exact selected-path historical report read. Its past source-access
+    statements and snippets are derivative evidence; the cited raw response is not
+    automatically authenticated.
+  snapshot_sha256: 8812b7426f2274b9a6b0a4be4a5f63fa39fb2916a520b77cdd6c0a824b530faa
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.md
+  locator: Entire report; exact Record header and all claim rows
+  accessed_at: '2026-10-28T05:24:00.604311Z'
+  support: context_only
+  summary: Full exact selected-path historical report read. Its past source-access
+    statements and snippets are derivative evidence; the cited raw response is not
+    automatically authenticated.
+  snapshot_sha256: 704ab9aba6ff281972732c5bfa9736c800d0109f87d699f991030eacb4227524
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T003403Z-Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1.md
+  locator: Entire report; exact Record header and all claim rows
+  accessed_at: '2026-10-28T05:24:00.604311Z'
+  support: context_only
+  summary: Full exact selected-path historical report read. Its past source-access
+    statements and snippets are derivative evidence; the cited raw response is not
+    automatically authenticated.
+  snapshot_sha256: 19ebaa664a9d59af09ec74307c852d305c3f5d1a83522d555c72c86d2da9cc83
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record03/historical-reader.json
+  accessed_at: '2026-10-28T05:24:00.614891Z'
+  support: context_only
+  summary: Complete selected target/owner historical reports and exact report hashes,
+    preserving derivative-only limits.
+  snapshot_sha256: 513cebdbc61c3b1666fa5920c0f18b14168778cff335c8745a7976674048db0d
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch056/record03/identity-search.json
+  accessed_at: '2026-10-28T05:24:00.927959Z'
+  support: supports
+  summary: Exact stable ID resolves the selected generated record and its declared
+    maintained contributor.
+  snapshot_sha256: fcea10ba1061d70ceb7d4341c2bfac036efaa048d1f172e06bd078368b281a69
+  search_scope: Exact stable record ID across complete normalized and merged YAML
+    trees, including hidden and ignored files. Other accession/name records are not
+    automatically contributing owners.
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:11:34.290739Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 42561686e12ba0831d99216248ea8c0b3338b461b0b77dd988f3096ad8678e59
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:11:35.261154Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: b145f4ff9b90ebb993ff576d9ab35a6c10b7c42a3b99e18feffcc8d75c0e1e50
+- evidence_id: chebi50385
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_50385
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:11:35.867181Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 9531274295a20e5b89ae5c0a87c0772ec355c40948c99661eacec8d887712a8a
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17234
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:11:34.664900Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2d78d31a7829da999c31ae102da842c5b5c37a5d334be6389539d92ecd786de7
+- evidence_id: chebi18067
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_18067
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:11:35.017545Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 960fe2f954fbe8a045212ffcb213552818fefcbf75d452afc961807ef7cdbb48
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_2509
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:11:34.968262Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 348b20478bba221cc21e285237104281145111be6ea3aa30d381d6eae19c0a90
+- evidence_id: chebi26709
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26709
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T05:11:35.257752Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f72f44fc092597deea0396efe53f8fe7e6088b16ac68c8540265991f6b3415a7
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record03/quantity-inventory.json
+  accessed_at: '2026-10-28T05:24:00.935966Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 059c7d96202fe595e009f899fc2e8fd2cd3245b6f953af39e69ea16d6ff09af3
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record03/grounding-inventory.json
+  accessed_at: '2026-10-28T05:24:00.936002Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 3505ba8e8500f14638d81af6e1743c8ef2b9a15b0e4596385d964184dbad2137
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record03/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T05:24:00.936049Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: 2197bf5a3d9637c1e6b1eaac346098d5dce643f34a071208ae282e0981cf664d
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch056/record03/scalar-census.json
+  accessed_at: '2026-10-28T05:24:00.936070Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 070855547c5cbc7987cfbe16a35b604bf84d91cbc0f7843f2a99db35f35780d5
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch056/record03/validate-schema.json
+  accessed_at: '2026-10-28T05:11:09.861014Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 3cf93a51fcce24b7ea2ef2b9b3790e26aabf9cab4f37e0cf119975d0105e1568
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch056/record03/validate-strict.json
+  accessed_at: '2026-10-28T05:11:10.883854Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch056/record03/strict.tsv\n"
+  snapshot_sha256: 6079ee9c74cc2f567712c8a156ffa6f1d17365c87aa8ae449a8d32eb38738b2e
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch056/record03/validate-terms.json
+  accessed_at: '2026-10-28T05:11:12.050910Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 0241a88446681e81d6fed98910e3f5bf76d3efba8041c9425b22061b15bd0fec
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch056/record03/validate-references.json
+  accessed_at: '2026-10-28T05:11:12.780416Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: ffdb953142373c9d8c42740b03b3b63713427380e31774ce3e57390ff89181ca
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact record and contributor identity
+  outcome: supported
+  summary: The stable CultureMech ID, TOGO M2694 identity, original title and one
+    maintained contributor agree. The title alone does not establish cultivation of
+    a Brucella species. No organism or strain target is inferred from the medium name.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - local-target
+  - owner-1
+  - togo2694
+  - identity-search
+- assessment_id: a2
+  area: provenance
+  topic: Bibliographic correspondence has a limited scope
+  outcome: concern
+  summary: PMID22123762 and DOI10.1128/JB.06301-11 identify the primary genome paper
+    and its clinical isolate. Textual correspondence is a useful attribution lead,
+    but the TOGO source URL is blank and the record contains no primary citation or
+    documented import lineage. The paper is not treated as authentication of every
+    component in the TOGO table.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - togo2694
+  - pmid22123762
+  - paperClinicalIdentity
+- assessment_id: a3
+  area: scope
+  topic: Restricted clinical-source review
+  outcome: not_applicable
+  summary: The primary paper explicitly concerns a clinical isolate. This review is
+    limited to identity, bibliography, provenance, taxonomy scope and schema. It neither
+    validates nor repairs any formulation, concentration, stock, preparation, incubation
+    or growth claim. No target-organism assertion is transferred from the paper.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - paperClinicalIdentity
+  - local-target
+- assessment_id: a4
+  area: grounding
+  topic: Structural identifier census only
+  outcome: supported
+  summary: Existing primary and secondary identifier/label slots are recorded with
+    current OLS/catalog metadata. This is a structural identity inventory, not a recommendation
+    for recipe chemistry or a judgment that an ingredient, form or amount is appropriate
+    for a clinical isolate. Current catalog membership is not historical authentication.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - grounding
+  - local-target
+- assessment_id: a5
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: not_applicable
+  summary: Existing quantities are privately inventoried unchanged and not assessed.
+    No source-derived formulation, concentration, stock or condition correction is
+    proposed.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - quantities
+  details: Private inventory records existing fields without scientific validation
+    or operational recommendations.
+- assessment_id: a6
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: supported
+  summary: The grounding inventory enumerates every asserted identifier and exact
+    preferred label. Exact identifier rows and ontology-linked rows are recorded separately,
+    including mapping_status. Present catalog membership does not validate supplied
+    hydrate form or historical identity; specific limits are assessed separately.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: provenance
+  topic: History and evidence scope
+  outcome: supported
+  summary: Complete owner and target histories were read. Current source bytes and
+    inspected code are independent evidence; historical timestamps remain historical
+    claims unless an exact cited raw digest is recovered.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a8
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - local-target
+- assessment_id: a9
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:009246
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-009246-the-primary-bibliographic-attribution-is-missing
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The primary bibliographic attribution is missing
+  description: The selected record and its owner point only to TOGO M2694; current
+    TOGO src_url is blank. An excerpt corresponds to the D'Auria clinical-isolate
+    paper, whose DOI and PMID are verified, but neither a primary citation nor a documented
+    source-to-import chain is stored. This is an attribution gap; it does not establish
+    that the paper authenticates the entire TOGO composition.
+  target_ids:
+  - CultureMech:009246
+  field_paths:
+  - notes
+  - references
+  evidence_ids:
+  - togo2694
+  - pmid22123762
+  - paperClinicalIdentity
+  - writer-togo
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Document the verified bibliographic identity and the limited excerpt
+    correspondence, clearly separating that lead from an unverified import chain.
+    Preserve the original source history and leave all operational content unchanged
+    and unassessed.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009246
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - The primary citation identifiers and bibliographic identity are exact, and attribution
+    uncertainty is explicit.
+  - Existing operational fields remain unchanged and unassessed; no recipe or cultivation
+    correction is introduced.
+  - The generated target preserves the maintained contributor identity and passes
+    the canonical structural diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- This is a partial non-operational review. Existing formulation, amount, unit, stock,
+  preparation, pH, conditions and growth claims are not assessed or corrected. The
+  private quantity census is not published as source-supported recipe detail.
+- The primary paper concerns a clinical isolate. Its organism identity is bibliographic
+  scope only and is not transferred into target_organisms or a strain-specific growth
+  assertion.
+- TOGO src_url is empty. Exact excerpt correspondence and a verified DOI/PMID do not
+  recover the historical import response or authenticate the whole provider formulation.
+- The Europe PMC XML request failed with HTTP500; the separate primary PDF was available
+  for bibliography and clinical context. Historical repository reports remain derivative
+  evidence, not recovered original source responses.
+- All four canonical diagnostics passed, including zero reference checks; those results
+  do not establish scientific completeness or validate the excluded operational claims.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
+```
