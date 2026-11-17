@@ -1,0 +1,2629 @@
+# Source and formulation review: cellulomonas_fermentans_medium (CultureMech:002652)
+
+- Review: 20261025T201515Z-culturemech-002652-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-25T20:08:32Z
+- Finished UTC: 2026-10-25T20:15:15Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+JCM 295 is the supported collection identity. The eight local rates correspond to historical provider normalization of a base table containing 950 ml water, while the primary also requires a separate 50 ml cellobiose stock. The existing pH 7.4 and aseptic-addition prose are retained and credited. Neither listed water nor the liquid-volume sum establishes a measured final volume, and bare 10% does not establish a mass/volume basis. Current API access failed; decoded historical provider objects remain derivative evidence.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 523; batch 053 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding fifty-two task batches contain 520 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 231e0ba71b41d45362168d539efebe7991823464 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 523 of 6325 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 231e0ba71b41d45362168d539efebe7991823464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002652 | data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml | generated | cellulomonas_fermentans_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002652 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:002652 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch053/523/strict.tsv |
+| validate-terms | passed | True | CultureMech:002652 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:002652 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:002652 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: apiJ295 | unavailable | False | CultureMech:002652 | The exact current MediaDive J295 API request returned HTTP 503; its preserved maintenance response is not recipe evidence. JCM 295 primary content is available. Historical decoded provider rows do not recover the original raw response or authenticate its current content. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:002652.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Scoped current ontology and MIM correspondence
+
+grounding: supported. Targets: CultureMech:002652.
+
+28 scoped ontology slots and 7 distinct nonobsolete IDs checked; label agreement is not supplied-form validation. 14 current secondary slots and 0 legacy slots have explicit exact-key lookups. Target linkage: primary 7/8 (87.50%), current secondary 7/8 (87.50%); these are linkage counts, not correctness scores.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:002652.
+
+13 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact collection identity and maintained owner
+
+identity: supported. Targets: CultureMech:002652.
+
+The selected target and sole maintained owner explicitly identify JCM J295 and the exact JCM 295 collection page. Their scientific fields agree; the generated layer adds merge provenance. No other medium or strain-specific variant is substituted. A medium name is not evidence of an experimental growth result.
+
+### Seven asserted salts and hydrated forms
+
+grounding: supported. Targets: CultureMech:002652.
+
+Both primary and current secondary annotations agree with the supplied dipotassium phosphate, monopotassium phosphate, ammonium sulfate, magnesium chloride hexahydrate, calcium chloride dihydrate, ferrous sulfate heptahydrate and sodium bicarbonate forms. Exact OLS labels alone are not the basis: formulas and definitions were compared with the primary table. Yeast extract remains a complex product without an invented single-compound grounding. Current MIM presence is snapshot-specific.
+
+### Existing pH and supplement prose are retained
+
+completeness: concern. Targets: CultureMech:002652.
+
+The current pH 7.4 and entire preparation sentence already agree with JCM 295; the supplement is not absent from all representations. The structured formulation nevertheless lacks the 50 ml cellobiose stock and 950 ml water preparation input. A single ADJUST_PH action contains several stages; preserve its text while representing those stages and attaching source evidence. The page default specifies 121°C for 15 min unless otherwise stated. No source-specific gas, incubation temperature or incubation time is supplied.
+
+### Complex undefined liquid medium
+
+scope: supported. Targets: CultureMech:002652.
+
+Yeast extract supports the complex/undefined classification and no gelling agent is listed. The bacterial category is compatible with the named collection medium, but this does not establish a strain identity, growth temperature or demonstrated growth phenotype. The general application annotation remains a broad intended-use label.
+
+### Decoded provider rows and authentic local preimage
+
+provenance: supported. Targets: CultureMech:002652.
+
+All four exact historical reports and the exact eighteen-claim October 7 parent row were read. Its before/after hashes match the current maintained owner, proving the repository preimage remained unchanged. Its eight withheld local rates, nine decoded recipe rows and preparation object are preserved as derivative provider evidence; the cited external raw digest d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af was not recovered in the bounded twelve-parent search. The September report's one-litre and 5 g/L cellobiose inference is not adopted. October 5 reports were source-unchecked. Current API failure does not falsify historical rows, but those rows do not authenticate an original external response.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:002652.
+
+17 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "subject": "Base batch K2HPO4",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2.32632",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2.32632",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 6–11",
+        "exact_source_quote": "K\n2\nHPO\n4\n2.21\ng",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[0]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          0
+        ],
+        "field": "ingredients[0].concentration",
+        "ingredient": "K2HPO4",
+        "old": {
+          "value": "2.32632",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[8].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 1,
+        "compound": "K2HPO4",
+        "compound_id": 10,
+        "amount": 2.21,
+        "unit": "g",
+        "g_l": 2.32632,
+        "mmol_l": 13.3561,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q2",
+    "subject": "Base batch KH2PO4",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1.57895",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1.57895",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 12–17",
+        "exact_source_quote": "KH\n2\nPO\n4\n1.5\ng",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[1]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          1
+        ],
+        "field": "ingredients[1].concentration",
+        "ingredient": "KH2PO4",
+        "old": {
+          "value": "1.57895",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[9].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 2,
+        "compound": "KH2PO4",
+        "compound_id": 11,
+        "amount": 1.5,
+        "unit": "g",
+        "g_l": 1.57895,
+        "mmol_l": 11.6026,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q3",
+    "subject": "Base batch (NH4)2SO4",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.36842",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.36842",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 18–25",
+        "exact_source_quote": "(NH\n4\n)\n2\nSO\n4\n1.3\ng",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[2]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          2
+        ],
+        "field": "ingredients[2].concentration",
+        "ingredient": "(NH4)2SO4",
+        "old": {
+          "value": "1.36842",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[10].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 3,
+        "compound": "(NH4)2SO4",
+        "compound_id": 27,
+        "amount": 1.3,
+        "unit": "g",
+        "g_l": 1.36842,
+        "mmol_l": 10.3558,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q4",
+    "subject": "Base batch MgCl2 x 6 H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.105263",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.105263",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 26–32",
+        "exact_source_quote": "MgCl\n2\n·6H\n2\nO\n0.1\ng",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[3]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          3
+        ],
+        "field": "ingredients[3].concentration",
+        "ingredient": "MgCl2 x 6 H2O",
+        "old": {
+          "value": "0.105263",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[11].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 4,
+        "compound": "MgCl2 x 6 H2O",
+        "compound_id": 79,
+        "amount": 0.1,
+        "unit": "g",
+        "g_l": 0.105263,
+        "mmol_l": 0.517765,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q5",
+    "subject": "Base batch CaCl2 x 2 H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.0210526",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.0210526",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 33–39",
+        "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.02\ng",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[4]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          4
+        ],
+        "field": "ingredients[4].concentration",
+        "ingredient": "CaCl2 x 2 H2O",
+        "old": {
+          "value": "0.0210526",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[12].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 5,
+        "compound": "CaCl2 x 2 H2O",
+        "compound_id": 7,
+        "amount": 0.02,
+        "unit": "g",
+        "g_l": 0.0210526,
+        "mmol_l": 0.143201,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q6",
+    "subject": "Base batch FeSO4 x 7 H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.00131579",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.00131579",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 40–46",
+        "exact_source_quote": "FeSO\n4\n·7H\n2\nO\n1.25\nmg",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration. For iron sulfate, 1.25 mg is 0.00125 g as an absolute mass, not 0.00125 g/L by assumption.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[5]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          5
+        ],
+        "field": "ingredients[5].concentration",
+        "ingredient": "FeSO4 x 7 H2O",
+        "old": {
+          "value": "0.00131579",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[13].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 6,
+        "compound": "FeSO4 x 7 H2O",
+        "compound_id": 12,
+        "amount": 1.25,
+        "unit": "mg",
+        "g_l": 0.00131579,
+        "mmol_l": 0.0047328,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q7",
+    "subject": "Base batch Yeast extract",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5.26316",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5.26316",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 47–49",
+        "exact_source_quote": "Yeast extract\n5.0\ng",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[6]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          6
+        ],
+        "field": "ingredients[6].concentration",
+        "ingredient": "Yeast extract",
+        "old": {
+          "value": "5.26316",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[14].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 7,
+        "compound": "Yeast extract",
+        "compound_id": 16,
+        "amount": 5,
+        "unit": "g",
+        "g_l": 5.26316,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q8",
+    "subject": "Base batch NaHCO3",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.842105",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.842105",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 50–53",
+        "exact_source_quote": "NaHCO\n3\n0.8\ng",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      },
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–57",
+        "exact_source_quote": "Distilled water\n950\nml\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary supports this printed batch mass with 950 ml listed water and a later separate 50 ml stock. The local g/L value matches a preserved decoded historical provider row, but the original external raw is unrecovered and the current API is unavailable. Retain the derivative declared basis without treating it as independently authenticated final-medium concentration.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "local_claim_locator": "$.records[290].claims[7]",
+      "local_claim": {
+        "pointer": [
+          "ingredients",
+          7
+        ],
+        "field": "ingredients[7].concentration",
+        "ingredient": "NaHCO3",
+        "old": {
+          "value": "0.842105",
+          "unit": "G_PER_L"
+        },
+        "new": null,
+        "status": "conflict",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "Separately sterilize 50 ml of 10% cellobiose solution",
+        "locator": "$.data.solutions[0].steps[0].step",
+        "explanation": "Manual source review withheld support: The 950 ml base table omits the later 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning complete-medium concentrations."
+      },
+      "provider_row_locator": "$.records[290].claims[15].snippet",
+      "decoded_provider_row": {
+        "recipe_order": 8,
+        "compound": "NaHCO3",
+        "compound_id": 55,
+        "amount": 0.8,
+        "unit": "g",
+        "g_l": 0.842105,
+        "mmol_l": 10.0242,
+        "optional": 0
+      },
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af",
+      "authentication": "Exact local parent object and repository preimage only; external raw response not recovered."
+    }
+  },
+  {
+    "decision_id": "q9",
+    "subject": "Existing pH 7.4",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.4
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.4
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 57–57",
+        "exact_source_quote": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The primary explicitly supports the existing pH value. Attach scoped evidence without changing it or importing pH/atmosphere from another medium."
+  },
+  {
+    "decision_id": "q10",
+    "subject": "Existing ordered preparation text",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 57–57",
+        "exact_source_quote": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The entire existing sentence is source-supported: pH adjustment, separate sterilization of 50 ml of 10% cellobiose solution and aseptic addition. Preserve this positive detail; the percentage basis and completed volume remain unspecified."
+  },
+  {
+    "decision_id": "q11",
+    "subject": "Preparation step number",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].step_number",
+        "stored": 1
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].step_number",
+        "stored": 1
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 57–57",
+        "exact_source_quote": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The value 1 is an ordering identifier, not a physical quantity or independently measured source parameter. It is retained as structural metadata; the quoted source supports the associated procedure."
+  },
+  {
+    "decision_id": "q12",
+    "subject": "Listed water",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–56",
+        "exact_source_quote": "Distilled water\n950\nml",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "Represent 950 ml = 0.950 L as the listed preparation water input. It is not a final-volume makeup instruction and does not independently define a 0.95 L denominator."
+  },
+  {
+    "decision_id": "q13",
+    "subject": "Cellobiose stock dose",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 57–57",
+        "exact_source_quote": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "Represent the explicit 50 ml = 0.050 L separately sterilized stock dose. This addition is already present in preparation prose but missing from structured ingredients/solutions. No final-litre dose is inferred."
+  },
+  {
+    "decision_id": "q14",
+    "subject": "Cellobiose stock strength",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 57–57",
+        "exact_source_quote": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "Retain the literal 10% strength separately from dose. The source does not specify w/v, w/w or another basis, so do not derive 5 g cellobiose or a 5 g/L complete-medium concentration."
+  },
+  {
+    "decision_id": "q15",
+    "subject": "JCM 295 sterilization default",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 4–4",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The selected page gives autoclaving at 121°C for 15 min unless otherwise stated. Preserve this source-scoped default and the separate stock sterilization/aseptic-addition boundary, without importing other recipes' conditions."
+  },
+  {
+    "decision_id": "q16",
+    "subject": "Historical provider water row",
+    "decision": "unsupported",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 54–56",
+        "exact_source_quote": "Distilled water\n950\nml",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The exact decoded historical object agrees with the current primary on these stated water or preparation facts, but remains a local derivative, not recovered external raw. Preserve its original locator and recorded historical access time without attributing that time to the current JCM capture.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "locator": "$.records[290].claims[16]",
+      "claim": {
+        "pointer": null,
+        "field": "source.data.solutions[0].recipe[8]",
+        "ingredient": "Distilled water",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 950,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "locator": "$.data.solutions[0].recipe[8]",
+        "explanation": "Source row has no established direct-medium match. Stock, omitted solvent, optional, and missing ingredients require explicit follow-up; not silently endorsed or discarded."
+      },
+      "recorded_source_accessed_at": "2026-10-07T14:04:37.634127+00:00",
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af"
+    }
+  },
+  {
+    "decision_id": "q17",
+    "subject": "Historical provider preparation object",
+    "decision": "unsupported",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "jcm295",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295",
+        "source_locator": "Extracted text lines 57–57",
+        "exact_source_quote": "Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.",
+        "snapshot_sha256": "18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da",
+        "parsed_text_sha256": "408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7"
+      }
+    ],
+    "rationale": "The exact decoded historical object agrees with the current primary on these stated water or preparation facts, but remains a local derivative, not recovered external raw. Preserve its original locator and recorded historical access time without attributing that time to the current JCM capture.",
+    "historical_derivative": {
+      "parent_path": "/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json",
+      "parent_sha256": "2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b",
+      "locator": "$.records[290].claims[17]",
+      "claim": {
+        "pointer": null,
+        "field": "source.data.solutions[0].steps[0]",
+        "ingredient": "preparation context",
+        "old": null,
+        "new": null,
+        "status": "unsupported",
+        "reference": "https://mediadive.dsmz.de/rest/medium/J295",
+        "snippet": "{\n                        \"step\": \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the medium aseptically.\"\n                    }",
+        "locator": "$.data.solutions[0].steps[0]",
+        "explanation": "Preparation context retained for source-specific follow-up, including supplements and downstream dilutions; no additional amount inferred from prose."
+      },
+      "recorded_source_accessed_at": "2026-10-07T14:04:37.634127+00:00",
+      "original_external_source_sha256": "d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af"
+    }
+  }
+]
+
+## Findings
+
+### f1: Stored rates do not establish the supplemented-medium basis
+
+major / open / confirmed; issue key: cm002652-completed-medium-basis.
+
+Eight local G_PER_L rates track decoded historical provider normalization of a table listing 950 ml water, but the source also requires a separately sterilized 50 ml cellobiose stock. Neither the source water input nor the sum of liquid volumes proves a measured final volume. Original external provider raw is unrecovered and current API access is HTTP 503.
+
+### f2: Structured formulation omits a supplement already retained in prose
+
+major / open / confirmed; issue key: cm002652-structured-supplement.
+
+Both layers correctly retain pH 7.4 and the full cellobiose addition sentence, but have no structured stock entry for its 50 ml dose and no preparation water input. The single ADJUST_PH action also contains sterilization and addition stages.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Preserve primary batch masses and explicit stages in the maintained owner; withhold unsupported complete-medium rates pending an explicit denominator. Keep historical provider declarations qualified and do not infer a 10% basis. Regenerate only after owner correction and verify freshness.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the correct pH and complete existing sentence, attach direct evidence, and represent source water plus the cellobiose stock dose/strength and separate preparation stages. Keep the unspecified percent basis unresolved rather than supplying an invented cellobiose mass.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch053/523/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch053/523/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml:1:id: CultureMech:002652<br>./data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml:1:id: CultureMech:002652<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch053/source-preflight-bound/523/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 11 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch053/523/grounding-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | All scoped current ontology slots, exact raw scientific objects and current MIM rows; legacy negatives remain snapshot-specific. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term metadata only | supports | Identifier properties and canonical-label correspondence; formulation, product, hydrate and preparation support are assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact asserted secondary and legacy keys in pinned CSV; current catalog/tree separately pinned | context_only | The full exact-key rows and negative results are retained in grounding-inventory. Current absence is not historical invalidity. No inherited older capture-scope wording is applied to this record. |
+| mimPinnedCatalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Pinned current MIM catalog/tree; current slot scope in grounding-inventory | context_only | Current MIM inventory only; older reused content-limit annotations describe their original collection scope. |
+| mimPinnedTree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Pinned current MIM catalog/tree; current slot scope in grounding-inventory | context_only | Current MIM inventory only; older reused content-limit annotations describe their original collection scope. |
+| history-metadata | data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml", "events": 6, "timestamp_issues": []}] |
+| history-full | /private/tmp/culturemech-review-work-batch053/523/history-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | Complete current target, owner and scoped dependency history events, unchanged; dependency history does not transfer its receiving-medium conditions. |
+| historical-inventory | /private/tmp/culturemech-review-work-batch053/523/historical-evidence-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | All existing attached claims, exact-header historical reports and qualified decoded-parent joins; full original bytes remain pinned. |
+| old-report-0 | reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-1 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| old-report-3 | reports/yaml_record_review/20260922T063822Z-CELLULOMONAS_FERMENTANS_MEDIUM.md; Full exact-header historical derivative report; scoped current path membership | context_only | Historical evidence and unresolved decisions are retained. This derivative does not replace missing source raw or authenticate a new recipe variant. |
+| primary295 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295; Complete JCM 295 table, preparation sentence and page default | supports | Primary source gives eight batch masses, 950 ml water, pH 7.4 and separately sterilized 50 ml of 10% cellobiose solution. It does not explicitly establish a final volume or percentage basis. |
+| apiJ295-attempt | https://mediadive.dsmz.de/rest/medium/J295; Preserved exact public retrieval result | context_only | The exact current MediaDive J295 API request returned HTTP 503; its preserved maintenance response is not recipe evidence. JCM 295 primary content is available. Historical decoded provider rows do not recover the original raw response or authenticate its current content. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _normalize_unit | context_only | Current code uses the first API solution, excludes water from composition, separates recognized stock additions, and prefers provider g_l values. Its fallback unit mapping converts bare quantities to per-litre enums and bare percent to weight/volume. Neither provider normalization nor this mapping independently proves a measured final volume. Current code is not asserted to be the exact historical importer implementation. Current code only; historical execution is not established. |
+| writer-merge | src/culturemech/merge/formulation.py; Complete formulation_content and merge_formulation_evidence | context_only | Current merger requires equality of scientific fields, including stock structure, amounts, notes and preparation. It does not authorize merging related Cellulomonas formulations by ingredient-set similarity. Current code only; historical execution is not established. |
+| field-census | /private/tmp/culturemech-review-work-batch053/523/field-census.json; Exact path-qualified inventory; original values and scope retained | context_only | All local scalar fields preserved; excluded dependency content is context and has no transferred source assessment. |
+| quantity-coverage | /private/tmp/culturemech-review-work-batch053/523/coverage-inventory.json; Exact path-qualified inventory; original values and scope retained | context_only | Every selected/scoped concentration and numeric context joins exact local values; excluded parent quantities are explicitly retained outside transferred scope. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch053/523/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact current MediaDive J295 API request returned HTTP 503; its preserved maintenance response is not recipe evidence. JCM 295 primary content is available. Historical decoded provider rows do not recover the original raw response or authenticate its current content.
+- No completed-medium concentration is derived by summing 950 ml water and a 50 ml stock. No density, bare-percent basis, stock compound stereochemistry, optional variant, gas atmosphere, incubation condition or growth claim is invented. Current primary support and derivative historical provider support remain separate.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261025T201515Z-culturemech-002652-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: cellulomonas_fermentans_medium (CultureMech:002652)'
+started_at: '2026-10-25T20:08:32Z'
+finished_at: '2026-10-25T20:15:15Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: JCM 295 is the supported collection identity. The eight local rates correspond
+  to historical provider normalization of a base table containing 950 ml water, while
+  the primary also requires a separate 50 ml cellobiose stock. The existing pH 7.4
+  and aseptic-addition prose are retained and credited. Neither listed water nor the
+  liquid-volume sum establishes a measured final volume, and bare 10% does not establish
+  a mass/volume basis. Current API access failed; decoded historical provider objects
+  remain derivative evidence.
+source:
+  git_revision: 231e0ba71b41d45362168d539efebe7991823464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    sha256: f9139a4554ec339f3c422783867bd382e11b97e3960add7120b0ebefc6c9f83e
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    sha256: 55da69a4f679c18b1c87a0035c4435a3b41b010ded398141cced782cb8c42bda
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_650_CENTENUM_medium.yaml.md
+    sha256: cea95c8bef224d7988c89e55916e6bfc1c85e40e1e04644c416ba76677bfaf5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_748_CENS_medium.yaml.md
+    sha256: 013cdd23597b0f17ae16040cfcff4fa5612704583733ff2b59f4575da6a5ef4e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_650_modified_for_dsm_8319.yaml.md
+    sha256: bf8b812d7257fd833fe40a0c3d65ecca0d062d667e5d7ef32e8da45fdc400b8d
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/cellulosilyticum_medium.yaml.md
+    sha256: 6fc71489fc62d3a8490420a79c8e85ef97b1bf00048f2b4a5f9cbde290926d95
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/cens_medium.yaml.md
+    sha256: 21cd5c7838ddcd4136764be9d06f0b560c3df459ffd3510ca5a9df7e1f34e292
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/centenum_medium.yaml.md
+    sha256: 11adfae044a191efafa6569efa6dae001a26c2b4186bb1c4165f15ec06fb5aa7
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/cgm.yaml.md
+    sha256: 00bc6814a1dfc5789c97728aa09b3959c842ce63a226744cc526ee36a88f826e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml.md
+    sha256: 3338d620d73f8bd698294bbb4b0a267bb79d279ff8c96056cc4586cd8535f187
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5312_Solution_C.yaml.md
+    sha256: e167b06340bce70ab77d6408c8f5e9cb6b1dbeef2c36e29ff20952990e3bfbd2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5342_Solution_A.yaml.md
+    sha256: f68b7d85766061aa31ffef0f0172844d47d0aae036221dc66d608c86e8dce7a6
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5343_Solution_B.yaml.md
+    sha256: aca054ad3ae72ab8aee9908cb67ceac62a96adf84ff60a5141dda9b4f13ff6d8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md
+    sha256: 89725cdcefc5da88b06931c4db253e065a5f48c2d2b9c8c0a9bc07f6fdc157e8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-m258-m260-stocks/records/M258.md
+    sha256: fda8033086b0627144eb23d2558e66134a597bfa67939fec2f18992de7845747
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CEJFB1T_MEDIUM.md
+    sha256: 49ac2c7b79c5da4e7d56b164324afa763d1f8301cb1794aacecb55c381582cb6
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+    sha256: a9112230e5f2b35a345d29058d2d06b1aec1b6c6e36d77e294ecbad9801f92ba
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: d71859ea710d11f601c3f0c34e1740f6d2afbae9b6516f296dccbe34c913d948
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSE_AGAR.md
+    sha256: f90ca9219519b238b5b06d86a8ca2e84f6832a4ab67b0feabd05bdc3a9839381
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSILYTICUM_MEDIUM.md
+    sha256: 3a3e74ac86eca9c6db45ec35f7ef0e6a76527941fffd6422ec02b9931c0c4212
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSILYTICUM_RUMINICOLA_MEDIUM.md
+    sha256: 63217cedf21217428eca34c2c1418b1982e2e1b435abc3a6130e2689216f9fb0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CENS_MEDIUM.md
+    sha256: 597cb6a7938f9cd459897adf69983dff16ed4d88f1a910366ad8abe4b3928222
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CENTENUM_MEDIUM.md
+    sha256: 64359ed6e4f323a585a64a19e0259164f4e54dd0e8d5c90443fca6183b6c91e1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGM.md
+    sha256: a07bbba50f039aeb8d2aa1f811f38913a6651995e329748e80f180b9a3d57a3b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGY_Medium.md
+    sha256: 2d2435a40efa8bac48c6238994b420ea1f7022e9d1a615b67aa2734a79397302
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/cgm.md
+    sha256: 306c1cacb9be80fb75cde15b3ccffd282c046df9f6cf08ef2ff32055f4886ee4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.md
+    sha256: edfdd0b0fb57e8f9d9c328c8326da947773576733a6c38f9ecda66e70fb8e1a9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.md
+    sha256: 10dbfce058ee6e85485dcfdc15b611cc9e0b95cea52a03f631a3b54fe008fa04
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: 9a63092a34db92eb9ca60f2db910800f0034f5e7f0e6d1eb074e146061fa60d4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_650_CENTENUM_medium.md
+    sha256: 9305c9cfd434cbb5f857fd99357fe9a811cb31a48a3d05d779959557c84250b2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_748_CENS_medium.md
+    sha256: a9c41ec015e0f2f45bb92ed0065eb0ddc3f3852207c12751d1ce686377ba8326
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1040_CEJFB1T_Medium.md
+    sha256: d3295a1ae91e3c543bac519713a5559b6da46ed2a5384def64ef0c9354ed6e4f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.md
+    sha256: 59c8979a006d9b770dd6d2b0ecdbdfd4a81fa2339fff1d33afd41e65932df4fc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M439_Desulfovibrio_Aerotolerans_DVO5_Medium.md
+    sha256: e43ae29a243274817a13192084b67ac0741248fff46309a4e2862aef08e1ef58
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M57_Cellulose_Agar.md
+    sha256: 7a3396b4e01bffebe1a22b591ead29f62ecbfeaeeeb315bbcac5a84050435f83
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M653_Cellulosilyticum_Ruminicola_Medium.md
+    sha256: a1adca9a9911e57b4bd66fce0a5f4db9d2feea7b745195bf0c6e53238beeb2d0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cellulosilyticum_medium.md
+    sha256: da0b08c05cca15abca3721b4461c97a7cb8390a6cbb460045efe9dd04a956ec2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cens_medium.md
+    sha256: 874c7e795a7cd6cb420776fb624326f85520f9879d26165de81a0638506b1de2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/centenum_medium.md
+    sha256: fabcbe826c085e4f317e0f4dffb71c125ef8c93ca6d7c378eb5aa003bcbc9f94
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cgm.md
+    sha256: aed676ac8b2825a51883505bc77e41d3fd59a20a6facce044c7c62a638aa64d1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cgy_medium.md
+    sha256: 328084240301f3a0bd2140a55d72e331bb4d75dd7e40be3971155dff910193bc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5312_Solution_C.md
+    sha256: 64ab17db61f41d71c9fab76cb8c0838b8cdcd81c4e35f7f240c71642196f0ff3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5342_Solution_A.md
+    sha256: 31d821180b177a4395ac64cfe2eb443091729cb74309085beeb1b765ed2dd2f2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5343_Solution_B.md
+    sha256: a1f8fb64c671e4aae298c328e3a93b1ad420e2d60c7400dbae6775f8081a0e33
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_650_modified_for_dsm_8319.md
+    sha256: f8616b950028d94561a0c4a986c40d5fdcdfa14324af5f8fa130447d9f7d7bdb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md
+    sha256: d29c2d8798f20259a253d2b17745d675b4a789de94bdcef5279332d086383022
+    role: context
+  - path: reports/yaml_record_review/20260922T063517Z-CEJFB1T_MEDIUM.md
+    sha256: 1c833062655743da5d43f5f05638efd1b7bad9147a054541027cb892ea737379
+    role: context
+  - path: reports/yaml_record_review/20260922T063654Z-CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+    sha256: 812641f1e5b20ca4a328fc409a8fd1f8cf18a1b8c740c904170097e764dd491a
+    role: context
+  - path: reports/yaml_record_review/20260922T063822Z-CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: cde23788b5a2bdfea2e67768ac9f27f0ad5200aeccb4c3e6fd8af84b3ac70c14
+    role: context
+  - path: reports/yaml_record_review/20260922T063942Z-CELLULOSE_AGAR.md
+    sha256: 7d7df31cd5aa0b65511048a3ad7ea51ed128f3d111280455da6b27b77deeff3a
+    role: context
+  - path: reports/yaml_record_review/20260922T064115Z-CELLULOSILYTICUM_MEDIUM.md
+    sha256: b3996678c78481e187be45d3a239865ef844eff74fcc663396ac72e9b986aaef
+    role: context
+  - path: reports/yaml_record_review/20260922T064238Z-CELLULOSILYTICUM_RUMINICOLA_MEDIUM.md
+    sha256: 0b2275d6cbeebebbd700d25e120994c47e980a94f276e53b82544cbf4ab4ddff
+    role: context
+  - path: reports/yaml_record_review/20260922T064616Z-CENS_MEDIUM.md
+    sha256: 6358d704259dc7ba50caf8263a8e95c81f311c9618f805c8f60587de73d37d16
+    role: context
+  - path: reports/yaml_record_review/20260922T064817Z-CENTENUM_MEDIUM.md
+    sha256: 5a517b2db46fa7608fa93b1fd6f7ca36633e65d9e9187b38ed2f820fc9ff5c4c
+    role: context
+  - path: reports/yaml_record_review/20260922T064954Z-CGM.md
+    sha256: b50dfb754feed998bcc620cfe9162a90071733ad665f78825ce24a6a870fe143
+    role: context
+  - path: reports/yaml_record_review/20260922T065133Z-CGY_Medium.md
+    sha256: f24f1ad05b4a65ae735f976877698aed5a3ffa1df9130d14103914260882ae5a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/audit_mim_sssom_divergence.py
+    sha256: ad3478a5aeb757f2ce503be1b4720c86f0c1d90f5549918e1341dc7ac2c0f445
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_ccap_instruction_rows.py
+    sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/repair_dsmz650_752_762_preparations.py
+    sha256: 0b955dd562a885fec75dd73bed1eaa00af707b3e2f9d35f7f16b066feb743e1a
+    role: context
+  - path: scripts/repair_komodo650_752_762_preparations.py
+    sha256: 477e2e14b5ff6284e4e291986b333552215f44dca2473fc64cf1d60e0028c0bd
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_public_stock_concentrations.py
+    sha256: 220dafdb1b826063f533a4b7e41dc3f2576adc433be92c65243605255fb97bb1
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/import/komodo_importer.py
+    sha256: 702733bd580e4ba28f77e183e1e8268f17ea2c1041cf7b3addd92919624f2706
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 523; batch 053 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding fifty-two task batches
+    contain 520 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 231e0ba71b41d45362168d539efebe7991823464
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 523 of 6325 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002652
+targets:
+- target_id: CultureMech:002652
+  path: data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  label: cellulomonas_fermentans_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch053/523/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch053/523/strict.tsv"
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002652
+- check_id: apiJ295-source-access
+  name: 'Exact source content access: apiJ295'
+  required: false
+  status: unavailable
+  summary: The exact current MediaDive J295 API request returned HTTP 503; its preserved
+    maintenance response is not recipe evidence. JCM 295 primary content is available.
+    Historical decoded provider rows do not recover the original raw response or authenticate
+    its current content.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - apiJ295-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:35.067083Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch053/523/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:39.021739Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch053/523/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:44.944051Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:09:47.638910Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: supports
+  summary: './data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml:1:id: CultureMech:002652
+
+    ./data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml:1:id:
+    CultureMech:002652
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/source-preflight-bound/523/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: supports
+  summary: 11 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: bd6f8d91556ad5a316685776028a6a9e3ad56315901e08cabca8a9a9834266af
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/523/grounding-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: All scoped current ontology slots, exact raw scientific objects and current
+    MIM rows; legacy negatives remain snapshot-specific.
+  snapshot_sha256: 2aa88c686ed4365f8954b0f47d0b281855b50167d22620ec491228d600da7500
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:00:46.687620Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:43:08.324907Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:43:09.378884Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T08:00:48.784931Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id/label/obsolete state/definition/formula/synonyms; term
+    metadata only
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: Identifier properties and canonical-label correspondence; formulation,
+    product, hydrate and preparation support are assessed separately.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact asserted secondary and legacy keys in pinned CSV; current catalog/tree
+    separately pinned
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: The full exact-key rows and negative results are retained in grounding-inventory.
+    Current absence is not historical invalidity. No inherited older capture-scope
+    wording is applied to this record.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Pinned current MIM catalog/tree; current slot scope in grounding-inventory
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: context_only
+  summary: Current MIM inventory only; older reused content-limit annotations describe
+    their original collection scope.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Pinned current MIM catalog/tree; current slot scope in grounding-inventory
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: context_only
+  summary: Current MIM inventory only; older reused content-limit annotations describe
+    their original collection scope.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: history-full
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/523/history-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Complete current target, owner and scoped dependency history events, unchanged;
+    dependency history does not transfer its receiving-medium conditions.
+  snapshot_sha256: 4e80dbfb4cebc457b4c3b95b0b305fbb10bc4a7ceae4aacf3e6102565b6dfadc
+- evidence_id: historical-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/523/historical-evidence-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: All existing attached claims, exact-header historical reports and qualified
+    decoded-parent joins; full original bytes remain pinned.
+  snapshot_sha256: 4292f55954868e6b87da4ecb45208cf687647891707f8c8f559f264927797add
+- evidence_id: old-report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: 3338d620d73f8bd698294bbb4b0a267bb79d279ff8c96056cc4586cd8535f187
+- evidence_id: old-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: d71859ea710d11f601c3f0c34e1740f6d2afbae9b6516f296dccbe34c913d948
+- evidence_id: old-report-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: 9a63092a34db92eb9ca60f2db910800f0034f5e7f0e6d1eb074e146061fa60d4
+- evidence_id: old-report-3
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T063822Z-CELLULOMONAS_FERMENTANS_MEDIUM.md
+  locator: Full exact-header historical derivative report; scoped current path membership
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Historical evidence and unresolved decisions are retained. This derivative
+    does not replace missing source raw or authenticate a new recipe variant.
+  snapshot_sha256: cde23788b5a2bdfea2e67768ac9f27f0ad5200aeccb4c3e6fd8af84b3ac70c14
+- evidence_id: primary295
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295
+  locator: Complete JCM 295 table, preparation sentence and page default
+  accessed_at: '2026-10-22T09:27:16.817217Z'
+  support: supports
+  summary: Primary source gives eight batch masses, 950 ml water, pH 7.4 and separately
+    sterilized 50 ml of 10% cellobiose solution. It does not explicitly establish
+    a final volume or percentage basis.
+  snapshot_sha256: 18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da
+- evidence_id: apiJ295-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J295
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T09:27:17.384979Z'
+  support: context_only
+  summary: The exact current MediaDive J295 API request returned HTTP 503; its preserved
+    maintenance response is not recipe evidence. JCM 295 primary content is available.
+    Historical decoded provider rows do not recover the original raw response or authenticate
+    its current content.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _normalize_unit
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Current code uses the first API solution, excludes water from composition,
+    separates recognized stock additions, and prefers provider g_l values. Its fallback
+    unit mapping converts bare quantities to per-litre enums and bare percent to weight/volume.
+    Neither provider normalization nor this mapping independently proves a measured
+    final volume. Current code is not asserted to be the exact historical importer
+    implementation. Current code only; historical execution is not established.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Complete formulation_content and merge_formulation_evidence
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Current merger requires equality of scientific fields, including stock
+    structure, amounts, notes and preparation. It does not authorize merging related
+    Cellulomonas formulations by ingredient-set similarity. Current code only; historical
+    execution is not established.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: field-census
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/523/field-census.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: All local scalar fields preserved; excluded dependency content is context
+    and has no transferred source assessment.
+  snapshot_sha256: 15d8714989eac2ae2cc3225915de83ca97bbeabe6f49a7c84006b9ed60660186
+- evidence_id: quantity-coverage
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/523/coverage-inventory.json
+  locator: Exact path-qualified inventory; original values and scope retained
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Every selected/scoped concentration and numeric context joins exact local
+    values; excluded parent quantities are explicitly retained outside transferred
+    scope.
+  snapshot_sha256: 22b8b04a084b9de1b3f0f4724dd7a06aef65d78cc1f36c2632046c653aaf16a0
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/523/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-25T20:15:14Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 66c33220c9c623478c54c717ba5410768e163bc660542ab0a687ac2b575d0f51
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Scoped current ontology and MIM correspondence
+  outcome: supported
+  summary: '28 scoped ontology slots and 7 distinct nonobsolete IDs checked; label
+    agreement is not supplied-form validation. 14 current secondary slots and 0 legacy
+    slots have explicit exact-key lookups. Target linkage: primary 7/8 (87.50%), current
+    secondary 7/8 (87.50%); these are linkage counts, not correctness scores.'
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - grounding-inventory
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact collection identity and maintained owner
+  outcome: supported
+  summary: The selected target and sole maintained owner explicitly identify JCM J295
+    and the exact JCM 295 collection page. Their scientific fields agree; the generated
+    layer adds merge provenance. No other medium or strain-specific variant is substituted.
+    A medium name is not evidence of an experimental growth result.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - record
+  - owner-0
+  - primary295
+- assessment_id: supplied-forms
+  area: grounding
+  topic: Seven asserted salts and hydrated forms
+  outcome: supported
+  summary: 'Both primary and current secondary annotations agree with the supplied
+    dipotassium phosphate, monopotassium phosphate, ammonium sulfate, magnesium chloride
+    hexahydrate, calcium chloride dihydrate, ferrous sulfate heptahydrate and sodium
+    bicarbonate forms. Exact OLS labels alone are not the basis: formulas and definitions
+    were compared with the primary table. Yeast extract remains a complex product
+    without an invented single-compound grounding. Current MIM presence is snapshot-specific.'
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - primary295
+  - grounding-inventory
+  - chebi131527
+  - chebi63036
+  - chebi62946
+  - chebi86345
+  - chebi86158
+  - chebi75836
+  - chebi32139
+- assessment_id: preparation-credit
+  area: completeness
+  topic: Existing pH and supplement prose are retained
+  outcome: concern
+  summary: The current pH 7.4 and entire preparation sentence already agree with JCM
+    295; the supplement is not absent from all representations. The structured formulation
+    nevertheless lacks the 50 ml cellobiose stock and 950 ml water preparation input.
+    A single ADJUST_PH action contains several stages; preserve its text while representing
+    those stages and attaching source evidence. The page default specifies 121°C for
+    15 min unless otherwise stated. No source-specific gas, incubation temperature
+    or incubation time is supplied.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - record
+  - owner-0
+  - primary295
+- assessment_id: classification
+  area: scope
+  topic: Complex undefined liquid medium
+  outcome: supported
+  summary: Yeast extract supports the complex/undefined classification and no gelling
+    agent is listed. The bacterial category is compatible with the named collection
+    medium, but this does not establish a strain identity, growth temperature or demonstrated
+    growth phenotype. The general application annotation remains a broad intended-use
+    label.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - record
+  - primary295
+- assessment_id: historical-source-basis
+  area: provenance
+  topic: Decoded provider rows and authentic local preimage
+  outcome: supported
+  summary: All four exact historical reports and the exact eighteen-claim October
+    7 parent row were read. Its before/after hashes match the current maintained owner,
+    proving the repository preimage remained unchanged. Its eight withheld local rates,
+    nine decoded recipe rows and preparation object are preserved as derivative provider
+    evidence; the cited external raw digest d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af
+    was not recovered in the bounded twelve-parent search. The September report's
+    one-litre and 5 g/L cellobiose inference is not adopted. October 5 reports were
+    source-unchecked. Current API failure does not falsify historical rows, but those
+    rows do not authenticate an original external response.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - historical-inventory
+  - history-full
+  - old-report-0
+  - old-report-1
+  - old-report-2
+  - old-report-3
+  - primary295
+  - apiJ295-attempt
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 17 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002652
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"subject\": \"Base batch K2HPO4\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.32632\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.32632\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 6–11\",\n        \"exact_source_quote\"\
+    : \"K\\n2\\nHPO\\n4\\n2.21\\ng\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration.\",\n    \"historical_derivative\": {\n      \"parent_path\":\
+    \ \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[0]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          0\n       \
+    \ ],\n        \"field\": \"ingredients[0].concentration\",\n        \"ingredient\"\
+    : \"K2HPO4\",\n        \"old\": {\n          \"value\": \"2.32632\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n        \"status\"\
+    : \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[8].snippet\",\n      \"decoded_provider_row\": {\n \
+    \       \"recipe_order\": 1,\n        \"compound\": \"K2HPO4\",\n        \"compound_id\"\
+    : 10,\n        \"amount\": 2.21,\n        \"unit\": \"g\",\n        \"g_l\": 2.32632,\n\
+    \        \"mmol_l\": 13.3561,\n        \"optional\": 0\n      },\n      \"original_external_source_sha256\"\
+    : \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\",\n    \
+    \  \"authentication\": \"Exact local parent object and repository preimage only;\
+    \ external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q2\",\n    \"subject\": \"Base batch KH2PO4\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.57895\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.57895\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 12–17\",\n        \"exact_source_quote\"\
+    : \"KH\\n2\\nPO\\n4\\n1.5\\ng\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration.\",\n    \"historical_derivative\": {\n      \"parent_path\":\
+    \ \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[1]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          1\n       \
+    \ ],\n        \"field\": \"ingredients[1].concentration\",\n        \"ingredient\"\
+    : \"KH2PO4\",\n        \"old\": {\n          \"value\": \"1.57895\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n        \"status\"\
+    : \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[9].snippet\",\n      \"decoded_provider_row\": {\n \
+    \       \"recipe_order\": 2,\n        \"compound\": \"KH2PO4\",\n        \"compound_id\"\
+    : 11,\n        \"amount\": 1.5,\n        \"unit\": \"g\",\n        \"g_l\": 1.57895,\n\
+    \        \"mmol_l\": 11.6026,\n        \"optional\": 0\n      },\n      \"original_external_source_sha256\"\
+    : \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\",\n    \
+    \  \"authentication\": \"Exact local parent object and repository preimage only;\
+    \ external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q3\",\n    \"subject\": \"Base batch (NH4)2SO4\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.36842\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.36842\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 18–25\",\n        \"exact_source_quote\"\
+    : \"(NH\\n4\\n)\\n2\\nSO\\n4\\n1.3\\ng\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration.\",\n    \"historical_derivative\": {\n      \"parent_path\":\
+    \ \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[2]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          2\n       \
+    \ ],\n        \"field\": \"ingredients[2].concentration\",\n        \"ingredient\"\
+    : \"(NH4)2SO4\",\n        \"old\": {\n          \"value\": \"1.36842\",\n    \
+    \      \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n        \"status\"\
+    : \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[10].snippet\",\n      \"decoded_provider_row\": {\n\
+    \        \"recipe_order\": 3,\n        \"compound\": \"(NH4)2SO4\",\n        \"\
+    compound_id\": 27,\n        \"amount\": 1.3,\n        \"unit\": \"g\",\n     \
+    \   \"g_l\": 1.36842,\n        \"mmol_l\": 10.3558,\n        \"optional\": 0\n\
+    \      },\n      \"original_external_source_sha256\": \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\"\
+    ,\n      \"authentication\": \"Exact local parent object and repository preimage\
+    \ only; external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q4\",\n    \"subject\": \"Base batch MgCl2 x 6 H2O\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.105263\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.105263\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 26–32\",\n        \"exact_source_quote\"\
+    : \"MgCl\\n2\\n·6H\\n2\\nO\\n0.1\\ng\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration.\",\n    \"historical_derivative\": {\n      \"parent_path\":\
+    \ \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[3]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          3\n       \
+    \ ],\n        \"field\": \"ingredients[3].concentration\",\n        \"ingredient\"\
+    : \"MgCl2 x 6 H2O\",\n        \"old\": {\n          \"value\": \"0.105263\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n       \
+    \ \"status\": \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[11].snippet\",\n      \"decoded_provider_row\": {\n\
+    \        \"recipe_order\": 4,\n        \"compound\": \"MgCl2 x 6 H2O\",\n    \
+    \    \"compound_id\": 79,\n        \"amount\": 0.1,\n        \"unit\": \"g\",\n\
+    \        \"g_l\": 0.105263,\n        \"mmol_l\": 0.517765,\n        \"optional\"\
+    : 0\n      },\n      \"original_external_source_sha256\": \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\"\
+    ,\n      \"authentication\": \"Exact local parent object and repository preimage\
+    \ only; external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q5\",\n    \"subject\": \"Base batch CaCl2 x 2 H2O\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0210526\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0210526\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 33–39\",\n        \"exact_source_quote\"\
+    : \"CaCl\\n2\\n·2H\\n2\\nO\\n0.02\\ng\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration.\",\n    \"historical_derivative\": {\n      \"parent_path\":\
+    \ \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[4]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          4\n       \
+    \ ],\n        \"field\": \"ingredients[4].concentration\",\n        \"ingredient\"\
+    : \"CaCl2 x 2 H2O\",\n        \"old\": {\n          \"value\": \"0.0210526\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n       \
+    \ \"status\": \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[12].snippet\",\n      \"decoded_provider_row\": {\n\
+    \        \"recipe_order\": 5,\n        \"compound\": \"CaCl2 x 2 H2O\",\n    \
+    \    \"compound_id\": 7,\n        \"amount\": 0.02,\n        \"unit\": \"g\",\n\
+    \        \"g_l\": 0.0210526,\n        \"mmol_l\": 0.143201,\n        \"optional\"\
+    : 0\n      },\n      \"original_external_source_sha256\": \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\"\
+    ,\n      \"authentication\": \"Exact local parent object and repository preimage\
+    \ only; external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q6\",\n    \"subject\": \"Base batch FeSO4 x 7 H2O\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00131579\",\n          \"unit\": \"G_PER_L\"\n \
+    \       }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00131579\",\n          \"unit\": \"G_PER_L\"\n \
+    \       }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 40–46\",\n        \"exact_source_quote\"\
+    : \"FeSO\\n4\\n·7H\\n2\\nO\\n1.25\\nmg\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration. For iron sulfate, 1.25 mg is 0.00125 g as an absolute mass, not\
+    \ 0.00125 g/L by assumption.\",\n    \"historical_derivative\": {\n      \"parent_path\"\
+    : \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[5]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          5\n       \
+    \ ],\n        \"field\": \"ingredients[5].concentration\",\n        \"ingredient\"\
+    : \"FeSO4 x 7 H2O\",\n        \"old\": {\n          \"value\": \"0.00131579\"\
+    ,\n          \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n     \
+    \   \"status\": \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[13].snippet\",\n      \"decoded_provider_row\": {\n\
+    \        \"recipe_order\": 6,\n        \"compound\": \"FeSO4 x 7 H2O\",\n    \
+    \    \"compound_id\": 12,\n        \"amount\": 1.25,\n        \"unit\": \"mg\"\
+    ,\n        \"g_l\": 0.00131579,\n        \"mmol_l\": 0.0047328,\n        \"optional\"\
+    : 0\n      },\n      \"original_external_source_sha256\": \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\"\
+    ,\n      \"authentication\": \"Exact local parent object and repository preimage\
+    \ only; external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q7\",\n    \"subject\": \"Base batch Yeast extract\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.26316\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.26316\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 47–49\",\n        \"exact_source_quote\"\
+    : \"Yeast extract\\n5.0\\ng\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration.\",\n    \"historical_derivative\": {\n      \"parent_path\":\
+    \ \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[6]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          6\n       \
+    \ ],\n        \"field\": \"ingredients[6].concentration\",\n        \"ingredient\"\
+    : \"Yeast extract\",\n        \"old\": {\n          \"value\": \"5.26316\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n       \
+    \ \"status\": \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[14].snippet\",\n      \"decoded_provider_row\": {\n\
+    \        \"recipe_order\": 7,\n        \"compound\": \"Yeast extract\",\n    \
+    \    \"compound_id\": 16,\n        \"amount\": 5,\n        \"unit\": \"g\",\n\
+    \        \"g_l\": 5.26316,\n        \"optional\": 0\n      },\n      \"original_external_source_sha256\"\
+    : \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\",\n    \
+    \  \"authentication\": \"Exact local parent object and repository preimage only;\
+    \ external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q8\",\n    \"subject\": \"Base batch NaHCO3\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.842105\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.842105\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 50–53\",\n        \"exact_source_quote\"\
+    : \"NaHCO\\n3\\n0.8\\ng\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–57\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\\nAdjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose\
+    \ solution, and add to the medium aseptically.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary supports this printed batch\
+    \ mass with 950 ml listed water and a later separate 50 ml stock. The local g/L\
+    \ value matches a preserved decoded historical provider row, but the original\
+    \ external raw is unrecovered and the current API is unavailable. Retain the derivative\
+    \ declared basis without treating it as independently authenticated final-medium\
+    \ concentration.\",\n    \"historical_derivative\": {\n      \"parent_path\":\
+    \ \"/private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"local_claim_locator\": \"$.records[290].claims[7]\",\n      \"local_claim\"\
+    : {\n        \"pointer\": [\n          \"ingredients\",\n          7\n       \
+    \ ],\n        \"field\": \"ingredients[7].concentration\",\n        \"ingredient\"\
+    : \"NaHCO3\",\n        \"old\": {\n          \"value\": \"0.842105\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        },\n        \"new\": null,\n        \"status\"\
+    : \"conflict\",\n        \"reference\": \"https://mediadive.dsmz.de/rest/medium/J295\"\
+    ,\n        \"snippet\": \"Separately sterilize 50 ml of 10% cellobiose solution\"\
+    ,\n        \"locator\": \"$.data.solutions[0].steps[0].step\",\n        \"explanation\"\
+    : \"Manual source review withheld support: The 950 ml base table omits the later\
+    \ 50 ml cellobiose solution. Reconstruct the supplemented recipe before assigning\
+    \ complete-medium concentrations.\"\n      },\n      \"provider_row_locator\"\
+    : \"$.records[290].claims[15].snippet\",\n      \"decoded_provider_row\": {\n\
+    \        \"recipe_order\": 8,\n        \"compound\": \"NaHCO3\",\n        \"compound_id\"\
+    : 55,\n        \"amount\": 0.8,\n        \"unit\": \"g\",\n        \"g_l\": 0.842105,\n\
+    \        \"mmol_l\": 10.0242,\n        \"optional\": 0\n      },\n      \"original_external_source_sha256\"\
+    : \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\",\n    \
+    \  \"authentication\": \"Exact local parent object and repository preimage only;\
+    \ external raw response not recovered.\"\n    }\n  },\n  {\n    \"decision_id\"\
+    : \"q9\",\n    \"subject\": \"Existing pH 7.4\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.4\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.4\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm295\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 57–57\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and\
+    \ add to the medium aseptically.\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary explicitly supports the existing\
+    \ pH value. Attach scoped evidence without changing it or importing pH/atmosphere\
+    \ from another medium.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n    \"subject\"\
+    : \"Existing ordered preparation text\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and\
+    \ add to the medium aseptically.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and\
+    \ add to the medium aseptically.\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 57–57\",\n        \"exact_source_quote\": \"Adjust pH\
+    \ to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the\
+    \ medium aseptically.\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The entire existing sentence is source-supported:\
+    \ pH adjustment, separate sterilization of 50 ml of 10% cellobiose solution and\
+    \ aseptic addition. Preserve this positive detail; the percentage basis and completed\
+    \ volume remain unspecified.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n   \
+    \ \"subject\": \"Preparation step number\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].step_number\",\n        \"stored\"\
+    : 1\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].step_number\",\n        \"stored\"\
+    : 1\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 57–57\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and\
+    \ add to the medium aseptically.\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The value 1 is an ordering identifier,\
+    \ not a physical quantity or independently measured source parameter. It is retained\
+    \ as structural metadata; the quoted source supports the associated procedure.\"\
+    \n  },\n  {\n    \"decision_id\": \"q12\",\n    \"subject\": \"Listed water\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 54–56\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n950\\nml\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"Represent 950 ml = 0.950 L as the listed\
+    \ preparation water input. It is not a final-volume makeup instruction and does\
+    \ not independently define a 0.95 L denominator.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"subject\": \"Cellobiose stock dose\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 57–57\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and\
+    \ add to the medium aseptically.\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"Represent the explicit 50 ml = 0.050 L\
+    \ separately sterilized stock dose. This addition is already present in preparation\
+    \ prose but missing from structured ingredients/solutions. No final-litre dose\
+    \ is inferred.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"subject\": \"\
+    Cellobiose stock strength\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm295\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 57–57\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and\
+    \ add to the medium aseptically.\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal 10% strength separately\
+    \ from dose. The source does not specify w/v, w/w or another basis, so do not\
+    \ derive 5 g cellobiose or a 5 g/L complete-medium concentration.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q15\",\n    \"subject\": \"JCM 295 sterilization default\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm295\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\",\n        \"source_locator\"\
+    : \"Extracted text lines 4–4\",\n        \"exact_source_quote\": \"Unless otherwise\
+    \ stated, sterilize media by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\"\
+    : \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\",\n    \
+    \    \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The selected page gives autoclaving at\
+    \ 121°C for 15 min unless otherwise stated. Preserve this source-scoped default\
+    \ and the separate stock sterilization/aseptic-addition boundary, without importing\
+    \ other recipes' conditions.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n   \
+    \ \"subject\": \"Historical provider water row\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm295\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 54–56\",\n        \"exact_source_quote\"\
+    : \"Distilled water\\n950\\nml\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact decoded historical object agrees\
+    \ with the current primary on these stated water or preparation facts, but remains\
+    \ a local derivative, not recovered external raw. Preserve its original locator\
+    \ and recorded historical access time without attributing that time to the current\
+    \ JCM capture.\",\n    \"historical_derivative\": {\n      \"parent_path\": \"\
+    /private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"locator\": \"$.records[290].claims[16]\",\n      \"claim\": {\n   \
+    \     \"pointer\": null,\n        \"field\": \"source.data.solutions[0].recipe[8]\"\
+    ,\n        \"ingredient\": \"Distilled water\",\n        \"old\": null,\n    \
+    \    \"new\": null,\n        \"status\": \"unsupported\",\n        \"reference\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J295\",\n        \"snippet\": \"{\\\
+    n                        \\\"recipe_order\\\": 9,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 950,\\n                     \
+    \   \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"locator\": \"$.data.solutions[0].recipe[8]\"\
+    ,\n        \"explanation\": \"Source row has no established direct-medium match.\
+    \ Stock, omitted solvent, optional, and missing ingredients require explicit follow-up;\
+    \ not silently endorsed or discarded.\"\n      },\n      \"recorded_source_accessed_at\"\
+    : \"2026-10-07T14:04:37.634127+00:00\",\n      \"original_external_source_sha256\"\
+    : \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\"\n    }\n\
+    \  },\n  {\n    \"decision_id\": \"q17\",\n    \"subject\": \"Historical provider\
+    \ preparation object\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm295\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=295\"\
+    ,\n        \"source_locator\": \"Extracted text lines 57–57\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and\
+    \ add to the medium aseptically.\",\n        \"snapshot_sha256\": \"18a62b1a0843c66e67ad017e5a68ce57e2ecd3a942caf16331f57bed063153da\"\
+    ,\n        \"parsed_text_sha256\": \"408a312df45724026fbbca3313c01b5b2896d26b16bfcd8721be48bed1cd2af7\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact decoded historical object agrees\
+    \ with the current primary on these stated water or preparation facts, but remains\
+    \ a local derivative, not recovered external raw. Preserve its original locator\
+    \ and recorded historical access time without attributing that time to the current\
+    \ JCM capture.\",\n    \"historical_derivative\": {\n      \"parent_path\": \"\
+    /private/tmp/culturemech-record-review-20261019-batch-053/reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json\"\
+    ,\n      \"parent_sha256\": \"2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b\"\
+    ,\n      \"locator\": \"$.records[290].claims[17]\",\n      \"claim\": {\n   \
+    \     \"pointer\": null,\n        \"field\": \"source.data.solutions[0].steps[0]\"\
+    ,\n        \"ingredient\": \"preparation context\",\n        \"old\": null,\n\
+    \        \"new\": null,\n        \"status\": \"unsupported\",\n        \"reference\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J295\",\n        \"snippet\": \"{\\\
+    n                        \\\"step\\\": \\\"Adjust pH to 7.4. Separately sterilize\
+    \ 50 ml of 10% cellobiose solution, and add to the medium aseptically.\\\"\\n\
+    \                    }\",\n        \"locator\": \"$.data.solutions[0].steps[0]\"\
+    ,\n        \"explanation\": \"Preparation context retained for source-specific\
+    \ follow-up, including supplements and downstream dilutions; no additional amount\
+    \ inferred from prose.\"\n      },\n      \"recorded_source_accessed_at\": \"\
+    2026-10-07T14:04:37.634127+00:00\",\n      \"original_external_source_sha256\"\
+    : \"d51ed72075dc1c9306cb7ffbbcd3f6d80313e5fcd8a7478cbc4d6c912f9891af\"\n    }\n\
+    \  }\n]"
+findings:
+- finding_id: f1
+  issue_key: cm002652-completed-medium-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stored rates do not establish the supplemented-medium basis
+  description: Eight local G_PER_L rates track decoded historical provider normalization
+    of a table listing 950 ml water, but the source also requires a separately sterilized
+    50 ml cellobiose stock. Neither the source water input nor the sum of liquid volumes
+    proves a measured final volume. Original external provider raw is unrecovered
+    and current API access is HTTP 503.
+  target_ids:
+  - CultureMech:002652
+  field_paths:
+  - ingredients
+  evidence_ids:
+  - primary295
+  - apiJ295-attempt
+  - historical-inventory
+  - quantity-inventory
+  - writer-mediadive
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: review-ingredient-concentrations:source-stage-denominator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm002652-structured-supplement
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Structured formulation omits a supplement already retained in prose
+  description: Both layers correctly retain pH 7.4 and the full cellobiose addition
+    sentence, but have no structured stock entry for its 50 ml dose and no preparation
+    water input. The single ADJUST_PH action also contains sterilization and addition
+    stages.
+  target_ids:
+  - CultureMech:002652
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - primary295
+  - record
+  - owner-0
+  - writer-mediadive
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: review-yaml-record:structured-stock-completeness
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve primary batch masses and explicit stages in the maintained
+    owner; withhold unsupported complete-medium rates pending an explicit denominator.
+    Keep historical provider declarations qualified and do not infer a 10% basis.
+    Regenerate only after owner correction and verify freshness.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002652
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the correct pH and complete existing sentence, attach direct
+    evidence, and represent source water plus the cellobiose stock dose/strength and
+    separate preparation stages. Keep the unspecified percent basis unresolved rather
+    than supplying an invented cellobiose mass.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002652
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact current MediaDive J295 API request returned HTTP 503; its preserved maintenance
+  response is not recipe evidence. JCM 295 primary content is available. Historical
+  decoded provider rows do not recover the original raw response or authenticate its
+  current content.
+- No completed-medium concentration is derived by summing 950 ml water and a 50 ml
+  stock. No density, bare-percent basis, stock compound stereochemistry, optional
+  variant, gas atmosphere, incubation condition or growth claim is invented. Current
+  primary support and derivative historical provider support remain separate.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-053
+- generated-medium
+```

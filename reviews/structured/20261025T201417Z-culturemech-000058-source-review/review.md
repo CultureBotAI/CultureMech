@@ -1,0 +1,2895 @@
+# Source and formulation review: cgm (CultureMech:000058)
+
+- Review: 20261025T201417Z-culturemech-000058-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-25T20:08:42Z
+- Finished UTC: 2026-10-25T20:14:17Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+CCAP CGM is resolved to the algae owner, but the generated record retains a parsed instruction as an ingredient, omits maintained preparation/provenance repairs, flattens the PIV stock at stock strength, and omits eight other source stocks. Generic incubation/light ranges lack support in the inspected source.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 529; batch 053 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding fifty-two task batches contain 520 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 231e0ba71b41d45362168d539efebe7991823464 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 523 of 6325 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 231e0ba71b41d45362168d539efebe7991823464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000058 | data/merge_yaml/merged/CGM.yaml | generated | cgm |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000058 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000058 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch053/529/strict.tsv |
+| validate-terms | passed | True | CultureMech:000058 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000058 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000058 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000058.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact CCAP accession and maintained owner
+
+identity: supported. Targets: CultureMech:000058.
+
+CultureMech:000058 and CCAP:CGM identify the algae CGM owner. The differently identified bacterial cgm (CultureMech:000329) is comparison context only and contributes no quantity, MIM defect or curation ownership to this review. This is one generated target, not a deduplication judgment.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:000058.
+
+24 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "subject": "Na2EDTA PIV stock versus final medium",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.75",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.75",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 PIV row",
+        "exact_source_quote": "Na2EDTA                                           0.75 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 per-litre heading",
+        "exact_source_quote": "(7) Trace elements (PIV):                             per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre stock7 dose",
+        "exact_source_quote": "Stock solution 7 (Trace elements)                                6 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-volume makeup",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The stored 0.75 g/L is the Stock 7 concentration, not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.75 g/L × 0.006 L / 1 L = 0.00450 g/L. Prefer explicit stock composition and dose; do not retain both an expanded stock and duplicate direct solutes. Formula-based conversion is separate from the literal source."
+  },
+  {
+    "decision_id": "q2",
+    "subject": "FeCl3.6H2O PIV stock versus final medium",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.097",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 PIV row",
+        "exact_source_quote": "FeCl3.6H2O                                        0.097 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 per-litre heading",
+        "exact_source_quote": "(7) Trace elements (PIV):                             per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre stock7 dose",
+        "exact_source_quote": "Stock solution 7 (Trace elements)                                6 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-volume makeup",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The stored 0.097 g/L is the Stock 7 concentration, not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.097 g/L × 0.006 L / 1 L = 0.000582 g/L. Prefer explicit stock composition and dose; do not retain both an expanded stock and duplicate direct solutes. Formula-based conversion is separate from the literal source."
+  },
+  {
+    "decision_id": "q3",
+    "subject": "MnCl2.4H2O PIV stock versus final medium",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.041",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.041",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 PIV row",
+        "exact_source_quote": "MnCl2.4H2O                                        0.041 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 per-litre heading",
+        "exact_source_quote": "(7) Trace elements (PIV):                             per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre stock7 dose",
+        "exact_source_quote": "Stock solution 7 (Trace elements)                                6 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-volume makeup",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The stored 0.041 g/L is the Stock 7 concentration, not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.041 g/L × 0.006 L / 1 L = 0.000246 g/L. Prefer explicit stock composition and dose; do not retain both an expanded stock and duplicate direct solutes. Formula-based conversion is separate from the literal source."
+  },
+  {
+    "decision_id": "q4",
+    "subject": "ZnCl2 PIV stock versus final medium",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 PIV row",
+        "exact_source_quote": "ZnCl2                                             0.005 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 per-litre heading",
+        "exact_source_quote": "(7) Trace elements (PIV):                             per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre stock7 dose",
+        "exact_source_quote": "Stock solution 7 (Trace elements)                                6 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-volume makeup",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The stored 0.005 g/L is the Stock 7 concentration, not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.005 g/L × 0.006 L / 1 L = 0.000030 g/L. Prefer explicit stock composition and dose; do not retain both an expanded stock and duplicate direct solutes. Formula-based conversion is separate from the literal source."
+  },
+  {
+    "decision_id": "q5",
+    "subject": "CoCl2.6H2O PIV stock versus final medium",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 PIV row",
+        "exact_source_quote": "CoCl2.6H2O                                        0.002 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 per-litre heading",
+        "exact_source_quote": "(7) Trace elements (PIV):                             per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre stock7 dose",
+        "exact_source_quote": "Stock solution 7 (Trace elements)                                6 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-volume makeup",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The stored 0.002 g/L is the Stock 7 concentration, not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.002 g/L × 0.006 L / 1 L = 0.000012 g/L. Prefer explicit stock composition and dose; do not retain both an expanded stock and duplicate direct solutes. Formula-based conversion is separate from the literal source."
+  },
+  {
+    "decision_id": "q6",
+    "subject": "Na2MoO4.2H2O PIV stock versus final medium",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 PIV row",
+        "exact_source_quote": "Na2MoO4.2H2O                                      0.004 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock 7 per-litre heading",
+        "exact_source_quote": "(7) Trace elements (PIV):                             per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre stock7 dose",
+        "exact_source_quote": "Stock solution 7 (Trace elements)                                6 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-volume makeup",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The stored 0.004 g/L is the Stock 7 concentration, not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.004 g/L × 0.006 L / 1 L = 0.000024 g/L. Prefer explicit stock composition and dose; do not retain both an expanded stock and duplicate direct solutes. Formula-based conversion is separate from the literal source."
+  },
+  {
+    "decision_id": "q7",
+    "subject": "Proteose peptone direct final-medium amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre row",
+        "exact_source_quote": "Proteose peptone                                                 0.25 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre heading",
+        "exact_source_quote": "Medium                                                                per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The local amount/unit agrees with the explicit final-medium table. Add scoped concentration evidence to the maintained owner; existing source/notes strings are not claim-level EvidenceItem support. No mixture molarity is inferred."
+  },
+  {
+    "decision_id": "q8",
+    "subject": "Yeast extract direct final-medium amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre row",
+        "exact_source_quote": "Yeast extract                                                    0.25 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre heading",
+        "exact_source_quote": "Medium                                                                per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The local amount/unit agrees with the explicit final-medium table. Add scoped concentration evidence to the maintained owner; existing source/notes strings are not claim-level EvidenceItem support. No mixture molarity is inferred."
+  },
+  {
+    "decision_id": "q9",
+    "subject": "D-glucose direct final-medium amount",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "5.00",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "5.00",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre row",
+        "exact_source_quote": "D-glucose                                                        5.00 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Medium per-litre heading",
+        "exact_source_quote": "Medium                                                                per litre",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The local amount/unit agrees with the explicit final-medium table. Add scoped concentration evidence to the maintained owner; existing source/notes strings are not claim-level EvidenceItem support. No mixture molarity is inferred."
+  },
+  {
+    "decision_id": "q10",
+    "subject": "Optional agar and stale parsed instruction",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "For an agar formulation, add 15 g/L Bacteriological Agar."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final makeup and optional agar instruction",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The 15 g/L belongs to optional Bacteriological Agar in an agar formulation. The generated preferred_term is process prose, not a chemical. The maintained owner already removed the bogus row and retained the conditional agar step; regenerate only after the remaining stock defects are curated."
+  },
+  {
+    "decision_id": "q11",
+    "subject": "Missing stock1 NaNO3",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stocks1–6 row",
+        "exact_source_quote": "(1) NaNO3                                                    7.5 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 per-100mL heading",
+        "exact_source_quote": "Stocks                                                                per 100 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-medium addition",
+        "exact_source_quote": "Stock solution 1                                                 10 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final volume",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "No selected target/owner ingredient or solution represents this required stock. Source 7.5g per 100 mL stock; addition 10 mL per final 1 L. Calculated stock strength 75g/L and final 0.75g/L; preserve exact listed salt/hydrate and separately verify new grounding before curation."
+  },
+  {
+    "decision_id": "q12",
+    "subject": "Missing stock2 CaCl2.2H2O",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stocks1–6 row",
+        "exact_source_quote": "(2) CaCl2.2H2O                                               2.5 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 per-100mL heading",
+        "exact_source_quote": "Stocks                                                                per 100 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-medium addition",
+        "exact_source_quote": "Stock solutions 2 - 6                                            1 ml each",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final volume",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "No selected target/owner ingredient or solution represents this required stock. Source 2.5g per 100 mL stock; addition 1 mL per final 1 L. Calculated stock strength 25g/L and final 0.025g/L; preserve exact listed salt/hydrate and separately verify new grounding before curation."
+  },
+  {
+    "decision_id": "q13",
+    "subject": "Missing stock3 MgSO4.7H2O",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stocks1–6 row",
+        "exact_source_quote": "(3) MgSO4.7H2O                                               7.5 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 per-100mL heading",
+        "exact_source_quote": "Stocks                                                                per 100 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-medium addition",
+        "exact_source_quote": "Stock solutions 2 - 6                                            1 ml each",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final volume",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "No selected target/owner ingredient or solution represents this required stock. Source 7.5g per 100 mL stock; addition 1 mL per final 1 L. Calculated stock strength 75g/L and final 0.075g/L; preserve exact listed salt/hydrate and separately verify new grounding before curation."
+  },
+  {
+    "decision_id": "q14",
+    "subject": "Missing stock4 K2HPO4.3H2O",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stocks1–6 row",
+        "exact_source_quote": "(4) K2HPO4.3H2O                                              7.5 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 per-100mL heading",
+        "exact_source_quote": "Stocks                                                                per 100 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-medium addition",
+        "exact_source_quote": "Stock solutions 2 - 6                                            1 ml each",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final volume",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "No selected target/owner ingredient or solution represents this required stock. Source 7.5g per 100 mL stock; addition 1 mL per final 1 L. Calculated stock strength 75g/L and final 0.075g/L; preserve exact listed salt/hydrate and separately verify new grounding before curation."
+  },
+  {
+    "decision_id": "q15",
+    "subject": "Missing stock5 KH2PO4",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stocks1–6 row",
+        "exact_source_quote": "(5) KH2PO4                                                   17.5 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 per-100mL heading",
+        "exact_source_quote": "Stocks                                                                per 100 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-medium addition",
+        "exact_source_quote": "Stock solutions 2 - 6                                            1 ml each",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final volume",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "No selected target/owner ingredient or solution represents this required stock. Source 17.5g per 100 mL stock; addition 1 mL per final 1 L. Calculated stock strength 175g/L and final 0.175g/L; preserve exact listed salt/hydrate and separately verify new grounding before curation."
+  },
+  {
+    "decision_id": "q16",
+    "subject": "Missing stock6 NaCl",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stocks1–6 row",
+        "exact_source_quote": "(6) NaCl                                                     2.5 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 per-100mL heading",
+        "exact_source_quote": "Stocks                                                                per 100 ml",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-medium addition",
+        "exact_source_quote": "Stock solutions 2 - 6                                            1 ml each",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final volume",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "No selected target/owner ingredient or solution represents this required stock. Source 2.5g per 100 mL stock; addition 1 mL per final 1 L. Calculated stock strength 25g/L and final 0.025g/L; preserve exact listed salt/hydrate and separately verify new grounding before curation."
+  },
+  {
+    "decision_id": "q17",
+    "subject": "Missing vitamin B1 stock 8",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock8 per 100 mL",
+        "exact_source_quote": "(8) Vitamin B1 (Thiamine hydrochloride)               0.12 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final dose",
+        "exact_source_quote": "Stock solutions 8 - 9                                            1 ml each",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "Source 0.12 g thiamine hydrochloride per 100 mL stock, filter sterile, with 1 mL stock per final litre. Calculated 1.2 g/L stock and 0.0012 g/L final. No selected representation or source-grounded added identifier exists yet."
+  },
+  {
+    "decision_id": "q18",
+    "subject": "Missing serially diluted vitamin B12 stock 9",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 Stock9 per 100 mL",
+        "exact_source_quote": "(9) Vitamin B12 (Cyanocobalamin)                      0.1 g",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 additional1:100 dilution",
+        "exact_source_quote": "Take 1 ml of this solution and add 99 ml deionised water. Filter sterile.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final dose",
+        "exact_source_quote": "Stock solutions 8 - 9                                            1 ml each",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "Source 0.1 g cyanocobalamin per 100 mL initial stock; 1 mL + 99 mL water makes the working stock; filter sterile, then 1 mL working stock per final litre. Calculated initial 1 g/L, working 0.01 g/L, final 0.00001 g/L. Preserve both dilution stages, not the initial strength as final medium."
+  },
+  {
+    "decision_id": "q19",
+    "subject": "Final solvent volume",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Bring to 1 L with deionised water."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final makeup",
+        "exact_source_quote": "Make up to 1 litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The source explicitly makes the final medium up to 1 L. Maintained preparation agrees. Water is not asserted as 1 g/L, and no solvent density conversion is needed."
+  },
+  {
+    "decision_id": "q20",
+    "subject": "Main-medium autoclaving",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Autoclave at 15 psi for 15 minutes."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 final-medium instruction",
+        "exact_source_quote": "Autoclave at 15 psi for 15 minutes.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "The maintained 15 psi/15 minute statement agrees; the generated target omits it. The source separately requires PIV stock autoclaving and vitamin filtration; these stages must not be collapsed into one treatment."
+  },
+  {
+    "decision_id": "q21",
+    "subject": "Stock preparation steps and order",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 PIV stock order",
+        "exact_source_quote": "Ensure elements are added in the following sequence:",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 PIV autoclaving",
+        "exact_source_quote": "Once elements are dissolved autoclave at 15 psi for 15 minutes.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      },
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 B12 dilution/filtration",
+        "exact_source_quote": "Take 1 ml of this solution and add 99 ml deionised water. Filter sterile.",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "Retain PIV element order and stock sterilization plus vitamin filtration in their own stock stages. The final-medium autoclave instruction alone does not represent these preparation requirements."
+  },
+  {
+    "decision_id": "q22",
+    "subject": "Unsupported temperature_range",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "temperature_range",
+        "stored": "15-30°C depending on species"
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "temperature_range",
+        "stored": "15-30°C depending on species"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 identity heading; full page searched for incubation/light support",
+        "exact_source_quote": "CGM (Bold Basal Medium with 3-fold Nitrogen",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "Full one-page recipe contains no support for these generic numeric cultivation ranges. This is bounded source non-support, not proof no literature exists. Remove or qualify only through separately authorized evidence-backed curation; no replacement ranges are proposed."
+  },
+  {
+    "decision_id": "q23",
+    "subject": "Unsupported light_intensity",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "light_intensity",
+        "stored": "Varies by species; typically 50-100 µmol photons m⁻² s⁻¹"
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "light_intensity",
+        "stored": "Varies by species; typically 50-100 µmol photons m⁻² s⁻¹"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 identity heading; full page searched for incubation/light support",
+        "exact_source_quote": "CGM (Bold Basal Medium with 3-fold Nitrogen",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "Full one-page recipe contains no support for these generic numeric cultivation ranges. This is bounded source non-support, not proof no literature exists. Remove or qualify only through separately authorized evidence-backed curation; no replacement ranges are proposed."
+  },
+  {
+    "decision_id": "q24",
+    "subject": "Unsupported light_cycle",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "light_cycle",
+        "stored": "Varies by species; commonly 12:12 or 16:8 light:dark"
+      },
+      {
+        "input": "data/normalized_yaml/algae/cgm.yaml",
+        "field_path": "light_cycle",
+        "stored": "Varies by species; commonly 12:12 or 16:8 light:dark"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "ccapCGM",
+        "source_url": "https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf",
+        "source_locator": "p1 identity heading; full page searched for incubation/light support",
+        "exact_source_quote": "CGM (Bold Basal Medium with 3-fold Nitrogen",
+        "snapshot_sha256": "854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7",
+        "parsed_text_sha256": "76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd"
+      }
+    ],
+    "rationale": "Full one-page recipe contains no support for these generic numeric cultivation ranges. This is bounded source non-support, not proof no literature exists. Remove or qualify only through separately authorized evidence-backed curation; no replacement ranges are proposed."
+  }
+]
+
+### All asserted chemical and mixture identifiers
+
+grounding: concern. Targets: CultureMech:000058.
+
+All 9 distinct primary IDs resolve: 7 CHEBI, FOODON yeast extract and MICRO proteose peptone. The primary linkage counts are 9/10 generated ingredient instances (90%) and 9/9 maintained (100%); the tenth generated row is process prose. Neither layer asserts secondary MIM links (0/10 and 0/9); this is linkage, not correctness. Explicit Fe/Mn/Co/Mo hydrates and D-glucose match source forms. Na2EDTA does not independently certify anhydrous reagent grade. Proteose peptone is MICRO, but curation_metadata says FOODON and the stored label has capitalization drift.
+
+### Stock structure, optional agar and sterilization stages
+
+representation: concern. Targets: CultureMech:000058.
+
+The maintained three preparation steps agree within their final-medium scope. PIV stock order/autoclaving and vitamin filtration/dilution remain unrepresented. Source LIQUID versus optional agar is preserved only after excluding the generated fake ingredient.
+
+### Category, incubation and organism claims
+
+scope: concern. Targets: CultureMech:000058.
+
+Algae/CCAP attribution and complex undefined composition fit the source context. No explicit target organism or growth result is asserted; none is inferred from the bibliography. Numeric temperature/light defaults lack support in the inspected recipe; generic applications are not experimental growth claims.
+
+### Prior report and current source distinction
+
+provenance: supported. Targets: CultureMech:000058.
+
+Exact selected report headers and current bytes were checked. These ad hoc reports are historical context, not validated structured predecessor findings or independent primary evidence. No prior issue is closed.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:000058.
+
+19 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+## Findings
+
+### f1: Required stocks are omitted and PIV strength is flattened
+
+major / open / confirmed; issue key: cm-000058-cgm-stock-boundaries.
+
+Both selected layers omit stocks 1–6 and 8–9 and carry the six PIV solutes at their stock concentrations as direct medium ingredients. Source Stock 7 is dosed 6 mL per final litre. This changes the formulation despite schema-valid values.
+
+### f2: Generated CGM retains an instruction ingredient and loses owner repairs
+
+major / open / confirmed; issue key: cm-000058-stale-instruction-and-preparation.
+
+The generated tenth ingredient is the makeup/agar instruction with 15 G_PER_L. The owner has nine ingredients, structured CCAP sources and three preparation steps added after the merge. Regeneration alone would fix this stale subset but leave the stock defect.
+
+### f3: Numeric cultivation conditions lack scoped evidence
+
+major / open / confirmed; issue key: cm-000058-unsupported-cultivation-defaults.
+
+Both layers state 15–30°C, 50–100 µmol photons m−2 s−1 and 12:12 or 16:8 light:dark. None occurs in the full inspected CCAP recipe and no claim-level evidence is attached. Generic importer text cannot establish species-specific cultivation conditions.
+
+### f4: Proteose peptone ontology metadata disagrees with its resolved namespace
+
+minor / open / confirmed; issue key: cm-000058-proteose-ontology-metadata.
+
+MICRO:0000180 is valid and resolves to proteose peptone, while curation_metadata.ontology_source says FOODON and term.label is capitalized. This is a bounded metadata issue, not an invalid ingredient identifier.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Curate the algae owner with all nine scoped stocks, exact forms, stock strengths, receiving doses, vitamin serial dilution and narrow evidence; avoid stock/direct double counting.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+After correcting the maintained stock structure, regenerate and confirm the prose ingredient is gone, optional agar remains conditional and maintained sources/preparation survive.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Find directly scoped organism/formulation evidence or remove/qualify the generic defaults in the maintained owner; do not invent substitute ranges.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Correct namespace/label metadata through authorized curation while preserving historical events and exact mixture scope.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/CGM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/algae/cgm.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/CGM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/CGM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch053/529/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch053/529/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/CGM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/CGM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/algae/cgm.yaml:1:id: CultureMech:000058<br>./data/merge_yaml/merged/CGM.yaml:1:id: CultureMech:000058<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch053/source-preflight-bound/529/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 12 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| ccap | https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf; Complete PDF page 1 of 1, visually read alongside exact extracted text; revision 002, approved 29 May 2026 | supports | The title, per-100-mL stock headings, per-litre PIV stock, separately diluted B12 stock, final medium stock doses, final-volume makeup and optional agar are distinct source stages. The source is an adapted CCAP recipe; its bibliography does not independently establish growth for an unnamed strain. |
+| pdf-visual | /private/tmp/culturemech-review-work-batch053/rendered-source-pdfs-20261025/ccapCGM/page-1.png; Full one-page rendering of exact bound CCAP PDF; render-receipt.json preserves input hash | context_only | Visually verified the complete page and headings, all stock amounts/doses, B12 serial dilution, preparation text and revision metadata. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch053/529/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | CHEBI:17634 resolves to D-glucose. Source-specific grade/form remains a separate question. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | CHEBI:49976 resolves to zinc dichloride. Source-specific grade/form remains a separate question. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Source-specific grade/form remains a separate question. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Source-specific grade/form remains a separate question. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Source-specific grade/form remains a separate question. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | CHEBI:86254 resolves to iron trichloride hexahydrate. Source-specific grade/form remains a separate question. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Source-specific grade/form remains a separate question. |
+| foodon03315426 | https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315426; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | FOODON:03315426 resolves to yeast extract. Source-specific grade/form remains a separate question. |
+| micro0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180; Exact OLS identifier, canonical label, obsolete flag and definition/form | supports | MICRO:0000180 resolves to proteose peptone. Source-specific grade/form remains a separate question. |
+| historical-1 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGM.md; Complete exact-target historical report; current file hash | context_only | Derivative historical assessment read; old commands were not executed and old source-access claims are not a new retrieval. Current conclusions below use the bound source documents. |
+| historical-2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/cgm.md; Complete exact-target historical report; current file hash | context_only | Derivative historical assessment read; old commands were not executed and old source-access claims are not a new retrieval. Current conclusions below use the bound source documents. |
+| historical-4 | reports/yaml_record_review/20260922T064954Z-CGM.md; Complete exact-target historical report; current file hash | context_only | Derivative historical assessment read; old commands were not executed and old source-access claims are not a new retrieval. Current conclusions below use the bound source documents. |
+| history-metadata | data/merge_yaml/merged/CGM.yaml; data/normalized_yaml/algae/cgm.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": [{"index": 2, "issue": "timezone absent", "value": "2026-02-03T11:26:43.480065"}, {"index": 5, "issue": "timezone absent", "value": "2026-04-04T12:54:54.932216"}]}, {"input": "data/normalized_yaml/algae/cgm.yaml", "events": 10, "timestamp_issues": [{"index": 2, "issue": "timezone absent", "value": "2026-02-03T11:26:43.480065"}, {"index": 5, "issue": "timezone absent", "value": "2026-04-04T12:54:54.932216"}]}] |
+| writer-0 | scripts/repair_ccap_instruction_rows.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Read the CGM target table and repair_simple/_append_steps/_append_event bodies, plus CCAP provenance extraction/repair bodies. Current CGM repair removes the exact prose row and adds three preparation steps; it does not restore stocks 1–9. Current implementation is not proof of historical execution. |
+| writer-1 | scripts/repair_ccap_sources_score10.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Read the CGM target table and repair_simple/_append_steps/_append_event bodies, plus CCAP provenance extraction/repair bodies. Current CGM repair removes the exact prose row and adds three preparation steps; it does not restore stocks 1–9. Current implementation is not proof of historical execution. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The currently captured CCAP revision 002 is dated 29 May 2026. The original April ingredient-curation payload was not authenticated; current source comparison cannot prove exactly which source version was used then.
+- No whole-corpus duplicate or scientific growth certification is made. Excluded bacterial CGM reports and its legacy MIM key are not findings against this selected algae record.
+- Embedded history was read directly; the repository standalone-history recipe is not a record-specific embedded-history validator. Naive historical timestamps are retained, not silently rewritten.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261025T201417Z-culturemech-000058-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: cgm (CultureMech:000058)'
+started_at: '2026-10-25T20:08:42Z'
+finished_at: '2026-10-25T20:14:17Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: CCAP CGM is resolved to the algae owner, but the generated record retains
+  a parsed instruction as an ingredient, omits maintained preparation/provenance repairs,
+  flattens the PIV stock at stock strength, and omits eight other source stocks. Generic
+  incubation/light ranges lack support in the inspected source.
+source:
+  git_revision: 231e0ba71b41d45362168d539efebe7991823464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CGM.yaml
+    sha256: f33a0feff35b15f84837e22bd3bce169c1a30289661d4a0dced847e644a24930
+    role: target
+  - path: data/normalized_yaml/algae/cgm.yaml
+    sha256: c420a18c3f2ced911e2894c0dc6e80f1e44e4d8ea93ed7a0b9b4d6205800a8a2
+    role: context
+  - path: data/normalized_yaml/bacterial/cgm.yaml
+    sha256: 80b7acc5a3e9ab684a032367f4358e519cbb8398df15ac8ff24401e8053e4321
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_650_CENTENUM_medium.yaml.md
+    sha256: cea95c8bef224d7988c89e55916e6bfc1c85e40e1e04644c416ba76677bfaf5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_748_CENS_medium.yaml.md
+    sha256: 013cdd23597b0f17ae16040cfcff4fa5612704583733ff2b59f4575da6a5ef4e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/medium_650_modified_for_dsm_8319.yaml.md
+    sha256: bf8b812d7257fd833fe40a0c3d65ecca0d062d667e5d7ef32e8da45fdc400b8d
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/cellulosilyticum_medium.yaml.md
+    sha256: 6fc71489fc62d3a8490420a79c8e85ef97b1bf00048f2b4a5f9cbde290926d95
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/cens_medium.yaml.md
+    sha256: 21cd5c7838ddcd4136764be9d06f0b560c3df459ffd3510ca5a9df7e1f34e292
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/centenum_medium.yaml.md
+    sha256: 11adfae044a191efafa6569efa6dae001a26c2b4186bb1c4165f15ec06fb5aa7
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/cgm.yaml.md
+    sha256: 00bc6814a1dfc5789c97728aa09b3959c842ce63a226744cc526ee36a88f826e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.yaml.md
+    sha256: 3338d620d73f8bd698294bbb4b0a267bb79d279ff8c96056cc4586cd8535f187
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5312_Solution_C.yaml.md
+    sha256: e167b06340bce70ab77d6408c8f5e9cb6b1dbeef2c36e29ff20952990e3bfbd2
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5342_Solution_A.yaml.md
+    sha256: f68b7d85766061aa31ffef0f0172844d47d0aae036221dc66d608c86e8dce7a6
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-4000-4500/records/bacterial/mediadive_5343_Solution_B.yaml.md
+    sha256: aca054ad3ae72ab8aee9908cb67ceac62a96adf84ff60a5141dda9b4f13ff6d8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/records/M190.md
+    sha256: 89725cdcefc5da88b06931c4db253e065a5f48c2d2b9c8c0a9bc07f6fdc157e8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-m258-m260-stocks/records/M258.md
+    sha256: fda8033086b0627144eb23d2558e66134a597bfa67939fec2f18992de7845747
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CEJFB1T_MEDIUM.md
+    sha256: 49ac2c7b79c5da4e7d56b164324afa763d1f8301cb1794aacecb55c381582cb6
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+    sha256: a9112230e5f2b35a345d29058d2d06b1aec1b6c6e36d77e294ecbad9801f92ba
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: d71859ea710d11f601c3f0c34e1740f6d2afbae9b6516f296dccbe34c913d948
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSE_AGAR.md
+    sha256: f90ca9219519b238b5b06d86a8ca2e84f6832a4ab67b0feabd05bdc3a9839381
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSILYTICUM_MEDIUM.md
+    sha256: 3a3e74ac86eca9c6db45ec35f7ef0e6a76527941fffd6422ec02b9931c0c4212
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CELLULOSILYTICUM_RUMINICOLA_MEDIUM.md
+    sha256: 63217cedf21217428eca34c2c1418b1982e2e1b435abc3a6130e2689216f9fb0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CENS_MEDIUM.md
+    sha256: 597cb6a7938f9cd459897adf69983dff16ed4d88f1a910366ad8abe4b3928222
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CENTENUM_MEDIUM.md
+    sha256: 64359ed6e4f323a585a64a19e0259164f4e54dd0e8d5c90443fca6183b6c91e1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGM.md
+    sha256: a07bbba50f039aeb8d2aa1f811f38913a6651995e329748e80f180b9a3d57a3b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGY_Medium.md
+    sha256: 2d2435a40efa8bac48c6238994b420ea1f7022e9d1a615b67aa2734a79397302
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/cgm.md
+    sha256: 306c1cacb9be80fb75cde15b3ccffd282c046df9f6cf08ef2ff32055f4886ee4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M1148_Halanaeroarchaeum_Medium.md
+    sha256: edfdd0b0fb57e8f9d9c328c8326da947773576733a6c38f9ecda66e70fb8e1a9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M258_Methanomicrobium_Mobile_Medium.md
+    sha256: 10dbfce058ee6e85485dcfdc15b611cc9e0b95cea52a03f631a3b54fe008fa04
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J295_CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: 9a63092a34db92eb9ca60f2db910800f0034f5e7f0e6d1eb074e146061fa60d4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_650_CENTENUM_medium.md
+    sha256: 9305c9cfd434cbb5f857fd99357fe9a811cb31a48a3d05d779959557c84250b2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_748_CENS_medium.md
+    sha256: a9c41ec015e0f2f45bb92ed0065eb0ddc3f3852207c12751d1ce686377ba8326
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1040_CEJFB1T_Medium.md
+    sha256: d3295a1ae91e3c543bac519713a5559b6da46ed2a5384def64ef0c9354ed6e4f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1264_Cellulolytic_Natronoarchaea_Medium.md
+    sha256: 59c8979a006d9b770dd6d2b0ecdbdfd4a81fa2339fff1d33afd41e65932df4fc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M439_Desulfovibrio_Aerotolerans_DVO5_Medium.md
+    sha256: e43ae29a243274817a13192084b67ac0741248fff46309a4e2862aef08e1ef58
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M57_Cellulose_Agar.md
+    sha256: 7a3396b4e01bffebe1a22b591ead29f62ecbfeaeeeb315bbcac5a84050435f83
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M653_Cellulosilyticum_Ruminicola_Medium.md
+    sha256: a1adca9a9911e57b4bd66fce0a5f4db9d2feea7b745195bf0c6e53238beeb2d0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cellulosilyticum_medium.md
+    sha256: da0b08c05cca15abca3721b4461c97a7cb8390a6cbb460045efe9dd04a956ec2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cens_medium.md
+    sha256: 874c7e795a7cd6cb420776fb624326f85520f9879d26165de81a0638506b1de2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/centenum_medium.md
+    sha256: fabcbe826c085e4f317e0f4dffb71c125ef8c93ca6d7c378eb5aa003bcbc9f94
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cgm.md
+    sha256: aed676ac8b2825a51883505bc77e41d3fd59a20a6facce044c7c62a638aa64d1
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cgy_medium.md
+    sha256: 328084240301f3a0bd2140a55d72e331bb4d75dd7e40be3971155dff910193bc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5312_Solution_C.md
+    sha256: 64ab17db61f41d71c9fab76cb8c0838b8cdcd81c4e35f7f240c71642196f0ff3
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5342_Solution_A.md
+    sha256: 31d821180b177a4395ac64cfe2eb443091729cb74309085beeb1b765ed2dd2f2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5343_Solution_B.md
+    sha256: a1f8fb64c671e4aae298c328e3a93b1ad420e2d60c7400dbae6775f8081a0e33
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_650_modified_for_dsm_8319.md
+    sha256: f8616b950028d94561a0c4a986c40d5fdcdfa14324af5f8fa130447d9f7d7bdb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/togo_medium_m190.md
+    sha256: d29c2d8798f20259a253d2b17745d675b4a789de94bdcef5279332d086383022
+    role: context
+  - path: reports/yaml_record_review/20260922T063517Z-CEJFB1T_MEDIUM.md
+    sha256: 1c833062655743da5d43f5f05638efd1b7bad9147a054541027cb892ea737379
+    role: context
+  - path: reports/yaml_record_review/20260922T063654Z-CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.md
+    sha256: 812641f1e5b20ca4a328fc409a8fd1f8cf18a1b8c740c904170097e764dd491a
+    role: context
+  - path: reports/yaml_record_review/20260922T063822Z-CELLULOMONAS_FERMENTANS_MEDIUM.md
+    sha256: cde23788b5a2bdfea2e67768ac9f27f0ad5200aeccb4c3e6fd8af84b3ac70c14
+    role: context
+  - path: reports/yaml_record_review/20260922T063942Z-CELLULOSE_AGAR.md
+    sha256: 7d7df31cd5aa0b65511048a3ad7ea51ed128f3d111280455da6b27b77deeff3a
+    role: context
+  - path: reports/yaml_record_review/20260922T064115Z-CELLULOSILYTICUM_MEDIUM.md
+    sha256: b3996678c78481e187be45d3a239865ef844eff74fcc663396ac72e9b986aaef
+    role: context
+  - path: reports/yaml_record_review/20260922T064238Z-CELLULOSILYTICUM_RUMINICOLA_MEDIUM.md
+    sha256: 0b2275d6cbeebebbd700d25e120994c47e980a94f276e53b82544cbf4ab4ddff
+    role: context
+  - path: reports/yaml_record_review/20260922T064616Z-CENS_MEDIUM.md
+    sha256: 6358d704259dc7ba50caf8263a8e95c81f311c9618f805c8f60587de73d37d16
+    role: context
+  - path: reports/yaml_record_review/20260922T064817Z-CENTENUM_MEDIUM.md
+    sha256: 5a517b2db46fa7608fa93b1fd6f7ca36633e65d9e9187b38ed2f820fc9ff5c4c
+    role: context
+  - path: reports/yaml_record_review/20260922T064954Z-CGM.md
+    sha256: b50dfb754feed998bcc620cfe9162a90071733ad665f78825ce24a6a870fe143
+    role: context
+  - path: reports/yaml_record_review/20260922T065133Z-CGY_Medium.md
+    sha256: f24f1ad05b4a65ae735f976877698aed5a3ffa1df9130d14103914260882ae5a
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/audit_mim_sssom_divergence.py
+    sha256: ad3478a5aeb757f2ce503be1b4720c86f0c1d90f5549918e1341dc7ac2c0f445
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_ccap_instruction_rows.py
+    sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/repair_dsmz650_752_762_preparations.py
+    sha256: 0b955dd562a885fec75dd73bed1eaa00af707b3e2f9d35f7f16b066feb743e1a
+    role: context
+  - path: scripts/repair_komodo650_752_762_preparations.py
+    sha256: 477e2e14b5ff6284e4e291986b333552215f44dca2473fc64cf1d60e0028c0bd
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_public_stock_concentrations.py
+    sha256: 220dafdb1b826063f533a4b7e41dc3f2576adc433be92c65243605255fb97bb1
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/import/komodo_importer.py
+    sha256: 702733bd580e4ba28f77e183e1e8268f17ea2c1041cf7b3addd92919624f2706
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 529; batch 053 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding fifty-two task batches
+    contain 520 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 231e0ba71b41d45362168d539efebe7991823464
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 523 of 6325 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000058
+targets:
+- target_id: CultureMech:000058
+  path: data/merge_yaml/merged/CGM.yaml
+  label: cgm
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/CGM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/CGM.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch053/529/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch053/529/strict.tsv"
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/CGM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/CGM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000058
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/CGM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/algae/cgm.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/CGM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:11:00.001327Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/CGM.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch053/529/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:11:04.165706Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-053/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch053/529/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/CGM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:11:10.065077Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/CGM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-25T20:11:13.573434Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: supports
+  summary: './data/normalized_yaml/algae/cgm.yaml:1:id: CultureMech:000058
+
+    ./data/merge_yaml/merged/CGM.yaml:1:id: CultureMech:000058
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/source-preflight-bound/529/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: supports
+  summary: 12 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: cc73bd32b362673f5e5ad7a4e21e382832f80ac516de2d567c587337f9b8196f
+- evidence_id: ccap
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf
+  locator: Complete PDF page 1 of 1, visually read alongside exact extracted text;
+    revision 002, approved 29 May 2026
+  accessed_at: '2026-10-22T09:27:23.185158Z'
+  support: supports
+  summary: The title, per-100-mL stock headings, per-litre PIV stock, separately diluted
+    B12 stock, final medium stock doses, final-volume makeup and optional agar are
+    distinct source stages. The source is an adapted CCAP recipe; its bibliography
+    does not independently establish growth for an unnamed strain.
+  snapshot_sha256: 854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7
+- evidence_id: pdf-visual
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/rendered-source-pdfs-20261025/ccapCGM/page-1.png
+  locator: Full one-page rendering of exact bound CCAP PDF; render-receipt.json preserves
+    input hash
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Visually verified the complete page and headings, all stock amounts/doses,
+    B12 serial dilution, preparation text and revision metadata.
+  snapshot_sha256: 18252552cf49d38514e9794f80e38d6cbbbc40f501ae1743548a7f2b293ea948
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch053/529/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 127c72e1a613b26b8a17fd1c09e2b3f0d247732fd51d818ea7aeac4d96b2fb24
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. Source-specific grade/form remains a
+    separate question.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Source-specific grade/form remains
+    a separate question.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Source-specific grade/form
+    remains a separate question.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Source-specific
+    grade/form remains a separate question.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Source-specific grade/form
+    remains a separate question.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate. Source-specific grade/form
+    remains a separate question.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Source-specific
+    grade/form remains a separate question.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: foodon03315426
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315426
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:00:49.388263Z'
+  support: supports
+  summary: FOODON:03315426 resolves to yeast extract. Source-specific grade/form remains
+    a separate question.
+  snapshot_sha256: cf2b158469d7dedbe7c31242b5901230a29b5765e04bb37c92f0b1ddd6ea9c44
+- evidence_id: micro0000180
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: Exact OLS identifier, canonical label, obsolete flag and definition/form
+  accessed_at: '2026-10-21T08:43:24.290496Z'
+  support: supports
+  summary: MICRO:0000180 resolves to proteose peptone. Source-specific grade/form
+    remains a separate question.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CGM.md
+  locator: Complete exact-target historical report; current file hash
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Derivative historical assessment read; old commands were not executed and
+    old source-access claims are not a new retrieval. Current conclusions below use
+    the bound source documents.
+  snapshot_sha256: a07bbba50f039aeb8d2aa1f811f38913a6651995e329748e80f180b9a3d57a3b
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/algae/cgm.md
+  locator: Complete exact-target historical report; current file hash
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Derivative historical assessment read; old commands were not executed and
+    old source-access claims are not a new retrieval. Current conclusions below use
+    the bound source documents.
+  snapshot_sha256: 306c1cacb9be80fb75cde15b3ccffd282c046df9f6cf08ef2ff32055f4886ee4
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T064954Z-CGM.md
+  locator: Complete exact-target historical report; current file hash
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Derivative historical assessment read; old commands were not executed and
+    old source-access claims are not a new retrieval. Current conclusions below use
+    the bound source documents.
+  snapshot_sha256: b50dfb754feed998bcc620cfe9162a90071733ad665f78825ce24a6a870fe143
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/CGM.yaml; data/normalized_yaml/algae/cgm.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 2, "issue":
+    "timezone absent", "value": "2026-02-03T11:26:43.480065"}, {"index": 5, "issue":
+    "timezone absent", "value": "2026-04-04T12:54:54.932216"}]}, {"input": "data/normalized_yaml/algae/cgm.yaml",
+    "events": 10, "timestamp_issues": [{"index": 2, "issue": "timezone absent", "value":
+    "2026-02-03T11:26:43.480065"}, {"index": 5, "issue": "timezone absent", "value":
+    "2026-04-04T12:54:54.932216"}]}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_ccap_instruction_rows.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Read the CGM target table and repair_simple/_append_steps/_append_event
+    bodies, plus CCAP provenance extraction/repair bodies. Current CGM repair removes
+    the exact prose row and adds three preparation steps; it does not restore stocks
+    1–9. Current implementation is not proof of historical execution.
+  snapshot_sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/repair_ccap_sources_score10.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-25T20:14:16Z'
+  support: context_only
+  summary: Read the CGM target table and repair_simple/_append_steps/_append_event
+    bodies, plus CCAP provenance extraction/repair bodies. Current CGM repair removes
+    the exact prose row and adds three preparation steps; it does not restore stocks
+    1–9. Current implementation is not proof of historical execution.
+  snapshot_sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact CCAP accession and maintained owner
+  outcome: supported
+  summary: CultureMech:000058 and CCAP:CGM identify the algae CGM owner. The differently
+    identified bacterial cgm (CultureMech:000329) is comparison context only and contributes
+    no quantity, MIM defect or curation ownership to this review. This is one generated
+    target, not a deduplication judgment.
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - ccap
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 24 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"subject\": \"Na2EDTA PIV stock\
+    \ versus final medium\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.75\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.75\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stock 7 PIV row\",\n        \"exact_source_quote\"\
+    : \"Na2EDTA                                           0.75 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stock 7 per-litre heading\",\n        \"exact_source_quote\": \"(7) Trace\
+    \ elements (PIV):                             per litre\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre stock7 dose\",\n        \"exact_source_quote\": \"Stock\
+    \ solution 7 (Trace elements)                                6 ml\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-volume makeup\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 0.75 g/L is the Stock 7 concentration,\
+    \ not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.75\
+    \ g/L × 0.006 L / 1 L = 0.00450 g/L. Prefer explicit stock composition and dose;\
+    \ do not retain both an expanded stock and duplicate direct solutes. Formula-based\
+    \ conversion is separate from the literal source.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q2\",\n    \"subject\": \"FeCl3.6H2O PIV stock versus final medium\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[1].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.097\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stock 7 PIV row\",\n        \"exact_source_quote\"\
+    : \"FeCl3.6H2O                                        0.097 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stock 7 per-litre heading\",\n        \"exact_source_quote\": \"(7) Trace\
+    \ elements (PIV):                             per litre\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre stock7 dose\",\n        \"exact_source_quote\": \"Stock\
+    \ solution 7 (Trace elements)                                6 ml\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-volume makeup\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 0.097 g/L is the Stock 7 concentration,\
+    \ not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.097\
+    \ g/L × 0.006 L / 1 L = 0.000582 g/L. Prefer explicit stock composition and dose;\
+    \ do not retain both an expanded stock and duplicate direct solutes. Formula-based\
+    \ conversion is separate from the literal source.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q3\",\n    \"subject\": \"MnCl2.4H2O PIV stock versus final medium\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[2].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.041\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.041\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stock 7 PIV row\",\n        \"exact_source_quote\"\
+    : \"MnCl2.4H2O                                        0.041 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stock 7 per-litre heading\",\n        \"exact_source_quote\": \"(7) Trace\
+    \ elements (PIV):                             per litre\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre stock7 dose\",\n        \"exact_source_quote\": \"Stock\
+    \ solution 7 (Trace elements)                                6 ml\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-volume makeup\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 0.041 g/L is the Stock 7 concentration,\
+    \ not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.041\
+    \ g/L × 0.006 L / 1 L = 0.000246 g/L. Prefer explicit stock composition and dose;\
+    \ do not retain both an expanded stock and duplicate direct solutes. Formula-based\
+    \ conversion is separate from the literal source.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q4\",\n    \"subject\": \"ZnCl2 PIV stock versus final medium\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stock 7 PIV row\",\n        \"exact_source_quote\"\
+    : \"ZnCl2                                             0.005 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stock 7 per-litre heading\",\n        \"exact_source_quote\": \"(7) Trace\
+    \ elements (PIV):                             per litre\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre stock7 dose\",\n        \"exact_source_quote\": \"Stock\
+    \ solution 7 (Trace elements)                                6 ml\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-volume makeup\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 0.005 g/L is the Stock 7 concentration,\
+    \ not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.005\
+    \ g/L × 0.006 L / 1 L = 0.000030 g/L. Prefer explicit stock composition and dose;\
+    \ do not retain both an expanded stock and duplicate direct solutes. Formula-based\
+    \ conversion is separate from the literal source.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q5\",\n    \"subject\": \"CoCl2.6H2O PIV stock versus final medium\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[4].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stock 7 PIV row\",\n        \"exact_source_quote\"\
+    : \"CoCl2.6H2O                                        0.002 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stock 7 per-litre heading\",\n        \"exact_source_quote\": \"(7) Trace\
+    \ elements (PIV):                             per litre\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre stock7 dose\",\n        \"exact_source_quote\": \"Stock\
+    \ solution 7 (Trace elements)                                6 ml\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-volume makeup\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 0.002 g/L is the Stock 7 concentration,\
+    \ not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.002\
+    \ g/L × 0.006 L / 1 L = 0.000012 g/L. Prefer explicit stock composition and dose;\
+    \ do not retain both an expanded stock and duplicate direct solutes. Formula-based\
+    \ conversion is separate from the literal source.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q6\",\n    \"subject\": \"Na2MoO4.2H2O PIV stock versus final medium\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.004\",\n          \"unit\"\
+    : \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stock 7 PIV row\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4.2H2O                                      0.004 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stock 7 per-litre heading\",\n        \"exact_source_quote\": \"(7) Trace\
+    \ elements (PIV):                             per litre\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre stock7 dose\",\n        \"exact_source_quote\": \"Stock\
+    \ solution 7 (Trace elements)                                6 ml\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-volume makeup\",\n        \"exact_source_quote\": \"Make up to 1\
+    \ litre with deionised water. For agar, add 15 g per litre Bacteriological Agar.\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 0.004 g/L is the Stock 7 concentration,\
+    \ not final-medium concentration. Source adds 6 mL Stock 7 to a final 1 L: 0.004\
+    \ g/L × 0.006 L / 1 L = 0.000024 g/L. Prefer explicit stock composition and dose;\
+    \ do not retain both an expanded stock and duplicate direct solutes. Formula-based\
+    \ conversion is separate from the literal source.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q7\",\n    \"subject\": \"Proteose peptone direct final-medium amount\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.25\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Medium per-litre row\",\n        \"exact_source_quote\"\
+    : \"Proteose peptone                                                 0.25 g\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre heading\",\n        \"exact_source_quote\": \"Medium \
+    \                                                               per litre\",\n\
+    \        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The local amount/unit agrees with the\
+    \ explicit final-medium table. Add scoped concentration evidence to the maintained\
+    \ owner; existing source/notes strings are not claim-level EvidenceItem support.\
+    \ No mixture molarity is inferred.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n\
+    \    \"subject\": \"Yeast extract direct final-medium amount\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[7].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Medium per-litre row\",\n        \"exact_source_quote\"\
+    : \"Yeast extract                                                    0.25 g\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre heading\",\n        \"exact_source_quote\": \"Medium \
+    \                                                               per litre\",\n\
+    \        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The local amount/unit agrees with the\
+    \ explicit final-medium table. Add scoped concentration evidence to the maintained\
+    \ owner; existing source/notes strings are not claim-level EvidenceItem support.\
+    \ No mixture molarity is inferred.\"\n  },\n  {\n    \"decision_id\": \"q9\",\n\
+    \    \"subject\": \"D-glucose direct final-medium amount\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[8].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5.00\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.00\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Medium per-litre row\",\n        \"exact_source_quote\"\
+    : \"D-glucose                                                        5.00 g\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Medium per-litre heading\",\n        \"exact_source_quote\": \"Medium \
+    \                                                               per litre\",\n\
+    \        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The local amount/unit agrees with the\
+    \ explicit final-medium table. Add scoped concentration evidence to the maintained\
+    \ owner; existing source/notes strings are not claim-level EvidenceItem support.\
+    \ No mixture molarity is inferred.\"\n  },\n  {\n    \"decision_id\": \"q10\"\
+    ,\n    \"subject\": \"Optional agar and stale parsed instruction\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"For an agar formulation, add 15 g/L Bacteriological Agar.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 final makeup and optional agar instruction\"\
+    ,\n        \"exact_source_quote\": \"Make up to 1 litre with deionised water.\
+    \ For agar, add 15 g per litre Bacteriological Agar.\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The 15 g/L belongs to optional Bacteriological\
+    \ Agar in an agar formulation. The generated preferred_term is process prose,\
+    \ not a chemical. The maintained owner already removed the bogus row and retained\
+    \ the conditional agar step; regenerate only after the remaining stock defects\
+    \ are curated.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"subject\": \"\
+    Missing stock1 NaNO3\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\",\n \
+    \       \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stocks1–6 row\",\n        \"exact_source_quote\"\
+    : \"(1) NaNO3                                                    7.5 g\",\n  \
+    \      \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 per-100mL heading\",\n        \"exact_source_quote\": \"Stocks        \
+    \                                                        per 100 ml\",\n     \
+    \   \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-medium addition\",\n        \"exact_source_quote\": \"Stock solution\
+    \ 1                                                 10 ml\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final volume\",\n        \"exact_source_quote\": \"Make up to 1 litre with\
+    \ deionised water. For agar, add 15 g per litre Bacteriological Agar.\",\n   \
+    \     \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"No selected target/owner ingredient or\
+    \ solution represents this required stock. Source 7.5g per 100 mL stock; addition\
+    \ 10 mL per final 1 L. Calculated stock strength 75g/L and final 0.75g/L; preserve\
+    \ exact listed salt/hydrate and separately verify new grounding before curation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q12\",\n    \"subject\": \"Missing stock2\
+    \ CaCl2.2H2O\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"\
+    source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n    \
+    \    \"source_locator\": \"p1 Stocks1–6 row\",\n        \"exact_source_quote\"\
+    : \"(2) CaCl2.2H2O                                               2.5 g\",\n  \
+    \      \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 per-100mL heading\",\n        \"exact_source_quote\": \"Stocks        \
+    \                                                        per 100 ml\",\n     \
+    \   \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-medium addition\",\n        \"exact_source_quote\": \"Stock solutions\
+    \ 2 - 6                                            1 ml each\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final volume\",\n        \"exact_source_quote\": \"Make up to 1 litre with\
+    \ deionised water. For agar, add 15 g per litre Bacteriological Agar.\",\n   \
+    \     \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"No selected target/owner ingredient or\
+    \ solution represents this required stock. Source 2.5g per 100 mL stock; addition\
+    \ 1 mL per final 1 L. Calculated stock strength 25g/L and final 0.025g/L; preserve\
+    \ exact listed salt/hydrate and separately verify new grounding before curation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q13\",\n    \"subject\": \"Missing stock3\
+    \ MgSO4.7H2O\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"\
+    source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n    \
+    \    \"source_locator\": \"p1 Stocks1–6 row\",\n        \"exact_source_quote\"\
+    : \"(3) MgSO4.7H2O                                               7.5 g\",\n  \
+    \      \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 per-100mL heading\",\n        \"exact_source_quote\": \"Stocks        \
+    \                                                        per 100 ml\",\n     \
+    \   \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-medium addition\",\n        \"exact_source_quote\": \"Stock solutions\
+    \ 2 - 6                                            1 ml each\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final volume\",\n        \"exact_source_quote\": \"Make up to 1 litre with\
+    \ deionised water. For agar, add 15 g per litre Bacteriological Agar.\",\n   \
+    \     \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"No selected target/owner ingredient or\
+    \ solution represents this required stock. Source 7.5g per 100 mL stock; addition\
+    \ 1 mL per final 1 L. Calculated stock strength 75g/L and final 0.075g/L; preserve\
+    \ exact listed salt/hydrate and separately verify new grounding before curation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q14\",\n    \"subject\": \"Missing stock4\
+    \ K2HPO4.3H2O\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"\
+    source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n    \
+    \    \"source_locator\": \"p1 Stocks1–6 row\",\n        \"exact_source_quote\"\
+    : \"(4) K2HPO4.3H2O                                              7.5 g\",\n  \
+    \      \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 per-100mL heading\",\n        \"exact_source_quote\": \"Stocks        \
+    \                                                        per 100 ml\",\n     \
+    \   \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-medium addition\",\n        \"exact_source_quote\": \"Stock solutions\
+    \ 2 - 6                                            1 ml each\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final volume\",\n        \"exact_source_quote\": \"Make up to 1 litre with\
+    \ deionised water. For agar, add 15 g per litre Bacteriological Agar.\",\n   \
+    \     \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"No selected target/owner ingredient or\
+    \ solution represents this required stock. Source 7.5g per 100 mL stock; addition\
+    \ 1 mL per final 1 L. Calculated stock strength 75g/L and final 0.075g/L; preserve\
+    \ exact listed salt/hydrate and separately verify new grounding before curation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q15\",\n    \"subject\": \"Missing stock5\
+    \ KH2PO4\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stocks1–6 row\",\n        \"exact_source_quote\": \"(5) KH2PO4        \
+    \                                           17.5 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 per-100mL heading\",\n        \"exact_source_quote\": \"Stocks        \
+    \                                                        per 100 ml\",\n     \
+    \   \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-medium addition\",\n        \"exact_source_quote\": \"Stock solutions\
+    \ 2 - 6                                            1 ml each\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final volume\",\n        \"exact_source_quote\": \"Make up to 1 litre with\
+    \ deionised water. For agar, add 15 g per litre Bacteriological Agar.\",\n   \
+    \     \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"No selected target/owner ingredient or\
+    \ solution represents this required stock. Source 17.5g per 100 mL stock; addition\
+    \ 1 mL per final 1 L. Calculated stock strength 175g/L and final 0.175g/L; preserve\
+    \ exact listed salt/hydrate and separately verify new grounding before curation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q16\",\n    \"subject\": \"Missing stock6\
+    \ NaCl\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 Stocks1–6 row\",\n        \"exact_source_quote\": \"(6) NaCl          \
+    \                                           2.5 g\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 per-100mL heading\",\n        \"exact_source_quote\": \"Stocks        \
+    \                                                        per 100 ml\",\n     \
+    \   \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-medium addition\",\n        \"exact_source_quote\": \"Stock solutions\
+    \ 2 - 6                                            1 ml each\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final volume\",\n        \"exact_source_quote\": \"Make up to 1 litre with\
+    \ deionised water. For agar, add 15 g per litre Bacteriological Agar.\",\n   \
+    \     \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"No selected target/owner ingredient or\
+    \ solution represents this required stock. Source 2.5g per 100 mL stock; addition\
+    \ 1 mL per final 1 L. Calculated stock strength 25g/L and final 0.025g/L; preserve\
+    \ exact listed salt/hydrate and separately verify new grounding before curation.\"\
+    \n  },\n  {\n    \"decision_id\": \"q17\",\n    \"subject\": \"Missing vitamin\
+    \ B1 stock 8\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"\
+    source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n    \
+    \    \"source_locator\": \"p1 Stock8 per 100 mL\",\n        \"exact_source_quote\"\
+    : \"(8) Vitamin B1 (Thiamine hydrochloride)               0.12 g\",\n        \"\
+    snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final dose\",\n        \"exact_source_quote\": \"Stock solutions 8 - 9\
+    \                                            1 ml each\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"Source 0.12 g thiamine hydrochloride per\
+    \ 100 mL stock, filter sterile, with 1 mL stock per final litre. Calculated 1.2\
+    \ g/L stock and 0.0012 g/L final. No selected representation or source-grounded\
+    \ added identifier exists yet.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n \
+    \   \"subject\": \"Missing serially diluted vitamin B12 stock 9\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 Stock9 per 100 mL\",\n        \"exact_source_quote\"\
+    : \"(9) Vitamin B12 (Cyanocobalamin)                      0.1 g\",\n        \"\
+    snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 additional1:100 dilution\",\n        \"exact_source_quote\": \"Take 1 ml\
+    \ of this solution and add 99 ml deionised water. Filter sterile.\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final dose\",\n        \"exact_source_quote\": \"Stock solutions 8 - 9\
+    \                                            1 ml each\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"Source 0.1 g cyanocobalamin per 100 mL\
+    \ initial stock; 1 mL + 99 mL water makes the working stock; filter sterile, then\
+    \ 1 mL working stock per final litre. Calculated initial 1 g/L, working 0.01 g/L,\
+    \ final 0.00001 g/L. Preserve both dilution stages, not the initial strength as\
+    \ final medium.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n    \"subject\":\
+    \ \"Final solvent volume\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\",\n  \
+    \      \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Bring to 1 L with deionised water.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final makeup\",\n        \"exact_source_quote\": \"Make up to 1 litre with\
+    \ deionised water. For agar, add 15 g per litre Bacteriological Agar.\",\n   \
+    \     \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The source explicitly makes the final\
+    \ medium up to 1 L. Maintained preparation agrees. Water is not asserted as 1\
+    \ g/L, and no solvent density conversion is needed.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q20\",\n    \"subject\": \"Main-medium autoclaving\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Autoclave at 15 psi for 15 minutes.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 final-medium instruction\",\n        \"exact_source_quote\": \"Autoclave\
+    \ at 15 psi for 15 minutes.\",\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"The maintained 15 psi/15 minute statement\
+    \ agrees; the generated target omits it. The source separately requires PIV stock\
+    \ autoclaving and vitamin filtration; these stages must not be collapsed into\
+    \ one treatment.\"\n  },\n  {\n    \"decision_id\": \"q21\",\n    \"subject\"\
+    : \"Stock preparation steps and order\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\"\
+    ,\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 PIV stock order\",\n        \"exact_source_quote\"\
+    : \"Ensure elements are added in the following sequence:\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 PIV autoclaving\",\n        \"exact_source_quote\": \"Once elements are\
+    \ dissolved autoclave at 15 psi for 15 minutes.\",\n        \"snapshot_sha256\"\
+    : \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\",\n    \
+    \    \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      },\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\"\
+    : \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 B12 dilution/filtration\",\n        \"exact_source_quote\": \"Take 1 ml\
+    \ of this solution and add 99 ml deionised water. Filter sterile.\",\n       \
+    \ \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain PIV element order and stock sterilization\
+    \ plus vitamin filtration in their own stock stages. The final-medium autoclave\
+    \ instruction alone does not represent these preparation requirements.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q22\",\n    \"subject\": \"Unsupported temperature_range\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"target\",\n        \"field_path\": \"temperature_range\",\n\
+    \        \"stored\": \"15-30°C depending on species\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/algae/cgm.yaml\",\n        \"field_path\"\
+    : \"temperature_range\",\n        \"stored\": \"15-30°C depending on species\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"ccapCGM\",\n        \"source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\"\
+    ,\n        \"source_locator\": \"p1 identity heading; full page searched for incubation/light\
+    \ support\",\n        \"exact_source_quote\": \"CGM (Bold Basal Medium with 3-fold\
+    \ Nitrogen\",\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"Full one-page recipe contains no support\
+    \ for these generic numeric cultivation ranges. This is bounded source non-support,\
+    \ not proof no literature exists. Remove or qualify only through separately authorized\
+    \ evidence-backed curation; no replacement ranges are proposed.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q23\",\n    \"subject\": \"Unsupported light_intensity\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"target\",\n        \"field_path\": \"light_intensity\",\n  \
+    \      \"stored\": \"Varies by species; typically 50-100 µmol photons m⁻² s⁻¹\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\"\
+    ,\n        \"field_path\": \"light_intensity\",\n        \"stored\": \"Varies\
+    \ by species; typically 50-100 µmol photons m⁻² s⁻¹\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"\
+    source_url\": \"https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n    \
+    \    \"source_locator\": \"p1 identity heading; full page searched for incubation/light\
+    \ support\",\n        \"exact_source_quote\": \"CGM (Bold Basal Medium with 3-fold\
+    \ Nitrogen\",\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"Full one-page recipe contains no support\
+    \ for these generic numeric cultivation ranges. This is bounded source non-support,\
+    \ not proof no literature exists. Remove or qualify only through separately authorized\
+    \ evidence-backed curation; no replacement ranges are proposed.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q24\",\n    \"subject\": \"Unsupported light_cycle\",\n\
+    \    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"target\",\n        \"field_path\": \"light_cycle\",\n        \"\
+    stored\": \"Varies by species; commonly 12:12 or 16:8 light:dark\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/algae/cgm.yaml\",\n      \
+    \  \"field_path\": \"light_cycle\",\n        \"stored\": \"Varies by species;\
+    \ commonly 12:12 or 16:8 light:dark\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"ccapCGM\",\n        \"source_url\": \"\
+    https://www.ccap.ac.uk/wp-content/uploads/MR_CGM.pdf\",\n        \"source_locator\"\
+    : \"p1 identity heading; full page searched for incubation/light support\",\n\
+    \        \"exact_source_quote\": \"CGM (Bold Basal Medium with 3-fold Nitrogen\"\
+    ,\n        \"snapshot_sha256\": \"854fb4d8a351c1b94f074896f02f6c1ff318aa790228e8493bb83ad8f05f7bc7\"\
+    ,\n        \"parsed_text_sha256\": \"76f7137a7272d903f60f705c3552568bf493bee319cb1303147f8215d6076abd\"\
+    \n      }\n    ],\n    \"rationale\": \"Full one-page recipe contains no support\
+    \ for these generic numeric cultivation ranges. This is bounded source non-support,\
+    \ not proof no literature exists. Remove or qualify only through separately authorized\
+    \ evidence-backed curation; no replacement ranges are proposed.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted chemical and mixture identifiers
+  outcome: concern
+  summary: 'All 9 distinct primary IDs resolve: 7 CHEBI, FOODON yeast extract and
+    MICRO proteose peptone. The primary linkage counts are 9/10 generated ingredient
+    instances (90%) and 9/9 maintained (100%); the tenth generated row is process
+    prose. Neither layer asserts secondary MIM links (0/10 and 0/9); this is linkage,
+    not correctness. Explicit Fe/Mn/Co/Mo hydrates and D-glucose match source forms.
+    Na2EDTA does not independently certify anhydrous reagent grade. Proteose peptone
+    is MICRO, but curation_metadata says FOODON and the stored label has capitalization
+    drift.'
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - chebi17634
+  - chebi49976
+  - chebi53503
+  - chebi64734
+  - chebi75213
+  - chebi86254
+  - chebi86368
+  - foodon03315426
+  - micro0000180
+- assessment_id: preparation
+  area: representation
+  topic: Stock structure, optional agar and sterilization stages
+  outcome: concern
+  summary: The maintained three preparation steps agree within their final-medium
+    scope. PIV stock order/autoclaving and vitamin filtration/dilution remain unrepresented.
+    Source LIQUID versus optional agar is preserved only after excluding the generated
+    fake ingredient.
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - quantity-inventory
+- assessment_id: growth
+  area: scope
+  topic: Category, incubation and organism claims
+  outcome: concern
+  summary: Algae/CCAP attribution and complex undefined composition fit the source
+    context. No explicit target organism or growth result is asserted; none is inferred
+    from the bibliography. Numeric temperature/light defaults lack support in the
+    inspected recipe; generic applications are not experimental growth claims.
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+- assessment_id: historical-scope
+  area: provenance
+  topic: Prior report and current source distinction
+  outcome: supported
+  summary: Exact selected report headers and current bytes were checked. These ad
+    hoc reports are historical context, not validated structured predecessor findings
+    or independent primary evidence. No prior issue is closed.
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - historical-1
+  - historical-2
+  - historical-4
+  - record
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 19 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:000058
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: cm-000058-cgm-stock-boundaries
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Required stocks are omitted and PIV strength is flattened
+  description: Both selected layers omit stocks 1–6 and 8–9 and carry the six PIV
+    solutes at their stock concentrations as direct medium ingredients. Source Stock
+    7 is dosed 6 mL per final litre. This changes the formulation despite schema-valid
+    values.
+  target_ids:
+  - CultureMech:000058
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm-000058-stale-instruction-and-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated CGM retains an instruction ingredient and loses owner repairs
+  description: The generated tenth ingredient is the makeup/agar instruction with
+    15 G_PER_L. The owner has nine ingredients, structured CCAP sources and three
+    preparation steps added after the merge. Regeneration alone would fix this stale
+    subset but leave the stock defect.
+  target_ids:
+  - CultureMech:000058
+  field_paths:
+  - ingredients[9]
+  - preparation_steps
+  - sources
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - writer-0
+  - writer-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.1
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm-000058-unsupported-cultivation-defaults
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Numeric cultivation conditions lack scoped evidence
+  description: Both layers state 15–30°C, 50–100 µmol photons m−2 s−1 and 12:12 or
+    16:8 light:dark. None occurs in the full inspected CCAP recipe and no claim-level
+    evidence is attached. Generic importer text cannot establish species-specific
+    cultivation conditions.
+  target_ids:
+  - CultureMech:000058
+  field_paths:
+  - temperature_range
+  - light_intensity
+  - light_cycle
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: review-yaml-record:evidence-scope
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm-000058-proteose-ontology-metadata
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Proteose peptone ontology metadata disagrees with its resolved namespace
+  description: MICRO:0000180 is valid and resolves to proteose peptone, while curation_metadata.ontology_source
+    says FOODON and term.label is capitalized. This is a bounded metadata issue, not
+    an invalid ingredient identifier.
+  target_ids:
+  - CultureMech:000058
+  field_paths:
+  - ingredients[6].term.label
+  - ingredients[6].curation_metadata.ontology_source
+  evidence_ids:
+  - record
+  - owner-0
+  - micro0000180
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: review-yaml-record:source-provenance
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Curate the algae owner with all nine scoped stocks, exact forms, stock
+    strengths, receiving doses, vitamin serial dilution and narrow evidence; avoid
+    stock/direct double counting.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000058
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: After correcting the maintained stock structure, regenerate and confirm
+    the prose ingredient is gone, optional agar remains conditional and maintained
+    sources/preparation survive.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000058
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Find directly scoped organism/formulation evidence or remove/qualify
+    the generic defaults in the maintained owner; do not invent substitute ranges.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000058
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Correct namespace/label metadata through authorized curation while
+    preserving historical events and exact mixture scope.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000058
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/cgm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The currently captured CCAP revision 002 is dated 29 May 2026. The original April
+  ingredient-curation payload was not authenticated; current source comparison cannot
+  prove exactly which source version was used then.
+- No whole-corpus duplicate or scientific growth certification is made. Excluded bacterial
+  CGM reports and its legacy MIM key are not findings against this selected algae
+  record.
+- Embedded history was read directly; the repository standalone-history recipe is
+  not a record-specific embedded-history validator. Naive historical timestamps are
+  retained, not silently rewritten.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-053
+- generated-medium
+```
