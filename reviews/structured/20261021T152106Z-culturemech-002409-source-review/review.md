@@ -1,0 +1,2689 @@
+# Source and formulation review: anaerobaculum_medium (CultureMech:002409)
+
+- Review: 20261021T152106Z-culturemech-002409-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T15:15:03Z
+- Finished UTC: 2026-10-21T15:21:06Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The JCM 1242 identity is intact, but thirteen direct concentrations combine main ingredients, undiluted PYG salt stock and late solution volumes. Restore source-specific stock stages and resolve the unsupported NaCl sum. Current provider content and the asserted legacy MIM historical correspondence remain unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 262; batch 027 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-six task batches contain 260 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 263 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002409 | data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml | generated | anaerobaculum_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002409 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:002409 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch027/262/strict.tsv |
+| validate-terms | passed | True | CultureMech:002409 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:002409 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:002409 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadiveJ1242api | unavailable | True | CultureMech:002409 | mediadiveJ1242api: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| Exact source content access: mediadiveJ1242apiRetry | unavailable | True | CultureMech:002409 | mediadiveJ1242apiRetry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| Exact current MIM legacy lookup | passed | True | CultureMech:002409 | The bounded current lookup completed and found no exact legacy identifier; its result is not an operational failure. |
+| Historical asserted MIM correspondence | unavailable | True | CultureMech:002409 | The exact old MediaIngredientMech:000321 record was not recovered. Valid CHEBI:132112 sodium thiosulfate does not authenticate that old identifier. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:002409.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:002409.
+
+10 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 10/13 primary and 9/13 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 13: primary 76.92%; secondary 69.23%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:002409.
+
+17 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact JCM source and sole owner
+
+identity: supported. Targets: CultureMech:002409.
+
+CultureMech:002409 identifies JCM 1242 ANAEROBACULUM MEDIUM and its sole maintained JCM owner. The owner’s thirteen ingredient objects, classifications and preparation match the generated target; the merge adds provenance. No similarly named source or the entire PYG medium676 is substituted.
+
+### Thirteen concentrations and stock hierarchy
+
+consistency: concern. Targets: CultureMech:002409.
+
+The main recipe uses two peptones at 5 g each, yeast 10 g, NaCl 8 g, salt stock 40 mL, resazurin 0.5 mg and water 960 mL. Later additions are cysteine 5%, 10 mL and after cooling glucose 1 M, 6 mL and thiosulfate 1 M, 10 mL. Local 10/6/10 g/L entries are stock volumes, not masses. The six PYG salt solutes are undiluted stock amounts; NaCl is additionally summed across main and stock stages as 7.79727 + 2.0 = 9.797270000000001 g/L. The resulting formulation is unsupported.
+
+### Source stages, atmosphere and applicable cycle
+
+completeness: concern. Targets: CultureMech:002409.
+
+The local two preparation steps preserve boiling/cooling under N2, pH 7.0, example 10 mL Balch aliquots, anaerobic sealing and post-cooling sterile additions. The stock list/doses are detached from that procedure, and the explicit JCM default 121°C/15 min cycle is absent. Preserve the source sequence and qualifier rather than replacing it with a generic cycle.
+
+### Recipe categories, chemical forms and biological scope
+
+scope: supported. Targets: CultureMech:002409.
+
+COMPLEX/UNDEFINED and LIQUID are consistent with peptones/yeast extract and no agar. Named hydrate forms and glucose/thiosulfate terms were compared with canonical metadata; no replacement chemical ID is inferred. Generic microbial-cultivation application and bacterial filing do not establish any strain growth or optimum. No DOI, PMID, taxon, assembly or internal solution path is asserted.
+
+### Current negative lookup versus old identifier meaning
+
+grounding: unknown. Targets: CultureMech:002409.
+
+Both target and owner assert MediaIngredientMech:000321 on sodium thiosulfate. Current lookup completed negatively, while CHEBI:132112 is a valid sodium-thiosulfate term. These are separate claims: the old MIM identity remains unresolved and its required historical correspondence is unavailable. This contributes to partial completion without making the current lookup a failed check.
+
+### Current writers versus historical merge and sum
+
+provenance: concern. Targets: CultureMech:002409.
+
+Current MediaDive parsing recognizes stock additions and preserves solution references; its unit normalization still needs source denominator interpretation. The current duplicate cleanup does not sum conflicting amounts. The stored NaCl note is historical evidence of a sum, not proof that today’s code should reproduce it. Current full-formulation merging cannot repair an incorrect maintained owner.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:002409.
+
+21 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "JCM 1242 main row 0",
+    "field_path": "ingredients[0].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "4.87329",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[0] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Trypticase peptone                                      &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Primary batch mass is known, but the local rounded g/L denominator is not established by water or a sum of listed liquids. Current API content is unavailable.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "4.87329",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "4.87329",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "JCM 1242 main row 1",
+    "field_path": "ingredients[1].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "4.87329",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[1] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Peptone                                                 &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Primary batch mass is known, but the local rounded g/L denominator is not established by water or a sum of listed liquids. Current API content is unavailable.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "4.87329",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "4.87329",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "JCM 1242 main row 2",
+    "field_path": "ingredients[2].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "9.74659",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[2] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Yeast extract                                          &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Primary batch mass is known, but the local rounded g/L denominator is not established by water or a sum of listed liquids. Current API content is unavailable.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "9.74659",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "9.74659",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "JCM 1242 main row 3",
+    "field_path": "ingredients[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "9.797270000000001",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[3] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; NaCl                                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;8.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "The local NaCl sum mixes the main addition with an undiluted salt-stock amount. Preserve main 8 g and stock 40 mL separately; do not endorse the stored sum.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "9.797270000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "9.797270000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "JCM 1242 main row 4",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Restore this explicit source dose/water amount in its actual preparation stage; the intended container does not represent it.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "JCM 1242 main row 5",
+    "field_path": "ingredients[4].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "0.000487329",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[5] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Resazurin                                               &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Primary batch mass is known, but the local rounded g/L denominator is not established by water or a sum of listed liquids. Current API content is unavailable.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.000487329",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.000487329",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "JCM 1242 main row 6",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": [
+      {
+        "step_number": 1,
+        "action": "ADJUST_PH",
+        "description": "Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing, add the following solutions and adjust pH to 7.0:"
+      },
+      {
+        "step_number": 2,
+        "action": "AUTOCLAVE",
+        "description": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[6] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;960.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Restore this explicit source dose/water amount in its actual preparation stage; the intended container does not represent it.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing, add the following solutions and adjust pH to 7.0:"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing, add the following solutions and adjust pH to 7.0:"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):"
+          }
+        ],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Cysteine 5%, 10 mL",
+    "field_path": "ingredients[5].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[1] row[0] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 5% L-Cysteine&amp;#183;HCl&amp;#183;H&lt;sub&gt;2&lt;/sub&gt;O solution          &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Restore the explicit stock strength, added volume and stage instead of a direct g/L value.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "The 5% basis is not printed, so no mass conversion is established."
+  },
+  {
+    "ingredient_or_context": "Glucose 1 M, 6 mL",
+    "field_path": "ingredients[6].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "6",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[2] row[0] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 1 M Glucose solution                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;6.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Restore the explicit stock strength, added volume and stage instead of a direct g/L value.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 mol/L × 0.006 L = 0.006 mol = 6 mmol delivered, not 6 g/L; final concentration requires an established receiving volume."
+  },
+  {
+    "ingredient_or_context": "Thiosulfate 1 M, 10 mL",
+    "field_path": "ingredients[7].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[2] row[1] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 1 M Na&lt;sub&gt;2&lt;/sub&gt;S2O&lt;sub&gt;3&lt;/sub&gt; solution                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml        &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "Restore the explicit stock strength, added volume and stage instead of a direct g/L value.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 mol/L × 0.010 L = 0.010 mol = 10 mmol delivered, not 10 g/L; do not choose a hydrate molecular weight for a generic molar stock."
+  },
+  {
+    "ingredient_or_context": "JCM676 salt-stock row 0",
+    "field_path": "ingredients[8].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.25",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm676",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676",
+        "source_locator": "HTML table[1] row[0] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; CaCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.25&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474"
+      },
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "This amount belongs to the salt-stock recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L; stock concentration is not the final-medium contribution. The NaCl row shares a local path because the historical cleanup collapsed two different source stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does not by itself prove measured final stock volume."
+  },
+  {
+    "ingredient_or_context": "JCM676 salt-stock row 1",
+    "field_path": "ingredients[9].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm676",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676",
+        "source_locator": "HTML table[1] row[1] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; MgSO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;7H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474"
+      },
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "This amount belongs to the salt-stock recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L; stock concentration is not the final-medium contribution. The NaCl row shares a local path because the historical cleanup collapsed two different source stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does not by itself prove measured final stock volume."
+  },
+  {
+    "ingredient_or_context": "JCM676 salt-stock row 2",
+    "field_path": "ingredients[10].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm676",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676",
+        "source_locator": "HTML table[1] row[2] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; K&lt;sub&gt;2&lt;/sub&gt;HPO&lt;sub&gt;4&lt;/sub&gt;                                            &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474"
+      },
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "This amount belongs to the salt-stock recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L; stock concentration is not the final-medium contribution. The NaCl row shares a local path because the historical cleanup collapsed two different source stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does not by itself prove measured final stock volume."
+  },
+  {
+    "ingredient_or_context": "JCM676 salt-stock row 3",
+    "field_path": "ingredients[11].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm676",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676",
+        "source_locator": "HTML table[1] row[3] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; KH&lt;sub&gt;2&lt;/sub&gt;PO&lt;sub&gt;4&lt;/sub&gt;                                            &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474"
+      },
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "This amount belongs to the salt-stock recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L; stock concentration is not the final-medium contribution. The NaCl row shares a local path because the historical cleanup collapsed two different source stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does not by itself prove measured final stock volume."
+  },
+  {
+    "ingredient_or_context": "JCM676 salt-stock row 4",
+    "field_path": "ingredients[12].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm676",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676",
+        "source_locator": "HTML table[1] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; NaHCO&lt;sub&gt;3&lt;/sub&gt;                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474"
+      },
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "This amount belongs to the salt-stock recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L; stock concentration is not the final-medium contribution. The NaCl row shares a local path because the historical cleanup collapsed two different source stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does not by itself prove measured final stock volume."
+  },
+  {
+    "ingredient_or_context": "JCM676 salt-stock row 5",
+    "field_path": "ingredients[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "9.797270000000001",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm676",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676",
+        "source_locator": "HTML table[1] row[5] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; NaCl                                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474"
+      },
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "This amount belongs to the salt-stock recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L; stock concentration is not the final-medium contribution. The NaCl row shares a local path because the historical cleanup collapsed two different source stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "9.797270000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "9.797270000000001",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does not by itself prove measured final stock volume."
+  },
+  {
+    "ingredient_or_context": "JCM676 salt-stock row 6",
+    "field_path": "solutions",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm676",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676",
+        "source_locator": "HTML table[1] row[6] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L        &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474"
+      },
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "HTML table[0] row[4] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Salt solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=676\"&gt;676&lt;/a&gt;)                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;40.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2"
+      }
+    ],
+    "rationale": "This amount belongs to the salt-stock recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L; stock concentration is not the final-medium contribution. The NaCl row shares a local path because the historical cleanup collapsed two different source stages.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does not by itself prove measured final stock volume."
+  },
+  {
+    "ingredient_or_context": "Main pH",
+    "field_path": "ph_value",
+    "decision": "evidence_only",
+    "local": 7.0,
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "adjust pH to 7.0",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2",
+        "parsed_text_sha256": "7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1"
+      }
+    ],
+    "rationale": "The pH value agrees, but matching attached evidence is absent.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0,
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Balch vessel example",
+    "field_path": "preparation_steps[1].description",
+    "decision": "evidence_only",
+    "local": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):",
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "Dispensing paragraph",
+        "exact_source_quote": "10 ml in Balch type tubes",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2",
+        "parsed_text_sha256": "7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1"
+      }
+    ],
+    "rationale": "The literal aliquot example survives in prose; it is a vessel fill example, not the final batch volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Applicable collection sterilization cycle",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": [
+      {
+        "step_number": 1,
+        "action": "ADJUST_PH",
+        "description": "Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing, add the following solutions and adjust pH to 7.0:"
+      },
+      {
+        "step_number": 2,
+        "action": "AUTOCLAVE",
+        "description": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "JCM default header",
+        "exact_source_quote": "autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2",
+        "parsed_text_sha256": "7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1"
+      }
+    ],
+    "rationale": "This applicable source cycle is missing locally; retain the Unless otherwise stated qualification.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing, add the following solutions and adjust pH to 7.0:"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "ADJUST_PH",
+            "description": "Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing, add the following solutions and adjust pH to 7.0:"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):"
+          }
+        ],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Cysteine stock percentage basis unresolved",
+    "field_path": "solutions",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1242",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242",
+        "source_locator": "Cysteine table",
+        "exact_source_quote": "5% L-Cysteine·HCl·H 2 O solution 10.0 ml",
+        "snapshot_sha256": "9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2",
+        "parsed_text_sha256": "7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1"
+      }
+    ],
+    "rationale": "The strength label and dose are exact; percent basis is not specified. Do not silently label it w/v.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      }
+    ]
+  }
+]
+
+## Findings
+
+### f1: Stock volumes and stock composition replace the medium formula
+
+blocker / open / confirmed; issue key: anaerobaculum-stock-volume-and-salt-collapse.
+
+The thirteen direct concentrations contain added 10/6/10 mL stocks mislabeled as g/L, undiluted PYG salt components and a main/stock NaCl sum. This changes the formulation; passing schema and term checks cannot validate it. No unqualified final denominator follows from 960 mL water plus 40 mL stock and later additions.
+
+### f2: The source procedure lacks its quantified stock representation and cycle
+
+major / open / confirmed; issue key: anaerobaculum-source-preparation-linkage.
+
+The anaerobic preparation wording survives but its explicitly named additions are represented as direct mass concentrations; the JCM 121°C/15 min default cycle is missing. The source does not authorize transferring the complete PYG 676 protocol or its other supplements.
+
+### f3: The asserted historical MIM linkage remains unresolved
+
+major / open / confirmed; issue key: anaerobaculum-legacy-mim-unresolved.
+
+MediaIngredientMech:000321 is absent from the exact current pinned index/catalog/tree. That completed lookup neither establishes the old identifier’s historical validity nor supplies a replacement. The primary CHEBI:132112 term is independently valid.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct the exact JCM 1242 main/stock hierarchy in the maintained owner, keep the PYG salt stock separate, undo the unsupported cross-stage NaCl sum and attach source-specific amount evidence. Resolve percent/final-volume limits before any final g/L table; regenerate only after owner reconciliation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Connect each source dose to its stage and restore the applicable collection cycle with its qualification. Preserve the existing N2 handling, cooling, pH and vessel example; use broad P2 for the representation defect rather than claiming sterilization is wholly absent.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Recover exact historical correspondence or explicitly document/resolve the obsolete linkage in the maintained owner with authorized evidence; do not infer equivalence from the current CHEBI term.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch027/262/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch027/262/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml:1:id: CultureMech:002409<br>./data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml:1:id: CultureMech:002409<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch027/source-preflight-bound/262/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 16 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch027/source-preflight-bound/262/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242; Complete JCM 1242 main table, cysteine table, post-cooling glucose/thiosulfate table and preparation | supports | Exact collection recipe read. The source gives original batch amounts and distinct stock strengths/doses, not the stored flattened final concentrations. |
+| salt-stock | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676; Salt solution table only, following the PYG main recipe | supports | Only seven salt-stock rows transfer. Parent basal PYG, hemin, menadione and its main pH are outside JCM 1242’s reference. |
+| mediadiveJ1242api-attempt | https://mediadive.dsmz.de/rest/medium/J1242; Preserved exact public retrieval result | context_only | mediadiveJ1242api: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| mediadiveJ1242apiRetry-attempt | https://mediadive.dsmz.de/rest/medium/J1242; Preserved exact public retrieval result | context_only | mediadiveJ1242apiRetry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi132112 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132112; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:132112 resolves to sodium thiosulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml", "events": 8, "timestamp_issues": []}] |
+| mim-current-catalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned current ingredient catalog; exact legacy identifier search | context_only | The exact current snapshot does not retain MediaIngredientMech:000321. A completed negative lookup does not reconstruct the old identifier’s historical meaning. |
+| mim-current-tree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete nontruncated pinned repository tree; exact legacy token path search | context_only | The exact current snapshot does not retain MediaIngredientMech:000321. A completed negative lookup does not reconstruct the old identifier’s historical meaning. |
+| legacy-current-search | Pinned MIM index, catalog and tree; Exact MediaIngredientMech:000321 / 000321 lookup | context_only | {"identifier": "MediaIngredientMech:000321", "lookup_status": "completed_current_snapshot_absence", "index_data_rows": 9077, "index_matches": [], "catalog_rows": 2953, "catalog_matches": [], "catalog_source_key": "mimPinnedCatalog", "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7", "catalog_accessed_at": "2026-10-21T09:52:30.606764Z", "tree_entries": 7384, "tree_truncated": false, "tree_path_matches": [], "tree_source_key": "mimPinnedTree", "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec", "tree_accessed_at": "2026-10-21T09:51:04.602158Z", "limit": "Current lookup is completed; historical correspondence remains unresolved. This legacy identifier is asserted on the target/owner, so it is distinct from merely unrelated parent context. No replacement mapping is inferred."} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch027/262/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch027/262/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- mediadiveJ1242api: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence.
+- mediadiveJ1242apiRetry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence.
+- Current provider requests and retry returned 503; no successful historical API formulation or volume declaration was recovered. The main normalization is numerically compatible with 1026 mL listed liquid inputs, but that is not measured final volume or provider verification.
+- The required historical MIM correspondence remains unavailable; the exact current lookup itself completed successfully.
+- This scientific assessment preceded formal review validation and saving; their results are recorded separately.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T152106Z-culturemech-002409-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobaculum_medium (CultureMech:002409)'
+started_at: '2026-10-21T15:15:03Z'
+finished_at: '2026-10-21T15:21:06Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The JCM 1242 identity is intact, but thirteen direct concentrations combine
+  main ingredients, undiluted PYG salt stock and late solution volumes. Restore source-specific
+  stock stages and resolve the unsupported NaCl sum. Current provider content and
+  the asserted legacy MIM historical correspondence remain unavailable.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+    sha256: 28c5d7c1da6cfe0b5041715441749c3a542d9ca22ac90c41eecc57db3ed1ef93
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    sha256: f3094d8efb09c187bdf9256909429c04bb87ea6556378e84622bf09c54eda8f5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 262; batch 027 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-six task batches
+    contain 260 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 263 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002409
+targets:
+- target_id: CultureMech:002409
+  path: data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  label: anaerobaculum_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch027/262/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/262/strict.tsv"
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002409
+- check_id: mediadiveJ1242api-source-access
+  name: 'Exact source content access: mediadiveJ1242api'
+  required: true
+  status: unavailable
+  summary: 'mediadiveJ1242api: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - mediadiveJ1242api-attempt
+- check_id: mediadiveJ1242apiRetry-source-access
+  name: 'Exact source content access: mediadiveJ1242apiRetry'
+  required: true
+  status: unavailable
+  summary: 'mediadiveJ1242apiRetry: exact public request returned HTTP 503; original
+    access time, response bytes and any separately recorded retry are retained. Error
+    bytes do not establish formulation or historical absence.'
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - mediadiveJ1242apiRetry-attempt
+- check_id: legacy-current-lookup
+  name: Exact current MIM legacy lookup
+  required: true
+  status: passed
+  summary: The bounded current lookup completed and found no exact legacy identifier;
+    its result is not an operational failure.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - legacy-current-search
+  - mim-current-catalog
+  - mim-current-tree
+- check_id: legacy-historical-correspondence
+  name: Historical asserted MIM correspondence
+  required: true
+  status: unavailable
+  summary: The exact old MediaIngredientMech:000321 record was not recovered. Valid
+    CHEBI:132112 sodium thiosulfate does not authenticate that old identifier.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - owner-0
+  - legacy-current-search
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:19.254308Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch027/262/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:20.266758Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/262/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:21.417689Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:22.157643Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml:1:id: CultureMech:002409
+
+    ./data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml:1:id: CultureMech:002409
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/262/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 3c6de071615befe7c2ecc28057abb7b0e47534036da0e8a2b1ed216191952f6c
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/262/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: f33f0309482d5a1c5b0e8cd0680d5434d0e9a382f9dd9de15b5b08cd3c3182f9
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242
+  locator: Complete JCM 1242 main table, cysteine table, post-cooling glucose/thiosulfate
+    table and preparation
+  accessed_at: '2026-10-21T15:02:35.341380Z'
+  support: supports
+  summary: Exact collection recipe read. The source gives original batch amounts and
+    distinct stock strengths/doses, not the stored flattened final concentrations.
+  snapshot_sha256: 9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2
+- evidence_id: salt-stock
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676
+  locator: Salt solution table only, following the PYG main recipe
+  accessed_at: '2026-10-21T15:03:40.445754Z'
+  support: supports
+  summary: Only seven salt-stock rows transfer. Parent basal PYG, hemin, menadione
+    and its main pH are outside JCM 1242’s reference.
+  snapshot_sha256: 4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474
+- evidence_id: mediadiveJ1242api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1242
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:02:34.259933Z'
+  support: context_only
+  summary: 'mediadiveJ1242api: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ1242apiRetry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1242
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:03:40.361308Z'
+  support: context_only
+  summary: 'mediadiveJ1242apiRetry: exact public request returned HTTP 503; original
+    access time, response bytes and any separately recorded retry are retained. Error
+    bytes do not establish formulation or historical absence.'
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi132112
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132112
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:43.693201Z'
+  support: supports
+  summary: CHEBI:132112 resolves to sodium thiosulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d7212b97722dceb8181a43aa6840a8c7be39f43e1ab9bf8979a93c14b8c2495e
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label":
+    "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term":
+    "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806":
+    [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806",
+    "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x
+    H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term":
+    "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBACULUM_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml",
+    "events": 8, "timestamp_issues": []}]'
+- evidence_id: mim-current-catalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current ingredient catalog; exact legacy identifier search
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: context_only
+  summary: The exact current snapshot does not retain MediaIngredientMech:000321.
+    A completed negative lookup does not reconstruct the old identifier’s historical
+    meaning.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mim-current-tree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete nontruncated pinned repository tree; exact legacy token path search
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: context_only
+  summary: The exact current snapshot does not retain MediaIngredientMech:000321.
+    A completed negative lookup does not reconstruct the old identifier’s historical
+    meaning.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: legacy-current-search
+  kind: search
+  reference: Pinned MIM index, catalog and tree
+  locator: Exact MediaIngredientMech:000321 / 000321 lookup
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: '{"identifier": "MediaIngredientMech:000321", "lookup_status": "completed_current_snapshot_absence",
+    "index_data_rows": 9077, "index_matches": [], "catalog_rows": 2953, "catalog_matches":
+    [], "catalog_source_key": "mimPinnedCatalog", "catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7",
+    "catalog_accessed_at": "2026-10-21T09:52:30.606764Z", "tree_entries": 7384, "tree_truncated":
+    false, "tree_path_matches": [], "tree_source_key": "mimPinnedTree", "tree_sha256":
+    "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec", "tree_accessed_at":
+    "2026-10-21T09:51:04.602158Z", "limit": "Current lookup is completed; historical
+    correspondence remains unresolved. This legacy identifier is asserted on the target/owner,
+    so it is distinct from merely unrelated parent context. No replacement mapping
+    is inferred."}'
+  search_scope: Complete pinned label_index.csv, all 9077 data rows; complete 2953-row
+    pinned catalog and nontruncated 7384-entry pinned tree, exact identifier/path
+    token. These are current snapshots, not recovered historical MIM records.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/262/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 5c552fc424903614ae3dc5fa527fee632a02c8de93f7b451285128986d020025
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/262/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T15:21:05Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 2e9c18db6450aacd9d0936446a49c9d40f7712bc54ff03aa5fab846b71e1be5a
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '10 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 10/13
+    primary and 9/13 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi132112
+  - chebi17234
+  - chebi26710
+  - chebi31795
+  - chebi32139
+  - chebi63036
+  - chebi86158
+  - chebi8806
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 13: primary 76.92%;
+    secondary 69.23%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 17 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact JCM source and sole owner
+  outcome: supported
+  summary: CultureMech:002409 identifies JCM 1242 ANAEROBACULUM MEDIUM and its sole
+    maintained JCM owner. The owner’s thirteen ingredient objects, classifications
+    and preparation match the generated target; the merge adds provenance. No similarly
+    named source or the entire PYG medium676 is substituted.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - salt-stock
+  - id-search
+- assessment_id: formulation
+  area: consistency
+  topic: Thirteen concentrations and stock hierarchy
+  outcome: concern
+  summary: The main recipe uses two peptones at 5 g each, yeast 10 g, NaCl 8 g, salt
+    stock 40 mL, resazurin 0.5 mg and water 960 mL. Later additions are cysteine 5%,
+    10 mL and after cooling glucose 1 M, 6 mL and thiosulfate 1 M, 10 mL. Local 10/6/10
+    g/L entries are stock volumes, not masses. The six PYG salt solutes are undiluted
+    stock amounts; NaCl is additionally summed across main and stock stages as 7.79727
+    + 2.0 = 9.797270000000001 g/L. The resulting formulation is unsupported.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - salt-stock
+- assessment_id: preparation
+  area: completeness
+  topic: Source stages, atmosphere and applicable cycle
+  outcome: concern
+  summary: The local two preparation steps preserve boiling/cooling under N2, pH 7.0,
+    example 10 mL Balch aliquots, anaerobic sealing and post-cooling sterile additions.
+    The stock list/doses are detached from that procedure, and the explicit JCM default
+    121°C/15 min cycle is absent. Preserve the source sequence and qualifier rather
+    than replacing it with a generic cycle.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: classification
+  area: scope
+  topic: Recipe categories, chemical forms and biological scope
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and LIQUID are consistent with peptones/yeast extract
+    and no agar. Named hydrate forms and glucose/thiosulfate terms were compared with
+    canonical metadata; no replacement chemical ID is inferred. Generic microbial-cultivation
+    application and bacterial filing do not establish any strain growth or optimum.
+    No DOI, PMID, taxon, assembly or internal solution path is asserted.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - primary
+  - salt-stock
+  - mim
+- assessment_id: legacy-correspondence
+  area: grounding
+  topic: Current negative lookup versus old identifier meaning
+  outcome: unknown
+  summary: 'Both target and owner assert MediaIngredientMech:000321 on sodium thiosulfate.
+    Current lookup completed negatively, while CHEBI:132112 is a valid sodium-thiosulfate
+    term. These are separate claims: the old MIM identity remains unresolved and its
+    required historical correspondence is unavailable. This contributes to partial
+    completion without making the current lookup a failed check.'
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - owner-0
+  - chebi132112
+  - legacy-current-search
+- assessment_id: implementation
+  area: provenance
+  topic: Current writers versus historical merge and sum
+  outcome: concern
+  summary: Current MediaDive parsing recognizes stock additions and preserves solution
+    references; its unit normalization still needs source denominator interpretation.
+    The current duplicate cleanup does not sum conflicting amounts. The stored NaCl
+    note is historical evidence of a sum, not proof that today’s code should reproduce
+    it. Current full-formulation merging cannot repair an incorrect maintained owner.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 21 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002409
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"JCM 1242 main row 0\",\n    \"\
+    field_path\": \"ingredients[0].concentration\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local\": {\n      \"value\": \"4.87329\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1242\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\"\
+    ,\n        \"source_locator\": \"HTML table[0] row[0] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Trypticase peptone   \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Primary batch mass is known, but the local\
+    \ rounded g/L denominator is not established by water or a sum of listed liquids.\
+    \ Current API content is unavailable.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[0].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"4.87329\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.87329\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      }\n    ]\n  },\n  {\n  \
+    \  \"ingredient_or_context\": \"JCM 1242 main row 1\",\n    \"field_path\": \"\
+    ingredients[1].concentration\",\n    \"decision\": \"unsupported\",\n    \"local\"\
+    : {\n      \"value\": \"4.87329\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1242\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n \
+    \       \"source_locator\": \"HTML table[0] row[1] (zero-based raw tables)\",\n\
+    \        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Peptone                \
+    \                                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Primary batch mass is known, but the local\
+    \ rounded g/L denominator is not established by water or a sum of listed liquids.\
+    \ Current API content is unavailable.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[1].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"4.87329\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.87329\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      }\n    ]\n  },\n  {\n  \
+    \  \"ingredient_or_context\": \"JCM 1242 main row 2\",\n    \"field_path\": \"\
+    ingredients[2].concentration\",\n    \"decision\": \"unsupported\",\n    \"local\"\
+    : {\n      \"value\": \"9.74659\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1242\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n \
+    \       \"source_locator\": \"HTML table[0] row[2] (zero-based raw tables)\",\n\
+    \        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Yeast extract          \
+    \                                </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Primary batch mass is known, but the local\
+    \ rounded g/L denominator is not established by water or a sum of listed liquids.\
+    \ Current API content is unavailable.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[2].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"9.74659\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.74659\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      }\n    ]\n  },\n  {\n  \
+    \  \"ingredient_or_context\": \"JCM 1242 main row 3\",\n    \"field_path\": \"\
+    ingredients[3].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"9.797270000000001\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1242\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\"\
+    ,\n        \"source_locator\": \"HTML table[0] row[3] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> NaCl                 \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;8.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"The local NaCl sum mixes the main addition\
+    \ with an undiluted salt-stock amount. Preserve main 8 g and stock 40 mL separately;\
+    \ do not endorse the stored sum.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.797270000000001\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.797270000000001\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n \
+    \   \"ingredient_or_context\": \"JCM 1242 main row 4\",\n    \"field_path\": \"\
+    solutions\",\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source dose/water\
+    \ amount in its actual preparation stage; the intended container does not represent\
+    \ it.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"JCM 1242 main row 5\",\n    \"field_path\": \"ingredients[4].concentration\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"0.000487329\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1242\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\"\
+    ,\n        \"source_locator\": \"HTML table[0] row[5] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Resazurin            \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.5&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Primary batch mass is known, but the local\
+    \ rounded g/L denominator is not established by water or a sum of listed liquids.\
+    \ Current API content is unavailable.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[4].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.000487329\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000487329\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"unsupported\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"JCM 1242 main row 6\",\n    \"field_path\":\
+    \ \"preparation_steps\",\n    \"decision\": \"add\",\n    \"local\": [\n     \
+    \ {\n        \"step_number\": 1,\n        \"action\": \"ADJUST_PH\",\n       \
+    \ \"description\": \"Mix components thoroughly, bring to a boil and cool down\
+    \ under a stream of N2. While gassing, add the following solutions and adjust\
+    \ pH to 7.0:\"\n      },\n      {\n        \"step_number\": 2,\n        \"action\"\
+    : \"AUTOCLAVE\",\n        \"description\": \"Distribute the medium into culture\
+    \ vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers\
+    \ and autoclave. After cooling, add per liter the following solutions (autoclaved\
+    \ and stored under a N2 atmosphere):\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[6] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       </TD><TD\
+    \ WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;960.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this explicit source dose/water\
+    \ amount in its actual preparation stage; the intended container does not represent\
+    \ it.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"ADJUST_PH\",\n            \"description\": \"Mix components\
+    \ thoroughly, bring to a boil and cool down under a stream of N2. While gassing,\
+    \ add the following solutions and adjust pH to 7.0:\"\n          },\n        \
+    \  {\n            \"step_number\": 2,\n            \"action\": \"AUTOCLAVE\",\n\
+    \            \"description\": \"Distribute the medium into culture vessels (e.g.,\
+    \ 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave.\
+    \ After cooling, add per liter the following solutions (autoclaved and stored\
+    \ under a N2 atmosphere):\"\n          }\n        ],\n        \"decision\": \"\
+    add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Mix components thoroughly, bring to a boil and\
+    \ cool down under a stream of N2. While gassing, add the following solutions and\
+    \ adjust pH to 7.0:\"\n          },\n          {\n            \"step_number\"\
+    : 2,\n            \"action\": \"AUTOCLAVE\",\n            \"description\": \"\
+    Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under\
+    \ N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter\
+    \ the following solutions (autoclaved and stored under a N2 atmosphere):\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ]\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Cysteine 5%, 10 mL\",\n    \"field_path\"\
+    : \"ingredients[5].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[1] row[0] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> 5% L-Cysteine&#183;HCl&#183;H<sub>2</sub>O solution   \
+    \       </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the explicit stock strength, added\
+    \ volume and stage instead of a direct g/L value.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"The\
+    \ 5% basis is not printed, so no mass conversion is established.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Glucose 1 M, 6 mL\",\n    \"field_path\": \"\
+    ingredients[6].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"6\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[2] row[0] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> 1 M Glucose solution                                  \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;6.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the explicit stock strength, added\
+    \ volume and stage instead of a direct g/L value.\",\n    \"action_taken\": \"\
+    Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n     \
+    \   \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"6\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"1 mol/L\
+    \ × 0.006 L = 0.006 mol = 6 mmol delivered, not 6 g/L; final concentration requires\
+    \ an established receiving volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Thiosulfate 1 M, 10 mL\",\n    \"field_path\": \"ingredients[7].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"10\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm1242\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\"\
+    ,\n        \"source_locator\": \"HTML table[2] row[1] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> 1 M Na<sub>2</sub>S2O<sub>3</sub>\
+    \ solution                             </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml        </TD></TR>\",\n        \"snapshot_sha256\"\
+    : \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Restore the explicit stock strength, added volume\
+    \ and stage instead of a direct g/L value.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"1 mol/L\
+    \ × 0.010 L = 0.010 mol = 10 mmol delivered, not 10 g/L; do not choose a hydrate\
+    \ molecular weight for a generic molar stock.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"JCM676 salt-stock row 0\",\n    \"field_path\": \"ingredients[8].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.25\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm676\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[0] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> CaCl<sub>2</sub>&#183;2H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.25&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the salt-stock\
+    \ recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L;\
+    \ stock concentration is not the final-medium contribution. The NaCl row shares\
+    \ a local path because the historical cleanup collapsed two different source stages.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.25\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\":\
+    \ \"Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the\
+    \ stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s\
+    \ water 1 L does not by itself prove measured final stock volume.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"JCM676 salt-stock row 1\",\n    \"field_path\"\
+    : \"ingredients[9].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm676\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676\",\n        \"source_locator\"\
+    : \"HTML table[1] row[1] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> MgSO<sub>4</sub>&#183;7H<sub>2</sub>O                 \
+    \                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.5&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the salt-stock\
+    \ recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L;\
+    \ stock concentration is not the final-medium contribution. The NaCl row shares\
+    \ a local path because the historical cleanup collapsed two different source stages.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Conditional\
+    \ on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass.\
+    \ For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L\
+    \ does not by itself prove measured final stock volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"JCM676 salt-stock row 2\",\n    \"field_path\": \"ingredients[10].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"1\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm676\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[2] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> K<sub>2</sub>HPO<sub>4</sub>\
+    \                                            </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the salt-stock\
+    \ recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L;\
+    \ stock concentration is not the final-medium contribution. The NaCl row shares\
+    \ a local path because the historical cleanup collapsed two different source stages.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Conditional\
+    \ on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass.\
+    \ For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L\
+    \ does not by itself prove measured final stock volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"JCM676 salt-stock row 3\",\n    \"field_path\": \"ingredients[11].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"1\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm676\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[3] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> KH<sub>2</sub>PO<sub>4</sub>\
+    \                                            </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the salt-stock\
+    \ recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L;\
+    \ stock concentration is not the final-medium contribution. The NaCl row shares\
+    \ a local path because the historical cleanup collapsed two different source stages.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Conditional\
+    \ on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass.\
+    \ For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L\
+    \ does not by itself prove measured final stock volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"JCM676 salt-stock row 4\",\n    \"field_path\": \"ingredients[12].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"10\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm676\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[4] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> NaHCO<sub>3</sub>    \
+    \                                          </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the salt-stock\
+    \ recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L;\
+    \ stock concentration is not the final-medium contribution. The NaCl row shares\
+    \ a local path because the historical cleanup collapsed two different source stages.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Conditional\
+    \ on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass.\
+    \ For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L\
+    \ does not by itself prove measured final stock volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"JCM676 salt-stock row 5\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"9.797270000000001\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm676\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[5] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> NaCl                 \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the salt-stock\
+    \ recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L;\
+    \ stock concentration is not the final-medium contribution. The NaCl row shares\
+    \ a local path because the historical cleanup collapsed two different source stages.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"9.797270000000001\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"correct\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.797270000000001\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Conditional on a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the\
+    \ stock mass. For NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s\
+    \ water 1 L does not by itself prove measured final stock volume.\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"JCM676 salt-stock row 6\",\n    \"field_path\"\
+    : \"solutions\",\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm676\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=676\",\n        \"source_locator\"\
+    : \"HTML table[1] row[6] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L        </TD></TR>\",\n        \"snapshot_sha256\":\
+    \ \"4acd29cf6ce643913471423b4bf23951f0b126cfa2f074a1260db345f6298474\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"HTML table[0] row[4] (zero-based raw tables)\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Salt solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=676\\\
+    \">676</a>)                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;40.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the salt-stock\
+    \ recipe, used at 40 mL in JCM 1242. Preserve original stock g and water 1 L;\
+    \ stock concentration is not the final-medium contribution. The NaCl row shares\
+    \ a local path because the historical cleanup collapsed two different source stages.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"Conditional on\
+    \ a nominal 1 L stock basis, a 40 mL aliquot supplies 4% of the stock mass. For\
+    \ NaCl 2 g this is 0.08 g, not the undiluted 2 g. The primary’s water 1 L does\
+    \ not by itself prove measured final stock volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main pH\",\n    \"field_path\": \"ph_value\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": 7.0,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1242\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7.0\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    ,\n        \"parsed_text_sha256\": \"7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1\"\
+    \n      }\n    ],\n    \"rationale\": \"The pH value agrees, but matching attached\
+    \ evidence is absent.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Balch vessel example\",\n    \"field_path\": \"preparation_steps[1].description\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": \"Distribute the medium\
+    \ into culture vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl\
+    \ rubber stoppers and autoclave. After cooling, add per liter the following solutions\
+    \ (autoclaved and stored under a N2 atmosphere):\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"Dispensing paragraph\",\n        \"exact_source_quote\": \"10 ml in Balch\
+    \ type tubes\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    ,\n        \"parsed_text_sha256\": \"7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal aliquot example survives in\
+    \ prose; it is a vessel fill example, not the final batch volume.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps[1].description\"\
+    ,\n        \"stored\": \"Distribute the medium into culture vessels (e.g., 10\
+    \ ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave.\
+    \ After cooling, add per liter the following solutions (autoclaved and stored\
+    \ under a N2 atmosphere):\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes)\
+    \ under N2, seal with butyl rubber stoppers and autoclave. After cooling, add\
+    \ per liter the following solutions (autoclaved and stored under a N2 atmosphere):\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Applicable collection sterilization cycle\",\n    \"\
+    field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n    \"local\"\
+    : [\n      {\n        \"step_number\": 1,\n        \"action\": \"ADJUST_PH\",\n\
+    \        \"description\": \"Mix components thoroughly, bring to a boil and cool\
+    \ down under a stream of N2. While gassing, add the following solutions and adjust\
+    \ pH to 7.0:\"\n      },\n      {\n        \"step_number\": 2,\n        \"action\"\
+    : \"AUTOCLAVE\",\n        \"description\": \"Distribute the medium into culture\
+    \ vessels (e.g., 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers\
+    \ and autoclave. After cooling, add per liter the following solutions (autoclaved\
+    \ and stored under a N2 atmosphere):\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1242\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\",\n        \"source_locator\"\
+    : \"JCM default header\",\n        \"exact_source_quote\": \"autoclaving at 121°C\
+    \ for 15 min.\",\n        \"snapshot_sha256\": \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\"\
+    ,\n        \"parsed_text_sha256\": \"7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1\"\
+    \n      }\n    ],\n    \"rationale\": \"This applicable source cycle is missing\
+    \ locally; retain the Unless otherwise stated qualification.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"ADJUST_PH\",\n            \"description\": \"Mix components\
+    \ thoroughly, bring to a boil and cool down under a stream of N2. While gassing,\
+    \ add the following solutions and adjust pH to 7.0:\"\n          },\n        \
+    \  {\n            \"step_number\": 2,\n            \"action\": \"AUTOCLAVE\",\n\
+    \            \"description\": \"Distribute the medium into culture vessels (e.g.,\
+    \ 10 ml in Balch type tubes) under N2, seal with butyl rubber stoppers and autoclave.\
+    \ After cooling, add per liter the following solutions (autoclaved and stored\
+    \ under a N2 atmosphere):\"\n          }\n        ],\n        \"decision\": \"\
+    add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Mix components thoroughly, bring to a boil and\
+    \ cool down under a stream of N2. While gassing, add the following solutions and\
+    \ adjust pH to 7.0:\"\n          },\n          {\n            \"step_number\"\
+    : 2,\n            \"action\": \"AUTOCLAVE\",\n            \"description\": \"\
+    Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under\
+    \ N2, seal with butyl rubber stoppers and autoclave. After cooling, add per liter\
+    \ the following solutions (autoclaved and stored under a N2 atmosphere):\"\n \
+    \         }\n        ],\n        \"decision\": \"add\"\n      }\n    ]\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Cysteine stock percentage basis unresolved\"\
+    ,\n    \"field_path\": \"solutions\",\n    \"decision\": \"not_quantified\",\n\
+    \    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1242\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242\"\
+    ,\n        \"source_locator\": \"Cysteine table\",\n        \"exact_source_quote\"\
+    : \"5% L-Cysteine·HCl·H 2 O solution 10.0 ml\",\n        \"snapshot_sha256\":\
+    \ \"9f095cfe12de8deca26ee09003080dda10b1864f5f4b6d1ccf1f3fe95fd3d1e2\",\n    \
+    \    \"parsed_text_sha256\": \"7cfab1327d676e713abe89617d9ed70fbd6e177454e46e4674544f9c1461f4e1\"\
+    \n      }\n    ],\n    \"rationale\": \"The strength label and dose are exact;\
+    \ percent basis is not specified. Do not silently label it w/v.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"not_quantified\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      }\n    ]\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: anaerobaculum-stock-volume-and-salt-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock volumes and stock composition replace the medium formula
+  description: The thirteen direct concentrations contain added 10/6/10 mL stocks
+    mislabeled as g/L, undiluted PYG salt components and a main/stock NaCl sum. This
+    changes the formulation; passing schema and term checks cannot validate it. No
+    unqualified final denominator follows from 960 mL water plus 40 mL stock and later
+    additions.
+  target_ids:
+  - CultureMech:002409
+  field_paths:
+  - ingredients
+  - solutions
+  - ingredients[3].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - salt-stock
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: anaerobaculum-source-preparation-linkage
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The source procedure lacks its quantified stock representation and cycle
+  description: The anaerobic preparation wording survives but its explicitly named
+    additions are represented as direct mass concentrations; the JCM 121°C/15 min
+    default cycle is missing. The source does not authorize transferring the complete
+    PYG 676 protocol or its other supplements.
+  target_ids:
+  - CultureMech:002409
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - salt-stock
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: anaerobaculum-legacy-mim-unresolved
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The asserted historical MIM linkage remains unresolved
+  description: MediaIngredientMech:000321 is absent from the exact current pinned
+    index/catalog/tree. That completed lookup neither establishes the old identifier’s
+    historical validity nor supplies a replacement. The primary CHEBI:132112 term
+    is independently valid.
+  target_ids:
+  - CultureMech:002409
+  field_paths:
+  - ingredients[7].mediaingredientmech_term
+  evidence_ids:
+  - record
+  - owner-0
+  - legacy-current-search
+  - chebi132112
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct the exact JCM 1242 main/stock hierarchy in the maintained
+    owner, keep the PYG salt stock separate, undo the unsupported cross-stage NaCl
+    sum and attach source-specific amount evidence. Resolve percent/final-volume limits
+    before any final g/L table; regenerate only after owner reconciliation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002409
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Connect each source dose to its stage and restore the applicable collection
+    cycle with its qualification. Preserve the existing N2 handling, cooling, pH and
+    vessel example; use broad P2 for the representation defect rather than claiming
+    sterilization is wholly absent.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002409
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Recover exact historical correspondence or explicitly document/resolve
+    the obsolete linkage in the maintained owner with authorized evidence; do not
+    infer equivalence from the current CHEBI term.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002409
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J1242_ANAEROBACULUM_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- 'mediadiveJ1242api: exact public request returned HTTP 503; original access time,
+  response bytes and any separately recorded retry are retained. Error bytes do not
+  establish formulation or historical absence.'
+- 'mediadiveJ1242apiRetry: exact public request returned HTTP 503; original access
+  time, response bytes and any separately recorded retry are retained. Error bytes
+  do not establish formulation or historical absence.'
+- Current provider requests and retry returned 503; no successful historical API formulation
+  or volume declaration was recovered. The main normalization is numerically compatible
+  with 1026 mL listed liquid inputs, but that is not measured final volume or provider
+  verification.
+- The required historical MIM correspondence remains unavailable; the exact current
+  lookup itself completed successfully.
+- This scientific assessment preceded formal review validation and saving; their results
+  are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-027
+- generated-medium
+```

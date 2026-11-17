@@ -1,0 +1,1089 @@
+schema_version: 1.0.0
+review_id: 20261021T152129Z-culturemech-015369-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobic_tryptic_soy_broth_medium (CultureMech:015369)'
+started_at: '2026-10-21T15:15:05Z'
+finished_at: '2026-10-21T15:21:29Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 869 identity is supported, but the generated record omits maintained
+  glucose evidence and the source-specific stock and strain preparation context. Required
+  historical API correspondence remains unavailable.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+    sha256: 51277745cf1232d3972337ebd5550297ee6f45bf99551c12eb0dc7b159961053
+    role: target
+  - path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    sha256: 18452fa36d79a40c89caf7b32a6b307ca7497586de70d21b9d803003bfadcfdd
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/source-captures.json
+    sha256: 57e712915e8594b4d36d9f859525ad3912de5740dd29a578651c9c7660490e93
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/specialized/anaerobic_tryptic_soy_broth_medium.yaml.md
+    sha256: 39ee5998a3938c17f150af7c797c14a381db078bc81206f84c43d1fecfec1698
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 267; batch 027 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-six task batches
+    contain 260 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 263 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015369
+targets:
+- target_id: CultureMech:015369
+  path: data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  label: anaerobic_tryptic_soy_broth_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch027/267/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/267/strict.tsv"
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015369
+- check_id: mediadive869api-source-access
+  name: 'Exact source content access: mediadive869api'
+  required: true
+  status: unavailable
+  summary: 'Required rechecking of the owner''s historical MediaDive869 glucose correspondence
+    is unavailable: current exact API and its preserved retry returned503. The dated
+    owner/report agreement does not recover the original raw response. The available
+    DSMZ primary independently supports 2.00 g per stated recipe, but does not itself
+    declare the historical provider g_l or measured final volume.'
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - mediadive869api-attempt
+- check_id: bdBBL211768-source-access
+  name: 'Exact source content access: bdBBL211768'
+  required: false
+  status: unavailable
+  summary: Optional supplier-page request returned403. DSMZ names BD BBL Trypticase
+    soy broth without a catalog number; this attempted product page does not establish
+    an exact catalog match or product composition. Keep the source mixture name and
+    supplier without fabricating a pure compound or catalog identifier.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - bdBBL211768-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:40.215560Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch027/267/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:44.721990Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/267/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:49.050180Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:50.723911Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: supports
+  summary: './data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml:1:id:
+    CultureMech:015369
+
+    ./data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml:1:id: CultureMech:015369
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/267/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: supports
+  summary: 6 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 9537217c995abf68d8507f512918588826d98be7c17405a0182d92d1e0ec14b6
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/267/evidence-context-original.json
+  locator: Complete target and maintained owner; source and identifier search contexts
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: Whole fresh target and owner read; all frozen local-record objects equal
+    the fresh inspected YAML. Source interpretations are independently checked against
+    actual bound raw/text bytes.
+  snapshot_sha256: 1935dcee1a20ab72827e693320712e8857266892346ccaeaae495c2b7b7e1e23
+- evidence_id: primary869
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf
+  locator: Page 1, complete base recipe and DSM 12992 condition
+  accessed_at: '2026-10-21T14:59:59.207138Z'
+  support: supports
+  summary: 'Exact DSMZ 869 primary: 5.50 g BD BBL Trypticase soy broth, 0.50 ml 0.1%
+    w/v resazurin, 2.00 g D-glucose and 1000.00 ml water; anoxic preparation and conditional
+    pH.'
+  snapshot_sha256: 4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:17634":
+    [{"label": "D-Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17634",
+    "preferred_term": "D-Glucose", "ontology_id": "CHEBI:17634", "mapping_status":
+    "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:8806": [{"label": "Resazurin",
+    "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term":
+    "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/267/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: f6d09ba9a0e9347712a6566a8027f20e2f02dc0da479199302668e1fb7d3248c
+- evidence_id: historical-glucose
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/specialized/anaerobic_tryptic_soy_broth_medium.yaml.md
+  locator: Glucose row, declared source hash/time and provider solution volume; compared
+    with maintained ingredients[2].evidence and references
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: The maintained evidence and dated report agree on D-glucose amount=2 g,
+    provider g_l=2, recipe_order=3 and declared solution volume=1000 ml, retrieved
+    2026-10-07T12:20:15.232396+00:00 with raw SHA256 ef09b3b7dde98fdcf6bfc93663b656aa58b449af4ac1649464bc8c42d6ea2b1b.
+    This is agreement between retained derivative records, not current inspection
+    of that historical raw response. The target omits this evidence, reference and
+    later curation event.
+  snapshot_sha256: 39ee5998a3938c17f150af7c797c14a381db078bc81206f84c43d1fecfec1698
+- evidence_id: mediadive869api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/869
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T14:59:58.538134Z'
+  support: context_only
+  summary: 'Required rechecking of the owner''s historical MediaDive869 glucose correspondence
+    is unavailable: current exact API and its preserved retry returned503. The dated
+    owner/report agreement does not recover the original raw response. The available
+    DSMZ primary independently supports 2.00 g per stated recipe, but does not itself
+    declare the historical provider g_l or measured final volume.'
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: bdBBL211768-attempt
+  kind: database
+  reference: https://www.bd.com/en-ca/products-and-solutions/products/product-page.211768
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:02:50.592741Z'
+  support: context_only
+  summary: Optional supplier-page request returned403. DSMZ names BD BBL Trypticase
+    soy broth without a catalog number; this attempted product page does not establish
+    an exact catalog match or product composition. Keep the source mixture name and
+    supplier without fabricating a pure compound or catalog identifier.
+  snapshot_sha256: 6753e71583898ed972b9c069e7eaabbada3b57ffdc496ae08431913de5f92a8f
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml; data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: Current MediaDive parsing treats provider g_l and receiving solution references
+    separately; preparation collection can lift stock prose to the root. Cleanup now
+    retains the first disagreeing duplicate, and current formulation merging preserves
+    assertions rather than authenticating them. Current implementations do not identify
+    the exact historical import version. This target has an August6 merge event; the
+    owner has later October7 glucose evidence. Correct and reassess the maintained
+    owner, then regenerate with evidence retention checked.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: Current MediaDive parsing treats provider g_l and receiving solution references
+    separately; preparation collection can lift stock prose to the root. Cleanup now
+    retains the first disagreeing duplicate, and current formulation merging preserves
+    assertions rather than authenticating them. Current implementations do not identify
+    the exact historical import version. This target has an August6 merge event; the
+    owner has later October7 glucose evidence. Correct and reassess the maintained
+    owner, then regenerate with evidence retention checked.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T15:21:27Z'
+  support: context_only
+  summary: Current MediaDive parsing treats provider g_l and receiving solution references
+    separately; preparation collection can lift stock prose to the root. Cleanup now
+    retains the first disagreeing duplicate, and current formulation merging preserves
+    assertions rather than authenticating them. Current implementations do not identify
+    the exact historical import version. This target has an August6 merge event; the
+    owner has later October7 glucose evidence. Correct and reassess the maintained
+    owner, then regenerate with evidence retention checked.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '2 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 2/3 primary
+    and 2/3 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi17634
+  - chebi8806
+  details: 'Instance coverage on a 0–100 percent scale, denominator 3: primary 66.67%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 8 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    BD BBL Trypticase soy broth\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Trypticase soy broth (BD BBL) 5.50 g\",\n    \"rationale\": \"Primary supports\
+    \ the stated batch quantity and form. It lists water, not a measured final volume.\
+    \ Do not treat a matching numeric G_PER_L value as a source-verified final concentration.\
+    \ For resazurin, 0.1% w/v = 0.001 g/ml and 0.50 ml supplies 0.0005 g; that arithmetic\
+    \ is a batch mass, not denominator proof. For glucose, the owner has historical\
+    \ provider evidence, assessed separately below; its original raw response is not\
+    \ available now.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz869\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main recipe row 1\",\n        \"exact_source_quote\"\
+    : \"Trypticase soy broth (BD BBL) 5.50 g\",\n        \"snapshot_sha256\": \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\"\
+    ,\n        \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"Resazurin stock addition\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0005\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0005\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Resazurin (0.1% w/v) 0.50 ml\",\n    \"rationale\": \"Primary supports the\
+    \ stated batch quantity and form. It lists water, not a measured final volume.\
+    \ Do not treat a matching numeric G_PER_L value as a source-verified final concentration.\
+    \ For resazurin, 0.1% w/v = 0.001 g/ml and 0.50 ml supplies 0.0005 g; that arithmetic\
+    \ is a batch mass, not denominator proof. For glucose, the owner has historical\
+    \ provider evidence, assessed separately below; its original raw response is not\
+    \ available now.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz869\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main recipe row 2\",\n        \"exact_source_quote\"\
+    : \"Resazurin (0.1% w/v) 0.50 ml\",\n        \"snapshot_sha256\": \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\"\
+    ,\n        \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"D-glucose\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"D-Glucose 2.00 g\",\n    \"rationale\": \"Primary supports the stated batch\
+    \ quantity and form. It lists water, not a measured final volume. Do not treat\
+    \ a matching numeric G_PER_L value as a source-verified final concentration. For\
+    \ resazurin, 0.1% w/v = 0.001 g/ml and 0.50 ml supplies 0.0005 g; that arithmetic\
+    \ is a batch mass, not denominator proof. For glucose, the owner has historical\
+    \ provider evidence, assessed separately below; its original raw response is not\
+    \ available now.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz869\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main recipe row 3\",\n        \"exact_source_quote\"\
+    : \"D-Glucose 2.00 g\",\n        \"snapshot_sha256\": \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\"\
+    ,\n        \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\"\
+    : \"Water and assembled volume\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Record 1000.00 ml source water, separately from 0.50 ml resazurin stock and\
+    \ unspecified glucose-stock volume.\",\n    \"rationale\": \"Do not replace listed\
+    \ water with a final-volume declaration or sum an unknown glucose-stock volume.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz869\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\"\
+    ,\n        \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"Resazurin stock strength and receiving dose\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"0.1% w/v stock, 0.50 ml per source batch; mass equivalent 0.0005 g.\",\n \
+    \   \"rationale\": \"The source explicitly defines the percent basis; retain both\
+    \ strength and addition volume rather than just its dissolved mass.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz869\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, resazurin row\",\n        \"exact_source_quote\"\
+    : \"Resazurin (0.1% w/v) 0.50 ml\",\n        \"snapshot_sha256\": \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\"\
+    ,\n        \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"Base pH and anaerobic gas\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 5.5,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 5.5,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n\
+    \          \"step_number\": 1,\n          \"action\": \"AUTOCLAVE\",\n       \
+    \   \"description\": \"Dissolve dehydrated TSB medium and resazurin, bring to\
+    \ the boil and cool to room temperature while sparging with 100% N2 gas. Adjust\
+    \ pH to 5.5, dispense under same gas atmosphere into anoxic Hungate-type tubes\
+    \ or serum vials and autoclave. Add glucose from a separately sterilized anoxic\
+    \ stock solution.\"\n        },\n        \"decision\": \"evidence_only\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n\
+    \          \"step_number\": 1,\n          \"action\": \"AUTOCLAVE\",\n       \
+    \   \"description\": \"Dissolve dehydrated TSB medium and resazurin, bring to\
+    \ the boil and cool to room temperature while sparging with 100% N2 gas. Adjust\
+    \ pH to 5.5, dispense under same gas atmosphere into anoxic Hungate-type tubes\
+    \ or serum vials and autoclave. Add glucose from a separately sterilized anoxic\
+    \ stock solution.\"\n        },\n        \"decision\": \"evidence_only\"\n   \
+    \   }\n    ],\n    \"proposed_source_representation\": \"Base pH 5.5; 100% N2\
+    \ during cooling and dispensing; anoxic tubes or serum vials and autoclaving.\"\
+    ,\n    \"rationale\": \"Current pH and prose agree with the base instruction,\
+    \ but source evidence is not attached. No autoclave temperature or duration is\
+    \ specified in this primary.\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"dsmz869\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, main preparation\",\n        \"exact_source_quote\"\
+    : \"temperature while sparging with 100% N2 gas. Adjust pH to 5.5, dispense under\
+    \ same gas\\natmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add glucose\",\n        \"snapshot_sha256\": \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\"\
+    ,\n        \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Glucose stock and sterilization particulars\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n\
+    \          \"step_number\": 1,\n          \"action\": \"AUTOCLAVE\",\n       \
+    \   \"description\": \"Dissolve dehydrated TSB medium and resazurin, bring to\
+    \ the boil and cool to room temperature while sparging with 100% N2 gas. Adjust\
+    \ pH to 5.5, dispense under same gas atmosphere into anoxic Hungate-type tubes\
+    \ or serum vials and autoclave. Add glucose from a separately sterilized anoxic\
+    \ stock solution.\"\n        },\n        \"decision\": \"evidence_only\"\n   \
+    \   },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n\
+    \          \"step_number\": 1,\n          \"action\": \"AUTOCLAVE\",\n       \
+    \   \"description\": \"Dissolve dehydrated TSB medium and resazurin, bring to\
+    \ the boil and cool to room temperature while sparging with 100% N2 gas. Adjust\
+    \ pH to 5.5, dispense under same gas atmosphere into anoxic Hungate-type tubes\
+    \ or serum vials and autoclave. Add glucose from a separately sterilized anoxic\
+    \ stock solution.\"\n        },\n        \"decision\": \"evidence_only\"\n   \
+    \   }\n    ],\n    \"proposed_source_representation\": \"Add 2.00 g D-glucose\
+    \ from a separately sterilized anoxic stock; stock strength, aliquot volume and\
+    \ sterilization cycle remain unspecified.\",\n    \"rationale\": \"Do not invent\
+    \ a usual stock concentration, heat treatment or filter pore size.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz869\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, final main preparation sentence\",\n\
+    \        \"exact_source_quote\": \"from a separately sterilized anoxic stock solution.\"\
+    ,\n        \"snapshot_sha256\": \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\"\
+    ,\n        \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"DSM 12992 conditional complete-medium pH\",\n    \"decision\": \"add\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Dissolve dehydrated TSB medium and resazurin,\
+    \ bring to the boil and cool to room temperature while sparging with 100% N2 gas.\
+    \ Adjust pH to 5.5, dispense under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add glucose from a separately sterilized\
+    \ anoxic stock solution.\"\n          }\n        ],\n        \"decision\": \"\
+    add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Dissolve dehydrated TSB medium and resazurin,\
+    \ bring to the boil and cool to room temperature while sparging with 100% N2 gas.\
+    \ Adjust pH to 5.5, dispense under same gas atmosphere into anoxic Hungate-type\
+    \ tubes or serum vials and autoclave. Add glucose from a separately sterilized\
+    \ anoxic stock solution.\"\n          }\n        ],\n        \"decision\": \"\
+    add\"\n      }\n    ],\n    \"proposed_source_representation\": \"Keep base pH\
+    \ 5.5 and a distinct DSM 12992 complete-medium pH 6.5 condition.\",\n    \"rationale\"\
+    : \"Do not overwrite the base pH, infer taxonomy, or convert a collection preparation\
+    \ instruction into experimental growth evidence.\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz869\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium869.pdf\",\n        \"\
+    source_locator\": \"Page 1, strain-specific condition\",\n        \"exact_source_quote\"\
+    : \"For DSM 12992: Adjust pH of complete medium to 6.5.\",\n        \"snapshot_sha256\"\
+    : \"4a1d5043a645ce75bfd938dae47700f64a9a45e3dcd720f55572baed689be5ba\",\n    \
+    \    \"parsed_text_sha256\": \"488be693b3a488548d108b766c46c204803dcd0325f3bf01ce68ce07561bf1a2\"\
+    \n      }\n    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Source identity and maintained ownership
+  outcome: supported
+  summary: The exact DSMZ869 accession, medium title and stable ID correspond to the
+    sole explicit normalized owner. Base formula identity is supported; the source
+    DSM12992 conditional pH is a preparation branch.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - id-search
+  - primary869
+  - owner-0
+  - bound-owner-context
+- assessment_id: evidence
+  area: evidence
+  topic: Historical support and generated evidence loss
+  outcome: concern
+  summary: Target has no ingredient evidence; the owner retains one glucose evidence
+    item and an October7 report/reference. These derivative assertions agree, but
+    current API failure prevents independent recovery of the historical raw bytes.
+    No local amount is marked verified on that basis.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - primary869
+  - quantity-inventory
+  - bound-owner-context
+  - historical-glucose
+- assessment_id: preparation
+  area: completeness
+  topic: Base, stock and strain preparation
+  outcome: concern
+  summary: Base pH5.5, nitrogen atmosphere and separate anoxic glucose sterilization
+    are retained in prose. Explicit resazurin stock strength/aliquot and water quantity
+    are missing as recipe quantities, and DSM12992 complete-medium pH6.5 is absent.
+    Source does not specify glucose-stock strength or a sterilization cycle.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - primary869
+  - quantity-inventory
+  - bound-owner-context
+  - historical-glucose
+- assessment_id: classification
+  area: scope
+  topic: Mixture and physical state
+  outcome: supported
+  summary: COMPLEX, UNDEFINED and LIQUID are consistent with a commercial broth mixture
+    and no agar. Specialized filing is catalog organization, not organism specificity.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - primary869
+- assessment_id: forms
+  area: grounding
+  topic: Source forms and mixture identity
+  outcome: supported
+  summary: Source names D-glucose, consistent with CHEBI:17634, and unqualified resazurin,
+    consistent with CHEBI:8806. The BD BBL broth remains a mixture without an invented
+    molecular ID or precise catalog number. Ontology resolution and current MIM linkage
+    do not validate concentrations.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - primary869
+  - mim
+  - chebi17634
+  - chebi8806
+- assessment_id: growth
+  area: scope
+  topic: Strain condition and biological evidence
+  outcome: not_applicable
+  summary: The DSM12992 pH instruction is collection preparation context. No organism
+    name, taxonomy ID, experimental growth result, phenotype or graph membership is
+    inferred. Complete target and owner contain no asserted target-organism or internal-variant
+    relation.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - primary869
+  - owner-0
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 12 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: writer
+  area: provenance
+  topic: Maintained and generated provenance
+  outcome: concern
+  summary: Current MediaDive parsing treats provider g_l and receiving solution references
+    separately; preparation collection can lift stock prose to the root. Cleanup now
+    retains the first disagreeing duplicate, and current formulation merging preserves
+    assertions rather than authenticating them. Current implementations do not identify
+    the exact historical import version. This target has an August6 merge event; the
+    owner has later October7 glucose evidence. Correct and reassess the maintained
+    owner, then regenerate with evidence retention checked.
+  target_ids:
+  - CultureMech:015369
+  evidence_ids:
+  - record
+  - primary869
+  - quantity-inventory
+  - bound-owner-context
+  - historical-glucose
+  - writer-0
+  - writer-1
+  - writer-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.015369.source-stock-context
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore source quantities and resazurin stock context
+  description: All three ingredients are recorded in G_PER_L, while the primary gives
+    batch amounts and listed water, including 0.50 ml of 0.1% w/v resazurin. The 0.0005
+    g mass conversion is sound; final-volume support is separate and not supplied
+    by the primary. Missing stock strength, aliquot and water obscure preparation.
+  target_ids:
+  - CultureMech:015369
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - record
+  - primary869
+  - quantity-inventory
+  - bound-owner-context
+  - historical-glucose
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.015369.generated-evidence-loss
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated record omits later owner glucose evidence
+  description: The normalized owner has glucose evidence, a provider reference and
+    an October7 curation event; the August6-generated target lacks all three. Historical
+    raw correspondence remains unresolved and must not be silently upgraded to verified.
+  target_ids:
+  - CultureMech:015369
+  field_paths:
+  - ingredients[2].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - primary869
+  - quantity-inventory
+  - bound-owner-context
+  - historical-glucose
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.015369.conditional-ph
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preserve the DSM12992 pH condition separately
+  description: The primary distinguishes base pH5.5 from complete-medium pH6.5 for
+    DSM12992. Neither local layer represents this condition.
+  target_ids:
+  - CultureMech:015369
+  field_paths:
+  - ph_value
+  - preparation_steps
+  evidence_ids:
+  - record
+  - primary869
+  - quantity-inventory
+  - bound-owner-context
+  - historical-glucose
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve source-native batch amounts, water, resazurin stock strength
+    and aliquot; qualify final-concentration assertions by an explicit source denominator
+    if recovered. Keep glucose stock details unspecified where the primary is silent.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015369
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Reassess the retained historical evidence against the exact raw capture
+    if recoverable; retain its declared scope and append provenance. After separately
+    authorized curation, regenerate and verify evidence/reference/history retention.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015369
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add the exact source condition as a separate preparation branch with
+    evidence while retaining base pH5.5; do not infer an organism taxon or experimental
+    growth claim.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015369
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_tryptic_soy_broth_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- 'Required rechecking of the owner''s historical MediaDive869 glucose correspondence
+  is unavailable: current exact API and its preserved retry returned503. The dated
+  owner/report agreement does not recover the original raw response. The available
+  DSMZ primary independently supports 2.00 g per stated recipe, but does not itself
+  declare the historical provider g_l or measured final volume.'
+- Optional supplier-page request returned403. DSMZ names BD BBL Trypticase soy broth
+  without a catalog number; this attempted product page does not establish an exact
+  catalog match or product composition. Keep the source mixture name and supplier
+  without fabricating a pure compound or catalog identifier.
+- Current primary content cannot establish historical source chronology. The exact
+  old MediaDive response has not been recovered; retained report correspondence is
+  not raw-byte verification.
+- No unspecified glucose-stock strength, aliquot, sterilization cycle, product catalog
+  identifier or assembled final volume is invented.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-027
+- generated-medium
