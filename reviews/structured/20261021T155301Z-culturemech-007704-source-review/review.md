@@ -1,0 +1,5301 @@
+# Source and formulation review: anaerolinea_medium_c (CultureMech:007704)
+
+- Review: 20261021T155301Z-culturemech-007704-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T15:43:31Z
+- Finished UTC: 2026-10-21T15:53:01Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+JCM1103 and TOGO M1179 describe distinct A/B, trace-element, vitamin and reducing-agent stages. The current target and owner flatten their quantities, merge incompatible water amounts and attach unrelated A/B identifiers. Exact source forms, preparation stages and metal classification need curation; current primary and scoped dependencies are available, with optional MediaDive main access failures retained.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 276; batch 028 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-seven task batches contain 270 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 273 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007704 | data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml | generated | anaerolinea_medium_c |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007704 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007704 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-028/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch028/276/strict.tsv |
+| validate-terms | passed | True | CultureMech:007704 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007704 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007704 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadiveJ1103api | unavailable | False | CultureMech:007704 | The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact stock subsections and the two asserted solution endpoints are available, so this optional failure does not make the current scientific comparison unavailable. |
+| Exact source content access: mediadiveJ1103api_retry | unavailable | False | CultureMech:007704 | The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact stock subsections and the two asserted solution endpoints are available, so this optional failure does not make the current scientific comparison unavailable. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007704.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007704.
+
+52 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "A water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1001.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1001.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "water_ml": 900
+    },
+    "rationale": "The current 1001 G_PER_L is a numeric merge of 900 mL, 100 mL and 1 L from different stages. Restore each solvent input separately; neither water density nor whole-stock transfer is assumed.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact A water table row",
+        "exact_source_quote": "Distilled water 900.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "B water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1001.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1001.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "B",
+      "water_ml": 100
+    },
+    "rationale": "The current 1001 G_PER_L is a numeric merge of 900 mL, 100 mL and 1 L from different stages. Restore each solvent input separately; neither water density nor whole-stock transfer is assumed.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact B water table row",
+        "exact_source_quote": "Distilled water 100.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "SL-11 water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1001.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1001.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "water_l": 1
+    },
+    "rationale": "The current 1001 G_PER_L is a numeric merge of 900 mL, 100 mL and 1 L from different stages. Restore each solvent input separately; neither water density nor whole-stock transfer is assumed.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact SL-11 water table row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "A: CaCl2・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "source_amount": 0.15,
+      "source_unit": "g",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A ingredient table",
+        "exact_source_quote": "CaCl 2 ·2H 2 O 0.15 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "A: KH2PO4",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.14",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.14",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "source_amount": 0.14,
+      "source_unit": "g",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A ingredient table",
+        "exact_source_quote": "KH 2 PO 4 0.14 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 0.14,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "A: NH4Cl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.54",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.54",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "source_amount": 0.54,
+      "source_unit": "g",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A ingredient table",
+        "exact_source_quote": "NH 4 Cl 0.54 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"NH4Cl\",\n          \"volume\": 0.54,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "A: Resazurin",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "source_amount": 1,
+      "source_unit": "mg",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A ingredient table",
+        "exact_source_quote": "Resazurin 1.0 mg",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "A: MgCl2・6H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A ingredient table",
+        "exact_source_quote": "MgCl 2 ·6H 2 O 0.2 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "A: NaHCO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "source_amount": 2.5,
+      "source_unit": "g",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A ingredient table",
+        "exact_source_quote": "NaHCO 3 2.5 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"NaHCO3\",\n          \"volume\": 2.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "A: Yeast extract (BD-Difco)",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "source_amount": 2.3,
+      "source_unit": "g",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A ingredient table",
+        "exact_source_quote": "Yeast extract (BD-Difco) 2.3 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract (BD-Difco)\",\n          \"volume\": 2.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "B: Glucose",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "2.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "2.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "B",
+      "source_amount": 2.2,
+      "source_unit": "g",
+      "finished_stage_volume": null,
+      "finished_medium_concentration": null
+    },
+    "rationale": "Restore the exact batch quantity and stage. A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg, not 1 g, and this source does not specify a sodium salt.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution B ingredient table",
+        "exact_source_quote": "Glucose 2.2 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"Glucose\",\n          \"volume\": 2.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "A gas mixture",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "gas": "N2:CO2",
+      "ratio": [
+        80,
+        20
+      ],
+      "basis": "v/v"
+    },
+    "rationale": "Replace unscoped VARIABLE ingredient placeholders with the explicitly quantified A preparation atmosphere. This gas ratio is not a dissolved concentration.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A cooling and dispensing",
+        "exact_source_quote": "N 2 -CO 2 (80:20, v/v)",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "B nitrogen atmosphere",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "B",
+      "atmosphere": "N2",
+      "percentage": null
+    },
+    "rationale": "The source names N2 but gives no percentage or amount. Preserve that limit; the frozen 100% inference is explicitly overridden.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution B preparation",
+        "exact_source_quote": "Keep under a N 2 atmosphere.",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "SL-11: Na2MoO4・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "36",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "36",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 36,
+      "source_unit": "mg",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 36.0 mg",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 36,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "SL-11: H3BO3",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 6,
+      "source_unit": "g",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "H 3 BO 3 6.0 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[2]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 6,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "SL-11: MnCl2・4H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 100,
+      "source_unit": "mg",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "MnCl 2 ·4H 2 O 100.0 mg",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[3]",
+        "exact_source_quote": "\"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 100,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "SL-11: CoCl2・6H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "190",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "190",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 190,
+      "source_unit": "mg",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "CoCl 2 ·6H 2 O 190.0 mg",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[4]",
+        "exact_source_quote": "\"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 190,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "SL-11: NiCl2・6H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "24",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "24",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 24,
+      "source_unit": "mg",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "NiCl 2 ·6H 2 O 24.0 mg",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[5]",
+        "exact_source_quote": "\"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 24,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "SL-11: CuCl2・2H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 2,
+      "source_unit": "mg",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "CuCl 2 ·2H 2 O 2.0 mg",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[6]",
+        "exact_source_quote": "\"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "SL-11: ZnCl2",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "70",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "70",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 70,
+      "source_unit": "mg",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "ZnCl 2 70.0 mg",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnCl2\",\n          \"volume\": 70,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "SL-11: FeCl2・4H2O",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 1.5,
+      "source_unit": "g",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "FeCl 2 ·4H 2 O 1.5 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[8]",
+        "exact_source_quote": "\"component_name\": \"FeCl2・4H2O\",\n          \"volume\": 1.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "SL-11: EDTA・2Na",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "5.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "5.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "source_amount": 5.2,
+      "source_unit": "g",
+      "water_l": 1,
+      "receiving_dose_ml_in_A": 1
+    },
+    "rationale": "Move this stock-level quantity into SL-11 and preserve the 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is literal and is not changed to mg using another recipe. One litre is the stated water input, not an independently measured finished-stock volume.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Trace element solution SL-11 table",
+        "exact_source_quote": "EDTA·2Na 5.2 g",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[4].items[9]",
+        "exact_source_quote": "\"component_name\": \"EDTA・2Na\",\n          \"volume\": 5.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Receiving JCM1103 A",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "900",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "900",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "receiving assembly",
+      "solution": "JCM1103 A",
+      "volume_fraction": 0.9,
+      "provider_reference_scale_ml": 900
+    },
+    "rationale": "Restore volume-based, stage-specific receiving quantities and explicit names. A/B must be bound to this source rather than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Assembly or exact stock receiving row",
+        "exact_source_quote": "add 0.1 volume of Solution B to 0.9 volume of Solution A",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Solution A\",\n          \"volume\": 900,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Receiving JCM1103 B",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "receiving assembly",
+      "solution": "JCM1103 B",
+      "volume_fraction": 0.1,
+      "provider_reference_scale_ml": 100
+    },
+    "rationale": "Restore volume-based, stage-specific receiving quantities and explicit names. A/B must be bound to this source rather than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Assembly or exact stock receiving row",
+        "exact_source_quote": "add 0.1 volume of Solution B to 0.9 volume of Solution A",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Solution B\",\n          \"volume\": 100,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Receiving JCM1103 SL-11",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "stock": "JCM1103 SL-11",
+      "dose_ml": 1
+    },
+    "rationale": "Restore volume-based, stage-specific receiving quantities and explicit names. A/B must be bound to this source rather than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Assembly or exact stock receiving row",
+        "exact_source_quote": "Trace element solution SL-11 (see below) 1.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--11 (see below)\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Receiving JCM431 selenite-tungstate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "stock": "JCM431 selenite-tungstate",
+      "dose_ml": 0.5
+    },
+    "rationale": "Restore volume-based, stage-specific receiving quantities and explicit names. A/B must be bound to this source rather than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Assembly or exact stock receiving row",
+        "exact_source_quote": "Selenite tungstate solution (see Medium No. 431 ) 0.5 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"Selenite--tungstate solution (see Medium [M431])\",\n          \"volume\": 0.5,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Receiving JCM197 trace vitamins",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "stock": "JCM197 trace vitamins",
+      "dose_ml": 10
+    },
+    "rationale": "Restore volume-based, stage-specific receiving quantities and explicit names. A/B must be bound to this source rather than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Assembly or exact stock receiving row",
+        "exact_source_quote": "Trace vitamins (see Medium No. 197 ) 10.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Receiving Na2S nonahydrate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[5].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[5].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "prior to inoculation",
+      "stock": "Na2S nonahydrate",
+      "dose_ml_per_l": 6,
+      "strength_percent": 5,
+      "percent_basis": null
+    },
+    "rationale": "Restore volume-based, stage-specific receiving quantities and explicit names. A/B must be bound to this source rather than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Assembly or exact stock receiving row",
+        "exact_source_quote": "5% Na 2 S·9H 2 O solution 6.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"5% Na2S・9H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      },
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Receiving basis for the two reducing solutions",
+        "exact_source_quote": "Prior to inoculation, add per liter the following solutions:",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Receiving L-cysteine HCl monohydrate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[6].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[6].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "prior to inoculation",
+      "stock": "L-cysteine HCl monohydrate",
+      "dose_ml_per_l": 6,
+      "strength_percent": 5,
+      "percent_basis": null
+    },
+    "rationale": "Restore volume-based, stage-specific receiving quantities and explicit names. A/B must be bound to this source rather than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Assembly or exact stock receiving row",
+        "exact_source_quote": "5% L-Cysteine·HCl·H 2 O solution 6.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "togoM1179",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179",
+        "source_locator": "$.components[3].items[1]",
+        "exact_source_quote": "\"component_name\": \"5% L--Cysteine・HCl・H2O solution\",\n          \"volume\": 6,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973"
+      },
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Receiving basis for the two reducing solutions",
+        "exact_source_quote": "Prior to inoculation, add per liter the following solutions:",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "Selenite-tungstate: NaOH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM431 selenite-tungstate stock",
+      "component": "NaOH",
+      "source_amount": 0.4,
+      "source_unit": "g",
+      "receiving_dose_ml_in_A": 0.5
+    },
+    "rationale": "Populate the currently empty stock composition from this exact subsection. Do not import the parent basal medium, its different trace elements or its 1 mL parent receiving dose; JCM1103 specifies 0.5 mL.",
+    "source_snippets": [
+      {
+        "source_key": "jcm431",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431",
+        "source_locator": "Selenite-tungstate solution subsection only",
+        "exact_source_quote": "NaOH 0.4 g",
+        "snapshot_sha256": "cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50",
+        "parsed_text_sha256": "79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e"
+      },
+      {
+        "source_key": "togoM431",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431",
+        "source_locator": "$.components[3].items[3]",
+        "exact_source_quote": "\"component_name\": \"NaOH\",\n          \"volume\": 0.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "Selenite-tungstate: Na2SeO3 pentahydrate",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM431 selenite-tungstate stock",
+      "component": "Na2SeO3 pentahydrate",
+      "source_amount": 6,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 0.5
+    },
+    "rationale": "Populate the currently empty stock composition from this exact subsection. Do not import the parent basal medium, its different trace elements or its 1 mL parent receiving dose; JCM1103 specifies 0.5 mL.",
+    "source_snippets": [
+      {
+        "source_key": "jcm431",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431",
+        "source_locator": "Selenite-tungstate solution subsection only",
+        "exact_source_quote": "Na 2 SeO 3 ·5H 2 O 6.0 mg",
+        "snapshot_sha256": "cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50",
+        "parsed_text_sha256": "79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e"
+      },
+      {
+        "source_key": "togoM431",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431",
+        "source_locator": "$.components[3].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2SeO3・5H2O\",\n          \"volume\": 6,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q32",
+    "component_or_context": "Selenite-tungstate: Na2WO4 dihydrate",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM431 selenite-tungstate stock",
+      "component": "Na2WO4 dihydrate",
+      "source_amount": 8,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 0.5
+    },
+    "rationale": "Populate the currently empty stock composition from this exact subsection. Do not import the parent basal medium, its different trace elements or its 1 mL parent receiving dose; JCM1103 specifies 0.5 mL.",
+    "source_snippets": [
+      {
+        "source_key": "jcm431",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431",
+        "source_locator": "Selenite-tungstate solution subsection only",
+        "exact_source_quote": "Na 2 WO 4 ·2H 2 O 8.0 mg",
+        "snapshot_sha256": "cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50",
+        "parsed_text_sha256": "79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e"
+      },
+      {
+        "source_key": "togoM431",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431",
+        "source_locator": "$.components[3].items[2]",
+        "exact_source_quote": "\"component_name\": \"Na2WO4・2H2O\",\n          \"volume\": 8,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q33",
+    "component_or_context": "Selenite-tungstate: water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM431 selenite-tungstate stock",
+      "component": "water",
+      "source_amount": 1,
+      "source_unit": "L",
+      "receiving_dose_ml_in_A": 0.5
+    },
+    "rationale": "Populate the currently empty stock composition from this exact subsection. Do not import the parent basal medium, its different trace elements or its 1 mL parent receiving dose; JCM1103 specifies 0.5 mL.",
+    "source_snippets": [
+      {
+        "source_key": "jcm431",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431",
+        "source_locator": "Selenite-tungstate solution subsection only",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50",
+        "parsed_text_sha256": "79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e"
+      },
+      {
+        "source_key": "togoM431",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q34",
+    "component_or_context": "Trace vitamins: biotin",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "biotin",
+      "source_amount": 2,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Biotin 2.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q35",
+    "component_or_context": "Trace vitamins: folic acid",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "folic acid",
+      "source_amount": 2,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Folic acid 2.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q36",
+    "component_or_context": "Trace vitamins: pyridoxine HCl",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "pyridoxine HCl",
+      "source_amount": 10,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Pyridoxine·HCl 10.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q37",
+    "component_or_context": "Trace vitamins: thiamine HCl",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "thiamine HCl",
+      "source_amount": 5,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Thiamine·HCl 5.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q38",
+    "component_or_context": "Trace vitamins: riboflavin",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "riboflavin",
+      "source_amount": 5,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Riboflavin 5.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q39",
+    "component_or_context": "Trace vitamins: nicotinic acid",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "nicotinic acid",
+      "source_amount": 5,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Nicotinic acid 5.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q40",
+    "component_or_context": "Trace vitamins: calcium pantothenate",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "calcium pantothenate",
+      "source_amount": 5,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Calcium pantothenate 5.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q41",
+    "component_or_context": "Trace vitamins: vitamin B12",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "vitamin B12",
+      "source_amount": 0.1,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Vitamin B 1 2 0.1 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q42",
+    "component_or_context": "Trace vitamins: p-aminobenzoic acid",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "p-aminobenzoic acid",
+      "source_amount": 5,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "p -Aminobenzoic acid 5.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q43",
+    "component_or_context": "Trace vitamins: lipoic acid",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "lipoic acid",
+      "source_amount": 5,
+      "source_unit": "mg",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Lipoic acid 5.0 mg",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q44",
+    "component_or_context": "Trace vitamins: water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "JCM197 trace vitamins",
+      "component": "water",
+      "source_amount": 1,
+      "source_unit": "L",
+      "receiving_dose_ml_in_A": 10
+    },
+    "rationale": "Populate the currently empty stock from the exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.",
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Trace vitamins subsection only",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      },
+      {
+        "source_key": "togoM190",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q45",
+    "component_or_context": "A pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A before boiling",
+      "pH": 6.5
+    },
+    "rationale": "Restore this source-only stage-qualified context in the maintained owner. The A/B example is not a universal vessel requirement, and separate stock pH values do not establish a final receiving-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact named preparation clause or page default",
+        "exact_source_quote": "adjust pH to 6.5.",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q46",
+    "component_or_context": "A brief boiling",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A",
+      "boiling_seconds": [
+        5,
+        10
+      ]
+    },
+    "rationale": "Restore this source-only stage-qualified context in the maintained owner. The A/B example is not a universal vessel requirement, and separate stock pH values do not establish a final receiving-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact named preparation clause or page default",
+        "exact_source_quote": "Bring to a boil for 5-10 sec",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q47",
+    "component_or_context": "B pH and filtration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "B",
+      "pH": 7,
+      "sterilization": "filtration"
+    },
+    "rationale": "Restore this source-only stage-qualified context in the maintained owner. The A/B example is not a universal vessel requirement, and separate stock pH values do not establish a final receiving-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact named preparation clause or page default",
+        "exact_source_quote": "Adjust pH to 7.0 and filter-sterilize.",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q48",
+    "component_or_context": "A/B example",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "example_only": true,
+      "A_ml": 18,
+      "B_ml": 2,
+      "vessel_ml": 60
+    },
+    "rationale": "Restore this source-only stage-qualified context in the maintained owner. The A/B example is not a universal vessel requirement, and separate stock pH values do not establish a final receiving-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact named preparation clause or page default",
+        "exact_source_quote": "18 ml Solution A in 60 ml serum bottles and 2 ml Solution B",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q49",
+    "component_or_context": "SL-11 pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "SL-11",
+      "pH": 6
+    },
+    "rationale": "Restore this source-only stage-qualified context in the maintained owner. The A/B example is not a universal vessel requirement, and separate stock pH values do not establish a final receiving-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact named preparation clause or page default",
+        "exact_source_quote": "Adjust pH to 6.0.",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q50",
+    "component_or_context": "JCM default autoclave cycle",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "temperature_C": 121,
+      "duration_min": 15,
+      "scope": "Default only where not overridden; A is autoclaved, B and trace vitamins explicitly filtered"
+    },
+    "rationale": "Restore this source-only stage-qualified context in the maintained owner. The A/B example is not a universal vessel requirement, and separate stock pH values do not establish a final receiving-medium pH.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Exact named preparation clause or page default",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q51",
+    "component_or_context": "A overnight stand",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": {
+      "stage": "A after autoclaving",
+      "duration": "overnight",
+      "numeric_hours": null
+    },
+    "rationale": "Retain the literal duration without inventing a numeric number of hours.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Solution A procedure",
+        "exact_source_quote": "After autoclaving, stand the medium overnight.",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q52",
+    "component_or_context": "A/B final volumes and final receiving pH",
+    "decision": "not_quantified",
+    "local_fields": [],
+    "proposed_source_representation": {
+      "A_finished_volume_ml": null,
+      "B_finished_volume_ml": null,
+      "receiving_final_pH": null,
+      "A_listed_water_plus_liquid_additions_ml": 911.5
+    },
+    "rationale": "900+1+0.5+10=911.5 mL is a sum of listed A liquid inputs, not its measured final volume. Do not silently make A to 900 mL or infer a final medium pH from either stage.",
+    "source_snippets": [
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "A water row",
+        "exact_source_quote": "Distilled water 900.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "B water row",
+        "exact_source_quote": "Distilled water 100.0 ml",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      },
+      {
+        "source_key": "jcm1103",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103",
+        "source_locator": "Receiving assembly",
+        "exact_source_quote": "add 0.1 volume of Solution B to 0.9 volume of Solution A",
+        "snapshot_sha256": "a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59",
+        "parsed_text_sha256": "d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:007704.
+
+19 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 20/21 primary and 8/21 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 21: primary 95.24%; secondary 38.10%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007704.
+
+25 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact source and maintained ownership
+
+identity: concern. Targets: CultureMech:007704.
+
+The target and sole maintained owner identify TOGO M1179 and JCM1103 consistently and retain the same scientific fields. However, the generic Solution A/B identifiers resolve to chemically different 5342/5343 recipes. Current matching labels are not sufficient identity evidence. Both referenced local records were read in full as dependencies; their chemistry must not transfer.
+
+### Current primary and exact subsection evidence
+
+evidence: concern. Targets: CultureMech:007704.
+
+The complete primary, TOGO transcription and two explicitly named parent stock subsections support this current source comparison. None of the target or owner quantities has attached source evidence. Optional main MediaDive 503 attempts do not invalidate available primary content or prove historical graph state. The two frozen-context overstatements are corrected only through a separate audit overlay.
+
+### Supplied hydrates and unresolved EDTA hydration
+
+grounding: concern. Targets: CultureMech:007704.
+
+Source cobalt hexahydrate and nickel hexahydrate conflict with asserted CHEBI:35696 (2Cl.Co) and CHEBI:34887 (Cl2Ni). Source EDTA·2Na does not resolve hydration, so the asserted anhydrous CHEBI:64734 is more specific than verified source evidence; no hydrated replacement is assumed. Source resazurin is unqualified and does not support importing a sodium-salt correction from another medium. The 6 g boric-acid amount is literal and independently corroborated by TOGO.
+
+### Assembly, stock recovery and procedure stages
+
+completeness: concern. Targets: CultureMech:007704.
+
+Both local layers lack the primary preparation. Restore A pH 6.5, brief boiling, 80:20 v/v N2/CO2 cooling/dispensing, bicarbonate timing, autoclaving and overnight stand, followed by sterile anaerobic filtered vitamins; B pH 7 and filtration under N2 without a percentage; A/B 0.9:0.1 assembly and example; two separate 6 mL/L reducing additions; and SL-11 pH 6. The JCM default cycle is subject to explicit filtration exceptions. Unqualified percentages and unknown final volumes remain unresolved quantities, not guessed values.
+
+### Complexity and high-metal classification
+
+scope: concern. Targets: CultureMech:007704.
+
+Yeast extract supports COMPLEX/UNDEFINED and the source describes liquid assembly. The current high_metal flag cannot be quantitatively certified from flattened stock amounts and wrong mg/g units. Current metal analysis uses approximate unit factors without molecular-weight or hydrate stoichiometry, reads direct ingredients, and assigns percentile labels through a basename-driven writer. Reassess the flag after stage and unit repair against its actual intended classification policy; this review does not prescribe false or infer a metal-tolerance phenotype.
+
+### Current writers and maintained input follow-up
+
+provenance: concern. Targets: CultureMech:007704.
+
+Current TOGO code has scoped primary/local-stock handling, but its local-volume inference can accept a water anchor equal to a reference dose and does not establish a measured final volume; bare-percent fallback is not source proof of w/v. Current metal analysis approximates units without molecular-weight conversion and the label writer applies basename lists. These current files are context, not a replay or proof of the historical import cause. Repair the maintained input, preserve history and regenerate only after explicit stage-aware review.
+
+## Findings
+
+### f1: Solution A and B refer to unrelated chemical recipes
+
+blocker / open / confirmed; issue key: culturemech.007704.wrong-ab-identifiers.
+
+Both layers assert mediadive.solution:5342 and :5343 and point to local stock records containing different salt/organic formulations. Generic A/B names conceal the mismatch. The exact endpoints have null volume and g_l with a 500 mL preparation, not an explicit 1000 mL declaration.
+
+### f2: Batch amounts, stock doses and different water units are flattened
+
+blocker / open / confirmed; issue key: culturemech.007704.stage-unit-collapse.
+
+The target and owner merge 900 mL A water, 100 mL B water and 1 L SL-11 water as 1001 G_PER_L. Resazurin mg, six SL-11 mg amounts, batch gram amounts and seven solution-volume doses appear as direct G_PER_L quantities; both referenced external stock compositions are empty.
+
+### f3: Two asserted metal salts omit the supplied waters of hydration
+
+major / open / confirmed; issue key: culturemech.007704.cobalt-nickel-hydrates.
+
+Cobalt and nickel hexahydrate source names are grounded to formulae without six waters, CHEBI:35696 and CHEBI:34887. Matching canonical labels and current MIM mappings elsewhere do not cure these supplied-form mismatches.
+
+### f4: All source preparation and stage qualifiers are missing
+
+major / open / confirmed; issue key: culturemech.007704.preparation-omission.
+
+Both local layers lack the source A/B handling, separate pH stages, gas ratio, boiling time, sterilization exceptions, overnight stand, assembly example and reducing-agent receiving basis. The source supplies a JCM default cycle but overrides it with filtration for B and vitamins.
+
+### f5: High-metal classification relies on an unreviewable flattened representation
+
+major / open / confirmed; issue key: culturemech.007704.high-metal-evidence-scope.
+
+The retained high_metal flag is not established by the current recipe because stock stages and mg/g units are wrong. Both current writers have been read; their approximate direct-ingredient analysis is not a validated molecular concentration calculation.
+
+### f6: EDTA hydration is asserted more specifically than the source
+
+minor / open / confirmed; issue key: culturemech.007704.edta-specificity.
+
+JCM1103 and TOGO name EDTA disodium without hydration; CHEBI:64734 explicitly asserts the anhydrous form. This is unresolved specificity rather than proof of a particular alternative hydrate.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Replace these links with an explicitly source-specific representation of JCM1103 A and B after identity verification; preserve 0.9:0.1 assembly and do not transfer chemistry or optional agar instructions from the unrelated stocks. Do not invent replacement identifiers.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore A, B, SL-11 and the two exact referenced stock compositions, their separate water inputs and receiving doses. Preserve literal source units and boric acid 6 g. Keep reducing-agent percentage bases and finished volumes unknown where the source does not specify them; attach claim-level evidence to every repaired quantity.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Verify identifiers matching the explicitly supplied hydrates and any intended secondary links independently. Preserve source names and do not substitute anhydrous masses or invent IDs.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Restore the exact stage-specific procedure and default-cycle exceptions in the maintained owner, keeping B N2 unquantified and the vessel volumes explicitly exemplary. Do not transfer other JCM431/JCM197 parent procedures.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Reassess the flag using repaired stage-aware amounts and the documented classification policy, including the actual current writer limitations. Do not automatically set false or infer a phenotype from the medium title or a single stock ingredient.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a6
+
+Retain the source EDTA·2Na wording and obtain exact form evidence before asserting an anhydrous or hydrated identity. Do not infer a replacement term from another SL-11 recipe.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch028/276/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-028/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch028/276/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml:1:id: CultureMech:007704<br>./data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml:1:id: CultureMech:007704<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch028/source-preflight-bound/276/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 37 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-owner-context | /private/tmp/culturemech-review-work-batch028/source-preflight-bound/276/evidence-context-original.json; Complete target and maintained owner; source and identifier search contexts | context_only | Whole fresh target and owner read; all frozen local-record objects equal the fresh inspected YAML. Source interpretations are independently checked against actual bound raw/text bytes. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103; JCM1103 complete page: A, B, assembly, reducing additions and SL-11 | supports | The exact primary controls stage identity and quantities. Solution A uses 900 mL water plus named additions, B uses 100 mL water, and assembly is 0.9 A plus 0.1 B. These are not explicit measured final-volume statements. Boric acid is literally 6.0 g in this SL-11 recipe. |
+| togo-main | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179; $.components[0:5] and $.comments | supports | Provider transcription separates main solution 1, A, B, main solution 2 and SL-11. Its 900/100 mL receiving entries express the A/B proportions. The local scalar G_PER_L flattening does not preserve these scopes. |
+| selenite-primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431; Selenite-tungstate solution subsection only | supports | Only the explicitly referenced selenite-tungstate recipe transfers. The parent basal, sulfur, trace-element recipe, preparation and growth context do not transfer. |
+| vitamin-primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; Trace vitamins subsection only | supports | Only the explicitly referenced ten-component trace-vitamin recipe transfers. The parent basal medium, separate trace minerals, KOH/pH instruction and other procedures do not transfer. |
+| solution5342 | https://mediadive.dsmz.de/rest/solution/5342; $.data.id, recipe, volume and steps | supports | This exact endpoint has a different composition from JCM1103 A/B. Its data.volume and every recipe g_l are null; its preparation states make-up to 500 mL. Local referenced stock YAML uses G_PER_L with the same 500 mL preparation, not an explicit 1000 mL volume field. These unrelated stocks are identity context only. |
+| solution5343 | https://mediadive.dsmz.de/rest/solution/5343; $.data.id, recipe, volume and steps | supports | This exact endpoint has a different composition from JCM1103 A/B. Its data.volume and every recipe g_l are null; its preparation states make-up to 500 mL. Local referenced stock YAML uses G_PER_L with the same 500 mL preparation, not an explicit 1000 mL volume field. These unrelated stocks are identity context only. |
+| audit-overlay | /private/tmp/culturemech-review-work-batch028/batch028-tail-independent-audit.json; material_frozen_context_corrections for ordinal 276 | context_only | The preserved frozen context is corrected by this separate audit: B is under N2 with no percentage; neither current A/B endpoint nor local referenced stock explicitly declares 1000 mL. Raw source comparisons here independently confirm both corrections. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch028/276/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16526 resolves to carbon dioxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49976 resolves to zinc dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml; data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 13, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml", "events": 12, "timestamp_issues": []}] |
+| current-code-0 | src/culturemech/import/togo_importer.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current TOGO code has scoped primary/local-stock handling, but its local-volume inference can accept a water anchor equal to a reference dose and does not establish a measured final volume; bare-percent fallback is not source proof of w/v. Current metal analysis approximates units without molecular-weight conversion and the label writer applies basename lists. These current files are context, not a replay or proof of the historical import cause. Repair the maintained input, preserve history and regenerate only after explicit stage-aware review. |
+| current-code-1 | scripts/analyze_metal_concentrations.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current TOGO code has scoped primary/local-stock handling, but its local-volume inference can accept a water anchor equal to a reference dose and does not establish a measured final volume; bare-percent fallback is not source proof of w/v. Current metal analysis approximates units without molecular-weight conversion and the label writer applies basename lists. These current files are context, not a replay or proof of the historical import cause. Repair the maintained input, preserve history and regenerate only after explicit stage-aware review. |
+| current-code-2 | scripts/add_metal_ree_labels.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current TOGO code has scoped primary/local-stock handling, but its local-volume inference can accept a water anchor equal to a reference dose and does not establish a measured final volume; bare-percent fallback is not source proof of w/v. Current metal analysis approximates units without molecular-weight conversion and the label writer applies basename lists. These current files are context, not a replay or proof of the historical import cause. Repair the maintained input, preserve history and regenerate only after explicit stage-aware review. |
+| current-code-3 | src/culturemech/merge/formulation.py; Current scoped functions read; supplemental current code hash; no historical-version inference | context_only | Current TOGO code has scoped primary/local-stock handling, but its local-volume inference can accept a water anchor equal to a reference dose and does not establish a measured final volume; bare-percent fallback is not source proof of w/v. Current metal analysis approximates units without molecular-weight conversion and the label writer applies basename lists. These current files are context, not a replay or proof of the historical import cause. Repair the maintained input, preserve history and regenerate only after explicit stage-aware review. |
+| mediadiveJ1103api-attempt | https://mediadive.dsmz.de/rest/medium/J1103; Preserved exact public retrieval result | context_only | The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact stock subsections and the two asserted solution endpoints are available, so this optional failure does not make the current scientific comparison unavailable. |
+| mediadiveJ1103api_retry-attempt | https://mediadive.dsmz.de/rest/medium/J1103; Preserved exact public retrieval result | context_only | The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact stock subsections and the two asserted solution endpoints are available, so this optional failure does not make the current scientific comparison unavailable. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact stock subsections and the two asserted solution endpoints are available, so this optional failure does not make the current scientific comparison unavailable.
+- The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact stock subsections and the two asserted solution endpoints are available, so this optional failure does not make the current scientific comparison unavailable.
+- Completed refers to the current source-scoped comparison. The available source does not quantify finished A/B/SL-11 volumes, final receiving pH, B nitrogen percentage or the two 5% bases; those quantities remain explicitly not quantified.
+- No missing optional link, source name or catalog organism is converted into a growth assertion. Parent recipes and unrelated A/B endpoint procedures remain excluded. Frozen source captures and contexts are unchanged; their two known overstatements are addressed by the pinned audit overlay.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T155301Z-culturemech-007704-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerolinea_medium_c (CultureMech:007704)'
+started_at: '2026-10-21T15:43:31Z'
+finished_at: '2026-10-21T15:53:01Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: JCM1103 and TOGO M1179 describe distinct A/B, trace-element, vitamin and
+  reducing-agent stages. The current target and owner flatten their quantities, merge
+  incompatible water amounts and attach unrelated A/B identifiers. Exact source forms,
+  preparation stages and metal classification need curation; current primary and scoped
+  dependencies are available, with optional MediaDive main access failures retained.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+    sha256: 7772d9fc13af9d9b95f2583c12adf6b78d427c5812ec2e6abcf216328b1f067e
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    sha256: 7cb2c9896169813e3eb1e4dc004d80fdd86596847e58c204e60b75573e1be6ce
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: data/normalized_yaml/solutions/mediadive_solution_index.json
+    sha256: 2e43ed2391d0113480837e0756120d71a8dad8a4490010054e67bfb90c66d381
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/add_metal_ree_labels.py
+    sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+    role: context
+  - path: scripts/analyze_metal_concentrations.py
+    sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 276; batch 028 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-seven task batches
+    contain 270 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 273 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007704
+targets:
+- target_id: CultureMech:007704
+  path: data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  label: anaerolinea_medium_c
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch028/276/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-028/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch028/276/strict.tsv"
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007704
+- check_id: mediadiveJ1103api-source-access
+  name: 'Exact source content access: mediadiveJ1103api'
+  required: false
+  status: unavailable
+  summary: The exact main MediaDive request returned 503. Current JCM1103 and TOGO
+    M1179, exact stock subsections and the two asserted solution endpoints are available,
+    so this optional failure does not make the current scientific comparison unavailable.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - mediadiveJ1103api-attempt
+- check_id: mediadiveJ1103api_retry-source-access
+  name: 'Exact source content access: mediadiveJ1103api_retry'
+  required: false
+  status: unavailable
+  summary: The exact main MediaDive request returned 503. Current JCM1103 and TOGO
+    M1179, exact stock subsections and the two asserted solution endpoints are available,
+    so this optional failure does not make the current scientific comparison unavailable.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - mediadiveJ1103api_retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:44:06.404321Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch028/276/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:44:07.772843Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-028/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch028/276/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:44:09.258424Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:44:10.195902Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml:1:id: CultureMech:007704
+
+    ./data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml:1:id: CultureMech:007704
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch028/source-preflight-bound/276/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: supports
+  summary: 37 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 905338218e14222e24d26df8be902ebffa522d18876e288f577dcace4364bb27
+- evidence_id: bound-owner-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch028/source-preflight-bound/276/evidence-context-original.json
+  locator: Complete target and maintained owner; source and identifier search contexts
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Whole fresh target and owner read; all frozen local-record objects equal
+    the fresh inspected YAML. Source interpretations are independently checked against
+    actual bound raw/text bytes.
+  snapshot_sha256: ca8da06e97d57b4464beefe12eb97bb3025cf0862f7b55db7ea484c8bd3409f7
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103
+  locator: 'JCM1103 complete page: A, B, assembly, reducing additions and SL-11'
+  accessed_at: '2026-10-21T15:28:32.342215Z'
+  support: supports
+  summary: The exact primary controls stage identity and quantities. Solution A uses
+    900 mL water plus named additions, B uses 100 mL water, and assembly is 0.9 A
+    plus 0.1 B. These are not explicit measured final-volume statements. Boric acid
+    is literally 6.0 g in this SL-11 recipe.
+  snapshot_sha256: a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59
+- evidence_id: togo-main
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179
+  locator: $.components[0:5] and $.comments
+  accessed_at: '2026-10-21T15:28:30.121442Z'
+  support: supports
+  summary: Provider transcription separates main solution 1, A, B, main solution 2
+    and SL-11. Its 900/100 mL receiving entries express the A/B proportions. The local
+    scalar G_PER_L flattening does not preserve these scopes.
+  snapshot_sha256: 6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973
+- evidence_id: selenite-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431
+  locator: Selenite-tungstate solution subsection only
+  accessed_at: '2026-10-21T12:23:19.260180Z'
+  support: supports
+  summary: Only the explicitly referenced selenite-tungstate recipe transfers. The
+    parent basal, sulfur, trace-element recipe, preparation and growth context do
+    not transfer.
+  snapshot_sha256: cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50
+- evidence_id: vitamin-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  locator: Trace vitamins subsection only
+  accessed_at: '2026-10-20T06:58:05.867253Z'
+  support: supports
+  summary: Only the explicitly referenced ten-component trace-vitamin recipe transfers.
+    The parent basal medium, separate trace minerals, KOH/pH instruction and other
+    procedures do not transfer.
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: solution5342
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  locator: $.data.id, recipe, volume and steps
+  accessed_at: '2026-10-21T07:31:13.269119Z'
+  support: supports
+  summary: This exact endpoint has a different composition from JCM1103 A/B. Its data.volume
+    and every recipe g_l are null; its preparation states make-up to 500 mL. Local
+    referenced stock YAML uses G_PER_L with the same 500 mL preparation, not an explicit
+    1000 mL volume field. These unrelated stocks are identity context only.
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: solution5343
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  locator: $.data.id, recipe, volume and steps
+  accessed_at: '2026-10-21T07:31:13.547266Z'
+  support: supports
+  summary: This exact endpoint has a different composition from JCM1103 A/B. Its data.volume
+    and every recipe g_l are null; its preparation states make-up to 500 mL. Local
+    referenced stock YAML uses G_PER_L with the same 500 mL preparation, not an explicit
+    1000 mL volume field. These unrelated stocks are identity context only.
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: audit-overlay
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch028/batch028-tail-independent-audit.json
+  locator: material_frozen_context_corrections for ordinal 276
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: 'The preserved frozen context is corrected by this separate audit: B is
+    under N2 with no percentage; neither current A/B endpoint nor local referenced
+    stock explicitly declares 1000 mL. Raw source comparisons here independently confirm
+    both corrections.'
+  snapshot_sha256: a56bd4362e0cc051e920b3ad580d8cda45cc1b8c007c58b93eee193b772e8994
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch028/276/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: e4ffdef1089f78ea65522d080325076e65da47d4453beb5041b3cbde82f8ba50
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous). Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id":
+    "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206":
+    [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206",
+    "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label":
+    "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term",
+    "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml; data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 13, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml", "events":
+    12, "timestamp_issues": []}]'
+- evidence_id: current-code-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Current TOGO code has scoped primary/local-stock handling, but its local-volume
+    inference can accept a water anchor equal to a reference dose and does not establish
+    a measured final volume; bare-percent fallback is not source proof of w/v. Current
+    metal analysis approximates units without molecular-weight conversion and the
+    label writer applies basename lists. These current files are context, not a replay
+    or proof of the historical import cause. Repair the maintained input, preserve
+    history and regenerate only after explicit stage-aware review.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: current-code-1
+  kind: record_content
+  reference: scripts/analyze_metal_concentrations.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Current TOGO code has scoped primary/local-stock handling, but its local-volume
+    inference can accept a water anchor equal to a reference dose and does not establish
+    a measured final volume; bare-percent fallback is not source proof of w/v. Current
+    metal analysis approximates units without molecular-weight conversion and the
+    label writer applies basename lists. These current files are context, not a replay
+    or proof of the historical import cause. Repair the maintained input, preserve
+    history and regenerate only after explicit stage-aware review.
+  snapshot_sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+- evidence_id: current-code-2
+  kind: record_content
+  reference: scripts/add_metal_ree_labels.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Current TOGO code has scoped primary/local-stock handling, but its local-volume
+    inference can accept a water anchor equal to a reference dose and does not establish
+    a measured final volume; bare-percent fallback is not source proof of w/v. Current
+    metal analysis approximates units without molecular-weight conversion and the
+    label writer applies basename lists. These current files are context, not a replay
+    or proof of the historical import cause. Repair the maintained input, preserve
+    history and regenerate only after explicit stage-aware review.
+  snapshot_sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+- evidence_id: current-code-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current scoped functions read; supplemental current code hash; no historical-version
+    inference
+  accessed_at: '2026-10-21T15:52:59Z'
+  support: context_only
+  summary: Current TOGO code has scoped primary/local-stock handling, but its local-volume
+    inference can accept a water anchor equal to a reference dose and does not establish
+    a measured final volume; bare-percent fallback is not source proof of w/v. Current
+    metal analysis approximates units without molecular-weight conversion and the
+    label writer applies basename lists. These current files are context, not a replay
+    or proof of the historical import cause. Repair the maintained input, preserve
+    history and regenerate only after explicit stage-aware review.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: mediadiveJ1103api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1103
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:28:29.486926Z'
+  support: context_only
+  summary: The exact main MediaDive request returned 503. Current JCM1103 and TOGO
+    M1179, exact stock subsections and the two asserted solution endpoints are available,
+    so this optional failure does not make the current scientific comparison unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ1103api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1103
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:29:41.663445Z'
+  support: context_only
+  summary: The exact main MediaDive request returned 503. Current JCM1103 and TOGO
+    M1179, exact stock subsections and the two asserted solution endpoints are available,
+    so this optional failure does not make the current scientific comparison unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 52 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    A water\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\",\n  \
+    \      \"field_path\": \"ingredients[0].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"1001.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1001.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"water_ml\": 900\n    },\n    \"rationale\"\
+    : \"The current 1001 G_PER_L is a numeric merge of 900 mL, 100 mL and 1 L from\
+    \ different stages. Restore each solvent input separately; neither water density\
+    \ nor whole-stock transfer is assumed.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1103\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Exact A water table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 900.0 ml\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 900,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"B water\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1001.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1001.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"B\",\n      \"water_ml\": 100\n    },\n    \"rationale\"\
+    : \"The current 1001 G_PER_L is a numeric merge of 900 mL, 100 mL and 1 L from\
+    \ different stages. Restore each solvent input separately; neither water density\
+    \ nor whole-stock transfer is assumed.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1103\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Exact B water table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 100.0 ml\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 100,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"SL-11 water\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1001.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1001.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"water_l\": 1\n    },\n    \"rationale\"\
+    : \"The current 1001 G_PER_L is a numeric merge of 900 mL, 100 mL and 1 L from\
+    \ different stages. Restore each solvent input separately; neither water density\
+    \ nor whole-stock transfer is assumed.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1103\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Exact SL-11 water table row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1.0 L\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\"\
+    : \"A: CaCl2・2H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"source_amount\": 0.15,\n      \"source_unit\"\
+    : \"g\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A ingredient table\",\n        \"exact_source_quote\": \"CaCl 2 ·2H\
+    \ 2 O 0.15 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 0.15,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"A: KH2PO4\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.14\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.14\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"source_amount\": 0.14,\n      \"source_unit\"\
+    : \"g\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A ingredient table\",\n        \"exact_source_quote\": \"KH 2 PO\
+    \ 4 0.14 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 0.14,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"A: NH4Cl\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.54\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.54\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"source_amount\": 0.54,\n      \"source_unit\"\
+    : \"g\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A ingredient table\",\n        \"exact_source_quote\": \"NH 4 Cl\
+    \ 0.54 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4Cl\\\",\\n          \\\"volume\\\": 0.54,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"A: Resazurin\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"source_amount\": 1,\n      \"source_unit\"\
+    : \"mg\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A ingredient table\",\n        \"exact_source_quote\": \"Resazurin\
+    \ 1.0 mg\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"A: MgCl2・6H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"source_amount\": 0.2,\n      \"source_unit\"\
+    : \"g\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A ingredient table\",\n        \"exact_source_quote\": \"MgCl 2 ·6H\
+    \ 2 O 0.2 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 0.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"A: NaHCO3\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"source_amount\": 2.5,\n      \"source_unit\"\
+    : \"g\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A ingredient table\",\n        \"exact_source_quote\": \"NaHCO 3\
+    \ 2.5 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaHCO3\\\",\\n          \\\"volume\\\": 2.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"A: Yeast extract (BD-Difco)\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"source_amount\": 2.3,\n      \"source_unit\"\
+    : \"g\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A ingredient table\",\n        \"exact_source_quote\": \"Yeast extract\
+    \ (BD-Difco) 2.3 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract (BD-Difco)\\\",\\n          \\\"\
+    volume\\\": 2.3,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\"\
+    : \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"B: Glucose\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"B\",\n      \"source_amount\": 2.2,\n      \"source_unit\"\
+    : \"g\",\n      \"finished_stage_volume\": null,\n      \"finished_medium_concentration\"\
+    : null\n    },\n    \"rationale\": \"Restore the exact batch quantity and stage.\
+    \ A and B water inputs are not final make-up declarations; the 0.9:0.1 receiving\
+    \ ratio does not establish the present direct G_PER_L values. Resazurin is 1 mg,\
+    \ not 1 g, and this source does not specify a sodium salt.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution B ingredient table\",\n        \"exact_source_quote\": \"Glucose\
+    \ 2.2 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Glucose\\\",\\n          \\\"volume\\\": 2.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"A gas mixture\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        },\n        \"decision\"\
+    : \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"gas\": \"N2:CO2\",\n      \"ratio\": [\n\
+    \        80,\n        20\n      ],\n      \"basis\": \"v/v\"\n    },\n    \"rationale\"\
+    : \"Replace unscoped VARIABLE ingredient placeholders with the explicitly quantified\
+    \ A preparation atmosphere. This gas ratio is not a dissolved concentration.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Solution A cooling and dispensing\",\n      \
+    \  \"exact_source_quote\": \"N 2 -CO 2 (80:20, v/v)\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"B nitrogen atmosphere\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n \
+    \       \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"B\",\n      \"atmosphere\": \"N2\",\n      \"percentage\"\
+    : null\n    },\n    \"rationale\": \"The source names N2 but gives no percentage\
+    \ or amount. Preserve that limit; the frozen 100% inference is explicitly overridden.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Solution B preparation\",\n        \"exact_source_quote\"\
+    : \"Keep under a N 2 atmosphere.\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"SL-11: Na2MoO4・2H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"36\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"36\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 36,\n      \"source_unit\"\
+    : \"mg\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"Na 2 MoO 4 ·2H 2 O 36.0 mg\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 36,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\"\
+    : \"SL-11: H3BO3\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 6,\n      \"source_unit\"\
+    : \"g\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"H 3 BO 3 6.0 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 6,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"SL-11: MnCl2・4H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 100,\n      \"source_unit\"\
+    : \"mg\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"MnCl 2 ·4H 2 O 100.0 mg\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2・4H2O\\\",\\n          \\\"volume\\\": 100,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"SL-11: CoCl2・6H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"190\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"190\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 190,\n      \"source_unit\"\
+    : \"mg\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"CoCl 2 ·6H 2 O 190.0 mg\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2・6H2O\\\",\\n          \\\"volume\\\": 190,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\"\
+    : \"SL-11: NiCl2・6H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"24\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"24\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 24,\n      \"source_unit\"\
+    : \"mg\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"NiCl 2 ·6H 2 O 24.0 mg\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2・6H2O\\\",\\n          \\\"volume\\\": 24,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"SL-11: CuCl2・2H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 2,\n      \"source_unit\"\
+    : \"mg\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"CuCl 2 ·2H 2 O 2.0 mg\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2・2H2O\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\"\
+    : \"SL-11: ZnCl2\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"70\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"70\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 70,\n      \"source_unit\"\
+    : \"mg\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"ZnCl 2 70.0 mg\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnCl2\\\",\\n          \\\"volume\\\": 70,\\n\
+    \          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\"\
+    : \"SL-11: FeCl2・4H2O\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 1.5,\n      \"source_unit\"\
+    : \"g\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"FeCl 2 ·4H 2 O 1.5 g\",\n        \"snapshot_sha256\":\
+    \ \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl2・4H2O\\\",\\n          \\\"volume\\\": 1.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\"\
+    : \"SL-11: EDTA・2Na\",\n    \"decision\": \"correct\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"source_amount\": 5.2,\n      \"source_unit\"\
+    : \"g\",\n      \"water_l\": 1,\n      \"receiving_dose_ml_in_A\": 1\n    },\n\
+    \    \"rationale\": \"Move this stock-level quantity into SL-11 and preserve the\
+    \ 1 mL addition to A. Source mg amounts are not g/L. The 6 g boric-acid row is\
+    \ literal and is not changed to mg using another recipe. One litre is the stated\
+    \ water input, not an independently measured finished-stock volume.\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n \
+    \       \"source_locator\": \"Trace element solution SL-11 table\",\n        \"\
+    exact_source_quote\": \"EDTA·2Na 5.2 g\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[4].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"EDTA・2Na\\\",\\n          \\\"volume\\\": 5.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\"\
+    : \"Receiving JCM1103 A\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"900\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"900\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"receiving assembly\",\n      \"solution\": \"JCM1103 A\"\
+    ,\n      \"volume_fraction\": 0.9,\n      \"provider_reference_scale_ml\": 900\n\
+    \    },\n    \"rationale\": \"Restore volume-based, stage-specific receiving quantities\
+    \ and explicit names. A/B must be bound to this source rather than unrelated 5342/5343.\
+    \ Unqualified 5% does not establish w/v, density or a derived solute mass; the\
+    \ two 6 mL/L additions remain distinct from A/B preparation.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Assembly or exact stock receiving row\",\n        \"exact_source_quote\":\
+    \ \"add 0.1 volume of Solution B to 0.9 volume of Solution A\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution A\\\",\\n          \\\"volume\\\": 900,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\"\
+    : \"Receiving JCM1103 B\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"receiving assembly\",\n      \"solution\": \"JCM1103 B\"\
+    ,\n      \"volume_fraction\": 0.1,\n      \"provider_reference_scale_ml\": 100\n\
+    \    },\n    \"rationale\": \"Restore volume-based, stage-specific receiving quantities\
+    \ and explicit names. A/B must be bound to this source rather than unrelated 5342/5343.\
+    \ Unqualified 5% does not establish w/v, density or a derived solute mass; the\
+    \ two 6 mL/L additions remain distinct from A/B preparation.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Assembly or exact stock receiving row\",\n        \"exact_source_quote\":\
+    \ \"add 0.1 volume of Solution B to 0.9 volume of Solution A\",\n        \"snapshot_sha256\"\
+    : \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\",\n    \
+    \    \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution B\\\",\\n          \\\"volume\\\": 100,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\"\
+    : \"Receiving JCM1103 SL-11\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"stock\": \"JCM1103 SL-11\",\n      \"dose_ml\"\
+    : 1\n    },\n    \"rationale\": \"Restore volume-based, stage-specific receiving\
+    \ quantities and explicit names. A/B must be bound to this source rather than\
+    \ unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived\
+    \ solute mass; the two 6 mL/L additions remain distinct from A/B preparation.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Assembly or exact stock receiving row\",\n  \
+    \      \"exact_source_quote\": \"Trace element solution SL-11 (see below) 1.0\
+    \ ml\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--11 (see below)\\\"\
+    ,\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n   \
+    \     \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\"\
+    : \"Receiving JCM431 selenite-tungstate\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"stock\": \"JCM431 selenite-tungstate\",\n\
+    \      \"dose_ml\": 0.5\n    },\n    \"rationale\": \"Restore volume-based, stage-specific\
+    \ receiving quantities and explicit names. A/B must be bound to this source rather\
+    \ than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or\
+    \ a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Assembly or exact stock receiving row\",\n  \
+    \      \"exact_source_quote\": \"Selenite tungstate solution (see Medium No. 431\
+    \ ) 0.5 ml\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Selenite--tungstate solution (see Medium [M431])\\\
+    \",\\n          \\\"volume\\\": 0.5,\\n          \\\"unit\\\": \\\"ml\\\"\",\n\
+    \        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\"\
+    : \"Receiving JCM197 trace vitamins\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"stock\": \"JCM197 trace vitamins\",\n  \
+    \    \"dose_ml\": 10\n    },\n    \"rationale\": \"Restore volume-based, stage-specific\
+    \ receiving quantities and explicit names. A/B must be bound to this source rather\
+    \ than unrelated 5342/5343. Unqualified 5% does not establish w/v, density or\
+    \ a derived solute mass; the two 6 mL/L additions remain distinct from A/B preparation.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Assembly or exact stock receiving row\",\n  \
+    \      \"exact_source_quote\": \"Trace vitamins (see Medium No. 197 ) 10.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\"\
+    : \"Receiving Na2S nonahydrate\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"prior to inoculation\",\n      \"stock\": \"Na2S nonahydrate\"\
+    ,\n      \"dose_ml_per_l\": 6,\n      \"strength_percent\": 5,\n      \"percent_basis\"\
+    : null\n    },\n    \"rationale\": \"Restore volume-based, stage-specific receiving\
+    \ quantities and explicit names. A/B must be bound to this source rather than\
+    \ unrelated 5342/5343. Unqualified 5% does not establish w/v, density or a derived\
+    \ solute mass; the two 6 mL/L additions remain distinct from A/B preparation.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Assembly or exact stock receiving row\",\n  \
+    \      \"exact_source_quote\": \"5% Na 2 S·9H 2 O solution 6.0 ml\",\n       \
+    \ \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% Na2S・9H2O solution\\\",\\n          \\\"volume\\\
+    \": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\": 5,\\\
+    n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\": \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Receiving basis for the two reducing solutions\",\n        \"exact_source_quote\"\
+    : \"Prior to inoculation, add per liter the following solutions:\",\n        \"\
+    snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\"\
+    : \"Receiving L-cysteine HCl monohydrate\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"prior to inoculation\",\n      \"stock\": \"L-cysteine\
+    \ HCl monohydrate\",\n      \"dose_ml_per_l\": 6,\n      \"strength_percent\"\
+    : 5,\n      \"percent_basis\": null\n    },\n    \"rationale\": \"Restore volume-based,\
+    \ stage-specific receiving quantities and explicit names. A/B must be bound to\
+    \ this source rather than unrelated 5342/5343. Unqualified 5% does not establish\
+    \ w/v, density or a derived solute mass; the two 6 mL/L additions remain distinct\
+    \ from A/B preparation.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1103\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Assembly or exact stock receiving row\",\n  \
+    \      \"exact_source_quote\": \"5% L-Cysteine·HCl·H 2 O solution 6.0 ml\",\n\
+    \        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1179\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1179\",\n\
+    \        \"source_locator\": \"$.components[3].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% L--Cysteine・HCl・H2O solution\\\",\\n      \
+    \    \\\"volume\\\": 6,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"\
+    conc_value\\\": 5,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"6ffe99348c25c8596f99f931589eb1e2b8e3438b5a955eb9b0390cd7fc9fb973\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Receiving basis for the two reducing solutions\",\n        \"exact_source_quote\"\
+    : \"Prior to inoculation, add per liter the following solutions:\",\n        \"\
+    snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate: NaOH\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[3].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM431 selenite-tungstate stock\",\n      \"component\"\
+    : \"NaOH\",\n      \"source_amount\": 0.4,\n      \"source_unit\": \"g\",\n  \
+    \    \"receiving_dose_ml_in_A\": 0.5\n    },\n    \"rationale\": \"Populate the\
+    \ currently empty stock composition from this exact subsection. Do not import\
+    \ the parent basal medium, its different trace elements or its 1 mL parent receiving\
+    \ dose; JCM1103 specifies 0.5 mL.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm431\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431\"\
+    ,\n        \"source_locator\": \"Selenite-tungstate solution subsection only\"\
+    ,\n        \"exact_source_quote\": \"NaOH 0.4 g\",\n        \"snapshot_sha256\"\
+    : \"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50\",\n    \
+    \    \"parsed_text_sha256\": \"79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e\"\
+    \n      },\n      {\n        \"source_key\": \"togoM431\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431\",\n \
+    \       \"source_locator\": \"$.components[3].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaOH\\\",\\n          \\\"volume\\\": 0.4,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate: Na2SeO3 pentahydrate\",\n    \"decision\": \"add\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[3].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM431 selenite-tungstate stock\",\n      \"component\"\
+    : \"Na2SeO3 pentahydrate\",\n      \"source_amount\": 6,\n      \"source_unit\"\
+    : \"mg\",\n      \"receiving_dose_ml_in_A\": 0.5\n    },\n    \"rationale\": \"\
+    Populate the currently empty stock composition from this exact subsection. Do\
+    \ not import the parent basal medium, its different trace elements or its 1 mL\
+    \ parent receiving dose; JCM1103 specifies 0.5 mL.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm431\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431\",\n        \"source_locator\"\
+    : \"Selenite-tungstate solution subsection only\",\n        \"exact_source_quote\"\
+    : \"Na 2 SeO 3 ·5H 2 O 6.0 mg\",\n        \"snapshot_sha256\": \"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50\"\
+    ,\n        \"parsed_text_sha256\": \"79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e\"\
+    \n      },\n      {\n        \"source_key\": \"togoM431\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431\",\n \
+    \       \"source_locator\": \"$.components[3].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SeO3・5H2O\\\",\\n          \\\"volume\\\":\
+    \ 6,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate: Na2WO4 dihydrate\",\n    \"decision\": \"add\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[3].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM431 selenite-tungstate stock\",\n      \"component\"\
+    : \"Na2WO4 dihydrate\",\n      \"source_amount\": 8,\n      \"source_unit\": \"\
+    mg\",\n      \"receiving_dose_ml_in_A\": 0.5\n    },\n    \"rationale\": \"Populate\
+    \ the currently empty stock composition from this exact subsection. Do not import\
+    \ the parent basal medium, its different trace elements or its 1 mL parent receiving\
+    \ dose; JCM1103 specifies 0.5 mL.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm431\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431\"\
+    ,\n        \"source_locator\": \"Selenite-tungstate solution subsection only\"\
+    ,\n        \"exact_source_quote\": \"Na 2 WO 4 ·2H 2 O 8.0 mg\",\n        \"snapshot_sha256\"\
+    : \"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50\",\n    \
+    \    \"parsed_text_sha256\": \"79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e\"\
+    \n      },\n      {\n        \"source_key\": \"togoM431\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431\",\n \
+    \       \"source_locator\": \"$.components[3].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2WO4・2H2O\\\",\\n          \\\"volume\\\": 8,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"component_or_context\"\
+    : \"Selenite-tungstate: water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[3].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM431 selenite-tungstate stock\",\n      \"component\"\
+    : \"water\",\n      \"source_amount\": 1,\n      \"source_unit\": \"L\",\n   \
+    \   \"receiving_dose_ml_in_A\": 0.5\n    },\n    \"rationale\": \"Populate the\
+    \ currently empty stock composition from this exact subsection. Do not import\
+    \ the parent basal medium, its different trace elements or its 1 mL parent receiving\
+    \ dose; JCM1103 specifies 0.5 mL.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm431\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=431\"\
+    ,\n        \"source_locator\": \"Selenite-tungstate solution subsection only\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1.0 L\",\n        \"snapshot_sha256\"\
+    : \"cf3d25eefdeb8835ce27a453e2afa44b0f6a3f1644beb36fa84937ca7c904c50\",\n    \
+    \    \"parsed_text_sha256\": \"79f8dfb9c70f7429e248406f2fab908fb32bebedba426eb0306e12577bc44a7e\"\
+    \n      },\n      {\n        \"source_key\": \"togoM431\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M431\",\n \
+    \       \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"e906db1342c998a25b7fc6a9b8e9168bed218838aefdb9ef9c8398251c3ec570\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"component_or_context\"\
+    : \"Trace vitamins: biotin\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"biotin\"\
+    ,\n      \"source_amount\": 2,\n      \"source_unit\": \"mg\",\n      \"receiving_dose_ml_in_A\"\
+    : 10\n    },\n    \"rationale\": \"Populate the currently empty stock from the\
+    \ exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate\
+    \ stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock\
+    \ and its KOH/pH instruction do not transfer.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Biotin 2.0 mg\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    ,\n        \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\": 2,\\n\
+    \          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"component_or_context\"\
+    : \"Trace vitamins: folic acid\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"folic\
+    \ acid\",\n      \"source_amount\": 2,\n      \"source_unit\": \"mg\",\n     \
+    \ \"receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate the currently\
+    \ empty stock from the exact vitamin subsection. Preserve source names without\
+    \ inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent\
+    \ basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Folic acid 2.0 mg\",\n        \"snapshot_sha256\": \"\
+    39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n        \"\
+    parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Folic acid\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"component_or_context\"\
+    : \"Trace vitamins: pyridoxine HCl\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"pyridoxine\
+    \ HCl\",\n      \"source_amount\": 10,\n      \"source_unit\": \"mg\",\n     \
+    \ \"receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate the currently\
+    \ empty stock from the exact vitamin subsection. Preserve source names without\
+    \ inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent\
+    \ basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Pyridoxine·HCl 10.0 mg\",\n        \"snapshot_sha256\"\
+    : \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n    \
+    \    \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Pyridoxine・HCl\\\",\\n          \\\"volume\\\"\
+    : 10,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"component_or_context\"\
+    : \"Trace vitamins: thiamine HCl\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"thiamine\
+    \ HCl\",\n      \"source_amount\": 5,\n      \"source_unit\": \"mg\",\n      \"\
+    receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate the currently\
+    \ empty stock from the exact vitamin subsection. Preserve source names without\
+    \ inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent\
+    \ basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Thiamine·HCl 5.0 mg\",\n        \"snapshot_sha256\": \"\
+    39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n        \"\
+    parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Thiamine・HCl\\\",\\n          \\\"volume\\\":\
+    \ 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q38\",\n    \"component_or_context\"\
+    : \"Trace vitamins: riboflavin\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"riboflavin\"\
+    ,\n      \"source_amount\": 5,\n      \"source_unit\": \"mg\",\n      \"receiving_dose_ml_in_A\"\
+    : 10\n    },\n    \"rationale\": \"Populate the currently empty stock from the\
+    \ exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate\
+    \ stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock\
+    \ and its KOH/pH instruction do not transfer.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Riboflavin 5.0 mg\",\n        \"snapshot_sha256\": \"\
+    39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n        \"\
+    parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Riboflavin\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"component_or_context\"\
+    : \"Trace vitamins: nicotinic acid\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"nicotinic\
+    \ acid\",\n      \"source_amount\": 5,\n      \"source_unit\": \"mg\",\n     \
+    \ \"receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate the currently\
+    \ empty stock from the exact vitamin subsection. Preserve source names without\
+    \ inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent\
+    \ basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Nicotinic acid 5.0 mg\",\n        \"snapshot_sha256\"\
+    : \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n    \
+    \    \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nicotinic acid\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"component_or_context\"\
+    : \"Trace vitamins: calcium pantothenate\",\n    \"decision\": \"add\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"calcium\
+    \ pantothenate\",\n      \"source_amount\": 5,\n      \"source_unit\": \"mg\"\
+    ,\n      \"receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate\
+    \ the currently empty stock from the exact vitamin subsection. Preserve source\
+    \ names without inventing a calcium-pantothenate stereoisomer or secondary mapping.\
+    \ The parent basal recipe, trace-mineral stock and its KOH/pH instruction do not\
+    \ transfer.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Calcium pantothenate 5.0 mg\",\n        \"snapshot_sha256\"\
+    : \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n    \
+    \    \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Calcium pantothenate\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q41\",\n    \"component_or_context\"\
+    : \"Trace vitamins: vitamin B12\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"vitamin\
+    \ B12\",\n      \"source_amount\": 0.1,\n      \"source_unit\": \"mg\",\n    \
+    \  \"receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate the currently\
+    \ empty stock from the exact vitamin subsection. Preserve source names without\
+    \ inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent\
+    \ basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Vitamin B 1 2 0.1 mg\",\n        \"snapshot_sha256\":\
+    \ \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n    \
+    \    \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"component_or_context\"\
+    : \"Trace vitamins: p-aminobenzoic acid\",\n    \"decision\": \"add\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"p-aminobenzoic\
+    \ acid\",\n      \"source_amount\": 5,\n      \"source_unit\": \"mg\",\n     \
+    \ \"receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate the currently\
+    \ empty stock from the exact vitamin subsection. Preserve source names without\
+    \ inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent\
+    \ basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"p -Aminobenzoic acid 5.0 mg\",\n        \"snapshot_sha256\"\
+    : \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n    \
+    \    \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"p--Aminobenzoic acid\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q43\",\n    \"component_or_context\"\
+    : \"Trace vitamins: lipoic acid\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"lipoic\
+    \ acid\",\n      \"source_amount\": 5,\n      \"source_unit\": \"mg\",\n     \
+    \ \"receiving_dose_ml_in_A\": 10\n    },\n    \"rationale\": \"Populate the currently\
+    \ empty stock from the exact vitamin subsection. Preserve source names without\
+    \ inventing a calcium-pantothenate stereoisomer or secondary mapping. The parent\
+    \ basal recipe, trace-mineral stock and its KOH/pH instruction do not transfer.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Lipoic acid 5.0 mg\",\n        \"snapshot_sha256\": \"\
+    39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n        \"\
+    parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Lipoic acid\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q44\",\n    \"component_or_context\"\
+    : \"Trace vitamins: water\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\",\n     \
+    \   \"field_path\": \"solutions[4].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"JCM197 trace vitamins\",\n      \"component\": \"water\"\
+    ,\n      \"source_amount\": 1,\n      \"source_unit\": \"L\",\n      \"receiving_dose_ml_in_A\"\
+    : 10\n    },\n    \"rationale\": \"Populate the currently empty stock from the\
+    \ exact vitamin subsection. Preserve source names without inventing a calcium-pantothenate\
+    \ stereoisomer or secondary mapping. The parent basal recipe, trace-mineral stock\
+    \ and its KOH/pH instruction do not transfer.\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Trace vitamins subsection only\",\n        \"\
+    exact_source_quote\": \"Distilled water 1.0 L\",\n        \"snapshot_sha256\"\
+    : \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n    \
+    \    \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \       \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q45\",\n    \"component_or_context\"\
+    : \"A pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\",\n    \
+    \    \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n     \
+    \   \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A before boiling\",\n      \"pH\": 6.5\n    },\n    \"\
+    rationale\": \"Restore this source-only stage-qualified context in the maintained\
+    \ owner. The A/B example is not a universal vessel requirement, and separate stock\
+    \ pH values do not establish a final receiving-medium pH.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Exact named preparation clause or page default\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 6.5.\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q46\",\n    \"component_or_context\"\
+    : \"A brief boiling\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A\",\n      \"boiling_seconds\": [\n        5,\n     \
+    \   10\n      ]\n    },\n    \"rationale\": \"Restore this source-only stage-qualified\
+    \ context in the maintained owner. The A/B example is not a universal vessel requirement,\
+    \ and separate stock pH values do not establish a final receiving-medium pH.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Exact named preparation clause or page default\"\
+    ,\n        \"exact_source_quote\": \"Bring to a boil for 5-10 sec\",\n       \
+    \ \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q47\",\n    \"component_or_context\"\
+    : \"B pH and filtration\",\n    \"decision\": \"add\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"B\",\n      \"pH\": 7,\n      \"sterilization\": \"filtration\"\
+    \n    },\n    \"rationale\": \"Restore this source-only stage-qualified context\
+    \ in the maintained owner. The A/B example is not a universal vessel requirement,\
+    \ and separate stock pH values do not establish a final receiving-medium pH.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Exact named preparation clause or page default\"\
+    ,\n        \"exact_source_quote\": \"Adjust pH to 7.0 and filter-sterilize.\"\
+    ,\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q48\",\n    \"component_or_context\"\
+    : \"A/B example\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"example_only\": true,\n      \"A_ml\": 18,\n      \"B_ml\": 2,\n\
+    \      \"vessel_ml\": 60\n    },\n    \"rationale\": \"Restore this source-only\
+    \ stage-qualified context in the maintained owner. The A/B example is not a universal\
+    \ vessel requirement, and separate stock pH values do not establish a final receiving-medium\
+    \ pH.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Exact named preparation clause or page default\"\
+    ,\n        \"exact_source_quote\": \"18 ml Solution A in 60 ml serum bottles and\
+    \ 2 ml Solution B\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q49\",\n    \"component_or_context\"\
+    : \"SL-11 pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\",\n  \
+    \      \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"SL-11\",\n      \"pH\": 6\n    },\n    \"rationale\":\
+    \ \"Restore this source-only stage-qualified context in the maintained owner.\
+    \ The A/B example is not a universal vessel requirement, and separate stock pH\
+    \ values do not establish a final receiving-medium pH.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Exact named preparation clause or page default\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.0.\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q50\",\n    \"component_or_context\"\
+    : \"JCM default autoclave cycle\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"temperature_C\": 121,\n      \"duration_min\": 15,\n      \"scope\"\
+    : \"Default only where not overridden; A is autoclaved, B and trace vitamins explicitly\
+    \ filtered\"\n    },\n    \"rationale\": \"Restore this source-only stage-qualified\
+    \ context in the maintained owner. The A/B example is not a universal vessel requirement,\
+    \ and separate stock pH values do not establish a final receiving-medium pH.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1103\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\"\
+    ,\n        \"source_locator\": \"Exact named preparation clause or page default\"\
+    ,\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize media\
+    \ by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q51\",\n    \"component_or_context\"\
+    : \"A overnight stand\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ANAEROLINEA_MEDIUM_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : {\n      \"stage\": \"A after autoclaving\",\n      \"duration\": \"overnight\"\
+    ,\n      \"numeric_hours\": null\n    },\n    \"rationale\": \"Retain the literal\
+    \ duration without inventing a numeric number of hours.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Solution A procedure\",\n        \"exact_source_quote\": \"After autoclaving,\
+    \ stand the medium overnight.\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q52\",\n    \"component_or_context\"\
+    : \"A/B final volumes and final receiving pH\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [],\n    \"proposed_source_representation\": {\n    \
+    \  \"A_finished_volume_ml\": null,\n      \"B_finished_volume_ml\": null,\n  \
+    \    \"receiving_final_pH\": null,\n      \"A_listed_water_plus_liquid_additions_ml\"\
+    : 911.5\n    },\n    \"rationale\": \"900+1+0.5+10=911.5 mL is a sum of listed\
+    \ A liquid inputs, not its measured final volume. Do not silently make A to 900\
+    \ mL or infer a final medium pH from either stage.\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"A water row\",\n        \"exact_source_quote\": \"Distilled water 900.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"B water row\",\n        \"exact_source_quote\": \"Distilled water 100.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1103\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1103\",\n        \"source_locator\"\
+    : \"Receiving assembly\",\n        \"exact_source_quote\": \"add 0.1 volume of\
+    \ Solution B to 0.9 volume of Solution A\",\n        \"snapshot_sha256\": \"a6b7a53a9893ee430a1d9249a4fc7c7cb983eda8cf68e58194e520ad94529a59\"\
+    ,\n        \"parsed_text_sha256\": \"d190797016616d429c03b853392a3287e77354dd0fb595cba20513e1c3e478e3\"\
+    \n      }\n    ]\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '19 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 20/21
+    primary and 8/21 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi16526
+  - chebi17234
+  - chebi17997
+  - chebi31206
+  - chebi32139
+  - chebi33118
+  - chebi34887
+  - chebi35696
+  - chebi49976
+  - chebi63036
+  - chebi64734
+  - chebi75213
+  - chebi86158
+  - chebi86249
+  - chebi86318
+  - chebi86345
+  - chebi86368
+  - chebi8806
+  details: 'Instance coverage on a 0–100 percent scale, denominator 21: primary 95.24%;
+    secondary 38.10%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 25 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact source and maintained ownership
+  outcome: concern
+  summary: The target and sole maintained owner identify TOGO M1179 and JCM1103 consistently
+    and retain the same scientific fields. However, the generic Solution A/B identifiers
+    resolve to chemically different 5342/5343 recipes. Current matching labels are
+    not sufficient identity evidence. Both referenced local records were read in full
+    as dependencies; their chemistry must not transfer.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - togo-main
+  - solution5342
+  - solution5343
+  - id-search
+  - audit-overlay
+- assessment_id: source-evidence
+  area: evidence
+  topic: Current primary and exact subsection evidence
+  outcome: concern
+  summary: The complete primary, TOGO transcription and two explicitly named parent
+    stock subsections support this current source comparison. None of the target or
+    owner quantities has attached source evidence. Optional main MediaDive 503 attempts
+    do not invalidate available primary content or prove historical graph state. The
+    two frozen-context overstatements are corrected only through a separate audit
+    overlay.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - primary
+  - togo-main
+  - selenite-primary
+  - vitamin-primary
+  - quantity-inventory
+  - audit-overlay
+- assessment_id: source-forms
+  area: grounding
+  topic: Supplied hydrates and unresolved EDTA hydration
+  outcome: concern
+  summary: Source cobalt hexahydrate and nickel hexahydrate conflict with asserted
+    CHEBI:35696 (2Cl.Co) and CHEBI:34887 (Cl2Ni). Source EDTA·2Na does not resolve
+    hydration, so the asserted anhydrous CHEBI:64734 is more specific than verified
+    source evidence; no hydrated replacement is assumed. Source resazurin is unqualified
+    and does not support importing a sodium-salt correction from another medium. The
+    6 g boric-acid amount is literal and independently corroborated by TOGO.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - primary
+  - togo-main
+  - chebi35696
+  - chebi34887
+  - chebi64734
+  - chebi8806
+- assessment_id: preparation
+  area: completeness
+  topic: Assembly, stock recovery and procedure stages
+  outcome: concern
+  summary: Both local layers lack the primary preparation. Restore A pH 6.5, brief
+    boiling, 80:20 v/v N2/CO2 cooling/dispensing, bicarbonate timing, autoclaving
+    and overnight stand, followed by sterile anaerobic filtered vitamins; B pH 7 and
+    filtration under N2 without a percentage; A/B 0.9:0.1 assembly and example; two
+    separate 6 mL/L reducing additions; and SL-11 pH 6. The JCM default cycle is subject
+    to explicit filtration exceptions. Unqualified percentages and unknown final volumes
+    remain unresolved quantities, not guessed values.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  - audit-overlay
+- assessment_id: classification
+  area: scope
+  topic: Complexity and high-metal classification
+  outcome: concern
+  summary: Yeast extract supports COMPLEX/UNDEFINED and the source describes liquid
+    assembly. The current high_metal flag cannot be quantitatively certified from
+    flattened stock amounts and wrong mg/g units. Current metal analysis uses approximate
+    unit factors without molecular-weight or hydrate stoichiometry, reads direct ingredients,
+    and assigns percentile labels through a basename-driven writer. Reassess the flag
+    after stage and unit repair against its actual intended classification policy;
+    this review does not prescribe false or infer a metal-tolerance phenotype.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - record
+  - primary
+  - quantity-inventory
+- assessment_id: current-writers
+  area: provenance
+  topic: Current writers and maintained input follow-up
+  outcome: concern
+  summary: Current TOGO code has scoped primary/local-stock handling, but its local-volume
+    inference can accept a water anchor equal to a reference dose and does not establish
+    a measured final volume; bare-percent fallback is not source proof of w/v. Current
+    metal analysis approximates units without molecular-weight conversion and the
+    label writer applies basename lists. These current files are context, not a replay
+    or proof of the historical import cause. Repair the maintained input, preserve
+    history and regenerate only after explicit stage-aware review.
+  target_ids:
+  - CultureMech:007704
+  evidence_ids:
+  - record
+  - current-code-0
+  - current-code-1
+  - current-code-2
+  - current-code-3
+findings:
+- finding_id: f1
+  issue_key: culturemech.007704.wrong-ab-identifiers
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Solution A and B refer to unrelated chemical recipes
+  description: Both layers assert mediadive.solution:5342 and :5343 and point to local
+    stock records containing different salt/organic formulations. Generic A/B names
+    conceal the mismatch. The exact endpoints have null volume and g_l with a 500
+    mL preparation, not an explicit 1000 mL declaration.
+  target_ids:
+  - CultureMech:007704
+  field_paths:
+  - solutions[0].term
+  - solutions[0].notes
+  - solutions[1].term
+  - solutions[1].notes
+  evidence_ids:
+  - primary
+  - togo-main
+  - solution5342
+  - solution5343
+  - audit-overlay
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.007704.stage-unit-collapse
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Batch amounts, stock doses and different water units are flattened
+  description: The target and owner merge 900 mL A water, 100 mL B water and 1 L SL-11
+    water as 1001 G_PER_L. Resazurin mg, six SL-11 mg amounts, batch gram amounts
+    and seven solution-volume doses appear as direct G_PER_L quantities; both referenced
+    external stock compositions are empty.
+  target_ids:
+  - CultureMech:007704
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - primary
+  - togo-main
+  - selenite-primary
+  - vitamin-primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.007704.cobalt-nickel-hydrates
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two asserted metal salts omit the supplied waters of hydration
+  description: Cobalt and nickel hexahydrate source names are grounded to formulae
+    without six waters, CHEBI:35696 and CHEBI:34887. Matching canonical labels and
+    current MIM mappings elsewhere do not cure these supplied-form mismatches.
+  target_ids:
+  - CultureMech:007704
+  field_paths:
+  - ingredients[15].term
+  - ingredients[16].term
+  evidence_ids:
+  - primary
+  - chebi35696
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.007704.preparation-omission
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: All source preparation and stage qualifiers are missing
+  description: Both local layers lack the source A/B handling, separate pH stages,
+    gas ratio, boiling time, sterilization exceptions, overnight stand, assembly example
+    and reducing-agent receiving basis. The source supplies a JCM default cycle but
+    overrides it with filtration for B and vitamins.
+  target_ids:
+  - CultureMech:007704
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.007704.high-metal-evidence-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: High-metal classification relies on an unreviewable flattened representation
+  description: The retained high_metal flag is not established by the current recipe
+    because stock stages and mg/g units are wrong. Both current writers have been
+    read; their approximate direct-ingredient analysis is not a validated molecular
+    concentration calculation.
+  target_ids:
+  - CultureMech:007704
+  field_paths:
+  - high_metal
+  - ingredients
+  evidence_ids:
+  - record
+  - primary
+  - quantity-inventory
+  - current-code-1
+  - current-code-2
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f6
+  issue_key: culturemech.007704.edta-specificity
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: EDTA hydration is asserted more specifically than the source
+  description: JCM1103 and TOGO name EDTA disodium without hydration; CHEBI:64734
+    explicitly asserts the anhydrous form. This is unresolved specificity rather than
+    proof of a particular alternative hydrate.
+  target_ids:
+  - CultureMech:007704
+  field_paths:
+  - ingredients[20].term
+  evidence_ids:
+  - primary
+  - togo-main
+  - chebi64734
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Replace these links with an explicitly source-specific representation
+    of JCM1103 A and B after identity verification; preserve 0.9:0.1 assembly and
+    do not transfer chemistry or optional agar instructions from the unrelated stocks.
+    Do not invent replacement identifiers.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007704
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore A, B, SL-11 and the two exact referenced stock compositions,
+    their separate water inputs and receiving doses. Preserve literal source units
+    and boric acid 6 g. Keep reducing-agent percentage bases and finished volumes
+    unknown where the source does not specify them; attach claim-level evidence to
+    every repaired quantity.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007704
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Verify identifiers matching the explicitly supplied hydrates and any
+    intended secondary links independently. Preserve source names and do not substitute
+    anhydrous masses or invent IDs.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007704
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Restore the exact stage-specific procedure and default-cycle exceptions
+    in the maintained owner, keeping B N2 unquantified and the vessel volumes explicitly
+    exemplary. Do not transfer other JCM431/JCM197 parent procedures.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007704
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Reassess the flag using repaired stage-aware amounts and the documented
+    classification policy, including the actual current writer limitations. Do not
+    automatically set false or infer a phenotype from the medium title or a single
+    stock ingredient.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:007704
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Retain the source EDTA·2Na wording and obtain exact form evidence before
+    asserting an anhydrous or hydrated identity. Do not infer a replacement term from
+    another SL-11 recipe.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:007704
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1179_Anaerolinea_Medium_C.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact
+  stock subsections and the two asserted solution endpoints are available, so this
+  optional failure does not make the current scientific comparison unavailable.
+- The exact main MediaDive request returned 503. Current JCM1103 and TOGO M1179, exact
+  stock subsections and the two asserted solution endpoints are available, so this
+  optional failure does not make the current scientific comparison unavailable.
+- Completed refers to the current source-scoped comparison. The available source does
+  not quantify finished A/B/SL-11 volumes, final receiving pH, B nitrogen percentage
+  or the two 5% bases; those quantities remain explicitly not quantified.
+- No missing optional link, source name or catalog organism is converted into a growth
+  assertion. Parent recipes and unrelated A/B endpoint procedures remain excluded.
+  Frozen source captures and contexts are unchanged; their two known overstatements
+  are addressed by the pinned audit overlay.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-028
+- generated-medium
+```
