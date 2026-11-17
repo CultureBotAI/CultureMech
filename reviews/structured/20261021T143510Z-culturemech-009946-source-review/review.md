@@ -1,0 +1,4204 @@
+# Source and formulation review: aminiphilus_circumsriptus_medium (CultureMech:009946)
+
+- Review: 20261021T143510Z-culturemech-009946-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T14:22:40Z
+- Finished UTC: 2026-10-21T14:35:10Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M552 correctly identifies JCM 550, but water 1 L and a 10 mL trace-stock addition are both labeled g/L, the trace composition is empty and all preparation/pH is missing. The main solute numbers preserve batch masses without a supported final-volume basis. The exact JCM source and trace-only JCM151/M142 dependency are available; thirteen existing dependency amount claims are reusable only within that stock scope. Unrelated sulfur, salt-base and variant material is excluded.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 245; batch 025 item 5 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-four task batches contain 240 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 243 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009946 | data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml | generated | aminiphilus_circumsriptus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009946 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:009946 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/245/strict.tsv |
+| validate-terms | passed | True | CultureMech:009946 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:009946 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:009946 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:009946.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:009946.
+
+10 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 10/12 primary and 7/12 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 12: primary 83.33%; secondary 58.33%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:009946.
+
+34 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Source 1 L water is a solvent batch volume, not 1 g/L. Preserve 1 L and do not substitute water mass or assume final medium volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "1 L = 1000 mL of input water; no density conversion."
+  },
+  {
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[1].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "Yeast extract 2.0 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.9802,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 2 g; provider nominal g_l=1.9802. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "NaCl",
+    "field_path": "ingredients[2].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "NaCl 10.0 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.90099,\n                        \"mmol_l\": 169.421,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 10 g; provider nominal g_l=9.90099. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "KH2PO4",
+    "field_path": "ingredients[3].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 0.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "KH 2 PO 4 0.3 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 2.18266,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 0.3 g; provider nominal g_l=0.29703. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "NH4Cl",
+    "field_path": "ingredients[4].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "NH 4 Cl 1.0 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 18.51,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 1 g; provider nominal g_l=0.990099. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "K2HPO4",
+    "field_path": "ingredients[5].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 0.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "K 2 HPO 4 0.3 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 1.70534,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 0.3 g; provider nominal g_l=0.29703. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "MgCl2・6H2O",
+    "field_path": "ingredients[6].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "MgCl 2 ·6H 2 O 0.5 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\": 2.43503,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 0.5 g; provider nominal g_l=0.49505. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "KCl",
+    "field_path": "ingredients[7].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"KCl\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "KCl 0.1 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\": 1.3281,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 0.1 g; provider nominal g_l=0.0990099. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "CaCl2",
+    "field_path": "ingredients[8].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[8]",
+        "exact_source_quote": "\"component_name\": \"CaCl2\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "CaCl 2 0.1 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CaCl2\",\n                        \"compound_id\": 81,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\": 0.892142,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 0.1 g; provider nominal g_l=0.0990099. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "L--Cysteine・HCl・H2O",
+    "field_path": "ingredients[9].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"L--Cysteine・HCl・H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "L-Cysteine·HCl·H 2 O 0.5 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.49505,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 0.5 g; provider nominal g_l=0.49505. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "Peptone",
+    "field_path": "ingredients[10].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[10]",
+        "exact_source_quote": "\"component_name\": \"Peptone\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "Peptone 10.0 g",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.90099,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "The source number is a batch mass. The local g/L assertion uses an unstated final-volume basis; retain the literal mass and distinguish the provider’s separately declared 1010 mL rates.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source input 10 g; provider nominal g_l=9.90099. 1000 mL water + 10 mL stock = 1010 mL input sum, not a measured final volume after mixing/pH adjustment."
+  },
+  {
+    "ingredient_or_context": "Trace minerals (see Medium [M142])",
+    "field_path": "solutions[0].concentration",
+    "decision": "correct",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[11]",
+        "exact_source_quote": "\"component_name\": \"Trace minerals (see Medium [M142])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "Trace minerals (see Medium No. 151 ) 10.0 ml",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace minerals\",\n                        \"solution_id\": 3804,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Source 10 mL of the named trace stock is a receiving-batch volume, not 10 g/L. Restore exact identity/composition without inheriting the parent medium.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "10 mL = 0.01 L per receiving batch. The M552 dose is independently explicit; it is not inferred from M142’s own dose."
+  },
+  {
+    "ingredient_or_context": "N2",
+    "field_path": "ingredients[11].concentration",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM552",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552",
+        "source_locator": "$.components[0].items[12]",
+        "exact_source_quote": "\"component_name\": \"N2\"",
+        "snapshot_sha256": "09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7"
+      },
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Exact main table row or main preparation N2 clause",
+        "exact_source_quote": "under a N 2 atmosphere",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      }
+    ],
+    "rationale": "N2 is an atmosphere with no fixed volume, flow, fraction or pressure supplied. VARIABLE is a legacy default, not a verified quantitative dose.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Trace stock / Distilled water",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[0].concentration",
+      "stored": {
+        "value": "1",
+        "unit": "L"
+      },
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / MgSO4・7H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 3.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[1].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 3.5, 3.0]\n\nSource batch input: 3 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / NaCl",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[2]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "NaCl 1.0 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[2].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 13.85, 1.0]\n\nSource batch input: 1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / CaCl2・2H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[3]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "CaCl 2 ·2H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[3].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / Na2MoO4・2H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[4]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "Na 2 MoO 4 ·2H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[4].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.01 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / H3BO3",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[5]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "H 3 BO 3 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[5].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates: 15.0, 0.01]\n\nSource batch input: 0.01 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / FeSO4・7H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[6]",
+        "exact_source_quote": "\"component_name\": \"FeSO4・7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "FeSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[6].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / ZnSO4・7H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnSO4・7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "ZnSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[7].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / CuSO4・5H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[8]",
+        "exact_source_quote": "\"component_name\": \"CuSO4・5H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "CuSO 4 ·5H 2 O 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[8].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.01 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / CoSO4・7H2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[9]",
+        "exact_source_quote": "\"component_name\": \"CoSO4・7H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "CoSO 4 ·7H 2 O 0.1 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.645178,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[9].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.1 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / Nitrilotriacetic acid",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[10]",
+        "exact_source_quote": "\"component_name\": \"Nitrilotriacetic acid\",\n          \"volume\": 1.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "Nitrilotriacetic acid 1.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[10].notes",
+      "stored": "Role: Mineral source; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 1.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / MnSO4・xH2O",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[11]",
+        "exact_source_quote": "\"component_name\": \"MnSO4・xH2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "MnSO 4 · x H 2 O 0.5 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x n H2O\",\n                        \"compound_id\": 1000,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[11].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.5 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace stock / AlK(SO4)2",
+    "field_path": "solutions[0].composition",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "togoM142",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142",
+        "source_locator": "$.components[2].items[12]",
+        "exact_source_quote": "\"component_name\": \"AlK(SO4)2\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33"
+      },
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Trace minerals table only, corresponding row",
+        "exact_source_quote": "AlK(SO 4 ) 2 0.01 g",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      },
+      {
+        "source_key": "mediadiveJ550api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J550",
+        "source_locator": "$.data.solutions[1].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2\",\n                        \"compound_id\": 1015,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0387289,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4"
+      }
+    ],
+    "rationale": "Restore this exact source batch amount in the referenced trace stock. The existing dependency claim is supported in that dependency only; no final-medium g/L, fixed hydration number or unrelated parent ingredient is transferred.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass calculation is conditional on that declaration. Primary lists water and pH adjustment, not a measured final stock volume.",
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].composition[12].notes",
+      "stored": "Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component\n\nSource batch input: 0.01 g. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+      "decision": "verified",
+      "scope": "Exact attached source batch claim only; not receiving-medium concentration or chemistry certification."
+    }
+  },
+  {
+    "ingredient_or_context": "Main pH",
+    "field_path": "preparation.Main_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "adjust pH to 7.0.",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Example aliquot",
+    "field_path": "preparation.Example_aliquot",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "e.g., 5 ml of the medium in the Hungate tubes",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "General autoclave temperature",
+    "field_path": "preparation.General_autoclave_temperature",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "General autoclave duration",
+    "field_path": "preparation.General_autoclave_duration",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Trace initial pH",
+    "field_path": "preparation.Trace_initial_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "adjust pH to 6.5 with KOH solution.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].preparation_notes",
+      "stored": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.",
+      "decision": "verified",
+      "scope": "Existing scoped trace preparation is supported by exact comments[1] excerpt in dependency root evidence; no M552 main pH transfer."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace final pH",
+    "field_path": "preparation.Trace_final_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "Adjust final pH to 7.0.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].preparation_notes",
+      "stored": "Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add minerals. Adjust final pH to 7.0.",
+      "decision": "verified",
+      "scope": "Existing scoped trace preparation is supported by exact comments[1] excerpt in dependency root evidence; no M552 main pH transfer."
+    }
+  },
+  {
+    "ingredient_or_context": "Trace KOH dose",
+    "field_path": "preparation.Trace_KOH_dose",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm151",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "with KOH solution.",
+        "snapshot_sha256": "6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7",
+        "parsed_text_sha256": "e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "solutions[0].preparation_notes",
+        "stored": null,
+        "decision": "not_quantified"
+      }
+    ],
+    "dependency_quantity_decision": {
+      "input": "data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+      "field_path": "solutions[1].solutions[0].notes",
+      "stored": "Role: Mineral source; Properties: Defined component, Solution\n\npH-adjustment reagent; no fixed dose is specified. Normality is not converted to molarity.",
+      "decision": "not_quantified",
+      "scope": "Existing scoped trace preparation is supported by exact comments[1] excerpt in dependency root evidence; no M552 main pH transfer."
+    }
+  },
+  {
+    "ingredient_or_context": "Main titrant dose",
+    "field_path": "preparation.Main_titrant_dose",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm550",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550",
+        "source_locator": "Main-specific paragraph, separately attributed general site instruction, or trace-only preparation as named",
+        "exact_source_quote": "adjust pH to 7.0.",
+        "snapshot_sha256": "4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431",
+        "parsed_text_sha256": "cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4"
+      }
+    ],
+    "rationale": "Preserve the exact source stage. The 5 mL aliquot is an example; 121°C/15 min is the source site default unless otherwise stated. Titrant quantities and KOH strength are unspecified.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "not_quantified"
+      }
+    ]
+  }
+]
+
+### Exact M552/JCM550 identity and trace-only M142/JCM151 dependency
+
+identity: supported. Targets: CultureMech:009946.
+
+The target and unique CM009946 owner identify TOGO M552, whose metadata explicitly points to JCM550. The named trace cross-reference resolves to the trace section of M142/JCM151, corroborated by endpoint3804. The local CM007968 dependency was read fully to delimit transfer; its main/salt-base/sulfide recipes and JCM261-derived variant are not inherited.
+
+### Batch masses, physical units and stock boundaries
+
+consistency: concern. Targets: CultureMech:009946.
+
+All 26 target/owner concentration instances and 13 referenced trace batch rows are inventoried. Water 1 g/L and trace 10 g/L misrepresent 1 L and 10 mL; main numeric solutes preserve source masses without their proper batch basis. Provider nominal 1010 mL rates remain a distinct representation, not a measured denominator. M142’s 13 current trace amount claims support its notes/water quantity only; they are not existing evidence in either M552 layer.
+
+### Main chemical forms and scoped trace hydration
+
+grounding: concern. Targets: CultureMech:009946.
+
+Main magnesium chloride hexahydrate and L-cysteine hydrochloride monohydrate agree with their source-specific structures. Generic CaCl2 is not expanded to a hydrate. The trace dependency names MnSO4·xH2O and the primary leaves x unspecified, while CHEBI:86360 has Mn.O4S with no water; this hydration scope must be resolved before reusing its mapping. Other explicit trace hydrates correspond to captured formulas. Exact current secondary keys in the scoped trace definition resolve; legacy 001072 belongs only to excluded sulfur and is not a missing required check here.
+
+### Missing main procedure and separately scoped trace pH
+
+completeness: concern. Targets: CultureMech:009946.
+
+Neither M552 layer retains pH 7, N2 dispensing, the example 5 mL Hungate aliquot, butyl-stopper sealing or autoclaving. The source site separately states 121°C for 15 min unless otherwise specified. Trace preparation starts at pH 6.5 with KOH and ends at 7.0; this belongs to the stock, not an imported Pyrococcus main pH. No gas quantity, KOH amount/strength or main titrant dose is supplied.
+
+### Complex liquid and biological boundaries
+
+scope: supported. Targets: CultureMech:009946.
+
+COMPLEX/UNDEFINED and LIQUID fit the peptone/yeast recipe without agar. The source title is not evidence of a strain-specific growth claim or taxon identity; no target organism, assembly, DOI/PMID or specific growth assertion is present. No dependency organism or variant is transferred.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:009946.
+
+23 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Target-owner agreement and repair boundaries
+
+provenance: concern. Targets: CultureMech:009946.
+
+Target and owner share the same water/stock unit defects, placeholder stock name and missing preparation. Current TOGO parser and stock-repair functions distinguish primary rows, stock doses and batch notes; these were read as current behavior, not historical replay. Reuse the already repaired trace subsection with its evidence after form review, rather than rerunning the unrelated whole-parent repair.
+
+## Findings
+
+### f1: Water and an undefined trace-stock dose are represented as mass concentrations
+
+blocker / open / confirmed; issue key: culturemech.009946.quantity-representation.
+
+Water 1 L becomes 1 g/L and the 10 mL trace dose becomes 10 g/L. The stock remains Unknown solution with an empty composition; main batch masses are mislabeled as final g/L without a supported denominator. The source formulation cannot be reconstructed faithfully from these representations.
+
+### f2: Main preparation and pH are absent
+
+major / open / confirmed; issue key: culturemech.009946.preparation.
+
+Both M552 layers omit the exact pH 7 preparation, anaerobic dispensing, example aliquot, stopper and autoclaving instructions. Required trace-stock pH stages are also absent from the empty stock object.
+
+### f3: Referenced trace manganese mapping does not preserve hydrated source wording
+
+major / open / confirmed; issue key: culturemech.009946.trace-form.
+
+The scoped local M142 trace definition names MnSO4·xH2O but assigns CHEBI:86360 with formula Mn.O4S. JCM151 and provider3804 also leave the hydration number unspecified. The thirteen amount-evidence repairs expressly do not certify chemical grounding.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore literal water/stock volumes and main batch masses with explicit bases. Resolve the trace-only dependency and its name, composition and receiving dose, preserving the 13 existing dependency claims only in their proper scope. Do not replace input volumes with a guessed final denominator; attach exact evidence and regenerate after owner curation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add the exact main procedure, retaining 5 mL as an example and attributing 121°C/15 min to the separate general JCM instruction. Restore trace-only pH 6.5→7.0 and unquantified KOH scope; do not import parent-medium pH, sulfur or variant procedures.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Before copying or linking the trace formulation, resolve the hydrated manganese representation while preserving 0.5 g batch input and unknown hydration number. Do not choose a specific hydrate or invent a replacement identifier; retain all valid amount evidence and the unchanged nontrace dependency context.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch025/245/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch025/245/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml:1:id: CultureMech:009946<br>./data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml:1:id: CultureMech:009946<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/245/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 39 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch025/source-preflight-bound/245/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| jcm550 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550; Exact medium 550 main table and preparation; separately identified general site sterilization instruction | supports | Complete main amounts, stock reference, pH, example aliquot, N2 handling, sealing and autoclaving read. General site cycle is explicitly distinguished from medium-specific prose. |
+| togoM552 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552; $.meta; $.components[0].items; $.comments[0].comment | supports | Full source identity, main batch amounts and comments compared. |
+| mediadiveJ550api | https://mediadive.dsmz.de/rest/medium/J550; $.data.medium; $.data.solutions[0:2].recipe/volume/steps | supports | Provider nominal main 1010 mL and nominal trace 1000 mL declarations are separate from source batch amounts and measured final volumes. |
+| jcm151-trace | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151; Trace minerals table and its immediately following preparation only | supports | Only the explicitly referenced trace subsection transfers; main Pyrococcus medium, salt base, sulfur/sulfide and variants are excluded. |
+| togoM142-trace | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142; $.components[2].items and $.comments[1].comment only | supports | Only the trace composition/preparation corroborates JCM550’s dependency. M142 own receiving dose and other sections are not evidence for M552’s receiving dose. |
+| solution3804 | https://mediadive.dsmz.de/rest/solution/3804; $.data.recipe, volume and steps | supports | Exact provider trace endpoint compared with primary trace table and TOGO subsection; nominal stock rates are not receiving-medium concentrations. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi3312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:3312 resolves to calcium dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| dependency-record | data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml; Complete 1139-line dependency YAML and history read; assessment transfers only solutions[1] trace composition/preparation | context_only | The repaired dependency retains batch amounts in notes and 13 exact attached trace claims. Other main, salt-base, sulfide, sulfur/legacy and variant assertions were read to delimit scope, not transferred or recertified. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi86360 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi86463 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86463; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS term label/obsolete flag and source-relevant structure for trace dependency | supports | Metadata matches the dependency annotation; chemical-form correspondence is assessed independently before reuse. |
+| trace-dependency-recheck | /private/tmp/culturemech-review-work-batch025/245/trace-dependency-recheck.json; All 13 trace ingredient evidence objects, complete snippets/explanations/notes, exact captured raw hash and source locators | supports | The existing repaired trace batch claims match current captured bytes. Verification applies to dependency notes/water quantity only, not yet to target or maintained M552 owner. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch025/245/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch025/245/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-3 | src/culturemech/import/togo_importer.py; _ingredient_from_item lines 273–339; _solution_from_item lines 533–585; _extract_primary_components lines 587–641; _extract_preparation_steps lines 644–668; _parse_unit lines 713–746 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-4 | scripts/repair_jcm_stock_preparations.py; leaf lines 161–237; stock lines 239–278; stages lines 335–364; procedures lines 366–461 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 12, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml", "events": 11, "timestamp_issues": []}] |
+| dependency-history | data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml; Complete dependency curation_history, 17 timestamp instances including October stock repair and later variant history | context_only | 17 dependency timestamps are timezone-aware. Current trace repair is retained; the later variant and unrelated main repair details are provenance context only. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact main primary and named trace dependency are available; review completion is not made partial by legacy 001072 in the untransferred sulfur section.
+- Dependency variants, salt base, sulfur/sulfide and unrelated historical claims were read for scope but not transferred or recertified. Only 13 trace ingredient claims and the trace preparation were checked for reuse.
+- Source water volumes, provider nominal 1010/1000 mL declarations and measured final volumes remain distinct. No gas dose, fixed titrant amount or hydration number is inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T143510Z-culturemech-009946-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: aminiphilus_circumsriptus_medium (CultureMech:009946)'
+started_at: '2026-10-21T14:22:40Z'
+finished_at: '2026-10-21T14:35:10Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M552 correctly identifies JCM 550, but water 1 L and a 10 mL trace-stock
+  addition are both labeled g/L, the trace composition is empty and all preparation/pH
+  is missing. The main solute numbers preserve batch masses without a supported final-volume
+  basis. The exact JCM source and trace-only JCM151/M142 dependency are available;
+  thirteen existing dependency amount claims are reusable only within that stock scope.
+  Unrelated sulfur, salt-base and variant material is excluded.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+    sha256: 645eb6c04695ede136708cda044e265fc407f129ee66d492d2609a88c40fd522
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml
+    sha256: 290433e6204999b98296f516fb77589d6df2c07e922d780683ae0ed53353844d
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    sha256: 8342a67b3a66cc049075ed03ed4c90c2052a08f81db70fdfb87b20068a0cfbf0
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/curate/curation_event.py
+    sha256: e8aa053ba6dd06485b29ca5da640f91ef96513feff18492a72adc12f40130024
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/recipe_references.py
+    sha256: 5d49d3db2f043a82b253e5a0bed03239004043922e1daab43c399a84d64fc237
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 245; batch 025 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-four task batches
+    contain 240 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 243 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009946
+targets:
+- target_id: CultureMech:009946
+  path: data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  label: aminiphilus_circumsriptus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch025/245/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/245/strict.tsv"
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009946
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:28.245750Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch025/245/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:30.329707Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-025/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch025/245/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:32.078713Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T14:23:33.594831Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml:1:id:
+    CultureMech:009946
+
+    ./data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml:1:id: CultureMech:009946
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/245/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: supports
+  summary: 39 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: a91ecf6926e7f3641634115a4944c83d9e8ff592c69d1b66c77d3508cbbdb686
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/source-preflight-bound/245/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: 5fa5708b64f47a8375b431f52c11b61abd2d99cc64da080d323c10625f8d20e5
+- evidence_id: jcm550
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550
+  locator: Exact medium 550 main table and preparation; separately identified general
+    site sterilization instruction
+  accessed_at: '2026-10-21T14:05:45.102379Z'
+  support: supports
+  summary: Complete main amounts, stock reference, pH, example aliquot, N2 handling,
+    sealing and autoclaving read. General site cycle is explicitly distinguished from
+    medium-specific prose.
+  snapshot_sha256: 4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431
+- evidence_id: togoM552
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552
+  locator: $.meta; $.components[0].items; $.comments[0].comment
+  accessed_at: '2026-10-21T14:05:43.587654Z'
+  support: supports
+  summary: Full source identity, main batch amounts and comments compared.
+  snapshot_sha256: 09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7
+- evidence_id: mediadiveJ550api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J550
+  locator: $.data.medium; $.data.solutions[0:2].recipe/volume/steps
+  accessed_at: '2026-10-21T14:05:43.502872Z'
+  support: supports
+  summary: Provider nominal main 1010 mL and nominal trace 1000 mL declarations are
+    separate from source batch amounts and measured final volumes.
+  snapshot_sha256: 2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4
+- evidence_id: jcm151-trace
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151
+  locator: Trace minerals table and its immediately following preparation only
+  accessed_at: '2026-10-21T09:01:28.851101Z'
+  support: supports
+  summary: Only the explicitly referenced trace subsection transfers; main Pyrococcus
+    medium, salt base, sulfur/sulfide and variants are excluded.
+  snapshot_sha256: 6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7
+- evidence_id: togoM142-trace
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142
+  locator: $.components[2].items and $.comments[1].comment only
+  accessed_at: '2026-10-21T09:28:25.414106Z'
+  support: supports
+  summary: Only the trace composition/preparation corroborates JCM550’s dependency.
+    M142 own receiving dose and other sections are not evidence for M552’s receiving
+    dose.
+  snapshot_sha256: 610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33
+- evidence_id: solution3804
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/3804
+  locator: $.data.recipe, volume and steps
+  accessed_at: '2026-10-21T11:03:04.630611Z'
+  support: supports
+  summary: Exact provider trace endpoint compared with primary trace table and TOGO
+    subsection; nominal stock rates are not receiving-medium concentrations.
+  snapshot_sha256: aaf5a9112e2539dce832af1df5de07e297e7d1e242aa668e9bbb8aafdf766a6c
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: CHEBI:3312 resolves to calcium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type":
+    "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id":
+    "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588":
+    [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588",
+    "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: dependency-record
+  kind: record_content
+  reference: data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml
+  locator: Complete 1139-line dependency YAML and history read; assessment transfers
+    only solutions[1] trace composition/preparation
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: The repaired dependency retains batch amounts in notes and 13 exact attached
+    trace claims. Other main, salt-base, sulfide, sulfur/legacy and variant assertions
+    were read to delimit scope, not transferred or recertified.
+  snapshot_sha256: 290433e6204999b98296f516fb77589d6df2c07e922d780683ae0ed53353844d
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86360
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-20T06:55:05.958063Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: ee3b60385f389c4eeb301cfe59996112ffa9c3c135268559b79e91810a14932b
+- evidence_id: chebi86463
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86463
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-21T11:01:47.791068Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: 59060418cddd95e8401be3d2518a69fbcd26a4f4e6f0597b2c8c03834a87812e
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS term label/obsolete flag and source-relevant structure for trace
+    dependency
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: Metadata matches the dependency annotation; chemical-form correspondence
+    is assessed independently before reuse.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: trace-dependency-recheck
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/245/trace-dependency-recheck.json
+  locator: All 13 trace ingredient evidence objects, complete snippets/explanations/notes,
+    exact captured raw hash and source locators
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: supports
+  summary: The existing repaired trace batch claims match current captured bytes.
+    Verification applies to dependency notes/water quantity only, not yet to target
+    or maintained M552 owner.
+  snapshot_sha256: 63794bc2b7353c1d93540078a8544e479f80f1f6500a83551dd4364401d60912
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/245/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 239356ab1a015904a49cb08075d603e8e1f6cbb5254a4d5d6e2934cea72c1283
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch025/245/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 98a6c9e5b1302e3420fcd15a461ef0267bbc08977aae283e3ff7fdcc87b08d57
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item lines 273–339; _solution_from_item lines 533–585;
+    _extract_primary_components lines 587–641; _extract_preparation_steps lines 644–668;
+    _parse_unit lines 713–746
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-context-4
+  kind: record_content
+  reference: scripts/repair_jcm_stock_preparations.py
+  locator: leaf lines 161–237; stock lines 239–278; stages lines 335–364; procedures
+    lines 366–461
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml",
+    "events": 11, "timestamp_issues": []}]'
+- evidence_id: dependency-history
+  kind: record_content
+  reference: data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml
+  locator: Complete dependency curation_history, 17 timestamp instances including
+    October stock repair and later variant history
+  accessed_at: '2026-10-21T14:35:09Z'
+  support: context_only
+  summary: 17 dependency timestamps are timezone-aware. Current trace repair is retained;
+    the later variant and unrelated main repair details are provenance context only.
+  snapshot_sha256: 290433e6204999b98296f516fb77589d6df2c07e922d780683ae0ed53353844d
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '10 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 10/12
+    primary and 7/12 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi17997
+  - chebi26710
+  - chebi31206
+  - chebi32588
+  - chebi3312
+  - chebi63036
+  - chebi86345
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 12: primary 83.33%;
+    secondary 58.33%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 34 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Distilled water\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM552\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1.0 L\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"Source 1 L water is a solvent batch volume,\
+    \ not 1 g/L. Preserve 1 L and do not substitute water mass or assume final medium\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"1 L\
+    \ = 1000 mL of input water; no density conversion.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Yeast extract\",\n    \"field_path\": \"ingredients[1].concentration\",\n\
+    \    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 2,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 2.0 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.9802,\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 2 g; provider nominal g_l=1.9802. 1000 mL water + 10 mL stock = 1010 mL\
+    \ input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"NaCl\",\n    \"field_path\": \"ingredients[2].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 10,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"NaCl 10.0 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 10,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 9.90099,\\n            \
+    \            \\\"mmol_l\\\": 169.421,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 10 g; provider nominal g_l=9.90099. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"KH2PO4\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 0.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"KH 2 PO 4 0.3 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.3,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.29703,\\n            \
+    \            \\\"mmol_l\\\": 2.18266,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 0.3 g; provider nominal g_l=0.29703. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"NH4Cl\",\n    \"field_path\": \"ingredients[4].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4Cl\\\",\\n          \\\"volume\\\": 1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"NH 4 Cl 1.0 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\": 42,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.990099,\\n           \
+    \             \\\"mmol_l\\\": 18.51,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 1 g; provider nominal g_l=0.990099. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"K2HPO4\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"K 2 HPO 4 0.3 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.3,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.29703,\\n            \
+    \            \\\"mmol_l\\\": 1.70534,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 0.3 g; provider nominal g_l=0.29703. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"MgCl2・6H2O\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"MgCl 2 ·6H 2 O 0.5 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 79,\\n                        \\\"amount\\\": 0.5,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.49505,\\\
+    n                        \\\"mmol_l\\\": 2.43503,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n      }\n\
+    \    ],\n    \"rationale\": \"The source number is a batch mass. The local g/L\
+    \ assertion uses an unstated final-volume basis; retain the literal mass and distinguish\
+    \ the provider’s separately declared 1010 mL rates.\",\n    \"action_taken\":\
+    \ \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 0.5 g; provider nominal g_l=0.49505. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"KCl\",\n    \"field_path\": \"ingredients[7].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 0.1,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"KCl 0.1 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0990099,\\n          \
+    \              \\\"mmol_l\\\": 1.3281,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 0.1 g; provider nominal g_l=0.0990099. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"CaCl2\",\n    \"field_path\": \"ingredients[8].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"CaCl 2 0.1 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CaCl2\\\",\\n                        \\\"compound_id\\\": 81,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.0990099,\\n          \
+    \              \\\"mmol_l\\\": 0.892142,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 0.1 g; provider nominal g_l=0.0990099. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"L--Cysteine・HCl・H2O\",\n    \"field_path\"\
+    : \"ingredients[9].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM552\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"L--Cysteine・HCl・H2O\\\",\\n          \\\"volume\\\
+    \": 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine·HCl·H 2 O 0.5 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"L-Cysteine HCl x H2O\\\",\\n                        \\\"compound_id\\\
+    \": 770,\\n                        \\\"amount\\\": 0.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.49505,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 0.5 g; provider nominal g_l=0.49505. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Peptone\",\n    \"field_path\": \"ingredients[10].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\",\n     \
+    \   \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Peptone\\\",\\n          \\\"volume\\\": 10,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"Peptone 10.0 g\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"Peptone\\\",\\n                        \\\"compound_id\\\"\
+    : 1,\\n                        \\\"amount\\\": 10,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 9.90099,\\n    \
+    \                    \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a batch mass. The\
+    \ local g/L assertion uses an unstated final-volume basis; retain the literal\
+    \ mass and distinguish the provider’s separately declared 1010 mL rates.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ input 10 g; provider nominal g_l=9.90099. 1000 mL water + 10 mL stock = 1010\
+    \ mL input sum, not a measured final volume after mixing/pH adjustment.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Trace minerals (see Medium [M142])\",\n\
+    \    \"field_path\": \"solutions[0].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM552\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\"\
+    ,\n        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace minerals (see Medium [M142])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"Trace minerals (see Medium No. 151 ) 10.0 ml\",\n        \"snapshot_sha256\"\
+    : \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\",\n    \
+    \    \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    solution\\\": \\\"Trace minerals\\\",\\n                        \\\"solution_id\\\
+    \": 3804,\\n                        \\\"amount\\\": 10,\\n                   \
+    \     \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"Source 10 mL of the named trace stock\
+    \ is a receiving-batch volume, not 10 g/L. Restore exact identity/composition\
+    \ without inheriting the parent medium.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"solutions[0].concentration\",\n     \
+    \   \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"10\
+    \ mL = 0.01 L per receiving batch. The M552 dose is independently explicit; it\
+    \ is not inferred from M142’s own dose.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"N2\",\n    \"field_path\": \"ingredients[11].concentration\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"local\": null,\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"togoM552\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M552\"\
+    ,\n        \"source_locator\": \"$.components[0].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"09c4e8436330dd230dd01f0b773d0224688a6113299469c2681e96db0b4960b7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Exact main table row or main preparation N2 clause\",\n        \"exact_source_quote\"\
+    : \"under a N 2 atmosphere\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      }\n    ],\n    \"rationale\": \"N2 is an atmosphere with no fixed volume,\
+    \ flow, fraction or pressure supplied. VARIABLE is a legacy default, not a verified\
+    \ quantitative dose.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[11].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n      \
+    \  },\n        \"decision\": \"not_quantified\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Trace stock / Distilled water\",\n    \"field_path\"\
+    : \"solutions[0].composition\",\n    \"decision\": \"add\",\n    \"local\": null,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM142\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1.0 L\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[12]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 13,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source batch amount\
+    \ in the referenced trace stock. The existing dependency claim is supported in\
+    \ that dependency only; no final-medium g/L, fixed hydration number or unrelated\
+    \ parent ingredient is transferred.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[0].concentration\",\n    \
+    \  \"stored\": {\n        \"value\": \"1\",\n        \"unit\": \"L\"\n      },\n\
+    \      \"decision\": \"verified\",\n      \"scope\": \"Exact attached source batch\
+    \ claim only; not receiving-medium concentration or chemistry certification.\"\
+    \n    }\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock / MgSO4・7H2O\"\
+    ,\n    \"field_path\": \"solutions[0].composition\",\n    \"decision\": \"add\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM142\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"MgSO 4 ·7H 2 O 3.0 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 3,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n      \
+    \                  \\\"mmol_l\\\": 12.1716,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source batch amount\
+    \ in the referenced trace stock. The existing dependency claim is supported in\
+    \ that dependency only; no final-medium g/L, fixed hydration number or unrelated\
+    \ parent ingredient is transferred.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[1].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component [Merged 2 duplicates: 3.5, 3.0]\\n\\nSource batch input: 3 g. Final\
+    \ preparation volume is not independently established; the unsupported g/L assertion\
+    \ is withdrawn, not replaced by an assumed one-liter concentration.\",\n     \
+    \ \"decision\": \"verified\",\n      \"scope\": \"Exact attached source batch\
+    \ claim only; not receiving-medium concentration or chemistry certification.\"\
+    \n    }\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock / NaCl\",\n \
+    \   \"field_path\": \"solutions[0].composition\",\n    \"decision\": \"add\",\n\
+    \    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM142\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 1,\\n  \
+    \        \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"NaCl 1.0 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 17.1116,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source batch amount\
+    \ in the referenced trace stock. The existing dependency claim is supported in\
+    \ that dependency only; no final-medium g/L, fixed hydration number or unrelated\
+    \ parent ingredient is transferred.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[2].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component [Merged 2 duplicates: 13.85, 1.0]\\n\\nSource batch input: 1 g. Final\
+    \ preparation volume is not independently established; the unsupported g/L assertion\
+    \ is withdrawn, not replaced by an assumed one-liter concentration.\",\n     \
+    \ \"decision\": \"verified\",\n      \"scope\": \"Exact attached source batch\
+    \ claim only; not receiving-medium concentration or chemistry certification.\"\
+    \n    }\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock / CaCl2・2H2O\"\
+    ,\n    \"field_path\": \"solutions[0].composition\",\n    \"decision\": \"add\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM142\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"CaCl 2 ·2H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.1,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n  \
+    \                      \\\"mmol_l\\\": 0.680203,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source batch amount\
+    \ in the referenced trace stock. The existing dependency claim is supported in\
+    \ that dependency only; no final-medium g/L, fixed hydration number or unrelated\
+    \ parent ingredient is transferred.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[3].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.1 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / Na2MoO4・2H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.01,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\n      },\n\
+    \      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Trace minerals table only, corresponding row\"\
+    ,\n        \"exact_source_quote\": \"Na 2 MoO 4 ·2H 2 O 0.01 g\",\n        \"\
+    snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 0.01,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n\
+    \                        \\\"mmol_l\\\": 0.0413309,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Restore this exact source batch amount in the\
+    \ referenced trace stock. The existing dependency claim is supported in that dependency\
+    \ only; no final-medium g/L, fixed hydration number or unrelated parent ingredient\
+    \ is transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[4].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.01 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / H3BO3\",\n    \"field_path\": \"solutions[0].composition\",\n\
+    \    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"H 3 BO 3 0.01 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\":\
+    \ 37,\\n                        \\\"amount\\\": 0.01,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n \
+    \                       \\\"mmol_l\\\": 0.161708,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n      }\n\
+    \    ],\n    \"rationale\": \"Restore this exact source batch amount in the referenced\
+    \ trace stock. The existing dependency claim is supported in that dependency only;\
+    \ no final-medium g/L, fixed hydration number or unrelated parent ingredient is\
+    \ transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[5].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component [Merged 2 duplicates: 15.0, 0.01]\\n\\nSource batch input: 0.01 g.\
+    \ Final preparation volume is not independently established; the unsupported g/L\
+    \ assertion is withdrawn, not replaced by an assumed one-liter concentration.\"\
+    ,\n      \"decision\": \"verified\",\n      \"scope\": \"Exact attached source\
+    \ batch claim only; not receiving-medium concentration or chemistry certification.\"\
+    \n    }\n  },\n  {\n    \"ingredient_or_context\": \"Trace stock / FeSO4・7H2O\"\
+    ,\n    \"field_path\": \"solutions[0].composition\",\n    \"decision\": \"add\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM142\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\"\
+    ,\n        \"source_locator\": \"$.components[2].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4・7H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"FeSO 4 ·7H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.359693,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n      }\n\
+    \    ],\n    \"rationale\": \"Restore this exact source batch amount in the referenced\
+    \ trace stock. The existing dependency claim is supported in that dependency only;\
+    \ no final-medium g/L, fixed hydration number or unrelated parent ingredient is\
+    \ transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[6].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.1 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / ZnSO4・7H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnSO4・7H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"ZnSO 4 ·7H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n      }\n\
+    \    ],\n    \"rationale\": \"Restore this exact source batch amount in the referenced\
+    \ trace stock. The existing dependency claim is supported in that dependency only;\
+    \ no final-medium g/L, fixed hydration number or unrelated parent ingredient is\
+    \ transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[7].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.1 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / CuSO4・5H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuSO4・5H2O\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"CuSO 4 ·5H 2 O 0.01 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"CuSO4 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 121,\\n                        \\\"amount\\\": 0.01,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0400503,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Restore this exact source batch amount in the\
+    \ referenced trace stock. The existing dependency claim is supported in that dependency\
+    \ only; no final-medium g/L, fixed hydration number or unrelated parent ingredient\
+    \ is transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[8].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.01 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / CoSO4・7H2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoSO4・7H2O\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"CoSO 4 ·7H 2 O 0.1 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 198,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n\
+    \                        \\\"mmol_l\\\": 0.645178,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n      }\n\
+    \    ],\n    \"rationale\": \"Restore this exact source batch amount in the referenced\
+    \ trace stock. The existing dependency claim is supported in that dependency only;\
+    \ no final-medium g/L, fixed hydration number or unrelated parent ingredient is\
+    \ transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[9].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.1 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / Nitrilotriacetic acid\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nitrilotriacetic acid\\\",\\n          \\\"volume\\\
+    \": 1.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"Nitrilotriacetic acid 1.5 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Nitrilotriacetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 189,\\n                        \\\"amount\\\": 1.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.5,\\n\
+    \                        \\\"mmol_l\\\": 7.84765,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n      }\n\
+    \    ],\n    \"rationale\": \"Restore this exact source batch amount in the referenced\
+    \ trace stock. The existing dependency claim is supported in that dependency only;\
+    \ no final-medium g/L, fixed hydration number or unrelated parent ingredient is\
+    \ transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n   \
+    \     \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[10].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 1.5 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / MnSO4・xH2O\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnSO4・xH2O\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"MnSO 4 · x H 2 O 0.5 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"MnSO4 x n H2O\\\",\\n                        \\\"compound_id\\\
+    \": 1000,\\n                        \\\"amount\\\": 0.5,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore this exact source batch amount\
+    \ in the referenced trace stock. The existing dependency claim is supported in\
+    \ that dependency only; no final-medium g/L, fixed hydration number or unrelated\
+    \ parent ingredient is transferred.\",\n    \"action_taken\": \"Review only; no\
+    \ recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[11].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.5 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace stock / AlK(SO4)2\",\n    \"field_path\": \"solutions[0].composition\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM142\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M142\",\n     \
+    \   \"source_locator\": \"$.components[2].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"AlK(SO4)2\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"610b8b81872be555185d912ce93fed547485e0b9f3a1c1ee14fe4c6fc0e14c33\"\
+    \n      },\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Trace minerals table only, corresponding row\",\n        \"exact_source_quote\"\
+    : \"AlK(SO 4 ) 2 0.01 g\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ550api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J550\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"AlK(SO4)2\\\",\\n                        \\\"compound_id\\\
+    \": 1015,\\n                        \\\"amount\\\": 0.01,\\n                 \
+    \       \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0387289,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"2f1e8b3775625332fc163b10bba3ad8a3cf16f08351d8c19b3fc2c4bd04f5bf4\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Restore this exact source batch amount in the\
+    \ referenced trace stock. The existing dependency claim is supported in that dependency\
+    \ only; no final-medium g/L, fixed hydration number or unrelated parent ingredient\
+    \ is transferred.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"solutions[0].composition\",\n        \"stored\": [],\n \
+    \       \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Provider nominal trace stock volume is 1000 mL; any stock-rate×0.010 L delivered-mass\
+    \ calculation is conditional on that declaration. Primary lists water and pH adjustment,\
+    \ not a measured final stock volume.\",\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].composition[12].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Inorganic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 0.01 g. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n      \"decision\": \"verified\",\n   \
+    \   \"scope\": \"Exact attached source batch claim only; not receiving-medium\
+    \ concentration or chemistry certification.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main pH\",\n    \"field_path\": \"preparation.Main_pH\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"jcm550\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\"\
+    ,\n        \"source_locator\": \"Main-specific paragraph, separately attributed\
+    \ general site instruction, or trace-only preparation as named\",\n        \"\
+    exact_source_quote\": \"adjust pH to 7.0.\",\n        \"snapshot_sha256\": \"\
+    4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\",\n        \"\
+    parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ph_value\",\n      \
+    \  \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Example aliquot\",\n    \"field_path\": \"preparation.Example_aliquot\",\n\
+    \    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm550\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\"\
+    ,\n        \"source_locator\": \"Main-specific paragraph, separately attributed\
+    \ general site instruction, or trace-only preparation as named\",\n        \"\
+    exact_source_quote\": \"e.g., 5 ml of the medium in the Hungate tubes\",\n   \
+    \     \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"General autoclave temperature\",\n    \"field_path\": \"preparation.General_autoclave_temperature\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Main-specific paragraph, separately attributed general site instruction, or\
+    \ trace-only preparation as named\",\n        \"exact_source_quote\": \"Unless\
+    \ otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\",\n \
+    \       \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"General autoclave duration\",\n    \"field_path\": \"preparation.General_autoclave_duration\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Main-specific paragraph, separately attributed general site instruction, or\
+    \ trace-only preparation as named\",\n        \"exact_source_quote\": \"Unless\
+    \ otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\",\n \
+    \       \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Trace initial pH\",\n    \"field_path\": \"preparation.Trace_initial_pH\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm151\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\",\n        \"source_locator\"\
+    : \"Main-specific paragraph, separately attributed general site instruction, or\
+    \ trace-only preparation as named\",\n        \"exact_source_quote\": \"adjust\
+    \ pH to 6.5 with KOH solution.\",\n        \"snapshot_sha256\": \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\"\
+    ,\n        \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].preparation_notes\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].preparation_notes\",\n      \"stored\"\
+    : \"Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then\
+    \ proceed to add minerals. Adjust final pH to 7.0.\",\n      \"decision\": \"\
+    verified\",\n      \"scope\": \"Existing scoped trace preparation is supported\
+    \ by exact comments[1] excerpt in dependency root evidence; no M552 main pH transfer.\"\
+    \n    }\n  },\n  {\n    \"ingredient_or_context\": \"Trace final pH\",\n    \"\
+    field_path\": \"preparation.Trace_final_pH\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Main-specific paragraph, separately attributed\
+    \ general site instruction, or trace-only preparation as named\",\n        \"\
+    exact_source_quote\": \"Adjust final pH to 7.0.\",\n        \"snapshot_sha256\"\
+    : \"6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\",\n    \
+    \    \"parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].preparation_notes\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].preparation_notes\",\n      \"stored\"\
+    : \"Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then\
+    \ proceed to add minerals. Adjust final pH to 7.0.\",\n      \"decision\": \"\
+    verified\",\n      \"scope\": \"Existing scoped trace preparation is supported\
+    \ by exact comments[1] excerpt in dependency root evidence; no M552 main pH transfer.\"\
+    \n    }\n  },\n  {\n    \"ingredient_or_context\": \"Trace KOH dose\",\n    \"\
+    field_path\": \"preparation.Trace_KOH_dose\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm151\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=151\"\
+    ,\n        \"source_locator\": \"Main-specific paragraph, separately attributed\
+    \ general site instruction, or trace-only preparation as named\",\n        \"\
+    exact_source_quote\": \"with KOH solution.\",\n        \"snapshot_sha256\": \"\
+    6cfac0ff9954839eabcdf17884480ce9ea76646da8cbfac0ca0d92ac393584d7\",\n        \"\
+    parsed_text_sha256\": \"e3a9beb9f7ed9f3f7cd979a7b62d3ce76bbc3bf11c2623b8031be160b3c08db9\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions[0].preparation_notes\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"not_quantified\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preparation_notes\",\n        \"stored\"\
+    : null,\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"dependency_quantity_decision\"\
+    : {\n      \"input\": \"data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml\"\
+    ,\n      \"field_path\": \"solutions[1].solutions[0].notes\",\n      \"stored\"\
+    : \"Role: Mineral source; Properties: Defined component, Solution\\n\\npH-adjustment\
+    \ reagent; no fixed dose is specified. Normality is not converted to molarity.\"\
+    ,\n      \"decision\": \"not_quantified\",\n      \"scope\": \"Existing scoped\
+    \ trace preparation is supported by exact comments[1] excerpt in dependency root\
+    \ evidence; no M552 main pH transfer.\"\n    }\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main titrant dose\",\n    \"field_path\": \"preparation.Main_titrant_dose\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm550\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=550\",\n        \"source_locator\"\
+    : \"Main-specific paragraph, separately attributed general site instruction, or\
+    \ trace-only preparation as named\",\n        \"exact_source_quote\": \"adjust\
+    \ pH to 7.0.\",\n        \"snapshot_sha256\": \"4a7f3da23ba79491d05469f3b7ae671f9b9d51f281867b18773691db76daa431\"\
+    ,\n        \"parsed_text_sha256\": \"cb2f48da513c00dc47c479692e50c8efe00a641066ab08b101fe53b4e13fd2b4\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the exact source stage. The 5\
+    \ mL aliquot is an example; 121°C/15 min is the source site default unless otherwise\
+    \ stated. Titrant quantities and KOH strength are unspecified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"not_quantified\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"not_quantified\"\n      }\n    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact M552/JCM550 identity and trace-only M142/JCM151 dependency
+  outcome: supported
+  summary: The target and unique CM009946 owner identify TOGO M552, whose metadata
+    explicitly points to JCM550. The named trace cross-reference resolves to the trace
+    section of M142/JCM151, corroborated by endpoint3804. The local CM007968 dependency
+    was read fully to delimit transfer; its main/salt-base/sulfide recipes and JCM261-derived
+    variant are not inherited.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - jcm550
+  - togoM552
+  - jcm151-trace
+  - togoM142-trace
+  - solution3804
+  - dependency-record
+- assessment_id: quantity-scope
+  area: consistency
+  topic: Batch masses, physical units and stock boundaries
+  outcome: concern
+  summary: All 26 target/owner concentration instances and 13 referenced trace batch
+    rows are inventoried. Water 1 g/L and trace 10 g/L misrepresent 1 L and 10 mL;
+    main numeric solutes preserve source masses without their proper batch basis.
+    Provider nominal 1010 mL rates remain a distinct representation, not a measured
+    denominator. M142’s 13 current trace amount claims support its notes/water quantity
+    only; they are not existing evidence in either M552 layer.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm550
+  - togoM552
+  - mediadiveJ550api
+  - quantity-inventory
+  - quantity-local-fields
+  - trace-dependency-recheck
+- assessment_id: forms
+  area: grounding
+  topic: Main chemical forms and scoped trace hydration
+  outcome: concern
+  summary: Main magnesium chloride hexahydrate and L-cysteine hydrochloride monohydrate
+    agree with their source-specific structures. Generic CaCl2 is not expanded to
+    a hydrate. The trace dependency names MnSO4·xH2O and the primary leaves x unspecified,
+    while CHEBI:86360 has Mn.O4S with no water; this hydration scope must be resolved
+    before reusing its mapping. Other explicit trace hydrates correspond to captured
+    formulas. Exact current secondary keys in the scoped trace definition resolve;
+    legacy 001072 belongs only to excluded sulfur and is not a missing required check
+    here.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm550
+  - jcm151-trace
+  - dependency-record
+  - trace-dependency-recheck
+  - chebi86345
+  - chebi91248
+  - chebi86360
+- assessment_id: preparation
+  area: completeness
+  topic: Missing main procedure and separately scoped trace pH
+  outcome: concern
+  summary: Neither M552 layer retains pH 7, N2 dispensing, the example 5 mL Hungate
+    aliquot, butyl-stopper sealing or autoclaving. The source site separately states
+    121°C for 15 min unless otherwise specified. Trace preparation starts at pH 6.5
+    with KOH and ends at 7.0; this belongs to the stock, not an imported Pyrococcus
+    main pH. No gas quantity, KOH amount/strength or main titrant dose is supplied.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm550
+  - jcm151-trace
+  - togoM142-trace
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid and biological boundaries
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and LIQUID fit the peptone/yeast recipe without agar.
+    The source title is not evidence of a strain-specific growth claim or taxon identity;
+    no target organism, assembly, DOI/PMID or specific growth assertion is present.
+    No dependency organism or variant is transferred.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm550
+  - dependency-record
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 23 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: generation
+  area: provenance
+  topic: Target-owner agreement and repair boundaries
+  outcome: concern
+  summary: Target and owner share the same water/stock unit defects, placeholder stock
+    name and missing preparation. Current TOGO parser and stock-repair functions distinguish
+    primary rows, stock doses and batch notes; these were read as current behavior,
+    not historical replay. Reuse the already repaired trace subsection with its evidence
+    after form review, rather than rerunning the unrelated whole-parent repair.
+  target_ids:
+  - CultureMech:009946
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - dependency-history
+  - trace-dependency-recheck
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+  - writer-context-4
+findings:
+- finding_id: f1
+  issue_key: culturemech.009946.quantity-representation
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Water and an undefined trace-stock dose are represented as mass concentrations
+  description: Water 1 L becomes 1 g/L and the 10 mL trace dose becomes 10 g/L. The
+    stock remains Unknown solution with an empty composition; main batch masses are
+    mislabeled as final g/L without a supported denominator. The source formulation
+    cannot be reconstructed faithfully from these representations.
+  target_ids:
+  - CultureMech:009946
+  field_paths:
+  - ingredients
+  - solutions[0]
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm550
+  - togoM552
+  - mediadiveJ550api
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.009946.preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Main preparation and pH are absent
+  description: Both M552 layers omit the exact pH 7 preparation, anaerobic dispensing,
+    example aliquot, stopper and autoclaving instructions. Required trace-stock pH
+    stages are also absent from the empty stock object.
+  target_ids:
+  - CultureMech:009946
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - solutions[0].preparation_notes
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm550
+  - jcm151-trace
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is normalized to major because the source-specific anaerobic
+    preparation and sterilization instructions are absent and materially affect reproducibility.
+- finding_id: f3
+  issue_key: culturemech.009946.trace-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Referenced trace manganese mapping does not preserve hydrated source wording
+  description: The scoped local M142 trace definition names MnSO4·xH2O but assigns
+    CHEBI:86360 with formula Mn.O4S. JCM151 and provider3804 also leave the hydration
+    number unspecified. The thirteen amount-evidence repairs expressly do not certify
+    chemical grounding.
+  target_ids:
+  - CultureMech:009946
+  field_paths:
+  - solutions[0].composition
+  evidence_ids:
+  - record
+  - owner-0
+  - dependency-record
+  - jcm151-trace
+  - togoM142-trace
+  - chebi86360
+  - trace-dependency-recheck
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore literal water/stock volumes and main batch masses with explicit
+    bases. Resolve the trace-only dependency and its name, composition and receiving
+    dose, preserving the 13 existing dependency claims only in their proper scope.
+    Do not replace input volumes with a guessed final denominator; attach exact evidence
+    and regenerate after owner curation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009946
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the exact main procedure, retaining 5 mL as an example and attributing
+    121°C/15 min to the separate general JCM instruction. Restore trace-only pH 6.5→7.0
+    and unquantified KOH scope; do not import parent-medium pH, sulfur or variant
+    procedures.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009946
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Before copying or linking the trace formulation, resolve the hydrated
+    manganese representation while preserving 0.5 g batch input and unknown hydration
+    number. Do not choose a specific hydrate or invent a replacement identifier; retain
+    all valid amount evidence and the unchanged nontrace dependency context.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009946
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M552_Aminiphilus_Circumsriptus_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact main primary and named trace dependency are available; review completion
+  is not made partial by legacy 001072 in the untransferred sulfur section.
+- Dependency variants, salt base, sulfur/sulfide and unrelated historical claims were
+  read for scope but not transferred or recertified. Only 13 trace ingredient claims
+  and the trace preparation were checked for reuse.
+- Source water volumes, provider nominal 1010/1000 mL declarations and measured final
+  volumes remain distinct. No gas dose, fixed titrant amount or hydration number is
+  inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-025
+- generated-medium
+```
