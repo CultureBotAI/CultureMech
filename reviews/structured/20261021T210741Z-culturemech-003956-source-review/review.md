@@ -1,0 +1,4945 @@
+# Source and formulation review: bacillus_alkalidiazotrophicus_medium (CultureMech:003956)
+
+- Review: 20261021T210741Z-culturemech-003956-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T20:59:31Z
+- Finished UTC: 2026-10-21T21:07:41Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSM 1208 formulation distinguishes main batch ingredients from SL-11, selenite-tungstate and Wolin vitamin stocks. All three local layers flatten stock concentrations into the medium and omit water and stock doses; the DSM owner alone preserves main and SL-11 preparation prose. Nickel hexahydrate is grounded to an anhydrous structure, while calcium D-pantothenate is explicitly supported by DSM 141.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 374; batch 038 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-seven task batches contain 370 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 373 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003956 | data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml | generated | bacillus_alkalidiazotrophicus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003956 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003956 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch038/374/strict.tsv |
+| validate-terms | passed | True | CultureMech:003956 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003956 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003956 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodo1208_network_retry | unavailable | False | CultureMech:003956 | The optional historical KOMODO detail response is unavailable. The current base formulation can be assessed from the exact catalog link and primary sources; historical byte equivalence and a distinct KOMODO variant are not inferred. |
+| Exact source content access: mediadive1208_network_retry | unavailable | False | CultureMech:003956 | The current MediaDive 1208 API returned HTTP 503. Exact primary main and stock documents support this assessment. Local historical report snippets remain derivative evidence; their original API raw bytes are not authenticated. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003956.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:003956.
+
+52 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "name": "NaHCO3",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "8",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "8",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "8",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 8,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 6–7; exact subsection",
+        "exact_source_quote": "NaHCO\n3 8.00 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q2",
+    "name": "Na2CO3",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "22",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "22",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "22",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 22,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 8–8; exact subsection",
+        "exact_source_quote": "Na 2CO3 22.00 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q3",
+    "name": "NaCl",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 6,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 9–9; exact subsection",
+        "exact_source_quote": "NaCl 6.00 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q4",
+    "name": "K2HPO4",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 1,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 10–11; exact subsection",
+        "exact_source_quote": "K\n2HPO4 1.00 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q5",
+    "name": "NH4Cl",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 12–12; exact subsection",
+        "exact_source_quote": "NH 4Cl 0.20 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q6",
+    "name": "MgCl2 x 6 H2O",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 13–13; exact subsection",
+        "exact_source_quote": "MgCl 2 x 6 H2O 0.20 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q7",
+    "name": "Yeast extract",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.05,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 14–14; exact subsection",
+        "exact_source_quote": "Yeast extract 0.05 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q8",
+    "name": "Na2SO4",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.8",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.8",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.8",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 2.8,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 15–16; exact subsection",
+        "exact_source_quote": "Na\n2SO4 2.80 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q9",
+    "name": "Glucose",
+    "stage": "DSM 1208 main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 2,
+      "source_unit": "g",
+      "basis": "Main table with 1000 mL water and separate stock doses; measured final volume not supplied"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 20–20; exact subsection",
+        "exact_source_quote": "Glucose 2.00 g",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The local numerator matches the printed gram amount, but a flat G_PER_L assertion does not preserve the source batch basis or distinguish post-sterilization components. Preserve the original mass and stage rather than inventing a final-volume conversion."
+  },
+  {
+    "decision_id": "q10",
+    "name": "Na2-EDTA x 2 H2O",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "5.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "5.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "5.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Na2-EDTA x 2 H2O 5.20 g",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 26–26; exact subsection",
+        "exact_source_quote": "Na2-EDTA x 2 H2O 5.20 g",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q11",
+    "name": "FeCl2 x 4 H2O",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "FeCl2 x 4 H2O 1.50 g",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 27–27; exact subsection",
+        "exact_source_quote": "FeCl2 x 4 H2O 1.50 g",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q12",
+    "name": "ZnCl2",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "ZnCl2 70.00 mg",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 28–28; exact subsection",
+        "exact_source_quote": "ZnCl2 70.00 mg",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q13",
+    "name": "MnCl2 x 4 H2O",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "MnCl2 x 4 H2O 100.00 mg",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 29–29; exact subsection",
+        "exact_source_quote": "MnCl2 x 4 H2O 100.00 mg",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q14",
+    "name": "H3BO3",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "H3BO3 6.00 mg",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 30–30; exact subsection",
+        "exact_source_quote": "H3BO3 6.00 mg",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q15",
+    "name": "CoCl2 x 6 H2O",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "CoCl2 x 6 H2O 190.00 mg",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 31–31; exact subsection",
+        "exact_source_quote": "CoCl2 x 6 H2O 190.00 mg",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q16",
+    "name": "CuCl2 x 2 H2O",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "CuCl2 x 2 H2O 2.00 mg",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 32–32; exact subsection",
+        "exact_source_quote": "CuCl2 x 2 H2O 2.00 mg",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q17",
+    "name": "NiCl2 x 6 H2O",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "NiCl2 x 6 H2O 24.00 mg",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 33–33; exact subsection",
+        "exact_source_quote": "NiCl2 x 6 H2O 24.00 mg",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q18",
+    "name": "Na2MoO4 x 2 H2O",
+    "stage": "SL-11 stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Na2MoO4 x 2 H2O 36.00 mg",
+      "stock_final_volume_ml": 1000,
+      "scope": "Stock concentration only; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 34–34; exact subsection",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 36.00 mg",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "These values are stock quantities, not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram conversion may describe that stock alone; its 1 mL receiving dose remains separate."
+  },
+  {
+    "decision_id": "q19",
+    "name": "NaOH",
+    "stage": "Selenite-tungstate stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "NaOH 0.50 g",
+      "scope": "Stock prepared with 1000 mL water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz385",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf",
+        "source_locator": "Captured PDF text lines 49–49; exact subsection",
+        "exact_source_quote": "NaOH 0.50 g",
+        "snapshot_sha256": "d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22",
+        "parsed_text_sha256": "5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc"
+      }
+    ],
+    "interpretation": "The printed stock masses cannot be promoted to main-medium concentrations. Preserve the stock water input without treating it as an independently measured final stock volume."
+  },
+  {
+    "decision_id": "q20",
+    "name": "Na2SeO3 x 5 H2O",
+    "stage": "Selenite-tungstate stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.003",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Na2SeO3 x 5 H2O 3.00 mg",
+      "scope": "Stock prepared with 1000 mL water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz385",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf",
+        "source_locator": "Captured PDF text lines 50–50; exact subsection",
+        "exact_source_quote": "Na2SeO3 x 5 H2O 3.00 mg",
+        "snapshot_sha256": "d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22",
+        "parsed_text_sha256": "5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc"
+      }
+    ],
+    "interpretation": "The printed stock masses cannot be promoted to main-medium concentrations. Preserve the stock water input without treating it as an independently measured final stock volume."
+  },
+  {
+    "decision_id": "q21",
+    "name": "Na2WO4 x 2 H2O",
+    "stage": "Selenite-tungstate stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.004",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Na2WO4 x 2 H2O 4.00 mg",
+      "scope": "Stock prepared with 1000 mL water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz385",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf",
+        "source_locator": "Captured PDF text lines 51–51; exact subsection",
+        "exact_source_quote": "Na2WO4 x 2 H2O 4.00 mg",
+        "snapshot_sha256": "d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22",
+        "parsed_text_sha256": "5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc"
+      }
+    ],
+    "interpretation": "The printed stock masses cannot be promoted to main-medium concentrations. Preserve the stock water input without treating it as an independently measured final stock volume."
+  },
+  {
+    "decision_id": "q22",
+    "name": "Biotin",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Biotin 2.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 74–74; exact subsection",
+        "exact_source_quote": "Biotin 2.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q23",
+    "name": "Folic acid",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Folic acid 2.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 75–75; exact subsection",
+        "exact_source_quote": "Folic acid 2.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q24",
+    "name": "Pyridoxine hydrochloride",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Pyridoxine hydrochloride 10.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 76–76; exact subsection",
+        "exact_source_quote": "Pyridoxine hydrochloride 10.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q25",
+    "name": "Thiamine HCl",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Thiamine HCl 5.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 77–77; exact subsection",
+        "exact_source_quote": "Thiamine HCl 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q26",
+    "name": "Riboflavin",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Riboflavin 5.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 78–78; exact subsection",
+        "exact_source_quote": "Riboflavin 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q27",
+    "name": "Nicotinic acid",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Nicotinic acid 5.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 81–81; exact subsection",
+        "exact_source_quote": "Nicotinic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q28",
+    "name": "Calcium D-(+)-pantothenate",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Calcium D-(+)-pantothenate 5.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 82–82; exact subsection",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q29",
+    "name": "Vitamin B12",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "Vitamin B12 0.10 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 83–83; exact subsection",
+        "exact_source_quote": "Vitamin B12 0.10 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q30",
+    "name": "p-Aminobenzoic acid",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "p-Aminobenzoic acid 5.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 84–84; exact subsection",
+        "exact_source_quote": "p-Aminobenzoic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q31",
+    "name": "(DL)-alpha-Lipoic acid",
+    "stage": "Wolin vitamin stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_row": "(DL)-alpha-Lipoic acid 5.00 mg",
+      "scope": "Ten-vitamin stock with 1000 mL water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 85–85; exact subsection",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "The local mass-concentration numeral belongs to a separate vitamin recipe, not the main medium. Retain original milligrams and the stock boundary; no tenfold parent vitamin mixture is substituted."
+  },
+  {
+    "decision_id": "q32",
+    "name": "Main water",
+    "stage": "Main batch",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1000,
+      "source_unit": "ml",
+      "scope": "Main batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 21–21; exact subsection",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "Represent this distinct solvent input in its proper stage. Stock preparation water is not added in full to the receiving medium; only SL-11 independently specifies final make-up."
+  },
+  {
+    "decision_id": "q33",
+    "name": "SL-11 water",
+    "stage": "Trace stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1000,
+      "source_unit": "ml",
+      "scope": "Trace stock"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "Captured PDF text lines 35–35; exact subsection",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "Represent this distinct solvent input in its proper stage. Stock preparation water is not added in full to the receiving medium; only SL-11 independently specifies final make-up."
+  },
+  {
+    "decision_id": "q34",
+    "name": "Se/W water",
+    "stage": "Se/W stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1000,
+      "source_unit": "ml",
+      "scope": "Se/W stock"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz385",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf",
+        "source_locator": "Captured PDF text lines 52–52; exact subsection",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22",
+        "parsed_text_sha256": "5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc"
+      }
+    ],
+    "interpretation": "Represent this distinct solvent input in its proper stage. Stock preparation water is not added in full to the receiving medium; only SL-11 independently specifies final make-up."
+  },
+  {
+    "decision_id": "q35",
+    "name": "Vitamin water",
+    "stage": "Vitamin stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1000,
+      "source_unit": "ml",
+      "scope": "Vitamin stock"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Captured PDF text lines 86–86; exact subsection",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "interpretation": "Represent this distinct solvent input in its proper stage. Stock preparation water is not added in full to the receiving medium; only SL-11 independently specifies final make-up."
+  },
+  {
+    "decision_id": "q36",
+    "name": "SL-11 dose",
+    "stage": "Main receiving recipe",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1,
+      "source_unit": "ml",
+      "basis": "Exact DSM 1208 batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 17–17; exact subsection",
+        "exact_source_quote": "Trace element solution SL -11 (see medium 722) 1.00 ml",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "Preserve the explicitly named stock and dose. Do not sum whole stock preparations or infer a measured final-medium volume from the liquid inputs."
+  },
+  {
+    "decision_id": "q37",
+    "name": "Se/W dose",
+    "stage": "Main receiving recipe",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1,
+      "source_unit": "ml",
+      "basis": "Exact DSM 1208 batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 18–18; exact subsection",
+        "exact_source_quote": "Selenite-tungstate solution  (see medium 385) 1.00 ml",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "Preserve the explicitly named stock and dose. Do not sum whole stock preparations or infer a measured final-medium volume from the liquid inputs."
+  },
+  {
+    "decision_id": "q38",
+    "name": "Wolin vitamin dose",
+    "stage": "Main receiving recipe",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 10,
+      "source_unit": "ml",
+      "basis": "Exact DSM 1208 batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Captured PDF text lines 19–19; exact subsection",
+        "exact_source_quote": "Vitamin solution (s ee medium 141) 10.00 ml",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "Preserve the explicitly named stock and dose. Do not sum whole stock preparations or infer a measured final-medium volume from the liquid inputs."
+  },
+  {
+    "decision_id": "q39",
+    "name": "Final main pH",
+    "stage": "Complete medium",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 10.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 10.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 10.0
+      }
+    ],
+    "desired": {
+      "value": 10
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Final main preparation sentence",
+        "exact_source_quote": "Adjust pH of final medium to 10.",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "All three current pH values agree with the exact source, but none has attached claim-level supporting evidence."
+  },
+  {
+    "decision_id": "q40",
+    "name": "Main boiling duration",
+    "stage": "Main preparation",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients except ammonium chloride, magnesium chloride, yeast extract, trace elements, vitamins, boil medium for 1 min, then cool to room temperature under N2 gas atmosphere. Dispense under same gas atmosphere in culture vessels and autoclave. After sterilization add ammonium chloride, magnesium chloride, yeast extract, trace elements, vitamins, from sterile, anoxic stock solution prepared under N2. The vitamin solution should be sterilized by filtration. Adjust pH of final medium to 10."
+      }
+    ],
+    "desired": {
+      "value": 1,
+      "source_unit": "min"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "boil medium for 1 min",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The maintained DSM owner already contains this exact numerical preparation instruction but lacks claim-level evidence. Preserve its stock/main scope; do not report it as absent."
+  },
+  {
+    "decision_id": "q41",
+    "name": "Main boiling duration",
+    "stage": "Main preparation",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1,
+      "source_unit": "min"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Main preparation",
+        "exact_source_quote": "boil medium for 1 min",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      }
+    ],
+    "interpretation": "The generated target and KOMODO owner lack this procedure. Transfer only the exact named stage; normality is not silently converted to molarity."
+  },
+  {
+    "decision_id": "q42",
+    "name": "SL-11 initial water",
+    "stage": "SL-11 initial dissolution",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml."
+      }
+    ],
+    "desired": {
+      "value": 800,
+      "source_unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 initial dissolution",
+        "exact_source_quote": "Dissolve EDTA in 800 ml distilled water",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The maintained DSM owner already contains this exact numerical preparation instruction but lacks claim-level evidence. Preserve its stock/main scope; do not report it as absent."
+  },
+  {
+    "decision_id": "q43",
+    "name": "SL-11 initial water",
+    "stage": "SL-11 initial dissolution",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 800,
+      "source_unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 initial dissolution",
+        "exact_source_quote": "Dissolve EDTA in 800 ml distilled water",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The generated target and KOMODO owner lack this procedure. Transfer only the exact named stage; normality is not silently converted to molarity."
+  },
+  {
+    "decision_id": "q44",
+    "name": "SL-11 initial pH",
+    "stage": "SL-11 initial titration",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml."
+      }
+    ],
+    "desired": {
+      "value": 7
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 initial titration",
+        "exact_source_quote": "adjust pH to 7 using 2 N NaOH",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The maintained DSM owner already contains this exact numerical preparation instruction but lacks claim-level evidence. Preserve its stock/main scope; do not report it as absent."
+  },
+  {
+    "decision_id": "q45",
+    "name": "SL-11 initial pH",
+    "stage": "SL-11 initial titration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 7
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 initial titration",
+        "exact_source_quote": "adjust pH to 7 using 2 N NaOH",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The generated target and KOMODO owner lack this procedure. Transfer only the exact named stage; normality is not silently converted to molarity."
+  },
+  {
+    "decision_id": "q46",
+    "name": "SL-11 titrant strength",
+    "stage": "SL-11 initial titration",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml."
+      }
+    ],
+    "desired": {
+      "value": 2,
+      "source_unit": "N"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 initial titration",
+        "exact_source_quote": "adjust pH to 7 using 2 N NaOH",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The maintained DSM owner already contains this exact numerical preparation instruction but lacks claim-level evidence. Preserve its stock/main scope; do not report it as absent."
+  },
+  {
+    "decision_id": "q47",
+    "name": "SL-11 titrant strength",
+    "stage": "SL-11 initial titration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 2,
+      "source_unit": "N"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 initial titration",
+        "exact_source_quote": "adjust pH to 7 using 2 N NaOH",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The generated target and KOMODO owner lack this procedure. Transfer only the exact named stage; normality is not silently converted to molarity."
+  },
+  {
+    "decision_id": "q48",
+    "name": "SL-11 final pH",
+    "stage": "SL-11 final titration",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml."
+      }
+    ],
+    "desired": {
+      "value": 6
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 final titration",
+        "exact_source_quote": "Finally adjust pH to 6.0",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The maintained DSM owner already contains this exact numerical preparation instruction but lacks claim-level evidence. Preserve its stock/main scope; do not report it as absent."
+  },
+  {
+    "decision_id": "q49",
+    "name": "SL-11 final pH",
+    "stage": "SL-11 final titration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 6
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 final titration",
+        "exact_source_quote": "Finally adjust pH to 6.0",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The generated target and KOMODO owner lack this procedure. Transfer only the exact named stage; normality is not silently converted to molarity."
+  },
+  {
+    "decision_id": "q50",
+    "name": "SL-11 final make-up",
+    "stage": "SL-11 final volume",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml."
+      }
+    ],
+    "desired": {
+      "value": 1000,
+      "source_unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 final volume",
+        "exact_source_quote": "and bring volume to 1000 ml.",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The maintained DSM owner already contains this exact numerical preparation instruction but lacks claim-level evidence. Preserve its stock/main scope; do not report it as absent."
+  },
+  {
+    "decision_id": "q51",
+    "name": "SL-11 final make-up",
+    "stage": "SL-11 final volume",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 1000,
+      "source_unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 final volume",
+        "exact_source_quote": "and bring volume to 1000 ml.",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The generated target and KOMODO owner lack this procedure. Transfer only the exact named stage; normality is not silently converted to molarity."
+  },
+  {
+    "decision_id": "q52",
+    "name": "Unquantified handling and titrant doses",
+    "stage": "Main and SL-11 preparation",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Dissolve ingredients except ammonium chloride, magnesium chloride, yeast extract, trace elements, vitamins, boil medium for 1 min, then cool to room temperature under N2 gas atmosphere. Dispense under same gas atmosphere in culture vessels and autoclave. After sterilization add ammonium chloride, magnesium chloride, yeast extract, trace elements, vitamins, from sterile, anoxic stock solution prepared under N2. The vitamin solution should be sterilized by filtration. Adjust pH of final medium to 10."
+          },
+          {
+            "step_number": 2,
+            "action": "ADJUST_PH",
+            "description": "Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml."
+          }
+        ]
+      }
+    ],
+    "desired": {
+      "N2_purity_percent": null,
+      "autoclave_temperature": null,
+      "autoclave_duration": null,
+      "final_medium_measured_volume": null,
+      "SL11_NaOH_dose": null,
+      "final_medium_titrant_identity_or_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1208_network_retry",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf",
+        "source_locator": "Main final handling",
+        "exact_source_quote": "The vitamin solution should be sterilized by filtration. Adjust pH of final medium to 10.",
+        "snapshot_sha256": "9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3",
+        "parsed_text_sha256": "52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e"
+      },
+      {
+        "source_key": "dsmz722",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf",
+        "source_locator": "SL-11 titration",
+        "exact_source_quote": "adjust pH to 7 using 2 N NaOH",
+        "snapshot_sha256": "94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8",
+        "parsed_text_sha256": "47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0"
+      }
+    ],
+    "interpretation": "The complete source gives nitrogen handling and autoclaving without a numerical purity or cycle. It provides no fixed titrant dose or measured final medium volume. No parent 722/385/141 gas mixture, culture pressure, vitamin strength or sterilization default transfers."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:003956.
+
+30 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 30/31 primary and 29/31 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 31: primary 96.77%; secondary 93.55%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:003956.
+
+25 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession, two owners and reciprocal relationship
+
+identity: supported. Targets: CultureMech:003956.
+
+Both stable maintained identities resolve. The exact KOMODO 1208 row links DSM 1208, and reciprocal SOURCE_DUPLICATE paths resolve to the two captured owners. This supports the base-accession relationship, not historical byte equivalence or a separate undocumented variant. The DSM owner retains preparation omitted by the target/KOMODO owner.
+
+### Supplied salts and vitamin forms
+
+grounding: concern. Targets: CultureMech:003956.
+
+Nickel chloride hexahydrate is grounded in all three layers to CHEBI:34887, whose formula Cl2Ni lacks the six waters. The other explicit hydrate structures match their named forms. DSM 141 explicitly supplies calcium D-(+)-pantothenate and CHEBI:31345 encodes that calcium salt and stereochemistry; no generic-to-D mismatch is alleged. Preserve the explicit DL-lipoic qualifier without inferring a different mixture from the generic ontology class.
+
+### Existing DSM preparation versus missing generated/KOMODO procedure
+
+completeness: concern. Targets: CultureMech:003956.
+
+The DSM owner already records the one-minute boil, nitrogen handling, separate post-sterilization additions, vitamin filtration, final pH and SL-11 titration/make-up. Its numerical instructions need evidence, while the target/KOMODO owner need the missing procedure. Stock dose, water and concentration boundaries remain deficient in all three.
+
+### Catalog oxygen attribute and biological claims
+
+scope: supported. Targets: CultureMech:003956.
+
+The catalog header and exact row confirm Is Aerobic=true as catalog metadata only. This is not organism physiology and does not supersede the primary nitrogen/anoxic preparation. The small 0.05 g yeast-extract addition is consistent with the schema definition of SEMI_DEFINED as a predominantly defined medium with a small undefined supplement; no strain-specific growth, incubation temperature or pressure is established by the medium name or excluded parent recipes.
+
+## Findings
+
+### f1: Three stock recipes are flattened into main-medium concentrations
+
+blocker / open / confirmed; issue key: culturemech.003956.flattened-stock-quantities.
+
+All three layers present SL-11, Se/W and vitamin-stock numerals as main G_PER_L ingredients while omitting their 1, 1 and 10 mL receiving doses and solvent stages. Main gram numerals also require their original batch basis; a total final volume is not supplied.
+
+### f2: Nickel hexahydrate is assigned an anhydrous structure
+
+major / open / confirmed; issue key: culturemech.003956.nickel-hydrate.
+
+The source and local ingredient name say NiCl2·6H2O, but both asserted slots use CHEBI:34887 nickel dichloride, formula Cl2Ni. A valid canonical label and preferred MIM row do not resolve the supplied-form mismatch.
+
+### f3: Preparation is missing from two layers and unevidenced in the DSM owner
+
+major / open / confirmed; issue key: culturemech.003956.preparation-evidence-loss.
+
+The target and KOMODO owner omit the source procedure retained in the DSM owner. None attaches direct numerical preparation evidence. The retained SL-11 800 mL initial water, 2 N NaOH, pH 7 then 6, and final 1000 mL must remain stock-specific.
+
+### f4: KOMODO import timestamp is malformed
+
+minor / open / confirmed; issue key: culturemech.003956.historical-timestamp-shape.
+
+The target and KOMODO owner preserve 2026-01-27T01:15:01.fZ and a timezone-naive normalization timestamp. These do not supply reliable event-time ordering; source metadata, current formulation and history must remain distinct.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the three exact stock boundaries and doses, original source units and distinct water inputs in maintained owners, then reconcile generated output without inventing a final-volume normalization.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Resolve the exact hexahydrate identity in maintained owner slots using source-form evidence; do not alter the independently supported D-calcium pantothenate.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach exact evidence to retained DSM instructions and reconcile the other layer omissions; preserve source-unquantified nitrogen purity, cycle and titrant dose.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Append an authorized provenance clarification if needed without silently rewriting prior curation events.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch038/374/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch038/374/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml:1:id: CultureMech:003956<br>./data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml:1:id: CultureMech:003956<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch038/source-preflight-bound/374/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 40 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| main | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf; Exact DSM 1208 main table and procedure | supports | Exact primary main recipe; three named stocks have distinct receiving doses and preparation boundaries. |
+| sl11 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf; SL-11 subsection only | supports | Only this stock and its preparation transfer; unrelated parent main and seven-vitamin solution are excluded. |
+| sew | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf; Selenite-tungstate subsection only | supports | Only this three-solute stock transfers; parent main, SL-10 and tenfold vitamins are excluded. |
+| vitamins | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf; Wolin vitamin subsection only | supports | Ten vitamin species and stock water transfer. D-calcium pantothenate is explicit; parent gases, strains and mineral recipe are excluded. |
+| catalog-header | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw HTML row 3 | supports | Header and exact accession establish catalog metadata and the DSM 1208 link only; Is Aerobic=true is not physiological evidence or an instruction to replace the primary anoxic preparation. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw HTML row 465 | supports | Header and exact accession establish catalog metadata and the DSM 1208 link only; Is Aerobic=true is not physiological evidence or an instruction to replace the primary anoxic preparation. |
+| komodo1208_network_retry-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1208; Preserved exact public retrieval result | context_only | The optional historical KOMODO detail response is unavailable. The current base formulation can be assessed from the exact catalog link and primary sources; historical byte equivalence and a distinct KOMODO variant are not inferred. |
+| mediadive1208_network_retry-attempt | https://mediadive.dsmz.de/rest/medium/1208; Preserved exact public retrieval result | context_only | The current MediaDive 1208 API returned HTTP 503. Exact primary main and stock documents support this assessment. Local historical report snippets remain derivative evidence; their original API raw bytes are not authenticated. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch038/374/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15940 resolves to nicotinic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15956 resolves to biotin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:27470 resolves to folic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32149 resolves to sodium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49976 resolves to zinc dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi64758 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64758; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:64758 resolves to EDTA disodium salt dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145": [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145", "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term", "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:64758": [{"label": "Na2EDTA·2H2O", "match_type": "preferred_term", "identifier": "CHEBI:64758", "preferred_term": "Na2EDTA·2H2O", "ontology_id": "CHEBI:64758", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86249": [{"label": "FeCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86249", "preferred_term": "FeCl2 x 4 H2O", "ontology_id": "CHEBI:86249", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml; data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:07.939864"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:07.939864"}]}, {"input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| historical-reports | /private/tmp/culturemech-review-work-batch038/374/history-inventory.json; Both complete historical owner reports and exact decoded row context | context_only | Historical MediaDive-derived snippets corroborate prior recorded stock topology, but remain local derivative context. Current primary sources independently support the quantities; no attached local amount is marked verified. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, composition-copying resolver and merge/link mechanisms are contextual. Matching local fingerprints and present implementation do not authenticate historical recipe bytes or prove which execution caused an omission. |
+| writer-1 | src/culturemech/enrich/dsmz_resolver.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, composition-copying resolver and merge/link mechanisms are contextual. Matching local fingerprints and present implementation do not authenticate historical recipe bytes or prove which execution caused an omission. |
+| writer-2 | scripts/apply_media_variant_links.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, composition-copying resolver and merge/link mechanisms are contextual. Matching local fingerprints and present implementation do not authenticate historical recipe bytes or prove which execution caused an omission. |
+| writer-3 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer, composition-copying resolver and merge/link mechanisms are contextual. Matching local fingerprints and present implementation do not authenticate historical recipe bytes or prove which execution caused an omission. |
+| composition-contract | src/culturemech/schema/culturemech.yaml; MediumCompositionTypeEnum.SEMI_DEFINED | supports | The current schema defines SEMI_DEFINED as a predominantly defined medium supplemented with a small amount of undefined components, including trace yeast extract. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The optional historical KOMODO detail response is unavailable. The current base formulation can be assessed from the exact catalog link and primary sources; historical byte equivalence and a distinct KOMODO variant are not inferred.
+- The current MediaDive 1208 API returned HTTP 503. Exact primary main and stock documents support this assessment. Local historical report snippets remain derivative evidence; their original API raw bytes are not authenticated.
+- All current target/owner amounts lack attached supporting evidence; no quantity is marked verified. Historical report snippets are derivative-only.
+- Only the named SL-11, Se/W and Wolin vitamin subsections transfer. Parent gases, cultures, SL-10 and tenfold vitamin alternatives are excluded.
+- The exact current base formulation is reviewable despite optional API/detail failures; no historical formula equivalence or unprinted final volume is asserted.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T210741Z-culturemech-003956-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bacillus_alkalidiazotrophicus_medium (CultureMech:003956)'
+started_at: '2026-10-21T20:59:31Z'
+finished_at: '2026-10-21T21:07:41Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSM 1208 formulation distinguishes main batch ingredients from
+  SL-11, selenite-tungstate and Wolin vitamin stocks. All three local layers flatten
+  stock concentrations into the medium and omit water and stock doses; the DSM owner
+  alone preserves main and SL-11 preparation prose. Nickel hexahydrate is grounded
+  to an anhydrous structure, while calcium D-pantothenate is explicitly supported
+  by DSM 141.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+    sha256: f575b584cc2e6b096829dd9faf9ec68897cef14f8d6d96274ff5f1c2e9039535
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    sha256: 1631fc4f445dc6af58564d7fa2dab58cc006899526a4cf5eea97c299ee487686
+    role: context
+  - path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    sha256: 98223099a085376b067338dd132c1f566b463a8b958d1434f7fc344858cf028e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bacillus_alkalidiazotrophicus_medium.yaml.md
+    sha256: c4035b4a45864f0b5f5e9a5c26c4cd4170a0d4a93fb73bc93d14fcc9805f36cd
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml.md
+    sha256: 0222667418500580857394b26e8ba5ef4f6280f5e4286866a7d644cc1a5113bb
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 374; batch 038 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-seven task batches
+    contain 370 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 373 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003956
+targets:
+- target_id: CultureMech:003956
+  path: data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  label: bacillus_alkalidiazotrophicus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch038/374/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch038/374/strict.tsv"
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003956
+- check_id: komodo1208_network_retry-source-access
+  name: 'Exact source content access: komodo1208_network_retry'
+  required: false
+  status: unavailable
+  summary: The optional historical KOMODO detail response is unavailable. The current
+    base formulation can be assessed from the exact catalog link and primary sources;
+    historical byte equivalence and a distinct KOMODO variant are not inferred.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - komodo1208_network_retry-attempt
+- check_id: mediadive1208_network_retry-source-access
+  name: 'Exact source content access: mediadive1208_network_retry'
+  required: false
+  status: unavailable
+  summary: The current MediaDive 1208 API returned HTTP 503. Exact primary main and
+    stock documents support this assessment. Local historical report snippets remain
+    derivative evidence; their original API raw bytes are not authenticated.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - mediadive1208_network_retry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:09.198263Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch038/374/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:11.219292Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch038/374/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:13.931321Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:15.650087Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml:1:id:
+    CultureMech:003956
+
+    ./data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml:1:id:
+    CultureMech:003956
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/source-preflight-bound/374/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: supports
+  summary: 40 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 39bae78223de884705a670af45352d46269b0992a1b4f0a0134e0333ffb59756
+- evidence_id: main
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf
+  locator: Exact DSM 1208 main table and procedure
+  accessed_at: '2026-10-21T20:20:22.979829Z'
+  support: supports
+  summary: Exact primary main recipe; three named stocks have distinct receiving doses
+    and preparation boundaries.
+  quote: 1208. BACILLUS ALKALIDIAZOTROPHICUS MEDIUM
+  snapshot_sha256: 9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3
+- evidence_id: sl11
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf
+  locator: SL-11 subsection only
+  accessed_at: '2026-10-21T15:19:01.126368Z'
+  support: supports
+  summary: Only this stock and its preparation transfer; unrelated parent main and
+    seven-vitamin solution are excluded.
+  quote: Trace element solution SL-11 (from medium 722)
+  snapshot_sha256: 94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8
+- evidence_id: sew
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf
+  locator: Selenite-tungstate subsection only
+  accessed_at: '2026-10-21T13:20:08.153235Z'
+  support: supports
+  summary: Only this three-solute stock transfers; parent main, SL-10 and tenfold
+    vitamins are excluded.
+  quote: Selenite-tungstate solution (from medium 385)
+  snapshot_sha256: d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22
+- evidence_id: vitamins
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+  locator: Wolin vitamin subsection only
+  accessed_at: '2026-10-21T10:13:12.306566Z'
+  support: supports
+  summary: Ten vitamin species and stock water transfer. D-calcium pantothenate is
+    explicit; parent gases, strains and mineral recipe are excluded.
+  quote: Calcium D-(+)-pantothenate 5.00 mg
+  snapshot_sha256: 8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8
+- evidence_id: catalog-header
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw HTML row 3
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Header and exact accession establish catalog metadata and the DSM 1208
+    link only; Is Aerobic=true is not physiological evidence or an instruction to
+    replace the primary anoxic preparation.
+  quote: "<TR>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\" width=\"50\">ID</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Name</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">PH Info</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\"\
+    >Is Complex</TD>\n\t\t\t\t\t<TD valign=\"top\" align=\"left\">Is Aerobic</TD>\n\
+    \t\t\t\t\t<TD valign=\"top\" align=\"left\">Is SubMedium</TD>\n\t\t\t\t\t<TD valign=\"\
+    top\" align=\"left\">Instructions</TD>\n\t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw HTML row 465
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Header and exact accession establish catalog metadata and the DSM 1208
+    link only; Is Aerobic=true is not physiological evidence or an instruction to
+    replace the primary anoxic preparation.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1208'\
+    \ >1208</a></TD>\n\t\t\t\t\t<TD>BACILLUS ALKALIDIAZOTROPHICUS medium</TD>\n\t\t\
+    \t\t\t<TD> 10</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\
+    \t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodo1208_network_retry-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1208
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:20:23.081775Z'
+  support: context_only
+  summary: The optional historical KOMODO detail response is unavailable. The current
+    base formulation can be assessed from the exact catalog link and primary sources;
+    historical byte equivalence and a distinct KOMODO variant are not inferred.
+  snapshot_sha256: d228fa30e7a0215a4e373b0d9ad7ffe7afe0bcf548514f143376a1eb3373591a
+- evidence_id: mediadive1208_network_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1208
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:20:22.984285Z'
+  support: context_only
+  summary: The current MediaDive 1208 API returned HTTP 503. Exact primary main and
+    stock documents support this assessment. Local historical report snippets remain
+    derivative evidence; their original API raw bytes are not authenticated.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/374/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 9daed0ce2be12c01de1404e61058fd03269ba8dc9cb15b6667ef7237e5d8fc89
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32145
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.263004Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi64758
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64758
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T15:16:38.372353Z'
+  support: supports
+  summary: CHEBI:64758 resolves to EDTA disodium salt dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 5432921ff4fea3479e93ce6392a2654e3d5560255beb96022793102e776d9647
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940":
+    [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940",
+    "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type":
+    "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id":
+    "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494":
+    [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label":
+    "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term":
+    "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label":
+    "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term":
+    "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity":
+    "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label":
+    "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term":
+    "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate
+    solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic
+    acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type":
+    "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride",
+    "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier":
+    "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id":
+    "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32145":
+    [{"label": "NaOH", "match_type": "preferred_term", "identifier": "CHEBI:32145",
+    "preferred_term": "NaOH", "ontology_id": "CHEBI:32145", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label":
+    "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label":
+    "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term":
+    "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:49976": [{"label": "ZnCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:49976", "preferred_term": "ZnCl2", "ontology_id": "CHEBI:49976",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label":
+    "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label":
+    "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:64758": [{"label": "Na2EDTA·2H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:64758", "preferred_term": "Na2EDTA·2H2O",
+    "ontology_id": "CHEBI:64758", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86249": [{"label":
+    "FeCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86249",
+    "preferred_term": "FeCl2 x 4 H2O", "ontology_id": "CHEBI:86249", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term":
+    "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2
+    x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id":
+    "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml;
+    data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:07.939864"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:07.939864"}]}, {"input": "data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: historical-reports
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/374/history-inventory.json
+  locator: Both complete historical owner reports and exact decoded row context
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Historical MediaDive-derived snippets corroborate prior recorded stock
+    topology, but remain local derivative context. Current primary sources independently
+    support the quantities; no attached local amount is marked verified.
+  snapshot_sha256: 932b92adc123446fd7b00a82fdd1be2e716e29fc93e565399886bdf6a4eee807
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Current importer, composition-copying resolver and merge/link mechanisms
+    are contextual. Matching local fingerprints and present implementation do not
+    authenticate historical recipe bytes or prove which execution caused an omission.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Current importer, composition-copying resolver and merge/link mechanisms
+    are contextual. Matching local fingerprints and present implementation do not
+    authenticate historical recipe bytes or prove which execution caused an omission.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/apply_media_variant_links.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Current importer, composition-copying resolver and merge/link mechanisms
+    are contextual. Matching local fingerprints and present implementation do not
+    authenticate historical recipe bytes or prove which execution caused an omission.
+  snapshot_sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: context_only
+  summary: Current importer, composition-copying resolver and merge/link mechanisms
+    are contextual. Matching local fingerprints and present implementation do not
+    authenticate historical recipe bytes or prove which execution caused an omission.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: composition-contract
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: MediumCompositionTypeEnum.SEMI_DEFINED
+  accessed_at: '2026-10-21T21:07:40Z'
+  support: supports
+  summary: The current schema defines SEMI_DEFINED as a predominantly defined medium
+    supplemented with a small amount of undefined components, including trace yeast
+    extract.
+  snapshot_sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 52 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"NaHCO3\",\n    \"\
+    stage\": \"DSM 1208 main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 8,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate stock\
+    \ doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 6–7; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"NaHCO\\n3 8.00 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q2\",\n    \"name\": \"Na2CO3\",\n    \"stage\": \"DSM 1208\
+    \ main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"22\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"22\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"22\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 22,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate stock\
+    \ doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 8–8; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Na 2CO3 22.00 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q3\",\n    \"name\": \"NaCl\",\n    \"stage\": \"DSM 1208\
+    \ main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 6,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate stock\
+    \ doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 9–9; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"NaCl 6.00 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q4\",\n    \"name\": \"K2HPO4\",\n    \"stage\": \"DSM 1208\
+    \ main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 1,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate stock\
+    \ doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 10–11; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"K\\n2HPO4 1.00 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q5\",\n    \"name\": \"NH4Cl\",\n    \"stage\": \"DSM 1208\
+    \ main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n      \"\
+    source_unit\": \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate\
+    \ stock doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 12–12; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"NH 4Cl 0.20 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q6\",\n    \"name\": \"MgCl2 x 6 H2O\",\n    \"stage\":\
+    \ \"DSM 1208 main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n      \"\
+    source_unit\": \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate\
+    \ stock doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 13–13; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"MgCl 2 x 6 H2O 0.20 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q7\",\n    \"name\": \"Yeast extract\",\n    \"stage\":\
+    \ \"DSM 1208 main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.05,\n   \
+    \   \"source_unit\": \"g\",\n      \"basis\": \"Main table with 1000 mL water\
+    \ and separate stock doses; measured final volume not supplied\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1208_network_retry\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 14–14; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Yeast extract 0.05 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q8\",\n    \"name\": \"Na2SO4\",\n    \"stage\": \"DSM 1208\
+    \ main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 2.8,\n      \"\
+    source_unit\": \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate\
+    \ stock doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 15–16; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Na\\n2SO4 2.80 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q9\",\n    \"name\": \"Glucose\",\n    \"stage\": \"DSM\
+    \ 1208 main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 2,\n      \"source_unit\"\
+    : \"g\",\n      \"basis\": \"Main table with 1000 mL water and separate stock\
+    \ doses; measured final volume not supplied\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 20–20; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Glucose 2.00 g\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerator matches the printed\
+    \ gram amount, but a flat G_PER_L assertion does not preserve the source batch\
+    \ basis or distinguish post-sterilization components. Preserve the original mass\
+    \ and stage rather than inventing a final-volume conversion.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q10\",\n    \"name\": \"Na2-EDTA x 2 H2O\",\n    \"stage\"\
+    : \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Na2-EDTA x 2 H2O\
+    \ 5.20 g\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock\
+    \ concentration only; receiving dose 1 mL\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n        \"\
+    source_locator\": \"Captured PDF text lines 26–26; exact subsection\",\n     \
+    \   \"exact_source_quote\": \"Na2-EDTA x 2 H2O 5.20 g\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q11\",\n    \"name\": \"FeCl2 x 4 H2O\",\n\
+    \    \"stage\": \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_row\": \"FeCl2 x 4 H2O 1.50\
+    \ g\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock concentration\
+    \ only; receiving dose 1 mL\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 27–27; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"FeCl2 x 4 H2O 1.50 g\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q12\",\n    \"name\": \"ZnCl2\",\n    \"stage\"\
+    : \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"ZnCl2 70.00\
+    \ mg\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock concentration\
+    \ only; receiving dose 1 mL\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 28–28; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"ZnCl2 70.00 mg\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q13\",\n    \"name\": \"MnCl2 x 4 H2O\",\n\
+    \    \"stage\": \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_row\": \"MnCl2 x 4 H2O 100.00\
+    \ mg\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock concentration\
+    \ only; receiving dose 1 mL\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 29–29; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"MnCl2 x 4 H2O 100.00 mg\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q14\",\n    \"name\": \"H3BO3\",\n    \"stage\"\
+    : \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"H3BO3 6.00\
+    \ mg\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock concentration\
+    \ only; receiving dose 1 mL\"\n    },\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 30–30; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"H3BO3 6.00 mg\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q15\",\n    \"name\": \"CoCl2 x 6 H2O\",\n\
+    \    \"stage\": \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"CoCl2 x 6 H2O\
+    \ 190.00 mg\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock\
+    \ concentration only; receiving dose 1 mL\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n        \"\
+    source_locator\": \"Captured PDF text lines 31–31; exact subsection\",\n     \
+    \   \"exact_source_quote\": \"CoCl2 x 6 H2O 190.00 mg\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q16\",\n    \"name\": \"CuCl2 x 2 H2O\",\n\
+    \    \"stage\": \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"CuCl2 x 2 H2O\
+    \ 2.00 mg\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock\
+    \ concentration only; receiving dose 1 mL\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n        \"\
+    source_locator\": \"Captured PDF text lines 32–32; exact subsection\",\n     \
+    \   \"exact_source_quote\": \"CuCl2 x 2 H2O 2.00 mg\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q17\",\n    \"name\": \"NiCl2 x 6 H2O\",\n\
+    \    \"stage\": \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"NiCl2 x 6 H2O\
+    \ 24.00 mg\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"Stock\
+    \ concentration only; receiving dose 1 mL\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n        \"\
+    source_locator\": \"Captured PDF text lines 33–33; exact subsection\",\n     \
+    \   \"exact_source_quote\": \"NiCl2 x 6 H2O 24.00 mg\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q18\",\n    \"name\": \"Na2MoO4 x 2 H2O\"\
+    ,\n    \"stage\": \"SL-11 stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Na2MoO4 x 2\
+    \ H2O 36.00 mg\",\n      \"stock_final_volume_ml\": 1000,\n      \"scope\": \"\
+    Stock concentration only; receiving dose 1 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n        \"\
+    source_locator\": \"Captured PDF text lines 34–34; exact subsection\",\n     \
+    \   \"exact_source_quote\": \"Na2MoO4 x 2 H2O 36.00 mg\",\n        \"snapshot_sha256\"\
+    : \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n    \
+    \    \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"These values are stock quantities,\
+    \ not main-medium concentrations. SL-11 explicitly makes up to 1000 mL, so gram/milligram\
+    \ conversion may describe that stock alone; its 1 mL receiving dose remains separate.\"\
+    \n  },\n  {\n    \"decision_id\": \"q19\",\n    \"name\": \"NaOH\",\n    \"stage\"\
+    : \"Selenite-tungstate stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_row\": \"NaOH 0.50 g\",\n\
+    \      \"scope\": \"Stock prepared with 1000 mL water; receiving dose 1 mL\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz385\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 49–49; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"NaOH 0.50 g\",\n        \"snapshot_sha256\"\
+    : \"d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22\",\n    \
+    \    \"parsed_text_sha256\": \"5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The printed stock masses cannot be\
+    \ promoted to main-medium concentrations. Preserve the stock water input without\
+    \ treating it as an independently measured final stock volume.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q20\",\n    \"name\": \"Na2SeO3 x 5 H2O\",\n    \"stage\"\
+    : \"Selenite-tungstate stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.003\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Na2SeO3 x 5\
+    \ H2O 3.00 mg\",\n      \"scope\": \"Stock prepared with 1000 mL water; receiving\
+    \ dose 1 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz385\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 50–50; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Na2SeO3 x 5 H2O 3.00 mg\",\n        \"snapshot_sha256\"\
+    : \"d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22\",\n    \
+    \    \"parsed_text_sha256\": \"5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The printed stock masses cannot be\
+    \ promoted to main-medium concentrations. Preserve the stock water input without\
+    \ treating it as an independently measured final stock volume.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q21\",\n    \"name\": \"Na2WO4 x 2 H2O\",\n    \"stage\"\
+    : \"Selenite-tungstate stock\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.004\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Na2WO4 x 2\
+    \ H2O 4.00 mg\",\n      \"scope\": \"Stock prepared with 1000 mL water; receiving\
+    \ dose 1 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz385\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 51–51; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Na2WO4 x 2 H2O 4.00 mg\",\n        \"snapshot_sha256\"\
+    : \"d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22\",\n    \
+    \    \"parsed_text_sha256\": \"5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc\"\
+    \n      }\n    ],\n    \"interpretation\": \"The printed stock masses cannot be\
+    \ promoted to main-medium concentrations. Preserve the stock water input without\
+    \ treating it as an independently measured final stock volume.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q22\",\n    \"name\": \"Biotin\",\n    \"stage\": \"Wolin\
+    \ vitamin stock\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Biotin 2.00\
+    \ mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving dose\
+    \ 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 74–74; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Biotin 2.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q23\",\n    \"name\": \"Folic acid\",\n   \
+    \ \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Folic acid\
+    \ 2.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 75–75; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Folic acid 2.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q24\",\n    \"name\": \"Pyridoxine hydrochloride\"\
+    ,\n    \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Pyridoxine hydrochloride\
+    \ 10.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 76–76; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Pyridoxine hydrochloride 10.00 mg\",\n  \
+    \      \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q25\",\n    \"name\": \"Thiamine HCl\",\n \
+    \   \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Thiamine HCl\
+    \ 5.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 77–77; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Thiamine HCl 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q26\",\n    \"name\": \"Riboflavin\",\n   \
+    \ \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Riboflavin\
+    \ 5.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 78–78; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Riboflavin 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q27\",\n    \"name\": \"Nicotinic acid\",\n\
+    \    \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Nicotinic acid\
+    \ 5.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 81–81; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Nicotinic acid 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q28\",\n    \"name\": \"Calcium D-(+)-pantothenate\"\
+    ,\n    \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Calcium D-(+)-pantothenate\
+    \ 5.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 82–82; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Calcium D-(+)-pantothenate 5.00 mg\",\n \
+    \       \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q29\",\n    \"name\": \"Vitamin B12\",\n  \
+    \  \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"Vitamin B12\
+    \ 0.10 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 83–83; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Vitamin B12 0.10 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q30\",\n    \"name\": \"p-Aminobenzoic acid\"\
+    ,\n    \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"p-Aminobenzoic\
+    \ acid 5.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 84–84; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"p-Aminobenzoic acid 5.00 mg\",\n        \"\
+    snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q31\",\n    \"name\": \"(DL)-alpha-Lipoic acid\"\
+    ,\n    \"stage\": \"Wolin vitamin stock\",\n    \"decision\": \"correct\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_row\": \"(DL)-alpha-Lipoic\
+    \ acid 5.00 mg\",\n      \"scope\": \"Ten-vitamin stock with 1000 mL water; receiving\
+    \ dose 10 mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 85–85; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"(DL)-alpha-Lipoic acid 5.00 mg\",\n     \
+    \   \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local mass-concentration numeral\
+    \ belongs to a separate vitamin recipe, not the main medium. Retain original milligrams\
+    \ and the stock boundary; no tenfold parent vitamin mixture is substituted.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q32\",\n    \"name\": \"Main water\",\n   \
+    \ \"stage\": \"Main batch\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 1000,\n      \"source_unit\": \"\
+    ml\",\n      \"scope\": \"Main batch\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\",\n   \
+    \     \"source_locator\": \"Captured PDF text lines 21–21; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"\
+    snapshot_sha256\": \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\"\
+    ,\n        \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent this distinct solvent input\
+    \ in its proper stage. Stock preparation water is not added in full to the receiving\
+    \ medium; only SL-11 independently specifies final make-up.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q33\",\n    \"name\": \"SL-11 water\",\n    \"stage\": \"\
+    Trace stock\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 1000,\n      \"source_unit\": \"\
+    ml\",\n      \"scope\": \"Trace stock\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 35–35; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"\
+    snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent this distinct solvent input\
+    \ in its proper stage. Stock preparation water is not added in full to the receiving\
+    \ medium; only SL-11 independently specifies final make-up.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q34\",\n    \"name\": \"Se/W water\",\n    \"stage\": \"\
+    Se/W stock\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 1000,\n      \"source_unit\": \"\
+    ml\",\n      \"scope\": \"Se/W stock\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz385\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium385.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 52–52; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"\
+    snapshot_sha256\": \"d660a2e55a1d419557c01f865afb7182891ad859743bc686f53b95d3643eec22\"\
+    ,\n        \"parsed_text_sha256\": \"5c7fcf4b4de3909938a697c405b9d6bb87d1bfd914d27d9468a02c95bc4264fc\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent this distinct solvent input\
+    \ in its proper stage. Stock preparation water is not added in full to the receiving\
+    \ medium; only SL-11 independently specifies final make-up.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q35\",\n    \"name\": \"Vitamin water\",\n    \"stage\":\
+    \ \"Vitamin stock\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 1000,\n      \"source_unit\": \"\
+    ml\",\n      \"scope\": \"Vitamin stock\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 86–86; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"\
+    snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"interpretation\": \"Represent this distinct solvent input\
+    \ in its proper stage. Stock preparation water is not added in full to the receiving\
+    \ medium; only SL-11 independently specifies final make-up.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q36\",\n    \"name\": \"SL-11 dose\",\n    \"stage\": \"\
+    Main receiving recipe\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 1,\n      \"source_unit\": \"ml\"\
+    ,\n      \"basis\": \"Exact DSM 1208 batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 17–17; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Trace element solution SL -11 (see medium\
+    \ 722) 1.00 ml\",\n        \"snapshot_sha256\": \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\"\
+    ,\n        \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the explicitly named stock\
+    \ and dose. Do not sum whole stock preparations or infer a measured final-medium\
+    \ volume from the liquid inputs.\"\n  },\n  {\n    \"decision_id\": \"q37\",\n\
+    \    \"name\": \"Se/W dose\",\n    \"stage\": \"Main receiving recipe\",\n   \
+    \ \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 1,\n      \"source_unit\": \"ml\"\
+    ,\n      \"basis\": \"Exact DSM 1208 batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 18–18; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Selenite-tungstate solution  (see medium\
+    \ 385) 1.00 ml\",\n        \"snapshot_sha256\": \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\"\
+    ,\n        \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the explicitly named stock\
+    \ and dose. Do not sum whole stock preparations or infer a measured final-medium\
+    \ volume from the liquid inputs.\"\n  },\n  {\n    \"decision_id\": \"q38\",\n\
+    \    \"name\": \"Wolin vitamin dose\",\n    \"stage\": \"Main receiving recipe\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 10,\n      \"source_unit\": \"ml\"\
+    ,\n      \"basis\": \"Exact DSM 1208 batch\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Captured PDF text lines 19–19; exact subsection\"\
+    ,\n        \"exact_source_quote\": \"Vitamin solution (s ee medium 141) 10.00\
+    \ ml\",\n        \"snapshot_sha256\": \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\"\
+    ,\n        \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the explicitly named stock\
+    \ and dose. Do not sum whole stock preparations or infer a measured final-medium\
+    \ volume from the liquid inputs.\"\n  },\n  {\n    \"decision_id\": \"q39\",\n\
+    \    \"name\": \"Final main pH\",\n    \"stage\": \"Complete medium\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\",\n    \
+    \    \"field_path\": \"ph_value\",\n        \"stored\": 10.0\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 10.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 10.0\n      }\n\
+    \    ],\n    \"desired\": {\n      \"value\": 10\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Final main preparation sentence\",\n        \"\
+    exact_source_quote\": \"Adjust pH of final medium to 10.\",\n        \"snapshot_sha256\"\
+    : \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\",\n    \
+    \    \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"All three current pH values agree\
+    \ with the exact source, but none has attached claim-level supporting evidence.\"\
+    \n  },\n  {\n    \"decision_id\": \"q40\",\n    \"name\": \"Main boiling duration\"\
+    ,\n    \"stage\": \"Main preparation\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients except ammonium chloride, magnesium chloride, yeast extract,\
+    \ trace elements, vitamins, boil medium for 1 min, then cool to room temperature\
+    \ under N2 gas atmosphere. Dispense under same gas atmosphere in culture vessels\
+    \ and autoclave. After sterilization add ammonium chloride, magnesium chloride,\
+    \ yeast extract, trace elements, vitamins, from sterile, anoxic stock solution\
+    \ prepared under N2. The vitamin solution should be sterilized by filtration.\
+    \ Adjust pH of final medium to 10.\"\n      }\n    ],\n    \"desired\": {\n  \
+    \    \"value\": 1,\n      \"source_unit\": \"min\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1208_network_retry\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"boil medium for 1 min\",\n        \"snapshot_sha256\": \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\"\
+    ,\n        \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The maintained DSM owner already\
+    \ contains this exact numerical preparation instruction but lacks claim-level\
+    \ evidence. Preserve its stock/main scope; do not report it as absent.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q41\",\n    \"name\": \"Main boiling duration\",\n\
+    \    \"stage\": \"Main preparation\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 1,\n      \"source_unit\"\
+    : \"min\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1208_network_retry\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation\",\n        \"exact_source_quote\"\
+    : \"boil medium for 1 min\",\n        \"snapshot_sha256\": \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\"\
+    ,\n        \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The generated target and KOMODO owner\
+    \ lack this procedure. Transfer only the exact named stage; normality is not silently\
+    \ converted to molarity.\"\n  },\n  {\n    \"decision_id\": \"q42\",\n    \"name\"\
+    : \"SL-11 initial water\",\n    \"stage\": \"SL-11 initial dissolution\",\n  \
+    \  \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and\
+    \ add ferrous chloride. After ferrous chloride has dissolved add other compounds.\
+    \ Finally adjust pH to 6.0 and bring volume to 1000 ml.\"\n      }\n    ],\n \
+    \   \"desired\": {\n      \"value\": 800,\n      \"source_unit\": \"ml\"\n   \
+    \ },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz722\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 initial dissolution\",\n        \"exact_source_quote\"\
+    : \"Dissolve EDTA in 800 ml distilled water\",\n        \"snapshot_sha256\": \"\
+    94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n        \"\
+    parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The maintained DSM owner already\
+    \ contains this exact numerical preparation instruction but lacks claim-level\
+    \ evidence. Preserve its stock/main scope; do not report it as absent.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q43\",\n    \"name\": \"SL-11 initial water\",\n\
+    \    \"stage\": \"SL-11 initial dissolution\",\n    \"decision\": \"add\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 800,\n      \"source_unit\"\
+    : \"ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 initial dissolution\",\n        \"exact_source_quote\"\
+    : \"Dissolve EDTA in 800 ml distilled water\",\n        \"snapshot_sha256\": \"\
+    94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\",\n        \"\
+    parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The generated target and KOMODO owner\
+    \ lack this procedure. Transfer only the exact named stage; normality is not silently\
+    \ converted to molarity.\"\n  },\n  {\n    \"decision_id\": \"q44\",\n    \"name\"\
+    : \"SL-11 initial pH\",\n    \"stage\": \"SL-11 initial titration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and\
+    \ add ferrous chloride. After ferrous chloride has dissolved add other compounds.\
+    \ Finally adjust pH to 6.0 and bring volume to 1000 ml.\"\n      }\n    ],\n \
+    \   \"desired\": {\n      \"value\": 7\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 initial titration\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7 using 2 N NaOH\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The maintained DSM owner already\
+    \ contains this exact numerical preparation instruction but lacks claim-level\
+    \ evidence. Preserve its stock/main scope; do not report it as absent.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q45\",\n    \"name\": \"SL-11 initial pH\",\n   \
+    \ \"stage\": \"SL-11 initial titration\",\n    \"decision\": \"add\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 7\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n        \"\
+    source_locator\": \"SL-11 initial titration\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7 using 2 N NaOH\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The generated target and KOMODO owner\
+    \ lack this procedure. Transfer only the exact named stage; normality is not silently\
+    \ converted to molarity.\"\n  },\n  {\n    \"decision_id\": \"q46\",\n    \"name\"\
+    : \"SL-11 titrant strength\",\n    \"stage\": \"SL-11 initial titration\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and\
+    \ add ferrous chloride. After ferrous chloride has dissolved add other compounds.\
+    \ Finally adjust pH to 6.0 and bring volume to 1000 ml.\"\n      }\n    ],\n \
+    \   \"desired\": {\n      \"value\": 2,\n      \"source_unit\": \"N\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz722\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 initial titration\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7 using 2 N NaOH\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The maintained DSM owner already\
+    \ contains this exact numerical preparation instruction but lacks claim-level\
+    \ evidence. Preserve its stock/main scope; do not report it as absent.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q47\",\n    \"name\": \"SL-11 titrant strength\"\
+    ,\n    \"stage\": \"SL-11 initial titration\",\n    \"decision\": \"add\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 2,\n      \"source_unit\"\
+    : \"N\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 initial titration\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7 using 2 N NaOH\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The generated target and KOMODO owner\
+    \ lack this procedure. Transfer only the exact named stage; normality is not silently\
+    \ converted to molarity.\"\n  },\n  {\n    \"decision_id\": \"q48\",\n    \"name\"\
+    : \"SL-11 final pH\",\n    \"stage\": \"SL-11 final titration\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and\
+    \ add ferrous chloride. After ferrous chloride has dissolved add other compounds.\
+    \ Finally adjust pH to 6.0 and bring volume to 1000 ml.\"\n      }\n    ],\n \
+    \   \"desired\": {\n      \"value\": 6\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 final titration\",\n        \"exact_source_quote\"\
+    : \"Finally adjust pH to 6.0\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The maintained DSM owner already\
+    \ contains this exact numerical preparation instruction but lacks claim-level\
+    \ evidence. Preserve its stock/main scope; do not report it as absent.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q49\",\n    \"name\": \"SL-11 final pH\",\n    \"\
+    stage\": \"SL-11 final titration\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 6\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n        \"\
+    source_locator\": \"SL-11 final titration\",\n        \"exact_source_quote\":\
+    \ \"Finally adjust pH to 6.0\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The generated target and KOMODO owner\
+    \ lack this procedure. Transfer only the exact named stage; normality is not silently\
+    \ converted to molarity.\"\n  },\n  {\n    \"decision_id\": \"q50\",\n    \"name\"\
+    : \"SL-11 final make-up\",\n    \"stage\": \"SL-11 final volume\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and\
+    \ add ferrous chloride. After ferrous chloride has dissolved add other compounds.\
+    \ Finally adjust pH to 6.0 and bring volume to 1000 ml.\"\n      }\n    ],\n \
+    \   \"desired\": {\n      \"value\": 1000,\n      \"source_unit\": \"ml\"\n  \
+    \  },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz722\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 final volume\",\n        \"exact_source_quote\"\
+    : \"and bring volume to 1000 ml.\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The maintained DSM owner already\
+    \ contains this exact numerical preparation instruction but lacks claim-level\
+    \ evidence. Preserve its stock/main scope; do not report it as absent.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q51\",\n    \"name\": \"SL-11 final make-up\",\n\
+    \    \"stage\": \"SL-11 final volume\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 1000,\n      \"source_unit\"\
+    : \"ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz722\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\"\
+    ,\n        \"source_locator\": \"SL-11 final volume\",\n        \"exact_source_quote\"\
+    : \"and bring volume to 1000 ml.\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The generated target and KOMODO owner\
+    \ lack this procedure. Transfer only the exact named stage; normality is not silently\
+    \ converted to molarity.\"\n  },\n  {\n    \"decision_id\": \"q52\",\n    \"name\"\
+    : \"Unquantified handling and titrant doses\",\n    \"stage\": \"Main and SL-11\
+    \ preparation\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Dissolve ingredients except ammonium chloride,\
+    \ magnesium chloride, yeast extract, trace elements, vitamins, boil medium for\
+    \ 1 min, then cool to room temperature under N2 gas atmosphere. Dispense under\
+    \ same gas atmosphere in culture vessels and autoclave. After sterilization add\
+    \ ammonium chloride, magnesium chloride, yeast extract, trace elements, vitamins,\
+    \ from sterile, anoxic stock solution prepared under N2. The vitamin solution\
+    \ should be sterilized by filtration. Adjust pH of final medium to 10.\"\n   \
+    \       },\n          {\n            \"step_number\": 2,\n            \"action\"\
+    : \"ADJUST_PH\",\n            \"description\": \"Dissolve EDTA in 800 ml distilled\
+    \ water, adjust pH to 7 using 2 N NaOH and add ferrous chloride. After ferrous\
+    \ chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring\
+    \ volume to 1000 ml.\"\n          }\n        ]\n      }\n    ],\n    \"desired\"\
+    : {\n      \"N2_purity_percent\": null,\n      \"autoclave_temperature\": null,\n\
+    \      \"autoclave_duration\": null,\n      \"final_medium_measured_volume\":\
+    \ null,\n      \"SL11_NaOH_dose\": null,\n      \"final_medium_titrant_identity_or_dose\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1208_network_retry\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf\"\
+    ,\n        \"source_locator\": \"Main final handling\",\n        \"exact_source_quote\"\
+    : \"The vitamin solution should be sterilized by filtration. Adjust pH of final\
+    \ medium to 10.\",\n        \"snapshot_sha256\": \"9be1c76f952efb2d646f6317e50f7db129b2f83ca656fbd8ce5615fe312eb3c3\"\
+    ,\n        \"parsed_text_sha256\": \"52d7456f3be1255186b65d65beada4c465b0bd9b079c1eadf029765e06134b9e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz722\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium722.pdf\",\n    \
+    \    \"source_locator\": \"SL-11 titration\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 7 using 2 N NaOH\",\n        \"snapshot_sha256\": \"94de358595d83bc207746f65465493947bb0f4217ad5f2224843c9f6a953a9f8\"\
+    ,\n        \"parsed_text_sha256\": \"47c6fd0fdd08993813d8122b513fa867ab886a6c53f49f588f9ae5b30a2cd4c0\"\
+    \n      }\n    ],\n    \"interpretation\": \"The complete source gives nitrogen\
+    \ handling and autoclaving without a numerical purity or cycle. It provides no\
+    \ fixed titrant dose or measured final medium volume. No parent 722/385/141 gas\
+    \ mixture, culture pressure, vitamin strength or sterilization default transfers.\"\
+    \n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '30 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 30/31
+    primary and 29/31 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131361
+  - chebi131527
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi17234
+  - chebi176843
+  - chebi26710
+  - chebi27470
+  - chebi29377
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi32139
+  - chebi32145
+  - chebi32149
+  - chebi33118
+  - chebi34887
+  - chebi49105
+  - chebi49976
+  - chebi53503
+  - chebi63939
+  - chebi64758
+  - chebi75213
+  - chebi86249
+  - chebi86318
+  - chebi86345
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 31: primary 96.77%;
+    secondary 93.55%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 25 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, two owners and reciprocal relationship
+  outcome: supported
+  summary: Both stable maintained identities resolve. The exact KOMODO 1208 row links
+    DSM 1208, and reciprocal SOURCE_DUPLICATE paths resolve to the two captured owners.
+    This supports the base-accession relationship, not historical byte equivalence
+    or a separate undocumented variant. The DSM owner retains preparation omitted
+    by the target/KOMODO owner.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - catalog
+  - main
+- assessment_id: source-forms
+  area: grounding
+  topic: Supplied salts and vitamin forms
+  outcome: concern
+  summary: Nickel chloride hexahydrate is grounded in all three layers to CHEBI:34887,
+    whose formula Cl2Ni lacks the six waters. The other explicit hydrate structures
+    match their named forms. DSM 141 explicitly supplies calcium D-(+)-pantothenate
+    and CHEBI:31345 encodes that calcium salt and stereochemistry; no generic-to-D
+    mismatch is alleged. Preserve the explicit DL-lipoic qualifier without inferring
+    a different mixture from the generic ontology class.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - sl11
+  - vitamins
+  - chebi34887
+  - chebi31345
+  - chebi16494
+- assessment_id: preparation
+  area: completeness
+  topic: Existing DSM preparation versus missing generated/KOMODO procedure
+  outcome: concern
+  summary: The DSM owner already records the one-minute boil, nitrogen handling, separate
+    post-sterilization additions, vitamin filtration, final pH and SL-11 titration/make-up.
+    Its numerical instructions need evidence, while the target/KOMODO owner need the
+    missing procedure. Stock dose, water and concentration boundaries remain deficient
+    in all three.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - main
+  - sl11
+  - record
+  - owner-0
+  - owner-1
+  - quantity-inventory
+- assessment_id: growth
+  area: scope
+  topic: Catalog oxygen attribute and biological claims
+  outcome: supported
+  summary: The catalog header and exact row confirm Is Aerobic=true as catalog metadata
+    only. This is not organism physiology and does not supersede the primary nitrogen/anoxic
+    preparation. The small 0.05 g yeast-extract addition is consistent with the schema
+    definition of SEMI_DEFINED as a predominantly defined medium with a small undefined
+    supplement; no strain-specific growth, incubation temperature or pressure is established
+    by the medium name or excluded parent recipes.
+  target_ids:
+  - CultureMech:003956
+  evidence_ids:
+  - catalog-header
+  - catalog
+  - main
+  - composition-contract
+findings:
+- finding_id: f1
+  issue_key: culturemech.003956.flattened-stock-quantities
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Three stock recipes are flattened into main-medium concentrations
+  description: All three layers present SL-11, Se/W and vitamin-stock numerals as
+    main G_PER_L ingredients while omitting their 1, 1 and 10 mL receiving doses and
+    solvent stages. Main gram numerals also require their original batch basis; a
+    total final volume is not supplied.
+  target_ids:
+  - CultureMech:003956
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - main
+  - sl11
+  - sew
+  - vitamins
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.003956.nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is assigned an anhydrous structure
+  description: The source and local ingredient name say NiCl2·6H2O, but both asserted
+    slots use CHEBI:34887 nickel dichloride, formula Cl2Ni. A valid canonical label
+    and preferred MIM row do not resolve the supplied-form mismatch.
+  target_ids:
+  - CultureMech:003956
+  field_paths:
+  - ingredients[16].term
+  - ingredients[16].mediaingredientmech_chebi_term
+  evidence_ids:
+  - sl11
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.003956.preparation-evidence-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation is missing from two layers and unevidenced in the DSM owner
+  description: The target and KOMODO owner omit the source procedure retained in the
+    DSM owner. None attaches direct numerical preparation evidence. The retained SL-11
+    800 mL initial water, 2 N NaOH, pH 7 then 6, and final 1000 mL must remain stock-specific.
+  target_ids:
+  - CultureMech:003956
+  field_paths:
+  - preparation_steps
+  - ph_value
+  evidence_ids:
+  - main
+  - sl11
+  - quantity-inventory
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.003956.historical-timestamp-shape
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO import timestamp is malformed
+  description: The target and KOMODO owner preserve 2026-01-27T01:15:01.fZ and a timezone-naive
+    normalization timestamp. These do not supply reliable event-time ordering; source
+    metadata, current formulation and history must remain distinct.
+  target_ids:
+  - CultureMech:003956
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the three exact stock boundaries and doses, original source
+    units and distinct water inputs in maintained owners, then reconcile generated
+    output without inventing a final-volume normalization.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003956
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve the exact hexahydrate identity in maintained owner slots using
+    source-form evidence; do not alter the independently supported D-calcium pantothenate.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003956
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach exact evidence to retained DSM instructions and reconcile the
+    other layer omissions; preserve source-unquantified nitrogen purity, cycle and
+    titrant dose.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003956
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Append an authorized provenance clarification if needed without silently
+    rewriting prior curation events.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003956
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_alkalidiazotrophicus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The optional historical KOMODO detail response is unavailable. The current base
+  formulation can be assessed from the exact catalog link and primary sources; historical
+  byte equivalence and a distinct KOMODO variant are not inferred.
+- The current MediaDive 1208 API returned HTTP 503. Exact primary main and stock documents
+  support this assessment. Local historical report snippets remain derivative evidence;
+  their original API raw bytes are not authenticated.
+- All current target/owner amounts lack attached supporting evidence; no quantity
+  is marked verified. Historical report snippets are derivative-only.
+- Only the named SL-11, Se/W and Wolin vitamin subsections transfer. Parent gases,
+  cultures, SL-10 and tenfold vitamin alternatives are excluded.
+- The exact current base formulation is reviewable despite optional API/detail failures;
+  no historical formula equivalence or unprinted final volume is asserted.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-038
+- generated-medium
+```

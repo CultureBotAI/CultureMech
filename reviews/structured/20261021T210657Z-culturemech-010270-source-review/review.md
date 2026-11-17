@@ -1,0 +1,6659 @@
+# Source and formulation review: bacillus_macyae_medium (CultureMech:010270)
+
+- Review: 20261021T210657Z-culturemech-010270-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T20:59:34Z
+- Finished UTC: 2026-10-21T21:06:57Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact JCM819 currently returns Nothing found, so the main formulation is assessed as attributed TOGO M854 provider data with partial completion. Local water, resazurin, three stock doses and seven vitamin-stock amounts are misrepresented. Transfer only SL-10 from M433/J433 and trace vitamins from M190/J197; preserve their separate stages, authentic eleven vitamin claims, unresolved supplied forms and legacy nitrate correspondence.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 379; batch 038 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-seven task batches contain 370 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 373 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010270 | data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml | generated | bacillus_macyae_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:010270 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:010270 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch038/379/strict.tsv |
+| validate-terms | passed | True | CultureMech:010270 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:010270 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:010270 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact current legacy lookup | passed | True | CultureMech:010270 | Exact 000170 lookup completed negatively in pinned local index and complete current catalog/tree; no historical validity claim. |
+| Required historical legacy correspondence | unavailable | True | CultureMech:010270 | The asserted KNO3 legacy 000170 historical object/correspondence has not been recovered. Current absence is not the failed check; the historical relation remains unresolved. |
+| Exact source content access: jcm819 | unavailable | True | CultureMech:010270 | Exact JCM819 returns HTTP200 with Nothing found. Required main collection-primary formulation correspondence remains unavailable; provider data are explicitly attributed and partial completion is retained. |
+| Exact source content access: mediadiveJ819api | unavailable | False | CultureMech:010270 | Preserved mediadiveJ819api access failed; no formula or endpoint-absence inference follows. |
+| Exact source content access: mediadiveJ819apiRetry | unavailable | False | CultureMech:010270 | Preserved mediadiveJ819apiRetry access failed; no formula or endpoint-absence inference follows. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:010270.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:010270.
+
+19 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 19/21 primary and 14/21 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 21: primary 90.48%; secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:010270.
+
+28 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Provider identity with unavailable exact collection recipe
+
+identity: concern. Targets: CultureMech:010270.
+
+TOGO M854 explicitly identifies JCM819 and the local target/owner agree on that accession. JCM819 currently contains no recipe, so provider attribution cannot be promoted to current primary authentication. No adjacent collection medium is substituted.
+
+### Main medium, SL-10 and two separate vitamin preparations
+
+consistency: concern. Targets: CultureMech:010270.
+
+Three local stock doses incorrectly use mass concentration. Resazurin and own-vitamin quantities lose mg units, and water was collapsed across stages. Restore one main water input and separate stock waters; M190 trace vitamins and M854 own vitamins are distinct additions. All target/owner concentrations plus exact parent concentration exclusions are inventoried.
+
+### Eleven exact vitamin claims,26 excluded parent objects
+
+evidence: supported. Targets: CultureMech:010270.
+
+The 11 M190 vitamin objects match their attached historical source bytes and cited hash. Their notes already preserve batch masses without final g/L; retain those repairs. The other 26 parent evidence objects do not transfer. The excluded sulfide compact snippet NaS2·9H2O 0.5 g is not byte-literal because HTML subscripts introduce spaces, although the cited JCM197 raw hash is recovered exactly. It is neither missing raw nor evidence for this receiving medium.
+
+### Source-specific chemical forms and unresolved pantothenate stereochemistry
+
+grounding: concern. Targets: CultureMech:010270.
+
+Main explicit calcium chloride dihydrate and magnesium chloride hexahydrate match their IDs. Generic calcium pantothenate in M854 and M190 does not establish D-specific CHEBI31345; this is unresolved specificity, not proof of the opposite isomer. Transferred SL-10 cobalt and nickel hexahydrates use anhydrous primary structures CHEBI:35696/CHEBI:34887. Source thiamine hydrochloride dihydrate remains ungrounded rather than assigned a guessed term. Do not transfer unrelated parent-form findings into the main recipe.
+
+### Current absence distinct from historical secondary correspondence
+
+grounding: concern. Targets: CultureMech:010270.
+
+Primary CHEBI63043 resolves to potassium nitrate. The asserted legacy 000170 is absent from current pinned indexes, but its historical correspondence remains unresolved. Preserve that separate required limitation without declaring the ingredient chemically wrong or importing excluded M190 legacy assertions.
+
+### Provider anoxic preparation and complex liquid classification
+
+scope: concern. Targets: CultureMech:010270.
+
+Provider specifies 100% N2, filtered vitamins, sterile anaerobic lactate/nitrate and pH 7.4–7.8. These omitted instructions require source-attributed restoration; no incubation or growth claim follows. Yeast extract supports complex/undefined and no agar is listed. Parent high_metal flags and solution 5342/5343 identities are outside the exact stock transfer; no receiving classification is inferred from them.
+
+### Exact histories and current maintained ownership
+
+provenance: supported. Targets: CultureMech:010270.
+
+Complete current histories and source claims are serialized separately. M854 main/stock quantity errors survive old migration and cleanup events; those events do not certify scientific validity. M190 was already repaired and must not undergo a repeated flattening or quantity re-addition. The single-owner generated target differs in water aggregation and should be regenerated only after normalized-source repair.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:010270.
+
+79 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "2.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore main water 1 L and a separate 1 L for the own vitamin stock; target2 and owner 1 G_PER_L both lose volume/stage meaning. Historical duplicate-collapse notes do not support adding stock water to the medium."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore main water 1 L and a separate 1 L for the own vitamin stock; target2 and owner 1 G_PER_L both lose volume/stage meaning. Historical duplicate-collapse notes do not support adding stock water to the medium."
+      }
+    ],
+    "arithmetic_and_scope": "Restore main water 1 L and a separate 1 L for the own vitamin stock; target2 and owner 1 G_PER_L both lose volume/stage meaning. Historical duplicate-collapse notes do not support adding stock water to the medium."
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "0.8",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.8,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 0.8,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "NaCl",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "1.2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1.2,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 1.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "CaCl2・2H2O",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "0.15",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.15,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "NH4Cl",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "0.3",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.3,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"NH4Cl\",\n          \"volume\": 0.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "K2HPO4",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.2,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "Resazurin",
+    "field_path": "ingredients[6].concentration",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.5,
+    "source_unit": "mg",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore resazurin 0.5 mg per provider batch, equal to 0.0005 g, not 0.5 g. No measured final-volume concentration follows."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore resazurin 0.5 mg per provider batch, equal to 0.0005 g, not 0.5 g. No measured final-volume concentration follows."
+      }
+    ],
+    "arithmetic_and_scope": "Restore resazurin 0.5 mg per provider batch, equal to 0.0005 g, not 0.5 g. No measured final-volume concentration follows."
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "MgCl2・6H2O",
+    "field_path": "ingredients[7].concentration",
+    "local": {
+      "value": "0.4",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.4,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "KCl",
+    "field_path": "ingredients[8].concentration",
+    "local": {
+      "value": "0.3",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.3,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[8]",
+        "exact_source_quote": "\"component_name\": \"KCl\",\n          \"volume\": 0.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "NaHCO3",
+    "field_path": "ingredients[9].concentration",
+    "local": {
+      "value": "0.6",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.6,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"NaHCO3\",\n          \"volume\": 0.6,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.6",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.6",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q11",
+    "ingredient_or_context": "Na2SO4",
+    "field_path": "ingredients[10].concentration",
+    "local": {
+      "value": "0.3",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.3,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[10]",
+        "exact_source_quote": "\"component_name\": \"Na2SO4\",\n          \"volume\": 0.3,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q12",
+    "ingredient_or_context": "KNO3",
+    "field_path": "ingredients[11].concentration",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 0.5,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[11]",
+        "exact_source_quote": "\"component_name\": \"KNO3\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q13",
+    "ingredient_or_context": "Sodium lactate",
+    "field_path": "ingredients[12].concentration",
+    "local": {
+      "value": "1.1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1.1,
+    "source_unit": "g",
+    "source_stage": "M854 provider main batch",
+    "primary_source_evidence_id": "provider",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[12]",
+        "exact_source_quote": "\"component_name\": \"Sodium lactate\",\n          \"volume\": 1.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "1.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "1.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+      }
+    ],
+    "arithmetic_and_scope": "Provider batch mass is numerically retained, but no attached evidence or measured final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage and source attribution pending main primary recovery."
+  },
+  {
+    "quantity_id": "q14",
+    "ingredient_or_context": "Main N2 atmosphere",
+    "field_path": "ingredients[13].concentration",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_amount": 100,
+    "source_unit": "percent gas atmosphere",
+    "source_stage": "M854 provider anaerobic preparation",
+    "primary_source_evidence_id": "provider-preparation",
+    "decision": "not_quantified",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "under 100% N2.",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified",
+        "rationale": "VARIABLE denotes no fixed gas dose. Preserve the separately explicit 100% N2 atmosphere; do not turn gas composition into a liquid/mass concentration or total gas volume."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified",
+        "rationale": "VARIABLE denotes no fixed gas dose. Preserve the separately explicit 100% N2 atmosphere; do not turn gas composition into a liquid/mass concentration or total gas volume."
+      }
+    ],
+    "arithmetic_and_scope": "VARIABLE denotes no fixed gas dose. Preserve the separately explicit 100% N2 atmosphere; do not turn gas composition into a liquid/mass concentration or total gas volume."
+  },
+  {
+    "quantity_id": "q15",
+    "ingredient_or_context": "Trace element solution SL--10 (see Medium [M433])",
+    "field_path": "solutions[0].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "mL",
+    "source_stage": "M854 main-batch addition",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+      }
+    ],
+    "arithmetic_and_scope": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+  },
+  {
+    "quantity_id": "q16",
+    "ingredient_or_context": "Trace vitamins (see Medium [M190])",
+    "field_path": "solutions[1].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 10,
+    "source_unit": "mL",
+    "source_stage": "M854 main-batch addition",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+      }
+    ],
+    "arithmetic_and_scope": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+  },
+  {
+    "quantity_id": "q17",
+    "ingredient_or_context": "Vitamin solution (see below)",
+    "field_path": "solutions[2].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1,
+    "source_unit": "mL",
+    "source_stage": "M854 main-batch addition",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[15]",
+        "exact_source_quote": "\"component_name\": \"Vitamin solution (see below)\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+      }
+    ],
+    "arithmetic_and_scope": "Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate the two vitamin preparations."
+  },
+  {
+    "quantity_id": "q18",
+    "ingredient_or_context": "Biotin",
+    "field_path": "ingredients[14].concentration",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 20,
+    "source_unit": "mg",
+    "source_stage": "M854 own vitamin stock; 1 L water, 1 mL receiving dose",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Biotin\",\n          \"volume\": 20,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      }
+    ],
+    "arithmetic_and_scope": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+  },
+  {
+    "quantity_id": "q19",
+    "ingredient_or_context": "p--Aminobenzoic acid",
+    "field_path": "ingredients[15].concentration",
+    "local": {
+      "value": "80",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 80,
+    "source_unit": "mg",
+    "source_stage": "M854 own vitamin stock; 1 L water, 1 mL receiving dose",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 80,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "80",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "80",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      }
+    ],
+    "arithmetic_and_scope": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+  },
+  {
+    "quantity_id": "q20",
+    "ingredient_or_context": "Calcium pantothenate",
+    "field_path": "ingredients[16].concentration",
+    "local": {
+      "value": "100",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 100,
+    "source_unit": "mg",
+    "source_stage": "M854 own vitamin stock; 1 L water, 1 mL receiving dose",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"Calcium pantothenate\",\n          \"volume\": 100,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      }
+    ],
+    "arithmetic_and_scope": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+  },
+  {
+    "quantity_id": "q21",
+    "ingredient_or_context": "Pyridoxine・HCl",
+    "field_path": "ingredients[17].concentration",
+    "local": {
+      "value": "300",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 300,
+    "source_unit": "mg",
+    "source_stage": "M854 own vitamin stock; 1 L water, 1 mL receiving dose",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 300,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "300",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "300",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      }
+    ],
+    "arithmetic_and_scope": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+  },
+  {
+    "quantity_id": "q22",
+    "ingredient_or_context": "Vitamin B12",
+    "field_path": "ingredients[18].concentration",
+    "local": {
+      "value": "100",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 100,
+    "source_unit": "mg",
+    "source_stage": "M854 own vitamin stock; 1 L water, 1 mL receiving dose",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Vitamin B12\",\n          \"volume\": 100,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      }
+    ],
+    "arithmetic_and_scope": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+  },
+  {
+    "quantity_id": "q23",
+    "ingredient_or_context": "Nicotinic acid",
+    "field_path": "ingredients[19].concentration",
+    "local": {
+      "value": "200",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 200,
+    "source_unit": "mg",
+    "source_stage": "M854 own vitamin stock; 1 L water, 1 mL receiving dose",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Nicotinic acid\",\n          \"volume\": 200,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      }
+    ],
+    "arithmetic_and_scope": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+  },
+  {
+    "quantity_id": "q24",
+    "ingredient_or_context": "Thiamine・HCl・2H2O",
+    "field_path": "ingredients[20].concentration",
+    "local": {
+      "value": "200",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 200,
+    "source_unit": "mg",
+    "source_stage": "M854 own vitamin stock; 1 L water, 1 mL receiving dose",
+    "primary_source_evidence_id": "provider",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Thiamine・HCl・2H2O\",\n          \"volume\": 200,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+      }
+    ],
+    "arithmetic_and_scope": "Move this listed mg amount into the separate own-vitamin stock. The local G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only for mass conversion; any delivered amount is conditional on a nominal 1 L stock basis, and final-medium concentration remains unknown."
+  },
+  {
+    "quantity_id": "q25",
+    "ingredient_or_context": "Own vitamin-stock water",
+    "field_path": "solutions[2].composition",
+    "local": [],
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "M854 own vitamin stock",
+    "primary_source_evidence_id": "provider",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[2].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Restore the separate water input; the empty composition is not evidence that this water belongs to the main batch."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "solutions[2].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Restore the separate water input; the empty composition is not evidence that this water belongs to the main batch."
+      }
+    ],
+    "arithmetic_and_scope": "Restore the separate water input; the empty composition is not evidence that this water belongs to the main batch."
+  },
+  {
+    "quantity_id": "q26",
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "1981.0",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 990,
+    "source_unit": "ml",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 990,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1981.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The parent root water 1981 G_PER_L combines unrelated stages. Restore only the SL-10 990 mL water here; do not transfer other parent waters."
+      }
+    ],
+    "arithmetic_and_scope": "The parent root water 1981 G_PER_L combines unrelated stages. Restore only the SL-10 990 mL water here; do not transfer other parent waters."
+  },
+  {
+    "quantity_id": "q27",
+    "ingredient_or_context": "Na2MoO4・2H2O",
+    "field_path": "ingredients[6].concentration",
+    "local": {
+      "value": "36",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 36,
+    "source_unit": "mg",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 36,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "36",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q28",
+    "ingredient_or_context": "H3BO3",
+    "field_path": "ingredients[7].concentration",
+    "local": {
+      "value": "6",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 6,
+    "source_unit": "mg",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[2]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 6,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q29",
+    "ingredient_or_context": "MnCl2・4H2O",
+    "field_path": "ingredients[8].concentration",
+    "local": {
+      "value": "100",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 100,
+    "source_unit": "mg",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[3]",
+        "exact_source_quote": "\"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 100,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q30",
+    "ingredient_or_context": "CoCl2・6H2O",
+    "field_path": "ingredients[9].concentration",
+    "local": {
+      "value": "190",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 190,
+    "source_unit": "mg",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[4]",
+        "exact_source_quote": "\"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 190,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "190",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q31",
+    "ingredient_or_context": "NiCl2・6H2O",
+    "field_path": "ingredients[10].concentration",
+    "local": {
+      "value": "24",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 24,
+    "source_unit": "mg",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[5]",
+        "exact_source_quote": "\"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 24,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "24",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q32",
+    "ingredient_or_context": "CuCl2・2H2O",
+    "field_path": "ingredients[11].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 2,
+    "source_unit": "mg",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[6]",
+        "exact_source_quote": "\"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q33",
+    "ingredient_or_context": "ZnCl2",
+    "field_path": "ingredients[12].concentration",
+    "local": {
+      "value": "70",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 70,
+    "source_unit": "mg",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnCl2\",\n          \"volume\": 70,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "70",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q34",
+    "ingredient_or_context": "HCl (25%, 7.7 M)",
+    "field_path": "ingredients[13].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 10,
+    "source_unit": "ml",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[8]",
+        "exact_source_quote": "\"component_name\": \"HCl (25%, 7.7 M)\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q35",
+    "ingredient_or_context": "FeCl2・4H2O",
+    "field_path": "ingredients[14].concentration",
+    "local": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 1.5,
+    "source_unit": "g",
+    "source_stage": "M433/J433 SL-10 only",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.components[3].items[9]",
+        "exact_source_quote": "\"component_name\": \"FeCl2・4H2O\",\n          \"volume\": 1.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "Reconstruct this exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately printed 7.7 M; no density or measured final stock volume is inferred."
+  },
+  {
+    "quantity_id": "q36",
+    "ingredient_or_context": "Receiving SL-10 composition",
+    "field_path": "solutions[0].composition",
+    "local": [],
+    "source_amount": null,
+    "source_unit": "ten explicit stock rows",
+    "source_stage": "SL-10 receiving reference",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      },
+      {
+        "source_key": "jcm433",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433",
+        "source_locator": "J433 subsection heading",
+        "exact_source_quote": "Trace element solution SL-10:",
+        "snapshot_sha256": "bd2a35c651cd8b8db154b7025c37fd0bdbcdfc4e7b6e578128ee4500a611333b",
+        "parsed_text_sha256": "8b06616974381d05d99f4f8fd9bf51c70a04f909fb10cce45383c54fd1c351e8"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Populate or resolve the exact named stock from M433 components[3]/J433 SL-10, not the entire Pseudomonas medium. The parent main dose and references 5342/5343 are unrelated to this receiving recipe."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Populate or resolve the exact named stock from M433 components[3]/J433 SL-10, not the entire Pseudomonas medium. The parent main dose and references 5342/5343 are unrelated to this receiving recipe."
+      }
+    ],
+    "arithmetic_and_scope": "Populate or resolve the exact named stock from M433 components[3]/J433 SL-10, not the entire Pseudomonas medium. The parent main dose and references 5342/5343 are unrelated to this receiving recipe."
+  },
+  {
+    "quantity_id": "q37",
+    "ingredient_or_context": "SL-10 HCl percentage",
+    "field_path": "ingredients[13].preferred_term",
+    "local": "HCl (25%, 7.7 M)",
+    "source_amount": 25,
+    "source_unit": "percent, basis unspecified",
+    "source_stage": "SL-10 acid reagent,10 mL dose",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "jcm433",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433",
+        "source_locator": "SL-10 acid row",
+        "exact_source_quote": "HCl (25%, 7.7 M) 10.0 ml",
+        "snapshot_sha256": "bd2a35c651cd8b8db154b7025c37fd0bdbcdfc4e7b6e578128ee4500a611333b",
+        "parsed_text_sha256": "8b06616974381d05d99f4f8fd9bf51c70a04f909fb10cce45383c54fd1c351e8"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[13].preferred_term",
+        "stored": "HCl (25%, 7.7 M)",
+        "decision": "evidence_only",
+        "rationale": "Retain both literal strength declarations independently. Unspecified 25% cannot be promoted to w/v, w/w or v/v, and no density conversion is performed."
+      }
+    ],
+    "arithmetic_and_scope": "Retain both literal strength declarations independently. Unspecified 25% cannot be promoted to w/v, w/w or v/v, and no density conversion is performed."
+  },
+  {
+    "quantity_id": "q38",
+    "ingredient_or_context": "SL-10 HCl molarity",
+    "field_path": "ingredients[13].preferred_term",
+    "local": "HCl (25%, 7.7 M)",
+    "source_amount": 7.7,
+    "source_unit": "M",
+    "source_stage": "SL-10 acid reagent,10 mL dose",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "jcm433",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433",
+        "source_locator": "SL-10 acid row",
+        "exact_source_quote": "HCl (25%, 7.7 M) 10.0 ml",
+        "snapshot_sha256": "bd2a35c651cd8b8db154b7025c37fd0bdbcdfc4e7b6e578128ee4500a611333b",
+        "parsed_text_sha256": "8b06616974381d05d99f4f8fd9bf51c70a04f909fb10cce45383c54fd1c351e8"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[13].preferred_term",
+        "stored": "HCl (25%, 7.7 M)",
+        "decision": "evidence_only",
+        "rationale": "Retain both literal strength declarations independently. Unspecified 25% cannot be promoted to w/v, w/w or v/v, and no density conversion is performed."
+      }
+    ],
+    "arithmetic_and_scope": "Retain both literal strength declarations independently. Unspecified 25% cannot be promoted to w/v, w/w or v/v, and no density conversion is performed."
+  },
+  {
+    "quantity_id": "q39",
+    "ingredient_or_context": "SL-10 Fe-first preparation",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": null,
+    "source_unit": "ordered dissolution",
+    "source_stage": "SL-10 stock",
+    "primary_source_evidence_id": "sl10-primary",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM433original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Dissolve FeCl2・4H2O first in HCl. Then dilute in distilled water and add the remaining salts.",
+        "snapshot_sha256": "b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Dissolve FeCl2 tetrahydrate in HCl first, dilute with water and add remaining salts. Do not import parent A/B autoclaving or parent pH."
+      }
+    ],
+    "arithmetic_and_scope": "Dissolve FeCl2 tetrahydrate in HCl first, dilute with water and add remaining salts. Do not import parent A/B autoclaving or parent pH."
+  },
+  {
+    "quantity_id": "q40",
+    "ingredient_or_context": "Distilled water",
+    "field_path": "solutions[1].composition[0].concentration",
+    "local": {
+      "value": "1",
+      "unit": "L"
+    },
+    "source_amount": 1,
+    "source_unit": "L",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q41",
+    "ingredient_or_context": "Biotin",
+    "field_path": "solutions[1].composition[1].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 2,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[1].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q42",
+    "ingredient_or_context": "p--Aminobenzoic acid",
+    "field_path": "solutions[1].composition[2].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 5,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[2].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q43",
+    "ingredient_or_context": "Thiamine・HCl",
+    "field_path": "solutions[1].composition[3].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 5,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[3].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q44",
+    "ingredient_or_context": "Calcium pantothenate",
+    "field_path": "solutions[1].composition[4].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 5,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[4].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q45",
+    "ingredient_or_context": "Pyridoxine・HCl",
+    "field_path": "solutions[1].composition[5].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 10,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[5].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q46",
+    "ingredient_or_context": "Folic acid",
+    "field_path": "solutions[1].composition[6].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 2,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[6].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q47",
+    "ingredient_or_context": "Vitamin B12",
+    "field_path": "solutions[1].composition[7].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 0.1,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[7].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q48",
+    "ingredient_or_context": "Riboflavin",
+    "field_path": "solutions[1].composition[8].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 5,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[8].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q49",
+    "ingredient_or_context": "Nicotinic acid",
+    "field_path": "solutions[1].composition[9].notes",
+    "local": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 5,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[9].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q50",
+    "ingredient_or_context": "Lipoic acid",
+    "field_path": "solutions[1].composition[10].notes",
+    "local": "Role: Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+    "source_amount": 5,
+    "source_unit": "mg",
+    "source_stage": "M190 trace-vitamin stock only",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "verified",
+    "source_snippets": [
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[10].notes",
+        "stored": "Role: Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+      }
+    ],
+    "arithmetic_and_scope": "Exact attached historical raw/snippet/hash supports this parent stock batch amount. For solutes, unsupported final g/L was already withdrawn and mass is correctly retained in notes; do not reintroduce it or claim the receiving target has attached evidence."
+  },
+  {
+    "quantity_id": "q51",
+    "ingredient_or_context": "Receiving M190 vitamin composition",
+    "field_path": "solutions[1].composition",
+    "local": [],
+    "source_amount": null,
+    "source_unit": "eleven explicit stock rows",
+    "source_stage": "Receiving stock reference",
+    "primary_source_evidence_id": "vitamin-primary",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      },
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "J197 vitamin heading",
+        "exact_source_quote": "Trace vitamins:",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Transfer only the already repaired M190 vitamins, including their own 1 L water and exact batch-mass notes. Receiving dose 10 mL comes from M854, not the parent medium recipe."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Transfer only the already repaired M190 vitamins, including their own 1 L water and exact batch-mass notes. Receiving dose 10 mL comes from M854, not the parent medium recipe."
+      }
+    ],
+    "arithmetic_and_scope": "Transfer only the already repaired M190 vitamins, including their own 1 L water and exact batch-mass notes. Receiving dose 10 mL comes from M854, not the parent medium recipe."
+  },
+  {
+    "quantity_id": "q52",
+    "ingredient_or_context": "Excluded parent field: ingredients[1].concentration",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "39.4",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "39.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q53",
+    "ingredient_or_context": "Excluded parent field: ingredients[2].concentration",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "46.8",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "46.8",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q54",
+    "ingredient_or_context": "Excluded parent field: ingredients[3].concentration",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q55",
+    "ingredient_or_context": "Excluded parent field: ingredients[4].concentration",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q56",
+    "ingredient_or_context": "Excluded parent field: ingredients[5].concentration",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q57",
+    "ingredient_or_context": "Excluded parent field: ingredients[15].concentration",
+    "field_path": "ingredients[15].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q58",
+    "ingredient_or_context": "Excluded parent field: ingredients[16].concentration",
+    "field_path": "ingredients[16].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q59",
+    "ingredient_or_context": "Excluded parent field: ingredients[17].concentration",
+    "field_path": "ingredients[17].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q60",
+    "ingredient_or_context": "Excluded parent field: ingredients[18].concentration",
+    "field_path": "ingredients[18].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q61",
+    "ingredient_or_context": "Excluded parent field: ingredients[19].concentration",
+    "field_path": "ingredients[19].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q62",
+    "ingredient_or_context": "Excluded parent field: ingredients[20].concentration",
+    "field_path": "ingredients[20].concentration",
+    "local": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q63",
+    "ingredient_or_context": "Excluded parent field: ingredients[21].concentration",
+    "field_path": "ingredients[21].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q64",
+    "ingredient_or_context": "Excluded parent field: ingredients[22].concentration",
+    "field_path": "ingredients[22].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q65",
+    "ingredient_or_context": "Excluded parent field: ingredients[23].concentration",
+    "field_path": "ingredients[23].concentration",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q66",
+    "ingredient_or_context": "Excluded parent field: solutions[0].concentration",
+    "field_path": "solutions[0].concentration",
+    "local": {
+      "value": "901",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "901",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q67",
+    "ingredient_or_context": "Excluded parent field: solutions[1].concentration",
+    "field_path": "solutions[1].concentration",
+    "local": {
+      "value": "100",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q68",
+    "ingredient_or_context": "Excluded parent field: solutions[2].concentration",
+    "field_path": "solutions[2].concentration",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q69",
+    "ingredient_or_context": "Excluded parent field: solutions[3].concentration",
+    "field_path": "solutions[3].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q70",
+    "ingredient_or_context": "Excluded parent field: ingredients[0].concentration",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "0.981",
+      "unit": "L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.981",
+          "unit": "L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q71",
+    "ingredient_or_context": "Excluded parent field: ingredients[10].concentration",
+    "field_path": "ingredients[10].concentration",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q72",
+    "ingredient_or_context": "Excluded parent field: ingredients[11].concentration",
+    "field_path": "ingredients[11].concentration",
+    "local": {
+      "value": "variable",
+      "unit": "VARIABLE"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q73",
+    "ingredient_or_context": "Excluded parent field: solutions[0].composition[0].concentration",
+    "field_path": "solutions[0].composition[0].concentration",
+    "local": {
+      "value": "1",
+      "unit": "L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[0].composition[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q74",
+    "ingredient_or_context": "Excluded parent field: solutions[0].concentration",
+    "field_path": "solutions[0].concentration",
+    "local": {
+      "value": "0.009",
+      "unit": "L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "0.009",
+          "unit": "L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q75",
+    "ingredient_or_context": "Excluded parent field: solutions[1].concentration",
+    "field_path": "solutions[1].concentration",
+    "local": {
+      "value": "0.01",
+      "unit": "L"
+    },
+    "source_amount": null,
+    "source_unit": "not transferred",
+    "source_stage": "Outside named SL-10 or vitamin transfer",
+    "primary_source_evidence_id": "provider",
+    "decision": "unsupported",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "L"
+        },
+        "decision": "unsupported",
+        "rationale": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate."
+      }
+    ],
+    "arithmetic_and_scope": "This is an exact current parent field outside the requested receiving-stock scope. It is enumerated to prevent accidental transfer, not judged as a source-supported amount for M854. Other parent stocks, waters, gas placeholders and parent doses must remain separate.",
+    "scope": "excluded_parent_context_only"
+  },
+  {
+    "quantity_id": "q76",
+    "ingredient_or_context": "Provider final pH",
+    "field_path": "ph_range",
+    "local": null,
+    "source_amount": "7.4-7.8",
+    "source_unit": "pH",
+    "source_stage": "M854 provider preparation",
+    "primary_source_evidence_id": "provider-preparation",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Adjust final pH to 7.4 -- 7.8.",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_range",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "ph_range",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+      }
+    ],
+    "arithmetic_and_scope": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+  },
+  {
+    "quantity_id": "q77",
+    "ingredient_or_context": "Provider nitrogen atmosphere",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 100,
+    "source_unit": "percent gas",
+    "source_stage": "M854 provider preparation",
+    "primary_source_evidence_id": "provider-preparation",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Prepare the medium anaerobically under 100% N2.",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+      }
+    ],
+    "arithmetic_and_scope": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+  },
+  {
+    "quantity_id": "q78",
+    "ingredient_or_context": "Vitamin filtration and late additions",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": null,
+    "source_unit": "qualitative",
+    "source_stage": "M854 provider preparation",
+    "primary_source_evidence_id": "provider-preparation",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Add vitamins (filter--sterilized), sodium lactate and nitrate from sterile, anaerobic stock solutions.",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+      }
+    ],
+    "arithmetic_and_scope": "Add only the provider’s explicit condition with attribution. No pore size, autoclave cycle, cultivation temperature or late-stock strength/dose is supplied."
+  },
+  {
+    "quantity_id": "q79",
+    "ingredient_or_context": "Measured receiving-medium final volume",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": null,
+    "source_unit": "not stated",
+    "source_stage": "After all additions",
+    "primary_source_evidence_id": "provider",
+    "decision": "not_quantified",
+    "source_snippets": [
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      },
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Trace element solution SL--10 (see Medium [M433])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      },
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      },
+      {
+        "source_key": "togoM854original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854",
+        "source_locator": "$.components[0].items[15]",
+        "exact_source_quote": "\"component_name\": \"Vitamin solution (see below)\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "not_quantified",
+        "rationale": "The provider lists 1 L water plus 1, 10 and 1 mL stock aliquots, but does not establish measured final volume or volumes of sterile lactate/nitrate stocks. No exact final g/L, molarity or assumed one-litre denominator is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "not_quantified",
+        "rationale": "The provider lists 1 L water plus 1, 10 and 1 mL stock aliquots, but does not establish measured final volume or volumes of sterile lactate/nitrate stocks. No exact final g/L, molarity or assumed one-litre denominator is inferred."
+      }
+    ],
+    "arithmetic_and_scope": "The provider lists 1 L water plus 1, 10 and 1 mL stock aliquots, but does not establish measured final volume or volumes of sterile lactate/nitrate stocks. No exact final g/L, molarity or assumed one-litre denominator is inferred."
+  }
+]
+
+## Findings
+
+### f1: Volume and mg claims are flattened into g/L
+
+major / open / confirmed; issue key: culturemech.010270.unit-and-stock-loss.
+
+Main water, resazurin, three stock doses and seven own-vitamin amounts have wrong units/stages; target water 2 versus owner 1 reflects different duplicate treatment, not support for either mass concentration.
+
+### f2: Named stock references lack usable scoped compositions
+
+major / open / confirmed; issue key: culturemech.010270.dependency-transfer.
+
+M433’s SL-10 is flattened and has incorrect mg/mL interpretation; M190 already has a repaired vitamin stock with exact evidence. The target’s three stock compositions remain empty.
+
+### f3: Provider preparation and final pH are absent
+
+major / open / confirmed; issue key: culturemech.010270.missing-provider-preparation.
+
+The exact provider supplies anoxic atmosphere, filtered vitamins, sterile late additions and pH 7.4–7.8, but local layers omit them. The current collection primary remains unavailable.
+
+### f4: Transferred hydrates and pantothenate specificity need reconciliation
+
+major / open / confirmed; issue key: culturemech.010270.source-form-specificity.
+
+SL-10 source cobalt/nickel hexahydrates are represented by anhydrous parent terms. Generic calcium pantothenate does not establish the asserted D-specific structure.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Repair maintained M854 source-stage quantities and stock representations with exact provider attribution, preserve unknown final volume, and regenerate only after source review. Keep two vitamin additions distinct.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Resolve only SL-10 and trace vitamins at their exact parent locations, retain all 11 authenticated vitamin objects and exclude the 26 other parent claims. Correct M433 stock-only quantities without copying its whole medium.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Restore explicit provider-attributed preparation and seek exact JCM819 primary correspondence. Do not import a parent autoclave cycle, gas mixture or pH.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve exact source names and qualify unresolved specificity; curate the receiving and scoped parent chemical forms only with exact evidence, without guessed hydration or stereochemistry.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch038/379/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch038/379/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml:1:id: CultureMech:010270<br>./data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml:1:id: CultureMech:010270<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch038/source-preflight-bound/379/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 50 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dep433 | data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml; Complete dependency read; only explicitly named stock transferred | context_only | Exact current parent fields/history are retained in private inventories. Parent main recipes and other stocks are not receiving-medium evidence. |
+| dep190 | data/normalized_yaml/bacterial/togo_medium_m190.yaml; Complete dependency read; only explicitly named stock transferred | context_only | Exact current parent fields/history are retained in private inventories. Parent main recipes and other stocks are not receiving-medium evidence. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854; $.meta; both complete component groups and comments[0] | supports | Exact provider identifies JCM819 and supplies the main formula and separate seven-vitamin stock. It does not replace the unavailable current primary. |
+| provider-preparation | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854; $.comments[0].comment | supports | Explicit main nitrogen, filter-sterilized vitamins, sterile anaerobic lactate/nitrate additions and final pH are provider claims, not inferred collection defaults. |
+| sl10-primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433; Only Trace element solution SL-10 subsection and immediate Fe-first dissolution sentence | supports | This exact named stock transfers. Parent A/B, other vitamins, pH 7 and parent autoclaving instructions are excluded. HCl percent basis is unspecified. |
+| vitamin-primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; Only Trace vitamins subsection | supports | Ten vitamin amounts and 1 L water transfer, not parent main/mineral/sulfide recipes or gas, pH and percent instructions. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15940 resolves to nicotinic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15956 resolves to biotin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32149 resolves to sodium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63043 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63043 resolves to potassium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75228 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75228 resolves to sodium lactate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31345": [{"label": "Calcium pantothenate", "match_type": "preferred_term", "identifier": "CHEBI:31345", "preferred_term": "Calcium pantothenate", "ontology_id": "CHEBI:31345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75228": [{"label": "Sodium lactate", "match_type": "preferred_term", "identifier": "CHEBI:75228", "preferred_term": "Sodium lactate", "ontology_id": "CHEBI:75228", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 14, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml", "events": 14, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer preserves named stock boundaries in supported branches and distinguishes units; solution migration/duplicate cleanup and merge history explain provenance leads, not proof that current code produced these historical bytes. Reconstruct source stages in the maintained M854 owner and scoped M433 stock; retain the already repaired M190 vitamin notes/evidence. |
+| writer-1 | scripts/migrate_solutions_from_ingredients.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer preserves named stock boundaries in supported branches and distinguishes units; solution migration/duplicate cleanup and merge history explain provenance leads, not proof that current code produced these historical bytes. Reconstruct source stages in the maintained M854 owner and scoped M433 stock; retain the already repaired M190 vitamin notes/evidence. |
+| writer-2 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer preserves named stock boundaries in supported branches and distinguishes units; solution migration/duplicate cleanup and merge history explain provenance leads, not proof that current code produced these historical bytes. Reconstruct source stages in the maintained M854 owner and scoped M433 stock; retain the already repaired M190 vitamin notes/evidence. |
+| writer-3 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer preserves named stock boundaries in supported branches and distinguishes units; solution migration/duplicate cleanup and merge history explain provenance leads, not proof that current code produced these historical bytes. Reconstruct source stages in the maintained M854 owner and scoped M433 stock; retain the already repaired M190 vitamin notes/evidence. |
+| mim-catalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned current 2953-object catalog, exact 000170 lookup | supports | No exact current 000170 object occurs. This completed negative current lookup does not establish historical identity or invalidate potassium nitrate. |
+| mim-tree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete pinned 7384-entry tree, truncated=false, exact identifier/filename lookup | supports | No exact current 000170 filename occurs in the complete captured tree. Historical correspondence remains separately unresolved. |
+| jcm819-attempt | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=819; Preserved exact public retrieval result | context_only | Exact JCM819 returns HTTP200 with Nothing found. Required main collection-primary formulation correspondence remains unavailable; provider data are explicitly attributed and partial completion is retained. |
+| mediadiveJ819api-attempt | https://mediadive.dsmz.de/rest/medium/J819; Preserved exact public retrieval result | context_only | Preserved mediadiveJ819api access failed; no formula or endpoint-absence inference follows. |
+| mediadiveJ819apiRetry-attempt | https://mediadive.dsmz.de/rest/medium/J819; Preserved exact public retrieval result | context_only | Preserved mediadiveJ819apiRetry access failed; no formula or endpoint-absence inference follows. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch038/379/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch038/379/grounding-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+| history-inventory | /private/tmp/culturemech-review-work-batch038/379/history-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact JCM819 returns HTTP200 with Nothing found. Required main collection-primary formulation correspondence remains unavailable; provider data are explicitly attributed and partial completion is retained.
+- Preserved mediadiveJ819api access failed; no formula or endpoint-absence inference follows.
+- Preserved mediadiveJ819apiRetry access failed; no formula or endpoint-absence inference follows.
+- This scientific assessment preceded formal review validation and saving; their actual outcomes are recorded separately.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T210657Z-culturemech-010270-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bacillus_macyae_medium (CultureMech:010270)'
+started_at: '2026-10-21T20:59:34Z'
+finished_at: '2026-10-21T21:06:57Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Exact JCM819 currently returns Nothing found, so the main formulation is
+  assessed as attributed TOGO M854 provider data with partial completion. Local water,
+  resazurin, three stock doses and seven vitamin-stock amounts are misrepresented.
+  Transfer only SL-10 from M433/J433 and trace vitamins from M190/J197; preserve their
+  separate stages, authentic eleven vitamin claims, unresolved supplied forms and
+  legacy nitrate correspondence.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+    sha256: e54b76de7ce61255d370936e08edc5e93bd722a205e4afd33d60c35f6717c440
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml
+    sha256: 33a016afbc69069242603dff0c39d8ac64e71684294d8279416564e597648f8c
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    sha256: fff27e7152f5023d52f32db0cc81464bce490fc87b849aad52dd60d3ebecc441
+    role: context
+  - path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 379; batch 038 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-seven task batches
+    contain 370 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 373 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010270
+targets:
+- target_id: CultureMech:010270
+  path: data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  label: bacillus_macyae_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch038/379/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch038/379/strict.tsv"
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010270
+- check_id: legacy-current-lookup
+  name: Exact current legacy lookup
+  required: true
+  status: passed
+  summary: Exact 000170 lookup completed negatively in pinned local index and complete
+    current catalog/tree; no historical validity claim.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - mim
+  - mim-catalog
+  - mim-tree
+- check_id: legacy-historical-correspondence
+  name: Required historical legacy correspondence
+  required: true
+  status: unavailable
+  summary: The asserted KNO3 legacy 000170 historical object/correspondence has not
+    been recovered. Current absence is not the failed check; the historical relation
+    remains unresolved.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - mim-catalog
+  - mim-tree
+  - record
+- check_id: jcm819-source-access
+  name: 'Exact source content access: jcm819'
+  required: true
+  status: unavailable
+  summary: Exact JCM819 returns HTTP200 with Nothing found. Required main collection-primary
+    formulation correspondence remains unavailable; provider data are explicitly attributed
+    and partial completion is retained.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - jcm819-attempt
+- check_id: mediadiveJ819api-source-access
+  name: 'Exact source content access: mediadiveJ819api'
+  required: false
+  status: unavailable
+  summary: Preserved mediadiveJ819api access failed; no formula or endpoint-absence
+    inference follows.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - mediadiveJ819api-attempt
+- check_id: mediadiveJ819apiRetry-source-access
+  name: 'Exact source content access: mediadiveJ819apiRetry'
+  required: false
+  status: unavailable
+  summary: Preserved mediadiveJ819apiRetry access failed; no formula or endpoint-absence
+    inference follows.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - mediadiveJ819apiRetry-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:40.259566Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch038/379/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:41.487885Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch038/379/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:42.798764Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:43.761110Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml:1:id:
+    CultureMech:010270
+
+    ./data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml:1:id: CultureMech:010270
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/source-preflight-bound/379/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: supports
+  summary: 50 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 74bd6f43a20b31e9d682f0690e5092c477a61d1430c2bb4ff53f4e525420245a
+- evidence_id: dep433
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml
+  locator: Complete dependency read; only explicitly named stock transferred
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Exact current parent fields/history are retained in private inventories.
+    Parent main recipes and other stocks are not receiving-medium evidence.
+  snapshot_sha256: 33a016afbc69069242603dff0c39d8ac64e71684294d8279416564e597648f8c
+- evidence_id: dep190
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+  locator: Complete dependency read; only explicitly named stock transferred
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Exact current parent fields/history are retained in private inventories.
+    Parent main recipes and other stocks are not receiving-medium evidence.
+  snapshot_sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854
+  locator: $.meta; both complete component groups and comments[0]
+  accessed_at: '2026-10-21T20:15:12.007098Z'
+  support: supports
+  summary: Exact provider identifies JCM819 and supplies the main formula and separate
+    seven-vitamin stock. It does not replace the unavailable current primary.
+  quote: '"original_media_id": "JCM_M819"'
+  snapshot_sha256: b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9
+- evidence_id: provider-preparation
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854
+  locator: $.comments[0].comment
+  accessed_at: '2026-10-21T20:15:12.007098Z'
+  support: supports
+  summary: Explicit main nitrogen, filter-sterilized vitamins, sterile anaerobic lactate/nitrate
+    additions and final pH are provider claims, not inferred collection defaults.
+  quote: Prepare the medium anaerobically under 100% N2. Add vitamins (filter--sterilized),
+    sodium lactate and nitrate from sterile, anaerobic stock solutions. Adjust final
+    pH to 7.4 -- 7.8.
+  snapshot_sha256: b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9
+- evidence_id: sl10-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433
+  locator: Only Trace element solution SL-10 subsection and immediate Fe-first dissolution
+    sentence
+  accessed_at: '2026-10-21T09:49:11.794269Z'
+  support: supports
+  summary: This exact named stock transfers. Parent A/B, other vitamins, pH 7 and
+    parent autoclaving instructions are excluded. HCl percent basis is unspecified.
+  quote: HCl (25%, 7.7 M) 10.0 ml
+  snapshot_sha256: bd2a35c651cd8b8db154b7025c37fd0bdbcdfc4e7b6e578128ee4500a611333b
+- evidence_id: vitamin-primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  locator: Only Trace vitamins subsection
+  accessed_at: '2026-10-20T06:58:05.867253Z'
+  support: supports
+  summary: Ten vitamin amounts and 1 L water transfer, not parent main/mineral/sulfide
+    recipes or gas, pH and percent instructions.
+  quote: 'Trace vitamins: Biotin 2.0 mg'
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi63043
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:40.679699Z'
+  support: supports
+  summary: CHEBI:63043 resolves to potassium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: c324450e6330a169c708c32a7908b6df0276f4dc76da413e473b563928f61c13
+- evidence_id: chebi75228
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T14:35:48.010081Z'
+  support: supports
+  summary: CHEBI:75228 resolves to sodium lactate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 725fbc04444c481cec25519a6f632470427a7020613af93e84e05b5f23d66ccf
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label":
+    "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term":
+    "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term",
+    "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id":
+    "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic
+    acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31345": [{"label":
+    "Calcium pantothenate", "match_type": "preferred_term", "identifier": "CHEBI:31345",
+    "preferred_term": "Calcium pantothenate", "ontology_id": "CHEBI:31345", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id":
+    "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32149":
+    [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75228": [{"label":
+    "Sodium lactate", "match_type": "preferred_term", "identifier": "CHEBI:75228",
+    "preferred_term": "Sodium lactate", "ontology_id": "CHEBI:75228", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type":
+    "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id":
+    "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_MACYAE_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 14, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml", "events":
+    14, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Current importer preserves named stock boundaries in supported branches
+    and distinguishes units; solution migration/duplicate cleanup and merge history
+    explain provenance leads, not proof that current code produced these historical
+    bytes. Reconstruct source stages in the maintained M854 owner and scoped M433
+    stock; retain the already repaired M190 vitamin notes/evidence.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Current importer preserves named stock boundaries in supported branches
+    and distinguishes units; solution migration/duplicate cleanup and merge history
+    explain provenance leads, not proof that current code produced these historical
+    bytes. Reconstruct source stages in the maintained M854 owner and scoped M433
+    stock; retain the already repaired M190 vitamin notes/evidence.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Current importer preserves named stock boundaries in supported branches
+    and distinguishes units; solution migration/duplicate cleanup and merge history
+    explain provenance leads, not proof that current code produced these historical
+    bytes. Reconstruct source stages in the maintained M854 owner and scoped M433
+    stock; retain the already repaired M190 vitamin notes/evidence.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Current importer preserves named stock boundaries in supported branches
+    and distinguishes units; solution migration/duplicate cleanup and merge history
+    explain provenance leads, not proof that current code produced these historical
+    bytes. Reconstruct source stages in the maintained M854 owner and scoped M433
+    stock; retain the already repaired M190 vitamin notes/evidence.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: mim-catalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current 2953-object catalog, exact 000170 lookup
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: No exact current 000170 object occurs. This completed negative current
+    lookup does not establish historical identity or invalidate potassium nitrate.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mim-tree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete pinned 7384-entry tree, truncated=false, exact identifier/filename
+    lookup
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: No exact current 000170 filename occurs in the complete captured tree.
+    Historical correspondence remains separately unresolved.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: jcm819-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=819
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:15:13.481445Z'
+  support: context_only
+  summary: Exact JCM819 returns HTTP200 with Nothing found. Required main collection-primary
+    formulation correspondence remains unavailable; provider data are explicitly attributed
+    and partial completion is retained.
+  snapshot_sha256: 706aca5160ba2f50638747f73aabb66a324a9ec2bf92f4b0a90a1a622d214ad2
+- evidence_id: mediadiveJ819api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J819
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:15:11.483065Z'
+  support: context_only
+  summary: Preserved mediadiveJ819api access failed; no formula or endpoint-absence
+    inference follows.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ819apiRetry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J819
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:23:18.105553Z'
+  support: context_only
+  summary: Preserved mediadiveJ819apiRetry access failed; no formula or endpoint-absence
+    inference follows.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/379/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 950abdae5133516fc8a4f02826619f5210b0ab2d21240ca5e5648c190f5c417c
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/379/grounding-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: 5a19d2c6305c85a446ff7ce13ac746c322605133469d7ad471d1d3a2b8733cb4
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/379/history-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T21:06:56Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: bc8280d183ebfe686d0f0a3558705ba8687d565ac0e3908cd0951c3fb5636725
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '19 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 19/21
+    primary and 14/21 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi15940
+  - chebi15956
+  - chebi176843
+  - chebi17997
+  - chebi26710
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi32139
+  - chebi32149
+  - chebi32588
+  - chebi63043
+  - chebi75228
+  - chebi86158
+  - chebi86345
+  - chebi8806
+  details: 'Instance coverage on a 0–100 percent scale, denominator 21: primary 90.48%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 28 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Provider identity with unavailable exact collection recipe
+  outcome: concern
+  summary: TOGO M854 explicitly identifies JCM819 and the local target/owner agree
+    on that accession. JCM819 currently contains no recipe, so provider attribution
+    cannot be promoted to current primary authentication. No adjacent collection medium
+    is substituted.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - provider
+  - jcm819-attempt
+  - record
+  - owner-0
+- assessment_id: stage-scope
+  area: consistency
+  topic: Main medium, SL-10 and two separate vitamin preparations
+  outcome: concern
+  summary: Three local stock doses incorrectly use mass concentration. Resazurin and
+    own-vitamin quantities lose mg units, and water was collapsed across stages. Restore
+    one main water input and separate stock waters; M190 trace vitamins and M854 own
+    vitamins are distinct additions. All target/owner concentrations plus exact parent
+    concentration exclusions are inventoried.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - quantity-inventory
+  - provider
+  - sl10-primary
+  - vitamin-primary
+  - owner-0
+- assessment_id: historical-transfer
+  area: evidence
+  topic: Eleven exact vitamin claims,26 excluded parent objects
+  outcome: supported
+  summary: The 11 M190 vitamin objects match their attached historical source bytes
+    and cited hash. Their notes already preserve batch masses without final g/L; retain
+    those repairs. The other 26 parent evidence objects do not transfer. The excluded
+    sulfide compact snippet NaS2·9H2O 0.5 g is not byte-literal because HTML subscripts
+    introduce spaces, although the cited JCM197 raw hash is recovered exactly. It
+    is neither missing raw nor evidence for this receiving medium.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - dep190
+  - vitamin-primary
+  - history-inventory
+  - quantity-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Source-specific chemical forms and unresolved pantothenate stereochemistry
+  outcome: concern
+  summary: Main explicit calcium chloride dihydrate and magnesium chloride hexahydrate
+    match their IDs. Generic calcium pantothenate in M854 and M190 does not establish
+    D-specific CHEBI31345; this is unresolved specificity, not proof of the opposite
+    isomer. Transferred SL-10 cobalt and nickel hexahydrates use anhydrous primary
+    structures CHEBI:35696/CHEBI:34887. Source thiamine hydrochloride dihydrate remains
+    ungrounded rather than assigned a guessed term. Do not transfer unrelated parent-form
+    findings into the main recipe.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - provider
+  - sl10-primary
+  - vitamin-primary
+  - chebi31345
+  - grounding-inventory
+- assessment_id: legacy
+  area: grounding
+  topic: Current absence distinct from historical secondary correspondence
+  outcome: concern
+  summary: Primary CHEBI63043 resolves to potassium nitrate. The asserted legacy 000170
+    is absent from current pinned indexes, but its historical correspondence remains
+    unresolved. Preserve that separate required limitation without declaring the ingredient
+    chemically wrong or importing excluded M190 legacy assertions.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - chebi63043
+  - mim
+  - mim-catalog
+  - mim-tree
+  - record
+- assessment_id: preparation-classification
+  area: scope
+  topic: Provider anoxic preparation and complex liquid classification
+  outcome: concern
+  summary: Provider specifies 100% N2, filtered vitamins, sterile anaerobic lactate/nitrate
+    and pH 7.4–7.8. These omitted instructions require source-attributed restoration;
+    no incubation or growth claim follows. Yeast extract supports complex/undefined
+    and no agar is listed. Parent high_metal flags and solution 5342/5343 identities
+    are outside the exact stock transfer; no receiving classification is inferred
+    from them.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - provider-preparation
+  - provider
+  - record
+  - owner-0
+- assessment_id: provenance
+  area: provenance
+  topic: Exact histories and current maintained ownership
+  outcome: supported
+  summary: Complete current histories and source claims are serialized separately.
+    M854 main/stock quantity errors survive old migration and cleanup events; those
+    events do not certify scientific validity. M190 was already repaired and must
+    not undergo a repeated flattening or quantity re-addition. The single-owner generated
+    target differs in water aggregation and should be regenerated only after normalized-source
+    repair.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - history-metadata
+  - history-inventory
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+  - owner-0
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 79 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:010270
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Distilled water\",\n    \"field_path\": \"ingredients[0].concentration\",\n  \
+    \  \"local\": {\n      \"value\": \"2.0\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 1,\n    \"source_unit\": \"L\",\n    \"source_stage\"\
+    : \"M854 provider main batch\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Restore\
+    \ main water 1 L and a separate 1 L for the own vitamin stock; target2 and owner\
+    \ 1 G_PER_L both lose volume/stage meaning. Historical duplicate-collapse notes\
+    \ do not support adding stock water to the medium.\"\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore main water\
+    \ 1 L and a separate 1 L for the own vitamin stock; target2 and owner 1 G_PER_L\
+    \ both lose volume/stage meaning. Historical duplicate-collapse notes do not support\
+    \ adding stock water to the medium.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Restore main water 1 L and a separate 1 L for the own vitamin stock; target2\
+    \ and owner 1 G_PER_L both lose volume/stage meaning. Historical duplicate-collapse\
+    \ notes do not support adding stock water to the medium.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q2\",\n    \"ingredient_or_context\": \"Yeast extract\",\n  \
+    \  \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"0.8\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.8,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M854 provider main\
+    \ batch\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 0.8,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\"\
+    : \"NaCl\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"1.2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1.2,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M854 provider main\
+    \ batch\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 1.2,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"1.2\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\"\
+    : \"CaCl2・2H2O\",\n    \"field_path\": \"ingredients[3].concentration\",\n   \
+    \ \"local\": {\n      \"value\": \"0.15\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 0.15,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"M854 provider main batch\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 0.15,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider\
+    \ batch mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"ingredient_or_context\"\
+    : \"NH4Cl\",\n    \"field_path\": \"ingredients[4].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.3\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.3,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M854 provider main\
+    \ batch\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4Cl\\\",\\n          \\\"volume\\\": 0.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"ingredient_or_context\"\
+    : \"K2HPO4\",\n    \"field_path\": \"ingredients[5].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.2,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M854 provider main\
+    \ batch\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.2,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[5].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"ingredient_or_context\"\
+    : \"Resazurin\",\n    \"field_path\": \"ingredients[6].concentration\",\n    \"\
+    local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n \
+    \   \"source_amount\": 0.5,\n    \"source_unit\": \"mg\",\n    \"source_stage\"\
+    : \"M854 provider main batch\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Restore\
+    \ resazurin 0.5 mg per provider batch, equal to 0.0005 g, not 0.5 g. No measured\
+    \ final-volume concentration follows.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore resazurin\
+    \ 0.5 mg per provider batch, equal to 0.0005 g, not 0.5 g. No measured final-volume\
+    \ concentration follows.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Restore resazurin 0.5 mg per provider batch, equal to 0.0005 g, not 0.5 g. No\
+    \ measured final-volume concentration follows.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q8\",\n    \"ingredient_or_context\": \"MgCl2・6H2O\",\n    \"field_path\"\
+    : \"ingredients[7].concentration\",\n    \"local\": {\n      \"value\": \"0.4\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 0.4,\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"M854 provider main batch\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[7].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"ingredient_or_context\"\
+    : \"KCl\",\n    \"field_path\": \"ingredients[8].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.3\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.3,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M854 provider main\
+    \ batch\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 0.3,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[8].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"ingredient_or_context\"\
+    : \"NaHCO3\",\n    \"field_path\": \"ingredients[9].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.6\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.6,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M854 provider main\
+    \ batch\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaHCO3\\\",\\n          \\\"volume\\\": 0.6,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[9].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"ingredient_or_context\"\
+    : \"Na2SO4\",\n    \"field_path\": \"ingredients[10].concentration\",\n    \"\
+    local\": {\n      \"value\": \"0.3\",\n      \"unit\": \"G_PER_L\"\n    },\n \
+    \   \"source_amount\": 0.3,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"M854 provider main batch\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SO4\\\",\\n          \\\"volume\\\": 0.3,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[10].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"ingredient_or_context\"\
+    : \"KNO3\",\n    \"field_path\": \"ingredients[11].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 0.5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M854 provider main\
+    \ batch\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KNO3\\\",\\n          \\\"volume\\\": 0.5,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[11].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"Provider batch mass is numerically retained, but no attached evidence or measured\
+    \ final-volume basis supports an exact final g/L claim. Retain explicit amount/unit/stage\
+    \ and source attribution pending main primary recovery.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"ingredient_or_context\"\
+    : \"Sodium lactate\",\n    \"field_path\": \"ingredients[12].concentration\",\n\
+    \    \"local\": {\n      \"value\": \"1.1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": 1.1,\n    \"source_unit\": \"g\",\n    \"source_stage\"\
+    : \"M854 provider main batch\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Sodium lactate\\\",\\n          \\\"volume\\\"\
+    : 1.1,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"Provider batch\
+    \ mass is numerically retained, but no attached evidence or measured final-volume\
+    \ basis supports an exact final g/L claim. Retain explicit amount/unit/stage and\
+    \ source attribution pending main primary recovery.\"\n      }\n    ],\n    \"\
+    arithmetic_and_scope\": \"Provider batch mass is numerically retained, but no\
+    \ attached evidence or measured final-volume basis supports an exact final g/L\
+    \ claim. Retain explicit amount/unit/stage and source attribution pending main\
+    \ primary recovery.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"ingredient_or_context\"\
+    : \"Main N2 atmosphere\",\n    \"field_path\": \"ingredients[13].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\
+    \n    },\n    \"source_amount\": 100,\n    \"source_unit\": \"percent gas atmosphere\"\
+    ,\n    \"source_stage\": \"M854 provider anaerobic preparation\",\n    \"primary_source_evidence_id\"\
+    : \"provider-preparation\",\n    \"decision\": \"not_quantified\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"under 100% N2.\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[13].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\
+    \n        },\n        \"decision\": \"not_quantified\",\n        \"rationale\"\
+    : \"VARIABLE denotes no fixed gas dose. Preserve the separately explicit 100%\
+    \ N2 atmosphere; do not turn gas composition into a liquid/mass concentration\
+    \ or total gas volume.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\",\n        \"rationale\": \"\
+    VARIABLE denotes no fixed gas dose. Preserve the separately explicit 100% N2 atmosphere;\
+    \ do not turn gas composition into a liquid/mass concentration or total gas volume.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"VARIABLE denotes no fixed gas\
+    \ dose. Preserve the separately explicit 100% N2 atmosphere; do not turn gas composition\
+    \ into a liquid/mass concentration or total gas volume.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q15\",\n    \"ingredient_or_context\": \"Trace element solution SL--10 (see\
+    \ Medium [M433])\",\n    \"field_path\": \"solutions[0].concentration\",\n   \
+    \ \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 1,\n    \"source_unit\": \"mL\",\n    \"source_stage\"\
+    : \"M854 main-batch addition\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].concentration\",\n        \"\
+    stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      },\n        \"decision\": \"correct\",\n        \"rationale\": \"Restore\
+    \ the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace\
+    \ vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not\
+    \ deduplicate the two vitamin preparations.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[0].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore the exact\
+    \ stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins\
+    \ 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate\
+    \ the two vitamin preparations.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL,\
+    \ M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions;\
+    \ do not deduplicate the two vitamin preparations.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q16\",\n    \"ingredient_or_context\": \"Trace vitamins (see Medium [M190])\"\
+    ,\n    \"field_path\": \"solutions[1].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 10,\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"M854 main-batch addition\"\
+    ,\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[1].concentration\",\n        \"\
+    stored\": {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n \
+    \       },\n        \"decision\": \"correct\",\n        \"rationale\": \"Restore\
+    \ the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace\
+    \ vitamins 10 mL and own vitamin stock 1 mL as three distinct additions; do not\
+    \ deduplicate the two vitamin preparations.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[1].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore the exact\
+    \ stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins\
+    \ 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate\
+    \ the two vitamin preparations.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL,\
+    \ M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions;\
+    \ do not deduplicate the two vitamin preparations.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q17\",\n    \"ingredient_or_context\": \"Vitamin solution (see below)\",\n\
+    \    \"field_path\": \"solutions[2].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"M854 main-batch addition\"\
+    ,\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[15]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin solution (see below)\\\",\\n         \
+    \ \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore the exact\
+    \ stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins\
+    \ 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate\
+    \ the two vitamin preparations.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Restore the exact\
+    \ stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL, M190 trace vitamins\
+    \ 10 mL and own vitamin stock 1 mL as three distinct additions; do not deduplicate\
+    \ the two vitamin preparations.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Restore the exact stock aliquot in mL rather than G_PER_L. Keep SL-10 1 mL,\
+    \ M190 trace vitamins 10 mL and own vitamin stock 1 mL as three distinct additions;\
+    \ do not deduplicate the two vitamin preparations.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q18\",\n    \"ingredient_or_context\": \"Biotin\",\n    \"field_path\": \"\
+    ingredients[14].concentration\",\n    \"local\": {\n      \"value\": \"20\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": 20,\n    \"source_unit\"\
+    : \"mg\",\n    \"source_stage\": \"M854 own vitamin stock; 1 L water, 1 mL receiving\
+    \ dose\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\": 20,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[14].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Move\
+    \ this listed mg amount into the separate own-vitamin stock. The local G_PER_L\
+    \ number loses both the mg unit and stock stage. Divide mg by 1000 only for mass\
+    \ conversion; any delivered amount is conditional on a nominal 1 L stock basis,\
+    \ and final-medium concentration remains unknown.\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Move this listed mg amount into the separate own-vitamin stock. The local\
+    \ G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only\
+    \ for mass conversion; any delivered amount is conditional on a nominal 1 L stock\
+    \ basis, and final-medium concentration remains unknown.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q19\",\n    \"ingredient_or_context\": \"p--Aminobenzoic acid\"\
+    ,\n    \"field_path\": \"ingredients[15].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"80\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 80,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M854 own vitamin\
+    \ stock; 1 L water, 1 mL receiving dose\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"p--Aminobenzoic acid\\\",\\n          \\\"volume\\\
+    \": 80,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\":\
+    \ \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"80\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"80\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Move this listed mg amount into the separate own-vitamin stock. The local\
+    \ G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only\
+    \ for mass conversion; any delivered amount is conditional on a nominal 1 L stock\
+    \ basis, and final-medium concentration remains unknown.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q20\",\n    \"ingredient_or_context\": \"Calcium pantothenate\"\
+    ,\n    \"field_path\": \"ingredients[16].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"100\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 100,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M854 own vitamin\
+    \ stock; 1 L water, 1 mL receiving dose\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Calcium pantothenate\\\",\\n          \\\"volume\\\
+    \": 100,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\"\
+    : \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Move this listed mg amount into the separate own-vitamin stock. The local\
+    \ G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only\
+    \ for mass conversion; any delivered amount is conditional on a nominal 1 L stock\
+    \ basis, and final-medium concentration remains unknown.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q21\",\n    \"ingredient_or_context\": \"Pyridoxine・HCl\",\n\
+    \    \"field_path\": \"ingredients[17].concentration\",\n    \"local\": {\n  \
+    \    \"value\": \"300\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 300,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M854 own vitamin\
+    \ stock; 1 L water, 1 mL receiving dose\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Pyridoxine・HCl\\\",\\n          \\\"volume\\\"\
+    : 300,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"300\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"300\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Move this listed mg amount into the separate own-vitamin stock. The local\
+    \ G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only\
+    \ for mass conversion; any delivered amount is conditional on a nominal 1 L stock\
+    \ basis, and final-medium concentration remains unknown.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q22\",\n    \"ingredient_or_context\": \"Vitamin B12\",\n   \
+    \ \"field_path\": \"ingredients[18].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"100\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 100,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M854 own vitamin\
+    \ stock; 1 L water, 1 mL receiving dose\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"volume\\\": 100,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[18].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"Move\
+    \ this listed mg amount into the separate own-vitamin stock. The local G_PER_L\
+    \ number loses both the mg unit and stock stage. Divide mg by 1000 only for mass\
+    \ conversion; any delivered amount is conditional on a nominal 1 L stock basis,\
+    \ and final-medium concentration remains unknown.\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Move this listed mg amount into the separate own-vitamin stock. The local\
+    \ G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only\
+    \ for mass conversion; any delivered amount is conditional on a nominal 1 L stock\
+    \ basis, and final-medium concentration remains unknown.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q23\",\n    \"ingredient_or_context\": \"Nicotinic acid\",\n\
+    \    \"field_path\": \"ingredients[19].concentration\",\n    \"local\": {\n  \
+    \    \"value\": \"200\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 200,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M854 own vitamin\
+    \ stock; 1 L water, 1 mL receiving dose\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nicotinic acid\\\",\\n          \\\"volume\\\"\
+    : 200,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Move this listed mg amount into the separate own-vitamin stock. The local\
+    \ G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only\
+    \ for mass conversion; any delivered amount is conditional on a nominal 1 L stock\
+    \ basis, and final-medium concentration remains unknown.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q24\",\n    \"ingredient_or_context\": \"Thiamine・HCl・2H2O\"\
+    ,\n    \"field_path\": \"ingredients[20].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"200\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 200,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M854 own vitamin\
+    \ stock; 1 L water, 1 mL receiving dose\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Thiamine・HCl・2H2O\\\",\\n          \\\"volume\\\
+    \": 200,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\"\
+    : \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Move this listed\
+    \ mg amount into the separate own-vitamin stock. The local G_PER_L number loses\
+    \ both the mg unit and stock stage. Divide mg by 1000 only for mass conversion;\
+    \ any delivered amount is conditional on a nominal 1 L stock basis, and final-medium\
+    \ concentration remains unknown.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Move this listed mg amount into the separate own-vitamin stock. The local\
+    \ G_PER_L number loses both the mg unit and stock stage. Divide mg by 1000 only\
+    \ for mass conversion; any delivered amount is conditional on a nominal 1 L stock\
+    \ basis, and final-medium concentration remains unknown.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q25\",\n    \"ingredient_or_context\": \"Own vitamin-stock water\"\
+    ,\n    \"field_path\": \"solutions[2].composition\",\n    \"local\": [],\n   \
+    \ \"source_amount\": 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"\
+    M854 own vitamin stock\",\n    \"primary_source_evidence_id\": \"provider\",\n\
+    \    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[2].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\",\n        \"rationale\": \"Restore the separate\
+    \ water input; the empty composition is not evidence that this water belongs to\
+    \ the main batch.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\",\n        \"rationale\": \"Restore the separate\
+    \ water input; the empty composition is not evidence that this water belongs to\
+    \ the main batch.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Restore\
+    \ the separate water input; the empty composition is not evidence that this water\
+    \ belongs to the main batch.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n   \
+    \ \"ingredient_or_context\": \"Distilled water\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1981.0\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_amount\": 990,\n    \"source_unit\": \"ml\",\n    \"source_stage\"\
+    : \"M433/J433 SL-10 only\",\n    \"primary_source_evidence_id\": \"sl10-primary\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM433original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 990,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1981.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\",\n        \"rationale\": \"The parent\
+    \ root water 1981 G_PER_L combines unrelated stages. Restore only the SL-10 990\
+    \ mL water here; do not transfer other parent waters.\"\n      }\n    ],\n   \
+    \ \"arithmetic_and_scope\": \"The parent root water 1981 G_PER_L combines unrelated\
+    \ stages. Restore only the SL-10 990 mL water here; do not transfer other parent\
+    \ waters.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"ingredient_or_context\"\
+    : \"Na2MoO4・2H2O\",\n    \"field_path\": \"ingredients[6].concentration\",\n \
+    \   \"local\": {\n      \"value\": \"36\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_amount\": 36,\n    \"source_unit\": \"mg\",\n    \"source_stage\"\
+    : \"M433/J433 SL-10 only\",\n    \"primary_source_evidence_id\": \"sl10-primary\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM433original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 36,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"36\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q28\",\n    \"ingredient_or_context\": \"H3BO3\",\n  \
+    \  \"field_path\": \"ingredients[7].concentration\",\n    \"local\": {\n     \
+    \ \"value\": \"6\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 6,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M433/J433 SL-10 only\"\
+    ,\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\": \"\
+    correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM433original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 6,\\n \
+    \         \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q29\",\n    \"ingredient_or_context\": \"MnCl2・4H2O\"\
+    ,\n    \"field_path\": \"ingredients[8].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"100\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 100,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M433/J433 SL-10\
+    \ only\",\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM433original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2・4H2O\\\",\\n          \\\"volume\\\": 100,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q30\",\n    \"ingredient_or_context\": \"CoCl2・6H2O\"\
+    ,\n    \"field_path\": \"ingredients[9].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"190\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 190,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M433/J433 SL-10\
+    \ only\",\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM433original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2・6H2O\\\",\\n          \\\"volume\\\": 190,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"190\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q31\",\n    \"ingredient_or_context\": \"NiCl2・6H2O\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"24\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 24,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M433/J433 SL-10 only\"\
+    ,\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\": \"\
+    correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM433original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2・6H2O\\\",\\n          \\\"volume\\\": 24,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"24\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q32\",\n    \"ingredient_or_context\": \"CuCl2・2H2O\"\
+    ,\n    \"field_path\": \"ingredients[11].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 2,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M433/J433 SL-10 only\"\
+    ,\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\": \"\
+    correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM433original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2・2H2O\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q33\",\n    \"ingredient_or_context\": \"ZnCl2\",\n  \
+    \  \"field_path\": \"ingredients[12].concentration\",\n    \"local\": {\n    \
+    \  \"value\": \"70\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 70,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M433/J433 SL-10 only\"\
+    ,\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\": \"\
+    correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM433original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnCl2\\\",\\n          \\\"volume\\\": 70,\\n\
+    \          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"70\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q34\",\n    \"ingredient_or_context\": \"HCl (25%, 7.7\
+    \ M)\",\n    \"field_path\": \"ingredients[13].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 10,\n    \"source_unit\": \"ml\",\n    \"source_stage\": \"M433/J433 SL-10 only\"\
+    ,\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\": \"\
+    correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM433original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"HCl (25%, 7.7 M)\\\",\\n          \\\"volume\\\
+    \": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\":\
+    \ \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q35\",\n    \"ingredient_or_context\": \"FeCl2・4H2O\"\
+    ,\n    \"field_path\": \"ingredients[14].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"1.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : 1.5,\n    \"source_unit\": \"g\",\n    \"source_stage\": \"M433/J433 SL-10 only\"\
+    ,\n    \"primary_source_evidence_id\": \"sl10-primary\",\n    \"decision\": \"\
+    correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM433original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.components[3].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl2・4H2O\\\",\\n          \\\"volume\\\": 1.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"Reconstruct this\
+    \ exact SL-10 stock amount, preserving mg/g/mL and hydrate. Current parent flattened\
+    \ G_PER_L is not a receiving-medium rate. HCl 25% has unspecified basis and separately\
+    \ printed 7.7 M; no density or measured final stock volume is inferred.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Reconstruct this exact SL-10 stock\
+    \ amount, preserving mg/g/mL and hydrate. Current parent flattened G_PER_L is\
+    \ not a receiving-medium rate. HCl 25% has unspecified basis and separately printed\
+    \ 7.7 M; no density or measured final stock volume is inferred.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q36\",\n    \"ingredient_or_context\": \"Receiving SL-10\
+    \ composition\",\n    \"field_path\": \"solutions[0].composition\",\n    \"local\"\
+    : [],\n    \"source_amount\": null,\n    \"source_unit\": \"ten explicit stock\
+    \ rows\",\n    \"source_stage\": \"SL-10 receiving reference\",\n    \"primary_source_evidence_id\"\
+    : \"sl10-primary\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      },\n      {\n        \"source_key\": \"jcm433\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433\",\n        \"source_locator\"\
+    : \"J433 subsection heading\",\n        \"exact_source_quote\": \"Trace element\
+    \ solution SL-10:\",\n        \"snapshot_sha256\": \"bd2a35c651cd8b8db154b7025c37fd0bdbcdfc4e7b6e578128ee4500a611333b\"\
+    ,\n        \"parsed_text_sha256\": \"8b06616974381d05d99f4f8fd9bf51c70a04f909fb10cce45383c54fd1c351e8\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\",\n        \"rationale\": \"Populate or resolve\
+    \ the exact named stock from M433 components[3]/J433 SL-10, not the entire Pseudomonas\
+    \ medium. The parent main dose and references 5342/5343 are unrelated to this\
+    \ receiving recipe.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\",\n        \"rationale\": \"Populate or resolve\
+    \ the exact named stock from M433 components[3]/J433 SL-10, not the entire Pseudomonas\
+    \ medium. The parent main dose and references 5342/5343 are unrelated to this\
+    \ receiving recipe.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Populate\
+    \ or resolve the exact named stock from M433 components[3]/J433 SL-10, not the\
+    \ entire Pseudomonas medium. The parent main dose and references 5342/5343 are\
+    \ unrelated to this receiving recipe.\"\n  },\n  {\n    \"quantity_id\": \"q37\"\
+    ,\n    \"ingredient_or_context\": \"SL-10 HCl percentage\",\n    \"field_path\"\
+    : \"ingredients[13].preferred_term\",\n    \"local\": \"HCl (25%, 7.7 M)\",\n\
+    \    \"source_amount\": 25,\n    \"source_unit\": \"percent, basis unspecified\"\
+    ,\n    \"source_stage\": \"SL-10 acid reagent,10 mL dose\",\n    \"primary_source_evidence_id\"\
+    : \"sl10-primary\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm433\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433\",\n        \"source_locator\"\
+    : \"SL-10 acid row\",\n        \"exact_source_quote\": \"HCl (25%, 7.7 M) 10.0\
+    \ ml\",\n        \"snapshot_sha256\": \"bd2a35c651cd8b8db154b7025c37fd0bdbcdfc4e7b6e578128ee4500a611333b\"\
+    ,\n        \"parsed_text_sha256\": \"8b06616974381d05d99f4f8fd9bf51c70a04f909fb10cce45383c54fd1c351e8\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].preferred_term\",\n        \"stored\"\
+    : \"HCl (25%, 7.7 M)\",\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"Retain both literal strength declarations independently. Unspecified\
+    \ 25% cannot be promoted to w/v, w/w or v/v, and no density conversion is performed.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Retain both literal strength\
+    \ declarations independently. Unspecified 25% cannot be promoted to w/v, w/w or\
+    \ v/v, and no density conversion is performed.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q38\",\n    \"ingredient_or_context\": \"SL-10 HCl molarity\",\n    \"field_path\"\
+    : \"ingredients[13].preferred_term\",\n    \"local\": \"HCl (25%, 7.7 M)\",\n\
+    \    \"source_amount\": 7.7,\n    \"source_unit\": \"M\",\n    \"source_stage\"\
+    : \"SL-10 acid reagent,10 mL dose\",\n    \"primary_source_evidence_id\": \"sl10-primary\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm433\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433\"\
+    ,\n        \"source_locator\": \"SL-10 acid row\",\n        \"exact_source_quote\"\
+    : \"HCl (25%, 7.7 M) 10.0 ml\",\n        \"snapshot_sha256\": \"bd2a35c651cd8b8db154b7025c37fd0bdbcdfc4e7b6e578128ee4500a611333b\"\
+    ,\n        \"parsed_text_sha256\": \"8b06616974381d05d99f4f8fd9bf51c70a04f909fb10cce45383c54fd1c351e8\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].preferred_term\",\n        \"stored\"\
+    : \"HCl (25%, 7.7 M)\",\n        \"decision\": \"evidence_only\",\n        \"\
+    rationale\": \"Retain both literal strength declarations independently. Unspecified\
+    \ 25% cannot be promoted to w/v, w/w or v/v, and no density conversion is performed.\"\
+    \n      }\n    ],\n    \"arithmetic_and_scope\": \"Retain both literal strength\
+    \ declarations independently. Unspecified 25% cannot be promoted to w/v, w/w or\
+    \ v/v, and no density conversion is performed.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q39\",\n    \"ingredient_or_context\": \"SL-10 Fe-first preparation\",\n \
+    \   \"field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"ordered dissolution\",\n    \"source_stage\":\
+    \ \"SL-10 stock\",\n    \"primary_source_evidence_id\": \"sl10-primary\",\n  \
+    \  \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM433original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M433\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Dissolve FeCl2・4H2O first in HCl. Then dilute in distilled water and add the\
+    \ remaining salts.\",\n        \"snapshot_sha256\": \"b0e92380fc64ea5b9bd975a00f6cd6318452dea5623139816a6458e27fe3f922\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n \
+    \       \"decision\": \"add\",\n        \"rationale\": \"Dissolve FeCl2 tetrahydrate\
+    \ in HCl first, dilute with water and add remaining salts. Do not import parent\
+    \ A/B autoclaving or parent pH.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Dissolve FeCl2 tetrahydrate in HCl first, dilute with water and add remaining\
+    \ salts. Do not import parent A/B autoclaving or parent pH.\"\n  },\n  {\n   \
+    \ \"quantity_id\": \"q40\",\n    \"ingredient_or_context\": \"Distilled water\"\
+    ,\n    \"field_path\": \"solutions[1].composition[0].concentration\",\n    \"\
+    local\": {\n      \"value\": \"1\",\n      \"unit\": \"L\"\n    },\n    \"source_amount\"\
+    : 1,\n    \"source_unit\": \"L\",\n    \"source_stage\": \"M190 trace-vitamin\
+    \ stock only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n  \
+    \  \"decision\": \"verified\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[0].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"1\",\n          \"unit\": \"L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"rationale\": \"Exact attached historical raw/snippet/hash\
+    \ supports this parent stock batch amount. For solutes, unsupported final g/L\
+    \ was already withdrawn and mass is correctly retained in notes; do not reintroduce\
+    \ it or claim the receiving target has attached evidence.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"Exact attached historical raw/snippet/hash supports\
+    \ this parent stock batch amount. For solutes, unsupported final g/L was already\
+    \ withdrawn and mass is correctly retained in notes; do not reintroduce it or\
+    \ claim the receiving target has attached evidence.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q41\",\n    \"ingredient_or_context\": \"Biotin\",\n    \"field_path\": \"\
+    solutions[1].composition[1].notes\",\n    \"local\": \"Role: Vitamin; Properties:\
+    \ Organic compound, Defined component, Simple component\\n\\nSource batch input:\
+    \ 2 mg. Final preparation volume is not independently established; the unsupported\
+    \ g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.\"\
+    ,\n    \"source_amount\": 2,\n    \"source_unit\": \"mg\",\n    \"source_stage\"\
+    : \"M190 trace-vitamin stock only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\"\
+    ,\n    \"decision\": \"verified\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\": 2,\\n\
+    \          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[1].notes\",\n        \"stored\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 2 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Exact attached historical raw/snippet/hash supports this parent stock batch amount.\
+    \ For solutes, unsupported final g/L was already withdrawn and mass is correctly\
+    \ retained in notes; do not reintroduce it or claim the receiving target has attached\
+    \ evidence.\"\n  },\n  {\n    \"quantity_id\": \"q42\",\n    \"ingredient_or_context\"\
+    : \"p--Aminobenzoic acid\",\n    \"field_path\": \"solutions[1].composition[2].notes\"\
+    ,\n    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 5 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 5,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"p--Aminobenzoic acid\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[2].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 5 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n        \"decision\": \"verified\",\n \
+    \       \"rationale\": \"Exact attached historical raw/snippet/hash supports this\
+    \ parent stock batch amount. For solutes, unsupported final g/L was already withdrawn\
+    \ and mass is correctly retained in notes; do not reintroduce it or claim the\
+    \ receiving target has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n  },\n  {\n    \"quantity_id\": \"q43\",\n    \"ingredient_or_context\"\
+    : \"Thiamine・HCl\",\n    \"field_path\": \"solutions[1].composition[3].notes\"\
+    ,\n    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 5 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 5,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Thiamine・HCl\\\",\\n          \\\"volume\\\":\
+    \ 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[3].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 5 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n        \"decision\": \"verified\",\n \
+    \       \"rationale\": \"Exact attached historical raw/snippet/hash supports this\
+    \ parent stock batch amount. For solutes, unsupported final g/L was already withdrawn\
+    \ and mass is correctly retained in notes; do not reintroduce it or claim the\
+    \ receiving target has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n  },\n  {\n    \"quantity_id\": \"q44\",\n    \"ingredient_or_context\"\
+    : \"Calcium pantothenate\",\n    \"field_path\": \"solutions[1].composition[4].notes\"\
+    ,\n    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 5 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 5,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Calcium pantothenate\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[4].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 5 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n        \"decision\": \"verified\",\n \
+    \       \"rationale\": \"Exact attached historical raw/snippet/hash supports this\
+    \ parent stock batch amount. For solutes, unsupported final g/L was already withdrawn\
+    \ and mass is correctly retained in notes; do not reintroduce it or claim the\
+    \ receiving target has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n  },\n  {\n    \"quantity_id\": \"q45\",\n    \"ingredient_or_context\"\
+    : \"Pyridoxine・HCl\",\n    \"field_path\": \"solutions[1].composition[5].notes\"\
+    ,\n    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 10 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 10,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Pyridoxine・HCl\\\",\\n          \\\"volume\\\"\
+    : 10,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[5].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 10 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n        \"decision\": \"verified\",\n \
+    \       \"rationale\": \"Exact attached historical raw/snippet/hash supports this\
+    \ parent stock batch amount. For solutes, unsupported final g/L was already withdrawn\
+    \ and mass is correctly retained in notes; do not reintroduce it or claim the\
+    \ receiving target has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n  },\n  {\n    \"quantity_id\": \"q46\",\n    \"ingredient_or_context\"\
+    : \"Folic acid\",\n    \"field_path\": \"solutions[1].composition[6].notes\",\n\
+    \    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 2 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 2,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Folic acid\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[6].notes\",\n        \"stored\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 2 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Exact attached historical raw/snippet/hash supports this parent stock batch amount.\
+    \ For solutes, unsupported final g/L was already withdrawn and mass is correctly\
+    \ retained in notes; do not reintroduce it or claim the receiving target has attached\
+    \ evidence.\"\n  },\n  {\n    \"quantity_id\": \"q47\",\n    \"ingredient_or_context\"\
+    : \"Vitamin B12\",\n    \"field_path\": \"solutions[1].composition[7].notes\"\
+    ,\n    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 0.1 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 0.1,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[7].notes\",\n        \"stored\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 0.1 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Exact attached historical raw/snippet/hash supports this parent stock batch amount.\
+    \ For solutes, unsupported final g/L was already withdrawn and mass is correctly\
+    \ retained in notes; do not reintroduce it or claim the receiving target has attached\
+    \ evidence.\"\n  },\n  {\n    \"quantity_id\": \"q48\",\n    \"ingredient_or_context\"\
+    : \"Riboflavin\",\n    \"field_path\": \"solutions[1].composition[8].notes\",\n\
+    \    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 5 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 5,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Riboflavin\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[8].notes\",\n        \"stored\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Exact attached historical raw/snippet/hash supports this parent stock batch amount.\
+    \ For solutes, unsupported final g/L was already withdrawn and mass is correctly\
+    \ retained in notes; do not reintroduce it or claim the receiving target has attached\
+    \ evidence.\"\n  },\n  {\n    \"quantity_id\": \"q49\",\n    \"ingredient_or_context\"\
+    : \"Nicotinic acid\",\n    \"field_path\": \"solutions[1].composition[9].notes\"\
+    ,\n    \"local\": \"Role: Vitamin; Properties: Organic compound, Defined component,\
+    \ Simple component\\n\\nSource batch input: 5 mg. Final preparation volume is\
+    \ not independently established; the unsupported g/L assertion is withdrawn, not\
+    \ replaced by an assumed one-liter concentration.\",\n    \"source_amount\": 5,\n\
+    \    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin stock\
+    \ only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"verified\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nicotinic acid\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[9].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 5 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n        \"decision\": \"verified\",\n \
+    \       \"rationale\": \"Exact attached historical raw/snippet/hash supports this\
+    \ parent stock batch amount. For solutes, unsupported final g/L was already withdrawn\
+    \ and mass is correctly retained in notes; do not reintroduce it or claim the\
+    \ receiving target has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n  },\n  {\n    \"quantity_id\": \"q50\",\n    \"ingredient_or_context\"\
+    : \"Lipoic acid\",\n    \"field_path\": \"solutions[1].composition[10].notes\"\
+    ,\n    \"local\": \"Role: Growth factor; Properties: Organic compound, Defined\
+    \ component, Simple component\\n\\nSource batch input: 5 mg. Final preparation\
+    \ volume is not independently established; the unsupported g/L assertion is withdrawn,\
+    \ not replaced by an assumed one-liter concentration.\",\n    \"source_amount\"\
+    : 5,\n    \"source_unit\": \"mg\",\n    \"source_stage\": \"M190 trace-vitamin\
+    \ stock only\",\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n  \
+    \  \"decision\": \"verified\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM190original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Lipoic acid\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[10].notes\",\n        \"stored\": \"Role: Growth\
+    \ factor; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"Exact attached historical raw/snippet/hash supports this parent stock batch\
+    \ amount. For solutes, unsupported final g/L was already withdrawn and mass is\
+    \ correctly retained in notes; do not reintroduce it or claim the receiving target\
+    \ has attached evidence.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    Exact attached historical raw/snippet/hash supports this parent stock batch amount.\
+    \ For solutes, unsupported final g/L was already withdrawn and mass is correctly\
+    \ retained in notes; do not reintroduce it or claim the receiving target has attached\
+    \ evidence.\"\n  },\n  {\n    \"quantity_id\": \"q51\",\n    \"ingredient_or_context\"\
+    : \"Receiving M190 vitamin composition\",\n    \"field_path\": \"solutions[1].composition\"\
+    ,\n    \"local\": [],\n    \"source_amount\": null,\n    \"source_unit\": \"eleven\
+    \ explicit stock rows\",\n    \"source_stage\": \"Receiving stock reference\"\
+    ,\n    \"primary_source_evidence_id\": \"vitamin-primary\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      },\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"J197 vitamin heading\",\n        \"exact_source_quote\": \"Trace vitamins:\"\
+    ,\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    ,\n        \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\"\
+    : [],\n        \"decision\": \"add\",\n        \"rationale\": \"Transfer only\
+    \ the already repaired M190 vitamins, including their own 1 L water and exact\
+    \ batch-mass notes. Receiving dose 10 mL comes from M854, not the parent medium\
+    \ recipe.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\",\n        \"rationale\": \"Transfer only\
+    \ the already repaired M190 vitamins, including their own 1 L water and exact\
+    \ batch-mass notes. Receiving dose 10 mL comes from M854, not the parent medium\
+    \ recipe.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Transfer only the\
+    \ already repaired M190 vitamins, including their own 1 L water and exact batch-mass\
+    \ notes. Receiving dose 10 mL comes from M854, not the parent medium recipe.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q52\",\n    \"ingredient_or_context\": \"\
+    Excluded parent field: ingredients[1].concentration\",\n    \"field_path\": \"\
+    ingredients[1].concentration\",\n    \"local\": {\n      \"value\": \"39.4\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": null,\n    \"source_unit\"\
+    : \"not transferred\",\n    \"source_stage\": \"Outside named SL-10 or vitamin\
+    \ transfer\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"unsupported\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"39.4\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This is\
+    \ an exact current parent field outside the requested receiving-stock scope. It\
+    \ is enumerated to prevent accidental transfer, not judged as a source-supported\
+    \ amount for M854. Other parent stocks, waters, gas placeholders and parent doses\
+    \ must remain separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ is an exact current parent field outside the requested receiving-stock scope.\
+    \ It is enumerated to prevent accidental transfer, not judged as a source-supported\
+    \ amount for M854. Other parent stocks, waters, gas placeholders and parent doses\
+    \ must remain separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q53\",\n    \"ingredient_or_context\": \"Excluded\
+    \ parent field: ingredients[2].concentration\",\n    \"field_path\": \"ingredients[2].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"46.8\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"46.8\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This is\
+    \ an exact current parent field outside the requested receiving-stock scope. It\
+    \ is enumerated to prevent accidental transfer, not judged as a source-supported\
+    \ amount for M854. Other parent stocks, waters, gas placeholders and parent doses\
+    \ must remain separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ is an exact current parent field outside the requested receiving-stock scope.\
+    \ It is enumerated to prevent accidental transfer, not judged as a source-supported\
+    \ amount for M854. Other parent stocks, waters, gas placeholders and parent doses\
+    \ must remain separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q54\",\n    \"ingredient_or_context\": \"Excluded\
+    \ parent field: ingredients[3].concentration\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q55\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[4].concentration\",\n    \"field_path\": \"ingredients[4].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q56\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[5].concentration\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q57\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[15].concentration\",\n    \"field_path\": \"ingredients[15].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q58\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[16].concentration\",\n    \"field_path\": \"ingredients[16].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q59\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[17].concentration\",\n    \"field_path\": \"ingredients[17].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q60\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[18].concentration\",\n    \"field_path\": \"ingredients[18].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q61\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[19].concentration\",\n    \"field_path\": \"ingredients[19].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q62\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[20].concentration\",\n    \"field_path\": \"ingredients[20].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This is\
+    \ an exact current parent field outside the requested receiving-stock scope. It\
+    \ is enumerated to prevent accidental transfer, not judged as a source-supported\
+    \ amount for M854. Other parent stocks, waters, gas placeholders and parent doses\
+    \ must remain separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This\
+    \ is an exact current parent field outside the requested receiving-stock scope.\
+    \ It is enumerated to prevent accidental transfer, not judged as a source-supported\
+    \ amount for M854. Other parent stocks, waters, gas placeholders and parent doses\
+    \ must remain separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q63\",\n    \"ingredient_or_context\": \"Excluded\
+    \ parent field: ingredients[21].concentration\",\n    \"field_path\": \"ingredients[21].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q64\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[22].concentration\",\n    \"field_path\": \"ingredients[22].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q65\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[23].concentration\",\n    \"field_path\": \"ingredients[23].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q66\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: solutions[0].concentration\",\n    \"field_path\": \"solutions[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"901\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[0].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"901\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q67\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: solutions[1].concentration\",\n    \"field_path\": \"solutions[1].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"100\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[1].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q68\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: solutions[2].concentration\",\n    \"field_path\": \"solutions[2].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[2].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q69\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: solutions[3].concentration\",\n    \"field_path\": \"solutions[3].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": null,\n    \"source_unit\": \"not transferred\"\
+    ,\n    \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"\
+    primary_source_evidence_id\": \"provider\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml\",\n\
+    \        \"field_path\": \"solutions[3].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"This is an exact\
+    \ current parent field outside the requested receiving-stock scope. It is enumerated\
+    \ to prevent accidental transfer, not judged as a source-supported amount for\
+    \ M854. Other parent stocks, waters, gas placeholders and parent doses must remain\
+    \ separate.\",\n    \"scope\": \"excluded_parent_context_only\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q70\",\n    \"ingredient_or_context\": \"Excluded parent\
+    \ field: ingredients[0].concentration\",\n    \"field_path\": \"ingredients[0].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"0.981\",\n      \"unit\": \"L\"\n    },\n\
+    \    \"source_amount\": null,\n    \"source_unit\": \"not transferred\",\n   \
+    \ \"source_stage\": \"Outside named SL-10 or vitamin transfer\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.981\",\n          \"unit\": \"L\"\n        },\n        \"decision\": \"\
+    unsupported\",\n        \"rationale\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\",\n    \"scope\"\
+    : \"excluded_parent_context_only\"\n  },\n  {\n    \"quantity_id\": \"q71\",\n\
+    \    \"ingredient_or_context\": \"Excluded parent field: ingredients[10].concentration\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\n    },\n    \"\
+    source_amount\": null,\n    \"source_unit\": \"not transferred\",\n    \"source_stage\"\
+    : \"Outside named SL-10 or vitamin transfer\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"ingredients[10].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\",\n    \"scope\"\
+    : \"excluded_parent_context_only\"\n  },\n  {\n    \"quantity_id\": \"q72\",\n\
+    \    \"ingredient_or_context\": \"Excluded parent field: ingredients[11].concentration\"\
+    ,\n    \"field_path\": \"ingredients[11].concentration\",\n    \"local\": {\n\
+    \      \"value\": \"variable\",\n      \"unit\": \"VARIABLE\"\n    },\n    \"\
+    source_amount\": null,\n    \"source_unit\": \"not transferred\",\n    \"source_stage\"\
+    : \"Outside named SL-10 or vitamin transfer\",\n    \"primary_source_evidence_id\"\
+    : \"provider\",\n    \"decision\": \"unsupported\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"variable\",\n          \"unit\": \"VARIABLE\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\",\n    \"scope\"\
+    : \"excluded_parent_context_only\"\n  },\n  {\n    \"quantity_id\": \"q73\",\n\
+    \    \"ingredient_or_context\": \"Excluded parent field: solutions[0].composition[0].concentration\"\
+    ,\n    \"field_path\": \"solutions[0].composition[0].concentration\",\n    \"\
+    local\": {\n      \"value\": \"1\",\n      \"unit\": \"L\"\n    },\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"not transferred\",\n    \"source_stage\": \"Outside\
+    \ named SL-10 or vitamin transfer\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[0].composition[0].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"1\",\n          \"unit\": \"L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\",\n    \"scope\"\
+    : \"excluded_parent_context_only\"\n  },\n  {\n    \"quantity_id\": \"q74\",\n\
+    \    \"ingredient_or_context\": \"Excluded parent field: solutions[0].concentration\"\
+    ,\n    \"field_path\": \"solutions[0].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"0.009\",\n      \"unit\": \"L\"\n    },\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"not transferred\",\n    \"source_stage\": \"Outside\
+    \ named SL-10 or vitamin transfer\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.009\",\n          \"unit\": \"L\"\n        },\n        \"decision\": \"\
+    unsupported\",\n        \"rationale\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\"\n      }\n\
+    \    ],\n    \"arithmetic_and_scope\": \"This is an exact current parent field\
+    \ outside the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\",\n    \"scope\"\
+    : \"excluded_parent_context_only\"\n  },\n  {\n    \"quantity_id\": \"q75\",\n\
+    \    \"ingredient_or_context\": \"Excluded parent field: solutions[1].concentration\"\
+    ,\n    \"field_path\": \"solutions[1].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"0.01\",\n      \"unit\": \"L\"\n    },\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"not transferred\",\n    \"source_stage\": \"Outside\
+    \ named SL-10 or vitamin transfer\",\n    \"primary_source_evidence_id\": \"provider\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"L\"\n        },\n        \"decision\": \"unsupported\"\
+    ,\n        \"rationale\": \"This is an exact current parent field outside the\
+    \ requested receiving-stock scope. It is enumerated to prevent accidental transfer,\
+    \ not judged as a source-supported amount for M854. Other parent stocks, waters,\
+    \ gas placeholders and parent doses must remain separate.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"This is an exact current parent field outside\
+    \ the requested receiving-stock scope. It is enumerated to prevent accidental\
+    \ transfer, not judged as a source-supported amount for M854. Other parent stocks,\
+    \ waters, gas placeholders and parent doses must remain separate.\",\n    \"scope\"\
+    : \"excluded_parent_context_only\"\n  },\n  {\n    \"quantity_id\": \"q76\",\n\
+    \    \"ingredient_or_context\": \"Provider final pH\",\n    \"field_path\": \"\
+    ph_range\",\n    \"local\": null,\n    \"source_amount\": \"7.4-7.8\",\n    \"\
+    source_unit\": \"pH\",\n    \"source_stage\": \"M854 provider preparation\",\n\
+    \    \"primary_source_evidence_id\": \"provider-preparation\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM854original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Adjust final pH to 7.4 -- 7.8.\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ph_range\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add only the provider’s\
+    \ explicit condition with attribution. No pore size, autoclave cycle, cultivation\
+    \ temperature or late-stock strength/dose is supplied.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"Add only the provider’s explicit\
+    \ condition with attribution. No pore size, autoclave cycle, cultivation temperature\
+    \ or late-stock strength/dose is supplied.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Add only the provider’s explicit condition with attribution. No pore size,\
+    \ autoclave cycle, cultivation temperature or late-stock strength/dose is supplied.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q77\",\n    \"ingredient_or_context\": \"\
+    Provider nitrogen atmosphere\",\n    \"field_path\": \"preparation_steps\",\n\
+    \    \"local\": null,\n    \"source_amount\": 100,\n    \"source_unit\": \"percent\
+    \ gas\",\n    \"source_stage\": \"M854 provider preparation\",\n    \"primary_source_evidence_id\"\
+    : \"provider-preparation\",\n    \"decision\": \"add\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM854original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\",\n \
+    \       \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Prepare the medium anaerobically under 100% N2.\",\n        \"snapshot_sha256\"\
+    : \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add only the provider’s\
+    \ explicit condition with attribution. No pore size, autoclave cycle, cultivation\
+    \ temperature or late-stock strength/dose is supplied.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add only the provider’s\
+    \ explicit condition with attribution. No pore size, autoclave cycle, cultivation\
+    \ temperature or late-stock strength/dose is supplied.\"\n      }\n    ],\n  \
+    \  \"arithmetic_and_scope\": \"Add only the provider’s explicit condition with\
+    \ attribution. No pore size, autoclave cycle, cultivation temperature or late-stock\
+    \ strength/dose is supplied.\"\n  },\n  {\n    \"quantity_id\": \"q78\",\n   \
+    \ \"ingredient_or_context\": \"Vitamin filtration and late additions\",\n    \"\
+    field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"qualitative\",\n    \"source_stage\": \"M854 provider\
+    \ preparation\",\n    \"primary_source_evidence_id\": \"provider-preparation\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Add vitamins (filter--sterilized), sodium lactate and nitrate from sterile,\
+    \ anaerobic stock solutions.\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Add only the\
+    \ provider’s explicit condition with attribution. No pore size, autoclave cycle,\
+    \ cultivation temperature or late-stock strength/dose is supplied.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Add only the provider’s\
+    \ explicit condition with attribution. No pore size, autoclave cycle, cultivation\
+    \ temperature or late-stock strength/dose is supplied.\"\n      }\n    ],\n  \
+    \  \"arithmetic_and_scope\": \"Add only the provider’s explicit condition with\
+    \ attribution. No pore size, autoclave cycle, cultivation temperature or late-stock\
+    \ strength/dose is supplied.\"\n  },\n  {\n    \"quantity_id\": \"q79\",\n   \
+    \ \"ingredient_or_context\": \"Measured receiving-medium final volume\",\n   \
+    \ \"field_path\": \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\"\
+    : null,\n    \"source_unit\": \"not stated\",\n    \"source_stage\": \"After all\
+    \ additions\",\n    \"primary_source_evidence_id\": \"provider\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM854original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      },\n      {\n        \"source_key\": \"togoM854original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace element solution SL--10 (see Medium [M433])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n \
+    \       \"snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      },\n      {\n        \"source_key\": \"togoM854original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\
+    \n      },\n      {\n        \"source_key\": \"togoM854original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M854\"\
+    ,\n        \"source_locator\": \"$.components[0].items[15]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin solution (see below)\\\",\\n         \
+    \ \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"b4e65e733c66a9271cc1a1d165fb95520602f0011f4d9dc4e787d6b5ca2cdbb9\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"not_quantified\",\n        \"rationale\": \"The provider\
+    \ lists 1 L water plus 1, 10 and 1 mL stock aliquots, but does not establish measured\
+    \ final volume or volumes of sterile lactate/nitrate stocks. No exact final g/L,\
+    \ molarity or assumed one-litre denominator is inferred.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"not_quantified\",\n        \"rationale\": \"The provider\
+    \ lists 1 L water plus 1, 10 and 1 mL stock aliquots, but does not establish measured\
+    \ final volume or volumes of sterile lactate/nitrate stocks. No exact final g/L,\
+    \ molarity or assumed one-litre denominator is inferred.\"\n      }\n    ],\n\
+    \    \"arithmetic_and_scope\": \"The provider lists 1 L water plus 1, 10 and 1\
+    \ mL stock aliquots, but does not establish measured final volume or volumes of\
+    \ sterile lactate/nitrate stocks. No exact final g/L, molarity or assumed one-litre\
+    \ denominator is inferred.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.010270.unit-and-stock-loss
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Volume and mg claims are flattened into g/L
+  description: Main water, resazurin, three stock doses and seven own-vitamin amounts
+    have wrong units/stages; target water 2 versus owner 1 reflects different duplicate
+    treatment, not support for either mass concentration.
+  target_ids:
+  - CultureMech:010270
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - provider
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.010270.dependency-transfer
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Named stock references lack usable scoped compositions
+  description: M433’s SL-10 is flattened and has incorrect mg/mL interpretation; M190
+    already has a repaired vitamin stock with exact evidence. The target’s three stock
+    compositions remain empty.
+  target_ids:
+  - CultureMech:010270
+  field_paths:
+  - solutions
+  - ingredients
+  evidence_ids:
+  - sl10-primary
+  - vitamin-primary
+  - dep433
+  - dep190
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml
+    role: authoritative normalized source
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.010270.missing-provider-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Provider preparation and final pH are absent
+  description: The exact provider supplies anoxic atmosphere, filtered vitamins, sterile
+    late additions and pH 7.4–7.8, but local layers omit them. The current collection
+    primary remains unavailable.
+  target_ids:
+  - CultureMech:010270
+  field_paths:
+  - preparation_steps
+  - ph_range
+  evidence_ids:
+  - provider-preparation
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.010270.source-form-specificity
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Transferred hydrates and pantothenate specificity need reconciliation
+  description: SL-10 source cobalt/nickel hexahydrates are represented by anhydrous
+    parent terms. Generic calcium pantothenate does not establish the asserted D-specific
+    structure.
+  target_ids:
+  - CultureMech:010270
+  field_paths:
+  - ingredients[16].term
+  - ingredients[16].mediaingredientmech_chebi_term
+  - solutions[0].composition
+  - solutions[1].composition
+  evidence_ids:
+  - sl10-primary
+  - vitamin-primary
+  - chebi31345
+  - grounding-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: authoritative normalized source
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Repair maintained M854 source-stage quantities and stock representations
+    with exact provider attribution, preserve unknown final volume, and regenerate
+    only after source review. Keep two vitamin additions distinct.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010270
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Resolve only SL-10 and trace vitamins at their exact parent locations,
+    retain all 11 authenticated vitamin objects and exclude the 26 other parent claims.
+    Correct M433 stock-only quantities without copying its whole medium.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010270
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml
+    role: authoritative normalized source
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore explicit provider-attributed preparation and seek exact JCM819
+    primary correspondence. Do not import a parent autoclave cycle, gas mixture or
+    pH.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010270
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve exact source names and qualify unresolved specificity; curate
+    the receiving and scoped parent chemical forms only with exact evidence, without
+    guessed hydration or stereochemistry.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:010270
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M854_Bacillus_Macyae_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M433_Pseudomonas_Halophila_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: authoritative normalized source
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact JCM819 returns HTTP200 with Nothing found. Required main collection-primary
+  formulation correspondence remains unavailable; provider data are explicitly attributed
+  and partial completion is retained.
+- Preserved mediadiveJ819api access failed; no formula or endpoint-absence inference
+  follows.
+- Preserved mediadiveJ819apiRetry access failed; no formula or endpoint-absence inference
+  follows.
+- This scientific assessment preceded formal review validation and saving; their actual
+  outcomes are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-038
+- generated-medium
+```
