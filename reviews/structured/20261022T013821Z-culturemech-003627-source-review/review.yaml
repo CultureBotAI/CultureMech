@@ -1,0 +1,1729 @@
+schema_version: 1.0.0
+review_id: 20261022T013821Z-culturemech-003627-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bosea_medium (CultureMech:003627)'
+started_at: '2026-10-22T01:04:32Z'
+finished_at: '2026-10-22T01:38:21Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSM1052 supports the four printed batch masses and pH 6.9 and explicitly
+  imports only solutions A/B of DSM585. Its 1000 ml water listing and the referenced
+  490 + 490 ml preparation inputs require source-scoped reconciliation without assuming
+  final volume. The DSM owner already preserves four historical quantity-evidence
+  objects and both main preparation instructions; the generated and KOMODO layers
+  omit them. Historical API raw and the legacy ACES correspondence remain unresolved.
+  Review is partial.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+    sha256: d53012262b454d3dea99a4b2d776ea37a3600d6d3b3d938e3da5af5316a7c19c
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    sha256: aa4b410e10649e7b73eb27d74fac7a8019fb4e9d179aa8ca2cb1e552508f6410
+    role: context
+  - path: data/normalized_yaml/bacterial/bcye_agar.yaml
+    sha256: adf0445abf68103f2aacecfe9a0b132732acd7c179e77d1f01cc3025d0a6d20a
+    role: context
+  - path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    sha256: d0884d6895f201cca7daa254a2e0d4a5f0fde534b2b89b2a5871337b61b788d1
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1052_BOSEA_medium.yaml.md
+    sha256: 1b8482cb89ed10a6d3cb6ad6ccdb382d4fb1acc3413b43bd7fd58475058edf02
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bosea_medium.yaml.md
+    sha256: 0fe4b92d7978f6c8b3b300c99c1c2e612937a8f588d16896fb8958f02b3b8087
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BOSEA_MEDIUM.md
+    sha256: 73844c40276710405d9d966db9fc026951b63e404b9749eb6a9cdfdd13bd0c4a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.md
+    sha256: eee7146e70283e8b6baba06db5fb4b0f0e39560b15d36383c7f675277eb90c05
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/bosea_medium.md
+    sha256: 6699ff737b96df501205ac66fd66103a5dcc9e8b1e744b43b16b6db09b38f9ea
+    role: context
+  - path: reports/yaml_record_review/20260921T232125Z-BOSEA_MEDIUM.md
+    sha256: 4ef96722e933789ae83e1b95e99dc44fb8ccd25ca909dfff166a7f61fad7248f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_jcm_missing_from_togo.py
+    sha256: 3e7c9547e5fceda8ced6b556de50b6a0af17e0805be021af6b3e5a6b8eb70570
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 440; batch 044 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-three task batches
+    contain 430 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 433 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003627
+targets:
+- target_id: CultureMech:003627
+  path: data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  label: bosea_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BOSEA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch044/440/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch044/440/strict.tsv"
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003627
+- check_id: api1052-source-access
+  name: 'Exact source content access: api1052'
+  required: true
+  status: unavailable
+  summary: Current REST1052 returned HTTP 503; cited historical raw cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872
+    remains unrecovered in the bounded local report/plan search and bound captures.
+    Four existing DSM-owner evidence objects and report rows remain derivative historical
+    claims, not newly authenticated raw.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - api1052-attempt
+- check_id: api585-source-access
+  name: 'Exact source content access: api585'
+  required: false
+  status: unavailable
+  summary: The exact api585 supplementary retrieval returned HTTP 503. Its failure
+    is preserved separately; the available DSM1052/585 primary PDFs supply the stated
+    narrow formulation/preparation assessment.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - api585-attempt
+- check_id: komodo1052-source-access
+  name: 'Exact source content access: komodo1052'
+  required: false
+  status: unavailable
+  summary: The exact komodo1052 supplementary retrieval returned HTTP 403. Its failure
+    is preserved separately; the available DSM1052/585 primary PDFs supply the stated
+    narrow formulation/preparation assessment.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - komodo1052-attempt
+- check_id: legacy-ACES-history
+  name: Historical MediaIngredientMech:000555 correspondence
+  required: true
+  status: unavailable
+  summary: Complete current-negative lookup is available; historical identifier correspondence
+    is unresolved in the bound evidence.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bosea_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:08:23.569941Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BOSEA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch044/440/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:08:25.009006Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch044/440/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:08:26.709883Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BOSEA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:08:27.743454Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml:1:id: CultureMech:003627
+
+    ./data/merge_yaml/merged/BOSEA_MEDIUM.yaml:1:id: CultureMech:003627
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/source-preflight-bound/440/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: supports
+  summary: 64 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: e4c056810343661de177cc71b151a0cc19d34768a6b3fe135bcc47c47c4bbed6
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf
+  locator: 'Complete page 1: four ingredients, solvent, pH and explicit A/B cross-reference'
+  accessed_at: '2026-10-22T00:53:57.326498Z'
+  support: supports
+  summary: DSM1052 lists 10 g yeast extract, 10 g ACES, 2 g charcoal, 15 g agar, 1000
+    ml water and pH 6.9 before agar. It imports solutions A/B of DSM585; it does not
+    declare a measured final volume.
+  snapshot_sha256: 00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e
+- evidence_id: ab-source
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf
+  locator: Full page read; scientific transfer limited to CYE-ACES solutions A/B and
+    their preparation paragraphs
+  accessed_at: '2026-10-22T00:53:57.496066Z'
+  support: supports
+  summary: A contains yeast extract, ACES, charcoal and 490 ml water; B contains agar
+    and 490 ml water. A specifies 1 N KOH to pH 6.9, boiling, 121°C for 15 min and
+    cooling to 50–55°C. B specifies 121°C and cooling to 50–55°C without an explicit
+    duration. Commercial base, C/D supplements and complete four-solution pH instructions
+    are excluded.
+  snapshot_sha256: f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f
+- evidence_id: api1052-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1052
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:53:57.337541Z'
+  support: context_only
+  summary: Current REST1052 returned HTTP 503; cited historical raw cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872
+    remains unrecovered in the bounded local report/plan search and bound captures.
+    Four existing DSM-owner evidence objects and report rows remain derivative historical
+    claims, not newly authenticated raw.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: api585-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/585
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:53:57.641568Z'
+  support: context_only
+  summary: The exact api585 supplementary retrieval returned HTTP 503. Its failure
+    is preserved separately; the available DSM1052/585 primary PDFs supply the stated
+    narrow formulation/preparation assessment.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo1052-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1052
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:53:58.061954Z'
+  support: context_only
+  summary: The exact komodo1052 supplementary retrieval returned HTTP 403. Its failure
+    is preserved separately; the available DSM1052/585 primary PDFs supply the stated
+    narrow formulation/preparation assessment.
+  snapshot_sha256: b59f50f0661ee58c84a6f9181887bfb5a157d36aebdf4fa8ebdef45bc18842c5
+- evidence_id: catalogue
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact catalogue header and Medium1052 row only
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The catalogue maps KOMODO1052 to BOSEA and the DSM1052 PDF. Its pH/flags
+    are provider metadata; an Aerobic=false flag does not establish organism growth
+    or an oxygen requirement.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: ab-local
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bcye_agar.yaml
+  locator: Only ingredients[1:5] and preparation_steps[5:7] compared with DSM585 A/B
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: The full record was read to resolve scope. Four A/B ingredients use nominal
+    490 ml-normalized rates, while the exact A/B preparation descriptions are already
+    present. Commercial base, C/D ingredients and complete-medium steps remain excluded
+    from BOSEA transfer.
+  snapshot_sha256: adf0445abf68103f2aacecfe9a0b132732acd7c179e77d1f01cc3025d0a6d20a
+- evidence_id: report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1052_BOSEA_medium.yaml.md
+  locator: Full exact-identity historical report; time-specific claims only
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: Full October 7 KOMODO report read. It retained four concentrations unchanged
+    as conflict because of 1000 ml versus A/B 490 + 490 ml scope, and retained derivative
+    source rows and steps. Its cited API digest is the same unrecovered historical
+    raw; this is not a second independent raw authentication.
+  snapshot_sha256: 1b8482cb89ed10a6d3cb6ad6ccdb382d4fb1acc3413b43bd7fd58475058edf02
+- evidence_id: report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bosea_medium.yaml.md
+  locator: Full exact-identity historical report; time-specific claims only
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: Full October 7 direct-owner report read. Four evidence_only changes were
+    applied and remain in the current DSM owner; it explicitly limits g_l to provider-declared
+    main-recipe rates, not a measured final volume. Cited raw cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872
+    and its October 7 time are preserved but not independently recovered.
+  snapshot_sha256: 0fe4b92d7978f6c8b3b300c99c1c2e612937a8f588d16896fb8958f02b3b8087
+- evidence_id: report-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BOSEA_MEDIUM.md
+  locator: Full exact-identity historical report; time-specific claims only
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: 'Full October 5 inventory report read: zero of four quantities source-checked.
+    Its missing-evidence status predates the direct owner’s October 7 evidence addition
+    and cannot be applied blindly to the current owner.'
+  snapshot_sha256: 73844c40276710405d9d966db9fc026951b63e404b9749eb6a9cdfdd13bd0c4a
+- evidence_id: report-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.md
+  locator: Full exact-identity historical report; time-specific claims only
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: 'Full October 5 inventory report read: zero of four quantities source-checked.
+    Its missing-evidence status predates the direct owner’s October 7 evidence addition
+    and cannot be applied blindly to the current owner.'
+  snapshot_sha256: eee7146e70283e8b6baba06db5fb4b0f0e39560b15d36383c7f675277eb90c05
+- evidence_id: report-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/bosea_medium.md
+  locator: Full exact-identity historical report; time-specific claims only
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: 'Full October 5 inventory report read: zero of four quantities source-checked.
+    Its missing-evidence status predates the direct owner’s October 7 evidence addition
+    and cannot be applied blindly to the current owner.'
+  snapshot_sha256: 6699ff737b96df501205ac66fd66103a5dcc9e8b1e744b43b16b6db09b38f9ea
+- evidence_id: report-5
+  kind: record_content
+  reference: reports/yaml_record_review/20260921T232125Z-BOSEA_MEDIUM.md
+  locator: Full exact-identity historical report; time-specific claims only
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: 'Full September ad hoc BOSEA review read. Its source pointers and A/B boundary
+    were independently reassessed. Its statement that the direct owner lacks structured
+    references is historical: the current DSM owner now contains a reference and four
+    quantity evidence objects. Its legacy migration suggestion does not supply historical
+    equivalence.'
+  snapshot_sha256: 4ef96722e933789ae83e1b95e99dc44fb8ccd25ca909dfff166a7f61fad7248f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:37.629610Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi39061
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_39061
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T22:02:49.943823Z'
+  support: supports
+  summary: CHEBI:39061 resolves to ACES. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fff904e3ad8982128a1fcce42a2c7eb3d2271339fa18af47a4559be898e61719
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mimPinnedCatalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Exact legacy MediaIngredientMech:000555 lookup over complete pinned current
+    object
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: context_only
+  summary: No exact legacy identifier is present in the current object at commit 6643131b0f12ab40b66f98135245fca04027e0e9.
+    Historical validity and replacement equivalence are unresolved.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: mimPinnedTree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Exact legacy MediaIngredientMech:000555 lookup over complete pinned current
+    object
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: context_only
+  summary: No exact legacy identifier is present in the current object at commit 6643131b0f12ab40b66f98135245fca04027e0e9.
+    Historical validity and replacement equivalence are unresolved.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BOSEA_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml;
+    data/normalized_yaml/bacterial/bosea_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:19.094719"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.094719"}]}, {"input": "data/normalized_yaml/bacterial/bosea_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: The full formulation guard and relevant merge_group/resolver composition-copy
+    functions were read. Current guarded code is mechanism context, not historical
+    execution proof. The generated August projection predates the direct owner’s October
+    evidence event; credit the maintained improvement and do not attribute every difference
+    to a present merger bug.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: The full formulation guard and relevant merge_group/resolver composition-copy
+    functions were read. Current guarded code is mechanism context, not historical
+    execution proof. The generated August projection predates the direct owner’s October
+    evidence event; credit the maintained improvement and do not attribute every difference
+    to a present merger bug.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: The full formulation guard and relevant merge_group/resolver composition-copy
+    functions were read. Current guarded code is mechanism context, not historical
+    execution proof. The generated August projection predates the direct owner’s October
+    evidence event; credit the maintained improvement and do not attribute every difference
+    to a present merger bug.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/440/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T01:23:50Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 3d7951fcaa99c1a959337287629dc58240929de1f15c0031540bae16811d33f5
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Maintained DSM/KOMODO duplicate pair and external A/B dependency
+  outcome: supported
+  summary: The target is the exact two-owner merged BOSEA record. Reciprocal SOURCE_DUPLICATE
+    links and matching ingredient signatures support local relationship identity,
+    but not automatic equivalence of unresolved solvent preparation. BCYE is only
+    the explicitly named A/B dependency, not an additional merge owner or permission
+    to transfer its commercial base, C/D or Legionella statements.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - catalogue
+  - primary
+  - ab-local
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '2 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 2/4 primary
+    and 1/4 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi2509
+  - chebi39061
+  details: 'Instance coverage on a 0–100 percent scale, denominator 4: primary 50.00%;
+    secondary 25.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: forms
+  area: grounding
+  topic: ACES, agar and complex materials
+  outcome: supported
+  summary: The asserted primary CHEBI39061 resolves to ACES, matching the source named
+    ACES/N-2-acetamido-2-aminoethane-sulfonic acid. Its sparse OLS scientific metadata
+    gives no independent commercial-grade or alternative-form claim. CHEBI2509 agar
+    is compatible with the primary. Yeast extract and activated charcoal are retained
+    as complex materials without invented pure-chemical identifiers; the scoped A
+    source names Difco0127 and Sigma C5510. No calcium, cysteine or ferric-pyrophosphate
+    ingredient is imported from excluded C/D.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - primary
+  - ab-source
+  - chebi2509
+  - chebi39061
+- assessment_id: legacy
+  area: grounding
+  topic: Legacy ACES linkage in selected layers and scoped A dependency
+  outcome: unknown
+  summary: All three selected ACES rows and the scoped BCYE ACES row retain MediaIngredientMech:000555.
+    Current index/catalogue/tree contain no exact key. CHEBI39061 is a separate valid
+    primary identifier and does not prove historical MIM equivalence or authorize
+    a guessed replacement.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - ab-local
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 23 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: completeness
+  area: completeness
+  topic: Main/stock solvent, source preparation and maintained repair credit
+  outcome: concern
+  summary: The main water row and explicit A/B structure remain absent from the selected
+    records. The DSM owner already has both main instructions, four attached amount
+    objects and a structured reference; target and KOMODO owner omit them. Exact A/B
+    preparation exists in the dependency, while its local normalized rates remain
+    conditional. DSM585 commercial base, C/D additions, Legionella statements and
+    complete-medium pH 6.9 ±0.5 at 50°C remain outside BOSEA scope.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - primary
+  - ab-source
+  - ab-local
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: growth
+  area: scope
+  topic: Classification and growth boundaries
+  outcome: supported
+  summary: Complex/undefined solid agar is consistent with the four ingredients and
+    explicit agar recipe. No target organism, growth metric or culture incubation
+    is asserted, and the inspected sources do not establish BOSEA strain growth or
+    oxygen requirements. Preparation cooling temperatures and provider aerobic flags
+    are not growth data.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - primary
+  - ab-source
+  - record
+  - catalogue
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 27 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003627
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"Yeast extract\"\
+    ,\n    \"stage\": \"Main BOSEA batch; data/merge_yaml/merged/BOSEA_MEDIUM.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BOSEA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"\
+    desired\": {\n      \"printed_batch_mass_g\": 10,\n      \"final_volume\": \"\
+    not independently established\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsm1052\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Yeast extract\"\
+    ,\n        \"exact_source_quote\": \"Yeast extract                           \
+    \                    10.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 10 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q2\",\n    \"name\": \"ACES\",\n    \"stage\": \"Main BOSEA batch;\
+    \ data/merge_yaml/merged/BOSEA_MEDIUM.yaml\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BOSEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 10,\n  \
+    \    \"final_volume\": \"not independently established\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 printed row/paragraph: ACES\",\n        \"exact_source_quote\"\
+    : \"ACES                                                        10.00    g\",\n\
+    \        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 10 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q3\",\n    \"name\": \"Activated charcoal\",\n    \"stage\":\
+    \ \"Main BOSEA batch; data/merge_yaml/merged/BOSEA_MEDIUM.yaml\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BOSEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 2,\n   \
+    \   \"final_volume\": \"not independently established\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 printed row/paragraph: Activated charcoal\",\n\
+    \        \"exact_source_quote\": \"Activated charcoal                        \
+    \                   2.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 2 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q4\",\n    \"name\": \"Agar\",\n    \"stage\": \"Main BOSEA batch;\
+    \ data/merge_yaml/merged/BOSEA_MEDIUM.yaml\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BOSEA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 15,\n  \
+    \    \"final_volume\": \"not independently established\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 printed row/paragraph: Agar\",\n        \"exact_source_quote\"\
+    : \"Agar                                                        15.00    g\",\n\
+    \        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 15 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q5\",\n    \"name\": \"pH before agar\",\n    \"stage\": \"Main\
+    \ BOSEA preparation; data/merge_yaml/merged/BOSEA_MEDIUM.yaml\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BOSEA_MEDIUM.yaml\",\n        \"field_path\": \"ph_value\"\
+    ,\n        \"stored\": 6.9\n      }\n    ],\n    \"desired\": {\n      \"pH\"\
+    : 6.9,\n      \"stage\": \"before addition of agar\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Main preparation sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.9 prior to addition of agar.\",\n        \"snapshot_sha256\"\
+    : \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\",\n    \
+    \    \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The existing pH value agrees with\
+    \ the primary but has no attached claim evidence. Preserve the stated before-agar\
+    \ stage; it does not verify the excluded DSM585 complete four-solution pH tolerance\
+    \ or temperature.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"name\": \"\
+    Yeast extract\",\n    \"stage\": \"Main BOSEA batch; data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 10,\n  \
+    \    \"final_volume\": \"not independently established\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 printed row/paragraph: Yeast extract\",\n     \
+    \   \"exact_source_quote\": \"Yeast extract                                  \
+    \             10.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 10 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q7\",\n    \"name\": \"ACES\",\n    \"stage\": \"Main BOSEA batch;\
+    \ data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 10,\n  \
+    \    \"final_volume\": \"not independently established\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 printed row/paragraph: ACES\",\n        \"exact_source_quote\"\
+    : \"ACES                                                        10.00    g\",\n\
+    \        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 10 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q8\",\n    \"name\": \"Activated charcoal\",\n    \"stage\":\
+    \ \"Main BOSEA batch; data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 2,\n   \
+    \   \"final_volume\": \"not independently established\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 printed row/paragraph: Activated charcoal\",\n\
+    \        \"exact_source_quote\": \"Activated charcoal                        \
+    \                   2.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 2 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q9\",\n    \"name\": \"Agar\",\n    \"stage\": \"Main BOSEA batch;\
+    \ data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 15,\n  \
+    \    \"final_volume\": \"not independently established\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 printed row/paragraph: Agar\",\n        \"exact_source_quote\"\
+    : \"Agar                                                        15.00    g\",\n\
+    \        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary directly supports the\
+    \ printed 15 g batch mass, but its 1000 ml water input and A/B cross-reference\
+    \ do not independently establish a final litre. Keep nominal provider normalization\
+    \ distinct from primary batch evidence; do not assert a new final g/L value. This\
+    \ layer lacks the direct owner’s attached quantity evidence; no current evidence_only/verified\
+    \ label is appropriate until the source basis is resolved.\"\n  },\n  {\n    \"\
+    decision_id\": \"q10\",\n    \"name\": \"pH before agar\",\n    \"stage\": \"\
+    Main BOSEA preparation; data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9\n      }\n \
+    \   ],\n    \"desired\": {\n      \"pH\": 6.9,\n      \"stage\": \"before addition\
+    \ of agar\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1052\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.9 prior to addition of agar.\",\n        \"snapshot_sha256\"\
+    : \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\",\n    \
+    \    \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The existing pH value agrees with\
+    \ the primary but has no attached claim evidence. Preserve the stated before-agar\
+    \ stage; it does not verify the excluded DSM585 complete four-solution pH tolerance\
+    \ or temperature.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"name\": \"\
+    Yeast extract\",\n    \"stage\": \"Main BOSEA batch; data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 1,\\n                        \\\"compound\\\
+    \": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\": 16,\\\
+    n                        \\\"amount\\\": 10,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n                 \
+    \       \\\"optional\\\": 0\\n                    }\",\n          \"explanation\"\
+    : \"Concentration evidence for ingredients[0].concentration (Yeast extract) in\
+    \ MediaDive medium 1052; locator=$.data.solutions[0].recipe[0]. Provider explicitly\
+    \ reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This\
+    \ supports the provider-declared main-recipe concentration, not an independently\
+    \ measured final volume, a stock composition, or a downstream assay dilution.\
+    \ Water alone does not establish final volume. Exact source ingredient labels/forms\
+    \ are matched; secondary ontology mappings are not validated by this evidence.\
+    \ Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:16:33.338912+00:00;\
+    \ response SHA256=cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872.\"\
+    \n        }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\"\
+    : 10,\n      \"final_volume\": \"not independently established\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1052\",\n    \
+    \    \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Yeast extract\"\
+    ,\n        \"exact_source_quote\": \"Yeast extract                           \
+    \                    10.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      },\n      {\n        \"historical_local_evidence_path\": \"data/normalized_yaml/bacterial/bosea_medium.yaml::ingredients[0].evidence[0]\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n \
+    \       \"source_locator\": \"Historical API $.data.solutions[0].recipe[0]\",\n\
+    \        \"historical_raw_sha256\": \"cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872\"\
+    ,\n        \"historical_accessed_at\": \"2026-10-07T13:16:33.338912Z\",\n    \
+    \    \"limit\": \"Attached historical provider declaration preserved; cited HTTP\
+    \ raw unavailable for independent authentication.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The primary directly supports the printed 10 g batch mass, but its 1000 ml\
+    \ water input and A/B cross-reference do not independently establish a final litre.\
+    \ Keep nominal provider normalization distinct from primary batch evidence; do\
+    \ not assert a new final g/L value. This owner already has attached evidence and\
+    \ an explicit provider-declared g_l explanation with water-alone/final-volume\
+    \ caveats. Credit and preserve that linkage. The decision is unsupported for independently\
+    \ verified final-medium basis/raw authentication, not a finding that the stored\
+    \ number is disproved or that evidence is absent.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q12\",\n    \"name\": \"ACES\",\n    \"stage\": \"Main BOSEA batch; data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 2,\\n                        \\\"compound\\\
+    \": \\\"ACES\\\",\\n                        \\\"compound_id\\\": 581,\\n     \
+    \                   \\\"amount\\\": 10,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n                   \
+    \     \\\"mmol_l\\\": 54.8847,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n          \"explanation\": \"Concentration evidence\
+    \ for ingredients[1].concentration (ACES) in MediaDive medium 1052; locator=$.data.solutions[0].recipe[1].\
+    \ Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml\
+    \ per L) = 10 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T13:16:33.338912+00:00; response SHA256=cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872.\"\
+    \n        }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\"\
+    : 10,\n      \"final_volume\": \"not independently established\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1052\",\n    \
+    \    \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: ACES\",\n     \
+    \   \"exact_source_quote\": \"ACES                                           \
+    \             10.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      },\n      {\n        \"historical_local_evidence_path\": \"data/normalized_yaml/bacterial/bosea_medium.yaml::ingredients[1].evidence[0]\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n \
+    \       \"source_locator\": \"Historical API $.data.solutions[0].recipe[1]\",\n\
+    \        \"historical_raw_sha256\": \"cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872\"\
+    ,\n        \"historical_accessed_at\": \"2026-10-07T13:16:33.338912Z\",\n    \
+    \    \"limit\": \"Attached historical provider declaration preserved; cited HTTP\
+    \ raw unavailable for independent authentication.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The primary directly supports the printed 10 g batch mass, but its 1000 ml\
+    \ water input and A/B cross-reference do not independently establish a final litre.\
+    \ Keep nominal provider normalization distinct from primary batch evidence; do\
+    \ not assert a new final g/L value. This owner already has attached evidence and\
+    \ an explicit provider-declared g_l explanation with water-alone/final-volume\
+    \ caveats. Credit and preserve that linkage. The decision is unsupported for independently\
+    \ verified final-medium basis/raw authentication, not a finding that the stored\
+    \ number is disproved or that evidence is absent.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"name\": \"Activated charcoal\",\n    \"stage\": \"Main BOSEA\
+    \ batch; data/normalized_yaml/bacterial/bosea_medium.yaml\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 3,\\n                        \\\"compound\\\
+    \": \\\"Activated charcoal\\\",\\n                        \\\"compound_id\\\"\
+    : 582,\\n                        \\\"amount\\\": 2,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n      \
+    \                  \\\"optional\\\": 0\\n                    }\",\n          \"\
+    explanation\": \"Concentration evidence for ingredients[2].concentration (Activated\
+    \ charcoal) in MediaDive medium 1052; locator=$.data.solutions[0].recipe[2]. Provider\
+    \ explicitly reports g_l=2; check: 2 g * 1 g/g / (1000 ml / 1000 ml per L) = 2\
+    \ g/L. This supports the provider-declared main-recipe concentration, not an independently\
+    \ measured final volume, a stock composition, or a downstream assay dilution.\
+    \ Water alone does not establish final volume. Exact source ingredient labels/forms\
+    \ are matched; secondary ontology mappings are not validated by this evidence.\
+    \ Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:16:33.338912+00:00;\
+    \ response SHA256=cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872.\"\
+    \n        }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\"\
+    : 2,\n      \"final_volume\": \"not independently established\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsm1052\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Activated charcoal\"\
+    ,\n        \"exact_source_quote\": \"Activated charcoal                      \
+    \                     2.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      },\n      {\n        \"historical_local_evidence_path\": \"data/normalized_yaml/bacterial/bosea_medium.yaml::ingredients[2].evidence[0]\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n \
+    \       \"source_locator\": \"Historical API $.data.solutions[0].recipe[2]\",\n\
+    \        \"historical_raw_sha256\": \"cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872\"\
+    ,\n        \"historical_accessed_at\": \"2026-10-07T13:16:33.338912Z\",\n    \
+    \    \"limit\": \"Attached historical provider declaration preserved; cited HTTP\
+    \ raw unavailable for independent authentication.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The primary directly supports the printed 2 g batch mass, but its 1000 ml\
+    \ water input and A/B cross-reference do not independently establish a final litre.\
+    \ Keep nominal provider normalization distinct from primary batch evidence; do\
+    \ not assert a new final g/L value. This owner already has attached evidence and\
+    \ an explicit provider-declared g_l explanation with water-alone/final-volume\
+    \ caveats. Credit and preserve that linkage. The decision is unsupported for independently\
+    \ verified final-medium basis/raw authentication, not a finding that the stored\
+    \ number is disproved or that evidence is absent.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q14\",\n    \"name\": \"Agar\",\n    \"stage\": \"Main BOSEA batch; data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\",\n      \
+    \  \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 4,\\n                        \\\"compound\\\
+    \": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\n       \
+    \                 \\\"amount\\\": 15,\\n                        \\\"unit\\\":\
+    \ \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                   \
+    \     \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n          \"explanation\": \"Concentration evidence\
+    \ for ingredients[3].concentration (Agar) in MediaDive medium 1052; locator=$.data.solutions[0].recipe[3].\
+    \ Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml\
+    \ per L) = 15 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T13:16:33.338912+00:00; response SHA256=cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872.\"\
+    \n        }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\"\
+    : 15,\n      \"final_volume\": \"not independently established\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1052\",\n    \
+    \    \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Agar\",\n     \
+    \   \"exact_source_quote\": \"Agar                                           \
+    \             15.00    g\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      },\n      {\n        \"historical_local_evidence_path\": \"data/normalized_yaml/bacterial/bosea_medium.yaml::ingredients[3].evidence[0]\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1052\",\n \
+    \       \"source_locator\": \"Historical API $.data.solutions[0].recipe[3]\",\n\
+    \        \"historical_raw_sha256\": \"cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872\"\
+    ,\n        \"historical_accessed_at\": \"2026-10-07T13:16:33.338912Z\",\n    \
+    \    \"limit\": \"Attached historical provider declaration preserved; cited HTTP\
+    \ raw unavailable for independent authentication.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The primary directly supports the printed 15 g batch mass, but its 1000 ml\
+    \ water input and A/B cross-reference do not independently establish a final litre.\
+    \ Keep nominal provider normalization distinct from primary batch evidence; do\
+    \ not assert a new final g/L value. This owner already has attached evidence and\
+    \ an explicit provider-declared g_l explanation with water-alone/final-volume\
+    \ caveats. Credit and preserve that linkage. The decision is unsupported for independently\
+    \ verified final-medium basis/raw authentication, not a finding that the stored\
+    \ number is disproved or that evidence is absent.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q15\",\n    \"name\": \"pH before agar\",\n    \"stage\": \"Main BOSEA preparation;\
+    \ data/normalized_yaml/bacterial/bosea_medium.yaml\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9\n      }\n \
+    \   ],\n    \"desired\": {\n      \"pH\": 6.9,\n      \"stage\": \"before addition\
+    \ of agar\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1052\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.9 prior to addition of agar.\",\n        \"snapshot_sha256\"\
+    : \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\",\n    \
+    \    \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The existing pH value agrees with\
+    \ the primary but has no attached claim evidence. Preserve the stated before-agar\
+    \ stage; it does not verify the excluded DSM585 complete four-solution pH tolerance\
+    \ or temperature.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"name\": \"\
+    Main distilled water\",\n    \"stage\": \"DSM1052 batch listing, absent from all\
+    \ selected ingredient lists\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [],\n    \"desired\": {\n      \"printed_water_input_ml\": 1000\n    },\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1052\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Distilled water\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                  1000.00   ml\",\n        \"snapshot_sha256\": \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\"\
+    ,\n        \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary lists 1000 ml water.\
+    \ Represent it as printed input while resolving how the explicit A/B preparation\
+    \ uses 490 + 490 ml; do not silently replace it with 980 ml, treat it as measured\
+    \ final volume, or add excluded C/D to reach one litre.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q17\",\n    \"name\": \"Preserved main preparation\",\n    \"stage\": \"Existing\
+    \ direct DSM owner instructions\",\n    \"decision\": \"evidence_only\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 6.9 prior to addition of agar.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bosea_medium.yaml\",\n        \"\
+    field_path\": \"preparation_steps[1].description\",\n        \"stored\": \"Same\
+    \ as solutions A and B of medium 585, CYE-ACES agar.\"\n      }\n    ],\n    \"\
+    desired\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1052\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\"\
+    ,\n        \"source_locator\": \"Main preparation sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 6.9 prior to addition of agar.\",\n        \"snapshot_sha256\"\
+    : \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\",\n    \
+    \    \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1052\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf\",\n   \
+    \     \"source_locator\": \"Explicit dependency boundary\",\n        \"exact_source_quote\"\
+    : \"Same as solutions A and B of medium 585, CYE-ACES agar.\",\n        \"snapshot_sha256\"\
+    : \"00c69990cb9f0fd586895c36efff40c755d02d1ff74e3a10f77e299d3a05aa2e\",\n    \
+    \    \"parsed_text_sha256\": \"c28bcda3eb63c4552cc5edae914ed8030ce726806639869f5c04a90043efb10b\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both instructions already exist in\
+    \ the direct DSM owner and agree literally with the primary. Their nested A/B\
+    \ details remain unstructured locally, and the target/KOMODO owner lack these\
+    \ instructions. Preserve existing owner credit and attach scoped evidence rather\
+    \ than claiming all preparation is missing.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q18\",\n    \"name\": \"Yeast extract\",\n    \"stage\": \"DSM585 solution\
+    \ A only\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/bcye_agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20.4082\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 10\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm585\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Yeast extract\"\
+    ,\n        \"exact_source_quote\": \"Yeast extract (Difco 0127)              \
+    \                          10.00        g\",\n        \"snapshot_sha256\": \"\
+    f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\",\n        \"\
+    parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The scoped local dependency has a\
+    \ nominal mass/0.490 L rate. The primary lists a batch mass and 490 ml solvent\
+    \ input, not a final stock-volume declaration. Preserve the source batch and do\
+    \ not transfer this local g/L value as either verified stock or final BOSEA concentration.\"\
+    \n  },\n  {\n    \"decision_id\": \"q19\",\n    \"name\": \"ACES\",\n    \"stage\"\
+    : \"DSM585 solution A only\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bcye_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20.4082\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 10\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm585\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: ACES (N-2-\",\n\
+    \        \"exact_source_quote\": \"ACES (N-2-acetamido-2-aminoethane-sulfonic\
+    \ acid)                  10.00        g\",\n        \"snapshot_sha256\": \"f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\"\
+    ,\n        \"parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The scoped local dependency has a\
+    \ nominal mass/0.490 L rate. The primary lists a batch mass and 490 ml solvent\
+    \ input, not a final stock-volume declaration. Preserve the source batch and do\
+    \ not transfer this local g/L value as either verified stock or final BOSEA concentration.\"\
+    \n  },\n  {\n    \"decision_id\": \"q20\",\n    \"name\": \"Activated charcoal\"\
+    ,\n    \"stage\": \"DSM585 solution A only\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bcye_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.08163\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 2\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm585\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Activated charcoal\"\
+    ,\n        \"exact_source_quote\": \"Activated charcoal (Sigma C 5510)       \
+    \                           2.00        g\",\n        \"snapshot_sha256\": \"\
+    f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\",\n        \"\
+    parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The scoped local dependency has a\
+    \ nominal mass/0.490 L rate. The primary lists a batch mass and 490 ml solvent\
+    \ input, not a final stock-volume declaration. Preserve the source batch and do\
+    \ not transfer this local g/L value as either verified stock or final BOSEA concentration.\"\
+    \n  },\n  {\n    \"decision_id\": \"q21\",\n    \"name\": \"Agar\",\n    \"stage\"\
+    : \"DSM585 solution B only\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bcye_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30.6122\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_mass_g\": 15\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm585\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, CYE-ACES AGAR > Solution B > Agar, 15.00\
+    \ g row; bounded between Solution B and Solution C headings\",\n        \"exact_source_quote\"\
+    : \" Agar                                                             15.00  \
+    \      g\",\n        \"snapshot_sha256\": \"f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\"\
+    ,\n        \"parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The scoped local dependency has a\
+    \ nominal mass/0.490 L rate. The primary lists a batch mass and 490 ml solvent\
+    \ input, not a final stock-volume declaration. Preserve the source batch and do\
+    \ not transfer this local g/L value as either verified stock or final BOSEA concentration.\"\
+    \n  },\n  {\n    \"decision_id\": \"q22\",\n    \"name\": \"Distilled water\"\
+    ,\n    \"stage\": \"DSM585 solution A only\",\n    \"decision\": \"add\",\n  \
+    \  \"local_fields\": [],\n    \"desired\": {\n      \"printed_stock_water_ml\"\
+    : 490\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm585\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Distilled water\"\
+    ,\n        \"exact_source_quote\": \"Distilled water                         \
+    \                         490.00       ml\",\n        \"snapshot_sha256\": \"\
+    f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\",\n        \"\
+    parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the separate A preparation\
+    \ water. Its relationship to the DSM1052 1000 ml listing is unresolved; the two\
+    \ inputs total 980 ml arithmetically but neither source declares that sum to be\
+    \ the final BOSEA volume. C/D water remains excluded.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q23\",\n    \"name\": \"Distilled water\",\n    \"stage\": \"DSM585 solution\
+    \ B only\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"desired\"\
+    : {\n      \"printed_stock_water_ml\": 490\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm585\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 printed row/paragraph: Distilled water\"\
+    ,\n        \"exact_source_quote\": \" Distilled water                        \
+    \                         490.00       ml\",\n        \"snapshot_sha256\": \"\
+    f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\",\n        \"\
+    parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the separate B preparation\
+    \ water. Its relationship to the DSM1052 1000 ml listing is unresolved; the two\
+    \ inputs total 980 ml arithmetically but neither source declares that sum to be\
+    \ the final BOSEA volume. C/D water remains excluded.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q24\",\n    \"name\": \"ACES pH adjustment\",\n    \"stage\": \"Solution A\
+    \ before other components\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bcye_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[5].description\",\n        \"stored\"\
+    : \"Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the other\
+    \ components and dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool\
+    \ to 50 - 55°C.\"\n      }\n    ],\n    \"desired\": {\n      \"pH\": 6.9,\n \
+    \     \"reagent\": \"KOH\",\n      \"strength\": \"1 N\",\n      \"reagent_volume\"\
+    : \"unspecified\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm585\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Solution A preparation\",\n        \"exact_source_quote\"\
+    : \"Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH.\",\n        \"\
+    snapshot_sha256\": \"f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\"\
+    ,\n        \"parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The dependency already preserves\
+    \ this instruction, without attached evidence. The primary specifies normality\
+    \ and target pH, not KOH dose or final solution volume; no mass or molarity conversion\
+    \ is needed.\"\n  },\n  {\n    \"decision_id\": \"q25\",\n    \"name\": \"Boiling\"\
+    ,\n    \"stage\": \"Solution A dissolution\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bcye_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[5].description\",\n        \"stored\"\
+    : \"Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the other\
+    \ components and dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool\
+    \ to 50 - 55°C.\"\n      }\n    ],\n    \"desired\": {\n      \"operation\": \"\
+    boiling\",\n      \"duration\": \"unspecified\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm585\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\",\n        \"\
+    source_locator\": \"Solution A dissolution\",\n        \"exact_source_quote\"\
+    : \"and dissolve by boiling.\",\n        \"snapshot_sha256\": \"f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\"\
+    ,\n        \"parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"Boiling is explicitly retained locally.\
+    \ No duration, pressure or numerical boiling temperature is supplied.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q26\",\n    \"name\": \"Autoclaving and cooling\"\
+    ,\n    \"stage\": \"Solution A only\",\n    \"decision\": \"evidence_only\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bcye_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[5].description\",\n        \"stored\"\
+    : \"Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the other\
+    \ components and dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool\
+    \ to 50 - 55°C.\"\n      }\n    ],\n    \"desired\": {\n      \"temperature_C\"\
+    : 121,\n      \"duration_min\": 15,\n      \"cooling_range_C\": [\n        50,\n\
+    \        55\n      ]\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsm585\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Solution A sterilization and cooling\",\n   \
+    \     \"exact_source_quote\": \"Autoclave at 121C for 15 minutes. Cool to 50\
+    \ - 55C.\",\n        \"snapshot_sha256\": \"f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\"\
+    ,\n        \"parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source PDF extraction uses the\
+    \ shown degree glyph; numerical interpretation is 121°C for 15 minutes, then 50–55°C\
+    \ cooling. These are preparation conditions, not culture incubation or an instruction\
+    \ for excluded C/D.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n    \"name\"\
+    : \"Autoclaving and cooling\",\n    \"stage\": \"Solution B only\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/bcye_agar.yaml\",\n        \"field_path\": \"preparation_steps[6].description\"\
+    ,\n        \"stored\": \"Autoclave at 121°C and cool to 50 - 55°C.\"\n      }\n\
+    \    ],\n    \"desired\": {\n      \"temperature_C\": 121,\n      \"duration_min\"\
+    : \"unspecified\",\n      \"cooling_range_C\": [\n        50,\n        55\n  \
+    \    ]\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm585\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium585.pdf\"\
+    ,\n        \"source_locator\": \"Solution B sterilization and cooling\",\n   \
+    \     \"exact_source_quote\": \"Autoclave at 121C and cool to 50 - 55C.\",\n\
+    \        \"snapshot_sha256\": \"f3251e26346a797de0a1e23661cb1a669d92670177c8c2fe24d07ab1e893d85f\"\
+    ,\n        \"parsed_text_sha256\": \"06e8f13a75d3c656a6352a4ca7366b811ae60655cd68f79f51956f68885d174b\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary and local dependency\
+    \ agree on temperature/cooling. The B paragraph does not state a duration; do\
+    \ not silently transfer A’s 15-minute time. No culture incubation temperature\
+    \ is inferred.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.003627.water-and-stock-boundaries
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: BOSEA solvent and required A/B preparation need explicit source-scoped reconstruction
+  description: The primary lists 1000 ml water but directs use of A/B whose water
+    inputs are 490 ml each. All selected ingredient lists omit water and lack explicit
+    A/B structure. The DSM owner retains the cross-reference and pH instruction; its
+    useful existing preparation is not missing wholesale.
+  target_ids:
+  - CultureMech:003627
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - ab-source
+  - record
+  - owner-0
+  - owner-1
+  - ab-local
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3.4 is escalated to major because solvent allocation and
+    separately sterilized A/B stages are necessary to reproduce this medium; the exception
+    does not negate already-retained owner preparation.
+- finding_id: f2
+  issue_key: culturemech.003627.quantity-denominator
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stored normalized rates do not resolve the BOSEA preparation basis
+  description: The main g/L values match the historical provider declaration as recorded
+    in derivative reports and attached DSM-owner evidence, but raw authentication
+    and the actual final-volume basis remain unresolved. The dependency’s A/B rates
+    similarly assume 490 ml as final stock volume. Printed primary batch masses remain
+    supported; numerical falsity of every rate is not asserted.
+  target_ids:
+  - CultureMech:003627
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[1].concentration
+  - ingredients[2].concentration
+  - ingredients[3].concentration
+  evidence_ids:
+  - primary
+  - ab-source
+  - api1052-attempt
+  - ab-local
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bcye_agar.yaml
+    role: scoped DSM585 A/B ingredients and preparation dependency only; not a complete-record
+      merge owner
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.003627.maintained-evidence-projection
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The generated/KOMODO projection omits existing direct-owner evidence and
+    instructions
+  description: The direct DSM owner now has four attached quantity evidence objects,
+    a structured MediaDive reference and two preparation instructions. These are absent
+    from the target and KOMODO owner. The October owner event postdates the August
+    merged target; current guarded code does not prove the historical cause.
+  target_ids:
+  - CultureMech:003627
+  field_paths:
+  - ingredients
+  - references
+  - preparation_steps
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.003627.legacy-ACES-correspondence
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical ACES secondary identity remains unresolved
+  description: The legacy MediaIngredientMech:000555 has no exact current index/catalogue/tree
+    correspondence in the selected ACES rows. This does not prove it was historically
+    invalid and does not supply a replacement.
+  target_ids:
+  - CultureMech:003627
+  field_paths:
+  - ingredients[1].mediaingredientmech_term
+  evidence_ids:
+  - mim
+  - mimPinnedCatalog
+  - mimPinnedTree
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bcye_agar.yaml
+    role: scoped DSM585 A/B ingredients and preparation dependency only; not a complete-record
+      merge owner
+  rule_id: P3.2
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.003627.history-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO-derived history has invalid or incomplete timing
+  description: The target and KOMODO owner retain the malformed 2026-01-27T01:15:01.fZ
+    and a timezone-naive February timestamp. The direct DSM owner history is timezone-aware.
+  target_ids:
+  - CultureMech:003627
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is a minor traceability exception because invalid historical
+    timing obstructs source chronology without itself changing the recipe quantities.
+actions:
+- action_id: a1
+  description: Resolve and document the source-specific water allocation and A/B representation;
+    preserve the direct owner’s instructions and exclude C/D, commercial base and
+    complete four-solution protocol. Do not silently normalize to 980 or 1000 ml.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003627
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve the provider-declared historical scope, recover exact cited
+    raw if available, and resolve the preparation basis before claiming final-medium
+    rates. Express primary batch masses/solvents separately; do not import dependency
+    g/L rates as delivered concentrations.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003627
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bcye_agar.yaml
+    role: scoped DSM585 A/B ingredients and preparation dependency only; not a complete-record
+      merge owner
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain and independently reassess existing owner evidence, then reconcile
+    contributor scopes before separately authorized regeneration. Do not erase the
+    maintained curation or label all layers as having no evidence.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003627
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Recover the exact historical identifier mapping or explicitly preserve
+    the gap; verify any future replacement independently of the primary CHEBI label.
+    Apply any dependency correction only to the exact scoped ACES owner field.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003627
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bosea_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bcye_agar.yaml
+    role: scoped DSM585 A/B ingredients and preparation dependency only; not a complete-record
+      merge owner
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve original historical events and append a supported timing clarification
+    if recovered; do not guess offsets or silently rewrite history.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:003627
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1052_BOSEA_medium.yaml
+    role: authoritative normalized source
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current REST1052 returned HTTP 503; cited historical raw cbde2f1a092e198b82a23d9ff7e0696d8cb451291da1b9c228ba6b485cadc872
+  remains unrecovered in the bounded local report/plan search and bound captures.
+  Four existing DSM-owner evidence objects and report rows remain derivative historical
+  claims, not newly authenticated raw.
+- The exact api585 supplementary retrieval returned HTTP 503. Its failure is preserved
+  separately; the available DSM1052/585 primary PDFs supply the stated narrow formulation/preparation
+  assessment.
+- The exact komodo1052 supplementary retrieval returned HTTP 403. Its failure is preserved
+  separately; the available DSM1052/585 primary PDFs supply the stated narrow formulation/preparation
+  assessment.
+- Legacy MediaIngredientMech:000555 current-negative evidence does not establish historical
+  invalidity. Historical REST1052 raw remains unrecovered only within the explicitly
+  searched owned report/plan and captured-source surfaces; no universal absence claim
+  is made.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-044
+- generated-medium
