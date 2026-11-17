@@ -1,0 +1,3545 @@
+# Desulfonatronospira medium: stale strain merge and stock-stage representation
+
+- Review: 20261028T200736Z-batch076-record09-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T19:39:33.523957Z
+- Finished UTC: 2026-10-28T20:07:36.150040Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact generated target is resolved to three maintained contributors. DSMZ 1101 supports its ten main-ingredient rates on an explicitly declared 1003 ml basis, but 22 stock solutes remain flattened at stock strength. The generated record still collapses DSM 19491 into the base despite a maintained strain-relationship repair and explicit DSMZ strain substitutions. Existing solution evidence and two repaired water fields are credited; unresolved KOMODO source identity, nickel hydrate grounding, Pfennig water units and preparation boundaries require curation.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch076 native selection index 09.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003802 | data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml | generated | desulfonatronospira_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003802 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:003802 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:003802 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:003802 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Resolved lineage and strain distinction
+
+identity: concern. Targets: CultureMech:003802.
+
+The three exact maintained paths and IDs are resolved. DSMZ1101 is independently authenticated, while exact KOMODO1101/1101.1 and MediaList endpoints return403. September maintained links already distinguish the strain variant, yet the generated target retains SOURCE_DUPLICATE and a strain synonym. A matching copied ingredient signature cannot prove source identity.
+
+### Preparation and current repair credit
+
+completeness: concern. Targets: CultureMech:003802.
+
+DSMZ main preparation is retained in its owner; the Pfennig stock pH instruction is also retained in the stock record. Current777 and5980 have1L water and no false composition placeholders. Target/KOMODO preparation loss, absent receiving-stock links and unscoped root pH3–4 remain. The bacterial, liquid, SEMI_DEFINED classification is compatible with the inspected base and yeast extract; it is not organism-growth evidence.
+
+### Current claims and historical limitations
+
+evidence: supported. Targets: CultureMech:003802.
+
+All25 current attached stock claims were read and their literal snippets matched fresh sources. Seven exact parent-plan rows contain266 fully assessed historical claims; historical medium passes withheld amounts because of topology or source identity. Current source hashes equal the stored digests. The old S777 preview timestamp differs from the applied current event, and its successor/applied reports are retained. Two older unrelated-medium reviews are context only and their water recommendations do not override the now-repaired stock fields.
+
+### Current writer behavior and repair limits
+
+ownership: concern. Targets: CultureMech:003802.
+
+Current MediaDive code takes main ingredients from the first solution, preserves named stock descriptors, skips water ingredients and still flattens preparation steps across solutions. Its raw ml-to-ML_PER_L mapping needs batch-basis care. The current KOMODO writer maps aerobic metadata and still formats time with strftime %f; this does not authenticate earlier execution. The specific1101 repair fixes relationship metadata but leaves ingredient quantities unchanged. Existing compatible-formulation merge gates must be used after source-specific curation.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:003802.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "DSMZ1101 main row NaCl", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 14.9551,\n                        \"mmol_l\": 255.906,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 15 g; provider g_l=14.9551. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q2", "topic": "DSMZ1101 main row K2HPO4", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.498504,\n                        \"mmol_l\": 2.86207,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 0.5 g; provider g_l=0.498504. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q3", "topic": "DSMZ1101 main row NaHCO3", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 14.9551,\n                        \"mmol_l\": 178.022,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 15 g; provider g_l=14.9551. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q4", "topic": "DSMZ1101 main row Na2CO3", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 95,\n                        \"unit\": \"g\",\n                        \"g_l\": 94.7159,\n                        \"mmol_l\": 893.647,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 95 g; provider g_l=94.7159. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "94.7159", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "94.7159", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "94.7159", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "94.7159", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q5", "topic": "DSMZ1101 main row NH4Cl", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199402,\n                        \"mmol_l\": 3.72783,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 0.2 g; provider g_l=0.199402. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q6", "topic": "DSMZ1101 main row MgCl2 x 6 H2O", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.199402,\n                        \"mmol_l\": 0.980811,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 0.2 g; provider g_l=0.199402. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.199402", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q7", "topic": "DSMZ1101 main row Yeast extract", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0498504,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 0.05 g; provider g_l=0.0498504. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0498504", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0498504", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0498504", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q8", "topic": "DSMZ1101 main row Na-L-lactate", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Na-L-lactate\",\n                        \"compound_id\": 265,\n                        \"amount\": 2.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.19342,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 2.2 g; provider g_l=2.19342. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "2.19342", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "2.19342", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "2.19342", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "2.19342", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "DSMZ specifically replaces lactate and sulfite for DSM 19491; copied base quantities conflict with that branch. Exact KOMODO variant evidence remains unavailable, so no automatic substitution is authorized."}]}, {"quantity_id": "q9", "topic": "DSMZ1101 main row Na2SO3", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Na2SO3\",\n                        \"compound_id\": 109,\n                        \"amount\": 1.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.29611,\n                        \"mmol_l\": 10.2825,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 1.3 g; provider g_l=1.29611. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "1.29611", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "1.29611", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "1.29611", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "1.29611", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "DSMZ specifically replaces lactate and sulfite for DSM 19491; copied base quantities conflict with that branch. Exact KOMODO variant evidence remains unavailable, so no automatic substitution is authorized."}]}, {"quantity_id": "q10", "topic": "DSMZ1101 main row Na2S x 9 H2O", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.24,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.239282,\n                        \"mmol_l\": 0.996253,\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Source batch input 0.24 g; provider g_l=0.239282. Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source data, not silently corrected to a typical value. Source-specific stages remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.239282", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.239282", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.239282", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit provider g_l and declared 1003 ml basis; attach source evidence without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.239282", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but this source branch or collapsed generated identity is not thereby authenticated. Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id": "q11", "topic": "Stock 2762: EDTA", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[0]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"EDTA\",\n                \"compound_id\": 271,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 17.1092,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 5 g gives source g_l=5. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[0].concentration", "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q12", "topic": "Stock 2762: FeSO4 x 7 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[1]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\": 12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2.2,\n                \"unit\": \"g\",\n                \"g_l\": 2.2,\n                \"mmol_l\": 7.91324,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 2.2 g gives source g_l=2.2. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[1].concentration", "stored_value": {"value": "2.2", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q13", "topic": "Stock 2762: ZnSO4 x 7 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[2]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\": 35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.347752,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.1 g gives source g_l=0.1. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[2].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q14", "topic": "Stock 2762: MnCl2 x 4 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[3]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\": 36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.151588,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[3].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q15", "topic": "Stock 2762: H3BO3", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[4]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"H3BO3\",\n                \"compound_id\": 37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.485123,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[4].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q16", "topic": "Stock 2762: CoCl2 x 6 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[5]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 6,\n                \"compound\": \"CoCl2 x 6 H2O\",\n                \"compound_id\": 38,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.2,\n                \"unit\": \"g\",\n                \"g_l\": 0.2,\n                \"mmol_l\": 1.54037,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.2 g gives source g_l=0.2. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[5].concentration", "stored_value": {"value": "0.2", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q17", "topic": "Stock 2762: CuCl2 x 2 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[6]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 7,\n                \"compound\": \"CuCl2 x 2 H2O\",\n                \"compound_id\": 39,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.175971,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[6].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q18", "topic": "Stock 2762: NiCl2 x 6 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[7]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 8,\n                \"compound\": \"NiCl2 x 6 H2O\",\n                \"compound_id\": 40,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.231483,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[7].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q19", "topic": "Stock 2762: Na2MoO4 x 2 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[8]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 9,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\": 9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\": \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.123993,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[8].concentration", "stored_value": {"value": "0.03", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q20", "topic": "Stock 2762: Distilled water", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe[9]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\": 10,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}, "decision": "correct", "rationale": "The stated water input is 1000 ml = 1 L. Provider volume metadata is separately reported; solvent addition alone does not prove measured final volume or a percentage basis. Pfennig pH3–4 does not supply a competing water make-up volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "composition[9].concentration", "stored_value": {"value": "1000", "unit": "PERCENT_V_V"}, "decision": "correct", "rationale": "1000 ml is a 1 L batch water input, not 1000 percent. Preserve the existing 1 L repairs for stocks777/5980; only2762 still requires unit repair."}]}, {"quantity_id": "q21", "topic": "Stock 777: NaOH", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256": "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator": "$.data.recipe[0]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"NaOH\",\n                \"compound_id\": 256,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 12.5009,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 0.5 g gives source g_l=0.5. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml", "field_path": "composition[0].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q22", "topic": "Stock 777: Na2SeO3 x 5 H2O", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256": "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator": "$.data.recipe[1]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Na2SeO3 x 5 H2O\",\n                \"compound_id\": 107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"mg\",\n                \"g_l\": 0.003,\n                \"mmol_l\": 0.0114062,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 3 mg gives source g_l=0.003. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml", "field_path": "composition[1].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q23", "topic": "Stock 777: Na2WO4 x 2 H2O", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256": "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator": "$.data.recipe[2]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Na2WO4 x 2 H2O\",\n                \"compound_id\": 249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\": \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0121267,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 4 mg gives source g_l=0.004. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml", "field_path": "composition[2].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q24", "topic": "Stock 777: Distilled water", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256": "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator": "$.data.recipe[3]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}, "decision": "verified", "rationale": "The stated water input is 1000 ml = 1 L. Provider volume metadata is separately reported; solvent addition alone does not prove measured final volume or a percentage basis. Pfennig pH3–4 does not supply a competing water make-up volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml", "field_path": "composition[3].concentration", "stored_value": {"value": "1", "unit": "L"}, "decision": "verified", "rationale": "1000 ml is a 1 L batch water input, not 1000 percent. Preserve the existing 1 L repairs for stocks777/5980; only2762 still requires unit repair."}]}, {"quantity_id": "q25", "topic": "Stock 5980: Biotin", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[0]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0818632,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 20 mg gives source g_l=0.02. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[0].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q26", "topic": "Stock 5980: Folic acid", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[1]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Folic acid\",\n                \"compound_id\": 138,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\": \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0453104,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 20 mg gives source g_l=0.02. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[1].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q27", "topic": "Stock 5980: Pyridoxine hydrochloride", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[2]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Pyridoxine hydrochloride\",\n                \"compound_id\": 519,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\": \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.486287,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 100 mg gives source g_l=0.1. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[2].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q28", "topic": "Stock 5980: Thiamine HCl", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[3]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.148236,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[3].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q29", "topic": "Stock 5980: Riboflavin", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[4]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Riboflavin\",\n                \"compound_id\": 136,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.132837,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[4].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q30", "topic": "Stock 5980: Nicotinic acid", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[5]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Nicotinic acid\",\n                \"compound_id\": 139,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.406141,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[5].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q31", "topic": "Stock 5980: Calcium D-(+)-pantothenate", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[6]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Calcium D-(+)-pantothenate\",\n                \"compound_id\": 1512,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.209846,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[6].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q32", "topic": "Stock 5980: Vitamin B12", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[7]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Vitamin B12\",\n                \"compound_id\": 18,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00073779,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 1 mg gives source g_l=0.001. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[7].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q33", "topic": "Stock 5980: p-Aminobenzoic acid", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[8]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 9,\n                \"compound\": \"p-Aminobenzoic acid\",\n                \"compound_id\": 47,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.364591,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[8].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q34", "topic": "Stock 5980: (DL)-alpha-Lipoic acid", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[9]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 10,\n                \"compound\": \"(DL)-alpha-Lipoic acid\",\n                \"compound_id\": 252,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\": \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.24233,\n                \"optional\": 0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L times 1/1003, not the undiluted local number. This arithmetic is conditional on the exact base recipe, not a prescription for the inaccessible KOMODO variant. No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value is the named stock concentration. It does not support a root receiving-medium g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[9].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate and attached claim agree with the freshly fetched standalone source. Retain stock scope and evidence."}]}, {"quantity_id": "q35", "topic": "Stock 5980: Distilled water", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator": "$.data.recipe[10]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}, "decision": "verified", "rationale": "The stated water input is 1000 ml = 1 L. Provider volume metadata is separately reported; solvent addition alone does not prove measured final volume or a percentage basis. Pfennig pH3–4 does not supply a competing water make-up volume.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml", "field_path": "composition[10].concentration", "stored_value": {"value": "1", "unit": "L"}, "decision": "verified", "rationale": "1000 ml is a 1 L batch water input, not 1000 percent. Preserve the existing 1 L repairs for stocks777/5980; only2762 still requires unit repair."}]}, {"quantity_id": "q36", "topic": "Receiving addition: Trace elements solution (Pfennig, 1965)", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\": 2762,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Each named stock is 1 ml per explicitly1003 ml final batch. Do not label the literal amount1 ML_PER_L without preserving its batch basis; 1/1.003=0.997008973 ml/L is a derived receiving rate if that representation is chosen.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}]}, {"quantity_id": "q37", "topic": "Receiving addition: Selenite-tungstate solution", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Each named stock is 1 ml per explicitly1003 ml final batch. Do not label the literal amount1 ML_PER_L without preserving its batch basis; 1/1.003=0.997008973 ml/L is a derived receiving rate if that representation is chosen.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}]}, {"quantity_id": "q38", "topic": "Receiving addition: Wolin's vitamin solution (10x)", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Each named stock is 1 ml per explicitly1003 ml final batch. Do not label the literal amount1 ML_PER_L without preserving its batch basis; 1/1.003=0.997008973 ml/L is a derived receiving rate if that representation is chosen.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "solutions", "stored_value": null, "decision": "add", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale": "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose for the authenticated DSMZ base; other branches require source reconciliation.", "missing": true}]}, {"quantity_id": "q39", "topic": "Main-medium water input", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].recipe[13]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"}, "decision": "mixed", "rationale": "Water is a batch input. No density conversion or default100% claim is justified; a solvent preparation note can retain it without requiring a chemical-composition edge.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "preparation_notes", "stored_value": null, "decision": "unsupported", "rationale": "Record literal1000 ml batch water within the correct preparation scope, separately from final volume1003 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml", "field_path": "preparation_notes", "stored_value": null, "decision": "unsupported", "rationale": "Record literal1000 ml batch water within the correct preparation scope, separately from final volume1003 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path": "preparation_notes", "stored_value": null, "decision": "add", "rationale": "Record literal1000 ml batch water within the correct preparation scope, separately from final volume1003 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path": "preparation_notes", "stored_value": null, "decision": "unsupported", "rationale": "Record literal1000 ml batch water within the correct preparation scope, separately from final volume1003 ml.", "missing": true}]}, {"quantity_id": "q40", "topic": "Pfennig placeholder is not an ingredient amount", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator": "$.data.recipe complete ten rows", "accessed_at": "2026-10-28T19:39:37.692975Z"}, "decision": "unsupported", "rationale": "The nine stock solutes and water are fully specified. Preserve all nine valid existing evidence objects and the stock pH instruction. Current777/5980 already lack this placeholder and are credited.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "variable", "unit": "VARIABLE"}, "decision": "unsupported", "rationale": "Current complete source composition has no variable placeholder ingredient; remove only the false placeholder and incomplete-composition flag after exact row reconciliation."}]}, {"quantity_id": "q41", "topic": "Preparation scope for solution2217", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"step\": \"Dissolve sodium chloride and hydrogenphospate, then sparge solution with 100% N2 gas for 30 -45 min to make it anoxic. Add and dissolve carbonates, adjust pH to 10, dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add ammonium chloride, magnesium chloride, trace elements, yeast extract, lactate, sulfite, vitamins, and sulfide from sterile anoxic stock solution prepared under 100% N2 gas. Stock solutions of sulfite (freshly prepared) and vitamins should be sterilized by filtration.\"\n                    }"}, "decision": "not_quantified", "rationale": "Main pH10 anoxic staged preparation is preserved in DSMZ owner step1 but absent in the selected target and KOMODO owners. No temperature or duration of autoclaving is inferred.", "layer_assessments": []}, {"quantity_id": "q42", "topic": "Preparation scope for solution2762", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332", "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T19:38:36.796634Z", "quote": "{\n                        \"step\": \"pH 3.0-4.0\"\n                    }"}, "decision": "not_quantified", "rationale": "Pfennig pH3–4 belongs only to stock2762. Its maintained preparation_notes are correct; DSMZ owner top-level step2 lacks stock scope and must be relocated, not applied to main pH10.", "layer_assessments": []}, {"quantity_id": "q43", "topic": "DSM19491 exact strain substitution comparison", "source": {"evidence_id": "dsm1101", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101.pdf", "raw_path": "REVIEW_WORK/batch076/source09/dsm1101.raw", "raw_sha256": "d6ef5c96b39820fabd0ef15d6d5168f8268013314f59781e861c37a9b40ca285", "locator": "Page1, For DSM19491 note; primary PDF and text capture", "accessed_at": "2026-10-28T19:38:36.967565Z"}, "decision": "conflict", "rationale": "The literal source replaces sulfite with5g/L sodium thiosulfate and lactate with2.2g/L sodium pyruvate for DSM19491. This is direct evidence against merging that DSMZ variant into its base. It does not independently authenticate KOMODO1101.1; DSM100427 substitutions remain a different excluded branch. No new chemical identifier is minted from these names.", "layer_assessments": []}]
+
+### Current ontology and MIM correspondence
+
+grounding: concern. Targets: CultureMech:003802.
+
+All301 current identifier/label slots and672 exact matching packaged rows were inspected; no current MediaIngredientMech legacy IDs are asserted. Thirty-three OLS objects, including water and the nickel candidate, were read in full scientific scope. Nickel hydrate identity remains wrong; calcium D-pantothenate and sodium L-lactate retain their explicit stereo forms. CHEBI-keyed MIM mirrors are linkage assertions, not scientific certification; missing optional pantothenate mirror is not chemical invalidity. Unrelated catalog aliases are not promoted.
+
+### History and evidence scope
+
+provenance: concern. Targets: CultureMech:003802.
+
+Complete current histories and25 attached stock claims were read. Twenty full per-record reports, selected archive methodology/1101 row and seven exact rows in six parent plans were inspected. All266 selected historical claims are accounted; current source digest equality authenticates bytes, not historical access time or execution. Existing source evidence and later stock repairs are credited; KOMODO live equivalence remains unavailable.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:003802.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:003802.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Generated merge still collapses the DSM19491 strain variant
+
+major / open / confirmed; issue key: culturemech-003802-generated-merge-still-collapses-the-dsm19491-strain-variant.
+
+The generated merged_from/synonyms and child relationship fold for_dsm_19491 into the base, although the current maintained relationship is STRAIN_SPECIFIC_VARIANT. DSMZ1101 explicitly changes two substrates for DSM19491; all32 local ingredient rows remain identical across base and child. Credit the maintained September relationship repair, then reconcile exact branch formulation before regenerating. The child ingredients_curated flag is not proof of source-backed amounts.
+
+### f2: Stock strengths are exposed as receiving-medium concentrations
+
+major / open / confirmed; issue key: culturemech-003802-stock-strengths-are-exposed-as-receiving-medium-concentrations.
+
+The selected target and three contributors store22 mineral/vitamin stock solutes as top-level g/L values. DSMZ1101 adds1ml each of2762/777/5980 in1003ml final medium. All10 direct DSMZ main rates are numerically supported and should be retained with evidence. Existing stock rates are separately valid. Restore stock boundaries and literal doses before considering derived final rates; inaccessible KOMODO branches remain conditional.
+
+### f3: Main and stock preparation scopes are incomplete
+
+major / open / confirmed; issue key: culturemech-003802-main-and-stock-preparation-scopes-are-incomplete.
+
+The selected target and KOMODO owners lack the inspected main preparation and retain Aerobic:Yes. DSMZ1101 instead requires anoxic preparation. Its owner preserves the full main text, but Pfennig pH3–4 appears as a second unscoped root MIX step despite correct stock preparation_notes. Keep main pH10 separate, credit retained text, and resolve KOMODO scope before transplanting protocol.
+
+### f4: Pfennig stock still encodes batch water as percent
+
+major / open / confirmed; issue key: culturemech-003802-pfennig-stock-still-encodes-batch-water-as-percent.
+
+Stock2762 composition[9] stores1000 PERCENT_V_V for source1000ml water and retains a variable composition placeholder despite ten explicit composition rows. Its pH3–4 instruction does not make this a percentage. Correct to a literal1L batch input and remove the unsupported placeholder with evidence. The existing1L repairs and placeholder removals in777/5980 are already present and must be preserved.
+
+### f5: Nickel hexahydrate is grounded to anhydrous nickel dichloride
+
+major / open / confirmed; issue key: culturemech-003802-nickel-hexahydrate-is-grounded-to-anhydrous-nickel-dichloride.
+
+The explicitly supplied NiCl2 x6H2O is assigned CHEBI34887 in every selected branch and stock2762, while exact source form and current OLS53542 support the hexahydrate. Current MIM has a MAPPED Nickel(II) chloride hexahydrate entry and a separate REJECTED NiCl2 x6H2O preferred-row alias; preserve that distinction. Calcium D-pantothenate31345, sodium L-lactate232798, broad vitaminB12 and nonstereospecific lipoic acid are compatible with their explicit source labels.
+
+### f6: Source evidence and imported timestamps need bounded follow-up
+
+minor / open / confirmed; issue key: culturemech-003802-source-evidence-and-imported-timestamps-need-bounded-follow-up.
+
+The four medium layers have no attached formulation evidence despite exact source-supported DSMZ claims; the25 stock claims are already present and must be retained. Stored KOMODO import timestamps contain literal.fZ, while current writer uses strftime%f; report the distinction without claiming historical execution or reconstructing a time. Preserve earlier history and attach scoped source evidence to maintained claims.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Preserve the maintained strain relationship; obtain exact KOMODO evidence or explicitly retain its uncertainty. Account for the documented DSM19491 substitutions separately from DSM100427, curate the correct owner branch with evidence, and regenerate only formulation-compatible merge groups. Do not bulk-copy the DSMZ base into a strain record.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+The selected target and three contributors store22 mineral/vitamin stock solutes as top-level g/L values. DSMZ1101 adds1ml each of2762/777/5980 in1003ml final medium. All10 direct DSMZ main rates are numerically supported and should be retained with evidence. Existing stock rates are separately valid. Restore stock boundaries and literal doses before considering derived final rates; inaccessible KOMODO branches remain conditional.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+The selected target and KOMODO owners lack the inspected main preparation and retain Aerobic:Yes. DSMZ1101 instead requires anoxic preparation. Its owner preserves the full main text, but Pfennig pH3–4 appears as a second unscoped root MIX step despite correct stock preparation_notes. Keep main pH10 separate, credit retained text, and resolve KOMODO scope before transplanting protocol.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+Stock2762 composition[9] stores1000 PERCENT_V_V for source1000ml water and retains a variable composition placeholder despite ten explicit composition rows. Its pH3–4 instruction does not make this a percentage. Correct to a literal1L batch input and remove the unsupported placeholder with evidence. The existing1L repairs and placeholder removals in777/5980 are already present and must be preserved.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action5
+
+The explicitly supplied NiCl2 x6H2O is assigned CHEBI34887 in every selected branch and stock2762, while exact source form and current OLS53542 support the hexahydrate. Current MIM has a MAPPED Nickel(II) chloride hexahydrate entry and a separate REJECTED NiCl2 x6H2O preferred-row alias; preserve that distinction. Calcium D-pantothenate31345, sodium L-lactate232798, broad vitaminB12 and nonstereospecific lipoic acid are compatible with their explicit source labels.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action6
+
+The four medium layers have no attached formulation evidence despite exact source-supported DSMZ claims; the25 stock claims are already present and must be retained. Stored KOMODO import timestamps contain literal.fZ, while current writer uses strftime%f; report the distinction without claiming historical execution or reconstructing a time. Preserve earlier history and attach scoped source evidence to maintained claims.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-2 | data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-3 | data/normalized_yaml/bacterial/for_dsm_19491.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| identity-search | REVIEW_WORK/batch076/record09/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| stock-0 | data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml; Complete document | context_only | Full current stock composition, water, placeholder state, preparation, reference claims and append-only history read. Only this exact stock dependency is assessed; its other receiving media remain out of scope. |
+| stock-1 | data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml; Complete document | context_only | Full current stock composition, water, placeholder state, preparation, reference claims and append-only history read. Only this exact stock dependency is assessed; its other receiving media remain out of scope. |
+| stock-2 | data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml; Complete document | context_only | Full current stock composition, water, placeholder state, preparation, reference claims and append-only history read. Only this exact stock dependency is assessed; its other receiving media remain out of scope. |
+| dsm1101 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101.pdf; Exact source identity and scoped formulation/preparation | supports | Both PDF pages visually and textually read: exact DSMZ 1101 base, explicitly declared 1003 ml final volume and pH 10, three one-ml stock additions, full stock definitions and preparation; DSM 19491 and DSM 100427 substitutions remain separate variants. |
+| api1101 | https://mediadive.dsmz.de/rest/medium/1101; Exact source identity and scoped formulation/preparation | supports | Complete current medium identity and all four solution objects read. Main solution 2217 has 14 rows; source volume is explicitly 1003 ml. Stock definitions and two source preparation steps retain their own scope. Provider mmol_l values are not independently endorsed. |
+| solution777 | https://mediadive.dsmz.de/rest/solution/777; Exact source identity and scoped formulation/preparation | supports | Complete standalone stock JSON read: three solutes and one 1000 ml water input, declared volume 1000 ml, no preparation steps; provider stock rates match current owner. Current payload equals the historical recorded digest. |
+| solution2762 | https://mediadive.dsmz.de/rest/solution/2762; Exact source identity and scoped formulation/preparation | supports | Complete standalone stock JSON read: nine solutes and 1000 ml water input, declared volume 1000 ml, pH 3.0-4.0 preparation. Provider mass rates are verified in stock scope; mmol_l is not endorsed. |
+| solution5980 | https://mediadive.dsmz.de/rest/solution/5980; Exact source identity and scoped formulation/preparation | supports | Complete standalone 10x vitamin stock JSON read: ten vitamins and 1000 ml water input. Existing evidence, stock rates and repaired water are retained; no receiving-medium growth claim follows. |
+| api161 | https://mediadive.dsmz.de/rest/medium/161; Exact source identity and scoped formulation/preparation | supports | Only medium identity, solution inventory and exact data.solutions[4] solution 5980 were assessed to authenticate the existing stock claim and bibliography. Other medium161 components and organism associations are excluded. |
+| strain19491 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-19491; DSM 19491 catalog identity and culture-medium section | context_only | Full DSMZ catalog text inspected for exact DSM 19491 identity and its medium1101 modification link. Catalog culture metadata and publication links are context only; no new target_organisms claim, NCBI taxon, DOI or experimental-growth evidence is inferred. |
+| komodo1101 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1101; Exact currently fetched accession endpoint | unknown | HTTP 403. This attempt cannot authenticate the current KOMODO formulation or cross-source equivalence. Historical mapping rows remain attributed historical evidence. |
+| komodo1101variant | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1101.1; Exact currently fetched accession endpoint | unknown | HTTP 403. This attempt cannot authenticate the current KOMODO formulation or cross-source equivalence. Historical mapping rows remain attributed historical evidence. |
+| komodoList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact currently fetched accession endpoint | unknown | HTTP 403. This attempt cannot authenticate the current KOMODO formulation or cross-source equivalence. Historical mapping rows remain attributed historical evidence. |
+| historical-0 | reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md; Non-table methodology and exact selected medium1101 row; archive-selected-reading.json retains scope | context_only | Archive non-table methodology and exact medium1101 comparison row read; other 652 rows excluded. |
+| historical-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfonatronospira_medium.yaml.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-2 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_777_Selenite-tungstate_solution.yaml.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-3 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-2000-2500/records/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-4 | reports/ingredient_concentration_curation/20261007-mediadive-stocks/mediadive_5980_Wolin_s_vitamin_solution_10x.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-5 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-6 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/for_dsm_19491.yaml.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-7 | reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S5980.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-8 | reports/ingredient_concentration_curation/20261009-methanofollis-family/records/S5980.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-9 | reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S777.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-10 | reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S777.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-11 | reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S777.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-12 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-13 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-14 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonatronospira_medium.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-15 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_19491.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-16 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-17 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-18 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-19 | reports/yaml_record_review/20260921T142652Z-ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| historical-20 | reports/yaml_record_review/20260922T034655Z-CARBOXYDOCELLA_MANGANICA_MEDIUM.md; Complete report, reconstructed from historical-reading-cells.json | context_only | Full historical per-record report read, including every unique table cell and source claim through a lossless reconstruction. Historical conclusions are reassessed against current bytes; unrelated target verdicts are context only. |
+| parent-plan-0 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json; Exact matching paths retained in selected-parent-plan-reading.json | context_only | Only exact selected owner or stock rows were read; all their claims, input/output hashes, source digests and metadata were assessed. Unrelated rows and global conclusions excluded. |
+| parent-plan-1 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/plan.json; Exact matching paths retained in selected-parent-plan-reading.json | context_only | Only exact selected owner or stock rows were read; all their claims, input/output hashes, source digests and metadata were assessed. Unrelated rows and global conclusions excluded. |
+| parent-plan-2 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-2000-2500/plan.json; Exact matching paths retained in selected-parent-plan-reading.json | context_only | Only exact selected owner or stock rows were read; all their claims, input/output hashes, source digests and metadata were assessed. Unrelated rows and global conclusions excluded. |
+| parent-plan-3 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json; Exact matching paths retained in selected-parent-plan-reading.json | context_only | Only exact selected owner or stock rows were read; all their claims, input/output hashes, source digests and metadata were assessed. Unrelated rows and global conclusions excluded. |
+| parent-plan-4 | reports/ingredient_concentration_curation/20261009-methanofollis-family/plan.json; Exact matching paths retained in selected-parent-plan-reading.json | context_only | Only exact selected owner or stock rows were read; all their claims, input/output hashes, source digests and metadata were assessed. Unrelated rows and global conclusions excluded. |
+| parent-plan-5 | reports/ingredient_concentration_curation/20261009-synthrophomonas-family/plan.json; Exact matching paths retained in selected-parent-plan-reading.json | context_only | Only exact selected owner or stock rows were read; all their claims, input/output hashes, source digests and metadata were assessed. Unrelated rows and global conclusions excluded. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| writer-1 | src/culturemech/import/komodo_web_importer.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| writer-2 | src/culturemech/merge/merger.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| writer-3 | src/culturemech/merge/formulation.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| writer-4 | scripts/repair_komodo_1101_desulfonatronospira_score10.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| writer-5 | scripts/migrate_solutions_from_ingredients.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| writer-6 | scripts/migrate_chebi_regrounding.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| writer-7 | scripts/repair_merged_duplicates.py; Current relevant function bodies; unchanged-writer-reading-proof.json records exact prior reading joins where used | context_only | Inspected current conversion, compatibility or bounded repair behavior. Current code is an ownership/mechanism reference, not proof of historical execution. |
+| parent-claims | REVIEW_WORK/batch076/record09/selected-parent-plan-reading.json | context_only | Seven selected plan rows, 266 historical claims; literal source joins and full claim semantics retained. Original S777 preview differs from current applied bytes only in final event timestamp; its applied/successor report pins current bytes. |
+| attached-claims | REVIEW_WORK/batch076/record09/current-claim-and-history-source-joins-v2.json | context_only | All 25 current attached stock claims have exact snippets in freshly captured sources. Long historical composition arrays exactly join fully read historical cells; all remaining event fields were read. |
+| full-catalog | REVIEW_WORK/batch076/record09/complete-current-grounding-reading.json | context_only | All 301 current identifier/label slots and all 672 matching packaged rows retained losslessly. Rejected aliases and other chemical forms are not accepted as substitute identities. |
+| ols53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542; _embedded.terms exact CHEBI:53542 scientific object | supports | Exact non-obsolete nickel chloride hexahydrate term, formula2Cl.6H2O.Ni and mass237.689 read. Supports candidate chemical-form identity only; rejected MIM aliases are not authorized replacements. |
+| ols34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact obo_id, preferred label, obsolete flag, definition, synonyms, formula, mass and CAS annotations | supports | Exact current ontology scientific object read for asserted chemical identity; not recipe or growth evidence. |
+| ols26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols232798 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_232798; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86477 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86477; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols4735 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch076/record09/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch076/record09/grounding-inventory.json | context_only | All selected target/owner recursive asserted identifier/label slots and explicitly scoped dependency slots; current OLS scientific objects and packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch076/record09/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch076/record09/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch076/record09/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch076/record09/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch076/record09/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch076/record09/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch076/record09/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- Completion is partial because exact current KOMODO1101,1101.1 and MediaList requests return403; historical mappings and copied compositions are not live source equivalence. The exact local target itself is resolved.
+- Only three exact stock dependencies are assessed. API161 is limited to medium identity, inventory and stock5980. Other receiving media, DSM100427 variant amounts and unrelated archive rows remain unassessed.
+- No growth-association or taxonomic curation was performed. DSM19491 catalog identity is context; linked publications and taxonomy accessions were not asserted verified. iModulonDB is inapplicable to this formulation review.
+- Four original canonical target commands passed once; the reference validator performed zero checks. No dedicated focused embedded-history validator exists; the documented history recipe addresses standalone history files. No full-corpus gate or execution replay is claimed.
+- Twenty historical per-record report bodies were read in full through a lossless cell reconstruction; the651 unrelated archive table rows and sibling parent-plan records are excluded. Old reports do not constitute structured review coverage or current scientific approval.
+- Current writer code is used to identify maintained ownership and safeguards, not to prove how historical files were produced. No record, generator product or earlier review was edited.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation or publication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T200736Z-batch076-record09-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Desulfonatronospira medium: stale strain merge and stock-stage representation'
+started_at: '2026-10-28T19:39:33.523957Z'
+finished_at: '2026-10-28T20:07:36.150040Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact generated target is resolved to three maintained contributors.
+  DSMZ 1101 supports its ten main-ingredient rates on an explicitly declared 1003
+  ml basis, but 22 stock solutes remain flattened at stock strength. The generated
+  record still collapses DSM 19491 into the base despite a maintained strain-relationship
+  repair and explicit DSMZ strain substitutions. Existing solution evidence and two
+  repaired water fields are credited; unresolved KOMODO source identity, nickel hydrate
+  grounding, Pfennig water units and preparation boundaries require curation.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml
+    sha256: 5a058e011b0d3ba26bba3c5537655333484ad07854d68b29fbf8ceeee5b55ff2
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    sha256: 381ad76315abae337e7e56071c68506d12735076ea182bc8be8b9b896341cf89
+    role: context
+  - path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    sha256: ee8c0b3cddd7e44a69798cd36fa4065a0add2365df9f0cbb185244793ebd4eac
+    role: context
+  - path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    sha256: 33af2402c31a5429e36ab814c929b2e1c0894bb874c786c855258efd10cf94ef
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml
+    sha256: 6543ffd909de5520b461e6ff9847a987af7ffe1722508d1d4b97e2b42fb23bd0
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml
+    sha256: b8b5efd085ffa7d0f4e3da6ccf82c0de49b364082867d531beefa757fa3c5950
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml
+    sha256: 9153ff2e0d3d0c3a28989b2de6264998a0b09c845f531d6e6b366353e215ebba
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+    sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfonatronospira_medium.yaml.md
+    sha256: 8da37ef2d47be74f87a44e7a075711bfbdaeb0597c5fb457614da1e0645f202c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/plan.json
+    sha256: ad06448655bb31d1ec7e44000e12c974cdb8ab41ce407fd799ca67b925f5eead
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_777_Selenite-tungstate_solution.yaml.md
+    sha256: c6e53cf03c3b24e7bcd57766397f4c30db7aa156e2c722d4291b40e319389f65
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-2000-2500/plan.json
+    sha256: ad27f34e7d4260f8112f660c38c088011f6c74412ac3f2d20b6d9cfebd22bedc
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-2000-2500/records/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml.md
+    sha256: b4bd6a32e3ad874789140f268116a2aac95a06d6c7dc501fa0f6aba28e0cba19
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-stocks/mediadive_5980_Wolin_s_vitamin_solution_10x.md
+    sha256: f2fe262502bc7b014e102df78f0d05196f15c28c02908757d89ab110de98be56
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json
+    sha256: 0fc7158ec48d1b0c75efa149070b46b677bb3389d969a1440267f43e21b3d3c8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml.md
+    sha256: 00c941cf7de2cb68955c8a684d2e51cfc3fce430f797664c8fddf975c4fdd6ef
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/for_dsm_19491.yaml.md
+    sha256: 617d1714a7b2cc8a724c012be8d11f01f588541dff8dc386e8d5522df7a871bf
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S5980.md
+    sha256: c73b7cc5dca7e8446e5dcac3c02cecbf25ba80fc42e07f36bae71d94199e5167
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-methanofollis-family/plan.json
+    sha256: dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-methanofollis-family/records/S5980.md
+    sha256: aa3090fb45f4fdc77f7dcba19ecee2f4268b73c414fbae71a749ee83df10701b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S777.md
+    sha256: 3960c9febd1df25319e8032d64c3c0702db2d60edeab1e9375074c5d9aeb1f25
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/plan.json
+    sha256: 83fdebb5c629773b4b0ec2c5b810a66dc226602ab0df9aed0728eba35a14276d
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S777.md
+    sha256: bb4cd6991e128cfe1ead03b460132dbcf87a7d6f5c1aa12a97302a108d7827ff
+    role: context
+  - path: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S777.md
+    sha256: 87a48210ef544ac3f8df3dfe3c281a32a4f97b77669ee8eb5f3ed55e512d2be4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.md
+    sha256: 0af2af89fa7db726bddb02087a83e90c23a105bb12ed1f85dd8ec27be2068c30
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.md
+    sha256: 2167690f1e0b313198df87dfaa42a25bb4c8ff94d3c88450f694e08038dbcb71
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonatronospira_medium.md
+    sha256: b4cb4bd7d83e5a618354d51773f93a99bde21c3f45dae5cb4d43ff26bd3b2725
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_19491.md
+    sha256: 71f6f175ac37316cbabd5763109ee98f4032f2baa3e1371f89a90eca893316c2
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.md
+    sha256: aedc137525298bf78af7c78d87e954c79f60781d953d2ec808ebded404b51f34
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.md
+    sha256: 22e4d09decbfb67f326989cc36b747521220cf6a03747698257efdd00c8609d4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.md
+    sha256: 8d27a0f8e65712e1261dc6073aa8d2dfe8e97a96343e2e3de70cac57b642d21c
+    role: context
+  - path: reports/label_plausibility_2026-07-19.tsv
+    sha256: eda647ffbb87d5ea90db812858b2d1d9388393c4d1abc8dec78672324c1509d9
+    role: context
+  - path: reports/media_content_review_manifest.tsv
+    sha256: e5ff2f1241ba046ae7a5dc0d543d340bdba10d31fa1fdc3e36203600cf1ec0ce
+    role: context
+  - path: reports/yaml_record_review/20260921T142652Z-ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.md
+    sha256: a70e823102253cda09135e831823875b2f45c3b82fd13016c0b2552e968b149b
+    role: context
+  - path: reports/yaml_record_review/20260922T034655Z-CARBOXYDOCELLA_MANGANICA_MEDIUM.md
+    sha256: 901ff56ba505f5131022332e1eb13d6f5ae9cb2c8225cdcd2453a9d28bbe4c51
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_komodo_1101_desulfonatronospira_score10.py
+    sha256: 20e49848da58a365e50b2931a8e19190596baefd2b70754f9586f539eef9651e
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch076 native selection index 09.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003802
+targets:
+- target_id: CultureMech:003802
+  path: data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml
+  label: desulfonatronospira_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003802
+  command: just validate-schema data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003802
+  command: just validate-strict data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml
+    --out REVIEW_WORK/batch076/record09/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:003802
+  command: just validate-terms data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:003802
+  command: just validate-references data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: 5a058e011b0d3ba26bba3c5537655333484ad07854d68b29fbf8ceeee5b55ff2
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 381ad76315abae337e7e56071c68506d12735076ea182bc8be8b9b896341cf89
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: ee8c0b3cddd7e44a69798cd36fa4065a0add2365df9f0cbb185244793ebd4eac
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 33af2402c31a5429e36ab814c929b2e1c0894bb874c786c855258efd10cf94ef
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch076/record09/identity-search.json
+  accessed_at: '2026-10-28T19:51:42.015624Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    only exact resolved owner matches are retained in this result. Similar names and
+    source accessions are not promoted to owners.
+  snapshot_sha256: 5ab60907ba1ffdc95163d4e9ef35f40bf2c644d435df1aeabfe83be9d4b5f642
+- evidence_id: stock-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full current stock composition, water, placeholder state, preparation,
+    reference claims and append-only history read. Only this exact stock dependency
+    is assessed; its other receiving media remain out of scope.
+  snapshot_sha256: 9153ff2e0d3d0c3a28989b2de6264998a0b09c845f531d6e6b366353e215ebba
+- evidence_id: stock-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full current stock composition, water, placeholder state, preparation,
+    reference claims and append-only history read. Only this exact stock dependency
+    is assessed; its other receiving media remain out of scope.
+  snapshot_sha256: 6543ffd909de5520b461e6ff9847a987af7ffe1722508d1d4b97e2b42fb23bd0
+- evidence_id: stock-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full current stock composition, water, placeholder state, preparation,
+    reference claims and append-only history read. Only this exact stock dependency
+    is assessed; its other receiving media remain out of scope.
+  snapshot_sha256: b8b5efd085ffa7d0f4e3da6ccf82c0de49b364082867d531beefa757fa3c5950
+- evidence_id: dsm1101
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101.pdf
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T19:38:36.967565Z'
+  support: supports
+  summary: 'Both PDF pages visually and textually read: exact DSMZ 1101 base, explicitly
+    declared 1003 ml final volume and pH 10, three one-ml stock additions, full stock
+    definitions and preparation; DSM 19491 and DSM 100427 substitutions remain separate
+    variants.'
+  snapshot_sha256: d6ef5c96b39820fabd0ef15d6d5168f8268013314f59781e861c37a9b40ca285
+- evidence_id: api1101
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1101
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T19:38:36.796634Z'
+  support: supports
+  summary: Complete current medium identity and all four solution objects read. Main
+    solution 2217 has 14 rows; source volume is explicitly 1003 ml. Stock definitions
+    and two source preparation steps retain their own scope. Provider mmol_l values
+    are not independently endorsed.
+  snapshot_sha256: 70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332
+- evidence_id: solution777
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/777
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T19:39:37.692931Z'
+  support: supports
+  summary: 'Complete standalone stock JSON read: three solutes and one 1000 ml water
+    input, declared volume 1000 ml, no preparation steps; provider stock rates match
+    current owner. Current payload equals the historical recorded digest.'
+  snapshot_sha256: 3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2
+- evidence_id: solution2762
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/2762
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T19:39:37.692975Z'
+  support: supports
+  summary: 'Complete standalone stock JSON read: nine solutes and 1000 ml water input,
+    declared volume 1000 ml, pH 3.0-4.0 preparation. Provider mass rates are verified
+    in stock scope; mmol_l is not endorsed.'
+  snapshot_sha256: 405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c
+- evidence_id: solution5980
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5980
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T19:39:37.695506Z'
+  support: supports
+  summary: 'Complete standalone 10x vitamin stock JSON read: ten vitamins and 1000
+    ml water input. Existing evidence, stock rates and repaired water are retained;
+    no receiving-medium growth claim follows.'
+  snapshot_sha256: 2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c
+- evidence_id: api161
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/161
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T19:41:40.759527Z'
+  support: supports
+  summary: Only medium identity, solution inventory and exact data.solutions[4] solution
+    5980 were assessed to authenticate the existing stock claim and bibliography.
+    Other medium161 components and organism associations are excluded.
+  snapshot_sha256: 53d710b65b9a45b9d21c2fddd18a86b41de41d18c0a4c2cbd7de44b0a2ef8666
+- evidence_id: strain19491
+  kind: database
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-19491
+  locator: DSM 19491 catalog identity and culture-medium section
+  accessed_at: '2026-10-28T19:38:56.335827Z'
+  support: context_only
+  summary: Full DSMZ catalog text inspected for exact DSM 19491 identity and its medium1101
+    modification link. Catalog culture metadata and publication links are context
+    only; no new target_organisms claim, NCBI taxon, DOI or experimental-growth evidence
+    is inferred.
+  snapshot_sha256: 91faeccc41e88182a92f43d1c5f073772f702d50ec19619d975531031fb10969
+- evidence_id: komodo1101
+  kind: search
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1101
+  locator: Exact currently fetched accession endpoint
+  accessed_at: '2026-10-28T19:38:36.128012Z'
+  support: unknown
+  summary: HTTP 403. This attempt cannot authenticate the current KOMODO formulation
+    or cross-source equivalence. Historical mapping rows remain attributed historical
+    evidence.
+  search_scope: Exact source URL from the selected identity or historical mapping,
+    fetched during this review; no inference of absence from access failure.
+  snapshot_sha256: 5eabc973d01f0ea51bffed423997c5f0e2aac1da19f580e54b6f4795a84f5ac6
+- evidence_id: komodo1101variant
+  kind: search
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1101.1
+  locator: Exact currently fetched accession endpoint
+  accessed_at: '2026-10-28T19:38:36.065850Z'
+  support: unknown
+  summary: HTTP 403. This attempt cannot authenticate the current KOMODO formulation
+    or cross-source equivalence. Historical mapping rows remain attributed historical
+    evidence.
+  search_scope: Exact source URL from the selected identity or historical mapping,
+    fetched during this review; no inference of absence from access failure.
+  snapshot_sha256: 842886181b37bd95fed4742a830b31e0721b9292e21ab77497f09ef9b244ddca
+- evidence_id: komodoList
+  kind: search
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact currently fetched accession endpoint
+  accessed_at: '2026-10-28T19:38:36.126809Z'
+  support: unknown
+  summary: HTTP 403. This attempt cannot authenticate the current KOMODO formulation
+    or cross-source equivalence. Historical mapping rows remain attributed historical
+    evidence.
+  search_scope: Exact source URL from the selected identity or historical mapping,
+    fetched during this review; no inference of absence from access failure.
+  snapshot_sha256: 8ac7d271a3ac6b91c9197e5a9e71cb5472e55d6240c9a2655882419dfbfa120a
+- evidence_id: historical-0
+  kind: record_content
+  reference: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+  locator: Non-table methodology and exact selected medium1101 row; archive-selected-reading.json
+    retains scope
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Archive non-table methodology and exact medium1101 comparison row read;
+    other 652 rows excluded.
+  snapshot_sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfonatronospira_medium.yaml.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 8da37ef2d47be74f87a44e7a075711bfbdaeb0597c5fb457614da1e0645f202c
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/records/bacterial/mediadive_777_Selenite-tungstate_solution.yaml.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: c6e53cf03c3b24e7bcd57766397f4c30db7aa156e2c722d4291b40e319389f65
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-2000-2500/records/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: b4bd6a32e3ad874789140f268116a2aac95a06d6c7dc501fa0f6aba28e0cba19
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-stocks/mediadive_5980_Wolin_s_vitamin_solution_10x.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: f2fe262502bc7b014e102df78f0d05196f15c28c02908757d89ab110de98be56
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 00c941cf7de2cb68955c8a684d2e51cfc3fce430f797664c8fddf975c4fdd6ef
+- evidence_id: historical-6
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/for_dsm_19491.yaml.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 617d1714a7b2cc8a724c012be8d11f01f588541dff8dc386e8d5522df7a871bf
+- evidence_id: historical-7
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-methanofollis-family/applied-records/S5980.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: c73b7cc5dca7e8446e5dcac3c02cecbf25ba80fc42e07f36bae71d94199e5167
+- evidence_id: historical-8
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-methanofollis-family/records/S5980.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: aa3090fb45f4fdc77f7dcba19ecee2f4268b73c414fbae71a749ee83df10701b
+- evidence_id: historical-9
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/applied-records/S777.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 3960c9febd1df25319e8032d64c3c0702db2d60edeab1e9375074c5d9aeb1f25
+- evidence_id: historical-10
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records-ledgers-successor/S777.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: bb4cd6991e128cfe1ead03b460132dbcf87a7d6f5c1aa12a97302a108d7827ff
+- evidence_id: historical-11
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/records/S777.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 87a48210ef544ac3f8df3dfe3c281a32a4f97b77669ee8eb5f3ed55e512d2be4
+- evidence_id: historical-12
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 0af2af89fa7db726bddb02087a83e90c23a105bb12ed1f85dd8ec27be2068c30
+- evidence_id: historical-13
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 2167690f1e0b313198df87dfaa42a25bb4c8ff94d3c88450f694e08038dbcb71
+- evidence_id: historical-14
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfonatronospira_medium.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: b4cb4bd7d83e5a618354d51773f93a99bde21c3f45dae5cb4d43ff26bd3b2725
+- evidence_id: historical-15
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_19491.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 71f6f175ac37316cbabd5763109ee98f4032f2baa3e1371f89a90eca893316c2
+- evidence_id: historical-16
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: aedc137525298bf78af7c78d87e954c79f60781d953d2ec808ebded404b51f34
+- evidence_id: historical-17
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 22e4d09decbfb67f326989cc36b747521220cf6a03747698257efdd00c8609d4
+- evidence_id: historical-18
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 8d27a0f8e65712e1261dc6073aa8d2dfe8e97a96343e2e3de70cac57b642d21c
+- evidence_id: historical-19
+  kind: record_content
+  reference: reports/yaml_record_review/20260921T142652Z-ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: a70e823102253cda09135e831823875b2f45c3b82fd13016c0b2552e968b149b
+- evidence_id: historical-20
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T034655Z-CARBOXYDOCELLA_MANGANICA_MEDIUM.md
+  locator: Complete report, reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Full historical per-record report read, including every unique table cell
+    and source claim through a lossless reconstruction. Historical conclusions are
+    reassessed against current bytes; unrelated target verdicts are context only.
+  snapshot_sha256: 901ff56ba505f5131022332e1eb13d6f5ae9cb2c8225cdcd2453a9d28bbe4c51
+- evidence_id: parent-plan-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+  locator: Exact matching paths retained in selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Only exact selected owner or stock rows were read; all their claims, input/output
+    hashes, source digests and metadata were assessed. Unrelated rows and global conclusions
+    excluded.
+  snapshot_sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+- evidence_id: parent-plan-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-0500-1000/plan.json
+  locator: Exact matching paths retained in selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Only exact selected owner or stock rows were read; all their claims, input/output
+    hashes, source digests and metadata were assessed. Unrelated rows and global conclusions
+    excluded.
+  snapshot_sha256: ad06448655bb31d1ec7e44000e12c974cdb8ab41ce407fd799ca67b925f5eead
+- evidence_id: parent-plan-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-2000-2500/plan.json
+  locator: Exact matching paths retained in selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Only exact selected owner or stock rows were read; all their claims, input/output
+    hashes, source digests and metadata were assessed. Unrelated rows and global conclusions
+    excluded.
+  snapshot_sha256: ad27f34e7d4260f8112f660c38c088011f6c74412ac3f2d20b6d9cfebd22bedc
+- evidence_id: parent-plan-3
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json
+  locator: Exact matching paths retained in selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Only exact selected owner or stock rows were read; all their claims, input/output
+    hashes, source digests and metadata were assessed. Unrelated rows and global conclusions
+    excluded.
+  snapshot_sha256: 0fc7158ec48d1b0c75efa149070b46b677bb3389d969a1440267f43e21b3d3c8
+- evidence_id: parent-plan-4
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-methanofollis-family/plan.json
+  locator: Exact matching paths retained in selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Only exact selected owner or stock rows were read; all their claims, input/output
+    hashes, source digests and metadata were assessed. Unrelated rows and global conclusions
+    excluded.
+  snapshot_sha256: dc2a0e96231feac52125245dc55f41d3deb937970a06d151fba10d2fd63d7a4a
+- evidence_id: parent-plan-5
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261009-synthrophomonas-family/plan.json
+  locator: Exact matching paths retained in selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Only exact selected owner or stock rows were read; all their claims, input/output
+    hashes, source digests and metadata were assessed. Unrelated rows and global conclusions
+    excluded.
+  snapshot_sha256: 83fdebb5c629773b4b0ec2c5b810a66dc226602ab0df9aed0728eba35a14276d
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-4
+  kind: record_content
+  reference: scripts/repair_komodo_1101_desulfonatronospira_score10.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: 20e49848da58a365e50b2931a8e19190596baefd2b70754f9586f539eef9651e
+- evidence_id: writer-5
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-6
+  kind: record_content
+  reference: scripts/migrate_chebi_regrounding.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+- evidence_id: writer-7
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: Current relevant function bodies; unchanged-writer-reading-proof.json records
+    exact prior reading joins where used
+  accessed_at: '2026-10-28T19:51:41.948063Z'
+  support: context_only
+  summary: Inspected current conversion, compatibility or bounded repair behavior.
+    Current code is an ownership/mechanism reference, not proof of historical execution.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: parent-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record09/selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T19:51:42.071378Z'
+  support: context_only
+  summary: Seven selected plan rows, 266 historical claims; literal source joins and
+    full claim semantics retained. Original S777 preview differs from current applied
+    bytes only in final event timestamp; its applied/successor report pins current
+    bytes.
+  snapshot_sha256: d16168f75dd63838378c73bfe121606e3132bf6d0adfd3e97fa91f6297c29429
+- evidence_id: attached-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record09/current-claim-and-history-source-joins-v2.json
+  accessed_at: '2026-10-28T19:51:42.071511Z'
+  support: context_only
+  summary: All 25 current attached stock claims have exact snippets in freshly captured
+    sources. Long historical composition arrays exactly join fully read historical
+    cells; all remaining event fields were read.
+  snapshot_sha256: 3a9afa1e7c08317e35296ca133b40f30abc6bb54b53b512fc1589b66ff70de73
+- evidence_id: full-catalog
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record09/complete-current-grounding-reading.json
+  accessed_at: '2026-10-28T19:51:42.071725Z'
+  support: context_only
+  summary: All 301 current identifier/label slots and all 672 matching packaged rows
+    retained losslessly. Rejected aliases and other chemical forms are not accepted
+    as substitute identities.
+  snapshot_sha256: 1861fba5c1a7d888891ea7340cb1dd7915e482839f71d9e8bbf34dd34e4137c5
+- evidence_id: ols53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  locator: _embedded.terms exact CHEBI:53542 scientific object
+  accessed_at: '2026-10-28T19:38:36.702433Z'
+  support: supports
+  summary: Exact non-obsolete nickel chloride hexahydrate term, formula2Cl.6H2O.Ni
+    and mass237.689 read. Supports candidate chemical-form identity only; rejected
+    MIM aliases are not authorized replacements.
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: ols34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact obo_id, preferred label, obsolete flag, definition, synonyms, formula,
+    mass and CAS annotations
+  accessed_at: '2026-10-28T19:38:39.276410Z'
+  support: supports
+  summary: Exact current ontology scientific object read for asserted chemical identity;
+    not recipe or growth evidence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: ols26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.053388Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: ols131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:36.777668Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: ols32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.792482Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: ols29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.194862Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: ols31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.647211Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: ols86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:40.468729Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: ols232798
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_232798
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.001526Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 9babe942a39eb91a513ec202dbae4289fda9f5586836aaee58192b4795ce7344
+- evidence_id: ols86477
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86477
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:40.608684Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 30bc14ca6bced2833a5eb78d182f7d1197dc81480ba320d09e80c9185319fb36
+- evidence_id: ols76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:40.426233Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: ols4735
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.406281Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: ols75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:40.013860Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: ols32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.219753Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: ols86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:40.471096Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: ols33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.267476Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: ols53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.821238Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: ols86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:40.460449Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: ols75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.868682Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: ols32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.198386Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: ols131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:36.723008Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: ols63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.868647Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: ols15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:37.429548Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: ols27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.068906Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: ols30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.597611Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: ols49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:39.854685Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: ols17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:37.529308Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: ols15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:37.418145Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: ols31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.670789Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: ols176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:37.991800Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: ols30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:38.621721Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: ols16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:38:37.397162Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: ols15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T19:41:40.676378Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record09/quantity-inventory.json
+  accessed_at: '2026-10-28T19:51:42.163078Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: f889b007de509bc54adb8df4644705da8c91d5509ccfe02237c85c9f47cfb52c
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record09/grounding-inventory.json
+  accessed_at: '2026-10-28T19:51:42.163159Z'
+  support: context_only
+  summary: All selected target/owner recursive asserted identifier/label slots and
+    explicitly scoped dependency slots; current OLS scientific objects and packaged
+    MIM preferred-row joins.
+  snapshot_sha256: a780a761030c46276d15c5dbb20b01ee5bef8facb067b5a5884b8467e2962231
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record09/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T19:51:42.163455Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: add924c576255490f1e0fcbff662778dfd10a9515db2ad2b6037dd14b52d3495
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record09/scalar-census.json
+  accessed_at: '2026-10-28T19:51:42.163530Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 960c0d000ed398f1c63d240660c6c33440681e7fd96d16756df192d82df61e19
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch076/record09/validate-schema.json
+  accessed_at: '2026-10-28T19:39:34.633720Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 75b79f4008746925d53eb489e299fe441ab91014a86af5e9e358a8550586a5d1
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch076/record09/validate-strict.json
+  accessed_at: '2026-10-28T19:39:35.576964Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch076/record09/strict.tsv\n"
+  snapshot_sha256: 2a0a0fed345471e83a38c2f187422687d893bd7145f45e0b9b255ec980b77627
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch076/record09/validate-terms.json
+  accessed_at: '2026-10-28T19:39:36.617934Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: a1c952e8328c7f6387180757dc4b9ded02719c8504d447cdf970cd8d4d1ae0a0
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch076/record09/validate-references.json
+  accessed_at: '2026-10-28T19:39:37.384483Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 044ce7b491534b164bda11bfee7f997f9677f282eaab559d97fe5e907d5c55d4
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Resolved lineage and strain distinction
+  outcome: concern
+  summary: The three exact maintained paths and IDs are resolved. DSMZ1101 is independently
+    authenticated, while exact KOMODO1101/1101.1 and MediaList endpoints return403.
+    September maintained links already distinguish the strain variant, yet the generated
+    target retains SOURCE_DUPLICATE and a strain synonym. A matching copied ingredient
+    signature cannot prove source identity.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - identity-search
+  - dsm1101
+  - api1101
+  - komodo1101
+  - komodo1101variant
+  - owner-1
+  - owner-2
+  - owner-3
+  - writer-4
+- assessment_id: a2
+  area: completeness
+  topic: Preparation and current repair credit
+  outcome: concern
+  summary: DSMZ main preparation is retained in its owner; the Pfennig stock pH instruction
+    is also retained in the stock record. Current777 and5980 have1L water and no false
+    composition placeholders. Target/KOMODO preparation loss, absent receiving-stock
+    links and unscoped root pH3–4 remain. The bacterial, liquid, SEMI_DEFINED classification
+    is compatible with the inspected base and yeast extract; it is not organism-growth
+    evidence.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - dsm1101
+  - api1101
+  - stock-0
+  - stock-1
+  - stock-2
+  - owner-2
+- assessment_id: a3
+  area: evidence
+  topic: Current claims and historical limitations
+  outcome: supported
+  summary: All25 current attached stock claims were read and their literal snippets
+    matched fresh sources. Seven exact parent-plan rows contain266 fully assessed
+    historical claims; historical medium passes withheld amounts because of topology
+    or source identity. Current source hashes equal the stored digests. The old S777
+    preview timestamp differs from the applied current event, and its successor/applied
+    reports are retained. Two older unrelated-medium reviews are context only and
+    their water recommendations do not override the now-repaired stock fields.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - attached-claims
+  - parent-claims
+  - api161
+  - solution777
+  - solution2762
+  - solution5980
+- assessment_id: a4
+  area: ownership
+  topic: Current writer behavior and repair limits
+  outcome: concern
+  summary: Current MediaDive code takes main ingredients from the first solution,
+    preserves named stock descriptors, skips water ingredients and still flattens
+    preparation steps across solutions. Its raw ml-to-ML_PER_L mapping needs batch-basis
+    care. The current KOMODO writer maps aerobic metadata and still formats time with
+    strftime %f; this does not authenticate earlier execution. The specific1101 repair
+    fixes relationship metadata but leaves ingredient quantities unchanged. Existing
+    compatible-formulation merge gates must be used after source-specific curation.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+  - writer-4
+  - writer-5
+- assessment_id: a5
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "DSMZ1101 main row NaCl", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    14.9551,\n                        \"mmol_l\": 255.906,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    15 g; provider g_l=14.9551. Explicit final volume 1003 ml, not an inferred water
+    sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source
+    data, not silently corrected to a typical value. Source-specific stages remain
+    mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "14.9551",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "14.9551",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[0].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit
+    provider g_l and declared 1003 ml basis; attach source evidence without changing
+    the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path":
+    "ingredients[0].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"},
+    "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but
+    this source branch or collapsed generated identity is not thereby authenticated.
+    Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id":
+    "q2", "topic": "DSMZ1101 main row K2HPO4", "source": {"evidence_id": "api1101",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw",
+    "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.498504,\n                        \"mmol_l\": 2.86207,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    0.5 g; provider g_l=0.498504. Explicit final volume 1003 ml, not an inferred water
+    sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source
+    data, not silently corrected to a typical value. Source-specific stages remain
+    mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[1].concentration", "stored_value": {"value": "0.498504", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees
+    with explicit provider g_l and declared 1003 ml basis; attach source evidence
+    without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.498504",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."}]},
+    {"quantity_id": "q3", "topic": "DSMZ1101 main row NaHCO3", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\":
+    15,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    14.9551,\n                        \"mmol_l\": 178.022,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    15 g; provider g_l=14.9551. Explicit final volume 1003 ml, not an inferred water
+    sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source
+    data, not silently corrected to a typical value. Source-specific stages remain
+    mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "14.9551",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "14.9551",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[2].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit
+    provider g_l and declared 1003 ml basis; attach source evidence without changing
+    the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path":
+    "ingredients[2].concentration", "stored_value": {"value": "14.9551", "unit": "G_PER_L"},
+    "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but
+    this source branch or collapsed generated identity is not thereby authenticated.
+    Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id":
+    "q4", "topic": "DSMZ1101 main row Na2CO3", "source": {"evidence_id": "api1101",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw",
+    "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    95,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    94.7159,\n                        \"mmol_l\": 893.647,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    95 g; provider g_l=94.7159. Explicit final volume 1003 ml, not an inferred water
+    sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source
+    data, not silently corrected to a typical value. Source-specific stages remain
+    mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "94.7159",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "94.7159",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[3].concentration", "stored_value": {"value": "94.7159", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit
+    provider g_l and declared 1003 ml basis; attach source evidence without changing
+    the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path":
+    "ingredients[3].concentration", "stored_value": {"value": "94.7159", "unit": "G_PER_L"},
+    "decision": "unsupported", "rationale": "Local number matches the DSMZ base, but
+    this source branch or collapsed generated identity is not thereby authenticated.
+    Preserve pending exact identity/formulation reconciliation."}]}, {"quantity_id":
+    "q5", "topic": "DSMZ1101 main row NH4Cl", "source": {"evidence_id": "api1101",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw",
+    "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.199402,\n                        \"mmol_l\": 3.72783,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    0.2 g; provider g_l=0.199402. Explicit final volume 1003 ml, not an inferred water
+    sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source
+    data, not silently corrected to a typical value. Source-specific stages remain
+    mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[4].concentration", "stored_value": {"value": "0.199402", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees
+    with explicit provider g_l and declared 1003 ml basis; attach source evidence
+    without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."}]},
+    {"quantity_id": "q6", "topic": "DSMZ1101 main row MgCl2 x 6 H2O", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.199402,\n                        \"mmol_l\": 0.980811,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    0.2 g; provider g_l=0.199402. Explicit final volume 1003 ml, not an inferred water
+    sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source
+    data, not silently corrected to a typical value. Source-specific stages remain
+    mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[5].concentration", "stored_value": {"value": "0.199402", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees
+    with explicit provider g_l and declared 1003 ml basis; attach source evidence
+    without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.199402",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."}]},
+    {"quantity_id": "q7", "topic": "DSMZ1101 main row Yeast extract", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    0.05,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0498504,\n                        \"optional\": 0\n                    }"},
+    "decision": "mixed", "rationale": "Source batch input 0.05 g; provider g_l=0.0498504.
+    Explicit final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees
+    at provider precision. Na2CO3 95 g is literal source data, not silently corrected
+    to a typical value. Source-specific stages remain mandatory.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "stored_value": {"value": "0.0498504", "unit":
+    "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches the
+    DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0498504",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[6].concentration", "stored_value": {"value": "0.0498504", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees
+    with explicit provider g_l and declared 1003 ml basis; attach source evidence
+    without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0498504",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."}]},
+    {"quantity_id": "q8", "topic": "DSMZ1101 main row Na-L-lactate", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Na-L-lactate\",\n                        \"compound_id\": 265,\n                        \"amount\":
+    2.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.19342,\n                        \"optional\": 0\n                    }"}, "decision":
+    "mixed", "rationale": "Source batch input 2.2 g; provider g_l=2.19342. Explicit
+    final volume 1003 ml, not an inferred water sum; mass g / 1.003 L agrees at provider
+    precision. Na2CO3 95 g is literal source data, not silently corrected to a typical
+    value. Source-specific stages remain mandatory.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path": "ingredients[7].concentration",
+    "stored_value": {"value": "2.19342", "unit": "G_PER_L"}, "decision": "unsupported",
+    "rationale": "Local number matches the DSMZ base, but this source branch or collapsed
+    generated identity is not thereby authenticated. Preserve pending exact identity/formulation
+    reconciliation."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "2.19342",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "2.19342", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit
+    provider g_l and declared 1003 ml basis; attach source evidence without changing
+    the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "2.19342", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "DSMZ specifically replaces lactate and sulfite
+    for DSM 19491; copied base quantities conflict with that branch. Exact KOMODO
+    variant evidence remains unavailable, so no automatic substitution is authorized."}]},
+    {"quantity_id": "q9", "topic": "DSMZ1101 main row Na2SO3", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Na2SO3\",\n                        \"compound_id\": 109,\n                        \"amount\":
+    1.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.29611,\n                        \"mmol_l\": 10.2825,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    1.3 g; provider g_l=1.29611. Explicit final volume 1003 ml, not an inferred water
+    sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal source
+    data, not silently corrected to a typical value. Source-specific stages remain
+    mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "1.29611",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "1.29611",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[8].concentration", "stored_value": {"value": "1.29611", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "Existing mass rate agrees with explicit
+    provider g_l and declared 1003 ml basis; attach source evidence without changing
+    the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml", "field_path":
+    "ingredients[8].concentration", "stored_value": {"value": "1.29611", "unit": "G_PER_L"},
+    "decision": "conflict", "rationale": "DSMZ specifically replaces lactate and sulfite
+    for DSM 19491; copied base quantities conflict with that branch. Exact KOMODO
+    variant evidence remains unavailable, so no automatic substitution is authorized."}]},
+    {"quantity_id": "q10", "topic": "DSMZ1101 main row Na2S x 9 H2O", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    0.24,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.239282,\n                        \"mmol_l\": 0.996253,\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Source batch input
+    0.24 g; provider g_l=0.239282. Explicit final volume 1003 ml, not an inferred
+    water sum; mass g / 1.003 L agrees at provider precision. Na2CO3 95 g is literal
+    source data, not silently corrected to a typical value. Source-specific stages
+    remain mandatory.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.239282",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.239282",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."},
+    {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml", "field_path":
+    "ingredients[9].concentration", "stored_value": {"value": "0.239282", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "Existing mass rate agrees
+    with explicit provider g_l and declared 1003 ml basis; attach source evidence
+    without changing the number."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.239282",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Local number matches
+    the DSMZ base, but this source branch or collapsed generated identity is not thereby
+    authenticated. Preserve pending exact identity/formulation reconciliation."}]},
+    {"quantity_id": "q11", "topic": "Stock 2762: EDTA", "source": {"evidence_id":
+    "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path":
+    "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c",
+    "locator": "$.data.recipe[0]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote":
+    "{\n                \"recipe_order\": 1,\n                \"compound\": \"EDTA\",\n                \"compound_id\":
+    271,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 5,\n                \"mmol_l\": 17.1092,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 5 g gives source g_l=5. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[0].concentration", "stored_value": {"value": "5", "unit":
+    "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock mass rate
+    and attached claim agree with the freshly fetched standalone source. Retain stock
+    scope and evidence."}]}, {"quantity_id": "q12", "topic": "Stock 2762: FeSO4 x
+    7 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[1]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"FeSO4 x 7 H2O\",\n                \"compound_id\":
+    12,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 2.2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.2,\n                \"mmol_l\": 7.91324,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 2.2 g gives source g_l=2.2. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "2.2",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[1].concentration", "stored_value": {"value": "2.2",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q13", "topic": "Stock 2762:
+    ZnSO4 x 7 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[2]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"ZnSO4 x 7 H2O\",\n                \"compound_id\":
+    35,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.347752,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.1 g gives source g_l=0.1. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[2].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q14", "topic": "Stock 2762:
+    MnCl2 x 4 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[3]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"MnCl2 x 4 H2O\",\n                \"compound_id\":
+    36,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.151588,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this
+    stock in 1003 ml explicitly final medium; any hypothetical contribution is stock
+    g/L times 1/1003, not the undiluted local number. This arithmetic is conditional
+    on the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[3].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q15", "topic": "Stock 2762:
+    H3BO3", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[4]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"H3BO3\",\n                \"compound_id\":
+    37,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.485123,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this
+    stock in 1003 ml explicitly final medium; any hypothetical contribution is stock
+    g/L times 1/1003, not the undiluted local number. This arithmetic is conditional
+    on the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[4].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q16", "topic": "Stock 2762:
+    CoCl2 x 6 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[5]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    6,\n                \"compound\": \"CoCl2 x 6 H2O\",\n                \"compound_id\":
+    38,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.2,\n                \"mmol_l\": 1.54037,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.2 g gives source g_l=0.2. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.2",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[5].concentration", "stored_value": {"value": "0.2",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q17", "topic": "Stock 2762:
+    CuCl2 x 2 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[6]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    7,\n                \"compound\": \"CuCl2 x 2 H2O\",\n                \"compound_id\":
+    39,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.175971,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this
+    stock in 1003 ml explicitly final medium; any hypothetical contribution is stock
+    g/L times 1/1003, not the undiluted local number. This arithmetic is conditional
+    on the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[6].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q18", "topic": "Stock 2762:
+    NiCl2 x 6 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[7]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    8,\n                \"compound\": \"NiCl2 x 6 H2O\",\n                \"compound_id\":
+    40,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.231483,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this
+    stock in 1003 ml explicitly final medium; any hypothetical contribution is stock
+    g/L times 1/1003, not the undiluted local number. This arithmetic is conditional
+    on the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[7].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q19", "topic": "Stock 2762:
+    Na2MoO4 x 2 H2O", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[8]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    9,\n                \"compound\": \"Na2MoO4 x 2 H2O\",\n                \"compound_id\":
+    9,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.03,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.03,\n                \"mmol_l\": 0.123993,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.03 g gives source g_l=0.03. DSMZ base receives 1 ml of this
+    stock in 1003 ml explicitly final medium; any hypothetical contribution is stock
+    g/L times 1/1003, not the undiluted local number. This arithmetic is conditional
+    on the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[8].concentration", "stored_value": {"value": "0.03",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q20", "topic": "Stock 2762:
+    Distilled water", "source": {"evidence_id": "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256":
+    "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c", "locator":
+    "$.data.recipe[9]", "accessed_at": "2026-10-28T19:39:37.692975Z", "quote": "{\n                \"recipe_order\":
+    10,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, "decision": "correct", "rationale": "The stated water input
+    is 1000 ml = 1 L. Provider volume metadata is separately reported; solvent addition
+    alone does not prove measured final volume or a percentage basis. Pfennig pH3–4
+    does not supply a competing water make-up volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "composition[9].concentration", "stored_value": {"value": "1000",
+    "unit": "PERCENT_V_V"}, "decision": "correct", "rationale": "1000 ml is a 1 L
+    batch water input, not 1000 percent. Preserve the existing 1 L repairs for stocks777/5980;
+    only2762 still requires unit repair."}]}, {"quantity_id": "q21", "topic": "Stock
+    777: NaOH", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256":
+    "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator":
+    "$.data.recipe[0]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"NaOH\",\n                \"compound_id\":
+    256,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.5,\n                \"mmol_l\": 12.5009,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 0.5 g gives source g_l=0.5. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+    "field_path": "composition[0].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q22", "topic": "Stock 777:
+    Na2SeO3 x 5 H2O", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256":
+    "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator":
+    "$.data.recipe[1]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Na2SeO3 x 5 H2O\",\n                \"compound_id\":
+    107,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.003,\n                \"mmol_l\": 0.0114062,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 3 mg gives source g_l=0.003. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+    "field_path": "composition[1].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q23", "topic": "Stock 777:
+    Na2WO4 x 2 H2O", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256":
+    "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator":
+    "$.data.recipe[2]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Na2WO4 x 2 H2O\",\n                \"compound_id\":
+    249,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 4,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.004,\n                \"mmol_l\": 0.0121267,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 4 mg gives source g_l=0.004. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+    "field_path": "composition[2].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q24", "topic": "Stock 777:
+    Distilled water", "source": {"evidence_id": "solution777", "reference": "https://mediadive.dsmz.de/rest/solution/777",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution777.raw", "raw_sha256":
+    "3845d8e8d84cc22cea487e32868daa4343a41eb10d3ca6c1bf4cc94edc8459f2", "locator":
+    "$.data.recipe[3]", "accessed_at": "2026-10-28T19:39:37.692931Z", "quote": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, "decision": "verified", "rationale": "The stated water input
+    is 1000 ml = 1 L. Provider volume metadata is separately reported; solvent addition
+    alone does not prove measured final volume or a percentage basis. Pfennig pH3–4
+    does not supply a competing water make-up volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/mediadive_777_Selenite-tungstate_solution.yaml",
+    "field_path": "composition[3].concentration", "stored_value": {"value": "1", "unit":
+    "L"}, "decision": "verified", "rationale": "1000 ml is a 1 L batch water input,
+    not 1000 percent. Preserve the existing 1 L repairs for stocks777/5980; only2762
+    still requires unit repair."}]}, {"quantity_id": "q25", "topic": "Stock 5980:
+    Biotin", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[0]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Biotin\",\n                \"compound_id\":
+    46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0818632,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 20 mg gives source g_l=0.02. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[0].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q26", "topic": "Stock 5980:
+    Folic acid", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[1]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Folic acid\",\n                \"compound_id\":
+    138,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 20,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.02,\n                \"mmol_l\": 0.0453104,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 20 mg gives source g_l=0.02. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[1].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q27", "topic": "Stock 5980:
+    Pyridoxine hydrochloride", "source": {"evidence_id": "solution5980", "reference":
+    "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw",
+    "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c",
+    "locator": "$.data.recipe[2]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote":
+    "{\n                \"recipe_order\": 3,\n                \"compound\": \"Pyridoxine
+    hydrochloride\",\n                \"compound_id\": 519,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 100,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.1,\n                \"mmol_l\": 0.486287,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 100 mg gives source g_l=0.1. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[2].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q28", "topic": "Stock 5980:
+    Thiamine HCl", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[3]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    4,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\":
+    1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.148236,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[3].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q29", "topic": "Stock 5980:
+    Riboflavin", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[4]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    5,\n                \"compound\": \"Riboflavin\",\n                \"compound_id\":
+    136,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.132837,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[4].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q30", "topic": "Stock 5980:
+    Nicotinic acid", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[5]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    6,\n                \"compound\": \"Nicotinic acid\",\n                \"compound_id\":
+    139,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.406141,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[5].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q31", "topic": "Stock 5980:
+    Calcium D-(+)-pantothenate", "source": {"evidence_id": "solution5980", "reference":
+    "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw",
+    "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c",
+    "locator": "$.data.recipe[6]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote":
+    "{\n                \"recipe_order\": 7,\n                \"compound\": \"Calcium
+    D-(+)-pantothenate\",\n                \"compound_id\": 1512,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.209846,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[6].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q32", "topic": "Stock 5980:
+    Vitamin B12", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[7]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    8,\n                \"compound\": \"Vitamin B12\",\n                \"compound_id\":
+    18,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.001,\n                \"mmol_l\": 0.00073779,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 1 mg gives source g_l=0.001. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[7].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q33", "topic": "Stock 5980:
+    p-Aminobenzoic acid", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[8]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    9,\n                \"compound\": \"p-Aminobenzoic acid\",\n                \"compound_id\":
+    47,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.364591,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[8].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q34", "topic": "Stock 5980:
+    (DL)-alpha-Lipoic acid", "source": {"evidence_id": "solution5980", "reference":
+    "https://mediadive.dsmz.de/rest/solution/5980", "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw",
+    "raw_sha256": "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c",
+    "locator": "$.data.recipe[9]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote":
+    "{\n                \"recipe_order\": 10,\n                \"compound\": \"(DL)-alpha-Lipoic
+    acid\",\n                \"compound_id\": 252,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 50,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.05,\n                \"mmol_l\": 0.24233,\n                \"optional\":
+    0\n            }"}, "decision": "mixed", "rationale": "Provider-declared stock
+    volume 1000 ml; 50 mg gives source g_l=0.05. DSMZ base receives 1 ml of this stock
+    in 1003 ml explicitly final medium; any hypothetical contribution is stock g/L
+    times 1/1003, not the undiluted local number. This arithmetic is conditional on
+    the exact base recipe, not a prescription for the inaccessible KOMODO variant.
+    No mmol_l conversion is endorsed.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "conflict", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "ingredients[31].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "This numerical value
+    is the named stock concentration. It does not support a root receiving-medium
+    g/L claim; KOMODO source equivalence is separately unresolved."}, {"path": "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[9].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "Exact current stock
+    mass rate and attached claim agree with the freshly fetched standalone source.
+    Retain stock scope and evidence."}]}, {"quantity_id": "q35", "topic": "Stock 5980:
+    Distilled water", "source": {"evidence_id": "solution5980", "reference": "https://mediadive.dsmz.de/rest/solution/5980",
+    "raw_path": "REVIEW_WORK/batch076/source09-supplement/solution5980.raw", "raw_sha256":
+    "2fe24a83c789ebc28eb97268a788cabd1316ae131baaea269df79019a14f992c", "locator":
+    "$.data.recipe[10]", "accessed_at": "2026-10-28T19:39:37.695506Z", "quote": "{\n                \"recipe_order\":
+    11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}, "decision": "verified", "rationale": "The stated water input
+    is 1000 ml = 1 L. Provider volume metadata is separately reported; solvent addition
+    alone does not prove measured final volume or a percentage basis. Pfennig pH3–4
+    does not supply a competing water make-up volume.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/mediadive_5980_Wolin_s_vitamin_solution_10x.yaml",
+    "field_path": "composition[10].concentration", "stored_value": {"value": "1",
+    "unit": "L"}, "decision": "verified", "rationale": "1000 ml is a 1 L batch water
+    input, not 1000 percent. Preserve the existing 1 L repairs for stocks777/5980;
+    only2762 still requires unit repair."}]}, {"quantity_id": "q36", "topic": "Receiving
+    addition: Trace elements solution (Pfennig, 1965)", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\":
+    \"Trace elements solution (Pfennig, 1965)\",\n                        \"solution_id\":
+    2762,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, "decision":
+    "mixed", "rationale": "Each named stock is 1 ml per explicitly1003 ml final batch.
+    Do not label the literal amount1 ML_PER_L without preserving its batch basis;
+    1/1.003=0.997008973 ml/L is a derived receiving rate if that representation is
+    chosen.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}]}, {"quantity_id": "q37", "topic": "Receiving addition: Selenite-tungstate
+    solution", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101",
+    "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\":
+    \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Each named stock
+    is 1 ml per explicitly1003 ml final batch. Do not label the literal amount1 ML_PER_L
+    without preserving its batch basis; 1/1.003=0.997008973 ml/L is a derived receiving
+    rate if that representation is chosen.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}]}, {"quantity_id": "q38", "topic": "Receiving addition: Wolin''s
+    vitamin solution (10x)", "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101",
+    "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\":
+    \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"}, "decision":
+    "mixed", "rationale": "Each named stock is 1 ml per explicitly1003 ml final batch.
+    Do not label the literal amount1 ML_PER_L without preserving its batch basis;
+    1/1.003=0.997008973 ml/L is a derived receiving rate if that representation is
+    chosen.", "layer_assessments": [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "unsupported", "rationale":
+    "Missing named receiving-stock descriptor. Restore the literal 1 ml batch dose
+    for the authenticated DSMZ base; other branches require source reconciliation.",
+    "missing": true}]}, {"quantity_id": "q39", "topic": "Main-medium water input",
+    "source": {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101",
+    "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].recipe[13]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"}, "decision": "mixed", "rationale": "Water is a batch
+    input. No density conversion or default100% claim is justified; a solvent preparation
+    note can retain it without requiring a chemical-composition edge.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/DESULFONATRONOSPIRA_MEDIUM.yaml", "field_path":
+    "preparation_notes", "stored_value": null, "decision": "unsupported", "rationale":
+    "Record literal1000 ml batch water within the correct preparation scope, separately
+    from final volume1003 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml",
+    "field_path": "preparation_notes", "stored_value": null, "decision": "unsupported",
+    "rationale": "Record literal1000 ml batch water within the correct preparation
+    scope, separately from final volume1003 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml",
+    "field_path": "preparation_notes", "stored_value": null, "decision": "add", "rationale":
+    "Record literal1000 ml batch water within the correct preparation scope, separately
+    from final volume1003 ml.", "missing": true}, {"path": "data/normalized_yaml/bacterial/for_dsm_19491.yaml",
+    "field_path": "preparation_notes", "stored_value": null, "decision": "unsupported",
+    "rationale": "Record literal1000 ml batch water within the correct preparation
+    scope, separately from final volume1003 ml.", "missing": true}]}, {"quantity_id":
+    "q40", "topic": "Pfennig placeholder is not an ingredient amount", "source": {"evidence_id":
+    "solution2762", "reference": "https://mediadive.dsmz.de/rest/solution/2762", "raw_path":
+    "REVIEW_WORK/batch076/source09-supplement/solution2762.raw", "raw_sha256": "405413ec9bf692932996cf8122c724052ca0ddf25e60424017b6046213b8912c",
+    "locator": "$.data.recipe complete ten rows", "accessed_at": "2026-10-28T19:39:37.692975Z"},
+    "decision": "unsupported", "rationale": "The nine stock solutes and water are
+    fully specified. Preserve all nine valid existing evidence objects and the stock
+    pH instruction. Current777/5980 already lack this placeholder and are credited.",
+    "layer_assessments": [{"path": "data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "variable",
+    "unit": "VARIABLE"}, "decision": "unsupported", "rationale": "Current complete
+    source composition has no variable placeholder ingredient; remove only the false
+    placeholder and incomplete-composition flag after exact row reconciliation."}]},
+    {"quantity_id": "q41", "topic": "Preparation scope for solution2217", "source":
+    {"evidence_id": "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101",
+    "raw_path": "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"step\": \"Dissolve sodium chloride and
+    hydrogenphospate, then sparge solution with 100% N2 gas for 30 -45 min to make
+    it anoxic. Add and dissolve carbonates, adjust pH to 10, dispense under 100% N2
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add ammonium chloride, magnesium chloride, trace elements, yeast
+    extract, lactate, sulfite, vitamins, and sulfide from sterile anoxic stock solution
+    prepared under 100% N2 gas. Stock solutions of sulfite (freshly prepared) and
+    vitamins should be sterilized by filtration.\"\n                    }"}, "decision":
+    "not_quantified", "rationale": "Main pH10 anoxic staged preparation is preserved
+    in DSMZ owner step1 but absent in the selected target and KOMODO owners. No temperature
+    or duration of autoclaving is inferred.", "layer_assessments": []}, {"quantity_id":
+    "q42", "topic": "Preparation scope for solution2762", "source": {"evidence_id":
+    "api1101", "reference": "https://mediadive.dsmz.de/rest/medium/1101", "raw_path":
+    "REVIEW_WORK/batch076/source09/api1101.raw", "raw_sha256": "70e829d492681bcc91b3b15b4ff5c6cb02cd7e635a98d9498ea4adcb20d65332",
+    "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T19:38:36.796634Z",
+    "quote": "{\n                        \"step\": \"pH 3.0-4.0\"\n                    }"},
+    "decision": "not_quantified", "rationale": "Pfennig pH3–4 belongs only to stock2762.
+    Its maintained preparation_notes are correct; DSMZ owner top-level step2 lacks
+    stock scope and must be relocated, not applied to main pH10.", "layer_assessments":
+    []}, {"quantity_id": "q43", "topic": "DSM19491 exact strain substitution comparison",
+    "source": {"evidence_id": "dsm1101", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1101.pdf",
+    "raw_path": "REVIEW_WORK/batch076/source09/dsm1101.raw", "raw_sha256": "d6ef5c96b39820fabd0ef15d6d5168f8268013314f59781e861c37a9b40ca285",
+    "locator": "Page1, For DSM19491 note; primary PDF and text capture", "accessed_at":
+    "2026-10-28T19:38:36.967565Z"}, "decision": "conflict", "rationale": "The literal
+    source replaces sulfite with5g/L sodium thiosulfate and lactate with2.2g/L sodium
+    pyruvate for DSM19491. This is direct evidence against merging that DSMZ variant
+    into its base. It does not independently authenticate KOMODO1101.1; DSM100427
+    substitutions remain a different excluded branch. No new chemical identifier is
+    minted from these names.", "layer_assessments": []}]'
+- assessment_id: a6
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: All301 current identifier/label slots and672 exact matching packaged rows
+    were inspected; no current MediaIngredientMech legacy IDs are asserted. Thirty-three
+    OLS objects, including water and the nickel candidate, were read in full scientific
+    scope. Nickel hydrate identity remains wrong; calcium D-pantothenate and sodium
+    L-lactate retain their explicit stereo forms. CHEBI-keyed MIM mirrors are linkage
+    assertions, not scientific certification; missing optional pantothenate mirror
+    is not chemical invalidity. Unrelated catalog aliases are not promoted.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - grounding
+  - full-catalog
+- assessment_id: a7
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: Complete current histories and25 attached stock claims were read. Twenty
+    full per-record reports, selected archive methodology/1101 row and seven exact
+    rows in six parent plans were inspected. All266 selected historical claims are
+    accounted; current source digest equality authenticates bytes, not historical
+    access time or execution. Existing source evidence and later stock repairs are
+    credited; KOMODO live equivalence remains unavailable.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - history
+  - scalars
+  - parent-claims
+  - attached-claims
+  - historical-0
+  - historical-1
+  - historical-2
+  - historical-3
+  - historical-4
+  - historical-5
+  - historical-6
+  - historical-7
+  - historical-8
+  - historical-9
+  - historical-10
+  - historical-11
+  - historical-12
+  - historical-13
+  - historical-14
+  - historical-15
+  - historical-16
+  - historical-17
+  - historical-18
+  - historical-19
+  - historical-20
+- assessment_id: a8
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - local-target
+- assessment_id: a9
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:003802
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-003802-generated-merge-still-collapses-the-dsm19491-strain-variant
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated merge still collapses the DSM19491 strain variant
+  description: The generated merged_from/synonyms and child relationship fold for_dsm_19491
+    into the base, although the current maintained relationship is STRAIN_SPECIFIC_VARIANT.
+    DSMZ1101 explicitly changes two substrates for DSM19491; all32 local ingredient
+    rows remain identical across base and child. Credit the maintained September relationship
+    repair, then reconcile exact branch formulation before regenerating. The child
+    ingredients_curated flag is not proof of source-backed amounts.
+  target_ids:
+  - CultureMech:003802
+  field_paths:
+  - merged_from
+  - synonyms
+  - variant_children[0].relationship
+  - data/normalized_yaml/bacterial/for_dsm_19491.yaml::ingredients
+  - data/normalized_yaml/bacterial/for_dsm_19491.yaml::data_quality_flags
+  evidence_ids:
+  - dsm1101
+  - identity-search
+  - owner-1
+  - owner-3
+  - writer-4
+  - komodo1101variant
+  rule_id: P2-variant-formulation-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-003802-stock-strengths-are-exposed-as-receiving-medium-concentrations
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock strengths are exposed as receiving-medium concentrations
+  description: The selected target and three contributors store22 mineral/vitamin
+    stock solutes as top-level g/L values. DSMZ1101 adds1ml each of2762/777/5980 in1003ml
+    final medium. All10 direct DSMZ main rates are numerically supported and should
+    be retained with evidence. Existing stock rates are separately valid. Restore
+    stock boundaries and literal doses before considering derived final rates; inaccessible
+    KOMODO branches remain conditional.
+  target_ids:
+  - CultureMech:003802
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_notes
+  evidence_ids:
+  - api1101
+  - dsm1101
+  - solution777
+  - solution2762
+  - solution5980
+  - writer-0
+  - writer-5
+  rule_id: P2-stock-stage-concentration
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-003802-main-and-stock-preparation-scopes-are-incomplete
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Main and stock preparation scopes are incomplete
+  description: The selected target and KOMODO owners lack the inspected main preparation
+    and retain Aerobic:Yes. DSMZ1101 instead requires anoxic preparation. Its owner
+    preserves the full main text, but Pfennig pH3–4 appears as a second unscoped root
+    MIX step despite correct stock preparation_notes. Keep main pH10 separate, credit
+    retained text, and resolve KOMODO scope before transplanting protocol.
+  target_ids:
+  - CultureMech:003802
+  field_paths:
+  - preparation_steps
+  - notes
+  - data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml::preparation_steps[1]
+  evidence_ids:
+  - dsm1101
+  - api1101
+  - owner-2
+  - stock-1
+  - writer-0
+  - writer-1
+  rule_id: P2-preparation-scope
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-003802-pfennig-stock-still-encodes-batch-water-as-percent
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Pfennig stock still encodes batch water as percent
+  description: Stock2762 composition[9] stores1000 PERCENT_V_V for source1000ml water
+    and retains a variable composition placeholder despite ten explicit composition
+    rows. Its pH3–4 instruction does not make this a percentage. Correct to a literal1L
+    batch input and remove the unsupported placeholder with evidence. The existing1L
+    repairs and placeholder removals in777/5980 are already present and must be preserved.
+  target_ids:
+  - CultureMech:003802
+  field_paths:
+  - data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml::composition[9].concentration
+  - data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml::ingredients[0].concentration
+  - data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml::data_quality_flags
+  evidence_ids:
+  - solution2762
+  - stock-1
+  - attached-claims
+  rule_id: P2-water-unit-and-placeholder
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f5
+  issue_key: culturemech-003802-nickel-hexahydrate-is-grounded-to-anhydrous-nickel-dichloride
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is grounded to anhydrous nickel dichloride
+  description: The explicitly supplied NiCl2 x6H2O is assigned CHEBI34887 in every
+    selected branch and stock2762, while exact source form and current OLS53542 support
+    the hexahydrate. Current MIM has a MAPPED Nickel(II) chloride hexahydrate entry
+    and a separate REJECTED NiCl2 x6H2O preferred-row alias; preserve that distinction.
+    Calcium D-pantothenate31345, sodium L-lactate232798, broad vitaminB12 and nonstereospecific
+    lipoic acid are compatible with their explicit source labels.
+  target_ids:
+  - CultureMech:003802
+  field_paths:
+  - ingredients[17].term
+  - ingredients[17].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml::composition[7].chebi_term
+  evidence_ids:
+  - ols53542
+  - ols34887
+  - solution2762
+  - full-catalog
+  rule_id: P2-hydrate-grounding
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f6
+  issue_key: culturemech-003802-source-evidence-and-imported-timestamps-need-bounded-follow-up
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source evidence and imported timestamps need bounded follow-up
+  description: The four medium layers have no attached formulation evidence despite
+    exact source-supported DSMZ claims; the25 stock claims are already present and
+    must be retained. Stored KOMODO import timestamps contain literal.fZ, while current
+    writer uses strftime%f; report the distinction without claiming historical execution
+    or reconstructing a time. Preserve earlier history and attach scoped source evidence
+    to maintained claims.
+  target_ids:
+  - CultureMech:003802
+  field_paths:
+  - ingredients
+  - references
+  - curation_history[0].timestamp
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - owner-3
+  - attached-claims
+  - writer-1
+  rule_id: P3-evidence-provenance
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Preserve the maintained strain relationship; obtain exact KOMODO evidence
+    or explicitly retain its uncertainty. Account for the documented DSM19491 substitutions
+    separately from DSM100427, curate the correct owner branch with evidence, and
+    regenerate only formulation-compatible merge groups. Do not bulk-copy the DSMZ
+    base into a strain record.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003802
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: The selected target and three contributors store22 mineral/vitamin
+    stock solutes as top-level g/L values. DSMZ1101 adds1ml each of2762/777/5980 in1003ml
+    final medium. All10 direct DSMZ main rates are numerically supported and should
+    be retained with evidence. Existing stock rates are separately valid. Restore
+    stock boundaries and literal doses before considering derived final rates; inaccessible
+    KOMODO branches remain conditional.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003802
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: The selected target and KOMODO owners lack the inspected main preparation
+    and retain Aerobic:Yes. DSMZ1101 instead requires anoxic preparation. Its owner
+    preserves the full main text, but Pfennig pH3–4 appears as a second unscoped root
+    MIX step despite correct stock preparation_notes. Keep main pH10 separate, credit
+    retained text, and resolve KOMODO scope before transplanting protocol.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003802
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Stock2762 composition[9] stores1000 PERCENT_V_V for source1000ml water
+    and retains a variable composition placeholder despite ten explicit composition
+    rows. Its pH3–4 instruction does not make this a percentage. Correct to a literal1L
+    batch input and remove the unsupported placeholder with evidence. The existing1L
+    repairs and placeholder removals in777/5980 are already present and must be preserved.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003802
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action5
+  description: The explicitly supplied NiCl2 x6H2O is assigned CHEBI34887 in every
+    selected branch and stock2762, while exact source form and current OLS53542 support
+    the hexahydrate. Current MIM has a MAPPED Nickel(II) chloride hexahydrate entry
+    and a separate REJECTED NiCl2 x6H2O preferred-row alias; preserve that distinction.
+    Calcium D-pantothenate31345, sodium L-lactate232798, broad vitaminB12 and nonstereospecific
+    lipoic acid are compatible with their explicit source labels.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:003802
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_2762_Trace_elements_solution_Pfennig_1965.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action6
+  description: The four medium layers have no attached formulation evidence despite
+    exact source-supported DSMZ claims; the25 stock claims are already present and
+    must be retained. Stored KOMODO import timestamps contain literal.fZ, while current
+    writer uses strftime%f; report the distinction without claiming historical execution
+    or reconstructing a time. Preserve earlier history and attach scoped source evidence
+    to maintained claims.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:003802
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfonatronospira_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_19491.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Completion is partial because exact current KOMODO1101,1101.1 and MediaList requests
+  return403; historical mappings and copied compositions are not live source equivalence.
+  The exact local target itself is resolved.
+- Only three exact stock dependencies are assessed. API161 is limited to medium identity,
+  inventory and stock5980. Other receiving media, DSM100427 variant amounts and unrelated
+  archive rows remain unassessed.
+- No growth-association or taxonomic curation was performed. DSM19491 catalog identity
+  is context; linked publications and taxonomy accessions were not asserted verified.
+  iModulonDB is inapplicable to this formulation review.
+- Four original canonical target commands passed once; the reference validator performed
+  zero checks. No dedicated focused embedded-history validator exists; the documented
+  history recipe addresses standalone history files. No full-corpus gate or execution
+  replay is claimed.
+- Twenty historical per-record report bodies were read in full through a lossless
+  cell reconstruction; the651 unrelated archive table rows and sibling parent-plan
+  records are excluded. Old reports do not constitute structured review coverage or
+  current scientific approval.
+- Current writer code is used to identify maintained ownership and safeguards, not
+  to prove how historical files were produced. No record, generator product or earlier
+  review was edited.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation
+  or publication.
+```

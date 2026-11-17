@@ -1,0 +1,1455 @@
+schema_version: 1.0.0
+review_id: 20261028T195559Z-desulfohimalaya-medium-batch076
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of desulfohimalaya_medium
+started_at: '2026-10-28T19:40:50.448894Z'
+finished_at: '2026-10-28T19:55:59.414692Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The selected TOGO-derived target retains nine supported provider rates but
+  has a water unit error, omits source preparation and pH disagreement, and predates
+  an owner grounding repair. No attached claim evidence exists. Current JCM587 is
+  unavailable, so primary-source verification remains partial.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml
+    sha256: f45242640f3c87cd38f6767f206fb776d97239cc7f9bda8887b2227823270a3c
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    sha256: bdf744d893bb6e159b5ad3ab49f51d585cd10881e92831057b050aba487eaa5a
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.md
+    sha256: e6eac3f47bbc65b581627805f52064f45979f99600e9bf10de506fdaa186a0eb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfohimalaya_medium__75893ec1.md
+    sha256: 8a4b74132cbc65a6a03e6ac03459e553c50aa47a83bc596ea1b2b70bd810b781
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.md
+    sha256: baef37b641e01fc3075c603bd35a9d21387b420dac872f086b5cbaf7e2f5eb60
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfohimalaya_medium.md
+    sha256: 48e128c59945d9f1d9d55e68b29ac64f5defffdac72fbb6cc7188486f404c9de
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/propose_cocktail_nesting.py
+    sha256: e886c446a8398f08f1cc735b1c3a9812c5fc6371a36b69ef5325f1c53f14e6c0
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch076 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009989
+targets:
+- target_id: CultureMech:009989
+  path: data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml
+  label: desulfohimalaya_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009989
+  command: just validate-schema data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009989
+  command: just validate-strict data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml
+    --workers 1 --out REVIEW_WORK/batch076/record04/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009989
+  command: just validate-terms data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:009989
+  command: just validate-references data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T19:43:47.439548Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: f45242640f3c87cd38f6767f206fb776d97239cc7f9bda8887b2227823270a3c
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T19:43:47.439695Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: bdf744d893bb6e159b5ad3ab49f51d585cd10881e92831057b050aba487eaa5a
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch076/record04/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T19:40:51.719745Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 97fe0edd86241b20a64669d3d4aec6ff1e4775e6dcab7c4f5bdf2f8262ce1d5d
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch076/record04/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T19:40:52.806582Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: d59e5bc370fb302837745d0d7af56c90c3e7092b8659f352350dcdc044715c88
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch076/record04/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T19:40:54.273044Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 5a08af91ee5f0118baebc4d05acb7478b5a9a09533c3a0fc861f3df3c98bd69a
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch076/record04/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T19:40:55.156790Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: efecf32e9fbbe135f570f3dfb80f07c29d320a519ae9a13219b1513b1de971a8
+- evidence_id: jcm587
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=587
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T19:40:50.741116Z'
+  support: unknown
+  summary: Exact JCM587 page returns HTTP200 but Nothing found. This is an access
+    limitation, not primary recipe evidence. Current TOGO592 and MediaDive J587 formulations
+    are assessed separately.
+  snapshot_sha256: 4a17283147e99746eb6d98f55af91133cd76e16d4e5b159a63adfd07161d59bb
+- evidence_id: togo592
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T19:40:50.741383Z'
+  support: supports
+  summary: Complete current TOGO identity, main recipe components and comments read.
+    The comments place thioglycollate and ascorbate additions before sterilization;
+    this exact source contains no stock definition table. Batch inputs are not silently
+    converted to final-medium rates.
+  snapshot_sha256: 2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3
+- evidence_id: apiJ587
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J587
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T19:40:50.741459Z'
+  support: supports
+  summary: Complete current provider identity, solution tables and preparation read.
+    Explicit g_l and declared volumes are credited only on their named provider stock
+    or recipe basis; they are not independent measured final volumes. Provider mmol_l
+    values are not adopted as chemical-form authority.
+  snapshot_sha256: 9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15377
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:44.458043Z'
+  support: supports
+  summary: OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting
+    of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O'];
+    mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: a5ab66402b598c137daa8e5c8ba95811f1619db3e0f8b4f9bd0214161bafa0fe
+- evidence_id: chebi22652
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:22652
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:44.458260Z'
+  support: supports
+  summary: OLS current exact CHEBI:22652 = ascorbic acid; definition []; formula None;
+    mass None; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: f7a405067420b93ab6c343dfb20cc5073972b937c3e8e6ece6ca270412ac3287
+- evidence_id: chebi30065
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30065
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:45.231153Z'
+  support: supports
+  summary: OLS current exact CHEBI:30065 = thioglycolic acid; definition []; formula
+    ['C2H4O2S']; mass ['92.119']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: becce91359e0b9bdba9fd7da6fecb169efe1c5cc8bad3e2e0e86b71faf9edeb5
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:45.361734Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:45.817175Z'
+  support: supports
+  summary: OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S'];
+    mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: ceb0c93d1964844e99454d74730971855710441d92eec74aff5c873c833e324a
+- evidence_id: chebi32583
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32583
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:45.949270Z'
+  support: supports
+  summary: OLS current exact CHEBI:32583 = calcium sulfate dihydrate; definition [];
+    formula ['Ca.2H2O.O4S']; mass ['172.171']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: f396bbf9a431ab7d3eed7ea3b8305dfddaf26ec3a9b88b3f507b1427c8723826
+- evidence_id: chebi32599
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32599
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:46.422904Z'
+  support: supports
+  summary: OLS current exact CHEBI:32599 = magnesium sulfate; definition ['A magnesium
+    salt having sulfate as the counterion.']; formula ['Mg.O4S']; mass ['120.368'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: c8381bae86c49daf20fe2a395973680caf47e14623523c0b3c8695aff7dd8f1c
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:47.016490Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi75228
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75228
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:47.100046Z'
+  support: supports
+  summary: OLS current exact CHEBI:75228 = sodium lactate; definition ['An organic
+    sodium salt having lactate as the counterion.']; formula ['C3H5O3.Na']; mass ['112.06'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 02869dcf8cd74aa7f8b975f2590e5bdbd4512df6c748979a72d5337751ae5774
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75836
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T19:41:47.130674Z'
+  support: supports
+  summary: OLS current exact CHEBI:75836 = iron(2+) sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used).'];
+    formula ['Fe.7H2O.O4S']; mass ['278.013']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: ab9922083bab0fb07df977855094d11fe3a5ca1f14bc6bddd10dc80ad9055569
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch076/record04/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T19:43:47.441087Z'
+  support: supports
+  summary: Complete selected and dependency-context term slots and current packaged
+    MIM CSV exact-identifier joins with row locators and metadata commit; includes
+    separately scoped dependency context. No fuzzy mapping or historical-validity
+    inference.
+  snapshot_sha256: a4273752fb81dcac33cc0ac9ff53e86a9cc036a9bed28a77564ae6e63c840358
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T19:43:47.470205Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: e6eac3f47bbc65b581627805f52064f45979f99600e9bf10de506fdaa186a0eb
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/desulfohimalaya_medium__75893ec1.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T19:43:47.470231Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 8a4b74132cbc65a6a03e6ac03459e553c50aa47a83bc596ea1b2b70bd810b781
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T19:43:47.470255Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: baef37b641e01fc3075c603bd35a9d21387b420dac872f086b5cbaf7e2f5eb60
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfohimalaya_medium.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T19:43:47.470276Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 48e128c59945d9f1d9d55e68b29ac64f5defffdac72fbb6cc7188486f404c9de
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record04/historical-authentication.json
+  locator: attached_claims; historical_plan_claims
+  accessed_at: '2026-10-28T19:43:47.470385Z'
+  support: supports
+  summary: Actual attached claims in scoped stock sections and historical parent-plan
+    claims are separate populations. Current raw-digest equality and literal or normalized-HTML
+    excerpt equality are independently recorded. No attached formulation claims occur
+    on the selected target or its maintained contributors. Current byte matches do
+    not authenticate historical execution or access dates.
+  snapshot_sha256: 4bf6ae59fda683cbd12dd0c80915bafef1d667dee38655b3330c077bb0b1d17f
+- evidence_id: writer25
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: target_slot; groundable; apply_to_record
+  accessed_at: '2026-10-28T19:43:47.470454Z'
+  support: context_only
+  summary: Current target_slot preserves existing CHEBI assertions; groundable excludes
+    conflicting corpus opinions, and apply_to_record fills ungrounded entries from
+    proposals. This writer does not authenticate source amounts or automatically repair
+    an existing wrong supplied-form ID.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer26
+  kind: record_content
+  reference: scripts/assign_culturemech_ids.py
+  locator: assign_ids; _assign_id_to_file
+  accessed_at: '2026-10-28T19:43:47.470479Z'
+  support: context_only
+  summary: Current assign_ids selects records with missing IDs; _assign_id_to_file
+    checks new-ID collisions and appends identifier provenance. Identifier assignment
+    does not authenticate recipe content or demonstrate historical source access.
+  snapshot_sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+- evidence_id: writer27
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T19:43:47.470502Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer28
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T19:43:47.470523Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer29
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi; _rewrite_entry
+  accessed_at: '2026-10-28T19:43:47.470551Z'
+  support: context_only
+  summary: Current _resolve_chebi reuses current primary CHEBI where available and
+    considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry
+    retains unresolved links. Current-row presence is distinct from historical validity
+    and from source-specific supplied-form equivalence.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: writer30
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _is_solution; _resolve_solution; _migrate_media_file
+  accessed_at: '2026-10-28T19:43:47.470574Z'
+  support: context_only
+  summary: Current _is_solution uses name patterns, _resolve_solution keeps concentrations
+    while creating empty reference stubs or matching a name-indexed solution, and
+    _migrate_media_file appends those solutions and history. It does not reconstruct
+    nested source batches or authenticate copied unit/basis.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer31
+  kind: record_content
+  reference: scripts/refill_term_labels.py
+  locator: refill_text
+  accessed_at: '2026-10-28T19:43:47.470597Z'
+  support: context_only
+  summary: Current refill_text replaces term labels using the current exact identifier
+    lookup while preserving other text. Canonical label correspondence is not an independent
+    choice of the correct chemical form for the supplied source reagent.
+  snapshot_sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+- evidence_id: writer32
+  kind: record_content
+  reference: scripts/repair_jcm_stock_preparations.py
+  locator: frozen; sources; Review.leaf; Review.stock; Review.stages; Review.procedures;
+    build; process
+  accessed_at: '2026-10-28T19:43:47.470622Z'
+  support: context_only
+  summary: Current frozen/sources checks a pinned context and exact J151/J187/J197
+    and M142/M180/M190 graphs. Review.leaf withdraws unsupported TOGO mass rates,
+    retains explicit batch-water volumes and qualified provider stock rates; stock/stages
+    separate additions; procedures keeps parent preparation and pH scoped. Existing
+    annotations survive, so this repair does not recertify hydrate mappings. Only
+    this module was read; imported shared internals and historical execution are not
+    independently authenticated.
+  snapshot_sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+- evidence_id: writer33
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _extract_assembled_solutions;
+    _parse_unit; _extract_preparation_steps; _convert_to_culturemech; _extract_ph
+  accessed_at: '2026-10-28T19:43:47.470667Z'
+  support: context_only
+  summary: Current _extract_primary_components, _solution_from_item and _extract_assembled_solutions
+    distinguish primary sections, nested stocks and assembled solutions. _parse_unit
+    maps bare g/mg/ml to per-litre enum labels, while L remains L; those enum choices
+    still require a verified source basis. _extract_preparation_steps retains comments.
+    _convert_to_culturemech sets COMPLEX by default, and _extract_ph reads its supplied
+    object. These present behaviors neither authenticate historical execution nor
+    prove that all source metadata survived the old import.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer34
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: extract_recipe_ingredients; find_matches; find_exact_match
+  accessed_at: '2026-10-28T19:43:47.470694Z'
+  support: context_only
+  summary: Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs,
+    find_matches compares set Jaccard and find_exact_match selects the first exact
+    identifier set. Quantities, preparation and ungrounded ingredients are not compared,
+    so an exact set match does not establish formulation identity.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: writer35
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T19:43:47.470715Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer36
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T19:43:47.470735Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer37
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T19:43:47.470756Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer38
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: apply_defaults; _fix_ingredient; _fix_solution
+  accessed_at: '2026-10-28T19:43:47.470780Z'
+  support: context_only
+  summary: Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE
+    amounts and placeholder names for structural completeness. A default is not evidence
+    for a dose, composition, solution identity or denominator; existing default-history
+    events remain contextual.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch076/record04/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T19:43:47.474146Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: d198176f86c48008b4bc84e88c6e259165a12b846b557f4907b81d099e9a7f16
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact source and maintained owner
+  outcome: supported
+  summary: The generated target has one exact TOGO M592 owner and both providers identify
+    JCM587. The current JCM page contains no recipe; full primary verification therefore
+    remains partial. Two additional same-name historical sibling reports are comparison-only
+    and confer no maintained ownership or formulation transfer.
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - local0
+  - local1
+  - togo592
+  - apiJ587
+  - jcm587
+- assessment_id: a2
+  area: consistency
+  topic: Classification and source context
+  outcome: supported
+  summary: Yeast extract is explicitly undefined in TOGO and API complex_medium is
+    yes; COMPLEX/UNDEFINED is supported. The source is a liquid batch with no gelling
+    agent, consistent with LIQUID. These statements do not assert experimental organism
+    growth.
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - togo592
+  - apiJ587
+- assessment_id: a3
+  area: grounding
+  topic: Supplied forms and current owner repair
+  outcome: concern
+  summary: All nine asserted exact identifiers resolve currently; hydrate labels agree
+    with the supplied source forms. Generic sodium lactate and ascorbic acid are not
+    forced to unverified stereochemical forms. The maintained owner already grounds
+    thioglycollic acid to CHEBI:30065, while its generated target predates that addition
+    and lacks the term. Yeast extract is appropriately retained as a complex ungrounded
+    ingredient. MIM has spelling-specific MAPPED and REJECTED rows, so no blanket
+    status is assigned to a whole CHEBI ID.
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - grounding
+  - chebi30065
+  - local0
+  - local1
+- assessment_id: a4
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All four complete historical reports are zero-source-check diagnostics;
+    two concern unselected same-label siblings and remain comparison-only. No attached
+    claims or selected historical plan rows exist. Current owner grounding and MgSO4-heptahydrate
+    repairs are credited; historical timestamp strings are retained, without authenticating
+    execution. Current conservative merging preserves scientific fields and rejects
+    incompatible formulations. Inspected writer behavior is described separately by
+    exact file and function; it does not prove historical execution.
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - history-auth
+  - writer25
+  - writer26
+  - writer27
+  - writer28
+  - writer29
+  - writer30
+  - writer31
+  - writer32
+  - writer33
+  - writer34
+  - writer35
+  - writer36
+  - writer37
+  - writer38
+- assessment_id: a5
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 20 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:009989",
+    "selected_concentration_field_count": 20, "selected_concentration_fields_covered":
+    20, "decisions": [{"decision_id": "q1", "subject": "Distilled water", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "source batch water", "interpretation":
+    "Both sources identify 1 L/1000 ml water, not 1 g/L. Preserve the batch solvent
+    volume without density or measured-final-volume inference.", "sources": [{"locator":
+    "$.components[0].items[0]", "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[9]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q2", "subject": "MgSO4・7H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[1].concentration", "original": {"value": "2", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[1]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MgSO4・7H2O\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\":
+    \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[1]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\":
+    8.11438,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q3", "subject": "Yeast extract", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "original": {"value": "1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[2]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Yeast extract\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\":
+    \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[4]", "source_key":
+    "apiJ587", "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q4", "subject": "KH2PO4", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[3]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"KH2PO4\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001006\",\n          \"gmo_id\": \"GMO_001006\",\n          \"label\":
+    \"Potassium phosphate monobasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    3.67415,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q5", "subject": "NH4Cl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "original": {"value": "1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[4]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NH4Cl\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001008\",\n          \"gmo_id\": \"GMO_001008\",\n          \"label\":
+    \"Ammonium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[2]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    18.6951,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q6", "subject": "FeSO4・7H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[5]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"FeSO4・7H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001016\",\n          \"gmo_id\": \"GMO_001016\",\n          \"label\":
+    \"Iron(II) sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[6]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    1.79846,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q7", "subject": "CaSO4・2H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "original": {"value": "1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[6]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaSO4・2H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001087\",\n          \"gmo_id\": \"GMO_001087\",\n          \"label\":
+    \"Calcium sulfate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[3]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CaSO4 x 2 H2O\",\n                        \"compound_id\":
+    190,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    5.80815,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q8", "subject": "Sodium lactate", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[7].concentration", "original": {"value": "3.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "3.5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[7]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Sodium lactate\",\n          \"volume\": 3.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001090\",\n          \"gmo_id\": \"GMO_001090\",\n          \"label\":
+    \"Sodium lactate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "apiJ587", "reference": "https://mediadive.dsmz.de/rest/medium/J587",
+    "source_raw_sha256": "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d",
+    "source_text_sha256": "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d",
+    "accessed_at": "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Sodium lactate\",\n                        \"compound_id\":
+    1392,\n                        \"amount\": 3.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.5,\n                        \"mmol_l\":
+    31.2333,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q9", "subject": "Ascorbic acid", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml", "field_path":
+    "ingredients[8].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[8]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Ascorbic acid\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001247\",\n          \"gmo_id\": \"GMO_001247\",\n          \"label\":
+    \"Ascorbic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\":
+    \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Ascorbic acid\",\n                        \"compound_id\":
+    112,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.567795,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q10", "subject": "Thioglycollic acid",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "named provider main-recipe
+    rate", "interpretation": "TOGO gives the same numeral as a gram batch input with
+    1 L water; MediaDive explicitly reports this g_l value for J587. Credit the existing
+    numerical rate on that provider basis, not as an independent final-volume measurement.
+    No attached quantity claim exists.", "sources": [{"locator": "$.components[0].items[9]",
+    "source_key": "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Thioglycollic acid\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001356\",\n          \"gmo_id\": \"GMO_001356\",\n          \"label\":
+    \"Thioglycolic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000064\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000064\",\n              \"label\":
+    \"Reducing agent\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key":
+    "apiJ587", "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Thioglycollic acid\",\n                        \"compound_id\":
+    1814,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q11", "subject": "Provider pH statements", "local_fields": [], "decision": "conflict",
+    "stage": "source metadata versus preparation", "interpretation": "TOGO meta.ph
+    and both provider preparation texts say 7.3; preparation also states an initial
+    7.0–7.5 range, while MediaDive medium metadata reports 7.2. Preserve the discrepancy
+    and distinct adjustment stage; absent local pH should not be filled by choosing
+    a value silently.", "sources": [{"locator": "$.meta", "source_key": "togo592",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n    \"gm\":
+    \"http://togomedium.org/medium/M592\",\n    \"name\": \"Desulfohimalaya Medium\",\n    \"original_media_id\":
+    \"JCM_M587\",\n    \"src_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=587\",\n    \"ph\":
+    \"7.3\"\n  }", "quote_representation": "raw JSON object"}, {"locator": "$.data.medium",
+    "source_key": "apiJ587", "reference": "https://mediadive.dsmz.de/rest/medium/J587",
+    "source_raw_sha256": "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d",
+    "source_text_sha256": "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d",
+    "accessed_at": "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n            \"id\":
+    \"J587\",\n            \"name\": \"DESULFOHIMALAYA MEDIUM\",\n            \"complex_medium\":
+    \"yes\",\n            \"min_pH\": 7.2,\n            \"max_pH\": 7.2,\n            \"source\":
+    \"JCM\",\n            \"link\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=587\"\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.comments[0]", "source_key":
+    "togo592", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Adjust pH to 7.3.\"\n    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.comments[1]", "source_key": "togo592", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592", "source_raw_sha256":
+    "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3", "source_text_sha256":
+    "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3", "accessed_at":
+    "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    3,\n      \"comment\": \"Add components except ascorbic acid and thioglycollic
+    acid to distilled water and adjust pH to 7.0 -- 7.5. Thioglycollate and ascorbate
+    should be added immediately prior to sterilization. Distribute into tubes or flasks.
+    This medium may be cloudy after sterilization and turns black as a result of H2S
+    production due to bacterial growth.\"\n    }", "quote_representation": "raw JSON
+    object"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 7.3.\"\n                    }", "quote_representation": "raw JSON
+    object"}, {"locator": "$.data.solutions[0].steps[1]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"step\":
+    \"Add components except ascorbic acid and thioglycollic acid to distilled water
+    and adjust pH to 7.0 - 7.5. Thioglycollate and ascorbate should be added immediately
+    prior to sterilization. Distribute into tubes or flasks. This medium may be cloudy
+    after sterilization and turns black as a result of H2S production due to bacterial
+    growth.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q12", "subject": "Source preparation and sterilization sequence",
+    "local_fields": [], "decision": "add", "stage": "main preparation", "interpretation":
+    "Both provider texts retain the same staged addition of thioglycollate/ascorbate
+    immediately before sterilization and dispensing. No temperature or duration is
+    stated; the unavailable primary page supplies no default controls that can be
+    inherited here.", "sources": [{"locator": "$.comments[1]", "source_key": "togo592",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M592",
+    "source_raw_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "source_text_sha256": "2a904880276f7b7993c4918a6ebf0bac43cc2fb6a816e80596ca043dfa0a2de3",
+    "accessed_at": "2026-10-28T19:40:50.741383Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    3,\n      \"comment\": \"Add components except ascorbic acid and thioglycollic
+    acid to distilled water and adjust pH to 7.0 -- 7.5. Thioglycollate and ascorbate
+    should be added immediately prior to sterilization. Distribute into tubes or flasks.
+    This medium may be cloudy after sterilization and turns black as a result of H2S
+    production due to bacterial growth.\"\n    }", "quote_representation": "raw JSON
+    object"}, {"locator": "$.data.solutions[0].steps[1]", "source_key": "apiJ587",
+    "reference": "https://mediadive.dsmz.de/rest/medium/J587", "source_raw_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "source_text_sha256":
+    "9548699a0beef90c6058d6c52db20f87a8a28fda61e61b0ec8761e76271f4e2d", "accessed_at":
+    "2026-10-28T19:40:50.741459Z", "exact_source_quote": "{\n                        \"step\":
+    \"Add components except ascorbic acid and thioglycollic acid to distilled water
+    and adjust pH to 7.0 - 7.5. Thioglycollate and ascorbate should be added immediately
+    prior to sterilization. Distribute into tubes or flasks. This medium may be cloudy
+    after sterilization and turns black as a result of H2S production due to bacterial
+    growth.\"\n                    }", "quote_representation": "raw JSON object"}]}],
+    "local_field_census_reference": "REVIEW_WORK/batch076/record04/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a6
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/DESULFOHIMALAYA_MEDIUM.yaml: primary 8/10, secondary
+    5/10; data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml: primary
+    9/10, secondary 5/10. These are ingredient-instance linkage fractions, not accuracy
+    scores. Solution terms are audited separately. Every actually asserted CHEBI term
+    is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric
+    legacy MediaIngredientMech mentions occur across the complete selected documents,
+    with exact locators in the inventory; NNNNNN is a historical placeholder, not
+    an ID. Complex commercial/product components are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and its exact maintained owner reviewed. Same-name
+    siblings are comparison-only context; no dependency recipe transfer or strain-growth
+    inference is made.
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - local0
+- assessment_id: a8
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:009989
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-009989-water-unit
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Batch water is represented as a mass concentration
+  description: Both selected layers encode 1 G_PER_L for distilled water although
+    TOGO states 1 L and API states 1000 ml. The source supports a solvent volume;
+    neither provider measures an exact assembled final volume.
+  target_ids:
+  - CultureMech:009989
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - togo592
+  - apiJ587
+  rule_id: review-yaml-record/source-unit-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-009989-missing-preparation-ph
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation and conflicting pH context are omitted
+  description: Neither selected layer has preparation steps or pH fields. Both current
+    providers preserve an addition sequence and dispensing context, but their pH metadata
+    disagree. Recover supported preparation and retain the unresolved pH disagreement
+    rather than silently adopting one value.
+  target_ids:
+  - CultureMech:009989
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - ph_range
+  evidence_ids:
+  - togo592
+  - apiJ587
+  - jcm587
+  rule_id: review-yaml-record/preparation-completeness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-009989-generated-grounding-staleness
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated target omits an existing owner grounding
+  description: The owner includes current thioglycolic acid CHEBI:30065 and an August
+    20 grounding event; the singleton generated target has neither. The other supported
+    hydrate mappings should remain unchanged.
+  target_ids:
+  - CultureMech:009989
+  field_paths:
+  - ingredients[9].term
+  - curation_history
+  evidence_ids:
+  - local0
+  - local1
+  - chebi30065
+  - grounding
+  rule_id: review-yaml-record/generated-freshness
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-009989-missing-claim-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Numerical assertions have no attached source evidence
+  description: All 20 selected concentration fields lack attached evidence. Nine non-water
+    rate values can be newly supported by explicit provider g_l, but the four old
+    reports all checked zero source rows and do not supply claim support.
+  target_ids:
+  - CultureMech:009989
+  field_paths:
+  - ingredients[*].concentration
+  - evidence
+  evidence_ids:
+  - history-auth
+  - apiJ587
+  - togo592
+  rule_id: review-yaml-record/claim-evidence-completeness
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Replace the maintained owner water assertion with the verified batch-volume
+    representation and attach exact source evidence; regenerate the target after reviewing
+    all retained numerical rates.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009989
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Add source-scoped preparation to the owner, preserve both pH assertions
+    with their distinct locations, and resolve the primary-source gap before asserting
+    an unqualified pH. Do not invent sterilization temperature or duration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009989
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Retain the owner grounding and regenerate the target through the current
+    singleton merge route after completing source corrections; confirm exact term
+    and appropriate history transfer.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009989
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Attach exact claim-scoped provider excerpts with original capture times
+    and retain primary-source and denominator limitations. Do not use unreviewed sibling
+    report conclusions as source proof.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009989
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M592_Desulfohimalaya_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- JCM587 returned HTTP200 with Nothing found; no primary recipe or default sterilization
+  control was available.
+- MediaDive pH metadata 7.2 differs from TOGO/preparation 7.3 and an initial 7.0–7.5
+  range. Final-volume and historical-access claims remain unverified.
+- Same-label sibling reports are context-only; no organism-specific growth claim or
+  recipe edit is made.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
