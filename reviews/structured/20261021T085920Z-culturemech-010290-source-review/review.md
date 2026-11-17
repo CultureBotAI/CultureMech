@@ -1,0 +1,1494 @@
+# Source and formulation review: 8kg_4_medium (CultureMech:010290)
+
+- Review: 20261021T085920Z-culturemech-010290-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T08:49:01Z
+- Finished UTC: 2026-10-21T08:59:20Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+8KG-4 is JCM 836, a yeast-free derivative of JCM 835 and ultimately JCM 284. Both local layers link its A/B stages to unrelated MediaDive stocks, flatten stage quantities, misrepresent milligram and liquid units, and leave three referenced supplements empty. The primary source chain is accessible, but derivative wording must be preserved when reconciling the vitamin dose.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 119; batch 012 item 9 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eleven task batches contain 110 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 112 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:010290 | data/merge_yaml/merged/8kg_4_medium.yaml | generated | 8kg_4_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:010290 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:010290 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch012/119/strict.tsv |
+| validate-terms | passed | True | CultureMech:010290 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:010290 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:010290 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:010290.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:010290.
+
+11 primary CHEBI identities resolve with matching labels; 6 of 6 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+12 direct ingredient instances; CHEBI-primary instance linkage 12/12 (100.00%), verified secondary coverage 6/12 (50.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Exact derivative accession, owner and dependent records
+
+identity: supported. Targets: CultureMech:010290.
+
+The sole owner is TOGO M872 with stable ID 010290. Explicit source links establish JCM 836 → 835 → 284. Parent medium M278 supplies stock context only. No parent or helper is treated as another target or an exact synonym.
+
+### Every concentration and original stage
+
+quantity: concern. Targets: CultureMech:010290.
+
+All 18 rows were assessed. Five mineral mass literals in A and the derivative glucose mass match source values, but original stage and final-volume context are lost. Resazurin has a mg/g mismatch. Water, reducer additions and all six solutions contain liquid/stock context that is incompatible with flat G_PER_L values. No sum of nominal stage or supplement volumes is asserted as measured final volume.
+
+[{"field_path": "ingredients[0]", "name": "L--cysteine・HCl・H2O", "stored": {"value": "10", "unit": "G_PER_L"}, "decision": "correct", "source_context": "Main assembly: 10 ml of a 3% L-cysteine hydrochloride monohydrate solution. This is not 10 g/L dry solute; percent basis and final volume remain unstated.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[0].items[1]", "source_stage": "main solution 1", "exact_source_quote": "          \"component_name\": \"L--cysteine・HCl・H2O\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 3,\n          \"conc_unit\": \"%\","}]}, {"field_path": "ingredients[1]", "name": "N2", "stored": {"value": "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_context": "Gas context for staged anaerobic preparation/storage; no mass or final concentration is stated. Repeated gas entries must preserve stage meaning, not become additive doses.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[0].items[4]", "source_stage": "main solution 1", "exact_source_quote": "          \"component_name\": \"N2\","}, {"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[2].items[2]", "source_stage": "Solution B", "exact_source_quote": "          \"component_name\": \"N2\","}]}, {"field_path": "ingredients[2]", "name": "Distilled water", "stored": {"value": "1000.0", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A water 900 ml plus B water 100 ml were collapsed to 1000 G_PER_L. Preserve separate solvent volumes; no water-density or final-volume inference is justified.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[0]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\","}, {"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[2].items[0]", "source_stage": "Solution B", "exact_source_quote": "          \"component_name\": \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\","}]}, {"field_path": "ingredients[3]", "name": "CaCl2・2H2O", "stored": {"value": "0.15", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage source mass 0.15 g, with the named salt/hydrate and 900 ml water stage. The mass literal matches; the flat G_PER_L statement lacks the original stage and a verified final-volume basis.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[1]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.15,\n          \"unit\": \"g\","}]}, {"field_path": "ingredients[4]", "name": "KH2PO4", "stored": {"value": "0.14", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage source mass 0.14 g, with the named salt/hydrate and 900 ml water stage. The mass literal matches; the flat G_PER_L statement lacks the original stage and a verified final-volume basis.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[2]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.14,\n          \"unit\": \"g\","}]}, {"field_path": "ingredients[5]", "name": "NH4Cl", "stored": {"value": "0.54", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage source mass 0.54 g, with the named salt/hydrate and 900 ml water stage. The mass literal matches; the flat G_PER_L statement lacks the original stage and a verified final-volume basis.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[3]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"NH4Cl\",\n          \"volume\": 0.54,\n          \"unit\": \"g\","}]}, {"field_path": "ingredients[6]", "name": "Resazurin", "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A contains 1 mg resazurin, equal to 0.001 g in that source stage. The stored numeric 1 G_PER_L loses the mg scale. This 1000-fold mass-unit distinction does not require an assumed final volume.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[4]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\","}]}, {"field_path": "ingredients[7]", "name": "MgCl2・6H2O", "stored": {"value": "0.2", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage source mass 0.2 g, with the named salt/hydrate and 900 ml water stage. The mass literal matches; the flat G_PER_L statement lacks the original stage and a verified final-volume basis.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[5]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\","}]}, {"field_path": "ingredients[8]", "name": "NaHCO3", "stored": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage source mass 2.5 g, with the named salt/hydrate and 900 ml water stage. The mass literal matches; the flat G_PER_L statement lacks the original stage and a verified final-volume basis.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[6]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"NaHCO3\",\n          \"volume\": 2.5,\n          \"unit\": \"g\","}]}, {"field_path": "ingredients[9]", "name": "Carbon dioxide gas", "stored": {"value": "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_context": "Gas context for staged anaerobic preparation/storage; no mass or final concentration is stated. Repeated gas entries must preserve stage meaning, not become additive doses.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[10]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"Carbon dioxide gas\","}]}, {"field_path": "ingredients[10]", "name": "Nitrogen gas", "stored": {"value": "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_context": "Gas context for staged anaerobic preparation/storage; no mass or final concentration is stated. Repeated gas entries must preserve stage meaning, not become additive doses.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[11]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"Nitrogen gas\","}]}, {"field_path": "ingredients[11]", "name": "glucose", "stored": {"value": "0.18", "unit": "G_PER_L"}, "decision": "correct", "source_context": "B uses 0.18 g glucose in its 100 ml water stage, replacing parent pyruvate. The literal mass matches, but the flat final-medium concentration lacks an explicit final-volume derivation.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[2].items[1]", "source_stage": "Solution B", "exact_source_quote": "          \"component_name\": \"glucose\",\n          \"volume\": 0.18,\n          \"unit\": \"g\","}]}, {"field_path": "solutions[0]", "name": "Na2S・9H2O solutions", "stored": {"value": "10", "unit": "G_PER_L"}, "decision": "correct", "source_context": "Main assembly: 10 ml of a 3% sodium sulfide nonahydrate solution, not 10 G_PER_L dry material; empty composition and stock-strength omission remain.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[0].items[0]", "source_stage": "main solution 1", "exact_source_quote": "          \"component_name\": \"Na2S・9H2O solutions\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 3,\n          \"conc_unit\": \"%\","}]}, {"field_path": "solutions[1]", "name": "Solution A", "stored": {"value": "900", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A is a local 900 ml assembly stage, not 900 G_PER_L, and its asserted external identifier selects a different stock.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[0].items[2]", "source_stage": "main solution 1", "exact_source_quote": "          \"component_name\": \"Solution A\",\n          \"volume\": 900,\n          \"unit\": \"ml\","}]}, {"field_path": "solutions[2]", "name": "Solution B", "stored": {"value": "100", "unit": "G_PER_L"}, "decision": "correct", "source_context": "B is a local 100 ml assembly stage, not 100 G_PER_L, and its asserted external identifier selects a different stock.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[0].items[3]", "source_stage": "main solution 1", "exact_source_quote": "          \"component_name\": \"Solution B\",\n          \"volume\": 100,\n          \"unit\": \"ml\","}]}, {"field_path": "solutions[3]", "name": "Trace vitamins solution (see Medium [M278])", "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "conflict", "source_context": "TOGO M872 lists 1 ml trace vitamins in A; JCM 835 uses derivative supplementation wording while JCM 284 lists 2 ml. Retain all version/stage evidence rather than infer a summed dose.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[7]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"Trace vitamins solution (see Medium [M278])\",\n          \"volume\": 1,\n          \"unit\": \"ml\","}]}, {"field_path": "solutions[4]", "name": "Trace element solution (see Medium [M278])", "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A adds 1 ml of the explicitly defined JCM 284 trace-element stock, not 1 G_PER_L. Empty composition does not resolve that stock.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[8]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"Trace element solution (see Medium [M278])\",\n          \"volume\": 1,\n          \"unit\": \"ml\","}]}, {"field_path": "solutions[5]", "name": "Se/W solution (see Medium [M278])", "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A adds 1 ml of the explicitly defined JCM 284 Se/W stock, not 1 G_PER_L. Empty composition does not resolve that stock.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator": "$.components[1].items[9]", "source_stage": "Solution A", "exact_source_quote": "          \"component_name\": \"Se/W solution (see Medium [M278])\",\n          \"volume\": 1,\n          \"unit\": \"ml\","}]}]
+
+### Source chemical forms and linkage limits
+
+grounding: supported. Targets: CultureMech:010290.
+
+All 12 direct instances have primary CHEBI links (11 unique IDs), and 6/12 have verified current secondary keys. OLS definitions/formulas support the explicitly named L-cysteine hydrochloride monohydrate, calcium chloride dihydrate and magnesium chloride hexahydrate. Phosphate, ammonium chloride, bicarbonate, resazurin, glucose, water and gas labels agree at their source specificity. Generic glucose is not silently narrowed to a stereoisomer; a valid cysteine identity does not validate its dry-solute representation.
+
+### Wrong A/B identities and unresolved supplements
+
+quantity: concern. Targets: CultureMech:010290.
+
+Both named A/B helpers exist, but the source compositions disprove their identities for this medium. The three M278 supplement descriptors have no composition; the parent YAML is itself a flattened representation and is not a safe stock definition. The cysteine and sulfide reducer stocks also require retained strength and dose context.
+
+Primary stock definitions were inspected in full. Trace vitamins uses 1 L water with biotin 4.9 mg, folic acid 8.8 mg, pyridoxine HCl 4.1 mg, thiamine HCl 6.7 mg, riboflavin 7.5 mg, nicotinic acid 2.5 mg, DL-calcium pantothenate 9.5 mg, vitamin B12 27.1 mg, p-aminobenzoic acid 2.7 mg and lipoic acid 4.1 mg. Trace elements contains nitrilotriacetic acid 12.8 g, FeCl3·6H2O 1.35 g, MnCl2·4H2O 0.1 g, CoCl2·6H2O 0.024 g, CaCl2·2H2O 0.1 g, ZnCl2 0.1 g, CuCl2·2H2O 0.025 g, H3BO3 0.01 g, Na2MoO4·2H2O 0.024 g and NiCl2·6H2O 0.12 g, brought to 1 L with the source pH sequence. Se/W lists 4 mg each of Na2SeO3·5H2O and Na2WO4·2H2O with 1 L water. These are stock recipes, not final-medium ingredient doses; no unspecified hydrate or vitamin species is invented.
+
+### Inherited preparation, pH and version-scoped comments
+
+completeness: concern. Targets: CultureMech:010290.
+
+Both local layers omit preparation, stage pH and sterilization despite accessible source instructions. The parent distinguishes A pH 6.5 with staged bicarbonate addition and N2/CO2 handling from filter-sterilized B pH 7 under nitrogen, then separate reducer additions. Autoclaving and overnight handling belong to their stated stages. TOGO carries a parent 10971 comment and the derivative 17152 comment; those strain-specific instructions must not become one universal condition. No taxonomy or growth assertion follows from the strain mentions.
+
+### Physical state and composition classification
+
+scope: concern. Targets: CultureMech:010290.
+
+Liquid state matches the agar-free derivative. COMPLEX/UNDEFINED is inherited local/provider metadata, but the recovered yeast-free recipe uses named chemicals and defined stocks; its current representation does not document an undefined material. Reassess composition classification after correct stock reconstruction and derivative-dose reconciliation. No target organism, native variant, gene context or measured growth assertion is present.
+
+### History, source evidence and current writer limits
+
+provenance: concern. Targets: CultureMech:010290.
+
+All 13 target and 12 owner history timestamps parse with timezones. Import, migration, duplicate-water cleanup, grounding and merge events explain the recorded lineage but are not scientific verification. Neither layer supplies narrow formulation evidence or a references array; the reference checker examined zero excerpts. Current importer improvements were inspected without claiming a historical replay.
+
+## Findings
+
+### f1: A and B resolve to different formulations
+
+blocker / open / confirmed; issue key: CM010290-wrong-stock-identities.
+
+The asserted MediaDive 5342 and 5343 IDs resolve successfully, but their 500 ml recipes differ from both local A/B sections in TOGO M872 and the JCM derivative chain. The target’s helper filenames exist; this is false identity, not a missing-file claim. A lowercase-name index explains how generic names can select these unrelated records.
+
+### f2: Masses, solvent volumes and stock additions were flattened
+
+blocker / open / confirmed; issue key: CM010290-stage-unit-flattening.
+
+Both layers store resazurin 1 G_PER_L where the source stage lists 1 mg; the source mass is 0.001 g. Cysteine and sulfide additions are 10 ml of 3% stocks, A/B are 900/100 ml, supplement additions are in ml, and separate waters were summed into 1000 G_PER_L. The remaining matching mass literals lack their stage basis. These are scientific unit and representation defects despite schema passes.
+
+### f3: Three referenced supplements remain empty
+
+major / open / confirmed; issue key: CM010290-unresolved-supplement-definitions.
+
+The trace-vitamin, trace-element and Se/W descriptors have empty compositions even though their JCM 284 definitions are accessible. Copying the flattened M278 owner would import stock masses as medium amounts and parent-specific material. The vitamin addition also needs the JCM 835 derivative wording reconciled with TOGO’s explicit entry and the parent dose.
+
+### f4: Source preparation and stage-specific evidence are missing
+
+major / open / confirmed; issue key: CM010290-preparation-and-evidence-gap.
+
+Both layers omit the inherited staged preparation, pH, gas and sterilization context and retain only source URLs. The exact source chain is available, but zero reference excerpts were checked. Parent and derivative strain comments in the TOGO payload require separate scope and cannot justify general growth conditions.
+
+### f5: Undefined classification lacks ingredient support
+
+minor / open / confirmed; issue key: CM010290-composition-classification.
+
+COMPLEX/UNDEFINED remains in both layers and MediaDive marks the medium complex, while the explicit derivative removes yeast and the recovered stocks are defined. The local classification does not explain this discrepancy; the broken stock identities must be resolved before making a final composition claim.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Replace the false stock identities only after matching the exact accession, composition and stage; preserve local A/B structure. Check source-scoped resolution instead of global generic-name lookup, and ensure generation/export cannot substitute the unrelated recipes.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore original units, separate stages, stock strengths and dose context in the maintained owner with narrow source evidence. Derive final concentrations only when the final-volume and percent-strength conventions are explicitly justified; retain unresolved conventions and gas context.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Represent the exact named stock definitions and their source-specific preparation bases, preserving salts, hydrates and vitamin forms. Keep stock formulation separate from final dose and retain the derivative vitamin-dose uncertainty rather than guessing an additive total.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach bounded source evidence and preserve the inherited instructions at the correct stage, with derivative overrides and strain-specific comments clearly separated. Do not infer incubation temperature, taxonomic identity or general growth from recipe association.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Reassess the medium/composition classification against the corrected complete derivative and document any remaining undefined component or provider-versus-local classification distinction.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/8kg_4_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/8kg_4_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/8kg_4_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch012/119/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch012/119/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/8kg_4_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/8kg_4_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/8kg_4_medium.yaml:1:id: CultureMech:010290<br>./data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml:1:id: CultureMech:010290<br> |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:16526 resolves to carbon dioxide and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17234 resolves to glucose and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17997 resolves to dinitrogen and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31206 resolves to ammonium chloride and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32139 resolves to sodium hydrogencarbonate and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:8806 resolves to Resazurin and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate and is not obsolete. This verifies term metadata; source form and stage are assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| jcm836 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=836; Entire JCM 836 derivative specification and strain-scoped comment | supports | The exact 8KG-4 accession uses JCM 835 without yeast extract. Its comment is scoped to JCM 17152; the page carries the default sterilization statement. It does not supply a new standalone ingredient table. |
+| jcm835 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=835; JCM 835 derivative instruction referring to JCM 284 | supports | The intervening medium modifies JCM 284: yeast extract is mentioned at final 0.2 g/L, trace vitamins at 1 ml in A per 900 ml, and the B carbon source becomes 0.18 g glucose per 100 ml. The text uses supplemented and otherwise inherits preparation from 284. JCM 836 removes yeast extract. The 17151 comment belongs to 835. |
+| jcm284 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284; Complete parent A/B recipe, preparation and three stock definitions | supports | JCM 284 supplies the inherited A/B structure, stage-specific water and pH, resazurin in mg, separate reducer stocks and three explicitly defined supplements. A contains the listed mineral masses in 900 ml water and B uses 100 ml water. Its yeast, pyruvate, vitamin-dose and strain comment cannot be transferred unchanged through the derivative chain. |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872; $.meta; all three component sections and all comments | supports | M872 explicitly identifies JCM_M836. Main assembly has two 10 ml reducer additions at 3%, A 900 ml, B 100 ml and nitrogen context. A has six quantified solutes, three 1 ml supplement additions, 900 ml water and gas context; B has 0.18 g glucose, 100 ml water and nitrogen. Both parent-strain and derivative-strain comments occur in this payload and require distinct scope. |
+| togo-parent | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M278; $.meta and the SI stock-definition sections | supports | M278 identifies JCM 284 and supplies the parent supplement definitions. It is a source dependency for the named stocks, not a synonym for the complete 8KG-4 derivative. |
+| mediadive-836 | https://mediadive.dsmz.de/rest/medium/J836; $.data.medium and $.data.solutions | supports | MediaDive J836 links the exact JCM 836 source and retains the derivative instruction and 17152 comment. Its main solution 4800 has prose, not a complete expanded formula; it does not validate the asserted 5342/5343 links. |
+| wrong-a | https://mediadive.dsmz.de/rest/solution/5342; $.data.recipe and $.data.steps | supports | Solution 5342 is a different mixture containing yeast extract, casamino acids, glutamate, citrate, sulfate salts, KCl and NaCl. Its prose specifies a 500 ml preparation. This differs from the yeast-free mineral A stage of JCM 836. |
+| wrong-b | https://mediadive.dsmz.de/rest/solution/5343; $.data.recipe and $.data.steps | supports | Solution 5343 contains sodium carbonate and sodium chloride, with 500 ml preparation prose. It is not the glucose-in-water B stage inherited by JCM 836. |
+| dependency-0 | data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml; Complete explicit dependency, read separately from the target owner | context_only | The helper exists and resolves the asserted external stock ID, but its full composition is a different recipe. Its generic placeholder ingredients do not replace the composition array. |
+| dependency-1 | data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml; Complete explicit dependency, read separately from the target owner | context_only | The helper exists and resolves the asserted external stock ID, but its full composition is a different recipe. Its generic placeholder ingredients do not replace the composition array. |
+| dependency-2 | data/normalized_yaml/bacterial/TOGO_M278_SI_Medium.yaml; Complete explicit dependency, read separately from the target owner | context_only | The M278 parent exists, but its legacy normalization also flattens stock constituents and units. Copying its final ingredient array would transfer parent-specific ingredients and stock errors into the derivative. |
+| name-resolution | scripts/migrate_solutions_from_ingredients.py; SolutionMigrator.__init__ and _resolve_solution; captured mediadive_solution_index.json | context_only | The current reverse-name dictionary overwrites duplicate lowercase names. The pinned index has {'solution a': 222, 'solution b': 195} and last-name winners {'solution a': 'mediadive.solution:5342', 'solution b': 'mediadive.solution:5343'}, reproducing the observed generic-name choices. Cross-medium references become empty stubs. This is a current code/data explanation, not a replay of the historical migration. |
+| current-importer | src/culturemech/import/togo_importer.py; _extract_primary_components; _solution_from_item; _local_solution_composition; _parse_unit | context_only | Current code separates primary assembly from local stock sections, keeps referenced-stock context and recognizes mg/ml/L units. It was read, not executed. Its presence does not establish that these older owner bytes were regenerated or that percent conventions and final-volume bases are resolved. |
+| quantities | /private/tmp/culturemech-review-work-batch012/119/quantity-inventory.json; All 12 direct ingredient rows and all 6 solution descriptors | context_only | Eighteen decisions distinguish literal masses, gas context, stage solvent volumes, stock doses, units and unresolved derivative wording. No final-volume normalization is silently inferred. |
+
+## Limits And Additional Notes
+
+- The primary JCM 835 wording about supplementing trace vitamins is retained alongside TOGO M872’s explicit 1 ml entry; this review does not infer an additive total or copy the parent’s 2 ml dose.
+- No final-volume measurement, percent-strength convention, organism taxonomy assignment, incubation optimum or experimental growth result is inferred. The review is complete as an assessment of the defects and source conflict, not as an approved reconstructed recipe.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T085920Z-culturemech-010290-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 8kg_4_medium (CultureMech:010290)'
+started_at: '2026-10-21T08:49:01Z'
+finished_at: '2026-10-21T08:59:20Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 8KG-4 is JCM 836, a yeast-free derivative of JCM 835 and ultimately JCM 284.
+  Both local layers link its A/B stages to unrelated MediaDive stocks, flatten stage
+  quantities, misrepresent milligram and liquid units, and leave three referenced
+  supplements empty. The primary source chain is accessible, but derivative wording
+  must be preserved when reconciling the vitamin dose.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/8kg_4_medium.yaml
+    sha256: ee1cad1ddf653c088b398c9d8fec162d73cb17a06179c1695fb30171f4fd5309
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M278_SI_Medium.yaml
+    sha256: e5693e74055c0f6bd28c300cdd47d772b39cedbd46afd85ba6890d343fe8db09
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    sha256: 68c39ec9358eba1c4c3b9b371532927720bb5d40adee7bcae5f03b562f7e9bf6
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: data/normalized_yaml/solutions/mediadive_solution_index.json
+    sha256: 2e43ed2391d0113480837e0756120d71a8dad8a4490010054e67bfb90c66d381
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 119; batch 012 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eleven task batches contain
+    110 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 112 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010290
+targets:
+- target_id: CultureMech:010290
+  path: data/merge_yaml/merged/8kg_4_medium.yaml
+  label: 8kg_4_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/8kg_4_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/8kg_4_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch012/119/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch012/119/strict.tsv"
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/8kg_4_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/8kg_4_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010290
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/8kg_4_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/8kg_4_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:49.488317Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/8kg_4_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch012/119/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:50.918511Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch012/119/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/8kg_4_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:52.549182Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/8kg_4_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:53.566017Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: supports
+  summary: './data/merge_yaml/merged/8kg_4_medium.yaml:1:id: CultureMech:010290
+
+    ./data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml:1:id: CultureMech:010290
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies term metadata;
+    source form and stage are assessed separately.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:26.337128Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide and is not obsolete. This verifies
+    term metadata; source form and stage are assessed separately.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose and is not obsolete. This verifies term
+    metadata; source form and stage are assessed separately.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen and is not obsolete. This verifies term
+    metadata; source form and stage are assessed separately.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride and is not obsolete. This verifies
+    term metadata; source form and stage are assessed separately.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate and is not obsolete. This
+    verifies term metadata; source form and stage are assessed separately.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies term metadata; source form and stage are assessed separately.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete.
+    This verifies term metadata; source form and stage are assessed separately.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete.
+    This verifies term metadata; source form and stage are assessed separately.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin and is not obsolete. This verifies term
+    metadata; source form and stage are assessed separately.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate and is not obsolete.
+    This verifies term metadata; source form and stage are assessed separately.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036":
+    [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label":
+    "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term":
+    "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label":
+    "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term":
+    "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}'
+- evidence_id: jcm836
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=836
+  locator: Entire JCM 836 derivative specification and strain-scoped comment
+  accessed_at: '2026-10-21T08:42:32.238199Z'
+  support: supports
+  summary: The exact 8KG-4 accession uses JCM 835 without yeast extract. Its comment
+    is scoped to JCM 17152; the page carries the default sterilization statement.
+    It does not supply a new standalone ingredient table.
+  snapshot_sha256: 7d4288bebc35f9990595c254491db37abed56d34b615aa209d1ae68dccf23612
+- evidence_id: jcm835
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=835
+  locator: JCM 835 derivative instruction referring to JCM 284
+  accessed_at: '2026-10-21T08:45:15.823399Z'
+  support: supports
+  summary: 'The intervening medium modifies JCM 284: yeast extract is mentioned at
+    final 0.2 g/L, trace vitamins at 1 ml in A per 900 ml, and the B carbon source
+    becomes 0.18 g glucose per 100 ml. The text uses supplemented and otherwise inherits
+    preparation from 284. JCM 836 removes yeast extract. The 17151 comment belongs
+    to 835.'
+  snapshot_sha256: 8e7e6cdb567270ad97fe187bedc7e25cef937bc6da442d06861b2349c563ef16
+- evidence_id: jcm284
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=284
+  locator: Complete parent A/B recipe, preparation and three stock definitions
+  accessed_at: '2026-10-21T08:45:16.404498Z'
+  support: supports
+  summary: JCM 284 supplies the inherited A/B structure, stage-specific water and
+    pH, resazurin in mg, separate reducer stocks and three explicitly defined supplements.
+    A contains the listed mineral masses in 900 ml water and B uses 100 ml water.
+    Its yeast, pyruvate, vitamin-dose and strain comment cannot be transferred unchanged
+    through the derivative chain.
+  snapshot_sha256: 6566ba45030bfac8958271e24e81e63f62ee15deecf119495f03f649797f34d7
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872
+  locator: $.meta; all three component sections and all comments
+  accessed_at: '2026-10-21T08:42:31.331863Z'
+  support: supports
+  summary: M872 explicitly identifies JCM_M836. Main assembly has two 10 ml reducer
+    additions at 3%, A 900 ml, B 100 ml and nitrogen context. A has six quantified
+    solutes, three 1 ml supplement additions, 900 ml water and gas context; B has
+    0.18 g glucose, 100 ml water and nitrogen. Both parent-strain and derivative-strain
+    comments occur in this payload and require distinct scope.
+  snapshot_sha256: c20903d7ab840035ae6eac5f1fe16aa48cd124ab73d947c19566b201c27fa845
+- evidence_id: togo-parent
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M278
+  locator: $.meta and the SI stock-definition sections
+  accessed_at: '2026-10-21T08:42:31.331576Z'
+  support: supports
+  summary: M278 identifies JCM 284 and supplies the parent supplement definitions.
+    It is a source dependency for the named stocks, not a synonym for the complete
+    8KG-4 derivative.
+  snapshot_sha256: c08db7228ffdf137e7dfc10d0260f6089aa6b108c057bc1f0fbb1db548834cb0
+- evidence_id: mediadive-836
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J836
+  locator: $.data.medium and $.data.solutions
+  accessed_at: '2026-10-21T08:42:31.330978Z'
+  support: supports
+  summary: MediaDive J836 links the exact JCM 836 source and retains the derivative
+    instruction and 17152 comment. Its main solution 4800 has prose, not a complete
+    expanded formula; it does not validate the asserted 5342/5343 links.
+  snapshot_sha256: 737db587289d4b889122e825153e085ca14a8489474a5029ae08654e4ba1eea2
+- evidence_id: wrong-a
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  locator: $.data.recipe and $.data.steps
+  accessed_at: '2026-10-21T07:31:13.269119Z'
+  support: supports
+  summary: Solution 5342 is a different mixture containing yeast extract, casamino
+    acids, glutamate, citrate, sulfate salts, KCl and NaCl. Its prose specifies a
+    500 ml preparation. This differs from the yeast-free mineral A stage of JCM 836.
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: wrong-b
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  locator: $.data.recipe and $.data.steps
+  accessed_at: '2026-10-21T07:31:13.547266Z'
+  support: supports
+  summary: Solution 5343 contains sodium carbonate and sodium chloride, with 500 ml
+    preparation prose. It is not the glucose-in-water B stage inherited by JCM 836.
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: dependency-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+  locator: Complete explicit dependency, read separately from the target owner
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: The helper exists and resolves the asserted external stock ID, but its
+    full composition is a different recipe. Its generic placeholder ingredients do
+    not replace the composition array.
+- evidence_id: dependency-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+  locator: Complete explicit dependency, read separately from the target owner
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: The helper exists and resolves the asserted external stock ID, but its
+    full composition is a different recipe. Its generic placeholder ingredients do
+    not replace the composition array.
+- evidence_id: dependency-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M278_SI_Medium.yaml
+  locator: Complete explicit dependency, read separately from the target owner
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: The M278 parent exists, but its legacy normalization also flattens stock
+    constituents and units. Copying its final ingredient array would transfer parent-specific
+    ingredients and stock errors into the derivative.
+- evidence_id: name-resolution
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: SolutionMigrator.__init__ and _resolve_solution; captured mediadive_solution_index.json
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: 'The current reverse-name dictionary overwrites duplicate lowercase names.
+    The pinned index has {''solution a'': 222, ''solution b'': 195} and last-name
+    winners {''solution a'': ''mediadive.solution:5342'', ''solution b'': ''mediadive.solution:5343''},
+    reproducing the observed generic-name choices. Cross-medium references become
+    empty stubs. This is a current code/data explanation, not a replay of the historical
+    migration.'
+- evidence_id: current-importer
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _local_solution_composition;
+    _parse_unit
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: Current code separates primary assembly from local stock sections, keeps
+    referenced-stock context and recognizes mg/ml/L units. It was read, not executed.
+    Its presence does not establish that these older owner bytes were regenerated
+    or that percent conventions and final-volume bases are resolved.
+- evidence_id: quantities
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch012/119/quantity-inventory.json
+  locator: All 12 direct ingredient rows and all 6 solution descriptors
+  accessed_at: '2026-10-21T08:59:18Z'
+  support: context_only
+  summary: Eighteen decisions distinguish literal masses, gas context, stage solvent
+    volumes, stock doses, units and unresolved derivative wording. No final-volume
+    normalization is silently inferred.
+  snapshot_sha256: 6b7c5e40923cb9bc1204f3e1468c888d3ec9ad1ba9dc10e35e730dc3c1d6063c
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '11 primary CHEBI identities resolve with matching labels; 6 of 6 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi16526
+  - chebi17234
+  - chebi17997
+  - chebi31206
+  - chebi32139
+  - chebi63036
+  - chebi86158
+  - chebi86345
+  - chebi8806
+  - chebi91248
+  details: 12 direct ingredient instances; CHEBI-primary instance linkage 12/12 (100.00%),
+    verified secondary coverage 6/12 (50.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Exact derivative accession, owner and dependent records
+  outcome: supported
+  summary: The sole owner is TOGO M872 with stable ID 010290. Explicit source links
+    establish JCM 836 → 835 → 284. Parent medium M278 supplies stock context only.
+    No parent or helper is treated as another target or an exact synonym.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - jcm836
+  - jcm835
+  - jcm284
+  - togo
+  - togo-parent
+- assessment_id: quantities
+  area: quantity
+  topic: Every concentration and original stage
+  outcome: concern
+  summary: All 18 rows were assessed. Five mineral mass literals in A and the derivative
+    glucose mass match source values, but original stage and final-volume context
+    are lost. Resazurin has a mg/g mismatch. Water, reducer additions and all six
+    solutions contain liquid/stock context that is incompatible with flat G_PER_L
+    values. No sum of nominal stage or supplement volumes is asserted as measured
+    final volume.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm836
+  - jcm835
+  - jcm284
+  - quantities
+  details: '[{"field_path": "ingredients[0]", "name": "L--cysteine・HCl・H2O", "stored":
+    {"value": "10", "unit": "G_PER_L"}, "decision": "correct", "source_context": "Main
+    assembly: 10 ml of a 3% L-cysteine hydrochloride monohydrate solution. This is
+    not 10 g/L dry solute; percent basis and final volume remain unstated.", "source_snippets":
+    [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[0].items[1]", "source_stage": "main solution 1",
+    "exact_source_quote": "          \"component_name\": \"L--cysteine・HCl・H2O\",\n          \"volume\":
+    10,\n          \"unit\": \"ml\",\n          \"conc_value\": 3,\n          \"conc_unit\":
+    \"%\","}]}, {"field_path": "ingredients[1]", "name": "N2", "stored": {"value":
+    "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_context":
+    "Gas context for staged anaerobic preparation/storage; no mass or final concentration
+    is stated. Repeated gas entries must preserve stage meaning, not become additive
+    doses.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[0].items[4]", "source_stage": "main solution 1",
+    "exact_source_quote": "          \"component_name\": \"N2\","}, {"source_key":
+    "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[2].items[2]", "source_stage": "Solution B", "exact_source_quote":
+    "          \"component_name\": \"N2\","}]}, {"field_path": "ingredients[2]", "name":
+    "Distilled water", "stored": {"value": "1000.0", "unit": "G_PER_L"}, "decision":
+    "correct", "source_context": "A water 900 ml plus B water 100 ml were collapsed
+    to 1000 G_PER_L. Preserve separate solvent volumes; no water-density or final-volume
+    inference is justified.", "source_snippets": [{"source_key": "togoM872", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator":
+    "$.components[1].items[0]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\":
+    \"ml\","}, {"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[2].items[0]", "source_stage": "Solution B", "exact_source_quote":
+    "          \"component_name\": \"Distilled water\",\n          \"volume\": 100,\n          \"unit\":
+    \"ml\","}]}, {"field_path": "ingredients[3]", "name": "CaCl2・2H2O", "stored":
+    {"value": "0.15", "unit": "G_PER_L"}, "decision": "correct", "source_context":
+    "A-stage source mass 0.15 g, with the named salt/hydrate and 900 ml water stage.
+    The mass literal matches; the flat G_PER_L statement lacks the original stage
+    and a verified final-volume basis.", "source_snippets": [{"source_key": "togoM872",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[1]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.15,\n          \"unit\":
+    \"g\","}]}, {"field_path": "ingredients[4]", "name": "KH2PO4", "stored": {"value":
+    "0.14", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage
+    source mass 0.14 g, with the named salt/hydrate and 900 ml water stage. The mass
+    literal matches; the flat G_PER_L statement lacks the original stage and a verified
+    final-volume basis.", "source_snippets": [{"source_key": "togoM872", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator":
+    "$.components[1].items[2]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"KH2PO4\",\n          \"volume\": 0.14,\n          \"unit\":
+    \"g\","}]}, {"field_path": "ingredients[5]", "name": "NH4Cl", "stored": {"value":
+    "0.54", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage
+    source mass 0.54 g, with the named salt/hydrate and 900 ml water stage. The mass
+    literal matches; the flat G_PER_L statement lacks the original stage and a verified
+    final-volume basis.", "source_snippets": [{"source_key": "togoM872", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator":
+    "$.components[1].items[3]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"NH4Cl\",\n          \"volume\": 0.54,\n          \"unit\":
+    \"g\","}]}, {"field_path": "ingredients[6]", "name": "Resazurin", "stored": {"value":
+    "1", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A contains
+    1 mg resazurin, equal to 0.001 g in that source stage. The stored numeric 1 G_PER_L
+    loses the mg scale. This 1000-fold mass-unit distinction does not require an assumed
+    final volume.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[4]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\":
+    \"mg\","}]}, {"field_path": "ingredients[7]", "name": "MgCl2・6H2O", "stored":
+    {"value": "0.2", "unit": "G_PER_L"}, "decision": "correct", "source_context":
+    "A-stage source mass 0.2 g, with the named salt/hydrate and 900 ml water stage.
+    The mass literal matches; the flat G_PER_L statement lacks the original stage
+    and a verified final-volume basis.", "source_snippets": [{"source_key": "togoM872",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[5]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 0.2,\n          \"unit\":
+    \"g\","}]}, {"field_path": "ingredients[8]", "name": "NaHCO3", "stored": {"value":
+    "2.5", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A-stage source
+    mass 2.5 g, with the named salt/hydrate and 900 ml water stage. The mass literal
+    matches; the flat G_PER_L statement lacks the original stage and a verified final-volume
+    basis.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[6]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"NaHCO3\",\n          \"volume\": 2.5,\n          \"unit\":
+    \"g\","}]}, {"field_path": "ingredients[9]", "name": "Carbon dioxide gas", "stored":
+    {"value": "variable", "unit": "VARIABLE"}, "decision": "not_quantified", "source_context":
+    "Gas context for staged anaerobic preparation/storage; no mass or final concentration
+    is stated. Repeated gas entries must preserve stage meaning, not become additive
+    doses.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[10]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"Carbon dioxide gas\","}]}, {"field_path": "ingredients[10]",
+    "name": "Nitrogen gas", "stored": {"value": "variable", "unit": "VARIABLE"}, "decision":
+    "not_quantified", "source_context": "Gas context for staged anaerobic preparation/storage;
+    no mass or final concentration is stated. Repeated gas entries must preserve stage
+    meaning, not become additive doses.", "source_snippets": [{"source_key": "togoM872",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[11]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"Nitrogen gas\","}]}, {"field_path": "ingredients[11]",
+    "name": "glucose", "stored": {"value": "0.18", "unit": "G_PER_L"}, "decision":
+    "correct", "source_context": "B uses 0.18 g glucose in its 100 ml water stage,
+    replacing parent pyruvate. The literal mass matches, but the flat final-medium
+    concentration lacks an explicit final-volume derivation.", "source_snippets":
+    [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[2].items[1]", "source_stage": "Solution B", "exact_source_quote":
+    "          \"component_name\": \"glucose\",\n          \"volume\": 0.18,\n          \"unit\":
+    \"g\","}]}, {"field_path": "solutions[0]", "name": "Na2S・9H2O solutions", "stored":
+    {"value": "10", "unit": "G_PER_L"}, "decision": "correct", "source_context": "Main
+    assembly: 10 ml of a 3% sodium sulfide nonahydrate solution, not 10 G_PER_L dry
+    material; empty composition and stock-strength omission remain.", "source_snippets":
+    [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[0].items[0]", "source_stage": "main solution 1",
+    "exact_source_quote": "          \"component_name\": \"Na2S・9H2O solutions\",\n          \"volume\":
+    10,\n          \"unit\": \"ml\",\n          \"conc_value\": 3,\n          \"conc_unit\":
+    \"%\","}]}, {"field_path": "solutions[1]", "name": "Solution A", "stored": {"value":
+    "900", "unit": "G_PER_L"}, "decision": "correct", "source_context": "A is a local
+    900 ml assembly stage, not 900 G_PER_L, and its asserted external identifier selects
+    a different stock.", "source_snippets": [{"source_key": "togoM872", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator":
+    "$.components[0].items[2]", "source_stage": "main solution 1", "exact_source_quote":
+    "          \"component_name\": \"Solution A\",\n          \"volume\": 900,\n          \"unit\":
+    \"ml\","}]}, {"field_path": "solutions[2]", "name": "Solution B", "stored": {"value":
+    "100", "unit": "G_PER_L"}, "decision": "correct", "source_context": "B is a local
+    100 ml assembly stage, not 100 G_PER_L, and its asserted external identifier selects
+    a different stock.", "source_snippets": [{"source_key": "togoM872", "source_url":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872", "source_locator":
+    "$.components[0].items[3]", "source_stage": "main solution 1", "exact_source_quote":
+    "          \"component_name\": \"Solution B\",\n          \"volume\": 100,\n          \"unit\":
+    \"ml\","}]}, {"field_path": "solutions[3]", "name": "Trace vitamins solution (see
+    Medium [M278])", "stored": {"value": "1", "unit": "G_PER_L"}, "decision": "conflict",
+    "source_context": "TOGO M872 lists 1 ml trace vitamins in A; JCM 835 uses derivative
+    supplementation wording while JCM 284 lists 2 ml. Retain all version/stage evidence
+    rather than infer a summed dose.", "source_snippets": [{"source_key": "togoM872",
+    "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[7]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"Trace vitamins solution (see Medium [M278])\",\n          \"volume\":
+    1,\n          \"unit\": \"ml\","}]}, {"field_path": "solutions[4]", "name": "Trace
+    element solution (see Medium [M278])", "stored": {"value": "1", "unit": "G_PER_L"},
+    "decision": "correct", "source_context": "A adds 1 ml of the explicitly defined
+    JCM 284 trace-element stock, not 1 G_PER_L. Empty composition does not resolve
+    that stock.", "source_snippets": [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[8]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"Trace element solution (see Medium [M278])\",\n          \"volume\":
+    1,\n          \"unit\": \"ml\","}]}, {"field_path": "solutions[5]", "name": "Se/W
+    solution (see Medium [M278])", "stored": {"value": "1", "unit": "G_PER_L"}, "decision":
+    "correct", "source_context": "A adds 1 ml of the explicitly defined JCM 284 Se/W
+    stock, not 1 G_PER_L. Empty composition does not resolve that stock.", "source_snippets":
+    [{"source_key": "togoM872", "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M872",
+    "source_locator": "$.components[1].items[9]", "source_stage": "Solution A", "exact_source_quote":
+    "          \"component_name\": \"Se/W solution (see Medium [M278])\",\n          \"volume\":
+    1,\n          \"unit\": \"ml\","}]}]'
+- assessment_id: forms
+  area: grounding
+  topic: Source chemical forms and linkage limits
+  outcome: supported
+  summary: All 12 direct instances have primary CHEBI links (11 unique IDs), and 6/12
+    have verified current secondary keys. OLS definitions/formulas support the explicitly
+    named L-cysteine hydrochloride monohydrate, calcium chloride dihydrate and magnesium
+    chloride hexahydrate. Phosphate, ammonium chloride, bicarbonate, resazurin, glucose,
+    water and gas labels agree at their source specificity. Generic glucose is not
+    silently narrowed to a stereoisomer; a valid cysteine identity does not validate
+    its dry-solute representation.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - togo
+  - jcm284
+  - mim
+  - chebi91248
+  - chebi86158
+  - chebi86345
+  - chebi63036
+  - chebi31206
+  - chebi32139
+  - chebi8806
+  - chebi17234
+  - chebi15377
+  - chebi17997
+  - chebi16526
+- assessment_id: stocks
+  area: quantity
+  topic: Wrong A/B identities and unresolved supplements
+  outcome: concern
+  summary: Both named A/B helpers exist, but the source compositions disprove their
+    identities for this medium. The three M278 supplement descriptors have no composition;
+    the parent YAML is itself a flattened representation and is not a safe stock definition.
+    The cysteine and sulfide reducer stocks also require retained strength and dose
+    context.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - owner-0
+  - dependency-0
+  - dependency-1
+  - dependency-2
+  - wrong-a
+  - wrong-b
+  - jcm284
+  - togo
+  - name-resolution
+  details: Primary stock definitions were inspected in full. Trace vitamins uses 1
+    L water with biotin 4.9 mg, folic acid 8.8 mg, pyridoxine HCl 4.1 mg, thiamine
+    HCl 6.7 mg, riboflavin 7.5 mg, nicotinic acid 2.5 mg, DL-calcium pantothenate
+    9.5 mg, vitamin B12 27.1 mg, p-aminobenzoic acid 2.7 mg and lipoic acid 4.1 mg.
+    Trace elements contains nitrilotriacetic acid 12.8 g, FeCl3·6H2O 1.35 g, MnCl2·4H2O
+    0.1 g, CoCl2·6H2O 0.024 g, CaCl2·2H2O 0.1 g, ZnCl2 0.1 g, CuCl2·2H2O 0.025 g,
+    H3BO3 0.01 g, Na2MoO4·2H2O 0.024 g and NiCl2·6H2O 0.12 g, brought to 1 L with
+    the source pH sequence. Se/W lists 4 mg each of Na2SeO3·5H2O and Na2WO4·2H2O with
+    1 L water. These are stock recipes, not final-medium ingredient doses; no unspecified
+    hydrate or vitamin species is invented.
+- assessment_id: preparation
+  area: completeness
+  topic: Inherited preparation, pH and version-scoped comments
+  outcome: concern
+  summary: Both local layers omit preparation, stage pH and sterilization despite
+    accessible source instructions. The parent distinguishes A pH 6.5 with staged
+    bicarbonate addition and N2/CO2 handling from filter-sterilized B pH 7 under nitrogen,
+    then separate reducer additions. Autoclaving and overnight handling belong to
+    their stated stages. TOGO carries a parent 10971 comment and the derivative 17152
+    comment; those strain-specific instructions must not become one universal condition.
+    No taxonomy or growth assertion follows from the strain mentions.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm836
+  - jcm835
+  - jcm284
+  - togo
+- assessment_id: classification
+  area: scope
+  topic: Physical state and composition classification
+  outcome: concern
+  summary: Liquid state matches the agar-free derivative. COMPLEX/UNDEFINED is inherited
+    local/provider metadata, but the recovered yeast-free recipe uses named chemicals
+    and defined stocks; its current representation does not document an undefined
+    material. Reassess composition classification after correct stock reconstruction
+    and derivative-dose reconciliation. No target organism, native variant, gene context
+    or measured growth assertion is present.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm836
+  - jcm835
+  - jcm284
+  - mediadive-836
+- assessment_id: provenance
+  area: provenance
+  topic: History, source evidence and current writer limits
+  outcome: concern
+  summary: All 13 target and 12 owner history timestamps parse with timezones. Import,
+    migration, duplicate-water cleanup, grounding and merge events explain the recorded
+    lineage but are not scientific verification. Neither layer supplies narrow formulation
+    evidence or a references array; the reference checker examined zero excerpts.
+    Current importer improvements were inspected without claiming a historical replay.
+  target_ids:
+  - CultureMech:010290
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - name-resolution
+  - current-importer
+findings:
+- finding_id: f1
+  issue_key: CM010290-wrong-stock-identities
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: A and B resolve to different formulations
+  description: The asserted MediaDive 5342 and 5343 IDs resolve successfully, but
+    their 500 ml recipes differ from both local A/B sections in TOGO M872 and the
+    JCM derivative chain. The target’s helper filenames exist; this is false identity,
+    not a missing-file claim. A lowercase-name index explains how generic names can
+    select these unrelated records.
+  target_ids:
+  - CultureMech:010290
+  field_paths:
+  - solutions[1].term
+  - solutions[2].term
+  - solutions[1].notes
+  - solutions[2].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - wrong-a
+  - wrong-b
+  - dependency-0
+  - dependency-1
+  - jcm284
+  - jcm835
+  - togo
+  - name-resolution
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM010290-stage-unit-flattening
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Masses, solvent volumes and stock additions were flattened
+  description: Both layers store resazurin 1 G_PER_L where the source stage lists
+    1 mg; the source mass is 0.001 g. Cysteine and sulfide additions are 10 ml of
+    3% stocks, A/B are 900/100 ml, supplement additions are in ml, and separate waters
+    were summed into 1000 G_PER_L. The remaining matching mass literals lack their
+    stage basis. These are scientific unit and representation defects despite schema
+    passes.
+  target_ids:
+  - CultureMech:010290
+  field_paths:
+  - ingredients[*].concentration
+  - ingredients[2].notes
+  - solutions[*].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - quantities
+  - jcm284
+  - jcm835
+  - togo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM010290-unresolved-supplement-definitions
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Three referenced supplements remain empty
+  description: The trace-vitamin, trace-element and Se/W descriptors have empty compositions
+    even though their JCM 284 definitions are accessible. Copying the flattened M278
+    owner would import stock masses as medium amounts and parent-specific material.
+    The vitamin addition also needs the JCM 835 derivative wording reconciled with
+    TOGO’s explicit entry and the parent dose.
+  target_ids:
+  - CultureMech:010290
+  field_paths:
+  - solutions[3:6].composition
+  - solutions[3:6].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm284
+  - jcm835
+  - togo
+  - togo-parent
+  - dependency-2
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: CM010290-preparation-and-evidence-gap
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation and stage-specific evidence are missing
+  description: Both layers omit the inherited staged preparation, pH, gas and sterilization
+    context and retain only source URLs. The exact source chain is available, but
+    zero reference excerpts were checked. Parent and derivative strain comments in
+    the TOGO payload require separate scope and cannot justify general growth conditions.
+  target_ids:
+  - CultureMech:010290
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - ph_range
+  - sterilization
+  - evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm836
+  - jcm835
+  - jcm284
+  - togo
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: CM010290-composition-classification
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Undefined classification lacks ingredient support
+  description: COMPLEX/UNDEFINED remains in both layers and MediaDive marks the medium
+    complex, while the explicit derivative removes yeast and the recovered stocks
+    are defined. The local classification does not explain this discrepancy; the broken
+    stock identities must be resolved before making a final composition claim.
+  target_ids:
+  - CultureMech:010290
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm836
+  - jcm835
+  - jcm284
+  - mediadive-836
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Replace the false stock identities only after matching the exact accession,
+    composition and stage; preserve local A/B structure. Check source-scoped resolution
+    instead of global generic-name lookup, and ensure generation/export cannot substitute
+    the unrelated recipes.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010290
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore original units, separate stages, stock strengths and dose context
+    in the maintained owner with narrow source evidence. Derive final concentrations
+    only when the final-volume and percent-strength conventions are explicitly justified;
+    retain unresolved conventions and gas context.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010290
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Represent the exact named stock definitions and their source-specific
+    preparation bases, preserving salts, hydrates and vitamin forms. Keep stock formulation
+    separate from final dose and retain the derivative vitamin-dose uncertainty rather
+    than guessing an additive total.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010290
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach bounded source evidence and preserve the inherited instructions
+    at the correct stage, with derivative overrides and strain-specific comments clearly
+    separated. Do not infer incubation temperature, taxonomic identity or general
+    growth from recipe association.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:010290
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Reassess the medium/composition classification against the corrected
+    complete derivative and document any remaining undefined component or provider-versus-local
+    classification distinction.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:010290
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M872_8KG-4_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The primary JCM 835 wording about supplementing trace vitamins is retained alongside
+  TOGO M872’s explicit 1 ml entry; this review does not infer an additive total or
+  copy the parent’s 2 ml dose.
+- No final-volume measurement, percent-strength convention, organism taxonomy assignment,
+  incubation optimum or experimental growth result is inferred. The review is complete
+  as an assessment of the defects and source conflict, not as an approved reconstructed
+  recipe.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-012
+- generated-medium
+```

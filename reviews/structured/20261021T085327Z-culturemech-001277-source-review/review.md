@@ -1,0 +1,904 @@
+# Provenance-only partial review: 70_30_sporulation_medium (CultureMech:001277)
+
+- Review: 20261021T085327Z-culturemech-001277-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T08:48:56Z
+- Finished UTC: 2026-10-21T08:53:27Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: false
+
+## Summary
+
+Partial provenance-only review. The maintained owner and generated target correspond, MediaDive accession 1874 and the cited publication identifiers resolve, and mechanical checks pass. The supplier note attributes its constituent provenance to a product specification while the recorded product URL is a third-party resource; a usable manufacturer document was not obtained in the retained attempts. Operational and biological claims were not reassessed.
+
+## Scope And Provenance
+
+One generated record, reviewed only for record/owner identity, source and citation metadata, ontology ID/label metadata, field structure and timestamp provenance. Literature support for formulation or biological claims was not reassessed.
+
+Selection: Task review 113; batch 012 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eleven task batches contain 110 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 112 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001277 | data/merge_yaml/merged/70_30_sporulation_medium.yaml | generated | 70_30_sporulation_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001277 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001277 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch012/113/strict.tsv |
+| validate-terms | passed | True | CultureMech:001277 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001277 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001277 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Required formulation and operational scientific assessment | skipped | True | CultureMech:001277 | The exact provider identifies this record with Clostridioides difficile sporulation. Actionable formulation and sporulation assessment is outside the permitted safety scope. Ingredient/stock, concentration, preparation, culture-condition and biological-performance assessments were deliberately not performed. This is a safety scope boundary, not a failed source download or a finding that those values are wrong. |
+| Direct manufacturer document identity for supplier attribution | unavailable | True | CultureMech:001277 | The cited supplier attribution lacks a recovered direct manufacturer document in the bounded captures: two product endpoints returned 403, the legacy IFU request failed, and the manual endpoint returned 404. The third-party page remains distinguishable from a manufacturer specification. No product composition or operational assessment is made. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001277.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Operational and biological claims excluded from this review
+
+scope: unknown. Targets: CultureMech:001277.
+
+The exact provider identifies this record with Clostridioides difficile sporulation. Actionable formulation and sporulation assessment is outside the permitted safety scope. No concentration decisions or procedural corrections are supplied; literature support for those claims was not reassessed.
+
+### Exact generated target and maintained source
+
+ownership: supported. Targets: CultureMech:001277.
+
+The target and data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml share stable ID CultureMech:001277. The explicit merged_from entry and final merge-event source name the maintained file. Apart from merge metadata and the appended merge event, parsed record fields agree. This is representation/provenance correspondence, not scientific equivalence to an upstream formulation.
+
+### History shape and append-only ownership
+
+provenance: supported. Targets: CultureMech:001277.
+
+The 11 timestamp instances are timezone-aware; owner history is retained by the generated target. Any later metadata clarification must append an honest current event rather than rewriting earlier events.
+
+### Asserted identifier and label metadata only
+
+grounding: supported. Targets: CultureMech:001277.
+
+All 10 distinct asserted primary ontology identifiers resolve to matching non-obsolete labels in the captured OLS responses. This is not a source-to-ingredient grounding assessment and does not recommend any substitution or correction.
+
+### Collection accession and publication identity
+
+identity: supported. Targets: CultureMech:001277.
+
+The recorded accession, title and DOI identify their exact provider and publication metadata. The local single normalized owner is traced by stable ID and explicit merge provenance. Taxonomy and experimental support were not broadened or reassessed.
+
+### Supplier citation authority and source version
+
+provenance: concern. Targets: CultureMech:001277.
+
+The notes characterize the constituent provenance as researched from a product specification, while the explicit product URLs point to a secondary website and do not identify a manufacturer document version. No direct manufacturer specification was recovered in the bounded attempts. This provenance concern makes no judgment about any listed amount or constituent.
+
+## Findings
+
+### f1: Supplier attribution does not identify a verified manufacturer document
+
+minor / open / confirmed; issue key: CM001277-supplier-document-provenance.
+
+Both target and maintained owner characterize the constituent provenance as a product specification, but notes and ingredients[4:10].supplier_catalog.product_url cite a third-party BHI page. The retained manufacturer access attempts did not provide a usable document to verify that characterization or its version. The finding concerns source authority and traceability only; it does not assert that the product identity or formulation is incorrect.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+In the maintained owner, qualify the source-authority wording and separate the recorded third-party citation from any independently verified manufacturer document identity/version. Retain uncertainty where a document was not obtained; append a current metadata event only after an authorized metadata correction. Do not change ingredient or procedure content under this review.
+
+- Limit any follow-up to source identity, access context, citation/version locators and honest provenance wording; do not alter formulation or operational fields under this review.
+- Preserve earlier history; append a dated metadata clarification only if a separately authorized maintained-input change is made.
+- After an authorized metadata edit, run the four documented target validators. If derived output is regenerated, run the documented merge checks; neither mechanical step certifies scientific validity.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/70_30_sporulation_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Entire local YAML read for record identity, provenance and field structure. Operational content was not assessed or reproduced in this review. |
+| owner-0 | data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml; Entire maintained YAML | context_only | Entire local YAML read for record identity, provenance and field structure. Operational content was not assessed or reproduced in this review. |
+| validate-schema | just validate-schema data/merge_yaml/merged/70_30_sporulation_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/70_30_sporulation_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch012/113/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch012/113/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/70_30_sporulation_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/70_30_sporulation_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| scope-contract | docs/record-reviews.md; Verdict And Severity; provenance-only inspection and scientific_review flag | supports | The native contract distinguishes provenance-only inspection from scientific review and requires literature support not reassessed to be explicit. |
+| history-metadata | data/merge_yaml/merged/70_30_sporulation_medium.yaml; data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml; curation_history[*].timestamp; final generated MERGED_RECIPES event | supports | All 11 timestamp instances are parseable and timezone-aware: 6 target events and 5 maintained-owner events. The generated record preserves the owner history and appends its merge event. This checks timestamp shape and preservation, not the scientific truth of historical actions. |
+| ontology-chebi17561 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17561; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID CHEBI:17561 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID CHEBI:17634 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID CHEBI:2509 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID CHEBI:26710 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID CHEBI:34683 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID CHEBI:62946 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-chebi9754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID CHEBI:9754 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-micro0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID MICRO:0000180 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-uberon0000948 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID UBERON:0000948 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| ontology-uberon0000955 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955; $._embedded.terms[0].obo_id, label, is_obsolete | supports | The asserted ID UBERON:0000955 resolves with the record's canonical label and is not obsolete. This is metadata verification only; suitability of that term for the medium ingredient or source chemical form was not assessed. |
+| collection-metadata | https://mediadive.dsmz.de/rest/medium/1874; $.data.medium.id, name, source, description | supports | Provider metadata identifies accession 1874 as the named medium from DSMZ. Its organism-specific description defines the safety scope. Recipe and solution payloads were not scientifically assessed. |
+| paper-metadata | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1371%2Fjournal.pgen.1003660&amp;format=json&amp;resultType=core; $.resultList.result[0]: doi, pmid, pmcid, title, authorString, journalInfo | supports | The cited DOI identifies Fimlaid and colleagues, Global analysis of the sporulation pathway of Clostridium difficile (PLoS Genetics, 2013), PMID 23950727 and PMCID PMC3738446. Only citation metadata is assessed; the paper does not become validation of the local formulation by citation alone. |
+| paper-front | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3738446/fullTextXML; article/front/article-meta/article-id; title-group/article-title | supports | The primary article XML front matter agrees on the DOI, PMID, PMCID and title. Methods and results were not reviewed to verify or improve this medium. |
+| paper-access | https://doi.org/10.1371/journal.pgen.1003660; HTTP metadata; resolved publisher URL | supports | The exact DOI request returned HTTP200 and resolved to the PLOS article. An accessible article is distinguished from the separately skipped operational scientific assessment. |
+| collection-pdf-access | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1874.pdf; Exact attempted URL and HTTP response metadata | context_only | The exact attempted DSMZ PDF URL returned HTTP404. The available MediaDive metadata still identifies the accession; this failed request is not proof that the medium or all official source representations are absent. |
+| supplier-third-party | https://microbenotes.com/brain-heart-infusion-bhi-agar/; Document title, website identity and cited URL only | context_only | The supplier_catalog product_url and top-level notes point to Microbe Notes, a third-party BHI article rather than a BD-hosted manufacturer specification. Its formulation content is not used here. |
+| access-bd237500product | https://www.bd.com/en-us/products-and-solutions/products/product-page.237500; Exact endpoint response metadata | context_only | Retained manufacturer-source access attempt: status 403; error HTTP Error 403: Forbidden. No usable manufacturer specification was obtained from this attempt. This is an access limit, not evidence that the claimed product identity is false. |
+| access-bd237500biosciences | https://www.bdbiosciences.com/en-ca/products/reagents/dehydrated-culture-media/animal-based-culture-media/brain-heart-infusion-bhi-bottle-500g.237500; Exact endpoint response metadata | context_only | Retained manufacturer-source access attempt: status 403; error HTTP Error 403: Forbidden. No usable manufacturer specification was obtained from this attempt. This is an access limit, not evidence that the claimed product identity is false. |
+| access-bd237500ifu | https://legacy.bd.com/europe/regulatory/Assets/IFU/Difco_BBL/237500.pdf; Exact endpoint response metadata | context_only | Retained manufacturer-source access attempt: status None; error URLError(gaierror(8, 'nodename nor servname provided, or not known')). No usable manufacturer specification was obtained from this attempt. This is an access limit, not evidence that the claimed product identity is false. |
+| access-bdManual | https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf; Exact endpoint response metadata | context_only | Retained manufacturer-source access attempt: status 404; error HTTP Error 404: Not Found. No usable manufacturer specification was obtained from this attempt. This is an access limit, not evidence that the claimed product identity is false. |
+
+## Limits And Additional Notes
+
+- The exact provider identifies this record with Clostridioides difficile sporulation. Actionable formulation and sporulation assessment is outside the permitted safety scope.
+- This is a provenance-only observation, not a complete scientific review. Literature support for the formulation and biological claims was not reassessed. Required operational assessments are explicitly skipped; partial completion does not certify that the recipe is correct, complete or suitable for use.
+- The four documented diagnostic commands passed. The reference checker examined zero excerpts, so its pass does not validate a paper, supplier attribution, source version, or any biological claim.
+- Ontology checks here are limited to identifier, canonical-label and obsolete-flag metadata. No ingredient replacement, chemical-form correction, CAS or molecular-weight correction, or secondary-link scientific assessment is made.
+- No record, source capture, history, derived output, or scientific status was changed. No additional diagnostic, native review validation, save, or corpus-wide gate was run by this draft author.
+- Direct manufacturer-document provenance remains unavailable in the retained attempts. The exact DSMZ PDF request also returned 404, while the provider API and primary publication were accessible. These access outcomes remain separate from the required safety-based skipped operational assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T085327Z-culturemech-001277-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Provenance-only partial review: 70_30_sporulation_medium (CultureMech:001277)'
+started_at: '2026-10-21T08:48:56Z'
+finished_at: '2026-10-21T08:53:27Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: false
+summary: Partial provenance-only review. The maintained owner and generated target
+  correspond, MediaDive accession 1874 and the cited publication identifiers resolve,
+  and mechanical checks pass. The supplier note attributes its constituent provenance
+  to a product specification while the recorded product URL is a third-party resource;
+  a usable manufacturer document was not obtained in the retained attempts. Operational
+  and biological claims were not reassessed.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/70_30_sporulation_medium.yaml
+    sha256: e0cef28d55c6fdf920599a4458c19d72d8188b09dacae2d5f875b3d558e0cfc9
+    role: target
+  - path: data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml
+    sha256: 2924570e1f1f7b4c9dcbf4fcdf37aecfc1adba8cbf8d0193ca77906053e3979c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One generated record, reviewed only for record/owner identity, source
+    and citation metadata, ontology ID/label metadata, field structure and timestamp
+    provenance. Literature support for formulation or biological claims was not reassessed.
+  selection: Task review 113; batch 012 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eleven task batches contain
+    110 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 112 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001277
+  exclusions:
+  - target: CultureMech:001277
+    reason: 'The exact provider identifies this record with Clostridioides difficile
+      sporulation. Actionable formulation and sporulation assessment is outside the
+      permitted safety scope. Excluded: ingredient selection or chemical-form correction,
+      amounts, stock arithmetic, preparation, cultivation or sporulation procedures,
+      culture conditions, performance, and growth evidence.'
+targets:
+- target_id: CultureMech:001277
+  path: data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  label: 70_30_sporulation_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/70_30_sporulation_medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch012/113/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch012/113/strict.tsv"
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001277
+- check_id: operational-formulation-review
+  name: Required formulation and operational scientific assessment
+  required: true
+  status: skipped
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - record
+  - scope-contract
+  summary: The exact provider identifies this record with Clostridioides difficile
+    sporulation. Actionable formulation and sporulation assessment is outside the
+    permitted safety scope. Ingredient/stock, concentration, preparation, culture-condition
+    and biological-performance assessments were deliberately not performed. This is
+    a safety scope boundary, not a failed source download or a finding that those
+    values are wrong.
+- check_id: supplier-specification-provenance
+  name: Direct manufacturer document identity for supplier attribution
+  required: true
+  status: unavailable
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - supplier-third-party
+  - access-bd237500product
+  - access-bd237500biosciences
+  - access-bd237500ifu
+  - access-bdManual
+  summary: 'The cited supplier attribution lacks a recovered direct manufacturer document
+    in the bounded captures: two product endpoints returned 403, the legacy IFU request
+    failed, and the manual endpoint returned 404. The third-party page remains distinguishable
+    from a manufacturer specification. No product composition or operational assessment
+    is made.'
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:53:27Z'
+  support: context_only
+  summary: Entire local YAML read for record identity, provenance and field structure.
+    Operational content was not assessed or reproduced in this review.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:53:27Z'
+  support: context_only
+  summary: Entire local YAML read for record identity, provenance and field structure.
+    Operational content was not assessed or reproduced in this review.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:41.719214Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/70_30_sporulation_medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch012/113/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:43.243661Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-012/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch012/113/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:44.929236Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/70_30_sporulation_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:49:46.030422Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: scope-contract
+  kind: record_content
+  reference: docs/record-reviews.md
+  locator: Verdict And Severity; provenance-only inspection and scientific_review
+    flag
+  accessed_at: '2026-10-21T08:53:27Z'
+  support: supports
+  summary: The native contract distinguishes provenance-only inspection from scientific
+    review and requires literature support not reassessed to be explicit.
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/70_30_sporulation_medium.yaml; data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml
+  locator: curation_history[*].timestamp; final generated MERGED_RECIPES event
+  accessed_at: '2026-10-21T08:53:27Z'
+  support: supports
+  summary: 'All 11 timestamp instances are parseable and timezone-aware: 6 target
+    events and 5 maintained-owner events. The generated record preserves the owner
+    history and appends its merge event. This checks timestamp shape and preservation,
+    not the scientific truth of historical actions.'
+- evidence_id: ontology-chebi17561
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17561
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:42:32.213329Z'
+  support: supports
+  summary: The asserted ID CHEBI:17561 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: ea82f62413bdf5b5575ec20c8bd9e19bb3f41efb6f1efa500401656e6c186292
+- evidence_id: ontology-chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: The asserted ID CHEBI:17634 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: ontology-chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:42:37.629610Z'
+  support: supports
+  summary: The asserted ID CHEBI:2509 resolves with the record's canonical label and
+    is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: ontology-chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: The asserted ID CHEBI:26710 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: ontology-chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: The asserted ID CHEBI:34683 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: ontology-chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: The asserted ID CHEBI:62946 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: ontology-chebi9754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:43:13.713319Z'
+  support: supports
+  summary: The asserted ID CHEBI:9754 resolves with the record's canonical label and
+    is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: b9f921dfa34f343d4ef51ee217fc47702a8f03e2b9a8353effa10de89e9c6659
+- evidence_id: ontology-micro0000180
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:43:24.290496Z'
+  support: supports
+  summary: The asserted ID MICRO:0000180 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+- evidence_id: ontology-uberon0000948
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:43:24.915343Z'
+  support: supports
+  summary: The asserted ID UBERON:0000948 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: c658bbcacd89befa47e3bd4859f176db247b3ce67483b6590c91d0865d41aed4
+- evidence_id: ontology-uberon0000955
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955
+  locator: $._embedded.terms[0].obo_id, label, is_obsolete
+  accessed_at: '2026-10-21T08:43:25.122940Z'
+  support: supports
+  summary: The asserted ID UBERON:0000955 resolves with the record's canonical label
+    and is not obsolete. This is metadata verification only; suitability of that term
+    for the medium ingredient or source chemical form was not assessed.
+  snapshot_sha256: ce200fe58b82652d0f04310c92d23633919fa6ad6aee2a17c6b25c2e490a8877
+- evidence_id: collection-metadata
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1874
+  locator: $.data.medium.id, name, source, description
+  accessed_at: '2026-10-21T08:42:27.608575Z'
+  support: supports
+  summary: Provider metadata identifies accession 1874 as the named medium from DSMZ.
+    Its organism-specific description defines the safety scope. Recipe and solution
+    payloads were not scientifically assessed.
+  snapshot_sha256: 24cc2a435608385cc26094006204b964f1f5be33c67449df9c407bdf7894cbb2
+- evidence_id: paper-metadata
+  kind: database
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1371%2Fjournal.pgen.1003660&format=json&resultType=core
+  locator: '$.resultList.result[0]: doi, pmid, pmcid, title, authorString, journalInfo'
+  accessed_at: '2026-10-21T08:42:30.111055Z'
+  support: supports
+  summary: The cited DOI identifies Fimlaid and colleagues, Global analysis of the
+    sporulation pathway of Clostridium difficile (PLoS Genetics, 2013), PMID 23950727
+    and PMCID PMC3738446. Only citation metadata is assessed; the paper does not become
+    validation of the local formulation by citation alone.
+  snapshot_sha256: 7ff7e0778ac6dfe7ca2697186fc5fe4ec24d69b492a6c330cca54e3b37767b46
+- evidence_id: paper-front
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3738446/fullTextXML
+  locator: article/front/article-meta/article-id; title-group/article-title
+  accessed_at: '2026-10-21T08:42:30.032046Z'
+  support: supports
+  summary: The primary article XML front matter agrees on the DOI, PMID, PMCID and
+    title. Methods and results were not reviewed to verify or improve this medium.
+  snapshot_sha256: 4e4d0f8e81e817401f711aefa34fd8d2bfed8265cc7ffee6b20b5c4f2c650a5f
+- evidence_id: paper-access
+  kind: primary_source
+  reference: https://doi.org/10.1371/journal.pgen.1003660
+  locator: HTTP metadata; resolved publisher URL
+  accessed_at: '2026-10-21T08:42:27.407567Z'
+  support: supports
+  summary: The exact DOI request returned HTTP200 and resolved to the PLOS article.
+    An accessible article is distinguished from the separately skipped operational
+    scientific assessment.
+  snapshot_sha256: f7683754c138da3572760096e9a792228c77fa0d4d2623ac49954f7b5328454a
+- evidence_id: collection-pdf-access
+  kind: authority
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1874.pdf
+  locator: Exact attempted URL and HTTP response metadata
+  accessed_at: '2026-10-21T08:42:29.870095Z'
+  support: context_only
+  summary: The exact attempted DSMZ PDF URL returned HTTP404. The available MediaDive
+    metadata still identifies the accession; this failed request is not proof that
+    the medium or all official source representations are absent.
+  snapshot_sha256: fd3cfd1ba7f5665be0b397aa8495e3895fca0aca181e84762e600032027ed9d9
+- evidence_id: supplier-third-party
+  kind: database
+  reference: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  locator: Document title, website identity and cited URL only
+  accessed_at: '2026-10-21T08:42:28.042848Z'
+  support: context_only
+  summary: The supplier_catalog product_url and top-level notes point to Microbe Notes,
+    a third-party BHI article rather than a BD-hosted manufacturer specification.
+    Its formulation content is not used here.
+  snapshot_sha256: b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01
+- evidence_id: access-bd237500product
+  kind: authority
+  reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.237500
+  locator: Exact endpoint response metadata
+  accessed_at: '2026-10-21T08:42:29.794532Z'
+  support: context_only
+  summary: 'Retained manufacturer-source access attempt: status 403; error HTTP Error
+    403: Forbidden. No usable manufacturer specification was obtained from this attempt.
+    This is an access limit, not evidence that the claimed product identity is false.'
+  snapshot_sha256: d1b359f2de3ef38374a97d69c9f32805271e5a2daa798ce7fd00512902e3fb41
+- evidence_id: access-bd237500biosciences
+  kind: authority
+  reference: https://www.bdbiosciences.com/en-ca/products/reagents/dehydrated-culture-media/animal-based-culture-media/brain-heart-infusion-bhi-bottle-500g.237500
+  locator: Exact endpoint response metadata
+  accessed_at: '2026-10-21T08:44:33.640808Z'
+  support: context_only
+  summary: 'Retained manufacturer-source access attempt: status 403; error HTTP Error
+    403: Forbidden. No usable manufacturer specification was obtained from this attempt.
+    This is an access limit, not evidence that the claimed product identity is false.'
+  snapshot_sha256: 2226cbc2296881bb8cc97831a0e9991a4333e0e59d77f374bb9fd3a5c9d37d99
+- evidence_id: access-bd237500ifu
+  kind: authority
+  reference: https://legacy.bd.com/europe/regulatory/Assets/IFU/Difco_BBL/237500.pdf
+  locator: Exact endpoint response metadata
+  accessed_at: '2026-10-21T08:42:27.408942Z'
+  support: context_only
+  summary: 'Retained manufacturer-source access attempt: status None; error URLError(gaierror(8,
+    ''nodename nor servname provided, or not known'')). No usable manufacturer specification
+    was obtained from this attempt. This is an access limit, not evidence that the
+    claimed product identity is false.'
+- evidence_id: access-bdManual
+  kind: authority
+  reference: https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf
+  locator: Exact endpoint response metadata
+  accessed_at: '2026-10-21T08:42:28.221660Z'
+  support: context_only
+  summary: 'Retained manufacturer-source access attempt: status 404; error HTTP Error
+    404: Not Found. No usable manufacturer specification was obtained from this attempt.
+    This is an access limit, not evidence that the claimed product identity is false.'
+  snapshot_sha256: 493fda53120050f85836032324409be6c6484f90a0755ae0c6a673ba7626818b
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: scientific-scope
+  area: scope
+  topic: Operational and biological claims excluded from this review
+  outcome: unknown
+  summary: The exact provider identifies this record with Clostridioides difficile
+    sporulation. Actionable formulation and sporulation assessment is outside the
+    permitted safety scope. No concentration decisions or procedural corrections are
+    supplied; literature support for those claims was not reassessed.
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - record
+  - scope-contract
+- assessment_id: identity-owner
+  area: ownership
+  topic: Exact generated target and maintained source
+  outcome: supported
+  summary: The target and data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml
+    share stable ID CultureMech:001277. The explicit merged_from entry and final merge-event
+    source name the maintained file. Apart from merge metadata and the appended merge
+    event, parsed record fields agree. This is representation/provenance correspondence,
+    not scientific equivalence to an upstream formulation.
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - record
+  - owner-0
+- assessment_id: history
+  area: provenance
+  topic: History shape and append-only ownership
+  outcome: supported
+  summary: The 11 timestamp instances are timezone-aware; owner history is retained
+    by the generated target. Any later metadata clarification must append an honest
+    current event rather than rewriting earlier events.
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - history-metadata
+- assessment_id: ontology-metadata
+  area: grounding
+  topic: Asserted identifier and label metadata only
+  outcome: supported
+  summary: All 10 distinct asserted primary ontology identifiers resolve to matching
+    non-obsolete labels in the captured OLS responses. This is not a source-to-ingredient
+    grounding assessment and does not recommend any substitution or correction.
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - record
+  - ontology-chebi17561
+  - ontology-chebi17634
+  - ontology-chebi2509
+  - ontology-chebi26710
+  - ontology-chebi34683
+  - ontology-chebi62946
+  - ontology-chebi9754
+  - ontology-micro0000180
+  - ontology-uberon0000948
+  - ontology-uberon0000955
+- assessment_id: source-identity
+  area: identity
+  topic: Collection accession and publication identity
+  outcome: supported
+  summary: The recorded accession, title and DOI identify their exact provider and
+    publication metadata. The local single normalized owner is traced by stable ID
+    and explicit merge provenance. Taxonomy and experimental support were not broadened
+    or reassessed.
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - record
+  - owner-0
+  - collection-metadata
+  - paper-metadata
+  - paper-front
+  - paper-access
+- assessment_id: supplier-provenance
+  area: provenance
+  topic: Supplier citation authority and source version
+  outcome: concern
+  summary: The notes characterize the constituent provenance as researched from a
+    product specification, while the explicit product URLs point to a secondary website
+    and do not identify a manufacturer document version. No direct manufacturer specification
+    was recovered in the bounded attempts. This provenance concern makes no judgment
+    about any listed amount or constituent.
+  target_ids:
+  - CultureMech:001277
+  evidence_ids:
+  - record
+  - owner-0
+  - supplier-third-party
+  - access-bd237500product
+  - access-bd237500biosciences
+  - access-bd237500ifu
+  - access-bdManual
+findings:
+- finding_id: f1
+  issue_key: CM001277-supplier-document-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supplier attribution does not identify a verified manufacturer document
+  description: Both target and maintained owner characterize the constituent provenance
+    as a product specification, but notes and ingredients[4:10].supplier_catalog.product_url
+    cite a third-party BHI page. The retained manufacturer access attempts did not
+    provide a usable document to verify that characterization or its version. The
+    finding concerns source authority and traceability only; it does not assert that
+    the product identity or formulation is incorrect.
+  target_ids:
+  - CultureMech:001277
+  field_paths:
+  - notes
+  - ingredients[4].supplier_catalog.product_url
+  - ingredients[5].supplier_catalog.product_url
+  - ingredients[6].supplier_catalog.product_url
+  - ingredients[7].supplier_catalog.product_url
+  - ingredients[8].supplier_catalog.product_url
+  - ingredients[9].supplier_catalog.product_url
+  evidence_ids:
+  - record
+  - owner-0
+  - supplier-third-party
+  - access-bd237500product
+  - access-bd237500biosciences
+  - access-bd237500ifu
+  - access-bdManual
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: Native P3 normalized to minor because this is a bounded source-authority
+    and document-version provenance gap; no formulation correctness judgment is made.
+actions:
+- action_id: a1
+  description: In the maintained owner, qualify the source-authority wording and separate
+    the recorded third-party citation from any independently verified manufacturer
+    document identity/version. Retain uncertainty where a document was not obtained;
+    append a current metadata event only after an authorized metadata correction.
+    Do not change ingredient or procedure content under this review.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/70_30_sporulation_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Limit any follow-up to source identity, access context, citation/version locators
+    and honest provenance wording; do not alter formulation or operational fields
+    under this review.
+  - Preserve earlier history; append a dated metadata clarification only if a separately
+    authorized maintained-input change is made.
+  - After an authorized metadata edit, run the four documented target validators.
+    If derived output is regenerated, run the documented merge checks; neither mechanical
+    step certifies scientific validity.
+limitations:
+- The exact provider identifies this record with Clostridioides difficile sporulation.
+  Actionable formulation and sporulation assessment is outside the permitted safety
+  scope.
+- This is a provenance-only observation, not a complete scientific review. Literature
+  support for the formulation and biological claims was not reassessed. Required operational
+  assessments are explicitly skipped; partial completion does not certify that the
+  recipe is correct, complete or suitable for use.
+- The four documented diagnostic commands passed. The reference checker examined zero
+  excerpts, so its pass does not validate a paper, supplier attribution, source version,
+  or any biological claim.
+- Ontology checks here are limited to identifier, canonical-label and obsolete-flag
+  metadata. No ingredient replacement, chemical-form correction, CAS or molecular-weight
+  correction, or secondary-link scientific assessment is made.
+- No record, source capture, history, derived output, or scientific status was changed.
+  No additional diagnostic, native review validation, save, or corpus-wide gate was
+  run by this draft author.
+- Direct manufacturer-document provenance remains unavailable in the retained attempts.
+  The exact DSMZ PDF request also returned 404, while the provider API and primary
+  publication were accessible. These access outcomes remain separate from the required
+  safety-based skipped operational assessment.
+tags:
+- unreviewed-records
+- batch-012
+- generated-medium
+```
