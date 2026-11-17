@@ -1,0 +1,2127 @@
+# Source and formulation review: alkaline_agar (CultureMech:008414)
+
+- Review: 20261021T124757Z-culturemech-008414-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T12:39:25Z
+- Finished UTC: 2026-10-21T12:47:57Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact TOGO M1840 to NBRC 1074 identity is supported, but water and both stock-addition volumes are stored as mass concentrations. Six basal masses match the source batch while an explicit final-volume basis is absent. Separate stock sterilization is omitted, two names are placeholders, and the high_metal assertion lacks a source-stage calculation. The review preserves unqualified stock percentages and supplier names without inventing final concentrations or a replacement metal flag.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 207; batch 021 item 7 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty task batches contain 200 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 203 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008414 | data/merge_yaml/merged/ALKALINE_AGAR.yaml | generated | alkaline_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008414 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008414 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/207/strict.tsv |
+| validate-terms | passed | True | CultureMech:008414 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008414 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008414 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008414.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: supported. Targets: CultureMech:008414.
+
+5 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 5/7 primary and 5/7 secondary instances; all asserted secondary keys have exact pinned MIM rows. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 7: primary 71.43%; secondary 71.43%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:008414.
+
+12 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Distilled water",
+    "field_path": "ingredients[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "700",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, exact Distilled water row",
+        "exact_source_quote": "Distilled water 700 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[2].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 700,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The source gives 700 mL of water, not 700 g/L. Preserve the batch volume and intended solvent scope; no water density or measured final volume is assumed.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "700",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "700",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "700 mL = 0.7 L of source water; a volume-to-mass conversion is not supported.",
+    "primary_source_evidence_id": "nbrc1074"
+  },
+  {
+    "ingredient_or_context": "MgSO4·7H2O",
+    "field_path": "ingredients[1].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, exact MgSO4·7H2O row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 0.2 g",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[3].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"MgSO4·7H2O\",\n          \"volume\": 0.2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The stored numeric value equals the exact source mass per listed batch. Neither source states an explicit final volume, so the asserted per-final-litre denominator is not independently verified. Preserve the source mass and batch context; do not change it using an assumed final litre.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Source mass = 0.2 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal sum is not an explicit final-volume statement; no new g/L conversion is asserted.",
+    "primary_source_evidence_id": "nbrc1074"
+  },
+  {
+    "ingredient_or_context": "KH2PO4",
+    "field_path": "ingredients[2].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, exact KH2PO4 row",
+        "exact_source_quote": "KH 2 PO 4 1 g",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[4].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The stored numeric value equals the exact source mass per listed batch. Neither source states an explicit final volume, so the asserted per-final-litre denominator is not independently verified. Preserve the source mass and batch context; do not change it using an assumed final litre.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Source mass = 1 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal sum is not an explicit final-volume statement; no new g/L conversion is asserted.",
+    "primary_source_evidence_id": "nbrc1074"
+  },
+  {
+    "ingredient_or_context": "Glucose",
+    "field_path": "ingredients[3].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, exact Glucose row",
+        "exact_source_quote": "Glucose 10 g",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[5].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"Glucose\",\n          \"volume\": 10,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The stored numeric value equals the exact source mass per listed batch. Neither source states an explicit final volume, so the asserted per-final-litre denominator is not independently verified. Preserve the source mass and batch context; do not change it using an assumed final litre.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Source mass = 10 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal sum is not an explicit final-volume statement; no new g/L conversion is asserted.",
+    "primary_source_evidence_id": "nbrc1074"
+  },
+  {
+    "ingredient_or_context": "Agar",
+    "field_path": "ingredients[4].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "15",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, exact Agar row",
+        "exact_source_quote": "Agar 15 g",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[6].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"Agar\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The stored numeric value equals the exact source mass per listed batch. Neither source states an explicit final volume, so the asserted per-final-litre denominator is not independently verified. Preserve the source mass and batch context; do not change it using an assumed final litre.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Source mass = 15 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal sum is not an explicit final-volume statement; no new g/L conversion is asserted.",
+    "primary_source_evidence_id": "nbrc1074"
+  },
+  {
+    "ingredient_or_context": "Bacto Yeast Extract (Difco)",
+    "field_path": "ingredients[5].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, exact Bacto Yeast Extract (Difco) row",
+        "exact_source_quote": "Bacto Yeast Extract (Difco) 5 g",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[7].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"Bacto Yeast Extract (Difco)\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The stored numeric value equals the exact source mass per listed batch. Neither source states an explicit final volume, so the asserted per-final-litre denominator is not independently verified. Preserve the source mass and batch context; do not change it using an assumed final litre.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Source mass = 5 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal sum is not an explicit final-volume statement; no new g/L conversion is asserted.",
+    "primary_source_evidence_id": "nbrc1074"
+  },
+  {
+    "ingredient_or_context": "Bacto Peptone (Difco)",
+    "field_path": "ingredients[6].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, exact Bacto Peptone (Difco) row",
+        "exact_source_quote": "Bacto Peptone (Difco) 5 g",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[8].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"Bacto Peptone (Difco)\",\n          \"volume\": 5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The stored numeric value equals the exact source mass per listed batch. Neither source states an explicit final volume, so the asserted per-final-litre denominator is not independently verified. Preserve the source mass and batch context; do not change it using an assumed final litre.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Source mass = 5 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal sum is not an explicit final-volume statement; no new g/L conversion is asserted.",
+    "primary_source_evidence_id": "nbrc1074"
+  },
+  {
+    "ingredient_or_context": "10% Na2CO3 solution addition",
+    "field_path": "solutions[0].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "100",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, 10% Na2CO3 solution row",
+        "exact_source_quote": "10% Na 2 CO 3 solution 100 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[0].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"10% Na2CO3 solution\",\n          \"volume\": 100,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The source number is a stock-addition volume in mL, not g/L of neat salt, stock composition or final-medium mass. Correct the dose representation while retaining the source batch scope; only adopt a per-litre dose after its final-volume basis is supported.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source dose = 100 mL. Do not interpret this as 100 g/L; no density, percent basis or measured final volume is supplied."
+  },
+  {
+    "ingredient_or_context": "10% Na2CO3 solution strength",
+    "field_path": "solutions[0].preferred_term",
+    "decision": "evidence_only",
+    "local": "10% Na2CO3 solution",
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, stock name and dose",
+        "exact_source_quote": "10% Na 2 CO 3 solution 100 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      }
+    ],
+    "rationale": "The preferred name correctly retains the literal 10% or 20% source strength, but neither source defines w/v, w/w or v/v. Attach narrow evidence and retain the ambiguity; the empty composition is not permission to invent a stock mass formula.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].preferred_term",
+        "stored": "10% Na2CO3 solution",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "solutions[0].preferred_term",
+        "stored": "10% Na2CO3 solution",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "20% NaCl solution addition",
+    "field_path": "solutions[1].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "200",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, 20% NaCl solution row",
+        "exact_source_quote": "20% NaCl solution 200 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "togoM1840",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840",
+        "source_locator": "$.components[0].items[1].component_name,volume,unit",
+        "exact_source_quote": "\"component_name\": \"20% NaCl solution\",\n          \"volume\": 200,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8",
+        "parsed_text_sha256": "9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8"
+      }
+    ],
+    "rationale": "The source number is a stock-addition volume in mL, not g/L of neat salt, stock composition or final-medium mass. Correct the dose representation while retaining the source batch scope; only adopt a per-litre dose after its final-volume basis is supported.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "arithmetic": "Source dose = 200 mL. Do not interpret this as 200 g/L; no density, percent basis or measured final volume is supplied."
+  },
+  {
+    "ingredient_or_context": "20% NaCl solution strength",
+    "field_path": "solutions[1].preferred_term",
+    "decision": "evidence_only",
+    "local": "20% NaCl solution",
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, stock name and dose",
+        "exact_source_quote": "20% NaCl solution 200 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      }
+    ],
+    "rationale": "The preferred name correctly retains the literal 10% or 20% source strength, but neither source defines w/v, w/w or v/v. Attach narrow evidence and retain the ambiguity; the empty composition is not permission to invent a stock mass formula.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].preferred_term",
+        "stored": "20% NaCl solution",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "solutions[1].preferred_term",
+        "stored": "20% NaCl solution",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Listed liquid total versus final-volume basis",
+    "field_path": "preparation_steps",
+    "decision": "unsupported",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, listed liquid row 0",
+        "exact_source_quote": "10% Na 2 CO 3 solution 100 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, listed liquid row 1",
+        "exact_source_quote": "20% NaCl solution 200 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      },
+      {
+        "source_key": "nbrc1074",
+        "source_url": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074",
+        "source_locator": "NBRC 1074 Composition, listed liquid row 2",
+        "exact_source_quote": "Distilled water 700 ml",
+        "snapshot_sha256": "facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173",
+        "parsed_text_sha256": "1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6"
+      }
+    ],
+    "rationale": "All three listed liquid amounts are known, but neither source explicitly directs make-up to a final litre or reports measured volume. Keep batch amounts and nominal arithmetic distinct from a validated final concentration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "100 mL carbonate stock + 200 mL NaCl stock + 700 mL water = 1000 mL listed liquids. This sum alone does not establish final volume after mixing/dissolving."
+  }
+]
+
+### Exact NBRC source and generated owner correspondence
+
+identity: supported. Targets: CultureMech:008414.
+
+TOGO M1840 explicitly cites NBRC_M1074 and its exact official URL. The primary title and all nine source rows match the provider. The generated record has one maintained contributor with identical ingredient, stock, classification and source fields; only generated history/fingerprint fields differ. No parent/child variant, internal stock accession or external stock dependency is asserted.
+
+### Masses, stock strengths and receiving volumes
+
+quantity: concern. Targets: CultureMech:008414.
+
+The six basal source masses are magnesium sulfate heptahydrate 0.2 g, KH2PO4 1 g, glucose 10 g, agar 15 g and two Difco products 5 g each. Their stored numbers agree but their per-final-litre basis is not explicit. Water 700 mL and stock additions 100/200 mL have been assigned G_PER_L. The source 10%/20% labels have no stated percent basis. All 12 decisions preserve these distinct claims and the exact local stored fields.
+
+### Source forms, suppliers and identifier scope
+
+grounding: supported. Targets: CultureMech:008414.
+
+The explicit magnesium sulfate heptahydrate matches CHEBI:31795. Generic glucose matches generic CHEBI:17234; no D/L or anomer substitution is made. Water, monopotassium phosphate and agar match their asserted term scope. Bacto Yeast Extract (Difco) and Bacto Peptone (Difco) qualifiers are retained in both layers, without invented product catalog numbers or pure-molecule mappings. Primary and secondary linkage each cover 5/7 direct ingredients (71.43%); the two stock descriptors have 0/2 asserted ontology links, not broken referenced IDs.
+
+### Separate stock sterilization and aseptic addition
+
+completeness: concern. Targets: CultureMech:008414.
+
+Both local layers omit the source-specific separate autoclaving of NaCl and carbonate stocks and their aseptic addition. The source supplies no numeric pH, autoclave cycle or final make-up instruction. These unknowns are retained while the available preparation sentence can be represented with exact evidence.
+
+### Complex solid medium and unsupported high_metal flag
+
+scope: concern. Targets: CultureMech:008414.
+
+COMPLEX/UNDEFINED and SOLID_AGAR agree with the two undefined Difco products and required 15 g agar. high_metal:true is not established by the exact source or a documented correctly scoped threshold calculation. Current analysis approximates mass-based values as mM and omits stock arrays, while this record has wrong liquid units and unstated percent bases. Those limits support reassessment, not an automatic false replacement. No organism, taxon, strain, assembly, DOI/PMID or experimental growth claim is asserted.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:008414.
+
+23 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Current writers and unchanged maintained defect
+
+provenance: concern. Targets: CultureMech:008414.
+
+Current TOGO parsing separates main ingredients and stock additions and retains source units through its parser; these source excerpts do not replay the historical import. The maintained owner and generated target share the unit/stage defects and Unknown solution names. Historical solution migration/default events are provenance, not scientific validation. All timestamp instances were assessed; no recipe or historical event was changed.
+
+## Findings
+
+### f1: Water and two stock doses are represented as mass concentrations
+
+blocker / open / confirmed; issue key: culturemech.008414.volume-as-mass.
+
+Both target and owner assign 700 G_PER_L to source 700 mL water and 100/200 G_PER_L to 100/200 mL stock additions. These quantities have different dimensions and stages; a consumer cannot recover the exact formulation by treating them as supplied mass concentrations. Six correct source mass numerals also lack an explicit per-final-litre basis.
+
+### f2: Separate stock sterilization and aseptic addition are missing
+
+major / open / confirmed; issue key: culturemech.008414.stock-preparation.
+
+Neither local layer preserves the exact primary instruction to autoclave NaCl and carbonate solutions separately and add them aseptically. Recovering only numeric doses would still leave the named source preparation incomplete.
+
+### f3: The high_metal assertion lacks a valid source-stage calculation
+
+major / open / confirmed; issue key: culturemech.008414.high-metal-support.
+
+The record asserts high_metal:true without attached support for the schema-defined quantitative threshold. The current analyzer lacks exact molecular-weight/unit conversion and stock traversal; it cannot establish this record's corrected total from its wrong volume units and unqualified stock percentages. Code context does not prove which historical run produced the flag or that false is the correct replacement.
+
+### f4: Named stocks retain placeholder names and no claim evidence
+
+minor / open / confirmed; issue key: culturemech.008414.placeholders-evidence.
+
+Both descriptors are named Unknown solution despite explicit sodium-carbonate and sodium-chloride preferred names. The record has source URLs in notes but no attached amount/preparation evidence or references. Empty compositions do not establish the percent basis or a complete stock recipe.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct the maintained recipe to preserve water and stock-addition volumes with source batch context, retaining the 10%/20% strengths separately. Preserve all six exact basal masses and resolve their denominator before asserting final concentrations. Do not infer density, percent basis or an exact final volume; regenerate only after source-backed owner corrections.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add the exact source-specific stock separation/addition instruction with evidence. Do not replace it with a generic sterilization cycle or invent a pH or missing duration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Reassess the flag only after source quantities, stock scope, percent basis and final concentration basis are established, using exact supplied forms and an explicitly documented threshold/analysis version. Retain uncertainty and avoid an automatic false replacement.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Replace placeholder display names with exact source names and add scoped source references/evidence for supported quantities and preparation. Keep unknown stock composition details explicit rather than inventing their percent basis or a new stock identity.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALKALINE_AGAR.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALKALINE_AGAR.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALKALINE_AGAR.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch021/207/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/207/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALKALINE_AGAR.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALKALINE_AGAR.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml:1:id: CultureMech:008414<br>./data/merge_yaml/merged/ALKALINE_AGAR.yaml:1:id: CultureMech:008414<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/207/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 7 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/207/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| nbrc1074 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074; Complete exact Medium No. 1074 Composition and preparation statement | supports | Official Alkaline Agar contains six basal masses, 700 mL water, 200 mL of 20% NaCl solution and 100 mL of 10% carbonate solution. It specifies separate autoclaving and aseptic stock addition; no percent basis or explicit final make-up volume is given. |
+| togoM1840 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840; Complete meta, components[0].items[0:9] and comments | supports | Exact source NBRC_M1074 and URL 1074 agree. Stock strengths are conc_value 10/20 with conc_unit %, distinct from volume 100/200 and unit ml. Direct source masses and 700 mL water are separate rows. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch021/207/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch021/207/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| primary-preparation | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074; Complete preparation sentence after Composition | supports | Both salt stocks must be autoclaved separately and added aseptically. No sterilization temperature/duration or numeric pH is specified. |
+| metal-schema | src/culturemech/schema/culturemech.yaml; MediaRecipe.high_metal definition | context_only | The schema defines high_metal by total metal concentration above the 90th percentile, with a stated 1049.84 mM threshold. This is a quantitative classification, not simply the presence of salts. |
+| metal-analyzer | scripts/analyze_metal_concentrations.py; Full source; extract_concentration_value, analyze_media_metals, classify_media | context_only | Current code uses approximate/default unit factors without exact molecular weights, scans only direct ingredients and classifies by a corpus percentile. It does not resolve these two stock doses, percent bases or salt stoichiometry. |
+| metal-tagger | scripts/add_metal_ree_labels.py; Full source; add_labels_to_media | context_only | The current tagger reads analysis membership by file stem and writes flags. Its implementation is context, not proof that this historical assertion was calculated by this exact code or that a source-valid threshold comparison exists. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | src/culturemech/import/togo_importer.py; _ingredient_from_item lines 273–339; _local_batch_volume_ml lines 480–507; _solution_from_item lines 533–585; _extract_primary_components lines 587–641 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/ALKALINE_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 12, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml", "events": 11, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The listed liquids sum 1000 mL, but neither exact source provides explicit final make-up volume. No unconditional g/L, molarity or final stock-derived salt mass is calculated.
+- The percent bases and high_metal threshold correspondence remain unsupported scientific assertions; their limits are assessed from available exact sources and current code. No corpus-wide metal analysis or historical replay was performed, and no replacement boolean is proposed.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T124757Z-culturemech-008414-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaline_agar (CultureMech:008414)'
+started_at: '2026-10-21T12:39:25Z'
+finished_at: '2026-10-21T12:47:57Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact TOGO M1840 to NBRC 1074 identity is supported, but water and both
+  stock-addition volumes are stored as mass concentrations. Six basal masses match
+  the source batch while an explicit final-volume basis is absent. Separate stock
+  sterilization is omitted, two names are placeholders, and the high_metal assertion
+  lacks a source-stage calculation. The review preserves unqualified stock percentages
+  and supplier names without inventing final concentrations or a replacement metal
+  flag.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALINE_AGAR.yaml
+    sha256: 0b190573e3ef95321996bb0602a49ce7193ae5cecfc3469f01235db14be271fb
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    sha256: d69ebeaeca0498a9f2a267a7124bb14f1beaf6b87e0c12668fb00a5548f4c077
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/add_metal_ree_labels.py
+    sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+    role: context
+  - path: scripts/analyze_metal_concentrations.py
+    sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 207; batch 021 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty task batches contain
+    200 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 203 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008414
+targets:
+- target_id: CultureMech:008414
+  path: data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  label: alkaline_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALINE_AGAR.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch021/207/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/207/strict.tsv"
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008414
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:34.673708Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALINE_AGAR.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch021/207/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:36.520312Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/207/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:38.704472Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALINE_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:40.007280Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml:1:id: CultureMech:008414
+
+    ./data/merge_yaml/merged/ALKALINE_AGAR.yaml:1:id: CultureMech:008414
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/207/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: supports
+  summary: 7 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 7b7bf810de23bd5dbee04d77a06b0e140bcd953e1304aebf4be19b41e6c32440
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/207/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: 3c45784ec6a207a4873a06e4990f581ede482823832cc9cbca8f2e28ba4900d9
+- evidence_id: nbrc1074
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074
+  locator: Complete exact Medium No. 1074 Composition and preparation statement
+  accessed_at: '2026-10-21T12:23:44.856013Z'
+  support: supports
+  summary: Official Alkaline Agar contains six basal masses, 700 mL water, 200 mL
+    of 20% NaCl solution and 100 mL of 10% carbonate solution. It specifies separate
+    autoclaving and aseptic stock addition; no percent basis or explicit final make-up
+    volume is given.
+  snapshot_sha256: facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173
+- evidence_id: togoM1840
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840
+  locator: Complete meta, components[0].items[0:9] and comments
+  accessed_at: '2026-10-21T12:23:42.690492Z'
+  support: supports
+  summary: Exact source NBRC_M1074 and URL 1074 agree. Stock strengths are conc_value
+    10/20 with conc_unit %, distinct from volume 100/200 and unit ml. Direct source
+    masses and 700 mL water are separate rows.
+  snapshot_sha256: 3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15377":
+    [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377",
+    "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id":
+    "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/207/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: b44c0a1ee7b9ab80ba034182e56d2bfb4650fc5563867896d4b90cf0bb11f208
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/207/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 839739e17aad63e0792415f29eb58e0b3ed2a01d547da0f51e6dc5ff2f3437e8
+- evidence_id: primary-preparation
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074
+  locator: Complete preparation sentence after Composition
+  accessed_at: '2026-10-21T12:23:44.856013Z'
+  support: supports
+  summary: Both salt stocks must be autoclaved separately and added aseptically. No
+    sterilization temperature/duration or numeric pH is specified.
+  quote: Autoclave NaCl and Na 2 CO 3 solutions separately and add the solutions to
+    the medium aseptically.
+  snapshot_sha256: facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173
+- evidence_id: metal-schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: MediaRecipe.high_metal definition
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: The schema defines high_metal by total metal concentration above the 90th
+    percentile, with a stated 1049.84 mM threshold. This is a quantitative classification,
+    not simply the presence of salts.
+  snapshot_sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+- evidence_id: metal-analyzer
+  kind: record_content
+  reference: scripts/analyze_metal_concentrations.py
+  locator: Full source; extract_concentration_value, analyze_media_metals, classify_media
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Current code uses approximate/default unit factors without exact molecular
+    weights, scans only direct ingredients and classifies by a corpus percentile.
+    It does not resolve these two stock doses, percent bases or salt stoichiometry.
+  snapshot_sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+- evidence_id: metal-tagger
+  kind: record_content
+  reference: scripts/add_metal_ree_labels.py
+  locator: Full source; add_labels_to_media
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: The current tagger reads analysis membership by file stem and writes flags.
+    Its implementation is context, not proof that this historical assertion was calculated
+    by this exact code or that a source-valid threshold comparison exists.
+  snapshot_sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item lines 273–339; _local_batch_volume_ml lines 480–507;
+    _solution_from_item lines 533–585; _extract_primary_components lines 587–641
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T12:47:56Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 12, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml", "events": 11,
+    "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: supported
+  summary: '5 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 5/7 primary and 5/7 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Source forms
+    are assessed separately.'
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi15377
+  - chebi17234
+  - chebi2509
+  - chebi31795
+  - chebi63036
+  details: 'Instance coverage on a 0–100 percent scale, denominator 7: primary 71.43%;
+    secondary 71.43%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 12 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Distilled water\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"correct\",\n    \"local\"\
+    : {\n      \"value\": \"700\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"nbrc1074\",\n        \"source_url\": \"\
+    https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\",\n   \
+    \     \"source_locator\": \"NBRC 1074 Composition, exact Distilled water row\"\
+    ,\n        \"exact_source_quote\": \"Distilled water 700 ml\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[2].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"Distilled water\\\
+    \",\\n          \\\"volume\\\": 700,\\n          \\\"unit\\\": \\\"ml\\\"\",\n\
+    \        \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives 700 mL of water, not\
+    \ 700 g/L. Preserve the batch volume and intended solvent scope; no water density\
+    \ or measured final volume is assumed.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[0].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"700\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\",\n \
+    \       \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"700\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"700\
+    \ mL = 0.7 L of source water; a volume-to-mass conversion is not supported.\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc1074\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"MgSO4·7H2O\",\n    \"field_path\": \"ingredients[1].concentration\",\n   \
+    \ \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"0.2\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, exact MgSO4·7H2O row\"\
+    ,\n        \"exact_source_quote\": \"MgSO 4 ·7H 2 O 0.2 g\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[3].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"MgSO4·7H2O\\\"\
+    ,\\n          \\\"volume\\\": 0.2,\\n          \\\"unit\\\": \\\"g\\\"\",\n  \
+    \      \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored numeric value equals the exact\
+    \ source mass per listed batch. Neither source states an explicit final volume,\
+    \ so the asserted per-final-litre denominator is not independently verified. Preserve\
+    \ the source mass and batch context; do not change it using an assumed final litre.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Source mass = 0.2 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal\
+    \ sum is not an explicit final-volume statement; no new g/L conversion is asserted.\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc1074\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"KH2PO4\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, exact KH2PO4 row\",\n\
+    \        \"exact_source_quote\": \"KH 2 PO 4 1 g\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[4].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"KH2PO4\\\",\\\
+    n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"g\\\"\",\n       \
+    \ \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored numeric value equals the exact\
+    \ source mass per listed batch. Neither source states an explicit final volume,\
+    \ so the asserted per-final-litre denominator is not independently verified. Preserve\
+    \ the source mass and batch context; do not change it using an assumed final litre.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Source mass = 1 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal\
+    \ sum is not an explicit final-volume statement; no new g/L conversion is asserted.\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc1074\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Glucose\",\n    \"field_path\": \"ingredients[3].concentration\",\n    \"\
+    decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"10\",\n   \
+    \   \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, exact Glucose row\",\n\
+    \        \"exact_source_quote\": \"Glucose 10 g\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[5].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"Glucose\\\",\\\
+    n          \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"g\\\"\",\n      \
+    \  \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored numeric value equals the exact\
+    \ source mass per listed batch. Neither source states an explicit final volume,\
+    \ so the asserted per-final-litre denominator is not independently verified. Preserve\
+    \ the source mass and batch context; do not change it using an assumed final litre.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Source mass = 10 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal\
+    \ sum is not an explicit final-volume statement; no new g/L conversion is asserted.\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc1074\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Agar\",\n    \"field_path\": \"ingredients[4].concentration\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local\": {\n      \"value\": \"15\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, exact Agar row\",\n  \
+    \      \"exact_source_quote\": \"Agar 15 g\",\n        \"snapshot_sha256\": \"\
+    facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n        \"\
+    parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[6].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"Agar\\\",\\n\
+    \          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n      \
+    \  \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored numeric value equals the exact\
+    \ source mass per listed batch. Neither source states an explicit final volume,\
+    \ so the asserted per-final-litre denominator is not independently verified. Preserve\
+    \ the source mass and batch context; do not change it using an assumed final litre.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"15\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Source mass = 15 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal\
+    \ sum is not an explicit final-volume statement; no new g/L conversion is asserted.\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc1074\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Bacto Yeast Extract (Difco)\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"5\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, exact Bacto Yeast Extract\
+    \ (Difco) row\",\n        \"exact_source_quote\": \"Bacto Yeast Extract (Difco)\
+    \ 5 g\",\n        \"snapshot_sha256\": \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\"\
+    ,\n        \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[7].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"Bacto Yeast Extract\
+    \ (Difco)\\\",\\n          \\\"volume\\\": 5,\\n          \\\"unit\\\": \\\"g\\\
+    \"\",\n        \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored numeric value equals the exact\
+    \ source mass per listed batch. Neither source states an explicit final volume,\
+    \ so the asserted per-final-litre denominator is not independently verified. Preserve\
+    \ the source mass and batch context; do not change it using an assumed final litre.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Source mass = 5 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal\
+    \ sum is not an explicit final-volume statement; no new g/L conversion is asserted.\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc1074\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Bacto Peptone (Difco)\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"5\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, exact Bacto Peptone (Difco)\
+    \ row\",\n        \"exact_source_quote\": \"Bacto Peptone (Difco) 5 g\",\n   \
+    \     \"snapshot_sha256\": \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\"\
+    ,\n        \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[8].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"Bacto Peptone\
+    \ (Difco)\\\",\\n          \\\"volume\\\": 5,\\n          \\\"unit\\\": \\\"g\\\
+    \"\",\n        \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored numeric value equals the exact\
+    \ source mass per listed batch. Neither source states an explicit final volume,\
+    \ so the asserted per-final-litre denominator is not independently verified. Preserve\
+    \ the source mass and batch context; do not change it using an assumed final litre.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    Source mass = 5 g. Listed liquids 700 + 200 + 100 = 1000 mL, but this nominal\
+    \ sum is not an explicit final-volume statement; no new g/L conversion is asserted.\"\
+    ,\n    \"primary_source_evidence_id\": \"nbrc1074\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"10% Na2CO3 solution addition\",\n    \"field_path\": \"solutions[0].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"100\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, 10% Na2CO3 solution row\"\
+    ,\n        \"exact_source_quote\": \"10% Na 2 CO 3 solution 100 ml\",\n      \
+    \  \"snapshot_sha256\": \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\"\
+    ,\n        \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[0].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"10% Na2CO3 solution\\\
+    \",\\n          \\\"volume\\\": 100,\\n          \\\"unit\\\": \\\"ml\\\"\",\n\
+    \        \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a stock-addition\
+    \ volume in mL, not g/L of neat salt, stock composition or final-medium mass.\
+    \ Correct the dose representation while retaining the source batch scope; only\
+    \ adopt a per-litre dose after its final-volume basis is supported.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"100\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ dose = 100 mL. Do not interpret this as 100 g/L; no density, percent basis or\
+    \ measured final volume is supplied.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"10% Na2CO3 solution strength\",\n    \"field_path\": \"solutions[0].preferred_term\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": \"10% Na2CO3 solution\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1074\",\n\
+    \        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, stock name and dose\"\
+    ,\n        \"exact_source_quote\": \"10% Na 2 CO 3 solution 100 ml\",\n      \
+    \  \"snapshot_sha256\": \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\"\
+    ,\n        \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      }\n    ],\n    \"rationale\": \"The preferred name correctly retains the\
+    \ literal 10% or 20% source strength, but neither source defines w/v, w/w or v/v.\
+    \ Attach narrow evidence and retain the ambiguity; the empty composition is not\
+    \ permission to invent a stock mass formula.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"solutions[0].preferred_term\"\
+    ,\n        \"stored\": \"10% Na2CO3 solution\",\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].preferred_term\",\n        \"stored\"\
+    : \"10% Na2CO3 solution\",\n        \"decision\": \"evidence_only\"\n      }\n\
+    \    ]\n  },\n  {\n    \"ingredient_or_context\": \"20% NaCl solution addition\"\
+    ,\n    \"field_path\": \"solutions[1].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"200\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1074\"\
+    ,\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, 20% NaCl solution row\"\
+    ,\n        \"exact_source_quote\": \"20% NaCl solution 200 ml\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1840\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1840\",\n\
+    \        \"source_locator\": \"$.components[0].items[1].component_name,volume,unit\"\
+    ,\n        \"exact_source_quote\": \"\\\"component_name\\\": \\\"20% NaCl solution\\\
+    \",\\n          \\\"volume\\\": 200,\\n          \\\"unit\\\": \\\"ml\\\"\",\n\
+    \        \"snapshot_sha256\": \"3c90422d92915395eb0ecdc13672682e122fafb9c5cdf209031e703c015a59c8\"\
+    ,\n        \"parsed_text_sha256\": \"9846f4ba1e31b2387219dab68c5d8a8643f04bb433c448c14e465f9b3efda7b8\"\
+    \n      }\n    ],\n    \"rationale\": \"The source number is a stock-addition\
+    \ volume in mL, not g/L of neat salt, stock composition or final-medium mass.\
+    \ Correct the dose representation while retaining the source batch scope; only\
+    \ adopt a per-litre dose after its final-volume basis is supported.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"200\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ dose = 200 mL. Do not interpret this as 200 g/L; no density, percent basis or\
+    \ measured final volume is supplied.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"20% NaCl solution strength\",\n    \"field_path\": \"solutions[1].preferred_term\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": \"20% NaCl solution\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"nbrc1074\",\n\
+    \        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, stock name and dose\"\
+    ,\n        \"exact_source_quote\": \"20% NaCl solution 200 ml\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      }\n    ],\n    \"rationale\": \"The preferred name correctly retains the\
+    \ literal 10% or 20% source strength, but neither source defines w/v, w/w or v/v.\
+    \ Attach narrow evidence and retain the ambiguity; the empty composition is not\
+    \ permission to invent a stock mass formula.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"solutions[1].preferred_term\"\
+    ,\n        \"stored\": \"20% NaCl solution\",\n        \"decision\": \"evidence_only\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].preferred_term\",\n        \"stored\"\
+    : \"20% NaCl solution\",\n        \"decision\": \"evidence_only\"\n      }\n \
+    \   ]\n  },\n  {\n    \"ingredient_or_context\": \"Listed liquid total versus\
+    \ final-volume basis\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"nbrc1074\",\n        \"source_url\": \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\"\
+    ,\n        \"source_locator\": \"NBRC 1074 Composition, listed liquid row 0\"\
+    ,\n        \"exact_source_quote\": \"10% Na 2 CO 3 solution 100 ml\",\n      \
+    \  \"snapshot_sha256\": \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\"\
+    ,\n        \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1074\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\",\n\
+    \        \"source_locator\": \"NBRC 1074 Composition, listed liquid row 1\",\n\
+    \        \"exact_source_quote\": \"20% NaCl solution 200 ml\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      },\n      {\n        \"source_key\": \"nbrc1074\",\n        \"source_url\"\
+    : \"https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1074\",\n\
+    \        \"source_locator\": \"NBRC 1074 Composition, listed liquid row 2\",\n\
+    \        \"exact_source_quote\": \"Distilled water 700 ml\",\n        \"snapshot_sha256\"\
+    : \"facc2f4fb931dfe4dcc6c8637b373f09a463c07e0a3a3947955afc36f62ae173\",\n    \
+    \    \"parsed_text_sha256\": \"1a5a90fa6110f4baf6ed5b8f3b1486d09d31940d1a092ad6c31cb9d4d7a59de6\"\
+    \n      }\n    ],\n    \"rationale\": \"All three listed liquid amounts are known,\
+    \ but neither source explicitly directs make-up to a final litre or reports measured\
+    \ volume. Keep batch amounts and nominal arithmetic distinct from a validated\
+    \ final concentration.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n      \
+    \  \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    100 mL carbonate stock + 200 mL NaCl stock + 700 mL water = 1000 mL listed liquids.\
+    \ This sum alone does not establish final volume after mixing/dissolving.\"\n\
+    \  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact NBRC source and generated owner correspondence
+  outcome: supported
+  summary: TOGO M1840 explicitly cites NBRC_M1074 and its exact official URL. The
+    primary title and all nine source rows match the provider. The generated record
+    has one maintained contributor with identical ingredient, stock, classification
+    and source fields; only generated history/fingerprint fields differ. No parent/child
+    variant, internal stock accession or external stock dependency is asserted.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc1074
+  - togoM1840
+- assessment_id: source-stage-consistency
+  area: quantity
+  topic: Masses, stock strengths and receiving volumes
+  outcome: concern
+  summary: The six basal source masses are magnesium sulfate heptahydrate 0.2 g, KH2PO4
+    1 g, glucose 10 g, agar 15 g and two Difco products 5 g each. Their stored numbers
+    agree but their per-final-litre basis is not explicit. Water 700 mL and stock
+    additions 100/200 mL have been assigned G_PER_L. The source 10%/20% labels have
+    no stated percent basis. All 12 decisions preserve these distinct claims and the
+    exact local stored fields.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - quantity-inventory
+  - quantity-local-fields
+  - nbrc1074
+  - togoM1840
+- assessment_id: forms
+  area: grounding
+  topic: Source forms, suppliers and identifier scope
+  outcome: supported
+  summary: The explicit magnesium sulfate heptahydrate matches CHEBI:31795. Generic
+    glucose matches generic CHEBI:17234; no D/L or anomer substitution is made. Water,
+    monopotassium phosphate and agar match their asserted term scope. Bacto Yeast
+    Extract (Difco) and Bacto Peptone (Difco) qualifiers are retained in both layers,
+    without invented product catalog numbers or pure-molecule mappings. Primary and
+    secondary linkage each cover 5/7 direct ingredients (71.43%); the two stock descriptors
+    have 0/2 asserted ontology links, not broken referenced IDs.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc1074
+  - togoM1840
+  - chebi31795
+  - chebi17234
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Separate stock sterilization and aseptic addition
+  outcome: concern
+  summary: Both local layers omit the source-specific separate autoclaving of NaCl
+    and carbonate stocks and their aseptic addition. The source supplies no numeric
+    pH, autoclave cycle or final make-up instruction. These unknowns are retained
+    while the available preparation sentence can be represented with exact evidence.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-preparation
+  - nbrc1074
+  - togoM1840
+- assessment_id: classification
+  area: scope
+  topic: Complex solid medium and unsupported high_metal flag
+  outcome: concern
+  summary: COMPLEX/UNDEFINED and SOLID_AGAR agree with the two undefined Difco products
+    and required 15 g agar. high_metal:true is not established by the exact source
+    or a documented correctly scoped threshold calculation. Current analysis approximates
+    mass-based values as mM and omits stock arrays, while this record has wrong liquid
+    units and unstated percent bases. Those limits support reassessment, not an automatic
+    false replacement. No organism, taxon, strain, assembly, DOI/PMID or experimental
+    growth claim is asserted.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc1074
+  - togoM1840
+  - metal-schema
+  - metal-analyzer
+  - metal-tagger
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 23 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: generation
+  area: provenance
+  topic: Current writers and unchanged maintained defect
+  outcome: concern
+  summary: Current TOGO parsing separates main ingredients and stock additions and
+    retains source units through its parser; these source excerpts do not replay the
+    historical import. The maintained owner and generated target share the unit/stage
+    defects and Unknown solution names. Historical solution migration/default events
+    are provenance, not scientific validation. All timestamp instances were assessed;
+    no recipe or historical event was changed.
+  target_ids:
+  - CultureMech:008414
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.008414.volume-as-mass
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Water and two stock doses are represented as mass concentrations
+  description: Both target and owner assign 700 G_PER_L to source 700 mL water and
+    100/200 G_PER_L to 100/200 mL stock additions. These quantities have different
+    dimensions and stages; a consumer cannot recover the exact formulation by treating
+    them as supplied mass concentrations. Six correct source mass numerals also lack
+    an explicit per-final-litre basis.
+  target_ids:
+  - CultureMech:008414
+  field_paths:
+  - ingredients[0].concentration
+  - solutions[0].concentration
+  - solutions[1].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc1074
+  - togoM1840
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: 'Native P1 scientific representation blocker: the primary
+    solvent and both defining salt additions have wrong dimensions/stages, so the
+    record cannot faithfully denote the named formulation. This is not P1.1; all original
+    schema diagnostics passed.'
+- finding_id: f2
+  issue_key: culturemech.008414.stock-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate stock sterilization and aseptic addition are missing
+  description: Neither local layer preserves the exact primary instruction to autoclave
+    NaCl and carbonate solutions separately and add them aseptically. Recovering only
+    numeric doses would still leave the named source preparation incomplete.
+  target_ids:
+  - CultureMech:008414
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-preparation
+  - nbrc1074
+  - togoM1840
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 normalized to major because the omitted instruction changes
+    how the two defining salt stocks are sterilized and incorporated; it is an available
+    source-specific preparation requirement.
+- finding_id: f3
+  issue_key: culturemech.008414.high-metal-support
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The high_metal assertion lacks a valid source-stage calculation
+  description: The record asserts high_metal:true without attached support for the
+    schema-defined quantitative threshold. The current analyzer lacks exact molecular-weight/unit
+    conversion and stock traversal; it cannot establish this record's corrected total
+    from its wrong volume units and unqualified stock percentages. Code context does
+    not prove which historical run produced the flag or that false is the correct
+    replacement.
+  target_ids:
+  - CultureMech:008414
+  field_paths:
+  - high_metal
+  evidence_ids:
+  - record
+  - owner-0
+  - metal-schema
+  - metal-analyzer
+  - metal-tagger
+  - nbrc1074
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.008414.placeholders-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Named stocks retain placeholder names and no claim evidence
+  description: Both descriptors are named Unknown solution despite explicit sodium-carbonate
+    and sodium-chloride preferred names. The record has source URLs in notes but no
+    attached amount/preparation evidence or references. Empty compositions do not
+    establish the percent basis or a complete stock recipe.
+  target_ids:
+  - CultureMech:008414
+  field_paths:
+  - solutions[0].name
+  - solutions[1].name
+  - references
+  - evidence
+  - ingredients
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc1074
+  - togoM1840
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.1
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Correct the maintained recipe to preserve water and stock-addition
+    volumes with source batch context, retaining the 10%/20% strengths separately.
+    Preserve all six exact basal masses and resolve their denominator before asserting
+    final concentrations. Do not infer density, percent basis or an exact final volume;
+    regenerate only after source-backed owner corrections.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008414
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the exact source-specific stock separation/addition instruction
+    with evidence. Do not replace it with a generic sterilization cycle or invent
+    a pH or missing duration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008414
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reassess the flag only after source quantities, stock scope, percent
+    basis and final concentration basis are established, using exact supplied forms
+    and an explicitly documented threshold/analysis version. Retain uncertainty and
+    avoid an automatic false replacement.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008414
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Replace placeholder display names with exact source names and add scoped
+    source references/evidence for supported quantities and preparation. Keep unknown
+    stock composition details explicit rather than inventing their percent basis or
+    a new stock identity.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008414
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1840_Alkaline_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The listed liquids sum 1000 mL, but neither exact source provides explicit final
+  make-up volume. No unconditional g/L, molarity or final stock-derived salt mass
+  is calculated.
+- The percent bases and high_metal threshold correspondence remain unsupported scientific
+  assertions; their limits are assessed from available exact sources and current code.
+  No corpus-wide metal analysis or historical replay was performed, and no replacement
+  boolean is proposed.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-021
+- generated-medium
+```
