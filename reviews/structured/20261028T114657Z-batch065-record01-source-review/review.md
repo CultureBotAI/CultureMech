@@ -1,0 +1,1349 @@
+# CMYC agar: water unit, batch basis and missing source pH
+
+- Review: 20261028T114657Z-batch065-record01-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T11:30:09.140712Z
+- Finished UTC: 2026-10-28T11:46:57.178090Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact NBRC 1184 primary page and TOGO M1920 agree on the eight batch ingredients and pH 7.3. The generated record and maintained owner instead store water as 1 G_PER_L, assign seven mass rates without an explicit final-volume basis, and omit the stated pH. Existing hydrate grounding and mixture exclusions are retained; no record was edited.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch065 native selection index 01.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008499 | data/merge_yaml/merged/CMYC_agar.yaml | generated | cmyc_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008499 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:008499 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:008499 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:008499 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact NBRC and TOGO lineage
+
+identity: supported. Targets: CultureMech:008499.
+
+The sole maintained contributor, source title and NBRC_M1184 accession agree with current primary and TOGO evidence. Similar medium names are not alternate owners.
+
+### Primary preparation and composition scope
+
+completeness: concern. Targets: CultureMech:008499.
+
+All eight source ingredients are represented. The sources provide pH 7.3 but no sterilization protocol or explicit final volume. SOLID_AGAR and complex/undefined composition are consistent with agar, yeast extract and casamino acid; these broad classes do not establish growth of any organism.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:008499.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "Distilled water", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[0]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name": "Distilled water", "volume": 1, "unit": "L", "gmo": "http://purl.jp/bio/10/gmo/GMO_001001", "gmo_id": "GMO_001001", "label": "Distilled water", "properties": [{"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046", "label": "Defined component"}, {"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic compound"}, {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049", "label": "Simple component"}], "roles": [{"id": "GMO_000044", "uri": "http://purl.jp/bio/10/gmo/GMO_000044", "label": "Solvating media"}]}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "Distilled water\n1\nL"}], "decision": "correct", "rationale": "The primary specifies a 1 L solvent input, not a 1 g/L mass concentration. Preserve the volume and unit as batch preparation context; do not infer density or a final-volume denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The primary specifies a 1 L solvent input, not a 1 g/L mass concentration. Preserve the volume and unit as batch preparation context; do not infer density or a final-volume denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "The primary specifies a 1 L solvent input, not a 1 g/L mass concentration. Preserve the volume and unit as batch preparation context; do not infer density or a final-volume denominator."}]}, {"quantity_id": "q2", "topic": "MgSO4·7H2O", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[1]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"MgSO4·7H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\": \"GMO_001002\",\n          \"label\": \"Magnesium sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name": "MgSO4·7H2O", "volume": 0.5, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001002", "gmo_id": "GMO_001002", "label": "Magnesium sulfate heptahydrate", "properties": [{"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic compound"}, {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049", "label": "Simple component"}, {"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046", "label": "Defined component"}], "roles": [{"id": "GMO_000078", "uri": "http://purl.jp/bio/10/gmo/GMO_000078", "label": "Mineral source"}]}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "MgSO\n4\n·7H\n2\nO\n0.5\ng"}], "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}]}, {"quantity_id": "q3", "topic": "Yeast extract", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[2]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name": "Yeast extract", "volume": 2, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001003", "gmo_id": "GMO_001003", "label": "Yeast extract", "properties": [{"id": "GMO_000047", "uri": "http://purl.jp/bio/10/gmo/GMO_000047", "label": "Undefined component"}], "roles": [{"id": "GMO_000042", "uri": "http://purl.jp/bio/10/gmo/GMO_000042", "label": "Nutrient source"}]}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "Yeast extract\n2\ng"}], "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}]}, {"quantity_id": "q4", "topic": "FeSO4·7H2O", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[3]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"FeSO4·7H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\",\n          \"gmo_id\": \"GMO_001016\",\n          \"label\": \"Iron(II) sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name": "FeSO4·7H2O", "volume": 0.01, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001016", "gmo_id": "GMO_001016", "label": "Iron(II) sulfate heptahydrate", "properties": [{"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046", "label": "Defined component"}, {"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic compound"}, {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049", "label": "Simple component"}], "roles": [{"id": "GMO_000078", "uri": "http://purl.jp/bio/10/gmo/GMO_000078", "label": "Mineral source"}]}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "FeSO\n4\n·7H\n2\nO\n0.01\ng"}], "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.01", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.01", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}]}, {"quantity_id": "q5", "topic": "KCl", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[4]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\": \"GMO_001017\",\n          \"label\": \"Potassium chloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral source\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name": "KCl", "volume": 0.5, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001017", "gmo_id": "GMO_001017", "label": "Potassium chloride", "properties": [{"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049", "label": "Simple component"}, {"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic compound"}, {"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046", "label": "Defined component"}], "roles": [{"id": "GMO_000078", "uri": "http://purl.jp/bio/10/gmo/GMO_000078", "label": "Mineral source"}]}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "KCl\n0.5\ng"}], "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}]}, {"quantity_id": "q6", "topic": "NaNO3", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[5]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"NaNO3\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001049\",\n          \"gmo_id\": \"GMO_001049\",\n          \"label\": \"Sodium nitrate\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\": \"Nitrogen source\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name": "NaNO3", "volume": 2, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001049", "gmo_id": "GMO_001049", "label": "Sodium nitrate", "properties": [{"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic compound"}, {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049", "label": "Simple component"}, {"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046", "label": "Defined component"}], "roles": [{"id": "GMO_000062", "uri": "http://purl.jp/bio/10/gmo/GMO_000062", "label": "Nitrogen source"}]}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "NaNO\n3\n2\ng"}], "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}]}, {"quantity_id": "q7", "topic": "Agar", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[6]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"Agar\",\n          \"volume\": 20,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name": "Agar", "volume": 20, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001007", "gmo_id": "GMO_001007", "label": "Agar", "properties": [], "roles": [{"id": "GMO_000048", "uri": "http://purl.jp/bio/10/gmo/GMO_000048", "label": "Solidifying component"}]}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "Agar\n20\ng"}], "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "20", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "20", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}]}, {"quantity_id": "q8", "topic": "Casamino acid", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.components[0].items[7]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n          \"component_name\": \"Casamino acid\",\n          \"volume\": 6,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001113\",\n          \"gmo_id\": \"GMO_001113\",\n          \"label\": \"Casamino acid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "exact_decoded_object": {"component_name": "Casamino acid", "volume": 6, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001113", "gmo_id": "GMO_001113", "label": "Casamino acid", "properties": [{"id": "GMO_000047", "uri": "http://purl.jp/bio/10/gmo/GMO_000047", "label": "Undefined component"}], "roles": []}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "Casamino acid\n6\ng"}], "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and supplied chemical form agree, but neither source states a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this source mass as a batch amount; do not silently replace it with an assumed denominator."}]}, {"quantity_id": "q9", "topic": "Source pH 7.3", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752", "locator": "$.comments[0]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote": "{\n      \"paragraph_index\": 2,\n      \"comment\": \"pH 7.3\"\n    }", "exact_decoded_object": {"paragraph_index": 2, "comment": "pH 7.3"}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184", "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256": "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator": "pH following composition table", "accessed_at": "2026-10-28T11:30:49.081480Z", "quote": "pH 7.3"}], "decision": "add", "rationale": "Add the explicitly stated pH only; no buffer amount, adjustment reagent or incubation condition is given.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path": "ph_value", "stored_value": null, "decision": "add", "rationale": "Primary source pH is absent from this record; preserve its source scope without inventing an adjustment or sterilization stage.", "missing": true}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ph_value", "stored_value": null, "decision": "add", "rationale": "Primary source pH is absent from this record; preserve its source scope without inventing an adjustment or sterilization stage.", "missing": true}]}]
+
+### Current ontology and MIM correspondence
+
+grounding: supported. Targets: CultureMech:008499.
+
+Every asserted chemical accession resolves to the current OLS object with matching supplied form and canonical label, including corrected magnesium heptahydrate and iron(II) sulfate heptahydrate. Exact MIM identifier/ontology row unions retain label-specific MAPPED and REJECTED statuses rather than treating all rows as endorsement. Yeast extract and casamino acid have no asserted chemical ID; their mixture exclusions are not invalid-ID findings. The iron primary ID lacks a secondary MIM slot, a bounded linkage gap with no unsupported replacement proposed.
+
+### History and evidence scope
+
+provenance: concern. Targets: CultureMech:008499.
+
+Current source bytes, complete histories and scoped historical reports were read. Missing claim-level linkage and any malformed historical metadata are distinguished from authenticated source bytes; originals remain append-only.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:008499.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:008499.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Restore solvent volume and qualify batch mass basis
+
+major / open / confirmed; issue key: culturemech-008499-restore-solvent-volume-and-qualify-batch-mass-basis.
+
+Both layers store the source 1 L water input as 1 G_PER_L. The other seven numbers match source gram amounts but are encoded as final-medium rates without an explicit final-volume statement. Source water is an input, not proof of final volume. Retain all masses and supplied forms, represent the water volume correctly, and leave any final-medium rate unresolved until its basis is explicitly documented.
+
+### f2: Add the explicitly stated source pH
+
+minor / open / confirmed; issue key: culturemech-008499-add-the-explicitly-stated-source-ph.
+
+The NBRC page and TOGO meta.ph/comment both state pH 7.3, but neither the target nor maintained owner contains ph_value or preparation context for that statement. Current TOGO _extract_ph reads a different JSON level.
+
+### f3: Attach scoped primary claims beyond source notes
+
+minor / open / confirmed; issue key: culturemech-008499-attach-scoped-primary-claims-beyond-source-notes.
+
+Source URLs and import history are present, but the quantities and pH have no claim-level source support attached. The two October screening reports explicitly performed zero source checks; their unsupported dispositions are historical triage, not amount authentication.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Correct the maintained water-unit error using the exact 1 L source input. Preserve the seven supported batch masses and label their final-medium rates unsupported until a defensible denominator is available. Do not infer final volume or convert water using an assumed density; regenerate after owner curation.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+Add the source pH 7.3 with root evidence and an exact source locator. Do not invent when it was measured, adjustment reagents, sterilization conditions or a temperature.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+Add the successful primary reference and exact batch-quantity and pH claims at schema-supported evidence locations. Keep the failed alternate route separate and preserve all original history; append fresh evidence context without rewriting old events.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/CMYC_agar.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/cmyc_agar.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| nbrc1184-old | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184; Exact source identity and scoped formulation/preparation | supports | Successful exact primary URL already recorded in the maintained source notes. Complete medium 1184 CMYC agar composition and pH read; eight batch quantities, no explicit final volume or sterilization protocol. |
+| togo1920 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920; Exact source identity and scoped formulation/preparation | supports | Complete M1920 JSON identifies NBRC_M1184 and the exact successful source URL; all eight items plus meta.ph and pH comment agree with the primary page. |
+| nbrc-index | https://www.nite.go.jp/nbrc/cultures/cultures/culture-list.html; Exact source identity and scoped formulation/preparation | context_only | Current NBRC medium index provides an alternate catalogue-host link for 1184; navigation evidence only, not a recipe substitute. |
+| nbrc1184 | https://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1184; Exact source identity and scoped formulation/preparation | context_only | The catalogue-linked alternate hostname failed TLS hostname verification. No source body was recovered; the exact original primary route separately succeeded without disabling TLS checks. |
+| identity-search | REVIEW_WORK/batch065/record01/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _parse_api_solutions, _parse_preparation_steps | context_only | Current composition parser restricts ingredients to the primary solution, excludes solvent and recognized stock additions, and retains explicit g_l. The solution parser preserves referenced or percent-defined stocks and source attributes. Preparation parsing still concatenates all solution steps into root preparation_steps; source-stage annotation remains important. These present functions do not prove the historical execution that produced this record. |
+| writer-merge | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group copies a sole contributor with merge metadata. For multiple contributors it passes records to merge_formulation_evidence, which checks compatibility; it does not authorize merging different preparation assertions. |
+| writer-formulation | src/culturemech/merge/formulation.py; formulation_content, merge_formulation_evidence | context_only | Current compatibility preserves scientific fields and list order and rejects unequal formulations; only specified provenance/evidence lists are unioned. It performs no concentration conversion or stock expansion and does not authenticate historical merges. |
+| writer-cleanup | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients, merge_ingredient_group | context_only | Current cleanup groups identical normalized names, keeps the first entry as a base, flags differing concentrations and combines a warning note; it does not sum concentrations. It can still discard distinctions when names repeat, so source stage must be retained. Current behavior does not establish the historical cause of an existing discrepancy. |
+| writer-togo | src/culturemech/import/togo_importer.py; _ingredient_from_item, _parse_unit, _extract_ph, _extract_preparation_steps | context_only | Current _parse_unit preserves L but maps g to G_PER_L without a final-volume proof. _extract_ph reads root ph, while this current payload stores meta.ph; comments are handled separately by preparation extraction. This identifies current behavior only, not the historical run that made these fields. |
+| historical-1 | reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md; Exact selected-owner matching rows, if present, plus report purpose/method and validation claims only; all other pair-specific conclusions outside scope. | context_only | Historical source-duplicate report: only exact selected-owner rows, where present, and its stated signature method are in scope. Similarity does not prove complete preparation identity; no assertion about absent exact pairs is inferred. |
+| historical-2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CMYC_agar.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cmyc_agar.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-reader | REVIEW_WORK/batch065/record01/historical-reader.json | context_only | Full exact-header historical texts and scoped large report, with literal/decoded current-source joins and explicit mismatches. Historical access events are not reauthenticated. |
+| historical-plan-rows | REVIEW_WORK/batch065/record01/historical-plan-rows.json | context_only | Exact scoped plan-row membership; full parent payload retained as an inspected pin without transferring neighboring records. |
+| attached-evidence-joins | REVIEW_WORK/batch065/record01/attached-evidence-joins.json | context_only | Every existing attached evidence claim is preserved and compared to the exact freshly captured response. Matching snippets do not authenticate historical access times. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15377; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31795; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75836; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32588; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63005; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_2509; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch065/record01/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch065/record01/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch065/record01/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch065/record01/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch065/record01/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch065/record01/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch065/record01/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch065/record01/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch065/record01/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- Neither primary source nor TOGO states an explicit final volume or sterilization procedure. Unchanged mass digits do not authenticate local G_PER_L denominators.
+- The catalogue-linked www.nbrc.nite.go.jp route failed TLS verification. The exact www.nite.go.jp primary URL recorded in the owner succeeded and supplied the complete recipe, so this alternate-route failure does not leave recipe identity unresolved.
+- Current ontology/catalog membership and present writer behavior do not authenticate historical executions. Native reference validation checked zero references. No organism-specific growth assertion is added.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T114657Z-batch065-record01-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'CMYC agar: water unit, batch basis and missing source pH'
+started_at: '2026-10-28T11:30:09.140712Z'
+finished_at: '2026-10-28T11:46:57.178090Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact NBRC 1184 primary page and TOGO M1920 agree on the eight batch
+  ingredients and pH 7.3. The generated record and maintained owner instead store
+  water as 1 G_PER_L, assign seven mass rates without an explicit final-volume basis,
+  and omit the stated pH. Existing hydrate grounding and mixture exclusions are retained;
+  no record was edited.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CMYC_agar.yaml
+    sha256: 5131d3f64352fcd2937afa3ddba0458fe4365a8fcf08567a86c9257812f2b93e
+    role: target
+  - path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    sha256: fd759e26c0d7cbf607f7a1da03313155514de59acac9fdf8a549a388b9289c05
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+    sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CMYC_agar.md
+    sha256: 65439525ca0518f8c1323734597c8d1220cf3dfce3ed3399a56686d663a41bcb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cmyc_agar.md
+    sha256: 0a7c0c5be5f2f07189d46e9abfa8343072d877ff2dba685fac63bce1f1020376
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_media_variant_links.py
+    sha256: d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch065 native selection index 01.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008499
+targets:
+- target_id: CultureMech:008499
+  path: data/merge_yaml/merged/CMYC_agar.yaml
+  label: cmyc_agar
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:008499
+  command: just validate-schema data/merge_yaml/merged/CMYC_agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:008499
+  command: just validate-strict data/merge_yaml/merged/CMYC_agar.yaml --out REVIEW_WORK/batch065/record01/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:008499
+  command: just validate-terms data/merge_yaml/merged/CMYC_agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:008499
+  command: just validate-references data/merge_yaml/merged/CMYC_agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CMYC_agar.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: 5131d3f64352fcd2937afa3ddba0458fe4365a8fcf08567a86c9257812f2b93e
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/cmyc_agar.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: fd759e26c0d7cbf607f7a1da03313155514de59acac9fdf8a549a388b9289c05
+- evidence_id: nbrc1184-old
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T11:30:49.081480Z'
+  support: supports
+  summary: Successful exact primary URL already recorded in the maintained source
+    notes. Complete medium 1184 CMYC agar composition and pH read; eight batch quantities,
+    no explicit final volume or sterilization protocol.
+  snapshot_sha256: 6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d
+- evidence_id: togo1920
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T11:30:48.556422Z'
+  support: supports
+  summary: Complete M1920 JSON identifies NBRC_M1184 and the exact successful source
+    URL; all eight items plus meta.ph and pH comment agree with the primary page.
+  snapshot_sha256: fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752
+- evidence_id: nbrc-index
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/cultures/cultures/culture-list.html
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T11:30:49.989359Z'
+  support: context_only
+  summary: Current NBRC medium index provides an alternate catalogue-host link for
+    1184; navigation evidence only, not a recipe substitute.
+  snapshot_sha256: 4ff584aeb85c16592cea1fa78e4a80b5ebff49d5d703d5ad07918ee092aef3fc
+- evidence_id: nbrc1184
+  kind: primary_source
+  reference: https://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1184
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T11:30:48.932037Z'
+  support: context_only
+  summary: The catalogue-linked alternate hostname failed TLS hostname verification.
+    No source body was recovered; the exact original primary route separately succeeded
+    without disabling TLS checks.
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch065/record01/identity-search.json
+  accessed_at: '2026-10-28T11:38:04.359464Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    excluded namesakes are retained in the census. Similar names and source accessions
+    are not promoted to owners.
+  snapshot_sha256: d5ee33cb9839f6bfe8430911d571593b7b2346ced267aee6162a0065e01cf016
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. Current behavior does not establish the historical
+    cause of an existing discrepancy.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer-togo
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _ingredient_from_item, _parse_unit, _extract_ph, _extract_preparation_steps
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Current _parse_unit preserves L but maps g to G_PER_L without a final-volume
+    proof. _extract_ph reads root ph, while this current payload stores meta.ph; comments
+    are handled separately by preparation extraction. This identifies current behavior
+    only, not the historical run that made these fields.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+  locator: Exact selected-owner matching rows, if present, plus report purpose/method
+    and validation claims only; all other pair-specific conclusions outside scope.
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: 'Historical source-duplicate report: only exact selected-owner rows, where
+    present, and its stated signature method are in scope. Similarity does not prove
+    complete preparation identity; no assertion about absent exact pairs is inferred.'
+  snapshot_sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CMYC_agar.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 65439525ca0518f8c1323734597c8d1220cf3dfce3ed3399a56686d663a41bcb
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/cmyc_agar.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:38:04.317177Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 0a7c0c5be5f2f07189d46e9abfa8343072d877ff2dba685fac63bce1f1020376
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record01/historical-reader.json
+  accessed_at: '2026-10-28T11:38:04.365942Z'
+  support: context_only
+  summary: Full exact-header historical texts and scoped large report, with literal/decoded
+    current-source joins and explicit mismatches. Historical access events are not
+    reauthenticated.
+  snapshot_sha256: e4d79b3150dfdc4f4bc7aa2ce8bf992beaec98a5b330c95ae43daf1e736283c5
+- evidence_id: historical-plan-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record01/historical-plan-rows.json
+  accessed_at: '2026-10-28T11:38:04.366112Z'
+  support: context_only
+  summary: Exact scoped plan-row membership; full parent payload retained as an inspected
+    pin without transferring neighboring records.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: attached-evidence-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record01/attached-evidence-joins.json
+  accessed_at: '2026-10-28T11:38:04.366256Z'
+  support: context_only
+  summary: Every existing attached evidence claim is preserved and compared to the
+    exact freshly captured response. Matching snippets do not authenticate historical
+    access times.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T11:30:50.528337Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 42561686e12ba0831d99216248ea8c0b3338b461b0b77dd988f3096ad8678e59
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31795
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T11:30:51.291228Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1635f67d01e00cabdef4ed0d9ef6d5383787c56bd0447051deb90ad353b499a2
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75836
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T11:30:53.028926Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: e12b865122aab78645385260e1e83ff28f3c45365cb67c9181166628f68974b3
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32588
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T11:30:51.754288Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 8fc333e98ee953346b5c291b9e5765e77d03cc46740a1282af3e5f4ad355de1a
+- evidence_id: chebi63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63005
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T11:30:52.520584Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 989f7dba2ab0bc556056f2d79a2f53fae9ce391393fc7ba373cbfe5afc25ae03
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_2509
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T11:30:51.115544Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 348b20478bba221cc21e285237104281145111be6ea3aa30d381d6eae19c0a90
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record01/quantity-inventory.json
+  accessed_at: '2026-10-28T11:38:04.374433Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 069cc388756453933214d9668cc68ab2b47372ff2790bc891586e2b92e6d4754
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record01/grounding-inventory.json
+  accessed_at: '2026-10-28T11:38:04.374471Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: df9b2a36436a856440bd15ec73ac3c0ea0e8ecfed8196322f18beb58f57073e3
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record01/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T11:38:04.374566Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: 8f7a47424b171f4152f38aa1018edb5943014ce980fc5f7f72a88cbb4f81ef7f
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record01/scalar-census.json
+  accessed_at: '2026-10-28T11:38:04.374586Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 37858b15843f894ca64e6747f6d102f13f980f834495a04c297cfacda6d92f1e
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch065/record01/validate-schema.json
+  accessed_at: '2026-10-28T11:30:10.312265Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 2b53da119bc1f168ceb5ffd70796a5dca2a2948285ed89421e99c3205514622c
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch065/record01/validate-strict.json
+  accessed_at: '2026-10-28T11:30:11.262360Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch065/record01/strict.tsv\n"
+  snapshot_sha256: c8c3e190ceaaed2071e02806fb34aae2a778bd975bf98b52605f52ca0ef679cf
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch065/record01/validate-terms.json
+  accessed_at: '2026-10-28T11:30:12.674970Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: b53298aa3a5dad057cb9bb08f4d1423d6cd2303cd589344b2910871519056e53
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch065/record01/validate-references.json
+  accessed_at: '2026-10-28T11:30:13.427888Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 909632f448e2ec23c01e2e172e908dcf0edbb9655c70b02a0573308145f37061
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact NBRC and TOGO lineage
+  outcome: supported
+  summary: The sole maintained contributor, source title and NBRC_M1184 accession
+    agree with current primary and TOGO evidence. Similar medium names are not alternate
+    owners.
+  target_ids:
+  - CultureMech:008499
+  evidence_ids:
+  - local-target
+  - owner-1
+  - identity-search
+  - nbrc1184-old
+  - togo1920
+- assessment_id: a2
+  area: completeness
+  topic: Primary preparation and composition scope
+  outcome: concern
+  summary: All eight source ingredients are represented. The sources provide pH 7.3
+    but no sterilization protocol or explicit final volume. SOLID_AGAR and complex/undefined
+    composition are consistent with agar, yeast extract and casamino acid; these broad
+    classes do not establish growth of any organism.
+  target_ids:
+  - CultureMech:008499
+  evidence_ids:
+  - nbrc1184-old
+  - togo1920
+  - quantities
+- assessment_id: a3
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:008499
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Distilled water", "source": [{"evidence_id":
+    "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[0]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\":
+    1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\":
+    \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name":
+    "Distilled water", "volume": 1, "unit": "L", "gmo": "http://purl.jp/bio/10/gmo/GMO_001001",
+    "gmo_id": "GMO_001001", "label": "Distilled water", "properties": [{"id": "GMO_000046",
+    "uri": "http://purl.jp/bio/10/gmo/GMO_000046", "label": "Defined component"},
+    {"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic
+    compound"}, {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+    "label": "Simple component"}], "roles": [{"id": "GMO_000044", "uri": "http://purl.jp/bio/10/gmo/GMO_000044",
+    "label": "Solvating media"}]}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "Distilled water\n1\nL"}], "decision": "correct", "rationale": "The primary
+    specifies a 1 L solvent input, not a 1 g/L mass concentration. Preserve the volume
+    and unit as batch preparation context; do not infer density or a final-volume
+    denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "1", "unit":
+    "G_PER_L"}, "decision": "correct", "rationale": "The primary specifies a 1 L solvent
+    input, not a 1 g/L mass concentration. Preserve the volume and unit as batch preparation
+    context; do not infer density or a final-volume denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "1", "unit":
+    "G_PER_L"}, "decision": "correct", "rationale": "The primary specifies a 1 L solvent
+    input, not a 1 g/L mass concentration. Preserve the volume and unit as batch preparation
+    context; do not infer density or a final-volume denominator."}]}, {"quantity_id":
+    "q2", "topic": "MgSO4·7H2O", "source": [{"evidence_id": "togo1920", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920", "raw_path":
+    "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[1]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"MgSO4·7H2O\",\n          \"volume\":
+    0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001002\",\n          \"gmo_id\":
+    \"GMO_001002\",\n          \"label\": \"Magnesium sulfate heptahydrate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }", "exact_decoded_object":
+    {"component_name": "MgSO4·7H2O", "volume": 0.5, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001002",
+    "gmo_id": "GMO_001002", "label": "Magnesium sulfate heptahydrate", "properties":
+    [{"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label":
+    "Inorganic compound"}, {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+    "label": "Simple component"}, {"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+    "label": "Defined component"}], "roles": [{"id": "GMO_000078", "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+    "label": "Mineral source"}]}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "MgSO\n4\n·7H\n2\nO\n0.5\ng"}], "decision": "unsupported", "rationale":
+    "The literal source mass and supplied chemical form agree, but neither source
+    states a final volume. The existing G_PER_L assertion is therefore unsupported
+    as a final-medium rate. Preserve this source mass as a batch amount; do not silently
+    replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}]}, {"quantity_id": "q3", "topic": "Yeast extract", "source":
+    [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[2]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\":
+    2,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\":
+    \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }", "exact_decoded_object":
+    {"component_name": "Yeast extract", "volume": 2, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001003",
+    "gmo_id": "GMO_001003", "label": "Yeast extract", "properties": [{"id": "GMO_000047",
+    "uri": "http://purl.jp/bio/10/gmo/GMO_000047", "label": "Undefined component"}],
+    "roles": [{"id": "GMO_000042", "uri": "http://purl.jp/bio/10/gmo/GMO_000042",
+    "label": "Nutrient source"}]}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "Yeast extract\n2\ng"}], "decision": "unsupported", "rationale": "The
+    literal source mass and supplied chemical form agree, but neither source states
+    a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium
+    rate. Preserve this source mass as a batch amount; do not silently replace it
+    with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and
+    supplied chemical form agree, but neither source states a final volume. The existing
+    G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this
+    source mass as a batch amount; do not silently replace it with an assumed denominator."},
+    {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[2].concentration",
+    "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "unsupported",
+    "rationale": "The literal source mass and supplied chemical form agree, but neither
+    source states a final volume. The existing G_PER_L assertion is therefore unsupported
+    as a final-medium rate. Preserve this source mass as a batch amount; do not silently
+    replace it with an assumed denominator."}]}, {"quantity_id": "q4", "topic": "FeSO4·7H2O",
+    "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[3]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"FeSO4·7H2O\",\n          \"volume\":
+    0.01,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001016\",\n          \"gmo_id\":
+    \"GMO_001016\",\n          \"label\": \"Iron(II) sulfate heptahydrate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name":
+    "FeSO4·7H2O", "volume": 0.01, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001016",
+    "gmo_id": "GMO_001016", "label": "Iron(II) sulfate heptahydrate", "properties":
+    [{"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046", "label":
+    "Defined component"}, {"id": "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040",
+    "label": "Inorganic compound"}, {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049",
+    "label": "Simple component"}], "roles": [{"id": "GMO_000078", "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+    "label": "Mineral source"}]}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "FeSO\n4\n·7H\n2\nO\n0.01\ng"}], "decision": "unsupported", "rationale":
+    "The literal source mass and supplied chemical form agree, but neither source
+    states a final volume. The existing G_PER_L assertion is therefore unsupported
+    as a final-medium rate. Preserve this source mass as a batch amount; do not silently
+    replace it with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.01",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.01",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}]}, {"quantity_id": "q5", "topic": "KCl", "source": [{"evidence_id":
+    "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[4]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"KCl\",\n          \"volume\": 0.5,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001017\",\n          \"gmo_id\":
+    \"GMO_001017\",\n          \"label\": \"Potassium chloride\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000078\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\":
+    \"Mineral source\"\n            }\n          ]\n        }", "exact_decoded_object":
+    {"component_name": "KCl", "volume": 0.5, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001017",
+    "gmo_id": "GMO_001017", "label": "Potassium chloride", "properties": [{"id": "GMO_000049",
+    "uri": "http://purl.jp/bio/10/gmo/GMO_000049", "label": "Simple component"}, {"id":
+    "GMO_000040", "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic
+    compound"}, {"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+    "label": "Defined component"}], "roles": [{"id": "GMO_000078", "uri": "http://purl.jp/bio/10/gmo/GMO_000078",
+    "label": "Mineral source"}]}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "KCl\n0.5\ng"}], "decision": "unsupported", "rationale": "The literal
+    source mass and supplied chemical form agree, but neither source states a final
+    volume. The existing G_PER_L assertion is therefore unsupported as a final-medium
+    rate. Preserve this source mass as a batch amount; do not silently replace it
+    with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}]}, {"quantity_id": "q6", "topic": "NaNO3", "source": [{"evidence_id":
+    "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[5]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"NaNO3\",\n          \"volume\": 2,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001049\",\n          \"gmo_id\":
+    \"GMO_001049\",\n          \"label\": \"Sodium nitrate\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000062\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000062\",\n              \"label\":
+    \"Nitrogen source\"\n            }\n          ]\n        }", "exact_decoded_object":
+    {"component_name": "NaNO3", "volume": 2, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001049",
+    "gmo_id": "GMO_001049", "label": "Sodium nitrate", "properties": [{"id": "GMO_000040",
+    "uri": "http://purl.jp/bio/10/gmo/GMO_000040", "label": "Inorganic compound"},
+    {"id": "GMO_000049", "uri": "http://purl.jp/bio/10/gmo/GMO_000049", "label": "Simple
+    component"}, {"id": "GMO_000046", "uri": "http://purl.jp/bio/10/gmo/GMO_000046",
+    "label": "Defined component"}], "roles": [{"id": "GMO_000062", "uri": "http://purl.jp/bio/10/gmo/GMO_000062",
+    "label": "Nitrogen source"}]}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "nbrc1184-old",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "NaNO\n3\n2\ng"}], "decision": "unsupported", "rationale": "The literal
+    source mass and supplied chemical form agree, but neither source states a final
+    volume. The existing G_PER_L assertion is therefore unsupported as a final-medium
+    rate. Preserve this source mass as a batch amount; do not silently replace it
+    with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and
+    supplied chemical form agree, but neither source states a final volume. The existing
+    G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this
+    source mass as a batch amount; do not silently replace it with an assumed denominator."},
+    {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[5].concentration",
+    "stored_value": {"value": "2", "unit": "G_PER_L"}, "decision": "unsupported",
+    "rationale": "The literal source mass and supplied chemical form agree, but neither
+    source states a final volume. The existing G_PER_L assertion is therefore unsupported
+    as a final-medium rate. Preserve this source mass as a batch amount; do not silently
+    replace it with an assumed denominator."}]}, {"quantity_id": "q7", "topic": "Agar",
+    "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[6]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"Agar\",\n          \"volume\": 20,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\":
+    \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying
+    component\"\n            }\n          ]\n        }", "exact_decoded_object": {"component_name":
+    "Agar", "volume": 20, "unit": "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001007",
+    "gmo_id": "GMO_001007", "label": "Agar", "properties": [], "roles": [{"id": "GMO_000048",
+    "uri": "http://purl.jp/bio/10/gmo/GMO_000048", "label": "Solidifying component"}]},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "Agar\n20\ng"}], "decision": "unsupported", "rationale": "The literal
+    source mass and supplied chemical form agree, but neither source states a final
+    volume. The existing G_PER_L assertion is therefore unsupported as a final-medium
+    rate. Preserve this source mass as a batch amount; do not silently replace it
+    with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "20",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "20",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source
+    mass and supplied chemical form agree, but neither source states a final volume.
+    The existing G_PER_L assertion is therefore unsupported as a final-medium rate.
+    Preserve this source mass as a batch amount; do not silently replace it with an
+    assumed denominator."}]}, {"quantity_id": "q8", "topic": "Casamino acid", "source":
+    [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.components[0].items[7]", "accessed_at": "2026-10-28T11:30:48.556422Z",
+    "quote": "{\n          \"component_name\": \"Casamino acid\",\n          \"volume\":
+    6,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001113\",\n          \"gmo_id\":
+    \"GMO_001113\",\n          \"label\": \"Casamino acid\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "exact_decoded_object": {"component_name": "Casamino acid", "volume": 6, "unit":
+    "g", "gmo": "http://purl.jp/bio/10/gmo/GMO_001113", "gmo_id": "GMO_001113", "label":
+    "Casamino acid", "properties": [{"id": "GMO_000047", "uri": "http://purl.jp/bio/10/gmo/GMO_000047",
+    "label": "Undefined component"}], "roles": []}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "Complete composition table, exact extracted row", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "Casamino acid\n6\ng"}], "decision": "unsupported", "rationale": "The
+    literal source mass and supplied chemical form agree, but neither source states
+    a final volume. The existing G_PER_L assertion is therefore unsupported as a final-medium
+    rate. Preserve this source mass as a batch amount; do not silently replace it
+    with an assumed denominator.", "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "6", "unit":
+    "G_PER_L"}, "decision": "unsupported", "rationale": "The literal source mass and
+    supplied chemical form agree, but neither source states a final volume. The existing
+    G_PER_L assertion is therefore unsupported as a final-medium rate. Preserve this
+    source mass as a batch amount; do not silently replace it with an assumed denominator."},
+    {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml", "field_path": "ingredients[7].concentration",
+    "stored_value": {"value": "6", "unit": "G_PER_L"}, "decision": "unsupported",
+    "rationale": "The literal source mass and supplied chemical form agree, but neither
+    source states a final volume. The existing G_PER_L assertion is therefore unsupported
+    as a final-medium rate. Preserve this source mass as a batch amount; do not silently
+    replace it with an assumed denominator."}]}, {"quantity_id": "q9", "topic": "Source
+    pH 7.3", "source": [{"evidence_id": "togo1920", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1920",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/togo1920.bin", "raw_sha256": "fdd761138e7fbdfe2d7c2d360d901e8871fd1b768fffd74c9539cf5e570fc752",
+    "locator": "$.comments[0]", "accessed_at": "2026-10-28T11:30:48.556422Z", "quote":
+    "{\n      \"paragraph_index\": 2,\n      \"comment\": \"pH 7.3\"\n    }", "exact_decoded_object":
+    {"paragraph_index": 2, "comment": "pH 7.3"}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "nbrc1184-old", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1184",
+    "raw_path": "REVIEW_WORK/batch065/source01-03/nbrc1184-old.bin", "raw_sha256":
+    "6eb4885b52b7bd2cb7a9db734e7bd88dde5b9565e9cf0478f47d97385c88a37d", "locator":
+    "pH following composition table", "accessed_at": "2026-10-28T11:30:49.081480Z",
+    "quote": "pH 7.3"}], "decision": "add", "rationale": "Add the explicitly stated
+    pH only; no buffer amount, adjustment reagent or incubation condition is given.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/CMYC_agar.yaml", "field_path":
+    "ph_value", "stored_value": null, "decision": "add", "rationale": "Primary source
+    pH is absent from this record; preserve its source scope without inventing an
+    adjustment or sterilization stage.", "missing": true}, {"path": "data/normalized_yaml/bacterial/cmyc_agar.yaml",
+    "field_path": "ph_value", "stored_value": null, "decision": "add", "rationale":
+    "Primary source pH is absent from this record; preserve its source scope without
+    inventing an adjustment or sterilization stage.", "missing": true}]}]'
+- assessment_id: a4
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: supported
+  summary: Every asserted chemical accession resolves to the current OLS object with
+    matching supplied form and canonical label, including corrected magnesium heptahydrate
+    and iron(II) sulfate heptahydrate. Exact MIM identifier/ontology row unions retain
+    label-specific MAPPED and REJECTED statuses rather than treating all rows as endorsement.
+    Yeast extract and casamino acid have no asserted chemical ID; their mixture exclusions
+    are not invalid-ID findings. The iron primary ID lacks a secondary MIM slot, a
+    bounded linkage gap with no unsupported replacement proposed.
+  target_ids:
+  - CultureMech:008499
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: Current source bytes, complete histories and scoped historical reports
+    were read. Missing claim-level linkage and any malformed historical metadata are
+    distinguished from authenticated source bytes; originals remain append-only.
+  target_ids:
+  - CultureMech:008499
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a6
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:008499
+  evidence_ids:
+  - local-target
+- assessment_id: a7
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:008499
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-008499-restore-solvent-volume-and-qualify-batch-mass-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore solvent volume and qualify batch mass basis
+  description: Both layers store the source 1 L water input as 1 G_PER_L. The other
+    seven numbers match source gram amounts but are encoded as final-medium rates
+    without an explicit final-volume statement. Source water is an input, not proof
+    of final volume. Retain all masses and supplied forms, represent the water volume
+    correctly, and leave any final-medium rate unresolved until its basis is explicitly
+    documented.
+  target_ids:
+  - CultureMech:008499
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[1].concentration
+  - ingredients[2].concentration
+  - ingredients[3].concentration
+  - ingredients[4].concentration
+  - ingredients[5].concentration
+  - ingredients[6].concentration
+  - ingredients[7].concentration
+  evidence_ids:
+  - nbrc1184-old
+  - togo1920
+  - quantities
+  - writer-togo
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: 'Major: generalized native unit-consistency rule applied to
+    a volume encoded as mass rate and to unsupported final-volume bases; no numeric
+    source mass is disputed.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-008499-add-the-explicitly-stated-source-ph
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Add the explicitly stated source pH
+  description: The NBRC page and TOGO meta.ph/comment both state pH 7.3, but neither
+    the target nor maintained owner contains ph_value or preparation context for that
+    statement. Current TOGO _extract_ph reads a different JSON level.
+  target_ids:
+  - CultureMech:008499
+  field_paths:
+  - ph_value
+  - evidence
+  evidence_ids:
+  - nbrc1184-old
+  - togo1920
+  - quantities
+  - writer-togo
+  rule_id: custom-source-ph-omission
+  native_severity: P3
+  normalization_reason: 'Minor: bounded omission of one explicitly stated source pH;
+    custom rule avoids pretending an absent pH is a failure of unrelated native checks.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-008499-attach-scoped-primary-claims-beyond-source-notes
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Attach scoped primary claims beyond source notes
+  description: Source URLs and import history are present, but the quantities and
+    pH have no claim-level source support attached. The two October screening reports
+    explicitly performed zero source checks; their unsupported dispositions are historical
+    triage, not amount authentication.
+  target_ids:
+  - CultureMech:008499
+  field_paths:
+  - references
+  - evidence
+  - ingredients[0].evidence
+  - ingredients[1].evidence
+  - ingredients[2].evidence
+  - ingredients[3].evidence
+  - ingredients[4].evidence
+  - ingredients[5].evidence
+  - ingredients[6].evidence
+  - ingredients[7].evidence
+  evidence_ids:
+  - history
+  - historical-reader
+  - nbrc1184-old
+  - togo1920
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: 'Minor normalization of the native missing-citation rule:
+    source URLs are present as notes, but claim-level traceability is absent across
+    this recipe.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Correct the maintained water-unit error using the exact 1 L source
+    input. Preserve the seven supported batch masses and label their final-medium
+    rates unsupported until a defensible denominator is available. Do not infer final
+    volume or convert water using an assumed density; regenerate after owner curation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008499
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Add the source pH 7.3 with root evidence and an exact source locator.
+    Do not invent when it was measured, adjustment reagents, sterilization conditions
+    or a temperature.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008499
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Add the successful primary reference and exact batch-quantity and pH
+    claims at schema-supported evidence locations. Keep the failed alternate route
+    separate and preserve all original history; append fresh evidence context without
+    rewriting old events.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008499
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/cmyc_agar.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Neither primary source nor TOGO states an explicit final volume or sterilization
+  procedure. Unchanged mass digits do not authenticate local G_PER_L denominators.
+- The catalogue-linked www.nbrc.nite.go.jp route failed TLS verification. The exact
+  www.nite.go.jp primary URL recorded in the owner succeeded and supplied the complete
+  recipe, so this alternate-route failure does not leave recipe identity unresolved.
+- Current ontology/catalog membership and present writer behavior do not authenticate
+  historical executions. Native reference validation checked zero references. No organism-specific
+  growth assertion is added.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
+```
