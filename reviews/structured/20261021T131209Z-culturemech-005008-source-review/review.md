@@ -1,0 +1,14004 @@
+# Source and formulation review: alkaline_nutrient_agar (CultureMech:005008)
+
+- Review: 20261021T131209Z-culturemech-005008-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T13:04:53Z
+- Finished UTC: 2026-10-21T13:12:09Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The base DSMZ 31 recipe is recoverable through DSMZ 1 and its separate sesquicarbonate stock, but the target flattens stock strengths into main ingredients and omits stock/water/preparation context. All 53 contributors are retained. The 51 strain-labelled KOMODO variants have unresolved historical formulations; copied ingredients and source-duplicate flags cannot establish their equivalence.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 212; batch 022 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-one task batches contain 210 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 213 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005008 | data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml | generated | alkaline_nutrient_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005008 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:005008 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch022/212/strict.tsv |
+| validate-terms | passed | True | CultureMech:005008 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:005008 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:005008 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodo31_16130 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_16130 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_23228 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_23228 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_5271 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_5271 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_6716 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_6716 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8714 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8714 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8716 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8716 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8717 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8717 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8719 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8719 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8720 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8720 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8721 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8721 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8722 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8722 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8723 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8723 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8724 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8724 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_8725 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_8725 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9473 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9473 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9474 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9474 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9475 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9475 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9476 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9476 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9477 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9477 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9478 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9478 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9479 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9479 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9480 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9480 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9481 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9481 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9482 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9482 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9706 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9706 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9711 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9711 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9712 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9712 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9713 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9713 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9714 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9714 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9725 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9725 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9726 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9726 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9727 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9727 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9728 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9728 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9729 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9729 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9730 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9730 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9731 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9731 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9763 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9763 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9768 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9768 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9778 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9778 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9779 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9779 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9780 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9780 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9781 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9781 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9782 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9782 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9783 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9783 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9784 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9784 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9785 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9785 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9813 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9813 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9818 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9818 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9822 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9822 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9823 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9823 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31_9881 | unavailable | True | CultureMech:005008 | Exact historical formulation for KOMODO 31_9881 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| Exact source content access: komodo31 | unavailable | False | CultureMech:005008 | Historical KOMODO 31 detail is unavailable after preserved HTTP 403. The exact base catalogue row and current DSMZ 31 primary/provider formulation resolve; this optional base-detail limitation is separate from the 51 required variant gaps. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:005008.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:005008.
+
+69 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "claim": "Base Peptone",
+    "decision": "evidence_only",
+    "stage": "Current base DSMZ 31 main medium, inherited from DSMZ 1; optional agar remains conditional",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": "Peptone 5.0 g",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 exact basal ingredient row",
+        "exact_source_quote": "Peptone 5.0 g",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      },
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "The three base-layer values match explicit provider g_l on its 1000 mL basis, but no layer has attached amount evidence. Primary prints batch grams. For the generated target this support is confined to its base recipe, not its 51 variant synonyms. Agar conditional wording already exists and is retained."
+  },
+  {
+    "decision_id": "q2",
+    "claim": "Base Meat extract",
+    "decision": "evidence_only",
+    "stage": "Current base DSMZ 31 main medium, inherited from DSMZ 1; optional agar remains conditional",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": "Meat extract 3.0 g",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 exact basal ingredient row",
+        "exact_source_quote": "Meat extract 3.0 g",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      },
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Meat extract\",\n                        \"compound_id\": 2,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "The three base-layer values match explicit provider g_l on its 1000 mL basis, but no layer has attached amount evidence. Primary prints batch grams. For the generated target this support is confined to its base recipe, not its 51 variant synonyms. Agar conditional wording already exists and is retained."
+  },
+  {
+    "decision_id": "q3",
+    "claim": "Base Agar",
+    "decision": "evidence_only",
+    "stage": "Current base DSMZ 31 main medium, inherited from DSMZ 1; optional agar remains conditional",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": "Agar, if necessary 15.0 g",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 exact basal ingredient row",
+        "exact_source_quote": "Agar, if necessary 15.0 g",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      },
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"if necessary\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "The three base-layer values match explicit provider g_l on its 1000 mL basis, but no layer has attached amount evidence. Primary prints batch grams. For the generated target this support is confined to its base recipe, not its 51 variant synonyms. Agar conditional wording already exists and is retained."
+  },
+  {
+    "decision_id": "q4",
+    "claim": "NaHCO3 stock strength",
+    "decision": "correct",
+    "stage": "Separate Na-sesquicarbonate stock, not main medium",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": "NaHCO3 4.2 g; stock water 100 mL",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 Na-sesquicarbonate solution ingredient row",
+        "exact_source_quote": "NaHCO3 4.2 g",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 stock water row",
+        "exact_source_quote": "Distilled water 100.0 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 4.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 42,\n                        \"mmol_l\": 499.958,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "Both local 42/53 G_PER_L values are provider-declared stock strengths on 100 mL stock basis, falsely exposed as direct main ingredients. Move the supported source claims into a separate stock representation with exact evidence. No final-medium concentration is calculated from ambiguous primary receiving volume."
+  },
+  {
+    "decision_id": "q5",
+    "claim": "Na2CO3 anhydrous stock strength",
+    "decision": "correct",
+    "stage": "Separate Na-sesquicarbonate stock, not main medium",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": "Na2CO3 anhydrous 5.3 g; stock water 100 mL",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 Na-sesquicarbonate solution ingredient row",
+        "exact_source_quote": "Na2CO3 anhydrous 5.3 g",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 stock water row",
+        "exact_source_quote": "Distilled water 100.0 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2CO3 anhydrous\",\n                        \"compound_id\": 69,\n                        \"amount\": 5.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 53,\n                        \"mmol_l\": 500.057,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "Both local 42/53 G_PER_L values are provider-declared stock strengths on 100 mL stock basis, falsely exposed as direct main ingredients. Move the supported source claims into a separate stock representation with exact evidence. No final-medium concentration is calculated from ambiguous primary receiving volume."
+  },
+  {
+    "decision_id": "q6",
+    "claim": "Primary inherited basal water",
+    "decision": "add",
+    "stage": "DSMZ 1 basal batch before alkaline addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "Peptone",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Meat extract",
+            "concentration": {
+              "value": "3",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "notes": " (if necessary)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "NaHCO3",
+            "term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            },
+            "concentration": {
+              "value": "42",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            }
+          },
+          {
+            "preferred_term": "Na2CO3 anhydrous",
+            "term": {
+              "id": "CHEBI:29377",
+              "label": "sodium carbonate"
+            },
+            "concentration": {
+              "value": "53",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:29377",
+              "label": "sodium carbonate"
+            }
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "Peptone",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Meat extract",
+            "concentration": {
+              "value": "3",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "notes": " (if necessary)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "NaHCO3",
+            "term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            },
+            "concentration": {
+              "value": "42",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            }
+          },
+          {
+            "preferred_term": "Na2CO3 anhydrous",
+            "term": {
+              "id": "CHEBI:29377",
+              "label": "sodium carbonate"
+            },
+            "concentration": {
+              "value": "53",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:29377",
+              "label": "sodium carbonate"
+            }
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "Peptone",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Meat extract",
+            "concentration": {
+              "value": "3",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "notes": " (if necessary)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "NaHCO3",
+            "term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            },
+            "concentration": {
+              "value": "42",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32139",
+              "label": "sodium hydrogencarbonate"
+            }
+          },
+          {
+            "preferred_term": "Na2CO3 anhydrous",
+            "term": {
+              "id": "CHEBI:29377",
+              "label": "sodium carbonate"
+            },
+            "concentration": {
+              "value": "53",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:29377",
+              "label": "sodium carbonate"
+            }
+          }
+        ]
+      }
+    ],
+    "source_amount": "1000mL",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 basal water row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      }
+    ],
+    "explanation": "Water is absent as an ingredient/preparation volume in all three base layers. Preserve this inherited source stage separately from provider main900 mL; do not sum two alternative descriptions."
+  },
+  {
+    "decision_id": "q7",
+    "claim": "Provider main water",
+    "decision": "add",
+    "stage": "MediaDive31 main 5552, declared 1000 mL basis",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10 ml)  to achieve a pH of 9.7"
+          }
+        ]
+      }
+    ],
+    "source_amount": "900 mL",
+    "source_snippets": [
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 900,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "Provider main water is900 mL with 100 mL stock. Preserve source version and denominator without relabelling primary basal 1000 mL as an error or measured final volume."
+  },
+  {
+    "decision_id": "q8",
+    "claim": "Stock water",
+    "decision": "add",
+    "stage": "Separate stock 46 preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_amount": "100mL",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 stock water row",
+        "exact_source_quote": "Distilled water 100.0 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "Represent stock water independently of main water. No extra water dose or final-volume makeup is inferred."
+  },
+  {
+    "decision_id": "q9",
+    "claim": "Stock source concentration label",
+    "decision": "evidence_only",
+    "stage": "Existing DSMZ owner preparation[1]",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10 ml)  to achieve a pH of 9.7"
+      }
+    ],
+    "source_amount": "1M label, not 1 M of each constituent",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence first line",
+        "exact_source_quote": "Same as medium 1. After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence second line",
+        "exact_source_quote": "in 10 ml) to achieve a pH of 9.7.",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      }
+    ],
+    "explanation": "Exact amount/stage is already retained in the DSMZ owner, without attached evidence. The printed mixture label must not become 1 M for each salt, and the ratio must not be silently resolved into an independently established final denominator."
+  },
+  {
+    "decision_id": "q10",
+    "claim": "Stock source concentration label missing generated/KOMODO context",
+    "decision": "add",
+    "stage": "Base alkaline stock after sterilization",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "source_amount": "1M label, not 1 M of each constituent",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence first line",
+        "exact_source_quote": "Same as medium 1. After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence second line",
+        "exact_source_quote": "in 10 ml) to achieve a pH of 9.7.",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      }
+    ],
+    "explanation": "Restore the source wording for the base recipe only; do not authenticate historical variant preparation or calculate unqualified final strength."
+  },
+  {
+    "decision_id": "q11",
+    "claim": "Stock addition source ratio",
+    "decision": "evidence_only",
+    "stage": "Existing DSMZ owner preparation[1]",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10 ml)  to achieve a pH of 9.7"
+      }
+    ],
+    "source_amount": "1mL in10mL; denominator convention unresolved",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence first line",
+        "exact_source_quote": "Same as medium 1. After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence second line",
+        "exact_source_quote": "in 10 ml) to achieve a pH of 9.7.",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      }
+    ],
+    "explanation": "Exact amount/stage is already retained in the DSMZ owner, without attached evidence. The printed mixture label must not become 1 M for each salt, and the ratio must not be silently resolved into an independently established final denominator."
+  },
+  {
+    "decision_id": "q12",
+    "claim": "Stock addition source ratio missing generated/KOMODO context",
+    "decision": "add",
+    "stage": "Base alkaline stock after sterilization",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "source_amount": "1mL in10mL; denominator convention unresolved",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence first line",
+        "exact_source_quote": "Same as medium 1. After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      },
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 alkaline-addition sentence second line",
+        "exact_source_quote": "in 10 ml) to achieve a pH of 9.7.",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      }
+    ],
+    "explanation": "Restore the source wording for the base recipe only; do not authenticate historical variant preparation or calculate unqualified final strength."
+  },
+  {
+    "decision_id": "q13",
+    "claim": "Provider stock dose",
+    "decision": "add",
+    "stage": "MediaDive31 main 5552 only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_amount": "100mL stock 46 in declared 1000 mL main recipe",
+    "source_snippets": [
+      {
+        "source_key": "mediadive31api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/31",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Na-sesquicarbonate solution\",\n                        \"solution_id\": 46,\n                        \"amount\": 100,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463"
+      }
+    ],
+    "explanation": "Provider explicitly supplies this dose. Record separately from the primary 1 mL-in-10 mL statement; neither establishes measured final volume."
+  },
+  {
+    "decision_id": "q14",
+    "claim": "Base final pH",
+    "decision": "evidence_only",
+    "stage": "Base alkaline medium after stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": "9.7",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 final alkaline pH sentence",
+        "exact_source_quote": "in 10 ml) to achieve a pH of 9.7.",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      }
+    ],
+    "explanation": "All three base-layer scalar values match the source but lack attached evidence. This does not validate pH 9.7 for any of the 51 historical variants."
+  },
+  {
+    "decision_id": "q15",
+    "claim": "Inherited basal pH before alkaline addition",
+    "decision": "add",
+    "stage": "DSMZ 1 basal stage only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10 ml)  to achieve a pH of 9.7"
+          }
+        ]
+      }
+    ],
+    "source_amount": "7.0",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 basal adjustment sentence",
+        "exact_source_quote": "Adjust pH to 7.0.",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      }
+    ],
+    "explanation": "Retain only as an inherited basal-stage instruction when documenting the source sequence; never replace final alkaline 9.7 with 7.0."
+  },
+  {
+    "decision_id": "q16",
+    "claim": "Conditional manganese addition",
+    "decision": "evidence_only",
+    "stage": "DSMZ 1 Bacillus-specific conditional branch inherited in provider31 steps",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation."
+      }
+    ],
+    "source_amount": "10mg MnSO4 monohydrate; no universal supplementation",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 conditional footnote first line",
+        "exact_source_quote": "Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      },
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 conditional footnote second line",
+        "exact_source_quote": "recommended for sporulation.",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      }
+    ],
+    "explanation": "The DSMZ owner already retains this exact condition; generated/KOMODO base lacks it. Keep the source recommendation conditional, without asserting growth or transferring it to all 51 variants or into the unconditional ingredient list."
+  },
+  {
+    "decision_id": "q17",
+    "claim": "Conditional manganese addition",
+    "decision": "add",
+    "stage": "DSMZ 1 Bacillus-specific conditional branch inherited in provider31 steps",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "source_amount": "10mg MnSO4 monohydrate; no universal supplementation",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 conditional footnote first line",
+        "exact_source_quote": "Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      },
+      {
+        "source_key": "dsmz1",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf",
+        "source_locator": "Page 1 conditional footnote second line",
+        "exact_source_quote": "recommended for sporulation.",
+        "snapshot_sha256": "95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f",
+        "parsed_text_sha256": "573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e"
+      }
+    ],
+    "explanation": "The DSMZ owner already retains this exact condition; generated/KOMODO base lacks it. Keep the source recommendation conditional, without asserting growth or transferring it to all 51 variants or into the unconditional ingredient list."
+  },
+  {
+    "decision_id": "q18",
+    "claim": "Sterilization cycle",
+    "decision": "not_quantified",
+    "stage": "Primary31 basal sterilization then sterile stock addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      }
+    ],
+    "source_amount": "No temperature/time or stock sterilization method specified",
+    "source_snippets": [
+      {
+        "source_key": "dsmz31",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf",
+        "source_locator": "Page 1 after-sterilization sentence",
+        "exact_source_quote": "Same as medium 1. After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml",
+        "snapshot_sha256": "7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705",
+        "parsed_text_sha256": "6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc"
+      }
+    ],
+    "explanation": "The provider equipment object names Autoclave, but the primary supplies no numeric cycle. Do not borrow a JCM default or invent a stock method."
+  },
+  {
+    "decision_id": "q19",
+    "claim": "Historical 31_16130 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_16130 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_16130' &gt;31_16130&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 16130&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q20",
+    "claim": "Historical 31_23228 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_23228 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_23228' &gt;31_23228&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 23228&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q21",
+    "claim": "Historical 31_5271 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_5271 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_5271' &gt;31_5271&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 5271&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q22",
+    "claim": "Historical 31_6716 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_6716 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_6716' &gt;31_6716&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 6716&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q23",
+    "claim": "Historical 31_8714 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8714 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8714' &gt;31_8714&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8714&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q24",
+    "claim": "Historical 31_8716 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8716 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8716' &gt;31_8716&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8716&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q25",
+    "claim": "Historical 31_8717 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8717 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8717' &gt;31_8717&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8717&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q26",
+    "claim": "Historical 31_8719 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8719 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8719' &gt;31_8719&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8719&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q27",
+    "claim": "Historical 31_8720 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8720 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8720' &gt;31_8720&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8720&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q28",
+    "claim": "Historical 31_8721 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8721 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8721' &gt;31_8721&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8721&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q29",
+    "claim": "Historical 31_8722 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8722 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8722' &gt;31_8722&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8722&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q30",
+    "claim": "Historical 31_8723 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8723 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8723' &gt;31_8723&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8723&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q31",
+    "claim": "Historical 31_8724 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8724 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8724' &gt;31_8724&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8724&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q32",
+    "claim": "Historical 31_8725 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_8725 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8725' &gt;31_8725&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 8725&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q33",
+    "claim": "Historical 31_9473 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9473 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9473' &gt;31_9473&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9473&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q34",
+    "claim": "Historical 31_9474 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9474 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9474' &gt;31_9474&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9474&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q35",
+    "claim": "Historical 31_9475 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9475 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9475' &gt;31_9475&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9475&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q36",
+    "claim": "Historical 31_9476 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9476 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9476' &gt;31_9476&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9476&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q37",
+    "claim": "Historical 31_9477 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9477 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9477' &gt;31_9477&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9477&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q38",
+    "claim": "Historical 31_9478 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9478 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9478' &gt;31_9478&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9478&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q39",
+    "claim": "Historical 31_9479 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9479 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9479' &gt;31_9479&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9479&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q40",
+    "claim": "Historical 31_9480 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9480 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9480' &gt;31_9480&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9480&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q41",
+    "claim": "Historical 31_9481 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9481 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9481' &gt;31_9481&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9481&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q42",
+    "claim": "Historical 31_9482 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9482 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9482' &gt;31_9482&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9482&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q43",
+    "claim": "Historical 31_9706 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9706 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9706' &gt;31_9706&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9706&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q44",
+    "claim": "Historical 31_9711 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9711 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9711' &gt;31_9711&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9711&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q45",
+    "claim": "Historical 31_9712 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9712 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9712' &gt;31_9712&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9712&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q46",
+    "claim": "Historical 31_9713 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9713 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9713' &gt;31_9713&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9713&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q47",
+    "claim": "Historical 31_9714 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9714 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9714' &gt;31_9714&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9714&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q48",
+    "claim": "Historical 31_9725 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9725 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9725' &gt;31_9725&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9725&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q49",
+    "claim": "Historical 31_9726 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9726 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9726' &gt;31_9726&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9726&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q50",
+    "claim": "Historical 31_9727 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9727 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9727' &gt;31_9727&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9727&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q51",
+    "claim": "Historical 31_9728 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9728 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9728' &gt;31_9728&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9728&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q52",
+    "claim": "Historical 31_9729 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9729 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9729' &gt;31_9729&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9729&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q53",
+    "claim": "Historical 31_9730 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9730 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9730' &gt;31_9730&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9730&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q54",
+    "claim": "Historical 31_9731 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9731 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9731' &gt;31_9731&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9731&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q55",
+    "claim": "Historical 31_9763 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9763 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9763' &gt;31_9763&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9763&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q56",
+    "claim": "Historical 31_9768 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9768 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9768' &gt;31_9768&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9768&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q57",
+    "claim": "Historical 31_9778 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9778 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9778' &gt;31_9778&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9778&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q58",
+    "claim": "Historical 31_9779 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9779 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9779' &gt;31_9779&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9779&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q59",
+    "claim": "Historical 31_9780 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9780 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9780' &gt;31_9780&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9780&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q60",
+    "claim": "Historical 31_9781 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9781 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9781' &gt;31_9781&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9781&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q61",
+    "claim": "Historical 31_9782 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9782 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9782' &gt;31_9782&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9782&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q62",
+    "claim": "Historical 31_9783 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9783 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9783' &gt;31_9783&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9783&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q63",
+    "claim": "Historical 31_9784 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9784 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9784' &gt;31_9784&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9784&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q64",
+    "claim": "Historical 31_9785 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9785 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9785' &gt;31_9785&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9785&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q65",
+    "claim": "Historical 31_9813 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9813 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9813' &gt;31_9813&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9813&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q66",
+    "claim": "Historical 31_9818 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9818 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9818' &gt;31_9818&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9818&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q67",
+    "claim": "Historical 31_9822 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9822 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9822' &gt;31_9822&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9822&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q68",
+    "claim": "Historical 31_9823 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9823 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9823' &gt;31_9823&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9823&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  },
+  {
+    "decision_id": "q69",
+    "claim": "Historical 31_9881 complete formulation and pH",
+    "decision": "unsupported",
+    "stage": "Exact strain-labelled variant; current copied base signature is not scientific verification",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "42",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+        "field_path": "ph_value",
+        "stored": 9.7
+      }
+    ],
+    "source_amount": {
+      "stored_claims": {
+        "Peptone": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "Meat extract": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "Agar": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "NaHCO3": {
+          "value": "42",
+          "unit": "G_PER_L"
+        },
+        "Na2CO3 anhydrous": {
+          "value": "53",
+          "unit": "G_PER_L"
+        }
+      },
+      "stored_ph": 9.7,
+      "source_amounts": "Unavailable exact historical formulation; catalogue PH Info is null"
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "Exact first-cell 31_9881 catalogue row; header separately inspected",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9881' &gt;31_9881&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 31 MODIFIED FOR DSM 9881&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "Every present amount and pH in this owner remains unresolved for its historical variant after HTTP 403. The catalogue confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH is missing metadata, not proof that this variant had a different pH. Retain original bytes pending exact source evidence; do not apply base repairs as inferred variant corrections."
+  }
+]
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: supported. Targets: CultureMech:005008.
+
+3 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 3/5 primary and 3/5 secondary instances; all asserted secondary keys have exact pinned MIM rows. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 5: primary 60.00%; secondary 60.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:005008.
+
+325 timestamp instances inspected; 106 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Full contributor identity versus formulation equivalence
+
+identity: concern. Targets: CultureMech:005008.
+
+All 53 exact maintained owners and every internal relationship path/ID resolve. Base KOMODO 31 and DSMZ 31 share an explicit accession mapping. The 51 strain-labelled accessions have no accessible historical formulations, so synonymous/source-duplicate declarations exceed established recipe identity. Complete merged_from retains membership despite truncated MERGED_RECIPES.source.
+
+### Exact source forms and mixture boundaries
+
+grounding: supported. Targets: CultureMech:005008.
+
+Agar remains an undefined polymer mixture; peptone and meat extract are not assigned invented pure-molecule terms. CHEBI32139 represents sodium hydrogencarbonate and CHEBI29377 matches explicitly anhydrous sodium carbonate. Primary/source stock quantities are separate from ontology validity. Context-only DSMZ 1 parent secondary/ATCC/KG assertions do not transfer to this target.
+
+### Physical state, generic application and catalogue oxygen flag
+
+scope: concern. Targets: CultureMech:005008.
+
+Complex/undefined is supported for the base. SOLID_AGAR describes its conditional agar branch; it does not erase the if-necessary condition. Bacterial filing and generic cultivation are not strain-level growth evidence. Is Aerobic=false is corroborated catalogue metadata, not physiological proof. Variant-specific state and conditions remain unresolved.
+
+### Maintained source repairs and generated merge scope
+
+ownership: concern. Targets: CultureMech:005008.
+
+The DSMZ owner alone retains two preparation statements. Target and KOMODO base omit them, while all 54 layers carry flattened carbonate strengths. Correct the supported base source first, retain all 51 variant uncertainties, and reassess merge/source-duplicate relationships before any separately authorized regeneration.
+
+## Findings
+
+### f1: Stock strengths are exposed as main-medium ingredients
+
+blocker / open / confirmed; issue key: cm005008-flattened-stock.
+
+The base target and owners list 42 g/L bicarbonate and 53 g/L anhydrous carbonate as direct ingredients, whereas primary 31 defines 4.2 g and 5.3 g in a separate 100 mL stock. Its dose is separate and the primary receiving-volume convention remains ambiguous. The historical variant copies are not independently verified.
+
+### f2: Fifty-one historical variants are treated as source duplicates
+
+major / open / confirmed; issue key: cm005008-variant-equivalence.
+
+All 51 exact KOMODO variant rows identify modified media but provide null pH and no retrieved formulation detail. Current copied base signatures and resolver history do not establish historical formula or pH equivalence. Synonyms and SOURCE_DUPLICATE assertions conceal unresolved differences.
+
+### f3: Source water and stock preparation stages are incomplete
+
+major / open / confirmed; issue key: cm005008-water-preparation.
+
+No layer represents base/stock water or structured stock addition. The DSMZ owner retains the conditional manganese and post-sterilization ratio, but the target/KOMODO base drops them. Primary basal 1000 mL, provider main900 mL and stock100mL are source/stage-specific, not interchangeable totals.
+
+### f4: Supported base quantities have no attached narrow evidence
+
+minor / open / confirmed; issue key: cm005008-source-evidence.
+
+Correct base peptone/meat/conditional agar and final pH lack claim-level snippets. Source links and exact catalogue IDs support provenance but not all quantities or 51 variant formulas.
+
+### f5: Malformed timestamps and truncated merge source obscure provenance
+
+minor / open / confirmed; issue key: cm005008-history-provenance.
+
+Target and KOMODO owners retain malformed literal .fZ import timestamps and timezone-naive resolver times. The target MERGED_RECIPES source is truncated even though complete merged_from recovers all 53 members. Neither date defect nor source truncation should be silently rewritten.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore a scoped base stock representation and exact source dose/basis without inferring variant concentrations or an unqualified final-medium dilution; reassess merge boundaries.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain all distinct variant accessions and unresolved claims; obtain exact historical formulations before approving synonymous equivalence or propagating base curation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Restore source-specific water and preparation boundaries in supported base inputs; preserve the already-correct DSMZ preparation, conditional branch and unspecified sterilization cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach exact source evidence to supported base amounts and stages, retaining unresolved variant amounts rather than labeling them verified.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve old events and append an explicit provenance clarification with the complete member list; correct future writers rather than manufacturing historical timestamps.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-2 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-3 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-4 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-5 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-6 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-7 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-8 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-9 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-10 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-11 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-12 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-13 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-14 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-15 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-16 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-17 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-18 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-19 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-20 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-21 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-22 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-23 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-24 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-25 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-26 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-27 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-28 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-29 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-30 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-31 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-32 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-33 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-34 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-35 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-36 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-37 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-38 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-39 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-40 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-41 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-42 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-43 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-44 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-45 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-46 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-47 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-48 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-49 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-50 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-51 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-52 | data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch022/212/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch022/212/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml:1:id: CultureMech:005008<br>./data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml:1:id: CultureMech:005008<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch022/source-preflight-bound/212/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 62 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch022/source-preflight-bound/212/evidence-context-original.json; Complete frozen source context compared with fresh native input hashes | context_only | Every contextual input hash matches the fresh inspection at the same base. Preflight remains provisional provenance; this review supplies its own single-target judgment. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf; Page 1, complete recipe and Na-sesquicarbonate subsection; PDF image read | supports | Primary inherits medium 1, then adds sterile stock after sterilization to pH 9.7. The literal 1 mL in 10 mL ratio has an unresolved receiving-volume convention; keep it unaltered. |
+| parent-primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf; Page 1 whole basal recipe and conditional footnote; PDF image read | supports | Transferred scope is basal ingredients, conditional agar, water and staged pH; the Bacillus manganese note is explicitly conditional. No parent accession, KG or unrelated variant assertion transfers. |
+| provider | https://mediadive.dsmz.de/rest/medium/31; data.medium and complete solutions[0:2] with all recipe rows/steps | supports | Provider main 5552 has a 1000 mL declared basis,900 mL water and 100 mL stock 46. Stock46 has 100 mL basis and 42/53 g/L constituents. These distinct stages are not directly comparable to main-medium concentrations. |
+| stock-endpoint | https://mediadive.dsmz.de/rest/solution/46; Complete exact solution46 endpoint, recipe[0:3] and volume | supports | Exact stock endpoint independently agrees with medium 31 stock scientific fields; no historical variant equivalence follows. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Full seven-column header and exact first-cell 31 plus 51 subordinate accession rows | supports | Catalogue explicitly identifies all 52 KOMODO accessions. Base pH is 9.7; every variant PH Info is null. Is Aerobic=false is catalogue metadata only, not physiological evidence. |
+| komodo31_16130-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_16130; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_16130 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_23228-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_23228; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_23228 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_5271-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_5271; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_5271 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_6716-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_6716; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_6716 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8714-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8714; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8714 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8716-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8716; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8716 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8717-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8717; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8717 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8719-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8719; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8719 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8720-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8720; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8720 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8721-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8721; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8721 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8722-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8722; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8722 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8723-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8723; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8723 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8724-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8724; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8724 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_8725-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8725; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_8725 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9473-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9473; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9473 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9474-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9474; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9474 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9475-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9475; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9475 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9476-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9476; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9476 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9477-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9477; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9477 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9478-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9478; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9478 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9479-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9479; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9479 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9480-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9480; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9480 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9481-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9481; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9481 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9482-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9482; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9482 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9706-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9706; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9706 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9711-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9711; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9711 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9712-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9712; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9712 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9713-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9713; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9713 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9714-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9714; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9714 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9725-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9725; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9725 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9726-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9726; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9726 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9727-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9727; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9727 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9728-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9728; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9728 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9729-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9729; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9729 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9730-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9730; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9730 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9731-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9731; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9731 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9763-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9763; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9763 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9768-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9768; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9768 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9778-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9778; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9778 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9779-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9779; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9779 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9780-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9780; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9780 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9781-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9781; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9781 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9782-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9782; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9782 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9783-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9783; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9783 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9784-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9784; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9784 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9785-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9785; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9785 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9813-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9813; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9813 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9818-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9818; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9818 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9822-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9822; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9822 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9823-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9823; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9823 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31_9881-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9881; Preserved exact public retrieval result | context_only | Exact historical formulation for KOMODO 31_9881 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated. |
+| komodo31-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31; Preserved exact public retrieval result | context_only | Historical KOMODO 31 detail is unavailable after preserved HTTP 403. The exact base catalogue row and current DSMZ 31 primary/provider formulation resolve; this optional base-detail limitation is separate from the 51 required variant gaps. |
+| relations | data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; maintained inputs; Every parent_media and variant_children object, plus complete merged_from | supports | [{"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml", "id": "CultureMech:001421", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[0]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml", "id": "CultureMech:004887", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[1]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml", "id": "CultureMech:004888", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[2]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml", "id": "CultureMech:004889", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[3]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml", "id": "CultureMech:004890", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[4]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml", "id": "CultureMech:004891", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[5]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml", "id": "CultureMech:004892", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[6]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml", "id": "CultureMech:004893", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[7]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml", "id": "CultureMech:004894", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[8]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml", "id": "CultureMech:004895", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[9]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml", "id": "CultureMech:004896", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[10]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml", "id": "CultureMech:004897", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[11]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml", "id": "CultureMech:004898", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[12]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml", "id": "CultureMech:004899", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[13]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml", "id": "CultureMech:004900", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[14]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml", "id": "CultureMech:004901", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[15]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml", "id": "CultureMech:004902", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[16]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml", "id": "CultureMech:004903", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[17]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml", "id": "CultureMech:004904", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[18]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml", "id": "CultureMech:004905", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[19]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml", "id": "CultureMech:004906", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[20]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml", "id": "CultureMech:004907", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[21]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml", "id": "CultureMech:004908", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[22]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml", "id": "CultureMech:004909", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[23]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml", "id": "CultureMech:004910", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[24]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml", "id": "CultureMech:004911", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[25]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml", "id": "CultureMech:004912", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[26]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml", "id": "CultureMech:004913", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[27]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml", "id": "CultureMech:004914", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[28]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml", "id": "CultureMech:004915", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[29]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml", "id": "CultureMech:004916", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[30]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml", "id": "CultureMech:004917", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[31]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml", "id": "CultureMech:004918", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[32]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml", "id": "CultureMech:004919", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[33]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml", "id": "CultureMech:004920", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[34]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml", "id": "CultureMech:004921", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[35]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml", "id": "CultureMech:004922", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[36]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml", "id": "CultureMech:004923", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[37]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml", "id": "CultureMech:004924", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[38]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml", "id": "CultureMech:004925", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[39]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml", "id": "CultureMech:004926", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[40]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml", "id": "CultureMech:004927", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[41]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml", "id": "CultureMech:004928", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[42]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml", "id": "CultureMech:004929", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[43]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml", "id": "CultureMech:004930", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[44]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml", "id": "CultureMech:004931", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[45]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml", "id": "CultureMech:004932", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[46]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml", "id": "CultureMech:004933", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[47]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml", "id": "CultureMech:004934", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[48]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml", "id": "CultureMech:004935", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[49]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml", "id": "CultureMech:004936", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[50]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml", "id": "CultureMech:004937", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml", "id": "CultureMech:001421", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[0]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml", "id": "CultureMech:004887", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[1]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml", "id": "CultureMech:004888", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[2]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml", "id": "CultureMech:004889", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[3]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml", "id": "CultureMech:004890", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[4]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml", "id": "CultureMech:004891", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[5]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml", "id": "CultureMech:004892", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[6]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml", "id": "CultureMech:004893", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[7]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml", "id": "CultureMech:004894", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[8]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml", "id": "CultureMech:004895", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[9]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml", "id": "CultureMech:004896", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[10]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml", "id": "CultureMech:004897", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[11]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml", "id": "CultureMech:004898", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[12]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml", "id": "CultureMech:004899", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[13]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml", "id": "CultureMech:004900", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[14]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml", "id": "CultureMech:004901", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[15]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml", "id": "CultureMech:004902", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[16]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml", "id": "CultureMech:004903", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[17]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml", "id": "CultureMech:004904", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[18]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml", "id": "CultureMech:004905", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[19]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml", "id": "CultureMech:004906", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[20]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml", "id": "CultureMech:004907", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[21]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml", "id": "CultureMech:004908", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[22]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml", "id": "CultureMech:004909", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[23]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml", "id": "CultureMech:004910", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[24]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml", "id": "CultureMech:004911", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[25]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml", "id": "CultureMech:004912", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[26]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml", "id": "CultureMech:004913", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[27]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml", "id": "CultureMech:004914", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[28]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml", "id": "CultureMech:004915", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[29]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml", "id": "CultureMech:004916", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[30]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml", "id": "CultureMech:004917", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[31]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml", "id": "CultureMech:004918", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[32]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml", "id": "CultureMech:004919", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[33]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml", "id": "CultureMech:004920", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[34]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml", "id": "CultureMech:004921", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[35]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml", "id": "CultureMech:004922", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[36]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml", "id": "CultureMech:004923", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[37]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml", "id": "CultureMech:004924", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[38]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml", "id": "CultureMech:004925", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[39]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml", "id": "CultureMech:004926", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[40]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml", "id": "CultureMech:004927", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[41]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml", "id": "CultureMech:004928", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[42]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml", "id": "CultureMech:004929", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[43]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml", "id": "CultureMech:004930", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[44]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml", "id": "CultureMech:004931", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[45]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml", "id": "CultureMech:004932", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[46]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml", "id": "CultureMech:004933", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[47]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml", "id": "CultureMech:004934", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[48]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml", "id": "CultureMech:004935", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[49]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml", "id": "CultureMech:004936", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[50]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml", "id": "CultureMech:004937", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml", "field": "variant_children[0]", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml", "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}] |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch022/212/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml; data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:10.830383"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:10.830383"}]}, {"input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml", "events": 5, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:59.702124"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:05.812029"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:10.879951"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:04.159382"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:19.650619"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:16.050636"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:13.968907"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.371303"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:18.032661"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:19.304014"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:14.369790"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.737700"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:12.908393"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.826091"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:59.900194"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:03.827771"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:02.069766"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:06.159292"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:04.483591"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.971867"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:54.863486"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:00.443967"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:59.255344"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.782461"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.483811"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:09.032953"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:12.112021"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:13.038385"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.325603"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:07.186225"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:13.553774"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.679641"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:16.654348"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.218260"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:09.416807"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:07.890126"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.552939"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:19.014494"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.131685"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:12.192944"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:08.689584"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:09.945501"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.309858"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:12.299307"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:16.292517"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.090867"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:04.423088"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:01.804004"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:59.613339"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:58.522419"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:01.031633"}]}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current API parser separates primary ingredients and stock references; current resolver can copy base ingredients/pH; current merge requires exact formulation compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients, but present code is not replayed and cannot authenticate historical variant formulas or prove the old merge execution. |
+| writer-1 | src/culturemech/enrich/dsmz_resolver.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current API parser separates primary ingredients and stock references; current resolver can copy base ingredients/pH; current merge requires exact formulation compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients, but present code is not replayed and cannot authenticate historical variant formulas or prove the old merge execution. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current API parser separates primary ingredients and stock references; current resolver can copy base ingredients/pH; current merge requires exact formulation compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients, but present code is not replayed and cannot authenticate historical variant formulas or prove the old merge execution. |
+| writer-3 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current API parser separates primary ingredients and stock references; current resolver can copy base ingredients/pH; current merge requires exact formulation compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients, but present code is not replayed and cannot authenticate historical variant formulas or prove the old merge execution. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact historical formulation for KOMODO 31_16130 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_23228 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_5271 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_6716 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8714 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8716 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8717 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8719 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8720 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8721 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8722 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8723 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8724 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8725 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9473 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9474 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9475 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9476 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9477 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9478 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9479 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9480 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9481 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9482 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9706 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9711 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9712 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9713 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9714 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9725 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9726 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9727 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9728 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9729 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9730 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9731 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9763 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9768 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9778 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9779 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9780 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9781 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9782 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9783 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9784 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9785 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9813 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9818 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9822 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9823 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9881 is unavailable after preserved HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount, final pH, growth or source equivalence is authenticated.
+- Historical KOMODO 31 detail is unavailable after preserved HTTP 403. The exact base catalogue row and current DSMZ 31 primary/provider formulation resolve; this optional base-detail limitation is separate from the 51 required variant gaps.
+- The source-parent DSMZ 1 record is context only. Its unrelated ATCC/KG/variant identities and optional ontology annotations are not transferred or treated as reviewed target claims. No base or strain-specific growth outcome is inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T131209Z-culturemech-005008-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaline_nutrient_agar (CultureMech:005008)'
+started_at: '2026-10-21T13:04:53Z'
+finished_at: '2026-10-21T13:12:09Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The base DSMZ 31 recipe is recoverable through DSMZ 1 and its separate sesquicarbonate
+  stock, but the target flattens stock strengths into main ingredients and omits stock/water/preparation
+  context. All 53 contributors are retained. The 51 strain-labelled KOMODO variants
+  have unresolved historical formulations; copied ingredients and source-duplicate
+  flags cannot establish their equivalence.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+    sha256: 1da797ef230ebdb314eb094466a87e8a126e68a1c2cd51bfd1e5bd6d6e4e02f4
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    sha256: bedbe194a0f86a6036aac2fcb444d4820abbe3c7445cc7d6cf4c310578ea3466
+    role: context
+  - path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    sha256: c4788a5b8cf988f8c48d8572f752f3df8dc77e769cea4e54447dc0ece0522124
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    sha256: fffcf51c9b8c87949a1bb55a19db74c4569d41e88fdd8e780aa1afa5e3274e32
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    sha256: f9662ca83fe33b9b7716ff6a7e1a195b31bcdb5ec1bf2daaf9f34909f7c4468c
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    sha256: d496aef0f70c2fc7a429f15130a5cd5b4dc0d03c0f4fd522dd06c508f65f036b
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    sha256: 645fc40f33e5e8fbaf582131c074a7ab4d7214d86381d58472ce0be423043994
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    sha256: 0160ec12c053d6fee11fd6ae08fd46f4ce3f5ba8c74bc162944c44dd8bebad12
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    sha256: ec5bc05eaecdd41b06769d46590a16c1b21956792bd46ab6fe4766fafc97007f
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    sha256: ce7147c184eed31314c202028c894be1514405f1edcca90a06f41b34f675c7d5
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    sha256: 80e83a7cf6fbec3775b000d56242b3e97ef6aa998b171972886cc9af345be715
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    sha256: 8e610a560751fc7274f5858dc9306a001c3ed3d5c912d033119e8a9b6235e0ad
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    sha256: 129f16a261252d049ac907709bc69e48d5632729ff0dce39a07a296ec6971be0
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    sha256: f20159a9c60fc71bc2d322f6a2475de526f60eb465f6705b94ab3a600089119c
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    sha256: 50514a6e1f9de571c365d5e38c0f056d78d97be9b869067a772c9dbd8ce99844
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    sha256: a0707ea925a05b48f33d9e5be2a008c265d04183b276925d106d62928ae6d63e
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    sha256: 8549cd7dec5695947aedbb08bd6abd0d9c21131a2235edcc796ac1ba7c05e494
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    sha256: 957c683c3373bdcf09166e07858e23b6ed7c14ff8ec4d720279c10cfb6f1cb25
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    sha256: 851e025baba3e487118f0ff42fde7d61c74ad5c6e68d28a4abc5a9ca33314ce7
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    sha256: 50e35c75967451c6ffefe4211d15278078f0f8d9fd7088fe4953f2b732fcbc50
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    sha256: b0b0fb2756e97b3573f9b6f5d799ef529d4ccf1dd1a46aca6c3f06bf4f6d899c
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    sha256: b9b77ee0b28e0f3add2add9bdb935decb66b1b9fe2dd600ec36237db7ed89c3b
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    sha256: d3e4bb790cebdabc1ebede2ee81d8ad41172ec85e24427bd2e698657baffe59c
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    sha256: 023982836984020b04c5f98c9230178c125b3fd768ef3b6ecdb1063dab725c2b
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    sha256: 93c4a91219848aa424c4192fa2e4d849536b77ef6299257365f5b968b5a18950
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    sha256: d9bffc0e609cf6fd9c9014e2996ab37541e0dfd5ca0dd720cdc1c3f3077a4830
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    sha256: 2e221bf276be69455ef3601b15c9c1ce36eeb00f7ca6323dce2326cb8c7e7f44
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    sha256: b6bdf4a882a89e7db645478cfd867d4e049849aa352fad082435f0ceea899d24
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    sha256: 4643f20fee8bde0de9ce8ede2a3a7aa637035188fb3d557f42b8933138196df2
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    sha256: daffc1333d07a28c36fd9ebfc08401ce3a67def40f9af4c0a8455e409d613989
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    sha256: 161cab9ce24c4d41b6a0ae677bee7df0b1c30a7cf010d350977aa9b84c4f3a69
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    sha256: 8458a87dc9600a18e113c0ac2b20349fa5e54919bb7ecce0ce8156f60da3b0d8
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    sha256: 51073f6911e22ae41bdfe6899f7b8c53b44091d57f916c863c3d38c48822abfc
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    sha256: 33a97ee01b8644d467b11e724af62fd4496586887022ec640b217c2fba07bb02
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    sha256: 07ce392f226d6f7d43947dd13292b8e59021fa3572aaaeb44ec8fe5cbe93e17a
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    sha256: d2b09b218fce4986e04a40b7a94c96f141a4f71810167cce9676c779309f65df
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    sha256: ed6f1c3542716c8466c3a283c18894f4f7577a1b93d5fb9820e394b327ba17c7
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    sha256: ab71c3f26b9a18bf025d4fbae468f03604ccfecf6886c5b69287a94026fadcb9
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    sha256: 1630e8a994e59c5e482153874589133f2fad0e9f85e15a72115bf9fb68759ad1
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    sha256: 5986ae71a11881b7cc3661b9a62f27a9799f4b3b0a0c7fc33ee4f2d9a397feb0
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    sha256: 66594606aa7799b31bb586d6ac212b19d96090f4b5fb2031871e1ad1d3bffc72
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    sha256: 8306652f06d4d13b4e69963fa3215983f508f7cd88c7c3e2fd895d10a568be1d
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    sha256: b38bb96b3582a0cc96ffe3a157be02a8ffbb25284c5c4d3a3148a36b7d868390
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    sha256: bed779af95d0eece2b851c075298fcc6610024ac428eec77816b277ae9e8b0ee
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    sha256: 3ddeb3426d40e1230a613ede12a36a0b37f1c4df197bafd1f4991566184038d0
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    sha256: bc810a73827c4738ca16e0dc7599708e5b1570cf6c84d3c4281bd24907d573b4
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    sha256: d18b2e52f196907e8f099767b653f79c6034acf8b520eaa5ceeef673b52d8b56
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    sha256: e93d562c40dcb6093bd1e4a2d62a4a720f60cda00b56aa44d28476e5c0e4bfb1
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    sha256: 8f8458cc652efd25e649257bcccc171dcaff16a26cfe9f1d349344a373acd323
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    sha256: 9a47a93091faf3606271e0a7ad79614f313f83ac9326e7c24609baec43e8f5dd
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    sha256: cd7dce6a9cf5bacb2db416dd45e480e04e3ec6f91f2840501a12f2d2d671b30f
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    sha256: 5ff269127504d1d154c98e4161f1ad5159c8cd2bfbd01652e7b999e28e2b088c
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    sha256: 5ec3cbb43bb5e9c72f5b9a84cfbe27885db89d380f94f6220cf27d211265df10
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    sha256: d411151119533f1935b6032c986388e67a71bcf8c01cdf124352f78f757224e5
+    role: context
+  - path: data/normalized_yaml/bacterial/nutrient_agar.yaml
+    sha256: 0bf78efe34d289f56275a1beaba73092f73b02495d30886928e7a2376b0f7144
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 212; batch 022 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-one task batches
+    contain 210 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 213 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005008
+targets:
+- target_id: CultureMech:005008
+  path: data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  label: alkaline_nutrient_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch022/212/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch022/212/strict.tsv"
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005008
+- check_id: komodo31_16130-source-access
+  name: 'Exact source content access: komodo31_16130'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_16130 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_16130-attempt
+- check_id: komodo31_23228-source-access
+  name: 'Exact source content access: komodo31_23228'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_23228 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_23228-attempt
+- check_id: komodo31_5271-source-access
+  name: 'Exact source content access: komodo31_5271'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_5271 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_5271-attempt
+- check_id: komodo31_6716-source-access
+  name: 'Exact source content access: komodo31_6716'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_6716 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_6716-attempt
+- check_id: komodo31_8714-source-access
+  name: 'Exact source content access: komodo31_8714'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8714 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8714-attempt
+- check_id: komodo31_8716-source-access
+  name: 'Exact source content access: komodo31_8716'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8716 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8716-attempt
+- check_id: komodo31_8717-source-access
+  name: 'Exact source content access: komodo31_8717'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8717 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8717-attempt
+- check_id: komodo31_8719-source-access
+  name: 'Exact source content access: komodo31_8719'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8719 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8719-attempt
+- check_id: komodo31_8720-source-access
+  name: 'Exact source content access: komodo31_8720'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8720 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8720-attempt
+- check_id: komodo31_8721-source-access
+  name: 'Exact source content access: komodo31_8721'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8721 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8721-attempt
+- check_id: komodo31_8722-source-access
+  name: 'Exact source content access: komodo31_8722'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8722 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8722-attempt
+- check_id: komodo31_8723-source-access
+  name: 'Exact source content access: komodo31_8723'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8723 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8723-attempt
+- check_id: komodo31_8724-source-access
+  name: 'Exact source content access: komodo31_8724'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8724 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8724-attempt
+- check_id: komodo31_8725-source-access
+  name: 'Exact source content access: komodo31_8725'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_8725 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_8725-attempt
+- check_id: komodo31_9473-source-access
+  name: 'Exact source content access: komodo31_9473'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9473 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9473-attempt
+- check_id: komodo31_9474-source-access
+  name: 'Exact source content access: komodo31_9474'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9474 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9474-attempt
+- check_id: komodo31_9475-source-access
+  name: 'Exact source content access: komodo31_9475'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9475 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9475-attempt
+- check_id: komodo31_9476-source-access
+  name: 'Exact source content access: komodo31_9476'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9476 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9476-attempt
+- check_id: komodo31_9477-source-access
+  name: 'Exact source content access: komodo31_9477'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9477 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9477-attempt
+- check_id: komodo31_9478-source-access
+  name: 'Exact source content access: komodo31_9478'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9478 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9478-attempt
+- check_id: komodo31_9479-source-access
+  name: 'Exact source content access: komodo31_9479'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9479 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9479-attempt
+- check_id: komodo31_9480-source-access
+  name: 'Exact source content access: komodo31_9480'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9480 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9480-attempt
+- check_id: komodo31_9481-source-access
+  name: 'Exact source content access: komodo31_9481'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9481 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9481-attempt
+- check_id: komodo31_9482-source-access
+  name: 'Exact source content access: komodo31_9482'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9482 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9482-attempt
+- check_id: komodo31_9706-source-access
+  name: 'Exact source content access: komodo31_9706'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9706 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9706-attempt
+- check_id: komodo31_9711-source-access
+  name: 'Exact source content access: komodo31_9711'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9711 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9711-attempt
+- check_id: komodo31_9712-source-access
+  name: 'Exact source content access: komodo31_9712'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9712 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9712-attempt
+- check_id: komodo31_9713-source-access
+  name: 'Exact source content access: komodo31_9713'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9713 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9713-attempt
+- check_id: komodo31_9714-source-access
+  name: 'Exact source content access: komodo31_9714'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9714 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9714-attempt
+- check_id: komodo31_9725-source-access
+  name: 'Exact source content access: komodo31_9725'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9725 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9725-attempt
+- check_id: komodo31_9726-source-access
+  name: 'Exact source content access: komodo31_9726'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9726 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9726-attempt
+- check_id: komodo31_9727-source-access
+  name: 'Exact source content access: komodo31_9727'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9727 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9727-attempt
+- check_id: komodo31_9728-source-access
+  name: 'Exact source content access: komodo31_9728'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9728 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9728-attempt
+- check_id: komodo31_9729-source-access
+  name: 'Exact source content access: komodo31_9729'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9729 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9729-attempt
+- check_id: komodo31_9730-source-access
+  name: 'Exact source content access: komodo31_9730'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9730 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9730-attempt
+- check_id: komodo31_9731-source-access
+  name: 'Exact source content access: komodo31_9731'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9731 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9731-attempt
+- check_id: komodo31_9763-source-access
+  name: 'Exact source content access: komodo31_9763'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9763 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9763-attempt
+- check_id: komodo31_9768-source-access
+  name: 'Exact source content access: komodo31_9768'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9768 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9768-attempt
+- check_id: komodo31_9778-source-access
+  name: 'Exact source content access: komodo31_9778'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9778 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9778-attempt
+- check_id: komodo31_9779-source-access
+  name: 'Exact source content access: komodo31_9779'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9779 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9779-attempt
+- check_id: komodo31_9780-source-access
+  name: 'Exact source content access: komodo31_9780'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9780 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9780-attempt
+- check_id: komodo31_9781-source-access
+  name: 'Exact source content access: komodo31_9781'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9781 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9781-attempt
+- check_id: komodo31_9782-source-access
+  name: 'Exact source content access: komodo31_9782'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9782 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9782-attempt
+- check_id: komodo31_9783-source-access
+  name: 'Exact source content access: komodo31_9783'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9783 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9783-attempt
+- check_id: komodo31_9784-source-access
+  name: 'Exact source content access: komodo31_9784'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9784 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9784-attempt
+- check_id: komodo31_9785-source-access
+  name: 'Exact source content access: komodo31_9785'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9785 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9785-attempt
+- check_id: komodo31_9813-source-access
+  name: 'Exact source content access: komodo31_9813'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9813 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9813-attempt
+- check_id: komodo31_9818-source-access
+  name: 'Exact source content access: komodo31_9818'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9818 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9818-attempt
+- check_id: komodo31_9822-source-access
+  name: 'Exact source content access: komodo31_9822'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9822 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9822-attempt
+- check_id: komodo31_9823-source-access
+  name: 'Exact source content access: komodo31_9823'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9823 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9823-attempt
+- check_id: komodo31_9881-source-access
+  name: 'Exact source content access: komodo31_9881'
+  required: true
+  status: unavailable
+  summary: Exact historical formulation for KOMODO 31_9881 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31_9881-attempt
+- check_id: komodo31-source-access
+  name: 'Exact source content access: komodo31'
+  required: false
+  status: unavailable
+  summary: Historical KOMODO 31 detail is unavailable after preserved HTTP 403. The
+    exact base catalogue row and current DSMZ 31 primary/provider formulation resolve;
+    this optional base-detail limitation is separate from the 51 required variant
+    gaps.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - komodo31-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-4
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-5
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-6
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-7
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-8
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-9
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-10
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-11
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-12
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-13
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-14
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-15
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-16
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-17
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-18
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-19
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-20
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-21
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-22
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-23
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-24
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-25
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-26
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-27
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-28
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-29
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-30
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-31
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-32
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-33
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-34
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-35
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-36
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-37
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-38
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-39
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-40
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-41
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-42
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-43
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-44
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-45
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-46
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-47
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-48
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-49
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-50
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-51
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-52
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:14.515492Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch022/212/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:16.997026Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch022/212/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:21.807829Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:23.268127Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml:1:id: CultureMech:005008
+
+    ./data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml:1:id: CultureMech:005008
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/source-preflight-bound/212/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: supports
+  summary: 62 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 820300ba3feb82154308bc62cd2975281f981c2bfaffb747674a7e069b409f0f
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/source-preflight-bound/212/evidence-context-original.json
+  locator: Complete frozen source context compared with fresh native input hashes
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Every contextual input hash matches the fresh inspection at the same base.
+    Preflight remains provisional provenance; this review supplies its own single-target
+    judgment.
+  snapshot_sha256: 3dd10788f88e3c96b0ae38b6dcd57393f01ba859c482035e1384328b846b5843
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf
+  locator: Page 1, complete recipe and Na-sesquicarbonate subsection; PDF image read
+  accessed_at: '2026-10-21T12:52:18.780062Z'
+  support: supports
+  summary: Primary inherits medium 1, then adds sterile stock after sterilization
+    to pH 9.7. The literal 1 mL in 10 mL ratio has an unresolved receiving-volume
+    convention; keep it unaltered.
+  snapshot_sha256: 7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705
+- evidence_id: parent-primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  locator: Page 1 whole basal recipe and conditional footnote; PDF image read
+  accessed_at: '2026-10-21T12:53:02.059294Z'
+  support: supports
+  summary: Transferred scope is basal ingredients, conditional agar, water and staged
+    pH; the Bacillus manganese note is explicitly conditional. No parent accession,
+    KG or unrelated variant assertion transfers.
+  snapshot_sha256: 95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/31
+  locator: data.medium and complete solutions[0:2] with all recipe rows/steps
+  accessed_at: '2026-10-21T12:52:17.370801Z'
+  support: supports
+  summary: Provider main 5552 has a 1000 mL declared basis,900 mL water and 100 mL
+    stock 46. Stock46 has 100 mL basis and 42/53 g/L constituents. These distinct
+    stages are not directly comparable to main-medium concentrations.
+  snapshot_sha256: 8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463
+- evidence_id: stock-endpoint
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/46
+  locator: Complete exact solution46 endpoint, recipe[0:3] and volume
+  accessed_at: '2026-10-21T12:53:02.059109Z'
+  support: supports
+  summary: Exact stock endpoint independently agrees with medium 31 stock scientific
+    fields; no historical variant equivalence follows.
+  snapshot_sha256: 81373f2fac6f89c6a13964224ced61e57980c5485bc229fa5f14143204fbd664
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Full seven-column header and exact first-cell 31 plus 51 subordinate accession
+    rows
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Catalogue explicitly identifies all 52 KOMODO accessions. Base pH is 9.7;
+    every variant PH Info is null. Is Aerobic=false is catalogue metadata only, not
+    physiological evidence.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodo31_16130-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_16130
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.444425Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_16130 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 6944e1cffa1d59d0ad6a548c18551ac85869ee0ddf50a163767b92cf33a0f391
+- evidence_id: komodo31_23228-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_23228
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.445009Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_23228 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: b23866e7e728d88dc4b7a78af2007d0affe8c4cee35d96e9dc9e847c1bd4825e
+- evidence_id: komodo31_5271-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_5271
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.445354Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_5271 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 6443e8ce314e79a285ddbb57cd5d58626775870f1cf16b1f3eb56ae28ad50ed9
+- evidence_id: komodo31_6716-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_6716
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.636676Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_6716 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: dd398d82160c38cdcef02411745d9d1bfe2dcbea805c1679fe323e0137d865d6
+- evidence_id: komodo31_8714-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8714
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.653290Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8714 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: d1d94bd20ca3a719838c6377d4684682df54ac7e35bf12f94770e010719e39eb
+- evidence_id: komodo31_8716-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8716
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.653382Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8716 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: c0209976618d7d9b355306e30ea7254e833d01cf59a35739f31aefca8e885a6b
+- evidence_id: komodo31_8717-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8717
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.719187Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8717 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: b1492ac3ff63fce89a1b08a09f5df41a924be87e166d8d8b6bc1f0389a7fcda2
+- evidence_id: komodo31_8719-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8719
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.720220Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8719 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 25c9376b519ab8f91a594ec5c6914146a310b1375e82741d165169a93842d460
+- evidence_id: komodo31_8720-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8720
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.727523Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8720 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: e366947d5632575969afa90ea1761ef3fe3728918a6941cb30bd23605d560109
+- evidence_id: komodo31_8721-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8721
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.750073Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8721 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 5bdb304036ef99cbb71d208e73986a819339615e9489a46af9ef8a97df65b3e2
+- evidence_id: komodo31_8722-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8722
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.848618Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8722 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 6de3053d23d502d1b58515102e273b0e1aeec6e4226735495e6e69be1c889fba
+- evidence_id: komodo31_8723-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8723
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.850780Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8723 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 713a9768b92969a951495360f4a9eade03dfe9e63e534f635787f5c44a20d6a4
+- evidence_id: komodo31_8724-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8724
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.852887Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8724 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 87f7564cc7b7e652048d2ead01d94381c4fdc327ec05f5a90fcf64e77c4011ea
+- evidence_id: komodo31_8725-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8725
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.955522Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_8725 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: aae3078b2b39114089f7d8b813a6fc73c15503fb8771d315fb5967175772965f
+- evidence_id: komodo31_9473-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9473
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.984853Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9473 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: e7d106df4f2a9a0d7c68e715caae18f8e6a7880e0ca1fbbc187ebb802e4694f3
+- evidence_id: komodo31_9474-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9474
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.030138Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9474 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: f3dad8304e7cbe8f90cdd90f9eaa611b0459cdd49cf0f8c565b56cc0566d838b
+- evidence_id: komodo31_9475-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9475
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.081174Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9475 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 05a5e834db5d630988d903e4efda8a8da01b5226c2bab5a7d788ba1ea4f8be48
+- evidence_id: komodo31_9476-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9476
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.089154Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9476 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 10f9db181aca574aec8f89961a0fbf22ad0f25b9ae92cdd3d675422be5ced123
+- evidence_id: komodo31_9477-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9477
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.099346Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9477 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 3f9e06343b78172418e7fe359569855be28febc82fd218f8880eb52a08924e57
+- evidence_id: komodo31_9478-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9478
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.131305Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9478 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: b14f84df9bfaafe633a73a20dfcd5347ad679635c7de1de9562aa86b7fb09471
+- evidence_id: komodo31_9479-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9479
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.174248Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9479 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 3cba13620e3a525fa34c003d799fb3253dd2b8b08be5121c216c71010c992dae
+- evidence_id: komodo31_9480-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9480
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.178884Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9480 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: d8b9fe8718dc29eaf1ae036a9937f15f39ffd1d2ccc991306305e258f9d755c8
+- evidence_id: komodo31_9481-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9481
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.196836Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9481 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 761f63c33a3221cd16f6433650ac3c0018cc3c6ab89b25558738ef27e392b41b
+- evidence_id: komodo31_9482-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9482
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.234618Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9482 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: e1a9384e8013f914d1f123d11fad0565b0a783e096f4602549f6c7417a8939b5
+- evidence_id: komodo31_9706-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9706
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.244810Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9706 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 7b8a5d179fe4ba66822c2072795b69dd08099978b14611944a6fbce3aff195a7
+- evidence_id: komodo31_9711-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9711
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.311645Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9711 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 963d791ad671d7fb2f6dbb0debbe690ddb48a2f4e80446a00e79b34861adaffd
+- evidence_id: komodo31_9712-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9712
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.316448Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9712 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: a1643125fe5eb2fc63f789c6695492a7d4f70042c4a41ced4889f90f8d0241dd
+- evidence_id: komodo31_9713-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9713
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.376490Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9713 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: a0c9f2d35d26c3cc9e7adbf7c3cd91f36b5b26d6f0063a92a2a67bddb93feea1
+- evidence_id: komodo31_9714-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9714
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.385809Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9714 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 8ba7ddac97eb44f5c6ec18b78abeb5dac21f91fbf90173e1741ac5622961271f
+- evidence_id: komodo31_9725-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9725
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.450934Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9725 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: d9d8e0a3ee2a5055c945ec49bf7625eb286581a324332af448db00e0786c5df9
+- evidence_id: komodo31_9726-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9726
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.455597Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9726 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 46967d5d44073e856f95c9fbb34a2e8d9da2d8b0c426e99adbf7a9f5f1c26aab
+- evidence_id: komodo31_9727-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9727
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.464728Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9727 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 0d5f33a89314b2e67bbb914d83a088a8a8ad488aa76f9162be8e5018160eb758
+- evidence_id: komodo31_9728-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9728
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.560402Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9728 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: e1b55a9408d4491cc44df5f54e53f75d27040ab2dd8acbad363ad0e3c55a9dd9
+- evidence_id: komodo31_9729-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9729
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.562253Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9729 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 51be8e9e14046145b2b781bb54c0fb295149cb9bbccbd2d3ef0e3d0efc0b6a32
+- evidence_id: komodo31_9730-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9730
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.565959Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9730 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 3a3fa6f32b50f6e053aa35d58348c8608ae483f88875e35136cc2ef4da84c388
+- evidence_id: komodo31_9731-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9731
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.567999Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9731 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 5bc7e2c90322c2e9968eb97a4e277bfd3d46f227879a6d0bb899b488c68725f4
+- evidence_id: komodo31_9763-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9763
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.828024Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9763 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: f86fd5c6ff7adc081cb7848e531f03db31a5a617192a560e25fa3bf467bcfb69
+- evidence_id: komodo31_9768-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9768
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.859698Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9768 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 2e9feacf0f0785926511a70cbe041cbd7f494ba043e989e3a092733ea66b19d5
+- evidence_id: komodo31_9778-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9778
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.882231Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9778 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: bf9bcfed9f9cd4c28147971f428c317b0f10a89745411ef798e7d57c3f4e760d
+- evidence_id: komodo31_9779-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9779
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.884618Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9779 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 05557d8a77f6a27b97e8d0a54a5c8a926bc1734c4b87e82d99187ce674d22789
+- evidence_id: komodo31_9780-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9780
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.908625Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9780 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 2d5a027a548b048c04713d14aec665e5bfd9f796227c1a8d4ea69c732a0cc5f7
+- evidence_id: komodo31_9781-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9781
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.926686Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9781 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 8856123b4fdfb719d442784711c023e7780dc0d612f421cd3ea269b4a188483d
+- evidence_id: komodo31_9782-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9782
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:16.976377Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9782 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: fdb9dcebbb90de5d6fba475a76aa4afcb37af3bc3b3049e7ca9038c04ade871d
+- evidence_id: komodo31_9783-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9783
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.025651Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9783 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 185c05162b92869c055ceec3631e4e29298990c97326340c2362ac680f860471
+- evidence_id: komodo31_9784-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9784
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.032364Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9784 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: ce3167c069891ff39b4a0ae257d3a4bb0160fd2853f7c0bec06a3db68a6a226d
+- evidence_id: komodo31_9785-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9785
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.047438Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9785 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 53eec56662816ef5f7aa1a0452cc11c61a6745ad16a2a4c1214665c7bb1c4d5c
+- evidence_id: komodo31_9813-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9813
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.120964Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9813 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 207368b14509dae04d4be3f2519d8c4f9d23631753fb79e4c46c398410954595
+- evidence_id: komodo31_9818-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9818
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.124407Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9818 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 0d37ccb1f623cdde49441d84d471fb7a6bf96f9f476ecddbf461eacb895e0cc4
+- evidence_id: komodo31_9822-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9822
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.202367Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9822 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: e893bf1b40716d862a479b44719ed25831eae3314732938d6e14b33bec138d9e
+- evidence_id: komodo31_9823-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9823
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.231646Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9823 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 727b65e3ee2bb36ee99527f141cc29c3e9bdb053094a60794f720ebb6a10ec47
+- evidence_id: komodo31_9881-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9881
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:17.255259Z'
+  support: context_only
+  summary: Exact historical formulation for KOMODO 31_9881 is unavailable after preserved
+    HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+    amount, final pH, growth or source equivalence is authenticated.
+  snapshot_sha256: 76321ed1e8fb72b70450aba5ba7f488c960247164778f547f19c8c4fd05f91b6
+- evidence_id: komodo31-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:52:15.443302Z'
+  support: context_only
+  summary: Historical KOMODO 31 detail is unavailable after preserved HTTP 403. The
+    exact base catalogue row and current DSMZ 31 primary/provider formulation resolve;
+    this optional base-detail limitation is separate from the 51 required variant
+    gaps.
+  snapshot_sha256: 789e4244934932cf61131305be22c384a32fac0664adf0e351339a2d0a2020e5
+- evidence_id: relations
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; maintained inputs
+  locator: Every parent_media and variant_children object, plus complete merged_from
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: supports
+  summary: '[{"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field":
+    "parent_media", "path": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+    "id": "CultureMech:001421", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[0]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+    "id": "CultureMech:004887", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[1]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+    "id": "CultureMech:004888", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[2]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+    "id": "CultureMech:004889", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[3]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+    "id": "CultureMech:004890", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[4]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+    "id": "CultureMech:004891", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[5]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+    "id": "CultureMech:004892", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[6]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+    "id": "CultureMech:004893", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[7]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+    "id": "CultureMech:004894", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[8]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+    "id": "CultureMech:004895", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[9]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+    "id": "CultureMech:004896", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[10]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+    "id": "CultureMech:004897", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[11]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+    "id": "CultureMech:004898", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[12]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+    "id": "CultureMech:004899", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[13]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+    "id": "CultureMech:004900", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[14]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+    "id": "CultureMech:004901", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[15]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+    "id": "CultureMech:004902", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[16]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+    "id": "CultureMech:004903", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[17]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+    "id": "CultureMech:004904", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[18]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+    "id": "CultureMech:004905", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[19]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+    "id": "CultureMech:004906", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[20]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+    "id": "CultureMech:004907", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[21]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+    "id": "CultureMech:004908", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[22]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+    "id": "CultureMech:004909", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[23]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+    "id": "CultureMech:004910", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[24]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+    "id": "CultureMech:004911", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[25]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+    "id": "CultureMech:004912", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[26]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+    "id": "CultureMech:004913", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[27]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+    "id": "CultureMech:004914", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[28]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+    "id": "CultureMech:004915", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[29]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+    "id": "CultureMech:004916", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[30]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+    "id": "CultureMech:004917", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[31]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+    "id": "CultureMech:004918", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[32]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+    "id": "CultureMech:004919", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[33]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+    "id": "CultureMech:004920", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[34]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+    "id": "CultureMech:004921", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[35]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+    "id": "CultureMech:004922", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[36]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+    "id": "CultureMech:004923", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[37]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+    "id": "CultureMech:004924", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[38]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+    "id": "CultureMech:004925", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[39]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+    "id": "CultureMech:004926", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[40]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+    "id": "CultureMech:004927", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[41]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+    "id": "CultureMech:004928", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[42]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+    "id": "CultureMech:004929", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[43]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+    "id": "CultureMech:004930", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[44]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+    "id": "CultureMech:004931", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[45]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+    "id": "CultureMech:004932", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[46]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+    "id": "CultureMech:004933", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[47]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+    "id": "CultureMech:004934", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[48]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+    "id": "CultureMech:004935", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[49]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+    "id": "CultureMech:004936", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml", "field": "variant_children[50]",
+    "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+    "id": "CultureMech:004937", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+    "id": "CultureMech:001421", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[0]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+    "id": "CultureMech:004887", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[1]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+    "id": "CultureMech:004888", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[2]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+    "id": "CultureMech:004889", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[3]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+    "id": "CultureMech:004890", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[4]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+    "id": "CultureMech:004891", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[5]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+    "id": "CultureMech:004892", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[6]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+    "id": "CultureMech:004893", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[7]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+    "id": "CultureMech:004894", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[8]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+    "id": "CultureMech:004895", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[9]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+    "id": "CultureMech:004896", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[10]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+    "id": "CultureMech:004897", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[11]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+    "id": "CultureMech:004898", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[12]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+    "id": "CultureMech:004899", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[13]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+    "id": "CultureMech:004900", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[14]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+    "id": "CultureMech:004901", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[15]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+    "id": "CultureMech:004902", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[16]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+    "id": "CultureMech:004903", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[17]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+    "id": "CultureMech:004904", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[18]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+    "id": "CultureMech:004905", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[19]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+    "id": "CultureMech:004906", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[20]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+    "id": "CultureMech:004907", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[21]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+    "id": "CultureMech:004908", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[22]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+    "id": "CultureMech:004909", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[23]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+    "id": "CultureMech:004910", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[24]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+    "id": "CultureMech:004911", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[25]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+    "id": "CultureMech:004912", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[26]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+    "id": "CultureMech:004913", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[27]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+    "id": "CultureMech:004914", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[28]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+    "id": "CultureMech:004915", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[29]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+    "id": "CultureMech:004916", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[30]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+    "id": "CultureMech:004917", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[31]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+    "id": "CultureMech:004918", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[32]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+    "id": "CultureMech:004919", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[33]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+    "id": "CultureMech:004920", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[34]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+    "id": "CultureMech:004921", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[35]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+    "id": "CultureMech:004922", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[36]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+    "id": "CultureMech:004923", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[37]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+    "id": "CultureMech:004924", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[38]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+    "id": "CultureMech:004925", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[39]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+    "id": "CultureMech:004926", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[40]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+    "id": "CultureMech:004927", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[41]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+    "id": "CultureMech:004928", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[42]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+    "id": "CultureMech:004929", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[43]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+    "id": "CultureMech:004930", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[44]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+    "id": "CultureMech:004931", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[45]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+    "id": "CultureMech:004932", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[46]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+    "id": "CultureMech:004933", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[47]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+    "id": "CultureMech:004934", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[48]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+    "id": "CultureMech:004935", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[49]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+    "id": "CultureMech:004936", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "field": "variant_children[50]", "path": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+    "id": "CultureMech:004937", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml", "field":
+    "variant_children[0]", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"},
+    {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "id": "CultureMech:005008", "exact_case_and_id_match": true, "relationship": "SOURCE_DUPLICATE"}]'
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/212/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 56eb43d31da65e6ded58b44707314d62988ffbd76495b55e1683b979f1347765
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate
+    solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml; data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml;
+    data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml;
+    data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml; data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:10.830383"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:10.830383"}]}, {"input": "data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml",
+    "events": 5, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:59.702124"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:05.812029"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:10.879951"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:04.159382"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.650619"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:16.050636"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:13.968907"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.371303"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:18.032661"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.304014"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:14.369790"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.737700"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:12.908393"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.826091"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:59.900194"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:03.827771"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:02.069766"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:06.159292"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:04.483591"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:55.971867"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:54.863486"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:00.443967"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:59.255344"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:55.782461"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.483811"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:09.032953"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:12.112021"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:13.038385"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.325603"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:07.186225"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:13.553774"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.679641"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:16.654348"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.218260"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:09.416807"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:07.890126"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.552939"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.014494"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.131685"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:12.192944"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:08.689584"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:09.945501"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.309858"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:12.299307"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:16.292517"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.090867"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:04.423088"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:01.804004"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:59.613339"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:58.522419"}]}, {"input": "data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:01.031633"}]}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Current API parser separates primary ingredients and stock references;
+    current resolver can copy base ingredients/pH; current merge requires exact formulation
+    compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients,
+    but present code is not replayed and cannot authenticate historical variant formulas
+    or prove the old merge execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Current API parser separates primary ingredients and stock references;
+    current resolver can copy base ingredients/pH; current merge requires exact formulation
+    compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients,
+    but present code is not replayed and cannot authenticate historical variant formulas
+    or prove the old merge execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Current API parser separates primary ingredients and stock references;
+    current resolver can copy base ingredients/pH; current merge requires exact formulation
+    compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients,
+    but present code is not replayed and cannot authenticate historical variant formulas
+    or prove the old merge execution.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T13:12:07Z'
+  support: context_only
+  summary: Current API parser separates primary ingredients and stock references;
+    current resolver can copy base ingredients/pH; current merge requires exact formulation
+    compatibility. Historical resolver events explicitly say copied DSMZ 31 ingredients,
+    but present code is not replayed and cannot authenticate historical variant formulas
+    or prove the old merge execution.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 69 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"claim\": \"Base Peptone\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Current base DSMZ 31\
+    \ main medium, inherited from DSMZ 1; optional agar remains conditional\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": \"Peptone 5.0 g\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 exact basal ingredient row\",\n      \
+    \  \"exact_source_quote\": \"Peptone 5.0 g\",\n        \"snapshot_sha256\": \"\
+    95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\",\n        \"\
+    parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive31api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/31\",\n        \"source_locator\": \"\
+    $.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 1,\\n                        \\\"compound\\\
+    \": \\\"Peptone\\\",\\n                        \\\"compound_id\\\": 1,\\n    \
+    \                    \\\"amount\\\": 5,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n                    \
+    \    \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\n     \
+    \ }\n    ],\n    \"explanation\": \"The three base-layer values match explicit\
+    \ provider g_l on its 1000 mL basis, but no layer has attached amount evidence.\
+    \ Primary prints batch grams. For the generated target this support is confined\
+    \ to its base recipe, not its 51 variant synonyms. Agar conditional wording already\
+    \ exists and is retained.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"claim\"\
+    : \"Base Meat extract\",\n    \"decision\": \"evidence_only\",\n    \"stage\"\
+    : \"Current base DSMZ 31 main medium, inherited from DSMZ 1; optional agar remains\
+    \ conditional\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": \"Meat extract 3.0 g\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 exact basal ingredient row\",\n      \
+    \  \"exact_source_quote\": \"Meat extract 3.0 g\",\n        \"snapshot_sha256\"\
+    : \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\",\n    \
+    \    \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive31api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/31\",\n        \"source_locator\": \"\
+    $.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 2,\\n                        \\\"compound\\\
+    \": \\\"Meat extract\\\",\\n                        \\\"compound_id\\\": 2,\\\
+    n                        \\\"amount\\\": 3,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n                  \
+    \      \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\n     \
+    \ }\n    ],\n    \"explanation\": \"The three base-layer values match explicit\
+    \ provider g_l on its 1000 mL basis, but no layer has attached amount evidence.\
+    \ Primary prints batch grams. For the generated target this support is confined\
+    \ to its base recipe, not its 51 variant synonyms. Agar conditional wording already\
+    \ exists and is retained.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"claim\"\
+    : \"Base Agar\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Current\
+    \ base DSMZ 31 main medium, inherited from DSMZ 1; optional agar remains conditional\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": \"Agar, if necessary 15.0 g\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz1\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 exact basal ingredient row\",\n      \
+    \  \"exact_source_quote\": \"Agar, if necessary 15.0 g\",\n        \"snapshot_sha256\"\
+    : \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\",\n    \
+    \    \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive31api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/31\",\n        \"source_locator\": \"\
+    $.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 3,\\n                        \\\"compound\\\
+    \": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\n       \
+    \                 \\\"condition\\\": \\\"if necessary\\\",\\n                \
+    \        \\\"amount\\\": 15,\\n                        \\\"unit\\\": \\\"g\\\"\
+    ,\\n                        \\\"g_l\\\": 15,\\n                        \\\"mmol_l\\\
+    \": 44.5991,\\n                        \\\"optional\\\": 0\\n                \
+    \    }\",\n        \"snapshot_sha256\": \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\
+    \n      }\n    ],\n    \"explanation\": \"The three base-layer values match explicit\
+    \ provider g_l on its 1000 mL basis, but no layer has attached amount evidence.\
+    \ Primary prints batch grams. For the generated target this support is confined\
+    \ to its base recipe, not its 51 variant synonyms. Agar conditional wording already\
+    \ exists and is retained.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"claim\"\
+    : \"NaHCO3 stock strength\",\n    \"decision\": \"correct\",\n    \"stage\": \"\
+    Separate Na-sesquicarbonate stock, not main medium\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": \"NaHCO3 4.2 g; stock water 100 mL\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz31\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Na-sesquicarbonate solution ingredient\
+    \ row\",\n        \"exact_source_quote\": \"NaHCO3 4.2 g\",\n        \"snapshot_sha256\"\
+    : \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\",\n    \
+    \    \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz31\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\",\n     \
+    \   \"source_locator\": \"Page 1 stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 100.0 ml\",\n        \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive31api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/31\",\n        \"source_locator\": \"\
+    $.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 1,\\n                        \\\"compound\\\
+    \": \\\"NaHCO3\\\",\\n                        \\\"compound_id\\\": 55,\\n    \
+    \                    \\\"amount\\\": 4.2,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 42,\\n                 \
+    \       \\\"mmol_l\\\": 499.958,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\
+    \n      }\n    ],\n    \"explanation\": \"Both local 42/53 G_PER_L values are\
+    \ provider-declared stock strengths on 100 mL stock basis, falsely exposed as\
+    \ direct main ingredients. Move the supported source claims into a separate stock\
+    \ representation with exact evidence. No final-medium concentration is calculated\
+    \ from ambiguous primary receiving volume.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q5\",\n    \"claim\": \"Na2CO3 anhydrous stock strength\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Separate Na-sesquicarbonate stock, not main medium\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": \"Na2CO3 anhydrous 5.3 g; stock water\
+    \ 100 mL\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz31\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Na-sesquicarbonate solution ingredient\
+    \ row\",\n        \"exact_source_quote\": \"Na2CO3 anhydrous 5.3 g\",\n      \
+    \  \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz31\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\",\n     \
+    \   \"source_locator\": \"Page 1 stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 100.0 ml\",\n        \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive31api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/31\",\n        \"source_locator\": \"\
+    $.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 2,\\n                        \\\"compound\\\
+    \": \\\"Na2CO3 anhydrous\\\",\\n                        \\\"compound_id\\\": 69,\\\
+    n                        \\\"amount\\\": 5.3,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 53,\\n                 \
+    \       \\\"mmol_l\\\": 500.057,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\
+    \n      }\n    ],\n    \"explanation\": \"Both local 42/53 G_PER_L values are\
+    \ provider-declared stock strengths on 100 mL stock basis, falsely exposed as\
+    \ direct main ingredients. Move the supported source claims into a separate stock\
+    \ representation with exact evidence. No final-medium concentration is calculated\
+    \ from ambiguous primary receiving volume.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q6\",\n    \"claim\": \"Primary inherited basal water\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"DSMZ 1 basal batch before alkaline addition\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Peptone\",\n            \"concentration\"\
+    : {\n              \"value\": \"5\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Meat\
+    \ extract\",\n            \"concentration\": {\n              \"value\": \"3\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Agar\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n     \
+    \       },\n            \"concentration\": {\n              \"value\": \"15\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"notes\"\
+    : \" (if necessary)\",\n            \"mediaingredientmech_chebi_term\": {\n  \
+    \            \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"NaHCO3\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32139\",\n         \
+    \     \"label\": \"sodium hydrogencarbonate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"42\",\n              \"unit\":\
+    \ \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Na2CO3 anhydrous\",\n            \"term\": {\n           \
+    \   \"id\": \"CHEBI:29377\",\n              \"label\": \"sodium carbonate\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    53\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:29377\",\n              \"label\": \"sodium\
+    \ carbonate\"\n            }\n          }\n        ]\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Peptone\",\n            \"concentration\"\
+    : {\n              \"value\": \"5\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Meat\
+    \ extract\",\n            \"concentration\": {\n              \"value\": \"3\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Agar\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n     \
+    \       },\n            \"concentration\": {\n              \"value\": \"15\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"notes\"\
+    : \" (if necessary)\",\n            \"mediaingredientmech_chebi_term\": {\n  \
+    \            \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"NaHCO3\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32139\",\n         \
+    \     \"label\": \"sodium hydrogencarbonate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"42\",\n              \"unit\":\
+    \ \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Na2CO3 anhydrous\",\n            \"term\": {\n           \
+    \   \"id\": \"CHEBI:29377\",\n              \"label\": \"sodium carbonate\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    53\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:29377\",\n              \"label\": \"sodium\
+    \ carbonate\"\n            }\n          }\n        ]\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Peptone\",\n            \"concentration\"\
+    : {\n              \"value\": \"5\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Meat\
+    \ extract\",\n            \"concentration\": {\n              \"value\": \"3\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Agar\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n     \
+    \       },\n            \"concentration\": {\n              \"value\": \"15\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"notes\"\
+    : \" (if necessary)\",\n            \"mediaingredientmech_chebi_term\": {\n  \
+    \            \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"NaHCO3\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:32139\",\n         \
+    \     \"label\": \"sodium hydrogencarbonate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"42\",\n              \"unit\":\
+    \ \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Na2CO3 anhydrous\",\n            \"term\": {\n           \
+    \   \"id\": \"CHEBI:29377\",\n              \"label\": \"sodium carbonate\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    53\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:29377\",\n              \"label\": \"sodium\
+    \ carbonate\"\n            }\n          }\n        ]\n      }\n    ],\n    \"\
+    source_amount\": \"1000mL\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      }\n    ],\n    \"explanation\": \"Water is absent as an ingredient/preparation\
+    \ volume in all three base layers. Preserve this inherited source stage separately\
+    \ from provider main900 mL; do not sum two alternative descriptions.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q7\",\n    \"claim\": \"Provider main water\",\n\
+    \    \"decision\": \"add\",\n    \"stage\": \"MediaDive31 main 5552, declared\
+    \ 1000 mL basis\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"For Bacillus strains the addition of 10.0 mg MnSO4\
+    \ x H2O is recommended for sporulation.\"\n          },\n          {\n       \
+    \     \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10\
+    \ ml)  to achieve a pH of 9.7\"\n          }\n        ]\n      }\n    ],\n   \
+    \ \"source_amount\": \"900 mL\",\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"mediadive31api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/31\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 900,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\n     \
+    \ }\n    ],\n    \"explanation\": \"Provider main water is900 mL with 100 mL stock.\
+    \ Preserve source version and denominator without relabelling primary basal 1000\
+    \ mL as an error or measured final volume.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q8\",\n    \"claim\": \"Stock water\",\n    \"decision\": \"add\",\n    \"\
+    stage\": \"Separate stock 46 preparation\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\",\n\
+    \        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_amount\": \"100mL\",\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz31\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 stock water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 100.0 ml\",\n        \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive31api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/31\",\n        \"source_locator\": \"\
+    $.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 3,\\n                        \\\"compound\\\
+    \": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\": 4,\\\
+    n                        \\\"amount\\\": 100,\\n                        \\\"unit\\\
+    \": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n             \
+    \       }\",\n        \"snapshot_sha256\": \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\
+    \n      }\n    ],\n    \"explanation\": \"Represent stock water independently\
+    \ of main water. No extra water dose or final-volume makeup is inferred.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q9\",\n    \"claim\": \"Stock source concentration\
+    \ label\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Existing DSMZ\
+    \ owner preparation[1]\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\",\n        \"\
+    field_path\": \"preparation_steps[1].description\",\n        \"stored\": \"After\
+    \ sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10 ml)  to\
+    \ achieve a pH of 9.7\"\n      }\n    ],\n    \"source_amount\": \"1M label, not\
+    \ 1 M of each constituent\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz31\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 alkaline-addition sentence first line\"\
+    ,\n        \"exact_source_quote\": \"Same as medium 1. After sterilization add\
+    \ sterile 1 M Na-sesquicarbonate solution (1 ml\",\n        \"snapshot_sha256\"\
+    : \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\",\n    \
+    \    \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz31\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\",\n     \
+    \   \"source_locator\": \"Page 1 alkaline-addition sentence second line\",\n \
+    \       \"exact_source_quote\": \"in 10 ml) to achieve a pH of 9.7.\",\n     \
+    \   \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      }\n    ],\n    \"explanation\": \"Exact amount/stage is already retained\
+    \ in the DSMZ owner, without attached evidence. The printed mixture label must\
+    \ not become 1 M for each salt, and the ratio must not be silently resolved into\
+    \ an independently established final denominator.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q10\",\n    \"claim\": \"Stock source concentration label missing generated/KOMODO\
+    \ context\",\n    \"decision\": \"add\",\n    \"stage\": \"Base alkaline stock\
+    \ after sterilization\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_amount\": \"1M label, not 1 M of each constituent\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz31\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 alkaline-addition sentence first line\"\
+    ,\n        \"exact_source_quote\": \"Same as medium 1. After sterilization add\
+    \ sterile 1 M Na-sesquicarbonate solution (1 ml\",\n        \"snapshot_sha256\"\
+    : \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\",\n    \
+    \    \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz31\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\",\n     \
+    \   \"source_locator\": \"Page 1 alkaline-addition sentence second line\",\n \
+    \       \"exact_source_quote\": \"in 10 ml) to achieve a pH of 9.7.\",\n     \
+    \   \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore the source wording for the base\
+    \ recipe only; do not authenticate historical variant preparation or calculate\
+    \ unqualified final strength.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n  \
+    \  \"claim\": \"Stock addition source ratio\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"stage\": \"Existing DSMZ owner preparation[1]\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10\
+    \ ml)  to achieve a pH of 9.7\"\n      }\n    ],\n    \"source_amount\": \"1mL\
+    \ in10mL; denominator convention unresolved\",\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz31\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 alkaline-addition sentence first line\"\
+    ,\n        \"exact_source_quote\": \"Same as medium 1. After sterilization add\
+    \ sterile 1 M Na-sesquicarbonate solution (1 ml\",\n        \"snapshot_sha256\"\
+    : \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\",\n    \
+    \    \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz31\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\",\n     \
+    \   \"source_locator\": \"Page 1 alkaline-addition sentence second line\",\n \
+    \       \"exact_source_quote\": \"in 10 ml) to achieve a pH of 9.7.\",\n     \
+    \   \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      }\n    ],\n    \"explanation\": \"Exact amount/stage is already retained\
+    \ in the DSMZ owner, without attached evidence. The printed mixture label must\
+    \ not become 1 M for each salt, and the ratio must not be silently resolved into\
+    \ an independently established final denominator.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q12\",\n    \"claim\": \"Stock addition source ratio missing generated/KOMODO\
+    \ context\",\n    \"decision\": \"add\",\n    \"stage\": \"Base alkaline stock\
+    \ after sterilization\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_amount\": \"1mL in10mL; denominator convention\
+    \ unresolved\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"dsmz31\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 alkaline-addition sentence first line\"\
+    ,\n        \"exact_source_quote\": \"Same as medium 1. After sterilization add\
+    \ sterile 1 M Na-sesquicarbonate solution (1 ml\",\n        \"snapshot_sha256\"\
+    : \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\",\n    \
+    \    \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz31\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\",\n     \
+    \   \"source_locator\": \"Page 1 alkaline-addition sentence second line\",\n \
+    \       \"exact_source_quote\": \"in 10 ml) to achieve a pH of 9.7.\",\n     \
+    \   \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore the source wording for the base\
+    \ recipe only; do not authenticate historical variant preparation or calculate\
+    \ unqualified final strength.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n  \
+    \  \"claim\": \"Provider stock dose\",\n    \"decision\": \"add\",\n    \"stage\"\
+    : \"MediaDive31 main 5552 only\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\",\n\
+    \        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_amount\": \"100mL stock 46 in declared 1000 mL main recipe\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadive31api\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/31\",\n   \
+    \     \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"solution\\\": \\\"Na-sesquicarbonate solution\\\",\\n             \
+    \           \\\"solution_id\\\": 46,\\n                        \\\"amount\\\"\
+    : 100,\\n                        \\\"unit\\\": \\\"ml\\\",\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"8d759596f9c27787bbf111759539a20bef83a71d6ee73deb7867f8c00ef6b463\"\n     \
+    \ }\n    ],\n    \"explanation\": \"Provider explicitly supplies this dose. Record\
+    \ separately from the primary 1 mL-in-10 mL statement; neither establishes measured\
+    \ final volume.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"claim\": \"\
+    Base final pH\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Base\
+    \ alkaline medium after stock addition\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\",\n\
+    \        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": \"9.7\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz31\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final alkaline pH sentence\",\n      \
+    \  \"exact_source_quote\": \"in 10 ml) to achieve a pH of 9.7.\",\n        \"\
+    snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      }\n    ],\n    \"explanation\": \"All three base-layer scalar values match\
+    \ the source but lack attached evidence. This does not validate pH 9.7 for any\
+    \ of the 51 historical variants.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n\
+    \    \"claim\": \"Inherited basal pH before alkaline addition\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"DSMZ 1 basal stage only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"For Bacillus strains the addition of 10.0 mg MnSO4\
+    \ x H2O is recommended for sporulation.\"\n          },\n          {\n       \
+    \     \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10\
+    \ ml)  to achieve a pH of 9.7\"\n          }\n        ]\n      }\n    ],\n   \
+    \ \"source_amount\": \"7.0\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 basal adjustment sentence\",\n       \
+    \ \"exact_source_quote\": \"Adjust pH to 7.0.\",\n        \"snapshot_sha256\"\
+    : \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\",\n    \
+    \    \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      }\n    ],\n    \"explanation\": \"Retain only as an inherited basal-stage\
+    \ instruction when documenting the source sequence; never replace final alkaline\
+    \ 9.7 with 7.0.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"claim\": \"\
+    Conditional manganese addition\",\n    \"decision\": \"evidence_only\",\n    \"\
+    stage\": \"DSMZ 1 Bacillus-specific conditional branch inherited in provider31\
+    \ steps\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for\
+    \ sporulation.\"\n      }\n    ],\n    \"source_amount\": \"10mg MnSO4 monohydrate;\
+    \ no universal supplementation\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 conditional footnote first line\",\n \
+    \       \"exact_source_quote\": \"Adjust pH to 7.0. For Bacillus strains the addition\
+    \ of 10.0 mg MnSO4 x H2O is\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Page 1 conditional footnote second line\",\n        \"\
+    exact_source_quote\": \"recommended for sporulation.\",\n        \"snapshot_sha256\"\
+    : \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\",\n    \
+    \    \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      }\n    ],\n    \"explanation\": \"The DSMZ owner already retains this\
+    \ exact condition; generated/KOMODO base lacks it. Keep the source recommendation\
+    \ conditional, without asserting growth or transferring it to all 51 variants\
+    \ or into the unconditional ingredient list.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q17\",\n    \"claim\": \"Conditional manganese addition\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"DSMZ 1 Bacillus-specific conditional branch inherited\
+    \ in provider31 steps\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": null\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_amount\": \"10mg MnSO4 monohydrate; no universal\
+    \ supplementation\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 conditional footnote first line\",\n \
+    \       \"exact_source_quote\": \"Adjust pH to 7.0. For Bacillus strains the addition\
+    \ of 10.0 mg MnSO4 x H2O is\",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Page 1 conditional footnote second line\",\n        \"\
+    exact_source_quote\": \"recommended for sporulation.\",\n        \"snapshot_sha256\"\
+    : \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\",\n    \
+    \    \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      }\n    ],\n    \"explanation\": \"The DSMZ owner already retains this\
+    \ exact condition; generated/KOMODO base lacks it. Keep the source recommendation\
+    \ conditional, without asserting growth or transferring it to all 51 variants\
+    \ or into the unconditional ingredient list.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q18\",\n    \"claim\": \"Sterilization cycle\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"stage\": \"Primary31 basal sterilization then sterile stock addition\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  }\n    ],\n    \"source_amount\": \"No temperature/time or stock sterilization\
+    \ method specified\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz31\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 after-sterilization sentence\",\n    \
+    \    \"exact_source_quote\": \"Same as medium 1. After sterilization add sterile\
+    \ 1 M Na-sesquicarbonate solution (1 ml\",\n        \"snapshot_sha256\": \"7dc9960a76f9921d94721aac3488c3b72d4252193e2e62df241ec96d6eb37705\"\
+    ,\n        \"parsed_text_sha256\": \"6854d60705cc142b76d6eae8ac64c3f244ea7b517b33ab88b94c22c0adc04cbc\"\
+    \n      }\n    ],\n    \"explanation\": \"The provider equipment object names\
+    \ Autoclave, but the primary supplies no numeric cycle. Do not borrow a JCM default\
+    \ or invent a stock method.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n    \"\
+    claim\": \"Historical 31_16130 complete formulation and pH\",\n    \"decision\"\
+    : \"unsupported\",\n    \"stage\": \"Exact strain-labelled variant; current copied\
+    \ base signature is not scientific verification\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_16130 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_16130'\
+    \ >31_16130</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 16130</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q20\",\n    \"claim\"\
+    : \"Historical 31_23228 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_23228 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_23228'\
+    \ >31_23228</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 23228</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q21\",\n    \"claim\"\
+    : \"Historical 31_5271 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_5271 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_5271'\
+    \ >31_5271</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 5271</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q22\",\n    \"claim\"\
+    : \"Historical 31_6716 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_6716 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_6716'\
+    \ >31_6716</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 6716</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q23\",\n    \"claim\"\
+    : \"Historical 31_8714 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8714 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8714'\
+    \ >31_8714</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8714</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q24\",\n    \"claim\"\
+    : \"Historical 31_8716 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8716 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8716'\
+    \ >31_8716</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8716</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q25\",\n    \"claim\"\
+    : \"Historical 31_8717 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8717 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8717'\
+    \ >31_8717</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8717</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q26\",\n    \"claim\"\
+    : \"Historical 31_8719 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8719 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8719'\
+    \ >31_8719</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8719</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n    \"claim\"\
+    : \"Historical 31_8720 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8720 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8720'\
+    \ >31_8720</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8720</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q28\",\n    \"claim\"\
+    : \"Historical 31_8721 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8721 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8721'\
+    \ >31_8721</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8721</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q29\",\n    \"claim\"\
+    : \"Historical 31_8722 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8722 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8722'\
+    \ >31_8722</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8722</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q30\",\n    \"claim\"\
+    : \"Historical 31_8723 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8723 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8723'\
+    \ >31_8723</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8723</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q31\",\n    \"claim\"\
+    : \"Historical 31_8724 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8724 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8724'\
+    \ >31_8724</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8724</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q32\",\n    \"claim\"\
+    : \"Historical 31_8725 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_8725 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_8725'\
+    \ >31_8725</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 8725</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q33\",\n    \"claim\"\
+    : \"Historical 31_9473 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9473 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9473'\
+    \ >31_9473</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9473</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q34\",\n    \"claim\"\
+    : \"Historical 31_9474 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9474 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9474'\
+    \ >31_9474</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9474</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q35\",\n    \"claim\"\
+    : \"Historical 31_9475 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9475 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9475'\
+    \ >31_9475</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9475</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q36\",\n    \"claim\"\
+    : \"Historical 31_9476 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9476 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9476'\
+    \ >31_9476</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9476</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q37\",\n    \"claim\"\
+    : \"Historical 31_9477 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9477 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9477'\
+    \ >31_9477</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9477</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q38\",\n    \"claim\"\
+    : \"Historical 31_9478 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9478 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9478'\
+    \ >31_9478</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9478</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q39\",\n    \"claim\"\
+    : \"Historical 31_9479 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9479 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9479'\
+    \ >31_9479</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9479</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q40\",\n    \"claim\"\
+    : \"Historical 31_9480 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9480 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9480'\
+    \ >31_9480</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9480</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q41\",\n    \"claim\"\
+    : \"Historical 31_9481 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9481 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9481'\
+    \ >31_9481</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9481</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q42\",\n    \"claim\"\
+    : \"Historical 31_9482 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9482 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9482'\
+    \ >31_9482</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9482</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q43\",\n    \"claim\"\
+    : \"Historical 31_9706 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9706 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9706'\
+    \ >31_9706</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9706</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q44\",\n    \"claim\"\
+    : \"Historical 31_9711 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9711 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9711'\
+    \ >31_9711</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9711</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q45\",\n    \"claim\"\
+    : \"Historical 31_9712 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9712 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9712'\
+    \ >31_9712</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9712</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q46\",\n    \"claim\"\
+    : \"Historical 31_9713 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9713 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9713'\
+    \ >31_9713</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9713</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q47\",\n    \"claim\"\
+    : \"Historical 31_9714 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9714 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9714'\
+    \ >31_9714</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9714</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q48\",\n    \"claim\"\
+    : \"Historical 31_9725 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9725 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9725'\
+    \ >31_9725</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9725</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q49\",\n    \"claim\"\
+    : \"Historical 31_9726 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9726 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9726'\
+    \ >31_9726</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9726</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q50\",\n    \"claim\"\
+    : \"Historical 31_9727 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9727 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9727'\
+    \ >31_9727</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9727</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q51\",\n    \"claim\"\
+    : \"Historical 31_9728 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9728 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9728'\
+    \ >31_9728</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9728</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q52\",\n    \"claim\"\
+    : \"Historical 31_9729 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9729 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9729'\
+    \ >31_9729</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9729</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q53\",\n    \"claim\"\
+    : \"Historical 31_9730 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9730 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9730'\
+    \ >31_9730</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9730</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q54\",\n    \"claim\"\
+    : \"Historical 31_9731 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9731 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9731'\
+    \ >31_9731</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9731</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q55\",\n    \"claim\"\
+    : \"Historical 31_9763 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9763 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9763'\
+    \ >31_9763</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9763</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q56\",\n    \"claim\"\
+    : \"Historical 31_9768 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9768 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9768'\
+    \ >31_9768</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9768</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q57\",\n    \"claim\"\
+    : \"Historical 31_9778 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9778 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9778'\
+    \ >31_9778</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9778</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q58\",\n    \"claim\"\
+    : \"Historical 31_9779 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9779 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9779'\
+    \ >31_9779</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9779</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q59\",\n    \"claim\"\
+    : \"Historical 31_9780 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9780 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9780'\
+    \ >31_9780</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9780</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q60\",\n    \"claim\"\
+    : \"Historical 31_9781 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9781 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9781'\
+    \ >31_9781</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9781</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q61\",\n    \"claim\"\
+    : \"Historical 31_9782 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9782 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9782'\
+    \ >31_9782</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9782</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q62\",\n    \"claim\"\
+    : \"Historical 31_9783 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9783 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9783'\
+    \ >31_9783</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9783</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q63\",\n    \"claim\"\
+    : \"Historical 31_9784 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9784 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9784'\
+    \ >31_9784</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9784</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q64\",\n    \"claim\"\
+    : \"Historical 31_9785 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9785 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9785'\
+    \ >31_9785</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9785</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q65\",\n    \"claim\"\
+    : \"Historical 31_9813 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9813 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9813'\
+    \ >31_9813</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9813</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q66\",\n    \"claim\"\
+    : \"Historical 31_9818 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9818 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9818'\
+    \ >31_9818</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9818</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q67\",\n    \"claim\"\
+    : \"Historical 31_9822 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9822 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9822'\
+    \ >31_9822</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9822</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q68\",\n    \"claim\"\
+    : \"Historical 31_9823 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9823 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9823'\
+    \ >31_9823</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9823</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  },\n  {\n    \"decision_id\": \"q69\",\n    \"claim\"\
+    : \"Historical 31_9881 complete formulation and pH\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Exact strain-labelled variant; current copied base signature\
+    \ is not scientific verification\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.7\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"stored_claims\": {\n        \"Peptone\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"Meat extract\": {\n          \"value\": \"3\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"Agar\": {\n          \"value\": \"15\",\n\
+    \          \"unit\": \"G_PER_L\"\n        },\n        \"NaHCO3\": {\n        \
+    \  \"value\": \"42\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"\
+    Na2CO3 anhydrous\": {\n          \"value\": \"53\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      \"stored_ph\": 9.7,\n      \"source_amounts\": \"\
+    Unavailable exact historical formulation; catalogue PH Info is null\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact first-cell 31_9881 catalogue row; header\
+    \ separately inspected\",\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\\
+    t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=31_9881'\
+    \ >31_9881</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 31 MODIFIED FOR DSM 9881</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"Every present amount and pH in this\
+    \ owner remains unresolved for its historical variant after HTTP 403. The catalogue\
+    \ confirms accession/name and parent DSMZ 31, not quantities. Null catalogue pH\
+    \ is missing metadata, not proof that this variant had a different pH. Retain\
+    \ original bytes pending exact source evidence; do not apply base repairs as inferred\
+    \ variant corrections.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: supported
+  summary: '3 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 3/5 primary and 3/5 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Source forms
+    are assessed separately.'
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - owner-5
+  - owner-6
+  - owner-7
+  - owner-8
+  - owner-9
+  - owner-10
+  - owner-11
+  - owner-12
+  - owner-13
+  - owner-14
+  - owner-15
+  - owner-16
+  - owner-17
+  - owner-18
+  - owner-19
+  - owner-20
+  - owner-21
+  - owner-22
+  - owner-23
+  - owner-24
+  - owner-25
+  - owner-26
+  - owner-27
+  - owner-28
+  - owner-29
+  - owner-30
+  - owner-31
+  - owner-32
+  - owner-33
+  - owner-34
+  - owner-35
+  - owner-36
+  - owner-37
+  - owner-38
+  - owner-39
+  - owner-40
+  - owner-41
+  - owner-42
+  - owner-43
+  - owner-44
+  - owner-45
+  - owner-46
+  - owner-47
+  - owner-48
+  - owner-49
+  - owner-50
+  - owner-51
+  - owner-52
+  - chebi2509
+  - chebi29377
+  - chebi32139
+  details: 'Instance coverage on a 0–100 percent scale, denominator 5: primary 60.00%;
+    secondary 60.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 325 timestamp instances inspected; 106 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - owner-5
+  - owner-6
+  - owner-7
+  - owner-8
+  - owner-9
+  - owner-10
+  - owner-11
+  - owner-12
+  - owner-13
+  - owner-14
+  - owner-15
+  - owner-16
+  - owner-17
+  - owner-18
+  - owner-19
+  - owner-20
+  - owner-21
+  - owner-22
+  - owner-23
+  - owner-24
+  - owner-25
+  - owner-26
+  - owner-27
+  - owner-28
+  - owner-29
+  - owner-30
+  - owner-31
+  - owner-32
+  - owner-33
+  - owner-34
+  - owner-35
+  - owner-36
+  - owner-37
+  - owner-38
+  - owner-39
+  - owner-40
+  - owner-41
+  - owner-42
+  - owner-43
+  - owner-44
+  - owner-45
+  - owner-46
+  - owner-47
+  - owner-48
+  - owner-49
+  - owner-50
+  - owner-51
+  - owner-52
+- assessment_id: identity
+  area: identity
+  topic: Full contributor identity versus formulation equivalence
+  outcome: concern
+  summary: All 53 exact maintained owners and every internal relationship path/ID
+    resolve. Base KOMODO 31 and DSMZ 31 share an explicit accession mapping. The 51
+    strain-labelled accessions have no accessible historical formulations, so synonymous/source-duplicate
+    declarations exceed established recipe identity. Complete merged_from retains
+    membership despite truncated MERGED_RECIPES.source.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - record
+  - catalog
+  - relations
+  - primary
+  - provider
+  - bound-context
+- assessment_id: forms
+  area: grounding
+  topic: Exact source forms and mixture boundaries
+  outcome: supported
+  summary: Agar remains an undefined polymer mixture; peptone and meat extract are
+    not assigned invented pure-molecule terms. CHEBI32139 represents sodium hydrogencarbonate
+    and CHEBI29377 matches explicitly anhydrous sodium carbonate. Primary/source stock
+    quantities are separate from ontology validity. Context-only DSMZ 1 parent secondary/ATCC/KG
+    assertions do not transfer to this target.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - primary
+  - parent-primary
+  - chebi2509
+  - chebi32139
+  - chebi29377
+- assessment_id: classification
+  area: scope
+  topic: Physical state, generic application and catalogue oxygen flag
+  outcome: concern
+  summary: Complex/undefined is supported for the base. SOLID_AGAR describes its conditional
+    agar branch; it does not erase the if-necessary condition. Bacterial filing and
+    generic cultivation are not strain-level growth evidence. Is Aerobic=false is
+    corroborated catalogue metadata, not physiological proof. Variant-specific state
+    and conditions remain unresolved.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - record
+  - parent-primary
+  - catalog
+  - provider
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained source repairs and generated merge scope
+  outcome: concern
+  summary: The DSMZ owner alone retains two preparation statements. Target and KOMODO
+    base omit them, while all 54 layers carry flattened carbonate strengths. Correct
+    the supported base source first, retain all 51 variant uncertainties, and reassess
+    merge/source-duplicate relationships before any separately authorized regeneration.
+  target_ids:
+  - CultureMech:005008
+  evidence_ids:
+  - record
+  - relations
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+  - quantity-inventory
+findings:
+- finding_id: f1
+  issue_key: cm005008-flattened-stock
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock strengths are exposed as main-medium ingredients
+  description: The base target and owners list 42 g/L bicarbonate and 53 g/L anhydrous
+    carbonate as direct ingredients, whereas primary 31 defines 4.2 g and 5.3 g in
+    a separate 100 mL stock. Its dose is separate and the primary receiving-volume
+    convention remains ambiguous. The historical variant copies are not independently
+    verified.
+  target_ids:
+  - CultureMech:005008
+  field_paths:
+  - ingredients[3]
+  - ingredients[4]
+  - solutions
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - stock-endpoint
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm005008-variant-equivalence
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Fifty-one historical variants are treated as source duplicates
+  description: All 51 exact KOMODO variant rows identify modified media but provide
+    null pH and no retrieved formulation detail. Current copied base signatures and
+    resolver history do not establish historical formula or pH equivalence. Synonyms
+    and SOURCE_DUPLICATE assertions conceal unresolved differences.
+  target_ids:
+  - CultureMech:005008
+  field_paths:
+  - synonyms
+  - variant_children
+  - parent_media
+  - variant_relationship
+  - variant_modifications
+  - merged_from
+  evidence_ids:
+  - record
+  - catalog
+  - relations
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm005008-water-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source water and stock preparation stages are incomplete
+  description: No layer represents base/stock water or structured stock addition.
+    The DSMZ owner retains the conditional manganese and post-sterilization ratio,
+    but the target/KOMODO base drops them. Primary basal 1000 mL, provider main900
+    mL and stock100mL are source/stage-specific, not interchangeable totals.
+  target_ids:
+  - CultureMech:005008
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  - sterilization
+  evidence_ids:
+  - record
+  - owner-1
+  - primary
+  - parent-primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm005008-source-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supported base quantities have no attached narrow evidence
+  description: Correct base peptone/meat/conditional agar and final pH lack claim-level
+    snippets. Source links and exact catalogue IDs support provenance but not all
+    quantities or 51 variant formulas.
+  target_ids:
+  - CultureMech:005008
+  field_paths:
+  - ingredients
+  - ph_value
+  - references
+  evidence_ids:
+  - record
+  - primary
+  - parent-primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: cm005008-history-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Malformed timestamps and truncated merge source obscure provenance
+  description: Target and KOMODO owners retain malformed literal .fZ import timestamps
+    and timezone-naive resolver times. The target MERGED_RECIPES source is truncated
+    even though complete merged_from recovers all 53 members. Neither date defect
+    nor source truncation should be silently rewritten.
+  target_ids:
+  - CultureMech:005008
+  field_paths:
+  - curation_history
+  - merged_from
+  evidence_ids:
+  - record
+  - history-metadata
+  - relations
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore a scoped base stock representation and exact source dose/basis
+    without inferring variant concentrations or an unqualified final-medium dilution;
+    reassess merge boundaries.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain all distinct variant accessions and unresolved claims; obtain
+    exact historical formulations before approving synonymous equivalence or propagating
+    base curation.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore source-specific water and preparation boundaries in supported
+    base inputs; preserve the already-correct DSMZ preparation, conditional branch
+    and unspecified sterilization cycle.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach exact source evidence to supported base amounts and stages,
+    retaining unresolved variant amounts rather than labeling them verified.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve old events and append an explicit provenance clarification
+    with the complete member list; correct future writers rather than manufacturing
+    historical timestamps.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:005008
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_nutrient_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_16130.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_23228.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_5271.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_6716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8716.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8717.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8719.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8720.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8721.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8722.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8723.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8724.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_8725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9473.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9474.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9475.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9476.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9477.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9478.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9479.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9480.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9481.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9482.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9706.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9711.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9712.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9713.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9714.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9725.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9726.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9727.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9728.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9729.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9730.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9731.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9763.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9768.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9778.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9779.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9780.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9781.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9782.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9783.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9784.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9785.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9813.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9818.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9822.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9823.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_31_modified_for_dsm_9881.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact historical formulation for KOMODO 31_16130 is unavailable after preserved
+  HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+  amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_23228 is unavailable after preserved
+  HTTP 403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant
+  amount, final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_5271 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_6716 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8714 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8716 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8717 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8719 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8720 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8721 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8722 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8723 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8724 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_8725 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9473 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9474 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9475 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9476 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9477 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9478 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9479 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9480 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9481 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9482 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9706 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9711 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9712 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9713 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9714 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9725 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9726 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9727 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9728 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9729 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9730 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9731 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9763 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9768 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9778 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9779 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9780 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9781 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9782 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9783 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9784 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9785 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9813 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9818 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9822 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9823 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Exact historical formulation for KOMODO 31_9881 is unavailable after preserved HTTP
+  403. Its catalogue identity and DSMZ 31 parent link resolve, but no variant amount,
+  final pH, growth or source equivalence is authenticated.
+- Historical KOMODO 31 detail is unavailable after preserved HTTP 403. The exact base
+  catalogue row and current DSMZ 31 primary/provider formulation resolve; this optional
+  base-detail limitation is separate from the 51 required variant gaps.
+- The source-parent DSMZ 1 record is context only. Its unrelated ATCC/KG/variant identities
+  and optional ontology annotations are not transferred or treated as reviewed target
+  claims. No base or strain-specific growth outcome is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-022
+- generated-medium
+```

@@ -1,0 +1,1251 @@
+schema_version: 1.0.0
+review_id: 20261021T130720Z-culturemech-001056-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaline_vogesella_medium (CultureMech:001056)'
+started_at: '2026-10-21T13:04:55Z'
+finished_at: '2026-10-21T13:07:20Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ 1581 primary and MediaDive main formulation agree with all
+  ten stored masses and pH 8.0. The maintained owner has ten matching amount excerpts
+  that the generated target lacks. The source water quantity is omitted in both layers.
+  HEPES has a valid primary ontology term but its asserted secondary key is absent
+  from the complete current packaged MIM index; that completed lookup supports needs_curation
+  without making the review partial.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+    sha256: aa29490b9f411e52a7463cd2248f93b12e9df8caa1ee84f77bedbefe3e202f00
+    role: target
+  - path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    sha256: 4448bb826f731703c8ae615c4ce072e2a987ef1d5835858b3afbce208fdcf8b5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 214; batch 022 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-one task batches
+    contain 210 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 213 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001056
+targets:
+- target_id: CultureMech:001056
+  path: data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  label: alkaline_vogesella_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch022/214/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch022/214/strict.tsv"
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001056
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:30.685152Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch022/214/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:32.751563Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-022/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch022/214/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:35.574289Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:05:37.182540Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml:1:id: CultureMech:001056
+
+    ./data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml:1:id: CultureMech:001056
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/source-preflight-bound/214/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: supports
+  summary: 9 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: e63b12adbb139e777df30167719f6d6d2df7d5b8e0a7567ba046e4175dbf3289
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/source-preflight-bound/214/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: c758a2f59291f6c3c4264863a6e5b4821908db4a7db98943b9d6b7233133f54b
+- evidence_id: dsmz1581
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf
+  locator: Entire one-page primary, all rows and pH sentence; page also visually inspected
+  accessed_at: '2026-10-21T12:52:18.531433Z'
+  support: supports
+  summary: Exact DSMZ medium 1581 has ten mass rows, distilled water 1000.0 mL and
+    pH 8.0. No stock, sterilization cycle, pH reagent or organism-specific growth
+    claim is supplied.
+  snapshot_sha256: 9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27
+- evidence_id: mediadive1581api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1581
+  locator: Complete medium metadata and main solution 3268, all 11 rows and preparation
+    step
+  accessed_at: '2026-10-21T12:52:17.280539Z'
+  support: supports
+  summary: Exact provider declares a 1000 mL main basis, ten g/L values and the separate
+    1000 mL water item; its pH agrees with the primary. Nominal provider basis is
+    not a measured final volume.
+  snapshot_sha256: b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec
+- evidence_id: attached-evidence-recheck
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/214/attached-evidence-recheck.json
+  locator: Every existing ingredient evidence object, full reference/snippet/explanation
+    and source locator
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: supports
+  summary: 10 attached amount claims match the exact captured source rows and nominal
+    provider basis. Verification applies only in the documented owner layers.
+  snapshot_sha256: 4d3fb1ba2ed07caea3cbb650d6c7634c6a08f29eea13833a7aa1ef463f7008a3
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, nonobsolete flag and available formula/definition
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Source-specific chemical forms were compared
+    separately; identifier existence does not validate the secondary MIM linkage.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, nonobsolete flag and available formula/definition
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Source-specific chemical forms
+    were compared separately; identifier existence does not validate the secondary
+    MIM linkage.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, nonobsolete flag and available formula/definition
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Source-specific chemical forms
+    were compared separately; identifier existence does not validate the secondary
+    MIM linkage.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi46756
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756
+  locator: Exact OLS obo_id, canonical label, nonobsolete flag and available formula/definition
+  accessed_at: '2026-10-21T09:27:40.629039Z'
+  support: supports
+  summary: CHEBI:46756 resolves to HEPES. Source-specific chemical forms were compared
+    separately; identifier existence does not validate the secondary MIM linkage.
+  snapshot_sha256: 4270cc705078ff2f1787f98b7dbcf05c96b1eccd333801a00cff01b855298a69
+- evidence_id: chebi50144
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144
+  locator: Exact OLS obo_id, canonical label, nonobsolete flag and available formula/definition
+  accessed_at: '2026-10-20T07:22:07.440767Z'
+  support: supports
+  summary: CHEBI:50144 resolves to sodium pyruvate. Source-specific chemical forms
+    were compared separately; identifier existence does not validate the secondary
+    MIM linkage.
+  snapshot_sha256: 457ed29adfdea68c420ea0c094d7d75593958fc70f908f6809348e4e12e7e15d
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, nonobsolete flag and available formula/definition
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Source-specific chemical
+    forms were compared separately; identifier existence does not validate the secondary
+    MIM linkage.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, nonobsolete flag and available formula/definition
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Source-specific
+    chemical forms were compared separately; identifier existence does not validate
+    the secondary MIM linkage.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete exact-key lookup and metadata hash/source commit
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: '{"snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "total_index_rows":
+    9077, "exact_preferred_mapped_rows": {"CHEBI:17234": [{"label": "Glucose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id":
+    "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:46756": [], "CHEBI:50144":
+    [{"label": "Na-pyruvate", "match_type": "preferred_term", "identifier": "CHEBI:50144",
+    "preferred_term": "Na-pyruvate", "ontology_id": "CHEBI:50144", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2
+    x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, "missing_key_instances": [{"input": "target", "field_path": "ingredients[5].mediaingredientmech_chebi_term",
+    "id": "CHEBI:46756"}, {"input": "data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml",
+    "field_path": "ingredients[5].mediaingredientmech_chebi_term", "id": "CHEBI:46756"}],
+    "scope": "Complete hash-pinned packaged CSV, every row read, including ignored-file-independent
+    direct file access. No claim about all historical or remote MIM versions."}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/214/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 551e6713033c9526d1376f6d8fa5061102c4773889ba7defa3a2d596aa6358da
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch022/214/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: e252a31b68db2ac18dd5cfb78fcc917c99d1f5dd9587844bd3185fab3b0afa6d
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_VOGESELLA_MEDIUM.yaml; data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T13:07:18Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml",
+    "events": 9, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Primary ontology identity and current secondary linkage
+  outcome: concern
+  summary: All seven distinct asserted IDs have matching nonobsolete OLS labels. HEPES
+    CHEBI:46756 is a valid primary term, but has zero identifier rows in the complete
+    current packaged MIM index in both local layers. This is a completed negative
+    lookup, not an unavailable check. Six of seven asserted target secondary instances
+    resolve; three mixture ingredients have no asserted pure-chemical IDs.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi17234
+  - chebi26710
+  - chebi32588
+  - chebi46756
+  - chebi50144
+  - chebi86158
+  - chebi86345
+  details: 'Target denominator: 10 direct ingredients; primary linkage 7/10 (70%);
+    asserted secondary linkage 7/10 (70%); resolved current secondary linkage 6/10
+    (60%), or 6/7 asserted secondary instances. These are linkage metrics on a 0–100
+    percent scale, not scientific correctness scores.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 12 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Glucose\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 1\",\n        \"exact_source_quote\"\
+    : \"Glucose 0.50 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 0.5,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n    \
+    \                    \\\"mmol_l\\\": 2.77531,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[0].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"0.5\
+    \ g / (1000 mL / 1000 mL per L) = 0.5 g/L on the explicit provider basis.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Na-pyruvate\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 2\",\n        \"exact_source_quote\"\
+    : \"Na-pyruvate 3.00 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Na-pyruvate\\\",\\n                        \\\"compound_id\\\
+    \": 113,\\n                        \\\"amount\\\": 3,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n    \
+    \                    \\\"mmol_l\\\": 27.2618,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[1].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"3\
+    \ g / (1000 mL / 1000 mL per L) = 3 g/L on the explicit provider basis.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Casamino acids\",\n    \"field_path\":\
+    \ \"ingredients[2].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 3\",\n        \"exact_source_quote\"\
+    : \"Casamino acids 0.50 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Casamino acids\\\",\\n                        \\\"compound_id\\\
+    \": 101,\\n                        \\\"amount\\\": 0.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n\
+    \                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[2].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"0.5\
+    \ g / (1000 mL / 1000 mL per L) = 0.5 g/L on the explicit provider basis.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Peptone\",\n    \"field_path\": \"\
+    ingredients[3].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 4\",\n        \"exact_source_quote\"\
+    : \"Peptone 3.00 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Peptone\\\",\\n                        \\\"compound_id\\\":\
+    \ 1,\\n                        \\\"amount\\\": 3,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with the\
+    \ provider-declared g/L on its 1000 mL basis. The owner alone has matching attached\
+    \ evidence. No measured final-volume claim or chemical-identity validation follows\
+    \ from this quantity evidence.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\",\n       \
+    \ \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n   \
+    \     \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"3 g /\
+    \ (1000 mL / 1000 mL per L) = 3 g/L on the explicit provider basis.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Yeast extract\",\n    \"field_path\": \"\
+    ingredients[4].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 5\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 3.00 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 3,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[4].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"3\
+    \ g / (1000 mL / 1000 mL per L) = 3 g/L on the explicit provider basis.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"HEPES\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    2.83\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"dsmz1581\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 6\",\n        \"exact_source_quote\"\
+    : \"HEPES 2.83 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"HEPES\\\",\\n                        \\\"compound_id\\\": 371,\\\
+    n                        \\\"amount\\\": 2.83,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2.83,\\n         \
+    \               \\\"mmol_l\\\": 11.8758,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[5].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"2.83\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.83\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"2.83 g / (1000 mL / 1000 mL per L) = 2.83 g/L on the explicit provider basis.\"\
+    \n  },\n  {\n    \"ingredient_or_context\": \"KCl\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz1581\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 7\",\n        \"exact_source_quote\"\
+    : \"KCl 0.50 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n                \
+    \        \\\"mmol_l\\\": 6.70691,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[6].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"0.5\
+    \ g / (1000 mL / 1000 mL per L) = 0.5 g/L on the explicit provider basis.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"CaCl2 x 2 H2O\",\n    \"field_path\"\
+    : \"ingredients[7].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.15\",\n      \"unit\": \"G_PER_L\"\n   \
+    \ },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 8\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.15 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.15,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.15,\\n\
+    \                        \\\"mmol_l\\\": 1.0203,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[7].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"0.15 g / (1000 mL / 1000 mL per L) = 0.15 g/L on the explicit provider basis.\"\
+    \n  },\n  {\n    \"ingredient_or_context\": \"NaCl\",\n    \"field_path\": \"\
+    ingredients[8].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 9\",\n        \"exact_source_quote\"\
+    : \"NaCl 1.00 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 17.1116,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact primary batch mass agrees with\
+    \ the provider-declared g/L on its 1000 mL basis. The owner alone has matching\
+    \ attached evidence. No measured final-volume claim or chemical-identity validation\
+    \ follows from this quantity evidence.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"ingredients[8].concentration\",\n   \
+    \     \"stored\": {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"1\
+    \ g / (1000 mL / 1000 mL per L) = 1 g/L on the explicit provider basis.\"\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"MgCl2 x 6 H2O\",\n    \"field_path\": \"\
+    ingredients[9].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"0.62\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, formulation row 10\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.62 g\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 79,\\n                        \\\"amount\\\": 0.62,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.62,\\\
+    n                        \\\"mmol_l\\\": 3.04964,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\n      }\n\
+    \    ],\n    \"rationale\": \"The exact primary batch mass agrees with the provider-declared\
+    \ g/L on its 1000 mL basis. The owner alone has matching attached evidence. No\
+    \ measured final-volume claim or chemical-identity validation follows from this\
+    \ quantity evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.62\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\",\n       \
+    \ \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.62\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"arithmetic\": \"0.62\
+    \ g / (1000 mL / 1000 mL per L) = 0.62 g/L on the explicit provider basis.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Main distilled water\",\n    \"field_path\"\
+    : \"preparation.water\",\n    \"decision\": \"add\",\n    \"local\": null,\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1581\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\"\
+    ,\n        \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1581api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1581\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"b3e48f73285cab2470e9862332d54d6e58d6ae0a02d046cbca9f6a41ea8db1ec\"\
+    \n      }\n    ],\n    \"rationale\": \"The listed solvent amount is absent. Restore\
+    \ 1000.0 mL as a preparation quantity; it is not a density conversion or independently\
+    \ measured final volume.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n\
+    \            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\",\n   \
+    \         \"description\": \"Adjust pH to 8.0.\"\n          }\n        ],\n  \
+    \      \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"ADJUST_PH\"\
+    ,\n            \"description\": \"Adjust pH to 8.0.\"\n          }\n        ],\n\
+    \        \"decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Final pH adjustment\",\n    \"field_path\": \"ph_value\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local\": 8.0,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1581\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1581.pdf\"\
+    ,\n        \"source_locator\": \"Page 1, sentence below formulation\",\n     \
+    \   \"exact_source_quote\": \"Adjust pH to 8.0.\",\n        \"snapshot_sha256\"\
+    : \"9e74296a3426fa901f66495975b123c6809d47561dac56fc17837e16b2d9be27\",\n    \
+    \    \"parsed_text_sha256\": \"75436cce8a6c4169749fdb94f1fad9dfb260a5b0556d4e3ec30b89a4b1373411\"\
+    \n      }\n    ],\n    \"rationale\": \"Both local layers preserve ph_value 8.0\
+    \ and the exact preparation sentence, but neither attaches evidence to that claim.\
+    \ The adjustment reagent and dose are not specified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ph_value\",\n      \
+    \  \"stored\": 8.0,\n        \"decision\": \"evidence_only\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 8.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 8.0.\",\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 8.0.\",\n        \"decision\": \"evidence_only\"\n      }\n \
+    \   ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and maintained owner
+  outcome: supported
+  summary: CultureMech:001056 denotes DSMZ/MediaDive 1581. The sole normalized contributor
+    is explicitly named by the merge event and merged_from; current primary and provider
+    identity agree. No neighboring accession or stock is substituted.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - dsmz1581
+  - mediadive1581api
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: All masses, solvent and nominal volume
+  outcome: supported
+  summary: All ten local mass values agree with primary batch amounts and the provider-declared
+    1000 mL basis; there are no stocks or dilutions. The quantity inventory separately
+    retains the omitted water and correctly stored pH. Water alone is not used to
+    infer a measured final volume.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - quantity-inventory
+  - quantity-local-fields
+  - dsmz1581
+  - mediadive1581api
+  - attached-evidence-recheck
+- assessment_id: forms
+  area: grounding
+  topic: Exact chemical forms and undefined mixtures
+  outcome: supported
+  summary: Glucose and sodium pyruvate remain generic as supplied. Calcium chloride
+    dihydrate and magnesium chloride hexahydrate match the source and OLS forms. HEPES
+    has a matching nonobsolete primary label; sparse OLS structural metadata is not
+    filled with invented details. Casamino acids, peptone and yeast extract are retained
+    as mixtures without invented pure-molecule IDs. The secondary HEPES mapping is
+    addressed separately.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1581
+  - chebi17234
+  - chebi50144
+  - chebi86158
+  - chebi86345
+  - chebi46756
+- assessment_id: preparation
+  area: completeness
+  topic: pH, solvent and unspecified procedures
+  outcome: concern
+  summary: The exact pH 8.0 adjustment is preserved. Both layers omit the listed 1000
+    mL water amount. Neither inspected source specifies a sterilization cycle, pH
+    reagent, vessel, storage condition or strain-specific incubation protocol; those
+    absences are explicit limits, not invented corrections.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1581
+  - mediadive1581api
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid medium and biological scope
+  outcome: supported
+  summary: COMPLEX/UNDEFINED is supported by casamino acids, peptone and yeast extract;
+    the liquid formulation contains no agar branch. No organism, strain, taxon, assembly,
+    DOI/PMID, paper-derived growth assertion or variant is present. The title and
+    generic cultivation application do not establish organism-specific growth.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1581
+  - mediadive1581api
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 18 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: generation
+  area: provenance
+  topic: Later owner evidence and current writer behavior
+  outcome: concern
+  summary: 'The generated August record predates the owner’s October concentration-evidence
+    additions and lacks all ten scoped excerpts plus the source reference. Current
+    importer and merge excerpts were read as context: present code excludes solvent
+    rows from direct ingredients and preserves compatible formulation evidence. It
+    was not run or treated as a replay of the earlier import.'
+  target_ids:
+  - CultureMech:001056
+  evidence_ids:
+  - record
+  - owner-0
+  - attached-evidence-recheck
+  - history-metadata
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.001056.hepes-secondary-key
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: HEPES secondary key has no current packaged MIM row
+  description: Both layers assert mediaingredientmech_chebi_term CHEBI:46756. The
+    complete current hash-pinned CSV has zero identifier rows for this key, although
+    the OLS primary HEPES term is valid and nonobsolete. Other six asserted secondary
+    keys resolve. This breaks the asserted current secondary linkage without refuting
+    the primary chemical identity.
+  target_ids:
+  - CultureMech:001056
+  field_paths:
+  - ingredients[5].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi46756
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.1
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.001056.generated-evidence-loss
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Ten verified owner quantity excerpts are absent from the generated target
+  description: The maintained owner has ten exact quantity excerpts and the matching
+    provider response hash. The generated target has the same values without those
+    claim-level attachments or the owner reference. Current-source agreement does
+    not make those generated claims already evidenced.
+  target_ids:
+  - CultureMech:001056
+  field_paths:
+  - ingredients
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - attached-evidence-recheck
+  - mediadive1581api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.001056.water-preparation-omission
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The listed solvent quantity is absent
+  description: Both local layers omit the exact primary’s 1000.0 mL distilled-water
+    item. The existing pH preparation remains correct but does not preserve that batch
+    preparation quantity.
+  target_ids:
+  - CultureMech:001056
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1581
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconcile the asserted secondary key with the packaged MIM resolver
+    contract. Preserve the valid primary HEPES term and source amount; do not invent
+    an alternate key or silently claim a current mapping. Verify any separately authorized
+    index refresh against its pinned source.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001056
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve the ten scoped owner quantity excerpts and provider-basis
+    limitations during separately authorized regeneration. Do not promote their support
+    to chemical grounding, preparation claims or measured final volume.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001056
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Restore the source water amount in maintained preparation context with
+    exact evidence. Keep solvent volume distinct from a measured final-volume assertion;
+    do not invent an unspecified sterilization cycle.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001056
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaline_vogesella_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact primary does not provide a sterilization cycle or pH-adjustment reagent.
+  No further procedural values were inferred.
+- Current provider bytes authenticate the ten attached snippets and hashes, not the
+  historical retrieval timestamp. The completed current MIM negative lookup does not
+  establish absence from every historical or remote MIM version.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-022
+- generated-medium
