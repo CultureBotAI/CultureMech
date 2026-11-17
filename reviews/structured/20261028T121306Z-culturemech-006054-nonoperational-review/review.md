@@ -1,0 +1,815 @@
+# Non-operational review of Corynebacterium medium CII
+
+- Review: 20261028T121306Z-culturemech-006054-nonoperational-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T12:04:54.086353Z
+- Finished UTC: 2026-10-28T12:13:06.865656Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: false
+
+## Summary
+
+Partial non-operational review. Exact source identity and taxonomic context are traced; bibliographic staleness and ambiguous historical timestamps require metadata-only follow-up. Every operational assertion remains unchanged and unassessed.
+
+## Scope And Provenance
+
+Non-operational identity, bibliography, provenance and schema only.
+
+Selection: Authoritative batch066 selection index05
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006054 | data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml | generated | corynebacterium_medium_cii |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006054 | Exit0; strict zero errors and references zero checks. Original streams retained. |
+| validate-strict | passed | True | CultureMech:006054 | Exit0; strict zero errors and references zero checks. Original streams retained. |
+| validate-terms | passed | True | CultureMech:006054 | Exit0; strict zero errors and references zero checks. Original streams retained. |
+| validate-references | passed | True | CultureMech:006054 | Exit0; strict zero errors and references zero checks. Original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact accession and taxonomic context
+
+identity: supported. Targets: CultureMech:006054.
+
+The local DSM/KOMODO583 identities and two maintained owner IDs resolve. Archived BacDive7295 explicitly associates the exact medium title/accession with the organism now named Clavibacter sepedonicus, NCBI31964. Current BacDive retains the strain identity and plant-pathogen description. This contextual association is not a new growth claim or permission to revise the medium name.
+
+### Current owners and historical report scope
+
+provenance: concern. Targets: CultureMech:006054.
+
+Later owner source references and historical events are credited as recorded provenance, while the generated bibliographic surface is stale. Five historical report identity/provenance headers were read; their quantitative tables, operational excerpts and recommendations are not adopted. The cited historical payload and catalogue hashes were not independently authenticated in this restricted review.
+
+### Unchanged private field census
+
+quantity: not_applicable. Targets: CultureMech:006054.
+
+12 existing concentration fields remain unchanged and not_assessed. Private locators and stored types/values are retained for integrity only; no source-derived quantities, replacements or culture instructions are reproduced.
+
+### Structural identifier membership
+
+grounding: unknown. Targets: CultureMech:006054.
+
+Existing identifier slots and exact current packaged MIM membership are preserved structurally. No source-form, chemical correctness, historical-ID validity or replacement is assessed; no external chemical ontology retrieval was performed.
+
+### Explicit non-operational boundary
+
+scope: not_applicable. Targets: CultureMech:006054.
+
+Only identity, bibliography, provenance and schema are assessed. Formulation, preparation, growth, conditions, stock arithmetic and optimization are unassessed. The generic title alone did not determine the boundary; the exact archived accession association and current taxonomic metadata did.
+
+### Original native diagnostics
+
+schema: supported. Targets: CultureMech:006054.
+
+All four diagnostics passed once. Strict validation scanned one file with zero errors; reference validation checked zero references. Those mechanical outcomes do not authenticate scientific content.
+
+## Findings
+
+### f1: Generated bibliographic provenance omits later owner source records
+
+minor / open / confirmed; issue key: culturemech-006054-stale-bibliographic-provenance.
+
+Both maintained owners have later dated source references; the generated target has no references section and ends with its earlier merge event. This is a bibliographic staleness observation. Existing attached operational evidence is neither authenticated nor transferred by this review.
+
+### f2: Import and resolver timestamps are not unambiguous UTC instants
+
+minor / open / confirmed; issue key: culturemech-006054-malformed-and-naive-history-times.
+
+The target and KOMODO owner retain literal .fZ import timestamps and naive resolver timestamps. Current writer functions exhibit the relevant formatting behaviors, but their presence does not recover the original historical instant.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Reconcile bibliographic source attribution in a metadata-only follow-up, preserving original access times and owner lineage. Do not automatically transfer operational excerpts, certify their claims or regenerate the recipe.
+
+- Retain every operational field and historical claim unchanged; no cultivation, chemical-form or formulation correction.
+- Keep existing history append-only and new metadata source scopes explicit.
+
+### action2
+
+Correct future timestamp generation to use real timezone-aware UTC. Preserve old events unchanged; append a verified current-date clarification if needed without inventing or rewriting historical times.
+
+- Retain every operational field and historical claim unchanged; no cultivation, chemical-form or formulation correction.
+- Keep existing history append-only and new metadata source scopes explicit.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml; Exact metadata scope | context_only | Entire unchanged local document read; only identity, bibliography, provenance and schema assessed. Operational fields and existing source quotations are unassessed. |
+| local1 | data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml; Exact metadata scope | context_only | Entire unchanged local document read; only identity, bibliography, provenance and schema assessed. Operational fields and existing source quotations are unassessed. |
+| local2 | data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml; Exact metadata scope | context_only | Entire unchanged local document read; only identity, bibliography, provenance and schema assessed. Operational fields and existing source quotations are unassessed. |
+| quantities | REVIEW_WORK/batch066/record05/quantity-inventory.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| fields | REVIEW_WORK/batch066/record05/field-census.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| numeric | REVIEW_WORK/batch066/record05/numeric-field-census.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| grounding | REVIEW_WORK/batch066/record05/grounding-inventory.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| metadata | REVIEW_WORK/batch066/record05/metadata-reader.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| history | REVIEW_WORK/batch066/record05/historical-report-scope.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| links | REVIEW_WORK/batch066/record05/internal-reference-joins.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| boundary | REVIEW_WORK/batch066/record05/identity-and-scope.json; Exact metadata scope | context_only | Private exact structural/metadata inventory; existing operational content is not reproduced or endorsed in this review. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact identifier row joins in grounding inventory | context_only | Pinned exact current identifier membership only, not chemical correctness. |
+| writer-komodo | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech uses time.strftime with unsupported %f for history generation. This is consistent with stored literal .fZ, but does not prove historical execution or its true instant. |
+| writer-resolver | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver._add_enrichment_metadata | context_only | Current _add_enrichment_metadata generates a naive timestamp. Only provenance behavior is assessed; scientific copying behavior is outside this restricted review. |
+| writer-merge | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation compatibility and provenance-union safeguards preserve fields without authenticating them. No merge was invoked and no regeneration is recommended in this restricted review. |
+| bacdive7295Archive | https://bacdive.dsmz.de/pdf/7295?doi=10.13145%2Fbacdive7295.20170829.2; extracted-text lines 69-69 | supports | Archived/current source identity and scope boundary only; operational sections excluded. The taxon authority resolves the current species name and historical synonyms, not recipe suitability. |
+| bacdive7295Current | https://bacdive.dsmz.de/strain/7295; extracted-text lines 74-74 | supports | Archived/current source identity and scope boundary only; operational sections excluded. The taxon authority resolves the current species name and historical synonyms, not recipe suitability. |
+| tax31964 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=31964&amp;retmode=xml; extracted-text lines 5-5 | supports | Archived/current source identity and scope boundary only; operational sections excluded. The taxon authority resolves the current species name and historical synonyms, not recipe suitability. |
+| validate-schema | REVIEW_WORK/batch066/record05/validate-schema-result.json; argv, times, exit code, complete stdout/stderr | supports | Original canonical diagnostic passed; structural success is not scientific or operational approval. |
+| validate-strict | REVIEW_WORK/batch066/record05/validate-strict-result.json; argv, times, exit code, complete stdout/stderr | supports | Original canonical diagnostic passed; structural success is not scientific or operational approval. |
+| validate-terms | REVIEW_WORK/batch066/record05/validate-terms-result.json; argv, times, exit code, complete stdout/stderr | supports | Original canonical diagnostic passed; structural success is not scientific or operational approval. |
+| validate-references | REVIEW_WORK/batch066/record05/validate-references-result.json; argv, times, exit code, complete stdout/stderr | supports | Original canonical diagnostic passed; structural success is not scientific or operational approval. |
+
+## Limits And Additional Notes
+
+- Scientific review is false and completion/scope are partial. Formulation, concentration, stock, preparation, growth and chemical-form assertions remain unchanged and unassessed.
+- Full local target/owner content was read for bounded metadata and structure; this does not imply operational assessment. Historical report reading was limited to exact identity and provenance headers.
+- The archived BacDive association is explicitly historical. Its full capture is preserved, but operational sections are excluded; current BacDive does not repeat that same medium list.
+- No DSM583 primary recipe/API or chemical ontology sources were requested. Local prior source snippets and hashes remain unauthenticated here; no source-based replacement or culture recommendation is provided.
+- MIM membership is from the pinned current snapshot 6643131b0f12ab40b66f98135245fca04027e0e9 only; it does not establish chemical correctness or past validity.
+- No source edits, native formal validation/save, Git mutation or publication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T121306Z-culturemech-006054-nonoperational-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: Non-operational review of Corynebacterium medium CII
+started_at: '2026-10-28T12:04:54.086353Z'
+finished_at: '2026-10-28T12:13:06.865656Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Read-only identity, bibliography, provenance and structural
+    review of existing content; this reviewer did not author or curate the selected
+    records.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: false
+summary: Partial non-operational review. Exact source identity and taxonomic context
+  are traced; bibliographic staleness and ambiguous historical timestamps require
+  metadata-only follow-up. Every operational assertion remains unchanged and unassessed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml
+    sha256: 9a2a063bdf081255a31cedc61cdc41f1c7ce28fe94bdf10ea9bd29033e79846b
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+    sha256: ffc8b618dd86a7bd38322a8b242ab70e3f0c07ba8ced135d17d6793d743d308d
+    role: context
+  - path: data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml
+    sha256: cca005a57be0b97e0f5506e13c13e35ad626d91d60b48361cfc3d8c94e5fb457
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml.md
+    sha256: c6ad135f705441cddb2f4308e7e204a92a18658724e5608a7e3e7a581e8ba280
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/corynebacterium_medium_cii.yaml.md
+    sha256: 10cd74a07d909501a98cbf43b26fecb1c8f89fe35d579be60bb2301a1edcacbf
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.md
+    sha256: a75481b641313ecd2b871f2f6514c974c5644c4a47db7bf4485ada492bfddc0f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.md
+    sha256: 241dce2b36d6db71a59859efdee5bee93c7e8b79bcb2ab45e843409fba45ba46
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/corynebacterium_medium_cii.md
+    sha256: e51e08d64e5453506368f0368fa594b67641791f70bc48e70fedd33c70a37492
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_komodo_strain_backlinks.py
+    sha256: 06d56149f4e8333f31ae6dd7e4b9127881227810bc957429c849ba00de21c963
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Non-operational identity, bibliography, provenance and schema only.
+  selection: Authoritative batch066 selection index05
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006054
+targets:
+- target_id: CultureMech:006054
+  path: data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml
+  label: corynebacterium_medium_cii
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit0; strict zero errors and references zero checks. Original streams
+    retained.
+  target_ids:
+  - CultureMech:006054
+  command: just validate-schema data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit0; strict zero errors and references zero checks. Original streams
+    retained.
+  target_ids:
+  - CultureMech:006054
+  command: just validate-strict data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml
+    --workers 1 --out REVIEW_WORK/batch066/record05/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit0; strict zero errors and references zero checks. Original streams
+    retained.
+  target_ids:
+  - CultureMech:006054
+  command: just validate-terms data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit0; strict zero errors and references zero checks. Original streams
+    retained.
+  target_ids:
+  - CultureMech:006054
+  command: just validate-references data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_CII.yaml
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864446Z'
+  support: context_only
+  summary: Entire unchanged local document read; only identity, bibliography, provenance
+    and schema assessed. Operational fields and existing source quotations are unassessed.
+  snapshot_sha256: 9a2a063bdf081255a31cedc61cdc41f1c7ce28fe94bdf10ea9bd29033e79846b
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864609Z'
+  support: context_only
+  summary: Entire unchanged local document read; only identity, bibliography, provenance
+    and schema assessed. Operational fields and existing source quotations are unassessed.
+  snapshot_sha256: ffc8b618dd86a7bd38322a8b242ab70e3f0c07ba8ced135d17d6793d743d308d
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864640Z'
+  support: context_only
+  summary: Entire unchanged local document read; only identity, bibliography, provenance
+    and schema assessed. Operational fields and existing source quotations are unassessed.
+  snapshot_sha256: cca005a57be0b97e0f5506e13c13e35ad626d91d60b48361cfc3d8c94e5fb457
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/quantity-inventory.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864672Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: 36916fdba6db76902e730312b486dbb22dab7442849b2b6576c28dea7bc77518
+- evidence_id: fields
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/field-census.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864699Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: 062d5cf09ac8fd04b8ee7d0a595c703e13625ee6a63655863f8c8f04521175c2
+- evidence_id: numeric
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/numeric-field-census.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864745Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: c0c72724aa7939c53ce62d9a49dd360033c280850bfd49c37818185c9ec1349f
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/grounding-inventory.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864784Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: f28003ed534701aafb440e434d74590426231cb53012179641585d3e861ea4ce
+- evidence_id: metadata
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/metadata-reader.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864826Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: 1d3983b58dfc483586dabd2ae6a404a621effc80c32e63d12ea4b712bb32f020
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/historical-report-scope.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864854Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: 910d14867ec6a6f70e4572bfa6c5d23286b3799e327231eee4b72c4fd7b87066
+- evidence_id: links
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/internal-reference-joins.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864877Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: 1d53b4f98d2f8d9e6aa7ff9a8091331e0ca3fd0ebbad2b980daf6ca6217d1c75
+- evidence_id: boundary
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record05/identity-and-scope.json
+  locator: Exact metadata scope
+  accessed_at: '2026-10-28T12:13:06.864899Z'
+  support: context_only
+  summary: Private exact structural/metadata inventory; existing operational content
+    is not reproduced or endorsed in this review.
+  snapshot_sha256: febb0e01292ea72d8dd79d57d7494186a64f15f327b4e59685fe9457ed49c868
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact identifier row joins in grounding inventory
+  accessed_at: '2026-10-28T12:13:06.864919Z'
+  support: context_only
+  summary: Pinned exact current identifier membership only, not chemical correctness.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: writer-komodo
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T12:13:06.865232Z'
+  support: context_only
+  summary: Current _convert_to_culturemech uses time.strftime with unsupported %f
+    for history generation. This is consistent with stored literal .fZ, but does not
+    prove historical execution or its true instant.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver._add_enrichment_metadata
+  accessed_at: '2026-10-28T12:13:06.865276Z'
+  support: context_only
+  summary: Current _add_enrichment_metadata generates a naive timestamp. Only provenance
+    behavior is assessed; scientific copying behavior is outside this restricted review.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T12:13:06.865313Z'
+  support: context_only
+  summary: Current formulation compatibility and provenance-union safeguards preserve
+    fields without authenticating them. No merge was invoked and no regeneration is
+    recommended in this restricted review.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: bacdive7295Archive
+  kind: authority
+  reference: https://bacdive.dsmz.de/pdf/7295?doi=10.13145%2Fbacdive7295.20170829.2
+  locator: extracted-text lines 69-69
+  quote: CORYNEBACTERIUM MEDIUM CII (DSMZ Medium 583)
+  accessed_at: '2026-10-28T12:05:40.303467Z'
+  support: supports
+  summary: Archived/current source identity and scope boundary only; operational sections
+    excluded. The taxon authority resolves the current species name and historical
+    synonyms, not recipe suitability.
+  snapshot_sha256: cf7ae136d56bf6212322eda226c63ad5324712fe089bfee612ad1e53f4f48b70
+- evidence_id: bacdive7295Current
+  kind: authority
+  reference: https://bacdive.dsmz.de/strain/7295
+  locator: extracted-text lines 74-74
+  quote: DSM 46300 is a plant pathogen
+  accessed_at: '2026-10-28T12:05:40.300503Z'
+  support: supports
+  summary: Archived/current source identity and scope boundary only; operational sections
+    excluded. The taxon authority resolves the current species name and historical
+    synonyms, not recipe suitability.
+  snapshot_sha256: 66470d7003e18cca2b08214e9c9b89760575551cdb2b4cf3fc958fcf6e920b55
+- evidence_id: tax31964
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=31964&retmode=xml
+  locator: extracted-text lines 5-5
+  quote: <ScientificName>Clavibacter sepedonicus</ScientificName>
+  accessed_at: '2026-10-28T12:05:40.021649Z'
+  support: supports
+  summary: Archived/current source identity and scope boundary only; operational sections
+    excluded. The taxon authority resolves the current species name and historical
+    synonyms, not recipe suitability.
+  snapshot_sha256: 155c0165fee9c62e3ac193ac95bc0f5d2ea8b2312b771b849fb6dbc3d23d1afc
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch066/record05/validate-schema-result.json
+  locator: argv, times, exit code, complete stdout/stderr
+  accessed_at: '2026-10-28T12:04:55.106948Z'
+  support: supports
+  summary: Original canonical diagnostic passed; structural success is not scientific
+    or operational approval.
+  snapshot_sha256: 1955de72b7f260a319aaaf38e063801b181ae388d40161639a3bd72d8b00d85a
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch066/record05/validate-strict-result.json
+  locator: argv, times, exit code, complete stdout/stderr
+  accessed_at: '2026-10-28T12:04:56.041096Z'
+  support: supports
+  summary: Original canonical diagnostic passed; structural success is not scientific
+    or operational approval.
+  snapshot_sha256: 4dde5e81b82b4cdaee75fc47b95b3b314f2f5b10d00234d1732e3c18cdf830b1
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch066/record05/validate-terms-result.json
+  locator: argv, times, exit code, complete stdout/stderr
+  accessed_at: '2026-10-28T12:04:57.074990Z'
+  support: supports
+  summary: Original canonical diagnostic passed; structural success is not scientific
+    or operational approval.
+  snapshot_sha256: ff85f429a7150fd7dec78f0661e70c732a6f73fb6679949cb7ee2736fa9ca9f4
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch066/record05/validate-references-result.json
+  locator: argv, times, exit code, complete stdout/stderr
+  accessed_at: '2026-10-28T12:04:57.739096Z'
+  support: supports
+  summary: Original canonical diagnostic passed; structural success is not scientific
+    or operational approval.
+  snapshot_sha256: e060fcc8d296a7b48a9cc104cd008df4f27f073bbc97bf01736926107d18e8d9
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact accession and taxonomic context
+  outcome: supported
+  summary: The local DSM/KOMODO583 identities and two maintained owner IDs resolve.
+    Archived BacDive7295 explicitly associates the exact medium title/accession with
+    the organism now named Clavibacter sepedonicus, NCBI31964. Current BacDive retains
+    the strain identity and plant-pathogen description. This contextual association
+    is not a new growth claim or permission to revise the medium name.
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - local0
+  - links
+  - boundary
+  - bacdive7295Archive
+  - bacdive7295Current
+  - tax31964
+- assessment_id: a2
+  area: provenance
+  topic: Current owners and historical report scope
+  outcome: concern
+  summary: Later owner source references and historical events are credited as recorded
+    provenance, while the generated bibliographic surface is stale. Five historical
+    report identity/provenance headers were read; their quantitative tables, operational
+    excerpts and recommendations are not adopted. The cited historical payload and
+    catalogue hashes were not independently authenticated in this restricted review.
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - metadata
+  - history
+  - links
+  - local0
+  - local1
+  - local2
+- assessment_id: a3
+  area: quantity
+  topic: Unchanged private field census
+  outcome: not_applicable
+  summary: 12 existing concentration fields remain unchanged and not_assessed. Private
+    locators and stored types/values are retained for integrity only; no source-derived
+    quantities, replacements or culture instructions are reproduced.
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - quantities
+  - numeric
+- assessment_id: a4
+  area: grounding
+  topic: Structural identifier membership
+  outcome: unknown
+  summary: Existing identifier slots and exact current packaged MIM membership are
+    preserved structurally. No source-form, chemical correctness, historical-ID validity
+    or replacement is assessed; no external chemical ontology retrieval was performed.
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - grounding
+  - mim
+  - validate-terms
+- assessment_id: a5
+  area: scope
+  topic: Explicit non-operational boundary
+  outcome: not_applicable
+  summary: Only identity, bibliography, provenance and schema are assessed. Formulation,
+    preparation, growth, conditions, stock arithmetic and optimization are unassessed.
+    The generic title alone did not determine the boundary; the exact archived accession
+    association and current taxonomic metadata did.
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - boundary
+  - bacdive7295Archive
+  - bacdive7295Current
+  - tax31964
+- assessment_id: a6
+  area: schema
+  topic: Original native diagnostics
+  outcome: supported
+  summary: All four diagnostics passed once. Strict validation scanned one file with
+    zero errors; reference validation checked zero references. Those mechanical outcomes
+    do not authenticate scientific content.
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-006054-stale-bibliographic-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated bibliographic provenance omits later owner source records
+  description: Both maintained owners have later dated source references; the generated
+    target has no references section and ends with its earlier merge event. This is
+    a bibliographic staleness observation. Existing attached operational evidence
+    is neither authenticated nor transferred by this review.
+  field_paths:
+  - references
+  - curation_history
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - metadata
+  - history
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml
+    role: maintained normalized contributor
+  rule_id: review-yaml-record/nonoperational-provenance
+  native_severity: P3
+  normalization_reason: P3 normalized to minor for a bounded metadata/provenance gap;
+    no operational defect or remedy is adjudicated.
+- finding_id: f2
+  issue_key: culturemech-006054-malformed-and-naive-history-times
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Import and resolver timestamps are not unambiguous UTC instants
+  description: The target and KOMODO owner retain literal .fZ import timestamps and
+    naive resolver timestamps. Current writer functions exhibit the relevant formatting
+    behaviors, but their presence does not recover the original historical instant.
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml::curation_history[1].timestamp
+  target_ids:
+  - CultureMech:006054
+  evidence_ids:
+  - local0
+  - local1
+  - writer-komodo
+  - writer-resolver
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml
+    role: maintained normalized contributor
+  rule_id: review-yaml-record/nonoperational-provenance
+  native_severity: P3
+  normalization_reason: P3 normalized to minor for a bounded metadata/provenance gap;
+    no operational defect or remedy is adjudicated.
+actions:
+- action_id: action1
+  description: Reconcile bibliographic source attribution in a metadata-only follow-up,
+    preserving original access times and owner lineage. Do not automatically transfer
+    operational excerpts, certify their claims or regenerate the recipe.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006054
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml
+    role: maintained normalized contributor
+  generator: Metadata-only follow-up; no whole-recipe regeneration.
+  acceptance_checks:
+  - Retain every operational field and historical claim unchanged; no cultivation,
+    chemical-form or formulation correction.
+  - Keep existing history append-only and new metadata source scopes explicit.
+- action_id: action2
+  description: Correct future timestamp generation to use real timezone-aware UTC.
+    Preserve old events unchanged; append a verified current-date clarification if
+    needed without inventing or rewriting historical times.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006054
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_cii.yaml
+    role: maintained normalized contributor
+  generator: Metadata-only follow-up; no whole-recipe regeneration.
+  acceptance_checks:
+  - Retain every operational field and historical claim unchanged; no cultivation,
+    chemical-form or formulation correction.
+  - Keep existing history append-only and new metadata source scopes explicit.
+limitations:
+- Scientific review is false and completion/scope are partial. Formulation, concentration,
+  stock, preparation, growth and chemical-form assertions remain unchanged and unassessed.
+- Full local target/owner content was read for bounded metadata and structure; this
+  does not imply operational assessment. Historical report reading was limited to
+  exact identity and provenance headers.
+- The archived BacDive association is explicitly historical. Its full capture is preserved,
+  but operational sections are excluded; current BacDive does not repeat that same
+  medium list.
+- No DSM583 primary recipe/API or chemical ontology sources were requested. Local
+  prior source snippets and hashes remain unauthenticated here; no source-based replacement
+  or culture recommendation is provided.
+- MIM membership is from the pinned current snapshot 6643131b0f12ab40b66f98135245fca04027e0e9
+  only; it does not establish chemical correctness or past validity.
+- No source edits, native formal validation/save, Git mutation or publication.
+```
