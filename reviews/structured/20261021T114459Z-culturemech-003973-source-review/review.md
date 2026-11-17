@@ -1,0 +1,4672 @@
+# Source and formulation review: acidosoma_medium (CultureMech:003973)
+
+- Review: 20261021T114459Z-culturemech-003973-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T11:43:18Z
+- Finished UTC: 2026-10-21T11:44:59Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact ACIDOSOMA source identity resolves, but all three local layers flatten seven trace-stock strengths into the medium and omit the 1 ml stock addition. Nickel hexahydrate is grounded to an anhydrous structure; source-stage evidence and preparation need restoration without importing unrelated medium 922 conditions.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 181; batch 019 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eighteen task batches contain 180 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 182 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003973 | data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml | generated | acidosoma_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003973 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003973 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch019/181/strict.tsv |
+| validate-terms | passed | True | CultureMech:003973 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003973 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003973 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003973.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact identity, two maintained contributors and relationship
+
+identity: supported. Targets: CultureMech:003973.
+
+KOMODO 1220 explicitly links DSMZ 1220, and both names and stable owner IDs resolve. The target retains both exact merge contributors and the actual bacterial parent path. Shared identity does not certify the copied formulation or missing preparation. Source duplication is not inferred solely from the ingredient fingerprint.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:003973.
+
+48 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "KH2PO4",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.1",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: KH2PO4",
+        "exact_source_quote": "KH2PO4 0.10 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.734835,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "(NH4)2SO4",
+    "stored": {
+      "value": "0.25",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.25",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: (NH4)2SO4",
+        "exact_source_quote": "(NH4)2SO4 0.25 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.89193,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "CaCl2 x 2 H2O",
+    "stored": {
+      "value": "0.05",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.05",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: CaCl2 x 2 H2O",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.05 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.340101,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "stored": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.02",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: MgSO4 x 7 H2O",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.02 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0811438,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "Yeast extract",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.1",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: Yeast extract",
+        "exact_source_quote": "Yeast extract 0.10 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "Na gluconate",
+    "stored": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.5",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: Na gluconate",
+        "exact_source_quote": "Na gluconate 0.50 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na gluconate\",\n                        \"compound_id\": 1089,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.29214,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "target",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "Agar",
+    "stored": {
+      "value": "15",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "15",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 final optional-solid sentence",
+        "exact_source_quote": "Agar may be added at 15 g/l for solid media.",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "EDTA",
+    "stored": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "5",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: EDTA",
+        "exact_source_quote": "EDTA 5.00 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"EDTA\",\n                        \"compound_id\": 271,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 17.1092,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[8].concentration",
+    "ingredient": "CuCl2 x 5 H2O",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.1",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: CuCl2 x 5 H2O",
+        "exact_source_quote": "CuCl2 x 5 H2O 0.10 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"CuCl2 x 5 H2O\",\n                        \"compound_id\": 838,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.445379,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[9].concentration",
+    "ingredient": "FeSO4 x 7 H2O",
+    "stored": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "2",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: FeSO4 x 7 H2O",
+        "exact_source_quote": "FeSO4 x 7 H2O 2.00 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 7.19386,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[10].concentration",
+    "ingredient": "ZnSO4 x 7 H2O",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.1",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: ZnSO4 x 7 H2O",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[11].concentration",
+    "ingredient": "NiCl2 x 6 H2O",
+    "stored": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.02",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: NiCl2 x 6 H2O",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.02 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.154322,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[12].concentration",
+    "ingredient": "CoCl2 x 6 H2O",
+    "stored": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.2",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: CoCl2 x 6 H2O",
+        "exact_source_quote": "CoCl2 x 6 H2O 0.20 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "target",
+    "field_path": "ingredients[13].concentration",
+    "ingredient": "Na2MoO4",
+    "stored": {
+      "value": "0.03",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.03",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: Na2MoO4",
+        "exact_source_quote": "Na2MoO4 0.03 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4\",\n                        \"compound_id\": 811,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.145681,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "KH2PO4",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.1",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: KH2PO4",
+        "exact_source_quote": "KH2PO4 0.10 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.734835,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "(NH4)2SO4",
+    "stored": {
+      "value": "0.25",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.25",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: (NH4)2SO4",
+        "exact_source_quote": "(NH4)2SO4 0.25 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.89193,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "CaCl2 x 2 H2O",
+    "stored": {
+      "value": "0.05",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.05",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: CaCl2 x 2 H2O",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.05 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.340101,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "stored": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.02",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: MgSO4 x 7 H2O",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.02 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0811438,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "Yeast extract",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.1",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: Yeast extract",
+        "exact_source_quote": "Yeast extract 0.10 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "Na gluconate",
+    "stored": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.5",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: Na gluconate",
+        "exact_source_quote": "Na gluconate 0.50 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na gluconate\",\n                        \"compound_id\": 1089,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.29214,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "Agar",
+    "stored": {
+      "value": "15",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "15",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 final optional-solid sentence",
+        "exact_source_quote": "Agar may be added at 15 g/l for solid media.",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "EDTA",
+    "stored": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "5",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: EDTA",
+        "exact_source_quote": "EDTA 5.00 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"EDTA\",\n                        \"compound_id\": 271,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 17.1092,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[8].concentration",
+    "ingredient": "CuCl2 x 5 H2O",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.1",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: CuCl2 x 5 H2O",
+        "exact_source_quote": "CuCl2 x 5 H2O 0.10 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"CuCl2 x 5 H2O\",\n                        \"compound_id\": 838,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.445379,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[9].concentration",
+    "ingredient": "FeSO4 x 7 H2O",
+    "stored": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "2",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: FeSO4 x 7 H2O",
+        "exact_source_quote": "FeSO4 x 7 H2O 2.00 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 7.19386,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[10].concentration",
+    "ingredient": "ZnSO4 x 7 H2O",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.1",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: ZnSO4 x 7 H2O",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[11].concentration",
+    "ingredient": "NiCl2 x 6 H2O",
+    "stored": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.02",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: NiCl2 x 6 H2O",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.02 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.154322,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[12].concentration",
+    "ingredient": "CoCl2 x 6 H2O",
+    "stored": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.2",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: CoCl2 x 6 H2O",
+        "exact_source_quote": "CoCl2 x 6 H2O 0.20 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "field_path": "ingredients[13].concentration",
+    "ingredient": "Na2MoO4",
+    "stored": {
+      "value": "0.03",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.03",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: Na2MoO4",
+        "exact_source_quote": "Na2MoO4 0.03 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4\",\n                        \"compound_id\": 811,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.145681,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[0].concentration",
+    "ingredient": "KH2PO4",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.1",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: KH2PO4",
+        "exact_source_quote": "KH2PO4 0.10 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.734835,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[1].concentration",
+    "ingredient": "(NH4)2SO4",
+    "stored": {
+      "value": "0.25",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.25",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: (NH4)2SO4",
+        "exact_source_quote": "(NH4)2SO4 0.25 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.89193,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[2].concentration",
+    "ingredient": "CaCl2 x 2 H2O",
+    "stored": {
+      "value": "0.05",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.05",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: CaCl2 x 2 H2O",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.05 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.340101,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[3].concentration",
+    "ingredient": "MgSO4 x 7 H2O",
+    "stored": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.02",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: MgSO4 x 7 H2O",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.02 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0811438,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[4].concentration",
+    "ingredient": "Yeast extract",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.1",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: Yeast extract",
+        "exact_source_quote": "Yeast extract 0.10 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[5].concentration",
+    "ingredient": "Na gluconate",
+    "stored": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "0.5",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe: Na gluconate",
+        "exact_source_quote": "Na gluconate 0.50 g",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na gluconate\",\n                        \"compound_id\": 1089,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.29214,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "evidence_only",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[6].concentration",
+    "ingredient": "Agar",
+    "stored": {
+      "value": "15",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "value": "15",
+      "unit": "G_PER_L",
+      "basis": "Provider-declared main solution volume 1000 ml; agar only for the explicit solid formulation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 final optional-solid sentence",
+        "exact_source_quote": "Agar may be added at 15 g/l for solid media.",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Existing numeric value and unit match the exact source/provider, but this layer has no attached concentration evidence. Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata, not an independently measured final volume. Preserve the optional agar scope."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[7].concentration",
+    "ingredient": "EDTA",
+    "stored": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "5",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: EDTA",
+        "exact_source_quote": "EDTA 5.00 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"EDTA\",\n                        \"compound_id\": 271,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 17.1092,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[8].concentration",
+    "ingredient": "CuCl2 x 5 H2O",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.1",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: CuCl2 x 5 H2O",
+        "exact_source_quote": "CuCl2 x 5 H2O 0.10 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"CuCl2 x 5 H2O\",\n                        \"compound_id\": 838,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.445379,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[9].concentration",
+    "ingredient": "FeSO4 x 7 H2O",
+    "stored": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "2",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: FeSO4 x 7 H2O",
+        "exact_source_quote": "FeSO4 x 7 H2O 2.00 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"mmol_l\": 7.19386,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[10].concentration",
+    "ingredient": "ZnSO4 x 7 H2O",
+    "stored": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.1",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: ZnSO4 x 7 H2O",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[11].concentration",
+    "ingredient": "NiCl2 x 6 H2O",
+    "stored": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.02",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: NiCl2 x 6 H2O",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.02 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.154322,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[12].concentration",
+    "ingredient": "CoCl2 x 6 H2O",
+    "stored": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.2",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: CoCl2 x 6 H2O",
+        "exact_source_quote": "CoCl2 x 6 H2O 0.20 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "correct",
+    "local_input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "field_path": "ingredients[13].concentration",
+    "ingredient": "Na2MoO4",
+    "stored": {
+      "value": "0.03",
+      "unit": "G_PER_L"
+    },
+    "proposed": {
+      "stock_value": "0.03",
+      "stock_unit": "G_PER_L",
+      "stock_provider_volume_ml": 1000,
+      "stock_addition_ml_per_source_batch": 1,
+      "scope": "Trace elements stock, not a neat main-medium addition"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection: Na2MoO4",
+        "exact_source_quote": "Na2MoO4 0.03 g",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4\",\n                        \"compound_id\": 811,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.145681,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The present number is the stock strength. Separate the complete stock and its 1 ml addition; do not read the stock strength as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L * 0.001 g, but primary water is not proof of final mixed volume."
+  },
+  {
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "ingredient": "Trace elements addition",
+    "proposed": {
+      "amount": 1,
+      "unit": "ml",
+      "basis": "DSMZ1220 listed batch"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe, exact trace-stock addition",
+        "exact_source_quote": "Trace elements (see medium 922) 1.00 ml",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Trace elements\",\n                        \"solution_id\": 1897,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "All local layers omit the stock reference and dose; the trace stock is not the entirety of medium 922."
+  },
+  {
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "Adjust to pH 5.0 - 5.5. Agar may be added at 15 g/l for solid media."
+          }
+        ]
+      }
+    ],
+    "ingredient": "Main water",
+    "proposed": {
+      "amount": 1000,
+      "unit": "ml",
+      "scope": "main recipe solvent quantity"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 main recipe water row",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "Record the source solvent amount separately; do not equate it to a measured final volume or water mass."
+  },
+  {
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "ingredient": "Trace-stock water",
+    "proposed": {
+      "amount": 1000,
+      "unit": "ml",
+      "scope": "Trace elements stock only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz922",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf",
+        "source_locator": "Page 1 Trace elements subsection, water row (same words also occur in excluded parent main recipe)",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b",
+        "parsed_text_sha256": "ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23"
+      },
+      {
+        "source_key": "mediadive1220api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1220",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36"
+      }
+    ],
+    "explanation": "The stock water belongs to its preparation and is not another litre added to medium 1220."
+  },
+  {
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 5.0,
+          "max": 5.5
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 5.0,
+          "max": 5.5
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 5.0,
+          "max": 5.5
+        }
+      }
+    ],
+    "ingredient": "Target pH range",
+    "proposed": {
+      "min": 5.0,
+      "max": 5.5
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 final preparation sentence",
+        "exact_source_quote": "Adjust to pH 5.0 – 5.5.",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      }
+    ],
+    "explanation": "All three scalar ranges already match; attach narrow source evidence. Do not import medium 922 pH 4.0–4.5."
+  },
+  {
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust to pH 5.0 - 5.5. Agar may be added at 15 g/l for solid media."
+      }
+    ],
+    "ingredient": "Existing maintained pH and optional-solid preparation",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 final sentence",
+        "exact_source_quote": "Adjust to pH 5.0 – 5.5. Agar may be added at 15 g/l for solid media.",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      }
+    ],
+    "explanation": "The DSMZ owner already retains both instructions; only narrow evidence is needed there."
+  },
+  {
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "ingredient": "Missing generated/KOMODO preparation",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1220",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf",
+        "source_locator": "Page 1 final sentence",
+        "exact_source_quote": "Adjust to pH 5.0 – 5.5. Agar may be added at 15 g/l for solid media.",
+        "snapshot_sha256": "5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4",
+        "parsed_text_sha256": "b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963"
+      }
+    ],
+    "explanation": "Restore the documented preparation in these layers through their owners; do not replace the already present DSMZ owner wording."
+  }
+]
+
+### Identifier metadata, exact secondary keys and supplied-form scope
+
+grounding: concern. Targets: CultureMech:003973.
+
+13 distinct primary/current-secondary identifiers resolve. 0 label instances differ from current canonical labels; 0 asserted current secondary keys lack an exact pinned index row. Legacy numeric links are assessed separately and are not established by CHEBI correspondence. Target linkage is 13/14 primary and 13/14 secondary ingredient instances; this measures presence, not source validity.
+
+{"label_drift": [], "missing_secondary_keys": [], "legacy_instances": [], "coverage_scale": "0–100 percent; each ingredient instance counted once", "denominator": 14, "primary_percent": 92.85714285714286, "secondary_percent": 92.85714285714286}
+
+### Source-supplied forms and specificity limits
+
+grounding: concern. Targets: CultureMech:003973.
+
+Nickel chloride is explicitly hexahydrate in both primary and provider, while CHEBI:34887 describes Cl2Ni without waters. The other explicit hydrates match their ontology forms, including the unusual but explicitly sourced copper chloride pentahydrate. Na gluconate does not establish the D stereochemistry encoded by CHEBI:84997, and unqualified Na2MoO4 does not independently certify anhydrous supply. These latter distinctions are limits, not proven wrong replacements.
+
+### Stock boundaries, preparation and conditional physical state
+
+completeness: concern. Targets: CultureMech:003973.
+
+The maintained DSMZ owner retains the pH/optional agar sentence, but the target and KOMODO owner omit preparation. SOLID_AGAR and the agar note describe an explicitly permitted solid formulation; the source also permits liquid medium. Complex/semi-defined classification is compatible with yeast extract and agar. No organism/strain growth assertion is present. The exact source supplies no sterilization time or temperature; none is invented.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:003973.
+
+25 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+## Findings
+
+### f1: Trace-stock strengths are presented as main-medium amounts
+
+blocker / open / confirmed; issue key: CM003973-trace-stock-flattening.
+
+Each of the three layers lists seven medium 922 trace-stock strengths as direct g/L ingredients while omitting the 1 ml stock addition. The exact 1000 ml stock recipe and dose are available; the apparent formulation therefore has materially wrong stage scope.
+
+### f2: Nickel hexahydrate uses an anhydrous ontology structure
+
+major / open / confirmed; issue key: CM003973-nickel-hydrate.
+
+The source and preferred term say NiCl2 x 6 H2O, but both primary and secondary links use CHEBI:34887 with formula Cl2Ni. Valid canonical labels do not fix the chemical-form mismatch.
+
+### f3: Source amount evidence and generated preparation are missing
+
+major / open / confirmed; issue key: CM003973-source-evidence-preparation.
+
+No local ingredient has attached amount evidence. The DSMZ owner already preserves pH/optional agar preparation; the target and KOMODO owner drop it. Source-specific gluconate stereochemistry and molybdate hydration are not independently established.
+
+### f4: KOMODO history contains malformed and timezone-naive timestamps
+
+minor / open / confirmed; issue key: CM003973-history-timestamps.
+
+Both the target and KOMODO owner retain 2026-01-27T01:15:01.fZ and a February timestamp without timezone. They are historical provenance issues, not source access times.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the complete trace stock and source dose in maintained inputs, retaining source-specific volume bases, then regenerate the target.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Verify a source-appropriate hydrate identity before updating the maintained primary and secondary links; do not guess a replacement identifier.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach exact claim-level source evidence and recover the missing preparation only where absent; qualify unresolved supplied-form specificity without asserting an unverified alternative.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve prior history bytes; append a separately authorized provenance clarification supported by original event evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/acidosoma_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch019/181/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch019/181/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml:1:id: CultureMech:003973<br>./data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml:1:id: CultureMech:003973<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch019/source-preflight-bound/181/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 18 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsmz1220 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf; Page 1: complete main recipe and pH/optional agar sentence | supports | Exact source medium 1220, including 1 ml trace stock and optional solid formulation. |
+| dsmz922 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf; Page 1: Trace elements subsection only | supports | Only the explicitly referenced trace stock supports this review; medium 922 main salts, pH, methane and nitrate recommendations do not transfer. |
+| mediadive1220api | https://mediadive.dsmz.de/rest/medium/1220; $.data.medium and $.data.solutions[0:2] | supports | Provider identity and explicit 1000 ml main/stock bases, all 17 source recipe rows and preparation. |
+| solution1897 | https://mediadive.dsmz.de/rest/solution/1897; $.data.id, volume and complete recipe | supports | Exact referenced trace-stock identity and seven composition amounts, independently matching the medium API. |
+| komodo | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact ID 1220 row and ID/Name/PH Info/Is Complex/Is Aerobic/Is SubMedium/Instructions header | supports | 1220 &#124; ACIDOSOMA medium &#124; 5.0 - 5.5 &#124; true &#124; false &#124; false &#124; http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf; the false aerobic flag is catalog metadata, not experimental physiological evidence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch019/181/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:2509 resolves to agar. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:34887 resolves to nickel dichloride. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi4735 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:62946 resolves to ammonium sulfate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi75215 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75215; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:75215 resolves to sodium molybdate (anhydrous). Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi84997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_84997; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:84997 resolves to sodium gluconate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| chebi91245 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91245; Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations | supports | CHEBI:91245 resolves to copper(II) chloride pentahydrate. Identity/label existence is separate from exact supplied form and source-specific ingredient support. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned index exact identifier lookup; adjacent source revision/hash | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "asserted_secondary_rows": {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar  (if needed)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (BD)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "agar (BD-Difco)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Difco)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (if needed)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (if needed)*", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Molecular Genetics)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Purified)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar* (if needed)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Bacteriological Agar", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "bitter salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsom salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsomite", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate anhydrous", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Magnesium sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulphate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium(II) sulfate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO .7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (100 mM)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O solution (25%)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O to 15.0 g).", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 ·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of magnesia", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "zinc sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Zinc sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc sulfate heptahydrate (1:1:7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc(2+) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc(2+) sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Zn2SO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 .7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 x 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 × 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4*7 H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4*7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4-7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4∙7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4・7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4･7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "[NiCl2]", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel dichloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel(2+) chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel(II) chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel(II) chloride", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NiCl 2", "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:4735": [{"label": "(ethane-1,2-diyldinitrilo)tetraacetic acid", "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA (acid form)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "2,2',2'',2'''-(ethane-1,2-diyldiammonio)tetraacetate", "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "2,2',2'',2'''-(ethane-1,2-diyldiazaniumyl)tetraacetate", "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "edetic acid", "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA (acid form)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "EDTA", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "EDTA (acid form)", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA (acid form)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "EDTA (acid form)", "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "EDTA (chelating agent)", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA (chelating agent)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "EDTA (chelating agent)", "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ethylenediaminetetraacetic acid", "match_type": "ontology_label", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ethylenediaminetetraacetic acid", "match_type": "ontology_label", "identifier": "CHEBI:4735", "preferred_term": "EDTA (acid form)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "ethylenediaminetetraacetic acid", "match_type": "ontology_label", "identifier": "CHEBI:4735", "preferred_term": "EDTA (chelating agent)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "cobalt (II) chloride hexahydrate", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cobalt chloride hexahydrate", "match_type": "ontology_label", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "cobalt chloride hydrate", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Cobalt dichloride hexahydrate", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cobalt(2+) dichloride hexahydrate", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Cobalt(II) chloride hexahydrate", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Cobalt(II) chloride--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoCl2 . 6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2 x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "resolved:owned"}, {"label": "CoCl2 x 4 H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "resolved:owned"}, {"label": "CoCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2 x 6 H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoCl2 x 6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2 · 6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2 × 6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2 ∙ 6 H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2·6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2∙6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2⋅6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2・6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2 SO4", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2S4", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4(Fisher A 702)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ammonium Sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulfate (2:1)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulphate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diammonium sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diazanium sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "mascagnite", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid ammonium salt (1:2)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid, diammonium salt", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of ammonia", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH PO", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4 (0.4 g/l)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4 (7% w/v)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4(Sigma P 0662)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MKP", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium dihydrogen phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium monophosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium orthophosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Orthophosphoric acid, monopotassium salt", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Phosphoric acid, monopotassium salt", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Phosphoric acid, potassium salt (1:1)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium acid phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dihydrogen orthophosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dihydrogen phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium Phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium phosphate monobasic", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sorensen's potassium phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75215": [{"label": "Disodium molybdate", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Molybdic acid, disodium salt", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4", "match_type": "preferred_term", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4 (0.01 M)", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Natriummolybdat", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium dioxido(dioxo)molybdenum", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium molybdate", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium molybdate (anhydrous)", "match_type": "ontology_label", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium molybdate(VI)", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "Fe SO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous sulfate.7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 x 7H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4・7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron (II) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron(II) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:84997": [{"label": "D-Gluconic acid, monosodium salt", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Gluconic acid sodium salt", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monosodium D-gluconate", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monosodium gluconate", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na gluconate", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na-gluconate", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium (2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanoate", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium gluconate", "match_type": "preferred_term", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl 2 X 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2  x 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 . 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x  2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (0.1% w/v)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (50 g/l stock solution)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (5M)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O solution (7%)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 · 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2*2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2*2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2. 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2.2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl22H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "resolved:owned"}, {"label": "CaCl22H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}, {"label": "CaCl2x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2x2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2·2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O (Sigma C-3881)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O(CAS: 10035-04-8)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O(Sigma C-3881)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium chloride dihydrate", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "calcium chloride dihydrate", "match_type": "ontology_label", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "calcium chloride--water (1/2)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "calcium chloride--water (1/2)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status": "REJECTED", "ambiguity": "unique"}], "CHEBI:91245": [{"label": "copper chloride pentahydrate", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper dichloride--water (1/5)", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+) chloride pentahydrate", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+) dichloride --water (1/5)", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(II) chloride pentahydrate", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(II) chloride--water (1/5)", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuCl2 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuCl2.5H2O", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cupric chloride pentahydrate", "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys": [], "legacy_instances": []} |
+| history-metadata | data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml; data/normalized_yaml/bacterial/acidosoma_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:03.257926"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:03.257926"}]}, {"input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive parsing separates primary ingredients and stock additions; resolver copies composition and selected metadata but not preparation. Current formulation merge requires equal scientific fields. These inspected present-day safeguards are not asserted to be the historical cause of the saved flattened target. |
+| writer-1 | src/culturemech/enrich/dsmz_resolver.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive parsing separates primary ingredients and stock additions; resolver copies composition and selected metadata but not preparation. Current formulation merge requires equal scientific fields. These inspected present-day safeguards are not asserted to be the historical cause of the saved flattened target. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive parsing separates primary ingredients and stock additions; resolver copies composition and selected metadata but not preparation. Current formulation merge requires equal scientific fields. These inspected present-day safeguards are not asserted to be the historical cause of the saved flattened target. |
+| writer-3 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current MediaDive parsing separates primary ingredients and stock additions; resolver copies composition and selected metadata but not preparation. Current formulation merge requires equal scientific fields. These inspected present-day safeguards are not asserted to be the historical cause of the saved flattened target. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Medium 922 is consulted only for its exact referenced trace-stock subsection. Its main formulation, gas phase, growth recommendations and pH are outside medium 1220 scope. KOMODO aerobic=false is preserved as catalog metadata only.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T114459Z-culturemech-003973-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidosoma_medium (CultureMech:003973)'
+started_at: '2026-10-21T11:43:18Z'
+finished_at: '2026-10-21T11:44:59Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact ACIDOSOMA source identity resolves, but all three local layers
+  flatten seven trace-stock strengths into the medium and omit the 1 ml stock addition.
+  Nickel hexahydrate is grounded to an anhydrous structure; source-stage evidence
+  and preparation need restoration without importing unrelated medium 922 conditions.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+    sha256: d68b73c74098795befb38cbb077a0002d506001f18ac65d556e6705817eb6189
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    sha256: 52b6ab6843c1fae2000fafd89620ac96556534acdf407cf08e8a574d0a494c2c
+    role: context
+  - path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    sha256: 840d33414f25cade97b9ea896c9c85fb3e6c3953e1e7c25600eef143b12213dd
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 181; batch 019 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eighteen task batches
+    contain 180 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 182 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003973
+targets:
+- target_id: CultureMech:003973
+  path: data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  label: acidosoma_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch019/181/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch019/181/strict.tsv"
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003973
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:37.709651Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch019/181/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:39.893073Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch019/181/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:42.512474Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:43:44.279188Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml:1:id: CultureMech:003973
+
+    ./data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml:1:id: CultureMech:003973
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/source-preflight-bound/181/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: supports
+  summary: 18 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 43b16d5a99422e702d464a4cdbb0ca5bd7d59f948ae3549e929a7007eada747b
+- evidence_id: dsmz1220
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf
+  locator: 'Page 1: complete main recipe and pH/optional agar sentence'
+  accessed_at: '2026-10-21T11:29:07.406098Z'
+  support: supports
+  summary: Exact source medium 1220, including 1 ml trace stock and optional solid
+    formulation.
+  snapshot_sha256: 5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4
+- evidence_id: dsmz922
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf
+  locator: 'Page 1: Trace elements subsection only'
+  accessed_at: '2026-10-21T11:29:46.234563Z'
+  support: supports
+  summary: Only the explicitly referenced trace stock supports this review; medium
+    922 main salts, pH, methane and nitrate recommendations do not transfer.
+  snapshot_sha256: 5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b
+- evidence_id: mediadive1220api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1220
+  locator: $.data.medium and $.data.solutions[0:2]
+  accessed_at: '2026-10-21T11:29:06.756902Z'
+  support: supports
+  summary: Provider identity and explicit 1000 ml main/stock bases, all 17 source
+    recipe rows and preparation.
+  snapshot_sha256: ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36
+- evidence_id: solution1897
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/1897
+  locator: $.data.id, volume and complete recipe
+  accessed_at: '2026-10-21T11:29:45.589726Z'
+  support: supports
+  summary: Exact referenced trace-stock identity and seven composition amounts, independently
+    matching the medium API.
+  snapshot_sha256: cdd8e41cc417a5fdd72398cbf89fdbb3e745e95c08328d41306ee48326eadbf1
+- evidence_id: komodo
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact ID 1220 row and ID/Name/PH Info/Is Complex/Is Aerobic/Is SubMedium/Instructions
+    header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: 1220 | ACIDOSOMA medium | 5.0 - 5.5 | true | false | false | http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf;
+    the false aerobic flag is catalog metadata, not experimental physiological evidence.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/181/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: d3de7f81a4fde69fe2f53ca81570c24f224b03de08dc4a32d300614826b08a3b
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identity/label existence is separate from
+    exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identity/label existence is
+    separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi4735
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T07:33:28.659368Z'
+  support: supports
+  summary: CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75215
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75215
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T09:27:41.268041Z'
+  support: supports
+  summary: CHEBI:75215 resolves to sodium molybdate (anhydrous). Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: fc350638c78c930db3b38cb59bd48dc73b408d309f79ada3ee087a8fb207fb0e
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi84997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_84997
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T11:29:09.206519Z'
+  support: supports
+  summary: CHEBI:84997 resolves to sodium gluconate. Identity/label existence is separate
+    from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: 560685b01ead1a4bf083b1c2ff8f1bcbbf588ad320253e17a1a69b391f97968d
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identity/label existence
+    is separate from exact supplied form and source-specific ingredient support.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi91245
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91245
+  locator: Exact OLS obo_id, label, obsolete flag, formula and supplied-form annotations
+  accessed_at: '2026-10-21T11:29:09.629681Z'
+  support: supports
+  summary: CHEBI:91245 resolves to copper(II) chloride pentahydrate. Identity/label
+    existence is separate from exact supplied form and source-specific ingredient
+    support.
+  snapshot_sha256: 6595deff4c6caed4e7fcdf32fe001a46cd4d813e8870ae9bb5a84076c0fe8944
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned index exact identifier lookup; adjacent source revision/hash
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "asserted_secondary_rows":
+    {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Agar  (if needed)", "match_type":
+    "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id":
+    "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar
+    (BD)", "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "agar (BD-Difco)", "match_type": "synonym", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Difco)", "match_type": "synonym",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (if needed)",
+    "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar",
+    "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Agar (if needed)*", "match_type": "synonym", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Agar (Molecular Genetics)", "match_type": "synonym",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Agar (Purified)",
+    "match_type": "synonym", "identifier": "CHEBI:2509", "preferred_term": "Agar",
+    "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Agar* (if needed)", "match_type": "synonym", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Bacteriological Agar", "match_type": "synonym",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label":
+    ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": ".MgSO4", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": ".MgSO4", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": ".MgSO4 x 7 H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": ".MgSO4 x 7 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "bitter salt", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "epsom salt",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "epsomite", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate (1:1) heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium
+    sulfate (1:1) heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate anhydrous", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Magnesium
+    sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate
+    heptahydrate", "match_type": "ontology_label", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate heptahydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulfate--water (1/7)", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "magnesium sulphate", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium sulphate
+    heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "magnesium sulphate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "magnesium(II) sulfate",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO .7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO
+    4", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO 4", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO 4 x 7 H2O", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO
+    4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO x 7 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO47H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO2 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2 x 7 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO2·7H2O", "match_type":
+    "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4
+    . 7H2O", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 . H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H20", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4
+    x 7 H20", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O (0.1%
+    w/v)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "MgSO4 x 7 H2O (100 mM)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7 H2O solution (25%)",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 x 7 H2O to 15.0 g).", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 x7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4 · 7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "MgSO4 ·7H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4.7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO47H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO47H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "MgSO47H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4x7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4x7H2O", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "MgSO4·7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4
+    x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O (Sigma 230391)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O (Sigma
+    230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O(CAS: 10034-99-8)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(CAS:
+    10034-99-8)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4•7H2O(Sigma 230391)", "match_type": "synonym", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4•7H2O(Sigma
+    230391)", "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sulfuric acid magnesium salt", "match_type": "synonym",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric
+    acid magnesium salt heptahydrate", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid magnesium salt heptahydrate",
+    "match_type": "synonym", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "sulphate of magnesia", "match_type": "synonym", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "zinc sulfate (1:1)
+    heptahydrate", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Zinc sulfate heptahydrate", "match_type": "synonym", "identifier":
+    "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc sulfate heptahydrate
+    (1:1:7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "zinc(2+) sulfate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "zinc(2+)
+    sulfate--water (1/7)", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Zn2SO4·7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 . 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4
+    .7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 x 7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4 · 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4 × 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4
+    ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4*7 H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4*7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4-7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4.7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4·7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4∙7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ZnSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4・7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ZnSO4･7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4
+    x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:34887": [{"label": "[NiCl2]", "match_type": "synonym", "identifier":
+    "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Nickel chloride", "match_type": "synonym",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "nickel chloride",
+    "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2",
+    "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "nickel dichloride", "match_type": "synonym", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "nickel(2+) chloride", "match_type": "synonym",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Nickel(II) chloride",
+    "match_type": "synonym", "identifier": "CHEBI:34887", "preferred_term": "NiCl2",
+    "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "nickel(II) chloride", "match_type": "synonym", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "NiCl 2", "match_type": "synonym", "identifier":
+    "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:4735": [{"label":
+    "(ethane-1,2-diyldinitrilo)tetraacetic acid", "match_type": "synonym", "identifier":
+    "CHEBI:4735", "preferred_term": "EDTA (acid form)", "ontology_id": "CHEBI:4735",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "2,2'',2'''',2''''''-(ethane-1,2-diyldiammonio)tetraacetate",
+    "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA",
+    "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "2,2'',2'''',2''''''-(ethane-1,2-diyldiazaniumyl)tetraacetate", "match_type":
+    "synonym", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id":
+    "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "edetic
+    acid", "match_type": "synonym", "identifier": "CHEBI:4735", "preferred_term":
+    "EDTA (acid form)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED",
+    "ambiguity": "unique"}, {"label": "EDTA", "match_type": "preferred_term", "identifier":
+    "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "EDTA (acid form)", "match_type":
+    "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA (acid form)",
+    "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"},
+    {"label": "EDTA (acid form)", "match_type": "synonym", "identifier": "CHEBI:4735",
+    "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "EDTA (chelating agent)", "match_type": "preferred_term",
+    "identifier": "CHEBI:4735", "preferred_term": "EDTA (chelating agent)", "ontology_id":
+    "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "EDTA (chelating agent)", "match_type": "synonym", "identifier": "CHEBI:4735",
+    "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "ethylenediaminetetraacetic acid", "match_type":
+    "ontology_label", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id":
+    "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ethylenediaminetetraacetic
+    acid", "match_type": "ontology_label", "identifier": "CHEBI:4735", "preferred_term":
+    "EDTA (acid form)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED",
+    "ambiguity": "unique"}, {"label": "ethylenediaminetetraacetic acid", "match_type":
+    "ontology_label", "identifier": "CHEBI:4735", "preferred_term": "EDTA (chelating
+    agent)", "ontology_id": "CHEBI:4735", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}], "CHEBI:53503": [{"label": "cobalt (II) chloride hexahydrate", "match_type":
+    "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate",
+    "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier":
+    "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id":
+    "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cobalt
+    chloride hexahydrate", "match_type": "ontology_label", "identifier": "CHEBI:53503",
+    "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "cobalt chloride hydrate", "match_type":
+    "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate",
+    "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Cobalt dichloride hexahydrate", "match_type": "synonym", "identifier":
+    "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id":
+    "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "cobalt(2+)
+    dichloride hexahydrate", "match_type": "synonym", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Cobalt(II) chloride
+    hexahydrate", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term":
+    "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Cobalt(II) chloride--water (1/7)",
+    "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "Cobalt
+    chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "CoCl2 . 6H2O", "match_type": "synonym", "identifier":
+    "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2 x 2 H2O",
+    "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2
+    x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity":
+    "resolved:owned"}, {"label": "CoCl2 x 4 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503",
+    "mapping_status": "REJECTED", "ambiguity": "resolved:owned"}, {"label": "CoCl2
+    x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term":
+    "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "CoCl2 x 6 H2O", "match_type": "synonym", "identifier": "CHEBI:53503",
+    "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CoCl2 x 6H2O",
+    "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term": "CoCl2
+    x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "CoCl2 · 6H2O", "match_type": "synonym", "identifier": "CHEBI:53503",
+    "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2 × 6H2O", "match_type": "synonym",
+    "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id":
+    "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "CoCl2 ∙ 6 H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term":
+    "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "CoCl2·6H2O", "match_type": "synonym", "identifier": "CHEBI:53503",
+    "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "CoCl2∙6H2O", "match_type": "synonym",
+    "identifier": "CHEBI:53503", "preferred_term": "CoCl2 x 6 H2O", "ontology_id":
+    "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label":
+    "CoCl2⋅6H2O", "match_type": "synonym", "identifier": "CHEBI:53503", "preferred_term":
+    "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status": "REJECTED", "ambiguity":
+    "unique"}, {"label": "CoCl2・6H2O", "match_type": "synonym", "identifier": "CHEBI:53503",
+    "preferred_term": "CoCl2 x 6 H2O", "ontology_id": "CHEBI:53503", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2 SO4", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2S4",
+    "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "(NH4)2SO4(Fisher A 702)", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Ammonium
+    Sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ammonium sulfate (2:1)", "match_type": "synonym", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "ammonium sulphate", "match_type":
+    "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id":
+    "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "diammonium
+    sulfate", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "diazanium sulfate", "match_type": "synonym", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "mascagnite", "match_type": "synonym",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulfuric acid ammonium
+    salt (1:2)", "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sulfuric acid, diammonium salt", "match_type": "synonym",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sulphate of ammonia",
+    "match_type": "synonym", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH PO", "match_type": "synonym", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4 (0.4 g/l)", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "KH2PO4
+    (7% w/v)", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "KH2PO4(Sigma P 0662)", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MKP", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium dihydrogen phosphate",
+    "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4",
+    "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Monopotassium monophosphate", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium orthophosphate", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monopotassium
+    phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Orthophosphoric acid, monopotassium salt", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Phosphoric
+    acid, monopotassium salt", "match_type": "synonym", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Phosphoric acid, potassium salt (1:1)", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium
+    acid phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Potassium dihydrogen orthophosphate", "match_type": "synonym",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Potassium dihydrogen
+    phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Potassium Phosphate", "match_type": "synonym", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Potassium phosphate monobasic", "match_type":
+    "synonym", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sorensen''s
+    potassium phosphate", "match_type": "synonym", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75215": [{"label": "Disodium molybdate", "match_type": "synonym",
+    "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Molybdic acid,
+    disodium salt", "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term":
+    "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Na2MoO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Na2MoO4 (0.01 M)", "match_type":
+    "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id":
+    "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Natriummolybdat",
+    "match_type": "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4",
+    "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "sodium dioxido(dioxo)molybdenum", "match_type": "synonym", "identifier":
+    "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "Sodium molybdate", "match_type":
+    "synonym", "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id":
+    "CHEBI:75215", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "sodium
+    molybdate (anhydrous)", "match_type": "ontology_label", "identifier": "CHEBI:75215",
+    "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Sodium molybdate(VI)", "match_type": "synonym",
+    "identifier": "CHEBI:75215", "preferred_term": "Na2MoO4", "ontology_id": "CHEBI:75215",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label":
+    "Fe SO4 x 7 H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "ferrous sulfate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "ferrous
+    sulfate.7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 . 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4 7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4
+    x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 x 7H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x 7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4
+    x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 x7 H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "FeSO4 x7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4
+    · 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4 ⋅ 7H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4.7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4·7H2O",
+    "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term": "FeSO4
+    x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "FeSO4⋅7H2O", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "FeSO4・7H2O", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Iron
+    (II) sulfate heptahydrate", "match_type": "synonym", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate heptahydrate", "match_type":
+    "ontology_label", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O",
+    "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "iron(2+) sulfate heptahydrate", "match_type": "ontology_label", "identifier":
+    "CHEBI:75836", "preferred_term": "FeSO4 x 7H2O", "ontology_id": "CHEBI:75836",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "iron(2+) sulfate--water
+    (1/7)", "match_type": "synonym", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Iron(II) sulfate heptahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:84997":
+    [{"label": "D-Gluconic acid, monosodium salt", "match_type": "synonym", "identifier":
+    "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Gluconic acid sodium
+    salt", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term":
+    "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Monosodium D-gluconate", "match_type": "synonym",
+    "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id":
+    "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Monosodium
+    gluconate", "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term":
+    "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Na gluconate", "match_type": "synonym", "identifier":
+    "CHEBI:84997", "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Na-gluconate",
+    "match_type": "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium
+    gluconate", "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "sodium (2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanoate", "match_type":
+    "synonym", "identifier": "CHEBI:84997", "preferred_term": "Sodium gluconate",
+    "ontology_id": "CHEBI:84997", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "Sodium gluconate", "match_type": "preferred_term", "identifier": "CHEBI:84997",
+    "preferred_term": "Sodium gluconate", "ontology_id": "CHEBI:84997", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl 2 X 2 H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2  x 2 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 . 2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 x  2 H2O", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 x 2 H2O (0.1% w/v)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O (50
+    g/l stock solution)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 x 2 H2O (5M)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x 2 H2O solution
+    (7%)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 x2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2
+    · 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2 × 2 H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2*2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2*2H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}, {"label": "CaCl2. 2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2.2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl22H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "REJECTED", "ambiguity": "resolved:owned"}, {"label": "CaCl22H2O", "match_type":
+    "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}, {"label":
+    "CaCl2x 2H2O", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2x2H2O", "match_type": "synonym", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2·2H2O", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O",
+    "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term": "CaCl2
+    x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2•2H2O (Sigma C-3881)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CaCl2•2H2O(CAS:
+    10035-04-8)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CaCl2•2H2O(Sigma C-3881)", "match_type": "synonym", "identifier":
+    "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium chloride
+    dihydrate", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "calcium chloride dihydrate", "match_type": "ontology_label",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "calcium chloride--water
+    (1/2)", "match_type": "synonym", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "calcium chloride--water (1/2)", "match_type": "synonym",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl22H2O", "ontology_id": "CHEBI:86158",
+    "mapping_status": "REJECTED", "ambiguity": "unique"}], "CHEBI:91245": [{"label":
+    "copper chloride pentahydrate", "match_type": "synonym", "identifier": "CHEBI:91245",
+    "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "copper dichloride--water (1/5)",
+    "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2
+    x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "copper(2+) chloride pentahydrate", "match_type": "synonym",
+    "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id":
+    "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "copper(2+)
+    dichloride --water (1/5)", "match_type": "synonym", "identifier": "CHEBI:91245",
+    "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "copper(II) chloride pentahydrate",
+    "match_type": "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2
+    x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "copper(II) chloride--water (1/5)", "match_type": "synonym",
+    "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id":
+    "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "CuCl2
+    x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91245", "preferred_term":
+    "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "CuCl2.5H2O", "match_type": "synonym", "identifier": "CHEBI:91245",
+    "preferred_term": "CuCl2 x 5 H2O", "ontology_id": "CHEBI:91245", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "cupric chloride pentahydrate", "match_type":
+    "synonym", "identifier": "CHEBI:91245", "preferred_term": "CuCl2 x 5 H2O", "ontology_id":
+    "CHEBI:91245", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "missing_current_keys":
+    [], "legacy_instances": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDOSOMA_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml;
+    data/normalized_yaml/bacterial/acidosoma_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:03.257926"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:03.257926"}]}, {"input": "data/normalized_yaml/bacterial/acidosoma_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Current MediaDive parsing separates primary ingredients and stock additions;
+    resolver copies composition and selected metadata but not preparation. Current
+    formulation merge requires equal scientific fields. These inspected present-day
+    safeguards are not asserted to be the historical cause of the saved flattened
+    target.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Current MediaDive parsing separates primary ingredients and stock additions;
+    resolver copies composition and selected metadata but not preparation. Current
+    formulation merge requires equal scientific fields. These inspected present-day
+    safeguards are not asserted to be the historical cause of the saved flattened
+    target.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Current MediaDive parsing separates primary ingredients and stock additions;
+    resolver copies composition and selected metadata but not preparation. Current
+    formulation merge requires equal scientific fields. These inspected present-day
+    safeguards are not asserted to be the historical cause of the saved flattened
+    target.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T11:44:57Z'
+  support: context_only
+  summary: Current MediaDive parsing separates primary ingredients and stock additions;
+    resolver copies composition and selected metadata but not preparation. Current
+    formulation merge requires equal scientific fields. These inspected present-day
+    safeguards are not asserted to be the historical cause of the saved flattened
+    target.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact identity, two maintained contributors and relationship
+  outcome: supported
+  summary: KOMODO 1220 explicitly links DSMZ 1220, and both names and stable owner
+    IDs resolve. The target retains both exact merge contributors and the actual bacterial
+    parent path. Shared identity does not certify the copied formulation or missing
+    preparation. Source duplication is not inferred solely from the ingredient fingerprint.
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1220
+  - mediadive1220api
+  - komodo
+  - id-search
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 48 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"\
+    target\",\n    \"field_path\": \"ingredients[0].concentration\",\n    \"ingredient\"\
+    : \"KH2PO4\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution volume 1000\
+    \ ml; agar only for the explicit solid formulation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe: KH2PO4\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.10 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n                \
+    \        \\\"mmol_l\\\": 0.734835,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"target\",\n    \"field_path\": \"ingredients[1].concentration\",\n    \"ingredient\"\
+    : \"(NH4)2SO4\",\n    \"stored\": {\n      \"value\": \"0.25\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.25\",\n     \
+    \ \"unit\": \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution volume\
+    \ 1000 ml; agar only for the explicit solid formulation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe: (NH4)2SO4\",\n        \"exact_source_quote\"\
+    : \"(NH4)2SO4 0.25 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.25,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.25,\\n \
+    \                       \\\"mmol_l\\\": 1.89193,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"target\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"ingredient\"\
+    : \"CaCl2 x 2 H2O\",\n    \"stored\": {\n      \"value\": \"0.05\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.05\",\n\
+    \      \"unit\": \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution\
+    \ volume 1000 ml; agar only for the explicit solid formulation\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1220\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: CaCl2 x 2 H2O\",\n      \
+    \  \"exact_source_quote\": \"CaCl2 x 2 H2O 0.05 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.05,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\n\
+    \                        \\\"mmol_l\\\": 0.340101,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"Existing numeric value and unit match the exact\
+    \ source/provider, but this layer has no attached concentration evidence. Primary\
+    \ lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata,\
+    \ not an independently measured final volume. Preserve the optional agar scope.\"\
+    \n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"target\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"ingredient\":\
+    \ \"MgSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"0.02\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.02\",\n\
+    \      \"unit\": \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution\
+    \ volume 1000 ml; agar only for the explicit solid formulation\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1220\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: MgSO4 x 7 H2O\",\n      \
+    \  \"exact_source_quote\": \"MgSO4 x 7 H2O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.02,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\n\
+    \                        \\\"mmol_l\\\": 0.0811438,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n     \
+    \ }\n    ],\n    \"explanation\": \"Existing numeric value and unit match the\
+    \ exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"target\",\n    \"field_path\": \"ingredients[4].concentration\",\n    \"ingredient\"\
+    : \"Yeast extract\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.1\",\n      \"\
+    unit\": \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution volume\
+    \ 1000 ml; agar only for the explicit solid formulation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe: Yeast extract\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 0.10 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"target\",\n    \"field_path\": \"ingredients[5].concentration\",\n    \"ingredient\"\
+    : \"Na gluconate\",\n    \"stored\": {\n      \"value\": \"0.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.5\",\n      \"\
+    unit\": \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution volume\
+    \ 1000 ml; agar only for the explicit solid formulation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe: Na gluconate\",\n        \"exact_source_quote\"\
+    : \"Na gluconate 0.50 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na gluconate\\\",\\n                        \\\"compound_id\\\
+    \": 1089,\\n                        \\\"amount\\\": 0.5,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\\
+    n                        \\\"mmol_l\\\": 2.29214,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"Existing numeric value and unit match the exact\
+    \ source/provider, but this layer has no attached concentration evidence. Primary\
+    \ lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata,\
+    \ not an independently measured final volume. Preserve the optional agar scope.\"\
+    \n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"target\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"ingredient\":\
+    \ \"Agar\",\n    \"stored\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final optional-solid sentence\",\n   \
+    \     \"exact_source_quote\": \"Agar may be added at 15 g/l for solid media.\"\
+    ,\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"condition\\\": \\\"for solid medium\\\",\\n     \
+    \                   \\\"amount\\\": 15,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                   \
+    \     \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"correct\",\n    \"local_input\"\
+    : \"target\",\n    \"field_path\": \"ingredients[7].concentration\",\n    \"ingredient\"\
+    : \"EDTA\",\n    \"stored\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"stock_value\": \"5\",\n      \"stock_unit\"\
+    : \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n      \"stock_addition_ml_per_source_batch\"\
+    : 1,\n      \"scope\": \"Trace elements stock, not a neat main-medium addition\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz922\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: EDTA\",\n \
+    \       \"exact_source_quote\": \"EDTA 5.00 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"EDTA\\\",\\n                        \\\"compound_id\\\": 271,\\\
+    n                        \\\"amount\\\": 5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n                  \
+    \      \\\"mmol_l\\\": 17.1092,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[8].concentration\",\n    \"ingredient\": \"CuCl2 x\
+    \ 5 H2O\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"stock_value\": \"0.1\",\n      \"stock_unit\"\
+    : \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n      \"stock_addition_ml_per_source_batch\"\
+    : 1,\n      \"scope\": \"Trace elements stock, not a neat main-medium addition\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz922\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: CuCl2 x 5 H2O\"\
+    ,\n        \"exact_source_quote\": \"CuCl2 x 5 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"CuCl2 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 838,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n\
+    \                        \\\"mmol_l\\\": 0.445379,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[9].concentration\",\n    \"ingredient\": \"FeSO4 x\
+    \ 7 H2O\",\n    \"stored\": {\n      \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"stock_value\": \"2\",\n      \"stock_unit\"\
+    : \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n      \"stock_addition_ml_per_source_batch\"\
+    : 1,\n      \"scope\": \"Trace elements stock, not a neat main-medium addition\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz922\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: FeSO4 x 7 H2O\"\
+    ,\n        \"exact_source_quote\": \"FeSO4 x 7 H2O 2.00 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n     \
+    \                   \\\"mmol_l\\\": 7.19386,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[10].concentration\",\n    \"ingredient\": \"ZnSO4\
+    \ x 7 H2O\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.1\",\n    \
+    \  \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n \
+    \     \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: ZnSO4 x 7 H2O\"\
+    ,\n        \"exact_source_quote\": \"ZnSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[11].concentration\",\n    \"ingredient\": \"NiCl2\
+    \ x 6 H2O\",\n    \"stored\": {\n      \"value\": \"0.02\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.02\",\n   \
+    \   \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: NiCl2 x 6 H2O\"\
+    ,\n        \"exact_source_quote\": \"NiCl2 x 6 H2O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 0.02,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\\
+    n                        \\\"mmol_l\\\": 0.154322,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[12].concentration\",\n    \"ingredient\": \"CoCl2\
+    \ x 6 H2O\",\n    \"stored\": {\n      \"value\": \"0.2\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.2\",\n    \
+    \  \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n \
+    \     \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: CoCl2 x 6 H2O\"\
+    ,\n        \"exact_source_quote\": \"CoCl2 x 6 H2O 0.20 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 38,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"mmol_l\\\": 1.54037,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"target\",\n    \"\
+    field_path\": \"ingredients[13].concentration\",\n    \"ingredient\": \"Na2MoO4\"\
+    ,\n    \"stored\": {\n      \"value\": \"0.03\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"stock_value\": \"0.03\",\n      \"stock_unit\"\
+    : \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n      \"stock_addition_ml_per_source_batch\"\
+    : 1,\n      \"scope\": \"Trace elements stock, not a neat main-medium addition\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz922\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: Na2MoO4\",\n\
+    \        \"exact_source_quote\": \"Na2MoO4 0.03 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4\\\",\\n                        \\\"compound_id\\\":\
+    \ 811,\\n                        \\\"amount\\\": 0.03,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\n\
+    \                        \\\"mmol_l\\\": 0.145681,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[0].concentration\",\n    \"ingredient\":\
+    \ \"KH2PO4\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution volume 1000\
+    \ ml; agar only for the explicit solid formulation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe: KH2PO4\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.10 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n                \
+    \        \\\"mmol_l\\\": 0.734835,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\",\n    \"\
+    field_path\": \"ingredients[1].concentration\",\n    \"ingredient\": \"(NH4)2SO4\"\
+    ,\n    \"stored\": {\n      \"value\": \"0.25\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"value\": \"0.25\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: (NH4)2SO4\",\n        \"\
+    exact_source_quote\": \"(NH4)2SO4 0.25 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.25,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.25,\\n \
+    \                       \\\"mmol_l\\\": 1.89193,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\",\n    \"\
+    field_path\": \"ingredients[2].concentration\",\n    \"ingredient\": \"CaCl2 x\
+    \ 2 H2O\",\n    \"stored\": {\n      \"value\": \"0.05\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.05\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution volume 1000\
+    \ ml; agar only for the explicit solid formulation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe: CaCl2 x 2 H2O\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O 0.05 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.05,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\n\
+    \                        \\\"mmol_l\\\": 0.340101,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"Existing numeric value and unit match the exact\
+    \ source/provider, but this layer has no attached concentration evidence. Primary\
+    \ lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata,\
+    \ not an independently measured final volume. Preserve the optional agar scope.\"\
+    \n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"ingredient\":\
+    \ \"MgSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"0.02\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.02\",\n\
+    \      \"unit\": \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution\
+    \ volume 1000 ml; agar only for the explicit solid formulation\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1220\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: MgSO4 x 7 H2O\",\n      \
+    \  \"exact_source_quote\": \"MgSO4 x 7 H2O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.02,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\n\
+    \                        \\\"mmol_l\\\": 0.0811438,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n     \
+    \ }\n    ],\n    \"explanation\": \"Existing numeric value and unit match the\
+    \ exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\",\n    \"\
+    field_path\": \"ingredients[4].concentration\",\n    \"ingredient\": \"Yeast extract\"\
+    ,\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Yeast extract\",\n      \
+    \  \"exact_source_quote\": \"Yeast extract 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\",\n    \"\
+    field_path\": \"ingredients[5].concentration\",\n    \"ingredient\": \"Na gluconate\"\
+    ,\n    \"stored\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Na gluconate\",\n       \
+    \ \"exact_source_quote\": \"Na gluconate 0.50 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na gluconate\\\",\\n                        \\\"compound_id\\\
+    \": 1089,\\n                        \\\"amount\\\": 0.5,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\\
+    n                        \\\"mmol_l\\\": 2.29214,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"Existing numeric value and unit match the exact\
+    \ source/provider, but this layer has no attached concentration evidence. Primary\
+    \ lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata,\
+    \ not an independently measured final volume. Preserve the optional agar scope.\"\
+    \n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"ingredient\":\
+    \ \"Agar\",\n    \"stored\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final optional-solid sentence\",\n   \
+    \     \"exact_source_quote\": \"Agar may be added at 15 g/l for solid media.\"\
+    ,\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"condition\\\": \\\"for solid medium\\\",\\n     \
+    \                   \\\"amount\\\": 15,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                   \
+    \     \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"correct\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\",\n    \"\
+    field_path\": \"ingredients[7].concentration\",\n    \"ingredient\": \"EDTA\"\
+    ,\n    \"stored\": {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"proposed\": {\n      \"stock_value\": \"5\",\n      \"stock_unit\"\
+    : \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n      \"stock_addition_ml_per_source_batch\"\
+    : 1,\n      \"scope\": \"Trace elements stock, not a neat main-medium addition\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz922\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: EDTA\",\n \
+    \       \"exact_source_quote\": \"EDTA 5.00 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"EDTA\\\",\\n                        \\\"compound_id\\\": 271,\\\
+    n                        \\\"amount\\\": 5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n                  \
+    \      \\\"mmol_l\\\": 17.1092,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[8].concentration\",\n    \"ingredient\":\
+    \ \"CuCl2 x 5 H2O\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.1\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: CuCl2 x 5 H2O\"\
+    ,\n        \"exact_source_quote\": \"CuCl2 x 5 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"CuCl2 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 838,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n\
+    \                        \\\"mmol_l\\\": 0.445379,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[9].concentration\",\n    \"ingredient\":\
+    \ \"FeSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"2\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"2\",\n  \
+    \    \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: FeSO4 x 7 H2O\"\
+    ,\n        \"exact_source_quote\": \"FeSO4 x 7 H2O 2.00 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n     \
+    \                   \\\"mmol_l\\\": 7.19386,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"ingredient\"\
+    : \"ZnSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.1\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: ZnSO4 x 7 H2O\"\
+    ,\n        \"exact_source_quote\": \"ZnSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[11].concentration\",\n    \"ingredient\"\
+    : \"NiCl2 x 6 H2O\",\n    \"stored\": {\n      \"value\": \"0.02\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.02\"\
+    ,\n      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: NiCl2 x 6 H2O\"\
+    ,\n        \"exact_source_quote\": \"NiCl2 x 6 H2O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 0.02,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\\
+    n                        \\\"mmol_l\\\": 0.154322,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[12].concentration\",\n    \"ingredient\"\
+    : \"CoCl2 x 6 H2O\",\n    \"stored\": {\n      \"value\": \"0.2\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.2\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: CoCl2 x 6 H2O\"\
+    ,\n        \"exact_source_quote\": \"CoCl2 x 6 H2O 0.20 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 38,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"mmol_l\\\": 1.54037,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[13].concentration\",\n    \"ingredient\"\
+    : \"Na2MoO4\",\n    \"stored\": {\n      \"value\": \"0.03\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.03\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: Na2MoO4\",\n\
+    \        \"exact_source_quote\": \"Na2MoO4 0.03 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4\\\",\\n                        \\\"compound_id\\\":\
+    \ 811,\\n                        \\\"amount\\\": 0.03,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\n\
+    \                        \\\"mmol_l\\\": 0.145681,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[0].concentration\",\n    \"ingredient\":\
+    \ \"KH2PO4\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution volume 1000\
+    \ ml; agar only for the explicit solid formulation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe: KH2PO4\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.10 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n                \
+    \        \\\"mmol_l\\\": 0.734835,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"ingredient\": \"(NH4)2SO4\",\n    \"\
+    stored\": {\n      \"value\": \"0.25\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"proposed\": {\n      \"value\": \"0.25\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: (NH4)2SO4\",\n        \"\
+    exact_source_quote\": \"(NH4)2SO4 0.25 g\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.25,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.25,\\n \
+    \                       \\\"mmol_l\\\": 1.89193,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\",\n    \"field_path\"\
+    : \"ingredients[2].concentration\",\n    \"ingredient\": \"CaCl2 x 2 H2O\",\n\
+    \    \"stored\": {\n      \"value\": \"0.05\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"proposed\": {\n      \"value\": \"0.05\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: CaCl2 x 2 H2O\",\n      \
+    \  \"exact_source_quote\": \"CaCl2 x 2 H2O 0.05 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.05,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\n\
+    \                        \\\"mmol_l\\\": 0.340101,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"Existing numeric value and unit match the exact\
+    \ source/provider, but this layer has no attached concentration evidence. Primary\
+    \ lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata,\
+    \ not an independently measured final volume. Preserve the optional agar scope.\"\
+    \n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"ingredient\":\
+    \ \"MgSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"0.02\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"value\": \"0.02\",\n\
+    \      \"unit\": \"G_PER_L\",\n      \"basis\": \"Provider-declared main solution\
+    \ volume 1000 ml; agar only for the explicit solid formulation\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1220\",\n   \
+    \     \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: MgSO4 x 7 H2O\",\n      \
+    \  \"exact_source_quote\": \"MgSO4 x 7 H2O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.02,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\n\
+    \                        \\\"mmol_l\\\": 0.0811438,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n     \
+    \ }\n    ],\n    \"explanation\": \"Existing numeric value and unit match the\
+    \ exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\",\n    \"field_path\"\
+    : \"ingredients[4].concentration\",\n    \"ingredient\": \"Yeast extract\",\n\
+    \    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"proposed\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Yeast extract\",\n      \
+    \  \"exact_source_quote\": \"Yeast extract 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\",\n    \"field_path\"\
+    : \"ingredients[5].concentration\",\n    \"ingredient\": \"Na gluconate\",\n \
+    \   \"stored\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"proposed\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe: Na gluconate\",\n       \
+    \ \"exact_source_quote\": \"Na gluconate 0.50 g\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na gluconate\\\",\\n                        \\\"compound_id\\\
+    \": 1089,\\n                        \\\"amount\\\": 0.5,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\\
+    n                        \\\"mmol_l\\\": 2.29214,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"Existing numeric value and unit match the exact\
+    \ source/provider, but this layer has no attached concentration evidence. Primary\
+    \ lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared metadata,\
+    \ not an independently measured final volume. Preserve the optional agar scope.\"\
+    \n  },\n  {\n    \"decision\": \"evidence_only\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"ingredient\":\
+    \ \"Agar\",\n    \"stored\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"proposed\": {\n      \"value\": \"15\",\n      \"unit\": \"G_PER_L\"\
+    ,\n      \"basis\": \"Provider-declared main solution volume 1000 ml; agar only\
+    \ for the explicit solid formulation\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final optional-solid sentence\",\n   \
+    \     \"exact_source_quote\": \"Agar may be added at 15 g/l for solid media.\"\
+    ,\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"condition\\\": \\\"for solid medium\\\",\\n     \
+    \                   \\\"amount\\\": 15,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                   \
+    \     \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Existing numeric value and unit match\
+    \ the exact source/provider, but this layer has no attached concentration evidence.\
+    \ Primary lists 1000 ml water plus 1 ml stock; provider volume 1000 ml is declared\
+    \ metadata, not an independently measured final volume. Preserve the optional\
+    \ agar scope.\"\n  },\n  {\n    \"decision\": \"correct\",\n    \"local_input\"\
+    : \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\",\n    \"field_path\"\
+    : \"ingredients[7].concentration\",\n    \"ingredient\": \"EDTA\",\n    \"stored\"\
+    : {\n      \"value\": \"5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"proposed\"\
+    : {\n      \"stock_value\": \"5\",\n      \"stock_unit\": \"G_PER_L\",\n     \
+    \ \"stock_provider_volume_ml\": 1000,\n      \"stock_addition_ml_per_source_batch\"\
+    : 1,\n      \"scope\": \"Trace elements stock, not a neat main-medium addition\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz922\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: EDTA\",\n \
+    \       \"exact_source_quote\": \"EDTA 5.00 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"EDTA\\\",\\n                        \\\"compound_id\\\": 271,\\\
+    n                        \\\"amount\\\": 5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n                  \
+    \      \\\"mmol_l\\\": 17.1092,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[8].concentration\",\n    \"ingredient\":\
+    \ \"CuCl2 x 5 H2O\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.1\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: CuCl2 x 5 H2O\"\
+    ,\n        \"exact_source_quote\": \"CuCl2 x 5 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"CuCl2 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 838,\\n                        \\\"amount\\\": 0.1,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n\
+    \                        \\\"mmol_l\\\": 0.445379,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[9].concentration\",\n    \"ingredient\":\
+    \ \"FeSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"2\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"2\",\n  \
+    \    \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: FeSO4 x 7 H2O\"\
+    ,\n        \"exact_source_quote\": \"FeSO4 x 7 H2O 2.00 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n     \
+    \                   \\\"mmol_l\\\": 7.19386,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"ingredient\"\
+    : \"ZnSO4 x 7 H2O\",\n    \"stored\": {\n      \"value\": \"0.1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.1\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: ZnSO4 x 7 H2O\"\
+    ,\n        \"exact_source_quote\": \"ZnSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[11].concentration\",\n    \"ingredient\"\
+    : \"NiCl2 x 6 H2O\",\n    \"stored\": {\n      \"value\": \"0.02\",\n      \"\
+    unit\": \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.02\"\
+    ,\n      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: NiCl2 x 6 H2O\"\
+    ,\n        \"exact_source_quote\": \"NiCl2 x 6 H2O 0.02 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 0.02,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\\
+    n                        \\\"mmol_l\\\": 0.154322,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[12].concentration\",\n    \"ingredient\"\
+    : \"CoCl2 x 6 H2O\",\n    \"stored\": {\n      \"value\": \"0.2\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.2\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: CoCl2 x 6 H2O\"\
+    ,\n        \"exact_source_quote\": \"CoCl2 x 6 H2O 0.20 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 38,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"mmol_l\\\": 1.54037,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The present number is the stock strength.\
+    \ Separate the complete stock and its 1 ml addition; do not read the stock strength\
+    \ as final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"correct\",\n    \"local_input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n    \"field_path\": \"ingredients[13].concentration\",\n    \"ingredient\"\
+    : \"Na2MoO4\",\n    \"stored\": {\n      \"value\": \"0.03\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"proposed\": {\n      \"stock_value\": \"0.03\",\n\
+    \      \"stock_unit\": \"G_PER_L\",\n      \"stock_provider_volume_ml\": 1000,\n\
+    \      \"stock_addition_ml_per_source_batch\": 1,\n      \"scope\": \"Trace elements\
+    \ stock, not a neat main-medium addition\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection: Na2MoO4\",\n\
+    \        \"exact_source_quote\": \"Na2MoO4 0.03 g\",\n        \"snapshot_sha256\"\
+    : \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\",\n    \
+    \    \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4\\\",\\n                        \\\"compound_id\\\":\
+    \ 811,\\n                        \\\"amount\\\": 0.03,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\n\
+    \                        \\\"mmol_l\\\": 0.145681,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\n      }\n\
+    \    ],\n    \"explanation\": \"The present number is the stock strength. Separate\
+    \ the complete stock and its 1 ml addition; do not read the stock strength as\
+    \ final-medium g/L. On the provider 1000 ml bases, 1 ml transfers stock_g_per_L\
+    \ * 0.001 g, but primary water is not proof of final mixed volume.\"\n  },\n \
+    \ {\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"ingredient\": \"Trace elements addition\",\n    \"proposed\": {\n\
+    \      \"amount\": 1,\n      \"unit\": \"ml\",\n      \"basis\": \"DSMZ1220 listed\
+    \ batch\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 main recipe, exact trace-stock addition\"\
+    ,\n        \"exact_source_quote\": \"Trace elements (see medium 922) 1.00 ml\"\
+    ,\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    solution\\\": \\\"Trace elements\\\",\\n                        \\\"solution_id\\\
+    \": 1897,\\n                        \\\"amount\\\": 1,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"All local layers omit the stock reference\
+    \ and dose; the trace stock is not the entirety of medium 922.\"\n  },\n  {\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"Adjust to pH 5.0 - 5.5. Agar may be added at 15\
+    \ g/l for solid media.\"\n          }\n        ]\n      }\n    ],\n    \"ingredient\"\
+    : \"Main water\",\n    \"proposed\": {\n      \"amount\": 1000,\n      \"unit\"\
+    : \"ml\",\n      \"scope\": \"main recipe solvent quantity\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1220\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\",\n       \
+    \ \"source_locator\": \"Page 1 main recipe water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"Record the source solvent amount separately;\
+    \ do not equate it to a measured final volume or water mass.\"\n  },\n  {\n  \
+    \  \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"ingredient\": \"Trace-stock water\",\n    \"proposed\": {\n   \
+    \   \"amount\": 1000,\n      \"unit\": \"ml\",\n      \"scope\": \"Trace elements\
+    \ stock only\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz922\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium922.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 Trace elements subsection, water row (same\
+    \ words also occur in excluded parent main recipe)\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"5a17c5ecb809944079d9fc6f6fb7cee181cde83102b4afe5bbbe6583257e798b\"\
+    ,\n        \"parsed_text_sha256\": \"ead1b861dda754d2d13f644f4de6ad5424ca48aa1a7afd72d36fafc4957f4e23\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1220api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1220\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"ce39f347e090a30fda2cb1c991839e139f43191224a4cdf6b00f038801aa0f36\"\
+    \n      }\n    ],\n    \"explanation\": \"The stock water belongs to its preparation\
+    \ and is not another litre added to medium 1220.\"\n  },\n  {\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n    \
+    \      \"min\": 5.0,\n          \"max\": 5.5\n        }\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 5.0,\n          \"max\": 5.5\n        }\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\",\n        \"\
+    field_path\": \"ph_range\",\n        \"stored\": {\n          \"min\": 5.0,\n\
+    \          \"max\": 5.5\n        }\n      }\n    ],\n    \"ingredient\": \"Target\
+    \ pH range\",\n    \"proposed\": {\n      \"min\": 5.0,\n      \"max\": 5.5\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1220\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"Adjust to pH 5.0 – 5.5.\",\n        \"snapshot_sha256\"\
+    : \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\",\n    \
+    \    \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      }\n    ],\n    \"explanation\": \"All three scalar ranges already match;\
+    \ attach narrow source evidence. Do not import medium 922 pH 4.0–4.5.\"\n  },\n\
+    \  {\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/acidosoma_medium.yaml\",\n\
+    \        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust to pH 5.0 - 5.5. Agar may be added at 15 g/l for solid media.\"\n \
+    \     }\n    ],\n    \"ingredient\": \"Existing maintained pH and optional-solid\
+    \ preparation\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1220\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust to pH 5.0 – 5.5. Agar may be added at 15 g/l for solid media.\",\n\
+    \        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      }\n    ],\n    \"explanation\": \"The DSMZ owner already retains both\
+    \ instructions; only narrow evidence is needed there.\"\n  },\n  {\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"target\",\n\
+    \        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"ingredient\": \"Missing generated/KOMODO preparation\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1220\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1220.pdf\"\
+    ,\n        \"source_locator\": \"Page 1 final sentence\",\n        \"exact_source_quote\"\
+    : \"Adjust to pH 5.0 – 5.5. Agar may be added at 15 g/l for solid media.\",\n\
+    \        \"snapshot_sha256\": \"5bd9b2899f83f0e7cd340c9d3cb89dd72b110e4ebcec2322d3528152507d9ad4\"\
+    ,\n        \"parsed_text_sha256\": \"b9a56ad17898e737a02415bcf6fe9becc7c5506f1265cf4e82f0da17d29cb963\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore the documented preparation in\
+    \ these layers through their owners; do not replace the already present DSMZ owner\
+    \ wording.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier metadata, exact secondary keys and supplied-form scope
+  outcome: concern
+  summary: 13 distinct primary/current-secondary identifiers resolve. 0 label instances
+    differ from current canonical labels; 0 asserted current secondary keys lack an
+    exact pinned index row. Legacy numeric links are assessed separately and are not
+    established by CHEBI correspondence. Target linkage is 13/14 primary and 13/14
+    secondary ingredient instances; this measures presence, not source validity.
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - record
+  - mim
+  - chebi2509
+  - chebi31795
+  - chebi32312
+  - chebi34887
+  - chebi4735
+  - chebi53503
+  - chebi62946
+  - chebi63036
+  - chebi75215
+  - chebi75836
+  - chebi84997
+  - chebi86158
+  - chebi91245
+  details: '{"label_drift": [], "missing_secondary_keys": [], "legacy_instances":
+    [], "coverage_scale": "0–100 percent; each ingredient instance counted once",
+    "denominator": 14, "primary_percent": 92.85714285714286, "secondary_percent":
+    92.85714285714286}'
+- assessment_id: form
+  area: grounding
+  topic: Source-supplied forms and specificity limits
+  outcome: concern
+  summary: Nickel chloride is explicitly hexahydrate in both primary and provider,
+    while CHEBI:34887 describes Cl2Ni without waters. The other explicit hydrates
+    match their ontology forms, including the unusual but explicitly sourced copper
+    chloride pentahydrate. Na gluconate does not establish the D stereochemistry encoded
+    by CHEBI:84997, and unqualified Na2MoO4 does not independently certify anhydrous
+    supply. These latter distinctions are limits, not proven wrong replacements.
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - dsmz1220
+  - dsmz922
+  - chebi34887
+  - chebi84997
+  - chebi75215
+  - chebi91245
+- assessment_id: preparation
+  area: completeness
+  topic: Stock boundaries, preparation and conditional physical state
+  outcome: concern
+  summary: The maintained DSMZ owner retains the pH/optional agar sentence, but the
+    target and KOMODO owner omit preparation. SOLID_AGAR and the agar note describe
+    an explicitly permitted solid formulation; the source also permits liquid medium.
+    Complex/semi-defined classification is compatible with yeast extract and agar.
+    No organism/strain growth assertion is present. The exact source supplies no sterilization
+    time or temperature; none is invented.
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1220
+  - quantity-inventory
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 25 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003973
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: CM003973-trace-stock-flattening
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Trace-stock strengths are presented as main-medium amounts
+  description: Each of the three layers lists seven medium 922 trace-stock strengths
+    as direct g/L ingredients while omitting the 1 ml stock addition. The exact 1000
+    ml stock recipe and dose are available; the apparent formulation therefore has
+    materially wrong stage scope.
+  target_ids:
+  - CultureMech:003973
+  field_paths:
+  - ingredients[7:14].concentration
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1220
+  - dsmz922
+  - mediadive1220api
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM003973-nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate uses an anhydrous ontology structure
+  description: The source and preferred term say NiCl2 x 6 H2O, but both primary and
+    secondary links use CHEBI:34887 with formula Cl2Ni. Valid canonical labels do
+    not fix the chemical-form mismatch.
+  target_ids:
+  - CultureMech:003973
+  field_paths:
+  - ingredients[11].term
+  - ingredients[11].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsmz922
+  - chebi34887
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM003973-source-evidence-preparation
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source amount evidence and generated preparation are missing
+  description: No local ingredient has attached amount evidence. The DSMZ owner already
+    preserves pH/optional agar preparation; the target and KOMODO owner drop it. Source-specific
+    gluconate stereochemistry and molybdate hydration are not independently established.
+  target_ids:
+  - CultureMech:003973
+  field_paths:
+  - ingredients[*].evidence
+  - preparation_steps
+  - ph_range
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - quantity-inventory
+  - dsmz1220
+  - chebi84997
+  - chebi75215
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: CM003973-history-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO history contains malformed and timezone-naive timestamps
+  description: Both the target and KOMODO owner retain 2026-01-27T01:15:01.fZ and
+    a February timestamp without timezone. They are historical provenance issues,
+    not source access times.
+  target_ids:
+  - CultureMech:003973
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the complete trace stock and source dose in maintained inputs,
+    retaining source-specific volume bases, then regenerate the target.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003973
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify a source-appropriate hydrate identity before updating the maintained
+    primary and secondary links; do not guess a replacement identifier.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003973
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach exact claim-level source evidence and recover the missing preparation
+    only where absent; qualify unresolved supplied-form specificity without asserting
+    an unverified alternative.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003973
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve prior history bytes; append a separately authorized provenance
+    clarification supported by original event evidence.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003973
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Medium 922 is consulted only for its exact referenced trace-stock subsection. Its
+  main formulation, gas phase, growth recommendations and pH are outside medium 1220
+  scope. KOMODO aerobic=false is preserved as catalog metadata only.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-019
+- generated-medium
+```
