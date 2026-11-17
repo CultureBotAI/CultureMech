@@ -250,13 +250,34 @@ variants:
 - name: solid_methylotroph_medium
   description: Solidified version of JCM Medium 1219.
   modifications:
-  - Add agar at 15.0 g/L before autoclaving.
+  - Add15.0g agar per JCM1219 preparation batch before autoclaving; the source does
+    not specify a final1L volume.
   purpose: Solid medium preparation.
   evidence:
   - reference: DSMZ:J1219
     supports: SUPPORT
     explanation: MediaDive/JCM medium J1219 states that agar is added for solid medium
       preparation.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+    stage: JCM1219 solid-medium preparation before autoclaving
+    source_modification_index: 0
+    source_text: Add15.0g agar per JCM1219 preparation batch before autoclaving; the
+      source does not specify a final1L volume.
+    evidence:
+    - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219
+      supports: SUPPORT
+      snippet: For preparation of solid medium, add 15.0 g agar.
+      explanation: Source lists970mL water and separate stock/post-cooling additions;15g
+        is an absolute batch mass, not established15g/L (#776).
+    amount:
+      value: '15.0'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: JCM1219 listed preparation batch;970mL water plus stocks and
+        later additions, no stated final volume.
 - name: ca_free_lanthanide_test_basal_medium
   description: Experimental Ca-free basal formulation used to test lanthanide effects
     in methanotroph cultures related to Methylotroph Medium.
@@ -271,6 +292,129 @@ variants:
     supports: SUPPORT
     explanation: Kato et al. describe a Ca-free inorganic basal medium closely related
       to J1219 and the carbon-source/lanthanide supplements used for growth tests.
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: CaCl2
+    stage: Kato2020 Ca-free basal trace-element solution before separate metal supplementation
+    source_modification_index: 0
+    source_text: Omit CaCl2 from the trace element solution.
+    evidence:
+    - reference: doi:10.1264/jsme2.ME19128
+      supports: SUPPORT
+      snippet: trace element solution (CaCl2 was omitted)
+      explanation: Cultivation Methods explicitly omit CaCl2 from the trace solution.
+        Separate after-autoclaving metal arms can add CaCl2; this is not a universal
+        final-culture calcium absence.
+  - action: ADD
+    ingredient:
+      preferred_term: CaCl2
+      concentration:
+        value: '20'
+        unit: MICROMOLAR
+    stage: Kato2020 post-autoclave default metal supplementation; M. sporium DSM17706T
+      arm
+    source_modification_index: 1
+    source_text: Supplement cultures with methane or methanol and defined CaCl2 or
+      rare-earth element chlorides after autoclaving.
+    evidence:
+    - reference: doi:10.1264/jsme2.ME19128
+      supports: SUPPORT
+      snippet: CaCl2 and REE chlorides (final concentration of 20 μM each, unless
+        otherwise stated)
+      explanation: Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T
+        and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response,
+        no-metal or mixed-metal experiments. Hydration unspecified.
+  - action: ADD
+    ingredient:
+      preferred_term: YCl3
+      concentration:
+        value: '20'
+        unit: MICROMOLAR
+    stage: Kato2020 post-autoclave default metal supplementation; Y-b3 arm
+    source_modification_index: 1
+    source_text: Supplement cultures with methane or methanol and defined CaCl2 or
+      rare-earth element chlorides after autoclaving.
+    evidence:
+    - reference: doi:10.1264/jsme2.ME19128
+      supports: SUPPORT
+      snippet: CaCl2 and REE chlorides (final concentration of 20 μM each, unless
+        otherwise stated)
+      explanation: Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T
+        and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response,
+        no-metal or mixed-metal experiments. Hydration unspecified.
+  - action: ADD
+    ingredient:
+      preferred_term: LaCl3
+      concentration:
+        value: '20'
+        unit: MICROMOLAR
+    stage: Kato2020 post-autoclave default metal supplementation; La-a12 arm
+    source_modification_index: 1
+    source_text: Supplement cultures with methane or methanol and defined CaCl2 or
+      rare-earth element chlorides after autoclaving.
+    evidence:
+    - reference: doi:10.1264/jsme2.ME19128
+      supports: SUPPORT
+      snippet: CaCl2 and REE chlorides (final concentration of 20 μM each, unless
+        otherwise stated)
+      explanation: Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T
+        and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response,
+        no-metal or mixed-metal experiments. Hydration unspecified.
+  - action: ADD
+    ingredient:
+      preferred_term: CeCl3
+      concentration:
+        value: '20'
+        unit: MICROMOLAR
+    stage: Kato2020 post-autoclave default metal supplementation; Ce-a6 arm
+    source_modification_index: 1
+    source_text: Supplement cultures with methane or methanol and defined CaCl2 or
+      rare-earth element chlorides after autoclaving.
+    evidence:
+    - reference: doi:10.1264/jsme2.ME19128
+      supports: SUPPORT
+      snippet: CaCl2 and REE chlorides (final concentration of 20 μM each, unless
+        otherwise stated)
+      explanation: Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T
+        and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response,
+        no-metal or mixed-metal experiments. Hydration unspecified.
+  - action: ADD
+    ingredient:
+      preferred_term: methane
+    stage: Kato2020 methane headspace alternative; one 26-mL tube with 5 mL basal
+      medium
+    source_modification_index: 1
+    source_text: Supplement cultures with methane or methanol and defined CaCl2 or
+      rare-earth element chlorides after autoclaving.
+    evidence:
+    - reference: doi:10.1264/jsme2.ME19128
+      supports: SUPPORT
+      snippet: methane (2 mL tube–1)
+      explanation: 2 mL gas aliquot per tube, not dissolved concentration or standard-state
+        volume. Methanol is an alternative.
+    amount:
+      value: '2'
+      unit: ML
+      basis: PER_BATCH
+      basis_statement: 'One source culture-tube batch: 2 mL methane gas input; not
+        per litre liquid.'
+  - action: ADD
+    ingredient:
+      preferred_term: methanol
+      concentration:
+        value: '20'
+        unit: MILLIMOLAR
+    stage: Kato2020 methanol carbon-source alternative
+    source_modification_index: 1
+    source_text: Supplement cultures with methane or methanol and defined CaCl2 or
+      rare-earth element chlorides after autoclaving.
+    evidence:
+    - reference: doi:10.1264/jsme2.ME19128
+      supports: SUPPORT
+      snippet: methanol (20‍ ‍mM)
+      explanation: Methods alternative to methane; Unicode spacing retained from source.
+        No simultaneous methane/methanol culture asserted.
 curation_history:
 - timestamp: '2026-01-27T06:35:54.331018Z'
   curator: togo-import
@@ -410,6 +554,89 @@ curation_history:
     to 0.07 G_PER_L (CHEBI:86158) and MgCl2·6H2O to 0.2 G_PER_L (CHEBI:86345) with
     JCM 1219 evidence items across all 6 main-table solutes, converted Distilled water
     amounts to L, and normalized canonical ChEBI labels (#634, #635, #645).'
+- timestamp: '2026-11-17T00:07:05.445102+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "967394ea5131b424e8bdb02c7d5318d6d60b97cb8539abd8b49f995a3dcc8107",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml",
+    "recipe_id": "CultureMech:007843", "variants": [{"append_changes": [{"action":
+    "ADD", "amount": {"basis": "PER_BATCH", "basis_statement": "JCM1219 listed preparation
+    batch;970mL water plus stocks and later additions, no stated final volume.", "unit":
+    "G", "value": "15.0"}, "evidence": [{"explanation": "Source lists970mL water and
+    separate stock/post-cooling additions;15g is an absolute batch mass, not established15g/L
+    (#776).", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219",
+    "snippet": "For preparation of solid medium, add 15.0 g agar.", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "agar"}, "source_modification_index": 0, "source_text":
+    "Add15.0g agar per JCM1219 preparation batch before autoclaving; the source does
+    not specify a final1L volume.", "stage": "JCM1219 solid-medium preparation before
+    autoclaving"}], "replace_modifications": [{"expected": "Add agar at 15.0 g/L before
+    autoclaving.", "modification_index": 0, "replacement": "Add15.0g agar per JCM1219
+    preparation batch before autoclaving; the source does not specify a final1L volume."}],
+    "variant_index": 0, "variant_name": "solid_methylotroph_medium"}, {"append_changes":
+    [{"action": "REMOVE", "evidence": [{"explanation": "Cultivation Methods explicitly
+    omit CaCl2 from the trace solution. Separate after-autoclaving metal arms can
+    add CaCl2; this is not a universal final-culture calcium absence.", "reference":
+    "doi:10.1264/jsme2.ME19128", "snippet": "trace element solution (CaCl2 was omitted)",
+    "supports": "SUPPORT"}], "ingredient": {"preferred_term": "CaCl2"}, "source_modification_index":
+    0, "source_text": "Omit CaCl2 from the trace element solution.", "stage": "Kato2020
+    Ca-free basal trace-element solution before separate metal supplementation"},
+    {"action": "ADD", "evidence": [{"explanation": "Methods assign CaCl2, YCl3, LaCl3
+    and CeCl3 to M. sporium DSM17706T and Y-b3, La-a12 and Ce-a6 respectively. Default
+    not imposed on dose-response, no-metal or mixed-metal experiments. Hydration unspecified.",
+    "reference": "doi:10.1264/jsme2.ME19128", "snippet": "CaCl2 and REE chlorides
+    (final concentration of 20 μM each, unless otherwise stated)", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "MICROMOLAR", "value": "20"}, "preferred_term":
+    "CaCl2"}, "source_modification_index": 1, "source_text": "Supplement cultures
+    with methane or methanol and defined CaCl2 or rare-earth element chlorides after
+    autoclaving.", "stage": "Kato2020 post-autoclave default metal supplementation;
+    M. sporium DSM17706T arm"}, {"action": "ADD", "evidence": [{"explanation": "Methods
+    assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T and Y-b3, La-a12 and
+    Ce-a6 respectively. Default not imposed on dose-response, no-metal or mixed-metal
+    experiments. Hydration unspecified.", "reference": "doi:10.1264/jsme2.ME19128",
+    "snippet": "CaCl2 and REE chlorides (final concentration of 20 μM each, unless
+    otherwise stated)", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "MICROMOLAR", "value": "20"}, "preferred_term": "YCl3"}, "source_modification_index":
+    1, "source_text": "Supplement cultures with methane or methanol and defined CaCl2
+    or rare-earth element chlorides after autoclaving.", "stage": "Kato2020 post-autoclave
+    default metal supplementation; Y-b3 arm"}, {"action": "ADD", "evidence": [{"explanation":
+    "Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T and Y-b3,
+    La-a12 and Ce-a6 respectively. Default not imposed on dose-response, no-metal
+    or mixed-metal experiments. Hydration unspecified.", "reference": "doi:10.1264/jsme2.ME19128",
+    "snippet": "CaCl2 and REE chlorides (final concentration of 20 μM each, unless
+    otherwise stated)", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "MICROMOLAR", "value": "20"}, "preferred_term": "LaCl3"}, "source_modification_index":
+    1, "source_text": "Supplement cultures with methane or methanol and defined CaCl2
+    or rare-earth element chlorides after autoclaving.", "stage": "Kato2020 post-autoclave
+    default metal supplementation; La-a12 arm"}, {"action": "ADD", "evidence": [{"explanation":
+    "Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T and Y-b3,
+    La-a12 and Ce-a6 respectively. Default not imposed on dose-response, no-metal
+    or mixed-metal experiments. Hydration unspecified.", "reference": "doi:10.1264/jsme2.ME19128",
+    "snippet": "CaCl2 and REE chlorides (final concentration of 20 μM each, unless
+    otherwise stated)", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "MICROMOLAR", "value": "20"}, "preferred_term": "CeCl3"}, "source_modification_index":
+    1, "source_text": "Supplement cultures with methane or methanol and defined CaCl2
+    or rare-earth element chlorides after autoclaving.", "stage": "Kato2020 post-autoclave
+    default metal supplementation; Ce-a6 arm"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "One source culture-tube batch: 2 mL methane gas
+    input; not per litre liquid.", "unit": "ML", "value": "2"}, "evidence": [{"explanation":
+    "2 mL gas aliquot per tube, not dissolved concentration or standard-state volume.
+    Methanol is an alternative.", "reference": "doi:10.1264/jsme2.ME19128", "snippet":
+    "methane (2 mL tube–1)", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "methane"}, "source_modification_index": 1, "source_text": "Supplement cultures
+    with methane or methanol and defined CaCl2 or rare-earth element chlorides after
+    autoclaving.", "stage": "Kato2020 methane headspace alternative; one 26-mL tube
+    with 5 mL basal medium"}, {"action": "ADD", "evidence": [{"explanation": "Methods
+    alternative to methane; Unicode spacing retained from source. No simultaneous
+    methane/methanol culture asserted.", "reference": "doi:10.1264/jsme2.ME19128",
+    "snippet": "methanol (20‍ ‍mM)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "20"}, "preferred_term": "methanol"}, "source_modification_index":
+    1, "source_text": "Supplement cultures with methane or methanol and defined CaCl2
+    or rare-earth element chlorides after autoclaving.", "stage": "Kato2020 methanol
+    carbon-source alternative"}], "variant_index": 1, "variant_name": "ca_free_lanthanide_test_basal_medium"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 solutions:
 - preferred_term: Trace element solution (see Medium [M278])
   composition:

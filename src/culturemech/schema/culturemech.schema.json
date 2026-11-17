@@ -2298,6 +2298,16 @@
                         "null"
                     ]
                 },
+                "ingredient_mentions": {
+                    "description": "Explicit ingredient names whose source assertion remains withheld. These source-bound mentions are exported separately from supported changes and never assert presence, identity grounding, or approval.",
+                    "items": {
+                        "$ref": "#/$defs/UnresolvedVariantIngredientMention"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "modifications": {
                     "description": "What differs from base recipe",
                     "items": {
@@ -3227,6 +3237,19 @@
                 "SOLUTION"
             ],
             "title": "RecordKindEnum",
+            "type": "string"
+        },
+        "ReportedVariantIngredientActionEnum": {
+            "description": "",
+            "enum": [
+                "ADD",
+                "REMOVE",
+                "REPLACE",
+                "SET_CONCENTRATION",
+                "SET_AMOUNT",
+                "UNSPECIFIED"
+            ],
+            "title": "ReportedVariantIngredientActionEnum",
             "type": "string"
         },
         "SolutionDescriptor": {
@@ -4257,6 +4280,73 @@
             "title": "UniProtTerm",
             "type": "object"
         },
+        "UnresolvedVariantIngredientMention": {
+            "additionalProperties": false,
+            "description": "A literal named ingredient retained for review, not an approved chemical identity or formulation claim. source_label must occur verbatim in the exact bound modification. No grounding or positive-presence fields exist.",
+            "properties": {
+                "evidence": {
+                    "description": "Optional evidence or counterevidence. Even supporting evidence for a name does not promote this mention to an approved change event.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "held_fields": {
+                    "description": "Exact dimensions still withheld. A quantity-only hold does not revoke independently supported ingredient identity or presence events.",
+                    "items": {
+                        "$ref": "#/$defs/VariantIngredientHoldFieldEnum"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "reason": {
+                    "description": "Why the source assertion is withheld and what remains unresolved",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "reported_action": {
+                    "$ref": "#/$defs/ReportedVariantIngredientActionEnum"
+                },
+                "reported_quantity": {
+                    "description": "Uninterpreted quantity wording, never an asserted concentration",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "source_label": {
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "source_modification_index": {
+                    "minimum": 0,
+                    "type": "integer"
+                },
+                "source_text": {
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "stage": {
+                    "description": "Explicit source context, or 'unspecified in source'",
+                    "pattern": "\\S",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "source_label",
+                "reported_action",
+                "stage",
+                "source_modification_index",
+                "source_text",
+                "reason",
+                "held_fields"
+            ],
+            "title": "UnresolvedVariantIngredientMention",
+            "type": "object"
+        },
         "UpdateActionEnum": {
             "description": "Type of update action applied to an imported record",
             "enum": [
@@ -4311,6 +4401,88 @@
             ],
             "title": "UpdateEvent",
             "type": "object"
+        },
+        "VariantIngredientAmount": {
+            "additionalProperties": false,
+            "description": "A source-reported quantity without an invented concentration basis",
+            "else": {
+                "properties": {
+                    "basis": {
+                        "const": "PER_BATCH"
+                    }
+                },
+                "required": [
+                    "basis"
+                ]
+            },
+            "if": {
+                "properties": {
+                    "unit": {
+                        "const": "PERCENT"
+                    }
+                },
+                "required": [
+                    "unit"
+                ]
+            },
+            "properties": {
+                "basis": {
+                    "$ref": "#/$defs/VariantIngredientAmountBasisEnum"
+                },
+                "basis_statement": {
+                    "description": "Exact batch or percentage context and limitations established from the change evidence. Unknown final volume or percentage convention remains explicitly unknown.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "unit": {
+                    "$ref": "#/$defs/VariantIngredientAmountUnitEnum"
+                },
+                "value": {
+                    "description": "Literal source value or range, without conversion",
+                    "pattern": "\\S",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit",
+                "basis",
+                "basis_statement"
+            ],
+            "then": {
+                "properties": {
+                    "basis": {
+                        "const": "UNSPECIFIED_PERCENT"
+                    }
+                },
+                "required": [
+                    "basis"
+                ]
+            },
+            "title": "VariantIngredientAmount",
+            "type": "object"
+        },
+        "VariantIngredientAmountBasisEnum": {
+            "description": "",
+            "enum": [
+                "PER_BATCH",
+                "UNSPECIFIED_PERCENT"
+            ],
+            "title": "VariantIngredientAmountBasisEnum",
+            "type": "string"
+        },
+        "VariantIngredientAmountUnitEnum": {
+            "description": "",
+            "enum": [
+                "G",
+                "MG",
+                "MICROG",
+                "ML",
+                "L",
+                "PERCENT"
+            ],
+            "title": "VariantIngredientAmountUnitEnum",
+            "type": "string"
         },
         "VariantIngredientChange": {
             "additionalProperties": false,
@@ -4375,6 +4547,71 @@
                             "ingredient"
                         ]
                     }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "action": {
+                                "const": "SET_AMOUNT"
+                            }
+                        },
+                        "required": [
+                            "action"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "amount": {}
+                        },
+                        "required": [
+                            "amount"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "amount": {}
+                        },
+                        "required": [
+                            "amount"
+                        ]
+                    },
+                    "then": {
+                        "properties": {
+                            "action": {
+                                "anyOf": [
+                                    {
+                                        "const": "ADD"
+                                    },
+                                    {
+                                        "const": "REPLACE"
+                                    },
+                                    {
+                                        "const": "SET_AMOUNT"
+                                    }
+                                ]
+                            },
+                            "ingredient": {
+                                "allOf": [
+                                    {
+                                        "not": {
+                                            "required": [
+                                                "concentration"
+                                            ]
+                                        },
+                                        "properties": {
+                                            "concentration": {}
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "action",
+                            "ingredient"
+                        ]
+                    }
                 }
             ],
             "description": "A curated ingredient change bound to one exact variant modification. Ingredient identity may remain unresolved. ADD, SET_CONCENTRATION and the new ingredient of REPLACE are scoped change events, not a fully expanded variant recipe. REMOVE and replaced_ingredient do not assert presence. Semantic validation additionally binds source_text to modifications at source_modification_index and checks relationship and evidence context.",
@@ -4382,6 +4619,17 @@
                 "action": {
                     "$ref": "#/$defs/VariantIngredientChangeActionEnum",
                     "description": "Operation on the ingredient in the stated variant stage"
+                },
+                "amount": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/VariantIngredientAmount"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Literal batch amount or percentage with unspecified basis. This is not a concentration and must not be divided by an assumed volume. Allowed for ADD, REPLACE and SET_AMOUNT; never alongside an asserted ingredient concentration."
                 },
                 "evidence": {
                     "contains": {
@@ -4478,9 +4726,22 @@
                 "ADD",
                 "REMOVE",
                 "REPLACE",
-                "SET_CONCENTRATION"
+                "SET_CONCENTRATION",
+                "SET_AMOUNT"
             ],
             "title": "VariantIngredientChangeActionEnum",
+            "type": "string"
+        },
+        "VariantIngredientHoldFieldEnum": {
+            "description": "",
+            "enum": [
+                "SOURCE_CLAIM",
+                "IDENTITY_FORM",
+                "QUANTITY",
+                "OPERATION",
+                "STAGE"
+            ],
+            "title": "VariantIngredientHoldFieldEnum",
             "type": "string"
         },
         "VariantTypeEnum": {

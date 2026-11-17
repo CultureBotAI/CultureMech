@@ -461,6 +461,27 @@ curation_history:
     is inferred.", "source_modification_index": 2, "source_text": "Add HEPES buffer
     when improved overall growth is needed.", "stage": "buffered ASW with nitrogen
     and phosphorus sources, pH7.8 buffer"}], "variant_index": 1, "variant_name": "np_supplemented_asw_synechocystis_pcc6803"}]}'
+- timestamp: '2026-11-17T00:06:57.921400+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "b6636a9b18a477aaaa935531eea34a7a050a1859db0ea04c73054331e12dbaba",
+    "field_replacements": [], "path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+    "recipe_id": "CultureMech:000025", "variants": [{"append_mentions": [{"evidence":
+    [{"explanation": "Methods define no added organic or inorganic nitrogen; environmental
+    dissolved-gas context is not a preparation addition.", "reference": "PMID:33083143",
+    "snippet": "recognizing that dissolved N2 will be abundant as an N source for
+    diazotrophs", "supports": "SUPPORT"}], "held_fields": ["OPERATION"], "reason":
+    "Primary Methods explicitly describe naturally dissolved N2, not deliberate supplementation.
+    Presence as a nitrogen source is supported; no ADD operation or administered dose
+    is asserted.", "reported_action": "UNSPECIFIED", "source_label": "N2", "source_modification_index":
+    2, "source_text": "Use nitrogen-free medium with N2 as the sole nitrogen source
+    for reported maximum growth rates.", "stage": "Hemiaulus fixed-N-free culture;
+    naturally dissolved nitrogen"}], "variant_index": 0, "variant_name": "modified_artificial_seawater_hemiaulus_richelia_symbiosis"},
+    {"variant_index": 1, "variant_name": "np_supplemented_asw_synechocystis_pcc6803"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 references:
 - reference: UTEX:artificial-seawater-medium
 - reference: https://utex.org/products/artificial-seawater-medium
@@ -487,6 +508,24 @@ variants:
       using a modified artificial seawater medium.
     explanation: Literature evidence supports a modified artificial seawater variant
       for growth of the Hemiaulus-Richelia symbiosis.
+  ingredient_mentions:
+  - source_label: N2
+    reported_action: UNSPECIFIED
+    stage: Hemiaulus fixed-N-free culture; naturally dissolved nitrogen
+    source_modification_index: 2
+    source_text: Use nitrogen-free medium with N2 as the sole nitrogen source for
+      reported maximum growth rates.
+    reason: Primary Methods explicitly describe naturally dissolved N2, not deliberate
+      supplementation. Presence as a nitrogen source is supported; no ADD operation
+      or administered dose is asserted.
+    held_fields:
+    - OPERATION
+    evidence:
+    - reference: PMID:33083143
+      supports: SUPPORT
+      snippet: recognizing that dissolved N2 will be abundant as an N source for diazotrophs
+      explanation: Methods define no added organic or inorganic nitrogen; environmental
+        dissolved-gas context is not a preparation addition.
 - name: np_supplemented_asw_synechocystis_pcc6803
   description: Artificial seawater medium supplemented with nitrogen and phosphorus
     sources for growth of Synechocystis sp. PCC 6803.

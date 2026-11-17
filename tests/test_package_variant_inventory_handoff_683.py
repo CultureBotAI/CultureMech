@@ -60,14 +60,14 @@ def package_case(tmp_path, monkeypatch, request):
         (bundle / name).write_text("synthetic product\n")
     (bundle / "incidental.txt").write_text("Not a handoff product.\n")
     manifest = {
-        "contract": "culturemech-direct-ingredients-v2",
+        "contract": "culturemech-direct-ingredients-v3",
         "status": "CANDIDATE",
         "git": {"dirty": False, "commit": commit},
         "scope": "full_catalog_direct_ingredients",
         "input_dir": "data/normalized_yaml",
         "inputs": {relative: fingerprint(recipe)},
         "dependencies": {"src/culturemech/fixture.py": fingerprint(dependency)},
-        "counts": {"variant_change_events": 1},
+        "counts": {"variant_change_events": 1, "variant_held_mentions": 0},
         "products": {name: fingerprint(bundle / name) for name in packager.PRODUCTS},
     }
     manifest_path = bundle / "manifest.json"
@@ -86,6 +86,7 @@ def package_case(tmp_path, monkeypatch, request):
         "queue_sha256": packager.sha(queue),
         "coverage_sha256": packager.sha(coverage / "coverage.tsv"),
         "applied_assertions": 1,
+        "held_mentions": 0,
         "dispositions": {"STRUCTURED": 1},
         "record_snapshots": [
             {

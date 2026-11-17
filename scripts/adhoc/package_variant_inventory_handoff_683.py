@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package a verified CultureMech v2 candidate for MIM, 2026-11-16, #683/#687.
+"""Package a verified CultureMech v3 candidate for MIM, 2026-11-16, #683/#687.
 
 Inputs: clean-commit full-catalog bundle, external manifest pin, coverage audit
 and original queue. Outputs: a new local directory with exact source archive,
@@ -26,6 +26,7 @@ PRODUCTS = {
     "unmapped_ingredients.yaml",
     "ingredient_aggregation_errors.tsv",
     "variant_ingredient_changes.tsv",
+    "variant_ingredient_holds.tsv",
 }
 
 
@@ -105,6 +106,8 @@ def validate_coverage(coverage, queue_bytes, manifest):
         raise ValueError("coverage disposition counts differ from queue")
     if manifest["counts"]["variant_change_events"] != coverage["applied_assertions"]:
         raise ValueError("bundle events differ from reviewed coverage")
+    if manifest["counts"]["variant_held_mentions"] != coverage["held_mentions"]:
+        raise ValueError("bundle held mentions differ from reviewed coverage")
 
 
 def verify_archive(path, manifest):
@@ -177,10 +180,10 @@ def package(bundle, pin, coverage_dir, queue, destination):
         manifest["git"]["dirty"]
         or manifest["scope"] != "full_catalog_direct_ingredients"
         or manifest["input_dir"] != "data/normalized_yaml"
-        or manifest["contract"] != "culturemech-direct-ingredients-v2"
+        or manifest["contract"] != "culturemech-direct-ingredients-v3"
         or set(manifest["products"]) != PRODUCTS
     ):
-        raise ValueError("handoff requires a clean full-catalog v2 producer")
+        raise ValueError("handoff requires a clean full-catalog v3 producer")
     verification = verify_bundle(bundle, pin)
     coverage_path = regular(coverage_dir / "summary.json")
     coverage_bytes = coverage_path.read_bytes()
@@ -247,16 +250,17 @@ def package(bundle, pin, coverage_dir, queue, destination):
         "counts": manifest["counts"],
         "dispositions": coverage["dispositions"],
         "verification": verification,
-        "adoption": "Explicitly adopt v2 in a separate reviewed MIM intake. Preserve existing frozen campaign. This is not a published SSSOM or integrated KGM release.",
+        "adoption": "Explicitly adopt v3 in a separate reviewed MIM intake. Preserve existing frozen campaign. This is not a published SSSOM or integrated KGM release.",
     }
     (destination / "HANDOFF.md").write_text(
         "# CultureMech variant ingredient candidate for MIM\n\n"
-        f"PR: https://github.com/CultureBotAI/CultureMech/pull/764\n\n"
+        "Issue: https://github.com/CultureBotAI/CultureMech/issues/683\n\n"
         f"Producer commit: `{manifest['git']['commit']}`\n\n"
         f"Manifest SHA256: `{pin}`\n\n"
         "The bundle contains base occurrences and reviewed variant events. "
         "Use `ingredients_list.tsv` for identities and `ingredient_occurrences.tsv` for positive inventory membership. "
         "`variant_ingredient_changes.tsv` retains REMOVE and old REPLACE descriptors only as context. "
+        "`variant_ingredient_holds.tsv` retains unresolved source labels and the precise held assertion fields; these rows never count as positive inventory occurrences. "
         "Preserve variant, stage, source evidence, dose basis and action. A zero concentration target is a change event, not positive physical presence.\n\n"
         "Extract `producer-source.tar.gz` into this new candidate directory. The archive contains the pinned implementation, schema, MIM index and source YAML. "
         "Use its locked environment to verify before intake:\n\n"
@@ -269,7 +273,7 @@ def package(bundle, pin, coverage_dir, queue, destination):
         + ". "
         "Some structured statements retain partial holds in their reason. See #683, #759, #760 and #762. "
         "No claim of complete prose coverage or complete executable variant formulations is made.\n\n"
-        "Adopt this new v2 snapshot explicitly in a separate reviewed intake. Do not overwrite the running MIM campaign's frozen v1 inputs. "
+        "Adopt this new v3 snapshot explicitly in a separate reviewed intake. Do not overwrite the running MIM campaign's frozen inputs. "
         "Publication review, SSSOM generation/export and KGM QC remain downstream release gates.\n"
     )
     # Acceptance is last. Any earlier failure leaves incomplete evidence only.

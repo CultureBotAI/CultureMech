@@ -66,6 +66,29 @@ def test_all_base_columns_and_large_quoted_fields_survive_new_events(tables):
     assert csv.field_size_limit() == limit
 
 
+def test_literal_amount_target_preserves_base_without_concentration_conversion(tables):
+    old, new, _base, current, positive = tables
+    amount = {
+        **positive,
+        "change_action": "SET_AMOUNT",
+        "change_json": json.dumps(
+            {
+                "amount": {
+                    "value": "950",
+                    "unit": "ML",
+                    "basis": "PER_BATCH",
+                    "basis_statement": "Literal input, final volume unstated",
+                }
+            }
+        ),
+    }
+    rewrite(new, [current, amount])
+    state = comparison.compare_occurrences(old, new)
+    assert state["base_rows"] == 1
+    assert state["variant_rows"] == [amount]
+    assert json.loads(state["variant_rows"][0]["change_json"])["amount"]["unit"] == "ML"
+
+
 @pytest.mark.parametrize("fault", ["descriptor", "missing", "context"])
 def test_equal_counts_or_identities_cannot_hide_original_row_drift(tables, fault):
     old, new, _base, current, positive = tables

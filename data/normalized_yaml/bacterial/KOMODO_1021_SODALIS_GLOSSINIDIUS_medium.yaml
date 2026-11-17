@@ -639,6 +639,22 @@ curation_history:
     CO2; it is not an exact source duplicate.", "status": "correct", "reference":
     "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1021_16929",
     "snippet": "MEDIUM 1021 MODIFIED FOR DSM 16929"}]'
+- timestamp: '2026-11-17T00:07:02.491797+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml",
+    "recipe_id": "CultureMech:003534", "variants": [{"append_mentions": [{"held_fields":
+    ["OPERATION", "QUANTITY"], "reason": "Source/prose explicitly leaves an agar-change
+    amount and operation unestablished. Liquid filtration alone does not establish
+    zero agar or an approved REMOVE.", "reported_action": "UNSPECIFIED", "source_label":
+    "agar", "source_modification_index": 1, "source_text": "The source does not explicitly
+    quantify the agar change for this alternative; no numeric agar amount is invented.",
+    "stage": "unspecified in source"}], "variant_index": 0, "variant_name": "Liquid
+    preparation described by DSMZ 1021"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml
   relationship: STRAIN_SPECIFIC_VARIANT
@@ -697,6 +713,18 @@ variants:
       preparation, not an invented fully quantified broth recipe. No unstated density,
       final volume, percent basis or chemical identifier is inferred. Locator=original
       recipe table/text; accessed=2026-10-08T23:33:46.995198+00:00; capture SHA256=1326bfc6d79f8ed3ad765909aa48d3e4efbb378516ada4a4087710860d8b7cc8.'
+  ingredient_mentions:
+  - source_label: agar
+    reported_action: UNSPECIFIED
+    stage: unspecified in source
+    source_modification_index: 1
+    source_text: The source does not explicitly quantify the agar change for this
+      alternative; no numeric agar amount is invented.
+    reason: Source/prose explicitly leaves an agar-change amount and operation unestablished.
+      Liquid filtration alone does not establish zero agar or an approved REMOVE.
+    held_fields:
+    - OPERATION
+    - QUANTITY
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

@@ -86,6 +86,18 @@ variants:
       to grow cells in linear log phase to an OD600 of up to 10.
     explanation: Literature evidence supports modeling the modified high-density M9
       condition as a variant under the parent M9 record.
+  ingredient_mentions:
+  - source_label: M9 medium
+    reported_action: UNSPECIFIED
+    stage: unspecified in source
+    source_modification_index: 0
+    source_text: Use modified M9 medium and optimized growth conditions.
+    reason: Named modified whole-medium reference, without an enumerated ingredient
+      or formulation. Retain the literal medium identity as context; do not decompose
+      or assert parent equivalence.
+    held_fields:
+    - IDENTITY_FORM
+    - OPERATION
 curation_history:
 - timestamp: '2026-03-18T04:31:12.887972+00:00'
   curator: import_from_culturebotht.py
@@ -115,6 +127,22 @@ curation_history:
   source: CultureBotHT:M9; https://github.com/CultureBotAI/CultureBotHT
   notes: Copied the CultureBotHT M9 source identity from source_data into the structured
     sources slot recognized by review scoring.
+- timestamp: '2026-11-17T00:07:12.966197+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "9272ed091a947ac087ccf4c652e3896a1beb1532bfa60243646eaa356860c154",
+    "field_replacements": [], "path": "data/normalized_yaml/specialized/m9.yaml",
+    "recipe_id": "CultureMech:015542", "variants": [{"append_mentions": [{"held_fields":
+    ["IDENTITY_FORM", "OPERATION"], "reason": "Named modified whole-medium reference,
+    without an enumerated ingredient or formulation. Retain the literal medium identity
+    as context; do not decompose or assert parent equivalence.", "reported_action":
+    "UNSPECIFIED", "source_label": "M9 medium", "source_modification_index": 0, "source_text":
+    "Use modified M9 medium and optimized growth conditions.", "stage": "unspecified
+    in source"}], "variant_index": 0, "variant_name": "modified_m9_high_density_e_coli_expression"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 data_quality_flags:
 - has_unmapped_ingredients
 organism_culture_type: isolate

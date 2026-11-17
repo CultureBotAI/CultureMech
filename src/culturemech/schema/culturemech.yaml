@@ -1851,6 +1851,15 @@ classes:
         multivalued: true
         inlined_as_list: true
 
+      ingredient_mentions:
+        description: >-
+          Explicit ingredient names whose source assertion remains withheld.
+          These source-bound mentions are exported separately from supported
+          changes and never assert presence, identity grounding, or approval.
+        range: UnresolvedVariantIngredientMention
+        multivalued: true
+        inlined_as_list: true
+
       purpose:
         description: Why this variant exists
         range: string
@@ -1950,6 +1959,15 @@ classes:
       notes:
         description: Qualifications, unresolved identity or source-basis limitations
         range: string
+
+      amount:
+        description: >-
+          Literal batch amount or percentage with unspecified basis. This is
+          not a concentration and must not be divided by an assumed volume.
+          Allowed for ADD, REPLACE and SET_AMOUNT; never alongside an asserted
+          ingredient concentration.
+        range: VariantIngredientAmount
+        inlined: true
     rules:
       - preconditions:
           slot_conditions:
@@ -1974,6 +1992,116 @@ classes:
                 slot_conditions:
                   concentration:
                     required: true
+      - preconditions:
+          slot_conditions:
+            action:
+              equals_string: SET_AMOUNT
+        postconditions:
+          slot_conditions:
+            amount:
+              required: true
+      - preconditions:
+          slot_conditions:
+            amount:
+              value_presence: PRESENT
+        postconditions:
+          slot_conditions:
+            action:
+              any_of:
+                - equals_string: ADD
+                - equals_string: REPLACE
+                - equals_string: SET_AMOUNT
+            ingredient:
+              range_expression:
+                slot_conditions:
+                  concentration:
+                    value_presence: ABSENT
+
+  VariantIngredientAmount:
+    description: A source-reported quantity without an invented concentration basis
+    attributes:
+      value:
+        description: Literal source value or range, without conversion
+        range: string
+        required: true
+        pattern: '\S'
+      unit:
+        range: VariantIngredientAmountUnitEnum
+        required: true
+      basis:
+        range: VariantIngredientAmountBasisEnum
+        required: true
+      basis_statement:
+        description: >-
+          Exact batch or percentage context and limitations established from
+          the change evidence. Unknown final volume or percentage convention
+          remains explicitly unknown.
+        range: string
+        required: true
+        pattern: '\S'
+    rules:
+      - preconditions:
+          slot_conditions:
+            unit:
+              equals_string: PERCENT
+        postconditions:
+          slot_conditions:
+            basis:
+              equals_string: UNSPECIFIED_PERCENT
+        elseconditions:
+          slot_conditions:
+            basis:
+              equals_string: PER_BATCH
+
+  UnresolvedVariantIngredientMention:
+    description: >-
+      A literal named ingredient retained for review, not an approved chemical
+      identity or formulation claim. source_label must occur verbatim in the
+      exact bound modification. No grounding or positive-presence fields exist.
+    attributes:
+      source_label:
+        range: string
+        required: true
+        pattern: '\S'
+      reported_action:
+        range: ReportedVariantIngredientActionEnum
+        required: true
+      stage:
+        description: Explicit source context, or 'unspecified in source'
+        range: string
+        required: true
+        pattern: '\S'
+      source_modification_index:
+        range: integer
+        required: true
+        minimum_value: 0
+      source_text:
+        range: string
+        required: true
+        pattern: '\S'
+      reason:
+        description: Why the source assertion is withheld and what remains unresolved
+        range: string
+        required: true
+        pattern: '\S'
+      held_fields:
+        description: >-
+          Exact dimensions still withheld. A quantity-only hold does not revoke
+          independently supported ingredient identity or presence events.
+        range: VariantIngredientHoldFieldEnum
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+      reported_quantity:
+        description: Uninterpreted quantity wording, never an asserted concentration
+        range: string
+      evidence:
+        description: >-
+          Optional evidence or counterevidence. Even supporting evidence for a
+          name does not promote this mention to an approved change event.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
 
   MediaRecipeReference:
     description: Reference to another CultureMech media recipe record
@@ -3094,6 +3222,58 @@ enums:
         description: >-
           Assign the stated concentration in this variant stage, including an
           explicitly reported zero dose; does not expand the parent formulation
+      SET_AMOUNT:
+        description: Set an explicitly reported batch amount or unspecified-basis percentage
+
+  VariantIngredientAmountUnitEnum:
+    permissible_values:
+      G:
+        description: Gram
+      MG:
+        description: Milligram
+      MICROG:
+        description: Microgram
+      ML:
+        description: Milliliter
+      L:
+        description: Liter
+      PERCENT:
+        description: Percentage whose mass/volume convention was not specified
+
+  VariantIngredientAmountBasisEnum:
+    permissible_values:
+      PER_BATCH:
+        description: Absolute input amount for the stated recipe batch, not final concentration
+      UNSPECIFIED_PERCENT:
+        description: The source does not specify a mass or volume percentage convention
+
+  ReportedVariantIngredientActionEnum:
+    permissible_values:
+      ADD:
+        description: Source reports addition; the assertion remains withheld
+      REMOVE:
+        description: Source reports omission; the assertion remains withheld
+      REPLACE:
+        description: Source reports replacement; the assertion remains withheld
+      SET_CONCENTRATION:
+        description: Source reports a concentration change; the assertion remains withheld
+      SET_AMOUNT:
+        description: Source reports an amount change; the assertion remains withheld
+      UNSPECIFIED:
+        description: No unambiguous ingredient operation is established
+
+  VariantIngredientHoldFieldEnum:
+    permissible_values:
+      SOURCE_CLAIM:
+        description: The underlying source assertion has not been established
+      IDENTITY_FORM:
+        description: Chemical form or identity specificity remains unresolved
+      QUANTITY:
+        description: Amount, concentration or quantity basis remains unresolved
+      OPERATION:
+        description: The ingredient operation is not established
+      STAGE:
+        description: Preparation or experimental stage is not established
 
   VariantTypeEnum:
     description: Type of chemical variant relationship to parent

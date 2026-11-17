@@ -219,6 +219,25 @@ variants:
     explanation: The source directly compares growth-associated fermentation performance
       of the two named ATCC strains in MRS versus M17 and then reports oxygen-condition
       doubling times for the same strains.
+  ingredient_mentions:
+  - source_label: oxygen
+    reported_action: UNSPECIFIED
+    stage: MRS oxygen-condition experiments
+    source_modification_index: 1
+    source_text: Evaluate oxygen concentration effects in MRS medium, including anaerobic
+      and microaerophilic conditions.
+    reason: Primary abstract supports anaerobic versus microaerophilic comparisons
+      but gives no supplied gas species mixture, dose or addition/removal procedure.
+      The oxygen condition is not converted into a liquid ingredient event.
+    held_fields:
+    - OPERATION
+    - QUANTITY
+    evidence:
+    - reference: PMID:39353547
+      supports: PARTIAL
+      snippet: varying oxygen concentration levels
+      explanation: Primary abstract verifies oxygen-condition comparison only; full
+        preparation method unavailable.
 - name: mrs_broth_bg24_ph_yeast_extract_optimization
   description: MRS broth growth optimization condition for Lactiplantibacillus plantarum
     BG24, comparing static and shaken cultures and an MRS broth condition adjusted
@@ -332,6 +351,27 @@ curation_history:
     1, "source_text": "Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5
     enriched with 5 g/L yeast extract.", "stage": "pH 6.5 MRS enrichment"}], "variant_index":
     1, "variant_name": "mrs_broth_bg24_ph_yeast_extract_optimization"}]}'
+- timestamp: '2026-11-17T00:07:02.779831+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "cf6d1fdd16f21cbc90083d225999de52b448eaf6fe7144dbec29f420fa9072cb",
+    "path": "data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml", "recipe_id":
+    "CultureMech:003940", "variants": [{"append_mentions": [{"evidence": [{"explanation":
+    "Primary abstract verifies oxygen-condition comparison only; full preparation
+    method unavailable.", "reference": "PMID:39353547", "snippet": "varying oxygen
+    concentration levels", "supports": "PARTIAL"}], "held_fields": ["OPERATION", "QUANTITY"],
+    "reason": "Primary abstract supports anaerobic versus microaerophilic comparisons
+    but gives no supplied gas species mixture, dose or addition/removal procedure.
+    The oxygen condition is not converted into a liquid ingredient event.", "reported_action":
+    "UNSPECIFIED", "source_label": "oxygen", "source_modification_index": 1, "source_text":
+    "Evaluate oxygen concentration effects in MRS medium, including anaerobic and
+    microaerophilic conditions.", "stage": "MRS oxygen-condition experiments"}], "variant_index":
+    0, "variant_name": "mrs_bsh_oxygen_condition_atcc7050_atcc10012"}, {"variant_index":
+    1, "variant_name": "mrs_broth_bg24_ph_yeast_extract_optimization"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Heyndrickxia coagulans

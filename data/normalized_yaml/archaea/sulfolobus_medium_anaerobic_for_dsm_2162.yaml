@@ -322,6 +322,229 @@ curation_history:
     salts base (MgSO4 reduced/replaced); NH4Cl instead of (NH4)2SO4", "stage": "Willard2024
     low-sulfate Brock''s salts aerobic formulation"}], "variant_index": 0, "variant_name":
     "aerobic_brocks_salts_dsm88_sulfur_yeast_extract"}]}'
+- timestamp: '2026-11-17T00:07:02.058000+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "bba397f1a053e773b29be15a57da4a60c4d5753827582e11c168525890b4c4f8",
+    "field_replacements": [{"expected": "Reduced anaerobic modified Brock''s basal
+    salt medium with yeast extract (MBSY) used by Sakai & Kurosawa 2017 for anaerobic
+    growth tests of Sulfodiicoccus acidiphilus HS-1T. The genuinely anaerobic member
+    of the DSM 2162 evidence set.", "path": ["variants", 1, "description"], "replacement":
+    "Anaerobic MBSY test formulation for Sulfodiicoccus acidiphilus HS-1T. The author''s2019
+    dissertation reports no growth in this formulation after four weeks; it is not
+    successful anaerobic cultivation."}, {"expected": "Anaerobic growth testing of
+    Sulfodiicoccus acidiphilus HS-1T.", "path": ["variants", 1, "purpose"], "replacement":
+    "Preserve the negative anaerobic growth-test formulation and its ingredients without
+    asserting a growth-supporting medium."}, {"expected": [{"explanation": "Sakai
+    & Kurosawa 2017 Methods. Basal MBS recipe cited to another reference.", "reference":
+    "doi:10.1099/ijsem.0.001881", "supports": "SUPPORT"}], "path": ["variants", 1,
+    "evidence"], "replacement": [{"explanation": "Dissertation3.3.2.3 reports no growth
+    after four weeks; Methods3.2.3.3 documents the test ingredients. REFUTE applies
+    to anaerobic growth, not to the recorded test formulation. Full2017 journal Methods
+    were not retrieved; the explicit updated conditions are attributed to2019 dissertation.",
+    "reference": "https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf",
+    "snippet": "Strain HS-1T did not grow under anaerobic conditions", "supports":
+    "REFUTE"}]}, {"expected": [{"evidence": [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. NOT verified on the anaerobic parent (no Na2S/N2 reported); aerobic vented-bottle
+    cultivation. | Identifiers: DSM 3772; DSM 1651", "reference": "doi:10.1128/mbio.01033-24",
+    "supports": "SUPPORT"}], "preferred_term": "Acidianus brierleyi", "scoped_to_variant":
+    "aerobic_brocks_salts_dsm88_sulfur_yeast_extract", "strain": "DSM 3772 (also DSM
+    1651)", "term": {"id": "NCBITaxon:41673", "label": "Acidianus brierleyi"}}, {"evidence":
+    [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. Differs from anaerobic parent: NH4Cl vs (NH4)2SO4, no Na2S, no N2 phase.
+    | Identifiers: DSM 7519", "reference": "doi:10.1128/mbio.01033-24", "supports":
+    "SUPPORT"}], "genome_assembly_id": ["GCA_003201675.2"], "preferred_term": "Metallosphaera
+    hakonensis", "scoped_to_variant": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+    "strain": "HO1-1, DSM 7519", "term": {"id": "NCBITaxon:79601", "label": "Metallosphaera
+    hakonensis"}}, {"evidence": [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. NOT the anaerobic parent formulation. | Identifiers: DSM 10039", "reference":
+    "doi:10.1128/mbio.01033-24", "supports": "SUPPORT"}], "preferred_term": "Metallosphaera
+    prunae", "scoped_to_variant": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+    "strain": "RON 12/II, DSM 10039"}, {"evidence": [{"explanation": "Scoped to the
+    aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Vented bottles; not anaerobic
+    parent. | Identifiers: DSM 12421", "reference": "doi:10.1128/mbio.01033-24", "supports":
+    "SUPPORT"}], "preferred_term": "Sulfurisphaera ohwakuensis", "scoped_to_variant":
+    "aerobic_brocks_salts_dsm88_sulfur_yeast_extract", "strain": "TA-1, DSM 12421",
+    "term": {"id": "NCBITaxon:69656", "label": "Sulfurisphaera ohwakuensis"}}, {"evidence":
+    [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. NH4Cl, no Na2S, vented bottles; not the anaerobic parent. | Identifiers:
+    DSM 16993", "reference": "doi:10.1128/mbio.01033-24", "supports": "SUPPORT"}],
+    "preferred_term": "Sulfurisphaera tokodaii", "scoped_to_variant": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+    "strain": "str. 7, DSM 16993", "term": {"id": "NCBITaxon:111955", "label": "Sulfurisphaera
+    tokodaii"}}, {"evidence": [{"explanation": "Closest match to the anaerobic parent
+    of all DSM 2162 candidates (genuinely anaerobic: Na2S + reduced + H2/CO2). Basal
+    MBS recipe is cited transitively, so exact identity is plausible but not provable
+    from this source; scoped to the reduced_anaerobic_mbsy_h2_co2 variant. | Identifiers:
+    JCM 31740T; InaCC Ar79T; 16S LC061218; 23S LC176656", "reference": "doi:10.1099/ijsem.0.001881",
+    "snippet": "Strain HS-1T grown in modified Brock''s basal salt medium with yeast
+    extract (MBSY); anaerobic tests used MBSY reduced with Na2S (0.5 g/L) + resazurin
+    (1 mg/L), headspace H2/CO2 (80:20, 100 kPa), optional 10 g/L elemental sulfur.",
+    "supports": "SUPPORT"}], "genome_assembly_id": ["GCA_003967175.1"], "preferred_term":
+    "Sulfodiicoccus acidiphilus", "scoped_to_variant": "reduced_anaerobic_mbsy_h2_co2",
+    "strain": "HS-1T (= JCM 31740T = InaCC Ar79T)", "term": {"id": "NCBITaxon:1670455",
+    "label": "Sulfodiicoccus acidiphilus"}}], "path": ["target_organisms"], "replacement":
+    [{"evidence": [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. NOT verified on the anaerobic parent (no Na2S/N2 reported); aerobic vented-bottle
+    cultivation. | Identifiers: DSM 3772; DSM 1651", "reference": "doi:10.1128/mbio.01033-24",
+    "supports": "SUPPORT"}], "preferred_term": "Acidianus brierleyi", "scoped_to_variant":
+    "aerobic_brocks_salts_dsm88_sulfur_yeast_extract", "strain": "DSM 3772 (also DSM
+    1651)", "term": {"id": "NCBITaxon:41673", "label": "Acidianus brierleyi"}}, {"evidence":
+    [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. Differs from anaerobic parent: NH4Cl vs (NH4)2SO4, no Na2S, no N2 phase.
+    | Identifiers: DSM 7519", "reference": "doi:10.1128/mbio.01033-24", "supports":
+    "SUPPORT"}], "genome_assembly_id": ["GCA_003201675.2"], "preferred_term": "Metallosphaera
+    hakonensis", "scoped_to_variant": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+    "strain": "HO1-1, DSM 7519", "term": {"id": "NCBITaxon:79601", "label": "Metallosphaera
+    hakonensis"}}, {"evidence": [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. NOT the anaerobic parent formulation. | Identifiers: DSM 10039", "reference":
+    "doi:10.1128/mbio.01033-24", "supports": "SUPPORT"}], "preferred_term": "Metallosphaera
+    prunae", "scoped_to_variant": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+    "strain": "RON 12/II, DSM 10039"}, {"evidence": [{"explanation": "Scoped to the
+    aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Vented bottles; not anaerobic
+    parent. | Identifiers: DSM 12421", "reference": "doi:10.1128/mbio.01033-24", "supports":
+    "SUPPORT"}], "preferred_term": "Sulfurisphaera ohwakuensis", "scoped_to_variant":
+    "aerobic_brocks_salts_dsm88_sulfur_yeast_extract", "strain": "TA-1, DSM 12421",
+    "term": {"id": "NCBITaxon:69656", "label": "Sulfurisphaera ohwakuensis"}}, {"evidence":
+    [{"explanation": "Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+    variant. NH4Cl, no Na2S, vented bottles; not the anaerobic parent. | Identifiers:
+    DSM 16993", "reference": "doi:10.1128/mbio.01033-24", "supports": "SUPPORT"}],
+    "preferred_term": "Sulfurisphaera tokodaii", "scoped_to_variant": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+    "strain": "str. 7, DSM 16993", "term": {"id": "NCBITaxon:111955", "label": "Sulfurisphaera
+    tokodaii"}}]}], "path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+    "recipe_id": "CultureMech:009226", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Culture Methods name concentrated HCl only;
+    H2SO4 was an unsupported alternative in this variant (#762). No titrant dose is
+    reported.", "reference": "doi:10.1128/mbio.01033-24", "snippet": "media pH-adjusted
+    with concentrated HCl", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "HCl"}, "source_modification_index": 3, "source_text": "65-75C; species-specific
+    pH2-3, adjusted with concentrated HCl in the Willard2024 formulation.", "stage":
+    "Willard2024 species-specific medium pH adjustment"}, {"action": "SET_CONCENTRATION",
+    "evidence": [{"explanation": "Source concentration in aerobic study medium; not
+    a claim of a difference from every parent amount.", "reference": "doi:10.1128/mbio.01033-24",
+    "snippet": "Cultures were supplemented with 10 g/L of elemental sulfur.", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value": "10"},
+    "preferred_term": "elemental sulfur"}, "source_modification_index": 1, "source_text":
+    "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose
+    + NZ-Amine)", "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures"}, {"action":
+    "SET_CONCENTRATION", "evidence": [{"explanation": "Species-specific paragraph
+    identifies this group: A. brierleyi DSM1651, M. hakonensis HO1-1, M. prunae RON
+    12/II, M. sedula DSM5348, S. ohwakuensis TA-1 and S. tokodaii str.7. Alternatives
+    are not combined.", "reference": "doi:10.1128/mbio.01033-24", "snippet": "1 g/L
+    yeast extract", "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit":
+    "G_PER_L", "value": "1"}, "preferred_term": "yeast extract"}, "source_modification_index":
+    1, "source_text": "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract
+    (or sucrose + NZ-Amine)", "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures;
+    species arm: A. brierleyi DSM1651, M. hakonensis HO1-1, M. prunae RON 12/II, M.
+    sedula DSM5348, S. ohwakuensis TA-1 and S. tokodaii str.7"}, {"action": "SET_CONCENTRATION",
+    "evidence": [{"explanation": "Species-specific paragraph identifies this group:
+    S. metallicus DSM6482 and S. tepidarius IC-007. Alternatives are not combined.",
+    "reference": "doi:10.1128/mbio.01033-24", "snippet": "0.2 g/L yeast extract",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value":
+    "0.2"}, "preferred_term": "yeast extract"}, "source_modification_index": 1, "source_text":
+    "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose
+    + NZ-Amine)", "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures; species
+    arm: S. metallicus DSM6482 and S. tepidarius IC-007"}, {"action": "ADD", "evidence":
+    [{"explanation": "Exact supplement for S. acidocaldarius MW001 and S. solfataricus
+    P2; no transfer to yeast-extract arms or full-formulation recertification.", "reference":
+    "doi:10.1128/mbio.01033-24", "snippet": "2 g/L sucrose and 1 g/L NZ-Amine", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "G_PER_L", "value": "2"},
+    "preferred_term": "sucrose"}, "source_modification_index": 1, "source_text": "10
+    g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)",
+    "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures; S. acidocaldarius MW001
+    and S. solfataricus P2 arm"}, {"action": "ADD", "evidence": [{"explanation": "Exact
+    supplement for S. acidocaldarius MW001 and S. solfataricus P2; no transfer to
+    yeast-extract arms or full-formulation recertification.", "reference": "doi:10.1128/mbio.01033-24",
+    "snippet": "2 g/L sucrose and 1 g/L NZ-Amine", "supports": "SUPPORT"}], "ingredient":
+    {"concentration": {"unit": "G_PER_L", "value": "1"}, "preferred_term": "NZ-Amine"},
+    "source_modification_index": 1, "source_text": "10 g/L elemental sulfur; species-specific
+    0.2-1 g/L yeast extract (or sucrose + NZ-Amine)", "stage": "Willard2024 low-sulfate
+    DSM-88 aerobic cultures; S. acidocaldarius MW001 and S. solfataricus P2 arm"}],
+    "append_mentions": [{"evidence": [{"explanation": "Aeration context only; does
+    not assert chemical removal.", "reference": "doi:10.1128/mbio.01033-24", "snippet":
+    "glass serum bottles vented with foam stoppers", "supports": "PARTIAL"}], "held_fields":
+    ["OPERATION", "SOURCE_CLAIM"], "reason": "Aerobic vented-bottle conditions verified.
+    Source does not explicitly document removal of this local parent''s ingredient;
+    absence from a source list is not an observed removal.", "reported_action": "REMOVE",
+    "source_label": "Na2S", "source_modification_index": 2, "source_text": "AEROBIC:
+    vented serum bottles with foam stoppers; NO Na2S reducing agent; NO N2 gas phase",
+    "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures"}, {"evidence": [{"explanation":
+    "Aeration context only; does not assert chemical removal.", "reference": "doi:10.1128/mbio.01033-24",
+    "snippet": "glass serum bottles vented with foam stoppers", "supports": "PARTIAL"}],
+    "held_fields": ["OPERATION", "SOURCE_CLAIM"], "reason": "Aerobic vented-bottle
+    conditions verified. Source does not explicitly document removal of this local
+    parent''s ingredient; absence from a source list is not an observed removal.",
+    "reported_action": "REMOVE", "source_label": "N2", "source_modification_index":
+    2, "source_text": "AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing
+    agent; NO N2 gas phase", "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures"}],
+    "replace_modifications": [{"expected": "65-75C; pH 2-3 (acidified with H2SO4 or
+    HCl)", "modification_index": 3, "replacement": "65-75C; species-specific pH2-3,
+    adjusted with concentrated HCl in the Willard2024 formulation."}], "variant_index":
+    0, "variant_name": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract"}, {"append_changes":
+    [{"action": "ADD", "evidence": [{"explanation": "Results3.3.2.3 identifies the
+    negative-test medium and absence of growth; Methods3.2.1 defines MBSY. Ingredient
+    use is not growth support.", "reference": "https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf",
+    "snippet": "yeast extract (1 g/L)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "1"}, "preferred_term": "yeast extract"}, "source_modification_index":
+    0, "source_text": "Modified Brock''s basal salts + 1 g/L yeast extract (MBSY)",
+    "stage": "Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth
+    after four weeks"}, {"action": "ADD", "evidence": [{"explanation": "Methods3.2.3.3
+    explicitly specifies nonahydrate. No anhydrous mass equivalence inferred.", "reference":
+    "https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf",
+    "snippet": "Na2S.9H2O (0.5 g/L)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "G_PER_L", "value": "0.5"}, "preferred_term": "Na2S.9H2O"}, "source_modification_index":
+    1, "source_text": "Anaerobic test medium reduced with Na2S.9H2O (0.5 g/L) and
+    resazurin (1 mg/L), as specified in Sakai2019 dissertation section3.2.3.3.", "stage":
+    "Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth after
+    four weeks"}, {"action": "ADD", "evidence": [{"explanation": "Methods3.2.3.3 identifies
+    the oxygen indicator in the negative-growth test.", "reference": "https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf",
+    "snippet": "Resazurin (1 mg/L)", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MG_PER_L", "value": "1"}, "preferred_term": "resazurin"}, "source_modification_index":
+    1, "source_text": "Anaerobic test medium reduced with Na2S.9H2O (0.5 g/L) and
+    resazurin (1 mg/L), as specified in Sakai2019 dissertation section3.2.3.3.", "stage":
+    "Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth after
+    four weeks"}, {"action": "ADD", "evidence": [{"explanation": "Separate sulfur-containing
+    and sulfur-free tests; do not assert sulfur in the no-sulfur arm.", "reference":
+    "https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf",
+    "snippet": "with and without elemental sulfur (10 g/L)", "supports": "SUPPORT"}],
+    "ingredient": {"concentration": {"unit": "G_PER_L", "value": "10"}, "preferred_term":
+    "elemental sulfur"}, "source_modification_index": 2, "source_text": "Anaerobic
+    test headspace H2/CO2 (80:20) at110kPa; separate tests with and without10g/L elemental
+    sulfur (Sakai2019 dissertation).", "stage": "Sakai2019 dissertation HS-1T negative
+    anaerobic growth test; no growth after four weeks; sulfur-containing test arm
+    only"}], "append_mentions": [{"evidence": [{"explanation": "Methods3.2.3.3; phase-specific
+    gas input retained outside the liquid ingredient occurrence set.", "reference":
+    "https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf",
+    "snippet": "H2/CO2 (80:20, 110 kPa)", "supports": "PARTIAL"}], "held_fields":
+    ["OPERATION"], "reason": "Gas mixture is verified in the test headspace, not an
+    aqueous ingredient. Ratio80:20 and110kPa are gas conditions, not liquid concentrations.",
+    "reported_action": "ADD", "reported_quantity": "H2/CO2 80:20;110kPa", "source_label":
+    "H2", "source_modification_index": 2, "source_text": "Anaerobic test headspace
+    H2/CO2 (80:20) at110kPa; separate tests with and without10g/L elemental sulfur
+    (Sakai2019 dissertation).", "stage": "Sakai2019 dissertation HS-1T negative anaerobic
+    growth test; no growth after four weeks; headspace"}, {"evidence": [{"explanation":
+    "Methods3.2.3.3; phase-specific gas input retained outside the liquid ingredient
+    occurrence set.", "reference": "https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf",
+    "snippet": "H2/CO2 (80:20, 110 kPa)", "supports": "PARTIAL"}], "held_fields":
+    ["OPERATION"], "reason": "Gas mixture is verified in the test headspace, not an
+    aqueous ingredient. Ratio80:20 and110kPa are gas conditions, not liquid concentrations.",
+    "reported_action": "ADD", "reported_quantity": "H2/CO2 80:20;110kPa", "source_label":
+    "CO2", "source_modification_index": 2, "source_text": "Anaerobic test headspace
+    H2/CO2 (80:20) at110kPa; separate tests with and without10g/L elemental sulfur
+    (Sakai2019 dissertation).", "stage": "Sakai2019 dissertation HS-1T negative anaerobic
+    growth test; no growth after four weeks; headspace"}], "replace_modifications":
+    [{"expected": "Reduced with Na2S (0.5 g/L) + resazurin (1 mg/L)", "modification_index":
+    1, "replacement": "Anaerobic test medium reduced with Na2S.9H2O (0.5 g/L) and
+    resazurin (1 mg/L), as specified in Sakai2019 dissertation section3.2.3.3."},
+    {"expected": "Headspace H2/CO2 (80:20) at 100 kPa; optional 10 g/L elemental sulfur",
+    "modification_index": 2, "replacement": "Anaerobic test headspace H2/CO2 (80:20)
+    at110kPa; separate tests with and without10g/L elemental sulfur (Sakai2019 dissertation)."},
+    {"expected": "65-75C; pH 3.0", "modification_index": 3, "replacement": "Anaerobic
+    test at65C and pH3.0; HS-1T did not grow even after four weeks (Sakai2019 dissertation
+    sections3.2.3.3 and3.3.2.3)."}], "variant_index": 1, "variant_name": "reduced_anaerobic_mbsy_h2_co2"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -388,25 +611,6 @@ target_organisms:
     explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant.
       NH4Cl, no Na2S, vented bottles; not the anaerobic parent. | Identifiers: DSM
       16993'
-- preferred_term: Sulfodiicoccus acidiphilus
-  term:
-    id: NCBITaxon:1670455
-    label: Sulfodiicoccus acidiphilus
-  scoped_to_variant: reduced_anaerobic_mbsy_h2_co2
-  strain: HS-1T (= JCM 31740T = InaCC Ar79T)
-  genome_assembly_id:
-  - GCA_003967175.1
-  evidence:
-  - reference: doi:10.1099/ijsem.0.001881
-    supports: SUPPORT
-    explanation: 'Closest match to the anaerobic parent of all DSM 2162 candidates
-      (genuinely anaerobic: Na2S + reduced + H2/CO2). Basal MBS recipe is cited transitively,
-      so exact identity is plausible but not provable from this source; scoped to
-      the reduced_anaerobic_mbsy_h2_co2 variant. | Identifiers: JCM 31740T; InaCC
-      Ar79T; 16S LC061218; 23S LC176656'
-    snippet: Strain HS-1T grown in modified Brock's basal salt medium with yeast extract
-      (MBSY); anaerobic tests used MBSY reduced with Na2S (0.5 g/L) + resazurin (1
-      mg/L), headspace H2/CO2 (80:20, 100 kPa), optional 10 g/L elemental sulfur.
 variants:
 - name: aerobic_brocks_salts_dsm88_sulfur_yeast_extract
   relationship: DERIVED_FROM
@@ -419,7 +623,8 @@ variants:
     + NZ-Amine)
   - 'AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing agent; NO
     N2 gas phase'
-  - 65-75C; pH 2-3 (acidified with H2SO4 or HCl)
+  - 65-75C; species-specific pH2-3, adjusted with concentrated HCl in the Willard2024
+    formulation.
   purpose: Aerobic sulfur-oxidation / comparative physiology cultivation of Sulfolobales
     (A. brierleyi, M. hakonensis, M. prunae, S. ohwakuensis, S. tokodaii).
   evidence:
@@ -456,19 +661,265 @@ variants:
     source_modification_index: 0
     source_text: Low-sulfate Brock's salts base (MgSO4 reduced/replaced); NH4Cl instead
       of (NH4)2SO4
+  - action: ADD
+    ingredient:
+      preferred_term: HCl
+    stage: Willard2024 species-specific medium pH adjustment
+    source_modification_index: 3
+    source_text: 65-75C; species-specific pH2-3, adjusted with concentrated HCl in
+      the Willard2024 formulation.
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: SUPPORT
+      snippet: media pH-adjusted with concentrated HCl
+      explanation: Culture Methods name concentrated HCl only; H2SO4 was an unsupported
+        alternative in this variant (#762). No titrant dose is reported.
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: elemental sulfur
+      concentration:
+        value: '10'
+        unit: G_PER_L
+    stage: Willard2024 low-sulfate DSM-88 aerobic cultures
+    source_modification_index: 1
+    source_text: 10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract
+      (or sucrose + NZ-Amine)
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: SUPPORT
+      snippet: Cultures were supplemented with 10 g/L of elemental sulfur.
+      explanation: Source concentration in aerobic study medium; not a claim of a
+        difference from every parent amount.
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '1'
+        unit: G_PER_L
+    stage: 'Willard2024 low-sulfate DSM-88 aerobic cultures; species arm: A. brierleyi
+      DSM1651, M. hakonensis HO1-1, M. prunae RON 12/II, M. sedula DSM5348, S. ohwakuensis
+      TA-1 and S. tokodaii str.7'
+    source_modification_index: 1
+    source_text: 10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract
+      (or sucrose + NZ-Amine)
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: SUPPORT
+      snippet: 1 g/L yeast extract
+      explanation: 'Species-specific paragraph identifies this group: A. brierleyi
+        DSM1651, M. hakonensis HO1-1, M. prunae RON 12/II, M. sedula DSM5348, S. ohwakuensis
+        TA-1 and S. tokodaii str.7. Alternatives are not combined.'
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '0.2'
+        unit: G_PER_L
+    stage: 'Willard2024 low-sulfate DSM-88 aerobic cultures; species arm: S. metallicus
+      DSM6482 and S. tepidarius IC-007'
+    source_modification_index: 1
+    source_text: 10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract
+      (or sucrose + NZ-Amine)
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: SUPPORT
+      snippet: 0.2 g/L yeast extract
+      explanation: 'Species-specific paragraph identifies this group: S. metallicus
+        DSM6482 and S. tepidarius IC-007. Alternatives are not combined.'
+  - action: ADD
+    ingredient:
+      preferred_term: sucrose
+      concentration:
+        value: '2'
+        unit: G_PER_L
+    stage: Willard2024 low-sulfate DSM-88 aerobic cultures; S. acidocaldarius MW001
+      and S. solfataricus P2 arm
+    source_modification_index: 1
+    source_text: 10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract
+      (or sucrose + NZ-Amine)
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: SUPPORT
+      snippet: 2 g/L sucrose and 1 g/L NZ-Amine
+      explanation: Exact supplement for S. acidocaldarius MW001 and S. solfataricus
+        P2; no transfer to yeast-extract arms or full-formulation recertification.
+  - action: ADD
+    ingredient:
+      preferred_term: NZ-Amine
+      concentration:
+        value: '1'
+        unit: G_PER_L
+    stage: Willard2024 low-sulfate DSM-88 aerobic cultures; S. acidocaldarius MW001
+      and S. solfataricus P2 arm
+    source_modification_index: 1
+    source_text: 10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract
+      (or sucrose + NZ-Amine)
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: SUPPORT
+      snippet: 2 g/L sucrose and 1 g/L NZ-Amine
+      explanation: Exact supplement for S. acidocaldarius MW001 and S. solfataricus
+        P2; no transfer to yeast-extract arms or full-formulation recertification.
+  ingredient_mentions:
+  - source_label: Na2S
+    reported_action: REMOVE
+    stage: Willard2024 low-sulfate DSM-88 aerobic cultures
+    source_modification_index: 2
+    source_text: 'AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing
+      agent; NO N2 gas phase'
+    reason: Aerobic vented-bottle conditions verified. Source does not explicitly
+      document removal of this local parent's ingredient; absence from a source list
+      is not an observed removal.
+    held_fields:
+    - OPERATION
+    - SOURCE_CLAIM
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: PARTIAL
+      snippet: glass serum bottles vented with foam stoppers
+      explanation: Aeration context only; does not assert chemical removal.
+  - source_label: N2
+    reported_action: REMOVE
+    stage: Willard2024 low-sulfate DSM-88 aerobic cultures
+    source_modification_index: 2
+    source_text: 'AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing
+      agent; NO N2 gas phase'
+    reason: Aerobic vented-bottle conditions verified. Source does not explicitly
+      document removal of this local parent's ingredient; absence from a source list
+      is not an observed removal.
+    held_fields:
+    - OPERATION
+    - SOURCE_CLAIM
+    evidence:
+    - reference: doi:10.1128/mbio.01033-24
+      supports: PARTIAL
+      snippet: glass serum bottles vented with foam stoppers
+      explanation: Aeration context only; does not assert chemical removal.
 - name: reduced_anaerobic_mbsy_h2_co2
   relationship: DERIVED_FROM
-  description: Reduced anaerobic modified Brock's basal salt medium with yeast extract
-    (MBSY) used by Sakai & Kurosawa 2017 for anaerobic growth tests of Sulfodiicoccus
-    acidiphilus HS-1T. The genuinely anaerobic member of the DSM 2162 evidence set.
+  description: Anaerobic MBSY test formulation for Sulfodiicoccus acidiphilus HS-1T.
+    The author's2019 dissertation reports no growth in this formulation after four
+    weeks; it is not successful anaerobic cultivation.
   modifications:
   - Modified Brock's basal salts + 1 g/L yeast extract (MBSY)
-  - Reduced with Na2S (0.5 g/L) + resazurin (1 mg/L)
-  - Headspace H2/CO2 (80:20) at 100 kPa; optional 10 g/L elemental sulfur
-  - 65-75C; pH 3.0
-  purpose: Anaerobic growth testing of Sulfodiicoccus acidiphilus HS-1T.
+  - Anaerobic test medium reduced with Na2S.9H2O (0.5 g/L) and resazurin (1 mg/L),
+    as specified in Sakai2019 dissertation section3.2.3.3.
+  - Anaerobic test headspace H2/CO2 (80:20) at110kPa; separate tests with and without10g/L
+    elemental sulfur (Sakai2019 dissertation).
+  - Anaerobic test at65C and pH3.0; HS-1T did not grow even after four weeks (Sakai2019
+    dissertation sections3.2.3.3 and3.3.2.3).
+  purpose: Preserve the negative anaerobic growth-test formulation and its ingredients
+    without asserting a growth-supporting medium.
   evidence:
-  - reference: doi:10.1099/ijsem.0.001881
-    supports: SUPPORT
-    explanation: Sakai & Kurosawa 2017 Methods. Basal MBS recipe cited to another
-      reference.
+  - reference: https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf
+    supports: REFUTE
+    snippet: Strain HS-1T did not grow under anaerobic conditions
+    explanation: Dissertation3.3.2.3 reports no growth after four weeks; Methods3.2.3.3
+      documents the test ingredients. REFUTE applies to anaerobic growth, not to the
+      recorded test formulation. Full2017 journal Methods were not retrieved; the
+      explicit updated conditions are attributed to2019 dissertation.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: yeast extract
+      concentration:
+        value: '1'
+        unit: G_PER_L
+    stage: Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth
+      after four weeks
+    source_modification_index: 0
+    source_text: Modified Brock's basal salts + 1 g/L yeast extract (MBSY)
+    evidence:
+    - reference: https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf
+      supports: SUPPORT
+      snippet: yeast extract (1 g/L)
+      explanation: Results3.3.2.3 identifies the negative-test medium and absence
+        of growth; Methods3.2.1 defines MBSY. Ingredient use is not growth support.
+  - action: ADD
+    ingredient:
+      preferred_term: Na2S.9H2O
+      concentration:
+        value: '0.5'
+        unit: G_PER_L
+    stage: Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth
+      after four weeks
+    source_modification_index: 1
+    source_text: Anaerobic test medium reduced with Na2S.9H2O (0.5 g/L) and resazurin
+      (1 mg/L), as specified in Sakai2019 dissertation section3.2.3.3.
+    evidence:
+    - reference: https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf
+      supports: SUPPORT
+      snippet: Na2S.9H2O (0.5 g/L)
+      explanation: Methods3.2.3.3 explicitly specifies nonahydrate. No anhydrous mass
+        equivalence inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: resazurin
+      concentration:
+        value: '1'
+        unit: MG_PER_L
+    stage: Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth
+      after four weeks
+    source_modification_index: 1
+    source_text: Anaerobic test medium reduced with Na2S.9H2O (0.5 g/L) and resazurin
+      (1 mg/L), as specified in Sakai2019 dissertation section3.2.3.3.
+    evidence:
+    - reference: https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf
+      supports: SUPPORT
+      snippet: Resazurin (1 mg/L)
+      explanation: Methods3.2.3.3 identifies the oxygen indicator in the negative-growth
+        test.
+  - action: ADD
+    ingredient:
+      preferred_term: elemental sulfur
+      concentration:
+        value: '10'
+        unit: G_PER_L
+    stage: Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth
+      after four weeks; sulfur-containing test arm only
+    source_modification_index: 2
+    source_text: Anaerobic test headspace H2/CO2 (80:20) at110kPa; separate tests
+      with and without10g/L elemental sulfur (Sakai2019 dissertation).
+    evidence:
+    - reference: https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf
+      supports: SUPPORT
+      snippet: with and without elemental sulfur (10 g/L)
+      explanation: Separate sulfur-containing and sulfur-free tests; do not assert
+        sulfur in the no-sulfur arm.
+  ingredient_mentions:
+  - source_label: H2
+    reported_action: ADD
+    stage: Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth
+      after four weeks; headspace
+    source_modification_index: 2
+    source_text: Anaerobic test headspace H2/CO2 (80:20) at110kPa; separate tests
+      with and without10g/L elemental sulfur (Sakai2019 dissertation).
+    reason: Gas mixture is verified in the test headspace, not an aqueous ingredient.
+      Ratio80:20 and110kPa are gas conditions, not liquid concentrations.
+    held_fields:
+    - OPERATION
+    reported_quantity: H2/CO2 80:20;110kPa
+    evidence:
+    - reference: https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf
+      supports: PARTIAL
+      snippet: H2/CO2 (80:20, 110 kPa)
+      explanation: Methods3.2.3.3; phase-specific gas input retained outside the liquid
+        ingredient occurrence set.
+  - source_label: CO2
+    reported_action: ADD
+    stage: Sakai2019 dissertation HS-1T negative anaerobic growth test; no growth
+      after four weeks; headspace
+    source_modification_index: 2
+    source_text: Anaerobic test headspace H2/CO2 (80:20) at110kPa; separate tests
+      with and without10g/L elemental sulfur (Sakai2019 dissertation).
+    reason: Gas mixture is verified in the test headspace, not an aqueous ingredient.
+      Ratio80:20 and110kPa are gas conditions, not liquid concentrations.
+    held_fields:
+    - OPERATION
+    reported_quantity: H2/CO2 80:20;110kPa
+    evidence:
+    - reference: https://soka.repo.nii.ac.jp/record/39772/files/kogakukenkyuka_SAKAI-HIROYUKI%28%E5%85%A8%E6%96%87%29.pdf
+      supports: PARTIAL
+      snippet: H2/CO2 (80:20, 110 kPa)
+      explanation: Methods3.2.3.3; phase-specific gas input retained outside the liquid
+        ingredient occurrence set.

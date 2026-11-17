@@ -553,6 +553,62 @@ curation_history:
     "Add 5 ml methanol to the source''s common basal batch; do not combine this option
     with the methane-air alternative.", "stage": "methanol preparation alternative"}],
     "variant_index": 0, "variant_name": "Methanol preparation option"}]}'
+- timestamp: '2026-11-17T00:07:08.954565+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "63cded5b220afa3cf50a2600602b0ce9223fba7558090f0f671ea16fd0b671a4",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+    "recipe_id": "CultureMech:000718", "variants": [{"replace_changes": [{"change_index":
+    0, "expected": {"action": "ADD", "evidence": [{"explanation": "Page 1, preparation
+    alternatives. Supports only the named descriptor/event at the stated stage. Literal
+    source dose: 5 mL per common basal batch. Final volume and purity unspecified.
+    This alternative excludes methane-air incubation; no mL/L or percent conversion.
+    Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+    "snippet": "Add 5 ml methanol", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified.
+    This alternative excludes methane-air incubation; no mL/L or percent conversion.",
+    "preferred_term": "methanol"}, "source_modification_index": 0, "source_text":
+    "Add 5 ml methanol to the source''s common basal batch; do not combine this option
+    with the methane-air alternative.", "stage": "methanol preparation alternative"},
+    "replacement": {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement":
+    "Literal 5 mL methanol input per DSMZ125 basal batch; no final volume or purity
+    inferred.", "unit": "ML", "value": "5"}, "evidence": [{"explanation": "Page 1,
+    preparation alternatives. Supports only the named descriptor/event at the stated
+    stage. Literal source dose: 5 mL per common basal batch. Final volume and purity
+    unspecified. This alternative excludes methane-air incubation; no mL/L or percent
+    conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+    "snippet": "Add 5 ml methanol", "supports": "SUPPORT"}], "ingredient": {"notes":
+    "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified.
+    This alternative excludes methane-air incubation; no mL/L or percent conversion.",
+    "preferred_term": "methanol"}, "source_modification_index": 0, "source_text":
+    "Add 5 ml methanol to the source''s common basal batch; do not combine this option
+    with the methane-air alternative.", "stage": "methanol preparation alternative"}}],
+    "variant_index": 0, "variant_name": "Methanol preparation option"}, {"append_changes":
+    [{"action": "ADD", "evidence": [{"explanation": "Official page1 preparation alternatives.
+    Source ratio is gas composition only, with no pressure/total volume or dissolved
+    concentration specified.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+    "snippet": "incubate under methane-air (4:1)", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "methane"}, "notes": "Separate methane-air route; not combined
+    with methanol option.", "source_modification_index": 0, "source_text": "Incubate
+    under methane-air (4:1) as the alternative to adding methanol.", "stage": "DSMZ125
+    methane-air 4:1 incubation atmosphere; alternative to methanol batch addition"},
+    {"action": "ADD", "evidence": [{"explanation": "Official page1 preparation alternatives.
+    Source ratio is gas composition only, with no pressure/total volume or dissolved
+    concentration specified.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+    "snippet": "incubate under methane-air (4:1)", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "air"}, "notes": "Separate methane-air route; not combined
+    with methanol option.", "source_modification_index": 0, "source_text": "Incubate
+    under methane-air (4:1) as the alternative to adding methanol.", "stage": "DSMZ125
+    methane-air 4:1 incubation atmosphere; alternative to methanol batch addition"}],
+    "variant_index": 1, "variant_name": "Methane-air incubation option"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -635,6 +691,12 @@ variants:
         volume and purity unspecified. This alternative excludes methane-air incubation;
         no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f.
         No parent formulation, growth, ontology identity, or missing dose is inferred.'
+    amount:
+      value: '5'
+      unit: ML
+      basis: PER_BATCH
+      basis_statement: Literal 5 mL methanol input per DSMZ125 basal batch; no final
+        volume or purity inferred.
 - name: Methane-air incubation option
   relationship: DERIVED_FROM
   description: Source-listed incubation alternative to methanol addition; common basal
@@ -660,3 +722,32 @@ variants:
       and strain-modified source-duplicate links are preserved, not newly validated
       by this recipe evidence. Locator=$.data.solutions[0].steps[0].step. Retrieved
       2026-10-07T10:42:34.501511+00:00; response SHA256=2ccb593505b6c8f5cd63fd63bf1ecee7b33357bca201285eb2e958b70aff5ba1.'
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: methane
+    stage: DSMZ125 methane-air 4:1 incubation atmosphere; alternative to methanol
+      batch addition
+    source_modification_index: 0
+    source_text: Incubate under methane-air (4:1) as the alternative to adding methanol.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+      supports: SUPPORT
+      snippet: incubate under methane-air (4:1)
+      explanation: Official page1 preparation alternatives. Source ratio is gas composition
+        only, with no pressure/total volume or dissolved concentration specified.
+    notes: Separate methane-air route; not combined with methanol option.
+  - action: ADD
+    ingredient:
+      preferred_term: air
+    stage: DSMZ125 methane-air 4:1 incubation atmosphere; alternative to methanol
+      batch addition
+    source_modification_index: 0
+    source_text: Incubate under methane-air (4:1) as the alternative to adding methanol.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+      supports: SUPPORT
+      snippet: incubate under methane-air (4:1)
+      explanation: Official page1 preparation alternatives. Source ratio is gas composition
+        only, with no pressure/total volume or dissolved concentration specified.
+    notes: Separate methane-air route; not combined with methanol option.

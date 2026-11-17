@@ -239,6 +239,7 @@ def run(
     apply: bool = False,
     receipt: Path | None = None,
     only_record: str | None = None,
+    planner=None,
 ) -> dict[str, Any]:
     raw = decisions.read_bytes()
     document = json.loads(raw)
@@ -252,7 +253,7 @@ def run(
         raise ValueError("selected record is absent from decisions")
     # Validate the entire selected plan before its first write.
     plans = [
-        plan_record(root, item, decision_digest)
+        (planner or plan_record)(root, item, decision_digest)
         for item in document["records"]
         if only_record is None or item["path"] == only_record
     ]

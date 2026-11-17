@@ -81,7 +81,7 @@ condition-only text, already represented claims and explicit evidence/model hold
 
 The maintained model is `MediaVariant.ingredient_changes`. Each change requires:
 
-- `action`: `ADD`, `REMOVE`, `REPLACE` or `SET_CONCENTRATION`.
+- `action`: `ADD`, `REMOVE`, `REPLACE`, `SET_CONCENTRATION` or `SET_AMOUNT`.
 - `ingredient`: the introduced, removed or concentration-target descriptor;
   retain an explicit source label when ontology identity is unresolved.
 - `stage`: the experimental/preparation stage, including alternative routes.
@@ -94,8 +94,10 @@ The maintained model is `MediaVariant.ingredient_changes`. Each change requires:
 `SET_CONCENTRATION` requires an asserted descriptor concentration. Preserve stock
 strength, addition volume, final concentration, discrete treatments, isotope and
 hydrate distinctions. Where an input is a batch mass/volume or the percentage
-basis is unspecified, retain the literal quantity in notes rather than invent a
-concentration. An unsupported quantity-only operation remains held for review.
+basis is unspecified, use a literal `amount` with its explicit `basis_statement`
+rather than invent a concentration. `SET_AMOUNT` requires that amount; `ADD` and
+`REPLACE` can also carry it. An amount and descriptor concentration cannot coexist
+on the same change. Unsupported quantity claims remain explicitly held.
 These changes do not apply themselves to the base recipe or establish its complete
 equivalence to the study formulation.
 
@@ -133,8 +135,57 @@ of other source families. Independently review subsequent bounded source familie
 
 After applying reviewed decisions, run the native schema, strict, ID and product
 checks and relevant export tests. Commit the producer, source decisions, reviews
-and recipe changes; build a fresh full-catalog version 2 bundle from that clean
+and recipe changes; build a fresh full-catalog version 3 bundle from that clean
 revision. Report original queue coverage and remaining holds separately from
 ingredient-group and occurrence counts. Hand MIM the exact source revision,
 manifest digest, artifacts and contract change for explicit intake adoption;
 preserve its running campaign's frozen inputs.
+
+### Correct source claims and retain unresolved names
+
+Use `curate_variant_completeness.py` for reviewed follow-ups. Its proposal records
+use the same path, ID and byte hash guard, with `append_changes`, `append_mentions`,
+`replace_changes` and `replace_modifications` inside each selected variant.
+Replacements require the entire exact previous value and an explicit replacement.
+The bounded `field_replacements` operation can correct variant descriptions,
+purposes and evidence, or remove one exactly identified unsupported growth
+descriptor. Other record fields remain outside this tool's mutation scope.
+
+An unresolved mention retains a verbatim `source_label`, exact source index/text,
+reported action, stage, reason and nonempty `held_fields`. Use `SOURCE_CLAIM`,
+`IDENTITY_FORM`, `QUANTITY`, `OPERATION` or `STAGE` to distinguish the uncertainty.
+Optional evidence and `reported_quantity` remain uninterpreted. No ontology ID or
+positive-presence assertion belongs in this collection. A known ingredient can
+have a supported event and a separate quantity/form hold.
+
+When reviewed cohorts overlap the same recipe, merge them before applying;
+separate applies would invalidate each other's source hashes. The maintained
+`scripts/adhoc/audit_variant_completeness_683.py merge` validates each independently
+pinned cohort and the combined native recipe, retaining disposition-only rows
+without creating empty history events. Save independent scientific reviews before
+the authoritative apply.
+
+```bash
+uv run --frozen python scripts/curate_variant_completeness.py DECISIONS.json \
+  --receipt .temp/variant-curation/PREVIEW.json
+uv run --frozen python scripts/curate_variant_completeness.py DECISIONS.json \
+  --only-record data/normalized_yaml/CATEGORY/RECORD.yaml \
+  --apply --receipt .temp/variant-curation/CANARY.json
+```
+
+Run the same native bundle build/verify path on the persisted canary and check the
+positive, complete-change and hold ledgers. Only then apply the whole proposal,
+supplying `--completed-receipt CANARY.json` and
+`--expected-completed-receipt-sha256 PIN` to retain the verified canary unchanged.
+The receipt records exact before/after bytes and the decision digest. Replays
+require both the unchanged proposal and independently pinned successful receipt.
+An incomplete receipt is evidence of partial progress, not permission to retry
+blindly against changed files.
+
+The original queue is immutable even when a source correction changes current
+prose. The completeness audit joins original coordinates to corrected text and
+counts supported events and retained holds separately. Its registered successor
+capsule proves each exact recipe/history change and restores the earlier source
+for historical audits, surviving squash merges and branch deletion. It does not
+replace the scientific claim review. Deliver the resulting seven-product bundle
+and complete coverage ledger to a separate MIM intake.

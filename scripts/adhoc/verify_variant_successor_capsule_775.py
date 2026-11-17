@@ -56,7 +56,7 @@ def main():
         counters = audit.check(before, after, item)
         events += counters["new_variant_ingredient_changes"]
         raw = item["after_text"].encode()
-        assert audit.restore_before(raw, item["path"]) == item["before_text"].encode()
+        assert audit.restore_registered_before(raw, item["path"]) == item["before_text"].encode()
         assert consumer.invert_chain(raw, [item]) == before
     assert len(plan["records"]) == 87 and events == 377
     print(

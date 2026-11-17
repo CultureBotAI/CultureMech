@@ -377,6 +377,48 @@ curation_history:
     micromolar calcium salt or add an inferred calcium concentration.", "stage": "BL
     medium vitamin-stock preparation"}], "variant_index": 0, "variant_name": "Jensen
     1993 BL Medium, Low MOPS reported preparation"}]}'
+- timestamp: '2026-11-17T00:07:07.006158+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "ac7f8853c92f00bdb37cc4061ad6b16cc0680eac08fb765a1f5df373b7a5c703",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/bl_medium_low_mops.yaml",
+    "recipe_id": "CultureMech:007305", "variants": [{"append_changes": [{"action":
+    "SET_CONCENTRATION", "evidence": [{"explanation": "Table1 row quote normalizes
+    whitespace and superscript footnote a; header ''Concn (mM) or presence in medium''
+    and BL column establish0.52mM. Nominal MgCl2 does not promote the parent''s hexahydrate.
+    Publisher PDF page4363 inspected via browser; no locally captured hash is claimed.",
+    "reference": "doi:10.1128/aem.59.12.4363-4366.1993", "snippet": "MgCl2 0.52a 0.52",
+    "supports": "SUPPORT"}], "ingredient": {"concentration": {"unit": "MILLIMOLAR",
+    "value": "0.52"}, "preferred_term": "MgCl2"}, "source_modification_index": 2,
+    "source_text": "Keep the published nominal molar formulation from Table 1 and
+    this Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+    are not resolved by the inspected source; the parent''s hexahydrate/tetrahydrate
+    labels are not promoted to verified study identities. No mass or hydrate conversion
+    is performed.", "stage": "Jensen1993 nominal BL formulation, same variant-specific
+    treatment"}], "append_mentions": [{"held_fields": ["IDENTITY_FORM"], "reason":
+    "Nominal MgCl2 presence/dose is separately supported; its hydrate is unspecified.
+    The source''s printed molybdate formula/hydration is not safely reconciled to
+    the parent''s tetrahydrate. No mass/hydrate conversion or exact-salt identity
+    is approved.", "reported_action": "UNSPECIFIED", "source_label": "MgCl2", "source_modification_index":
+    2, "source_text": "Keep the published nominal molar formulation from Table 1 and
+    this Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+    are not resolved by the inspected source; the parent''s hexahydrate/tetrahydrate
+    labels are not promoted to verified study identities. No mass or hydrate conversion
+    is performed.", "stage": "Jensen1993 Table1 nominal formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "Nominal MgCl2 presence/dose is separately supported;
+    its hydrate is unspecified. The source''s printed molybdate formula/hydration
+    is not safely reconciled to the parent''s tetrahydrate. No mass/hydrate conversion
+    or exact-salt identity is approved.", "reported_action": "UNSPECIFIED", "source_label":
+    "molybdate", "source_modification_index": 2, "source_text": "Keep the published
+    nominal molar formulation from Table 1 and this Table 3 treatment. MgCl2 hydration
+    and the printed molybdate formula/hydration are not resolved by the inspected
+    source; the parent''s hexahydrate/tetrahydrate labels are not promoted to verified
+    study identities. No mass or hydrate conversion is performed.", "stage": "Jensen1993
+    Table1 nominal formulation"}], "variant_index": 0, "variant_name": "Jensen 1993
+    BL Medium, Low MOPS reported preparation"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 404
   term:
@@ -495,6 +537,58 @@ variants:
         payload unchanged.
     replaced_ingredient:
       preferred_term: Pantothenate
+  - action: SET_CONCENTRATION
+    ingredient:
+      preferred_term: MgCl2
+      concentration:
+        value: '0.52'
+        unit: MILLIMOLAR
+    stage: Jensen1993 nominal BL formulation, same variant-specific treatment
+    source_modification_index: 2
+    source_text: Keep the published nominal molar formulation from Table 1 and this
+      Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+      are not resolved by the inspected source; the parent's hexahydrate/tetrahydrate
+      labels are not promoted to verified study identities. No mass or hydrate conversion
+      is performed.
+    evidence:
+    - reference: doi:10.1128/aem.59.12.4363-4366.1993
+      supports: SUPPORT
+      snippet: MgCl2 0.52a 0.52
+      explanation: Table1 row quote normalizes whitespace and superscript footnote
+        a; header 'Concn (mM) or presence in medium' and BL column establish0.52mM.
+        Nominal MgCl2 does not promote the parent's hexahydrate. Publisher PDF page4363
+        inspected via browser; no locally captured hash is claimed.
+  ingredient_mentions:
+  - source_label: MgCl2
+    reported_action: UNSPECIFIED
+    stage: Jensen1993 Table1 nominal formulation
+    source_modification_index: 2
+    source_text: Keep the published nominal molar formulation from Table 1 and this
+      Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+      are not resolved by the inspected source; the parent's hexahydrate/tetrahydrate
+      labels are not promoted to verified study identities. No mass or hydrate conversion
+      is performed.
+    reason: Nominal MgCl2 presence/dose is separately supported; its hydrate is unspecified.
+      The source's printed molybdate formula/hydration is not safely reconciled to
+      the parent's tetrahydrate. No mass/hydrate conversion or exact-salt identity
+      is approved.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: molybdate
+    reported_action: UNSPECIFIED
+    stage: Jensen1993 Table1 nominal formulation
+    source_modification_index: 2
+    source_text: Keep the published nominal molar formulation from Table 1 and this
+      Table 3 treatment. MgCl2 hydration and the printed molybdate formula/hydration
+      are not resolved by the inspected source; the parent's hexahydrate/tetrahydrate
+      labels are not promoted to verified study identities. No mass or hydrate conversion
+      is performed.
+    reason: Nominal MgCl2 presence/dose is separately supported; its hydrate is unspecified.
+      The source's printed molybdate formula/hydration is not safely reconciled to
+      the parent's tetrahydrate. No mass/hydrate conversion or exact-salt identity
+      is approved.
+    held_fields:
+    - IDENTITY_FORM
 target_organisms:
 - preferred_term: Lactococcus lactis subsp. lactis
   term:

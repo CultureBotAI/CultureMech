@@ -1,0 +1,2335 @@
+{
+  "schema_version": 1,
+  "base_commit": "65df76935898c6e973697389b76449686b88f8cb",
+  "source_queue_sha256": "dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca",
+  "scope": "All 104 original condition rows re-read; explicit gas inputs and residual held names represented, duplicate context linked, whole-formulation conditions retained. No whole-record recertification or recipe applies.",
+  "source_inspections": [
+    {
+      "key": "matsui",
+      "reference": "DOI:10.1104/pp.18.00453",
+      "path": ".temp/variant-completeness-683/sources/matsui-2018-html/source.html",
+      "sha256": "beecd6db87651dbf5f4119169a755249ba977070ee4a7046d26dff3bab3b5d43",
+      "locator": "Methods: culture conditions and transformation"
+    },
+    {
+      "key": "125",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/remaining-sources/dsmz-125/source.pdf",
+      "sha256": "e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f",
+      "locator": "Page 1 carbon alternatives"
+    },
+    {
+      "key": "kato",
+      "reference": "doi:10.1264/jsme2.ME19128",
+      "path": ".temp/variant-completeness-683/sources/methylotroph-2020/source.xml",
+      "sha256": "2ade9577ad927b568273334fa9b14d2da22d155f877535d317ad13a0977a224d",
+      "locator": "Methods: cultivation of methanotrophs"
+    },
+    {
+      "key": "carini",
+      "reference": "doi:10.1038/ismej.2012.122",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/family-sources/carini-2013-html/source.html",
+      "sha256": "b9fa5f44ed26edc1d3323374ba097fbc17c10510893d36703f9328983c77c2d1",
+      "locator": "Media preparation, autoclave and sequential gas sparging"
+    },
+    {
+      "key": "blumer",
+      "reference": "doi:10.1128/AEM.01400-10",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/remaining-sources/blumer-2010/source.html",
+      "sha256": "ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8",
+      "locator": "Methods: Bacterial strains and growth on sugar substrates"
+    },
+    {
+      "key": "11801",
+      "reference": "PMID:30413737",
+      "path": ".temp/variant-completeness-683/sources/synechococcus-11801/source.xml",
+      "sha256": "bc5b3e8e61aea59f4547670a0bced26074cfa9dd650595ccd7c3316c8b640b53",
+      "locator": "Culture conditions and Figure 2A"
+    },
+    {
+      "key": "11802",
+      "reference": "PMID:31932622",
+      "path": ".temp/variant-completeness-683/sources/synechococcus-11802/source.xml",
+      "sha256": "fe274b564c95fb3895cdf8a2e2117ba7fe6fe6f14206101a4b9aef5bcc4fa62a",
+      "locator": "Culture conditions and Figure 2C"
+    },
+    {
+      "key": "nostoc",
+      "reference": "PMID:36550226",
+      "path": ".temp/variant-completeness-683/sources/nostoc-bg110/metadata.json",
+      "sha256": "d883adb351252f53b31ab320203b6cbe3caf00677b580f776f9e924d9979b800",
+      "locator": "Primary abstract only"
+    },
+    {
+      "key": "mrs",
+      "reference": "PMID:39353547",
+      "path": ".temp/variant-completeness-683/sources/mrs-oxygen/metadata.json",
+      "sha256": "ea40b43f5297f50541e3363ecc5559b07847715c4878aeeebb2e90e3df9c3bc3",
+      "locator": "Primary abstract only"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/2asw.yaml",
+      "recipe_id": "CultureMech:000038",
+      "expected_sha256": "c610fb4422a57e355eb96ee4d90e0b0af811c4394a6de88c5b61789c97bc2efb",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "f_2asw",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Matsui2018 diatom culture; high-CO2 1% v/v aeration",
+              "source_modification_index": 2,
+              "source_text": "Reported diatom conditions include 20 deg C, continuous illumination at 30-75 umol photons m-2 s-1, and aeration with ambient air or CO2-enriched air.",
+              "evidence": [
+                {
+                  "reference": "DOI:10.1104/pp.18.00453",
+                  "supports": "SUPPORT",
+                  "snippet": "constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04% (v/v) CO2 (air-grown cells)",
+                  "explanation": "Culture Conditions. This record is a separate recipe coordinate from queue row30; alternative gas stages are not one co-supply event."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration inferred."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "ambient air"
+              },
+              "stage": "Matsui2018 diatom culture; ambient-air 0.04% v/v CO2 aeration",
+              "source_modification_index": 2,
+              "source_text": "Reported diatom conditions include 20 deg C, continuous illumination at 30-75 umol photons m-2 s-1, and aeration with ambient air or CO2-enriched air.",
+              "evidence": [
+                {
+                  "reference": "DOI:10.1104/pp.18.00453",
+                  "supports": "SUPPORT",
+                  "snippet": "constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04% (v/v) CO2 (air-grown cells)",
+                  "explanation": "Culture Conditions. This record is a separate recipe coordinate from queue row30; alternative gas stages are not one co-supply event."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration inferred."
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "modified_f_2asw_sodium_response",
+          "append_mentions": [
+            {
+              "source_label": "sodium",
+              "reported_action": "UNSPECIFIED",
+              "stage": "reported Tsuji2021 sodium preacclimation",
+              "source_modification_index": 2,
+              "source_text": "Preacclimate cells to sodium concentrations before low-sodium transfer.",
+              "reason": "Primary Table S1 resolves formulation constituents, but the main Methods describing preacclimation were not accessible. This literal precursor-treatment claim is not inferred from the later low-sodium assay or mapped to a particular salt.",
+              "held_fields": [
+                "SOURCE_CLAIM",
+                "IDENTITY_FORM",
+                "QUANTITY"
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "2asw_1_5_m_nacl"
+        },
+        {
+          "variant_index": 3,
+          "variant_name": "2asw_sea_salt_substitution_33_6_g_l"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "recipe_id": "CultureMech:000025",
+      "expected_sha256": "b6636a9b18a477aaaa935531eea34a7a050a1859db0ea04c73054331e12dbaba",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "modified_artificial_seawater_hemiaulus_richelia_symbiosis"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "np_supplemented_asw_synechocystis_pcc6803"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Bold_Basal_Medium.yaml",
+      "recipe_id": "CultureMech:000034",
+      "expected_sha256": "f9346f3379ead91dd463ac331a7be175640ea3e5f10c32587377efbe02e5645d",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "bbm_estradiol_exposure_assay"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "recipe_id": "CultureMech:000170",
+      "expected_sha256": "87cec46fd41e42ee7de2dd99b3ed5d0862ae970048f8a410458478f8e2caff37",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "n_replete_second_stage_tetraselmis_marina"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "f_2asw_diatom_culture"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/Spirulina_Medium.yaml",
+      "recipe_id": "CultureMech:000232",
+      "expected_sha256": "8a48d47f262e9326d89ab4e526226cc8913cd6b746c8ab1679b79fa910394123",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "biogas_effluent_based_arthrospira_platensis"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "recipe_id": "CultureMech:000233",
+      "expected_sha256": "b44608e3c6ce42801cea59497c6bce8e5dd1be3c2e08ae43f55617bf789ccc77",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "tap_delftia_chlorella_vulgaris_coculture"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "ab_wsf_tap_derived_chlorella_sorokiniana"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/ajs.yaml",
+      "recipe_id": "CultureMech:000041",
+      "expected_sha256": "6f730ef85c3254b3d7b5e09acae19f4562abfd4e6417fe6cd9a082940c7189dc",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "ajs_hydrochloric_acid_ph_1_5"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/bg11.yaml",
+      "recipe_id": "CultureMech:015450",
+      "expected_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "nitrate_replete_bg11_nostoc_linckia",
+          "append_mentions": [
+            {
+              "source_label": "nitrate",
+              "reported_action": "REMOVE",
+              "stage": "Nostoc BG110 comparator only",
+              "source_modification_index": 1,
+              "source_text": "Compare with BG110 medium lacking nitrate.",
+              "reason": "The primary abstract explicitly identifies nitrate absence in the separate BG110 comparator. No nitrate removal from this nitrate-replete BG11 variant or specific nitrate salt is inferred.",
+              "held_fields": [
+                "OPERATION",
+                "IDENTITY_FORM"
+              ],
+              "evidence": [
+                {
+                  "reference": "PMID:36550226",
+                  "supports": "PARTIAL",
+                  "snippet": "BG11 (i.e., in the presence of nitrate) and BG11<sub>0</sub> (in the absence of nitrate)",
+                  "explanation": "Primary abstract contrast; negative comparator membership, not an operational change to the BG11 treatment."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "bg11_synechococcus_ucp002"
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "bg11_scenedesmus_obliquus_abc009_photoautotrophic"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/f_2.yaml",
+      "recipe_id": "CultureMech:000149",
+      "expected_sha256": "0642579ee29157c580b4c26615001376578e7c1ca0144a13a436c3617196e48d",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "f_2_silicate_supplement_1_06e_4_m",
+          "append_mentions": [
+            {
+              "source_label": "silicate",
+              "reported_action": "UNSPECIFIED",
+              "stage": "total study-medium silicate, including unresolved base",
+              "source_modification_index": 1,
+              "source_text": "Other nutrients, total silicate including the base, final-volume preparation and equivalence to local f/2 + Si records remain unresolved.",
+              "reason": "The prior source-supported supplementation event remains intact. Total silicate including the unverified base is unspecified; no addition of a second dose or exact salt identity is inferred.",
+              "held_fields": [
+                "QUANTITY",
+                "IDENTITY_FORM"
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "f_2_nitrate_supplement_29_4_mm"
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "f_2_penicillin_g_dihydrostreptomycin_supplement"
+        },
+        {
+          "variant_index": 3,
+          "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "recipe_id": "CultureMech:000643",
+      "expected_sha256": "b671cbbe466583591ab494a297e153dbb74a5d374144b8a1c7b558c7bfc264df",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "For DSM 1535"
+        },
+        {
+          "variant_index": 3,
+          "variant_name": "For DSM 3267, DSM 11074, DSM 11075"
+        },
+        {
+          "variant_index": 14,
+          "variant_name": "For DSM 102889"
+        },
+        {
+          "variant_index": 15,
+          "variant_name": "For DSM 108286"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanosarcina_medium.yaml",
+      "recipe_id": "CultureMech:000660",
+      "expected_sha256": "4a145ae6f0b443f0e9eb913f385536e8fc0418887532f57f1b146d01558185e2",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "slow_growth_phase_methanosarcina_acetivorans"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/pyrococcus_medium.yaml",
+      "recipe_id": "CultureMech:001478",
+      "expected_sha256": "c830bc505c13c78de528c919362ee1be285ddf05c086388919240f09eff4abdc",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "cf11_cellulose_adapted_pyrococcus_furiosus"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml",
+      "recipe_id": "CultureMech:008908",
+      "expected_sha256": "c227b17cd53ccb5eaff8452c431aad1834026a104bbf9adfd779648b37991c43",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml",
+      "recipe_id": "CultureMech:003534",
+      "expected_sha256": "e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Liquid preparation described by DSMZ 1021"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml",
+      "recipe_id": "CultureMech:003730",
+      "expected_sha256": "2c2073df6de9bee9f2990d0eac08e29de7aa25f4496b8649dd127b5921277bca",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "friis_medium_mycoplasma_hyopneumoniae_isolate_growth"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml",
+      "recipe_id": "CultureMech:003940",
+      "expected_sha256": "cf6d1fdd16f21cbc90083d225999de52b448eaf6fe7144dbec29f420fa9072cb",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "mrs_bsh_oxygen_condition_atcc7050_atcc10012",
+          "append_mentions": [
+            {
+              "source_label": "oxygen",
+              "reported_action": "UNSPECIFIED",
+              "stage": "MRS oxygen-condition experiments",
+              "source_modification_index": 1,
+              "source_text": "Evaluate oxygen concentration effects in MRS medium, including anaerobic and microaerophilic conditions.",
+              "reason": "Primary abstract supports anaerobic versus microaerophilic comparisons but gives no supplied gas species mixture, dose or addition/removal procedure. The oxygen condition is not converted into a liquid ingredient event.",
+              "held_fields": [
+                "OPERATION",
+                "QUANTITY"
+              ],
+              "evidence": [
+                {
+                  "reference": "PMID:39353547",
+                  "supports": "PARTIAL",
+                  "snippet": "varying oxygen concentration levels",
+                  "explanation": "Primary abstract verifies oxygen-condition comparison only; full preparation method unavailable."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "mrs_broth_bg24_ph_yeast_extract_optimization"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+      "recipe_id": "CultureMech:004018",
+      "expected_sha256": "de0a27c5f2553ac733ea5c894832649bf2e9df8f152c0b005e77ad4c4e2fd75b",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol preparation option"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methane-air incubation option",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methane"
+              },
+              "stage": "DSMZ125 methane-air 4:1 incubation atmosphere; alternative to methanol batch addition",
+              "source_modification_index": 0,
+              "source_text": "Incubate under methane-air (4:1) as the alternative to adding methanol.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "incubate under methane-air (4:1)",
+                  "explanation": "Official page1 preparation alternatives. Source ratio is gas composition only, with no pressure/total volume or dissolved concentration specified."
+                }
+              ],
+              "notes": "Separate methane-air route; not combined with methanol option."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "DSMZ125 methane-air 4:1 incubation atmosphere; alternative to methanol batch addition",
+              "source_modification_index": 0,
+              "source_text": "Incubate under methane-air (4:1) as the alternative to adding methanol.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "incubate under methane-air (4:1)",
+                  "explanation": "Official page1 preparation alternatives. Source ratio is gas composition only, with no pressure/total volume or dissolved concentration specified."
+                }
+              ],
+              "notes": "Separate methane-air route; not combined with methanol option."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml",
+      "recipe_id": "CultureMech:005268",
+      "expected_sha256": "83725a42c8a74ff8eff0b5710926f709ff1d68e9b859224ba81db186704d08cc",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "columbia_blood_agar_staphylococcus_saccharolyticus_anaerobic",
+          "append_mentions": [
+            {
+              "source_label": "oxygen",
+              "reported_action": "UNSPECIFIED",
+              "stage": "reported Columbia blood agar anaerobic/reduced-oxygen incubation",
+              "source_modification_index": 1,
+              "source_text": "Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic organism.",
+              "reason": "Anaerobic or reduced-oxygen incubation is a reported culture condition. It does not identify an oxygen supplementation/removal step or quantified gas mixture; no whole-medium chemical operation inferred.",
+              "held_fields": [
+                "OPERATION",
+                "QUANTITY"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml",
+      "recipe_id": "CultureMech:006416",
+      "expected_sha256": "ac0518cf8b1f1ac334fcde5cfa747b3987a6a3f7a25407471bbe7b5bfcf23fca",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "strict_anaerobic_halothermothrix_orenii_h168_growth"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "recipe_id": "CultureMech:006900",
+      "expected_sha256": "28178c1e9f4ee18312185a850956fa768139cd8f7d63bb17d57d30883eedeee3",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol alternative"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methylamine alternative"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml",
+      "recipe_id": "CultureMech:007386",
+      "expected_sha256": "d8092237811cc9510050120c9218451cbebcc092feef91786b4329b69e8c8d4c",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2014 AMS1 phosphite utilization assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml",
+      "recipe_id": "CultureMech:007388",
+      "expected_sha256": "cf0d8ed10ce7280a8d3562b9be0e33e4d1b8f4e4ad27e9341b3d1f1150150674",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2014 AMS1 glucose 6-phosphate utilization assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml",
+      "recipe_id": "CultureMech:007389",
+      "expected_sha256": "2bb00b703edca7a5d8a3c07432c30a775144e3f460873ebb15ff472686c1665a",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2014 AMS1 ribose 5-phosphate utilization assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml",
+      "recipe_id": "CultureMech:007390",
+      "expected_sha256": "b9b9e894c860bd5231e260c063882b93ed33579d460d6e6212d5f6fda01a744a",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2014 AMS1 methylphosphonic acid utilization assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml",
+      "recipe_id": "CultureMech:007391",
+      "expected_sha256": "69768667d3676ba4e938627b92c05031f531e53813adea5d0f6b351a82f3c4ab",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2014 AMS1 2-aminoethylphosphonic acid utilization assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml",
+      "recipe_id": "CultureMech:007392",
+      "expected_sha256": "6321d911cf073c17dfbf04d52c78543d788bd99107f13df856c89b239648bbd3",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2014 AMS1 phosphoserine utilization assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added afterward), rather than the parent's generic dissolve-all/filter-all steps. Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml",
+      "recipe_id": "CultureMech:007843",
+      "expected_sha256": "967394ea5131b424e8bdb02c7d5318d6d60b97cb8539abd8b49f995a3dcc8107",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "ca_free_lanthanide_test_basal_medium"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml",
+      "recipe_id": "CultureMech:009933",
+      "expected_sha256": "86c304ddae1f173cb0a5f6711b555802b4d71f20b70b3c115d614604100eea72",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "brucella_broth_fbs_h2o2_helicobacter_pylori"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/acidiphilium_medium.yaml",
+      "recipe_id": "CultureMech:001368",
+      "expected_sha256": "301e9826e796f02eda91c75ac461ab1c9b640eb9b1c564f9cb210ee9fe141fda",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "aluminum_sulfate_stress_acidiphilium_cryptum"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ajs.yaml",
+      "recipe_id": "CultureMech:000338",
+      "expected_sha256": "90c6d69d1b36d2aef8295d7b13971932680f70a785f06d36d7f7fbb5812ef4f2",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "ajs_hydrochloric_acid_ph_1_5"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ams1_pyruvate_glycine.yaml",
+      "recipe_id": "CultureMech:007382",
+      "expected_sha256": "1e8225b42c5105776973d5f173f468f68f5cbbdd4e7440f9bf886323be9f0c9e",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2013 AMS1 glycine substitution assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Follow the paper's AMS1 preparation: autoclave the inorganic medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and organics afterward; this differs from the imported all-ingredient filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an independently optimized value.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Follow the paper's AMS1 preparation: autoclave the inorganic medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and organics afterward; this differs from the imported all-ingredient filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an independently optimized value.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "bicarbonate",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Carini AMS1 buffer after gas sparging",
+              "source_modification_index": 6,
+              "source_text": "Follow the paper's AMS1 preparation: autoclave the inorganic medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and organics afterward; this differs from the imported all-ingredient filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an independently optimized value.",
+              "reason": "The source describes establishment of a bicarbonate-based buffer through CO2 then air sparging. This is not an explicit addition of a particular bicarbonate salt or measured final species concentration.",
+              "held_fields": [
+                "OPERATION",
+                "IDENTITY_FORM",
+                "QUANTITY"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/ams1_pyruvate_serine.yaml",
+      "recipe_id": "CultureMech:007384",
+      "expected_sha256": "b4aeda720f679f294ace46be3e4ae02e3038511c6f45dabb4a446a9349a1aa42",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Carini 2013 AMS1 serine substitution assay",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered CO2 sparging for 5 h",
+              "source_modification_index": 6,
+              "source_text": "Follow the paper's AMS1 preparation: autoclave the inorganic medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and organics afterward; this differs from the imported all-ingredient filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an independently optimized value.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before vitamins and organics",
+              "source_modification_index": 6,
+              "source_text": "Follow the paper's AMS1 preparation: autoclave the inorganic medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and organics afterward; this differs from the imported all-ingredient filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an independently optimized value.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1038/ismej.2012.122",
+                  "supports": "SUPPORT",
+                  "snippet": "followed by sparging with air for 10 h",
+                  "explanation": "Media preparation explicitly gives ordered gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied volume, final dissolved gas dose or whole-parent equivalence is inferred."
+                }
+              ]
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "bicarbonate",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Carini AMS1 buffer after gas sparging",
+              "source_modification_index": 6,
+              "source_text": "Follow the paper's AMS1 preparation: autoclave the inorganic medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and organics afterward; this differs from the imported all-ingredient filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an independently optimized value.",
+              "reason": "The source describes establishment of a bicarbonate-based buffer through CO2 then air sparging. This is not an explicit addition of a particular bicarbonate salt or measured final species concentration.",
+              "held_fields": [
+                "OPERATION",
+                "IDENTITY_FORM",
+                "QUANTITY"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml",
+      "recipe_id": "CultureMech:001213",
+      "expected_sha256": "70c9a60e78318dadf34e18aa0c80cbc6740241207f20999985cdb140e0826f14",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "becking_medium_ph5_no_caco3"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bg11.yaml",
+      "recipe_id": "CultureMech:000324",
+      "expected_sha256": "8bdcb2736d5e786086ddce316a057ab341dd4ffe17598fc0f6f733343b972453",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "optimized_bg11_synechocystis_pcc6803"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "ambient_co2_bg11_synechococcus_pcc11801",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Synechococcus PCC11801 multi-cultivator gas supply; ambient 0.04% CO2",
+              "source_modification_index": 1,
+              "source_text": "Culture under ambient CO2 conditions.",
+              "evidence": [
+                {
+                  "reference": "PMID:30413737",
+                  "supports": "SUPPORT",
+                  "snippet": "when ambient air is bubbled in a multi-cultivator",
+                  "explanation": "Primary Methods and figure-associated text verify gas supplied by bubbling. This event is restricted to the multi-cultivator arm; it does not convert every shaker incubation into an active gas-addition claim or assert dissolved concentration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "high_co2_high_light_bg11_synechococcus_pcc11802",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Synechococcus PCC11802 multi-cultivator gas supply; 1% CO2",
+              "source_modification_index": 1,
+              "source_text": "Culture at 1% CO2.",
+              "evidence": [
+                {
+                  "reference": "PMID:31932622",
+                  "supports": "SUPPORT",
+                  "snippet": "1% CO2, 38 °C and 1000 µmole photons.m−2.s−1 with bubbling in MC",
+                  "explanation": "Primary Methods and figure-associated text verify gas supplied by bubbling. This event is restricted to the multi-cultivator arm; it does not convert every shaker incubation into an active gas-addition claim or assert dissolved concentration."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bl_medium.yaml",
+      "recipe_id": "CultureMech:007302",
+      "expected_sha256": "ee70c8768e8819a04119c78221328def187440e95aaea7077aa2ad390d6d3e48",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Jensen 1993 BL Medium reported preparation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bl_medium_arg.yaml",
+      "recipe_id": "CultureMech:007303",
+      "expected_sha256": "2b9e511191922dca50074818b4d8a365420d9077c5d1384e01abfc40ca68270d",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Jensen 1993 BL Medium + Arg reported preparation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bl_medium_arg_ser_trp.yaml",
+      "recipe_id": "CultureMech:007306",
+      "expected_sha256": "945ad9f775f2caa82aaf6a358c3fbe0882ace7fc3d3b6e1142f7982d4bacab7d",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Jensen 1993 BL Medium + Arg + Ser + Trp reported preparation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bl_medium_asp.yaml",
+      "recipe_id": "CultureMech:007304",
+      "expected_sha256": "24648154de6708d20b573b42933a242bc7f40a80c8cad0ee8e215b080a577aca",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Jensen 1993 BL Medium + Asp reported preparation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bl_medium_low_mops.yaml",
+      "recipe_id": "CultureMech:007305",
+      "expected_sha256": "ac7f8853c92f00bdb37cc4061ad6b16cc0680eac08fb765a1f5df373b7a5c703",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Jensen 1993 BL Medium, Low MOPS reported preparation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml",
+      "recipe_id": "CultureMech:009111",
+      "expected_sha256": "081e9ed585cbc51c51fa39f3a904cf48c104306607dd9575b4075cd71d24b3a5",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "modified_dsmz_640_blumer_schuette_2010",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "N2"
+              },
+              "stage": "Blumer-Schuette2010 modified DSMZ640 serum-bottle headspace",
+              "source_modification_index": 2,
+              "source_text": "Anaerobic batch cultivation under N2; 70C with orbital shaking; 50 ml in 125 ml serum bottle; 24 h.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/AEM.01400-10",
+                  "supports": "SUPPORT",
+                  "snippet": "a 50-ml batch culture in a 125-ml serum bottle under N2 headspace for 24 h",
+                  "explanation": "Methods: Bacterial strains and growth on sugar substrates. This is variant0, distinct from Shang2013 variant1 in the same recipe. No nitrogen purity, gas volume or dissolved concentration inferred."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/caulobacter_medium.yaml",
+      "recipe_id": "CultureMech:001722",
+      "expected_sha256": "60aed6eeb007c37424d5da4d5286c372ab137dfc8ffec161d45cfd36f308325a",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "cold_growth_caulobacter_k31"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml",
+      "recipe_id": "CultureMech:009185",
+      "expected_sha256": "17b9f16c92a9a90737db8271f81e9c25bbb77d01cdcd1e13c1cacd33865980cd",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "atcc_1490_base_no_formate_fumarate"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "atcc_1490_carbonate_co2_buffered"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml",
+      "recipe_id": "CultureMech:001981",
+      "expected_sha256": "b4e7e20894774691800cafc49c9aea48d43eee4370c4edb7cbcfc36928895f37",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 16304 pH prescription"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/f_2.yaml",
+      "recipe_id": "CultureMech:000343",
+      "expected_sha256": "8bd20890504cac8ef4e19a1886d52128a952d16f0c8d7f609c4ba40e5299c0bc",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "f_2_silicate_supplement_1_06e_4_m",
+          "append_mentions": [
+            {
+              "source_label": "silicate",
+              "reported_action": "UNSPECIFIED",
+              "stage": "total study-medium silicate, including unresolved base",
+              "source_modification_index": 1,
+              "source_text": "Other nutrients, total silicate including the base, final-volume preparation and equivalence to local f/2 + Si records remain unresolved.",
+              "reason": "The prior source-supported supplementation event remains intact. Total silicate including the unverified base is unspecified; no addition of a second dose or exact salt identity is inferred.",
+              "held_fields": [
+                "QUANTITY",
+                "IDENTITY_FORM"
+              ]
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "f_2_nitrate_supplement_29_4_mm"
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "f_2_penicillin_g_dihydrostreptomycin_supplement"
+        },
+        {
+          "variant_index": 3,
+          "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "recipe_id": "CultureMech:006260",
+      "expected_sha256": "48bdb6484a3a819111d59dd466d2f1d7a56ba8885e1be5bf5ec051f0ae7afb17",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9463 current DSMZ 670 source formulation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "recipe_id": "CultureMech:006262",
+      "expected_sha256": "4bbc3a0de4dfd7c77e335a3dd88f909a54b96f9a0074586ec43f3efefd8ffb68",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9466 current DSMZ 670 source formulation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "recipe_id": "CultureMech:006263",
+      "expected_sha256": "c5576056dbb824038944c4e314ec46f683e143e99477d2f1bb57cc2ee4d2761c",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9467 current DSMZ 670 source formulation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "recipe_id": "CultureMech:006264",
+      "expected_sha256": "a03592f45477a35dc9f386dcdea84372affb01e376578a46a28f3e4080d8244b",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9468 current DSMZ 670 source formulation"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml",
+      "recipe_id": "CultureMech:001975",
+      "expected_sha256": "4f448c0460a63b735323fc05febac67e65705bc56be441f7e199234b1f51cc52",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "acetate_fumarate_geobacter_sulfurreducens_growth"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml",
+      "recipe_id": "CultureMech:003006",
+      "expected_sha256": "a4dc08b48c0a8df80fa315c5b7a8270d1884249bef3d25898dbdaec2eb6f5c18",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "crvi_stress_magnetosome_deficient_b17316"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml",
+      "recipe_id": "CultureMech:003533",
+      "expected_sha256": "502a85a5c5678cdd36283dceba01b3eca4699373969f7dbd2d332d9aa77da7c0",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Liquid preparation described by DSMZ 1021"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "recipe_id": "CultureMech:002134",
+      "expected_sha256": "961e732e30fe0227c8f821592fcbdbfdf5a4ce32530f5b87e53c09e4a28ab28b",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol alternative"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methylamine alternative"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+      "recipe_id": "CultureMech:000718",
+      "expected_sha256": "63cded5b220afa3cf50a2600602b0ce9223fba7558090f0f671ea16fd0b671a4",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol preparation option"
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methane-air incubation option",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methane"
+              },
+              "stage": "DSMZ125 methane-air 4:1 incubation atmosphere; alternative to methanol batch addition",
+              "source_modification_index": 0,
+              "source_text": "Incubate under methane-air (4:1) as the alternative to adding methanol.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "incubate under methane-air (4:1)",
+                  "explanation": "Official page1 preparation alternatives. Source ratio is gas composition only, with no pressure/total volume or dissolved concentration specified."
+                }
+              ],
+              "notes": "Separate methane-air route; not combined with methanol option."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "DSMZ125 methane-air 4:1 incubation atmosphere; alternative to methanol batch addition",
+              "source_modification_index": 0,
+              "source_text": "Incubate under methane-air (4:1) as the alternative to adding methanol.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "incubate under methane-air (4:1)",
+                  "explanation": "Official page1 preparation alternatives. Source ratio is gas composition only, with no pressure/total volume or dissolved concentration specified."
+                }
+              ],
+              "notes": "Separate methane-air route; not combined with methanol option."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/nutrient_broth.yaml",
+      "recipe_id": "CultureMech:015471",
+      "expected_sha256": "e69bebbc618ab2120c5c109561cdf1add10dddc11e32c7206ee16a3dc681dfa3",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "nutrient_broth_mycolicibacterium_cosmeticum_dm11_25c"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml",
+      "recipe_id": "CultureMech:002928",
+      "expected_sha256": "41d209e4da06c9779ccf9b9f24f69de84669e3fe4303bfa13e22b6944ddf54f4",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "phototrophic_l_phenylalanine_sole_nitrogen_ou5"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml",
+      "recipe_id": "CultureMech:000443",
+      "expected_sha256": "f5734161fa52d739e87ff98fe6da686cb8fae5af5e2694b19049ddb8d0f5203e",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Liquid preparation described by DSMZ 1021"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/specialized/bhis.yaml",
+      "recipe_id": "CultureMech:015493",
+      "expected_sha256": "99440736e3f52ced80b9d46e474b71c74111e8a6f6a272b75b13a8842788ed6f",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "bhis_brachyspira_pilosicoli_p43_growth"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/specialized/m9.yaml",
+      "recipe_id": "CultureMech:015542",
+      "expected_sha256": "9272ed091a947ac087ccf4c652e3896a1beb1532bfa60243646eaa356860c154",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "modified_m9_high_density_e_coli_expression"
+        }
+      ]
+    }
+  ],
+  "dispositions": [
+    {
+      "queue_row_number": 7,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Explicit gas supplies supported in source-specific alternative stages.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 10,
+      "prior_status": "CONDITION_ONLY",
+      "status": "HELD_EVIDENCE",
+      "reason": "Named sodium preacclimation retained without inventing salt, dose or verified procedure.",
+      "append_assertion_count": 0,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 12,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 14,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 13; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 13,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 16,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 18,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 21,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 22,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 26,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 29,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 38,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 39,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 43,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 47,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 51,
+      "prior_status": "CONDITION_ONLY",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Comparator nitrate absence retained separately from a positive or removal assertion on current variant.",
+      "append_assertion_count": 0,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 52,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 53,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 54,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 63,
+      "prior_status": "CONDITION_ONLY",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Total/form uncertainty retained; supported supplementation remains at queue row 62.",
+      "append_assertion_count": 0,
+      "append_mention_count": 1,
+      "coverage_links": [
+        {
+          "queue_row_number": 62,
+          "role": "supported supplement; not total medium"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 65,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 68,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 70,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 69; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 69,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 71,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 88,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 90,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 101,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 102,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 103,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 104,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 105,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 115,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 122,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 125,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 126,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 127,
+      "prior_status": "CONDITION_ONLY",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Oxygen context retained with operation/quantity uncertainty.",
+      "append_assertion_count": 0,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 128,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 131,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 130; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 130,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 132,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Explicit source gas supplies represented at alternative incubation stage.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 133,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 132; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 132,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 135,
+      "prior_status": "CONDITION_ONLY",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Literal oxygen context retained without inventing gas manipulation or concentration.",
+      "append_assertion_count": 0,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 139,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 141,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 143,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 144; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 144,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 145,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 142; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 142,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 152,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 159,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 166,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 173,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 180,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 187,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 195,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 194; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 194,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 198,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 199,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 201,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 203,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 210,
+      "prior_status": "CONDITION_ONLY",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 217,
+      "prior_status": "CONDITION_ONLY",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Sequential source gas operations represented; no liquid doses or unidentified salt additions inferred.",
+      "append_assertion_count": 2,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 228,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 230,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 231,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 232,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 233,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Source-specific bubbled gas arm verified; culture results are not recertified beyond this input.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 234,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 235,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Source-specific bubbled gas arm verified; culture results are not recertified beyond this input.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 236,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 237,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 241,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 245,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 249,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 253,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 259,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "N2 headspace source verified for the exact Blumer-Schuette variant.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 265,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 266,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 274,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 276,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 277,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 278,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 281,
+      "prior_status": "CONDITION_ONLY",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Total/form uncertainty retained; supported supplementation remains at queue row 280.",
+      "append_assertion_count": 0,
+      "append_mention_count": 1,
+      "coverage_links": [
+        {
+          "queue_row_number": 280,
+          "role": "supported supplement; not total medium"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 283,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 286,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 288,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 287; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 287,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 289,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 291,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 295,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 299,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 302,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 304,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Role statement links to the existing authoritative base ingredient; no new dose or identity inference and no duplicate variant input.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "source_path": "data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml",
+          "field_path": "ingredients[3]",
+          "preferred_term": "Na-acetate",
+          "role": "existing base occurrence"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 305,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Role statement links to the existing authoritative base ingredient; no new dose or identity inference and no duplicate variant input.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "source_path": "data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml",
+          "field_path": "ingredients[5]",
+          "preferred_term": "Na2-fumarate",
+          "role": "existing base occurrence"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 306,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 309,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 311,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 314,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 315; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 315,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 316,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 313; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 313,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 318,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 317; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 317,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 319,
+      "prior_status": "CONDITION_ONLY",
+      "status": "STRUCTURED",
+      "reason": "Explicit source gas supplies represented at alternative incubation stage.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 320,
+      "prior_status": "CONDITION_ONLY",
+      "status": "ALREADY_STRUCTURED",
+      "reason": "Context/alternative/uncertainty refers to the ingredient claim handled at queue row 319; no duplicate ingredient event.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0,
+      "coverage_links": [
+        {
+          "queue_row_number": 319,
+          "role": "existing or reviewed source claim"
+        }
+      ]
+    },
+    {
+      "queue_row_number": 380,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 381,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 382,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 384,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 388,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 393,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 394,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 396,
+      "prior_status": "CONDITION_ONLY",
+      "status": "CONTEXT_ONLY",
+      "reason": "Re-read as condition, whole-medium/comparator name, organism, role, preparation warning or unresolved whole-formulation context. No additional named ingredient input/removal is asserted by this row beyond explicit linked/handled cases below. This does not recertify growth or the entire condition.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    }
+  ]
+}

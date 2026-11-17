@@ -1,0 +1,2309 @@
+schema_version: 1.0.0
+review_id: 20261117T000400Z-condition-completion-independent
+kind: batch
+repository: CultureBotAI/CultureMech
+title: Independent review of104 condition-row ingredient dispositions
+started_at: '2026-11-17T00:04:00Z'
+finished_at: '2026-11-17T00:04:00Z'
+reviewer:
+  identity: codex-bundle-independent-scientific-reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author this condition-completion proposal.
+    Reviewer authored prior extraction and MIM intake code and a distinct earlier
+    curation cohort; this review is limited to the new proposal.
+skill: curate-yaml-record; review-ingredient-concentrations
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+native_verdict: The25 source-stage gas events,8 field-specific holds and all104 condition
+  dispositions are appropriate within their stated scope; no new material finding.
+summary: Ordered gas operations and alternative/variant context are retained. Existing/base
+  ingredient links prevent duplication. Held dimensions and ordinary conditions remain
+  explicit without falsely certifying whole recipes.
+source:
+  git_revision: b2652f7c7197aef33162ac9a721d21a16d528249
+  state: working_tree
+  inputs:
+  - path: .temp/variant-completeness-683/independent-condition-review-v4/125.pdf
+    sha256: e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f
+    role: context
+  - path: .temp/variant-completeness-683/independent-condition-review-v4/blumer.html
+    sha256: ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8
+    role: context
+  - path: .temp/variant-completeness-683/independent-condition-review-v4/carini.html
+    sha256: b9fa5f44ed26edc1d3323374ba097fbc17c10510893d36703f9328983c77c2d1
+    role: context
+  - path: .temp/variant-completeness-683/independent-condition-review-v4/original-review-queue.tsv
+    sha256: dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca
+    role: context
+  - path: .temp/variant-completeness-683/sources/matsui-2018-html/source.html
+    sha256: beecd6db87651dbf5f4119169a755249ba977070ee4a7046d26dff3bab3b5d43
+    role: context
+  - path: .temp/variant-completeness-683/sources/methylotroph-2020/source.xml
+    sha256: 2ade9577ad927b568273334fa9b14d2da22d155f877535d317ad13a0977a224d
+    role: context
+  - path: .temp/variant-completeness-683/sources/mrs-oxygen/metadata.json
+    sha256: ea40b43f5297f50541e3363ecc5559b07847715c4878aeeebb2e90e3df9c3bc3
+    role: context
+  - path: .temp/variant-completeness-683/sources/nostoc-bg110/metadata.json
+    sha256: d883adb351252f53b31ab320203b6cbe3caf00677b580f776f9e924d9979b800
+    role: context
+  - path: .temp/variant-completeness-683/sources/synechococcus-11801/source.xml
+    sha256: bc5b3e8e61aea59f4547670a0bced26074cfa9dd650595ccd7c3316c8b640b53
+    role: context
+  - path: .temp/variant-completeness-683/sources/synechococcus-11802/source.xml
+    sha256: fe274b564c95fb3895cdf8a2e2117ba7fe6fe6f14206101a4b9aef5bcc4fa62a
+    role: context
+  - path: conf/variant_ingredient_curation/completeness-conditions-683.json
+    sha256: 888fbb82de4b8148a10b46a8c07f80a8460f0ccbaa571586d52f2d1d6a7a3a24
+    role: context
+  - path: data/normalized_yaml/algae/2asw.yaml
+    sha256: c610fb4422a57e355eb96ee4d90e0b0af811c4394a6de88c5b61789c97bc2efb
+    role: target
+  - path: data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml
+    sha256: b6636a9b18a477aaaa935531eea34a7a050a1859db0ea04c73054331e12dbaba
+    role: target
+  - path: data/normalized_yaml/algae/Bold_Basal_Medium.yaml
+    sha256: f9346f3379ead91dd463ac331a7be175640ea3e5f10c32587377efbe02e5645d
+    role: target
+  - path: data/normalized_yaml/algae/F_2_Medium.yaml
+    sha256: 87cec46fd41e42ee7de2dd99b3ed5d0862ae970048f8a410458478f8e2caff37
+    role: target
+  - path: data/normalized_yaml/algae/Spirulina_Medium.yaml
+    sha256: 8a48d47f262e9326d89ab4e526226cc8913cd6b746c8ab1679b79fa910394123
+    role: target
+  - path: data/normalized_yaml/algae/TAP_Medium.yaml
+    sha256: b44608e3c6ce42801cea59497c6bce8e5dd1be3c2e08ae43f55617bf789ccc77
+    role: target
+  - path: data/normalized_yaml/algae/ajs.yaml
+    sha256: 6f730ef85c3254b3d7b5e09acae19f4562abfd4e6417fe6cd9a082940c7189dc
+    role: target
+  - path: data/normalized_yaml/algae/bg11.yaml
+    sha256: 50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468
+    role: target
+  - path: data/normalized_yaml/algae/f_2.yaml
+    sha256: 0642579ee29157c580b4c26615001376578e7c1ca0144a13a436c3617196e48d
+    role: target
+  - path: data/normalized_yaml/archaea/methanobacterium_medium.yaml
+    sha256: b671cbbe466583591ab494a297e153dbb74a5d374144b8a1c7b558c7bfc264df
+    role: target
+  - path: data/normalized_yaml/archaea/methanosarcina_medium.yaml
+    sha256: 4a145ae6f0b443f0e9eb913f385536e8fc0418887532f57f1b146d01558185e2
+    role: target
+  - path: data/normalized_yaml/archaea/pyrococcus_medium.yaml
+    sha256: c830bc505c13c78de528c919362ee1be285ddf05c086388919240f09eff4abdc
+    role: target
+  - path: data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml
+    sha256: c227b17cd53ccb5eaff8452c431aad1834026a104bbf9adfd779648b37991c43
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+    sha256: e26a9ef01a8fe3130730db9ca330b9c97494cfbada9bbec5866c17a1dd6ebc28
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml
+    sha256: 2c2073df6de9bee9f2990d0eac08e29de7aa25f4496b8649dd127b5921277bca
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+    sha256: cf6d1fdd16f21cbc90083d225999de52b448eaf6fe7144dbec29f420fa9072cb
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+    sha256: de0a27c5f2553ac733ea5c894832649bf2e9df8f152c0b005e77ad4c4e2fd75b
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
+    sha256: 83725a42c8a74ff8eff0b5710926f709ff1d68e9b859224ba81db186704d08cc
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+    sha256: ac0518cf8b1f1ac334fcde5cfa747b3987a6a3f7a25407471bbe7b5bfcf23fca
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+    sha256: 28178c1e9f4ee18312185a850956fa768139cd8f7d63bb17d57d30883eedeee3
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+    sha256: d8092237811cc9510050120c9218451cbebcc092feef91786b4329b69e8c8d4c
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+    sha256: cf0d8ed10ce7280a8d3562b9be0e33e4d1b8f4e4ad27e9341b3d1f1150150674
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+    sha256: 2bb00b703edca7a5d8a3c07432c30a775144e3f460873ebb15ff472686c1665a
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+    sha256: b9b9e894c860bd5231e260c063882b93ed33579d460d6e6212d5f6fda01a744a
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+    sha256: 69768667d3676ba4e938627b92c05031f531e53813adea5d0f6b351a82f3c4ab
+    role: target
+  - path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+    sha256: 6321d911cf073c17dfbf04d52c78543d788bd99107f13df856c89b239648bbd3
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    sha256: 967394ea5131b424e8bdb02c7d5318d6d60b97cb8539abd8b49f995a3dcc8107
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    sha256: 86c304ddae1f173cb0a5f6711b555802b4d71f20b70b3c115d614604100eea72
+    role: target
+  - path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+    sha256: 301e9826e796f02eda91c75ac461ab1c9b640eb9b1c564f9cb210ee9fe141fda
+    role: target
+  - path: data/normalized_yaml/bacterial/ajs.yaml
+    sha256: 90c6d69d1b36d2aef8295d7b13971932680f70a785f06d36d7f7fbb5812ef4f2
+    role: target
+  - path: data/normalized_yaml/bacterial/ams1_pyruvate_glycine.yaml
+    sha256: 1e8225b42c5105776973d5f173f468f68f5cbbdd4e7440f9bf886323be9f0c9e
+    role: target
+  - path: data/normalized_yaml/bacterial/ams1_pyruvate_serine.yaml
+    sha256: b4aeda720f679f294ace46be3e4ae02e3038511c6f45dabb4a446a9349a1aa42
+    role: target
+  - path: data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml
+    sha256: 70c9a60e78318dadf34e18aa0c80cbc6740241207f20999985cdb140e0826f14
+    role: target
+  - path: data/normalized_yaml/bacterial/bg11.yaml
+    sha256: 8bdcb2736d5e786086ddce316a057ab341dd4ffe17598fc0f6f733343b972453
+    role: target
+  - path: data/normalized_yaml/bacterial/bl_medium.yaml
+    sha256: ee70c8768e8819a04119c78221328def187440e95aaea7077aa2ad390d6d3e48
+    role: target
+  - path: data/normalized_yaml/bacterial/bl_medium_arg.yaml
+    sha256: 2b9e511191922dca50074818b4d8a365420d9077c5d1384e01abfc40ca68270d
+    role: target
+  - path: data/normalized_yaml/bacterial/bl_medium_arg_ser_trp.yaml
+    sha256: 945ad9f775f2caa82aaf6a358c3fbe0882ace7fc3d3b6e1142f7982d4bacab7d
+    role: target
+  - path: data/normalized_yaml/bacterial/bl_medium_asp.yaml
+    sha256: 24648154de6708d20b573b42933a242bc7f40a80c8cad0ee8e215b080a577aca
+    role: target
+  - path: data/normalized_yaml/bacterial/bl_medium_low_mops.yaml
+    sha256: ac7f8853c92f00bdb37cc4061ad6b16cc0680eac08fb765a1f5df373b7a5c703
+    role: target
+  - path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+    sha256: 081e9ed585cbc51c51fa39f3a904cf48c104306607dd9575b4075cd71d24b3a5
+    role: target
+  - path: data/normalized_yaml/bacterial/caulobacter_medium.yaml
+    sha256: 60aed6eeb007c37424d5da4d5286c372ab137dfc8ffec161d45cfd36f308325a
+    role: target
+  - path: data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
+    sha256: 17b9f16c92a9a90737db8271f81e9c25bbb77d01cdcd1e13c1cacd33865980cd
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml
+    sha256: b4e7e20894774691800cafc49c9aea48d43eee4370c4edb7cbcfc36928895f37
+    role: target
+  - path: data/normalized_yaml/bacterial/f_2.yaml
+    sha256: 8bd20890504cac8ef4e19a1886d52128a952d16f0c8d7f609c4ba40e5299c0bc
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9463.yaml
+    sha256: 48bdb6484a3a819111d59dd466d2f1d7a56ba8885e1be5bf5ec051f0ae7afb17
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9466.yaml
+    sha256: 4bbc3a0de4dfd7c77e335a3dd88f909a54b96f9a0074586ec43f3efefd8ffb68
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9467.yaml
+    sha256: c5576056dbb824038944c4e314ec46f683e143e99477d2f1bb57cc2ee4d2761c
+    role: target
+  - path: data/normalized_yaml/bacterial/for_dsm_9468.yaml
+    sha256: a03592f45477a35dc9f386dcdea84372affb01e376578a46a28f3e4080d8244b
+    role: target
+  - path: data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml
+    sha256: 4f448c0460a63b735323fc05febac67e65705bc56be441f7e199234b1f51cc52
+    role: target
+  - path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    sha256: a4dc08b48c0a8df80fa315c5b7a8270d1884249bef3d25898dbdaec2eb6f5c18
+    role: target
+  - path: data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml
+    sha256: 502a85a5c5678cdd36283dceba01b3eca4699373969f7dbd2d332d9aa77da7c0
+    role: target
+  - path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+    sha256: 961e732e30fe0227c8f821592fcbdbfdf5a4ce32530f5b87e53c09e4a28ab28b
+    role: target
+  - path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+    sha256: 63cded5b220afa3cf50a2600602b0ce9223fba7558090f0f671ea16fd0b671a4
+    role: target
+  - path: data/normalized_yaml/bacterial/nutrient_broth.yaml
+    sha256: e69bebbc618ab2120c5c109561cdf1add10dddc11e32c7206ee16a3dc681dfa3
+    role: target
+  - path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+    sha256: 41d209e4da06c9779ccf9b9f24f69de84669e3fe4303bfa13e22b6944ddf54f4
+    role: target
+  - path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+    sha256: f5734161fa52d739e87ff98fe6da686cb8fae5af5e2694b19049ddb8d0f5203e
+    role: target
+  - path: data/normalized_yaml/specialized/bhis.yaml
+    sha256: 99440736e3f52ced80b9d46e474b71c74111e8a6f6a272b75b13a8842788ed6f
+    role: target
+  - path: data/normalized_yaml/specialized/m9.yaml
+    sha256: 9272ed091a947ac087ccf4c652e3896a1beb1532bfa60243646eaa356860c154
+    role: target
+  - path: scripts/adhoc/review_condition_completion_683.py
+    sha256: 24a1327d94c4e7e2a7a4b54e7892cc362000a6e51ea55323478a570614639a73
+    role: context
+scope:
+  description: 104 original condition rows across58 recipe preimages, including25
+    appended events and8 held mentions.
+  selection: Exact frozen proposal, original queue and all source/recipe pins.
+  coverage: partial
+  population_size: 58
+  reviewed_target_ids:
+  - CultureMech:000038
+  - CultureMech:000025
+  - CultureMech:000034
+  - CultureMech:000170
+  - CultureMech:000232
+  - CultureMech:000233
+  - CultureMech:000041
+  - CultureMech:015450
+  - CultureMech:000149
+  - CultureMech:000643
+  - CultureMech:000660
+  - CultureMech:001478
+  - CultureMech:008908
+  - CultureMech:003534
+  - CultureMech:003730
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:005268
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  - CultureMech:007843
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:007382
+  - CultureMech:007384
+  - CultureMech:001213
+  - CultureMech:000324
+  - CultureMech:007302
+  - CultureMech:007303
+  - CultureMech:007306
+  - CultureMech:007304
+  - CultureMech:007305
+  - CultureMech:009111
+  - CultureMech:001722
+  - CultureMech:009185
+  - CultureMech:001981
+  - CultureMech:000343
+  - CultureMech:006260
+  - CultureMech:006262
+  - CultureMech:006263
+  - CultureMech:006264
+  - CultureMech:001975
+  - CultureMech:003006
+  - CultureMech:003533
+  - CultureMech:002134
+  - CultureMech:000718
+  - CultureMech:015471
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:015493
+  - CultureMech:015542
+  exclusions:
+  - target: Unrelated record content and truth of unresolved condition/growth claims
+    reason: This is ingredient-disposition coverage, not whole-condition or whole-medium
+      recertification.
+targets:
+- target_id: CultureMech:000038
+  path: data/normalized_yaml/algae/2asw.yaml
+  label: 2asw
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/2asw.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000025
+  path: data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml
+  label: artificial_seawater_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000034
+  path: data/normalized_yaml/algae/Bold_Basal_Medium.yaml
+  label: bold_basal_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Bold_Basal_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000170
+  path: data/normalized_yaml/algae/F_2_Medium.yaml
+  label: f_2_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/F_2_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000232
+  path: data/normalized_yaml/algae/Spirulina_Medium.yaml
+  label: spirulina_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/Spirulina_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000233
+  path: data/normalized_yaml/algae/TAP_Medium.yaml
+  label: tap_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/TAP_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000041
+  path: data/normalized_yaml/algae/ajs.yaml
+  label: ajs
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/ajs.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015450
+  path: data/normalized_yaml/algae/bg11.yaml
+  label: BG11
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/bg11.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000149
+  path: data/normalized_yaml/algae/f_2.yaml
+  label: f_2
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/f_2.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000643
+  path: data/normalized_yaml/archaea/methanobacterium_medium.yaml
+  label: methanobacterium_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/methanobacterium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000660
+  path: data/normalized_yaml/archaea/methanosarcina_medium.yaml
+  label: methanosarcina_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/methanosarcina_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001478
+  path: data/normalized_yaml/archaea/pyrococcus_medium.yaml
+  label: pyrococcus_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/pyrococcus_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:008908
+  path: data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml
+  label: sulfolobus_medium_for_dsm_5348
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003534
+  path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+  label: sodalis_glossinidius_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003730
+  path: data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml
+  label: friis_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003940
+  path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+  label: mrs_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_11_MRS_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:004018
+  path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+  label: methylobacterium_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:005268
+  path: data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
+  label: columbia_blood_agar
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_429_COLUMBIA_BLOOD_AGAR.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006416
+  path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+  label: halothermothrix_orenii
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_761_HALOTHERMOTHRIX_ORENII.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006900
+  path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+  label: medium_for_dsm_14457_and_14458
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007386
+  path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+  label: ams1_pyruvate_glycine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_479_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007388
+  path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+  label: ams1_pyruvate_glycine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007389
+  path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+  label: ams1_pyruvate_glycine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_481_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007390
+  path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+  label: ams1_pyruvate_glycine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_482_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007391
+  path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+  label: ams1_pyruvate_glycine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_483_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007392
+  path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+  label: ams1_pyruvate_glycine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/MEDIADB_484_AMS1_Pyruvate_Glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007843
+  path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+  label: methylotroph_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009933
+  path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+  label: brucella_broth
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M540_Brucella_Broth.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001368
+  path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+  label: acidiphilium_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acidiphilium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000338
+  path: data/normalized_yaml/bacterial/ajs.yaml
+  label: ajs
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ajs.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007382
+  path: data/normalized_yaml/bacterial/ams1_pyruvate_glycine.yaml
+  label: ams1_pyruvate_glycine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ams1_pyruvate_glycine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007384
+  path: data/normalized_yaml/bacterial/ams1_pyruvate_serine.yaml
+  label: ams1_pyruvate_serine
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/ams1_pyruvate_serine.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001213
+  path: data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml
+  label: beijerinckia_medium_lmg_18
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beijerinckia_medium_lmg_18.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000324
+  path: data/normalized_yaml/bacterial/bg11.yaml
+  label: bg11
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bg11.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007302
+  path: data/normalized_yaml/bacterial/bl_medium.yaml
+  label: bl_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bl_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007303
+  path: data/normalized_yaml/bacterial/bl_medium_arg.yaml
+  label: bl_medium_arg
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bl_medium_arg.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007306
+  path: data/normalized_yaml/bacterial/bl_medium_arg_ser_trp.yaml
+  label: bl_medium_arg_ser_trp
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bl_medium_arg_ser_trp.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007304
+  path: data/normalized_yaml/bacterial/bl_medium_asp.yaml
+  label: bl_medium_asp
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bl_medium_asp.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:007305
+  path: data/normalized_yaml/bacterial/bl_medium_low_mops.yaml
+  label: bl_medium_low_mops
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bl_medium_low_mops.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009111
+  path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+  label: caldicellulosiruptor_medium_for_dsm_10319
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001722
+  path: data/normalized_yaml/bacterial/caulobacter_medium.yaml
+  label: caulobacter_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caulobacter_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:009185
+  path: data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
+  label: chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001981
+  path: data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml
+  label: desulfurobacterium_crinifex_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfurobacterium_crinifex_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000343
+  path: data/normalized_yaml/bacterial/f_2.yaml
+  label: f_2
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/f_2.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006260
+  path: data/normalized_yaml/bacterial/for_dsm_9463.yaml
+  label: for_dsm_9463
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9463.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006262
+  path: data/normalized_yaml/bacterial/for_dsm_9466.yaml
+  label: for_dsm_9466
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9466.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006263
+  path: data/normalized_yaml/bacterial/for_dsm_9467.yaml
+  label: for_dsm_9467
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9467.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:006264
+  path: data/normalized_yaml/bacterial/for_dsm_9468.yaml
+  label: for_dsm_9468
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_9468.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:001975
+  path: data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml
+  label: geobacter_sulfurreducens_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/geobacter_sulfurreducens_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003006
+  path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+  label: magnetospirillum_gryphiswaldense_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:003533
+  path: data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml
+  label: medium_1021_modified_for_dsm_16929
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_1021_modified_for_dsm_16929.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:002134
+  path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+  label: medium_for_dsm_14457_and_14458
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000718
+  path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+  label: methylobacterium_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/methylobacterium_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015471
+  path: data/normalized_yaml/bacterial/nutrient_broth.yaml
+  label: nutrient broth
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/nutrient_broth.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:002928
+  path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+  label: rhodobacter_sphaeroides_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/rhodobacter_sphaeroides_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:000443
+  path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+  label: sodalis_glossinidius_medium
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/sodalis_glossinidius_medium.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015493
+  path: data/normalized_yaml/specialized/bhis.yaml
+  label: BHIS
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bhis.yaml
+    role: authoritative normalized recipe
+- target_id: CultureMech:015542
+  path: data/normalized_yaml/specialized/m9.yaml
+  label: M9
+  kind: maintained
+  record_class: MediaRecipe
+  selector: Only condition-row source inputs, holds and coverage dispositions in the
+    frozen proposal
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/m9.yaml
+    role: authoritative normalized recipe
+checks:
+- check_id: pins-and-links
+  name: Exact proposal, queue, source and coverage links
+  status: passed
+  required: true
+  summary: All preimages/captures verified, all104 rows bind exact source coordinates,
+    links resolve in the same recipe with explicit alternative-variant context, and
+    base ingredient links resolve exactly.
+  target_ids:
+  - CultureMech:000038
+  - CultureMech:000025
+  - CultureMech:000034
+  - CultureMech:000170
+  - CultureMech:000232
+  - CultureMech:000233
+  - CultureMech:000041
+  - CultureMech:015450
+  - CultureMech:000149
+  - CultureMech:000643
+  - CultureMech:000660
+  - CultureMech:001478
+  - CultureMech:008908
+  - CultureMech:003534
+  - CultureMech:003730
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:005268
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  - CultureMech:007843
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:007382
+  - CultureMech:007384
+  - CultureMech:001213
+  - CultureMech:000324
+  - CultureMech:007302
+  - CultureMech:007303
+  - CultureMech:007306
+  - CultureMech:007304
+  - CultureMech:007305
+  - CultureMech:009111
+  - CultureMech:001722
+  - CultureMech:009185
+  - CultureMech:001981
+  - CultureMech:000343
+  - CultureMech:006260
+  - CultureMech:006262
+  - CultureMech:006263
+  - CultureMech:006264
+  - CultureMech:001975
+  - CultureMech:003006
+  - CultureMech:003533
+  - CultureMech:002134
+  - CultureMech:000718
+  - CultureMech:015471
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:015493
+  - CultureMech:015542
+- check_id: science
+  name: Independent source and condition-disposition reading
+  status: passed
+  required: true
+  summary: Manual reading supports the bounded gas stages and retained holds; no supplied
+    gas is assigned a dissolved concentration and no comparator or mixture inference
+    is promoted.
+  target_ids:
+  - CultureMech:000038
+  - CultureMech:000025
+  - CultureMech:000034
+  - CultureMech:000170
+  - CultureMech:000232
+  - CultureMech:000233
+  - CultureMech:000041
+  - CultureMech:015450
+  - CultureMech:000149
+  - CultureMech:000643
+  - CultureMech:000660
+  - CultureMech:001478
+  - CultureMech:008908
+  - CultureMech:003534
+  - CultureMech:003730
+  - CultureMech:003940
+  - CultureMech:004018
+  - CultureMech:005268
+  - CultureMech:006416
+  - CultureMech:006900
+  - CultureMech:007386
+  - CultureMech:007388
+  - CultureMech:007389
+  - CultureMech:007390
+  - CultureMech:007391
+  - CultureMech:007392
+  - CultureMech:007843
+  - CultureMech:009933
+  - CultureMech:001368
+  - CultureMech:000338
+  - CultureMech:007382
+  - CultureMech:007384
+  - CultureMech:001213
+  - CultureMech:000324
+  - CultureMech:007302
+  - CultureMech:007303
+  - CultureMech:007306
+  - CultureMech:007304
+  - CultureMech:007305
+  - CultureMech:009111
+  - CultureMech:001722
+  - CultureMech:009185
+  - CultureMech:001981
+  - CultureMech:000343
+  - CultureMech:006260
+  - CultureMech:006262
+  - CultureMech:006263
+  - CultureMech:006264
+  - CultureMech:001975
+  - CultureMech:003006
+  - CultureMech:003533
+  - CultureMech:002134
+  - CultureMech:000718
+  - CultureMech:015471
+  - CultureMech:002928
+  - CultureMech:000443
+  - CultureMech:015493
+  - CultureMech:015542
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+evidence:
+- evidence_id: matsui
+  kind: primary_source
+  reference: DOI:10.1104/pp.18.00453
+  locator: 'Methods: culture conditions and transformation'
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: Methods supports distinct high-CO2 and ambient-air aeration arms. This
+    proposal concerns a different recipe coordinate from the prior model cohort; gas
+    input is not a dissolved dose.
+  snapshot_sha256: beecd6db87651dbf5f4119169a755249ba977070ee4a7046d26dff3bab3b5d43
+- evidence_id: '125'
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf
+  locator: Page 1 carbon alternatives
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: Official medium125 describes methane-air incubation at4:1 as an alternative
+    to methanol addition. Ratio and input stage are retained without gas volume/pressure
+    assumptions.
+  snapshot_sha256: e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f
+- evidence_id: kato
+  kind: primary_source
+  reference: doi:10.1264/jsme2.ME19128
+  locator: 'Methods: cultivation of methanotrophs'
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: The already-reviewed metal and carbon-source treatments remain linked,
+    avoiding duplicate positive events. Condition notes do not alter default versus
+    dose-response scopes.
+  snapshot_sha256: 2ade9577ad927b568273334fa9b14d2da22d155f877535d317ad13a0977a224d
+- evidence_id: carini
+  kind: primary_source
+  reference: doi:10.1038/ismej.2012.122
+  locator: Media preparation, autoclave and sequential gas sparging
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: Media preparation explicitly orders CO2 sparging after autoclaving, then
+    air sparging, then vitamin/organic additions. Establishing a bicarbonate buffer
+    does not identify a directly added bicarbonate salt or measured final species
+    concentration.
+  snapshot_sha256: b9fa5f44ed26edc1d3323374ba097fbc17c10510893d36703f9328983c77c2d1
+- evidence_id: blumer
+  kind: primary_source
+  reference: doi:10.1128/AEM.01400-10
+  locator: 'Methods: Bacterial strains and growth on sugar substrates'
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: The modified DSMZ640 sugar-substrate Methods specify nitrogen headspace
+    for the50mL culture. This is the exact Blumer-Schuette variant0, distinct from
+    the same recipe's Shang variant1.
+  snapshot_sha256: ad092222c6d2e66bbd824e3d01ecc577c741cd64ac2eea89bcc43f5b2fa15cb8
+- evidence_id: '11801'
+  kind: primary_source
+  reference: PMID:30413737
+  locator: Culture conditions and Figure 2A
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: Full source describes active ambient-air bubbling in the multi-cultivator.
+    The supplied gas context is distinct from shaker-flask incubation; no dissolved
+    dose or new growth-success assertion is inferred.
+  snapshot_sha256: bc5b3e8e61aea59f4547670a0bced26074cfa9dd650595ccd7c3316c8b640b53
+- evidence_id: '11802'
+  kind: primary_source
+  reference: PMID:31932622
+  locator: Culture conditions and Figure 2C
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: Figure-associated full text supports the1-percent CO2 multi-cultivator
+    arm with bubbling. Other CO2/shaker arms are not silently combined.
+  snapshot_sha256: fe274b564c95fb3895cdf8a2e2117ba7fe6fe6f14206101a4b9aef5bcc4fa62a
+- evidence_id: nostoc
+  kind: primary_source
+  reference: PMID:36550226
+  locator: Primary abstract only
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: The primary abstract distinguishes nitrate-present BG11 from nitrate-absent
+    BG110. Comparator membership is held as operation/form uncertainty rather than
+    an inferred removal from the nitrate-replete variant.
+  snapshot_sha256: d883adb351252f53b31ab320203b6cbe3caf00677b580f776f9e924d9979b800
+- evidence_id: mrs
+  kind: primary_source
+  reference: PMID:39353547
+  locator: Primary abstract only
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: The primary abstract supports oxygen-condition comparisons but does not
+    establish a gas-delivery procedure or dose. A field-specific operation/quantity
+    hold is appropriate.
+  snapshot_sha256: ea40b43f5297f50541e3363ecc5559b07847715c4878aeeebb2e90e3df9c3bc3
+- evidence_id: context-accounting
+  kind: record_content
+  reference: conf/variant_ingredient_curation/completeness-conditions-683.json
+  accessed_at: '2026-11-17T00:04:00Z'
+  support: supports
+  summary: All104 original condition rows were re-read. Named residual sodium, nitrate,
+    total-silicate, oxygen and bicarbonate claims remain held at their exact unresolved
+    dimensions. Existing/base occurrence links avoid duplicate inputs; ordinary temperature/pH/role/whole-medium
+    conditions do not invent unnamed chemical additions.
+assessments:
+- assessment_id: condition-CultureMech-000038
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000038
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000025
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000025
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000034
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000034
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000170
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000170
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000232
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000232
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000233
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000233
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000041
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000041
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-015450
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:015450
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000149
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000149
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000643
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000643
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000660
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000660
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-001478
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:001478
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-008908
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:008908
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-003534
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:003534
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-003730
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:003730
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-003940
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:003940
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-004018
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:004018
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-005268
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:005268
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-006416
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:006416
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-006900
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:006900
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007386
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007386
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007388
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007388
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007389
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007389
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007390
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007390
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007391
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007391
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007392
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007392
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007843
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007843
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-009933
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:009933
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-001368
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:001368
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000338
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000338
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007382
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007382
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007384
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007384
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-001213
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:001213
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000324
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000324
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007302
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007302
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007303
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007303
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007306
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007306
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007304
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007304
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-007305
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:007305
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-009111
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:009111
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-001722
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:001722
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-009185
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:009185
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-001981
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:001981
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000343
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000343
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-006260
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:006260
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-006262
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:006262
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-006263
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:006263
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-006264
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:006264
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-001975
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:001975
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-003006
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:003006
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-003533
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:003533
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-002134
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:002134
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000718
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000718
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-015471
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:015471
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-002928
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:002928
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-000443
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:000443
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-015493
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:015493
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+- assessment_id: condition-CultureMech-015542
+  area: scope
+  topic: Condition-row ingredient coverage and source-stage operations
+  outcome: supported
+  target_ids:
+  - CultureMech:015542
+  evidence_ids:
+  - matsui
+  - '125'
+  - kato
+  - carini
+  - blumer
+  - '11801'
+  - '11802'
+  - nostoc
+  - mrs
+  - context-accounting
+  summary: Proposed inputs and holds agree with source-family judgments; other condition
+    text remains contextual and unrecertified. No-op envelopes add no ingredient assertions.
+findings: []
+actions: []
+limitations:
+- Agent review, not human approval or release approval.
+- No scientific records were mutated. Writer, schema, aggregate and MIM mapping gates
+  remain separate.
+- Nostoc/MRS support is limited to the inspected primary abstracts. Unavailable detailed
+  preacclimation or oxygen procedures remain held.
+- Ingredient-role links do not independently certify base ontology identities, doses
+  or growth claims.
+- Gas-supply stages are not liquid concentrations; alternative arms and ordered sparging
+  are not combined.
+- No-op envelopes may be filtered by the merger while every disposition remains accounted
+  for.
+links:
+- https://github.com/CultureBotAI/CultureMech/issues/683
+- https://github.com/CultureBotAI/CultureMech/issues/788

@@ -177,6 +177,26 @@ curation_history:
     the original f/2 vitamin solution; the paper states it contains additional vitamin
     components.", "stage": "modified f/2 maintenance medium for study Nannochloropsis
     cultures"}], "variant_index": 3, "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015"}]}'
+- timestamp: '2026-11-17T00:06:58.774352+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "0642579ee29157c580b4c26615001376578e7c1ca0144a13a436c3617196e48d",
+    "path": "data/normalized_yaml/algae/f_2.yaml", "recipe_id": "CultureMech:000149",
+    "variants": [{"append_mentions": [{"held_fields": ["QUANTITY", "IDENTITY_FORM"],
+    "reason": "The prior source-supported supplementation event remains intact. Total
+    silicate including the unverified base is unspecified; no addition of a second
+    dose or exact salt identity is inferred.", "reported_action": "UNSPECIFIED", "source_label":
+    "silicate", "source_modification_index": 1, "source_text": "Other nutrients, total
+    silicate including the base, final-volume preparation and equivalence to local
+    f/2 + Si records remain unresolved.", "stage": "total study-medium silicate, including
+    unresolved base"}], "variant_index": 0, "variant_name": "f_2_silicate_supplement_1_06e_4_m"},
+    {"variant_index": 1, "variant_name": "f_2_nitrate_supplement_29_4_mm"}, {"variant_index":
+    2, "variant_name": "f_2_penicillin_g_dihydrostreptomycin_supplement"}, {"variant_index":
+    3, "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 references:
 - reference: CCAP:f2
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_f2.pdf
@@ -719,6 +739,19 @@ variants:
     source_text: The study reports f/2 supplemented with 1.06e-4 M silicate. Preserve
       this stated supplementation concentration without assigning an unreported silicate
       salt, hydrate, stock recipe or additional mass conversion.
+  ingredient_mentions:
+  - source_label: silicate
+    reported_action: UNSPECIFIED
+    stage: total study-medium silicate, including unresolved base
+    source_modification_index: 1
+    source_text: Other nutrients, total silicate including the base, final-volume
+      preparation and equivalence to local f/2 + Si records remain unresolved.
+    reason: The prior source-supported supplementation event remains intact. Total
+      silicate including the unverified base is unspecified; no addition of a second
+      dose or exact salt identity is inferred.
+    held_fields:
+    - QUANTITY
+    - IDENTITY_FORM
 - name: f_2_nitrate_supplement_29_4_mm
   relationship: SUPPLEMENTED_VARIANT
   description: Emami et al. (2015) nitrate-supplemented f/2 at pH 8 for reported Arthrospira

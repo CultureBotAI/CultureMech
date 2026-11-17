@@ -281,6 +281,87 @@ curation_history:
     amendment. No chemical identifier is inferred.", "source_modification_index":
     0, "source_text": "Add yeast extract to 0.1% (w/v)", "stage": "I. hospitalis mixotrophic
     culture for acetate determination"}], "variant_index": 1, "variant_name": "half_sme_ignicoccus_plus_0_1pct_yeast_extract"}]}'
+- timestamp: '2026-11-17T00:05:32.738602+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "c37b836f529b1cd7080fb17e9b9a837501712e78e6fb5afa98bf246501fd733b",
+    "field_replacements": [], "path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+    "recipe_id": "CultureMech:009166", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Printed page28. This is an uncalibrated spatula
+    amount, not a mass concentration.", "reference": "doi:10.5283/epub.34741", "snippet":
+    "one spatula of elemental sulfur added", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "elemental sulfur"}, "notes": "One spatula per prepared bottle;
+    do not manufacture a gram or g/L dose.", "source_modification_index": 1, "source_text":
+    "Add elemental sulfur (S0) as electron acceptor", "stage": "Koschnitzki2017 serum-bottle
+    preparation after20mL medium dispensing"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "Added in2mL water after the half-SME preparation
+    had been adjusted to1000mL; no exact final-volume concentration inferred.", "unit":
+    "G", "value": "0.5"}, "evidence": [{"explanation": "Printed page28. Preserve the
+    source''s hydration range; do not silently select nonahydrate from the separate
+    reagent list.", "reference": "doi:10.5283/epub.34741", "snippet": "Na2S x 7-9
+    H2O (0.5 g dissolved in 2 ml ddH2O)", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "Na2S.7-9H2O"}, "notes": "Literal source hydration range retained without ontology
+    identity or molar-mass conversion.", "source_modification_index": 2, "source_text":
+    "Reduce with Na2S", "stage": "Koschnitzki2017 reduction of the prepared half-SME
+    batch"}, {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement":
+    "Half-SME preparation adjusted to1000mL before adding the reducing-agent solution.",
+    "unit": "G", "value": "0.16"}, "evidence": [{"explanation": "Section2.2.2.2 table,
+    whitespace-normalized row:0.16g with water adjusted to1000mL before the separate
+    reducing-agent addition.", "reference": "doi:10.5283/epub.34741", "snippet": "NaHCO3
+    0.16 g 1.9 mM", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "NaHCO3"},
+    "source_modification_index": 3, "source_text": "Additional/trace components vs
+    parent: explicit NaHCO3, SrCl2.6H2O, KI", "stage": "Koschnitzki2017 half-SME base
+    before reducing-agent addition"}, {"action": "ADD", "amount": {"basis": "PER_BATCH",
+    "basis_statement": "SME stock batch adjusted to1000mL; only500mL of this stock
+    is used in the separate half-SME preparation.", "unit": "G", "value": "0.015"},
+    "evidence": [{"explanation": "Section2.2.2.1 stock table, whitespace-normalized
+    row, adjusted to1000mL. This stock amount is not the final half-SME amount.",
+    "reference": "doi:10.5283/epub.34741", "snippet": "SrCl2 x 6 H2O 0.015 g", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "SrCl2.6H2O"}, "source_modification_index":
+    3, "source_text": "Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O,
+    KI", "stage": "Koschnitzki2017 SME stock preparation;500mL stock used for half-SME"},
+    {"action": "ADD", "amount": {"basis": "PER_BATCH", "basis_statement": "SME stock
+    batch adjusted to1000mL; only500mL of this stock is used in the separate half-SME
+    preparation.", "unit": "G", "value": "0.5"}, "evidence": [{"explanation": "Section2.2.2.1
+    stock table, whitespace-normalized row, adjusted to1000mL. This stock amount is
+    not the final half-SME amount.", "reference": "doi:10.5283/epub.34741", "snippet":
+    "KI 0.5 g", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "KI"}, "source_modification_index":
+    3, "source_text": "Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O,
+    KI", "stage": "Koschnitzki2017 SME stock preparation;500mL stock used for half-SME"},
+    {"action": "ADD", "evidence": [{"explanation": "Printed page 28: evacuation/gas
+    exchange repeated three times; final pressure 1.5 bar per bottle. Distinct from
+    N2/CO2 purge and N2/H2 chamber atmosphere.", "reference": "doi:10.5283/epub.34741",
+    "snippet": "H2/CO2 (80:20, v/v) at 1.5 bar", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "H2"}, "notes": "Final preparation headspace only; no liquid
+    concentration or unreported pressure-reference convention.", "source_modification_index":
+    4, "source_text": "H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C", "stage":
+    "Koschnitzki2017 final serum-bottle headspace exchange; H2/CO2 80:20 v/v, 1.5
+    bar"}, {"action": "ADD", "evidence": [{"explanation": "Printed page 28: evacuation/gas
+    exchange repeated three times; final pressure 1.5 bar per bottle. Distinct from
+    N2/CO2 purge and N2/H2 chamber atmosphere.", "reference": "doi:10.5283/epub.34741",
+    "snippet": "H2/CO2 (80:20, v/v) at 1.5 bar", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "CO2"}, "notes": "Final preparation headspace only; no liquid
+    concentration or unreported pressure-reference convention.", "source_modification_index":
+    4, "source_text": "H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C", "stage":
+    "Koschnitzki2017 final serum-bottle headspace exchange; H2/CO2 80:20 v/v, 1.5
+    bar"}], "append_mentions": [{"evidence": [{"explanation": "Section2.2.2.2 table
+    lists500mL SME and final water adjustment to1000mL; section2.2.2.1 separately
+    defines the stock.", "reference": "doi:10.5283/epub.34741", "snippet": "SME",
+    "supports": "PARTIAL"}], "held_fields": ["OPERATION"], "reason": "Primary thesis
+    verifies the half-strength named base. Expansion or equivalence to this imported
+    parent is not established; preserve this as a named formulation mention rather
+    than duplicate its constituents.", "reported_action": "UNSPECIFIED", "reported_quantity":
+    "500mL SME stock in the stated1000mL preparation", "source_label": "SME", "source_modification_index":
+    0, "source_text": "Half-strength SME synthetic-seawater base", "stage": "Koschnitzki2017
+    half-strength SME base preparation"}, {"held_fields": ["IDENTITY_FORM"], "reason":
+    "Sulfide addition and0.5g batch amount are supported; exact hydration remains
+    the source range7–9 rather than a uniquely resolved chemical form.", "reported_action":
+    "ADD", "source_label": "Na2S", "source_modification_index": 2, "source_text":
+    "Reduce with Na2S", "stage": "Koschnitzki2017 reducing-agent preparation"}], "variant_index":
+    0, "variant_name": "half_sme_s0_ignicoccus"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 solutions:
 - preferred_term: SrCl2 x 6 H2O solution (0.1% w/v)
   composition: []
@@ -368,6 +449,156 @@ variants:
       Substance Amount Concentration SME 500 ml ½ x KH2PO4 0.5 g 3.7 mM (NH4)2SO4
       0.25 g 1.9 mM NaHCO3 0.16 g 1.9 mM Resazurin (0.1 %) 1 ml 0.0001 % Na2S x 7-9
       H2O 0.5 g 2.1 mM ddH2O ad 1000 ml
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: elemental sulfur
+    stage: Koschnitzki2017 serum-bottle preparation after20mL medium dispensing
+    source_modification_index: 1
+    source_text: Add elemental sulfur (S0) as electron acceptor
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: SUPPORT
+      snippet: one spatula of elemental sulfur added
+      explanation: Printed page28. This is an uncalibrated spatula amount, not a mass
+        concentration.
+    notes: One spatula per prepared bottle; do not manufacture a gram or g/L dose.
+  - action: ADD
+    ingredient:
+      preferred_term: Na2S.7-9H2O
+    stage: Koschnitzki2017 reduction of the prepared half-SME batch
+    source_modification_index: 2
+    source_text: Reduce with Na2S
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: SUPPORT
+      snippet: Na2S x 7-9 H2O (0.5 g dissolved in 2 ml ddH2O)
+      explanation: Printed page28. Preserve the source's hydration range; do not silently
+        select nonahydrate from the separate reagent list.
+    amount:
+      value: '0.5'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Added in2mL water after the half-SME preparation had been adjusted
+        to1000mL; no exact final-volume concentration inferred.
+    notes: Literal source hydration range retained without ontology identity or molar-mass
+      conversion.
+  - action: ADD
+    ingredient:
+      preferred_term: NaHCO3
+    stage: Koschnitzki2017 half-SME base before reducing-agent addition
+    source_modification_index: 3
+    source_text: 'Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O,
+      KI'
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: SUPPORT
+      snippet: NaHCO3 0.16 g 1.9 mM
+      explanation: Section2.2.2.2 table, whitespace-normalized row:0.16g with water
+        adjusted to1000mL before the separate reducing-agent addition.
+    amount:
+      value: '0.16'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: Half-SME preparation adjusted to1000mL before adding the reducing-agent
+        solution.
+  - action: ADD
+    ingredient:
+      preferred_term: SrCl2.6H2O
+    stage: Koschnitzki2017 SME stock preparation;500mL stock used for half-SME
+    source_modification_index: 3
+    source_text: 'Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O,
+      KI'
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: SUPPORT
+      snippet: SrCl2 x 6 H2O 0.015 g
+      explanation: Section2.2.2.1 stock table, whitespace-normalized row, adjusted
+        to1000mL. This stock amount is not the final half-SME amount.
+    amount:
+      value: '0.015'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: SME stock batch adjusted to1000mL; only500mL of this stock
+        is used in the separate half-SME preparation.
+  - action: ADD
+    ingredient:
+      preferred_term: KI
+    stage: Koschnitzki2017 SME stock preparation;500mL stock used for half-SME
+    source_modification_index: 3
+    source_text: 'Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O,
+      KI'
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: SUPPORT
+      snippet: KI 0.5 g
+      explanation: Section2.2.2.1 stock table, whitespace-normalized row, adjusted
+        to1000mL. This stock amount is not the final half-SME amount.
+    amount:
+      value: '0.5'
+      unit: G
+      basis: PER_BATCH
+      basis_statement: SME stock batch adjusted to1000mL; only500mL of this stock
+        is used in the separate half-SME preparation.
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: Koschnitzki2017 final serum-bottle headspace exchange; H2/CO2 80:20 v/v,
+      1.5 bar
+    source_modification_index: 4
+    source_text: H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: SUPPORT
+      snippet: H2/CO2 (80:20, v/v) at 1.5 bar
+      explanation: 'Printed page 28: evacuation/gas exchange repeated three times;
+        final pressure 1.5 bar per bottle. Distinct from N2/CO2 purge and N2/H2 chamber
+        atmosphere.'
+    notes: Final preparation headspace only; no liquid concentration or unreported
+      pressure-reference convention.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Koschnitzki2017 final serum-bottle headspace exchange; H2/CO2 80:20 v/v,
+      1.5 bar
+    source_modification_index: 4
+    source_text: H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: SUPPORT
+      snippet: H2/CO2 (80:20, v/v) at 1.5 bar
+      explanation: 'Printed page 28: evacuation/gas exchange repeated three times;
+        final pressure 1.5 bar per bottle. Distinct from N2/CO2 purge and N2/H2 chamber
+        atmosphere.'
+    notes: Final preparation headspace only; no liquid concentration or unreported
+      pressure-reference convention.
+  ingredient_mentions:
+  - source_label: SME
+    reported_action: UNSPECIFIED
+    stage: Koschnitzki2017 half-strength SME base preparation
+    source_modification_index: 0
+    source_text: Half-strength SME synthetic-seawater base
+    reason: Primary thesis verifies the half-strength named base. Expansion or equivalence
+      to this imported parent is not established; preserve this as a named formulation
+      mention rather than duplicate its constituents.
+    held_fields:
+    - OPERATION
+    reported_quantity: 500mL SME stock in the stated1000mL preparation
+    evidence:
+    - reference: doi:10.5283/epub.34741
+      supports: PARTIAL
+      snippet: SME
+      explanation: Section2.2.2.2 table lists500mL SME and final water adjustment
+        to1000mL; section2.2.2.1 separately defines the stock.
+  - source_label: Na2S
+    reported_action: ADD
+    stage: Koschnitzki2017 reducing-agent preparation
+    source_modification_index: 2
+    source_text: Reduce with Na2S
+    reason: Sulfide addition and0.5g batch amount are supported; exact hydration remains
+      the source range7–9 rather than a uniquely resolved chemical form.
+    held_fields:
+    - IDENTITY_FORM
 - name: half_sme_ignicoccus_plus_0_1pct_yeast_extract
   relationship: SUPPLEMENTED_VARIANT
   description: Mixotrophic version of 1/2 SME-Ignicoccus medium with 0.1% (w/v) yeast

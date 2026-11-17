@@ -963,6 +963,62 @@ curation_history:
     sodium concentration by altering NaCl addition to the basal medium.", "stage":
     "separate sodium-response modified F/2ASW formulations"}], "variant_index": 2,
     "variant_name": "modified_f_2asw_sodium_response"}]}'
+- timestamp: '2026-11-17T00:06:58.118395+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "87cec46fd41e42ee7de2dd99b3ed5d0862ae970048f8a410458478f8e2caff37",
+    "field_replacements": [], "path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+    "recipe_id": "CultureMech:000170", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Methods, culture conditions. Named nutrient
+    mixture at half strength; no unreported component concentrations or parent-medium
+    equivalence inferred.", "reference": "DOI:10.1104/pp.18.00453", "snippet": "artificial
+    seawater supplemented with one-half-strength Guillard’s f solution", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "Guillard f solution"}, "notes":
+    "Named stock only; half-strength is a relative formulation statement, not a measured
+    absolute ingredient concentration.", "source_modification_index": 0, "source_text":
+    "Use artificial seawater supplemented with half-strength Guillard f solution.",
+    "stage": "Matsui2018 F/2ASW diatom culture formulation"}, {"action": "ADD", "evidence":
+    [{"explanation": "Cells and Culture Conditions; separate experimental arms.",
+    "reference": "DOI:10.1104/pp.18.00453", "snippet": "constant aeration with 1%
+    (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04% (v/v) CO2 (air-grown
+    cells)", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "CO2"}, "notes":
+    "Gas supply only; no liquid concentration or simultaneous use of alternative gas
+    arms is implied.", "source_modification_index": 2, "source_text": "Aerate cultures
+    with ambient air or 1% CO2 depending on the experiment.", "stage": "Matsui2018
+    high-CO2 aeration arm; 1% v/v CO2"}, {"action": "ADD", "evidence": [{"explanation":
+    "Cells and Culture Conditions; separate experimental arms.", "reference": "DOI:10.1104/pp.18.00453",
+    "snippet": "constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+    air containing 0.04% (v/v) CO2 (air-grown cells)", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "ambient air"}, "notes": "Gas supply only; no liquid concentration
+    or simultaneous use of alternative gas arms is implied.", "source_modification_index":
+    2, "source_text": "Aerate cultures with ambient air or 1% CO2 depending on the
+    experiment.", "stage": "Matsui2018 ambient-air aeration arm; 0.04% v/v CO2"}],
+    "variant_index": 1, "variant_name": "f_2asw_diatom_culture"}, {"append_changes":
+    [{"action": "ADD", "evidence": [{"explanation": "Publisher primary abstract inspected
+    2026-11-16. Low-sodium comparison names two supplied gas conditions with different
+    growth outcomes. Input event makes no growth assertion or liquid-concentration
+    claim. Full Methods inaccessible.", "reference": "DOI:10.1007/s10126-021-10037-4",
+    "snippet": "aeration with air containing 5% CO2, but not with the air containing
+    0.04% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "CO2"},
+    "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative
+    gas arms is implied.", "source_modification_index": 2, "source_text": "Vary CO2
+    availability to distinguish sodium-dependent growth effects.", "stage": "Tsuji2021
+    low-sodium aeration arm with 5% CO2 in air"}, {"action": "ADD", "evidence": [{"explanation":
+    "Publisher primary abstract inspected 2026-11-16. Low-sodium comparison names
+    two supplied gas conditions with different growth outcomes. Input event makes
+    no growth assertion or liquid-concentration claim. Full Methods inaccessible.",
+    "reference": "DOI:10.1007/s10126-021-10037-4", "snippet": "aeration with air containing
+    5% CO2, but not with the air containing 0.04% CO2", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "CO2"}, "notes": "Gas supply only; no liquid concentration
+    or simultaneous use of alternative gas arms is implied.", "source_modification_index":
+    2, "source_text": "Vary CO2 availability to distinguish sodium-dependent growth
+    effects.", "stage": "Tsuji2021 low-sodium aeration arm with 0.04% CO2 in air"}],
+    "variant_index": 2, "variant_name": "modified_f_2asw_sodium_response"}, {"variant_index":
+    0, "variant_name": "n_replete_second_stage_tetraselmis_marina"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 references:
 - reference: UTEX:f-2-medium
 - reference: https://utex.org/products/f-2-medium
@@ -1135,6 +1191,51 @@ variants:
       inspected full text.'
     snippet: artificial seawater supplemented with one-half-strength Guillard’s f
       solution
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Guillard f solution
+    stage: Matsui2018 F/2ASW diatom culture formulation
+    source_modification_index: 0
+    source_text: Use artificial seawater supplemented with half-strength Guillard
+      f solution.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: artificial seawater supplemented with one-half-strength Guillard’s
+        f solution
+      explanation: Methods, culture conditions. Named nutrient mixture at half strength;
+        no unreported component concentrations or parent-medium equivalence inferred.
+    notes: Named stock only; half-strength is a relative formulation statement, not
+      a measured absolute ingredient concentration.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Matsui2018 high-CO2 aeration arm; 1% v/v CO2
+    source_modification_index: 2
+    source_text: Aerate cultures with ambient air or 1% CO2 depending on the experiment.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+        air containing 0.04% (v/v) CO2 (air-grown cells)
+      explanation: Cells and Culture Conditions; separate experimental arms.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
+  - action: ADD
+    ingredient:
+      preferred_term: ambient air
+    stage: Matsui2018 ambient-air aeration arm; 0.04% v/v CO2
+    source_modification_index: 2
+    source_text: Aerate cultures with ambient air or 1% CO2 depending on the experiment.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+        air containing 0.04% (v/v) CO2 (air-grown cells)
+      explanation: Cells and Culture Conditions; separate experimental arms.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
 - name: modified_f_2asw_sodium_response
   description: Modified F/2 artificial seawater used for sodium and CO2 response experiments
     with Chaetoceros gracilis.
@@ -1236,6 +1337,38 @@ variants:
     source_modification_index: 1
     source_text: Adjust sodium concentration by altering NaCl addition to the basal
       medium.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Tsuji2021 low-sodium aeration arm with 5% CO2 in air
+    source_modification_index: 2
+    source_text: Vary CO2 availability to distinguish sodium-dependent growth effects.
+    evidence:
+    - reference: DOI:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: aeration with air containing 5% CO2, but not with the air containing
+        0.04% CO2
+      explanation: Publisher primary abstract inspected 2026-11-16. Low-sodium comparison
+        names two supplied gas conditions with different growth outcomes. Input event
+        makes no growth assertion or liquid-concentration claim. Full Methods inaccessible.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Tsuji2021 low-sodium aeration arm with 0.04% CO2 in air
+    source_modification_index: 2
+    source_text: Vary CO2 availability to distinguish sodium-dependent growth effects.
+    evidence:
+    - reference: DOI:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: aeration with air containing 5% CO2, but not with the air containing
+        0.04% CO2
+      explanation: Publisher primary abstract inspected 2026-11-16. Low-sodium comparison
+        names two supplied gas conditions with different growth outcomes. Input event
+        makes no growth assertion or liquid-concentration claim. Full Methods inaccessible.
+    notes: Gas supply only; no liquid concentration or simultaneous use of alternative
+      gas arms is implied.
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Tetraselmis marina

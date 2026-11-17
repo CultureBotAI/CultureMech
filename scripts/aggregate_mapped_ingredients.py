@@ -15,6 +15,7 @@ from pathlib import Path
 from ingredient_occurrences import (
     build_mapped_output,
     default_changes_output,
+    default_holds_output,
     default_list_output,
     ensure_distinct_output_paths,
     scan_ingredient_occurrences,
@@ -64,6 +65,7 @@ def main(argv: list[str] | None = None) -> int:
         args.errors_output,
         args.list_output,
         args.changes_output,
+        default_holds_output(args.occurrences_output),
     )
 
     result = scan_ingredient_occurrences(args.input_dir)
@@ -81,6 +83,7 @@ def main(argv: list[str] | None = None) -> int:
         args.list_output,
         variant_changes=result.variant_changes,
         changes_path=args.changes_output,
+        variant_mentions=result.variant_mentions,
     )
     if args.verbose:
         print(

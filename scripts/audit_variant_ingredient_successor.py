@@ -148,7 +148,7 @@ def check(before, after, item):
     )
 
 
-def restore_before(raw, path):
+def restore_registered_before(raw, path):
     """Return exact historical bytes only after auditing this one registered successor.
 
     Unchanged/unrelated records pass through; any drift on a registered path fails.
@@ -162,3 +162,10 @@ def restore_before(raw, path):
     after = yaml.load(raw, Loader=yaml.CSafeLoader)
     check(before, after, item)
     return item["before_text"].encode("utf-8")
+
+
+def restore_before(raw, path):
+    """Audit the current completeness layer, then this earlier registered layer."""
+    from audit_variant_completeness_successor import restore_before as restore_completeness
+
+    return restore_registered_before(restore_completeness(raw, path), path)

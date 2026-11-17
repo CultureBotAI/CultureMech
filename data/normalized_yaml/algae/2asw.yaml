@@ -139,6 +139,78 @@ curation_history:
     this is an undefined sea-salt mixture, not 33.6 g/L pure sodium chloride.", "stage":
     "modified 2ASW maintenance medium for the study''s Dunaliella cultures"}], "variant_index":
     3, "variant_name": "2asw_sea_salt_substitution_33_6_g_l"}]}'
+- timestamp: '2026-11-17T00:06:56.981737+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "c610fb4422a57e355eb96ee4d90e0b0af811c4394a6de88c5b61789c97bc2efb",
+    "field_replacements": [], "path": "data/normalized_yaml/algae/2asw.yaml", "recipe_id":
+    "CultureMech:000038", "variants": [{"append_changes": [{"action": "ADD", "evidence":
+    [{"explanation": "Methods, culture conditions. Named nutrient mixture at half
+    strength; no unreported component concentrations or parent-medium equivalence
+    inferred.", "reference": "DOI:10.1104/pp.18.00453", "snippet": "artificial seawater
+    supplemented with one-half-strength Guillard’s f solution", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "Guillard f solution"}, "notes": "Named stock
+    only; half-strength is a relative formulation statement, not a measured absolute
+    ingredient concentration.", "source_modification_index": 0, "source_text": "Supplement
+    the artificial seawater base with half-strength Guillard f solution.", "stage":
+    "Matsui2018 F/2ASW diatom culture formulation"}, {"action": "ADD", "evidence":
+    [{"explanation": "Transformation Methods directly name agar plates. Agar quantity
+    is not printed in this passage; no dose is inferred.", "reference": "DOI:10.1104/pp.18.00453",
+    "snippet": "F/2ASW agar plate", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "agar"}, "source_modification_index": 1, "source_text": "Use liquid or agar-solidified
+    F/2ASW depending on maintenance, transformation, or selection protocol.", "stage":
+    "Matsui2018 transformation and selection plates; separate from liquid culture"},
+    {"action": "ADD", "evidence": [{"explanation": "Culture Conditions. This record
+    is a separate recipe coordinate from queue row30; alternative gas stages are not
+    one co-supply event.", "reference": "DOI:10.1104/pp.18.00453", "snippet": "constant
+    aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04%
+    (v/v) CO2 (air-grown cells)", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Gas supply only; no liquid concentration inferred.", "source_modification_index":
+    2, "source_text": "Reported diatom conditions include 20 deg C, continuous illumination
+    at 30-75 umol photons m-2 s-1, and aeration with ambient air or CO2-enriched air.",
+    "stage": "Matsui2018 diatom culture; high-CO2 1% v/v aeration"}, {"action": "ADD",
+    "evidence": [{"explanation": "Culture Conditions. This record is a separate recipe
+    coordinate from queue row30; alternative gas stages are not one co-supply event.",
+    "reference": "DOI:10.1104/pp.18.00453", "snippet": "constant aeration with 1%
+    (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04% (v/v) CO2 (air-grown
+    cells)", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "ambient air"},
+    "notes": "Gas supply only; no liquid concentration inferred.", "source_modification_index":
+    2, "source_text": "Reported diatom conditions include 20 deg C, continuous illumination
+    at 30-75 umol photons m-2 s-1, and aeration with ambient air or CO2-enriched air.",
+    "stage": "Matsui2018 diatom culture; ambient-air 0.04% v/v CO2 aeration"}], "variant_index":
+    0, "variant_name": "f_2asw"}, {"append_changes": [{"action": "ADD", "evidence":
+    [{"explanation": "TableS1 header ''Trace elements (μM)'' supplies the unit. Whitespace-normalized
+    row quote gives0.001µM, equivalent to1nM; prior10nM prose was incorrect (#759).",
+    "reference": "DOI:10.1007/s10126-021-10037-4", "snippet": "Na2SeO3 b 0.001", "supports":
+    "SUPPORT"}], "ingredient": {"concentration": {"unit": "NANOMOLAR", "value": "1"},
+    "preferred_term": "Na2SeO3"}, "notes": "0.001µM×1000nM/µM=1nM; no mass conversion
+    or universal parent supplementation.", "source_modification_index": 0, "source_text":
+    "Modified F/2ASW uses 1 nM sodium selenite (Na2SeO3) and 0.1 mM sodium metasilicate
+    nonahydrate (Na2SiO3.9H2O).", "stage": "Tsuji2021 modified F/2ASW sodium-response
+    formulation"}, {"action": "ADD", "evidence": [{"explanation": "TableS1 header
+    ''Basal seawater components (mM)'' supplies the unit. Whitespace-normalized row
+    gives0.1mM; nonahydrate is explicit.", "reference": "DOI:10.1007/s10126-021-10037-4",
+    "snippet": "Na2SiO3·9H2O b 0.1", "supports": "SUPPORT"}], "ingredient": {"concentration":
+    {"unit": "MILLIMOLAR", "value": "0.1"}, "preferred_term": "Na2SiO3.9H2O"}, "source_modification_index":
+    0, "source_text": "Modified F/2ASW uses 1 nM sodium selenite (Na2SeO3) and 0.1
+    mM sodium metasilicate nonahydrate (Na2SiO3.9H2O).", "stage": "Tsuji2021 modified
+    F/2ASW sodium-response formulation"}], "append_mentions": [{"held_fields": ["SOURCE_CLAIM",
+    "IDENTITY_FORM", "QUANTITY"], "reason": "Primary Table S1 resolves formulation
+    constituents, but the main Methods describing preacclimation were not accessible.
+    This literal precursor-treatment claim is not inferred from the later low-sodium
+    assay or mapped to a particular salt.", "reported_action": "UNSPECIFIED", "source_label":
+    "sodium", "source_modification_index": 2, "source_text": "Preacclimate cells to
+    sodium concentrations before low-sodium transfer.", "stage": "reported Tsuji2021
+    sodium preacclimation"}], "replace_modifications": [{"expected": "Supplement F/2ASW
+    with 10 nM sodium selenite and 0.1 mM sodium metasilicate.", "modification_index":
+    0, "replacement": "Modified F/2ASW uses 1 nM sodium selenite (Na2SeO3) and 0.1
+    mM sodium metasilicate nonahydrate (Na2SiO3.9H2O)."}], "variant_index": 1, "variant_name":
+    "modified_f_2asw_sodium_response"}, {"variant_index": 2, "variant_name": "2asw_1_5_m_nacl"},
+    {"variant_index": 3, "variant_name": "2asw_sea_salt_substitution_33_6_g_l"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 references:
 - reference: CCAP:2ASW
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
@@ -453,11 +525,74 @@ variants:
     explanation: Matsui et al. explicitly define F/2ASW as artificial seawater plus
       half-strength Guillard f solution for Phaeodactylum tricornutum UTEX 642 and
       Thalassiosira pseudonana CCMP1335 cultivation.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: Guillard f solution
+    stage: Matsui2018 F/2ASW diatom culture formulation
+    source_modification_index: 0
+    source_text: Supplement the artificial seawater base with half-strength Guillard
+      f solution.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: artificial seawater supplemented with one-half-strength Guillard’s
+        f solution
+      explanation: Methods, culture conditions. Named nutrient mixture at half strength;
+        no unreported component concentrations or parent-medium equivalence inferred.
+    notes: Named stock only; half-strength is a relative formulation statement, not
+      a measured absolute ingredient concentration.
+  - action: ADD
+    ingredient:
+      preferred_term: agar
+    stage: Matsui2018 transformation and selection plates; separate from liquid culture
+    source_modification_index: 1
+    source_text: Use liquid or agar-solidified F/2ASW depending on maintenance, transformation,
+      or selection protocol.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: F/2ASW agar plate
+      explanation: Transformation Methods directly name agar plates. Agar quantity
+        is not printed in this passage; no dose is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Matsui2018 diatom culture; high-CO2 1% v/v aeration
+    source_modification_index: 2
+    source_text: Reported diatom conditions include 20 deg C, continuous illumination
+      at 30-75 umol photons m-2 s-1, and aeration with ambient air or CO2-enriched
+      air.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+        air containing 0.04% (v/v) CO2 (air-grown cells)
+      explanation: Culture Conditions. This record is a separate recipe coordinate
+        from queue row30; alternative gas stages are not one co-supply event.
+    notes: Gas supply only; no liquid concentration inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: ambient air
+    stage: Matsui2018 diatom culture; ambient-air 0.04% v/v CO2 aeration
+    source_modification_index: 2
+    source_text: Reported diatom conditions include 20 deg C, continuous illumination
+      at 30-75 umol photons m-2 s-1, and aeration with ambient air or CO2-enriched
+      air.
+    evidence:
+    - reference: DOI:10.1104/pp.18.00453
+      supports: SUPPORT
+      snippet: constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient
+        air containing 0.04% (v/v) CO2 (air-grown cells)
+      explanation: Culture Conditions. This record is a separate recipe coordinate
+        from queue row30; alternative gas stages are not one co-supply event.
+    notes: Gas supply only; no liquid concentration inferred.
 - name: modified_f_2asw_sodium_response
   description: Modified F/2 artificial seawater used to assay sodium and CO2 dependence
     in Chaetoceros gracilis UTEX LB2658.
   modifications:
-  - Supplement F/2ASW with 10 nM sodium selenite and 0.1 mM sodium metasilicate.
+  - Modified F/2ASW uses 1 nM sodium selenite (Na2SeO3) and 0.1 mM sodium metasilicate
+    nonahydrate (Na2SiO3.9H2O).
   - Manipulate sodium by changing NaCl added to the basal artificial seawater.
   - Preacclimate cells to sodium concentrations before low-sodium transfer.
   purpose: Model experimental sodium-response medium variants without creating a duplicate
@@ -495,6 +630,53 @@ variants:
     source_modification_index: 1
     source_text: Manipulate sodium by changing NaCl added to the basal artificial
       seawater.
+  - action: ADD
+    ingredient:
+      preferred_term: Na2SeO3
+      concentration:
+        value: '1'
+        unit: NANOMOLAR
+    stage: Tsuji2021 modified F/2ASW sodium-response formulation
+    source_modification_index: 0
+    source_text: Modified F/2ASW uses 1 nM sodium selenite (Na2SeO3) and 0.1 mM sodium
+      metasilicate nonahydrate (Na2SiO3.9H2O).
+    evidence:
+    - reference: DOI:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: Na2SeO3 b 0.001
+      explanation: TableS1 header 'Trace elements (μM)' supplies the unit. Whitespace-normalized
+        row quote gives0.001µM, equivalent to1nM; prior10nM prose was incorrect (#759).
+    notes: 0.001µM×1000nM/µM=1nM; no mass conversion or universal parent supplementation.
+  - action: ADD
+    ingredient:
+      preferred_term: Na2SiO3.9H2O
+      concentration:
+        value: '0.1'
+        unit: MILLIMOLAR
+    stage: Tsuji2021 modified F/2ASW sodium-response formulation
+    source_modification_index: 0
+    source_text: Modified F/2ASW uses 1 nM sodium selenite (Na2SeO3) and 0.1 mM sodium
+      metasilicate nonahydrate (Na2SiO3.9H2O).
+    evidence:
+    - reference: DOI:10.1007/s10126-021-10037-4
+      supports: SUPPORT
+      snippet: Na2SiO3·9H2O b 0.1
+      explanation: TableS1 header 'Basal seawater components (mM)' supplies the unit.
+        Whitespace-normalized row gives0.1mM; nonahydrate is explicit.
+  ingredient_mentions:
+  - source_label: sodium
+    reported_action: UNSPECIFIED
+    stage: reported Tsuji2021 sodium preacclimation
+    source_modification_index: 2
+    source_text: Preacclimate cells to sodium concentrations before low-sodium transfer.
+    reason: Primary Table S1 resolves formulation constituents, but the main Methods
+      describing preacclimation were not accessible. This literal precursor-treatment
+      claim is not inferred from the later low-sodium assay or mapped to a particular
+      salt.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+    - QUANTITY
 - name: 2asw_1_5_m_nacl
   description: Study-specific 2ASW reported by Liang et al. (2023). Only the explicitly
     stated NaCl concentration and algal cultivation context are resolved; full Table

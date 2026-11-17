@@ -180,7 +180,7 @@ class IngredientOccurrence:
 
         return not self.change_action or (
             self.descriptor_role == "ingredient"
-            and self.change_action in {"ADD", "SET_CONCENTRATION", "REPLACE"}
+            and self.change_action in {"ADD", "SET_CONCENTRATION", "SET_AMOUNT", "REPLACE"}
         )
 
     @property
@@ -206,6 +206,31 @@ class ScanResult:
     occurrences: tuple[IngredientOccurrence, ...]
     errors: tuple[AggregationError, ...]
     variant_changes: tuple[IngredientOccurrence, ...] = ()
+    variant_mentions: tuple[dict[str, Any], ...] = ()
+
+
+HELD_MENTION_FIELDS = (
+    "recipe_id",
+    "recipe_label",
+    "recipe_category",
+    "source_path",
+    "variant_index",
+    "variant_name",
+    "mention_index",
+    "descriptor_path",
+    "source_label",
+    "reported_action",
+    "stage",
+    "source_modification_index",
+    "source_text",
+    "reason",
+    "reported_quantity",
+    "held_fields_json",
+    "evidence_json",
+    "mention_json",
+    "review_status",
+    "counts_as_presence",
+)
 
 
 Resolver = Callable[[Mapping[str, Any]], GroundingDecision]
@@ -448,6 +473,7 @@ def scan_ingredient_occurrences(
 
     occurrences: list[IngredientOccurrence] = []
     variant_changes: list[IngredientOccurrence] = []
+    variant_mentions: list[dict[str, Any]] = []
     errors: list[AggregationError] = []
     seen_keys: dict[tuple[str, str, int], str] = {}
     seen_recipe_ids: dict[str, str] = {}
@@ -563,6 +589,40 @@ def scan_ingredient_occurrences(
                             continue
                         seen_keys[row.key] = context["source_path"]
                         occurrences.append(row)
+
+    def emit_variant_mentions(context: Mapping[str, str], instance: Mapping[str, Any]) -> None:
+        for variant_index, variant in enumerate(instance.get("variants") or []):
+            for mention_index, mention in enumerate(variant.get("ingredient_mentions") or []):
+                row = {
+                    field: context[field]
+                    for field in ("recipe_id", "recipe_label", "recipe_category", "source_path")
+                }
+                row.update(
+                    {
+                        "variant_index": variant_index,
+                        "variant_name": variant["name"],
+                        "mention_index": mention_index,
+                        "descriptor_path": f"/variants/{variant_index}/ingredient_mentions/{mention_index}",
+                        **{
+                            field: mention.get(field, "")
+                            for field in (
+                                "source_label",
+                                "reported_action",
+                                "stage",
+                                "source_modification_index",
+                                "source_text",
+                                "reason",
+                                "reported_quantity",
+                            )
+                        },
+                        "evidence_json": _cell(mention.get("evidence", [])),
+                        "held_fields_json": _cell(mention["held_fields"]),
+                        "mention_json": _cell(mention),
+                        "review_status": "WITHHELD",
+                        "counts_as_presence": "false",
+                    }
+                )
+                variant_mentions.append(row)
 
     files = sorted(root.rglob("*.yaml"), key=lambda item: item.as_posix())
     if not files:
@@ -700,6 +760,7 @@ def scan_ingredient_occurrences(
         }
         emit(context, component_field, components)
         emit_variant_changes(context, instance)
+        emit_variant_mentions(context, instance)
         scanned_records.add(recipe_id)
         if record_class == "SolutionRecipe":
             solution_records.add(instance["term"]["id"])
@@ -734,7 +795,12 @@ def scan_ingredient_occurrences(
             row.message,
         )
     )
-    return ScanResult(tuple(occurrences), tuple(errors), tuple(variant_changes))
+    variant_mentions.sort(
+        key=lambda row: (row["recipe_id"], row["variant_index"], row["mention_index"])
+    )
+    return ScanResult(
+        tuple(occurrences), tuple(errors), tuple(variant_changes), tuple(variant_mentions)
+    )
 
 
 def _write_tsv(
@@ -923,6 +989,8 @@ def write_occurrences_and_yaml(
     *,
     variant_changes: Sequence[IngredientOccurrence] = (),
     changes_path: str | Path | None = None,
+    variant_mentions: Sequence[Mapping[str, Any]] = (),
+    holds_path: str | Path | None = None,
 ) -> None:
     """Publish a compatibility wrapper's outputs as one staged set.
 
@@ -948,6 +1016,14 @@ def write_occurrences_and_yaml(
                 ),
                 lambda stream: _write_variant_changes_stream(stream, variant_changes),
             ),
+            (
+                (
+                    Path(holds_path)
+                    if holds_path is not None
+                    else default_holds_output(occurrences_path)
+                ),
+                lambda stream: _write_tsv(stream, HELD_MENTION_FIELDS, variant_mentions),
+            ),
             *(
                 [
                     (
@@ -972,6 +1048,11 @@ def default_changes_output(occurrences_output: str | Path) -> Path:
     """Place the lossless variant-change ledger beside positive occurrences."""
 
     return Path(occurrences_output).parent / "variant_ingredient_changes.tsv"
+
+
+def default_holds_output(occurrences_output: str | Path) -> Path:
+    """Keep unresolved names outside positive occurrence and mapping assertions."""
+    return Path(occurrences_output).parent / "variant_ingredient_holds.tsv"
 
 
 def ensure_distinct_output_paths(*paths: str | Path) -> None:
@@ -1340,18 +1421,21 @@ def run_aggregation(
     resolver: Resolver = resolve_ingredient,
     list_output: str | Path | None = None,
     changes_output: str | Path | None = None,
+    holds_output: str | Path | None = None,
 ) -> int:
     """Scan once and publish all deterministic views, or only the error report."""
 
     if min_occurrences < 1:
         raise ValueError("min_occurrences must be at least 1")
     changes_output = changes_output or default_changes_output(occurrences_output)
+    holds_output = holds_output or default_holds_output(occurrences_output)
     ensure_distinct_output_paths(
         occurrences_output,
         mapped_output,
         unmapped_output,
         errors_output,
         changes_output,
+        holds_output,
         *([list_output] if list_output is not None else []),
     )
     result = scan_ingredient_occurrences(input_dir, resolver=resolver)
@@ -1383,6 +1467,10 @@ def run_aggregation(
             (
                 Path(changes_output),
                 lambda stream: _write_variant_changes_stream(stream, result.variant_changes),
+            ),
+            (
+                Path(holds_output),
+                lambda stream: _write_tsv(stream, HELD_MENTION_FIELDS, result.variant_mentions),
             ),
             *(
                 [

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare pinned #684 base rows with a #683 v2 candidate, 2026-11-16.
+"""Compare pinned #684 base rows with a #683 v3 candidate, 2026-11-16.
 
 Inputs: two immutable bundles and independently supplied manifest SHA256 pins.
 Outputs: a new local summary and identity/label/context-only delta TSVs.
@@ -113,7 +113,8 @@ def compare_occurrences(baseline_path, candidate_path):
             group_labels[identity_key(row)].add(row["preferred_term"])
             if row["change_action"]:
                 if (
-                    row["change_action"] not in {"ADD", "SET_CONCENTRATION", "REPLACE"}
+                    row["change_action"]
+                    not in {"ADD", "SET_CONCENTRATION", "SET_AMOUNT", "REPLACE"}
                     or row["descriptor_role"] != "ingredient"
                 ):
                     raise ValueError("negative/context-only descriptor entered positive inventory")
@@ -206,9 +207,9 @@ def compare(baseline, baseline_pin, candidate, candidate_pin, output):
     new = pinned_bundle(candidate, candidate_pin)
     if (
         old["contract"] != "culturemech-direct-ingredients-v1"
-        or new["contract"] != "culturemech-direct-ingredients-v2"
+        or new["contract"] != "culturemech-direct-ingredients-v3"
     ):
-        raise ValueError("expected v1 baseline and v2 candidate")
+        raise ValueError("expected v1 baseline and v3 candidate")
     if any(
         item["scope"] != "full_catalog_direct_ingredients" or item["git"]["dirty"]
         for item in (old, new)
@@ -249,6 +250,16 @@ def compare(baseline, baseline_pin, candidate, candidate_pin, output):
         ):
             raise ValueError("independent identity grouping disagrees with list accounting")
     unresolved, ledger_counts = context_rows(candidate / "variant_ingredient_changes.tsv", state)
+    held = []
+    if new["contract"] == "culturemech-direct-ingredients-v3":
+        held = list(rows(candidate / "variant_ingredient_holds.tsv"))
+        if any(
+            row["counts_as_presence"] != "false" or row["review_status"] != "WITHHELD"
+            for row in held
+        ):
+            raise ValueError("held source mention was promoted")
+        ledger_counts["variant_held_mentions"] = len(held)
+        ledger_counts["variant_held_labels"] = len({row["source_label"] for row in held})
     if any(new["counts"][key] != value for key, value in ledger_counts.items()):
         raise ValueError("independent ledger counts differ from manifest")
     deltas = []
@@ -354,6 +365,12 @@ def compare(baseline, baseline_pin, candidate, candidate_pin, output):
         + ["label_in_positive_inventory", "label_in_baseline_inventory"],
         unresolved,
     )
+    if new["contract"] == "culturemech-direct-ingredients-v3":
+        write_tsv(
+            output / "withheld_source_mentions.tsv",
+            fields(candidate / "variant_ingredient_holds.tsv"),
+            held,
+        )
     # Pin checks bracket the complete comparison, including output generation.
     if (
         pinned_bundle(baseline, baseline_pin) != old
