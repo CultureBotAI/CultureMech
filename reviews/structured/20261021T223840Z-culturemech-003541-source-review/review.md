@@ -1,0 +1,3639 @@
+# Source and formulation review: bbl_actinomyces_broth (CultureMech:003541)
+
+- Review: 20261021T223840Z-culturemech-003541-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T22:32:18Z
+- Finished UTC: 2026-10-21T22:38:40Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1029 specifies 57 g of BBL Actinomyces broth product with 1000 ml water, while its printed constituent list totals 57.21 g. The local flattened rates omit that product-stage distinction and map all unspecified potassium phosphate to KH2PO4. Independent ATCC product context cannot establish historical DSM edition equivalence. Legacy MIM000223 correspondence remains unresolved, and owner-specific tube handling lacks exact primary support.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 394; batch 040 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-nine task batches contain 390 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 393 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003541 | data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml | generated | bbl_actinomyces_broth |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003541 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003541 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/394/strict.tsv |
+| validate-terms | passed | True | CultureMech:003541 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003541 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003541 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Required historical MediaIngredientMech000223 correspondence | unavailable | True | CultureMech:003541 | The current exact index/catalog/tree lookup completed with no match; the original historical legacy object and its cysteine-HCl correspondence were not recovered. Current absence does not prove historical invalidity. |
+| Exact source content access: mediadive1029api | unavailable | False | CultureMech:003541 | Optional mediadive1029api access returned HTTP 503. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+| Exact source content access: mediadive1029api_retry | unavailable | False | CultureMech:003541 | Optional mediadive1029api_retry access returned HTTP 503. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+| Exact source content access: komodo1029detail | unavailable | False | CultureMech:003541 | Optional komodo1029detail access returned HTTP 403. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+| Exact source content access: bdActinomycesManual | unavailable | False | CultureMech:003541 | Optional bdActinomycesManual access returned HTTP 404. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003541.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact collection accession and product identity
+
+identity: supported. Targets: CultureMech:003541.
+
+DSMZ/KOMODO1029 and the exact maintained source-duplicate pair align. DSM names BBL210920 and independent ATCC names BD210920. Product-number agreement is supported; historical lot, edition and formulation equivalence are not established.
+
+### Primary chemistry, current secondary keys and legacy history
+
+grounding: concern. Targets: CultureMech:003541.
+
+All seven distinct CHEBI primary IDs have matching current labels; all six asserted current CHEBI-based secondary keys have pinned preferred mapped rows. Primary target linkage is 7/10 (70%) and current secondary linkage 6/10 (60%); one additional legacy slot is counted separately, not as verified current linkage. The phosphate assignment is more specific than DSM supports. L-cysteine hydrochloride identity is supported independently of unresolved legacy MIM000223.
+
+### Commercial dose and printed constituent quantities
+
+quantity: concern. Targets: CultureMech:003541.
+
+Main product 57 g and constituent sum 57.21 g are separate source statements. The local flat g/L representation omits the product dose, water and composition-stage qualifier. Neither an assumed rounding cause nor automatic scaling of the constituent list is justified.
+
+### Owner tube instructions and independent ATCC procedure
+
+completeness: concern. Targets: CultureMech:003541.
+
+The exact DSM page supplies final pH but no Wheaton screw-cap or Hungate-tube instruction. The owner’s specific handling is therefore not authenticated by the available primary. ATCC independently supplies 121 °C and generic vessel instructions, pH tolerance and storage range, without proving the owner’s historical procedure. No source cultivation gas, strain growth or incubation temperature is inferred from the catalog flag or product name.
+
+### Complex broth and growth assertions
+
+scope: supported. Targets: CultureMech:003541.
+
+COMPLEX/UNDEFINED and LIQUID agree with product containing infusion broth, casein digest and yeast extract. Product identity does not establish organism-specific growth, anaerobic requirements or experimental performance.
+
+### Claim-level support and preserved uncertainty
+
+provenance: concern. Targets: CultureMech:003541.
+
+No attached local amount claims resolve the product-stage ambiguity. Preserve existing histories and their timestamp defects; attach current DSM and ATCC evidence with distinct scopes. Missing current legacy identity is a completed lookup result, while historical correspondence remains an unavailable required check.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:003541.
+
+19 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:003541.
+
+31 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Product constituent: Potassium Phosphate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Potassium Phosphate 15.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 15,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Product constituent: Ammonium Sulfate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Ammomium Sulfate 1.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 1,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Product constituent: Magnesium sulfate",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Magnesium Sulfate 0.2 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 0.2,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Product constituent: Calcium Chloride",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Calcium Chloride 0.01 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 0.01,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "Product constituent: Infusion Broth",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Infusion Broth 25.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 25,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Product constituent: Dextrose",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Dextrose 5.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 5,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Product constituent: L-Cysteine HCl",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "L-Cysteine x HCL 1.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 1,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Product constituent: Pancreatic digest of casein",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Pancreatic Digest of Casein 4.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 4,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Product constituent: Yeast extract",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Yeast Extract 5.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 5,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Product constituent: Starch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "BBL210920 constituent table",
+        "exact_source_quote": "Soluble Starch 1.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "printed_amount": 1,
+      "unit": "g",
+      "stage": "source product-composition list",
+      "product_dose_g": 57,
+      "sum_of_printed_constituents_g": 57.21,
+      "individually_measured_final_rate": null
+    },
+    "rationale": "The local numeral matches the constituent list but is asserted as an unqualified final g/L rate. Preserve the original constituent amount, product dose and internal sum discrepancy without rescaling. For potassium phosphate, chemical species remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported."
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Main BBL210920 product dose",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "Main formulation",
+        "exact_source_quote": "BBL Actinomyces broth (see below) 57.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      },
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC product option, independent source",
+        "exact_source_quote": "Actinomyces Broth (BD 210920)……….…  57.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "product": "BBL/BD210920 Actinomyces Broth",
+      "amount": 57,
+      "unit": "g",
+      "stage": "main commercial product dose"
+    },
+    "rationale": "Represent the product dose and its separate composition description without double-counting product plus constituents. Agreement in product number and dose is not historical edition or lot equivalence."
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Main distilled water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": null,
+        "decision": "add",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "Main water row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      },
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC commercial product option water",
+        "exact_source_quote": "DI Water……………………………….…….  1000.0 ml",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1000,
+      "unit": "ml",
+      "stage": "main recipe water input",
+      "measured_final_volume": null
+    },
+    "rationale": "The water input is missing locally. The DSM source states 1000 ml water, not a separate measured final-volume or make-up declaration."
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "DSM final pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ph_value",
+        "stored": 6.9,
+        "decision": "evidence_only",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "final pH 6.9",
+        "decision": "evidence_only",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "Main recipe final pH",
+        "exact_source_quote": "final pH 6.9",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 6.9,
+      "stage": "DSM final pH"
+    },
+    "rationale": "The existing scalar and DSM owner description match the source. ATCC tolerance is a separate source claim, not automatically inherited."
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Printed product dose versus constituent sum",
+    "decision": "conflict",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "Potassium Phosphate",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "Ammonium Sulfate",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "Magnesium sulfate",
+            "term": {
+              "id": "CHEBI:32599",
+              "label": "magnesium sulfate"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32599",
+              "label": "magnesium sulfate"
+            }
+          },
+          {
+            "preferred_term": "Calcium Chloride",
+            "term": {
+              "id": "CHEBI:3312",
+              "label": "calcium dichloride"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:3312",
+              "label": "calcium dichloride"
+            }
+          },
+          {
+            "preferred_term": "Infusion Broth",
+            "concentration": {
+              "value": "25",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Dextrose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            }
+          },
+          {
+            "preferred_term": "L-Cysteine HCl",
+            "term": {
+              "id": "CHEBI:91247",
+              "label": "L-cysteine hydrochloride"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_term": {
+              "id": "MediaIngredientMech:000223",
+              "label": "L-Cysteine HCl"
+            }
+          },
+          {
+            "preferred_term": "Pancreatic digest of casein",
+            "concentration": {
+              "value": "4",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Starch",
+            "term": {
+              "id": "CHEBI:28017",
+              "label": "starch"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:28017",
+              "label": "starch"
+            }
+          }
+        ],
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "Potassium Phosphate",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "Ammonium Sulfate",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "Magnesium sulfate",
+            "term": {
+              "id": "CHEBI:32599",
+              "label": "magnesium sulfate"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32599",
+              "label": "magnesium sulfate"
+            }
+          },
+          {
+            "preferred_term": "Calcium Chloride",
+            "term": {
+              "id": "CHEBI:3312",
+              "label": "calcium dichloride"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:3312",
+              "label": "calcium dichloride"
+            }
+          },
+          {
+            "preferred_term": "Infusion Broth",
+            "concentration": {
+              "value": "25",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Dextrose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            }
+          },
+          {
+            "preferred_term": "L-Cysteine HCl",
+            "term": {
+              "id": "CHEBI:91247",
+              "label": "L-cysteine hydrochloride"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_term": {
+              "id": "MediaIngredientMech:000223",
+              "label": "L-Cysteine HCl"
+            }
+          },
+          {
+            "preferred_term": "Pancreatic digest of casein",
+            "concentration": {
+              "value": "4",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Starch",
+            "term": {
+              "id": "CHEBI:28017",
+              "label": "starch"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:28017",
+              "label": "starch"
+            }
+          }
+        ],
+        "decision": "correct",
+        "rationale": ""
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "Potassium Phosphate",
+            "term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            },
+            "concentration": {
+              "value": "15",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:63036",
+              "label": "potassium dihydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "Ammonium Sulfate",
+            "term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:62946",
+              "label": "ammonium sulfate"
+            }
+          },
+          {
+            "preferred_term": "Magnesium sulfate",
+            "term": {
+              "id": "CHEBI:32599",
+              "label": "magnesium sulfate"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32599",
+              "label": "magnesium sulfate"
+            }
+          },
+          {
+            "preferred_term": "Calcium Chloride",
+            "term": {
+              "id": "CHEBI:3312",
+              "label": "calcium dichloride"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:3312",
+              "label": "calcium dichloride"
+            }
+          },
+          {
+            "preferred_term": "Infusion Broth",
+            "concentration": {
+              "value": "25",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Dextrose",
+            "term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            },
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:17634",
+              "label": "D-glucose"
+            }
+          },
+          {
+            "preferred_term": "L-Cysteine HCl",
+            "term": {
+              "id": "CHEBI:91247",
+              "label": "L-cysteine hydrochloride"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_term": {
+              "id": "MediaIngredientMech:000223",
+              "label": "L-Cysteine HCl"
+            }
+          },
+          {
+            "preferred_term": "Pancreatic digest of casein",
+            "concentration": {
+              "value": "4",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Yeast extract",
+            "concentration": {
+              "value": "5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Starch",
+            "term": {
+              "id": "CHEBI:28017",
+              "label": "starch"
+            },
+            "concentration": {
+              "value": "1",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:28017",
+              "label": "starch"
+            }
+          }
+        ],
+        "decision": "correct",
+        "rationale": ""
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "Main product dose",
+        "exact_source_quote": "BBL Actinomyces broth (see below) 57.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      },
+      {
+        "source_key": "dsmz1029",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf",
+        "source_locator": "Complete constituent list",
+        "exact_source_quote": "Potassium Phosphate 15.0 g \n Ammomium Sulfate 1.0 g \n Magnesium Sulfate 0.2 g \n Calcium Chloride 0.01 g \n Infusion Broth 25.0 g \n Dextrose 5.0 g \n L-Cysteine x HCL 1.0 g \n Pancreatic Digest of Casein 4.0 g \n Yeast Extract 5.0 g \n Soluble Starch 1.0 g",
+        "snapshot_sha256": "d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf",
+        "parsed_text_sha256": "c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b",
+        "accessed_at": "2026-10-21T22:15:00.040297Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "main_product_dose_g": 57,
+      "arithmetic_constituent_sum_g": 57.21,
+      "rescaling_factor_applied": null
+    },
+    "rationale": "The 0.21 g difference is internal to the available source. Retain both claims explicitly; rounding, manufacturing formulation or edition explanations are not established by this evidence."
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Independent ATCC scratch constituent: Tryptone",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Tryptone…………………………..  4.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 4,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Independent ATCC scratch constituent: Heart Infusion Broth",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Heart Infusion Broth……………..  10 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 10,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Independent ATCC scratch constituent: Peptone",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Peptone…………………………...  10 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 10,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Independent ATCC scratch constituent: NaCl",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "NaCl………………………….........  5.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Independent ATCC scratch constituent: K2HPO4",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "K2HPO4……………………..........  13.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 13,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Independent ATCC scratch constituent: KH2PO4",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "KH2PO4……………………………  2.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 2,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Independent ATCC scratch constituent: Ammonium Sulfate",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Ammonium Sulfate…………........  1.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Independent ATCC scratch constituent: Magnesium Sulfate",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Magnesium Sulfate……………….  0.2 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.2,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Independent ATCC scratch constituent: Calcium Chloride",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Calcium Chloride…………………  0.01 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 0.01,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "Independent ATCC scratch constituent: Dextrose",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Dextrose…………………………..  5.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Independent ATCC scratch constituent: L-CysteineHCl",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "L-CysteineHCl……………………  1.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Independent ATCC scratch constituent: Yeast Extract",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Yeast Extract……………………..  5.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 5,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Independent ATCC scratch constituent: Soluble Starch",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 scratch formulation only",
+        "exact_source_quote": "Soluble Starch……………….......  1.0 g",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1,
+      "unit": "g",
+      "stage": "independent ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "This exact independent product-context quantity is retained for comparison only. It does not authorize silently replacing the DSM product list, allocating its unspecified phosphate or importing a different edition."
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Independent ATCC scratch water",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC scratch formulation water",
+        "exact_source_quote": "DI Water…………………….........  1000 ml",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "amount": 1000,
+      "unit": "ml",
+      "stage": "ATCC scratch formulation",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "Retain the independent water row within ATCC source scope."
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "ATCC pH and tolerance",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 preparation or final-product description",
+        "exact_source_quote": "pH 6.9 +/- 0.2",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": {
+        "center": 6.9,
+        "tolerance": 0.2
+      },
+      "unit": "pH",
+      "stage": "independent ATCC protocol",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "Preserve this independent source condition without substituting it for the DSM recipe or claiming a historical product version match. ATCC does not specify an autoclaving duration."
+  },
+  {
+    "quantity_id": "q30",
+    "component_or_context": "ATCC autoclave temperature",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 preparation or final-product description",
+        "exact_source_quote": "Autoclave at 121ºC.",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": 121,
+      "unit": "°C",
+      "stage": "independent ATCC protocol",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "Preserve this independent source condition without substituting it for the DSM recipe or claiming a historical product version match. ATCC does not specify an autoclaving duration."
+  },
+  {
+    "quantity_id": "q31",
+    "component_or_context": "ATCC recommended storage range",
+    "decision": "evidence_only",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "atcc7ProductContext",
+        "source_url": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b",
+        "source_locator": "ATCC7 preparation or final-product description",
+        "exact_source_quote": "➢ Recommended Storage Temperature: 2-8ºC.",
+        "snapshot_sha256": "0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251",
+        "parsed_text_sha256": "648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2",
+        "accessed_at": "2026-10-21T22:16:29.634918Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "value": [
+        2,
+        8
+      ],
+      "unit": "°C",
+      "stage": "independent ATCC protocol",
+      "transfer_to_DSM1029": false
+    },
+    "rationale": "Preserve this independent source condition without substituting it for the DSM recipe or claiming a historical product version match. ATCC does not specify an autoclaving duration."
+  }
+]
+
+## Findings
+
+### f1: Product dose and constituent-stage amounts are collapsed
+
+major / open / confirmed; issue key: culturemech.003541.product-composition-stage.
+
+The source uses 57 g of named product with 1000 ml water, then lists constituents summing 57.21 g. All local layers present the latter as unqualified final rates and omit the product dose and water.
+
+### f2: Unspecified potassium phosphate is assigned wholly to KH2PO4
+
+major / open / confirmed; issue key: culturemech.003541.phosphate-specificity.
+
+DSM states 15 g Potassium Phosphate without protonation. Local primary and secondary identifiers assert monobasic potassium phosphate. Independent same-product-number ATCC context describes 13 g K2HPO4 plus 2 g KH2PO4, but historical equivalence is not established and cannot be assumed as a direct replacement.
+
+### f3: Specific owner vessel handling lacks exact-source support
+
+major / open / confirmed; issue key: culturemech.003541.unsupported-owner-handling.
+
+The DSM owner specifies screw-capped Wheaton and Hungate tubes, while the available DSM primary gives no such procedure. ATCC’s generic appropriate-vessel statement does not authenticate these specific instructions.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Represent the commercial product dose, water and constituent description as distinct source stages. Preserve the internal sum discrepancy and do not silently rescale or double-count components.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Qualify the unresolved phosphate identity and verify the applicable product formulation before assigning exact species or replacing the local quantity.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Recover applicable source evidence or qualify the unsupported owner handling. Keep ATCC protocol statements explicitly attributed rather than importing them as DSM historical facts.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch040/394/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/394/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml:1:id: CultureMech:003541<br>./data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml:1:id: CultureMech:003541<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch040/source-preflight-bound/394/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 16 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf; Complete DSMZ1029 page, product dose and constituent section | supports | The current primary identifies BBL210920 and a 57 g product dose with water and pH. Its constituent-stage amounts are not silently rescaled. |
+| product-composition | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf; BBL Actinomyces broth (BBL210920) constituent list | supports | Ten stated constituent amounts total 57.21 g. Potassium phosphate is not resolved to a particular protonation state. |
+| independent-product | https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b; ATCC Medium7, BD210920 and scratch formulation | supports | The same product number provides useful independent composition context, but not authenticated equivalence to an earlier DSM version or lot. |
+| atcc-phosphate | https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b; Scratch formulation phosphate rows | supports | ATCC separately lists dibasic and monobasic potassium phosphates; this does not authorize replacing the DSM source with an assumed equivalent edition. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact accession1029 row and seven-column header | supports | KOMODO identity and Aerobic: No are attributed catalog metadata. No organism-level oxygen requirement follows from that flag. |
+| legacy-catalog | https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json; Complete pinned current catalog; exact legacy ID lookup | supports | The current snapshot has no exact MediaIngredientMech:000223 object. This completed negative lookup does not establish historical invalidity. |
+| legacy-tree | https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1; Complete nontruncated pinned tree; exact identifier filename lookup | supports | The current tree supplies no historical legacy object. Preserve the unresolved historical correspondence separately from the supported primary chemical identity. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch040/394/grounding-inventory.json; Exact local term/history slots and bound source authentication ledger | context_only | Complete exact-field inventory; current metadata, historical evidence and source forms remain distinct. |
+| history-inventory | /private/tmp/culturemech-review-work-batch040/394/history-inventory.json; Exact local term/history slots and bound source authentication ledger | context_only | Complete exact-field inventory; current metadata, historical evidence and source forms remain distinct. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi28017 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi32599 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi3312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| chebi91247 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91247; Exact OLS identifier, canonical label, obsolete flag, definition and formula | supports | Inspected metadata for every occurrence; source-specific form conclusions remain in the assessment. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact pinned current CHEBI preferred-key rows; metadata source commit/hash | context_only | {"CHEBI:17634": [{"label": "D-Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17634", "preferred_term": "D-Glucose", "ontology_id": "CHEBI:17634", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:28017": [{"label": "Starch", "match_type": "preferred_term", "identifier": "CHEBI:28017", "preferred_term": "Starch", "ontology_id": "CHEBI:28017", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate", "match_type": "preferred_term", "identifier": "CHEBI:32599", "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| legacy-current-lookup | /private/tmp/culturemech-review-work-batch040/source-preflight-bound/394/evidence-context-original.json; Exact legacy_mim_lookup object, current index and nontruncated remote snapshot | context_only | Completed current negative lookup: {"ids": ["MediaIngredientMech:000223"], "matching_current_index_rows": {"MediaIngredientMech:000223": []}, "limit": "Complete local pinned index lookup only. Current negative lookup is not evidence of historical invalidity; no remote tree assertion.", "target_or_owner_legacy_ids": ["MediaIngredientMech:000223"], "remote_current_snapshot": {"catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7", "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec", "tree_truncated": false, "exact_id_object_matches": {"MediaIngredientMech:000223": []}, "exact_id_text_occurrences": {"MediaIngredientMech:000223": 0}, "tree_identifier_filename_matches": {"MediaIngredientMech:000223": []}, "limit": "Current pinned snapshot only; required original legacy correspondence remains unresolved where no historical object is available."}} |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Both maintained owners already have the same ten flattened constituent rates and missing product dose. Current merger guards are not proof of which historical import or merge created them. Correct the exact owners and document product-stage meaning before controlled regeneration. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Both maintained owners already have the same ten flattened constituent rates and missing product dose. Current merger guards are not proof of which historical import or merge created them. Correct the exact owners and document product-stage meaning before controlled regeneration. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Both maintained owners already have the same ten flattened constituent rates and missing product dose. Current merger guards are not proof of which historical import or merge created them. Correct the exact owners and document product-stage meaning before controlled regeneration. |
+| history-metadata | data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml; data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml; data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:00.291271"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml", "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:00.291271"}]}, {"input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml", "events": 5, "timestamp_issues": []}] |
+| mediadive1029api-attempt | https://mediadive.dsmz.de/rest/medium/1029; Preserved exact public retrieval result | context_only | Optional mediadive1029api access returned HTTP 503. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+| mediadive1029api_retry-attempt | https://mediadive.dsmz.de/rest/medium/1029; Preserved exact public retrieval result | context_only | Optional mediadive1029api_retry access returned HTTP 503. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+| komodo1029detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1029; Preserved exact public retrieval result | context_only | Optional komodo1029detail access returned HTTP 403. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+| bdActinomycesManual-attempt | https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf; Preserved exact public retrieval result | context_only | Optional bdActinomycesManual access returned HTTP 404. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch040/394/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Partial coverage rests on unresolved required historical MIM000223 correspondence, not on treating the completed current negative lookup as unavailable and not merely on optional HTTP failures.
+- Optional mediadive1029api access returned HTTP 503. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage.
+- Optional mediadive1029api_retry access returned HTTP 503. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage.
+- Optional komodo1029detail access returned HTTP 403. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage.
+- Optional bdActinomycesManual access returned HTTP 404. The exact DSM primary and independent ATCC product context remain available; this failure alone is not the reason for partial coverage.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T223840Z-culturemech-003541-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bbl_actinomyces_broth (CultureMech:003541)'
+started_at: '2026-10-21T22:32:18Z'
+finished_at: '2026-10-21T22:38:40Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1029 specifies 57 g of BBL Actinomyces broth product with 1000 ml water,
+  while its printed constituent list totals 57.21 g. The local flattened rates omit
+  that product-stage distinction and map all unspecified potassium phosphate to KH2PO4.
+  Independent ATCC product context cannot establish historical DSM edition equivalence.
+  Legacy MIM000223 correspondence remains unresolved, and owner-specific tube handling
+  lacks exact primary support.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+    sha256: 3a4da6341c415867646a884edc5ce141bcd301b34fa51a171b37393b69ef07bc
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+    sha256: af967b9da66dc04296167844188962541d2043175c22cdac39c982e0f5a81738
+    role: context
+  - path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    sha256: abd6bbdd95dabf07fd2cee318b7ed7379f57496dc7d9ba79f99fa8feefce62a9
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml.md
+    sha256: d857d9ef5bb4c8a514c6b01ead910e7bfe7d071546fe95c7692dc0a26a41d6f3
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bbl_actinomyces_broth.yaml.md
+    sha256: 9a91759023e4de5282ddb6016eec9c970230c8f7529e0aa960d9d2663ac103ab
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.md
+    sha256: 6267e8e044686e177256a4865e397f4331316e81a8fa360c3e81e18c30948e11
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.md
+    sha256: a5b032aaaf0bdb2afe03d2f214478d8f4059e81f73f104ed9efd642a0a8e172d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/bbl_actinomyces_broth.md
+    sha256: dda23ad0ccbc8bdf22d2d44b893ccaf5dff30febd59f9cbc0767dd7e35187000
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 394; batch 040 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-nine task batches
+    contain 390 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 393 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003541
+targets:
+- target_id: CultureMech:003541
+  path: data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  label: bbl_actinomyces_broth
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch040/394/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/394/strict.tsv"
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003541
+- check_id: historical-mim000223-correspondence
+  name: Required historical MediaIngredientMech000223 correspondence
+  required: true
+  status: unavailable
+  summary: The current exact index/catalog/tree lookup completed with no match; the
+    original historical legacy object and its cysteine-HCl correspondence were not
+    recovered. Current absence does not prove historical invalidity.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - legacy-current-lookup
+  - legacy-catalog
+  - legacy-tree
+  - grounding-inventory
+- check_id: mediadive1029api-source-access
+  name: 'Exact source content access: mediadive1029api'
+  required: false
+  status: unavailable
+  summary: Optional mediadive1029api access returned HTTP 503. The exact DSM primary
+    and independent ATCC product context remain available; this failure alone is not
+    the reason for partial coverage.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - mediadive1029api-attempt
+- check_id: mediadive1029api_retry-source-access
+  name: 'Exact source content access: mediadive1029api_retry'
+  required: false
+  status: unavailable
+  summary: Optional mediadive1029api_retry access returned HTTP 503. The exact DSM
+    primary and independent ATCC product context remain available; this failure alone
+    is not the reason for partial coverage.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - mediadive1029api_retry-attempt
+- check_id: komodo1029detail-source-access
+  name: 'Exact source content access: komodo1029detail'
+  required: false
+  status: unavailable
+  summary: Optional komodo1029detail access returned HTTP 403. The exact DSM primary
+    and independent ATCC product context remain available; this failure alone is not
+    the reason for partial coverage.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - komodo1029detail-attempt
+- check_id: bdActinomycesManual-source-access
+  name: 'Exact source content access: bdActinomycesManual'
+  required: false
+  status: unavailable
+  summary: Optional bdActinomycesManual access returned HTTP 404. The exact DSM primary
+    and independent ATCC product context remain available; this failure alone is not
+    the reason for partial coverage.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - bdActinomycesManual-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:33.991196Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch040/394/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:35.224455Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/394/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:36.430929Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:37.158166Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml:1:id: CultureMech:003541
+
+    ./data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml:1:id:
+    CultureMech:003541
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/source-preflight-bound/394/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 6d31005dc832b6d91bbce27972e35c1abd205c86c28c0e208e8aa66f911290ae
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf
+  locator: Complete DSMZ1029 page, product dose and constituent section
+  accessed_at: '2026-10-21T22:15:00.040297Z'
+  support: supports
+  summary: The current primary identifies BBL210920 and a 57 g product dose with water
+    and pH. Its constituent-stage amounts are not silently rescaled.
+  quote: BBL Actinomyces broth (see below) 57.0 g
+  snapshot_sha256: d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf
+- evidence_id: product-composition
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf
+  locator: BBL Actinomyces broth (BBL210920) constituent list
+  accessed_at: '2026-10-21T22:15:00.040297Z'
+  support: supports
+  summary: Ten stated constituent amounts total 57.21 g. Potassium phosphate is not
+    resolved to a particular protonation state.
+  quote: Potassium Phosphate 15.0 g
+  snapshot_sha256: d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf
+- evidence_id: independent-product
+  kind: database
+  reference: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b
+  locator: ATCC Medium7, BD210920 and scratch formulation
+  accessed_at: '2026-10-21T22:16:29.634918Z'
+  support: supports
+  summary: The same product number provides useful independent composition context,
+    but not authenticated equivalence to an earlier DSM version or lot.
+  quote: Actinomyces Broth (BD 210920)……….…  57.0 g
+  snapshot_sha256: 0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251
+- evidence_id: atcc-phosphate
+  kind: database
+  reference: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b
+  locator: Scratch formulation phosphate rows
+  accessed_at: '2026-10-21T22:16:29.634918Z'
+  support: supports
+  summary: ATCC separately lists dibasic and monobasic potassium phosphates; this
+    does not authorize replacing the DSM source with an assumed equivalent edition.
+  quote: K2HPO4……………………..........  13.0 g
+  snapshot_sha256: 0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact accession1029 row and seven-column header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: 'KOMODO identity and Aerobic: No are attributed catalog metadata. No organism-level
+    oxygen requirement follows from that flag.'
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: legacy-catalog
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/MediaIngredientMech/6643131b0f12ab40b66f98135245fca04027e0e9/docs/data/all_ingredients.json
+  locator: Complete pinned current catalog; exact legacy ID lookup
+  accessed_at: '2026-10-21T09:52:30.606764Z'
+  support: supports
+  summary: The current snapshot has no exact MediaIngredientMech:000223 object. This
+    completed negative lookup does not establish historical invalidity.
+  snapshot_sha256: 474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7
+- evidence_id: legacy-tree
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/MediaIngredientMech/git/trees/6643131b0f12ab40b66f98135245fca04027e0e9?recursive=1
+  locator: Complete nontruncated pinned tree; exact identifier filename lookup
+  accessed_at: '2026-10-21T09:51:04.602158Z'
+  support: supports
+  summary: The current tree supplies no historical legacy object. Preserve the unresolved
+    historical correspondence separately from the supported primary chemical identity.
+  snapshot_sha256: 71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/394/grounding-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: e082c5df8836410c86770f966268ca9dcff5bcca1f50ba890e8afe582cc4f4f2
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/394/history-inventory.json
+  locator: Exact local term/history slots and bound source authentication ledger
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Complete exact-field inventory; current metadata, historical evidence and
+    source forms remain distinct.
+  snapshot_sha256: 79e986d3ee6afe11d7c681a36984e7834090209ba5d77aff46a2e08f5c6f77c0
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi28017
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:42.748724Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 959b4330165a7ff12d2e464f4a7b44e148376624d04cf7764b6a8671c1c99204
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi91247
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91247
+  locator: Exact OLS identifier, canonical label, obsolete flag, definition and formula
+  accessed_at: '2026-10-21T09:27:41.606984Z'
+  support: supports
+  summary: Inspected metadata for every occurrence; source-specific form conclusions
+    remain in the assessment.
+  snapshot_sha256: 8ff9a3639e1afba34c0d40072292486ff792c7b63a496d189a1cfeb2e6574890
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact pinned current CHEBI preferred-key rows; metadata source commit/hash
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: '{"CHEBI:17634": [{"label": "D-Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17634", "preferred_term": "D-Glucose", "ontology_id": "CHEBI:17634",
+    "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:28017": [{"label":
+    "Starch", "match_type": "preferred_term", "identifier": "CHEBI:28017", "preferred_term":
+    "Starch", "ontology_id": "CHEBI:28017", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32599": [{"label": "Magnesium sulfate", "match_type": "preferred_term",
+    "identifier": "CHEBI:32599", "preferred_term": "Magnesium sulfate", "ontology_id":
+    "CHEBI:32599", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312":
+    [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312",
+    "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: legacy-current-lookup
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/source-preflight-bound/394/evidence-context-original.json
+  locator: Exact legacy_mim_lookup object, current index and nontruncated remote snapshot
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: 'Completed current negative lookup: {"ids": ["MediaIngredientMech:000223"],
+    "matching_current_index_rows": {"MediaIngredientMech:000223": []}, "limit": "Complete
+    local pinned index lookup only. Current negative lookup is not evidence of historical
+    invalidity; no remote tree assertion.", "target_or_owner_legacy_ids": ["MediaIngredientMech:000223"],
+    "remote_current_snapshot": {"catalog_sha256": "474ff60bd51606ef6e272b8b22d421bbe51d9f78567a114f94e59d04fe51acc7",
+    "tree_sha256": "71721421c6e8100b080d4ee3140f6e0bb4bcd21b57964ceeb61399ca4a2844ec",
+    "tree_truncated": false, "exact_id_object_matches": {"MediaIngredientMech:000223":
+    []}, "exact_id_text_occurrences": {"MediaIngredientMech:000223": 0}, "tree_identifier_filename_matches":
+    {"MediaIngredientMech:000223": []}, "limit": "Current pinned snapshot only; required
+    original legacy correspondence remains unresolved where no historical object is
+    available."}}'
+  snapshot_sha256: 197dfb099277e7217486538896776c345a9872860c507d8ee8c845b61aedad1a
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Both maintained owners already have the same ten flattened constituent
+    rates and missing product dose. Current merger guards are not proof of which historical
+    import or merge created them. Correct the exact owners and document product-stage
+    meaning before controlled regeneration.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Both maintained owners already have the same ten flattened constituent
+    rates and missing product dose. Current merger guards are not proof of which historical
+    import or merge created them. Correct the exact owners and document product-stage
+    meaning before controlled regeneration.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Both maintained owners already have the same ten flattened constituent
+    rates and missing product dose. Current merger guards are not proof of which historical
+    import or merge created them. Correct the exact owners and document product-stage
+    meaning before controlled regeneration.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml; data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml;
+    data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:00.291271"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml",
+    "events": 6, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:00.291271"}]}, {"input": "data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml",
+    "events": 5, "timestamp_issues": []}]'
+- evidence_id: mediadive1029api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1029
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:14:55.926733Z'
+  support: context_only
+  summary: Optional mediadive1029api access returned HTTP 503. The exact DSM primary
+    and independent ATCC product context remain available; this failure alone is not
+    the reason for partial coverage.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1029api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1029
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:16:27.168391Z'
+  support: context_only
+  summary: Optional mediadive1029api_retry access returned HTTP 503. The exact DSM
+    primary and independent ATCC product context remain available; this failure alone
+    is not the reason for partial coverage.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo1029detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1029
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:14:55.641384Z'
+  support: context_only
+  summary: Optional komodo1029detail access returned HTTP 403. The exact DSM primary
+    and independent ATCC product context remain available; this failure alone is not
+    the reason for partial coverage.
+  snapshot_sha256: 9ffc94889fdf43ca5d63e7e093cce188cd46d537c624bae8c9ac56d9a21292ec
+- evidence_id: bdActinomycesManual-attempt
+  kind: database
+  reference: https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:16:28.916223Z'
+  support: context_only
+  summary: Optional bdActinomycesManual access returned HTTP 404. The exact DSM primary
+    and independent ATCC product context remain available; this failure alone is not
+    the reason for partial coverage.
+  snapshot_sha256: 493fda53120050f85836032324409be6c6484f90a0755ae0c6a673ba7626818b
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/394/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T22:38:39Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: e3b811c8d431928a02a0b854dd859042dd6bc5e1abcbb7a5499fa07e294ae6ec
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact collection accession and product identity
+  outcome: supported
+  summary: DSMZ/KOMODO1029 and the exact maintained source-duplicate pair align. DSM
+    names BBL210920 and independent ATCC names BD210920. Product-number agreement
+    is supported; historical lot, edition and formulation equivalence are not established.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - primary
+  - independent-product
+  - catalog
+- assessment_id: grounding
+  area: grounding
+  topic: Primary chemistry, current secondary keys and legacy history
+  outcome: concern
+  summary: All seven distinct CHEBI primary IDs have matching current labels; all
+    six asserted current CHEBI-based secondary keys have pinned preferred mapped rows.
+    Primary target linkage is 7/10 (70%) and current secondary linkage 6/10 (60%);
+    one additional legacy slot is counted separately, not as verified current linkage.
+    The phosphate assignment is more specific than DSM supports. L-cysteine hydrochloride
+    identity is supported independently of unresolved legacy MIM000223.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - grounding-inventory
+  - mim
+  - product-composition
+  - atcc-phosphate
+  - legacy-current-lookup
+- assessment_id: product-stage
+  area: quantity
+  topic: Commercial dose and printed constituent quantities
+  outcome: concern
+  summary: Main product 57 g and constituent sum 57.21 g are separate source statements.
+    The local flat g/L representation omits the product dose, water and composition-stage
+    qualifier. Neither an assumed rounding cause nor automatic scaling of the constituent
+    list is justified.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - product-composition
+  - quantity-inventory
+- assessment_id: preparation-scope
+  area: completeness
+  topic: Owner tube instructions and independent ATCC procedure
+  outcome: concern
+  summary: The exact DSM page supplies final pH but no Wheaton screw-cap or Hungate-tube
+    instruction. The owner’s specific handling is therefore not authenticated by the
+    available primary. ATCC independently supplies 121 °C and generic vessel instructions,
+    pH tolerance and storage range, without proving the owner’s historical procedure.
+    No source cultivation gas, strain growth or incubation temperature is inferred
+    from the catalog flag or product name.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - record
+  - owner-1
+  - primary
+  - independent-product
+  - catalog
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex broth and growth assertions
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and LIQUID agree with product containing infusion broth,
+    casein digest and yeast extract. Product identity does not establish organism-specific
+    growth, anaerobic requirements or experimental performance.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Claim-level support and preserved uncertainty
+  outcome: concern
+  summary: No attached local amount claims resolve the product-stage ambiguity. Preserve
+    existing histories and their timestamp defects; attach current DSM and ATCC evidence
+    with distinct scopes. Missing current legacy identity is a completed lookup result,
+    while historical correspondence remains an unavailable required check.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - history-inventory
+  - grounding-inventory
+  - primary
+  - independent-product
+  - legacy-current-lookup
+  - writer-0
+  - writer-1
+  - writer-2
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 19 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 31 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003541
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Product constituent: Potassium Phosphate\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Potassium Phosphate 15.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 15,\n  \
+    \    \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"Product\
+    \ constituent: Ammonium Sulfate\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Ammomium Sulfate 1.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 1,\n   \
+    \   \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"Product\
+    \ constituent: Magnesium sulfate\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Magnesium Sulfate 0.2 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 0.2,\n \
+    \     \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"Product\
+    \ constituent: Calcium Chloride\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Calcium Chloride 0.01 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 0.01,\n\
+    \      \"unit\": \"g\",\n      \"stage\": \"source product-composition list\"\
+    ,\n      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"Product\
+    \ constituent: Infusion Broth\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"25\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"25\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"25\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Infusion Broth 25.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 25,\n  \
+    \    \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Product\
+    \ constituent: Dextrose\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Dextrose 5.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 5,\n   \
+    \   \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"Product\
+    \ constituent: L-Cysteine HCl\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine x HCL 1.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 1,\n   \
+    \   \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Product\
+    \ constituent: Pancreatic digest of casein\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Pancreatic Digest of Casein 4.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 4,\n   \
+    \   \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Product\
+    \ constituent: Yeast extract\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Yeast Extract 5.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 5,\n   \
+    \   \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Product\
+    \ constituent: Starch\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      },\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"BBL210920 constituent table\",\n        \"exact_source_quote\"\
+    : \"Soluble Starch 1.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"printed_amount\": 1,\n   \
+    \   \"unit\": \"g\",\n      \"stage\": \"source product-composition list\",\n\
+    \      \"product_dose_g\": 57,\n      \"sum_of_printed_constituents_g\": 57.21,\n\
+    \      \"individually_measured_final_rate\": null\n    },\n    \"rationale\":\
+    \ \"The local numeral matches the constituent list but is asserted as an unqualified\
+    \ final g/L rate. Preserve the original constituent amount, product dose and internal\
+    \ sum discrepancy without rescaling. For potassium phosphate, chemical species\
+    \ remains unspecified in this primary; no 15 g KH2PO4 conclusion is supported.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"Main\
+    \ BBL210920 product dose\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\",\n       \
+    \ \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"Main formulation\",\n        \"exact_source_quote\"\
+    : \"BBL Actinomyces broth (see below) 57.0 g\",\n        \"snapshot_sha256\":\
+    \ \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\",\n    \
+    \    \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      },\n      {\n\
+    \        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\": \"\
+    https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC product option, independent source\",\n\
+    \        \"exact_source_quote\": \"Actinomyces Broth (BD 210920)……….…  57.0 g\"\
+    ,\n        \"snapshot_sha256\": \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\"\
+    ,\n        \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"product\": \"BBL/BD210920\
+    \ Actinomyces Broth\",\n      \"amount\": 57,\n      \"unit\": \"g\",\n      \"\
+    stage\": \"main commercial product dose\"\n    },\n    \"rationale\": \"Represent\
+    \ the product dose and its separate composition description without double-counting\
+    \ product plus constituents. Agreement in product number and dose is not historical\
+    \ edition or lot equivalence.\"\n  },\n  {\n    \"quantity_id\": \"q12\",\n  \
+    \  \"component_or_context\": \"Main distilled water\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1029\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"Main water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      },\n      {\n\
+    \        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\": \"\
+    https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC commercial product option water\",\n   \
+    \     \"exact_source_quote\": \"DI Water……………………………….…….  1000.0 ml\",\n     \
+    \   \"snapshot_sha256\": \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\"\
+    ,\n        \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1000,\n      \"\
+    unit\": \"ml\",\n      \"stage\": \"main recipe water input\",\n      \"measured_final_volume\"\
+    : null\n    },\n    \"rationale\": \"The water input is missing locally. The DSM\
+    \ source states 1000 ml water, not a separate measured final-volume or make-up\
+    \ declaration.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"DSM final pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.9,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"final pH 6.9\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1029\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"Main recipe final pH\",\n        \"exact_source_quote\"\
+    : \"final pH 6.9\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 6.9,\n      \"stage\"\
+    : \"DSM final pH\"\n    },\n    \"rationale\": \"The existing scalar and DSM owner\
+    \ description match the source. ATCC tolerance is a separate source claim, not\
+    \ automatically inherited.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"\
+    component_or_context\": \"Printed product dose versus constituent sum\",\n   \
+    \ \"decision\": \"conflict\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BBL_ACTINOMYCES_BROTH.yaml\",\n        \"field_path\"\
+    : \"ingredients\",\n        \"stored\": [\n          {\n            \"preferred_term\"\
+    : \"Potassium Phosphate\",\n            \"term\": {\n              \"id\": \"\
+    CHEBI:63036\",\n              \"label\": \"potassium dihydrogen phosphate\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    15\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium\
+    \ dihydrogen phosphate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"Ammonium Sulfate\",\n            \"term\": {\n     \
+    \         \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium sulfate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Magnesium sulfate\",\n            \"term\": {\n              \"id\": \"CHEBI:32599\"\
+    ,\n              \"label\": \"magnesium sulfate\"\n            },\n          \
+    \  \"concentration\": {\n              \"value\": \"0.2\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32599\",\n              \"label\": \"magnesium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Calcium Chloride\",\n            \"term\": {\n              \"id\": \"CHEBI:3312\"\
+    ,\n              \"label\": \"calcium dichloride\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"0.01\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:3312\",\n              \"label\": \"calcium\
+    \ dichloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Infusion Broth\",\n            \"concentration\": {\n              \"value\"\
+    : \"25\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Dextrose\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    L-Cysteine HCl\",\n            \"term\": {\n              \"id\": \"CHEBI:91247\"\
+    ,\n              \"label\": \"L-cysteine hydrochloride\"\n            },\n   \
+    \         \"concentration\": {\n              \"value\": \"1\",\n            \
+    \  \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_term\"\
+    : {\n              \"id\": \"MediaIngredientMech:000223\",\n              \"label\"\
+    : \"L-Cysteine HCl\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Pancreatic digest of casein\",\n            \"concentration\"\
+    : {\n              \"value\": \"4\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Yeast\
+    \ extract\",\n            \"concentration\": {\n              \"value\": \"5\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Starch\",\n            \"term\": {\n \
+    \             \"id\": \"CHEBI:28017\",\n              \"label\": \"starch\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:28017\",\n              \"label\": \"starch\"\
+    \n            }\n          }\n        ],\n        \"decision\": \"correct\",\n\
+    \        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Potassium Phosphate\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"\
+    potassium dihydrogen phosphate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"15\",\n              \"unit\": \"G_PER_L\"\n \
+    \           },\n            \"mediaingredientmech_chebi_term\": {\n          \
+    \    \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium dihydrogen\
+    \ phosphate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Ammonium Sulfate\",\n            \"term\": {\n              \"id\": \"CHEBI:62946\"\
+    ,\n              \"label\": \"ammonium sulfate\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"1\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Magnesium sulfate\",\n            \"term\": {\n              \"id\": \"CHEBI:32599\"\
+    ,\n              \"label\": \"magnesium sulfate\"\n            },\n          \
+    \  \"concentration\": {\n              \"value\": \"0.2\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32599\",\n              \"label\": \"magnesium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Calcium Chloride\",\n            \"term\": {\n              \"id\": \"CHEBI:3312\"\
+    ,\n              \"label\": \"calcium dichloride\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"0.01\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:3312\",\n              \"label\": \"calcium\
+    \ dichloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Infusion Broth\",\n            \"concentration\": {\n              \"value\"\
+    : \"25\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Dextrose\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    L-Cysteine HCl\",\n            \"term\": {\n              \"id\": \"CHEBI:91247\"\
+    ,\n              \"label\": \"L-cysteine hydrochloride\"\n            },\n   \
+    \         \"concentration\": {\n              \"value\": \"1\",\n            \
+    \  \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_term\"\
+    : {\n              \"id\": \"MediaIngredientMech:000223\",\n              \"label\"\
+    : \"L-Cysteine HCl\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Pancreatic digest of casein\",\n            \"concentration\"\
+    : {\n              \"value\": \"4\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Yeast\
+    \ extract\",\n            \"concentration\": {\n              \"value\": \"5\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Starch\",\n            \"term\": {\n \
+    \             \"id\": \"CHEBI:28017\",\n              \"label\": \"starch\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:28017\",\n              \"label\": \"starch\"\
+    \n            }\n          }\n        ],\n        \"decision\": \"correct\",\n\
+    \        \"rationale\": \"\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"Potassium Phosphate\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:63036\",\n              \"label\": \"\
+    potassium dihydrogen phosphate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"15\",\n              \"unit\": \"G_PER_L\"\n \
+    \           },\n            \"mediaingredientmech_chebi_term\": {\n          \
+    \    \"id\": \"CHEBI:63036\",\n              \"label\": \"potassium dihydrogen\
+    \ phosphate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Ammonium Sulfate\",\n            \"term\": {\n              \"id\": \"CHEBI:62946\"\
+    ,\n              \"label\": \"ammonium sulfate\"\n            },\n           \
+    \ \"concentration\": {\n              \"value\": \"1\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:62946\",\n              \"label\": \"ammonium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Magnesium sulfate\",\n            \"term\": {\n              \"id\": \"CHEBI:32599\"\
+    ,\n              \"label\": \"magnesium sulfate\"\n            },\n          \
+    \  \"concentration\": {\n              \"value\": \"0.2\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32599\",\n              \"label\": \"magnesium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Calcium Chloride\",\n            \"term\": {\n              \"id\": \"CHEBI:3312\"\
+    ,\n              \"label\": \"calcium dichloride\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"0.01\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:3312\",\n              \"label\": \"calcium\
+    \ dichloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"Infusion Broth\",\n            \"concentration\": {\n              \"value\"\
+    : \"25\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Dextrose\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:17634\",\n              \"label\": \"D-glucose\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    L-Cysteine HCl\",\n            \"term\": {\n              \"id\": \"CHEBI:91247\"\
+    ,\n              \"label\": \"L-cysteine hydrochloride\"\n            },\n   \
+    \         \"concentration\": {\n              \"value\": \"1\",\n            \
+    \  \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_term\"\
+    : {\n              \"id\": \"MediaIngredientMech:000223\",\n              \"label\"\
+    : \"L-Cysteine HCl\"\n            }\n          },\n          {\n            \"\
+    preferred_term\": \"Pancreatic digest of casein\",\n            \"concentration\"\
+    : {\n              \"value\": \"4\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Yeast\
+    \ extract\",\n            \"concentration\": {\n              \"value\": \"5\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Starch\",\n            \"term\": {\n \
+    \             \"id\": \"CHEBI:28017\",\n              \"label\": \"starch\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    1\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:28017\",\n              \"label\": \"starch\"\
+    \n            }\n          }\n        ],\n        \"decision\": \"correct\",\n\
+    \        \"rationale\": \"\"\n      }\n    ],\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1029\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"Main product dose\",\n        \"exact_source_quote\"\
+    : \"BBL Actinomyces broth (see below) 57.0 g\",\n        \"snapshot_sha256\":\
+    \ \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\",\n    \
+    \    \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      },\n      {\n\
+    \        \"source_key\": \"dsmz1029\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf\"\
+    ,\n        \"source_locator\": \"Complete constituent list\",\n        \"exact_source_quote\"\
+    : \"Potassium Phosphate 15.0 g \\n Ammomium Sulfate 1.0 g \\n Magnesium Sulfate\
+    \ 0.2 g \\n Calcium Chloride 0.01 g \\n Infusion Broth 25.0 g \\n Dextrose 5.0\
+    \ g \\n L-Cysteine x HCL 1.0 g \\n Pancreatic Digest of Casein 4.0 g \\n Yeast\
+    \ Extract 5.0 g \\n Soluble Starch 1.0 g\",\n        \"snapshot_sha256\": \"d9dc95e91170b6b32717cb66b80ab0d165ef395c65683322dac6e6f48ebce3cf\"\
+    ,\n        \"parsed_text_sha256\": \"c8190f68bd61b810dbe7b01a6ce317ffc77b50823c5384e27416952d9233b51b\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:15:00.040297Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"main_product_dose_g\": 57,\n\
+    \      \"arithmetic_constituent_sum_g\": 57.21,\n      \"rescaling_factor_applied\"\
+    : null\n    },\n    \"rationale\": \"The 0.21 g difference is internal to the\
+    \ available source. Retain both claims explicitly; rounding, manufacturing formulation\
+    \ or edition explanations are not established by this evidence.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q15\",\n    \"component_or_context\": \"Independent ATCC\
+    \ scratch constituent: Tryptone\",\n    \"decision\": \"evidence_only\",\n   \
+    \ \"local_fields\": [],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"atcc7ProductContext\",\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Tryptone…………………………..  4.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 4,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q16\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: Heart\
+    \ Infusion Broth\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Heart Infusion Broth……………..  10 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 10,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q17\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: Peptone\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\"\
+    : \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Peptone…………………………...  10 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 10,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q18\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: NaCl\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\"\
+    : \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"NaCl………………………….........  5.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q19\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: K2HPO4\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\"\
+    : \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"K2HPO4……………………..........  13.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 13,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q20\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: KH2PO4\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\"\
+    : \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"KH2PO4……………………………  2.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 2,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q21\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: Ammonium\
+    \ Sulfate\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Ammonium Sulfate…………........  1.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q22\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: Magnesium\
+    \ Sulfate\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Magnesium Sulfate……………….  0.2 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.2,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q23\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: Calcium\
+    \ Chloride\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Calcium Chloride…………………  0.01 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 0.01,\n      \"\
+    unit\": \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n \
+    \     \"transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact\
+    \ independent product-context quantity is retained for comparison only. It does\
+    \ not authorize silently replacing the DSM product list, allocating its unspecified\
+    \ phosphate or importing a different edition.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q24\",\n    \"component_or_context\": \"Independent ATCC scratch constituent:\
+    \ Dextrose\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Dextrose…………………………..  5.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q25\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: L-CysteineHCl\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\"\
+    : \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"L-CysteineHCl……………………  1.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q26\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: Yeast\
+    \ Extract\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Yeast Extract……………………..  5.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 5,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q27\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch constituent: Soluble\
+    \ Starch\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 scratch formulation only\",\n        \"\
+    exact_source_quote\": \"Soluble Starch……………….......  1.0 g\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1,\n      \"unit\"\
+    : \"g\",\n      \"stage\": \"independent ATCC scratch formulation\",\n      \"\
+    transfer_to_DSM1029\": false\n    },\n    \"rationale\": \"This exact independent\
+    \ product-context quantity is retained for comparison only. It does not authorize\
+    \ silently replacing the DSM product list, allocating its unspecified phosphate\
+    \ or importing a different edition.\"\n  },\n  {\n    \"quantity_id\": \"q28\"\
+    ,\n    \"component_or_context\": \"Independent ATCC scratch water\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\"\
+    : \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC scratch formulation water\",\n        \"\
+    exact_source_quote\": \"DI Water…………………….........  1000 ml\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"amount\": 1000,\n      \"\
+    unit\": \"ml\",\n      \"stage\": \"ATCC scratch formulation\",\n      \"transfer_to_DSM1029\"\
+    : false\n    },\n    \"rationale\": \"Retain the independent water row within\
+    \ ATCC source scope.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\"\
+    : \"ATCC pH and tolerance\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 preparation or final-product description\"\
+    ,\n        \"exact_source_quote\": \"pH 6.9 +/- 0.2\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": {\n        \"center\"\
+    : 6.9,\n        \"tolerance\": 0.2\n      },\n      \"unit\": \"pH\",\n      \"\
+    stage\": \"independent ATCC protocol\",\n      \"transfer_to_DSM1029\": false\n\
+    \    },\n    \"rationale\": \"Preserve this independent source condition without\
+    \ substituting it for the DSM recipe or claiming a historical product version\
+    \ match. ATCC does not specify an autoclaving duration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q30\",\n    \"component_or_context\": \"ATCC autoclave temperature\",\n  \
+    \  \"decision\": \"evidence_only\",\n    \"local_fields\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"atcc7ProductContext\",\n        \"source_url\"\
+    : \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 preparation or final-product description\"\
+    ,\n        \"exact_source_quote\": \"Autoclave at 121ºC.\",\n        \"snapshot_sha256\"\
+    : \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\",\n    \
+    \    \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": 121,\n      \"unit\"\
+    : \"°C\",\n      \"stage\": \"independent ATCC protocol\",\n      \"transfer_to_DSM1029\"\
+    : false\n    },\n    \"rationale\": \"Preserve this independent source condition\
+    \ without substituting it for the DSM recipe or claiming a historical product\
+    \ version match. ATCC does not specify an autoclaving duration.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q31\",\n    \"component_or_context\": \"ATCC recommended\
+    \ storage range\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"atcc7ProductContext\"\
+    ,\n        \"source_url\": \"https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/7/atcc-medium-7.pdf?rev=e0b4cf255bc84b8f8dd27ebf1040eb7b\"\
+    ,\n        \"source_locator\": \"ATCC7 preparation or final-product description\"\
+    ,\n        \"exact_source_quote\": \"➢ Recommended Storage Temperature: 2-8ºC.\"\
+    ,\n        \"snapshot_sha256\": \"0ea8a44a74c4b9567f2bb7132a1d568b7adf017d660eeca83dfe4b305b7f1251\"\
+    ,\n        \"parsed_text_sha256\": \"648d49a1d401688cb3a5a83a388df1dbb64909eee23de691008ad606628069f2\"\
+    ,\n        \"accessed_at\": \"2026-10-21T22:16:29.634918Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"value\": [\n        2,\n \
+    \       8\n      ],\n      \"unit\": \"°C\",\n      \"stage\": \"independent ATCC\
+    \ protocol\",\n      \"transfer_to_DSM1029\": false\n    },\n    \"rationale\"\
+    : \"Preserve this independent source condition without substituting it for the\
+    \ DSM recipe or claiming a historical product version match. ATCC does not specify\
+    \ an autoclaving duration.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.003541.product-composition-stage
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Product dose and constituent-stage amounts are collapsed
+  description: The source uses 57 g of named product with 1000 ml water, then lists
+    constituents summing 57.21 g. All local layers present the latter as unqualified
+    final rates and omit the product dose and water.
+  target_ids:
+  - CultureMech:003541
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - product-composition
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.003541.phosphate-specificity
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Unspecified potassium phosphate is assigned wholly to KH2PO4
+  description: DSM states 15 g Potassium Phosphate without protonation. Local primary
+    and secondary identifiers assert monobasic potassium phosphate. Independent same-product-number
+    ATCC context describes 13 g K2HPO4 plus 2 g KH2PO4, but historical equivalence
+    is not established and cannot be assumed as a direct replacement.
+  target_ids:
+  - CultureMech:003541
+  field_paths:
+  - ingredients[0].term
+  - ingredients[0].mediaingredientmech_chebi_term
+  evidence_ids:
+  - product-composition
+  - atcc-phosphate
+  - independent-product
+  - grounding-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.003541.unsupported-owner-handling
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Specific owner vessel handling lacks exact-source support
+  description: The DSM owner specifies screw-capped Wheaton and Hungate tubes, while
+    the available DSM primary gives no such procedure. ATCC’s generic appropriate-vessel
+    statement does not authenticate these specific instructions.
+  target_ids:
+  - CultureMech:003541
+  field_paths:
+  - preparation_steps[1]
+  evidence_ids:
+  - owner-1
+  - primary
+  - independent-product
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    role: authoritative normalized source
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Represent the commercial product dose, water and constituent description
+    as distinct source stages. Preserve the internal sum discrepancy and do not silently
+    rescale or double-count components.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003541
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Qualify the unresolved phosphate identity and verify the applicable
+    product formulation before assigning exact species or replacing the local quantity.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003541
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Recover applicable source evidence or qualify the unsupported owner
+    handling. Keep ATCC protocol statements explicitly attributed rather than importing
+    them as DSM historical facts.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003541
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+    role: authoritative normalized source
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Partial coverage rests on unresolved required historical MIM000223 correspondence,
+  not on treating the completed current negative lookup as unavailable and not merely
+  on optional HTTP failures.
+- Optional mediadive1029api access returned HTTP 503. The exact DSM primary and independent
+  ATCC product context remain available; this failure alone is not the reason for
+  partial coverage.
+- Optional mediadive1029api_retry access returned HTTP 503. The exact DSM primary
+  and independent ATCC product context remain available; this failure alone is not
+  the reason for partial coverage.
+- Optional komodo1029detail access returned HTTP 403. The exact DSM primary and independent
+  ATCC product context remain available; this failure alone is not the reason for
+  partial coverage.
+- Optional bdActinomycesManual access returned HTTP 404. The exact DSM primary and
+  independent ATCC product context remain available; this failure alone is not the
+  reason for partial coverage.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-040
+- generated-medium
+```

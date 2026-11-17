@@ -1,0 +1,5816 @@
+# Source and formulation review: beggiatoa_medium (CultureMech:004177)
+
+- Review: 20261021T223759Z-culturemech-004177-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T22:32:20Z
+- Finished UTC: 2026-10-21T22:37:59Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 155 confirms unusually small printed milligram amounts, a 20 ml saturated calcium sulfate addition, a 5 ml trace-stock dose and catalase activity of 15000–35000 units per 1000 ml. Local calcium sulfate and catalase mass units are wrong, and all eight trace ingredients are flattened at stock strength. The source water inputs and stock dose are absent. Only the DSMZ owner retains the preparation text; optional agar is already qualified in all layers.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 398; batch 040 item 8 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-nine task batches contain 390 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 393 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004177 | data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml | generated | beggiatoa_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004177 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:004177 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/398/strict.tsv |
+| validate-terms | passed | True | CultureMech:004177 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:004177 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:004177 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive155api | unavailable | False | CultureMech:004177 | Preserved mediadive155api HTTP 503. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred. |
+| Exact source content access: mediadive155api_retry | unavailable | False | CultureMech:004177 | Preserved mediadive155api_retry HTTP 503. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred. |
+| Exact source content access: komodo155detail | unavailable | False | CultureMech:004177 | Preserved komodo155detail HTTP 403. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:004177.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:004177.
+
+55 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "name": "CaSO4",
+    "stage": "Main calcium sulfate solution",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 20,
+      "source_unit": "ml",
+      "source_water_basis_ml": null,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "CaSO4 (saturated solution) 20.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "20 ml saturated solution is not 20 g/L CaSO4. Saturation strength and temperature are unspecified; no mass or molarity can be inferred."
+  },
+  {
+    "decision_id": "q2",
+    "name": "CaSO4",
+    "stage": "Main calcium sulfate solution",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 20,
+      "source_unit": "ml",
+      "source_water_basis_ml": null,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "CaSO4 (saturated solution) 20.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "20 ml saturated solution is not 20 g/L CaSO4. Saturation strength and temperature are unspecified; no mass or molarity can be inferred."
+  },
+  {
+    "decision_id": "q3",
+    "name": "CaSO4",
+    "stage": "Main calcium sulfate solution",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 20,
+      "source_unit": "ml",
+      "source_water_basis_ml": null,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "CaSO4 (saturated solution) 20.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "20 ml saturated solution is not 20 g/L CaSO4. Saturation strength and temperature are unspecified; no mass or molarity can be inferred."
+  },
+  {
+    "decision_id": "q4",
+    "name": "NH4Cl",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.00045",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.45,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "NH4Cl 0.450 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q5",
+    "name": "NH4Cl",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.00045",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.45,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "NH4Cl 0.450 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q6",
+    "name": "NH4Cl",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.00045",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.45,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "NH4Cl 0.450 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q7",
+    "name": "K2HPO4",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "K2HPO4 0.100 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q8",
+    "name": "K2HPO4",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "K2HPO4 0.100 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q9",
+    "name": "K2HPO4",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "K2HPO4 0.100 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q10",
+    "name": "MgSO4 x 7 H2O",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.0002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.200 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q11",
+    "name": "MgSO4 x 7 H2O",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.0002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.200 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q12",
+    "name": "MgSO4 x 7 H2O",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.0002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.200 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly prints mg, not g; no thousandfold reinterpretation is justified."
+  },
+  {
+    "decision_id": "q13",
+    "name": "Na-acetate",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Na-acetate 0.500 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final."
+  },
+  {
+    "decision_id": "q14",
+    "name": "Na-acetate",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Na-acetate 0.500 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final."
+  },
+  {
+    "decision_id": "q15",
+    "name": "Na-acetate",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Na-acetate 0.500 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final."
+  },
+  {
+    "decision_id": "q16",
+    "name": "Nutrient broth",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Nutrient broth (Difco) 0.500 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final."
+  },
+  {
+    "decision_id": "q17",
+    "name": "Nutrient broth",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Nutrient broth (Difco) 0.500 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final."
+  },
+  {
+    "decision_id": "q18",
+    "name": "Nutrient broth",
+    "stage": "Main batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.5,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Nutrient broth (Difco) 0.500 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final."
+  },
+  {
+    "decision_id": "q19",
+    "name": "Agar",
+    "stage": "Optional solid branch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 10,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Agar (if necessary) 10.000 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The local notes already say if necessary; do not report this qualifier as absent."
+  },
+  {
+    "decision_id": "q20",
+    "name": "Agar",
+    "stage": "Optional solid branch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 10,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Agar (if necessary) 10.000 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The local notes already say if necessary; do not report this qualifier as absent."
+  },
+  {
+    "decision_id": "q21",
+    "name": "Agar",
+    "stage": "Optional solid branch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 10,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Agar (if necessary) 10.000 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Preserve the literal batch amount. The current numeral is compatible with conversion on a 1000 ml water basis, but the source adds other solutions and does not explicitly declare measured final volume; do not silently assume 1 L or 1025 ml final. The local notes already say if necessary; do not report this qualifier as absent."
+  },
+  {
+    "decision_id": "q22",
+    "name": "Catalase",
+    "stage": "Before inoculation",
+    "decision": "schema_gap",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "35000",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": [
+        15000,
+        35000
+      ],
+      "source_unit": "units/1000 ml",
+      "source_water_basis_ml": null,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Catalase, filter-sterilized 15000 – 35000 units/1000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Activity units are not mass; retain the complete range and per-1000-ml activity denominator. No activity-to-mass factor is supplied, and no matching structured activity-unit enum was found."
+  },
+  {
+    "decision_id": "q23",
+    "name": "Catalase",
+    "stage": "Before inoculation",
+    "decision": "schema_gap",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "35000",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": [
+        15000,
+        35000
+      ],
+      "source_unit": "units/1000 ml",
+      "source_water_basis_ml": null,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Catalase, filter-sterilized 15000 – 35000 units/1000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Activity units are not mass; retain the complete range and per-1000-ml activity denominator. No activity-to-mass factor is supplied, and no matching structured activity-unit enum was found."
+  },
+  {
+    "decision_id": "q24",
+    "name": "Catalase",
+    "stage": "Before inoculation",
+    "decision": "schema_gap",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "35000",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": [
+        15000,
+        35000
+      ],
+      "source_unit": "units/1000 ml",
+      "source_water_basis_ml": null,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Catalase, filter-sterilized 15000 – 35000 units/1000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Activity units are not mass; retain the complete range and per-1000-ml activity denominator. No activity-to-mass factor is supplied, and no matching structured activity-unit enum was found."
+  },
+  {
+    "decision_id": "q25",
+    "name": "EDTA",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "EDTA 0.200 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q26",
+    "name": "EDTA",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "EDTA 0.200 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q27",
+    "name": "EDTA",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.2,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "EDTA 0.200 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q28",
+    "name": "FeSO4 x 7 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.7",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.7,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.700 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q29",
+    "name": "FeSO4 x 7 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.7",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.7,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.700 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q30",
+    "name": "FeSO4 x 7 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.7",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.7,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.700 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q31",
+    "name": "ZnSO4 x 7 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.01,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.010 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q32",
+    "name": "ZnSO4 x 7 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.01,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.010 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q33",
+    "name": "ZnSO4 x 7 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.01,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.010 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q34",
+    "name": "MnSO4 x 4 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.002,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "MnSO4 x 4 H2O 0.002 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q35",
+    "name": "MnSO4 x 4 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.002,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "MnSO4 x 4 H2O 0.002 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q36",
+    "name": "MnSO4 x 4 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 0.002,
+      "source_unit": "g",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "MnSO4 x 4 H2O 0.002 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q37",
+    "name": "CuSO4 x 5 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "5e-06",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 5,
+      "source_unit": "μg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "CuSO4 x 5 H2O 5.000 μg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q38",
+    "name": "CuSO4 x 5 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "5e-06",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 5,
+      "source_unit": "μg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "CuSO4 x 5 H2O 5.000 μg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q39",
+    "name": "CuSO4 x 5 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "5e-06",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 5,
+      "source_unit": "μg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "CuSO4 x 5 H2O 5.000 μg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q40",
+    "name": "H3BO3",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 10,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "H3BO3 10.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q41",
+    "name": "H3BO3",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 10,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "H3BO3 10.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q42",
+    "name": "H3BO3",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 10,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "H3BO3 10.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q43",
+    "name": "Co(NO3)2",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Co(NO3)2 1.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q44",
+    "name": "Co(NO3)2",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Co(NO3)2 1.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q45",
+    "name": "Co(NO3)2",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Co(NO3)2 1.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q46",
+    "name": "Na2MoO4 x 2 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 1.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q47",
+    "name": "Na2MoO4 x 2 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 1.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q48",
+    "name": "Na2MoO4 x 2 H2O",
+    "stage": "Trace stock",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_amount": 1,
+      "source_unit": "mg",
+      "source_water_basis_ml": 1000,
+      "final_medium_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 1.000 mg",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main trace dose",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      },
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row; same literal also occurs in main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "These are stock preparation amounts per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace rates cannot be final-medium amounts."
+  },
+  {
+    "decision_id": "q49",
+    "name": "Main water",
+    "stage": "Main batch solvent",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "CaSO4",
+            "term": {
+              "id": "CHEBI:31346",
+              "label": "calcium sulfate"
+            },
+            "concentration": {
+              "value": "20",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31346",
+              "label": "calcium sulfate"
+            }
+          },
+          {
+            "preferred_term": "NH4Cl",
+            "term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            },
+            "concentration": {
+              "value": "0.00045",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.0001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.0002",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "Na-acetate",
+            "term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            }
+          },
+          {
+            "preferred_term": "Nutrient broth",
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "10",
+              "unit": "G_PER_L"
+            },
+            "notes": " (if necessary)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "Catalase",
+            "concentration": {
+              "value": "35000",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "EDTA",
+            "term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.7",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.002",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            }
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "concentration": {
+              "value": "5e-06",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            }
+          },
+          {
+            "preferred_term": "H3BO3",
+            "term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            }
+          },
+          {
+            "preferred_term": "Co(NO3)2",
+            "term": {
+              "id": "CHEBI:86209",
+              "label": "cobalt dinitrate"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86209",
+              "label": "cobalt dinitrate"
+            }
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            }
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "CaSO4",
+            "term": {
+              "id": "CHEBI:31346",
+              "label": "calcium sulfate"
+            },
+            "concentration": {
+              "value": "20",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31346",
+              "label": "calcium sulfate"
+            }
+          },
+          {
+            "preferred_term": "NH4Cl",
+            "term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            },
+            "concentration": {
+              "value": "0.00045",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.0001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.0002",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "Na-acetate",
+            "term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            }
+          },
+          {
+            "preferred_term": "Nutrient broth",
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "10",
+              "unit": "G_PER_L"
+            },
+            "notes": " (if necessary)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "Catalase",
+            "concentration": {
+              "value": "35000",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "EDTA",
+            "term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.7",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.002",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            }
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "concentration": {
+              "value": "5e-06",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            }
+          },
+          {
+            "preferred_term": "H3BO3",
+            "term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            }
+          },
+          {
+            "preferred_term": "Co(NO3)2",
+            "term": {
+              "id": "CHEBI:86209",
+              "label": "cobalt dinitrate"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86209",
+              "label": "cobalt dinitrate"
+            }
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            }
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients",
+        "stored": [
+          {
+            "preferred_term": "CaSO4",
+            "term": {
+              "id": "CHEBI:31346",
+              "label": "calcium sulfate"
+            },
+            "concentration": {
+              "value": "20",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31346",
+              "label": "calcium sulfate"
+            }
+          },
+          {
+            "preferred_term": "NH4Cl",
+            "term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            },
+            "concentration": {
+              "value": "0.00045",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31206",
+              "label": "ammonium chloride"
+            }
+          },
+          {
+            "preferred_term": "K2HPO4",
+            "term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            },
+            "concentration": {
+              "value": "0.0001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:131527",
+              "label": "dipotassium hydrogen phosphate"
+            }
+          },
+          {
+            "preferred_term": "MgSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.0002",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31795",
+              "label": "magnesium sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "Na-acetate",
+            "term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            },
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32954",
+              "label": "sodium acetate"
+            }
+          },
+          {
+            "preferred_term": "Nutrient broth",
+            "concentration": {
+              "value": "0.5",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "Agar",
+            "term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            },
+            "concentration": {
+              "value": "10",
+              "unit": "G_PER_L"
+            },
+            "notes": " (if necessary)",
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:2509",
+              "label": "agar"
+            }
+          },
+          {
+            "preferred_term": "Catalase",
+            "concentration": {
+              "value": "35000",
+              "unit": "G_PER_L"
+            }
+          },
+          {
+            "preferred_term": "EDTA",
+            "term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            },
+            "concentration": {
+              "value": "0.2",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:4735",
+              "label": "ethylenediaminetetraacetic acid"
+            }
+          },
+          {
+            "preferred_term": "FeSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.7",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75836",
+              "label": "iron(2+) sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "ZnSO4 x 7 H2O",
+            "term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:32312",
+              "label": "zinc sulfate heptahydrate"
+            }
+          },
+          {
+            "preferred_term": "MnSO4 x 4 H2O",
+            "term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            },
+            "concentration": {
+              "value": "0.002",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86358",
+              "label": "manganese(II) sulfate tetrahydrate"
+            }
+          },
+          {
+            "preferred_term": "CuSO4 x 5 H2O",
+            "term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            },
+            "concentration": {
+              "value": "5e-06",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:31440",
+              "label": "copper(II) sulfate pentahydrate"
+            }
+          },
+          {
+            "preferred_term": "H3BO3",
+            "term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            },
+            "concentration": {
+              "value": "0.01",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:33118",
+              "label": "boric acid"
+            }
+          },
+          {
+            "preferred_term": "Co(NO3)2",
+            "term": {
+              "id": "CHEBI:86209",
+              "label": "cobalt dinitrate"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:86209",
+              "label": "cobalt dinitrate"
+            }
+          },
+          {
+            "preferred_term": "Na2MoO4 x 2 H2O",
+            "term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            },
+            "concentration": {
+              "value": "0.001",
+              "unit": "G_PER_L"
+            },
+            "mediaingredientmech_chebi_term": {
+              "id": "CHEBI:75213",
+              "label": "sodium molybdate dihydrate"
+            }
+          }
+        ]
+      }
+    ],
+    "desired": {
+      "source_amount": 1000,
+      "source_unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Main table final row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Main solvent input is absent in every layer. Do not treat it as a measured final volume."
+  },
+  {
+    "decision_id": "q50",
+    "name": "Trace water",
+    "stage": "Trace-stock preparation",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "source_amount": 1000,
+      "source_unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "Trace-stock final row",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "This distinct stock solvent entry is absent. Keep it separate from the main water despite identical literal wording."
+  },
+  {
+    "decision_id": "q51",
+    "name": "Trace dose",
+    "stage": "Main assembly",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "source_amount": 5,
+      "source_unit": "ml"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Trace element solution (see below) 5.000 ml",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "Receiving dose is missing. Retain the source stock identity and eight ingredients; final dilution requires a supported receiving-volume basis."
+  },
+  {
+    "decision_id": "q52",
+    "name": "pH",
+    "stage": "Before autoclaving",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.4
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.4
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.4
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust pH to 7.4 using pH indicator paper before autoclaving. The catalase is added just before inoculation."
+      }
+    ],
+    "desired": {
+      "value": 7.4
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Adjust pH to 7.4 using pH indicator paper before autoclaving.",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "All pH values and the DSMZ preparation agree; no titrant identity, strength or dose is given."
+  },
+  {
+    "decision_id": "q53",
+    "name": "Missing preparation context",
+    "stage": "Target and KOMODO owner",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "pH_stage": "before autoclaving",
+      "catalase_stage": "just before inoculation"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Adjust pH to 7.4 using pH indicator paper before autoclaving. The catalase is added just \nbefore inoculation.",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "DSMZ owner already retains this instruction. Only target and KOMODO owner lack it; do not duplicate or erase the maintained DSMZ preparation."
+  },
+  {
+    "decision_id": "q54",
+    "name": "Optional agar qualifier",
+    "stage": "Solid branch",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "ingredients[6].notes",
+        "stored": " (if necessary)"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "ingredients[6].notes",
+        "stored": " (if necessary)"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "ingredients[6].notes",
+        "stored": " (if necessary)"
+      },
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "physical_state",
+        "stored": "SOLID_AGAR"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "physical_state",
+        "stored": "SOLID_AGAR"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "physical_state",
+        "stored": "SOLID_AGAR"
+      }
+    ],
+    "desired": {
+      "agar": "if necessary",
+      "amount_g": 10
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Agar (if necessary) 10.000 g",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "All local layers already preserve optionality in the ingredient notes. SOLID_AGAR is a supported branch, not evidence that liquid cultivation is excluded."
+  },
+  {
+    "decision_id": "q55",
+    "name": "Unquantified preparation and cultivation",
+    "stage": "Main/trace",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "temperature_value",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "temperature_value",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "temperature_value",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "temperature_range",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "temperature_range",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "temperature_range",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "autoclave_cycle": null,
+      "cultivation_temperature_time": null,
+      "measured_final_volume": null,
+      "saturated_CaSO4_strength": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz155",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf",
+        "source_locator": "DSMZ 155 table or preparation",
+        "exact_source_quote": "Adjust pH to 7.4 using pH indicator paper before autoclaving.",
+        "snapshot_sha256": "df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140",
+        "parsed_text_sha256": "bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903"
+      }
+    ],
+    "interpretation": "No numerical cycle, saturation conditions or incubation parameters are supplied. Catalase is explicitly filter sterilized; no mass conversion is possible."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:004177.
+
+14 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 14/16 primary and 14/16 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 16: primary 87.50%; secondary 87.50%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:004177.
+
+25 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact accession and contributor relationships
+
+identity: supported. Targets: CultureMech:004177.
+
+KOMODO 155 resolves to DSMZ 155 by the exact catalog link and maintained relationship IDs. Both local contributors and complete target are read. The shared source identity is independent of the ingredient fingerprint; unavailable detail does not prove an unseen variant or historical byte equivalence.
+
+### Literal supplied forms and specificity limits
+
+grounding: supported. Targets: CultureMech:004177.
+
+The explicit Mg/Fe/Zn sulfate heptahydrates, Mn tetrahydrate, Cu pentahydrate and sodium molybdate dihydrate agree with their asserted terms. NH4Cl, K2HPO4, EDTA, boric acid and cobalt nitrate match the printed chemical names/formulae; no salt substitution is justified. Source CaSO4 is an aqueous saturated solution and does not identify the original solid hydrate or solution strength. Sodium acetate hydration is unqualified. CHEBI:131527 has a trihydrate synonym despite its unhydrated formula; that synonym alone cannot establish a source hydrate or conversion. Nutrient broth/catalase remain complex product or enzyme assertions without fabricated pure-chemical links.
+
+### Quantity evidence and stage boundaries
+
+evidence: concern. Targets: CultureMech:004177.
+
+No amount evidence is attached in any layer. The complete primary supports literal batch quantities, not the current mass interpretation of calcium sulfate/catalase or full-strength trace ingredients. Unusual printed mg values must be preserved; stock and main water remain distinct.
+
+### Owner preparation credit and optional agar
+
+completeness: concern. Targets: CultureMech:004177.
+
+The DSMZ owner already retains pre-autoclave pH and just-before-inoculation catalase addition. The generated target and KOMODO owner do not. Agar optionality is present in all three; no blanket missing-qualifier finding is made. Numerical cycle and cultivation conditions are unavailable from the source and not guessed.
+
+### Complex medium and oxygen metadata
+
+scope: supported. Targets: CultureMech:004177.
+
+Nutrient broth and optional agar support complex undefined medium with a solid branch. The KOMODO Aerobic note is source metadata, not experimental oxygen physiology. No species growth, temperature or strain evidence is inferred from the title.
+
+## Findings
+
+### f1: Solution volume and enzyme activity are stored as mass
+
+major / open / confirmed; issue key: culturemech.004177.volume-and-activity-as-mass.
+
+All layers encode saturated calcium sulfate 20 ml as 20 G_PER_L and the upper catalase activity bound as 35000 G_PER_L. Neither conversion is dimensionally supported.
+
+### f2: Trace-stock composition is flattened at stock strength
+
+major / open / confirmed; issue key: culturemech.004177.trace-stock-flattening-and-volume-basis.
+
+All eight trace constituents are represented as direct full-stock rates, while the 5 ml receiving dose and both distinct water inputs are absent. Main numerical rates have no independently established final-volume denominator.
+
+### f3: Preparation and claim evidence are incomplete
+
+major / open / confirmed; issue key: culturemech.004177.preparation-and-evidence-loss.
+
+Target and KOMODO omit preparation retained by the DSMZ owner; every layer lacks attached quantity evidence. Existing pH and optional-agar notes must be preserved.
+
+### f4: KOMODO import timestamps are malformed or naive
+
+minor / open / confirmed; issue key: culturemech.004177.malformed-import-times.
+
+The target and KOMODO owner retain the .fZ import time and a timezone-naive resolver timestamp; no exact replacement time is established.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the 20 ml saturated-solution input and full activity range with exact source evidence; preserve unknown stock strength and use honest schema-gap prose for activity if no supported unit representation exists.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Reconstruct the source stock and dose separately; retain all literal mg and microgram amounts and both water stages. Do not calculate a final concentration from guessed additive volumes.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve the DSMZ preparation, add missing source context at the owning layer, attach scoped evidence and use guarded regeneration after separately authorized curation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve the original history and append only an evidenced clarification; do not invent timezone or fractions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/beggiatoa_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch040/398/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch040/398/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml:1:id: CultureMech:004177<br>./data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml:1:id: CultureMech:004177<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch040/source-preflight-bound/398/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 19 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf; Complete page: main table, preparation and trace-stock table | supports | The printed main milligram values and trace-stock stages are retained literally. Water inputs do not establish an independently measured final volume. |
+| catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact accession 155 row, DSMZ link only | supports | Catalog identity links the exact KOMODO and DSMZ accessions. The row is not quantity evidence or a source of inferred physiology. |
+| mediadive155api-attempt | https://mediadive.dsmz.de/rest/medium/155; Preserved exact public retrieval result | context_only | Preserved mediadive155api HTTP 503. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred. |
+| mediadive155api_retry-attempt | https://mediadive.dsmz.de/rest/medium/155; Preserved exact public retrieval result | context_only | Preserved mediadive155api_retry HTTP 503. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred. |
+| komodo155detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=155; Preserved exact public retrieval result | context_only | Preserved komodo155detail HTTP 403. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch040/398/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31346 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31346; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31346 resolves to calcium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32954 resolves to sodium acetate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi4735 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86209 resolves to cobalt dinitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86358 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86358; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86358 resolves to manganese(II) sulfate tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31346": [{"label": "CaSO4", "match_type": "preferred_term", "identifier": "CHEBI:31346", "preferred_term": "CaSO4", "ontology_id": "CHEBI:31346", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term", "identifier": "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86209": [{"label": "Co(NO3)2", "match_type": "preferred_term", "identifier": "CHEBI:86209", "preferred_term": "Co(NO3)2", "ontology_id": "CHEBI:86209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86358": [{"label": "MnSO4 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86358", "preferred_term": "MnSO4 x 4 H2O", "ontology_id": "CHEBI:86358", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml; data/normalized_yaml/bacterial/beggiatoa_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": [{"index": 1, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 2, "issue": "timezone absent", "value": "2026-02-03T11:19:01.819672"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml", "events": 8, "timestamp_issues": [{"index": 1, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 2, "issue": "timezone absent", "value": "2026-02-03T11:19:01.819672"}]}, {"input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code supplies implementation context only. Current guarded merge compatibility and evidence union cannot be blamed universally for the older observed flattened ingredients or missing preparation. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code supplies implementation context only. Current guarded merge compatibility and evidence union cannot be blamed universally for the older observed flattened ingredients or missing preparation. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code supplies implementation context only. Current guarded merge compatibility and evidence union cannot be blamed universally for the older observed flattened ingredients or missing preparation. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Preserved mediadive155api HTTP 503. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred.
+- Preserved mediadive155api_retry HTTP 503. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred.
+- Preserved komodo155detail HTTP 403. The current base formulation is assessed from the exact catalog identity and complete primary; neither historical byte equivalence nor a separate KOMODO variant is inferred.
+- Current base formulation and catalog identity are assessed from inspected sources; historical byte equivalence and a distinct unavailable KOMODO variant are not inferred.
+- Source supplies no measured final volume, saturated calcium sulfate concentration, enzyme activity-to-mass factor or numerical autoclave/cultivation cycle. A formulation reconstruction must preserve these limits.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T223759Z-culturemech-004177-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: beggiatoa_medium (CultureMech:004177)'
+started_at: '2026-10-21T22:32:20Z'
+finished_at: '2026-10-21T22:37:59Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 155 confirms unusually small printed milligram amounts, a 20 ml saturated
+  calcium sulfate addition, a 5 ml trace-stock dose and catalase activity of 15000–35000
+  units per 1000 ml. Local calcium sulfate and catalase mass units are wrong, and
+  all eight trace ingredients are flattened at stock strength. The source water inputs
+  and stock dose are absent. Only the DSMZ owner retains the preparation text; optional
+  agar is already qualified in all layers.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+    sha256: 135c3e3898246434e2c928718db1969bdd33c829235dc1440b755de26ef92bc1
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    sha256: 0e267c085ff820b39e690ccedf3960832ed44c68b90171a89b46ea85d1308e2b
+    role: context
+  - path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    sha256: 0408f14c24ee416d70913f0003e52b725ee3dccc51adf72bb96db11d0b21b60a
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/plan.json
+    sha256: 6a16e01139a26de5a1ee6b415e8d306249c59c299ac34ade8648b23ce278bfd4
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-0500-1000/records/bacterial/KOMODO_155_BEGGIATOA_medium.yaml.md
+    sha256: bccc9c7bcb696112511f68222f64da8e81efe43b2aa014d7cbd696ea24e2a644
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/beggiatoa_medium.yaml.md
+    sha256: 42212e22063e373e6f7089957a948a36b5dd3e86ddfe792754fcb878ee2cf618
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/komodo_importer.py
+    sha256: 702733bd580e4ba28f77e183e1e8268f17ea2c1041cf7b3addd92919624f2706
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 398; batch 040 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-nine task batches
+    contain 390 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 393 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004177
+targets:
+- target_id: CultureMech:004177
+  path: data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  label: beggiatoa_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch040/398/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/398/strict.tsv"
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:004177
+- check_id: mediadive155api-source-access
+  name: 'Exact source content access: mediadive155api'
+  required: false
+  status: unavailable
+  summary: Preserved mediadive155api HTTP 503. The current base formulation is assessed
+    from the exact catalog identity and complete primary; neither historical byte
+    equivalence nor a separate KOMODO variant is inferred.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - mediadive155api-attempt
+- check_id: mediadive155api_retry-source-access
+  name: 'Exact source content access: mediadive155api_retry'
+  required: false
+  status: unavailable
+  summary: Preserved mediadive155api_retry HTTP 503. The current base formulation
+    is assessed from the exact catalog identity and complete primary; neither historical
+    byte equivalence nor a separate KOMODO variant is inferred.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - mediadive155api_retry-attempt
+- check_id: komodo155detail-source-access
+  name: 'Exact source content access: komodo155detail'
+  required: false
+  status: unavailable
+  summary: Preserved komodo155detail HTTP 403. The current base formulation is assessed
+    from the exact catalog identity and complete primary; neither historical byte
+    equivalence nor a separate KOMODO variant is inferred.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - komodo155detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:49.300268Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch040/398/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:50.405207Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-040/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch040/398/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:51.734034Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T22:32:52.552950Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml:1:id: CultureMech:004177
+
+    ./data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml:1:id: CultureMech:004177
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/source-preflight-bound/398/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: supports
+  summary: 19 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 45e2bd8ca79663289e60e529a59515e9d07113eff0548af5a959fa5d6b6415df
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf
+  locator: 'Complete page: main table, preparation and trace-stock table'
+  accessed_at: '2026-10-21T22:02:48.874791Z'
+  support: supports
+  summary: The printed main milligram values and trace-stock stages are retained literally.
+    Water inputs do not establish an independently measured final volume.
+  quote: 155. BEGGIATOA MEDIUM
+  snapshot_sha256: df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact accession 155 row, DSMZ link only
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Catalog identity links the exact KOMODO and DSMZ accessions. The row is
+    not quantity evidence or a source of inferred physiology.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=155'\
+    \ >155</a></TD>\n\t\t\t\t\t<TD>BEGGIATOA medium</TD>\n\t\t\t\t\t<TD> 7.4</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: mediadive155api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/155
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:02:47.980289Z'
+  support: context_only
+  summary: Preserved mediadive155api HTTP 503. The current base formulation is assessed
+    from the exact catalog identity and complete primary; neither historical byte
+    equivalence nor a separate KOMODO variant is inferred.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive155api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/155
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:03:45.468602Z'
+  support: context_only
+  summary: Preserved mediadive155api_retry HTTP 503. The current base formulation
+    is assessed from the exact catalog identity and complete primary; neither historical
+    byte equivalence nor a separate KOMODO variant is inferred.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo155detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=155
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:02:47.728016Z'
+  support: context_only
+  summary: Preserved komodo155detail HTTP 403. The current base formulation is assessed
+    from the exact catalog identity and complete primary; neither historical byte
+    equivalence nor a separate KOMODO variant is inferred.
+  snapshot_sha256: fb99ff09ddbab668343d88b7ecdb33c904d1819aa531f791dc0ca63d34cf2ae0
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch040/398/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 4d925372eae6a973c5af89abd36eed0bb6f8a286487eee15c6f840b18d772b80
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31346
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31346
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T19:24:04.145300Z'
+  support: supports
+  summary: CHEBI:31346 resolves to calcium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: edb5810d97a452bc394ca7af92da37515607646ad80ac91da7fc82b03a20373c
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: CHEBI:32954 resolves to sodium acetate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi4735
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.659368Z'
+  support: supports
+  summary: CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T22:02:49.967006Z'
+  support: supports
+  summary: CHEBI:86209 resolves to cobalt dinitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 8203aa979ab2fa7aceac7d6d367f57cd5a2dc6fe43c2808e815868f7bfe312b6
+- evidence_id: chebi86358
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86358
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:18.556599Z'
+  support: supports
+  summary: CHEBI:86358 resolves to manganese(II) sulfate tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 072159a9c46c0968f25bba11a0baf83019fabb4f6f296084d2b3ef7ee1cc360c
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label":
+    "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term":
+    "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31346": [{"label": "CaSO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:31346", "preferred_term": "CaSO4", "ontology_id": "CHEBI:31346",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label":
+    "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32954": [{"label": "Na-acetate", "match_type": "preferred_term",
+    "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label":
+    "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term", "identifier":
+    "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86209":
+    [{"label": "Co(NO3)2", "match_type": "preferred_term", "identifier": "CHEBI:86209",
+    "preferred_term": "Co(NO3)2", "ontology_id": "CHEBI:86209", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86358": [{"label": "MnSO4 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86358", "preferred_term":
+    "MnSO4 x 4 H2O", "ontology_id": "CHEBI:86358", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml;
+    data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": [{"index": 1, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 2, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:01.819672"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml",
+    "events": 8, "timestamp_issues": [{"index": 1, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 2, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:01.819672"}]}, {"input": "data/normalized_yaml/bacterial/beggiatoa_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: Current code supplies implementation context only. Current guarded merge
+    compatibility and evidence union cannot be blamed universally for the older observed
+    flattened ingredients or missing preparation.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: Current code supplies implementation context only. Current guarded merge
+    compatibility and evidence union cannot be blamed universally for the older observed
+    flattened ingredients or missing preparation.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T22:37:58Z'
+  support: context_only
+  summary: Current code supplies implementation context only. Current guarded merge
+    compatibility and evidence union cannot be blamed universally for the older observed
+    flattened ingredients or missing preparation.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 55 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"CaSO4\",\n    \"\
+    stage\": \"Main calcium sulfate solution\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 20,\n      \"source_unit\"\
+    : \"ml\",\n      \"source_water_basis_ml\": null,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"CaSO4 (saturated solution) 20.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"20 ml saturated solution is not 20\
+    \ g/L CaSO4. Saturation strength and temperature are unspecified; no mass or molarity\
+    \ can be inferred.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"name\": \"\
+    CaSO4\",\n    \"stage\": \"Main calcium sulfate solution\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 20,\n      \"source_unit\"\
+    : \"ml\",\n      \"source_water_basis_ml\": null,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"CaSO4 (saturated solution) 20.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"20 ml saturated solution is not 20\
+    \ g/L CaSO4. Saturation strength and temperature are unspecified; no mass or molarity\
+    \ can be inferred.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"name\": \"\
+    CaSO4\",\n    \"stage\": \"Main calcium sulfate solution\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 20,\n      \"source_unit\"\
+    : \"ml\",\n      \"source_water_basis_ml\": null,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"CaSO4 (saturated solution) 20.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"20 ml saturated solution is not 20\
+    \ g/L CaSO4. Saturation strength and temperature are unspecified; no mass or molarity\
+    \ can be inferred.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"name\": \"\
+    NH4Cl\",\n    \"stage\": \"Main batch\",\n    \"decision\": \"correct\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00045\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.45,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n    \
+    \  \"final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"NH4Cl 0.450 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q5\",\n    \"name\": \"NH4Cl\",\n    \"stage\": \"\
+    Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00045\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.45,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n    \
+    \  \"final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"NH4Cl 0.450 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q6\",\n    \"name\": \"NH4Cl\",\n    \"stage\": \"\
+    Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00045\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.45,\n\
+    \      \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n    \
+    \  \"final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"NH4Cl 0.450 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q7\",\n    \"name\": \"K2HPO4\",\n    \"stage\": \"\
+    Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n  \
+    \      \"field_path\": \"ingredients[2].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.1,\n  \
+    \    \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"\
+    final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"K2HPO4 0.100 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q8\",\n    \"name\": \"K2HPO4\",\n    \"stage\": \"\
+    Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.1,\n  \
+    \    \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"\
+    final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"K2HPO4 0.100 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q9\",\n    \"name\": \"K2HPO4\",\n    \"stage\": \"\
+    Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.1,\n  \
+    \    \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"\
+    final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"K2HPO4 0.100 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q10\",\n    \"name\": \"MgSO4 x 7 H2O\",\n    \"stage\"\
+    : \"Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0002\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n  \
+    \    \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"\
+    final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"MgSO4 x 7 H2O 0.200 mg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q11\",\n    \"name\": \"MgSO4 x 7 H2O\",\n    \"stage\"\
+    : \"Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0002\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n  \
+    \    \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"\
+    final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"MgSO4 x 7 H2O 0.200 mg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q12\",\n    \"name\": \"MgSO4 x 7 H2O\",\n    \"stage\"\
+    : \"Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0002\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n  \
+    \    \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"\
+    final_medium_concentration\": null\n    },\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"MgSO4 x 7 H2O 0.200 mg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The primary explicitly\
+    \ prints mg, not g; no thousandfold reinterpretation is justified.\"\n  },\n \
+    \ {\n    \"decision_id\": \"q13\",\n    \"name\": \"Na-acetate\",\n    \"stage\"\
+    : \"Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.5,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Na-acetate 0.500 g\",\n        \"snapshot_sha256\": \"\
+    df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n        \"\
+    parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q14\",\n    \"name\": \"Na-acetate\",\n    \"stage\": \"\
+    Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.5,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Na-acetate 0.500 g\",\n        \"snapshot_sha256\": \"\
+    df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n        \"\
+    parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q15\",\n    \"name\": \"Na-acetate\",\n    \"stage\": \"\
+    Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.5,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Na-acetate 0.500 g\",\n        \"snapshot_sha256\": \"\
+    df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n        \"\
+    parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q16\",\n    \"name\": \"Nutrient broth\",\n    \"stage\"\
+    : \"Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.5,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Nutrient broth (Difco) 0.500 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q17\",\n    \"name\": \"Nutrient broth\",\n    \"stage\"\
+    : \"Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.5,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Nutrient broth (Difco) 0.500 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q18\",\n    \"name\": \"Nutrient broth\",\n    \"stage\"\
+    : \"Main batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.5,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Nutrient broth (Difco) 0.500 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q19\",\n    \"name\": \"Agar\",\n    \"stage\": \"Optional\
+    \ solid branch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 10,\n      \"source_unit\"\
+    : \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Agar (if necessary) 10.000 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The local notes already\
+    \ say if necessary; do not report this qualifier as absent.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q20\",\n    \"name\": \"Agar\",\n    \"stage\": \"Optional\
+    \ solid branch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 10,\n      \"source_unit\"\
+    : \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Agar (if necessary) 10.000 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The local notes already\
+    \ say if necessary; do not report this qualifier as absent.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q21\",\n    \"name\": \"Agar\",\n    \"stage\": \"Optional\
+    \ solid branch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 10,\n      \"source_unit\"\
+    : \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Agar (if necessary) 10.000 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the literal batch amount.\
+    \ The current numeral is compatible with conversion on a 1000 ml water basis,\
+    \ but the source adds other solutions and does not explicitly declare measured\
+    \ final volume; do not silently assume 1 L or 1025 ml final. The local notes already\
+    \ say if necessary; do not report this qualifier as absent.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q22\",\n    \"name\": \"Catalase\",\n    \"stage\": \"Before\
+    \ inoculation\",\n    \"decision\": \"schema_gap\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"35000\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": [\n      \
+    \  15000,\n        35000\n      ],\n      \"source_unit\": \"units/1000 ml\",\n\
+    \      \"source_water_basis_ml\": null,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Catalase, filter-sterilized 15000 – 35000 units/1000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Activity units are not mass; retain\
+    \ the complete range and per-1000-ml activity denominator. No activity-to-mass\
+    \ factor is supplied, and no matching structured activity-unit enum was found.\"\
+    \n  },\n  {\n    \"decision_id\": \"q23\",\n    \"name\": \"Catalase\",\n    \"\
+    stage\": \"Before inoculation\",\n    \"decision\": \"schema_gap\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"35000\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": [\n      \
+    \  15000,\n        35000\n      ],\n      \"source_unit\": \"units/1000 ml\",\n\
+    \      \"source_water_basis_ml\": null,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Catalase, filter-sterilized 15000 – 35000 units/1000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Activity units are not mass; retain\
+    \ the complete range and per-1000-ml activity denominator. No activity-to-mass\
+    \ factor is supplied, and no matching structured activity-unit enum was found.\"\
+    \n  },\n  {\n    \"decision_id\": \"q24\",\n    \"name\": \"Catalase\",\n    \"\
+    stage\": \"Before inoculation\",\n    \"decision\": \"schema_gap\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"35000\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": [\n      \
+    \  15000,\n        35000\n      ],\n      \"source_unit\": \"units/1000 ml\",\n\
+    \      \"source_water_basis_ml\": null,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Catalase, filter-sterilized 15000 – 35000 units/1000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Activity units are not mass; retain\
+    \ the complete range and per-1000-ml activity denominator. No activity-to-mass\
+    \ factor is supplied, and no matching structured activity-unit enum was found.\"\
+    \n  },\n  {\n    \"decision_id\": \"q25\",\n    \"name\": \"EDTA\",\n    \"stage\"\
+    : \"Trace stock\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"EDTA 0.200 g\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q26\",\n    \"name\": \"EDTA\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"EDTA 0.200 g\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q27\",\n    \"name\": \"EDTA\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.2,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"EDTA 0.200 g\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q28\",\n    \"name\": \"FeSO4 x 7 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    ingredients[9].concentration\",\n        \"stored\": {\n          \"value\": \"\
+    0.7\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"desired\"\
+    : {\n      \"source_amount\": 0.7,\n      \"source_unit\": \"g\",\n      \"source_water_basis_ml\"\
+    : 1000,\n      \"final_medium_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n        \"\
+    source_locator\": \"DSMZ 155 table or preparation\",\n        \"exact_source_quote\"\
+    : \"FeSO4 x 7 H2O 0.700 g\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q29\",\n    \"name\": \"FeSO4 x 7 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.7\",\n          \"unit\": \"G_PER_L\"\n        }\n \
+    \     }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.7,\n      \"source_unit\"\
+    : \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"FeSO4 x 7 H2O 0.700 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q30\",\n    \"name\": \"FeSO4 x 7 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.7\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"\
+    desired\": {\n      \"source_amount\": 0.7,\n      \"source_unit\": \"g\",\n \
+    \     \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\":\
+    \ null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"FeSO4 x 7 H2O 0.700 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q31\",\n    \"name\": \"ZnSO4 x 7 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    ingredients[10].concentration\",\n        \"stored\": {\n          \"value\":\
+    \ \"0.01\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n   \
+    \ \"desired\": {\n      \"source_amount\": 0.01,\n      \"source_unit\": \"g\"\
+    ,\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"ZnSO4 x 7 H2O 0.010 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q32\",\n    \"name\": \"ZnSO4 x 7 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[10].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.01,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"ZnSO4 x 7 H2O 0.010 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q33\",\n    \"name\": \"ZnSO4 x 7 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[10].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.01\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n   \
+    \ \"desired\": {\n      \"source_amount\": 0.01,\n      \"source_unit\": \"g\"\
+    ,\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"ZnSO4 x 7 H2O 0.010 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q34\",\n    \"name\": \"MnSO4 x 4 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    ingredients[11].concentration\",\n        \"stored\": {\n          \"value\":\
+    \ \"0.002\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n  \
+    \  \"desired\": {\n      \"source_amount\": 0.002,\n      \"source_unit\": \"\
+    g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"MnSO4 x 4 H2O 0.002 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q35\",\n    \"name\": \"MnSO4 x 4 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[11].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 0.002,\n      \"\
+    source_unit\": \"g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"MnSO4 x 4 H2O 0.002 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q36\",\n    \"name\": \"MnSO4 x 4 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.002\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n  \
+    \  \"desired\": {\n      \"source_amount\": 0.002,\n      \"source_unit\": \"\
+    g\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"MnSO4 x 4 H2O 0.002 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q37\",\n    \"name\": \"CuSO4 x 5 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    ingredients[12].concentration\",\n        \"stored\": {\n          \"value\":\
+    \ \"5e-06\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n  \
+    \  \"desired\": {\n      \"source_amount\": 5,\n      \"source_unit\": \"μg\"\
+    ,\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"CuSO4 x 5 H2O 5.000 μg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q38\",\n    \"name\": \"CuSO4 x 5 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[12].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"5e-06\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_amount\": 5,\n      \"source_unit\"\
+    : \"μg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"CuSO4 x 5 H2O 5.000 μg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q39\",\n    \"name\": \"CuSO4 x 5 H2O\",\n    \"stage\": \"Trace stock\",\n  \
+    \  \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5e-06\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n  \
+    \  \"desired\": {\n      \"source_amount\": 5,\n      \"source_unit\": \"μg\"\
+    ,\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"CuSO4 x 5 H2O 5.000 μg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q40\",\n    \"name\": \"H3BO3\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 10,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"H3BO3 10.000 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q41\",\n    \"name\": \"H3BO3\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 10,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"H3BO3 10.000 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q42\",\n    \"name\": \"H3BO3\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 10,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"H3BO3 10.000 mg\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q43\",\n    \"name\": \"Co(NO3)2\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 1,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Co(NO3)2 1.000 mg\",\n        \"snapshot_sha256\": \"\
+    df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n        \"\
+    parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q44\",\n    \"name\": \"Co(NO3)2\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 1,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Co(NO3)2 1.000 mg\",\n        \"snapshot_sha256\": \"\
+    df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n        \"\
+    parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q45\",\n    \"name\": \"Co(NO3)2\",\n    \"stage\": \"Trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 1,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Co(NO3)2 1.000 mg\",\n        \"snapshot_sha256\": \"\
+    df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n        \"\
+    parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q46\",\n    \"name\": \"Na2MoO4 x 2 H2O\",\n    \"stage\": \"Trace stock\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[15].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.001\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n  \
+    \  \"desired\": {\n      \"source_amount\": 1,\n      \"source_unit\": \"mg\"\
+    ,\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Na2MoO4 x 2 H2O 1.000 mg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q47\",\n    \"name\": \"Na2MoO4 x 2 H2O\",\n    \"stage\": \"Trace stock\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_amount\": 1,\n     \
+    \ \"source_unit\": \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Na2MoO4 x 2 H2O 1.000 mg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q48\",\n    \"name\": \"Na2MoO4 x 2 H2O\",\n    \"stage\": \"Trace stock\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[15].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   }\n    ],\n    \"desired\": {\n      \"source_amount\": 1,\n      \"source_unit\"\
+    : \"mg\",\n      \"source_water_basis_ml\": 1000,\n      \"final_medium_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Na2MoO4 x 2 H2O 1.000 mg\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Main trace dose\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below) 5.000 ml\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n    \
+    \    \"source_locator\": \"Trace-stock final row; same literal also occurs in\
+    \ main table\",\n        \"exact_source_quote\": \"Distilled water 1000.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are stock preparation amounts\
+    \ per 1000 ml stock water; only 5 ml stock is added. Flat full-strength trace\
+    \ rates cannot be final-medium amounts.\"\n  },\n  {\n    \"decision_id\": \"\
+    q49\",\n    \"name\": \"Main water\",\n    \"stage\": \"Main batch solvent\",\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    ingredients\",\n        \"stored\": [\n          {\n            \"preferred_term\"\
+    : \"CaSO4\",\n            \"term\": {\n              \"id\": \"CHEBI:31346\",\n\
+    \              \"label\": \"calcium sulfate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"20\",\n              \"unit\":\
+    \ \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31346\",\n              \"label\": \"calcium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"NH4Cl\",\n            \"term\": {\n              \"id\": \"CHEBI:31206\",\n\
+    \              \"label\": \"ammonium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.00045\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31206\",\n              \"label\": \"ammonium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"K2HPO4\",\n            \"term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.0001\",\n    \
+    \          \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"MgSO4 x 7 H2O\",\n            \"term\": {\n          \
+    \    \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.0002\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:31795\",\n\
+    \              \"label\": \"magnesium sulfate heptahydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"Na-acetate\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:32954\",\n           \
+    \   \"label\": \"sodium acetate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.5\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:32954\",\n              \"label\": \"sodium acetate\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Nutrient broth\",\n            \"concentration\": {\n              \"value\":\
+    \ \"0.5\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Agar\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    10\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"notes\"\
+    : \" (if necessary)\",\n            \"mediaingredientmech_chebi_term\": {\n  \
+    \            \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Catalase\"\
+    ,\n            \"concentration\": {\n              \"value\": \"35000\",\n   \
+    \           \"unit\": \"G_PER_L\"\n            }\n          },\n          {\n\
+    \            \"preferred_term\": \"EDTA\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:4735\",\n              \"label\": \"ethylenediaminetetraacetic\
+    \ acid\"\n            },\n            \"concentration\": {\n              \"value\"\
+    : \"0.2\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:4735\",\n \
+    \             \"label\": \"ethylenediaminetetraacetic acid\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"FeSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:75836\",\n         \
+    \     \"label\": \"iron(2+) sulfate heptahydrate\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"0.7\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75836\",\n              \"label\": \"iron(2+)\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"ZnSO4 x 7 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate\
+    \ heptahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"concentration\": {\n              \"value\": \"0.002\",\n\
+    \              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CuSO4 x 5 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:31440\",\n              \"label\": \"copper(II) sulfate\
+    \ pentahydrate\"\n            },\n            \"concentration\": {\n         \
+    \     \"value\": \"5e-06\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"mediaingredientmech_chebi_term\": {\n              \"id\"\
+    : \"CHEBI:31440\",\n              \"label\": \"copper(II) sulfate pentahydrate\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    H3BO3\",\n            \"term\": {\n              \"id\": \"CHEBI:33118\",\n  \
+    \            \"label\": \"boric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.01\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:33118\",\n              \"label\": \"boric acid\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Co(NO3)2\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:86209\",\n         \
+    \     \"label\": \"cobalt dinitrate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.001\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:86209\",\n              \"label\": \"cobalt dinitrate\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Na2MoO4 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75213\"\
+    ,\n              \"label\": \"sodium molybdate dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.001\",\n      \
+    \        \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75213\",\n              \"label\": \"sodium\
+    \ molybdate dihydrate\"\n            }\n          }\n        ]\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"CaSO4\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:31346\",\n              \"label\": \"calcium sulfate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    20\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31346\",\n              \"label\": \"calcium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"NH4Cl\",\n            \"term\": {\n              \"id\": \"CHEBI:31206\",\n\
+    \              \"label\": \"ammonium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.00045\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31206\",\n              \"label\": \"ammonium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"K2HPO4\",\n            \"term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.0001\",\n    \
+    \          \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"MgSO4 x 7 H2O\",\n            \"term\": {\n          \
+    \    \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.0002\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:31795\",\n\
+    \              \"label\": \"magnesium sulfate heptahydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"Na-acetate\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:32954\",\n           \
+    \   \"label\": \"sodium acetate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.5\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:32954\",\n              \"label\": \"sodium acetate\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Nutrient broth\",\n            \"concentration\": {\n              \"value\":\
+    \ \"0.5\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Agar\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    10\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"notes\"\
+    : \" (if necessary)\",\n            \"mediaingredientmech_chebi_term\": {\n  \
+    \            \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Catalase\"\
+    ,\n            \"concentration\": {\n              \"value\": \"35000\",\n   \
+    \           \"unit\": \"G_PER_L\"\n            }\n          },\n          {\n\
+    \            \"preferred_term\": \"EDTA\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:4735\",\n              \"label\": \"ethylenediaminetetraacetic\
+    \ acid\"\n            },\n            \"concentration\": {\n              \"value\"\
+    : \"0.2\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:4735\",\n \
+    \             \"label\": \"ethylenediaminetetraacetic acid\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"FeSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:75836\",\n         \
+    \     \"label\": \"iron(2+) sulfate heptahydrate\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"0.7\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75836\",\n              \"label\": \"iron(2+)\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"ZnSO4 x 7 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate\
+    \ heptahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"concentration\": {\n              \"value\": \"0.002\",\n\
+    \              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CuSO4 x 5 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:31440\",\n              \"label\": \"copper(II) sulfate\
+    \ pentahydrate\"\n            },\n            \"concentration\": {\n         \
+    \     \"value\": \"5e-06\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"mediaingredientmech_chebi_term\": {\n              \"id\"\
+    : \"CHEBI:31440\",\n              \"label\": \"copper(II) sulfate pentahydrate\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    H3BO3\",\n            \"term\": {\n              \"id\": \"CHEBI:33118\",\n  \
+    \            \"label\": \"boric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.01\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:33118\",\n              \"label\": \"boric acid\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Co(NO3)2\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:86209\",\n         \
+    \     \"label\": \"cobalt dinitrate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.001\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:86209\",\n              \"label\": \"cobalt dinitrate\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Na2MoO4 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75213\"\
+    ,\n              \"label\": \"sodium molybdate dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.001\",\n      \
+    \        \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75213\",\n              \"label\": \"sodium\
+    \ molybdate dihydrate\"\n            }\n          }\n        ]\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"CaSO4\",\n            \"term\": {\n   \
+    \           \"id\": \"CHEBI:31346\",\n              \"label\": \"calcium sulfate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    20\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31346\",\n              \"label\": \"calcium\
+    \ sulfate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"NH4Cl\",\n            \"term\": {\n              \"id\": \"CHEBI:31206\",\n\
+    \              \"label\": \"ammonium chloride\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.00045\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:31206\",\n              \"label\": \"ammonium\
+    \ chloride\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"K2HPO4\",\n            \"term\": {\n              \"id\": \"CHEBI:131527\"\
+    ,\n              \"label\": \"dipotassium hydrogen phosphate\"\n            },\n\
+    \            \"concentration\": {\n              \"value\": \"0.0001\",\n    \
+    \          \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:131527\",\n              \"label\": \"dipotassium\
+    \ hydrogen phosphate\"\n            }\n          },\n          {\n           \
+    \ \"preferred_term\": \"MgSO4 x 7 H2O\",\n            \"term\": {\n          \
+    \    \"id\": \"CHEBI:31795\",\n              \"label\": \"magnesium sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.0002\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:31795\",\n\
+    \              \"label\": \"magnesium sulfate heptahydrate\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"Na-acetate\",\n\
+    \            \"term\": {\n              \"id\": \"CHEBI:32954\",\n           \
+    \   \"label\": \"sodium acetate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.5\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:32954\",\n              \"label\": \"sodium acetate\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Nutrient broth\",\n            \"concentration\": {\n              \"value\":\
+    \ \"0.5\",\n              \"unit\": \"G_PER_L\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Agar\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n\
+    \            },\n            \"concentration\": {\n              \"value\": \"\
+    10\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"notes\"\
+    : \" (if necessary)\",\n            \"mediaingredientmech_chebi_term\": {\n  \
+    \            \"id\": \"CHEBI:2509\",\n              \"label\": \"agar\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Catalase\"\
+    ,\n            \"concentration\": {\n              \"value\": \"35000\",\n   \
+    \           \"unit\": \"G_PER_L\"\n            }\n          },\n          {\n\
+    \            \"preferred_term\": \"EDTA\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:4735\",\n              \"label\": \"ethylenediaminetetraacetic\
+    \ acid\"\n            },\n            \"concentration\": {\n              \"value\"\
+    : \"0.2\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"\
+    mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:4735\",\n \
+    \             \"label\": \"ethylenediaminetetraacetic acid\"\n            }\n\
+    \          },\n          {\n            \"preferred_term\": \"FeSO4 x 7 H2O\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:75836\",\n         \
+    \     \"label\": \"iron(2+) sulfate heptahydrate\"\n            },\n         \
+    \   \"concentration\": {\n              \"value\": \"0.7\",\n              \"\
+    unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75836\",\n              \"label\": \"iron(2+)\
+    \ sulfate heptahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"ZnSO4 x 7 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate heptahydrate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    0.01\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32312\",\n              \"label\": \"zinc sulfate\
+    \ heptahydrate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"MnSO4 x 4 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:86358\"\
+    ,\n              \"label\": \"manganese(II) sulfate tetrahydrate\"\n         \
+    \   },\n            \"concentration\": {\n              \"value\": \"0.002\",\n\
+    \              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:86358\",\n              \"label\": \"manganese(II)\
+    \ sulfate tetrahydrate\"\n            }\n          },\n          {\n         \
+    \   \"preferred_term\": \"CuSO4 x 5 H2O\",\n            \"term\": {\n        \
+    \      \"id\": \"CHEBI:31440\",\n              \"label\": \"copper(II) sulfate\
+    \ pentahydrate\"\n            },\n            \"concentration\": {\n         \
+    \     \"value\": \"5e-06\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"mediaingredientmech_chebi_term\": {\n              \"id\"\
+    : \"CHEBI:31440\",\n              \"label\": \"copper(II) sulfate pentahydrate\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    H3BO3\",\n            \"term\": {\n              \"id\": \"CHEBI:33118\",\n  \
+    \            \"label\": \"boric acid\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.01\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:33118\",\n              \"label\": \"boric acid\"\n    \
+    \        }\n          },\n          {\n            \"preferred_term\": \"Co(NO3)2\"\
+    ,\n            \"term\": {\n              \"id\": \"CHEBI:86209\",\n         \
+    \     \"label\": \"cobalt dinitrate\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"0.001\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"mediaingredientmech_chebi_term\": {\n         \
+    \     \"id\": \"CHEBI:86209\",\n              \"label\": \"cobalt dinitrate\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Na2MoO4 x 2 H2O\",\n            \"term\": {\n              \"id\": \"CHEBI:75213\"\
+    ,\n              \"label\": \"sodium molybdate dihydrate\"\n            },\n \
+    \           \"concentration\": {\n              \"value\": \"0.001\",\n      \
+    \        \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:75213\",\n              \"label\": \"sodium\
+    \ molybdate dihydrate\"\n            }\n          }\n        ]\n      }\n    ],\n\
+    \    \"desired\": {\n      \"source_amount\": 1000,\n      \"source_unit\": \"\
+    ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"Main table final row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Main solvent input is absent in every\
+    \ layer. Do not treat it as a measured final volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q50\",\n    \"name\": \"Trace water\",\n    \"stage\": \"Trace-stock preparation\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\": \"\
+    solutions\",\n        \"stored\": null\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\",\n     \
+    \   \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"source_amount\": 1000,\n      \"source_unit\"\
+    : \"ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"Trace-stock final row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"This distinct stock solvent entry\
+    \ is absent. Keep it separate from the main water despite identical literal wording.\"\
+    \n  },\n  {\n    \"decision_id\": \"q51\",\n    \"name\": \"Trace dose\",\n  \
+    \  \"stage\": \"Main assembly\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"source_amount\": 5,\n      \"source_unit\"\
+    : \"ml\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Trace element solution (see below) 5.000 ml\",\n     \
+    \   \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"Receiving dose is missing. Retain\
+    \ the source stock identity and eight ingredients; final dilution requires a supported\
+    \ receiving-volume basis.\"\n  },\n  {\n    \"decision_id\": \"q52\",\n    \"\
+    name\": \"pH\",\n    \"stage\": \"Before autoclaving\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.4\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.4\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.4\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.4 using pH indicator paper before autoclaving. The catalase\
+    \ is added just before inoculation.\"\n      }\n    ],\n    \"desired\": {\n \
+    \     \"value\": 7.4\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 7.4 using pH indicator paper before autoclaving.\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"All pH values and the DSMZ preparation\
+    \ agree; no titrant identity, strength or dose is given.\"\n  },\n  {\n    \"\
+    decision_id\": \"q53\",\n    \"name\": \"Missing preparation context\",\n    \"\
+    stage\": \"Target and KOMODO owner\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"pH_stage\": \"before autoclaving\"\
+    ,\n      \"catalase_stage\": \"just before inoculation\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz155\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\",\n        \"\
+    source_locator\": \"DSMZ 155 table or preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.4 using pH indicator paper before autoclaving. The catalase\
+    \ is added just \\nbefore inoculation.\",\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"DSMZ owner already retains this instruction.\
+    \ Only target and KOMODO owner lack it; do not duplicate or erase the maintained\
+    \ DSMZ preparation.\"\n  },\n  {\n    \"decision_id\": \"q54\",\n    \"name\"\
+    : \"Optional agar qualifier\",\n    \"stage\": \"Solid branch\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\",\n        \"field_path\": \"ingredients[6].notes\"\
+    ,\n        \"stored\": \" (if necessary)\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \" (if necessary)\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \" (if\
+    \ necessary)\"\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"physical_state\",\n        \"stored\": \"SOLID_AGAR\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"physical_state\",\n        \"stored\": \"SOLID_AGAR\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"physical_state\",\n        \"stored\": \"SOLID_AGAR\"\
+    \n      }\n    ],\n    \"desired\": {\n      \"agar\": \"if necessary\",\n   \
+    \   \"amount_g\": 10\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Agar (if necessary) 10.000 g\",\n        \"snapshot_sha256\"\
+    : \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\",\n    \
+    \    \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"All local layers already preserve\
+    \ optionality in the ingredient notes. SOLID_AGAR is a supported branch, not evidence\
+    \ that liquid cultivation is excluded.\"\n  },\n  {\n    \"decision_id\": \"q55\"\
+    ,\n    \"name\": \"Unquantified preparation and cultivation\",\n    \"stage\"\
+    : \"Main/trace\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"temperature_value\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"temperature_value\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"temperature_value\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"temperature_range\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/BEGGIATOA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/beggiatoa_medium.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  }\n    ],\n    \"desired\": {\n      \"autoclave_cycle\": null,\n      \"cultivation_temperature_time\"\
+    : null,\n      \"measured_final_volume\": null,\n      \"saturated_CaSO4_strength\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz155\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium155.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 155 table or preparation\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 7.4 using pH indicator paper before autoclaving.\"\
+    ,\n        \"snapshot_sha256\": \"df3ef5dea8adcb2c12f2e074efc093981497e5073642a674816c5a3ddcc0e140\"\
+    ,\n        \"parsed_text_sha256\": \"bbe1a42be7d0766d6dff1a80399978a111cf5767226afc62b1b0f16bf8d89903\"\
+    \n      }\n    ],\n    \"interpretation\": \"No numerical cycle, saturation conditions\
+    \ or incubation parameters are supplied. Catalase is explicitly filter sterilized;\
+    \ no mass conversion is possible.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '14 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 14/16
+    primary and 14/16 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131527
+  - chebi2509
+  - chebi31206
+  - chebi31346
+  - chebi31440
+  - chebi31795
+  - chebi32312
+  - chebi32954
+  - chebi33118
+  - chebi4735
+  - chebi75213
+  - chebi75836
+  - chebi86209
+  - chebi86358
+  details: 'Instance coverage on a 0–100 percent scale, denominator 16: primary 87.50%;
+    secondary 87.50%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 25 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and contributor relationships
+  outcome: supported
+  summary: KOMODO 155 resolves to DSMZ 155 by the exact catalog link and maintained
+    relationship IDs. Both local contributors and complete target are read. The shared
+    source identity is independent of the ingredient fingerprint; unavailable detail
+    does not prove an unseen variant or historical byte equivalence.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - catalog
+- assessment_id: forms
+  area: grounding
+  topic: Literal supplied forms and specificity limits
+  outcome: supported
+  summary: The explicit Mg/Fe/Zn sulfate heptahydrates, Mn tetrahydrate, Cu pentahydrate
+    and sodium molybdate dihydrate agree with their asserted terms. NH4Cl, K2HPO4,
+    EDTA, boric acid and cobalt nitrate match the printed chemical names/formulae;
+    no salt substitution is justified. Source CaSO4 is an aqueous saturated solution
+    and does not identify the original solid hydrate or solution strength. Sodium
+    acetate hydration is unqualified. CHEBI:131527 has a trihydrate synonym despite
+    its unhydrated formula; that synonym alone cannot establish a source hydrate or
+    conversion. Nutrient broth/catalase remain complex product or enzyme assertions
+    without fabricated pure-chemical links.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  - chebi131527
+  - chebi2509
+  - chebi31206
+  - chebi31346
+  - chebi31440
+  - chebi31795
+  - chebi32312
+  - chebi32954
+  - chebi33118
+  - chebi4735
+  - chebi75213
+  - chebi75836
+  - chebi86209
+  - chebi86358
+- assessment_id: evidence-stages
+  area: evidence
+  topic: Quantity evidence and stage boundaries
+  outcome: concern
+  summary: No amount evidence is attached in any layer. The complete primary supports
+    literal batch quantities, not the current mass interpretation of calcium sulfate/catalase
+    or full-strength trace ingredients. Unusual printed mg values must be preserved;
+    stock and main water remain distinct.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  - quantity-inventory
+- assessment_id: preparation
+  area: completeness
+  topic: Owner preparation credit and optional agar
+  outcome: concern
+  summary: The DSMZ owner already retains pre-autoclave pH and just-before-inoculation
+    catalase addition. The generated target and KOMODO owner do not. Agar optionality
+    is present in all three; no blanket missing-qualifier finding is made. Numerical
+    cycle and cultivation conditions are unavailable from the source and not guessed.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - record
+  - owner-1
+  - primary
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complex medium and oxygen metadata
+  outcome: supported
+  summary: Nutrient broth and optional agar support complex undefined medium with
+    a solid branch. The KOMODO Aerobic note is source metadata, not experimental oxygen
+    physiology. No species growth, temperature or strain evidence is inferred from
+    the title.
+  target_ids:
+  - CultureMech:004177
+  evidence_ids:
+  - record
+  - primary
+  - catalog
+findings:
+- finding_id: f1
+  issue_key: culturemech.004177.volume-and-activity-as-mass
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Solution volume and enzyme activity are stored as mass
+  description: All layers encode saturated calcium sulfate 20 ml as 20 G_PER_L and
+    the upper catalase activity bound as 35000 G_PER_L. Neither conversion is dimensionally
+    supported.
+  target_ids:
+  - CultureMech:004177
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[7].concentration
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.004177.trace-stock-flattening-and-volume-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Trace-stock composition is flattened at stock strength
+  description: All eight trace constituents are represented as direct full-stock rates,
+    while the 5 ml receiving dose and both distinct water inputs are absent. Main
+    numerical rates have no independently established final-volume denominator.
+  target_ids:
+  - CultureMech:004177
+  field_paths:
+  - ingredients[*].concentration
+  - solutions
+  - ingredients
+  evidence_ids:
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.004177.preparation-and-evidence-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation and claim evidence are incomplete
+  description: Target and KOMODO omit preparation retained by the DSMZ owner; every
+    layer lacks attached quantity evidence. Existing pH and optional-agar notes must
+    be preserved.
+  target_ids:
+  - CultureMech:004177
+  field_paths:
+  - preparation_steps
+  - ingredients[*].evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.004177.malformed-import-times
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO import timestamps are malformed or naive
+  description: The target and KOMODO owner retain the .fZ import time and a timezone-naive
+    resolver timestamp; no exact replacement time is established.
+  target_ids:
+  - CultureMech:004177
+  field_paths:
+  - curation_history[1].timestamp
+  - curation_history[2].timestamp
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the 20 ml saturated-solution input and full activity range
+    with exact source evidence; preserve unknown stock strength and use honest schema-gap
+    prose for activity if no supported unit representation exists.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004177
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Reconstruct the source stock and dose separately; retain all literal
+    mg and microgram amounts and both water stages. Do not calculate a final concentration
+    from guessed additive volumes.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004177
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve the DSMZ preparation, add missing source context at the owning
+    layer, attach scoped evidence and use guarded regeneration after separately authorized
+    curation.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004177
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/beggiatoa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve the original history and append only an evidenced clarification;
+    do not invent timezone or fractions.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:004177
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_155_BEGGIATOA_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Preserved mediadive155api HTTP 503. The current base formulation is assessed from
+  the exact catalog identity and complete primary; neither historical byte equivalence
+  nor a separate KOMODO variant is inferred.
+- Preserved mediadive155api_retry HTTP 503. The current base formulation is assessed
+  from the exact catalog identity and complete primary; neither historical byte equivalence
+  nor a separate KOMODO variant is inferred.
+- Preserved komodo155detail HTTP 403. The current base formulation is assessed from
+  the exact catalog identity and complete primary; neither historical byte equivalence
+  nor a separate KOMODO variant is inferred.
+- Current base formulation and catalog identity are assessed from inspected sources;
+  historical byte equivalence and a distinct unavailable KOMODO variant are not inferred.
+- Source supplies no measured final volume, saturated calcium sulfate concentration,
+  enzyme activity-to-mass factor or numerical autoclave/cultivation cycle. A formulation
+  reconstruction must preserve these limits.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-040
+- generated-medium
+```
