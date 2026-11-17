@@ -1,0 +1,1107 @@
+# Source and formulation review: 1_2_mrs_1_2_bhi_agar (CultureMech:002842)
+
+- Review: 20261020T071640Z-culturemech-002842-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-20T07:14:26Z
+- Finished UTC: 2026-10-20T07:16:40Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The record replaces the source BHI commercial broth addition with unsupported direct constituent assertions and loses the commercial-product dose/boundary. The MRS and agar quantities agree with the collection recipe. Source supplied-form and preparation details are omitted, and no amount evidence is attached. Exact manufacturer composition remains unverified.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 44 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 005 selects ordinals 41-50 after four validated local batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002842 | data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml | generated | 1_2_mrs_1_2_bhi_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002842 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:002842 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch005/044/strict.tsv |
+| validate-terms | passed | True | CultureMech:002842 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:002842 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:002842 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Verify the asserted supplier-product constituent expansion | unavailable | True | CultureMech:002842 | Catalog identity resolves; the located manufacturer composition manual is unavailable. The cited secondary page does not identify a JCM 491 or exact supplier-product composition/dilution basis. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:002842.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:002842.
+
+4 primary CHEBI identities resolve with matching labels; 1 of 1 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+8 direct ingredient instances; primary coverage 4/8 (50.00%), verified secondary coverage 1/8 (12.50%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Original medium identity versus substituted product representation
+
+identity: concern. Targets: CultureMech:002842.
+
+CultureMech:002842 resolves to JCM 491. The normalized owner and target agree, but both replace the source BHI broth product with separate constituents lacking the original dose/boundary. No source supports these as direct final-medium additions.
+
+### ingredients[0].concentration and supplied form
+
+quantity: supported. Targets: CultureMech:002842.
+
+verified: Lactobacilli MRS broth 27.5 G_PER_L matches the collection mass and explicit provider main-solution g_l on its 1000 ml basis.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### ingredients[1].concentration and supplied form
+
+quantity: concern. Targets: CultureMech:002842.
+
+unsupported: VARIABLE tissue quantities and infusion-origin notes do not represent the source-defined commercial broth addition. Tissue origin is not a variable direct ingredient dose or recovered extract mass.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### ingredients[2].concentration and supplied form
+
+quantity: concern. Targets: CultureMech:002842.
+
+unsupported: VARIABLE tissue quantities and infusion-origin notes do not represent the source-defined commercial broth addition. Tissue origin is not a variable direct ingredient dose or recovered extract mass.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### ingredients[3].concentration and supplied form
+
+quantity: concern. Targets: CultureMech:002842.
+
+unsupported: the direct constituent amount lacks an exact manufacturer composition and product-dose calculation tied to this medium. A component amount for a standalone BHI preparation cannot be transferred unchanged to JCM 491.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### ingredients[4].concentration and supplied form
+
+quantity: concern. Targets: CultureMech:002842.
+
+unsupported: the direct constituent amount lacks an exact manufacturer composition and product-dose calculation tied to this medium. A component amount for a standalone BHI preparation cannot be transferred unchanged to JCM 491.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### ingredients[5].concentration and supplied form
+
+quantity: concern. Targets: CultureMech:002842.
+
+unsupported: the direct constituent amount lacks an exact manufacturer composition and product-dose calculation tied to this medium. A component amount for a standalone BHI preparation cannot be transferred unchanged to JCM 491.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### ingredients[6].concentration and supplied form
+
+quantity: concern. Targets: CultureMech:002842.
+
+unsupported: the direct constituent amount lacks an exact manufacturer composition and product-dose calculation tied to this medium. A component amount for a standalone BHI preparation cannot be transferred unchanged to JCM 491.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### ingredients[7].concentration and supplied form
+
+quantity: supported. Targets: CultureMech:002842.
+
+verified: Agar 15 G_PER_L matches the collection mass and explicit provider main-solution g_l on its 1000 ml basis.
+
+No replacement constituent values are calculated. Retain source commercial-product boundaries unless an exact product specification and receiving-medium basis justify a separate component representation.
+
+### Anatomical terms and generic synonyms
+
+grounding: concern. Targets: CultureMech:002842.
+
+The two UBERON IDs correctly denote anatomical organs, not commercial infusion preparations; MICRO:0000180 resolves with the recorded label. These valid IDs do not validate the source substitution. Generic glucose as an EXACT synonym for D-glucose is broader than the specifically grounded stereochemical form; avoid using that synonym to infer a source identity.
+
+### Original supplied form and preparation context
+
+completeness: concern. Targets: CultureMech:002842.
+
+The MRS supplier qualification, original water basis and applicable collection preparation default are omitted. No medium pH is supplied by the JCM entry. Product-pH text attached to phosphate cannot be promoted to this mixed medium.
+
+### Classification and unsupported growth generalization
+
+scope: supported. Targets: CultureMech:002842.
+
+Agar and complex commercial broths support SOLID_AGAR and COMPLEX/UNDEFINED. Generic cultivation and bacterial filing do not assert particular strain growth. No taxon, DOI, PMID, stock reference or experimental growth outcome is asserted. Ingredient function notes remain generic and do not demonstrate a growth mechanism in this medium.
+
+### History and evidence placement
+
+evidence: concern. Targets: CultureMech:002842.
+
+Source/access notes and import history are recoverable, but the commercial expansion has no dedicated curation event or claim-level evidence. The reference gate examined zero excerpts. Missing support is not remedied by schema-valid VARIABLE fields or catalog identity.
+
+## Findings
+
+### f1: Commercial broth addition replaced by ungrounded constituent formulation
+
+blocker / open / confirmed; issue key: CM002842-commercial-bhi-boundary-lost.
+
+The source defines a commercial BHI broth addition. Target and owner instead assert anatomical source materials and direct chemical constituent quantities without retaining the product dose or validated composition/dilution basis. The result is not a supported representation of JCM 491.
+
+### f2: Source supplier and preparation context are omitted
+
+major / open / confirmed; issue key: CM002842-source-preparation-omissions.
+
+The MRS supplier qualifier, source water/batch context and applicable collection preparation default are absent. Missing pH is not a defect because the collection recipe does not specify one.
+
+### f3: Formulation and expansion lack scoped evidence
+
+minor / open / confirmed; issue key: CM002842-claim-provenance-gap.
+
+The supported MRS/agar amounts and the unsupported expansion have no attached evidence. The product expansion is not documented by a dedicated history event; old import history must not be rewritten to imply it was source content.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the source-defined commercial ingredient boundary in the maintained owner after verifying the collection source. Remove or separately scope unsupported constituent/pH assertions; do not derive a substitute recipe from a generic BHI page. Preserve valid product/catalog provenance without equating catalog existence with formula verification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the exact source product qualifier, batch context and applicable preparation instruction with evidence in the owner, without transferring standalone-product pH into this mixed medium.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+After correction, attach narrow source evidence and append a truthful new curation event; preserve old history. Confirm evidence survives regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch005/044/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch005/044/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml:1:id: CultureMech:002842<br>./data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml:1:id: CultureMech:002842<br> |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17634 resolves to D-glucose and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:34683 resolves to disodium hydrogenphosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| jcm | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=491; GRMD 491, full formulation and page default | supports | Complete JCM entry identifies two supplier-qualified commercial broth powders and agar, plus water basis and applicable collection preparation default. |
+| api | https://mediadive.dsmz.de/rest/medium/J491; data.medium; data.solutions[0].recipe and volume | supports | J491 main solution explicitly reports the original product addition and two other mass-per-liter amounts, with supplier attributes and water row. |
+| volume | https://bacmedia.dsmz.de/pdf/J491; Page 1 complete formulation and final volume | supports | Provider rendering confirms the complete product-level recipe and final-volume header. |
+| bd | https://www.bd.com/en-us/products-and-solutions/products/product-page.237500; Product title, SKU and overview inspected through web tool | context_only | Official catalog confirms 237500 as BD BACTO Brain Heart Infusion, 500 g packaging. It does not establish the claimed constituent amounts or final-medium composition. |
+| cited-page | https://microbenotes.com/brain-heart-infusion-bhi-agar/; Composition table and pH statement, web-rendered lines 67–78 | context_only | The record-cited page describes BHI agar, not JCM 491. Its constituent table and product pH do not establish equivalence to the named supplier broth or its contribution to this mixed medium. Its infusion-powder labels differ from the tissue labels in the target. |
+| manual-access | https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf; Direct retrieval and web-open attempt | context_only | Located manufacturer manual returned HTTP 404. No exact product-composition specification was inspected from it. |
+| uberon0000955 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955; Exact term identifier, label, definition and obsolete flag | supports | UBERON:0000955 resolves to brain. Identifier existence does not establish the supplied ingredient material or product amount. |
+| uberon0000948 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948; Exact term identifier, label, definition and obsolete flag | supports | UBERON:0000948 resolves to heart. Identifier existence does not establish the supplied ingredient material or product amount. |
+| micro0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180; Exact term identifier, label, definition and obsolete flag | supports | MICRO:0000180 resolves to proteose peptone. Identifier existence does not establish the supplied ingredient material or product amount. |
+
+## Limits And Additional Notes
+
+- The official BD catalog page was inspected through web browsing and confirms product 237500 identity, but supplies no constituent specification. The located manufacturer manual returned HTTP 404; exact manufacturer composition/dilution verification remains unavailable.
+- The cited third-party BHI agar page was inspectable through web browsing after direct retrieval returned HTTP 403. It is provenance context, not a manufacturer specification or evidence for the JCM mixed-medium composition.
+- No pathogen-specific growth, enrichment, incubation or supplemental formulation from unrelated sections of the cited page was imported into this review.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T071640Z-culturemech-002842-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_2_mrs_1_2_bhi_agar (CultureMech:002842)'
+started_at: '2026-10-20T07:14:26Z'
+finished_at: '2026-10-20T07:16:40Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The record replaces the source BHI commercial broth addition with unsupported
+  direct constituent assertions and loses the commercial-product dose/boundary. The
+  MRS and agar quantities agree with the collection recipe. Source supplied-form and
+  preparation details are omitted, and no amount evidence is attached. Exact manufacturer
+  composition remains unverified.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+    sha256: ea919b9c6c34e9eba7494888f4dad649a89ec97c55b21e7c46ff5ad60c2f33ef
+    role: target
+  - path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    sha256: 9463721cf73ef427bfc2be4d7bbeb03637284117be3539151457ce631438b007
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 44 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 005 selects ordinals 41-50 after four
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002842
+targets:
+- target_id: CultureMech:002842
+  path: data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  label: 1_2_mrs_1_2_bhi_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch005/044/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/044/strict.tsv"
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002842
+- check_id: manufacturer-composition
+  name: Verify the asserted supplier-product constituent expansion
+  required: true
+  status: unavailable
+  summary: Catalog identity resolves; the located manufacturer composition manual
+    is unavailable. The cited secondary page does not identify a JCM 491 or exact
+    supplier-product composition/dilution basis.
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - bd
+  - manual-access
+  - cited-page
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T07:16:39Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T07:16:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:14:33.796637Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch005/044/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:14:35.801992Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/044/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:14:38.107286Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:14:39.430536Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-20T07:16:39Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_2_mrs_1_2_bhi_agar.yaml:1:id: CultureMech:002842
+
+    ./data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml:1:id: CultureMech:002842
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:14:38.075522Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:07:41.448510Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:11:31.325976Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:14:38.954484Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-20T07:16:39Z'
+  support: supports
+  summary: '{"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: jcm
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=491
+  locator: GRMD 491, full formulation and page default
+  accessed_at: '2026-10-20T07:14:34.940452Z'
+  support: supports
+  summary: Complete JCM entry identifies two supplier-qualified commercial broth powders
+    and agar, plus water basis and applicable collection preparation default.
+  snapshot_sha256: df135cd373cdd58ace6bf137c19034b8753be5158daefa38418091ff0271687c
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J491
+  locator: data.medium; data.solutions[0].recipe and volume
+  accessed_at: '2026-10-20T07:14:35.573322Z'
+  support: supports
+  summary: J491 main solution explicitly reports the original product addition and
+    two other mass-per-liter amounts, with supplier attributes and water row.
+  snapshot_sha256: d0a778fa7c1baa5fce38eae0a269998e29aedf362e50518b7d695c7a703660f7
+- evidence_id: volume
+  kind: database
+  reference: https://bacmedia.dsmz.de/pdf/J491
+  locator: Page 1 complete formulation and final volume
+  accessed_at: '2026-10-20T07:14:36.165597Z'
+  support: supports
+  summary: Provider rendering confirms the complete product-level recipe and final-volume
+    header.
+  quote: 'Final volume: 1000 ml'
+  snapshot_sha256: ae4d3dfbbb3d6af2e42f06ba4bd97f1bf395232f0466e26b9bd7b93a5e301235
+- evidence_id: bd
+  kind: primary_source
+  reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.237500
+  locator: Product title, SKU and overview inspected through web tool
+  accessed_at: '2026-10-20T07:16:39Z'
+  support: context_only
+  summary: Official catalog confirms 237500 as BD BACTO Brain Heart Infusion, 500
+    g packaging. It does not establish the claimed constituent amounts or final-medium
+    composition.
+- evidence_id: cited-page
+  kind: record_content
+  reference: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  locator: Composition table and pH statement, web-rendered lines 67–78
+  accessed_at: '2026-10-20T07:16:39Z'
+  support: context_only
+  summary: The record-cited page describes BHI agar, not JCM 491. Its constituent
+    table and product pH do not establish equivalence to the named supplier broth
+    or its contribution to this mixed medium. Its infusion-powder labels differ from
+    the tissue labels in the target.
+- evidence_id: manual-access
+  kind: validation
+  reference: https://static.bd.com/assets/product/Documents/Integrated%20Diagnostic%20Solutions%20%28IDS%29/DS_CM_Difco-and-BBL-culture-media-manual_UG_EN.pdf
+  locator: Direct retrieval and web-open attempt
+  accessed_at: '2026-10-20T07:16:39Z'
+  support: context_only
+  summary: Located manufacturer manual returned HTTP 404. No exact product-composition
+    specification was inspected from it.
+- evidence_id: uberon0000955
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955
+  locator: Exact term identifier, label, definition and obsolete flag
+  accessed_at: '2026-10-20T07:14:39.936567Z'
+  support: supports
+  summary: UBERON:0000955 resolves to brain. Identifier existence does not establish
+    the supplied ingredient material or product amount.
+  snapshot_sha256: ce200fe58b82652d0f04310c92d23633919fa6ad6aee2a17c6b25c2e490a8877
+- evidence_id: uberon0000948
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948
+  locator: Exact term identifier, label, definition and obsolete flag
+  accessed_at: '2026-10-20T07:14:42.421217Z'
+  support: supports
+  summary: UBERON:0000948 resolves to heart. Identifier existence does not establish
+    the supplied ingredient material or product amount.
+  snapshot_sha256: c658bbcacd89befa47e3bd4859f176db247b3ce67483b6590c91d0865d41aed4
+- evidence_id: micro0000180
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: Exact term identifier, label, definition and obsolete flag
+  accessed_at: '2026-10-20T07:14:43.253786Z'
+  support: supports
+  summary: MICRO:0000180 resolves to proteose peptone. Identifier existence does not
+    establish the supplied ingredient material or product amount.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '4 primary CHEBI identities resolve with matching labels; 1 of 1 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - mim
+  - chebi17634
+  - chebi2509
+  - chebi26710
+  - chebi34683
+  details: 8 direct ingredient instances; primary coverage 4/8 (50.00%), verified
+    secondary coverage 1/8 (12.50%). Percentages use a 0–100 linkage scale, not a
+    scientific correctness score. Complex mixtures without asserted IDs remain ungrounded
+    rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Original medium identity versus substituted product representation
+  outcome: concern
+  summary: CultureMech:002842 resolves to JCM 491. The normalized owner and target
+    agree, but both replace the source BHI broth product with separate constituents
+    lacking the original dose/boundary. No source supports these as direct final-medium
+    additions.
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - jcm
+  - api
+  - bd
+- assessment_id: amount-0
+  area: quantity
+  topic: ingredients[0].concentration and supplied form
+  outcome: supported
+  summary: 'verified: Lactobacilli MRS broth 27.5 G_PER_L matches the collection mass
+    and explicit provider main-solution g_l on its 1000 ml basis.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration and supplied form
+  outcome: concern
+  summary: 'unsupported: VARIABLE tissue quantities and infusion-origin notes do not
+    represent the source-defined commercial broth addition. Tissue origin is not a
+    variable direct ingredient dose or recovered extract mass.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration and supplied form
+  outcome: concern
+  summary: 'unsupported: VARIABLE tissue quantities and infusion-origin notes do not
+    represent the source-defined commercial broth addition. Tissue origin is not a
+    variable direct ingredient dose or recovered extract mass.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: amount-3
+  area: quantity
+  topic: ingredients[3].concentration and supplied form
+  outcome: concern
+  summary: 'unsupported: the direct constituent amount lacks an exact manufacturer
+    composition and product-dose calculation tied to this medium. A component amount
+    for a standalone BHI preparation cannot be transferred unchanged to JCM 491.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: amount-4
+  area: quantity
+  topic: ingredients[4].concentration and supplied form
+  outcome: concern
+  summary: 'unsupported: the direct constituent amount lacks an exact manufacturer
+    composition and product-dose calculation tied to this medium. A component amount
+    for a standalone BHI preparation cannot be transferred unchanged to JCM 491.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: amount-5
+  area: quantity
+  topic: ingredients[5].concentration and supplied form
+  outcome: concern
+  summary: 'unsupported: the direct constituent amount lacks an exact manufacturer
+    composition and product-dose calculation tied to this medium. A component amount
+    for a standalone BHI preparation cannot be transferred unchanged to JCM 491.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: amount-6
+  area: quantity
+  topic: ingredients[6].concentration and supplied form
+  outcome: concern
+  summary: 'unsupported: the direct constituent amount lacks an exact manufacturer
+    composition and product-dose calculation tied to this medium. A component amount
+    for a standalone BHI preparation cannot be transferred unchanged to JCM 491.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: amount-7
+  area: quantity
+  topic: ingredients[7].concentration and supplied form
+  outcome: supported
+  summary: 'verified: Agar 15 G_PER_L matches the collection mass and explicit provider
+    main-solution g_l on its 1000 ml basis.'
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+  - volume
+  - bd
+  details: No replacement constituent values are calculated. Retain source commercial-product
+    boundaries unless an exact product specification and receiving-medium basis justify
+    a separate component representation.
+- assessment_id: grounding-other
+  area: grounding
+  topic: Anatomical terms and generic synonyms
+  outcome: concern
+  summary: The two UBERON IDs correctly denote anatomical organs, not commercial infusion
+    preparations; MICRO:0000180 resolves with the recorded label. These valid IDs
+    do not validate the source substitution. Generic glucose as an EXACT synonym for
+    D-glucose is broader than the specifically grounded stereochemical form; avoid
+    using that synonym to infer a source identity.
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - uberon0000955
+  - uberon0000948
+  - micro0000180
+  - chebi17634
+  - jcm
+- assessment_id: preparation
+  area: completeness
+  topic: Original supplied form and preparation context
+  outcome: concern
+  summary: The MRS supplier qualification, original water basis and applicable collection
+    preparation default are omitted. No medium pH is supplied by the JCM entry. Product-pH
+    text attached to phosphate cannot be promoted to this mixed medium.
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - cited-page
+- assessment_id: scope
+  area: scope
+  topic: Classification and unsupported growth generalization
+  outcome: supported
+  summary: Agar and complex commercial broths support SOLID_AGAR and COMPLEX/UNDEFINED.
+    Generic cultivation and bacterial filing do not assert particular strain growth.
+    No taxon, DOI, PMID, stock reference or experimental growth outcome is asserted.
+    Ingredient function notes remain generic and do not demonstrate a growth mechanism
+    in this medium.
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - jcm
+  - api
+- assessment_id: audit
+  area: evidence
+  topic: History and evidence placement
+  outcome: concern
+  summary: Source/access notes and import history are recoverable, but the commercial
+    expansion has no dedicated curation event or claim-level evidence. The reference
+    gate examined zero excerpts. Missing support is not remedied by schema-valid VARIABLE
+    fields or catalog identity.
+  target_ids:
+  - CultureMech:002842
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - bd
+  - jcm
+findings:
+- finding_id: f1
+  issue_key: CM002842-commercial-bhi-boundary-lost
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Commercial broth addition replaced by ungrounded constituent formulation
+  description: The source defines a commercial BHI broth addition. Target and owner
+    instead assert anatomical source materials and direct chemical constituent quantities
+    without retaining the product dose or validated composition/dilution basis. The
+    result is not a supported representation of JCM 491.
+  target_ids:
+  - CultureMech:002842
+  field_paths:
+  - ingredients[1:7]
+  - notes
+  - ingredients[*].supplier_catalog
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - bd
+  - cited-page
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM002842-source-preparation-omissions
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source supplier and preparation context are omitted
+  description: The MRS supplier qualifier, source water/batch context and applicable
+    collection preparation default are absent. Missing pH is not a defect because
+    the collection recipe does not specify one.
+  target_ids:
+  - CultureMech:002842
+  field_paths:
+  - ingredients[0].preferred_term
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM002842-claim-provenance-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Formulation and expansion lack scoped evidence
+  description: The supported MRS/agar amounts and the unsupported expansion have no
+    attached evidence. The product expansion is not documented by a dedicated history
+    event; old import history must not be rewritten to imply it was source content.
+  target_ids:
+  - CultureMech:002842
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm
+  - api
+  - bd
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Restore the source-defined commercial ingredient boundary in the maintained
+    owner after verifying the collection source. Remove or separately scope unsupported
+    constituent/pH assertions; do not derive a substitute recipe from a generic BHI
+    page. Preserve valid product/catalog provenance without equating catalog existence
+    with formula verification.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002842
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the exact source product qualifier, batch context and applicable
+    preparation instruction with evidence in the owner, without transferring standalone-product
+    pH into this mixed medium.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002842
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: After correction, attach narrow source evidence and append a truthful
+    new curation event; preserve old history. Confirm evidence survives regeneration.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002842
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_2_mrs_1_2_bhi_agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The official BD catalog page was inspected through web browsing and confirms product
+  237500 identity, but supplies no constituent specification. The located manufacturer
+  manual returned HTTP 404; exact manufacturer composition/dilution verification remains
+  unavailable.
+- The cited third-party BHI agar page was inspectable through web browsing after direct
+  retrieval returned HTTP 403. It is provenance context, not a manufacturer specification
+  or evidence for the JCM mixed-medium composition.
+- No pathogen-specific growth, enrichment, incubation or supplemental formulation
+  from unrelated sections of the cited page was imported into this review.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-005
+- generated-medium
+```

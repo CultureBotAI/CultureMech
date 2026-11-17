@@ -1,0 +1,1805 @@
+# Source and formulation review: 1_2_sme_medium (CultureMech:009958)
+
+- Review: 20261020T072823Z-culturemech-009958-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-20T07:26:16Z
+- Finished UTC: 2026-10-20T07:28:23Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M563 and JCM 559 identity agree. Three milligram-valued components are encoded with unchanged numerals as grams, water volume is encoded as mass, and preparation/pH/gas-stage context is omitted. The complex/undefined classification conflicts with the source inventory and provider metadata. Primary ingredient IDs resolve, but the historical sulfur registry key remains unverified.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 49 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 005 selects ordinals 41-50 after four validated local batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009958 | data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml | generated | 1_2_sme_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009958 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:009958 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch005/049/strict.tsv |
+| validate-terms | passed | True | CultureMech:009958 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:009958 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:009958 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Resolve historical MediaIngredientMech:001072 | unavailable | True | CultureMech:009958 | The ignored-inclusive search finds record references but the pinned current index has no exact historical-key row. Current elemental-sulfur ontology identity does not validate that historical key; rejected powder-label index rows must not be promoted to live mappings. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:009958.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:009958.
+
+19 primary CHEBI identities resolve with matching labels; 10 of 10 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+19 direct ingredient instances; primary coverage 19/19 (100.00%), verified secondary coverage 10/19 (52.63%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Source medium and maintained owner
+
+identity: supported. Targets: CultureMech:009958.
+
+CultureMech:009958 / TOGO M563 resolves to JCM 559. Target scientific content agrees with the one maintained owner. No new strain or experimental growth claim is established by this identity.
+
+### ingredients[0].concentration
+
+quantity: concern. Targets: CultureMech:009958.
+
+correct: source water is a volume, not 1 G_PER_L. Preserve original water/batch context without assuming density.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[1].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: MgSO4・7H2O 3.5 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[2].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: NaCl 13.85 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[3].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: CaCl2・2H2O 0.38 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[4].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: KH2PO4 0.5 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[5].concentration
+
+quantity: concern. Targets: CultureMech:009958.
+
+correct: Resazurin retains source numeric 1 but changes milligrams to G_PER_L. Source and provider agree on the original milligram amount.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[6].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: MgCl2・6H2O 2.75 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[7].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: Na2S・9H2O 0.5 G_PER_L matches the source batch mass and provider-declared main-recipe basis. The source directs addition via a solution; its percent basis and liquid dose must not be invented from this mass claim.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[8].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: H3BO3 0.015 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[9].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: KCl 0.33 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[10].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: NaHCO3 0.16 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[11].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: (NH4)2SO4 0.25 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[12].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: Sulfur (powder) 10 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[13].concentration
+
+quantity: supported. Targets: CultureMech:009958.
+
+verified amount: NaBr 0.05 G_PER_L matches the source batch mass and provider-declared main-recipe basis. 
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[14].concentration
+
+quantity: concern. Targets: CultureMech:009958.
+
+correct: SrCl2・6H2O retains source numeric 7.5 but changes milligrams to G_PER_L. Source and provider agree on the original milligram amount.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[15].concentration
+
+quantity: concern. Targets: CultureMech:009958.
+
+correct: KI retains source numeric 0.05 but changes milligrams to G_PER_L. Source and provider agree on the original milligram amount.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[16].concentration
+
+quantity: concern. Targets: CultureMech:009958.
+
+not_quantified as an individual mass-per-liter addition: the gas is named in the source preparation, with stage-specific mixture context. VARIABLE avoids inventing a dissolved concentration but does not retain those conditions by itself.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[17].concentration
+
+quantity: concern. Targets: CultureMech:009958.
+
+not_quantified as an individual mass-per-liter addition: the gas is named in the source preparation, with stage-specific mixture context. VARIABLE avoids inventing a dissolved concentration but does not retain those conditions by itself.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### ingredients[18].concentration
+
+quantity: concern. Targets: CultureMech:009958.
+
+not_quantified as an individual mass-per-liter addition: the gas is named in the source preparation, with stage-specific mixture context. VARIABLE avoids inventing a dissolved concentration but does not retain those conditions by itself.
+
+All nineteen assertions checked separately. No gas uptake, dissolved-gas concentration, arbitrary gas dose or stock volume is calculated.
+
+### Primary chemical forms and historical secondary key
+
+grounding: unknown. Targets: CultureMech:009958.
+
+All primary chemical identifiers resolve with matching labels, including the explicit hydrates, molecular gases and elemental sulfur material. The historical sulfur linkage is unresolved. Current pinned index includes a live generic sulfur row and rejected powder-specific rows; neither verifies the old numeric key.
+
+### pH, gas phases and addition sequence
+
+completeness: concern. Targets: CultureMech:009958.
+
+The complete source preparation distinguishes gas phases and solution addition and supplies pH and recipe-specific treatment context. Target and owner retain none of that prose or pH. Component annotations and VARIABLE gas fields are not a substitute for preparation scope.
+
+### Complex versus chemically specified composition
+
+scope: concern. Targets: CultureMech:009958.
+
+COMPLEX/UNDEFINED is unsupported by the named chemical inventory and conflicts with provider complex_medium=no. Schema UNDEFINED requires chemically undefined components such as extracts; missing gas-stage or dose evidence does not itself turn a named chemical into an undefined mixture. Reconcile classification after source-context correction rather than infer a nutritional class.
+
+Schema MediumTypeEnum and MediumCompositionTypeEnum definitions were inspected. No new nutritional or functional-role classification is proposed.
+
+### Physical state and role/growth claims
+
+scope: supported. Targets: CultureMech:009958.
+
+LIQUID agrees with the absence of gelling material. Imported role/property notes match TOGO source rows; these are annotations, not experimentally verified organism-specific mechanisms. No taxon, DOI, PMID or strain growth claim is asserted.
+
+### Claim-level evidence and history
+
+evidence: concern. Targets: CultureMech:009958.
+
+The source is recoverable, but all nineteen claims lack narrow evidence in target and owner. The first history entry is not chronologically first, but the recorded timestamps are preserved; no backdating or rewriting is justified. Reference validation examined zero excerpts.
+
+## Findings
+
+### f1: Milligram amounts and water volume are encoded as grams
+
+major / open / confirmed; issue key: CM009958-source-unit-errors.
+
+Resazurin, strontium chloride hydrate and potassium iodide retain source numeric amounts while losing the milligram unit. Water volume is likewise recast as mass concentration.
+
+### f2: Source preparation and pH context are missing
+
+major / open / confirmed; issue key: CM009958-preparation-context-omitted.
+
+The source preparation, pH, staged gas handling and solution-addition context are absent from both local records. VARIABLE gas fields alone cannot encode the source conditions.
+
+### f3: Complex/undefined classification lacks source support
+
+major / open / confirmed; issue key: CM009958-composition-classification.
+
+The recipe inventory names chemical constituents rather than undefined extracts, and the source provider explicitly marks this medium non-complex. The local classifications therefore lack support under the schema definitions.
+
+### f4: Source quantities and preparation lack scoped evidence
+
+minor / open / confirmed; issue key: CM009958-claim-evidence-gap.
+
+No ingredient or preparation evidence is attached; import histories and passing reference validation with zero excerpts cannot validate the amounts.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Correct source units and batch context in the maintained owner, preserving exact hydrate identities. Do not infer density or calculate unsupported gas/stock quantities.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain exact source preparation context and scope each gas and solution claim appropriately. Preserve source ambiguity in percent basis instead of inventing a liquid dose.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Reconcile both composition classifications with the corrected source representation and schema definitions; missing numerical context should remain explicit rather than being treated as an undefined ingredient.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Add narrow unit, chemical-form and stage evidence after correcting the maintained record; preserve it through regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch005/049/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch005/049/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml:1:id: CultureMech:009958<br>./data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml:1:id: CultureMech:009958<br> |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:16526 resolves to carbon dioxide and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17997 resolves to dinitrogen and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi18276 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:18276 resolves to dihydrogen and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32139 resolves to sodium hydrogencarbonate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32588 resolves to potassium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi33403 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:33403 resolves to elemental sulfur and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi36385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_36385; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:36385 resolves to strontium dichloride hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:62946 resolves to ammonium sulfate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63004 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63004; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63004 resolves to sodium bromide and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi8346 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8346; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:8346 resolves to potassium iodide and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:8806 resolves to Resazurin and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63004": [{"label": "NaBr", "match_type": "preferred_term", "identifier": "CHEBI:63004", "preferred_term": "NaBr", "ontology_id": "CHEBI:63004", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8346": [{"label": "KI", "match_type": "preferred_term", "identifier": "CHEBI:8346", "preferred_term": "KI", "ontology_id": "CHEBI:8346", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M563; meta; components[0].items; comments[0] | supports | Complete component list, source accession, pH metadata and preparation comment inspected. |
+| jcm | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=559; GRMD 559 complete recipe and preparation paragraph | supports | Collection source preserves original mass units and detailed preparation stages; its recipe-specific instructions take precedence over the collection default. |
+| api | https://mediadive.dsmz.de/rest/medium/J559; data.medium; data.solutions[0] | supports | J559 identifies a non-complex medium, with exact compound quantities and explicit main-solution basis; preparation is retained separately. |
+| render | https://bacmedia.dsmz.de/pdf/J559; Page 1 complete formulation and preparation | supports | Provider rendering confirms original units, declared volume and source preparation. |
+| trace | repository source comparison; All nineteen source-row comparisons, ignored-inclusive legacy-key search and pinned-index lookup | context_only | {"accessed_at": "2026-10-20T07:27:11.363871+00:00", "amount_trace": [{"index": 0, "name": "Distilled water", "source_amount": 1, "source_unit": "L", "target_concentration": {"value": "1", "unit": "G_PER_L"}, "notes_match": true}, {"index": 1, "name": "MgSO4\u30fb7H2O", "source_amount": 3.5, "source_unit": "g", "target_concentration": {"value": "3.5", "unit": "G_PER_L"}, "notes_match": true}, {"index": 2, "name": "NaCl", "source_amount": 13.85, "source_unit": "g", "target_concentration": {"value": "13.85", "unit": "G_PER_L"}, "notes_match": true}, {"index": 3, "name": "CaCl2\u30fb2H2O", "source_amount": 0.38, "source_unit": "g", "target_concentration": {"value": "0.38", "unit": "G_PER_L"}, "notes_match": true}, {"index": 4, "name": "KH2PO4", "source_amount": 0.5, "source_unit": "g", "target_concentration": {"value": "0.5", "unit": "G_PER_L"}, "notes_match": true}, {"index": 5, "name": "Resazurin", "source_amount": 1, "source_unit": "mg", "target_concentration": {"value": "1", "unit": "G_PER_L"}, "notes_match": true}, {"index": 6, "name": "MgCl2\u30fb6H2O", "source_amount": 2.75, "source_unit": "g", "target_concentration": {"value": "2.75", "unit": "G_PER_L"}, "notes_match": true}, {"index": 7, "name": "Na2S\u30fb9H2O", "source_amount": 0.5, "source_unit": "g", "target_concentration": {"value": "0.5", "unit": "G_PER_L"}, "notes_match": true}, {"index": 8, "name": "H3BO3", "source_amount": 0.015, "source_unit": "g", "target_concentration": {"value": "0.015", "unit": "G_PER_L"}, "notes_match": true}, {"index": 9, "name": "KCl", "source_amount": 0.33, "source_unit": "g", "target_concentration": {"value": "0.33", "unit": "G_PER_L"}, "notes_match": true}, {"index": 10, "name": "NaHCO3", "source_amount": 0.16, "source_unit": "g", "target_concentration": {"value": "0.16", "unit": "G_PER_L"}, "notes_match": true}, {"index": 11, "name": "(NH4)2SO4", "source_amount": 0.25, "source_unit": "g", "target_concentration": {"value": "0.25", "unit": "G_PER_L"}, "notes_match": true}, {"index": 12, "name": "Sulfur (powder)", "source_amount": 10, "source_unit": "g", "target_concentration": {"value": "10", "unit": "G_PER_L"}, "notes_match": true}, {"index": 13, "name": "NaBr", "source_amount": 0.05, "source_unit": "g", "target_concentration": {"value": "0.05", "unit": "G_PER_L"}, "notes_match": true}, {"index": 14, "name": "SrCl2\u30fb6H2O", "source_amount": 7.5, "source_unit": "mg", "target_concentration": {"value": "7.5", "unit": "G_PER_L"}, "notes_match": true}, {"index": 15, "name": "KI", "source_amount": 0.05, "source_unit": "mg", "target_concentration": {"value": "0.05", "unit": "G_PER_L"}, "notes_match": true}, {"index": 16, "name": "Carbon dioxide gas", "source_amount": null, "source_unit": null, "target_concentration": {"value": "variable", "unit": "VARIABLE"}, "notes_match": true}, {"index": 17, "name": "Nitrogen gas", "source_amount": null, "source_unit": null, "target_concentration": {"value": "variable", "unit": "VARIABLE"}, "notes_match": true}, {"index": 18, "name": "Hydrogen gas", "source_amount": null, "source_unit": null, "target_concentration": {"value": "variable", "unit": "VARIABLE"}, "notes_match": true}], "legacy_search": {"argv": ["rg", "--no-ignore", "--hidden", "-l", "MediaIngredientMech:001072", "."], "matching_files": ["./data/normalized_yaml/archaea/TOGO_M176_Desulfurococcus_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M303_Acidilobus_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M980_Acidilobus_Saccharovorans_Medium.yaml", "./data/normalized_yaml/archaea/natranaeroarchaeum_medium_aarc1.yaml", "./data/normalized_yaml/archaea/TOGO_M2675_Hyperthermus_Butylicus_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M1641_Pyrococcus_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M167_Acidianus_Infernus_Medium_A.yaml", "./data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M189_Thermoproteus_Tenax_Medium.yaml", "./data/merge_yaml/merged/togo_medium_m179.yaml", "./data/merge_yaml/merged/Modified_Tc_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M1630_Pyrodictium_Medium.yaml", "./data/merge_yaml/merged/pyrodictium_medium__0138f786.yaml", "./data/merge_yaml/merged/MJAIS_MEDIUM.yaml", "./data/merge_yaml/merged/pyrococcus_medium__a85c0932.yaml", "./data/merge_yaml/merged/thermoproteus_neutrophilus_medium__35522aa7.yaml", "./data/normalized_yaml/archaea/TOGO_M171_Stygiolobus_Medium.yaml", "./data/merge_yaml/merged/thermoproteus_neutrophilus_medium__9b901d75.yaml", "./data/normalized_yaml/archaea/pyrodictium_occultum_medium.yaml", "./data/normalized_yaml/bacterial/togo_medium_m179.yaml", "./data/merge_yaml/merged/halodesulfuriarchaeum_medium__13fcab0a.yaml", "./data/normalized_yaml/archaea/sulfolobus_metallicus_medium.yaml", "./data/merge_yaml/merged/hyperthermus_butylicus_medium__c3d8d5c0.yaml", "./data/merge_yaml/merged/MODIFIED_NAUTILIA_LITHOTROPHICA_MEDIUM.yaml", "./data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml", "./data/merge_yaml/merged/RSULFAC1_MEDIUM.yaml", "./data/merge_yaml/merged/ravot_modified_medium_for_thermoanaerovibrio_sp_r101.yaml", "./data/merge_yaml/merged/Medium_2_for_Sulfurospirillum.yaml", "./data/normalized_yaml/archaea/TOGO_M233_Thermococcus_Fumicolans_Medium.yaml", "./data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml", "./data/merge_yaml/merged/ACIDIFERROBACTER_MEDIUM.yaml", "./data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M169_Acidianus_Brierleyi_Medium.yaml", "./data/merge_yaml/merged/MJYTFSH_MEDIUM.yaml", "./data/merge_yaml/merged/togo_medium_m199.yaml", "./data/normalized_yaml/archaea/TOGO_M236_Stetteria_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M177_Pyrobaculum_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M151_Thermococcus_Stetteri_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M152_Thermococcus_Litoralis_Medium.yaml", "./data/merge_yaml/merged/NATRANAEROARCHAEUM_MEDIUM_AARC1.yaml", "./data/normalized_yaml/archaea/TOGO_M150_Thermococcus_Celer_Medium.yaml", "./data/merge_yaml/merged/PHOSPHOAC3_MEDIUM.yaml", "./data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M319_MMJY_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml", "./data/merge_yaml/merged/Thermoproteus_and_Vulcanisaeta_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M273_Thermococcus_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M845_Thermococcales_Rich_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M1333_Thermoplasma_Kamchatkensis_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml", "./data/merge_yaml/merged/mmjhs_medium__dec192f9.yaml", "./data/normalized_yaml/archaea/TOGO_M1633_Thermoproteus_neutrophilus_Medium.yaml", "./data/normalized_yaml/archaea/thermoproteus_and_vulcanisaeta_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M228_Thermocladium_Medium.yaml", "./data/normalized_yaml/archaea/acidianus_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M291_Vulcanisaeta_Medium.yaml", "./data/merge_yaml/merged/thermococcus_celer_medium__482c1c27.yaml", "./data/normalized_yaml/archaea/TOGO_M168_Acidianus_Infernus_Medium_B.yaml", "./data/merge_yaml/merged/FERVIDOBACTERIUM_TIANCHISUM_MEDIUM.yaml", "./data/normalized_yaml/archaea/sulfolobus_medium_anaerobic.yaml", "./reports/yaml_record_review/20260924T090149Z-mmj_tl_medium.md", "./data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml", "./reports/yaml_record_review/20260924T234748Z-pyrococcus_medium__a85c0932.md", "./data/merge_yaml/merged/mmjhs_medium__2514b7be.yaml", "./data/normalized_yaml/archaea/TOGO_M188_Thermoproteus_Neutrophilus_Medium.yaml", "./data/normalized_yaml/archaea/thermoproteus_tenax_medium_2.yaml", "./data/merge_yaml/merged/Acidianus_medium.yaml", "./reports/ingredient_concentration_curation/20261008-methanogen-boundaries/next-stock-source-context.json", "./data/merge_yaml/merged/Pyrodictium_Abysii_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M493_MMJ-TL_Medium.yaml", "./data/merge_yaml/merged/Thermoproteus_tenax_Medium_2.yaml", "./data/normalized_yaml/bacterial/TOGO_M715_Nautilia_Abyssi_Medium.yaml", "./data/merge_yaml/merged/MODIFIED_MMJHS_MEDIUM_FOR_GO25.yaml", "./data/merge_yaml/merged/Hydrogenothermus_Medium.yaml", "./data/merge_yaml/merged/sulfolobus_medium_anaerobic.yaml", "./data/merge_yaml/merged/HSO_medium.yaml", "./data/merge_yaml/merged/Pyrodictium_Ocultum_Medium.yaml", "./data/merge_yaml/merged/BN3_MEDIUM.yaml", "./data/merge_yaml/merged/DESULFURELLA_TR1_MEDIUM.yaml", "./data/merge_yaml/merged/AS_medium.yaml", "./reports/yaml_record_review/20260921T053031Z-1_2_sme_medium__5be55e13.md", "./data/merge_yaml/merged/ST65_MEDIUM.yaml", "./data/merge_yaml/merged/pyrococcus_medium__3fe52a8c.yaml", "./reports/ingredient_concentration_curation/20261008-j261-variant/plan.json", "./data/merge_yaml/merged/MJAIS_MD_MEDIUM.yaml", "./reports/yaml_record_review/20260921T153829Z-AS_medium.md", "./data/merge_yaml/merged/THERMOPLASMA_KAMCHATKENSIS_MEDIUM.yaml", "./reports/yaml_record_review/20260924T091108Z-mmjhs_medium__2514b7be.md", "./data/merge_yaml/merged/mmj_mh_medium.yaml", "./data/merge_yaml/merged/sme_medium__f4fd2c7b.yaml", "./data/merge_yaml/merged/DESULFUROCOCCUS_AMYLOLYTICUS_MEDIUM.yaml", "./data/merge_yaml/merged/vulcanisaeta_medium__d46ad1a7.yaml", "./data/merge_yaml/merged/NITRATIRUPTOR_AND_NITRATIFRACTOR_MEDIUM.yaml", "./data/merge_yaml/merged/MBBS_MEDIUM_FOR_HYDROGENOBACTER.yaml", "./data/merge_yaml/merged/WT1_MEDIUM.yaml", "./data/merge_yaml/merged/THERMOCOCCALES_RICH_MEDIUM.yaml", "./data/merge_yaml/merged/RAVOT_MODIFIED_MEDIUM_FOR_MARINITOGA_LITORALIS.yaml", "./data/merge_yaml/merged/mmjhs_2_medium.yaml", "./data/merge_yaml/merged/mmj_ho_medium.yaml", "./data/merge_yaml/merged/KA22_MEDIUM.yaml", "./data/merge_yaml/merged/NAUTILIA_ABYSSI_MEDIUM.yaml", "./data/merge_yaml/merged/thermococcus_stetteri_medium__77e25d6a.yaml", "./data/merge_yaml/merged/Dsmz_medium_854.yaml", "./data/merge_yaml/merged/TcP_Medium.yaml", "./data/merge_yaml/merged/stetteria_medium__0a06dac3.yaml", "./data/merge_yaml/merged/thermococcus_medium__89e8f0c8.yaml", "./data/merge_yaml/merged/ACIDILOBUS_MEDIUM.yaml", "./data/merge_yaml/merged/sulfolobus_medium_anaerobic_for_dsm_2162.yaml", "./data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml", "./data/merge_yaml/merged/DISSULFURIMICROBIUM_HYDROTHERMALE_MEDIUM.yaml", "./data/merge_yaml/merged/an1_medium__92dd8890.yaml", "./data/merge_yaml/merged/MJTSO_MEDIUM.yaml", "./data/merge_yaml/merged/THERMOCLADIUM_MEDIUM.yaml", "./data/merge_yaml/merged/mmj_tl_medium.yaml", "./data/merge_yaml/merged/Sulfolobus_metallicus_medium.yaml", "./data/merge_yaml/merged/MMJY_MEDIUM.yaml", "./data/merge_yaml/merged/DESULFURELLA_MEDIUM.yaml", "./data/merge_yaml/merged/acidianus_brierleyi_medium__f8a53e2d.yaml", "./data/merge_yaml/merged/Pyrodictium_occultum_Medium.yaml", "./data/merge_yaml/merged/thiomonas_cuprina_medium__c5dba07d.yaml", "./data/merge_yaml/merged/THERMOPROTEUS_TENAX_MEDIUM.yaml", "./data/merge_yaml/merged/MODIFIED_MMJS_MEDIUM.yaml", "./data/merge_yaml/merged/Acidilobus_Saccharovorans_Medium.yaml", "./data/merge_yaml/merged/pyrobaculum_medium__1bd28dc9.yaml", "./data/merge_yaml/merged/togo_medium_m178.yaml", "./data/merge_yaml/merged/bhi_s_medium.yaml", "./data/merge_yaml/merged/MMJS_medium.yaml", "./data/merge_yaml/merged/AEROBIC_SULFOLOBALES_MEDIUM.yaml", "./data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml", "./data/merge_yaml/merged/Modified_MJYS_medium.yaml", "./data/normalized_yaml/bacterial/modified_tc_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M362_MJAIS_Medium.yaml", "./reports/yaml_record_review/20260924T091447Z-mmjhs_medium__dec192f9.md", "./data/normalized_yaml/bacterial/TOGO_M3130_Desulfurella_Medium.yaml", "./data/normalized_yaml/bacterial/medium_2_for_sulfurospirillum.yaml", "./data/normalized_yaml/bacterial/togo_medium_m199.yaml", "./data/normalized_yaml/bacterial/TOGO_M281_WT1_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M914_Phosphoac3_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M449_KA22_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M1097_ST65_Medium.yaml", "./reports/yaml_record_review/20260921T094620Z-AEROBIC_SULFOLOBALES_MEDIUM.md", "./data/normalized_yaml/bacterial/TOGO_M1094_Dissulfurimicrobium_Hydrothermale_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M495_MMJ-MH_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M776_Modified_Nautilia_Lithotrophica_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M415_MJYTFSH_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M280_Hydrogenothermus_Medium.yaml", "./reports/yaml_record_review/20260924T084809Z-mmj_ho_medium.md", "./reports/yaml_record_review/20260924T234238Z-pyrococcus_medium__3fe52a8c.md", "./data/normalized_yaml/bacterial/TOGO_M342_SME_Medium.yaml", "./reports/yaml_record_review/20260924T085441Z-mmj_mh_medium.md", "./data/normalized_yaml/bacterial/TOGO_M880_Rsulfac1_Medium.yaml", "./reports/yaml_record_review/20260924T233829Z-pyrobaculum_medium__1bd28dc9.md", "./data/normalized_yaml/bacterial/TOGO_M421_MMJHS_Medium.yaml", "./data/normalized_yaml/bacterial/hso_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M1080_MMJHS-2_Medium.yaml", "./reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/next-j261-context.json", "./reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/plan.json", "./data/normalized_yaml/bacterial/TOGO_M1846_MMJHS_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M447_Mjtso_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M259_AN1_Medium.yaml", "./data/normalized_yaml/bacterial/as_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M431_BN3_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M418_MJAIS_MD_Medium.yaml", "./data/normalized_yaml/bacterial/nitratiruptor_and_nitratifractor_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M420_MMJHS_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M1777_MMJS_medium.yaml", "./reports/yaml_record_review/20260924T235310Z-pyrodictium_medium__0138f786.md", "./reports/yaml_record_review/20260924T090739Z-mmjhs_2_medium.md", "./data/normalized_yaml/bacterial/TOGO_M972_IRD_Mesotoga_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M1152_Desulfurella_TR1_Medium.yaml", "./data/normalized_yaml/bacterial/modified_mjys_medium.yaml", "./data/normalized_yaml/bacterial/dsmz_medium_854.yaml", "./data/normalized_yaml/bacterial/halodesulfuriarchaeum_medium.yaml", "./data/normalized_yaml/bacterial/tcp_medium.yaml", "./reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/context.json", "./reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/plan.json", "./reports/ingredient_concentration_curation/20261008-basal-makeup/next-pyrodictium-context.json", "./data/normalized_yaml/bacterial/thiomonas_cuprina_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M747_Ravot_Modified_Medium_For_Marinitoga_Litoralis.yaml", "./data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M898_Acidiferrobacter_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M509_Modified_MMJS_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M836_BHI-S_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M638_Fervidobacterium_Tianchisum_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M479_Modified_MMJHS_Medium_For_GO25.yaml", "./data/normalized_yaml/bacterial/TOGO_M494_MMJ-HO_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M748_Ravot_Modified_Medium_For_Thermoanaerovibrio_SP._R101.yaml", "./data/normalized_yaml/bacterial/TOGO_M934_Mbbs_Medium_For_Hydrogenobacter.yaml", "./data/normalized_yaml/bacterial/TOGO_M419_MMJHS_Medium.yaml", "./data/normalized_yaml/bacterial/togo_medium_m178.yaml", "./data/normalized_yaml/bacterial/nitratiruptor_and_nitratifactor_medium.yaml", "./reports/ingredient_concentration_curation/20261008-reducing-stages/context.json", "./reports/ingredient_concentration_curation/20261008-reducing-stages/plan.json", "./reports/ingredient_concentration_curation/20261008-reducing-stages/next-six-context.json", "./reports/ingredient_concentration_curation/20261008-pyrodictium-variants/plan.json"], "scope": "Entire batch005 checkout including hidden and ignored files"}, "legacy_index_rows": [], "current_sulfur_rows": [{"label": "Sulfur", "match_type": "preferred_term", "identifier": "CHEBI:33403", "preferred_term": "Sulfur", "ontology_id": "CHEBI:33403", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sulfur (powder)", "match_type": "preferred_term", "identifier": "CHEBI:33403", "preferred_term": "Sulfur (powder)", "ontology_id": "CHEBI:33403", "mapping_status": "REJECTED", "ambiguity": "unique"}, {"label": "Sulphur", "match_type": "preferred_term", "identifier": "CHEBI:33403", "preferred_term": "Sulphur", "ontology_id": "CHEBI:33403", "mapping_status": "REJECTED", "ambiguity": "unique"}], "source_medium_metadata": {"id": "J559", "name": "1/2 SME MEDIUM", "complex_medium": "no", "min_pH": 6, "max_pH": 6, "source": "JCM", "link": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=559"}} |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact historical registry verification remains unavailable, so completion is partial despite valid primary ontology IDs.
+- Reused primary captures retain actual original access timestamps and verified hashes. No experimental growth or mechanistic conclusion, gas uptake or final solution-volume calculation is added.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T072823Z-culturemech-009958-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_2_sme_medium (CultureMech:009958)'
+started_at: '2026-10-20T07:26:16Z'
+finished_at: '2026-10-20T07:28:23Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M563 and JCM 559 identity agree. Three milligram-valued components are
+  encoded with unchanged numerals as grams, water volume is encoded as mass, and preparation/pH/gas-stage
+  context is omitted. The complex/undefined classification conflicts with the source
+  inventory and provider metadata. Primary ingredient IDs resolve, but the historical
+  sulfur registry key remains unverified.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+    sha256: 4be99817fb14beba09aeeeec764368b86d18d4829fbabe99225377556675dac4
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    sha256: 3692400af5de0529e9ee60d02b77872b145a667e7ab2c360bd21fa93a55da186
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 49 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 005 selects ordinals 41-50 after four
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009958
+targets:
+- target_id: CultureMech:009958
+  path: data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  label: 1_2_sme_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch005/049/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/049/strict.tsv"
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:009958
+- check_id: legacy-sulfur-registry
+  name: Resolve historical MediaIngredientMech:001072
+  required: true
+  status: unavailable
+  summary: The ignored-inclusive search finds record references but the pinned current
+    index has no exact historical-key row. Current elemental-sulfur ontology identity
+    does not validate that historical key; rejected powder-label index rows must not
+    be promoted to live mappings.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - trace
+  - chebi33403
+  - mim
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T07:28:21Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T07:28:21Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:26:23.778138Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch005/049/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:26:25.088776Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-005/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch005/049/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:26:26.946750Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T07:26:27.875916Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-20T07:28:21Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml:1:id: CultureMech:009958
+
+    ./data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml:1:id: CultureMech:009958
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:00:00.223561Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16526
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:33.260797Z'
+  support: supports
+  summary: CHEBI:16526 resolves to carbon dioxide and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:34.033078Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18276
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:34.756446Z'
+  support: supports
+  summary: CHEBI:18276 resolves to dihydrogen and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:11:31.325976Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:22:09.107223Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:18:31.261112Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate and is not obsolete. This
+    verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:18:29.554272Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:18:28.821622Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi33403
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33403
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:28.748668Z'
+  support: supports
+  summary: CHEBI:33403 resolves to elemental sulfur and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: b349493be5d8cb371d1e71751510f9205880ab9d0a14f560191e05606c127a60
+- evidence_id: chebi36385
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_36385
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:22:12.205299Z'
+  support: supports
+  summary: CHEBI:36385 resolves to strontium dichloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: a81397c907aeb36242c9f0a2aa24979df4b9aad2f624e8991ccd87a4ff9428b5
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:27.571684Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63004
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63004
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:29.504923Z'
+  support: supports
+  summary: CHEBI:63004 resolves to sodium bromide and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2665f3a4301ab51b67b814a8694bc906c1a13c9b301c85a4416891d3f9412c90
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:02:35.727546Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:26.455225Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi8346
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8346
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:30.240205Z'
+  support: supports
+  summary: CHEBI:8346 resolves to potassium iodide and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 261d4862f5ae3627f515eefe14ca4f27cfed8c87604dbf8b8206b81af884631d
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:18:25.621908Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:22:10.944093Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:26:25.554970Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-20T07:28:21Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label":
+    "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term":
+    "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label":
+    "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label":
+    "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term":
+    "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63004": [{"label": "NaBr", "match_type": "preferred_term",
+    "identifier": "CHEBI:63004", "preferred_term": "NaBr", "ontology_id": "CHEBI:63004",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8346": [{"label":
+    "KI", "match_type": "preferred_term", "identifier": "CHEBI:8346", "preferred_term":
+    "KI", "ontology_id": "CHEBI:8346", "mapping_status": "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M563
+  locator: meta; components[0].items; comments[0]
+  accessed_at: '2026-10-20T07:26:24.769866Z'
+  support: supports
+  summary: Complete component list, source accession, pH metadata and preparation
+    comment inspected.
+  snapshot_sha256: 17e972390df2bac7854891e349fc211331d83fd53c649a5d59f790e347b6bcbe
+- evidence_id: jcm
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=559
+  locator: GRMD 559 complete recipe and preparation paragraph
+  accessed_at: '2026-10-20T06:54:57.006980Z'
+  support: supports
+  summary: Collection source preserves original mass units and detailed preparation
+    stages; its recipe-specific instructions take precedence over the collection default.
+  snapshot_sha256: 6bc5b995749e7c1a169ed45d2200d3f82d1b6ce7462a938672623e4923258fbe
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J559
+  locator: data.medium; data.solutions[0]
+  accessed_at: '2026-10-20T06:54:57.007408Z'
+  support: supports
+  summary: J559 identifies a non-complex medium, with exact compound quantities and
+    explicit main-solution basis; preparation is retained separately.
+  snapshot_sha256: b207249424f3321cbac607a98d97e22ba3599fd8596e47416e4b537e43a21e50
+- evidence_id: render
+  kind: database
+  reference: https://bacmedia.dsmz.de/pdf/J559
+  locator: Page 1 complete formulation and preparation
+  accessed_at: '2026-10-20T06:54:57.007550Z'
+  support: supports
+  summary: Provider rendering confirms original units, declared volume and source
+    preparation.
+  snapshot_sha256: b65bdb4c644c5bbf4deb2a31e38dcaa06607916392a9fee7fedadfee90a13e23
+- evidence_id: trace
+  kind: validation
+  reference: repository source comparison
+  locator: All nineteen source-row comparisons, ignored-inclusive legacy-key search
+    and pinned-index lookup
+  accessed_at: '2026-10-20T07:27:11.363871Z'
+  support: context_only
+  summary: '{"accessed_at": "2026-10-20T07:27:11.363871+00:00", "amount_trace": [{"index":
+    0, "name": "Distilled water", "source_amount": 1, "source_unit": "L", "target_concentration":
+    {"value": "1", "unit": "G_PER_L"}, "notes_match": true}, {"index": 1, "name":
+    "MgSO4\u30fb7H2O", "source_amount": 3.5, "source_unit": "g", "target_concentration":
+    {"value": "3.5", "unit": "G_PER_L"}, "notes_match": true}, {"index": 2, "name":
+    "NaCl", "source_amount": 13.85, "source_unit": "g", "target_concentration": {"value":
+    "13.85", "unit": "G_PER_L"}, "notes_match": true}, {"index": 3, "name": "CaCl2\u30fb2H2O",
+    "source_amount": 0.38, "source_unit": "g", "target_concentration": {"value": "0.38",
+    "unit": "G_PER_L"}, "notes_match": true}, {"index": 4, "name": "KH2PO4", "source_amount":
+    0.5, "source_unit": "g", "target_concentration": {"value": "0.5", "unit": "G_PER_L"},
+    "notes_match": true}, {"index": 5, "name": "Resazurin", "source_amount": 1, "source_unit":
+    "mg", "target_concentration": {"value": "1", "unit": "G_PER_L"}, "notes_match":
+    true}, {"index": 6, "name": "MgCl2\u30fb6H2O", "source_amount": 2.75, "source_unit":
+    "g", "target_concentration": {"value": "2.75", "unit": "G_PER_L"}, "notes_match":
+    true}, {"index": 7, "name": "Na2S\u30fb9H2O", "source_amount": 0.5, "source_unit":
+    "g", "target_concentration": {"value": "0.5", "unit": "G_PER_L"}, "notes_match":
+    true}, {"index": 8, "name": "H3BO3", "source_amount": 0.015, "source_unit": "g",
+    "target_concentration": {"value": "0.015", "unit": "G_PER_L"}, "notes_match":
+    true}, {"index": 9, "name": "KCl", "source_amount": 0.33, "source_unit": "g",
+    "target_concentration": {"value": "0.33", "unit": "G_PER_L"}, "notes_match": true},
+    {"index": 10, "name": "NaHCO3", "source_amount": 0.16, "source_unit": "g", "target_concentration":
+    {"value": "0.16", "unit": "G_PER_L"}, "notes_match": true}, {"index": 11, "name":
+    "(NH4)2SO4", "source_amount": 0.25, "source_unit": "g", "target_concentration":
+    {"value": "0.25", "unit": "G_PER_L"}, "notes_match": true}, {"index": 12, "name":
+    "Sulfur (powder)", "source_amount": 10, "source_unit": "g", "target_concentration":
+    {"value": "10", "unit": "G_PER_L"}, "notes_match": true}, {"index": 13, "name":
+    "NaBr", "source_amount": 0.05, "source_unit": "g", "target_concentration": {"value":
+    "0.05", "unit": "G_PER_L"}, "notes_match": true}, {"index": 14, "name": "SrCl2\u30fb6H2O",
+    "source_amount": 7.5, "source_unit": "mg", "target_concentration": {"value": "7.5",
+    "unit": "G_PER_L"}, "notes_match": true}, {"index": 15, "name": "KI", "source_amount":
+    0.05, "source_unit": "mg", "target_concentration": {"value": "0.05", "unit": "G_PER_L"},
+    "notes_match": true}, {"index": 16, "name": "Carbon dioxide gas", "source_amount":
+    null, "source_unit": null, "target_concentration": {"value": "variable", "unit":
+    "VARIABLE"}, "notes_match": true}, {"index": 17, "name": "Nitrogen gas", "source_amount":
+    null, "source_unit": null, "target_concentration": {"value": "variable", "unit":
+    "VARIABLE"}, "notes_match": true}, {"index": 18, "name": "Hydrogen gas", "source_amount":
+    null, "source_unit": null, "target_concentration": {"value": "variable", "unit":
+    "VARIABLE"}, "notes_match": true}], "legacy_search": {"argv": ["rg", "--no-ignore",
+    "--hidden", "-l", "MediaIngredientMech:001072", "."], "matching_files": ["./data/normalized_yaml/archaea/TOGO_M176_Desulfurococcus_Medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M303_Acidilobus_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M980_Acidilobus_Saccharovorans_Medium.yaml",
+    "./data/normalized_yaml/archaea/natranaeroarchaeum_medium_aarc1.yaml", "./data/normalized_yaml/archaea/TOGO_M2675_Hyperthermus_Butylicus_Medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M1641_Pyrococcus_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M167_Acidianus_Infernus_Medium_A.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M189_Thermoproteus_Tenax_Medium.yaml",
+    "./data/merge_yaml/merged/togo_medium_m179.yaml", "./data/merge_yaml/merged/Modified_Tc_medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M1630_Pyrodictium_Medium.yaml", "./data/merge_yaml/merged/pyrodictium_medium__0138f786.yaml",
+    "./data/merge_yaml/merged/MJAIS_MEDIUM.yaml", "./data/merge_yaml/merged/pyrococcus_medium__a85c0932.yaml",
+    "./data/merge_yaml/merged/thermoproteus_neutrophilus_medium__35522aa7.yaml", "./data/normalized_yaml/archaea/TOGO_M171_Stygiolobus_Medium.yaml",
+    "./data/merge_yaml/merged/thermoproteus_neutrophilus_medium__9b901d75.yaml", "./data/normalized_yaml/archaea/pyrodictium_occultum_medium.yaml",
+    "./data/normalized_yaml/bacterial/togo_medium_m179.yaml", "./data/merge_yaml/merged/halodesulfuriarchaeum_medium__13fcab0a.yaml",
+    "./data/normalized_yaml/archaea/sulfolobus_metallicus_medium.yaml", "./data/merge_yaml/merged/hyperthermus_butylicus_medium__c3d8d5c0.yaml",
+    "./data/merge_yaml/merged/MODIFIED_NAUTILIA_LITHOTROPHICA_MEDIUM.yaml", "./data/normalized_yaml/archaea/TOGO_M196_Pyrodictium_Brockii_Medium.yaml",
+    "./data/merge_yaml/merged/RSULFAC1_MEDIUM.yaml", "./data/merge_yaml/merged/ravot_modified_medium_for_thermoanaerovibrio_sp_r101.yaml",
+    "./data/merge_yaml/merged/Medium_2_for_Sulfurospirillum.yaml", "./data/normalized_yaml/archaea/TOGO_M233_Thermococcus_Fumicolans_Medium.yaml",
+    "./data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+    "./data/merge_yaml/merged/ACIDIFERROBACTER_MEDIUM.yaml", "./data/normalized_yaml/archaea/anaerobic_sulfolobales_medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M169_Acidianus_Brierleyi_Medium.yaml", "./data/merge_yaml/merged/MJYTFSH_MEDIUM.yaml",
+    "./data/merge_yaml/merged/togo_medium_m199.yaml", "./data/normalized_yaml/archaea/TOGO_M236_Stetteria_Medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M177_Pyrobaculum_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M151_Thermococcus_Stetteri_Medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M152_Thermococcus_Litoralis_Medium.yaml",
+    "./data/merge_yaml/merged/NATRANAEROARCHAEUM_MEDIUM_AARC1.yaml", "./data/normalized_yaml/archaea/TOGO_M150_Thermococcus_Celer_Medium.yaml",
+    "./data/merge_yaml/merged/PHOSPHOAC3_MEDIUM.yaml", "./data/normalized_yaml/archaea/TOGO_M142_Pyrococcus_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M319_MMJY_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M198_Pyrodictium_Abysii_Medium.yaml",
+    "./data/merge_yaml/merged/Thermoproteus_and_Vulcanisaeta_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M273_Thermococcus_Medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M845_Thermococcales_Rich_Medium.yaml", "./data/normalized_yaml/archaea/TOGO_M1333_Thermoplasma_Kamchatkensis_Medium.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M711_Aerobic_Sulfolobales_Medium.yaml", "./data/merge_yaml/merged/mmjhs_medium__dec192f9.yaml",
+    "./data/normalized_yaml/archaea/TOGO_M1633_Thermoproteus_neutrophilus_Medium.yaml",
+    "./data/normalized_yaml/archaea/thermoproteus_and_vulcanisaeta_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M228_Thermocladium_Medium.yaml",
+    "./data/normalized_yaml/archaea/acidianus_medium.yaml", "./data/normalized_yaml/archaea/TOGO_M291_Vulcanisaeta_Medium.yaml",
+    "./data/merge_yaml/merged/thermococcus_celer_medium__482c1c27.yaml", "./data/normalized_yaml/archaea/TOGO_M168_Acidianus_Infernus_Medium_B.yaml",
+    "./data/merge_yaml/merged/FERVIDOBACTERIUM_TIANCHISUM_MEDIUM.yaml", "./data/normalized_yaml/archaea/sulfolobus_medium_anaerobic.yaml",
+    "./reports/yaml_record_review/20260924T090149Z-mmj_tl_medium.md", "./data/normalized_yaml/archaea/TOGO_M180_Desulfurococcus_Amylolyticus_Medium.yaml",
+    "./reports/yaml_record_review/20260924T234748Z-pyrococcus_medium__a85c0932.md",
+    "./data/merge_yaml/merged/mmjhs_medium__2514b7be.yaml", "./data/normalized_yaml/archaea/TOGO_M188_Thermoproteus_Neutrophilus_Medium.yaml",
+    "./data/normalized_yaml/archaea/thermoproteus_tenax_medium_2.yaml", "./data/merge_yaml/merged/Acidianus_medium.yaml",
+    "./reports/ingredient_concentration_curation/20261008-methanogen-boundaries/next-stock-source-context.json",
+    "./data/merge_yaml/merged/Pyrodictium_Abysii_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M493_MMJ-TL_Medium.yaml",
+    "./data/merge_yaml/merged/Thermoproteus_tenax_Medium_2.yaml", "./data/normalized_yaml/bacterial/TOGO_M715_Nautilia_Abyssi_Medium.yaml",
+    "./data/merge_yaml/merged/MODIFIED_MMJHS_MEDIUM_FOR_GO25.yaml", "./data/merge_yaml/merged/Hydrogenothermus_Medium.yaml",
+    "./data/merge_yaml/merged/sulfolobus_medium_anaerobic.yaml", "./data/merge_yaml/merged/HSO_medium.yaml",
+    "./data/merge_yaml/merged/Pyrodictium_Ocultum_Medium.yaml", "./data/merge_yaml/merged/BN3_MEDIUM.yaml",
+    "./data/merge_yaml/merged/DESULFURELLA_TR1_MEDIUM.yaml", "./data/merge_yaml/merged/AS_medium.yaml",
+    "./reports/yaml_record_review/20260921T053031Z-1_2_sme_medium__5be55e13.md", "./data/merge_yaml/merged/ST65_MEDIUM.yaml",
+    "./data/merge_yaml/merged/pyrococcus_medium__3fe52a8c.yaml", "./reports/ingredient_concentration_curation/20261008-j261-variant/plan.json",
+    "./data/merge_yaml/merged/MJAIS_MD_MEDIUM.yaml", "./reports/yaml_record_review/20260921T153829Z-AS_medium.md",
+    "./data/merge_yaml/merged/THERMOPLASMA_KAMCHATKENSIS_MEDIUM.yaml", "./reports/yaml_record_review/20260924T091108Z-mmjhs_medium__2514b7be.md",
+    "./data/merge_yaml/merged/mmj_mh_medium.yaml", "./data/merge_yaml/merged/sme_medium__f4fd2c7b.yaml",
+    "./data/merge_yaml/merged/DESULFUROCOCCUS_AMYLOLYTICUS_MEDIUM.yaml", "./data/merge_yaml/merged/vulcanisaeta_medium__d46ad1a7.yaml",
+    "./data/merge_yaml/merged/NITRATIRUPTOR_AND_NITRATIFRACTOR_MEDIUM.yaml", "./data/merge_yaml/merged/MBBS_MEDIUM_FOR_HYDROGENOBACTER.yaml",
+    "./data/merge_yaml/merged/WT1_MEDIUM.yaml", "./data/merge_yaml/merged/THERMOCOCCALES_RICH_MEDIUM.yaml",
+    "./data/merge_yaml/merged/RAVOT_MODIFIED_MEDIUM_FOR_MARINITOGA_LITORALIS.yaml",
+    "./data/merge_yaml/merged/mmjhs_2_medium.yaml", "./data/merge_yaml/merged/mmj_ho_medium.yaml",
+    "./data/merge_yaml/merged/KA22_MEDIUM.yaml", "./data/merge_yaml/merged/NAUTILIA_ABYSSI_MEDIUM.yaml",
+    "./data/merge_yaml/merged/thermococcus_stetteri_medium__77e25d6a.yaml", "./data/merge_yaml/merged/Dsmz_medium_854.yaml",
+    "./data/merge_yaml/merged/TcP_Medium.yaml", "./data/merge_yaml/merged/stetteria_medium__0a06dac3.yaml",
+    "./data/merge_yaml/merged/thermococcus_medium__89e8f0c8.yaml", "./data/merge_yaml/merged/ACIDILOBUS_MEDIUM.yaml",
+    "./data/merge_yaml/merged/sulfolobus_medium_anaerobic_for_dsm_2162.yaml", "./data/merge_yaml/merged/Anaerobic_Sulfolobales_Medium.yaml",
+    "./data/merge_yaml/merged/DISSULFURIMICROBIUM_HYDROTHERMALE_MEDIUM.yaml", "./data/merge_yaml/merged/an1_medium__92dd8890.yaml",
+    "./data/merge_yaml/merged/MJTSO_MEDIUM.yaml", "./data/merge_yaml/merged/THERMOCLADIUM_MEDIUM.yaml",
+    "./data/merge_yaml/merged/mmj_tl_medium.yaml", "./data/merge_yaml/merged/Sulfolobus_metallicus_medium.yaml",
+    "./data/merge_yaml/merged/MMJY_MEDIUM.yaml", "./data/merge_yaml/merged/DESULFURELLA_MEDIUM.yaml",
+    "./data/merge_yaml/merged/acidianus_brierleyi_medium__f8a53e2d.yaml", "./data/merge_yaml/merged/Pyrodictium_occultum_Medium.yaml",
+    "./data/merge_yaml/merged/thiomonas_cuprina_medium__c5dba07d.yaml", "./data/merge_yaml/merged/THERMOPROTEUS_TENAX_MEDIUM.yaml",
+    "./data/merge_yaml/merged/MODIFIED_MMJS_MEDIUM.yaml", "./data/merge_yaml/merged/Acidilobus_Saccharovorans_Medium.yaml",
+    "./data/merge_yaml/merged/pyrobaculum_medium__1bd28dc9.yaml", "./data/merge_yaml/merged/togo_medium_m178.yaml",
+    "./data/merge_yaml/merged/bhi_s_medium.yaml", "./data/merge_yaml/merged/MMJS_medium.yaml",
+    "./data/merge_yaml/merged/AEROBIC_SULFOLOBALES_MEDIUM.yaml", "./data/merge_yaml/merged/1_2_sme_medium__5be55e13.yaml",
+    "./data/merge_yaml/merged/Modified_MJYS_medium.yaml", "./data/normalized_yaml/bacterial/modified_tc_medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M362_MJAIS_Medium.yaml", "./reports/yaml_record_review/20260924T091447Z-mmjhs_medium__dec192f9.md",
+    "./data/normalized_yaml/bacterial/TOGO_M3130_Desulfurella_Medium.yaml", "./data/normalized_yaml/bacterial/medium_2_for_sulfurospirillum.yaml",
+    "./data/normalized_yaml/bacterial/togo_medium_m199.yaml", "./data/normalized_yaml/bacterial/TOGO_M281_WT1_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M914_Phosphoac3_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M449_KA22_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M1097_ST65_Medium.yaml", "./reports/yaml_record_review/20260921T094620Z-AEROBIC_SULFOLOBALES_MEDIUM.md",
+    "./data/normalized_yaml/bacterial/TOGO_M1094_Dissulfurimicrobium_Hydrothermale_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M495_MMJ-MH_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M776_Modified_Nautilia_Lithotrophica_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M415_MJYTFSH_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M280_Hydrogenothermus_Medium.yaml",
+    "./reports/yaml_record_review/20260924T084809Z-mmj_ho_medium.md", "./reports/yaml_record_review/20260924T234238Z-pyrococcus_medium__3fe52a8c.md",
+    "./data/normalized_yaml/bacterial/TOGO_M342_SME_Medium.yaml", "./reports/yaml_record_review/20260924T085441Z-mmj_mh_medium.md",
+    "./data/normalized_yaml/bacterial/TOGO_M880_Rsulfac1_Medium.yaml", "./reports/yaml_record_review/20260924T233829Z-pyrobaculum_medium__1bd28dc9.md",
+    "./data/normalized_yaml/bacterial/TOGO_M421_MMJHS_Medium.yaml", "./data/normalized_yaml/bacterial/hso_medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M1080_MMJHS-2_Medium.yaml", "./reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/next-j261-context.json",
+    "./reports/ingredient_concentration_curation/20261008-jcm-stock-preparations/plan.json",
+    "./data/normalized_yaml/bacterial/TOGO_M1846_MMJHS_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M447_Mjtso_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M259_AN1_Medium.yaml", "./data/normalized_yaml/bacterial/as_medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M431_BN3_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M418_MJAIS_MD_Medium.yaml",
+    "./data/normalized_yaml/bacterial/nitratiruptor_and_nitratifractor_medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M420_MMJHS_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M1777_MMJS_medium.yaml",
+    "./reports/yaml_record_review/20260924T235310Z-pyrodictium_medium__0138f786.md",
+    "./reports/yaml_record_review/20260924T090739Z-mmjhs_2_medium.md", "./data/normalized_yaml/bacterial/TOGO_M972_IRD_Mesotoga_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M1152_Desulfurella_TR1_Medium.yaml", "./data/normalized_yaml/bacterial/modified_mjys_medium.yaml",
+    "./data/normalized_yaml/bacterial/dsmz_medium_854.yaml", "./data/normalized_yaml/bacterial/halodesulfuriarchaeum_medium.yaml",
+    "./data/normalized_yaml/bacterial/tcp_medium.yaml", "./reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/context.json",
+    "./reports/ingredient_concentration_curation/20261008-filtered-sulfide-media/plan.json",
+    "./reports/ingredient_concentration_curation/20261008-basal-makeup/next-pyrodictium-context.json",
+    "./data/normalized_yaml/bacterial/thiomonas_cuprina_medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M747_Ravot_Modified_Medium_For_Marinitoga_Litoralis.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M898_Acidiferrobacter_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M509_Modified_MMJS_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M836_BHI-S_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M638_Fervidobacterium_Tianchisum_Medium.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M479_Modified_MMJHS_Medium_For_GO25.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M494_MMJ-HO_Medium.yaml", "./data/normalized_yaml/bacterial/TOGO_M748_Ravot_Modified_Medium_For_Thermoanaerovibrio_SP._R101.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M934_Mbbs_Medium_For_Hydrogenobacter.yaml",
+    "./data/normalized_yaml/bacterial/TOGO_M419_MMJHS_Medium.yaml", "./data/normalized_yaml/bacterial/togo_medium_m178.yaml",
+    "./data/normalized_yaml/bacterial/nitratiruptor_and_nitratifactor_medium.yaml",
+    "./reports/ingredient_concentration_curation/20261008-reducing-stages/context.json",
+    "./reports/ingredient_concentration_curation/20261008-reducing-stages/plan.json",
+    "./reports/ingredient_concentration_curation/20261008-reducing-stages/next-six-context.json",
+    "./reports/ingredient_concentration_curation/20261008-pyrodictium-variants/plan.json"],
+    "scope": "Entire batch005 checkout including hidden and ignored files"}, "legacy_index_rows":
+    [], "current_sulfur_rows": [{"label": "Sulfur", "match_type": "preferred_term",
+    "identifier": "CHEBI:33403", "preferred_term": "Sulfur", "ontology_id": "CHEBI:33403",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sulfur (powder)",
+    "match_type": "preferred_term", "identifier": "CHEBI:33403", "preferred_term":
+    "Sulfur (powder)", "ontology_id": "CHEBI:33403", "mapping_status": "REJECTED",
+    "ambiguity": "unique"}, {"label": "Sulphur", "match_type": "preferred_term", "identifier":
+    "CHEBI:33403", "preferred_term": "Sulphur", "ontology_id": "CHEBI:33403", "mapping_status":
+    "REJECTED", "ambiguity": "unique"}], "source_medium_metadata": {"id": "J559",
+    "name": "1/2 SME MEDIUM", "complex_medium": "no", "min_pH": 6, "max_pH": 6, "source":
+    "JCM", "link": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=559"}}'
+  search_scope: Whole batch005 checkout with rg --no-ignore --hidden; pinned CSV separately
+    checked for the exact historical identifier.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '19 primary CHEBI identities resolve with matching labels; 10 of 10 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi16526
+  - chebi17997
+  - chebi18276
+  - chebi26710
+  - chebi31795
+  - chebi32139
+  - chebi32588
+  - chebi33118
+  - chebi33403
+  - chebi36385
+  - chebi62946
+  - chebi63004
+  - chebi63036
+  - chebi76209
+  - chebi8346
+  - chebi86158
+  - chebi86345
+  - chebi8806
+  details: 19 direct ingredient instances; primary coverage 19/19 (100.00%), verified
+    secondary coverage 10/19 (52.63%). Percentages use a 0–100 linkage scale, not
+    a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded
+    rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Source medium and maintained owner
+  outcome: supported
+  summary: CultureMech:009958 / TOGO M563 resolves to JCM 559. Target scientific content
+    agrees with the one maintained owner. No new strain or experimental growth claim
+    is established by this identity.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - togo
+  - jcm
+  - api
+- assessment_id: amount-0
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: 'correct: source water is a volume, not 1 G_PER_L. Preserve original water/batch
+    context without assuming density.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: supported
+  summary: 'verified amount: MgSO4・7H2O 3.5 G_PER_L matches the source batch mass
+    and provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: supported
+  summary: 'verified amount: NaCl 13.85 G_PER_L matches the source batch mass and
+    provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-3
+  area: quantity
+  topic: ingredients[3].concentration
+  outcome: supported
+  summary: 'verified amount: CaCl2・2H2O 0.38 G_PER_L matches the source batch mass
+    and provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-4
+  area: quantity
+  topic: ingredients[4].concentration
+  outcome: supported
+  summary: 'verified amount: KH2PO4 0.5 G_PER_L matches the source batch mass and
+    provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-5
+  area: quantity
+  topic: ingredients[5].concentration
+  outcome: concern
+  summary: 'correct: Resazurin retains source numeric 1 but changes milligrams to
+    G_PER_L. Source and provider agree on the original milligram amount.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-6
+  area: quantity
+  topic: ingredients[6].concentration
+  outcome: supported
+  summary: 'verified amount: MgCl2・6H2O 2.75 G_PER_L matches the source batch mass
+    and provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-7
+  area: quantity
+  topic: ingredients[7].concentration
+  outcome: supported
+  summary: 'verified amount: Na2S・9H2O 0.5 G_PER_L matches the source batch mass and
+    provider-declared main-recipe basis. The source directs addition via a solution;
+    its percent basis and liquid dose must not be invented from this mass claim.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-8
+  area: quantity
+  topic: ingredients[8].concentration
+  outcome: supported
+  summary: 'verified amount: H3BO3 0.015 G_PER_L matches the source batch mass and
+    provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-9
+  area: quantity
+  topic: ingredients[9].concentration
+  outcome: supported
+  summary: 'verified amount: KCl 0.33 G_PER_L matches the source batch mass and provider-declared
+    main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-10
+  area: quantity
+  topic: ingredients[10].concentration
+  outcome: supported
+  summary: 'verified amount: NaHCO3 0.16 G_PER_L matches the source batch mass and
+    provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-11
+  area: quantity
+  topic: ingredients[11].concentration
+  outcome: supported
+  summary: 'verified amount: (NH4)2SO4 0.25 G_PER_L matches the source batch mass
+    and provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-12
+  area: quantity
+  topic: ingredients[12].concentration
+  outcome: supported
+  summary: 'verified amount: Sulfur (powder) 10 G_PER_L matches the source batch mass
+    and provider-declared main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-13
+  area: quantity
+  topic: ingredients[13].concentration
+  outcome: supported
+  summary: 'verified amount: NaBr 0.05 G_PER_L matches the source batch mass and provider-declared
+    main-recipe basis. '
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-14
+  area: quantity
+  topic: ingredients[14].concentration
+  outcome: concern
+  summary: 'correct: SrCl2・6H2O retains source numeric 7.5 but changes milligrams
+    to G_PER_L. Source and provider agree on the original milligram amount.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-15
+  area: quantity
+  topic: ingredients[15].concentration
+  outcome: concern
+  summary: 'correct: KI retains source numeric 0.05 but changes milligrams to G_PER_L.
+    Source and provider agree on the original milligram amount.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-16
+  area: quantity
+  topic: ingredients[16].concentration
+  outcome: concern
+  summary: 'not_quantified as an individual mass-per-liter addition: the gas is named
+    in the source preparation, with stage-specific mixture context. VARIABLE avoids
+    inventing a dissolved concentration but does not retain those conditions by itself.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-17
+  area: quantity
+  topic: ingredients[17].concentration
+  outcome: concern
+  summary: 'not_quantified as an individual mass-per-liter addition: the gas is named
+    in the source preparation, with stage-specific mixture context. VARIABLE avoids
+    inventing a dissolved concentration but does not retain those conditions by itself.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: amount-18
+  area: quantity
+  topic: ingredients[18].concentration
+  outcome: concern
+  summary: 'not_quantified as an individual mass-per-liter addition: the gas is named
+    in the source preparation, with stage-specific mixture context. VARIABLE avoids
+    inventing a dissolved concentration but does not retain those conditions by itself.'
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  - render
+  - trace
+  details: All nineteen assertions checked separately. No gas uptake, dissolved-gas
+    concentration, arbitrary gas dose or stock volume is calculated.
+- assessment_id: chemistry
+  area: grounding
+  topic: Primary chemical forms and historical secondary key
+  outcome: unknown
+  summary: All primary chemical identifiers resolve with matching labels, including
+    the explicit hydrates, molecular gases and elemental sulfur material. The historical
+    sulfur linkage is unresolved. Current pinned index includes a live generic sulfur
+    row and rejected powder-specific rows; neither verifies the old numeric key.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - mim
+  - trace
+  - chebi33403
+  - chebi76209
+  - chebi16526
+  - chebi17997
+  - chebi18276
+- assessment_id: preparation
+  area: completeness
+  topic: pH, gas phases and addition sequence
+  outcome: concern
+  summary: The complete source preparation distinguishes gas phases and solution addition
+    and supplies pH and recipe-specific treatment context. Target and owner retain
+    none of that prose or pH. Component annotations and VARIABLE gas fields are not
+    a substitute for preparation scope.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - api
+- assessment_id: classification
+  area: scope
+  topic: Complex versus chemically specified composition
+  outcome: concern
+  summary: COMPLEX/UNDEFINED is unsupported by the named chemical inventory and conflicts
+    with provider complex_medium=no. Schema UNDEFINED requires chemically undefined
+    components such as extracts; missing gas-stage or dose evidence does not itself
+    turn a named chemical into an undefined mixture. Reconcile classification after
+    source-context correction rather than infer a nutritional class.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - api
+  details: Schema MediumTypeEnum and MediumCompositionTypeEnum definitions were inspected.
+    No new nutritional or functional-role classification is proposed.
+- assessment_id: roles
+  area: scope
+  topic: Physical state and role/growth claims
+  outcome: supported
+  summary: LIQUID agrees with the absence of gelling material. Imported role/property
+    notes match TOGO source rows; these are annotations, not experimentally verified
+    organism-specific mechanisms. No taxon, DOI, PMID or strain growth claim is asserted.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - togo
+  - jcm
+  - trace
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level evidence and history
+  outcome: concern
+  summary: The source is recoverable, but all nineteen claims lack narrow evidence
+    in target and owner. The first history entry is not chronologically first, but
+    the recorded timestamps are preserved; no backdating or rewriting is justified.
+    Reference validation examined zero excerpts.
+  target_ids:
+  - CultureMech:009958
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - togo
+  - jcm
+findings:
+- finding_id: f1
+  issue_key: CM009958-source-unit-errors
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Milligram amounts and water volume are encoded as grams
+  description: Resazurin, strontium chloride hydrate and potassium iodide retain source
+    numeric amounts while losing the milligram unit. Water volume is likewise recast
+    as mass concentration.
+  target_ids:
+  - CultureMech:009958
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[5].concentration
+  - ingredients[14:16].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM009958-preparation-context-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation and pH context are missing
+  description: The source preparation, pH, staged gas handling and solution-addition
+    context are absent from both local records. VARIABLE gas fields alone cannot encode
+    the source conditions.
+  target_ids:
+  - CultureMech:009958
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - ingredients[7]
+  - ingredients[16:19]
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM009958-composition-classification
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Complex/undefined classification lacks source support
+  description: The recipe inventory names chemical constituents rather than undefined
+    extracts, and the source provider explicitly marks this medium non-complex. The
+    local classifications therefore lack support under the schema definitions.
+  target_ids:
+  - CultureMech:009958
+  field_paths:
+  - medium_type
+  - composition_type
+  evidence_ids:
+  - record
+  - owner-0
+  - togo
+  - jcm
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM009958-claim-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source quantities and preparation lack scoped evidence
+  description: No ingredient or preparation evidence is attached; import histories
+    and passing reference validation with zero excerpts cannot validate the amounts.
+  target_ids:
+  - CultureMech:009958
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - togo
+  - jcm
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Correct source units and batch context in the maintained owner, preserving
+    exact hydrate identities. Do not infer density or calculate unsupported gas/stock
+    quantities.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009958
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain exact source preparation context and scope each gas and solution
+    claim appropriately. Preserve source ambiguity in percent basis instead of inventing
+    a liquid dose.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009958
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reconcile both composition classifications with the corrected source
+    representation and schema definitions; missing numerical context should remain
+    explicit rather than being treated as an undefined ingredient.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009958
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Add narrow unit, chemical-form and stage evidence after correcting
+    the maintained record; preserve it through regeneration.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009958
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M563_1_2_SME_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact historical registry verification remains unavailable, so completion is partial
+  despite valid primary ontology IDs.
+- Reused primary captures retain actual original access timestamps and verified hashes.
+  No experimental growth or mechanistic conclusion, gas uptake or final solution-volume
+  calculation is added.
+tags:
+- unreviewed-records
+- batch-005
+- generated-medium
+```
