@@ -1,0 +1,5937 @@
+# Source and formulation review: alcaliphilic_amphibacillus_strains_medium (CultureMech:006851)
+
+- Review: 20261021T122241Z-culturemech-006851-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T12:11:54Z
+- Finished UTC: 2026-10-21T12:22:41Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 931 is identifiable, but all three local layers flatten fifteen mineral-stock concentrations into the medium and omit the distinct ten-component vitamin stock. The primary specifies 1 mL minerals plus 10 mL vitamins; MediaDive incorrectly points both doses to mineral solution 241, a preserved source conflict. Anaerobic preparation survives only in the DSMZ owner, nickel hydrate grounding is wrong, and evidence/provenance need curation. Required sources and all original diagnostics are available.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 196; batch 020 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding nineteen task batches contain 190 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 193 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006851 | data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml | generated | alcaliphilic_amphibacillus_strains_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006851 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:006851 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-020/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch020/196/strict.tsv |
+| validate-terms | passed | True | CultureMech:006851 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:006851 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:006851 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: solution242 | unavailable | False | CultureMech:006851 | Original public solution242 request failed DNS resolution in the default sandbox. Metadata correction preserves the originally recorded metadata bytes and unchanged failure time. A separately captured network-enabled retry returned200 and provides the required vitamin-stock content. |
+| Exact source content access: komodo931detail | unavailable | False | CultureMech:006851 | Exact KOMODO 931 detail returned403; the catalog identity/flag row and complete official primary remain available. This is not evidence of historical absence. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:006851.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: concern. Targets: CultureMech:006851.
+
+24 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 24/25 primary and 24/25 secondary instances; all asserted secondary keys have exact pinned MIM rows. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 25: primary 96.00%; secondary 96.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:006851.
+
+48 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "Main medium: KH2PO4",
+    "field_path": "ingredients[0].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "KH2PO4 0.200 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.46967,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.2 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: MgCl2",
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "MgCl2 0.100 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2\",\n                        \"compound_id\": 453,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 1.05031,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.1 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: NH4Cl",
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "NH4Cl 0.500 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 9.34754,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.5 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: KCl",
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "KCl 0.200 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 2.68276,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.2 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Na2CO3",
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "63.6",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Na2CO3 63.600 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 63.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 63.6,\n                        \"mmol_l\": 600.068,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "63.6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "63.6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "63.6",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 63.6 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: NaHCO3",
+    "field_path": "ingredients[5].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "50.4",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "NaHCO3 50.400 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 50.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 50.4,\n                        \"mmol_l\": 599.95,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "50.4",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "50.4",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "50.4",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 50.4 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Na2S x 9 H2O",
+    "field_path": "ingredients[6].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.7",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Na2S x 9 H2O 0.700 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.7,\n                        \"mmol_l\": 2.91446,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.7",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.7",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.7",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.7 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Yeast extract",
+    "field_path": "ingredients[7].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Yeast extract 0.200 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.2 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Sucrose",
+    "field_path": "ingredients[8].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Sucrose 5.000 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Sucrose\",\n                        \"compound_id\": 108,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 14.6071,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 5 g; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Modified Wolin's mineral solution",
+    "field_path": "source.solution_1920.recipe[9]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "Add the missing source stock dose or source water quantity at its named stage. Water is a batch volume, not proof of measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 1 ml; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Modified Wolin's mineral solution",
+    "field_path": "source.solution_1920.recipe[10]",
+    "decision": "conflict",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "Primary explicitly names 10 mL vitamin solution from 141. API instead names mineral solution241 at 10 mL, while another 1 mL solution241 row already represents minerals. Preserve both sources; identify the vitamin stock from the primary and independent 242 endpoint, not by accepting the duplicated APIidentity.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "conflict",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "conflict",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "conflict",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 10 ml; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Resazurin",
+    "field_path": "ingredients[9].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.001",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Resazurin 0.001 g",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00436319,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "The main source batch amount agrees numerically with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches matching quantity evidence. Preserve the nominal convention explicitly without treating 1000 mL water plus stocks/unquantified additions as measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "decision": "evidence_only",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 1 mg; provider declares stage volume 1000 mL. 1mg /1000=0.001g. "
+  },
+  {
+    "ingredient_or_context": "Main medium: Distilled water",
+    "field_path": "source.solution_1920.recipe[12]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table",
+        "exact_source_quote": "Distilled water 1000.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "Add the missing source stock dose or source water quantity at its named stage. Water is a batch volume, not proof of measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "preparation_steps",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "preparation_steps",
+        "decision": "add",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "Final pH 9.5-10.0"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Prepare the medium without adding the vitamins, sucrose, yeast extract, NH4Cl, Na2CO3, and NaHCO3 using anaerobic conditions, under nitrogen. If the medium has been boiled to remove oxygen add the NH4Cl, Na2CO3, and NaHCO3 after the medium had cooled. Dispense into tubes stopper with rubber stoppers (serum tubes or bottles, or screw capped tubes). Autoclave, and to the cooled medium add the vitamins (filter sterilised under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic, sterile stock solutions."
+          },
+          {
+            "step_number": 3,
+            "action": "ADJUST_PH",
+            "description": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."
+          }
+        ]
+      }
+    ],
+    "arithmetic": "Source 1000 ml; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: Nitrilotriacetic acid",
+    "field_path": "ingredients[10].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "Nitrilotriacetic acid 1.50 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 1.5 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 1.5 g/L × 0.001 L=0.0015g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: MgSO4 x 7 H2O",
+    "field_path": "ingredients[11].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "3",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "MgSO4 x 7 H2O 3.00 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 3 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 3 g/L × 0.001 L=0.003g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: MnSO4 x H2O",
+    "field_path": "ingredients[12].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "MnSO4 x H2O 0.50 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.9583,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.5 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.5 g/L × 0.001 L=0.0005g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: NaCl",
+    "field_path": "ingredients[13].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "NaCl 1.00 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 1 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 1 g/L × 0.001 L=0.001g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: FeSO4 x 7 H2O",
+    "field_path": "ingredients[14].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "FeSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.1 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.1 g/L × 0.001 L=0.0001g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: CoSO4 x 7 H2O",
+    "field_path": "ingredients[15].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.18",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "CoSO4 x 7 H2O 0.18 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 1.16132,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.18 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.18 g/L × 0.001 L=0.00018g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: CaCl2 x 2 H2O",
+    "field_path": "ingredients[16].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.1",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.10 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.1 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.1 g/L × 0.001 L=0.0001g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: ZnSO4 x 7 H2O",
+    "field_path": "ingredients[17].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.18",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.18 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 0.625954,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[17].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.18 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.18 g/L × 0.001 L=0.00018g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: CuSO4 x 5 H2O",
+    "field_path": "ingredients[18].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "CuSO4 x 5 H2O 0.01 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[18].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.01 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.01 g/L × 0.001 L=0.00001g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: AlK(SO4)2 x 12 H2O",
+    "field_path": "ingredients[19].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.02",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "AlK(SO4)2 x 12 H2O 0.02 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[9]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\": 908,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0421596,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[19].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.02 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.02 g/L × 0.001 L=0.00002g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: H3BO3",
+    "field_path": "ingredients[20].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "H3BO3 0.01 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[10]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[20].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.01 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.01 g/L × 0.001 L=0.00001g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: Na2MoO4 x 2 H2O",
+    "field_path": "ingredients[21].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.01",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 0.01 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[11]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[21].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.01 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.01 g/L × 0.001 L=0.00001g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: NiCl2 x 6 H2O",
+    "field_path": "ingredients[22].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.03",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.03 g",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[12]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.231483,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[22].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.03 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.03 g/L × 0.001 L=0.00003g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: Na2SeO3 x 5 H2O",
+    "field_path": "ingredients[23].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.0003",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "Na2SeO3 x 5 H2O 0.30 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[13]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 0.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0003,\n                        \"mmol_l\": 0.00114062,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[23].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.3 mg; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.0003 g/L × 0.001 L=3E-7g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. 0.3mg /1000=0.0003g. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: Na2WO4 x 2 H2O",
+    "field_path": "ingredients[24].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "0.0004",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "Na2WO4 x 2 H2O 0.40 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[14]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 0.4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0004,\n                        \"mmol_l\": 0.00121267,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; trace elements receiving dose",
+        "exact_source_quote": "Trace elements (see DSM medium 141) 1.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The stock value is supported but is placed directly in the medium in all layers. Restore mineral composition and the distinct 1 mL receiving dose. The API 10 mL duplicate reference must not be added as extra mineral stock.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[24].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "decision": "correct",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "arithmetic": "Source 0.4 mg; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose, 0.0004 g/L × 0.001 L=4E-7g delivered per listed batch. This delivered mass is not an unconditional final concentration; actual final volume is not supplied. 0.4mg /1000=0.0004g. "
+  },
+  {
+    "ingredient_or_context": "Mineral stock: Distilled water",
+    "field_path": "source.solution_241.recipe[15]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral table",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[1].recipe[15]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "Add the missing source stock dose or source water quantity at its named stage. Water is a batch volume, not proof of measured final volume.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "preparation_steps",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "preparation_steps",
+        "decision": "add",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "Final pH 9.5-10.0"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Prepare the medium without adding the vitamins, sucrose, yeast extract, NH4Cl, Na2CO3, and NaHCO3 using anaerobic conditions, under nitrogen. If the medium has been boiled to remove oxygen add the NH4Cl, Na2CO3, and NaHCO3 after the medium had cooled. Dispense into tubes stopper with rubber stoppers (serum tubes or bottles, or screw capped tubes). Autoclave, and to the cooled medium add the vitamins (filter sterilised under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic, sterile stock solutions."
+          },
+          {
+            "step_number": 3,
+            "action": "ADJUST_PH",
+            "description": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."
+          }
+        ]
+      }
+    ],
+    "arithmetic": "Source 1000 ml; provider declares stage volume 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Biotin",
+    "field_path": "source.vitamin_stock.recipe[0]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row1",
+        "exact_source_quote": "Biotin 2.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[0]",
+        "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Biotin\",\n                \"compound_id\": 46,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.00818632,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 2 mg in vitamin stock; provider declares 1000 mL. 2mg/1000=0.002g per stock batch; nominal stock G_PER_L=0.002. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Folic acid",
+    "field_path": "source.vitamin_stock.recipe[1]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row2",
+        "exact_source_quote": "Folic acid 2.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[1]",
+        "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Folic acid\",\n                \"compound_id\": 138,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 2,\n                \"unit\": \"mg\",\n                \"g_l\": 0.002,\n                \"mmol_l\": 0.00453104,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 2 mg in vitamin stock; provider declares 1000 mL. 2mg/1000=0.002g per stock batch; nominal stock G_PER_L=0.002. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Pyridoxine hydrochloride",
+    "field_path": "source.vitamin_stock.recipe[2]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row3",
+        "exact_source_quote": "Pyridoxine hydrochloride 10.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[2]",
+        "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Pyridoxine hydrochloride\",\n                \"compound_id\": 519,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 10,\n                \"unit\": \"mg\",\n                \"g_l\": 0.01,\n                \"mmol_l\": 0.0486287,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 10 mg in vitamin stock; provider declares 1000 mL. 10mg/1000=0.01g per stock batch; nominal stock G_PER_L=0.01. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Thiamine HCl",
+    "field_path": "source.vitamin_stock.recipe[3]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row4",
+        "exact_source_quote": "Thiamine HCl 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[3]",
+        "exact_source_quote": "{\n                \"recipe_order\": 4,\n                \"compound\": \"Thiamine HCl\",\n                \"compound_id\": 1207,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0148236,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 5 mg in vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Riboflavin",
+    "field_path": "source.vitamin_stock.recipe[4]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row5",
+        "exact_source_quote": "Riboflavin 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[4]",
+        "exact_source_quote": "{\n                \"recipe_order\": 5,\n                \"compound\": \"Riboflavin\",\n                \"compound_id\": 136,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0132837,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 5 mg in vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Nicotinic acid",
+    "field_path": "source.vitamin_stock.recipe[5]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row6",
+        "exact_source_quote": "Nicotinic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[5]",
+        "exact_source_quote": "{\n                \"recipe_order\": 6,\n                \"compound\": \"Nicotinic acid\",\n                \"compound_id\": 139,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0406141,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 5 mg in vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Calcium D-(+)-pantothenate",
+    "field_path": "source.vitamin_stock.recipe[6]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row7",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[6]",
+        "exact_source_quote": "{\n                \"recipe_order\": 7,\n                \"compound\": \"Calcium D-(+)-pantothenate\",\n                \"compound_id\": 1512,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0209846,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 5 mg in vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Vitamin B12",
+    "field_path": "source.vitamin_stock.recipe[7]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row8",
+        "exact_source_quote": "Vitamin B12 0.10 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[7]",
+        "exact_source_quote": "{\n                \"recipe_order\": 8,\n                \"compound\": \"Vitamin B12\",\n                \"compound_id\": 18,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"mg\",\n                \"g_l\": 0.0001,\n                \"mmol_l\": 7.3779e-5,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 0.1 mg in vitamin stock; provider declares 1000 mL. 0.1mg/1000=0.0001g per stock batch; nominal stock G_PER_L=0.0001. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: p-Aminobenzoic acid",
+    "field_path": "source.vitamin_stock.recipe[8]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row9",
+        "exact_source_quote": "p-Aminobenzoic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[8]",
+        "exact_source_quote": "{\n                \"recipe_order\": 9,\n                \"compound\": \"p-Aminobenzoic acid\",\n                \"compound_id\": 47,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.0364591,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 5 mg in vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: (DL)-alpha-Lipoic acid",
+    "field_path": "source.vitamin_stock.recipe[9]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row10",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[9]",
+        "exact_source_quote": "{\n                \"recipe_order\": 10,\n                \"compound\": \"(DL)-alpha-Lipoic acid\",\n                \"compound_id\": 252,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 5,\n                \"unit\": \"mg\",\n                \"g_l\": 0.005,\n                \"mmol_l\": 0.024233,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 5 mg in vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium concentration is asserted."
+  },
+  {
+    "ingredient_or_context": "Vitamin stock: Distilled water",
+    "field_path": "source.vitamin_stock.recipe[10]",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 pages2–3; Wolin vitamin table row11",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      },
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.recipe[10]",
+        "exact_source_quote": "{\n                \"recipe_order\": 11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1000,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      },
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 main table; vitamin receiving dose",
+        "exact_source_quote": "Vitamin solution (see DSM medium 141) 10.000 ml",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "The required vitamin formulation is absent from all three layers. Preserve exact supplied form, source milligrams and stock water separately; do not infer identifiers for the missing ingredients.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ],
+    "arithmetic": "Source 1000 ml in vitamin stock; provider declares 1000 mL. "
+  },
+  {
+    "ingredient_or_context": "Provider declared volume: Main sol. 931",
+    "field_path": "source.1920.volume",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive931api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/931",
+        "source_locator": "$.data.solutions[0].volume",
+        "exact_source_quote": "\"volume\": 1000",
+        "snapshot_sha256": "419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8"
+      }
+    ],
+    "rationale": "Retain the nominal stage basis as source metadata. It is not an independently measured final volume and must not turn 1000 mL water plus 1 mL minerals plus 10 mL vitamins into a validated 1011 mL final basis.",
+    "action_taken": "Review only; no recipe change."
+  },
+  {
+    "ingredient_or_context": "Provider declared volume: Modified Wolin's mineral solution",
+    "field_path": "source.241.volume",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "solution241",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/241",
+        "source_locator": "$.data.volume",
+        "exact_source_quote": "\"volume\": 1000",
+        "snapshot_sha256": "50cc42c209f550b7abc4a5f48b455553516220b6ef9613f481941f9e15f0b25d"
+      }
+    ],
+    "rationale": "Retain the nominal stage basis as source metadata. It is not an independently measured final volume and must not turn 1000 mL water plus 1 mL minerals plus 10 mL vitamins into a validated 1011 mL final basis.",
+    "action_taken": "Review only; no recipe change."
+  },
+  {
+    "ingredient_or_context": "Provider declared volume: Wolin's vitamin solution",
+    "field_path": "source.242.volume",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.volume",
+        "exact_source_quote": "\"volume\": 1000",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6"
+      }
+    ],
+    "rationale": "Retain the nominal stage basis as source metadata. It is not an independently measured final volume and must not turn 1000 mL water plus 1 mL minerals plus 10 mL vitamins into a validated 1011 mL final basis.",
+    "action_taken": "Review only; no recipe change."
+  },
+  {
+    "ingredient_or_context": "Main final pH range",
+    "field_path": "ph_range",
+    "decision": "evidence_only",
+    "local": {
+      "min": 9.5,
+      "max": 10.0
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz931",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf",
+        "source_locator": "DSMZ 931 final pH statement",
+        "exact_source_quote": "Final pH 9.5-10.0",
+        "snapshot_sha256": "033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28",
+        "parsed_text_sha256": "9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5"
+      }
+    ],
+    "rationale": "All three layers retain the source range; matching attached claim evidence is absent. This range is preparation context, not a growth optimum.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_range",
+        "decision": "evidence_only",
+        "stored": {
+          "min": 9.5,
+          "max": 10.0
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "ph_range",
+        "decision": "evidence_only",
+        "stored": {
+          "min": 9.5,
+          "max": 10.0
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "ph_range",
+        "decision": "evidence_only",
+        "stored": {
+          "min": 9.5,
+          "max": 10.0
+        }
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Mineral stock initial pH 6.5",
+    "field_path": "source.mineral_stock.preparation.initial_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral preparation",
+        "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal to pH 7.0 with KOH.",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "DSMZ owner retains literal endpoints/adjustment text in a flat main preparation list, without a stock object. Restore stock scope and attach evidence. The KOH addition quantity is not specified; do not invent a dose or reagent strength.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Mineral stock final pH 7.0",
+    "field_path": "source.mineral_stock.preparation.final_pH",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral preparation",
+        "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal to pH 7.0 with KOH.",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "DSMZ owner retains literal endpoints/adjustment text in a flat main preparation list, without a stock object. Restore stock scope and attach evidence. The KOH addition quantity is not specified; do not invent a dose or reagent strength.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Mineral stock KOH amount",
+    "field_path": "source.mineral_stock.preparation.KOH_amount",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz141",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "DSMZ 141 page2; Modified Wolin mineral preparation",
+        "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal to pH 7.0 with KOH.",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "DSMZ owner retains literal endpoints/adjustment text in a flat main preparation list, without a stock object. Restore stock scope and attach evidence. The KOH addition quantity is not specified; do not invent a dose or reagent strength.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Vitamin stock provider filter pore size",
+    "field_path": "source.vitamin_stock.preparation.filter_pore",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "solution242_retry",
+        "source_url": "https://mediadive.dsmz.de/rest/solution/242",
+        "source_locator": "$.data.steps[0].step",
+        "exact_source_quote": "Filtrate (pore size 0.22 µm to sterilize).",
+        "snapshot_sha256": "4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6",
+        "parsed_text_sha256": "4478d1d45be0b313e7da87e1ea90feb05959800faeec154edfd839fe7269eed5"
+      }
+    ],
+    "rationale": "The standalone vitamin provider specifies 0.22 µm filtration. This is source-specific stock detail, not a value printed in primary 931 or permission to import 141 basal incubation conditions.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+        "field_path": "solutions",
+        "decision": "add",
+        "stored": null
+      }
+    ]
+  }
+]
+
+### Exact accession and reciprocal owner correspondence
+
+identity: supported. Targets: CultureMech:006851.
+
+The exact DSMZ 931 primary, provider 931 and KOMODO 931 catalog identify one named formulation. All 25 ingredient objects match across target and two maintained owners. Reciprocal parent/child paths and IDs resolve to these exact owners; that source correspondence does not excuse their shared stock omission or justify dropping unequal preparation content during merge.
+
+### Mineral/vitamin identity and receiving doses
+
+consistency: concern. Targets: CultureMech:006851.
+
+The official main source calls for 1 mL trace elements and 10 mL vitamins from 141. The current API has two solution241 mineral rows at 1 and 10 mL. Its independent 242 endpoint and primary 141 vitamin table identify a different ten-solute vitamin stock. Preserve this provider conflict rather than summing minerals to 11 mL or treating the vitamin dose as unknown. The formula still needs explicit stocks, scoped evidence and documented source-version preference.
+
+### Anaerobic protocol and preservation of owner-specific text
+
+completeness: concern. Targets: CultureMech:006851.
+
+Target/KOMODO owner omit preparation, while DSMZ owner retains the main anaerobic nitrogen protocol, conditional cooling additions, closed vessels, autoclaving and post-cooling sterile stocks/filter-sterilized vitamins. Its final mineral pH instruction is flattened into main preparation. Catalog Is Aerobic=true is accurately copied provenance but needs explicit separation from the primary anaerobic procedure. No percentage gas composition, pressure, temperature or sterilization duration is given for931;141 basal conditions are out of scope.
+
+### Supplied forms and vitamin scope
+
+grounding: concern. Targets: CultureMech:006851.
+
+The 24 distinct primary/secondary IDs resolve with matching labels, but explicit mineral NiCl2 hexahydrate is mapped in every layer to anhydrous CHEBI34887 Cl2Ni. Other asserted hydrates match their source forms; no hydration is invented for generic main MgCl2 and no sodium salt is substituted for source generic Resazurin. Missing vitamin stock forms retain explicit calcium D-(+)-pantothenate and (DL)-alpha-lipoic acid source wording; no new vitamin ontology mapping or molarity is asserted.
+
+### Complexity, liquid state and growth scope
+
+scope: supported. Targets: CultureMech:006851.
+
+COMPLEX/SEMI_DEFINED and LIQUID are compatible with the specified salts plus yeast extract. The title and primary deposition sentence are bounded catalog context; no local target_organisms,taxon,genome,DOI/PMID or experimental growth result is asserted. Do not turn the medium name or catalog oxygen flag into a universal biological phenotype.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:006851.
+
+25 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Merge and source-transform ownership
+
+provenance: concern. Targets: CultureMech:006851.
+
+Current source/merge/cleanup/resolver excerpts are byte-identical to the separately read 195 context and freshly hash-bound. Current MediaDive composition separates primary rows from stocks, but all-section preparation parsing can lose their stage; resolver composition copying does not prove current source fidelity. The target has lost the DSMZ owner preparation. Ingredient signature equality is insufficient evidence that all preparation/provenance fields can be discarded.
+
+## Findings
+
+### f1: Mineral stock strengths replace doses and the required vitamin stock is absent
+
+blocker / open / confirmed; issue key: culturemech.006851.stock-formulation-lost.
+
+Fifteen mineral stock values are direct G_PER_L medium assertions, without the source 1 mL mineral dose; the ten-component 10 mL vitamin stock is absent. This materially changes the named formula. The provider duplicates solution241 at1/10 mL while the official primary distinguishes minerals/vitamins; a successful API lookup cannot validate that substitution.
+
+### f2: Anaerobic preparation is lost while an aerobic catalog flag remains
+
+major / open / confirmed; issue key: culturemech.006851.preparation-and-oxygen-scope.
+
+The DSMZ owner contains the primary anaerobic nitrogen protocol, but target/KOMODO owner retain only an unqualified Aerobic: Yes catalog note. Mineral pH 6.5/7.0 also appears as main preparation instead of stock preparation. Reproducing the primary requires stage order, conditional cooling additions and separate sterile additions; this warrants major normalization of native P3.5.
+
+### f3: Nickel hexahydrate uses anhydrous primary and secondary identities
+
+major / open / confirmed; issue key: culturemech.006851.nickel-hydrate.
+
+All layers explicitly name NiCl2×6H2O but link CHEBI34887 with formula Cl2Ni and mass 129.599. Matching labels and pinned MIM linkage do not establish the source hydrate.
+
+### f4: Quantities lack attached source evidence and four history instances have timestamp defects
+
+minor / open / confirmed; issue key: culturemech.006851.claim-evidence-history.
+
+All layers lack matching attached amount evidence. Target and KOMODO owner each repeat a malformed import timestamp and timezone-naive resolver timestamp; the DSMZ owner timestamps are timezone-aware. Source copying and resolver history do not establish scientific accuracy.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore primary-scoped mineral and vitamin stock identities, amounts and receiving doses in both maintained owners, preserving the explicit provider conflict. Keep supported main numbers on their nominal basis, and do not infer final volume or add the two solution241 doses together.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve the DSMZ owner protocol in generated output, restore mineral stock preparation scope, and attribute the historical catalog oxygen flag alongside the contrary primary preparation. Do not overwrite provenance as if the source flag had never existed or import 141 gas/pressure conditions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Resolve exact supplied hydrate grounding without changing the supported 0.03 g mineral-stock amount or deriving molarity from the anhydrous metadata. Leave a replacement unresolved until independently verified.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach claim-level primary/provider evidence at restored ingredient/stock/preparation scope; preserve source conflicts and historical timestamps, appending clarification only when authorized.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch020/196/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-020/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch020/196/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml:1:id: CultureMech:006851<br>./data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml:1:id: CultureMech:006851<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch020/source-preflight-bound/196/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 33 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| fresh-context-binding | /private/tmp/culturemech-review-work-batch020/source-preflight-bound/196/source-context-current.json; Fresh bound input manifest and explicit old-to-new context transition | context_only | The original preflight evidence context retains its 24a1 provenance. Current native inputs use fresh 033ef569; the two reviewed schema/justfile changes are explicitly bound. Source recipe bytes, captures, timestamps and writer excerpts remain unchanged. |
+| dsmz931 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf; Entire official one-page recipe and preparation; page visually inspected | supports | Main amounts, water, trace and vitamin doses, final pH and anaerobic preparation are explicit. DSM 13869/13870 are source deposition context, not newly asserted local growth results. |
+| dsmz141 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf; Only Modified Wolin mineral and Wolin vitamin stock sections, pages 2–3; both pages visually inspected | supports | Cross-reference scope is the named fifteen-solute mineral stock and ten-solute vitamin stock, their water and stock preparation. No basal-medium141 recipe, gas mixture, pressure or organism variants are transferred. |
+| mediadive931 | https://mediadive.dsmz.de/rest/medium/931; $.data.medium and both solutions, recipe rows and steps | supports | Main nominal volume 1000 mL and mineral stock 1000 mL are separate. Two receiving rows both name solution241, conflicting with the primary distinct vitamin row. |
+| solution241 | https://mediadive.dsmz.de/rest/solution/241; Exact stock identifier/name, full recipe and preparation | supports | Independent stock identity and all source amounts were checked against the explicitly scoped primary 141 sections; the successful242 retry is a separate preserved attempt. |
+| solution242_retry | https://mediadive.dsmz.de/rest/solution/242; Exact stock identifier/name, full recipe and preparation | supports | Independent stock identity and all source amounts were checked against the explicitly scoped primary 141 sections; the successful242 retry is a separate preserved attempt. |
+| solution242-attempt | https://mediadive.dsmz.de/rest/solution/242; Preserved exact public retrieval result | context_only | Original public solution242 request failed DNS resolution in the default sandbox. Metadata correction preserves the originally recorded metadata bytes and unchanged failure time. A separately captured network-enabled retry returned200 and provides the required vitamin-stock content. |
+| komodo931detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=931; Preserved exact public retrieval result | context_only | Exact KOMODO 931 detail returned403; the catalog identity/flag row and complete official primary remain available. This is not evidence of historical absence. |
+| komodo-list | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact931 row with table headers, including Is Aerobic=true | supports | The local Aerobic: Yes note is attributable catalog metadata. It does not replace the official anaerobic-under-nitrogen preparation or establish an organism growth phenotype. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17992 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17992; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17992 resolves to sucrose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi6636 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_6636; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:6636 resolves to magnesium dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17992": [{"label": "Sucrose", "match_type": "preferred_term", "identifier": "CHEBI:17992", "preferred_term": "Sucrose", "ontology_id": "CHEBI:17992", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:6636": [{"label": "MgCl2", "match_type": "preferred_term", "identifier": "CHEBI:6636", "preferred_term": "MgCl2", "ontology_id": "CHEBI:6636", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806": [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806", "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch020/196/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/merge/writer excerpts were read and rechecked against fresh captured inputs. Current implementation is not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/merge/writer excerpts were read and rechecked against fresh captured inputs. Current implementation is not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/merge/writer excerpts were read and rechecked against fresh captured inputs. Current implementation is not a replay of historical imports. |
+| writer-context-3 | src/culturemech/enrich/dsmz_resolver.py; _build_dsmz_index lines 43–76; merge_composition lines 112–166; _add_enrichment_metadata lines 195–212 | context_only | Exact current source/merge/writer excerpts were read and rechecked against fresh captured inputs. Current implementation is not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml; data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:00.756092"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:00.756092"}]}, {"input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml", "events": 7, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Original public solution242 request failed DNS resolution in the default sandbox. Metadata correction preserves the originally recorded metadata bytes and unchanged failure time. A separately captured network-enabled retry returned200 and provides the required vitamin-stock content.
+- Exact KOMODO 931 detail returned403; the catalog identity/flag row and complete official primary remain available. This is not evidence of historical absence.
+- Original source 242 DNS failure and successful distinct retry, plus KOMODO detail 403, are retained. Required stock content and all four canonical diagnostics are available; the fully assessed provider identity conflict does not itself force partial completion.
+- DSMZ 141 was read in full to delimit the cross-reference; only its named mineral/vitamin stocks inform931. Its basal recipe, organism variants, 80% H2/20% CO2 and pressure conditions are not imported.
+- No measured final volume, gas fraction, fixed KOH dose, universal growth claim, vitamin ontology identifier or unsupported autoclave cycle was inferred.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T122241Z-culturemech-006851-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alcaliphilic_amphibacillus_strains_medium (CultureMech:006851)'
+started_at: '2026-10-21T12:11:54Z'
+finished_at: '2026-10-21T12:22:41Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 931 is identifiable, but all three local layers flatten fifteen mineral-stock
+  concentrations into the medium and omit the distinct ten-component vitamin stock.
+  The primary specifies 1 mL minerals plus 10 mL vitamins; MediaDive incorrectly points
+  both doses to mineral solution 241, a preserved source conflict. Anaerobic preparation
+  survives only in the DSMZ owner, nickel hydrate grounding is wrong, and evidence/provenance
+  need curation. Required sources and all original diagnostics are available.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+    sha256: 32c46eb82515fceaf8f5e5af54a62edb0aad658c908e0e00d0020733c4280cc9
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    sha256: 9a76b87f30fbf574af0e51914cfb40c1929bf5d3a6fdabbc6a684e32c97044bf
+    role: context
+  - path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    sha256: fd1de2f22487553db21357d0634b0defad380ee18f0c3929c572923550af7d15
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 196; batch 020 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding nineteen task batches
+    contain 190 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 193 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006851
+targets:
+- target_id: CultureMech:006851
+  path: data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  label: alcaliphilic_amphibacillus_strains_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch020/196/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-020/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch020/196/strict.tsv"
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:006851
+- check_id: solution242-source-access
+  name: 'Exact source content access: solution242'
+  required: false
+  status: unavailable
+  summary: Original public solution242 request failed DNS resolution in the default
+    sandbox. Metadata correction preserves the originally recorded metadata bytes
+    and unchanged failure time. A separately captured network-enabled retry returned200
+    and provides the required vitamin-stock content.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - solution242-attempt
+- check_id: komodo931detail-source-access
+  name: 'Exact source content access: komodo931detail'
+  required: false
+  status: unavailable
+  summary: Exact KOMODO 931 detail returned403; the catalog identity/flag row and
+    complete official primary remain available. This is not evidence of historical
+    absence.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - komodo931detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:12:59.229149Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch020/196/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:13:00.828530Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-020/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch020/196/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:13:02.961669Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:13:04.118384Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml:1:id:
+    CultureMech:006851
+
+    ./data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml:1:id:
+    CultureMech:006851
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch020/source-preflight-bound/196/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: supports
+  summary: 33 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 7a9482f697830531508b5ef10258a0008e2f365066e20f65730d32658e99b007
+- evidence_id: fresh-context-binding
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch020/source-preflight-bound/196/source-context-current.json
+  locator: Fresh bound input manifest and explicit old-to-new context transition
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: The original preflight evidence context retains its 24a1 provenance. Current
+    native inputs use fresh 033ef569; the two reviewed schema/justfile changes are
+    explicitly bound. Source recipe bytes, captures, timestamps and writer excerpts
+    remain unchanged.
+  snapshot_sha256: f60f0cf3d96d80e40fa0c58cb14fdf9e6d00c04169106d294a0f0bfd05046302
+- evidence_id: dsmz931
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf
+  locator: Entire official one-page recipe and preparation; page visually inspected
+  accessed_at: '2026-10-21T11:58:01.661173Z'
+  support: supports
+  summary: Main amounts, water, trace and vitamin doses, final pH and anaerobic preparation
+    are explicit. DSM 13869/13870 are source deposition context, not newly asserted
+    local growth results.
+  snapshot_sha256: 033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28
+- evidence_id: dsmz141
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+  locator: Only Modified Wolin mineral and Wolin vitamin stock sections, pages 2–3;
+    both pages visually inspected
+  accessed_at: '2026-10-21T10:13:12.306566Z'
+  support: supports
+  summary: Cross-reference scope is the named fifteen-solute mineral stock and ten-solute
+    vitamin stock, their water and stock preparation. No basal-medium141 recipe, gas
+    mixture, pressure or organism variants are transferred.
+  snapshot_sha256: 8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8
+- evidence_id: mediadive931
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/931
+  locator: $.data.medium and both solutions, recipe rows and steps
+  accessed_at: '2026-10-21T11:57:59.803889Z'
+  support: supports
+  summary: Main nominal volume 1000 mL and mineral stock 1000 mL are separate. Two
+    receiving rows both name solution241, conflicting with the primary distinct vitamin
+    row.
+  snapshot_sha256: 419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8
+- evidence_id: solution241
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/241
+  locator: Exact stock identifier/name, full recipe and preparation
+  accessed_at: '2026-10-21T10:37:16.846684Z'
+  support: supports
+  summary: Independent stock identity and all source amounts were checked against
+    the explicitly scoped primary 141 sections; the successful242 retry is a separate
+    preserved attempt.
+  snapshot_sha256: 50cc42c209f550b7abc4a5f48b455553516220b6ef9613f481941f9e15f0b25d
+- evidence_id: solution242_retry
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/242
+  locator: Exact stock identifier/name, full recipe and preparation
+  accessed_at: '2026-10-21T12:01:14.832446Z'
+  support: supports
+  summary: Independent stock identity and all source amounts were checked against
+    the explicitly scoped primary 141 sections; the successful242 retry is a separate
+    preserved attempt.
+  snapshot_sha256: 4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6
+- evidence_id: solution242-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/242
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T11:59:12.866510Z'
+  support: context_only
+  summary: Original public solution242 request failed DNS resolution in the default
+    sandbox. Metadata correction preserves the originally recorded metadata bytes
+    and unchanged failure time. A separately captured network-enabled retry returned200
+    and provides the required vitamin-stock content.
+- evidence_id: komodo931detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=931
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T11:57:59.145156Z'
+  support: context_only
+  summary: Exact KOMODO 931 detail returned403; the catalog identity/flag row and
+    complete official primary remain available. This is not evidence of historical
+    absence.
+  snapshot_sha256: 0557efa31243e9b91b73a6766f146758a5db0208ec8dbfb9c4c2b50150653b23
+- evidence_id: komodo-list
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact931 row with table headers, including Is Aerobic=true
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: 'The local Aerobic: Yes note is attributable catalog metadata. It does
+    not replace the official anaerobic-under-nitrogen preparation or establish an
+    organism growth phenotype.'
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi17992
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17992
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:31.913996Z'
+  support: supports
+  summary: CHEBI:17992 resolves to sucrose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 509f9cbc014a0211d3a8e536a2c68048a090719ce68ee80550c8bbf532f150aa
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi6636
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_6636
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:25.486015Z'
+  support: supports
+  summary: CHEBI:6636 resolves to magnesium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 62283ffd3dce5ed835af343e697602b91b9230da436a122769d7821dee39a272
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17992": [{"label": "Sucrose", "match_type":
+    "preferred_term", "identifier": "CHEBI:17992", "preferred_term": "Sucrose", "ontology_id":
+    "CHEBI:17992", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710":
+    [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710",
+    "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate
+    solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term",
+    "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label":
+    "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440",
+    "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id":
+    "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312":
+    [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label":
+    "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557",
+    "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939":
+    [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:6636": [{"label": "MgCl2", "match_type":
+    "preferred_term", "identifier": "CHEBI:6636", "preferred_term": "MgCl2", "ontology_id":
+    "CHEBI:6636", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213":
+    [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213",
+    "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id":
+    "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158":
+    [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O",
+    "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id":
+    "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:8806":
+    [{"label": "Resazurin", "match_type": "preferred_term", "identifier": "CHEBI:8806",
+    "preferred_term": "Resazurin", "ontology_id": "CHEBI:8806", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term":
+    "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch020/196/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: c4b643bcd7148f742450454202ed1f2c8d1b4e4d187b95dc67432fce9b03ef80
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Exact current source/merge/writer excerpts were read and rechecked against
+    fresh captured inputs. Current implementation is not a replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Exact current source/merge/writer excerpts were read and rechecked against
+    fresh captured inputs. Current implementation is not a replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Exact current source/merge/writer excerpts were read and rechecked against
+    fresh captured inputs. Current implementation is not a replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: _build_dsmz_index lines 43–76; merge_composition lines 112–166; _add_enrichment_metadata
+    lines 195–212
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: Exact current source/merge/writer excerpts were read and rechecked against
+    fresh captured inputs. Current implementation is not a replay of historical imports.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml;
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml;
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T12:22:39Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:00.756092"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:00.756092"}]}, {"input": "data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: concern
+  summary: '24 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 24/25 primary and 24/25 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Exact supplied-form
+    mismatch is addressed separately; valid IDs and labels do not establish correct
+    source grounding.'
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi131361
+  - chebi17992
+  - chebi26710
+  - chebi29377
+  - chebi31206
+  - chebi31440
+  - chebi31795
+  - chebi32139
+  - chebi32312
+  - chebi32588
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi63036
+  - chebi63939
+  - chebi6636
+  - chebi75213
+  - chebi75836
+  - chebi76209
+  - chebi86158
+  - chebi86364
+  - chebi86465
+  - chebi8806
+  - chebi91244
+  details: 'Instance coverage on a 0–100 percent scale, denominator 25: primary 96.00%;
+    secondary 96.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 48 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"Main medium: KH2PO4\",\n    \"\
+    field_path\": \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": {\n      \"value\": \"0.2\",\n      \"unit\": \"G_PER_L\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz931\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.200 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.2,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n                \
+    \        \\\"mmol_l\\\": 1.46967,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.2\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.2\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 0.2 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main medium: MgCl2\",\n    \"field_path\": \"ingredients[1].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.1\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"MgCl2 0.100 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MgCl2\\\",\\n                        \\\"compound_id\\\": 453,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n                \
+    \        \\\"mmol_l\\\": 1.05031,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"0.1\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.1\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.1\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 0.1 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main medium: NH4Cl\",\n    \"field_path\": \"ingredients[2].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"NH4Cl 0.500 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\": 42,\\\
+    n                        \\\"amount\\\": 0.5,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n                \
+    \        \\\"mmol_l\\\": 9.34754,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.5\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.5\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 0.5 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main medium: KCl\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"KCl 0.200 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.2,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n                \
+    \        \\\"mmol_l\\\": 2.68276,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.2\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.2\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 0.2 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main medium: Na2CO3\",\n    \"field_path\": \"ingredients[4].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    63.6\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Na2CO3 63.600 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Na2CO3\\\",\\n                        \\\"compound_id\\\": 32,\\\
+    n                        \\\"amount\\\": 63.6,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 63.6,\\n         \
+    \               \\\"mmol_l\\\": 600.068,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"63.6\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"63.6\",\n\
+    \          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"63.6\",\n\
+    \          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 63.6 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n   \
+    \ \"ingredient_or_context\": \"Main medium: NaHCO3\",\n    \"field_path\": \"\
+    ingredients[5].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"50.4\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz931\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"NaHCO3 50.400 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"NaHCO3\\\",\\n                        \\\"compound_id\\\": 55,\\\
+    n                        \\\"amount\\\": 50.4,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 50.4,\\n         \
+    \               \\\"mmol_l\\\": 599.95,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"50.4\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"50.4\",\n\
+    \          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"50.4\",\n\
+    \          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 50.4 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n   \
+    \ \"ingredient_or_context\": \"Main medium: Na2S x 9 H2O\",\n    \"field_path\"\
+    : \"ingredients[6].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.7\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz931\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Na2S x 9 H2O 0.700 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na2S x 9 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 54,\\n                        \\\"amount\\\": 0.7,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.7,\\n \
+    \                       \\\"mmol_l\\\": 2.91446,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"0.7\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.7\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.7\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 0.7 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main medium: Yeast extract\",\n    \"field_path\":\
+    \ \"ingredients[7].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.2\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz931\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 0.200 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.2\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.2\",\n \
+    \         \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 0.2 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main medium: Sucrose\",\n    \"field_path\": \"ingredients[8].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Sucrose 5.000 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Sucrose\\\",\\n                        \\\"compound_id\\\":\
+    \ 108,\\n                        \\\"amount\\\": 5,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n      \
+    \                  \\\"mmol_l\\\": 14.6071,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"5\",\n   \
+    \       \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"5\",\n   \
+    \       \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 5 g; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"\
+    ingredient_or_context\": \"Main medium: Modified Wolin's mineral solution\",\n\
+    \    \"field_path\": \"source.solution_1920.recipe[9]\",\n    \"decision\": \"\
+    add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Trace elements (see DSM medium 141) 1.000 ml\",\n        \"snapshot_sha256\"\
+    : \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\",\n    \
+    \    \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"solution\\\": \\\"Modified Wolin's mineral solution\\\",\\n                \
+    \        \\\"solution_id\\\": 241,\\n                        \\\"amount\\\": 1,\\\
+    n                        \\\"unit\\\": \\\"ml\\\",\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      }\n\
+    \    ],\n    \"rationale\": \"Add the missing source stock dose or source water\
+    \ quantity at its named stage. Water is a batch volume, not proof of measured\
+    \ final volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n        \"stored\"\
+    : null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 1 ml; provider\
+    \ declares stage volume 1000 mL. \"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main medium: Modified Wolin's mineral solution\",\n    \"field_path\": \"\
+    source.solution_1920.recipe[10]\",\n    \"decision\": \"conflict\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz931\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n        \"snapshot_sha256\"\
+    : \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\",\n    \
+    \    \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"solution\\\": \\\"Modified Wolin's mineral solution\\\",\\n                \
+    \        \\\"solution_id\\\": 241,\\n                        \\\"amount\\\": 10,\\\
+    n                        \\\"unit\\\": \\\"ml\\\",\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      }\n\
+    \    ],\n    \"rationale\": \"Primary explicitly names 10 mL vitamin solution\
+    \ from 141. API instead names mineral solution241 at 10 mL, while another 1 mL\
+    \ solution241 row already represents minerals. Preserve both sources; identify\
+    \ the vitamin stock from the primary and independent 242 endpoint, not by accepting\
+    \ the duplicated APIidentity.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"conflict\"\
+    ,\n        \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"conflict\"\
+    ,\n        \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"conflict\"\
+    ,\n        \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 10\
+    \ ml; provider declares stage volume 1000 mL. \"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main medium: Resazurin\",\n    \"field_path\": \"ingredients[9].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": {\n      \"value\": \"\
+    0.001\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Resazurin 0.001 g\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Resazurin\\\",\\n                        \\\"compound_id\\\
+    \": 25,\\n                        \\\"amount\\\": 1,\\n                      \
+    \  \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.001,\\n\
+    \                        \\\"mmol_l\\\": 0.00436319,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The main source batch amount agrees numerically\
+    \ with the provider nominal 1000 mL G_PER_L convention, but no local layer attaches\
+    \ matching quantity evidence. Preserve the nominal convention explicitly without\
+    \ treating 1000 mL water plus stocks/unquantified additions as measured final\
+    \ volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"value\": \"0.001\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.001\",\n\
+    \          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"decision\"\
+    : \"evidence_only\",\n        \"stored\": {\n          \"value\": \"0.001\",\n\
+    \          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\"\
+    : \"Source 1 mg; provider declares stage volume 1000 mL. 1mg /1000=0.001g. \"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Main medium: Distilled water\",\n\
+    \    \"field_path\": \"source.solution_1920.recipe[12]\",\n    \"decision\": \"\
+    add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.000 ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[12]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 13,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the missing source stock dose or source\
+    \ water quantity at its named stage. Water is a batch volume, not proof of measured\
+    \ final volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"preparation_steps\",\n        \"decision\": \"add\",\n   \
+    \     \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"decision\": \"add\"\
+    ,\n        \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"decision\": \"add\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"MIX\",\n            \"description\": \"Final pH 9.5-10.0\"\
+    \n          },\n          {\n            \"step_number\": 2,\n            \"action\"\
+    : \"AUTOCLAVE\",\n            \"description\": \"Prepare the medium without adding\
+    \ the vitamins, sucrose, yeast extract, NH4Cl, Na2CO3, and NaHCO3 using anaerobic\
+    \ conditions, under nitrogen. If the medium has been boiled to remove oxygen add\
+    \ the NH4Cl, Na2CO3, and NaHCO3 after the medium had cooled. Dispense into tubes\
+    \ stopper with rubber stoppers (serum tubes or bottles, or screw capped tubes).\
+    \ Autoclave, and to the cooled medium add the vitamins (filter sterilised under\
+    \ N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic, sterile stock\
+    \ solutions.\"\n          },\n          {\n            \"step_number\": 3,\n \
+    \           \"action\": \"ADJUST_PH\",\n            \"description\": \"First dissolve\
+    \ nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\
+    \ final to pH 7.0 with KOH.\"\n          }\n        ]\n      }\n    ],\n    \"\
+    arithmetic\": \"Source 1000 ml; provider declares stage volume 1000 mL. \"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"Mineral stock: Nitrilotriacetic acid\"\
+    ,\n    \"field_path\": \"ingredients[10].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"1.5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"Nitrilotriacetic acid 1.50 g\",\n       \
+    \ \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Nitrilotriacetic acid\\\",\\n                        \\\"compound_id\\\
+    \": 189,\\n                        \\\"amount\\\": 1.5,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1.5,\\n\
+    \                        \\\"mmol_l\\\": 7.84765,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table; trace elements receiving\
+    \ dose\",\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141)\
+    \ 1.000 ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[10].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"1.5\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"1.5\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"1.5\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 1.5 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 1.5 g/L × 0.001 L=0.0015g delivered per listed batch. This delivered mass\
+    \ is not an unconditional final concentration; actual final volume is not supplied.\
+    \ \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: MgSO4 x 7 H2O\"\
+    ,\n    \"field_path\": \"ingredients[11].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"MgSO4 x 7 H2O 3.00 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 3,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n      \
+    \                  \\\"mmol_l\\\": 12.1716,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n    \
+    \    \"source_locator\": \"DSMZ 931 main table; trace elements receiving dose\"\
+    ,\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000\
+    \ ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[11].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"3\",\n         \
+    \ \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"3\",\n         \
+    \ \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"3\",\n         \
+    \ \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 3 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose,\
+    \ 3 g/L × 0.001 L=0.003g delivered per listed batch. This delivered mass is not\
+    \ an unconditional final concentration; actual final volume is not supplied. \"\
+    \n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: MnSO4 x H2O\",\n\
+    \    \"field_path\": \"ingredients[12].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"MnSO4 x H2O 0.50 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"MnSO4 x H2O\\\",\\n                        \\\"compound_id\\\
+    \": 14,\\n                        \\\"amount\\\": 0.5,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n \
+    \                       \\\"mmol_l\\\": 2.9583,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n    \
+    \    \"source_locator\": \"DSMZ 931 main table; trace elements receiving dose\"\
+    ,\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000\
+    \ ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[12].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.5\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.5\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.5\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.5 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.5 g/L × 0.001 L=0.0005g delivered per listed batch. This delivered mass\
+    \ is not an unconditional final concentration; actual final volume is not supplied.\
+    \ \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: NaCl\",\n   \
+    \ \"field_path\": \"ingredients[13].concentration\",\n    \"decision\": \"correct\"\
+    ,\n    \"local\": {\n      \"value\": \"1\",\n      \"unit\": \"G_PER_L\"\n  \
+    \  },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"NaCl 1.00 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\\
+    n                        \\\"amount\\\": 1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n                  \
+    \      \\\"mmol_l\\\": 17.1116,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n    \
+    \    \"source_locator\": \"DSMZ 931 main table; trace elements receiving dose\"\
+    ,\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000\
+    \ ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[13].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"1\",\n         \
+    \ \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"1\",\n         \
+    \ \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"1\",\n         \
+    \ \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"Source\
+    \ 1 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral dose,\
+    \ 1 g/L × 0.001 L=0.001g delivered per listed batch. This delivered mass is not\
+    \ an unconditional final concentration; actual final volume is not supplied. \"\
+    \n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: FeSO4 x 7 H2O\",\n\
+    \    \"field_path\": \"ingredients[14].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"FeSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.359693,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table; trace elements receiving\
+    \ dose\",\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141)\
+    \ 1.000 ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[14].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.1\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.1\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.1\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.1 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.1 g/L × 0.001 L=0.0001g delivered per listed batch. This delivered mass\
+    \ is not an unconditional final concentration; actual final volume is not supplied.\
+    \ \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: CoSO4 x 7 H2O\"\
+    ,\n    \"field_path\": \"ingredients[15].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.18\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"CoSO4 x 7 H2O 0.18 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"CoSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 198,\\n                        \\\"amount\\\": 0.18,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.18,\\\
+    n                        \\\"mmol_l\\\": 1.16132,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table; trace elements receiving\
+    \ dose\",\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141)\
+    \ 1.000 ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[15].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.18\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.18\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.18\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.18 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.18 g/L × 0.001 L=0.00018g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: CaCl2\
+    \ x 2 H2O\",\n    \"field_path\": \"ingredients[16].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"0.1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"CaCl2 x 2 H2O 0.10 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.1,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n  \
+    \                      \\\"mmol_l\\\": 0.680203,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n    \
+    \    \"source_locator\": \"DSMZ 931 main table; trace elements receiving dose\"\
+    ,\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000\
+    \ ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[16].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.1\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.1\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.1\",\n       \
+    \   \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.1 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.1 g/L × 0.001 L=0.0001g delivered per listed batch. This delivered mass\
+    \ is not an unconditional final concentration; actual final volume is not supplied.\
+    \ \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: ZnSO4 x 7 H2O\"\
+    ,\n    \"field_path\": \"ingredients[17].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.18\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"ZnSO4 x 7 H2O 0.18 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.18,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.18,\\\
+    n                        \\\"mmol_l\\\": 0.625954,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table; trace elements receiving\
+    \ dose\",\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141)\
+    \ 1.000 ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[17].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.18\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.18\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.18\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.18 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.18 g/L × 0.001 L=0.00018g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: CuSO4\
+    \ x 5 H2O\",\n    \"field_path\": \"ingredients[18].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"0.01\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"CuSO4 x 5 H2O 0.01 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"CuSO4 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 121,\\n                        \\\"amount\\\": 0.01,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0400503,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; trace elements receiving dose\",\n  \
+    \      \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[18].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.01 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.01 g/L × 0.001 L=0.00001g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: AlK(SO4)2\
+    \ x 12 H2O\",\n    \"field_path\": \"ingredients[19].concentration\",\n    \"\
+    decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.02\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"AlK(SO4)2 x 12 H2O 0.02 g\",\n        \"\
+    snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[9]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 10,\\n                        \\\
+    \"compound\\\": \\\"AlK(SO4)2 x 12 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 908,\\n                        \\\"amount\\\": 0.02,\\n                  \
+    \      \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\\
+    n                        \\\"mmol_l\\\": 0.0421596,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; trace elements receiving dose\",\n  \
+    \      \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[19].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.02\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.02\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.02\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.02 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.02 g/L × 0.001 L=0.00002g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: H3BO3\"\
+    ,\n    \"field_path\": \"ingredients[20].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"local\": {\n      \"value\": \"0.01\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"H3BO3 0.01 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[10]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 11,\\n                        \\\
+    \"compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\":\
+    \ 37,\\n                        \\\"amount\\\": 0.01,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n \
+    \                       \\\"mmol_l\\\": 0.161708,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table; trace elements receiving\
+    \ dose\",\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141)\
+    \ 1.000 ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[20].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.01 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.01 g/L × 0.001 L=0.00001g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: Na2MoO4\
+    \ x 2 H2O\",\n    \"field_path\": \"ingredients[21].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"0.01\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"Na2MoO4 x 2 H2O 0.01 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[11]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 12,\\n                        \\\
+    \"compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 0.01,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\n\
+    \                        \\\"mmol_l\\\": 0.0413309,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; trace elements receiving dose\",\n  \
+    \      \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[21].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.01\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.01 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.01 g/L × 0.001 L=0.00001g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: NiCl2\
+    \ x 6 H2O\",\n    \"field_path\": \"ingredients[22].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"0.03\",\n      \"unit\":\
+    \ \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"NiCl2 x 6 H2O 0.03 g\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[12]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 13,\\n                        \\\
+    \"compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 0.03,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\\
+    n                        \\\"mmol_l\\\": 0.231483,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n      },\n\
+    \      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 main table; trace elements receiving\
+    \ dose\",\n        \"exact_source_quote\": \"Trace elements (see DSM medium 141)\
+    \ 1.000 ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[22].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.03\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.03\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.03\",\n      \
+    \    \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\": \"\
+    Source 0.03 g; provider declares stage volume 1000 mL. For the primary 1 mL mineral\
+    \ dose, 0.03 g/L × 0.001 L=0.00003g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. \"\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock: Na2SeO3\
+    \ x 5 H2O\",\n    \"field_path\": \"ingredients[23].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"0.0003\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"Na2SeO3 x 5 H2O 0.30 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[13]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 14,\\n                        \\\
+    \"compound\\\": \\\"Na2SeO3 x 5 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 107,\\n                        \\\"amount\\\": 0.3,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0003,\\\
+    n                        \\\"mmol_l\\\": 0.00114062,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; trace elements receiving dose\",\n  \
+    \      \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[23].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.0003\",\n    \
+    \      \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.0003\",\n    \
+    \      \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.0003\",\n    \
+    \      \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\":\
+    \ \"Source 0.3 mg; provider declares stage volume 1000 mL. For the primary 1 mL\
+    \ mineral dose, 0.0003 g/L × 0.001 L=3E-7g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. 0.3mg /1000=0.0003g. \"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Mineral stock: Na2WO4 x 2 H2O\",\n    \"field_path\": \"ingredients[24].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"0.0004\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz141\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\"\
+    ,\n        \"exact_source_quote\": \"Na2WO4 x 2 H2O 0.40 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[14]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 15,\\n                        \\\
+    \"compound\\\": \\\"Na2WO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 249,\\n                        \\\"amount\\\": 0.4,\\n                   \
+    \     \\\"unit\\\": \\\"mg\\\",\\n                        \\\"g_l\\\": 0.0004,\\\
+    n                        \\\"mmol_l\\\": 0.00121267,\\n                      \
+    \  \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; trace elements receiving dose\",\n  \
+    \      \"exact_source_quote\": \"Trace elements (see DSM medium 141) 1.000 ml\"\
+    ,\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The stock value is supported but is placed\
+    \ directly in the medium in all layers. Restore mineral composition and the distinct\
+    \ 1 mL receiving dose. The API 10 mL duplicate reference must not be added as\
+    \ extra mineral stock.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[24].concentration\",\n        \"decision\":\
+    \ \"correct\",\n        \"stored\": {\n          \"value\": \"0.0004\",\n    \
+    \      \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.0004\",\n    \
+    \      \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"decision\"\
+    : \"correct\",\n        \"stored\": {\n          \"value\": \"0.0004\",\n    \
+    \      \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"arithmetic\":\
+    \ \"Source 0.4 mg; provider declares stage volume 1000 mL. For the primary 1 mL\
+    \ mineral dose, 0.0004 g/L × 0.001 L=4E-7g delivered per listed batch. This delivered\
+    \ mass is not an unconditional final concentration; actual final volume is not\
+    \ supplied. 0.4mg /1000=0.0004g. \"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Mineral stock: Distilled water\",\n    \"field_path\": \"source.solution_241.recipe[15]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 page2; Modified Wolin mineral table\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive931api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[15]\",\n        \"exact_source_quote\": \"{\\n\
+    \                        \\\"recipe_order\\\": 16,\\n                        \\\
+    \"compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"Add the missing source stock dose or source\
+    \ water quantity at its named stage. Water is a batch volume, not proof of measured\
+    \ final volume.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"preparation_steps\",\n        \"decision\": \"add\",\n   \
+    \     \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"decision\": \"add\"\
+    ,\n        \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"decision\": \"add\"\
+    ,\n        \"stored\": [\n          {\n            \"step_number\": 1,\n     \
+    \       \"action\": \"MIX\",\n            \"description\": \"Final pH 9.5-10.0\"\
+    \n          },\n          {\n            \"step_number\": 2,\n            \"action\"\
+    : \"AUTOCLAVE\",\n            \"description\": \"Prepare the medium without adding\
+    \ the vitamins, sucrose, yeast extract, NH4Cl, Na2CO3, and NaHCO3 using anaerobic\
+    \ conditions, under nitrogen. If the medium has been boiled to remove oxygen add\
+    \ the NH4Cl, Na2CO3, and NaHCO3 after the medium had cooled. Dispense into tubes\
+    \ stopper with rubber stoppers (serum tubes or bottles, or screw capped tubes).\
+    \ Autoclave, and to the cooled medium add the vitamins (filter sterilised under\
+    \ N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic, sterile stock\
+    \ solutions.\"\n          },\n          {\n            \"step_number\": 3,\n \
+    \           \"action\": \"ADJUST_PH\",\n            \"description\": \"First dissolve\
+    \ nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\
+    \ final to pH 7.0 with KOH.\"\n          }\n        ]\n      }\n    ],\n    \"\
+    arithmetic\": \"Source 1000 ml; provider declares stage volume 1000 mL. \"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"Vitamin stock: Biotin\",\n    \"field_path\"\
+    : \"source.vitamin_stock.recipe[0]\",\n    \"decision\": \"add\",\n    \"local\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz141\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row1\"\
+    ,\n        \"exact_source_quote\": \"Biotin 2.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[0]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 1,\\n                \\\"compound\\\": \\\"Biotin\\\"\
+    ,\\n                \\\"compound_id\\\": 46,\\n                \\\"solution\\\"\
+    : null,\\n                \\\"solution_id\\\": null,\\n                \\\"condition\\\
+    \": null,\\n                \\\"attribute\\\": null,\\n                \\\"amount\\\
+    \": 2,\\n                \\\"unit\\\": \\\"mg\\\",\\n                \\\"g_l\\\
+    \": 0.002,\\n                \\\"mmol_l\\\": 0.00818632,\\n                \\\"\
+    optional\\\": 0\\n            }\",\n        \"snapshot_sha256\": \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n    \
+    \    \"source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n  \
+    \      \"exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000\
+    \ ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 2 mg in\
+    \ vitamin stock; provider declares 1000 mL. 2mg/1000=0.002g per stock batch; nominal\
+    \ stock G_PER_L=0.002. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Folic acid\",\n    \"field_path\": \"source.vitamin_stock.recipe[1]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row2\",\n        \"\
+    exact_source_quote\": \"Folic acid 2.00 mg\",\n        \"snapshot_sha256\": \"\
+    8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n        \"\
+    parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[1]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 2,\\n                \\\"compound\\\": \\\"Folic acid\\\
+    \",\\n                \\\"compound_id\\\": 138,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 2,\\n                \\\"unit\\\": \\\"mg\\\",\\n      \
+    \          \\\"g_l\\\": 0.002,\\n                \\\"mmol_l\\\": 0.00453104,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 2 mg in\
+    \ vitamin stock; provider declares 1000 mL. 2mg/1000=0.002g per stock batch; nominal\
+    \ stock G_PER_L=0.002. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Pyridoxine hydrochloride\",\n    \"field_path\": \"source.vitamin_stock.recipe[2]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row3\",\n        \"\
+    exact_source_quote\": \"Pyridoxine hydrochloride 10.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[2]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 3,\\n                \\\"compound\\\": \\\"Pyridoxine\
+    \ hydrochloride\\\",\\n                \\\"compound_id\\\": 519,\\n          \
+    \      \\\"solution\\\": null,\\n                \\\"solution_id\\\": null,\\\
+    n                \\\"condition\\\": null,\\n                \\\"attribute\\\"\
+    : null,\\n                \\\"amount\\\": 10,\\n                \\\"unit\\\":\
+    \ \\\"mg\\\",\\n                \\\"g_l\\\": 0.01,\\n                \\\"mmol_l\\\
+    \": 0.0486287,\\n                \\\"optional\\\": 0\\n            }\",\n    \
+    \    \"snapshot_sha256\": \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n    \
+    \    \"source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n  \
+    \      \"exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000\
+    \ ml\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 10 mg in\
+    \ vitamin stock; provider declares 1000 mL. 10mg/1000=0.01g per stock batch; nominal\
+    \ stock G_PER_L=0.01. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Thiamine HCl\",\n    \"field_path\": \"source.vitamin_stock.recipe[3]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row4\",\n        \"\
+    exact_source_quote\": \"Thiamine HCl 5.00 mg\",\n        \"snapshot_sha256\":\
+    \ \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[3]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 4,\\n                \\\"compound\\\": \\\"Thiamine HCl\\\
+    \",\\n                \\\"compound_id\\\": 1207,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 5,\\n                \\\"unit\\\": \\\"mg\\\",\\n      \
+    \          \\\"g_l\\\": 0.005,\\n                \\\"mmol_l\\\": 0.0148236,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 5 mg in\
+    \ vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal\
+    \ stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Riboflavin\",\n    \"field_path\": \"source.vitamin_stock.recipe[4]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row5\",\n        \"\
+    exact_source_quote\": \"Riboflavin 5.00 mg\",\n        \"snapshot_sha256\": \"\
+    8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n        \"\
+    parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[4]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 5,\\n                \\\"compound\\\": \\\"Riboflavin\\\
+    \",\\n                \\\"compound_id\\\": 136,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 5,\\n                \\\"unit\\\": \\\"mg\\\",\\n      \
+    \          \\\"g_l\\\": 0.005,\\n                \\\"mmol_l\\\": 0.0132837,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 5 mg in\
+    \ vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal\
+    \ stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Nicotinic acid\",\n    \"field_path\": \"source.vitamin_stock.recipe[5]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row6\",\n        \"\
+    exact_source_quote\": \"Nicotinic acid 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[5]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 6,\\n                \\\"compound\\\": \\\"Nicotinic\
+    \ acid\\\",\\n                \\\"compound_id\\\": 139,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 5,\\n                \\\"unit\\\": \\\"mg\\\"\
+    ,\\n                \\\"g_l\\\": 0.005,\\n                \\\"mmol_l\\\": 0.0406141,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 5 mg in\
+    \ vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal\
+    \ stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Calcium D-(+)-pantothenate\",\n    \"field_path\": \"source.vitamin_stock.recipe[6]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row7\",\n        \"\
+    exact_source_quote\": \"Calcium D-(+)-pantothenate 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[6]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 7,\\n                \\\"compound\\\": \\\"Calcium D-(+)-pantothenate\\\
+    \",\\n                \\\"compound_id\\\": 1512,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 5,\\n                \\\"unit\\\": \\\"mg\\\",\\n      \
+    \          \\\"g_l\\\": 0.005,\\n                \\\"mmol_l\\\": 0.0209846,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 5 mg in\
+    \ vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal\
+    \ stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Vitamin B12\",\n    \"field_path\": \"source.vitamin_stock.recipe[7]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row8\",\n        \"\
+    exact_source_quote\": \"Vitamin B12 0.10 mg\",\n        \"snapshot_sha256\": \"\
+    8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n        \"\
+    parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[7]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 8,\\n                \\\"compound\\\": \\\"Vitamin B12\\\
+    \",\\n                \\\"compound_id\\\": 18,\\n                \\\"solution\\\
+    \": null,\\n                \\\"solution_id\\\": null,\\n                \\\"\
+    condition\\\": null,\\n                \\\"attribute\\\": null,\\n           \
+    \     \\\"amount\\\": 0.1,\\n                \\\"unit\\\": \\\"mg\\\",\\n    \
+    \            \\\"g_l\\\": 0.0001,\\n                \\\"mmol_l\\\": 7.3779e-5,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 0.1 mg\
+    \ in vitamin stock; provider declares 1000 mL. 0.1mg/1000=0.0001g per stock batch;\
+    \ nominal stock G_PER_L=0.0001. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: p-Aminobenzoic acid\",\n    \"field_path\": \"source.vitamin_stock.recipe[8]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row9\",\n        \"\
+    exact_source_quote\": \"p-Aminobenzoic acid 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[8]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 9,\\n                \\\"compound\\\": \\\"p-Aminobenzoic\
+    \ acid\\\",\\n                \\\"compound_id\\\": 47,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 5,\\n                \\\"unit\\\": \\\"mg\\\"\
+    ,\\n                \\\"g_l\\\": 0.005,\\n                \\\"mmol_l\\\": 0.0364591,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 5 mg in\
+    \ vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal\
+    \ stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: (DL)-alpha-Lipoic acid\",\n    \"field_path\": \"source.vitamin_stock.recipe[9]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row10\",\n        \"\
+    exact_source_quote\": \"(DL)-alpha-Lipoic acid 5.00 mg\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[9]\",\n        \"exact_source_quote\": \"{\\n              \
+    \  \\\"recipe_order\\\": 10,\\n                \\\"compound\\\": \\\"(DL)-alpha-Lipoic\
+    \ acid\\\",\\n                \\\"compound_id\\\": 252,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 5,\\n                \\\"unit\\\": \\\"mg\\\"\
+    ,\\n                \\\"g_l\\\": 0.005,\\n                \\\"mmol_l\\\": 0.024233,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 5 mg in\
+    \ vitamin stock; provider declares 1000 mL. 5mg/1000=0.005g per stock batch; nominal\
+    \ stock G_PER_L=0.005. Primary 10 mL stock addition is distinct; no final-medium\
+    \ concentration is asserted.\"\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin\
+    \ stock: Distilled water\",\n    \"field_path\": \"source.vitamin_stock.recipe[10]\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 pages2–3; Wolin vitamin table row11\",\n        \"\
+    exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\",\n    \
+    \    \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      },\n      {\n        \"source_key\": \"solution242_retry\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.recipe[10]\",\n        \"exact_source_quote\": \"{\\n             \
+    \   \\\"recipe_order\\\": 11,\\n                \\\"compound\\\": \\\"Distilled\
+    \ water\\\",\\n                \\\"compound_id\\\": 4,\\n                \\\"\
+    solution\\\": null,\\n                \\\"solution_id\\\": null,\\n          \
+    \      \\\"condition\\\": null,\\n                \\\"attribute\\\": null,\\n\
+    \                \\\"amount\\\": 1000,\\n                \\\"unit\\\": \\\"ml\\\
+    \",\\n                \\\"g_l\\\": null,\\n                \\\"mmol_l\\\": null,\\\
+    n                \\\"optional\\\": 0\\n            }\",\n        \"snapshot_sha256\"\
+    : \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\",\n        \"\
+    source_locator\": \"DSMZ 931 main table; vitamin receiving dose\",\n        \"\
+    exact_source_quote\": \"Vitamin solution (see DSM medium 141) 10.000 ml\",\n \
+    \       \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"The required vitamin formulation is absent\
+    \ from all three layers. Preserve exact supplied form, source milligrams and stock\
+    \ water separately; do not infer identifiers for the missing ingredients.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ],\n    \"arithmetic\": \"Source 1000 ml\
+    \ in vitamin stock; provider declares 1000 mL. \"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Provider declared volume: Main sol. 931\",\n    \"field_path\": \"source.1920.volume\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"mediadive931api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/931\",\n        \"source_locator\":\
+    \ \"$.data.solutions[0].volume\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 1000\",\n        \"snapshot_sha256\": \"419284c8d2aff8a05e0e2a73e16321c6e266253dbd5a5b6d78bfd53ced8f5ae8\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the nominal stage basis as source\
+    \ metadata. It is not an independently measured final volume and must not turn\
+    \ 1000 mL water plus 1 mL minerals plus 10 mL vitamins into a validated 1011 mL\
+    \ final basis.\",\n    \"action_taken\": \"Review only; no recipe change.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Provider declared volume: Modified\
+    \ Wolin's mineral solution\",\n    \"field_path\": \"source.241.volume\",\n  \
+    \  \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"solution241\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/solution/241\",\n        \"source_locator\": \"\
+    $.data.volume\",\n        \"exact_source_quote\": \"\\\"volume\\\": 1000\",\n\
+    \        \"snapshot_sha256\": \"50cc42c209f550b7abc4a5f48b455553516220b6ef9613f481941f9e15f0b25d\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the nominal stage basis as source\
+    \ metadata. It is not an independently measured final volume and must not turn\
+    \ 1000 mL water plus 1 mL minerals plus 10 mL vitamins into a validated 1011 mL\
+    \ final basis.\",\n    \"action_taken\": \"Review only; no recipe change.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Provider declared volume: Wolin's\
+    \ vitamin solution\",\n    \"field_path\": \"source.242.volume\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"solution242_retry\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/solution/242\"\
+    ,\n        \"source_locator\": \"$.data.volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1000\",\n        \"snapshot_sha256\": \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the nominal stage basis as source\
+    \ metadata. It is not an independently measured final volume and must not turn\
+    \ 1000 mL water plus 1 mL minerals plus 10 mL vitamins into a validated 1011 mL\
+    \ final basis.\",\n    \"action_taken\": \"Review only; no recipe change.\"\n\
+    \  },\n  {\n    \"ingredient_or_context\": \"Main final pH range\",\n    \"field_path\"\
+    : \"ph_range\",\n    \"decision\": \"evidence_only\",\n    \"local\": {\n    \
+    \  \"min\": 9.5,\n      \"max\": 10.0\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz931\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium931.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 931 final pH statement\",\n        \"exact_source_quote\"\
+    : \"Final pH 9.5-10.0\",\n        \"snapshot_sha256\": \"033c250d2c6b6882cdf81283e0ba5e001b7d2e21f1e3e1d783924fe058cb7f28\"\
+    ,\n        \"parsed_text_sha256\": \"9cce1680119250a2f257c4cdfd1b5b52f5b504d1ccbfb715aa3e7a8faa8bc3e5\"\
+    \n      }\n    ],\n    \"rationale\": \"All three layers retain the source range;\
+    \ matching attached claim evidence is absent. This range is preparation context,\
+    \ not a growth optimum.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ph_range\",\n        \"decision\": \"evidence_only\",\n\
+    \        \"stored\": {\n          \"min\": 9.5,\n          \"max\": 10.0\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"stored\": {\n          \"min\": 9.5,\n          \"max\": 10.0\n \
+    \       }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"stored\": {\n          \"min\": 9.5,\n          \"max\": 10.0\n \
+    \       }\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Mineral\
+    \ stock initial pH 6.5\",\n    \"field_path\": \"source.mineral_stock.preparation.initial_pH\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 page2; Modified Wolin mineral preparation\",\n  \
+    \      \"exact_source_quote\": \"First dissolve nitrilotriacetic acid and adjust\
+    \ pH to 6.5 with KOH, then add minerals. Adjust\\nfinal to pH 7.0 with KOH.\"\
+    ,\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"DSMZ owner retains literal endpoints/adjustment\
+    \ text in a flat main preparation list, without a stock object. Restore stock\
+    \ scope and attach evidence. The KOH addition quantity is not specified; do not\
+    \ invent a dose or reagent strength.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock final\
+    \ pH 7.0\",\n    \"field_path\": \"source.mineral_stock.preparation.final_pH\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 page2; Modified Wolin mineral preparation\",\n  \
+    \      \"exact_source_quote\": \"First dissolve nitrilotriacetic acid and adjust\
+    \ pH to 6.5 with KOH, then add minerals. Adjust\\nfinal to pH 7.0 with KOH.\"\
+    ,\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"DSMZ owner retains literal endpoints/adjustment\
+    \ text in a flat main preparation list, without a stock object. Restore stock\
+    \ scope and attach evidence. The KOH addition quantity is not specified; do not\
+    \ invent a dose or reagent strength.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Mineral stock KOH\
+    \ amount\",\n    \"field_path\": \"source.mineral_stock.preparation.KOH_amount\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz141\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n        \"\
+    source_locator\": \"DSMZ 141 page2; Modified Wolin mineral preparation\",\n  \
+    \      \"exact_source_quote\": \"First dissolve nitrilotriacetic acid and adjust\
+    \ pH to 6.5 with KOH, then add minerals. Adjust\\nfinal to pH 7.0 with KOH.\"\
+    ,\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"DSMZ owner retains literal endpoints/adjustment\
+    \ text in a flat main preparation list, without a stock object. Restore stock\
+    \ scope and attach evidence. The KOH addition quantity is not specified; do not\
+    \ invent a dose or reagent strength.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"not_quantified\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\",\n        \"decision\": \"correct\"\
+    \n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Vitamin stock provider\
+    \ filter pore size\",\n    \"field_path\": \"source.vitamin_stock.preparation.filter_pore\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"solution242_retry\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/solution/242\",\n        \"source_locator\"\
+    : \"$.data.steps[0].step\",\n        \"exact_source_quote\": \"Filtrate (pore\
+    \ size 0.22 µm to sterilize).\",\n        \"snapshot_sha256\": \"4e58a59546c43de94390f51434fabda2699f6914cabef073a405d81d8fc8b4f6\"\
+    ,\n        \"parsed_text_sha256\": \"4478d1d45be0b313e7da87e1ea90feb05959800faeec154edfd839fe7269eed5\"\
+    \n      }\n    ],\n    \"rationale\": \"The standalone vitamin provider specifies\
+    \ 0.22 µm filtration. This is source-specific stock detail, not a value printed\
+    \ in primary 931 or permission to import 141 basal incubation conditions.\",\n\
+    \    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions\"\
+    ,\n        \"decision\": \"add\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"decision\": \"add\",\n  \
+    \      \"stored\": null\n      }\n    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact accession and reciprocal owner correspondence
+  outcome: supported
+  summary: The exact DSMZ 931 primary, provider 931 and KOMODO 931 catalog identify
+    one named formulation. All 25 ingredient objects match across target and two maintained
+    owners. Reciprocal parent/child paths and IDs resolve to these exact owners; that
+    source correspondence does not excuse their shared stock omission or justify dropping
+    unequal preparation content during merge.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz931
+  - mediadive931
+  - komodo-list
+- assessment_id: source-conflict
+  area: consistency
+  topic: Mineral/vitamin identity and receiving doses
+  outcome: concern
+  summary: The official main source calls for 1 mL trace elements and 10 mL vitamins
+    from 141. The current API has two solution241 mineral rows at 1 and 10 mL. Its
+    independent 242 endpoint and primary 141 vitamin table identify a different ten-solute
+    vitamin stock. Preserve this provider conflict rather than summing minerals to
+    11 mL or treating the vitamin dose as unknown. The formula still needs explicit
+    stocks, scoped evidence and documented source-version preference.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - dsmz931
+  - dsmz141
+  - mediadive931
+  - solution241
+  - solution242_retry
+  - quantity-inventory
+- assessment_id: preparation
+  area: completeness
+  topic: Anaerobic protocol and preservation of owner-specific text
+  outcome: concern
+  summary: Target/KOMODO owner omit preparation, while DSMZ owner retains the main
+    anaerobic nitrogen protocol, conditional cooling additions, closed vessels, autoclaving
+    and post-cooling sterile stocks/filter-sterilized vitamins. Its final mineral
+    pH instruction is flattened into main preparation. Catalog Is Aerobic=true is
+    accurately copied provenance but needs explicit separation from the primary anaerobic
+    procedure. No percentage gas composition, pressure, temperature or sterilization
+    duration is given for931;141 basal conditions are out of scope.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz931
+  - dsmz141
+  - komodo-list
+  - quantity-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Supplied forms and vitamin scope
+  outcome: concern
+  summary: The 24 distinct primary/secondary IDs resolve with matching labels, but
+    explicit mineral NiCl2 hexahydrate is mapped in every layer to anhydrous CHEBI34887
+    Cl2Ni. Other asserted hydrates match their source forms; no hydration is invented
+    for generic main MgCl2 and no sodium salt is substituted for source generic Resazurin.
+    Missing vitamin stock forms retain explicit calcium D-(+)-pantothenate and (DL)-alpha-lipoic
+    acid source wording; no new vitamin ontology mapping or molarity is asserted.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz931
+  - dsmz141
+  - chebi34887
+  - chebi8806
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Complexity, liquid state and growth scope
+  outcome: supported
+  summary: COMPLEX/SEMI_DEFINED and LIQUID are compatible with the specified salts
+    plus yeast extract. The title and primary deposition sentence are bounded catalog
+    context; no local target_organisms,taxon,genome,DOI/PMID or experimental growth
+    result is asserted. Do not turn the medium name or catalog oxygen flag into a
+    universal biological phenotype.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz931
+  - komodo-list
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 25 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: generation
+  area: provenance
+  topic: Merge and source-transform ownership
+  outcome: concern
+  summary: Current source/merge/cleanup/resolver excerpts are byte-identical to the
+    separately read 195 context and freshly hash-bound. Current MediaDive composition
+    separates primary rows from stocks, but all-section preparation parsing can lose
+    their stage; resolver composition copying does not prove current source fidelity.
+    The target has lost the DSMZ owner preparation. Ingredient signature equality
+    is insufficient evidence that all preparation/provenance fields can be discarded.
+  target_ids:
+  - CultureMech:006851
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+findings:
+- finding_id: f1
+  issue_key: culturemech.006851.stock-formulation-lost
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Mineral stock strengths replace doses and the required vitamin stock is absent
+  description: Fifteen mineral stock values are direct G_PER_L medium assertions,
+    without the source 1 mL mineral dose; the ten-component 10 mL vitamin stock is
+    absent. This materially changes the named formula. The provider duplicates solution241
+    at1/10 mL while the official primary distinguishes minerals/vitamins; a successful
+    API lookup cannot validate that substitution.
+  target_ids:
+  - CultureMech:006851
+  field_paths:
+  - ingredients[10]
+  - ingredients[24]
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz931
+  - dsmz141
+  - mediadive931
+  - solution242_retry
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.006851.preparation-and-oxygen-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Anaerobic preparation is lost while an aerobic catalog flag remains
+  description: 'The DSMZ owner contains the primary anaerobic nitrogen protocol, but
+    target/KOMODO owner retain only an unqualified Aerobic: Yes catalog note. Mineral
+    pH 6.5/7.0 also appears as main preparation instead of stock preparation. Reproducing
+    the primary requires stage order, conditional cooling additions and separate sterile
+    additions; this warrants major normalization of native P3.5.'
+  target_ids:
+  - CultureMech:006851
+  field_paths:
+  - preparation_steps
+  - notes
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz931
+  - dsmz141
+  - komodo-list
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.006851.nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate uses anhydrous primary and secondary identities
+  description: All layers explicitly name NiCl2×6H2O but link CHEBI34887 with formula
+    Cl2Ni and mass 129.599. Matching labels and pinned MIM linkage do not establish
+    the source hydrate.
+  target_ids:
+  - CultureMech:006851
+  field_paths:
+  - ingredients[22].term
+  - ingredients[22].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz141
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.006851.claim-evidence-history
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Quantities lack attached source evidence and four history instances have
+    timestamp defects
+  description: All layers lack matching attached amount evidence. Target and KOMODO
+    owner each repeat a malformed import timestamp and timezone-naive resolver timestamp;
+    the DSMZ owner timestamps are timezone-aware. Source copying and resolver history
+    do not establish scientific accuracy.
+  target_ids:
+  - CultureMech:006851
+  field_paths:
+  - ingredients
+  - evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz931
+  - quantity-inventory
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore primary-scoped mineral and vitamin stock identities, amounts
+    and receiving doses in both maintained owners, preserving the explicit provider
+    conflict. Keep supported main numbers on their nominal basis, and do not infer
+    final volume or add the two solution241 doses together.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006851
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve the DSMZ owner protocol in generated output, restore mineral
+    stock preparation scope, and attribute the historical catalog oxygen flag alongside
+    the contrary primary preparation. Do not overwrite provenance as if the source
+    flag had never existed or import 141 gas/pressure conditions.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006851
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve exact supplied hydrate grounding without changing the supported
+    0.03 g mineral-stock amount or deriving molarity from the anhydrous metadata.
+    Leave a replacement unresolved until independently verified.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006851
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach claim-level primary/provider evidence at restored ingredient/stock/preparation
+    scope; preserve source conflicts and historical timestamps, appending clarification
+    only when authorized.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006851
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Original public solution242 request failed DNS resolution in the default sandbox.
+  Metadata correction preserves the originally recorded metadata bytes and unchanged
+  failure time. A separately captured network-enabled retry returned200 and provides
+  the required vitamin-stock content.
+- Exact KOMODO 931 detail returned403; the catalog identity/flag row and complete
+  official primary remain available. This is not evidence of historical absence.
+- Original source 242 DNS failure and successful distinct retry, plus KOMODO detail
+  403, are retained. Required stock content and all four canonical diagnostics are
+  available; the fully assessed provider identity conflict does not itself force partial
+  completion.
+- DSMZ 141 was read in full to delimit the cross-reference; only its named mineral/vitamin
+  stocks inform931. Its basal recipe, organism variants, 80% H2/20% CO2 and pressure
+  conditions are not imported.
+- No measured final volume, gas fraction, fixed KOH dose, universal growth claim,
+  vitamin ontology identifier or unsupported autoclave cycle was inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-020
+- generated-medium
+```
