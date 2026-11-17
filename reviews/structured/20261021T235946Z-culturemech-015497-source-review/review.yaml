@@ -1,0 +1,1510 @@
+schema_version: 1.0.0
+review_id: 20261021T235946Z-culturemech-015497-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: BHIS_K3_noGlucose (CultureMech:015497)'
+started_at: '2026-10-21T23:44:41Z'
+finished_at: '2026-10-21T23:59:46Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact current FEBA BHIS_K3_noGlucose block supports all nine printed
+  g/L concentrations in both layers. None has attached claim-level quantity evidence.
+  No added glucose is listed; the complex tissue-derived ingredients are not established
+  as carbohydrate-free. The inaccessible original CultureBotHT formula and later FEBA
+  revision keep historical source authentication partial.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-category/SKILL.md
+    sha256: 2bd19d90afa3d37315c69a45cccad8b4a8e30b6bca8e992a45d7ea0c9cadfb84
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+    sha256: 24821f731b5a5200fc80e96b9f058e9ab27cdf5de5dcea23100e2fe0d1c05c62
+    role: target
+  - path: data/normalized_yaml/specialized/bhis_k3_noglucose.yaml
+    sha256: 5f3cd834276d61d5145ed34c43ddb681e84b5730c3b76b3d986b27100c3bb5d8
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BHIS_K3_noGlucose.md
+    sha256: 67e540d7863406d8c73471016c406e4ff8970fe038b211409a3843b47b7f2711
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/specialized/bhis_k3_noglucose.md
+    sha256: 8322aa146456eef65d7dd79dc3707241a60dd75c64aac898f66d694f1e34cc2e
+    role: context
+  - path: reports/yaml_record_review/20260921T213225Z-BHIS_K3_noGlucose.md
+    sha256: 446252032fce3210e7d334039f54bb1c3e0dde42df08a1034a46d58566b5c13c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 418; batch 042 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-one task batches
+    contain 410 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 413 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015497
+targets:
+- target_id: CultureMech:015497
+  path: data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  label: BHIS_K3_noGlucose
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bhis_k3_noglucose.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BHIS_K3_noGlucose.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch042/418/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch042/418/strict.tsv"
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015497
+- check_id: culturebothtRepository-source-access
+  name: 'Exact source content access: culturebothtRepository'
+  required: true
+  status: unavailable
+  summary: The exact CultureBotHT repository endpoint returned HTTP 404 at 2026-10-21T22:53:13.557900Z.
+    Its original formula bytes remain unavailable; the independently captured later
+    FEBA revision supports current amounts but does not establish import-time equivalence.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - culturebothtRepository-attempt
+- check_id: culturebothtExactBHIS_K3_noGlucose-source-access
+  name: 'Exact source content access: culturebothtExactBHIS_K3_noGlucose'
+  required: true
+  status: unavailable
+  summary: The exact named CultureBotHT media_yaml file returned HTTP 404 at 2026-10-21T23:23:21.453220+00:00.
+    Its original formula bytes remain unavailable; the independently captured later
+    FEBA revision supports current amounts but does not establish import-time equivalence.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - culturebothtExactBHIS_K3_noGlucose-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/specialized/bhis_k3_noglucose.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:45:19.646419Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BHIS_K3_noGlucose.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch042/418/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:45:20.636895Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch042/418/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:45:21.750781Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BHIS_K3_noGlucose.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:45:22.438154Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BHIS_K3_noGlucose.yaml:1:id: CultureMech:015497
+
+    ./data/normalized_yaml/specialized/bhis_k3_noglucose.yaml:1:id: CultureMech:015497
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/source-preflight-bound/418/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: supports
+  summary: 15 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: ee83de8ec454fdf9aa35b943d260cd2f203c9f693a4581c7af0b58534098f2f8
+- evidence_id: feba-main
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media
+  locator: Exact named accession block, lines 4563–4576
+  accessed_at: '2026-10-21T07:58:53.930003Z'
+  support: supports
+  summary: Complete direct formulation block. Printed g/L and mM are concentration
+    bases, not an experimentally measured final batch volume or stock-addition recipe.
+  quote: "Media\tBHIS_K3_noGlucose\t\r\nDescription\tBrain heart infusion salt broth\
+    \ with vitamin K3 and no glucose\t\r\nMinimal\tFALSE\t\r\nControlled vocabulary\t\
+    Concentration\tUnits\r\nCalf brains\t7.7\tg/L\r\nBeef heart\t9.8\tg/L\r\nProteose\
+    \ Peptone\t10\tg/L\r\nSodium Chloride\t5\tg/L\r\nDisodium phosphate\t2.5\tg/L\r\
+    \nL-Cysteine\t1\tg/L\r\nSodium bicarbonate\t2\tg/L\r\nHemin\t0.005\tg/L\r\nMenadione\t\
+    0.001\tg/L\r\n\t\t\r\n"
+  snapshot_sha256: a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848
+- evidence_id: feba-version
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commit/803273865ea9e83fab770ec4f13670db80e1180b
+  locator: Exact commit date and hash
+  accessed_at: '2026-10-21T07:59:41.378955Z'
+  support: supports
+  summary: FEBA revision 803273865ea9e83fab770ec4f13670db80e1180b is dated 2026-09-10T16:27:42+00:00,
+    after the March 2026 import. Current formula agreement cannot authenticate import-time
+    bytes.
+  snapshot_sha256: 0a4998d61b96db10c549512e2fe06718e04b687e6bbc6b2c1ea121c3c11a53ca
+- evidence_id: culturebothtRepository-attempt
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/CultureBotHT
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T22:53:13.557900Z'
+  support: context_only
+  summary: The exact CultureBotHT repository endpoint returned HTTP 404 at 2026-10-21T22:53:13.557900Z.
+    Its original formula bytes remain unavailable; the independently captured later
+    FEBA revision supports current amounts but does not establish import-time equivalence.
+  snapshot_sha256: 4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9
+- evidence_id: culturebothtExactBHIS_K3_noGlucose-attempt
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/CultureBotHT/main/media_yaml/BHIS_K3_noGlucose.yaml
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T23:23:21.453220Z'
+  support: context_only
+  summary: The exact named CultureBotHT media_yaml file returned HTTP 404 at 2026-10-21T23:23:21.453220+00:00.
+    Its original formula bytes remain unavailable; the independently captured later
+    FEBA revision supports current amounts but does not establish import-time equivalence.
+  snapshot_sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+- evidence_id: compound-0
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 569
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Calf brains. CAS and formula weight concern
+    this supplied material; catalogue numbers and mapping-confidence notes are not
+    growth or concentration evidence.
+  quote: "Calf brains\t\t\t\t\t\tUsed in BHIS_K3 media\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-1
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 570
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Beef heart. CAS and formula weight concern
+    this supplied material; catalogue numbers and mapping-confidence notes are not
+    growth or concentration evidence.
+  quote: "Beef heart\t\t\t\t\t\tUsed in BHIS_K3 media\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-2
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 568
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Proteose Peptone. CAS and formula weight concern
+    this supplied material; catalogue numbers and mapping-confidence notes are not
+    growth or concentration evidence.
+  quote: "Proteose Peptone\t91079-38-8\tSigma\t82450\t\t\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-3
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 375
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Sodium Chloride. CAS and formula weight concern
+    this supplied material; catalogue numbers and mapping-confidence notes are not
+    growth or concentration evidence.
+  quote: "Sodium Chloride\t7647-14-5\tSigma\tS3014\t58.44\tNaCl\t\t\tyes\t\t\tyes\t\
+    \r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-4
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 171
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Disodium phosphate. CAS and formula weight
+    concern this supplied material; catalogue numbers and mapping-confidence notes
+    are not growth or concentration evidence.
+  quote: "Disodium phosphate\t7558-79-4\t\t\t141.96\tNa2HPO4, Sodium phosphate dibasic\t\
+    \t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-5
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 519
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for L-Cysteine. CAS and formula weight concern
+    this supplied material; catalogue numbers and mapping-confidence notes are not
+    growth or concentration evidence.
+  quote: "L-Cysteine\t52-90-4\tsigmaaldrich\tW326305-100G\t121.16\t (R)-2-Amino-3-mercaptopropionic\
+    \ acid\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-6
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 369
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Sodium bicarbonate. CAS and formula weight
+    concern this supplied material; catalogue numbers and mapping-confidence notes
+    are not growth or concentration evidence.
+  quote: "Sodium bicarbonate\t144-55-8\t\t\t84.007\tNaHCO3\t\t\tyes\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-7
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 520
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Hemin. CAS and formula weight concern this
+    supplied material; catalogue numbers and mapping-confidence notes are not growth
+    or concentration evidence.
+  quote: "Hemin\t16009-13-5\tsigmaaldrich\tH9039-10G\t651.94\tChloro(protoporphyrinato)iron(III),\
+    \ Chlorohemin, Chloroprotoporphyrin IX iron(III), Ferriprotoporphyrin IX chloride,\
+    \ Hemin(chloride)\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: compound-8
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv
+  locator: Compounds.tsv line 1244
+  accessed_at: '2026-10-21T13:40:20.285295Z'
+  support: supports
+  summary: Exact compound metadata for Menadione. CAS and formula weight concern this
+    supplied material; catalogue numbers and mapping-confidence notes are not growth
+    or concentration evidence.
+  quote: "Menadione\t58-27-5\tSigma\tM5625\t\t\t\t\t\t\t\t\t\r\n"
+  snapshot_sha256: 25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/418/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 40efaf1f7746007aacfb5642152f63a6ad3f2c4e40a8b5d2fde0732350a3752f
+- evidence_id: forms
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/418/chemical-form-inventory.json
+  locator: All nine ingredient instances, exact compound rows and complete OLS scientific
+    properties
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Source-to-chemical-form assessment, including the three complex ungrounded
+    materials and six asserted chemicals.
+  snapshot_sha256: 246e519361c7b89181c0fc3c4e9cde696893506cc216b31f440bcb6a85004ac0
+- evidence_id: chebi17561
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17561
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.213329Z'
+  support: supports
+  summary: CHEBI:17561 resolves to L-cysteine. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ea82f62413bdf5b5575ec20c8bd9e19bb3f41efb6f1efa500401656e6c186292
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi28869
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28869
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:39.892502Z'
+  support: supports
+  summary: CHEBI:28869 resolves to menadione. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 7d5bbd9644ae17adf1a4cf5660c04a06c2db3430709c2a0d2da9a026611d9444
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi50385
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:40.648821Z'
+  support: supports
+  summary: CHEBI:50385 resolves to hemin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b989203634707b89526a8664c8fa65cb4976c4cdd791427218cf01b37d17356e
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BHIS_K3_noGlucose.yaml; data/normalized_yaml/specialized/bhis_k3_noglucose.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 4, "timestamp_issues": []}, {"input": "data/normalized_yaml/specialized/bhis_k3_noglucose.yaml",
+    "events": 3, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/import_from_culturebotht.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Relevant current importer, unit/history/preparation migration and formulation-preserving
+    merge functions were read. They are current mechanisms only. The single maintained
+    owner and target agree scientifically; no historical mapping execution or universal
+    merger-loss causation is inferred.
+  snapshot_sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/migrate_legacy_fields.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Relevant current importer, unit/history/preparation migration and formulation-preserving
+    merge functions were read. They are current mechanisms only. The single maintained
+    owner and target agree scientifically; no historical mapping execution or universal
+    merger-loss causation is inferred.
+  snapshot_sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Relevant current importer, unit/history/preparation migration and formulation-preserving
+    merge functions were read. They are current mechanisms only. The single maintained
+    owner and target agree scientifically; no historical mapping execution or universal
+    merger-loss causation is inferred.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Relevant current importer, unit/history/preparation migration and formulation-preserving
+    merge functions were read. They are current mechanisms only. The single maintained
+    owner and target agree scientifically; no historical mapping execution or universal
+    merger-loss causation is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: prior-report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/specialized/bhis_k3_noglucose.md
+  locator: Complete exact target/owner report, matched record path and CultureMech
+    ID
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Derivative local review read in full. Its earlier unavailable-source or
+    amount-triage conclusions are historical context, not authenticated upstream raw
+    bytes or a substitute for current source comparison.
+  snapshot_sha256: 8322aa146456eef65d7dd79dc3707241a60dd75c64aac898f66d694f1e34cc2e
+- evidence_id: prior-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BHIS_K3_noGlucose.md
+  locator: Complete exact target/owner report, matched record path and CultureMech
+    ID
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Derivative local review read in full. Its earlier unavailable-source or
+    amount-triage conclusions are historical context, not authenticated upstream raw
+    bytes or a substitute for current source comparison.
+  snapshot_sha256: 67e540d7863406d8c73471016c406e4ff8970fe038b211409a3843b47b7f2711
+- evidence_id: prior-report-2
+  kind: record_content
+  reference: reports/yaml_record_review/20260921T213225Z-BHIS_K3_noGlucose.md
+  locator: Complete exact target/owner report, matched record path and CultureMech
+    ID
+  accessed_at: '2026-10-21T23:49:12Z'
+  support: context_only
+  summary: Derivative local review read in full. Its earlier unavailable-source or
+    amount-triage conclusions are historical context, not authenticated upstream raw
+    bytes or a substitute for current source comparison.
+  snapshot_sha256: 446252032fce3210e7d334039f54bb1c3e0dde42df08a1034a46d58566b5c13c
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, contribution and variant boundary
+  outcome: supported
+  summary: The generated ID, source database_id and merged_from resolve to one exact
+    maintained owner. Every ingredient and scientific field agrees between those two
+    layers; only merge metadata and append-only merge history differ. Other BHIS products,
+    agar formulations and glucose variants do not supply missing ingredients or conditions.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - feba-main
+- assessment_id: source-version
+  area: provenance
+  topic: Current source versus original imported bytes
+  outcome: unknown
+  summary: Current FEBA and its compound catalogue are pinned to the named September
+    revision. They provide direct present-day formula evidence; neither HTTP 404 response
+    nor prior local review authenticates the March import. No historical raw digest
+    or historical source equivalence is asserted.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - feba-main
+  - feba-version
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 34 per-layer and source-scope decisions cover all 18 concentration fields,
+    all 14 ingredient-note fields and the explicitly unresolved preparation scope.
+    All 18 numerical concentration matches are evidence_only because no matching attached
+    concentration evidence exists. Chemical-form correspondence is evaluated separately.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"Calf brains\",\n\
+    \    \"stage\": \"Direct named FEBA formulation; generated target\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"7.7\",\n          \"unit\": \"\
+    G_PER_L\"\n        }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"\
+    7.7\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4567 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Calf brains\\t7.7\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"name\": \"\
+    Beef heart\",\n    \"stage\": \"Direct named FEBA formulation; generated target\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n       \
+    \ \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"9.8\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    }\n    ],\n    \"desired\": {\n      \"value\": \"9.8\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4568 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Beef heart\\t9.8\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"name\": \"\
+    Proteose Peptone\",\n    \"stage\": \"Direct named FEBA formulation; generated\
+    \ target\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"10\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4569 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Proteose Peptone\\t10\\tg/L\\n\",\n        \"\
+    snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"name\": \"\
+    Sodium Chloride\",\n    \"stage\": \"Direct named FEBA formulation; generated\
+    \ target\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4570 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Sodium Chloride\\t5\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"name\": \"\
+    Disodium phosphate\",\n    \"stage\": \"Direct named FEBA formulation; generated\
+    \ target\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"2.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4571 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Disodium phosphate\\t2.5\\tg/L\\n\",\n       \
+    \ \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"name\": \"\
+    L-Cysteine\",\n    \"stage\": \"Direct named FEBA formulation; generated target\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n       \
+    \ \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  }\n    ],\n    \"desired\": {\n      \"value\": \"1\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4572 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"L-Cysteine\\t1\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q7\",\n    \"name\": \"\
+    Sodium bicarbonate\",\n    \"stage\": \"Direct named FEBA formulation; generated\
+    \ target\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"2\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4573 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Sodium bicarbonate\\t2\\tg/L\\n\",\n        \"\
+    snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n    \"name\": \"\
+    Hemin\",\n    \"stage\": \"Direct named FEBA formulation; generated target\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n        \"\
+    field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n        }\n    \
+    \  }\n    ],\n    \"desired\": {\n      \"value\": \"0.005\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4574 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Hemin\\t0.005\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q9\",\n    \"name\": \"\
+    Menadione\",\n    \"stage\": \"Direct named FEBA formulation; generated target\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n       \
+    \ \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"0.001\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4575 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Menadione\\t0.001\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n    \"name\": \"\
+    Calf brains\",\n    \"stage\": \"Direct named FEBA formulation; maintained owner\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.7\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"7.7\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4567 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Calf brains\\t7.7\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"name\": \"\
+    Beef heart\",\n    \"stage\": \"Direct named FEBA formulation; maintained owner\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"9.8\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4568 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Beef heart\\t9.8\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n    \"name\": \"\
+    Proteose Peptone\",\n    \"stage\": \"Direct named FEBA formulation; maintained\
+    \ owner\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"10\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4569 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Proteose Peptone\\t10\\tg/L\\n\",\n        \"\
+    snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n    \"name\": \"\
+    Sodium Chloride\",\n    \"stage\": \"Direct named FEBA formulation; maintained\
+    \ owner\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4570 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Sodium Chloride\\t5\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"name\": \"\
+    Disodium phosphate\",\n    \"stage\": \"Direct named FEBA formulation; maintained\
+    \ owner\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"2.5\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4571 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Disodium phosphate\\t2.5\\tg/L\\n\",\n       \
+    \ \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"name\": \"\
+    L-Cysteine\",\n    \"stage\": \"Direct named FEBA formulation; maintained owner\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"1\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4572 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"L-Cysteine\\t1\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"name\": \"\
+    Sodium bicarbonate\",\n    \"stage\": \"Direct named FEBA formulation; maintained\
+    \ owner\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": \"2\",\n      \"unit\"\
+    : \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4573 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Sodium bicarbonate\\t2\\tg/L\\n\",\n        \"\
+    snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"name\": \"\
+    Hemin\",\n    \"stage\": \"Direct named FEBA formulation; maintained owner\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.005\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4574 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Hemin\\t0.005\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n    \"name\": \"\
+    Menadione\",\n    \"stage\": \"Direct named FEBA formulation; maintained owner\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"value\": \"0.001\",\n     \
+    \ \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"media line 4575 in BHIS_K3_noGlucose\",\n   \
+    \     \"exact_source_quote\": \"Menadione\\t0.001\\tg/L\\n\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\",\n    \
+    \    \"quote_representation\": \"Exact source text; line endings normalized to\
+    \ LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"Printed value and unit match this existing concentration. Attach versioned\
+    \ claim-level evidence; no numerical change or stock dilution is justified. This\
+    \ source row does not specify preparation volume or imply a tissue-equivalent\
+    \ raw-organ mass.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n    \"name\": \"\
+    Proteose Peptone supplier/mapping notes\",\n    \"stage\": \"Material identity\
+    \ and metadata, not a medium dose\",\n    \"decision\": \"evidence_only\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].notes\",\n        \"stored\": \"CAS:\
+    \ 91079-38-8\"\n      }\n    ],\n    \"desired\": \"CAS: 91079-38-8\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\",\n \
+    \       \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 568\",\n        \"exact_source_quote\"\
+    : \"Proteose Peptone\\t91079-38-8\\tSigma\\t82450\\t\\t\\t\\t\\t\\t\\t\\t\\t\\\
+    n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q20\",\n    \"name\": \"Proteose Peptone supplier/mapping\
+    \ notes\",\n    \"stage\": \"Material identity and metadata, not a medium dose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].notes\",\n        \"stored\": \"CAS:\
+    \ 91079-38-8\"\n      }\n    ],\n    \"desired\": \"CAS: 91079-38-8\",\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\",\n \
+    \       \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 568\",\n        \"exact_source_quote\"\
+    : \"Proteose Peptone\\t91079-38-8\\tSigma\\t82450\\t\\t\\t\\t\\t\\t\\t\\t\\t\\\
+    n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q21\",\n    \"name\": \"Sodium Chloride supplier/mapping\
+    \ notes\",\n    \"stage\": \"Material identity and metadata, not a medium dose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n       \
+    \ \"field_path\": \"ingredients[3].notes\",\n        \"stored\": \"CAS: 7647-14-5;\
+    \ MW: 58.44\"\n      }\n    ],\n    \"desired\": \"CAS: 7647-14-5; MW: 58.44\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 375\",\n        \"exact_source_quote\"\
+    : \"Sodium Chloride\\t7647-14-5\\tSigma\\tS3014\\t58.44\\tNaCl\\t\\t\\tyes\\t\\\
+    t\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q22\",\n    \"name\": \"Sodium Chloride supplier/mapping\
+    \ notes\",\n    \"stage\": \"Material identity and metadata, not a medium dose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].notes\",\n        \"stored\": \"CAS:\
+    \ 7647-14-5; MW: 58.44\"\n      }\n    ],\n    \"desired\": \"CAS: 7647-14-5;\
+    \ MW: 58.44\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 375\",\n        \"exact_source_quote\"\
+    : \"Sodium Chloride\\t7647-14-5\\tSigma\\tS3014\\t58.44\\tNaCl\\t\\t\\tyes\\t\\\
+    t\\tyes\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q23\",\n    \"name\": \"Disodium phosphate supplier/mapping\
+    \ notes\",\n    \"stage\": \"Material identity and metadata, not a medium dose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n       \
+    \ \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 7558-79-4; MW: 141.96\"\n      }\n    ],\n    \"desired\"\
+    : \"Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW: 141.96\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 171\",\n        \"exact_source_quote\"\
+    : \"Disodium phosphate\\t7558-79-4\\t\\t\\t141.96\\tNa2HPO4, Sodium phosphate\
+    \ dibasic\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q24\",\n    \"name\": \"Disodium phosphate supplier/mapping\
+    \ notes\",\n    \"stage\": \"Material identity and metadata, not a medium dose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW: 141.96\"\n  \
+    \    }\n    ],\n    \"desired\": \"Mapping: micromediaparam_legacy (confidence:\
+    \ 0.90); CAS: 7558-79-4; MW: 141.96\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 171\",\n        \"exact_source_quote\"\
+    : \"Disodium phosphate\\t7558-79-4\\t\\t\\t141.96\\tNa2HPO4, Sodium phosphate\
+    \ dibasic\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q25\",\n    \"name\": \"L-Cysteine supplier/mapping notes\"\
+    ,\n    \"stage\": \"Material identity and metadata, not a medium dose\",\n   \
+    \ \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 52-90-4; MW: 121.16\"\n      }\n    ],\n    \"desired\"\
+    : \"Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 519\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine\\t52-90-4\\tsigmaaldrich\\tW326305-100G\\t121.16\\t (R)-2-Amino-3-mercaptopropionic\
+    \ acid\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q26\",\n    \"name\": \"L-Cysteine supplier/mapping notes\"\
+    ,\n    \"stage\": \"Material identity and metadata, not a medium dose\",\n   \
+    \ \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\",\n  \
+    \      \"field_path\": \"ingredients[5].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16\"\n    \
+    \  }\n    ],\n    \"desired\": \"Mapping: micromediaparam_legacy (confidence:\
+    \ 0.90); CAS: 52-90-4; MW: 121.16\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 519\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine\\t52-90-4\\tsigmaaldrich\\tW326305-100G\\t121.16\\t (R)-2-Amino-3-mercaptopropionic\
+    \ acid\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q27\",\n    \"name\": \"Sodium bicarbonate supplier/mapping\
+    \ notes\",\n    \"stage\": \"Material identity and metadata, not a medium dose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n       \
+    \ \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 144-55-8; MW: 84.007\"\n      }\n    ],\n    \"desired\"\
+    : \"Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 369\",\n        \"exact_source_quote\"\
+    : \"Sodium bicarbonate\\t144-55-8\\t\\t\\t84.007\\tNaHCO3\\t\\t\\tyes\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q28\",\n    \"name\": \"Sodium bicarbonate supplier/mapping\
+    \ notes\",\n    \"stage\": \"Material identity and metadata, not a medium dose\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"Mapping:\
+    \ micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007\"\n   \
+    \   }\n    ],\n    \"desired\": \"Mapping: micromediaparam_legacy (confidence:\
+    \ 0.90); CAS: 144-55-8; MW: 84.007\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 369\",\n        \"exact_source_quote\"\
+    : \"Sodium bicarbonate\\t144-55-8\\t\\t\\t84.007\\tNaHCO3\\t\\t\\tyes\\t\\t\\\
+    t\\t\\n\",\n        \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q29\",\n    \"name\": \"Hemin supplier/mapping notes\",\n\
+    \    \"stage\": \"Material identity and metadata, not a medium dose\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n        \"field_path\":\
+    \ \"ingredients[7].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 16009-13-5; MW: 651.94\"\n      }\n    ],\n    \"desired\"\
+    : \"Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW: 651.94\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 520\",\n        \"exact_source_quote\"\
+    : \"Hemin\\t16009-13-5\\tsigmaaldrich\\tH9039-10G\\t651.94\\tChloro(protoporphyrinato)iron(III),\
+    \ Chlorohemin, Chloroprotoporphyrin IX iron(III), Ferriprotoporphyrin IX chloride,\
+    \ Hemin(chloride)\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"\
+    25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n        \"\
+    quote_representation\": \"Exact source text; line endings normalized to LF, tabs\
+    \ and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\": \"\
+    CAS and any printed molecular/formula weight agree with the FEBA compound row.\
+    \ Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q30\",\n    \"name\": \"Hemin supplier/mapping notes\",\n\
+    \    \"stage\": \"Material identity and metadata, not a medium dose\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].notes\",\n        \"stored\": \"Mapping: micromediaparam_legacy\
+    \ (confidence: 0.90); CAS: 16009-13-5; MW: 651.94\"\n      }\n    ],\n    \"desired\"\
+    : \"Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW: 651.94\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_compounds\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 520\",\n        \"exact_source_quote\"\
+    : \"Hemin\\t16009-13-5\\tsigmaaldrich\\tH9039-10G\\t651.94\\tChloro(protoporphyrinato)iron(III),\
+    \ Chlorohemin, Chloroprotoporphyrin IX iron(III), Ferriprotoporphyrin IX chloride,\
+    \ Hemin(chloride)\\t\\t\\t\\t\\t\\t\\t\\n\",\n        \"snapshot_sha256\": \"\
+    25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\",\n        \"\
+    quote_representation\": \"Exact source text; line endings normalized to LF, tabs\
+    \ and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\": \"\
+    CAS and any printed molecular/formula weight agree with the FEBA compound row.\
+    \ Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q31\",\n    \"name\": \"Menadione supplier/mapping notes\"\
+    ,\n    \"stage\": \"Material identity and metadata, not a medium dose\",\n   \
+    \ \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].notes\",\n        \"stored\": \"CAS: 58-27-5; Ontology enriched\
+    \ via CAS-RN lookup\"\n      }\n    ],\n    \"desired\": \"CAS: 58-27-5; Ontology\
+    \ enriched via CAS-RN lookup\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_compounds\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 1244\",\n        \"exact_source_quote\"\
+    : \"Menadione\\t58-27-5\\tSigma\\tM5625\\t\\t\\t\\t\\t\\t\\t\\t\\t\\n\",\n   \
+    \     \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q32\",\n    \"name\": \"Menadione supplier/mapping notes\"\
+    ,\n    \"stage\": \"Material identity and metadata, not a medium dose\",\n   \
+    \ \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\",\n  \
+    \      \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \"CAS: 58-27-5;\
+    \ Ontology enriched via CAS-RN lookup\"\n      }\n    ],\n    \"desired\": \"\
+    CAS: 58-27-5; Ontology enriched via CAS-RN lookup\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_compounds\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/Compounds.tsv\"\
+    ,\n        \"source_locator\": \"Compounds.tsv line 1244\",\n        \"exact_source_quote\"\
+    : \"Menadione\\t58-27-5\\tSigma\\tM5625\\t\\t\\t\\t\\t\\t\\t\\t\\t\\n\",\n   \
+    \     \"snapshot_sha256\": \"25a74faf66ea4a186ff1e7b779b6d03e552c565aa138c42cb737347ac35df774\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"CAS and any printed molecular/formula weight agree with the FEBA compound\
+    \ row. Retain source precision. A local mapping-confidence number or enrichment-method\
+    \ note is algorithm provenance, not a source measurement or identity proof. No\
+    \ new concentration is inferred from these metadata numbers.\"\n  },\n  {\n  \
+    \  \"decision_id\": \"q33\",\n    \"name\": \"Water, batch volume and preparation\
+    \ quantities\",\n    \"stage\": \"Source completeness\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Complete media block lines 4563–4576\",\n   \
+    \     \"exact_source_quote\": \"Media\\tBHIS_K3_noGlucose\\t\\nDescription\\tBrain\
+    \ heart infusion salt broth with vitamin K3 and no glucose\\t\\nMinimal\\tFALSE\\\
+    t\\nControlled vocabulary\\tConcentration\\tUnits\\nCalf brains\\t7.7\\tg/L\\\
+    nBeef heart\\t9.8\\tg/L\\nProteose Peptone\\t10\\tg/L\\nSodium Chloride\\t5\\\
+    tg/L\\nDisodium phosphate\\t2.5\\tg/L\\nL-Cysteine\\t1\\tg/L\\nSodium bicarbonate\\\
+    t2\\tg/L\\nHemin\\t0.005\\tg/L\\nMenadione\\t0.001\\tg/L\\n\\t\\t\\n\",\n    \
+    \    \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"This complete block supplies no water amount, final batch volume, pH, temperature,\
+    \ gas, sterilization cycle, stock concentration or dose. No default 1 L batch\
+    \ or preparation protocol is added; the printed per-litre rates alone do not establish\
+    \ these quantities.\"\n  },\n  {\n    \"decision_id\": \"q34\",\n    \"name\"\
+    : \"No additional glucose; vitamin K3 variant\",\n    \"stage\": \"Exact variant\
+    \ scope\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/BHIS_K3_noGlucose.yaml\",\n\
+    \        \"field_path\": \"description\",\n        \"stored\": \"Brain heart infusion\
+    \ salt broth with vitamin K3 and no glucose\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/bhis_k3_noglucose.yaml\",\n        \"field_path\"\
+    : \"description\",\n        \"stored\": \"Brain heart infusion salt broth with\
+    \ vitamin K3 and no glucose\"\n      }\n    ],\n    \"desired\": \"Brain heart\
+    \ infusion salt broth with vitamin K3 and no glucose\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Complete BHIS_K3_noGlucose block lines 4563–4576\"\
+    ,\n        \"exact_source_quote\": \"Media\\tBHIS_K3_noGlucose\\t\\nDescription\\\
+    tBrain heart infusion salt broth with vitamin K3 and no glucose\\t\\nMinimal\\\
+    tFALSE\\t\\nControlled vocabulary\\tConcentration\\tUnits\\nCalf brains\\t7.7\\\
+    tg/L\\nBeef heart\\t9.8\\tg/L\\nProteose Peptone\\t10\\tg/L\\nSodium Chloride\\\
+    t5\\tg/L\\nDisodium phosphate\\t2.5\\tg/L\\nL-Cysteine\\t1\\tg/L\\nSodium bicarbonate\\\
+    t2\\tg/L\\nHemin\\t0.005\\tg/L\\nMenadione\\t0.001\\tg/L\\n\\t\\t\\n\",\n    \
+    \    \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    ,\n        \"quote_representation\": \"Exact source text; line endings normalized\
+    \ to LF, tabs and trailing fields preserved.\"\n      }\n    ],\n    \"interpretation\"\
+    : \"The separate noGlucose accession lists Menadione 0.001 g/L and no D-Glucose\
+    \ addition. This does not assert zero endogenous glucose or carbohydrate in calf-brain,\
+    \ beef-heart or peptone preparations. No zero-valued glucose concentration is\
+    \ invented.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '6 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 6/9 primary
+    and 0/9 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi17561
+  - chebi26710
+  - chebi28869
+  - chebi32139
+  - chebi34683
+  - chebi50385
+  details: 'Instance coverage on a 0–100 percent scale, denominator 9: primary 66.67%;
+    secondary 0.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: source-forms
+  area: grounding
+  topic: Source material, salt form and ontology specificity
+  outcome: supported
+  summary: Sodium chloride, disodium hydrogenphosphate, L-cysteine, sodium hydrogencarbonate,
+    hemin and menadione match their source names and CAS. Menadione is explicitly
+    the vitamin K3 material; no vitamin K1 substitution is made. Calf brains, beef
+    heart and proteose peptone remain complex materials with no invented pure-chemical
+    mapping. No secondary CHEBI-based or legacy MediaIngredientMech slot is asserted
+    in either layer.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - forms
+  - feba-main
+  - compound-0
+  - compound-1
+  - compound-2
+  - compound-3
+  - compound-4
+  - compound-5
+  - compound-6
+  - compound-7
+  - compound-8
+  - chebi17561
+  - chebi26710
+  - chebi28869
+  - chebi32139
+  - chebi34683
+  - chebi50385
+- assessment_id: protocol
+  area: completeness
+  topic: Preparation, stock scope and growth context
+  outcome: unknown
+  summary: The direct FEBA block supplies no stock recipes or preparation instructions.
+    Empty pH, temperature, gas, preparation and growth fields remain explicit source
+    limitations, rather than confirmed loss of a protocol or a basis to import another
+    BHIS variant. Complex/undefined broth classification is consistent with these
+    material names and Minimal FALSE. There is no asserted organism, empirical growth
+    metric, KG match, publication claim or assembly to verify for this target.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - record
+  - owner-0
+  - feba-main
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 7 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: prior-reviews
+  area: provenance
+  topic: Earlier exact-identity review reports
+  outcome: supported
+  summary: The two October concentration reports explicitly performed zero of nine
+    source checks and recorded missing evidence. The September exact-record report
+    is derivative context. Current FEBA comparison now supports numerical values,
+    without rewriting those earlier reports or treating their source-access statements
+    as current proof.
+  target_ids:
+  - CultureMech:015497
+  evidence_ids:
+  - prior-report-0
+  - prior-report-1
+  - prior-report-2
+  - feba-main
+findings:
+- finding_id: f1
+  issue_key: culturemech.015497.amount-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supported numerical rates lack attached versioned quantity evidence
+  description: All nine direct ingredient rates match the exact current FEBA block
+    in both layers, but neither layer carries attached concentration evidence. The
+    generic CultureBotHT repository link cannot preserve the exact FEBA revision,
+    row and supplied-material basis.
+  target_ids:
+  - CultureMech:015497
+  field_paths:
+  - ingredients
+  - sources
+  - references
+  evidence_ids:
+  - feba-main
+  - feba-version
+  - quantity-inventory
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bhis_k3_noglucose.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: 'P4.3 is a concrete minor traceability exception: the current
+    exact variant supports every numerical rate, so this finding alleges no wrong
+    amount. The missing attached source version, row and claim linkage prevent reproducible
+    verification and require evidence-only curation.'
+actions:
+- action_id: a1
+  description: Attach exact versioned FEBA row evidence to the maintained concentration
+    fields, retaining printed units and material scope. Record the later FEBA date
+    explicitly; do not call it the authenticated original import source. Preserve
+    owner identity and regenerate only after authorized evidence curation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015497
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/bhis_k3_noglucose.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact CultureBotHT repository endpoint returned HTTP 404 at 2026-10-21T22:53:13.557900Z.
+  Its original formula bytes remain unavailable; the independently captured later
+  FEBA revision supports current amounts but does not establish import-time equivalence.
+- The exact named CultureBotHT media_yaml file returned HTTP 404 at 2026-10-21T23:23:21.453220+00:00.
+  Its original formula bytes remain unavailable; the independently captured later
+  FEBA revision supports current amounts but does not establish import-time equivalence.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-042
+- generated-medium
