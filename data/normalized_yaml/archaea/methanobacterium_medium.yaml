@@ -2630,6 +2630,89 @@ curation_history:
     and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.",
     "stage": "DSM25824 after autoclaving from sterile filtered anoxic stock"}], "variant_index":
     11, "variant_name": "For DSM 25824"}]}'
+- timestamp: '2026-11-17T00:07:00.037352+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "b671cbbe466583591ab494a297e153dbb74a5d374144b8a1c7b558c7bfc264df",
+    "field_replacements": [], "path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+    "recipe_id": "CultureMech:000643", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Official instruction for DSM 2030: sterile
+    gas supplied after inoculation at 2 bar overpressure. Gas composition is not a
+    liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar overpressure after inoculation.",
+    "stage": "DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"},
+    {"action": "ADD", "evidence": [{"explanation": "Official instruction for DSM 2030:
+    sterile gas supplied after inoculation at 2 bar overpressure. Gas composition
+    is not a liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar overpressure after inoculation.",
+    "stage": "DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"}],
+    "variant_index": 2, "variant_name": "For DSM 2030"}, {"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Official instruction for DSM 9575: sterile
+    gas supplied after inoculation at 2 bar overpressure. Gas composition is not a
+    liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Add
+    sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after inoculation.",
+    "stage": "DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"},
+    {"action": "ADD", "evidence": [{"explanation": "Official instruction for DSM 9575:
+    sterile gas supplied after inoculation at 2 bar overpressure. Gas composition
+    is not a liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Add
+    sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after inoculation.",
+    "stage": "DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure"}],
+    "variant_index": 8, "variant_name": "For DSM 9575"}, {"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Official instruction for DSM 25939: sterile
+    gas supplied after inoculation at 1 bar overpressure. Gas composition is not a
+    liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.2 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25939 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}, {"action": "ADD", "evidence":
+    [{"explanation": "Official instruction for DSM 25939: sterile gas supplied after
+    inoculation at 1 bar overpressure. Gas composition is not a liquid dose.", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf", "snippet":
+    "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.2 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25939 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}], "variant_index": 12, "variant_name":
+    "For DSM 25939"}, {"append_changes": [{"action": "ADD", "evidence": [{"explanation":
+    "Official instruction for DSM 25945: sterile gas supplied after inoculation at
+    1 bar overpressure. Gas composition is not a liquid dose.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+    "snippet": "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "H2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.4 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25945 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}, {"action": "ADD", "evidence":
+    [{"explanation": "Official instruction for DSM 25945: sterile gas supplied after
+    inoculation at 1 bar overpressure. Gas composition is not a liquid dose.", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf", "snippet":
+    "80% H2 and 20% CO2", "supports": "SUPPORT"}], "ingredient": {"preferred_term":
+    "CO2"}, "notes": "Source ratio and overpressure belong to this strain-specific
+    post-inoculation stage.", "source_modification_index": 0, "source_text": "Adjust
+    pH of the complete medium to 7.4 and add sterile 80% H2 and 20% CO2 gas mixture
+    to 1 bar overpressure after inoculation.", "stage": "DSM 25945 post-inoculation
+    headspace; 80% H2/20% CO2, 1 bar overpressure"}], "variant_index": 13, "variant_name":
+    "For DSM 25945"}, {"variant_index": 1, "variant_name": "For DSM 1535"}, {"variant_index":
+    3, "variant_name": "For DSM 3267, DSM 11074, DSM 11075"}, {"variant_index": 14,
+    "variant_name": "For DSM 102889"}, {"variant_index": 15, "variant_name": "For
+    DSM 108286"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 parent_media:
   id: CultureMech:000646
   path: data/normalized_yaml/bacterial/gudongella_medium.yaml
@@ -4319,6 +4402,37 @@ variants:
       Additional exact excerpt: For DSM 2030: Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar
       overpressure after inoculation.
       variants[2].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar
+      overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 2030: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar
+      overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 2030: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 3267, DSM 11074, DSM 11075
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4551,6 +4665,37 @@ variants:
       Additional exact excerpt: For DSM 9575: Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after
       inoculation.
       variants[8].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure
+      after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 9575: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure
+    source_modification_index: 0
+    source_text: Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure
+      after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 9575: sterile gas supplied after
+        inoculation at 2 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 15163
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4772,6 +4917,37 @@ variants:
       Additional exact excerpt: For DSM 25939: Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and 20%
       CO2 gas mixture to 1 bar overpressure after inoculation.
       variants[12].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 25939 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25939: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 25939 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25939: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 25945
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:
@@ -4793,6 +4969,37 @@ variants:
       Additional exact excerpt: For DSM 25945: Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and 20%
       CO2 gas mixture to 1 bar overpressure after inoculation.
       variants[13].modifications: Explicit original strain instruction, separate from the base formulation. This does not assert measured growth or add a taxon association. No unstated density, final volume, percent basis or chemical identifier is inferred. Locator=original recipe table/text; accessed=2026-10-09T02:29:16.493797+00:00; capture SHA256=416f170d6c2424ded82767e6ae67497a313eafa144a00e140f01107a60fa8c4a.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: H2
+    stage: DSM 25945 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25945: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: DSM 25945 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure
+    source_modification_index: 0
+    source_text: Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and
+      20% CO2 gas mixture to 1 bar overpressure after inoculation.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf
+      supports: SUPPORT
+      snippet: 80% H2 and 20% CO2
+      explanation: 'Official instruction for DSM 25945: sterile gas supplied after
+        inoculation at 1 bar overpressure. Gas composition is not a liquid dose.'
+    notes: Source ratio and overpressure belong to this strain-specific post-inoculation
+      stage.
 - name: For DSM 102889
   relationship: STRAIN_SPECIFIC_VARIANT
   modifications:

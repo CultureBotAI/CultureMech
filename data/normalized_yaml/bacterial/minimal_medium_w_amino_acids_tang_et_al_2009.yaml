@@ -381,6 +381,74 @@ curation_history:
     rather than silently treating unlabelled sodium L-lactate as the tracer substrate.",
     "stage": "isotope-tracer growth assay"}], "variant_index": 0, "variant_name":
     "Tang 2009 manuscript 20 mM PIPES tracer medium with amino acids"}]}'
+- timestamp: '2026-11-17T00:07:09.480921+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "cb231608c24a08626143cc56b344442b0fd20bd3e93583210cacd9b7959585c7",
+    "path": "data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml",
+    "recipe_id": "CultureMech:007075", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Manuscript page 4. Named commercial mixture
+    supported, no inferred 17 precise stereochemical forms. Separate dose sentence:
+    ''a final concentration of 25 µM for each amino acid'', not a mixture molarity.",
+    "reference": "doi:10.1002/btpr.227", "snippet": "a standard amino acid mix (containing
+    17 unlabeled amino acids, without tryptophan, glutamine, and asparagine, Cat#AA-S-18,
+    Sigma, USA)", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "AA-S-18
+    amino acid mixture"}, "notes": "25 micromolar per included amino acid; no bulk-mixture
+    molarity or individual stereochemical assignment.", "source_modification_index":
+    2, "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids,
+    excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local
+    DL-serine/DL-tyrosine and other stereochemical terms are not certified by this
+    generic mixture description.", "stage": "Tang2009 defined-rich supplement; separate
+    from unsupplemented minimal-medium arm"}], "append_mentions": [{"evidence": [{"explanation":
+    "Page 4 exclusion from supplement, not whole-medium removal.", "reference": "doi:10.1002/btpr.227",
+    "snippet": "without tryptophan, glutamine, and asparagine", "supports": "PARTIAL"}],
+    "held_fields": ["OPERATION"], "reason": "Source excludes this label from AA-S-18
+    supplement. Negative mixture membership is not an observed removal step or proof
+    of whole-culture absence.", "reported_action": "REMOVE", "source_label": "tryptophan",
+    "source_modification_index": 2, "source_text": "Use the reported AA-S-18 mixture:
+    17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at
+    25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms
+    are not certified by this generic mixture description.", "stage": "Tang2009 AA-S-18
+    supplement membership only"}, {"evidence": [{"explanation": "Page 4 exclusion
+    from supplement, not whole-medium removal.", "reference": "doi:10.1002/btpr.227",
+    "snippet": "without tryptophan, glutamine, and asparagine", "supports": "PARTIAL"}],
+    "held_fields": ["OPERATION"], "reason": "Source excludes this label from AA-S-18
+    supplement. Negative mixture membership is not an observed removal step or proof
+    of whole-culture absence.", "reported_action": "REMOVE", "source_label": "glutamine",
+    "source_modification_index": 2, "source_text": "Use the reported AA-S-18 mixture:
+    17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at
+    25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms
+    are not certified by this generic mixture description.", "stage": "Tang2009 AA-S-18
+    supplement membership only"}, {"evidence": [{"explanation": "Page 4 exclusion
+    from supplement, not whole-medium removal.", "reference": "doi:10.1002/btpr.227",
+    "snippet": "without tryptophan, glutamine, and asparagine", "supports": "PARTIAL"}],
+    "held_fields": ["OPERATION"], "reason": "Source excludes this label from AA-S-18
+    supplement. Negative mixture membership is not an observed removal step or proof
+    of whole-culture absence.", "reported_action": "REMOVE", "source_label": "asparagine",
+    "source_modification_index": 2, "source_text": "Use the reported AA-S-18 mixture:
+    17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at
+    25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms
+    are not certified by this generic mixture description.", "stage": "Tang2009 AA-S-18
+    supplement membership only"}, {"held_fields": ["IDENTITY_FORM"], "reason": "Generic
+    mixture description does not certify these local stereochemical forms. Named-mixture
+    presence and per-member dose do not resolve identities.", "reported_action": "UNSPECIFIED",
+    "source_label": "DL-serine", "source_modification_index": 2, "source_text": "Use
+    the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan,
+    glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+    and other stereochemical terms are not certified by this generic mixture description.",
+    "stage": "Tang2009 AA-S-18 member normalization"}, {"held_fields": ["IDENTITY_FORM"],
+    "reason": "Generic mixture description does not certify these local stereochemical
+    forms. Named-mixture presence and per-member dose do not resolve identities.",
+    "reported_action": "UNSPECIFIED", "source_label": "DL-tyrosine", "source_modification_index":
+    2, "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids,
+    excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local
+    DL-serine/DL-tyrosine and other stereochemical terms are not certified by this
+    generic mixture description.", "stage": "Tang2009 AA-S-18 member normalization"}],
+    "variant_index": 0, "variant_name": "Tang 2009 manuscript 20 mM PIPES tracer medium
+    with amino acids"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 184
   term:
@@ -539,6 +607,96 @@ variants:
         for issue763; scientific payload unchanged.'
     replaced_ingredient:
       preferred_term: Sodium L-lactate
+  - action: ADD
+    ingredient:
+      preferred_term: AA-S-18 amino acid mixture
+    stage: Tang2009 defined-rich supplement; separate from unsupplemented minimal-medium
+      arm
+    source_modification_index: 2
+    source_text: 'Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding
+      tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+      and other stereochemical terms are not certified by this generic mixture description.'
+    evidence:
+    - reference: doi:10.1002/btpr.227
+      supports: SUPPORT
+      snippet: a standard amino acid mix (containing 17 unlabeled amino acids, without
+        tryptophan, glutamine, and asparagine, Cat#AA-S-18, Sigma, USA)
+      explanation: 'Manuscript page 4. Named commercial mixture supported, no inferred
+        17 precise stereochemical forms. Separate dose sentence: ''a final concentration
+        of 25 µM for each amino acid'', not a mixture molarity.'
+    notes: 25 micromolar per included amino acid; no bulk-mixture molarity or individual
+      stereochemical assignment.
+  ingredient_mentions:
+  - source_label: tryptophan
+    reported_action: REMOVE
+    stage: Tang2009 AA-S-18 supplement membership only
+    source_modification_index: 2
+    source_text: 'Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding
+      tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+      and other stereochemical terms are not certified by this generic mixture description.'
+    reason: Source excludes this label from AA-S-18 supplement. Negative mixture membership
+      is not an observed removal step or proof of whole-culture absence.
+    held_fields:
+    - OPERATION
+    evidence:
+    - reference: doi:10.1002/btpr.227
+      supports: PARTIAL
+      snippet: without tryptophan, glutamine, and asparagine
+      explanation: Page 4 exclusion from supplement, not whole-medium removal.
+  - source_label: glutamine
+    reported_action: REMOVE
+    stage: Tang2009 AA-S-18 supplement membership only
+    source_modification_index: 2
+    source_text: 'Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding
+      tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+      and other stereochemical terms are not certified by this generic mixture description.'
+    reason: Source excludes this label from AA-S-18 supplement. Negative mixture membership
+      is not an observed removal step or proof of whole-culture absence.
+    held_fields:
+    - OPERATION
+    evidence:
+    - reference: doi:10.1002/btpr.227
+      supports: PARTIAL
+      snippet: without tryptophan, glutamine, and asparagine
+      explanation: Page 4 exclusion from supplement, not whole-medium removal.
+  - source_label: asparagine
+    reported_action: REMOVE
+    stage: Tang2009 AA-S-18 supplement membership only
+    source_modification_index: 2
+    source_text: 'Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding
+      tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+      and other stereochemical terms are not certified by this generic mixture description.'
+    reason: Source excludes this label from AA-S-18 supplement. Negative mixture membership
+      is not an observed removal step or proof of whole-culture absence.
+    held_fields:
+    - OPERATION
+    evidence:
+    - reference: doi:10.1002/btpr.227
+      supports: PARTIAL
+      snippet: without tryptophan, glutamine, and asparagine
+      explanation: Page 4 exclusion from supplement, not whole-medium removal.
+  - source_label: DL-serine
+    reported_action: UNSPECIFIED
+    stage: Tang2009 AA-S-18 member normalization
+    source_modification_index: 2
+    source_text: 'Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding
+      tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+      and other stereochemical terms are not certified by this generic mixture description.'
+    reason: Generic mixture description does not certify these local stereochemical
+      forms. Named-mixture presence and per-member dose do not resolve identities.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: DL-tyrosine
+    reported_action: UNSPECIFIED
+    stage: Tang2009 AA-S-18 member normalization
+    source_modification_index: 2
+    source_text: 'Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding
+      tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine
+      and other stereochemical terms are not certified by this generic mixture description.'
+    reason: Generic mixture description does not certify these local stereochemical
+      forms. Named-mixture presence and per-member dose do not resolve identities.
+    held_fields:
+    - IDENTITY_FORM
 target_organisms:
 - preferred_term: Shewanella oneidensis MR-1
   strain: MR-1 (wild type)

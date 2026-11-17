@@ -290,10 +290,10 @@ def test_context_only_resolver_error_is_not_silently_dropped(corpus):
     )
 
 
-def test_bundle_v2_reconciles_and_pins_positive_and_context_only_products(corpus, tmp_path):
+def test_bundle_v3_reconciles_and_pins_positive_and_context_only_products(corpus, tmp_path):
     directory = tmp_path / "bundle"
     manifest = bundle.build(corpus, directory)
-    assert manifest["contract"] == "culturemech-direct-ingredients-v2"
+    assert manifest["contract"] == "culturemech-direct-ingredients-v3"
     assert manifest["counts"]["occurrences"] == 5
     assert manifest["counts"]["base_direct_occurrences"] == 1
     assert manifest["counts"]["variant_positive_occurrences"] == 4

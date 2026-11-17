@@ -332,6 +332,22 @@ curation_history:
     is inferred.", "source_modification_index": 2, "source_text": "Optional ~7.5 g/L
     FeSO4.7H2O, or FeS2/pyrite as sole energy source", "stage": "M.sedula scanning-electron-microscopy
     cultures on minimal salts medium"}], "variant_index": 0, "variant_name": "dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron"}]}'
+- timestamp: '2026-11-17T00:07:02.240657+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "c227b17cd53ccb5eaff8452c431aad1834026a104bbf9adfd779648b37991c43",
+    "field_replacements": [], "path": "data/normalized_yaml/archaea/sulfolobus_medium_for_dsm_5348.yaml",
+    "recipe_id": "CultureMech:008908", "variants": [{"append_mentions": [{"held_fields":
+    ["SOURCE_CLAIM"], "reason": "The inspected Auernik2008 primary Methods support
+    yeast extract but do not verify this tryptone alternative. Preserve supported
+    yeast-extract event separately.", "reported_action": "ADD", "reported_quantity":
+    "0.1%", "source_label": "tryptone", "source_modification_index": 1, "source_text":
+    "Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)", "stage":
+    "reported heterotrophic alternative"}], "variant_index": 0, "variant_name": "dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -450,3 +466,15 @@ variants:
       amendment. No chemical identifier is inferred.
     source_modification_index: 2
     source_text: Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source
+  ingredient_mentions:
+  - source_label: tryptone
+    reported_action: ADD
+    stage: reported heterotrophic alternative
+    source_modification_index: 1
+    source_text: Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)
+    reason: The inspected Auernik2008 primary Methods support yeast extract but do
+      not verify this tryptone alternative. Preserve supported yeast-extract event
+      separately.
+    held_fields:
+    - SOURCE_CLAIM
+    reported_quantity: 0.1%

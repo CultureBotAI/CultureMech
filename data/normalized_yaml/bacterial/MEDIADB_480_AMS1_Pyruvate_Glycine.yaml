@@ -515,6 +515,93 @@ curation_history:
     This variant follows those concordant textual identities and retains the figure-label
     conflict.", "stage": "2014 alternate-phosphorus utilization assay"}], "variant_index":
     0, "variant_name": "Carini 2014 AMS1 glucose 6-phosphate utilization assay"}]}'
+- timestamp: '2026-11-17T00:07:03.729330+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "cf0d8ed10ce7280a8d3562b9be0e33e4d1b8f4e4ad27e9341b3d1f1150150674",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/MEDIADB_480_AMS1_Pyruvate_Glycine.yaml",
+    "recipe_id": "CultureMech:007388", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Media preparation explicitly gives ordered
+    gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the
+    cited Carini2013 base preparation. No supplied volume, final dissolved gas dose
+    or whole-parent equivalence is inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "CO2"}, "source_modification_index": 6, "source_text":
+    "Base preparation follows Carini 2013 Media preparation (inorganic AMS1 autoclaved,
+    then carbon-dioxide and air sparging; vitamins and organics added afterward),
+    rather than the parent''s generic dissolve-all/filter-all steps. Reported base
+    pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+    "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered
+    CO2 sparging for 5 h"}, {"action": "ADD", "evidence": [{"explanation": "Media
+    preparation explicitly gives ordered gas supplies to establish the bicarbonate-based
+    buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied
+    volume, final dissolved gas dose or whole-parent equivalence is inferred.", "reference":
+    "doi:10.1038/ismej.2012.122", "snippet": "followed by sparging with air for 10 h",
+    "supports": "SUPPORT"}], "ingredient": {"preferred_term": "air"}, "source_modification_index":
+    6, "source_text": "Base preparation follows Carini 2013 Media preparation (inorganic
+    AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics added
+    afterward), rather than the parent''s generic dissolve-all/filter-all steps. Reported
+    base pH 7.5-7.7 is not an optimum or a separate measurement of every 2014 assay.",
+    "stage": "Carini AMS1 source preparation; second: air sparging for 10 h, before
+    vitamins and organics"}], "append_mentions": [{"held_fields": ["IDENTITY_FORM"],
+    "reason": "The source-literal vitamin designation and dose are already supported
+    in ingredient_changes. A more specific vitamer or salt form is not supplied by
+    the cited formulation; this form-only hold does not demote supported label presence
+    or dosage.", "reported_action": "UNSPECIFIED", "source_label": "B1", "source_modification_index":
+    2, "source_text": "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5
+    425 nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+    myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+    biotin 4 nanomolar and thiamine 60 micromolar.", "stage": "Carini source-specific
+    AMS1 vitamin formulation"}, {"held_fields": ["IDENTITY_FORM"], "reason": "The
+    source-literal vitamin designation and dose are already supported in ingredient_changes.
+    A more specific vitamer or salt form is not supplied by the cited formulation;
+    this form-only hold does not demote supported label presence or dosage.", "reported_action":
+    "UNSPECIFIED", "source_label": "B3", "source_modification_index": 2, "source_text":
+    "Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6
+    500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol
+    6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar
+    and thiamine 60 micromolar.", "stage": "Carini source-specific AMS1 vitamin formulation"},
+    {"held_fields": ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation
+    and dose are already supported in ingredient_changes. A more specific vitamer
+    or salt form is not supplied by the cited formulation; this form-only hold does
+    not demote supported label presence or dosage.", "reported_action": "UNSPECIFIED",
+    "source_label": "B5", "source_modification_index": 2, "source_text": "Full vitamin
+    mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar,
+    B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar,
+    4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine
+    60 micromolar.", "stage": "Carini source-specific AMS1 vitamin formulation"},
+    {"held_fields": ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation
+    and dose are already supported in ingredient_changes. A more specific vitamer
+    or salt form is not supplied by the cited formulation; this form-only hold does
+    not demote supported label presence or dosage.", "reported_action": "UNSPECIFIED",
+    "source_label": "B6", "source_modification_index": 2, "source_text": "Full vitamin
+    mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar,
+    B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar,
+    4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine
+    60 micromolar.", "stage": "Carini source-specific AMS1 vitamin formulation"},
+    {"held_fields": ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation
+    and dose are already supported in ingredient_changes. A more specific vitamer
+    or salt form is not supplied by the cited formulation; this form-only hold does
+    not demote supported label presence or dosage.", "reported_action": "UNSPECIFIED",
+    "source_label": "B9", "source_modification_index": 2, "source_text": "Full vitamin
+    mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar,
+    B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar,
+    4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine
+    60 micromolar.", "stage": "Carini source-specific AMS1 vitamin formulation"},
+    {"held_fields": ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation
+    and dose are already supported in ingredient_changes. A more specific vitamer
+    or salt form is not supplied by the cited formulation; this form-only hold does
+    not demote supported label presence or dosage.", "reported_action": "UNSPECIFIED",
+    "source_label": "B12", "source_modification_index": 2, "source_text": "Full vitamin
+    mixture: B1 6 micromolar, B3 800 nanomolar, B5 425 nanomolar, B6 500 nanomolar,
+    B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar, myo-inositol 6 micromolar,
+    4-aminobenzoate 60 nanomolar. Parent contains only biotin 4 nanomolar and thiamine
+    60 micromolar.", "stage": "Carini source-specific AMS1 vitamin formulation"}],
+    "variant_index": 0, "variant_name": "Carini 2014 AMS1 glucose 6-phosphate utilization
+    assay"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 480
   term:
@@ -1164,6 +1251,129 @@ variants:
         no ontology identity or mass conversion inferred.'
     replaced_ingredient:
       preferred_term: D-Glucose 6-phosphate
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: 'Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered
+      CO2 sparging for 5 h'
+    source_modification_index: 6
+    source_text: Base preparation follows Carini 2013 Media preparation (inorganic
+      AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics
+      added afterward), rather than the parent's generic dissolve-all/filter-all steps.
+      Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every
+      2014 assay.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: sparged with 0.1 μm-filtered CO2 for 5 h
+      explanation: Media preparation explicitly gives ordered gas supplies to establish
+        the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base
+        preparation. No supplied volume, final dissolved gas dose or whole-parent
+        equivalence is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: air
+    stage: 'Carini AMS1 source preparation; second: air sparging for 10 h, before
+      vitamins and organics'
+    source_modification_index: 6
+    source_text: Base preparation follows Carini 2013 Media preparation (inorganic
+      AMS1 autoclaved, then carbon-dioxide and air sparging; vitamins and organics
+      added afterward), rather than the parent's generic dissolve-all/filter-all steps.
+      Reported base pH 7.5-7.7 is not an optimum or a separate measurement of every
+      2014 assay.
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: followed by sparging with air for 10 h
+      explanation: Media preparation explicitly gives ordered gas supplies to establish
+        the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base
+        preparation. No supplied volume, final dissolved gas dose or whole-parent
+        equivalence is inferred.
+  ingredient_mentions:
+  - source_label: B1
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B3
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B5
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B6
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B9
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B12
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 2
+    source_text: 'Full vitamin mixture: B1 6 micromolar, B3 800 nanomolar, B5 425
+      nanomolar, B6 500 nanomolar, B7 4 nanomolar, B9 4 nanomolar, B12 700 picomolar,
+      myo-inositol 6 micromolar, 4-aminobenzoate 60 nanomolar. Parent contains only
+      biotin 4 nanomolar and thiamine 60 micromolar.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
 target_organisms:
 - preferred_term: Candidatus Pelagibacter sp. HTCC7211
   strain: HTCC7211

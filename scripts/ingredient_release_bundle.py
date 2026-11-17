@@ -37,14 +37,16 @@ PRODUCTS = (
     "unmapped_ingredients.yaml",
     "ingredient_aggregation_errors.tsv",
     "variant_ingredient_changes.tsv",
+    "variant_ingredient_holds.tsv",
 )
-CONTRACT = "culturemech-direct-ingredients-v2"
+CONTRACT = "culturemech-direct-ingredients-v3"
 SCOPE = {
     "included": [
         "root ingredients or composition selected by native record shape",
         "recursively inline solutions[].composition",
-        "variant-scoped ADD, SET_CONCENTRATION and new REPLACE ingredient descriptors",
+        "variant-scoped ADD, SET_CONCENTRATION, SET_AMOUNT and new REPLACE ingredient descriptors",
         "all structured variant change descriptors in a separate context ledger",
+        "source-bound unresolved ingredient names in a separate withheld-mention ledger",
     ],
     "excluded": [
         "expansion of references to other scanned solution records",
@@ -156,9 +158,12 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
         occurrences += 1
         mapped += bool(row["resolved_identifier"])
         if row.get("change_action"):
-            if row["change_action"] not in {"ADD", "SET_CONCENTRATION", "REPLACE"} or (
-                row["descriptor_role"] != "ingredient"
-            ):
+            if row["change_action"] not in {
+                "ADD",
+                "SET_CONCENTRATION",
+                "SET_AMOUNT",
+                "REPLACE",
+            } or (row["descriptor_role"] != "ingredient"):
                 raise BundleError("Context-only variant descriptor in positive occurrences")
             variant_occurrences[key] = row
         elif row["component_field"].startswith("variants/"):
@@ -170,7 +175,7 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
     for row in _rows(directory / "variant_ingredient_changes.tsv"):
         key = (row["recipe_id"], row["component_field"], row["component_index"])
         role, action = row["descriptor_role"], row["change_action"]
-        if action not in {"ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION"} or (
+        if action not in {"ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION", "SET_AMOUNT"} or (
             role not in {"ingredient", "replaced_ingredient"}
         ):
             raise BundleError("Unknown variant change action or descriptor role")
@@ -201,7 +206,12 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
             or change.get(role) != json.loads(row["ingredient_json"])
         ):
             raise BundleError("Variant change columns differ from the lossless source change")
-        positive = role == "ingredient" and action != "REMOVE"
+        positive = role == "ingredient" and action in {
+            "ADD",
+            "REPLACE",
+            "SET_CONCENTRATION",
+            "SET_AMOUNT",
+        }
         if row["counts_as_presence"] != ("true" if positive else "false"):
             raise BundleError("Variant change presence flag disagrees with its action/role")
         if positive:
@@ -226,6 +236,57 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
             raise BundleError("Variant change descriptor membership/context is incomplete")
     if positive_changes != variant_occurrences:
         raise BundleError("Positive variant occurrences differ from the complete change ledger")
+
+    held_keys: set[tuple[str, str, str]] = set()
+    held_labels: set[str] = set()
+    for row in _rows(directory / "variant_ingredient_holds.tsv"):
+        if row["review_status"] != "WITHHELD" or row["counts_as_presence"] != "false":
+            raise BundleError("Unresolved mention must remain withheld and outside positive counts")
+        vi, mi = row["variant_index"], row["mention_index"]
+        if not vi.isdecimal() or not mi.isdecimal() or vi != str(int(vi)) or mi != str(int(mi)):
+            raise BundleError("Invalid withheld mention coordinate")
+        if row["descriptor_path"] != f"/variants/{vi}/ingredient_mentions/{mi}":
+            raise BundleError("Withheld mention path differs from coordinate")
+        key = (row["recipe_id"], vi, mi)
+        if key in held_keys or row["source_path"] not in corpus:
+            raise BundleError("Duplicate or out-of-corpus withheld mention")
+        held_keys.add(key)
+        mention = json.loads(row["mention_json"])
+        scalar_fields = {
+            "source_label",
+            "reported_action",
+            "stage",
+            "source_modification_index",
+            "source_text",
+            "reason",
+        }
+        required = scalar_fields | {"held_fields"}
+        if (
+            not isinstance(mention, dict)
+            or not required <= set(mention)
+            or set(mention) - required - {"reported_quantity", "evidence"}
+        ):
+            raise BundleError("Withheld mention has missing or unexpected assertion fields")
+        if (
+            any(str(mention[field]) != row[field] for field in scalar_fields)
+            or mention["held_fields"] != json.loads(row["held_fields_json"])
+            or not isinstance(mention["held_fields"], list)
+            or not mention["held_fields"]
+            or any(
+                field not in {"SOURCE_CLAIM", "IDENTITY_FORM", "QUANTITY", "OPERATION", "STAGE"}
+                for field in mention["held_fields"]
+            )
+            or mention.get("reported_quantity", "") != row["reported_quantity"]
+            or mention.get("evidence", []) != json.loads(row["evidence_json"])
+            or not row["source_label"].strip()
+            or row["source_label"] not in row["source_text"]
+            or row["reported_action"]
+            not in {"ADD", "REMOVE", "REPLACE", "SET_CONCENTRATION", "SET_AMOUNT", "UNSPECIFIED"}
+            or type(mention["source_modification_index"]) is not int
+            or mention["source_modification_index"] < 0
+        ):
+            raise BundleError("Withheld columns differ from the literal source mention")
+        held_labels.add(row["source_label"])
 
     groups: Counter[str] = Counter()
     grouped_occurrences: Counter[str] = Counter()
@@ -263,6 +324,8 @@ def artifact_accounting(directory: Path, corpus: dict[str, Any]) -> dict[str, An
         "variant_change_events": len(changes),
         "variant_change_mentions": change_mentions,
         "variant_context_only_mentions": change_mentions - len(positive_changes),
+        "variant_held_mentions": len(held_keys),
+        "variant_held_labels": len(held_labels),
         "mapped_variant_change_mentions": mapped_change_mentions,
         "unresolved_variant_change_mentions": change_mentions - mapped_change_mentions,
         "variant_changes_by_action": dict(
@@ -283,6 +346,7 @@ def product_inventory(directory: Path, counts: dict[str, Any]) -> dict[str, Any]
         ("ingredients_list.tsv", counts["ingredient_groups"]),
         ("ingredient_aggregation_errors.tsv", counts["errors"]),
         ("variant_ingredient_changes.tsv", counts["variant_change_mentions"]),
+        ("variant_ingredient_holds.tsv", counts["variant_held_mentions"]),
     ):
         products[name]["data_rows"] = count
     return products

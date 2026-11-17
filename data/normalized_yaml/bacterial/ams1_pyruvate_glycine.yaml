@@ -500,6 +500,103 @@ curation_history:
     nM. Do not substitute HMP for B1 using this 2013 paper.", "stage": "2013 Table
     3 glycine-substitution assay"}], "variant_index": 0, "variant_name": "Carini 2013
     AMS1 glycine substitution assay"}]}'
+- timestamp: '2026-11-17T00:07:05.702778+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "1e8225b42c5105776973d5f173f468f68f5cbbdd4e7440f9bf886323be9f0c9e",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/ams1_pyruvate_glycine.yaml",
+    "recipe_id": "CultureMech:007382", "variants": [{"append_changes": [{"action":
+    "ADD", "evidence": [{"explanation": "Media preparation explicitly gives ordered
+    gas supplies to establish the bicarbonate-based buffer. Carini2014 follows the
+    cited Carini2013 base preparation. No supplied volume, final dissolved gas dose
+    or whole-parent equivalence is inferred.", "reference": "doi:10.1038/ismej.2012.122",
+    "snippet": "sparged with 0.1 μm-filtered CO2 for 5 h", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "CO2"}, "source_modification_index": 6, "source_text":
+    "Follow the paper''s AMS1 preparation: autoclave the inorganic medium, establish
+    the bicarbonate buffer by filtered CO2 then air sparging, and add vitamins and
+    organics afterward; this differs from the imported all-ingredient filter-sterilization
+    instruction. The reported resulting pH is 7.5-7.7, not an independently optimized
+    value.", "stage": "Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered
+    CO2 sparging for 5 h"}, {"action": "ADD", "evidence": [{"explanation": "Media
+    preparation explicitly gives ordered gas supplies to establish the bicarbonate-based
+    buffer. Carini2014 follows the cited Carini2013 base preparation. No supplied
+    volume, final dissolved gas dose or whole-parent equivalence is inferred.", "reference":
+    "doi:10.1038/ismej.2012.122", "snippet": "followed by sparging with air for 10 h",
+    "supports": "SUPPORT"}], "ingredient": {"preferred_term": "air"}, "source_modification_index":
+    6, "source_text": "Follow the paper''s AMS1 preparation: autoclave the inorganic
+    medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and
+    add vitamins and organics afterward; this differs from the imported all-ingredient
+    filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an
+    independently optimized value.", "stage": "Carini AMS1 source preparation; second:
+    air sparging for 10 h, before vitamins and organics"}], "append_mentions": [{"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B1", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B3", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B5", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B6", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B9", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["IDENTITY_FORM"], "reason": "The source-literal vitamin designation and dose
+    are already supported in ingredient_changes. A more specific vitamer or salt form
+    is not supplied by the cited formulation; this form-only hold does not demote
+    supported label presence or dosage.", "reported_action": "UNSPECIFIED", "source_label":
+    "B12", "source_modification_index": 5, "source_text": "Replace the imported biotin/HMP
+    vitamin selection with the complete Table 1 vitamin mixture: B1 6 micromolar,
+    B3 800 nM, B5 425 nM, B6 500 nM, B7 4 nM, B9 4 nM, B12 700 pM, myo-inositol 6
+    micromolar and 4-aminobenzoic acid 60 nM. Do not substitute HMP for B1 using this
+    2013 paper.", "stage": "Carini source-specific AMS1 vitamin formulation"}, {"held_fields":
+    ["OPERATION", "IDENTITY_FORM", "QUANTITY"], "reason": "The source describes establishment
+    of a bicarbonate-based buffer through CO2 then air sparging. This is not an explicit
+    addition of a particular bicarbonate salt or measured final species concentration.",
+    "reported_action": "UNSPECIFIED", "source_label": "bicarbonate", "source_modification_index":
+    6, "source_text": "Follow the paper''s AMS1 preparation: autoclave the inorganic
+    medium, establish the bicarbonate buffer by filtered CO2 then air sparging, and
+    add vitamins and organics afterward; this differs from the imported all-ingredient
+    filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not an
+    independently optimized value.", "stage": "Carini AMS1 buffer after gas sparging"}],
+    "variant_index": 0, "variant_name": "Carini 2013 AMS1 glycine substitution assay"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 475
   term:
@@ -1054,6 +1151,145 @@ variants:
         HMP substitute. Remove HMP only within this source-specific alternative vitamin
         formulation; do not assert universal HMP equivalence. Primary source inspected
         2026-11-16; no ontology identity or mass conversion inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: 'Carini AMS1 source preparation; first, after autoclaving: 0.1-micrometre-filtered
+      CO2 sparging for 5 h'
+    source_modification_index: 6
+    source_text: 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium,
+      establish the bicarbonate buffer by filtered CO2 then air sparging, and add
+      vitamins and organics afterward; this differs from the imported all-ingredient
+      filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not
+      an independently optimized value.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: sparged with 0.1 μm-filtered CO2 for 5 h
+      explanation: Media preparation explicitly gives ordered gas supplies to establish
+        the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base
+        preparation. No supplied volume, final dissolved gas dose or whole-parent
+        equivalence is inferred.
+  - action: ADD
+    ingredient:
+      preferred_term: air
+    stage: 'Carini AMS1 source preparation; second: air sparging for 10 h, before
+      vitamins and organics'
+    source_modification_index: 6
+    source_text: 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium,
+      establish the bicarbonate buffer by filtered CO2 then air sparging, and add
+      vitamins and organics afterward; this differs from the imported all-ingredient
+      filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not
+      an independently optimized value.'
+    evidence:
+    - reference: doi:10.1038/ismej.2012.122
+      supports: SUPPORT
+      snippet: followed by sparging with air for 10 h
+      explanation: Media preparation explicitly gives ordered gas supplies to establish
+        the bicarbonate-based buffer. Carini2014 follows the cited Carini2013 base
+        preparation. No supplied volume, final dissolved gas dose or whole-parent
+        equivalence is inferred.
+  ingredient_mentions:
+  - source_label: B1
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B3
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B5
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B6
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B9
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: B12
+    reported_action: UNSPECIFIED
+    stage: Carini source-specific AMS1 vitamin formulation
+    source_modification_index: 5
+    source_text: 'Replace the imported biotin/HMP vitamin selection with the complete
+      Table 1 vitamin mixture: B1 6 micromolar, B3 800 nM, B5 425 nM, B6 500 nM, B7
+      4 nM, B9 4 nM, B12 700 pM, myo-inositol 6 micromolar and 4-aminobenzoic acid
+      60 nM. Do not substitute HMP for B1 using this 2013 paper.'
+    reason: The source-literal vitamin designation and dose are already supported
+      in ingredient_changes. A more specific vitamer or salt form is not supplied
+      by the cited formulation; this form-only hold does not demote supported label
+      presence or dosage.
+    held_fields:
+    - IDENTITY_FORM
+  - source_label: bicarbonate
+    reported_action: UNSPECIFIED
+    stage: Carini AMS1 buffer after gas sparging
+    source_modification_index: 6
+    source_text: 'Follow the paper''s AMS1 preparation: autoclave the inorganic medium,
+      establish the bicarbonate buffer by filtered CO2 then air sparging, and add
+      vitamins and organics afterward; this differs from the imported all-ingredient
+      filter-sterilization instruction. The reported resulting pH is 7.5-7.7, not
+      an independently optimized value.'
+    reason: The source describes establishment of a bicarbonate-based buffer through
+      CO2 then air sparging. This is not an explicit addition of a particular bicarbonate
+      salt or measured final species concentration.
+    held_fields:
+    - OPERATION
+    - IDENTITY_FORM
+    - QUANTITY
 target_organisms:
 - preferred_term: Candidatus Pelagibacter ubique
   term:

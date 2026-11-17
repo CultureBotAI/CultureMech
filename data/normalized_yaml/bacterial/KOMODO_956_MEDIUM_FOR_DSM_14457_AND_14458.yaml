@@ -138,6 +138,71 @@ curation_history:
     add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
     "stage": "post-sterilization methylamine alternative"}], "variant_index": 1, "variant_name":
     "Methylamine alternative"}]}'
+- timestamp: '2026-11-17T00:07:03.332530+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "28178c1e9f4ee18312185a850956fa768139cd8f7d63bb17d57d30883eedeee3",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+    "recipe_id": "CultureMech:006900", "variants": [{"replace_changes": [{"change_index":
+    0, "expected": {"action": "ADD", "evidence": [{"explanation": "Page 1, final paragraph.
+    Supports only the named descriptor/event at the stated stage. Literal final-medium
+    quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no
+    w/v, w/w or v/v basis inferred. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+    "snippet": "final concentration of 0.5%", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified.
+    Not combined with methylamine; no w/v, w/w or v/v basis inferred.", "preferred_term":
+    "methanol"}, "source_modification_index": 0, "source_text": "After sterilisation
+    add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+    "stage": "post-sterilization methanol alternative"}, "replacement": {"action":
+    "ADD", "amount": {"basis": "UNSPECIFIED_PERCENT", "basis_statement": "Literal
+    final-medium percentage from DSMZ956; mass/volume, volume/volume and mass/mass
+    basis unspecified.", "unit": "PERCENT", "value": "0.5"}, "evidence": [{"explanation":
+    "Page 1, final paragraph. Supports only the named descriptor/event at the stated
+    stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not
+    combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected
+    2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+    "snippet": "final concentration of 0.5%", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified.
+    Not combined with methylamine; no w/v, w/w or v/v basis inferred.", "preferred_term":
+    "methanol"}, "source_modification_index": 0, "source_text": "After sterilisation
+    add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+    "stage": "post-sterilization methanol alternative"}}], "variant_index": 0, "variant_name":
+    "Methanol alternative"}, {"replace_changes": [{"change_index": 0, "expected":
+    {"action": "ADD", "evidence": [{"explanation": "Page 1, final paragraph. Supports
+    only the named descriptor/event at the stated stage. Literal final-medium quantity:
+    0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not
+    combined with methanol. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+    "snippet": "final concentration of 0.3%", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified.
+    Salt, hydration and purity unspecified; not combined with methanol.", "preferred_term":
+    "methylamine"}, "source_modification_index": 0, "source_text": "After sterilisation
+    add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+    "stage": "post-sterilization methylamine alternative"}, "replacement": {"action":
+    "ADD", "amount": {"basis": "UNSPECIFIED_PERCENT", "basis_statement": "Literal
+    final-medium percentage from DSMZ956; mass/volume, volume/volume and mass/mass
+    basis unspecified.", "unit": "PERCENT", "value": "0.3"}, "evidence": [{"explanation":
+    "Page 1, final paragraph. Supports only the named descriptor/event at the stated
+    stage. Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt,
+    hydration and purity unspecified; not combined with methanol. Source inspected
+    2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
+    No parent formulation, growth, ontology identity, or missing dose is inferred.",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+    "snippet": "final concentration of 0.3%", "supports": "SUPPORT"}], "ingredient":
+    {"notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified.
+    Salt, hydration and purity unspecified; not combined with methanol.", "preferred_term":
+    "methylamine"}, "source_modification_index": 0, "source_text": "After sterilisation
+    add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+    "stage": "post-sterilization methylamine alternative"}}], "variant_index": 1,
+    "variant_name": "Methylamine alternative"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 parent_media:
   path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
   relationship: SOURCE_DUPLICATE
@@ -345,6 +410,12 @@ variants:
         unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred.
         Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
         No parent formulation, growth, ontology identity, or missing dose is inferred.'
+    amount:
+      value: '0.5'
+      unit: PERCENT
+      basis: UNSPECIFIED_PERCENT
+      basis_statement: Literal final-medium percentage from DSMZ956; mass/volume,
+        volume/volume and mass/mass basis unspecified.
 - name: Methylamine alternative
   relationship: SUPPLEMENTED_VARIANT
   description: One of two mutually exclusive source-supported supplements to the common
@@ -387,6 +458,12 @@ variants:
         unspecified. Salt, hydration and purity unspecified; not combined with methanol.
         Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39.
         No parent formulation, growth, ontology identity, or missing dose is inferred.'
+    amount:
+      value: '0.3'
+      unit: PERCENT
+      basis: UNSPECIFIED_PERCENT
+      basis_statement: Literal final-medium percentage from DSMZ956; mass/volume,
+        volume/volume and mass/mass basis unspecified.
 preparation_steps:
 - step_number: 1
   action: MIX

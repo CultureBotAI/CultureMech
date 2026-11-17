@@ -208,6 +208,21 @@ variants:
       for any cyanobacteria reported so far under ambient CO2 conditions.
     explanation: Literature evidence supports an ambient-CO2 PCC 11801 condition variant
       under the parent BG11 record.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Synechococcus PCC11801 multi-cultivator gas supply; ambient 0.04% CO2
+    source_modification_index: 1
+    source_text: Culture under ambient CO2 conditions.
+    evidence:
+    - reference: PMID:30413737
+      supports: SUPPORT
+      snippet: when ambient air is bubbled in a multi-cultivator
+      explanation: Primary Methods and figure-associated text verify gas supplied
+        by bubbling. This event is restricted to the multi-cultivator arm; it does
+        not convert every shaker incubation into an active gas-addition claim or assert
+        dissolved concentration.
 - name: high_co2_high_light_bg11_synechococcus_pcc11802
   description: High-CO2, high-light BG11 growth condition for Synechococcus elongatus
     PCC 11802.
@@ -225,6 +240,21 @@ variants:
       the biorefinery.
     explanation: Literature evidence supports a high-CO2/high-light PCC 11802 condition
       variant under the parent BG11 record.
+  ingredient_changes:
+  - action: ADD
+    ingredient:
+      preferred_term: CO2
+    stage: Synechococcus PCC11802 multi-cultivator gas supply; 1% CO2
+    source_modification_index: 1
+    source_text: Culture at 1% CO2.
+    evidence:
+    - reference: PMID:31932622
+      supports: SUPPORT
+      snippet: 1% CO2, 38 °C and 1000 µmole photons.m−2.s−1 with bubbling in MC
+      explanation: Primary Methods and figure-associated text verify gas supplied
+        by bubbling. This event is restricted to the multi-cultivator arm; it does
+        not convert every shaker incubation into an active gas-addition claim or assert
+        dissolved concentration.
 curation_history:
 - timestamp: '2026-01-26T17:53:19.526682Z'
   curator: mediadive-import
@@ -265,6 +295,33 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 3 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-17T00:07:06.384497+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "8bdcb2736d5e786086ddce316a057ab341dd4ffe17598fc0f6f733343b972453",
+    "path": "data/normalized_yaml/bacterial/bg11.yaml", "recipe_id": "CultureMech:000324",
+    "variants": [{"variant_index": 0, "variant_name": "optimized_bg11_synechocystis_pcc6803"},
+    {"append_changes": [{"action": "ADD", "evidence": [{"explanation": "Primary Methods
+    and figure-associated text verify gas supplied by bubbling. This event is restricted
+    to the multi-cultivator arm; it does not convert every shaker incubation into
+    an active gas-addition claim or assert dissolved concentration.", "reference":
+    "PMID:30413737", "snippet": "when ambient air is bubbled in a multi-cultivator",
+    "supports": "SUPPORT"}], "ingredient": {"preferred_term": "CO2"}, "source_modification_index":
+    1, "source_text": "Culture under ambient CO2 conditions.", "stage": "Synechococcus
+    PCC11801 multi-cultivator gas supply; ambient 0.04% CO2"}], "variant_index": 1,
+    "variant_name": "ambient_co2_bg11_synechococcus_pcc11801"}, {"append_changes":
+    [{"action": "ADD", "evidence": [{"explanation": "Primary Methods and figure-associated
+    text verify gas supplied by bubbling. This event is restricted to the multi-cultivator
+    arm; it does not convert every shaker incubation into an active gas-addition claim
+    or assert dissolved concentration.", "reference": "PMID:31932622", "snippet":
+    "1% CO2, 38 °C and 1000 µmole photons.m−2.s−1 with bubbling in MC", "supports":
+    "SUPPORT"}], "ingredient": {"preferred_term": "CO2"}, "source_modification_index":
+    1, "source_text": "Culture at 1% CO2.", "stage": "Synechococcus PCC11802 multi-cultivator
+    gas supply; 1% CO2"}], "variant_index": 2, "variant_name": "high_co2_high_light_bg11_synechococcus_pcc11802"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: Synechocystis sp. PCC 6803

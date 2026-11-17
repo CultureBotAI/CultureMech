@@ -472,6 +472,210 @@ curation_history:
     redox indicator; anaerobic, boiled and N2-sparged; good growth 75-82C (Hartzell),
     83C in glass carboys (Reed).", "stage": "Reed2001 modified STL reduction indicator"}],
     "variant_index": 0, "variant_name": "stl_medium_archaeoglobus_variant"}]}'
+- timestamp: '2026-11-17T00:06:59.191527+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "2204b145595f6c83591fbc7c5d2dfe5dd0bfe4a38cc0c1a751e9c705283d4866",
+    "path": "data/normalized_yaml/archaea/archaeoglobus_medium_dsm_399.yaml", "recipe_id":
+    "CultureMech:009220", "variants": [{"append_mentions": [{"held_fields": ["SOURCE_CLAIM",
+    "QUANTITY"], "reason": "Exact Hartzell1999 chapter remained unavailable anonymously
+    (publisher403). Existing prose is retained as an unapproved source claim; Reed2001
+    does not verify this distinct preparation.", "reported_action": "UNSPECIFIED",
+    "source_label": "NaCl", "source_modification_index": 0, "source_text": "Base built
+    from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O 27.5
+    g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37 g) added
+    at 100 ml/L.", "stage": "Hartzell1999 STL salt stocks"}, {"held_fields": ["SOURCE_CLAIM",
+    "QUANTITY"], "reason": "Exact Hartzell1999 chapter remained unavailable anonymously
+    (publisher403). Existing prose is retained as an unapproved source claim; Reed2001
+    does not verify this distinct preparation.", "reported_action": "UNSPECIFIED",
+    "source_label": "MgSO4", "source_modification_index": 0, "source_text": "Base
+    built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.", "stage": "Hartzell1999 STL salt stocks"}, {"held_fields":
+    ["SOURCE_CLAIM", "QUANTITY"], "reason": "Exact Hartzell1999 chapter remained unavailable
+    anonymously (publisher403). Existing prose is retained as an unapproved source
+    claim; Reed2001 does not verify this distinct preparation.", "reported_action":
+    "UNSPECIFIED", "source_label": "MgCl2.6H2O", "source_modification_index": 0, "source_text":
+    "Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.", "stage": "Hartzell1999 STL salt stocks"}, {"held_fields":
+    ["SOURCE_CLAIM", "QUANTITY"], "reason": "Exact Hartzell1999 chapter remained unavailable
+    anonymously (publisher403). Existing prose is retained as an unapproved source
+    claim; Reed2001 does not verify this distinct preparation.", "reported_action":
+    "UNSPECIFIED", "source_label": "KCl", "source_modification_index": 0, "source_text":
+    "Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.", "stage": "Hartzell1999 STL salt stocks"}, {"held_fields":
+    ["SOURCE_CLAIM", "QUANTITY"], "reason": "Exact Hartzell1999 chapter remained unavailable
+    anonymously (publisher403). Existing prose is retained as an unapproved source
+    claim; Reed2001 does not verify this distinct preparation.", "reported_action":
+    "UNSPECIFIED", "source_label": "NH4Cl", "source_modification_index": 0, "source_text":
+    "Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.", "stage": "Hartzell1999 STL salt stocks"}, {"held_fields":
+    ["SOURCE_CLAIM", "QUANTITY"], "reason": "Exact Hartzell1999 chapter remained unavailable
+    anonymously (publisher403). Existing prose is retained as an unapproved source
+    claim; Reed2001 does not verify this distinct preparation.", "reported_action":
+    "UNSPECIFIED", "source_label": "CaCl2.2H2O", "source_modification_index": 0, "source_text":
+    "Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.", "stage": "Hartzell1999 STL salt stocks"}, {"held_fields":
+    ["SOURCE_CLAIM", "QUANTITY"], "reason": "Exact Hartzell1999 chapter remained unavailable
+    anonymously (publisher403). Existing prose is retained as an unapproved source
+    claim; Reed2001 does not verify this distinct preparation.", "reported_action":
+    "UNSPECIFIED", "source_label": "K2HPO4", "source_modification_index": 0, "source_text":
+    "Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.", "stage": "Hartzell1999 STL salt stocks"}, {"held_fields":
+    ["SOURCE_CLAIM"], "reason": "Exact Hartzell1999 chapter remained unavailable anonymously
+    (publisher403). Existing prose is retained as an unapproved source claim; Reed2001
+    does not verify this distinct preparation. The separately verified Reed-stage
+    events remain supported.", "reported_action": "UNSPECIFIED", "reported_quantity":
+    "20 ml of1M perL", "source_label": "PIPES", "source_modification_index": 1, "source_text":
+    "PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell 1999).
+    Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1.", "stage": "Hartzell1999
+    STL preparation, separate from Reed2001"}, {"held_fields": ["SOURCE_CLAIM"], "reason":
+    "Exact Hartzell1999 chapter remained unavailable anonymously (publisher403). Existing
+    prose is retained as an unapproved source claim; Reed2001 does not verify this
+    distinct preparation. The separately verified Reed-stage events remain supported.",
+    "reported_action": "UNSPECIFIED", "reported_quantity": "7 ml of30%(w/v) perL",
+    "source_label": "sodium lactate", "source_modification_index": 2, "source_text":
+    "Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per L (Hartzell 1999);
+    DL-sodium lactate ~22 mM (Reed 2001).", "stage": "Hartzell1999 STL preparation,
+    separate from Reed2001"}, {"held_fields": ["SOURCE_CLAIM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    The separately verified Reed-stage events remain supported.", "reported_action":
+    "UNSPECIFIED", "reported_quantity": "10 ml/L", "source_label": "Wolfe''s vitamin
+    mixture", "source_modification_index": 3, "source_text": "Yeast extract 0.5 g/L
+    (replaceable by Wolfe''s vitamin mixture 10 ml/L for defined medium).", "stage":
+    "Hartzell1999 STL preparation, separate from Reed2001"}, {"held_fields": ["SOURCE_CLAIM"],
+    "reason": "Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+    Existing prose is retained as an unapproved source claim; Reed2001 does not verify
+    this distinct preparation. The separately verified Reed-stage events remain supported.",
+    "reported_action": "UNSPECIFIED", "reported_quantity": "100mM/200mM stock added
+    at0.5%v/v", "source_label": "Na2S", "source_modification_index": 5, "source_text":
+    "Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving
+    (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).", "stage": "Hartzell1999 STL preparation,
+    separate from Reed2001"}, {"held_fields": ["SOURCE_CLAIM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    The separately verified Reed-stage events remain supported.", "reported_action":
+    "UNSPECIFIED", "reported_quantity": "100mM/200mM stock added at0.5%v/v", "source_label":
+    "Na2S2O3", "source_modification_index": 5, "source_text": "Reductant: Na2S 100
+    mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving (Hartzell); Na2S/Na2S2O3
+    ~1 mM each (Reed).", "stage": "Hartzell1999 STL preparation, separate from Reed2001"},
+    {"held_fields": ["SOURCE_CLAIM"], "reason": "Exact Hartzell1999 chapter remained
+    unavailable anonymously (publisher403). Existing prose is retained as an unapproved
+    source claim; Reed2001 does not verify this distinct preparation. The separately
+    verified Reed-stage events remain supported.", "reported_action": "UNSPECIFIED",
+    "source_label": "N2", "source_modification_index": 6, "source_text": "Resazurin
+    redox indicator; anaerobic, boiled and N2-sparged; good growth 75-82C (Hartzell),
+    83C in glass carboys (Reed).", "stage": "Hartzell1999 STL preparation, separate
+    from Reed2001"}, {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason":
+    "Exact Hartzell1999 chapter remained unavailable anonymously (publisher403). Existing
+    prose is retained as an unapproved source claim; Reed2001 does not verify this
+    distinct preparation. Element symbols name unspecified salts and do not establish
+    counterions/hydration.", "reported_action": "UNSPECIFIED", "source_label": "1000x
+    trace element stock", "source_modification_index": 4, "source_text": "1000x trace
+    element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V salts;
+    (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Na2EDTA.2H2O", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Mn", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Co", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Zn", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Ni", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Cu", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "B", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Al", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Mo", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "W", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "Se", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "V", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"},
+    {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM"], "reason": "Exact Hartzell1999
+    chapter remained unavailable anonymously (publisher403). Existing prose is retained
+    as an unapproved source claim; Reed2001 does not verify this distinct preparation.
+    Element symbols name unspecified salts and do not establish counterions/hydration.",
+    "reported_action": "UNSPECIFIED", "source_label": "(NH4)2Fe(SO4)2", "source_modification_index":
+    4, "source_text": "1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.", "stage": "Hartzell1999 STL trace stock"}],
+    "variant_index": 0, "variant_name": "stl_medium_archaeoglobus_variant"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 solutions:
 - preferred_term: Trace Elements Solution
   term:
@@ -700,3 +904,354 @@ variants:
     source_modification_index: 6
     source_text: Resazurin redox indicator; anaerobic, boiled and N2-sparged; good
       growth 75-82C (Hartzell), 83C in glass carboys (Reed).
+  ingredient_mentions:
+  - source_label: NaCl
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL salt stocks
+    source_modification_index: 0
+    source_text: 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4
+      74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt
+      III K2HPO4 1.37 g) added at 100 ml/L.'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation.
+    held_fields:
+    - SOURCE_CLAIM
+    - QUANTITY
+  - source_label: MgSO4
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL salt stocks
+    source_modification_index: 0
+    source_text: 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4
+      74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt
+      III K2HPO4 1.37 g) added at 100 ml/L.'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation.
+    held_fields:
+    - SOURCE_CLAIM
+    - QUANTITY
+  - source_label: MgCl2.6H2O
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL salt stocks
+    source_modification_index: 0
+    source_text: 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4
+      74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt
+      III K2HPO4 1.37 g) added at 100 ml/L.'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation.
+    held_fields:
+    - SOURCE_CLAIM
+    - QUANTITY
+  - source_label: KCl
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL salt stocks
+    source_modification_index: 0
+    source_text: 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4
+      74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt
+      III K2HPO4 1.37 g) added at 100 ml/L.'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation.
+    held_fields:
+    - SOURCE_CLAIM
+    - QUANTITY
+  - source_label: NH4Cl
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL salt stocks
+    source_modification_index: 0
+    source_text: 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4
+      74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt
+      III K2HPO4 1.37 g) added at 100 ml/L.'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation.
+    held_fields:
+    - SOURCE_CLAIM
+    - QUANTITY
+  - source_label: CaCl2.2H2O
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL salt stocks
+    source_modification_index: 0
+    source_text: 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4
+      74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt
+      III K2HPO4 1.37 g) added at 100 ml/L.'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation.
+    held_fields:
+    - SOURCE_CLAIM
+    - QUANTITY
+  - source_label: K2HPO4
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL salt stocks
+    source_modification_index: 0
+    source_text: 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4
+      74 g, MgCl2.6H2O 27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt
+      III K2HPO4 1.37 g) added at 100 ml/L.'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation.
+    held_fields:
+    - SOURCE_CLAIM
+    - QUANTITY
+  - source_label: PIPES
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL preparation, separate from Reed2001
+    source_modification_index: 1
+    source_text: PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell
+      1999). Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. The separately verified Reed-stage events
+      remain supported.
+    held_fields:
+    - SOURCE_CLAIM
+    reported_quantity: 20 ml of1M perL
+  - source_label: sodium lactate
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL preparation, separate from Reed2001
+    source_modification_index: 2
+    source_text: 'Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per L (Hartzell
+      1999); DL-sodium lactate ~22 mM (Reed 2001).'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. The separately verified Reed-stage events
+      remain supported.
+    held_fields:
+    - SOURCE_CLAIM
+    reported_quantity: 7 ml of30%(w/v) perL
+  - source_label: Wolfe's vitamin mixture
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL preparation, separate from Reed2001
+    source_modification_index: 3
+    source_text: Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10
+      ml/L for defined medium).
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. The separately verified Reed-stage events
+      remain supported.
+    held_fields:
+    - SOURCE_CLAIM
+    reported_quantity: 10 ml/L
+  - source_label: Na2S
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL preparation, separate from Reed2001
+    source_modification_index: 5
+    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v
+      after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. The separately verified Reed-stage events
+      remain supported.
+    held_fields:
+    - SOURCE_CLAIM
+    reported_quantity: 100mM/200mM stock added at0.5%v/v
+  - source_label: Na2S2O3
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL preparation, separate from Reed2001
+    source_modification_index: 5
+    source_text: 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v
+      after autoclaving (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. The separately verified Reed-stage events
+      remain supported.
+    held_fields:
+    - SOURCE_CLAIM
+    reported_quantity: 100mM/200mM stock added at0.5%v/v
+  - source_label: N2
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL preparation, separate from Reed2001
+    source_modification_index: 6
+    source_text: Resazurin redox indicator; anaerobic, boiled and N2-sparged; good
+      growth 75-82C (Hartzell), 83C in glass carboys (Reed).
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. The separately verified Reed-stage events
+      remain supported.
+    held_fields:
+    - SOURCE_CLAIM
+  - source_label: 1000x trace element stock
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Na2EDTA.2H2O
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Mn
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Co
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Zn
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Ni
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Cu
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: B
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Al
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Mo
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: W
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: Se
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: V
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+  - source_label: (NH4)2Fe(SO4)2
+    reported_action: UNSPECIFIED
+    stage: Hartzell1999 STL trace stock
+    source_modification_index: 4
+    source_text: 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+      salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+    reason: Exact Hartzell1999 chapter remained unavailable anonymously (publisher403).
+      Existing prose is retained as an unapproved source claim; Reed2001 does not
+      verify this distinct preparation. Element symbols name unspecified salts and
+      do not establish counterions/hydration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM

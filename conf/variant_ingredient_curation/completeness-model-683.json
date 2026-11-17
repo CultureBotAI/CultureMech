@@ -1,0 +1,2353 @@
+{
+  "schema_version": 1,
+  "base_commit": "65df76935898c6e973697389b76449686b88f8cb",
+  "source_queue_sha256": "dd5faea741da0a11e8eb86cad2976e8bf51d42884c601e96973eba61748330ca",
+  "scope": "31 model-held rows and six existing-event literal-amount upgrades; named gas/mixture stages separated, unresolved identity/operation dimensions held. No recipe applies.",
+  "source_inspections": [
+    {
+      "key": "751",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/remaining-sources/dsmz-751/source.pdf",
+      "sha256": "721e0310d250ea6eab5d453f063b9452b48b8368ad53fa9384cb54434d2e59fb",
+      "locator": "Page 1 liquid-medium instruction"
+    },
+    {
+      "key": "670",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/sources/dsmz-670/source.pdf",
+      "sha256": "e21dbc3f7c16cf301001aaa5ca4ca7aa57fb486cbccba0995c46e094946917ab",
+      "locator": "Page 1 base table and strain preparations"
+    },
+    {
+      "key": "125",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/remaining-sources/dsmz-125/source.pdf",
+      "sha256": "e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f",
+      "locator": "Page 1 carbon alternatives"
+    },
+    {
+      "key": "956",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/remaining-sources/dsmz-956/source.pdf",
+      "sha256": "156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39",
+      "locator": "Page 1 post-sterilization alternatives"
+    },
+    {
+      "key": "119",
+      "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/sources/dsmz-119/source.pdf",
+      "sha256": "65295918764de4ed5b73ce773ab4057a7183ecf8bfd7fff0d02393d901b41a2a",
+      "locator": "Strain-specific post-inoculation gas instructions"
+    },
+    {
+      "key": "hemiaulus",
+      "reference": "PMID:33083143",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/sources/hemiaulus-2020/source.xml",
+      "sha256": "b2b891255be3531171e9479c4d8744724632f3b4e3f89573664273774d4f47e9",
+      "locator": "Methods: naturally dissolved N2"
+    },
+    {
+      "key": "fertilizer",
+      "reference": "PMID:40484141",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/sources/tap-fertilizer-2025/metadata.json",
+      "sha256": "3f738652b616e23152d9ce0740fc5f05ebabd63716e5a17cdc5482b56643d375",
+      "locator": "Primary abstract only"
+    },
+    {
+      "key": "teusink",
+      "reference": "doi:10.1128/AEM.71.11.7253-7262.2005",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/remaining-sources/teusink-2005/source.html",
+      "sha256": "3b4288d316e061cdad56879cb8a30c2cccff1fe3361eb0be71778d49c9dbef91",
+      "locator": "Table 1 headings and footnotes"
+    },
+    {
+      "key": "tang",
+      "reference": "doi:10.1002/btpr.227",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/family-sources/tang-2009/source.pdf",
+      "sha256": "ebbab61739c7a8c63213c57e0258f20822d165ef8188e23455ff8495689eb4be",
+      "locator": "Author manuscript page 4"
+    },
+    {
+      "key": "pinchuk",
+      "reference": "doi:10.1371/journal.pcbi.1000822",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/family-sources/pinchuk-2010/source.xml",
+      "sha256": "9fc877d8ff8e5822a2abf7e00ef5395d11cba3da89281ba3c2038e1c14de6d81",
+      "locator": "Methods: Bacterial Strains and Growth Media"
+    },
+    {
+      "key": "bg11",
+      "reference": "PMID:34584038",
+      "path": ".temp/variant-completeness-683/sources/bg11-2021/source.xml",
+      "sha256": "669d11703f04dc008905d7ac0b78c5963585ff556d92fb0229ae63323634a697",
+      "locator": "Methods: phototrophic BG-11 gas supply"
+    },
+    {
+      "key": "matsui",
+      "reference": "DOI:10.1104/pp.18.00453",
+      "path": ".temp/variant-completeness-683/sources/matsui-2018-html/source.html",
+      "sha256": "beecd6db87651dbf5f4119169a755249ba977070ee4a7046d26dff3bab3b5d43",
+      "locator": "Methods: culture conditions and transformation"
+    },
+    {
+      "key": "kato",
+      "reference": "doi:10.1264/jsme2.ME19128",
+      "path": ".temp/variant-completeness-683/sources/methylotroph-2020/source.xml",
+      "sha256": "2ade9577ad927b568273334fa9b14d2da22d155f877535d317ad13a0977a224d",
+      "locator": "Methods: cultivation of methanotrophs"
+    },
+    {
+      "key": "kosch",
+      "reference": "doi:10.5283/epub.34741",
+      "path": ".temp/variant-completeness-683/sources/koschnitzki-2017/source.pdf",
+      "sha256": "21117464e1481e058031575f2bd668afd37677cd842636230adf54982111e8f9",
+      "locator": "Printed pages27–28, sections2.2.2.1–2.2.2.2"
+    },
+    {
+      "key": "willard",
+      "reference": "doi:10.1128/mbio.01033-24",
+      "path": "../culturemech-variant-occurrences-683-20261116/.temp/variant-683/sources/willard-2024/source.xml",
+      "sha256": "7808bc365628f8d1a71ab0a20135f2f0619a19fc6db1d587961007e8c0ecaba3",
+      "locator": "Materials and Methods: low-sulfate Brock salts and species-specific pH"
+    }
+  ],
+  "browser_inspections": [
+    {
+      "reference": "DOI:10.1007/s10126-021-10037-4",
+      "url": "https://link.springer.com/article/10.1007/s10126-021-10037-4",
+      "locator": "Primary abstract only",
+      "sha256": null
+    },
+    {
+      "reference": "doi:10.1099/ijs.0.012724-0",
+      "url": "https://www.academia.edu/165327461/",
+      "locator": "Primary paper page 2730",
+      "sha256": null
+    }
+  ],
+  "records": [
+    {
+      "path": "data/normalized_yaml/algae/Artificial_Seawater_Medium.yaml",
+      "recipe_id": "CultureMech:000025",
+      "expected_sha256": "b6636a9b18a477aaaa935531eea34a7a050a1859db0ea04c73054331e12dbaba",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "modified_artificial_seawater_hemiaulus_richelia_symbiosis",
+          "append_mentions": [
+            {
+              "source_label": "N2",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Hemiaulus fixed-N-free culture; naturally dissolved nitrogen",
+              "source_modification_index": 2,
+              "source_text": "Use nitrogen-free medium with N2 as the sole nitrogen source for reported maximum growth rates.",
+              "reason": "Primary Methods explicitly describe naturally dissolved N2, not deliberate supplementation. Presence as a nitrogen source is supported; no ADD operation or administered dose is asserted.",
+              "held_fields": [
+                "OPERATION"
+              ],
+              "evidence": [
+                {
+                  "reference": "PMID:33083143",
+                  "supports": "SUPPORT",
+                  "snippet": "recognizing that dissolved N2 will be abundant as an N source for diazotrophs",
+                  "explanation": "Methods define no added organic or inorganic nitrogen; environmental dissolved-gas context is not a preparation addition."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/F_2_Medium.yaml",
+      "recipe_id": "CultureMech:000170",
+      "expected_sha256": "87cec46fd41e42ee7de2dd99b3ed5d0862ae970048f8a410458478f8e2caff37",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "f_2asw_diatom_culture",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Matsui2018 high-CO2 aeration arm; 1% v/v CO2",
+              "source_modification_index": 2,
+              "source_text": "Aerate cultures with ambient air or 1% CO2 depending on the experiment.",
+              "evidence": [
+                {
+                  "reference": "DOI:10.1104/pp.18.00453",
+                  "supports": "SUPPORT",
+                  "snippet": "constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04% (v/v) CO2 (air-grown cells)",
+                  "explanation": "Cells and Culture Conditions; separate experimental arms."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative gas arms is implied."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "ambient air"
+              },
+              "stage": "Matsui2018 ambient-air aeration arm; 0.04% v/v CO2",
+              "source_modification_index": 2,
+              "source_text": "Aerate cultures with ambient air or 1% CO2 depending on the experiment.",
+              "evidence": [
+                {
+                  "reference": "DOI:10.1104/pp.18.00453",
+                  "supports": "SUPPORT",
+                  "snippet": "constant aeration with 1% (v/v) CO2 (high CO2-grown cells) or ambient air containing 0.04% (v/v) CO2 (air-grown cells)",
+                  "explanation": "Cells and Culture Conditions; separate experimental arms."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative gas arms is implied."
+            }
+          ]
+        },
+        {
+          "variant_index": 2,
+          "variant_name": "modified_f_2asw_sodium_response",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Tsuji2021 low-sodium aeration arm with 5% CO2 in air",
+              "source_modification_index": 2,
+              "source_text": "Vary CO2 availability to distinguish sodium-dependent growth effects.",
+              "evidence": [
+                {
+                  "reference": "DOI:10.1007/s10126-021-10037-4",
+                  "supports": "SUPPORT",
+                  "snippet": "aeration with air containing 5% CO2, but not with the air containing 0.04% CO2",
+                  "explanation": "Publisher primary abstract inspected 2026-11-16. Low-sodium comparison names two supplied gas conditions with different growth outcomes. Input event makes no growth assertion or liquid-concentration claim. Full Methods inaccessible."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative gas arms is implied."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Tsuji2021 low-sodium aeration arm with 0.04% CO2 in air",
+              "source_modification_index": 2,
+              "source_text": "Vary CO2 availability to distinguish sodium-dependent growth effects.",
+              "evidence": [
+                {
+                  "reference": "DOI:10.1007/s10126-021-10037-4",
+                  "supports": "SUPPORT",
+                  "snippet": "aeration with air containing 5% CO2, but not with the air containing 0.04% CO2",
+                  "explanation": "Publisher primary abstract inspected 2026-11-16. Low-sodium comparison names two supplied gas conditions with different growth outcomes. Input event makes no growth assertion or liquid-concentration claim. Full Methods inaccessible."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative gas arms is implied."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/TAP_Medium.yaml",
+      "recipe_id": "CultureMech:000233",
+      "expected_sha256": "b44608e3c6ce42801cea59497c6bce8e5dd1be3c2e08ae43f55617bf789ccc77",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "ab_wsf_tap_derived_chlorella_sorokiniana",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "water-soluble fertilizer"
+              },
+              "stage": "Ab-WSF formulation; named fertilizer input",
+              "source_modification_index": 0,
+              "source_text": "Replace TAP trace and macroelements with water-soluble fertilizer.",
+              "evidence": [
+                {
+                  "reference": "PMID:40484141",
+                  "supports": "SUPPORT",
+                  "snippet": "the trace and macroelements in TAP were replaced by water-soluble fertilizer (WSF)",
+                  "explanation": "Primary abstract verifies mixture use, but does not enumerate displaced chemicals, product composition or dose."
+                }
+              ]
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "water-soluble fertilizer",
+              "reported_action": "ADD",
+              "stage": "Ab-WSF formulation",
+              "source_modification_index": 0,
+              "source_text": "Replace TAP trace and macroelements with water-soluble fertilizer.",
+              "reason": "Named fertilizer presence is supported independently. Exact product/formulation and dose are unavailable in the inspected abstract.",
+              "held_fields": [
+                "IDENTITY_FORM",
+                "QUANTITY"
+              ]
+            },
+            {
+              "source_label": "TAP trace and macroelements",
+              "reported_action": "REPLACE",
+              "stage": "Ab-WSF formulation",
+              "source_modification_index": 0,
+              "source_text": "Replace TAP trace and macroelements with water-soluble fertilizer.",
+              "reason": "Source reports group replacement, but no precise displaced chemical list was inspected. No unlisted removal or component equivalence inferred.",
+              "held_fields": [
+                "IDENTITY_FORM",
+                "OPERATION"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/algae/bg11.yaml",
+      "recipe_id": "CultureMech:015450",
+      "expected_sha256": "50cf10be2d7e6c7eec48f0d9ad0911b27e4d6e52b8386cfe43924339a304c468",
+      "variants": [
+        {
+          "variant_index": 2,
+          "variant_name": "bg11_scenedesmus_obliquus_abc009_photoautotrophic",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "air"
+              },
+              "stage": "ABC-009 BG-11 ambient-air phototrophic arm",
+              "source_modification_index": 1,
+              "source_text": "Compare air and 2% CO2 gas conditions.",
+              "evidence": [
+                {
+                  "reference": "PMID:34584038",
+                  "supports": "SUPPORT",
+                  "snippet": "ambient air or 2% CO2 was supplied at the rate of 0.5 vvm",
+                  "explanation": "Phototrophic Methods specify alternative supplied gases. Flow and gas fraction are not dissolved concentrations."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative gas arms is implied."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "ABC-009 BG-11 2% CO2 phototrophic arm",
+              "source_modification_index": 1,
+              "source_text": "Compare air and 2% CO2 gas conditions.",
+              "evidence": [
+                {
+                  "reference": "PMID:34584038",
+                  "supports": "SUPPORT",
+                  "snippet": "ambient air or 2% CO2 was supplied at the rate of 0.5 vvm",
+                  "explanation": "Phototrophic Methods specify alternative supplied gases. Flow and gas fraction are not dissolved concentrations."
+                }
+              ],
+              "notes": "Gas supply only; no liquid concentration or simultaneous use of alternative gas arms is implied."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/ignicoccus_medium_for_dsm_18386.yaml",
+      "recipe_id": "CultureMech:009166",
+      "expected_sha256": "c37b836f529b1cd7080fb17e9b9a837501712e78e6fb5afa98bf246501fd733b",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "half_sme_s0_ignicoccus",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2"
+              },
+              "stage": "Koschnitzki2017 final serum-bottle headspace exchange; H2/CO2 80:20 v/v, 1.5 bar",
+              "source_modification_index": 4,
+              "source_text": "H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C",
+              "evidence": [
+                {
+                  "reference": "doi:10.5283/epub.34741",
+                  "supports": "SUPPORT",
+                  "snippet": "H2/CO2 (80:20, v/v) at 1.5 bar",
+                  "explanation": "Printed page 28: evacuation/gas exchange repeated three times; final pressure 1.5 bar per bottle. Distinct from N2/CO2 purge and N2/H2 chamber atmosphere."
+                }
+              ],
+              "notes": "Final preparation headspace only; no liquid concentration or unreported pressure-reference convention."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "Koschnitzki2017 final serum-bottle headspace exchange; H2/CO2 80:20 v/v, 1.5 bar",
+              "source_modification_index": 4,
+              "source_text": "H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C",
+              "evidence": [
+                {
+                  "reference": "doi:10.5283/epub.34741",
+                  "supports": "SUPPORT",
+                  "snippet": "H2/CO2 (80:20, v/v) at 1.5 bar",
+                  "explanation": "Printed page 28: evacuation/gas exchange repeated three times; final pressure 1.5 bar per bottle. Distinct from N2/CO2 purge and N2/H2 chamber atmosphere."
+                }
+              ],
+              "notes": "Final preparation headspace only; no liquid concentration or unreported pressure-reference convention."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/methanobacterium_medium.yaml",
+      "recipe_id": "CultureMech:000643",
+      "expected_sha256": "b671cbbe466583591ab494a297e153dbb74a5d374144b8a1c7b558c7bfc264df",
+      "variants": [
+        {
+          "variant_index": 2,
+          "variant_name": "For DSM 2030",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2"
+              },
+              "stage": "DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 2030: sterile gas supplied after inoculation at 2 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "DSM 2030 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Adjust pH to 6.5 and add sterile 80% H2 and 20% CO2 gas to 2 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 2030: sterile gas supplied after inoculation at 2 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            }
+          ]
+        },
+        {
+          "variant_index": 8,
+          "variant_name": "For DSM 9575",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2"
+              },
+              "stage": "DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 9575: sterile gas supplied after inoculation at 2 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "DSM 9575 post-inoculation headspace; 80% H2/20% CO2, 2 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 9575: sterile gas supplied after inoculation at 2 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            }
+          ]
+        },
+        {
+          "variant_index": 12,
+          "variant_name": "For DSM 25939",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2"
+              },
+              "stage": "DSM 25939 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 25939: sterile gas supplied after inoculation at 1 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "DSM 25939 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Adjust pH of the complete medium to 7.2 and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 25939: sterile gas supplied after inoculation at 1 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            }
+          ]
+        },
+        {
+          "variant_index": 13,
+          "variant_name": "For DSM 25945",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "H2"
+              },
+              "stage": "DSM 25945 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 25945: sterile gas supplied after inoculation at 1 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CO2"
+              },
+              "stage": "DSM 25945 post-inoculation headspace; 80% H2/20% CO2, 1 bar overpressure",
+              "source_modification_index": 0,
+              "source_text": "Adjust pH of the complete medium to 7.4 and add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure after inoculation.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "80% H2 and 20% CO2",
+                  "explanation": "Official instruction for DSM 25945: sterile gas supplied after inoculation at 1 bar overpressure. Gas composition is not a liquid dose."
+                }
+              ],
+              "notes": "Source ratio and overpressure belong to this strain-specific post-inoculation stage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "recipe_id": "CultureMech:009226",
+      "expected_sha256": "bba397f1a053e773b29be15a57da4a60c4d5753827582e11c168525890b4c4f8",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+          "append_changes": [
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "elemental sulfur",
+                "concentration": {
+                  "value": "10",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures",
+              "source_modification_index": 1,
+              "source_text": "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "SUPPORT",
+                  "snippet": "Cultures were supplemented with 10 g/L of elemental sulfur.",
+                  "explanation": "Source concentration in aerobic study medium; not a claim of a difference from every parent amount."
+                }
+              ]
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "concentration": {
+                  "value": "1",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures; species arm: A. brierleyi DSM1651, M. hakonensis HO1-1, M. prunae RON 12/II, M. sedula DSM5348, S. ohwakuensis TA-1 and S. tokodaii str.7",
+              "source_modification_index": 1,
+              "source_text": "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "SUPPORT",
+                  "snippet": "1 g/L yeast extract",
+                  "explanation": "Species-specific paragraph identifies this group: A. brierleyi DSM1651, M. hakonensis HO1-1, M. prunae RON 12/II, M. sedula DSM5348, S. ohwakuensis TA-1 and S. tokodaii str.7. Alternatives are not combined."
+                }
+              ]
+            },
+            {
+              "action": "SET_CONCENTRATION",
+              "ingredient": {
+                "preferred_term": "yeast extract",
+                "concentration": {
+                  "value": "0.2",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures; species arm: S. metallicus DSM6482 and S. tepidarius IC-007",
+              "source_modification_index": 1,
+              "source_text": "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "SUPPORT",
+                  "snippet": "0.2 g/L yeast extract",
+                  "explanation": "Species-specific paragraph identifies this group: S. metallicus DSM6482 and S. tepidarius IC-007. Alternatives are not combined."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "sucrose",
+                "concentration": {
+                  "value": "2",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures; S. acidocaldarius MW001 and S. solfataricus P2 arm",
+              "source_modification_index": 1,
+              "source_text": "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "SUPPORT",
+                  "snippet": "2 g/L sucrose and 1 g/L NZ-Amine",
+                  "explanation": "Exact supplement for S. acidocaldarius MW001 and S. solfataricus P2; no transfer to yeast-extract arms or full-formulation recertification."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "NZ-Amine",
+                "concentration": {
+                  "value": "1",
+                  "unit": "G_PER_L"
+                }
+              },
+              "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures; S. acidocaldarius MW001 and S. solfataricus P2 arm",
+              "source_modification_index": 1,
+              "source_text": "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)",
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "SUPPORT",
+                  "snippet": "2 g/L sucrose and 1 g/L NZ-Amine",
+                  "explanation": "Exact supplement for S. acidocaldarius MW001 and S. solfataricus P2; no transfer to yeast-extract arms or full-formulation recertification."
+                }
+              ]
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "Na2S",
+              "reported_action": "REMOVE",
+              "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures",
+              "source_modification_index": 2,
+              "source_text": "AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing agent; NO N2 gas phase",
+              "reason": "Aerobic vented-bottle conditions verified. Source does not explicitly document removal of this local parent's ingredient; absence from a source list is not an observed removal.",
+              "held_fields": [
+                "OPERATION",
+                "SOURCE_CLAIM"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "PARTIAL",
+                  "snippet": "glass serum bottles vented with foam stoppers",
+                  "explanation": "Aeration context only; does not assert chemical removal."
+                }
+              ]
+            },
+            {
+              "source_label": "N2",
+              "reported_action": "REMOVE",
+              "stage": "Willard2024 low-sulfate DSM-88 aerobic cultures",
+              "source_modification_index": 2,
+              "source_text": "AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing agent; NO N2 gas phase",
+              "reason": "Aerobic vented-bottle conditions verified. Source does not explicitly document removal of this local parent's ingredient; absence from a source list is not an observed removal.",
+              "held_fields": [
+                "OPERATION",
+                "SOURCE_CLAIM"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1128/mbio.01033-24",
+                  "supports": "PARTIAL",
+                  "snippet": "glass serum bottles vented with foam stoppers",
+                  "explanation": "Aeration context only; does not assert chemical removal."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_125_METHYLOBACTERIUM_MEDIUM.yaml",
+      "recipe_id": "CultureMech:004018",
+      "expected_sha256": "de0a27c5f2553ac733ea5c894832649bf2e9df8f152c0b005e77ad4c4e2fd75b",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol preparation option",
+          "replace_changes": [
+            {
+              "change_index": 0,
+              "expected": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion."
+                },
+                "stage": "methanol preparation alternative",
+                "source_modification_index": 0,
+                "source_text": "Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "Add 5 ml methanol",
+                    "explanation": "Page 1, preparation alternatives. Supports only the named descriptor/event at the stated stage. Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ]
+              },
+              "replacement": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion."
+                },
+                "stage": "methanol preparation alternative",
+                "source_modification_index": 0,
+                "source_text": "Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "Add 5 ml methanol",
+                    "explanation": "Page 1, preparation alternatives. Supports only the named descriptor/event at the stated stage. Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ],
+                "amount": {
+                  "value": "5",
+                  "unit": "ML",
+                  "basis": "PER_BATCH",
+                  "basis_statement": "Literal 5 mL methanol input per DSMZ125 basal batch; no final volume or purity inferred."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml",
+      "recipe_id": "CultureMech:006403",
+      "expected_sha256": "7b82abae9ce5b26b7275ccc93142a5ae7fb64bc9183b8fb77a3b362390676be2",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Liquid SC medium",
+          "append_changes": [
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "KH2PO4"
+              },
+              "stage": "DSMZ751 liquid-medium preparation batch",
+              "source_modification_index": 1,
+              "source_text": "Use KH2PO4 1.5 g per batch instead of 1 g.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "KH2PO4, 1.5 g and K2HPO4, 0.5 g",
+                  "explanation": "Page 1 liquid-medium instruction. Water plus added stocks is a batch recipe, not an established final litre."
+                }
+              ],
+              "amount": {
+                "value": "1.5",
+                "unit": "G",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal grams in DSMZ751 liquid preparation batch; final volume unspecified."
+              }
+            },
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "K2HPO4"
+              },
+              "stage": "DSMZ751 liquid-medium preparation batch",
+              "source_modification_index": 2,
+              "source_text": "Use K2HPO4 0.5 g per batch instead of 1 g.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "KH2PO4, 1.5 g and K2HPO4, 0.5 g",
+                  "explanation": "Page 1 liquid-medium instruction. Water plus added stocks is a batch recipe, not an established final litre."
+                }
+              ],
+              "amount": {
+                "value": "0.5",
+                "unit": "G",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal grams in DSMZ751 liquid preparation batch; final volume unspecified."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458.yaml",
+      "recipe_id": "CultureMech:006900",
+      "expected_sha256": "28178c1e9f4ee18312185a850956fa768139cd8f7d63bb17d57d30883eedeee3",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol alternative",
+          "replace_changes": [
+            {
+              "change_index": 0,
+              "expected": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred."
+                },
+                "stage": "post-sterilization methanol alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.5%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ]
+              },
+              "replacement": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred."
+                },
+                "stage": "post-sterilization methanol alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.5%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ],
+                "amount": {
+                  "value": "0.5",
+                  "unit": "PERCENT",
+                  "basis": "UNSPECIFIED_PERCENT",
+                  "basis_statement": "Literal final-medium percentage from DSMZ956; mass/volume, volume/volume and mass/mass basis unspecified."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methylamine alternative",
+          "replace_changes": [
+            {
+              "change_index": 0,
+              "expected": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methylamine",
+                  "notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol."
+                },
+                "stage": "post-sterilization methylamine alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.3%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ]
+              },
+              "replacement": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methylamine",
+                  "notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol."
+                },
+                "stage": "post-sterilization methylamine alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.3%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ],
+                "amount": {
+                  "value": "0.3",
+                  "unit": "PERCENT",
+                  "basis": "UNSPECIFIED_PERCENT",
+                  "basis_statement": "Literal final-medium percentage from DSMZ956; mass/volume, volume/volume and mass/mass basis unspecified."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/TOGO_M1308_Methylotroph_Medium.yaml",
+      "recipe_id": "CultureMech:007843",
+      "expected_sha256": "967394ea5131b424e8bdb02c7d5318d6d60b97cb8539abd8b49f995a3dcc8107",
+      "variants": [
+        {
+          "variant_index": 1,
+          "variant_name": "ca_free_lanthanide_test_basal_medium",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CaCl2",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MICROMOLAR"
+                }
+              },
+              "stage": "Kato2020 post-autoclave default metal supplementation; M. sporium DSM17706T arm",
+              "source_modification_index": 1,
+              "source_text": "Supplement cultures with methane or methanol and defined CaCl2 or rare-earth element chlorides after autoclaving.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1264/jsme2.ME19128",
+                  "supports": "SUPPORT",
+                  "snippet": "CaCl2 and REE chlorides (final concentration of 20 μM each, unless otherwise stated)",
+                  "explanation": "Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response, no-metal or mixed-metal experiments. Hydration unspecified."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "YCl3",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MICROMOLAR"
+                }
+              },
+              "stage": "Kato2020 post-autoclave default metal supplementation; Y-b3 arm",
+              "source_modification_index": 1,
+              "source_text": "Supplement cultures with methane or methanol and defined CaCl2 or rare-earth element chlorides after autoclaving.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1264/jsme2.ME19128",
+                  "supports": "SUPPORT",
+                  "snippet": "CaCl2 and REE chlorides (final concentration of 20 μM each, unless otherwise stated)",
+                  "explanation": "Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response, no-metal or mixed-metal experiments. Hydration unspecified."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "LaCl3",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MICROMOLAR"
+                }
+              },
+              "stage": "Kato2020 post-autoclave default metal supplementation; La-a12 arm",
+              "source_modification_index": 1,
+              "source_text": "Supplement cultures with methane or methanol and defined CaCl2 or rare-earth element chlorides after autoclaving.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1264/jsme2.ME19128",
+                  "supports": "SUPPORT",
+                  "snippet": "CaCl2 and REE chlorides (final concentration of 20 μM each, unless otherwise stated)",
+                  "explanation": "Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response, no-metal or mixed-metal experiments. Hydration unspecified."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "CeCl3",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MICROMOLAR"
+                }
+              },
+              "stage": "Kato2020 post-autoclave default metal supplementation; Ce-a6 arm",
+              "source_modification_index": 1,
+              "source_text": "Supplement cultures with methane or methanol and defined CaCl2 or rare-earth element chlorides after autoclaving.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1264/jsme2.ME19128",
+                  "supports": "SUPPORT",
+                  "snippet": "CaCl2 and REE chlorides (final concentration of 20 μM each, unless otherwise stated)",
+                  "explanation": "Methods assign CaCl2, YCl3, LaCl3 and CeCl3 to M. sporium DSM17706T and Y-b3, La-a12 and Ce-a6 respectively. Default not imposed on dose-response, no-metal or mixed-metal experiments. Hydration unspecified."
+                }
+              ]
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methane"
+              },
+              "stage": "Kato2020 methane headspace alternative; one 26-mL tube with 5 mL basal medium",
+              "source_modification_index": 1,
+              "source_text": "Supplement cultures with methane or methanol and defined CaCl2 or rare-earth element chlorides after autoclaving.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1264/jsme2.ME19128",
+                  "supports": "SUPPORT",
+                  "snippet": "methane (2 mL tube–1)",
+                  "explanation": "2 mL gas aliquot per tube, not dissolved concentration or standard-state volume. Methanol is an alternative."
+                }
+              ],
+              "amount": {
+                "value": "2",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "One source culture-tube batch: 2 mL methane gas input; not per litre liquid."
+              }
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "methanol",
+                "concentration": {
+                  "value": "20",
+                  "unit": "MILLIMOLAR"
+                }
+              },
+              "stage": "Kato2020 methanol carbon-source alternative",
+              "source_modification_index": 1,
+              "source_text": "Supplement cultures with methane or methanol and defined CaCl2 or rare-earth element chlorides after autoclaving.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1264/jsme2.ME19128",
+                  "supports": "SUPPORT",
+                  "snippet": "methanol (20‍ ‍mM)",
+                  "explanation": "Methods alternative to methane; Unicode spacing retained from source. No simultaneous methane/methanol culture asserted."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml",
+      "recipe_id": "CultureMech:008906",
+      "expected_sha256": "c3e997aa7c21b7d944f3846b9a5f3be32a0c875c6e2b8f5e502a06c438e5fbe2",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "mb_half_strength_marine_broth_2216",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "water"
+              },
+              "stage": "Marteinsson2010 MB1/2 whole-medium dilution",
+              "source_modification_index": 0,
+              "source_text": "Marine broth/agar 2216 (DSMZ medium 514) diluted to 0.5x strength with water.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1099/ijs.0.012724-0",
+                  "supports": "SUPPORT",
+                  "snippet": "diluted to half strength with water",
+                  "explanation": "Primary-paper copy page 2730 inspected in browser 2026-11-16. Diluent input supported; relative half-strength establishes no absolute water amount or component concentration. Local capture unavailable."
+                }
+              ],
+              "notes": "Whole-medium dilution only; medium name is not expanded into newly resolved chemicals."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/cdm_teusink_et_al.yaml",
+      "recipe_id": "CultureMech:007092",
+      "expected_sha256": "56aaf4fd22a1592e455b432079cb1123888e3687241cfe1dca1799fd8b88b6c2",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Teusink 2005 Table 1 complete CDM on reported mass basis"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9463.yaml",
+      "recipe_id": "CultureMech:006260",
+      "expected_sha256": "48bdb6484a3a819111d59dd466d2f1d7a56ba8885e1be5bf5ec051f0ae7afb17",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9463 current DSMZ 670 source formulation",
+          "append_changes": [
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "distilled water"
+              },
+              "stage": "DSMZ670 current source base-batch input before strain-specific additions",
+              "source_modification_index": 0,
+              "source_text": "Current DSMZ 670 base table uses 950 ml distilled-water input, not the archive's 1000 ml; this is not a stated final volume.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Distilled water 950.00 ml",
+                  "explanation": "Page 1 base table, whitespace normalized. Separate ferrous-sulfate stock and strain-specific omissions do not make water input a final-medium volume."
+                }
+              ],
+              "amount": {
+                "value": "950",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Current DSMZ670 table input per preparation batch; not a final-volume assertion."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9466.yaml",
+      "recipe_id": "CultureMech:006262",
+      "expected_sha256": "4bbc3a0de4dfd7c77e335a3dd88f909a54b96f9a0074586ec43f3efefd8ffb68",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9466 current DSMZ 670 source formulation",
+          "append_changes": [
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "distilled water"
+              },
+              "stage": "DSMZ670 current source base-batch input before strain-specific additions",
+              "source_modification_index": 0,
+              "source_text": "Current DSMZ 670 base table uses 950 ml distilled-water input, not the archive's 1000 ml; this is not a stated final volume.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Distilled water 950.00 ml",
+                  "explanation": "Page 1 base table, whitespace normalized. Separate ferrous-sulfate stock and strain-specific omissions do not make water input a final-medium volume."
+                }
+              ],
+              "amount": {
+                "value": "950",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Current DSMZ670 table input per preparation batch; not a final-volume assertion."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+      "recipe_id": "CultureMech:006263",
+      "expected_sha256": "c5576056dbb824038944c4e314ec46f683e143e99477d2f1bb57cc2ee4d2761c",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9467 current DSMZ 670 source formulation",
+          "append_changes": [
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "distilled water"
+              },
+              "stage": "DSMZ670 current source base-batch input before strain-specific additions",
+              "source_modification_index": 0,
+              "source_text": "Current DSMZ 670 base table uses 950 ml distilled-water input, not the archive's 1000 ml; this is not a stated final volume.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Distilled water 950.00 ml",
+                  "explanation": "Page 1 base table, whitespace normalized. Separate ferrous-sulfate stock and strain-specific omissions do not make water input a final-medium volume."
+                }
+              ],
+              "amount": {
+                "value": "950",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Current DSMZ670 table input per preparation batch; not a final-volume assertion."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/for_dsm_9468.yaml",
+      "recipe_id": "CultureMech:006264",
+      "expected_sha256": "a03592f45477a35dc9f386dcdea84372affb01e376578a46a28f3e4080d8244b",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "DSM 9468 current DSMZ 670 source formulation",
+          "append_changes": [
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "distilled water"
+              },
+              "stage": "DSMZ670 current source base-batch input before strain-specific additions",
+              "source_modification_index": 0,
+              "source_text": "Current DSMZ 670 base table uses 950 ml distilled-water input, not the archive's 1000 ml; this is not a stated final volume.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "Distilled water 950.00 ml",
+                  "explanation": "Page 1 base table, whitespace normalized. Separate ferrous-sulfate stock and strain-specific omissions do not make water input a final-medium volume."
+                }
+              ],
+              "amount": {
+                "value": "950",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Current DSMZ670 table input per preparation batch; not a final-volume assertion."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml",
+      "recipe_id": "CultureMech:002134",
+      "expected_sha256": "961e732e30fe0227c8f821592fcbdbfdf5a4ce32530f5b87e53c09e4a28ab28b",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol alternative",
+          "replace_changes": [
+            {
+              "change_index": 0,
+              "expected": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred."
+                },
+                "stage": "post-sterilization methanol alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.5%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ]
+              },
+              "replacement": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred."
+                },
+                "stage": "post-sterilization methanol alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methanol to a final concentration of 0.5% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.5%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.5%, percentage basis unspecified. Not combined with methylamine; no w/v, w/w or v/v basis inferred. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ],
+                "amount": {
+                  "value": "0.5",
+                  "unit": "PERCENT",
+                  "basis": "UNSPECIFIED_PERCENT",
+                  "basis_statement": "Literal final-medium percentage from DSMZ956; mass/volume, volume/volume and mass/mass basis unspecified."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "variant_index": 1,
+          "variant_name": "Methylamine alternative",
+          "replace_changes": [
+            {
+              "change_index": 0,
+              "expected": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methylamine",
+                  "notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol."
+                },
+                "stage": "post-sterilization methylamine alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.3%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ]
+              },
+              "replacement": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methylamine",
+                  "notes": "Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol."
+                },
+                "stage": "post-sterilization methylamine alternative",
+                "source_modification_index": 0,
+                "source_text": "After sterilisation add sterile methylamine to a final concentration of 0.3% (percentage basis unspecified).",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "final concentration of 0.3%",
+                    "explanation": "Page 1, final paragraph. Supports only the named descriptor/event at the stated stage. Literal final-medium quantity: 0.3%, percentage basis unspecified. Salt, hydration and purity unspecified; not combined with methanol. Source inspected 2026-11-16; SHA256 156fe7f9a826c658bf690c9c892ba7d137848d397f55cf93568c4c3145374f39. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ],
+                "amount": {
+                  "value": "0.3",
+                  "unit": "PERCENT",
+                  "basis": "UNSPECIFIED_PERCENT",
+                  "basis_statement": "Literal final-medium percentage from DSMZ956; mass/volume, volume/volume and mass/mass basis unspecified."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/methylobacterium_medium.yaml",
+      "recipe_id": "CultureMech:000718",
+      "expected_sha256": "63cded5b220afa3cf50a2600602b0ce9223fba7558090f0f671ea16fd0b671a4",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Methanol preparation option",
+          "replace_changes": [
+            {
+              "change_index": 0,
+              "expected": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion."
+                },
+                "stage": "methanol preparation alternative",
+                "source_modification_index": 0,
+                "source_text": "Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "Add 5 ml methanol",
+                    "explanation": "Page 1, preparation alternatives. Supports only the named descriptor/event at the stated stage. Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ]
+              },
+              "replacement": {
+                "action": "ADD",
+                "ingredient": {
+                  "preferred_term": "methanol",
+                  "notes": "Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion."
+                },
+                "stage": "methanol preparation alternative",
+                "source_modification_index": 0,
+                "source_text": "Add 5 ml methanol to the source's common basal batch; do not combine this option with the methane-air alternative.",
+                "evidence": [
+                  {
+                    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium125.pdf",
+                    "supports": "SUPPORT",
+                    "snippet": "Add 5 ml methanol",
+                    "explanation": "Page 1, preparation alternatives. Supports only the named descriptor/event at the stated stage. Literal source dose: 5 mL per common basal batch. Final volume and purity unspecified. This alternative excludes methane-air incubation; no mL/L or percent conversion. Source inspected 2026-11-16; SHA256 e107edb0e43f303bc124e81ef0430f07fde07eb9efbcf1cea9c35e3a2190ad8f. No parent formulation, growth, ontology identity, or missing dose is inferred."
+                  }
+                ],
+                "amount": {
+                  "value": "5",
+                  "unit": "ML",
+                  "basis": "PER_BATCH",
+                  "basis_statement": "Literal 5 mL methanol input per DSMZ125 basal batch; no final volume or purity inferred."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/minimal_medium_teusink_et_al.yaml",
+      "recipe_id": "CultureMech:007202",
+      "expected_sha256": "d26aa32bdb693b07e740b72bcfd5b9735f9081b4b72ad5f2991fe089acba52fc",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Teusink 2005 Table 1 minimal medium on reported mass basis"
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009.yaml",
+      "recipe_id": "CultureMech:007076",
+      "expected_sha256": "24894a0f2c8d08506236297f5ecef184e0b3d5a6f50891073da9f6e8cada6a3e",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Tang 2009 manuscript 20 mM PIPES tracer medium with salt and amino acids",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "AA-S-18 amino acid mixture"
+              },
+              "stage": "Tang2009 defined-rich supplement; separate from unsupplemented minimal-medium arm",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "SUPPORT",
+                  "snippet": "a standard amino acid mix (containing 17 unlabeled amino acids, without tryptophan, glutamine, and asparagine, Cat#AA-S-18, Sigma, USA)",
+                  "explanation": "Manuscript page 4. Named commercial mixture supported, no inferred 17 precise stereochemical forms. Separate dose sentence: 'a final concentration of 25 µM for each amino acid', not a mixture molarity."
+                }
+              ],
+              "notes": "25 micromolar per included amino acid; no bulk-mixture molarity or individual stereochemical assignment."
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "tryptophan",
+              "reported_action": "REMOVE",
+              "stage": "Tang2009 AA-S-18 supplement membership only",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Source excludes this label from AA-S-18 supplement. Negative mixture membership is not an observed removal step or proof of whole-culture absence.",
+              "held_fields": [
+                "OPERATION"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "PARTIAL",
+                  "snippet": "without tryptophan, glutamine, and asparagine",
+                  "explanation": "Page 4 exclusion from supplement, not whole-medium removal."
+                }
+              ]
+            },
+            {
+              "source_label": "glutamine",
+              "reported_action": "REMOVE",
+              "stage": "Tang2009 AA-S-18 supplement membership only",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Source excludes this label from AA-S-18 supplement. Negative mixture membership is not an observed removal step or proof of whole-culture absence.",
+              "held_fields": [
+                "OPERATION"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "PARTIAL",
+                  "snippet": "without tryptophan, glutamine, and asparagine",
+                  "explanation": "Page 4 exclusion from supplement, not whole-medium removal."
+                }
+              ]
+            },
+            {
+              "source_label": "asparagine",
+              "reported_action": "REMOVE",
+              "stage": "Tang2009 AA-S-18 supplement membership only",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Source excludes this label from AA-S-18 supplement. Negative mixture membership is not an observed removal step or proof of whole-culture absence.",
+              "held_fields": [
+                "OPERATION"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "PARTIAL",
+                  "snippet": "without tryptophan, glutamine, and asparagine",
+                  "explanation": "Page 4 exclusion from supplement, not whole-medium removal."
+                }
+              ]
+            },
+            {
+              "source_label": "DL-serine",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Tang2009 AA-S-18 member normalization",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Generic mixture description does not certify these local stereochemical forms. Named-mixture presence and per-member dose do not resolve identities.",
+              "held_fields": [
+                "IDENTITY_FORM"
+              ]
+            },
+            {
+              "source_label": "DL-tyrosine",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Tang2009 AA-S-18 member normalization",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Generic mixture description does not certify these local stereochemical forms. Named-mixture presence and per-member dose do not resolve identities.",
+              "held_fields": [
+                "IDENTITY_FORM"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/minimal_medium_w_amino_acids_tang_et_al_2009.yaml",
+      "recipe_id": "CultureMech:007075",
+      "expected_sha256": "cb231608c24a08626143cc56b344442b0fd20bd3e93583210cacd9b7959585c7",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Tang 2009 manuscript 20 mM PIPES tracer medium with amino acids",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "AA-S-18 amino acid mixture"
+              },
+              "stage": "Tang2009 defined-rich supplement; separate from unsupplemented minimal-medium arm",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "SUPPORT",
+                  "snippet": "a standard amino acid mix (containing 17 unlabeled amino acids, without tryptophan, glutamine, and asparagine, Cat#AA-S-18, Sigma, USA)",
+                  "explanation": "Manuscript page 4. Named commercial mixture supported, no inferred 17 precise stereochemical forms. Separate dose sentence: 'a final concentration of 25 µM for each amino acid', not a mixture molarity."
+                }
+              ],
+              "notes": "25 micromolar per included amino acid; no bulk-mixture molarity or individual stereochemical assignment."
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "tryptophan",
+              "reported_action": "REMOVE",
+              "stage": "Tang2009 AA-S-18 supplement membership only",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Source excludes this label from AA-S-18 supplement. Negative mixture membership is not an observed removal step or proof of whole-culture absence.",
+              "held_fields": [
+                "OPERATION"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "PARTIAL",
+                  "snippet": "without tryptophan, glutamine, and asparagine",
+                  "explanation": "Page 4 exclusion from supplement, not whole-medium removal."
+                }
+              ]
+            },
+            {
+              "source_label": "glutamine",
+              "reported_action": "REMOVE",
+              "stage": "Tang2009 AA-S-18 supplement membership only",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Source excludes this label from AA-S-18 supplement. Negative mixture membership is not an observed removal step or proof of whole-culture absence.",
+              "held_fields": [
+                "OPERATION"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "PARTIAL",
+                  "snippet": "without tryptophan, glutamine, and asparagine",
+                  "explanation": "Page 4 exclusion from supplement, not whole-medium removal."
+                }
+              ]
+            },
+            {
+              "source_label": "asparagine",
+              "reported_action": "REMOVE",
+              "stage": "Tang2009 AA-S-18 supplement membership only",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Source excludes this label from AA-S-18 supplement. Negative mixture membership is not an observed removal step or proof of whole-culture absence.",
+              "held_fields": [
+                "OPERATION"
+              ],
+              "evidence": [
+                {
+                  "reference": "doi:10.1002/btpr.227",
+                  "supports": "PARTIAL",
+                  "snippet": "without tryptophan, glutamine, and asparagine",
+                  "explanation": "Page 4 exclusion from supplement, not whole-medium removal."
+                }
+              ]
+            },
+            {
+              "source_label": "DL-serine",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Tang2009 AA-S-18 member normalization",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Generic mixture description does not certify these local stereochemical forms. Named-mixture presence and per-member dose do not resolve identities.",
+              "held_fields": [
+                "IDENTITY_FORM"
+              ]
+            },
+            {
+              "source_label": "DL-tyrosine",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Tang2009 AA-S-18 member normalization",
+              "source_modification_index": 2,
+              "source_text": "Use the reported AA-S-18 mixture: 17 unlabelled amino acids, excluding tryptophan, glutamine and asparagine, at 25 micromolar each. The local DL-serine/DL-tyrosine and other stereochemical terms are not certified by this generic mixture description.",
+              "reason": "Generic mixture description does not certify these local stereochemical forms. Named-mixture presence and per-member dose do not resolve identities.",
+              "held_fields": [
+                "IDENTITY_FORM"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml",
+      "recipe_id": "CultureMech:007070",
+      "expected_sha256": "208093fb2ff607811c1bf4f861b01f51195fb7ef8f60381990be2e8ff5d247b6",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Pinchuk 2010 reported batch M1 with 18 mM lactate",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x Wolfe's vitamin solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x mineral solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "Wolfe vitamin/mineral stocks",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Pinchuk2010 source stocks versus flattened parent",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "reason": "Named stocks and 10 mL inputs supported. Component forms and correspondence to flattened parent remain unresolved; no component double-counting or replacement authorized.",
+              "held_fields": [
+                "IDENTITY_FORM",
+                "OPERATION"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m1_medium_with_20_mm_lactate_pinchuk_et_al.yaml",
+      "recipe_id": "CultureMech:007069",
+      "expected_sha256": "fea807f8ffc653ec2c739a2763e13b798cf57e4304abe98060416173dab8aeff",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Pinchuk 2010 reported batch M1 with 20 mM D,L-lactate",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x Wolfe's vitamin solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x mineral solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "Wolfe vitamin/mineral stocks",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Pinchuk2010 source stocks versus flattened parent",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "reason": "Named stocks and 10 mL inputs supported. Component forms and correspondence to flattened parent remain unresolved; no component double-counting or replacement authorized.",
+              "held_fields": [
+                "IDENTITY_FORM",
+                "OPERATION"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m1_medium_with_acetate_pinchuk_et_al.yaml",
+      "recipe_id": "CultureMech:007072",
+      "expected_sha256": "376f15a9b13520aa85a4fd8e58ed1dda66eeeec2fa083fb63b838c4649f9a868",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Pinchuk 2010 reported batch M1 with acetate",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x Wolfe's vitamin solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x mineral solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "Wolfe vitamin/mineral stocks",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Pinchuk2010 source stocks versus flattened parent",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "reason": "Named stocks and 10 mL inputs supported. Component forms and correspondence to flattened parent remain unresolved; no component double-counting or replacement authorized.",
+              "held_fields": [
+                "IDENTITY_FORM",
+                "OPERATION"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/modified_m1_medium_with_lactate_and_glycine_no_nh4cl.yaml",
+      "recipe_id": "CultureMech:007071",
+      "expected_sha256": "2b20af3fb04b842674d3b4118a3701121241c8df985266e357d500d0d121e5a1",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Pinchuk 2010 reported batch M1 with lactate and glycine nitrogen",
+          "append_changes": [
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x Wolfe's vitamin solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            },
+            {
+              "action": "ADD",
+              "ingredient": {
+                "preferred_term": "10x mineral solution"
+              },
+              "stage": "Pinchuk2010 modified-M1 source preparation; named stock input",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "evidence": [
+                {
+                  "reference": "doi:10.1371/journal.pcbi.1000822",
+                  "supports": "SUPPORT",
+                  "snippet": "10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution",
+                  "explanation": "Methods preparation input; no final volume supplied, so not mL/L. Named stocks are not a second addition of all flattened parent chemicals."
+                }
+              ],
+              "amount": {
+                "value": "10",
+                "unit": "ML",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal 10 mL of this 10x stock per source-described preparation; final volume unspecified."
+              },
+              "notes": "Source input only; correspondence to parent's flattened ingredients remains withheld."
+            }
+          ],
+          "append_mentions": [
+            {
+              "source_label": "Wolfe vitamin/mineral stocks",
+              "reported_action": "UNSPECIFIED",
+              "stage": "Pinchuk2010 source stocks versus flattened parent",
+              "source_modification_index": 1,
+              "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence to the parent's flattened molar stock components.",
+              "reason": "Named stocks and 10 mL inputs supported. Component forms and correspondence to flattened parent remain unresolved; no component double-counting or replacement authorized.",
+              "held_fields": [
+                "IDENTITY_FORM",
+                "OPERATION"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "data/normalized_yaml/bacterial/sc_medium.yaml",
+      "recipe_id": "CultureMech:001884",
+      "expected_sha256": "a5571ed03f3198bdb4118a90282d2624af5c9b9caa98ed3f83cdd2bc76a242e5",
+      "variants": [
+        {
+          "variant_index": 0,
+          "variant_name": "Liquid SC medium",
+          "append_changes": [
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "KH2PO4"
+              },
+              "stage": "DSMZ751 liquid-medium preparation batch",
+              "source_modification_index": 1,
+              "source_text": "Use KH2PO4 1.5 g per batch instead of 1 g.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "KH2PO4, 1.5 g and K2HPO4, 0.5 g",
+                  "explanation": "Page 1 liquid-medium instruction. Water plus added stocks is a batch recipe, not an established final litre."
+                }
+              ],
+              "amount": {
+                "value": "1.5",
+                "unit": "G",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal grams in DSMZ751 liquid preparation batch; final volume unspecified."
+              }
+            },
+            {
+              "action": "SET_AMOUNT",
+              "ingredient": {
+                "preferred_term": "K2HPO4"
+              },
+              "stage": "DSMZ751 liquid-medium preparation batch",
+              "source_modification_index": 2,
+              "source_text": "Use K2HPO4 0.5 g per batch instead of 1 g.",
+              "evidence": [
+                {
+                  "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf",
+                  "supports": "SUPPORT",
+                  "snippet": "KH2PO4, 1.5 g and K2HPO4, 0.5 g",
+                  "explanation": "Page 1 liquid-medium instruction. Water plus added stocks is a batch recipe, not an established final litre."
+                }
+              ],
+              "amount": {
+                "value": "0.5",
+                "unit": "G",
+                "basis": "PER_BATCH",
+                "basis_statement": "Literal grams in DSMZ751 liquid preparation batch; final volume unspecified."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dispositions": [
+    {
+      "queue_row_number": 15,
+      "prior_status": "HELD_MODEL",
+      "status": "CONTEXT_ONLY",
+      "reason": "Whole modified-medium reference contains no named ingredient change. Primary Methods identify modified YBCII; no parent equivalence or unnamed removal is inferred.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 17,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Natural dissolved N2 retained as a field-specific mention; absent fixed nitrogen does not identify a particular removed chemical.",
+      "append_assertion_count": 0,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 30,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Explicit gas supplies represented at aeration stages without liquid units.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 33,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Primary abstract verifies gas treatments; negative growth in the low-CO2 arm is not reclassified as positive growth.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 41,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Named fertilizer input supported; component-set replacement and composition retained separately.",
+      "append_assertion_count": 1,
+      "append_mention_count": 2
+    },
+    {
+      "queue_row_number": 55,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Both supplied gas arms verified in captured primary Methods.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 85,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Final-headspace gases supported; pH and temperature remain contextual.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 89,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Strain-specific gas additions verified without dissolved-concentration inference.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 95,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Strain-specific gas additions verified without dissolved-concentration inference.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 99,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Strain-specific gas additions verified without dissolved-concentration inference.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 100,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Strain-specific gas additions verified without dissolved-concentration inference.",
+      "append_assertion_count": 2,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 108,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Aggregate prose decomposed into explicit species-specific stages, not one simultaneous universal recipe.",
+      "append_assertion_count": 5,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 109,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Both claimed omissions retained as withheld operations; aerobic setup remains context.",
+      "append_assertion_count": 0,
+      "append_mention_count": 2
+    },
+    {
+      "queue_row_number": 130,
+      "prior_status": "STRUCTURED",
+      "status": "STRUCTURED",
+      "reason": "Existing event preserved; source-literal quantity promoted from notes to amount without denominator inference.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 137,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Exact batch mass represented with SET_AMOUNT; no concentration conversion.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 138,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Exact batch mass represented with SET_AMOUNT; no concentration conversion.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 142,
+      "prior_status": "STRUCTURED",
+      "status": "STRUCTURED",
+      "reason": "Existing event preserved; source-literal quantity promoted from notes to amount without denominator inference.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 144,
+      "prior_status": "STRUCTURED",
+      "status": "STRUCTURED",
+      "reason": "Existing event preserved; source-literal quantity promoted from notes to amount without denominator inference.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 194,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Default metal/strain arms and alternative carbon supplies represented separately.",
+      "append_assertion_count": 6,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 218,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Water diluent represented without treating medium name as a chemical or calculating doses.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 268,
+      "prior_status": "HELD_MODEL",
+      "status": "CONTEXT_ONLY",
+      "reason": "Table-membership instruction names no individual ingredient. Pyridox-x is explicitly an omission-experiment label, not a chemical. Existing source-specific dose events remain; no automatic full-table normalization or inferred parent equivalence.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 290,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "950 mL batch input retained without using archive 1000 mL as a denominator.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 294,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "950 mL batch input retained without using archive 1000 mL as a denominator.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 298,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "950 mL batch input retained without using archive 1000 mL as a denominator.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 301,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "950 mL batch input retained without using archive 1000 mL as a denominator.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 313,
+      "prior_status": "STRUCTURED",
+      "status": "STRUCTURED",
+      "reason": "Existing event preserved; source-literal quantity promoted from notes to amount without denominator inference.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 315,
+      "prior_status": "STRUCTURED",
+      "status": "STRUCTURED",
+      "reason": "Existing event preserved; source-literal quantity promoted from notes to amount without denominator inference.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 317,
+      "prior_status": "STRUCTURED",
+      "status": "STRUCTURED",
+      "reason": "Existing event preserved; source-literal quantity promoted from notes to amount without denominator inference.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 341,
+      "prior_status": "HELD_MODEL",
+      "status": "CONTEXT_ONLY",
+      "reason": "Table-membership instruction names no individual ingredient. Pyridox-x is explicitly an omission-experiment label, not a chemical. Existing source-specific dose events remain; no automatic full-table normalization or inferred parent equivalence.",
+      "append_assertion_count": 0,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 344,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Named mixture supported; exact negative membership and stereochemical uncertainties retained.",
+      "append_assertion_count": 1,
+      "append_mention_count": 5
+    },
+    {
+      "queue_row_number": 347,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Named mixture supported; exact negative membership and stereochemical uncertainties retained.",
+      "append_assertion_count": 1,
+      "append_mention_count": 5
+    },
+    {
+      "queue_row_number": 361,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Named stock inputs separated from unresolved component equivalence.",
+      "append_assertion_count": 2,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 364,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Named stock inputs separated from unresolved component equivalence.",
+      "append_assertion_count": 2,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 367,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Named stock inputs separated from unresolved component equivalence.",
+      "append_assertion_count": 2,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 370,
+      "prior_status": "HELD_MODEL",
+      "status": "PARTIALLY_STRUCTURED",
+      "reason": "Named stock inputs separated from unresolved component equivalence.",
+      "append_assertion_count": 2,
+      "append_mention_count": 1
+    },
+    {
+      "queue_row_number": 386,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Exact batch mass represented with SET_AMOUNT; no concentration conversion.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    },
+    {
+      "queue_row_number": 387,
+      "prior_status": "HELD_MODEL",
+      "status": "STRUCTURED",
+      "reason": "Exact batch mass represented with SET_AMOUNT; no concentration conversion.",
+      "append_assertion_count": 1,
+      "append_mention_count": 0
+    }
+  ]
+}

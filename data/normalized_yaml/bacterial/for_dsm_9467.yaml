@@ -341,6 +341,26 @@ curation_history:
     stocks of unspecified strength/dose, rather than the archived stock specifications.",
     "stage": "filter-sterilized stock addition before use"}], "variant_index": 0,
     "variant_name": "DSM 9467 current DSMZ 670 source formulation"}]}'
+- timestamp: '2026-11-17T00:07:08.234304+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "c5576056dbb824038944c4e314ec46f683e143e99477d2f1bb57cc2ee4d2761c",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/for_dsm_9467.yaml",
+    "recipe_id": "CultureMech:006263", "variants": [{"append_changes": [{"action":
+    "SET_AMOUNT", "amount": {"basis": "PER_BATCH", "basis_statement": "Current DSMZ670
+    table input per preparation batch; not a final-volume assertion.", "unit": "ML",
+    "value": "950"}, "evidence": [{"explanation": "Page 1 base table, whitespace normalized.
+    Separate ferrous-sulfate stock and strain-specific omissions do not make water
+    input a final-medium volume.", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf",
+    "snippet": "Distilled water 950.00 ml", "supports": "SUPPORT"}], "ingredient":
+    {"preferred_term": "distilled water"}, "source_modification_index": 0, "source_text":
+    "Current DSMZ 670 base table uses 950 ml distilled-water input, not the archive''s
+    1000 ml; this is not a stated final volume.", "stage": "DSMZ670 current source
+    base-batch input before strain-specific additions"}], "variant_index": 0, "variant_name":
+    "DSM 9467 current DSMZ 670 source formulation"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 data_quality_flags:
 - pending_curation
 parent_media:
@@ -571,6 +591,26 @@ variants:
     source_text: 'Current source: pH 3.0 with 1 N H2SO4, not archived 2 N acid; omit
       iron. Add 2.00 g/L D-glucose and 0.1 g/L yeast extract from filter-sterilized
       stocks of unspecified strength/dose, rather than the archived stock specifications.'
+  - action: SET_AMOUNT
+    ingredient:
+      preferred_term: distilled water
+    stage: DSMZ670 current source base-batch input before strain-specific additions
+    source_modification_index: 0
+    source_text: Current DSMZ 670 base table uses 950 ml distilled-water input, not
+      the archive's 1000 ml; this is not a stated final volume.
+    evidence:
+    - reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf
+      supports: SUPPORT
+      snippet: Distilled water 950.00 ml
+      explanation: Page 1 base table, whitespace normalized. Separate ferrous-sulfate
+        stock and strain-specific omissions do not make water input a final-medium
+        volume.
+    amount:
+      value: '950'
+      unit: ML
+      basis: PER_BATCH
+      basis_statement: Current DSMZ670 table input per preparation batch; not a final-volume
+        assertion.
 references:
 - reference: https://bacdive.dsmz.de/pdf/4303?doi=10.13145%2Fbacdive4303.20170829.2
   title: Acidiferrobacter thiooxydans Hallberg et al. 2011

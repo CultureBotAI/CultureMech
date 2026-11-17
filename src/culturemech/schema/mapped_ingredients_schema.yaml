@@ -291,6 +291,8 @@ enums:
         description: New ingredient of a replacement
       SET_CONCENTRATION:
         description: Explicit concentration event, including a reported zero dose
+      SET_AMOUNT:
+        description: Literal batch amount or percentage with unspecified basis
 
   ResolutionSourceEnum:
     description: Structured outcome class returned by the shared MIM resolver

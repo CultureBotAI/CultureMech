@@ -344,6 +344,25 @@ curation_history:
     manganese chloride. Hydration is not specified; no molar conversion is applied.",
     "stage": "microaerobic reactor medium preparation"}], "variant_index": 0, "variant_name":
     "Nordkvist 2003 reported microaerobic MS10 with manganese sulfate"}]}'
+- timestamp: '2026-11-17T00:07:11.483698+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "b1ef42c539f62576e4346e3790e6540c809c26ebd662da980e929c231f1d9bc7",
+    "path": "data/normalized_yaml/bacterial/ms10_medium_supplements_for_batch_cultivation.yaml",
+    "recipe_id": "CultureMech:007314", "variants": [{"append_mentions": [{"held_fields":
+    ["IDENTITY_FORM", "QUANTITY"], "reason": "Nordkvist2003 distinguishes reactor
+    medium from threefold-phosphate preculture. Full1995MS10 base remained subscription-only
+    after exact publisher inspection; specific reactor phosphate salt/dose cannot
+    be inferred from the ratio or imported parent.", "reported_action": "SET_CONCENTRATION",
+    "reported_quantity": "preculture threefold relative to reactor", "source_label":
+    "phosphate", "source_modification_index": 1, "source_text": "Keep reactor medium
+    separate from the threefold-phosphate preculture. Exact normalized reactor phosphate
+    amounts remain unresolved pending the full MS10 base source.", "stage": "Nordkvist2003
+    reactor versus preculture"}], "variant_index": 0, "variant_name": "Nordkvist 2003
+    reported microaerobic MS10 with manganese sulfate"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 413
   term:
@@ -485,6 +504,22 @@ variants:
     source_modification_index: 0
     source_text: Use source-specified MnSO4 at 1.25e-5 g/liter, not the parent's manganese
       chloride. Hydration is not specified; no molar conversion is applied.
+  ingredient_mentions:
+  - source_label: phosphate
+    reported_action: SET_CONCENTRATION
+    stage: Nordkvist2003 reactor versus preculture
+    source_modification_index: 1
+    source_text: Keep reactor medium separate from the threefold-phosphate preculture.
+      Exact normalized reactor phosphate amounts remain unresolved pending the full
+      MS10 base source.
+    reason: Nordkvist2003 distinguishes reactor medium from threefold-phosphate preculture.
+      Full1995MS10 base remained subscription-only after exact publisher inspection;
+      specific reactor phosphate salt/dose cannot be inferred from the ratio or imported
+      parent.
+    held_fields:
+    - IDENTITY_FORM
+    - QUANTITY
+    reported_quantity: preculture threefold relative to reactor
 target_organisms:
 - preferred_term: Lactococcus cremoris subsp. cremoris MG1363
   strain: MG1363

@@ -352,6 +352,46 @@ curation_history:
     4.35 mM sodium dihydrogen phosphate monohydrate (NaH2PO4.H2O), not the parent''s
     dibasic sodium phosphate.", "stage": "modified M1 batch culture"}], "variant_index":
     0, "variant_name": "Pinchuk 2010 reported batch M1 with 18 mM lactate"}]}'
+- timestamp: '2026-11-17T00:07:09.827483+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "208093fb2ff607811c1bf4f861b01f51195fb7ef8f60381990be2e8ff5d247b6",
+    "path": "data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml",
+    "recipe_id": "CultureMech:007070", "variants": [{"append_changes": [{"action":
+    "ADD", "amount": {"basis": "PER_BATCH", "basis_statement": "Literal 10 mL of this
+    10x stock per source-described preparation; final volume unspecified.", "unit":
+    "ML", "value": "10"}, "evidence": [{"explanation": "Methods preparation input;
+    no final volume supplied, so not mL/L. Named stocks are not a second addition
+    of all flattened parent chemicals.", "reference": "doi:10.1371/journal.pcbi.1000822",
+    "snippet": "10 ml each of 10× Wolfe''s vitamin solution and 10× mineral solution",
+    "supports": "SUPPORT"}], "ingredient": {"preferred_term": "10x Wolfe''s vitamin
+    solution"}, "notes": "Source input only; correspondence to parent''s flattened
+    ingredients remains withheld.", "source_modification_index": 1, "source_text":
+    "Retain the paper-described Wolfe vitamin/mineral stocks without claiming equivalence
+    to the parent''s flattened molar stock components.", "stage": "Pinchuk2010 modified-M1
+    source preparation; named stock input"}, {"action": "ADD", "amount": {"basis":
+    "PER_BATCH", "basis_statement": "Literal 10 mL of this 10x stock per source-described
+    preparation; final volume unspecified.", "unit": "ML", "value": "10"}, "evidence":
+    [{"explanation": "Methods preparation input; no final volume supplied, so not
+    mL/L. Named stocks are not a second addition of all flattened parent chemicals.",
+    "reference": "doi:10.1371/journal.pcbi.1000822", "snippet": "10 ml each of 10×
+    Wolfe''s vitamin solution and 10× mineral solution", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "10x mineral solution"}, "notes": "Source input
+    only; correspondence to parent''s flattened ingredients remains withheld.", "source_modification_index":
+    1, "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without
+    claiming equivalence to the parent''s flattened molar stock components.", "stage":
+    "Pinchuk2010 modified-M1 source preparation; named stock input"}], "append_mentions":
+    [{"held_fields": ["IDENTITY_FORM", "OPERATION"], "reason": "Named stocks and 10
+    mL inputs supported. Component forms and correspondence to flattened parent remain
+    unresolved; no component double-counting or replacement authorized.", "reported_action":
+    "UNSPECIFIED", "source_label": "Wolfe vitamin/mineral stocks", "source_modification_index":
+    1, "source_text": "Retain the paper-described Wolfe vitamin/mineral stocks without
+    claiming equivalence to the parent''s flattened molar stock components.", "stage":
+    "Pinchuk2010 source stocks versus flattened parent"}], "variant_index": 0, "variant_name":
+    "Pinchuk 2010 reported batch M1 with 18 mM lactate"}]}, "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 media_term:
   preferred_term: MediaDB Medium 179
   term:
@@ -501,6 +541,61 @@ variants:
         no ontology identity or mass conversion inferred.'
     replaced_ingredient:
       preferred_term: Dibasic sodium phosphate
+  - action: ADD
+    ingredient:
+      preferred_term: 10x Wolfe's vitamin solution
+    stage: Pinchuk2010 modified-M1 source preparation; named stock input
+    source_modification_index: 1
+    source_text: Retain the paper-described Wolfe vitamin/mineral stocks without claiming
+      equivalence to the parent's flattened molar stock components.
+    evidence:
+    - reference: doi:10.1371/journal.pcbi.1000822
+      supports: SUPPORT
+      snippet: 10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution
+      explanation: Methods preparation input; no final volume supplied, so not mL/L.
+        Named stocks are not a second addition of all flattened parent chemicals.
+    amount:
+      value: '10'
+      unit: ML
+      basis: PER_BATCH
+      basis_statement: Literal 10 mL of this 10x stock per source-described preparation;
+        final volume unspecified.
+    notes: Source input only; correspondence to parent's flattened ingredients remains
+      withheld.
+  - action: ADD
+    ingredient:
+      preferred_term: 10x mineral solution
+    stage: Pinchuk2010 modified-M1 source preparation; named stock input
+    source_modification_index: 1
+    source_text: Retain the paper-described Wolfe vitamin/mineral stocks without claiming
+      equivalence to the parent's flattened molar stock components.
+    evidence:
+    - reference: doi:10.1371/journal.pcbi.1000822
+      supports: SUPPORT
+      snippet: 10 ml each of 10× Wolfe's vitamin solution and 10× mineral solution
+      explanation: Methods preparation input; no final volume supplied, so not mL/L.
+        Named stocks are not a second addition of all flattened parent chemicals.
+    amount:
+      value: '10'
+      unit: ML
+      basis: PER_BATCH
+      basis_statement: Literal 10 mL of this 10x stock per source-described preparation;
+        final volume unspecified.
+    notes: Source input only; correspondence to parent's flattened ingredients remains
+      withheld.
+  ingredient_mentions:
+  - source_label: Wolfe vitamin/mineral stocks
+    reported_action: UNSPECIFIED
+    stage: Pinchuk2010 source stocks versus flattened parent
+    source_modification_index: 1
+    source_text: Retain the paper-described Wolfe vitamin/mineral stocks without claiming
+      equivalence to the parent's flattened molar stock components.
+    reason: Named stocks and 10 mL inputs supported. Component forms and correspondence
+      to flattened parent remain unresolved; no component double-counting or replacement
+      authorized.
+    held_fields:
+    - IDENTITY_FORM
+    - OPERATION
 target_organisms:
 - preferred_term: Shewanella oneidensis MR-1
   strain: MR-1 (wild type)

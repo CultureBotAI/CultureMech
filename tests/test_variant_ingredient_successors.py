@@ -15,6 +15,7 @@ from audit_variant_ingredient_successor import (
     expected_item,
     proposal_records,
     restore_before,
+    restore_registered_before,
     sha,
 )
 
@@ -37,7 +38,7 @@ def test_exact_successor_membership_and_independent_inversion(plan):
         after = yaml.load(item["after_text"], Loader=yaml.CSafeLoader)
         assert check(before, after, item)["new_curation_history"] == 1
         raw = item["after_text"].encode()
-        assert restore_before(raw, item["path"]) == item["before_text"].encode()
+        assert restore_registered_before(raw, item["path"]) == item["before_text"].encode()
         assert AUDIT.invert_chain(raw, [item]) == before
 
 

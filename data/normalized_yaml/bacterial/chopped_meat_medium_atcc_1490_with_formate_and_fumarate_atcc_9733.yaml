@@ -244,6 +244,48 @@ curation_history:
   action: SET_ORGANISM_CULTURE_TYPE
   notes: 'Inferred isolate: 7 specific strain(s) named, no community signal (#142)'
   changes: Set organism_culture_type=isolate (was unset)
+- timestamp: '2026-11-17T00:07:07.339737+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "17b9f16c92a9a90737db8271f81e9c25bbb77d01cdcd1e13c1cacd33865980cd",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml",
+    "recipe_id": "CultureMech:009185", "variants": [{"append_changes": [{"action":
+    "REMOVE", "evidence": [{"explanation": "Methods explicitly contrast the listed
+    plain-ATCC1490 strains with B.ureolyticus in ATCC1490 with formate/fumarate. This
+    formulation distinction supports omission relative to the supplemented parent,
+    not unreported salts or zero-dose conversion.", "reference": "doi:10.1186/1471-2334-11-200",
+    "snippet": "ATCC medium 1490 with formate and fumarate", "supports": "SUPPORT"}],
+    "ingredient": {"preferred_term": "formate"}, "source_modification_index": 0, "source_text":
+    "Formate and fumarate omitted relative to the parent (ATCC 1490 + formate + fumarate).",
+    "stage": "O''Hanlon2011 plain ATCC1490 strains; separate from B.ureolyticus supplemented
+    medium"}, {"action": "REMOVE", "evidence": [{"explanation": "Methods explicitly
+    contrast the listed plain-ATCC1490 strains with B.ureolyticus in ATCC1490 with
+    formate/fumarate. This formulation distinction supports omission relative to the
+    supplemented parent, not unreported salts or zero-dose conversion.", "reference":
+    "doi:10.1186/1471-2334-11-200", "snippet": "ATCC medium 1490 with formate and
+    fumarate", "supports": "SUPPORT"}], "ingredient": {"preferred_term": "fumarate"},
+    "source_modification_index": 0, "source_text": "Formate and fumarate omitted relative
+    to the parent (ATCC 1490 + formate + fumarate).", "stage": "O''Hanlon2011 plain
+    ATCC1490 strains; separate from B.ureolyticus supplemented medium"}], "variant_index":
+    0, "variant_name": "atcc_1490_base_no_formate_fumarate"}, {"append_mentions":
+    [{"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM", "QUANTITY"], "reason": "Johnston2001
+    full Methods remain inaccessible anonymously. Existing text gives no exact carbonate
+    species/dose or gas composition; do not infer bicarbonate or aqueous CO2 concentration.",
+    "reported_action": "ADD", "source_label": "Carbonate", "source_modification_index":
+    0, "source_text": "Carbonate/CO2 buffering added to ATCC 1490 base (exact carbonate
+    species/concentration and gas composition not printed).", "stage": "reported ATCC1490
+    carbonate/CO2-buffered formulation"}, {"held_fields": ["SOURCE_CLAIM", "IDENTITY_FORM",
+    "QUANTITY"], "reason": "Johnston2001 full Methods remain inaccessible anonymously.
+    Existing text gives no exact carbonate species/dose or gas composition; do not
+    infer bicarbonate or aqueous CO2 concentration.", "reported_action": "ADD", "source_label":
+    "CO2", "source_modification_index": 0, "source_text": "Carbonate/CO2 buffering
+    added to ATCC 1490 base (exact carbonate species/concentration and gas composition
+    not printed).", "stage": "reported ATCC1490 carbonate/CO2-buffered formulation"}],
+    "variant_index": 1, "variant_name": "atcc_1490_carbonate_co2_buffered"}]}, "decision_sha256":
+    "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 solutions:
 - preferred_term: Formate and Fumarate Solution
   composition: []
@@ -374,6 +416,39 @@ variants:
       the formate+fumarate parent formulation.
     snippet: Fusobacterium nucleatum ATCC 25586 and Porphyromonas levii ATCC 29147
       were all grown in ATCC medium 1490 (Modified chopped meat medium).
+  ingredient_changes:
+  - action: REMOVE
+    ingredient:
+      preferred_term: formate
+    stage: O'Hanlon2011 plain ATCC1490 strains; separate from B.ureolyticus supplemented
+      medium
+    source_modification_index: 0
+    source_text: Formate and fumarate omitted relative to the parent (ATCC 1490 +
+      formate + fumarate).
+    evidence:
+    - reference: doi:10.1186/1471-2334-11-200
+      supports: SUPPORT
+      snippet: ATCC medium 1490 with formate and fumarate
+      explanation: Methods explicitly contrast the listed plain-ATCC1490 strains with
+        B.ureolyticus in ATCC1490 with formate/fumarate. This formulation distinction
+        supports omission relative to the supplemented parent, not unreported salts
+        or zero-dose conversion.
+  - action: REMOVE
+    ingredient:
+      preferred_term: fumarate
+    stage: O'Hanlon2011 plain ATCC1490 strains; separate from B.ureolyticus supplemented
+      medium
+    source_modification_index: 0
+    source_text: Formate and fumarate omitted relative to the parent (ATCC 1490 +
+      formate + fumarate).
+    evidence:
+    - reference: doi:10.1186/1471-2334-11-200
+      supports: SUPPORT
+      snippet: ATCC medium 1490 with formate and fumarate
+      explanation: Methods explicitly contrast the listed plain-ATCC1490 strains with
+        B.ureolyticus in ATCC1490 with formate/fumarate. This formulation distinction
+        supports omission relative to the supplemented parent, not unreported salts
+        or zero-dose conversion.
 - name: atcc_1490_carbonate_co2_buffered
   relationship: SUPPLEMENTED_VARIANT
   description: ATCC 1490 modified chopped meat medium buffered with carbonate/CO2
@@ -393,3 +468,30 @@ variants:
     snippet: Fusobacterium necrophorum (ATCC 27852) was grown in a modified chopped
       meat medium (ATCC 1490) buffered with carbonate/CO2. For MIC assays, this medium
       was clarified through a 0.8 um filter.
+  ingredient_mentions:
+  - source_label: Carbonate
+    reported_action: ADD
+    stage: reported ATCC1490 carbonate/CO2-buffered formulation
+    source_modification_index: 0
+    source_text: Carbonate/CO2 buffering added to ATCC 1490 base (exact carbonate
+      species/concentration and gas composition not printed).
+    reason: Johnston2001 full Methods remain inaccessible anonymously. Existing text
+      gives no exact carbonate species/dose or gas composition; do not infer bicarbonate
+      or aqueous CO2 concentration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+    - QUANTITY
+  - source_label: CO2
+    reported_action: ADD
+    stage: reported ATCC1490 carbonate/CO2-buffered formulation
+    source_modification_index: 0
+    source_text: Carbonate/CO2 buffering added to ATCC 1490 base (exact carbonate
+      species/concentration and gas composition not printed).
+    reason: Johnston2001 full Methods remain inaccessible anonymously. Existing text
+      gives no exact carbonate species/dose or gas composition; do not infer bicarbonate
+      or aqueous CO2 concentration.
+    held_fields:
+    - SOURCE_CLAIM
+    - IDENTITY_FORM
+    - QUANTITY

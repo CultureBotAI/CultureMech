@@ -15,14 +15,20 @@ stock already present in the scan contributes its own components once; the list
 does not expand it into every referring medium.
 
 Reviewed `variants[].ingredient_changes[]` contribute scoped occurrences for
-`ADD`, `SET_CONCENTRATION`, and the introduced side of `REPLACE`. The complete
+`ADD`, `SET_CONCENTRATION`, `SET_AMOUNT`, and the introduced side of `REPLACE`. The complete
 change ledger also retains `REMOVE` and the displaced side of `REPLACE`, which
 never enter positive ingredient counts. Each change retains its variant,
 experimental stage, source modification and evidence. The scanner does not apply
 these operations to the parent or compute a final variant formulation.
 
-Ingredient mentions remaining only in `variants[].modifications`, notes and other
-prose are outside this structured extraction. Inline copies with extra content beyond
+Unresolved named claims belong in `variants[].ingredient_mentions[]` and the
+separate hold ledger. Each retains a verbatim label, source text, variant, stage,
+reported operation and the unresolved fields: source claim, identity/form,
+quantity, operation or stage. These rows do not assert positive presence or an
+ontology identity. A quantity hold does not invalidate a separately supported
+ingredient identity. Text not yet curated into either structured collection,
+including other notes and protocol prose, remains outside this extraction.
+Inline copies with extra content beyond
 their referenced stock are also outside its direct-containment contract; see
 [the occurrence guide](unmapped_ingredients_guide.md). These limitations remain
 visible curation work. Do not turn a prose mention or a name match into an
@@ -43,17 +49,32 @@ source labels, compound IDs, descriptor JSON and resolution evidence with each
 occurrence. Counts of distinct names, resolved identities, review cases, recipes
 and occurrences are different measurements.
 
-## Version 2 exchange contract
+## Version 3 exchange contract
 
-The manifest contract is `culturemech-direct-ingredients-v2`. The occurrence TSV
+The manifest contract is `culturemech-direct-ingredients-v3`. The occurrence TSV
 keeps its original columns and appends variant context. The new
 `variant_ingredient_changes.tsv` contains one descriptor row for each change,
 plus a second row for the displaced descriptor of a replacement. It preserves
 the complete source change in `change_json`, the descriptor in `ingredient_json`,
 and evidence in `evidence_json`.
 
-`counts_as_presence` is an inventory inclusion flag: true for the introduced or
-concentration-target descriptor, false for a removal or displaced descriptor.
+Version 3 adds `variant_ingredient_holds.tsv` as the seventh product and supports
+literal `amount` in the complete change JSON. `SET_AMOUNT` changes a source-stated
+batch input without asserting a final concentration. Amounts can also qualify
+`ADD` or `REPLACE`. Mass/volume units use `PER_BATCH`; a percentage whose source
+does not specify w/v or v/v uses `UNSPECIFIED_PERCENT`. The required basis
+statement preserves the source denominator and its limits. Do not fill the
+concentration columns from these amounts.
+
+Hold rows carry `held_fields_json`, exact `mention_json`, optional evidence and
+reported quantity, `review_status=WITHHELD` and `counts_as_presence=false`.
+MIM must retain these rows in its intake even when their labels are absent from
+the compact positive inventory. Resolving a held label is distinct from approving
+the source assertion or making it present in a base recipe.
+
+`counts_as_presence` is an inventory inclusion flag: true for an introduced,
+concentration-target or literal-amount-target descriptor, false for a removal,
+displaced descriptor or held mention.
 It does not establish a nonzero concentration, an initial dose, or an ingredient
 present in every condition. In particular, a concentration set to zero remains
 an explicit change target. Consumers must retain the action, stage and quantity
@@ -66,8 +87,9 @@ that key; `descriptor_path` is a JSON pointer such as
 refer to the same pinned recipe bytes. Grouping still uses the existing MIM resolver,
 so a known identity gains occurrences and an unresolved label stays visible.
 
-Version 1 consumers must explicitly adopt this contract. They must admit the new
-columns and companion ledger, preserve scope, and reject attempts to flatten
+Version 1 and 2 consumers must explicitly adopt this contract. Old bundles remain
+verifiable with their pinned archived producer. Consumers must admit the new
+columns and companion ledgers, preserve scope, and reject attempts to flatten
 negative/context-only mentions into positive medium edges. A new CultureMech
 bundle does not authorize replacement of a running MIM campaign's frozen inputs.
 

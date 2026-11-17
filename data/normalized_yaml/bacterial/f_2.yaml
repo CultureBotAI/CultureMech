@@ -565,6 +565,33 @@ curation_history:
     solution described as coming from 2ASW replaces the original f/2 vitamin solution;
     the paper states it contains additional vitamin components.", "stage": "modified
     f/2 maintenance medium"}], "variant_index": 3, "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015"}]}'
+- timestamp: '2026-11-17T00:07:07.478343+00:00'
+  curator: codex
+  action: VARIANT_INGREDIENT_COMPLETENESS
+  notes: LLM-assisted reviewed variant ingredient amounts, unresolved names and exact
+    source corrections; no human review status asserted.
+  source: https://github.com/CultureBotAI/CultureMech/issues/683
+  changes: '{"decision": {"expected_sha256": "8bd20890504cac8ef4e19a1886d52128a952d16f0c8d7f609c4ba40e5299c0bc",
+    "field_replacements": [], "path": "data/normalized_yaml/bacterial/f_2.yaml", "recipe_id":
+    "CultureMech:000343", "variants": [{"append_mentions": [{"held_fields": ["IDENTITY_FORM",
+    "QUANTITY"], "reason": "Named mixture replacement is already supported by Hiibel2015.
+    Its constituent list and dose are not supplied by the inspected passage; do not
+    invent additional vitamins or inherit unrelated stock composition.", "reported_action":
+    "REPLACE", "source_label": "vitamin solution", "source_modification_index": 0,
+    "source_text": "The vitamin solution described as coming from 2ASW replaces the
+    original f/2 vitamin solution; the paper states it contains additional vitamin
+    components.", "stage": "Hiibel2015 Nannochloropsis maintenance medium"}], "variant_index":
+    3, "variant_name": "f_2_2asw_vitamin_replacement_hiibel_2015"}, {"append_mentions":
+    [{"held_fields": ["QUANTITY", "IDENTITY_FORM"], "reason": "The prior source-supported
+    supplementation event remains intact. Total silicate including the unverified
+    base is unspecified; no addition of a second dose or exact salt identity is inferred.",
+    "reported_action": "UNSPECIFIED", "source_label": "silicate", "source_modification_index":
+    1, "source_text": "Other nutrients, total silicate including the base, final-volume
+    preparation and equivalence to local f/2 + Si records remain unresolved.", "stage":
+    "total study-medium silicate, including unresolved base"}], "variant_index": 0,
+    "variant_name": "f_2_silicate_supplement_1_06e_4_m"}, {"variant_index": 1, "variant_name":
+    "f_2_nitrate_supplement_29_4_mm"}, {"variant_index": 2, "variant_name": "f_2_penicillin_g_dihydrostreptomycin_supplement"}]},
+    "decision_sha256": "db59754b282f7aa86b5fc8f54fc0b2885794c2816e7dab5d37df507b39aab554"}'
 variant_children:
 - path: data/normalized_yaml/bacterial/f_2_quad.yaml
   relationship: CONCENTRATION_VARIANT
@@ -621,6 +648,19 @@ variants:
         calculated total including basal silicate. Source inspected 2026-11-16; SHA256
         7e3ddf65f336955a2c875b18361e878ffcf16bc341fe9b404308d014df4c3319. No parent
         formulation, growth, ontology identity, or missing dose is inferred.
+  ingredient_mentions:
+  - source_label: silicate
+    reported_action: UNSPECIFIED
+    stage: total study-medium silicate, including unresolved base
+    source_modification_index: 1
+    source_text: Other nutrients, total silicate including the base, final-volume
+      preparation and equivalence to local f/2 + Si records remain unresolved.
+    reason: The prior source-supported supplementation event remains intact. Total
+      silicate including the unverified base is unspecified; no addition of a second
+      dose or exact salt identity is inferred.
+    held_fields:
+    - QUANTITY
+    - IDENTITY_FORM
 - name: f_2_nitrate_supplement_29_4_mm
   relationship: SUPPLEMENTED_VARIANT
   description: Emami et al. (2015) nitrate-supplemented f/2 at pH 8 for reported Arthrospira
@@ -795,3 +835,16 @@ variants:
         No parent formulation, growth, ontology identity, or missing dose is inferred.
     replaced_ingredient:
       preferred_term: f/2 vitamin solution
+  ingredient_mentions:
+  - source_label: vitamin solution
+    reported_action: REPLACE
+    stage: Hiibel2015 Nannochloropsis maintenance medium
+    source_modification_index: 0
+    source_text: The vitamin solution described as coming from 2ASW replaces the original
+      f/2 vitamin solution; the paper states it contains additional vitamin components.
+    reason: Named mixture replacement is already supported by Hiibel2015. Its constituent
+      list and dose are not supplied by the inspected passage; do not invent additional
+      vitamins or inherit unrelated stock composition.
+    held_fields:
+    - IDENTITY_FORM
+    - QUANTITY
